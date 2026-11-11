@@ -1,0 +1,2185 @@
+{
+  "ABRASIVE": {
+    "base": "assets/cards/images/table/base/abrasive.webp",
+    "upgraded": "assets/cards/images/table/upgraded/abrasive.webp"
+  },
+  "ACCELERANT": {
+    "base": "assets/cards/images/table/base/accelerant.webp",
+    "upgraded": "assets/cards/images/table/upgraded/accelerant.webp"
+  },
+  "ACCURACY": {
+    "base": "assets/cards/images/table/base/accuracy.webp",
+    "upgraded": "assets/cards/images/table/upgraded/accuracy.webp"
+  },
+  "ACROBATICS": {
+    "base": "assets/cards/images/table/base/acrobatics.webp",
+    "upgraded": "assets/cards/images/table/upgraded/acrobatics.webp"
+  },
+  "ADAPTIVE_STRIKE": {
+    "base": "assets/cards/images/table/base/adaptive-strike.webp",
+    "upgraded": "assets/cards/images/table/upgraded/adaptive-strike.webp"
+  },
+  "ADRENALINE": {
+    "base": "assets/cards/images/table/base/adrenaline.webp",
+    "upgraded": "assets/cards/images/table/upgraded/adrenaline.webp"
+  },
+  "AFTERIMAGE": {
+    "base": "assets/cards/images/table/base/afterimage.webp",
+    "upgraded": "assets/cards/images/table/upgraded/afterimage.webp"
+  },
+  "AFTERLIFE": {
+    "base": "assets/cards/images/table/base/afterlife.webp",
+    "upgraded": "assets/cards/images/table/upgraded/afterlife.webp"
+  },
+  "AGGRESSION": {
+    "base": "assets/cards/images/table/base/aggression.webp",
+    "upgraded": "assets/cards/images/table/upgraded/aggression.webp"
+  },
+  "ALCHEMIZE": {
+    "base": "assets/cards/images/table/base/alchemize.webp",
+    "upgraded": "assets/cards/images/table/upgraded/alchemize.webp"
+  },
+  "ALIGNMENT": {
+    "base": "assets/cards/images/table/base/alignment.webp",
+    "upgraded": "assets/cards/images/table/upgraded/alignment.webp"
+  },
+  "ALL_FOR_ONE": {
+    "base": "assets/cards/images/table/base/all-for-one.webp",
+    "upgraded": "assets/cards/images/table/upgraded/all-for-one.webp"
+  },
+  "ANGER": {
+    "base": "assets/cards/images/table/base/anger.webp",
+    "upgraded": "assets/cards/images/table/upgraded/anger.webp"
+  },
+  "ANOINTED": {
+    "base": "assets/cards/images/table/base/anointed.webp",
+    "upgraded": "assets/cards/images/table/upgraded/anointed.webp"
+  },
+  "ANTICIPATE": {
+    "base": "assets/cards/images/table/base/anticipate.webp",
+    "upgraded": "assets/cards/images/table/upgraded/anticipate.webp"
+  },
+  "APOTHEOSIS": {
+    "base": "assets/cards/images/table/base/apotheosis.webp",
+    "upgraded": "assets/cards/images/table/upgraded/apotheosis.webp"
+  },
+  "APPARITION": {
+    "base": "assets/cards/images/table/base/apparition.webp",
+    "upgraded": "assets/cards/images/table/upgraded/apparition.webp"
+  },
+  "ARMAMENTS": {
+    "base": "assets/cards/images/table/base/armaments.webp",
+    "upgraded": "assets/cards/images/table/upgraded/armaments.webp"
+  },
+  "ARSENAL": {
+    "base": "assets/cards/images/table/base/arsenal.webp",
+    "upgraded": "assets/cards/images/table/upgraded/arsenal.webp"
+  },
+  "ASCENDERS_BANE": {
+    "base": "assets/cards/images/table/base/ascenders-bane.webp"
+  },
+  "ASHEN_STRIKE": {
+    "base": "assets/cards/images/table/base/ashen-strike.webp",
+    "upgraded": "assets/cards/images/table/upgraded/ashen-strike.webp"
+  },
+  "ASSASSINATE": {
+    "base": "assets/cards/images/table/base/assassinate.webp",
+    "upgraded": "assets/cards/images/table/upgraded/assassinate.webp"
+  },
+  "ASTRAL_PULSE": {
+    "base": "assets/cards/images/table/base/astral-pulse.webp",
+    "upgraded": "assets/cards/images/table/upgraded/astral-pulse.webp"
+  },
+  "AUTOMATION": {
+    "base": "assets/cards/images/table/base/automation.webp",
+    "upgraded": "assets/cards/images/table/upgraded/automation.webp"
+  },
+  "BACKFLIP": {
+    "base": "assets/cards/images/table/base/backflip.webp",
+    "upgraded": "assets/cards/images/table/upgraded/backflip.webp"
+  },
+  "BACKSTAB": {
+    "base": "assets/cards/images/table/base/backstab.webp",
+    "upgraded": "assets/cards/images/table/upgraded/backstab.webp"
+  },
+  "BAD_LUCK": {
+    "base": "assets/cards/images/table/base/bad-luck.webp"
+  },
+  "BALL_LIGHTNING": {
+    "base": "assets/cards/images/table/base/ball-lightning.webp",
+    "upgraded": "assets/cards/images/table/upgraded/ball-lightning.webp"
+  },
+  "BANSHEES_CRY": {
+    "base": "assets/cards/images/table/base/banshees-cry.webp",
+    "upgraded": "assets/cards/images/table/upgraded/banshees-cry.webp"
+  },
+  "BARRAGE": {
+    "base": "assets/cards/images/table/base/barrage.webp",
+    "upgraded": "assets/cards/images/table/upgraded/barrage.webp"
+  },
+  "BARRICADE": {
+    "base": "assets/cards/images/table/base/barricade.webp",
+    "upgraded": "assets/cards/images/table/upgraded/barricade.webp"
+  },
+  "BASH": {
+    "base": "assets/cards/images/table/base/bash.webp",
+    "upgraded": "assets/cards/images/table/upgraded/bash.webp"
+  },
+  "BATTLE_TRANCE": {
+    "base": "assets/cards/images/table/base/battle-trance.webp",
+    "upgraded": "assets/cards/images/table/upgraded/battle-trance.webp"
+  },
+  "BEACON_OF_HOPE": {
+    "base": "assets/cards/images/table/base/beacon-of-hope.webp",
+    "upgraded": "assets/cards/images/table/upgraded/beacon-of-hope.webp"
+  },
+  "BEAM_CELL": {
+    "base": "assets/cards/images/table/base/beam-cell.webp",
+    "upgraded": "assets/cards/images/table/upgraded/beam-cell.webp"
+  },
+  "BEAT_DOWN": {
+    "base": "assets/cards/images/table/base/beat-down.webp",
+    "upgraded": "assets/cards/images/table/upgraded/beat-down.webp"
+  },
+  "BEAT_INTO_SHAPE": {
+    "base": "assets/cards/images/table/base/beat-into-shape.webp",
+    "upgraded": "assets/cards/images/table/upgraded/beat-into-shape.webp"
+  },
+  "BEGONE": {
+    "base": "assets/cards/images/table/base/begone.webp",
+    "upgraded": "assets/cards/images/table/upgraded/begone.webp"
+  },
+  "BELIEVE_IN_YOU": {
+    "base": "assets/cards/images/table/base/believe-in-you.webp",
+    "upgraded": "assets/cards/images/table/upgraded/believe-in-you.webp"
+  },
+  "BIASED_COGNITION": {
+    "base": "assets/cards/images/table/base/biased-cognition.webp",
+    "upgraded": "assets/cards/images/table/upgraded/biased-cognition.webp"
+  },
+  "BIG_BANG": {
+    "base": "assets/cards/images/table/base/big-bang.webp",
+    "upgraded": "assets/cards/images/table/upgraded/big-bang.webp"
+  },
+  "BLACK_HOLE": {
+    "base": "assets/cards/images/table/base/black-hole.webp",
+    "upgraded": "assets/cards/images/table/upgraded/black-hole.webp"
+  },
+  "BLADE_DANCE": {
+    "base": "assets/cards/images/table/base/blade-dance.webp",
+    "upgraded": "assets/cards/images/table/upgraded/blade-dance.webp"
+  },
+  "BLADE_OF_INK": {
+    "base": "assets/cards/images/table/base/blade-of-ink.webp",
+    "upgraded": "assets/cards/images/table/upgraded/blade-of-ink.webp"
+  },
+  "BLIGHT_STRIKE": {
+    "base": "assets/cards/images/table/base/blight-strike.webp",
+    "upgraded": "assets/cards/images/table/upgraded/blight-strike.webp"
+  },
+  "BLOOD_WALL": {
+    "base": "assets/cards/images/table/base/blood-wall.webp",
+    "upgraded": "assets/cards/images/table/upgraded/blood-wall.webp"
+  },
+  "BLOODLETTING": {
+    "base": "assets/cards/images/table/base/bloodletting.webp",
+    "upgraded": "assets/cards/images/table/upgraded/bloodletting.webp"
+  },
+  "BLUDGEON": {
+    "base": "assets/cards/images/table/base/bludgeon.webp",
+    "upgraded": "assets/cards/images/table/upgraded/bludgeon.webp"
+  },
+  "BLUR": {
+    "base": "assets/cards/images/table/base/blur.webp",
+    "upgraded": "assets/cards/images/table/upgraded/blur.webp"
+  },
+  "BODY_SLAM": {
+    "base": "assets/cards/images/table/base/body-slam.webp",
+    "upgraded": "assets/cards/images/table/upgraded/body-slam.webp"
+  },
+  "BODYGUARD": {
+    "base": "assets/cards/images/table/base/bodyguard.webp",
+    "upgraded": "assets/cards/images/table/upgraded/bodyguard.webp"
+  },
+  "BOLAS": {
+    "base": "assets/cards/images/table/base/bolas.webp",
+    "upgraded": "assets/cards/images/table/upgraded/bolas.webp"
+  },
+  "BOMBARDMENT": {
+    "base": "assets/cards/images/table/base/bombardment.webp",
+    "upgraded": "assets/cards/images/table/upgraded/bombardment.webp"
+  },
+  "BONE_SHARDS": {
+    "base": "assets/cards/images/table/base/bone-shards.webp",
+    "upgraded": "assets/cards/images/table/upgraded/bone-shards.webp"
+  },
+  "BOOST_AWAY": {
+    "base": "assets/cards/images/table/base/boost-away.webp",
+    "upgraded": "assets/cards/images/table/upgraded/boost-away.webp"
+  },
+  "BOOT_SEQUENCE": {
+    "base": "assets/cards/images/table/base/boot-sequence.webp",
+    "upgraded": "assets/cards/images/table/upgraded/boot-sequence.webp"
+  },
+  "BORROWED_TIME": {
+    "base": "assets/cards/images/table/base/borrowed-time.webp",
+    "upgraded": "assets/cards/images/table/upgraded/borrowed-time.webp"
+  },
+  "BOUNCING_FLASK": {
+    "base": "assets/cards/images/table/base/bouncing-flask.webp",
+    "upgraded": "assets/cards/images/table/upgraded/bouncing-flask.webp"
+  },
+  "BRAND": {
+    "base": "assets/cards/images/table/base/brand.webp",
+    "upgraded": "assets/cards/images/table/upgraded/brand.webp"
+  },
+  "BREAK": {
+    "base": "assets/cards/images/table/base/break.webp",
+    "upgraded": "assets/cards/images/table/upgraded/break.webp"
+  },
+  "BREAKTHROUGH": {
+    "base": "assets/cards/images/table/base/breakthrough.webp",
+    "upgraded": "assets/cards/images/table/upgraded/breakthrough.webp"
+  },
+  "BRIGHTEST_FLAME": {
+    "base": "assets/cards/images/table/base/brightest-flame.webp",
+    "upgraded": "assets/cards/images/table/upgraded/brightest-flame.webp"
+  },
+  "BUBBLE_BUBBLE": {
+    "base": "assets/cards/images/table/base/bubble-bubble.webp",
+    "upgraded": "assets/cards/images/table/upgraded/bubble-bubble.webp"
+  },
+  "BUFFER": {
+    "base": "assets/cards/images/table/base/buffer.webp",
+    "upgraded": "assets/cards/images/table/upgraded/buffer.webp"
+  },
+  "BULK_UP": {
+    "base": "assets/cards/images/table/base/bulk-up.webp",
+    "upgraded": "assets/cards/images/table/upgraded/bulk-up.webp"
+  },
+  "BULLET_TIME": {
+    "base": "assets/cards/images/table/base/bullet-time.webp",
+    "upgraded": "assets/cards/images/table/upgraded/bullet-time.webp"
+  },
+  "BULLY": {
+    "base": "assets/cards/images/table/base/bully.webp",
+    "upgraded": "assets/cards/images/table/upgraded/bully.webp"
+  },
+  "BULWARK": {
+    "base": "assets/cards/images/table/base/bulwark.webp",
+    "upgraded": "assets/cards/images/table/upgraded/bulwark.webp"
+  },
+  "BUNDLE_OF_JOY": {
+    "base": "assets/cards/images/table/base/bundle-of-joy.webp",
+    "upgraded": "assets/cards/images/table/upgraded/bundle-of-joy.webp"
+  },
+  "BURNING_PACT": {
+    "base": "assets/cards/images/table/base/burning-pact.webp",
+    "upgraded": "assets/cards/images/table/upgraded/burning-pact.webp"
+  },
+  "BURST": {
+    "base": "assets/cards/images/table/base/burst.webp",
+    "upgraded": "assets/cards/images/table/upgraded/burst.webp"
+  },
+  "BURY": {
+    "base": "assets/cards/images/table/base/bury.webp",
+    "upgraded": "assets/cards/images/table/upgraded/bury.webp"
+  },
+  "BYRD_SWOOP": {
+    "base": "assets/cards/images/table/base/byrd-swoop.webp",
+    "upgraded": "assets/cards/images/table/upgraded/byrd-swoop.webp"
+  },
+  "BYRDONIS_EGG": {
+    "base": "assets/cards/images/table/base/byrdonis-egg.webp"
+  },
+  "CALAMITY": {
+    "base": "assets/cards/images/table/base/calamity.webp",
+    "upgraded": "assets/cards/images/table/upgraded/calamity.webp"
+  },
+  "CALCIFY": {
+    "base": "assets/cards/images/table/base/calcify.webp",
+    "upgraded": "assets/cards/images/table/upgraded/calcify.webp"
+  },
+  "CALCULATED_GAMBLE": {
+    "base": "assets/cards/images/table/base/calculated-gamble.webp",
+    "upgraded": "assets/cards/images/table/upgraded/calculated-gamble.webp"
+  },
+  "CALL_OF_THE_VOID": {
+    "base": "assets/cards/images/table/base/call-of-the-void.webp",
+    "upgraded": "assets/cards/images/table/upgraded/call-of-the-void.webp"
+  },
+  "CALTROPS": {
+    "base": "assets/cards/images/table/base/caltrops.webp",
+    "upgraded": "assets/cards/images/table/upgraded/caltrops.webp"
+  },
+  "CAPACITOR": {
+    "base": "assets/cards/images/table/base/capacitor.webp",
+    "upgraded": "assets/cards/images/table/upgraded/capacitor.webp"
+  },
+  "CAPTURE_SPIRIT": {
+    "base": "assets/cards/images/table/base/capture-spirit.webp",
+    "upgraded": "assets/cards/images/table/upgraded/capture-spirit.webp"
+  },
+  "CASCADE": {
+    "base": "assets/cards/images/table/base/cascade.webp",
+    "upgraded": "assets/cards/images/table/upgraded/cascade.webp"
+  },
+  "CATASTROPHE": {
+    "base": "assets/cards/images/table/base/catastrophe.webp",
+    "upgraded": "assets/cards/images/table/upgraded/catastrophe.webp"
+  },
+  "CELESTIAL_MIGHT": {
+    "base": "assets/cards/images/table/base/celestial-might.webp",
+    "upgraded": "assets/cards/images/table/upgraded/celestial-might.webp"
+  },
+  "CHAOS": {
+    "base": "assets/cards/images/table/base/chaos.webp",
+    "upgraded": "assets/cards/images/table/upgraded/chaos.webp"
+  },
+  "CHARGE": {
+    "base": "assets/cards/images/table/base/charge.webp",
+    "upgraded": "assets/cards/images/table/upgraded/charge.webp"
+  },
+  "CHARGE_BATTERY": {
+    "base": "assets/cards/images/table/base/charge-battery.webp",
+    "upgraded": "assets/cards/images/table/upgraded/charge-battery.webp"
+  },
+  "CHILD_OF_THE_STARS": {
+    "base": "assets/cards/images/table/base/child-of-the-stars.webp",
+    "upgraded": "assets/cards/images/table/upgraded/child-of-the-stars.webp"
+  },
+  "CHILL": {
+    "base": "assets/cards/images/table/base/chill.webp",
+    "upgraded": "assets/cards/images/table/upgraded/chill.webp"
+  },
+  "CINDER": {
+    "base": "assets/cards/images/table/base/cinder.webp",
+    "upgraded": "assets/cards/images/table/upgraded/cinder.webp"
+  },
+  "CLASH": {
+    "base": "assets/cards/images/table/base/clash.webp",
+    "upgraded": "assets/cards/images/table/upgraded/clash.webp"
+  },
+  "CLAW": {
+    "base": "assets/cards/images/table/base/claw.webp",
+    "upgraded": "assets/cards/images/table/upgraded/claw.webp"
+  },
+  "CLEANSE": {
+    "base": "assets/cards/images/table/base/cleanse.webp",
+    "upgraded": "assets/cards/images/table/upgraded/cleanse.webp"
+  },
+  "CLOAK_AND_DAGGER": {
+    "base": "assets/cards/images/table/base/cloak-and-dagger.webp",
+    "upgraded": "assets/cards/images/table/upgraded/cloak-and-dagger.webp"
+  },
+  "CLOAK_OF_STARS": {
+    "base": "assets/cards/images/table/base/cloak-of-stars.webp",
+    "upgraded": "assets/cards/images/table/upgraded/cloak-of-stars.webp"
+  },
+  "CLUMSY": {
+    "base": "assets/cards/images/table/base/clumsy.webp"
+  },
+  "COLD_SNAP": {
+    "base": "assets/cards/images/table/base/cold-snap.webp",
+    "upgraded": "assets/cards/images/table/upgraded/cold-snap.webp"
+  },
+  "COLLISION_COURSE": {
+    "base": "assets/cards/images/table/base/collision-course.webp",
+    "upgraded": "assets/cards/images/table/upgraded/collision-course.webp"
+  },
+  "COLOSSUS": {
+    "base": "assets/cards/images/table/base/colossus.webp",
+    "upgraded": "assets/cards/images/table/upgraded/colossus.webp"
+  },
+  "COMET": {
+    "base": "assets/cards/images/table/base/comet.webp",
+    "upgraded": "assets/cards/images/table/upgraded/comet.webp"
+  },
+  "COMPACT": {
+    "base": "assets/cards/images/table/base/compact.webp",
+    "upgraded": "assets/cards/images/table/upgraded/compact.webp"
+  },
+  "COMPILE_DRIVER": {
+    "base": "assets/cards/images/table/base/compile-driver.webp",
+    "upgraded": "assets/cards/images/table/upgraded/compile-driver.webp"
+  },
+  "CONFLAGRATION": {
+    "base": "assets/cards/images/table/base/conflagration.webp",
+    "upgraded": "assets/cards/images/table/upgraded/conflagration.webp"
+  },
+  "CONQUEROR": {
+    "base": "assets/cards/images/table/base/conqueror.webp",
+    "upgraded": "assets/cards/images/table/upgraded/conqueror.webp"
+  },
+  "CONSUMING_SHADOW": {
+    "base": "assets/cards/images/table/base/consuming-shadow.webp",
+    "upgraded": "assets/cards/images/table/upgraded/consuming-shadow.webp"
+  },
+  "CONVERGENCE": {
+    "base": "assets/cards/images/table/base/convergence.webp",
+    "upgraded": "assets/cards/images/table/upgraded/convergence.webp"
+  },
+  "COOLANT": {
+    "base": "assets/cards/images/table/base/coolant.webp",
+    "upgraded": "assets/cards/images/table/upgraded/coolant.webp"
+  },
+  "COOLHEADED": {
+    "base": "assets/cards/images/table/base/coolheaded.webp",
+    "upgraded": "assets/cards/images/table/upgraded/coolheaded.webp"
+  },
+  "COORDINATE": {
+    "base": "assets/cards/images/table/base/coordinate.webp",
+    "upgraded": "assets/cards/images/table/upgraded/coordinate.webp"
+  },
+  "CORROSIVE_WAVE": {
+    "base": "assets/cards/images/table/base/corrosive-wave.webp",
+    "upgraded": "assets/cards/images/table/upgraded/corrosive-wave.webp"
+  },
+  "CORRUPTION": {
+    "base": "assets/cards/images/table/base/corruption.webp",
+    "upgraded": "assets/cards/images/table/upgraded/corruption.webp"
+  },
+  "COSMIC_INDIFFERENCE": {
+    "base": "assets/cards/images/table/base/cosmic-indifference.webp",
+    "upgraded": "assets/cards/images/table/upgraded/cosmic-indifference.webp"
+  },
+  "COUNTDOWN": {
+    "base": "assets/cards/images/table/base/countdown.webp",
+    "upgraded": "assets/cards/images/table/upgraded/countdown.webp"
+  },
+  "CRASH_LANDING": {
+    "base": "assets/cards/images/table/base/crash-landing.webp",
+    "upgraded": "assets/cards/images/table/upgraded/crash-landing.webp"
+  },
+  "CREATIVE_AI": {
+    "base": "assets/cards/images/table/base/creative-ai.webp",
+    "upgraded": "assets/cards/images/table/upgraded/creative-ai.webp"
+  },
+  "CRESCENT_SPEAR": {
+    "base": "assets/cards/images/table/base/crescent-spear.webp",
+    "upgraded": "assets/cards/images/table/upgraded/crescent-spear.webp"
+  },
+  "CRIMSON_MANTLE": {
+    "base": "assets/cards/images/table/base/crimson-mantle.webp",
+    "upgraded": "assets/cards/images/table/upgraded/crimson-mantle.webp"
+  },
+  "CRUELTY": {
+    "base": "assets/cards/images/table/base/cruelty.webp",
+    "upgraded": "assets/cards/images/table/upgraded/cruelty.webp"
+  },
+  "CRUSH_UNDER": {
+    "base": "assets/cards/images/table/base/crush-under.webp",
+    "upgraded": "assets/cards/images/table/upgraded/crush-under.webp"
+  },
+  "CURSE_OF_THE_BELL": {
+    "base": "assets/cards/images/table/base/curse-of-the-bell.webp"
+  },
+  "DAGGER_SPRAY": {
+    "base": "assets/cards/images/table/base/dagger-spray.webp",
+    "upgraded": "assets/cards/images/table/upgraded/dagger-spray.webp"
+  },
+  "DAGGER_THROW": {
+    "base": "assets/cards/images/table/base/dagger-throw.webp",
+    "upgraded": "assets/cards/images/table/upgraded/dagger-throw.webp"
+  },
+  "DANSE_MACABRE": {
+    "base": "assets/cards/images/table/base/danse-macabre.webp",
+    "upgraded": "assets/cards/images/table/upgraded/danse-macabre.webp"
+  },
+  "DARK_EMBRACE": {
+    "base": "assets/cards/images/table/base/dark-embrace.webp",
+    "upgraded": "assets/cards/images/table/upgraded/dark-embrace.webp"
+  },
+  "DARK_SHACKLES": {
+    "base": "assets/cards/images/table/base/dark-shackles.webp",
+    "upgraded": "assets/cards/images/table/upgraded/dark-shackles.webp"
+  },
+  "DARKNESS": {
+    "base": "assets/cards/images/table/base/darkness.webp",
+    "upgraded": "assets/cards/images/table/upgraded/darkness.webp"
+  },
+  "DASH": {
+    "base": "assets/cards/images/table/base/dash.webp",
+    "upgraded": "assets/cards/images/table/upgraded/dash.webp"
+  },
+  "DEADLY_POISON": {
+    "base": "assets/cards/images/table/base/deadly-poison.webp",
+    "upgraded": "assets/cards/images/table/upgraded/deadly-poison.webp"
+  },
+  "DEATH_MARCH": {
+    "base": "assets/cards/images/table/base/death-march.webp",
+    "upgraded": "assets/cards/images/table/upgraded/death-march.webp"
+  },
+  "DEATHBRINGER": {
+    "base": "assets/cards/images/table/base/deathbringer.webp",
+    "upgraded": "assets/cards/images/table/upgraded/deathbringer.webp"
+  },
+  "DEATHS_DOOR": {
+    "base": "assets/cards/images/table/base/deaths-door.webp",
+    "upgraded": "assets/cards/images/table/upgraded/deaths-door.webp"
+  },
+  "DEBILITATE": {
+    "base": "assets/cards/images/table/base/debilitate.webp",
+    "upgraded": "assets/cards/images/table/upgraded/debilitate.webp"
+  },
+  "DEBT": {
+    "base": "assets/cards/images/table/base/debt.webp"
+  },
+  "DECAY": {
+    "base": "assets/cards/images/table/base/decay.webp"
+  },
+  "DECISIONS_DECISIONS": {
+    "base": "assets/cards/images/table/base/decisions-decisions.webp",
+    "upgraded": "assets/cards/images/table/upgraded/decisions-decisions.webp"
+  },
+  "DEFEND_DEFECT": {
+    "base": "assets/cards/images/table/base/defend-defect.webp",
+    "upgraded": "assets/cards/images/table/upgraded/defend-defect.webp"
+  },
+  "DEFEND_IRONCLAD": {
+    "base": "assets/cards/images/table/base/defend-ironclad.webp",
+    "upgraded": "assets/cards/images/table/upgraded/defend-ironclad.webp"
+  },
+  "DEFEND_NECROBINDER": {
+    "base": "assets/cards/images/table/base/defend-necrobinder.webp",
+    "upgraded": "assets/cards/images/table/upgraded/defend-necrobinder.webp"
+  },
+  "DEFEND_REGENT": {
+    "base": "assets/cards/images/table/base/defend-regent.webp",
+    "upgraded": "assets/cards/images/table/upgraded/defend-regent.webp"
+  },
+  "DEFEND_SILENT": {
+    "base": "assets/cards/images/table/base/defend-silent.webp",
+    "upgraded": "assets/cards/images/table/upgraded/defend-silent.webp"
+  },
+  "DEFILE": {
+    "base": "assets/cards/images/table/base/defile.webp",
+    "upgraded": "assets/cards/images/table/upgraded/defile.webp"
+  },
+  "DEFLECT": {
+    "base": "assets/cards/images/table/base/deflect.webp",
+    "upgraded": "assets/cards/images/table/upgraded/deflect.webp"
+  },
+  "DEFRAGMENT": {
+    "base": "assets/cards/images/table/base/defragment.webp",
+    "upgraded": "assets/cards/images/table/upgraded/defragment.webp"
+  },
+  "DEFY": {
+    "base": "assets/cards/images/table/base/defy.webp",
+    "upgraded": "assets/cards/images/table/upgraded/defy.webp"
+  },
+  "DELAY": {
+    "base": "assets/cards/images/table/base/delay.webp",
+    "upgraded": "assets/cards/images/table/upgraded/delay.webp"
+  },
+  "DEMESNE": {
+    "base": "assets/cards/images/table/base/demesne.webp",
+    "upgraded": "assets/cards/images/table/upgraded/demesne.webp"
+  },
+  "DEMON_FORM": {
+    "base": "assets/cards/images/table/base/demon-form.webp",
+    "upgraded": "assets/cards/images/table/upgraded/demon-form.webp"
+  },
+  "DEMONIC_SHIELD": {
+    "base": "assets/cards/images/table/base/demonic-shield.webp",
+    "upgraded": "assets/cards/images/table/upgraded/demonic-shield.webp"
+  },
+  "DEVASTATE": {
+    "base": "assets/cards/images/table/base/devastate.webp",
+    "upgraded": "assets/cards/images/table/upgraded/devastate.webp"
+  },
+  "DEVOUR_LIFE": {
+    "base": "assets/cards/images/table/base/devour-life.webp",
+    "upgraded": "assets/cards/images/table/upgraded/devour-life.webp"
+  },
+  "DIRGE": {
+    "base": "assets/cards/images/table/base/dirge.webp",
+    "upgraded": "assets/cards/images/table/upgraded/dirge.webp"
+  },
+  "DISCOVERY": {
+    "base": "assets/cards/images/table/base/discovery.webp",
+    "upgraded": "assets/cards/images/table/upgraded/discovery.webp"
+  },
+  "DISMANTLE": {
+    "base": "assets/cards/images/table/base/dismantle.webp",
+    "upgraded": "assets/cards/images/table/upgraded/dismantle.webp"
+  },
+  "DISTRACTION": {
+    "base": "assets/cards/images/table/base/distraction.webp",
+    "upgraded": "assets/cards/images/table/upgraded/distraction.webp"
+  },
+  "DODGE_AND_ROLL": {
+    "base": "assets/cards/images/table/base/dodge-and-roll.webp",
+    "upgraded": "assets/cards/images/table/upgraded/dodge-and-roll.webp"
+  },
+  "DOMINATE": {
+    "base": "assets/cards/images/table/base/dominate.webp",
+    "upgraded": "assets/cards/images/table/upgraded/dominate.webp"
+  },
+  "DOUBLE_ENERGY": {
+    "base": "assets/cards/images/table/base/double-energy.webp",
+    "upgraded": "assets/cards/images/table/upgraded/double-energy.webp"
+  },
+  "DOUBT": {
+    "base": "assets/cards/images/table/base/doubt.webp"
+  },
+  "DRAIN_POWER": {
+    "base": "assets/cards/images/table/base/drain-power.webp",
+    "upgraded": "assets/cards/images/table/upgraded/drain-power.webp"
+  },
+  "DRAMATIC_ENTRANCE": {
+    "base": "assets/cards/images/table/base/dramatic-entrance.webp",
+    "upgraded": "assets/cards/images/table/upgraded/dramatic-entrance.webp"
+  },
+  "DREDGE": {
+    "base": "assets/cards/images/table/base/dredge.webp",
+    "upgraded": "assets/cards/images/table/upgraded/dredge.webp"
+  },
+  "DRUM_OF_BATTLE": {
+    "base": "assets/cards/images/table/base/drum-of-battle.webp",
+    "upgraded": "assets/cards/images/table/upgraded/drum-of-battle.webp"
+  },
+  "DUAL_WIELD": {
+    "base": "assets/cards/images/table/base/dual-wield.webp",
+    "upgraded": "assets/cards/images/table/upgraded/dual-wield.webp"
+  },
+  "DUALCAST": {
+    "base": "assets/cards/images/table/base/dualcast.webp",
+    "upgraded": "assets/cards/images/table/upgraded/dualcast.webp"
+  },
+  "DYING_STAR": {
+    "base": "assets/cards/images/table/base/dying-star.webp",
+    "upgraded": "assets/cards/images/table/upgraded/dying-star.webp"
+  },
+  "ECHO_FORM": {
+    "base": "assets/cards/images/table/base/echo-form.webp",
+    "upgraded": "assets/cards/images/table/upgraded/echo-form.webp"
+  },
+  "ECHOING_SLASH": {
+    "base": "assets/cards/images/table/base/echoing-slash.webp",
+    "upgraded": "assets/cards/images/table/upgraded/echoing-slash.webp"
+  },
+  "EIDOLON": {
+    "base": "assets/cards/images/table/base/eidolon.webp",
+    "upgraded": "assets/cards/images/table/upgraded/eidolon.webp"
+  },
+  "END_OF_DAYS": {
+    "base": "assets/cards/images/table/base/end-of-days.webp",
+    "upgraded": "assets/cards/images/table/upgraded/end-of-days.webp"
+  },
+  "ENERGY_SURGE": {
+    "base": "assets/cards/images/table/base/energy-surge.webp",
+    "upgraded": "assets/cards/images/table/upgraded/energy-surge.webp"
+  },
+  "ENFEEBLING_TOUCH": {
+    "base": "assets/cards/images/table/base/enfeebling-touch.webp",
+    "upgraded": "assets/cards/images/table/upgraded/enfeebling-touch.webp"
+  },
+  "ENLIGHTENMENT": {
+    "base": "assets/cards/images/table/base/enlightenment.webp",
+    "upgraded": "assets/cards/images/table/upgraded/enlightenment.webp"
+  },
+  "ENTHRALLED": {
+    "base": "assets/cards/images/table/base/enthralled.webp"
+  },
+  "ENTRENCH": {
+    "base": "assets/cards/images/table/base/entrench.webp",
+    "upgraded": "assets/cards/images/table/upgraded/entrench.webp"
+  },
+  "ENTROPY": {
+    "base": "assets/cards/images/table/base/entropy.webp",
+    "upgraded": "assets/cards/images/table/upgraded/entropy.webp"
+  },
+  "ENVENOM": {
+    "base": "assets/cards/images/table/base/envenom.webp",
+    "upgraded": "assets/cards/images/table/upgraded/envenom.webp"
+  },
+  "EQUILIBRIUM": {
+    "base": "assets/cards/images/table/base/equilibrium.webp",
+    "upgraded": "assets/cards/images/table/upgraded/equilibrium.webp"
+  },
+  "ERADICATE": {
+    "base": "assets/cards/images/table/base/eradicate.webp",
+    "upgraded": "assets/cards/images/table/upgraded/eradicate.webp"
+  },
+  "ESCAPE_PLAN": {
+    "base": "assets/cards/images/table/base/escape-plan.webp",
+    "upgraded": "assets/cards/images/table/upgraded/escape-plan.webp"
+  },
+  "ETERNAL_ARMOR": {
+    "base": "assets/cards/images/table/base/eternal-armor.webp",
+    "upgraded": "assets/cards/images/table/upgraded/eternal-armor.webp"
+  },
+  "EVIL_EYE": {
+    "base": "assets/cards/images/table/base/evil-eye.webp",
+    "upgraded": "assets/cards/images/table/upgraded/evil-eye.webp"
+  },
+  "EXPECT_A_FIGHT": {
+    "base": "assets/cards/images/table/base/expect-a-fight.webp",
+    "upgraded": "assets/cards/images/table/upgraded/expect-a-fight.webp"
+  },
+  "EXPERTISE": {
+    "base": "assets/cards/images/table/base/expertise.webp",
+    "upgraded": "assets/cards/images/table/upgraded/expertise.webp"
+  },
+  "EXPOSE": {
+    "base": "assets/cards/images/table/base/expose.webp",
+    "upgraded": "assets/cards/images/table/upgraded/expose.webp"
+  },
+  "EXTERMINATE": {
+    "base": "assets/cards/images/table/base/exterminate.webp",
+    "upgraded": "assets/cards/images/table/upgraded/exterminate.webp"
+  },
+  "FALLING_STAR": {
+    "base": "assets/cards/images/table/base/falling-star.webp",
+    "upgraded": "assets/cards/images/table/upgraded/falling-star.webp"
+  },
+  "FAN_OF_KNIVES": {
+    "base": "assets/cards/images/table/base/fan-of-knives.webp",
+    "upgraded": "assets/cards/images/table/upgraded/fan-of-knives.webp"
+  },
+  "FASTEN": {
+    "base": "assets/cards/images/table/base/fasten.webp",
+    "upgraded": "assets/cards/images/table/upgraded/fasten.webp"
+  },
+  "FEAR": {
+    "base": "assets/cards/images/table/base/fear.webp",
+    "upgraded": "assets/cards/images/table/upgraded/fear.webp"
+  },
+  "FEED": {
+    "base": "assets/cards/images/table/base/feed.webp",
+    "upgraded": "assets/cards/images/table/upgraded/feed.webp"
+  },
+  "FEEDING_FRENZY": {
+    "base": "assets/cards/images/table/base/feeding-frenzy.webp",
+    "upgraded": "assets/cards/images/table/upgraded/feeding-frenzy.webp"
+  },
+  "FEEL_NO_PAIN": {
+    "base": "assets/cards/images/table/base/feel-no-pain.webp",
+    "upgraded": "assets/cards/images/table/upgraded/feel-no-pain.webp"
+  },
+  "FERAL": {
+    "base": "assets/cards/images/table/base/feral.webp",
+    "upgraded": "assets/cards/images/table/upgraded/feral.webp"
+  },
+  "FETCH": {
+    "base": "assets/cards/images/table/base/fetch.webp",
+    "upgraded": "assets/cards/images/table/upgraded/fetch.webp"
+  },
+  "FIEND_FIRE": {
+    "base": "assets/cards/images/table/base/fiend-fire.webp",
+    "upgraded": "assets/cards/images/table/upgraded/fiend-fire.webp"
+  },
+  "FIGHT_ME": {
+    "base": "assets/cards/images/table/base/fight-me.webp",
+    "upgraded": "assets/cards/images/table/upgraded/fight-me.webp"
+  },
+  "FIGHT_THROUGH": {
+    "base": "assets/cards/images/table/base/fight-through.webp",
+    "upgraded": "assets/cards/images/table/upgraded/fight-through.webp"
+  },
+  "FINESSE": {
+    "base": "assets/cards/images/table/base/finesse.webp",
+    "upgraded": "assets/cards/images/table/upgraded/finesse.webp"
+  },
+  "FINISHER": {
+    "base": "assets/cards/images/table/base/finisher.webp",
+    "upgraded": "assets/cards/images/table/upgraded/finisher.webp"
+  },
+  "FISTICUFFS": {
+    "base": "assets/cards/images/table/base/fisticuffs.webp",
+    "upgraded": "assets/cards/images/table/upgraded/fisticuffs.webp"
+  },
+  "FLAK_CANNON": {
+    "base": "assets/cards/images/table/base/flak-cannon.webp",
+    "upgraded": "assets/cards/images/table/upgraded/flak-cannon.webp"
+  },
+  "FLAME_BARRIER": {
+    "base": "assets/cards/images/table/base/flame-barrier.webp",
+    "upgraded": "assets/cards/images/table/upgraded/flame-barrier.webp"
+  },
+  "FLANKING": {
+    "base": "assets/cards/images/table/base/flanking.webp",
+    "upgraded": "assets/cards/images/table/upgraded/flanking.webp"
+  },
+  "FLASH_OF_STEEL": {
+    "base": "assets/cards/images/table/base/flash-of-steel.webp",
+    "upgraded": "assets/cards/images/table/upgraded/flash-of-steel.webp"
+  },
+  "FLATTEN": {
+    "base": "assets/cards/images/table/base/flatten.webp",
+    "upgraded": "assets/cards/images/table/upgraded/flatten.webp"
+  },
+  "FLECHETTES": {
+    "base": "assets/cards/images/table/base/flechettes.webp",
+    "upgraded": "assets/cards/images/table/upgraded/flechettes.webp"
+  },
+  "FLICK_FLACK": {
+    "base": "assets/cards/images/table/base/flick-flack.webp",
+    "upgraded": "assets/cards/images/table/upgraded/flick-flack.webp"
+  },
+  "FOCUSED_STRIKE": {
+    "base": "assets/cards/images/table/base/focused-strike.webp",
+    "upgraded": "assets/cards/images/table/upgraded/focused-strike.webp"
+  },
+  "FOLLY": {
+    "base": "assets/cards/images/table/base/folly.webp"
+  },
+  "FOOTWORK": {
+    "base": "assets/cards/images/table/base/footwork.webp",
+    "upgraded": "assets/cards/images/table/upgraded/footwork.webp"
+  },
+  "FORBIDDEN_GRIMOIRE": {
+    "base": "assets/cards/images/table/base/forbidden-grimoire.webp",
+    "upgraded": "assets/cards/images/table/upgraded/forbidden-grimoire.webp"
+  },
+  "FOREGONE_CONCLUSION": {
+    "base": "assets/cards/images/table/base/foregone-conclusion.webp",
+    "upgraded": "assets/cards/images/table/upgraded/foregone-conclusion.webp"
+  },
+  "FORGOTTEN_RITUAL": {
+    "base": "assets/cards/images/table/base/forgotten-ritual.webp",
+    "upgraded": "assets/cards/images/table/upgraded/forgotten-ritual.webp"
+  },
+  "FRIENDSHIP": {
+    "base": "assets/cards/images/table/base/friendship.webp",
+    "upgraded": "assets/cards/images/table/upgraded/friendship.webp"
+  },
+  "FTL": {
+    "base": "assets/cards/images/table/base/ftl.webp",
+    "upgraded": "assets/cards/images/table/upgraded/ftl.webp"
+  },
+  "FURNACE": {
+    "base": "assets/cards/images/table/base/furnace.webp",
+    "upgraded": "assets/cards/images/table/upgraded/furnace.webp"
+  },
+  "FUSION": {
+    "base": "assets/cards/images/table/base/fusion.webp",
+    "upgraded": "assets/cards/images/table/upgraded/fusion.webp"
+  },
+  "GAMMA_BLAST": {
+    "base": "assets/cards/images/table/base/gamma-blast.webp",
+    "upgraded": "assets/cards/images/table/upgraded/gamma-blast.webp"
+  },
+  "GANG_UP": {
+    "base": "assets/cards/images/table/base/gang-up.webp",
+    "upgraded": "assets/cards/images/table/upgraded/gang-up.webp"
+  },
+  "GATHER_LIGHT": {
+    "base": "assets/cards/images/table/base/gather-light.webp",
+    "upgraded": "assets/cards/images/table/upgraded/gather-light.webp"
+  },
+  "GENESIS": {
+    "base": "assets/cards/images/table/base/genesis.webp",
+    "upgraded": "assets/cards/images/table/upgraded/genesis.webp"
+  },
+  "GENETIC_ALGORITHM": {
+    "base": "assets/cards/images/table/base/genetic-algorithm.webp",
+    "upgraded": "assets/cards/images/table/upgraded/genetic-algorithm.webp"
+  },
+  "GLACIER": {
+    "base": "assets/cards/images/table/base/glacier.webp",
+    "upgraded": "assets/cards/images/table/upgraded/glacier.webp"
+  },
+  "GLASSWORK": {
+    "base": "assets/cards/images/table/base/glasswork.webp",
+    "upgraded": "assets/cards/images/table/upgraded/glasswork.webp"
+  },
+  "GLIMMER": {
+    "base": "assets/cards/images/table/base/glimmer.webp",
+    "upgraded": "assets/cards/images/table/upgraded/glimmer.webp"
+  },
+  "GLIMPSE_BEYOND": {
+    "base": "assets/cards/images/table/base/glimpse-beyond.webp",
+    "upgraded": "assets/cards/images/table/upgraded/glimpse-beyond.webp"
+  },
+  "GLITTERSTREAM": {
+    "base": "assets/cards/images/table/base/glitterstream.webp",
+    "upgraded": "assets/cards/images/table/upgraded/glitterstream.webp"
+  },
+  "GLOW": {
+    "base": "assets/cards/images/table/base/glow.webp",
+    "upgraded": "assets/cards/images/table/upgraded/glow.webp"
+  },
+  "GO_FOR_THE_EYES": {
+    "base": "assets/cards/images/table/base/go-for-the-eyes.webp",
+    "upgraded": "assets/cards/images/table/upgraded/go-for-the-eyes.webp"
+  },
+  "GOLD_AXE": {
+    "base": "assets/cards/images/table/base/gold-axe.webp",
+    "upgraded": "assets/cards/images/table/upgraded/gold-axe.webp"
+  },
+  "GRAND_FINALE": {
+    "base": "assets/cards/images/table/base/grand-finale.webp",
+    "upgraded": "assets/cards/images/table/upgraded/grand-finale.webp"
+  },
+  "GRAVE_WARDEN": {
+    "base": "assets/cards/images/table/base/grave-warden.webp",
+    "upgraded": "assets/cards/images/table/upgraded/grave-warden.webp"
+  },
+  "GRAVEBLAST": {
+    "base": "assets/cards/images/table/base/graveblast.webp",
+    "upgraded": "assets/cards/images/table/upgraded/graveblast.webp"
+  },
+  "GREED": {
+    "base": "assets/cards/images/table/base/greed.webp"
+  },
+  "GUARDS": {
+    "base": "assets/cards/images/table/base/guards.webp",
+    "upgraded": "assets/cards/images/table/upgraded/guards.webp"
+  },
+  "GUIDING_STAR": {
+    "base": "assets/cards/images/table/base/guiding-star.webp",
+    "upgraded": "assets/cards/images/table/upgraded/guiding-star.webp"
+  },
+  "GUILTY": {
+    "base": "assets/cards/images/table/base/guilty.webp"
+  },
+  "GUNK_UP": {
+    "base": "assets/cards/images/table/base/gunk-up.webp",
+    "upgraded": "assets/cards/images/table/upgraded/gunk-up.webp"
+  },
+  "HAILSTORM": {
+    "base": "assets/cards/images/table/base/hailstorm.webp",
+    "upgraded": "assets/cards/images/table/upgraded/hailstorm.webp"
+  },
+  "HAMMER_TIME": {
+    "base": "assets/cards/images/table/base/hammer-time.webp",
+    "upgraded": "assets/cards/images/table/upgraded/hammer-time.webp"
+  },
+  "HAND_OF_GREED": {
+    "base": "assets/cards/images/table/base/hand-of-greed.webp",
+    "upgraded": "assets/cards/images/table/upgraded/hand-of-greed.webp"
+  },
+  "HAND_TRICK": {
+    "base": "assets/cards/images/table/base/hand-trick.webp",
+    "upgraded": "assets/cards/images/table/upgraded/hand-trick.webp"
+  },
+  "HANG": {
+    "base": "assets/cards/images/table/base/hang.webp",
+    "upgraded": "assets/cards/images/table/upgraded/hang.webp"
+  },
+  "HAUNT": {
+    "base": "assets/cards/images/table/base/haunt.webp",
+    "upgraded": "assets/cards/images/table/upgraded/haunt.webp"
+  },
+  "HAVOC": {
+    "base": "assets/cards/images/table/base/havoc.webp",
+    "upgraded": "assets/cards/images/table/upgraded/havoc.webp"
+  },
+  "HAZE": {
+    "base": "assets/cards/images/table/base/haze.webp",
+    "upgraded": "assets/cards/images/table/upgraded/haze.webp"
+  },
+  "HEADBUTT": {
+    "base": "assets/cards/images/table/base/headbutt.webp",
+    "upgraded": "assets/cards/images/table/upgraded/headbutt.webp"
+  },
+  "HEAVENLY_DRILL": {
+    "base": "assets/cards/images/table/base/heavenly-drill.webp",
+    "upgraded": "assets/cards/images/table/upgraded/heavenly-drill.webp"
+  },
+  "HEGEMONY": {
+    "base": "assets/cards/images/table/base/hegemony.webp",
+    "upgraded": "assets/cards/images/table/upgraded/hegemony.webp"
+  },
+  "HEIRLOOM_HAMMER": {
+    "base": "assets/cards/images/table/base/heirloom-hammer.webp",
+    "upgraded": "assets/cards/images/table/upgraded/heirloom-hammer.webp"
+  },
+  "HELIX_DRILL": {
+    "base": "assets/cards/images/table/base/helix-drill.webp",
+    "upgraded": "assets/cards/images/table/upgraded/helix-drill.webp"
+  },
+  "HELLO_WORLD": {
+    "base": "assets/cards/images/table/base/hello-world.webp",
+    "upgraded": "assets/cards/images/table/upgraded/hello-world.webp"
+  },
+  "HELLRAISER": {
+    "base": "assets/cards/images/table/base/hellraiser.webp",
+    "upgraded": "assets/cards/images/table/upgraded/hellraiser.webp"
+  },
+  "HEMOKINESIS": {
+    "base": "assets/cards/images/table/base/hemokinesis.webp",
+    "upgraded": "assets/cards/images/table/upgraded/hemokinesis.webp"
+  },
+  "HIDDEN_CACHE": {
+    "base": "assets/cards/images/table/base/hidden-cache.webp",
+    "upgraded": "assets/cards/images/table/upgraded/hidden-cache.webp"
+  },
+  "HIDDEN_DAGGERS": {
+    "base": "assets/cards/images/table/base/hidden-daggers.webp",
+    "upgraded": "assets/cards/images/table/upgraded/hidden-daggers.webp"
+  },
+  "HIDDEN_GEM": {
+    "base": "assets/cards/images/table/base/hidden-gem.webp",
+    "upgraded": "assets/cards/images/table/upgraded/hidden-gem.webp"
+  },
+  "HIGH_FIVE": {
+    "base": "assets/cards/images/table/base/high-five.webp",
+    "upgraded": "assets/cards/images/table/upgraded/high-five.webp"
+  },
+  "HOLOGRAM": {
+    "base": "assets/cards/images/table/base/hologram.webp",
+    "upgraded": "assets/cards/images/table/upgraded/hologram.webp"
+  },
+  "HOTFIX": {
+    "base": "assets/cards/images/table/base/hotfix.webp",
+    "upgraded": "assets/cards/images/table/upgraded/hotfix.webp"
+  },
+  "HOWL_FROM_BEYOND": {
+    "base": "assets/cards/images/table/base/howl-from-beyond.webp",
+    "upgraded": "assets/cards/images/table/upgraded/howl-from-beyond.webp"
+  },
+  "HUDDLE_UP": {
+    "base": "assets/cards/images/table/base/huddle-up.webp",
+    "upgraded": "assets/cards/images/table/upgraded/huddle-up.webp"
+  },
+  "HYPERBEAM": {
+    "base": "assets/cards/images/table/base/hyperbeam.webp",
+    "upgraded": "assets/cards/images/table/upgraded/hyperbeam.webp"
+  },
+  "I_AM_INVINCIBLE": {
+    "base": "assets/cards/images/table/base/i-am-invincible.webp",
+    "upgraded": "assets/cards/images/table/upgraded/i-am-invincible.webp"
+  },
+  "ICE_LANCE": {
+    "base": "assets/cards/images/table/base/ice-lance.webp",
+    "upgraded": "assets/cards/images/table/upgraded/ice-lance.webp"
+  },
+  "IGNITION": {
+    "base": "assets/cards/images/table/base/ignition.webp",
+    "upgraded": "assets/cards/images/table/upgraded/ignition.webp"
+  },
+  "IMPATIENCE": {
+    "base": "assets/cards/images/table/base/impatience.webp",
+    "upgraded": "assets/cards/images/table/upgraded/impatience.webp"
+  },
+  "IMPERVIOUS": {
+    "base": "assets/cards/images/table/base/impervious.webp",
+    "upgraded": "assets/cards/images/table/upgraded/impervious.webp"
+  },
+  "INFERNAL_BLADE": {
+    "base": "assets/cards/images/table/base/infernal-blade.webp",
+    "upgraded": "assets/cards/images/table/upgraded/infernal-blade.webp"
+  },
+  "INFERNO": {
+    "base": "assets/cards/images/table/base/inferno.webp",
+    "upgraded": "assets/cards/images/table/upgraded/inferno.webp"
+  },
+  "INFINITE_BLADES": {
+    "base": "assets/cards/images/table/base/infinite-blades.webp",
+    "upgraded": "assets/cards/images/table/upgraded/infinite-blades.webp"
+  },
+  "INFLAME": {
+    "base": "assets/cards/images/table/base/inflame.webp",
+    "upgraded": "assets/cards/images/table/upgraded/inflame.webp"
+  },
+  "INJURY": {
+    "base": "assets/cards/images/table/base/injury.webp"
+  },
+  "INTERCEPT": {
+    "base": "assets/cards/images/table/base/intercept.webp",
+    "upgraded": "assets/cards/images/table/upgraded/intercept.webp"
+  },
+  "INVOKE": {
+    "base": "assets/cards/images/table/base/invoke.webp",
+    "upgraded": "assets/cards/images/table/upgraded/invoke.webp"
+  },
+  "IRON_WAVE": {
+    "base": "assets/cards/images/table/base/iron-wave.webp",
+    "upgraded": "assets/cards/images/table/upgraded/iron-wave.webp"
+  },
+  "ITERATION": {
+    "base": "assets/cards/images/table/base/iteration.webp",
+    "upgraded": "assets/cards/images/table/upgraded/iteration.webp"
+  },
+  "JACK_OF_ALL_TRADES": {
+    "base": "assets/cards/images/table/base/jack-of-all-trades.webp",
+    "upgraded": "assets/cards/images/table/upgraded/jack-of-all-trades.webp"
+  },
+  "JACKPOT": {
+    "base": "assets/cards/images/table/base/jackpot.webp",
+    "upgraded": "assets/cards/images/table/upgraded/jackpot.webp"
+  },
+  "JUGGERNAUT": {
+    "base": "assets/cards/images/table/base/juggernaut.webp",
+    "upgraded": "assets/cards/images/table/upgraded/juggernaut.webp"
+  },
+  "JUGGLING": {
+    "base": "assets/cards/images/table/base/juggling.webp",
+    "upgraded": "assets/cards/images/table/upgraded/juggling.webp"
+  },
+  "KINGLY_KICK": {
+    "base": "assets/cards/images/table/base/kingly-kick.webp",
+    "upgraded": "assets/cards/images/table/upgraded/kingly-kick.webp"
+  },
+  "KINGLY_PUNCH": {
+    "base": "assets/cards/images/table/base/kingly-punch.webp",
+    "upgraded": "assets/cards/images/table/upgraded/kingly-punch.webp"
+  },
+  "KNIFE_TRAP": {
+    "base": "assets/cards/images/table/base/knife-trap.webp",
+    "upgraded": "assets/cards/images/table/upgraded/knife-trap.webp"
+  },
+  "KNOCKDOWN": {
+    "base": "assets/cards/images/table/base/knockdown.webp",
+    "upgraded": "assets/cards/images/table/upgraded/knockdown.webp"
+  },
+  "KNOCKOUT_BLOW": {
+    "base": "assets/cards/images/table/base/knockout-blow.webp",
+    "upgraded": "assets/cards/images/table/upgraded/knockout-blow.webp"
+  },
+  "KNOW_THY_PLACE": {
+    "base": "assets/cards/images/table/base/know-thy-place.webp",
+    "upgraded": "assets/cards/images/table/upgraded/know-thy-place.webp"
+  },
+  "LANTERN_KEY": {
+    "base": "assets/cards/images/table/base/lantern-key.webp"
+  },
+  "LARGESSE": {
+    "base": "assets/cards/images/table/base/largesse.webp",
+    "upgraded": "assets/cards/images/table/upgraded/largesse.webp"
+  },
+  "LEADING_STRIKE": {
+    "base": "assets/cards/images/table/base/leading-strike.webp",
+    "upgraded": "assets/cards/images/table/upgraded/leading-strike.webp"
+  },
+  "LEAP": {
+    "base": "assets/cards/images/table/base/leap.webp",
+    "upgraded": "assets/cards/images/table/upgraded/leap.webp"
+  },
+  "LEG_SWEEP": {
+    "base": "assets/cards/images/table/base/leg-sweep.webp",
+    "upgraded": "assets/cards/images/table/upgraded/leg-sweep.webp"
+  },
+  "LEGION_OF_BONE": {
+    "base": "assets/cards/images/table/base/legion-of-bone.webp",
+    "upgraded": "assets/cards/images/table/upgraded/legion-of-bone.webp"
+  },
+  "LETHALITY": {
+    "base": "assets/cards/images/table/base/lethality.webp",
+    "upgraded": "assets/cards/images/table/upgraded/lethality.webp"
+  },
+  "LIFT": {
+    "base": "assets/cards/images/table/base/lift.webp",
+    "upgraded": "assets/cards/images/table/upgraded/lift.webp"
+  },
+  "LIGHTNING_ROD": {
+    "base": "assets/cards/images/table/base/lightning-rod.webp",
+    "upgraded": "assets/cards/images/table/upgraded/lightning-rod.webp"
+  },
+  "LOOP": {
+    "base": "assets/cards/images/table/base/loop.webp",
+    "upgraded": "assets/cards/images/table/upgraded/loop.webp"
+  },
+  "LUNAR_BLAST": {
+    "base": "assets/cards/images/table/base/lunar-blast.webp",
+    "upgraded": "assets/cards/images/table/upgraded/lunar-blast.webp"
+  },
+  "MACHINE_LEARNING": {
+    "base": "assets/cards/images/table/base/machine-learning.webp",
+    "upgraded": "assets/cards/images/table/upgraded/machine-learning.webp"
+  },
+  "MAD_SCIENCE": {
+    "base": "assets/cards/images/table/base/mad-science.webp",
+    "upgraded": "assets/cards/images/table/upgraded/mad-science.webp"
+  },
+  "MAKE_IT_SO": {
+    "base": "assets/cards/images/table/base/make-it-so.webp",
+    "upgraded": "assets/cards/images/table/upgraded/make-it-so.webp"
+  },
+  "MALAISE": {
+    "base": "assets/cards/images/table/base/malaise.webp",
+    "upgraded": "assets/cards/images/table/upgraded/malaise.webp"
+  },
+  "MANGLE": {
+    "base": "assets/cards/images/table/base/mangle.webp",
+    "upgraded": "assets/cards/images/table/upgraded/mangle.webp"
+  },
+  "MANIFEST_AUTHORITY": {
+    "base": "assets/cards/images/table/base/manifest-authority.webp",
+    "upgraded": "assets/cards/images/table/upgraded/manifest-authority.webp"
+  },
+  "MASTER_OF_STRATEGY": {
+    "base": "assets/cards/images/table/base/master-of-strategy.webp",
+    "upgraded": "assets/cards/images/table/upgraded/master-of-strategy.webp"
+  },
+  "MASTER_PLANNER": {
+    "base": "assets/cards/images/table/base/master-planner.webp",
+    "upgraded": "assets/cards/images/table/upgraded/master-planner.webp"
+  },
+  "MAUL": {
+    "base": "assets/cards/images/table/base/maul.webp",
+    "upgraded": "assets/cards/images/table/upgraded/maul.webp"
+  },
+  "MAYHEM": {
+    "base": "assets/cards/images/table/base/mayhem.webp",
+    "upgraded": "assets/cards/images/table/upgraded/mayhem.webp"
+  },
+  "MELANCHOLY": {
+    "base": "assets/cards/images/table/base/melancholy.webp",
+    "upgraded": "assets/cards/images/table/upgraded/melancholy.webp"
+  },
+  "MEMENTO_MORI": {
+    "base": "assets/cards/images/table/base/memento-mori.webp",
+    "upgraded": "assets/cards/images/table/upgraded/memento-mori.webp"
+  },
+  "METAMORPHOSIS": {
+    "base": "assets/cards/images/table/base/metamorphosis.webp",
+    "upgraded": "assets/cards/images/table/upgraded/metamorphosis.webp"
+  },
+  "METEOR_SHOWER": {
+    "base": "assets/cards/images/table/base/meteor-shower.webp",
+    "upgraded": "assets/cards/images/table/upgraded/meteor-shower.webp"
+  },
+  "METEOR_STRIKE": {
+    "base": "assets/cards/images/table/base/meteor-strike.webp",
+    "upgraded": "assets/cards/images/table/upgraded/meteor-strike.webp"
+  },
+  "MIMIC": {
+    "base": "assets/cards/images/table/base/mimic.webp",
+    "upgraded": "assets/cards/images/table/upgraded/mimic.webp"
+  },
+  "MIND_BLAST": {
+    "base": "assets/cards/images/table/base/mind-blast.webp",
+    "upgraded": "assets/cards/images/table/upgraded/mind-blast.webp"
+  },
+  "MIRAGE": {
+    "base": "assets/cards/images/table/base/mirage.webp",
+    "upgraded": "assets/cards/images/table/upgraded/mirage.webp"
+  },
+  "MISERY": {
+    "base": "assets/cards/images/table/base/misery.webp",
+    "upgraded": "assets/cards/images/table/upgraded/misery.webp"
+  },
+  "MODDED": {
+    "base": "assets/cards/images/table/base/modded.webp",
+    "upgraded": "assets/cards/images/table/upgraded/modded.webp"
+  },
+  "MOLTEN_FIST": {
+    "base": "assets/cards/images/table/base/molten-fist.webp",
+    "upgraded": "assets/cards/images/table/upgraded/molten-fist.webp"
+  },
+  "MOMENTUM_STRIKE": {
+    "base": "assets/cards/images/table/base/momentum-strike.webp",
+    "upgraded": "assets/cards/images/table/upgraded/momentum-strike.webp"
+  },
+  "MONARCHS_GAZE": {
+    "base": "assets/cards/images/table/base/monarchs-gaze.webp",
+    "upgraded": "assets/cards/images/table/upgraded/monarchs-gaze.webp"
+  },
+  "MONOLOGUE": {
+    "base": "assets/cards/images/table/base/monologue.webp",
+    "upgraded": "assets/cards/images/table/upgraded/monologue.webp"
+  },
+  "MULTI_CAST": {
+    "base": "assets/cards/images/table/base/multi-cast.webp",
+    "upgraded": "assets/cards/images/table/upgraded/multi-cast.webp"
+  },
+  "MURDER": {
+    "base": "assets/cards/images/table/base/murder.webp",
+    "upgraded": "assets/cards/images/table/upgraded/murder.webp"
+  },
+  "NECRO_MASTERY": {
+    "base": "assets/cards/images/table/base/necro-mastery.webp",
+    "upgraded": "assets/cards/images/table/upgraded/necro-mastery.webp"
+  },
+  "NEGATIVE_PULSE": {
+    "base": "assets/cards/images/table/base/negative-pulse.webp",
+    "upgraded": "assets/cards/images/table/upgraded/negative-pulse.webp"
+  },
+  "NEOWS_FURY": {
+    "base": "assets/cards/images/table/base/neows-fury.webp",
+    "upgraded": "assets/cards/images/table/upgraded/neows-fury.webp"
+  },
+  "NEUROSURGE": {
+    "base": "assets/cards/images/table/base/neurosurge.webp",
+    "upgraded": "assets/cards/images/table/upgraded/neurosurge.webp"
+  },
+  "NEUTRALIZE": {
+    "base": "assets/cards/images/table/base/neutralize.webp",
+    "upgraded": "assets/cards/images/table/upgraded/neutralize.webp"
+  },
+  "NEUTRON_AEGIS": {
+    "base": "assets/cards/images/table/base/neutron-aegis.webp",
+    "upgraded": "assets/cards/images/table/upgraded/neutron-aegis.webp"
+  },
+  "NIGHTMARE": {
+    "base": "assets/cards/images/table/base/nightmare.webp",
+    "upgraded": "assets/cards/images/table/upgraded/nightmare.webp"
+  },
+  "NO_ESCAPE": {
+    "base": "assets/cards/images/table/base/no-escape.webp",
+    "upgraded": "assets/cards/images/table/upgraded/no-escape.webp"
+  },
+  "NORMALITY": {
+    "base": "assets/cards/images/table/base/normality.webp"
+  },
+  "NOSTALGIA": {
+    "base": "assets/cards/images/table/base/nostalgia.webp",
+    "upgraded": "assets/cards/images/table/upgraded/nostalgia.webp"
+  },
+  "NOT_YET": {
+    "base": "assets/cards/images/table/base/not-yet.webp",
+    "upgraded": "assets/cards/images/table/upgraded/not-yet.webp"
+  },
+  "NOXIOUS_FUMES": {
+    "base": "assets/cards/images/table/base/noxious-fumes.webp",
+    "upgraded": "assets/cards/images/table/upgraded/noxious-fumes.webp"
+  },
+  "NULL": {
+    "base": "assets/cards/images/table/base/null.webp",
+    "upgraded": "assets/cards/images/table/upgraded/null.webp"
+  },
+  "OBLIVION": {
+    "base": "assets/cards/images/table/base/oblivion.webp",
+    "upgraded": "assets/cards/images/table/upgraded/oblivion.webp"
+  },
+  "OFFERING": {
+    "base": "assets/cards/images/table/base/offering.webp",
+    "upgraded": "assets/cards/images/table/upgraded/offering.webp"
+  },
+  "OMNISLICE": {
+    "base": "assets/cards/images/table/base/omnislice.webp",
+    "upgraded": "assets/cards/images/table/upgraded/omnislice.webp"
+  },
+  "ONE_TWO_PUNCH": {
+    "base": "assets/cards/images/table/base/one-two-punch.webp",
+    "upgraded": "assets/cards/images/table/upgraded/one-two-punch.webp"
+  },
+  "ORBIT": {
+    "base": "assets/cards/images/table/base/orbit.webp",
+    "upgraded": "assets/cards/images/table/upgraded/orbit.webp"
+  },
+  "OUTBREAK": {
+    "base": "assets/cards/images/table/base/outbreak.webp",
+    "upgraded": "assets/cards/images/table/upgraded/outbreak.webp"
+  },
+  "OUTMANEUVER": {
+    "base": "assets/cards/images/table/base/outmaneuver.webp",
+    "upgraded": "assets/cards/images/table/upgraded/outmaneuver.webp"
+  },
+  "OVERCLOCK": {
+    "base": "assets/cards/images/table/base/overclock.webp",
+    "upgraded": "assets/cards/images/table/upgraded/overclock.webp"
+  },
+  "PACTS_END": {
+    "base": "assets/cards/images/table/base/pacts-end.webp",
+    "upgraded": "assets/cards/images/table/upgraded/pacts-end.webp"
+  },
+  "PAGESTORM": {
+    "base": "assets/cards/images/table/base/pagestorm.webp",
+    "upgraded": "assets/cards/images/table/upgraded/pagestorm.webp"
+  },
+  "PALE_BLUE_DOT": {
+    "base": "assets/cards/images/table/base/pale-blue-dot.webp",
+    "upgraded": "assets/cards/images/table/upgraded/pale-blue-dot.webp"
+  },
+  "PANACHE": {
+    "base": "assets/cards/images/table/base/panache.webp",
+    "upgraded": "assets/cards/images/table/upgraded/panache.webp"
+  },
+  "PANIC_BUTTON": {
+    "base": "assets/cards/images/table/base/panic-button.webp",
+    "upgraded": "assets/cards/images/table/upgraded/panic-button.webp"
+  },
+  "PARRY": {
+    "base": "assets/cards/images/table/base/parry.webp",
+    "upgraded": "assets/cards/images/table/upgraded/parry.webp"
+  },
+  "PARSE": {
+    "base": "assets/cards/images/table/base/parse.webp",
+    "upgraded": "assets/cards/images/table/upgraded/parse.webp"
+  },
+  "PARTICLE_WALL": {
+    "base": "assets/cards/images/table/base/particle-wall.webp",
+    "upgraded": "assets/cards/images/table/upgraded/particle-wall.webp"
+  },
+  "PATTER": {
+    "base": "assets/cards/images/table/base/patter.webp",
+    "upgraded": "assets/cards/images/table/upgraded/patter.webp"
+  },
+  "PECK": {
+    "base": "assets/cards/images/table/base/peck.webp",
+    "upgraded": "assets/cards/images/table/upgraded/peck.webp"
+  },
+  "PERFECTED_STRIKE": {
+    "base": "assets/cards/images/table/base/perfected-strike.webp",
+    "upgraded": "assets/cards/images/table/upgraded/perfected-strike.webp"
+  },
+  "PHANTOM_BLADES": {
+    "base": "assets/cards/images/table/base/phantom-blades.webp",
+    "upgraded": "assets/cards/images/table/upgraded/phantom-blades.webp"
+  },
+  "PHOTON_CUT": {
+    "base": "assets/cards/images/table/base/photon-cut.webp",
+    "upgraded": "assets/cards/images/table/upgraded/photon-cut.webp"
+  },
+  "PIERCING_WAIL": {
+    "base": "assets/cards/images/table/base/piercing-wail.webp",
+    "upgraded": "assets/cards/images/table/upgraded/piercing-wail.webp"
+  },
+  "PILLAGE": {
+    "base": "assets/cards/images/table/base/pillage.webp",
+    "upgraded": "assets/cards/images/table/upgraded/pillage.webp"
+  },
+  "PILLAR_OF_CREATION": {
+    "base": "assets/cards/images/table/base/pillar-of-creation.webp",
+    "upgraded": "assets/cards/images/table/upgraded/pillar-of-creation.webp"
+  },
+  "PINPOINT": {
+    "base": "assets/cards/images/table/base/pinpoint.webp",
+    "upgraded": "assets/cards/images/table/upgraded/pinpoint.webp"
+  },
+  "POISONED_STAB": {
+    "base": "assets/cards/images/table/base/poisoned-stab.webp",
+    "upgraded": "assets/cards/images/table/upgraded/poisoned-stab.webp"
+  },
+  "POKE": {
+    "base": "assets/cards/images/table/base/poke.webp",
+    "upgraded": "assets/cards/images/table/upgraded/poke.webp"
+  },
+  "POMMEL_STRIKE": {
+    "base": "assets/cards/images/table/base/pommel-strike.webp",
+    "upgraded": "assets/cards/images/table/upgraded/pommel-strike.webp"
+  },
+  "POOR_SLEEP": {
+    "base": "assets/cards/images/table/base/poor-sleep.webp"
+  },
+  "POUNCE": {
+    "base": "assets/cards/images/table/base/pounce.webp",
+    "upgraded": "assets/cards/images/table/upgraded/pounce.webp"
+  },
+  "PRECISE_CUT": {
+    "base": "assets/cards/images/table/base/precise-cut.webp",
+    "upgraded": "assets/cards/images/table/upgraded/precise-cut.webp"
+  },
+  "PREDATOR": {
+    "base": "assets/cards/images/table/base/predator.webp",
+    "upgraded": "assets/cards/images/table/upgraded/predator.webp"
+  },
+  "PREP_TIME": {
+    "base": "assets/cards/images/table/base/prep-time.webp",
+    "upgraded": "assets/cards/images/table/upgraded/prep-time.webp"
+  },
+  "PREPARED": {
+    "base": "assets/cards/images/table/base/prepared.webp",
+    "upgraded": "assets/cards/images/table/upgraded/prepared.webp"
+  },
+  "PRIMAL_FORCE": {
+    "base": "assets/cards/images/table/base/primal-force.webp",
+    "upgraded": "assets/cards/images/table/upgraded/primal-force.webp"
+  },
+  "PRODUCTION": {
+    "base": "assets/cards/images/table/base/production.webp",
+    "upgraded": "assets/cards/images/table/upgraded/production.webp"
+  },
+  "PROLONG": {
+    "base": "assets/cards/images/table/base/prolong.webp",
+    "upgraded": "assets/cards/images/table/upgraded/prolong.webp"
+  },
+  "PROPHESIZE": {
+    "base": "assets/cards/images/table/base/prophesize.webp",
+    "upgraded": "assets/cards/images/table/upgraded/prophesize.webp"
+  },
+  "PROTECTOR": {
+    "base": "assets/cards/images/table/base/protector.webp",
+    "upgraded": "assets/cards/images/table/upgraded/protector.webp"
+  },
+  "PROWESS": {
+    "base": "assets/cards/images/table/base/prowess.webp",
+    "upgraded": "assets/cards/images/table/upgraded/prowess.webp"
+  },
+  "PULL_AGGRO": {
+    "base": "assets/cards/images/table/base/pull-aggro.webp",
+    "upgraded": "assets/cards/images/table/upgraded/pull-aggro.webp"
+  },
+  "PULL_FROM_BELOW": {
+    "base": "assets/cards/images/table/base/pull-from-below.webp",
+    "upgraded": "assets/cards/images/table/upgraded/pull-from-below.webp"
+  },
+  "PURITY": {
+    "base": "assets/cards/images/table/base/purity.webp",
+    "upgraded": "assets/cards/images/table/upgraded/purity.webp"
+  },
+  "PUTREFY": {
+    "base": "assets/cards/images/table/base/putrefy.webp",
+    "upgraded": "assets/cards/images/table/upgraded/putrefy.webp"
+  },
+  "PYRE": {
+    "base": "assets/cards/images/table/base/pyre.webp",
+    "upgraded": "assets/cards/images/table/upgraded/pyre.webp"
+  },
+  "QUADCAST": {
+    "base": "assets/cards/images/table/base/quadcast.webp",
+    "upgraded": "assets/cards/images/table/upgraded/quadcast.webp"
+  },
+  "QUASAR": {
+    "base": "assets/cards/images/table/base/quasar.webp",
+    "upgraded": "assets/cards/images/table/upgraded/quasar.webp"
+  },
+  "RADIATE": {
+    "base": "assets/cards/images/table/base/radiate.webp",
+    "upgraded": "assets/cards/images/table/upgraded/radiate.webp"
+  },
+  "RAGE": {
+    "base": "assets/cards/images/table/base/rage.webp",
+    "upgraded": "assets/cards/images/table/upgraded/rage.webp"
+  },
+  "RAINBOW": {
+    "base": "assets/cards/images/table/base/rainbow.webp",
+    "upgraded": "assets/cards/images/table/upgraded/rainbow.webp"
+  },
+  "RALLY": {
+    "base": "assets/cards/images/table/base/rally.webp",
+    "upgraded": "assets/cards/images/table/upgraded/rally.webp"
+  },
+  "RAMPAGE": {
+    "base": "assets/cards/images/table/base/rampage.webp",
+    "upgraded": "assets/cards/images/table/upgraded/rampage.webp"
+  },
+  "RATTLE": {
+    "base": "assets/cards/images/table/base/rattle.webp",
+    "upgraded": "assets/cards/images/table/upgraded/rattle.webp"
+  },
+  "REANIMATE": {
+    "base": "assets/cards/images/table/base/reanimate.webp",
+    "upgraded": "assets/cards/images/table/upgraded/reanimate.webp"
+  },
+  "REAP": {
+    "base": "assets/cards/images/table/base/reap.webp",
+    "upgraded": "assets/cards/images/table/upgraded/reap.webp"
+  },
+  "REAPER_FORM": {
+    "base": "assets/cards/images/table/base/reaper-form.webp",
+    "upgraded": "assets/cards/images/table/upgraded/reaper-form.webp"
+  },
+  "REAVE": {
+    "base": "assets/cards/images/table/base/reave.webp",
+    "upgraded": "assets/cards/images/table/upgraded/reave.webp"
+  },
+  "REBOOT": {
+    "base": "assets/cards/images/table/base/reboot.webp",
+    "upgraded": "assets/cards/images/table/upgraded/reboot.webp"
+  },
+  "REBOUND": {
+    "base": "assets/cards/images/table/base/rebound.webp",
+    "upgraded": "assets/cards/images/table/upgraded/rebound.webp"
+  },
+  "REFINE_BLADE": {
+    "base": "assets/cards/images/table/base/refine-blade.webp",
+    "upgraded": "assets/cards/images/table/upgraded/refine-blade.webp"
+  },
+  "REFLECT": {
+    "base": "assets/cards/images/table/base/reflect.webp",
+    "upgraded": "assets/cards/images/table/upgraded/reflect.webp"
+  },
+  "REFLEX": {
+    "base": "assets/cards/images/table/base/reflex.webp",
+    "upgraded": "assets/cards/images/table/upgraded/reflex.webp"
+  },
+  "REFRACT": {
+    "base": "assets/cards/images/table/base/refract.webp",
+    "upgraded": "assets/cards/images/table/upgraded/refract.webp"
+  },
+  "REGRET": {
+    "base": "assets/cards/images/table/base/regret.webp"
+  },
+  "RELAX": {
+    "base": "assets/cards/images/table/base/relax.webp",
+    "upgraded": "assets/cards/images/table/upgraded/relax.webp"
+  },
+  "REND": {
+    "base": "assets/cards/images/table/base/rend.webp",
+    "upgraded": "assets/cards/images/table/upgraded/rend.webp"
+  },
+  "RESONANCE": {
+    "base": "assets/cards/images/table/base/resonance.webp",
+    "upgraded": "assets/cards/images/table/upgraded/resonance.webp"
+  },
+  "RESTLESSNESS": {
+    "base": "assets/cards/images/table/base/restlessness.webp",
+    "upgraded": "assets/cards/images/table/upgraded/restlessness.webp"
+  },
+  "RICOCHET": {
+    "base": "assets/cards/images/table/base/ricochet.webp",
+    "upgraded": "assets/cards/images/table/upgraded/ricochet.webp"
+  },
+  "RIGHT_HAND_HAND": {
+    "base": "assets/cards/images/table/base/right-hand-hand.webp",
+    "upgraded": "assets/cards/images/table/upgraded/right-hand-hand.webp"
+  },
+  "RIP_AND_TEAR": {
+    "base": "assets/cards/images/table/base/rip-and-tear.webp",
+    "upgraded": "assets/cards/images/table/upgraded/rip-and-tear.webp"
+  },
+  "ROCKET_PUNCH": {
+    "base": "assets/cards/images/table/base/rocket-punch.webp",
+    "upgraded": "assets/cards/images/table/upgraded/rocket-punch.webp"
+  },
+  "ROLLING_BOULDER": {
+    "base": "assets/cards/images/table/base/rolling-boulder.webp",
+    "upgraded": "assets/cards/images/table/upgraded/rolling-boulder.webp"
+  },
+  "ROYAL_GAMBLE": {
+    "base": "assets/cards/images/table/base/royal-gamble.webp",
+    "upgraded": "assets/cards/images/table/upgraded/royal-gamble.webp"
+  },
+  "ROYALTIES": {
+    "base": "assets/cards/images/table/base/royalties.webp",
+    "upgraded": "assets/cards/images/table/upgraded/royalties.webp"
+  },
+  "RUPTURE": {
+    "base": "assets/cards/images/table/base/rupture.webp",
+    "upgraded": "assets/cards/images/table/upgraded/rupture.webp"
+  },
+  "SACRIFICE": {
+    "base": "assets/cards/images/table/base/sacrifice.webp",
+    "upgraded": "assets/cards/images/table/upgraded/sacrifice.webp"
+  },
+  "SALVO": {
+    "base": "assets/cards/images/table/base/salvo.webp",
+    "upgraded": "assets/cards/images/table/upgraded/salvo.webp"
+  },
+  "SCARE": {
+    "base": "assets/cards/images/table/base/scare.webp",
+    "upgraded": "assets/cards/images/table/upgraded/scare.webp"
+  },
+  "SCAVENGE": {
+    "base": "assets/cards/images/table/base/scavenge.webp",
+    "upgraded": "assets/cards/images/table/upgraded/scavenge.webp"
+  },
+  "SCOURGE": {
+    "base": "assets/cards/images/table/base/scourge.webp",
+    "upgraded": "assets/cards/images/table/upgraded/scourge.webp"
+  },
+  "SCRAPE": {
+    "base": "assets/cards/images/table/base/scrape.webp",
+    "upgraded": "assets/cards/images/table/upgraded/scrape.webp"
+  },
+  "SCRAWL": {
+    "base": "assets/cards/images/table/base/scrawl.webp",
+    "upgraded": "assets/cards/images/table/upgraded/scrawl.webp"
+  },
+  "SCULPTING_STRIKE": {
+    "base": "assets/cards/images/table/base/sculpting-strike.webp",
+    "upgraded": "assets/cards/images/table/upgraded/sculpting-strike.webp"
+  },
+  "SEANCE": {
+    "base": "assets/cards/images/table/base/seance.webp",
+    "upgraded": "assets/cards/images/table/upgraded/seance.webp"
+  },
+  "SECOND_WIND": {
+    "base": "assets/cards/images/table/base/second-wind.webp",
+    "upgraded": "assets/cards/images/table/upgraded/second-wind.webp"
+  },
+  "SECRET_TECHNIQUE": {
+    "base": "assets/cards/images/table/base/secret-technique.webp",
+    "upgraded": "assets/cards/images/table/upgraded/secret-technique.webp"
+  },
+  "SECRET_WEAPON": {
+    "base": "assets/cards/images/table/base/secret-weapon.webp",
+    "upgraded": "assets/cards/images/table/upgraded/secret-weapon.webp"
+  },
+  "SEEKER_STRIKE": {
+    "base": "assets/cards/images/table/base/seeker-strike.webp",
+    "upgraded": "assets/cards/images/table/upgraded/seeker-strike.webp"
+  },
+  "SEEKING_EDGE": {
+    "base": "assets/cards/images/table/base/seeking-edge.webp",
+    "upgraded": "assets/cards/images/table/upgraded/seeking-edge.webp"
+  },
+  "SENTRY_MODE": {
+    "base": "assets/cards/images/table/base/sentry-mode.webp",
+    "upgraded": "assets/cards/images/table/upgraded/sentry-mode.webp"
+  },
+  "SERPENT_FORM": {
+    "base": "assets/cards/images/table/base/serpent-form.webp",
+    "upgraded": "assets/cards/images/table/upgraded/serpent-form.webp"
+  },
+  "SETUP_STRIKE": {
+    "base": "assets/cards/images/table/base/setup-strike.webp",
+    "upgraded": "assets/cards/images/table/upgraded/setup-strike.webp"
+  },
+  "SEVEN_STARS": {
+    "base": "assets/cards/images/table/base/seven-stars.webp",
+    "upgraded": "assets/cards/images/table/upgraded/seven-stars.webp"
+  },
+  "SEVERANCE": {
+    "base": "assets/cards/images/table/base/severance.webp",
+    "upgraded": "assets/cards/images/table/upgraded/severance.webp"
+  },
+  "SHADOW_SHIELD": {
+    "base": "assets/cards/images/table/base/shadow-shield.webp",
+    "upgraded": "assets/cards/images/table/upgraded/shadow-shield.webp"
+  },
+  "SHADOW_STEP": {
+    "base": "assets/cards/images/table/base/shadow-step.webp",
+    "upgraded": "assets/cards/images/table/upgraded/shadow-step.webp"
+  },
+  "SHADOWMELD": {
+    "base": "assets/cards/images/table/base/shadowmeld.webp",
+    "upgraded": "assets/cards/images/table/upgraded/shadowmeld.webp"
+  },
+  "SHAME": {
+    "base": "assets/cards/images/table/base/shame.webp"
+  },
+  "SHARED_FATE": {
+    "base": "assets/cards/images/table/base/shared-fate.webp",
+    "upgraded": "assets/cards/images/table/upgraded/shared-fate.webp"
+  },
+  "SHATTER": {
+    "base": "assets/cards/images/table/base/shatter.webp",
+    "upgraded": "assets/cards/images/table/upgraded/shatter.webp"
+  },
+  "SHINING_STRIKE": {
+    "base": "assets/cards/images/table/base/shining-strike.webp",
+    "upgraded": "assets/cards/images/table/upgraded/shining-strike.webp"
+  },
+  "SHOCKWAVE": {
+    "base": "assets/cards/images/table/base/shockwave.webp",
+    "upgraded": "assets/cards/images/table/upgraded/shockwave.webp"
+  },
+  "SHROUD": {
+    "base": "assets/cards/images/table/base/shroud.webp",
+    "upgraded": "assets/cards/images/table/upgraded/shroud.webp"
+  },
+  "SHRUG_IT_OFF": {
+    "base": "assets/cards/images/table/base/shrug-it-off.webp",
+    "upgraded": "assets/cards/images/table/upgraded/shrug-it-off.webp"
+  },
+  "SIC_EM": {
+    "base": "assets/cards/images/table/base/sic-em.webp",
+    "upgraded": "assets/cards/images/table/upgraded/sic-em.webp"
+  },
+  "SIGNAL_BOOST": {
+    "base": "assets/cards/images/table/base/signal-boost.webp",
+    "upgraded": "assets/cards/images/table/upgraded/signal-boost.webp"
+  },
+  "SKEWER": {
+    "base": "assets/cards/images/table/base/skewer.webp",
+    "upgraded": "assets/cards/images/table/upgraded/skewer.webp"
+  },
+  "SKIM": {
+    "base": "assets/cards/images/table/base/skim.webp",
+    "upgraded": "assets/cards/images/table/upgraded/skim.webp"
+  },
+  "SLEIGHT_OF_FLESH": {
+    "base": "assets/cards/images/table/base/sleight-of-flesh.webp",
+    "upgraded": "assets/cards/images/table/upgraded/sleight-of-flesh.webp"
+  },
+  "SLICE": {
+    "base": "assets/cards/images/table/base/slice.webp",
+    "upgraded": "assets/cards/images/table/upgraded/slice.webp"
+  },
+  "SMOKESTACK": {
+    "base": "assets/cards/images/table/base/smokestack.webp",
+    "upgraded": "assets/cards/images/table/upgraded/smokestack.webp"
+  },
+  "SNAKEBITE": {
+    "base": "assets/cards/images/table/base/snakebite.webp",
+    "upgraded": "assets/cards/images/table/upgraded/snakebite.webp"
+  },
+  "SNAP": {
+    "base": "assets/cards/images/table/base/snap.webp",
+    "upgraded": "assets/cards/images/table/upgraded/snap.webp"
+  },
+  "SNEAKY": {
+    "base": "assets/cards/images/table/base/sneaky.webp",
+    "upgraded": "assets/cards/images/table/upgraded/sneaky.webp"
+  },
+  "SOLAR_STRIKE": {
+    "base": "assets/cards/images/table/base/solar-strike.webp",
+    "upgraded": "assets/cards/images/table/upgraded/solar-strike.webp"
+  },
+  "SOUL_STORM": {
+    "base": "assets/cards/images/table/base/soul-storm.webp",
+    "upgraded": "assets/cards/images/table/upgraded/soul-storm.webp"
+  },
+  "SOW": {
+    "base": "assets/cards/images/table/base/sow.webp",
+    "upgraded": "assets/cards/images/table/upgraded/sow.webp"
+  },
+  "SPECTRUM_SHIFT": {
+    "base": "assets/cards/images/table/base/spectrum-shift.webp",
+    "upgraded": "assets/cards/images/table/upgraded/spectrum-shift.webp"
+  },
+  "SPEEDSTER": {
+    "base": "assets/cards/images/table/base/speedster.webp",
+    "upgraded": "assets/cards/images/table/upgraded/speedster.webp"
+  },
+  "SPINNER": {
+    "base": "assets/cards/images/table/base/spinner.webp",
+    "upgraded": "assets/cards/images/table/upgraded/spinner.webp"
+  },
+  "SPIRIT_OF_ASH": {
+    "base": "assets/cards/images/table/base/spirit-of-ash.webp",
+    "upgraded": "assets/cards/images/table/upgraded/spirit-of-ash.webp"
+  },
+  "SPITE": {
+    "base": "assets/cards/images/table/base/spite.webp",
+    "upgraded": "assets/cards/images/table/upgraded/spite.webp"
+  },
+  "SPLASH": {
+    "base": "assets/cards/images/table/base/splash.webp",
+    "upgraded": "assets/cards/images/table/upgraded/splash.webp"
+  },
+  "SPOILS_MAP": {
+    "base": "assets/cards/images/table/base/spoils-map.webp"
+  },
+  "SPOILS_OF_BATTLE": {
+    "base": "assets/cards/images/table/base/spoils-of-battle.webp",
+    "upgraded": "assets/cards/images/table/upgraded/spoils-of-battle.webp"
+  },
+  "SPORE_MIND": {
+    "base": "assets/cards/images/table/base/spore-mind.webp"
+  },
+  "SPUR": {
+    "base": "assets/cards/images/table/base/spur.webp",
+    "upgraded": "assets/cards/images/table/upgraded/spur.webp"
+  },
+  "SQUASH": {
+    "base": "assets/cards/images/table/base/squash.webp",
+    "upgraded": "assets/cards/images/table/upgraded/squash.webp"
+  },
+  "SQUEEZE": {
+    "base": "assets/cards/images/table/base/squeeze.webp",
+    "upgraded": "assets/cards/images/table/upgraded/squeeze.webp"
+  },
+  "STACK": {
+    "base": "assets/cards/images/table/base/stack.webp",
+    "upgraded": "assets/cards/images/table/upgraded/stack.webp"
+  },
+  "STAMPEDE": {
+    "base": "assets/cards/images/table/base/stampede.webp",
+    "upgraded": "assets/cards/images/table/upgraded/stampede.webp"
+  },
+  "STARDUST": {
+    "base": "assets/cards/images/table/base/stardust.webp",
+    "upgraded": "assets/cards/images/table/upgraded/stardust.webp"
+  },
+  "STOKE": {
+    "base": "assets/cards/images/table/base/stoke.webp",
+    "upgraded": "assets/cards/images/table/upgraded/stoke.webp"
+  },
+  "STOMP": {
+    "base": "assets/cards/images/table/base/stomp.webp",
+    "upgraded": "assets/cards/images/table/upgraded/stomp.webp"
+  },
+  "STONE_ARMOR": {
+    "base": "assets/cards/images/table/base/stone-armor.webp",
+    "upgraded": "assets/cards/images/table/upgraded/stone-armor.webp"
+  },
+  "STORM": {
+    "base": "assets/cards/images/table/base/storm.webp",
+    "upgraded": "assets/cards/images/table/upgraded/storm.webp"
+  },
+  "STORM_OF_STEEL": {
+    "base": "assets/cards/images/table/base/storm-of-steel.webp",
+    "upgraded": "assets/cards/images/table/upgraded/storm-of-steel.webp"
+  },
+  "STRANGLE": {
+    "base": "assets/cards/images/table/base/strangle.webp",
+    "upgraded": "assets/cards/images/table/upgraded/strangle.webp"
+  },
+  "STRATAGEM": {
+    "base": "assets/cards/images/table/base/stratagem.webp",
+    "upgraded": "assets/cards/images/table/upgraded/stratagem.webp"
+  },
+  "STRIKE_DEFECT": {
+    "base": "assets/cards/images/table/base/strike-defect.webp",
+    "upgraded": "assets/cards/images/table/upgraded/strike-defect.webp"
+  },
+  "STRIKE_IRONCLAD": {
+    "base": "assets/cards/images/table/base/strike-ironclad.webp",
+    "upgraded": "assets/cards/images/table/upgraded/strike-ironclad.webp"
+  },
+  "STRIKE_NECROBINDER": {
+    "base": "assets/cards/images/table/base/strike-necrobinder.webp",
+    "upgraded": "assets/cards/images/table/upgraded/strike-necrobinder.webp"
+  },
+  "STRIKE_REGENT": {
+    "base": "assets/cards/images/table/base/strike-regent.webp",
+    "upgraded": "assets/cards/images/table/upgraded/strike-regent.webp"
+  },
+  "STRIKE_SILENT": {
+    "base": "assets/cards/images/table/base/strike-silent.webp",
+    "upgraded": "assets/cards/images/table/upgraded/strike-silent.webp"
+  },
+  "SUBROUTINE": {
+    "base": "assets/cards/images/table/base/subroutine.webp",
+    "upgraded": "assets/cards/images/table/upgraded/subroutine.webp"
+  },
+  "SUCKER_PUNCH": {
+    "base": "assets/cards/images/table/base/sucker-punch.webp",
+    "upgraded": "assets/cards/images/table/upgraded/sucker-punch.webp"
+  },
+  "SUMMON_FORTH": {
+    "base": "assets/cards/images/table/base/summon-forth.webp",
+    "upgraded": "assets/cards/images/table/upgraded/summon-forth.webp"
+  },
+  "SUNDER": {
+    "base": "assets/cards/images/table/base/sunder.webp",
+    "upgraded": "assets/cards/images/table/upgraded/sunder.webp"
+  },
+  "SUPERCRITICAL": {
+    "base": "assets/cards/images/table/base/supercritical.webp",
+    "upgraded": "assets/cards/images/table/upgraded/supercritical.webp"
+  },
+  "SUPERMASSIVE": {
+    "base": "assets/cards/images/table/base/supermassive.webp",
+    "upgraded": "assets/cards/images/table/upgraded/supermassive.webp"
+  },
+  "SUPPRESS": {
+    "base": "assets/cards/images/table/base/suppress.webp",
+    "upgraded": "assets/cards/images/table/upgraded/suppress.webp"
+  },
+  "SURVIVOR": {
+    "base": "assets/cards/images/table/base/survivor.webp",
+    "upgraded": "assets/cards/images/table/upgraded/survivor.webp"
+  },
+  "SWEEPING_BEAM": {
+    "base": "assets/cards/images/table/base/sweeping-beam.webp",
+    "upgraded": "assets/cards/images/table/upgraded/sweeping-beam.webp"
+  },
+  "SWORD_BOOMERANG": {
+    "base": "assets/cards/images/table/base/sword-boomerang.webp",
+    "upgraded": "assets/cards/images/table/upgraded/sword-boomerang.webp"
+  },
+  "SWORD_SAGE": {
+    "base": "assets/cards/images/table/base/sword-sage.webp",
+    "upgraded": "assets/cards/images/table/upgraded/sword-sage.webp"
+  },
+  "SYNCHRONIZE": {
+    "base": "assets/cards/images/table/base/synchronize.webp",
+    "upgraded": "assets/cards/images/table/upgraded/synchronize.webp"
+  },
+  "SYNTHESIS": {
+    "base": "assets/cards/images/table/base/synthesis.webp",
+    "upgraded": "assets/cards/images/table/upgraded/synthesis.webp"
+  },
+  "TACTICIAN": {
+    "base": "assets/cards/images/table/base/tactician.webp",
+    "upgraded": "assets/cards/images/table/upgraded/tactician.webp"
+  },
+  "TAG_TEAM": {
+    "base": "assets/cards/images/table/base/tag-team.webp",
+    "upgraded": "assets/cards/images/table/upgraded/tag-team.webp"
+  },
+  "TANK": {
+    "base": "assets/cards/images/table/base/tank.webp",
+    "upgraded": "assets/cards/images/table/upgraded/tank.webp"
+  },
+  "TAUNT": {
+    "base": "assets/cards/images/table/base/taunt.webp",
+    "upgraded": "assets/cards/images/table/upgraded/taunt.webp"
+  },
+  "TEAR_ASUNDER": {
+    "base": "assets/cards/images/table/base/tear-asunder.webp",
+    "upgraded": "assets/cards/images/table/upgraded/tear-asunder.webp"
+  },
+  "TEMPEST": {
+    "base": "assets/cards/images/table/base/tempest.webp",
+    "upgraded": "assets/cards/images/table/upgraded/tempest.webp"
+  },
+  "TERRAFORMING": {
+    "base": "assets/cards/images/table/base/terraforming.webp",
+    "upgraded": "assets/cards/images/table/upgraded/terraforming.webp"
+  },
+  "TESLA_COIL": {
+    "base": "assets/cards/images/table/base/tesla-coil.webp",
+    "upgraded": "assets/cards/images/table/upgraded/tesla-coil.webp"
+  },
+  "THE_BOMB": {
+    "base": "assets/cards/images/table/base/the-bomb.webp",
+    "upgraded": "assets/cards/images/table/upgraded/the-bomb.webp"
+  },
+  "THE_GAMBIT": {
+    "base": "assets/cards/images/table/base/the-gambit.webp",
+    "upgraded": "assets/cards/images/table/upgraded/the-gambit.webp"
+  },
+  "THE_HUNT": {
+    "base": "assets/cards/images/table/base/the-hunt.webp",
+    "upgraded": "assets/cards/images/table/upgraded/the-hunt.webp"
+  },
+  "THE_SCYTHE": {
+    "base": "assets/cards/images/table/base/the-scythe.webp",
+    "upgraded": "assets/cards/images/table/upgraded/the-scythe.webp"
+  },
+  "THE_SEALED_THRONE": {
+    "base": "assets/cards/images/table/base/the-sealed-throne.webp",
+    "upgraded": "assets/cards/images/table/upgraded/the-sealed-throne.webp"
+  },
+  "THE_SMITH": {
+    "base": "assets/cards/images/table/base/the-smith.webp",
+    "upgraded": "assets/cards/images/table/upgraded/the-smith.webp"
+  },
+  "THINKING_AHEAD": {
+    "base": "assets/cards/images/table/base/thinking-ahead.webp",
+    "upgraded": "assets/cards/images/table/upgraded/thinking-ahead.webp"
+  },
+  "THRASH": {
+    "base": "assets/cards/images/table/base/thrash.webp",
+    "upgraded": "assets/cards/images/table/upgraded/thrash.webp"
+  },
+  "THRUMMING_HATCHET": {
+    "base": "assets/cards/images/table/base/thrumming-hatchet.webp",
+    "upgraded": "assets/cards/images/table/upgraded/thrumming-hatchet.webp"
+  },
+  "THUNDER": {
+    "base": "assets/cards/images/table/base/thunder.webp",
+    "upgraded": "assets/cards/images/table/upgraded/thunder.webp"
+  },
+  "THUNDERCLAP": {
+    "base": "assets/cards/images/table/base/thunderclap.webp",
+    "upgraded": "assets/cards/images/table/upgraded/thunderclap.webp"
+  },
+  "TIMES_UP": {
+    "base": "assets/cards/images/table/base/times-up.webp",
+    "upgraded": "assets/cards/images/table/upgraded/times-up.webp"
+  },
+  "TOOLS_OF_THE_TRADE": {
+    "base": "assets/cards/images/table/base/tools-of-the-trade.webp",
+    "upgraded": "assets/cards/images/table/upgraded/tools-of-the-trade.webp"
+  },
+  "TORIC_TOUGHNESS": {
+    "base": "assets/cards/images/table/base/toric-toughness.webp",
+    "upgraded": "assets/cards/images/table/upgraded/toric-toughness.webp"
+  },
+  "TRACKING": {
+    "base": "assets/cards/images/table/base/tracking.webp",
+    "upgraded": "assets/cards/images/table/upgraded/tracking.webp"
+  },
+  "TRANSFIGURE": {
+    "base": "assets/cards/images/table/base/transfigure.webp",
+    "upgraded": "assets/cards/images/table/upgraded/transfigure.webp"
+  },
+  "TRASH_TO_TREASURE": {
+    "base": "assets/cards/images/table/base/trash-to-treasure.webp",
+    "upgraded": "assets/cards/images/table/upgraded/trash-to-treasure.webp"
+  },
+  "TREMBLE": {
+    "base": "assets/cards/images/table/base/tremble.webp",
+    "upgraded": "assets/cards/images/table/upgraded/tremble.webp"
+  },
+  "TRUE_GRIT": {
+    "base": "assets/cards/images/table/base/true-grit.webp",
+    "upgraded": "assets/cards/images/table/upgraded/true-grit.webp"
+  },
+  "TURBO": {
+    "base": "assets/cards/images/table/base/turbo.webp",
+    "upgraded": "assets/cards/images/table/upgraded/turbo.webp"
+  },
+  "TWIN_STRIKE": {
+    "base": "assets/cards/images/table/base/twin-strike.webp",
+    "upgraded": "assets/cards/images/table/upgraded/twin-strike.webp"
+  },
+  "TYRANNY": {
+    "base": "assets/cards/images/table/base/tyranny.webp",
+    "upgraded": "assets/cards/images/table/upgraded/tyranny.webp"
+  },
+  "ULTIMATE_DEFEND": {
+    "base": "assets/cards/images/table/base/ultimate-defend.webp",
+    "upgraded": "assets/cards/images/table/upgraded/ultimate-defend.webp"
+  },
+  "ULTIMATE_STRIKE": {
+    "base": "assets/cards/images/table/base/ultimate-strike.webp",
+    "upgraded": "assets/cards/images/table/upgraded/ultimate-strike.webp"
+  },
+  "UNDEATH": {
+    "base": "assets/cards/images/table/base/undeath.webp",
+    "upgraded": "assets/cards/images/table/upgraded/undeath.webp"
+  },
+  "UNLEASH": {
+    "base": "assets/cards/images/table/base/unleash.webp",
+    "upgraded": "assets/cards/images/table/upgraded/unleash.webp"
+  },
+  "UNMOVABLE": {
+    "base": "assets/cards/images/table/base/unmovable.webp",
+    "upgraded": "assets/cards/images/table/upgraded/unmovable.webp"
+  },
+  "UNRELENTING": {
+    "base": "assets/cards/images/table/base/unrelenting.webp",
+    "upgraded": "assets/cards/images/table/upgraded/unrelenting.webp"
+  },
+  "UNTOUCHABLE": {
+    "base": "assets/cards/images/table/base/untouchable.webp",
+    "upgraded": "assets/cards/images/table/upgraded/untouchable.webp"
+  },
+  "UP_MY_SLEEVE": {
+    "base": "assets/cards/images/table/base/up-my-sleeve.webp",
+    "upgraded": "assets/cards/images/table/upgraded/up-my-sleeve.webp"
+  },
+  "UPPERCUT": {
+    "base": "assets/cards/images/table/base/uppercut.webp",
+    "upgraded": "assets/cards/images/table/upgraded/uppercut.webp"
+  },
+  "UPROAR": {
+    "base": "assets/cards/images/table/base/uproar.webp",
+    "upgraded": "assets/cards/images/table/upgraded/uproar.webp"
+  },
+  "VEILPIERCER": {
+    "base": "assets/cards/images/table/base/veilpiercer.webp",
+    "upgraded": "assets/cards/images/table/upgraded/veilpiercer.webp"
+  },
+  "VENERATE": {
+    "base": "assets/cards/images/table/base/venerate.webp",
+    "upgraded": "assets/cards/images/table/upgraded/venerate.webp"
+  },
+  "VICIOUS": {
+    "base": "assets/cards/images/table/base/vicious.webp",
+    "upgraded": "assets/cards/images/table/upgraded/vicious.webp"
+  },
+  "VOID_FORM": {
+    "base": "assets/cards/images/table/base/void-form.webp",
+    "upgraded": "assets/cards/images/table/upgraded/void-form.webp"
+  },
+  "VOLLEY": {
+    "base": "assets/cards/images/table/base/volley.webp",
+    "upgraded": "assets/cards/images/table/upgraded/volley.webp"
+  },
+  "VOLTAIC": {
+    "base": "assets/cards/images/table/base/voltaic.webp",
+    "upgraded": "assets/cards/images/table/upgraded/voltaic.webp"
+  },
+  "WELL_LAID_PLANS": {
+    "base": "assets/cards/images/table/base/well-laid-plans.webp",
+    "upgraded": "assets/cards/images/table/upgraded/well-laid-plans.webp"
+  },
+  "WHIRLWIND": {
+    "base": "assets/cards/images/table/base/whirlwind.webp",
+    "upgraded": "assets/cards/images/table/upgraded/whirlwind.webp"
+  },
+  "WHISTLE": {
+    "base": "assets/cards/images/table/base/whistle.webp",
+    "upgraded": "assets/cards/images/table/upgraded/whistle.webp"
+  },
+  "WHITE_NOISE": {
+    "base": "assets/cards/images/table/base/white-noise.webp",
+    "upgraded": "assets/cards/images/table/upgraded/white-noise.webp"
+  },
+  "WISH": {
+    "base": "assets/cards/images/table/base/wish.webp",
+    "upgraded": "assets/cards/images/table/upgraded/wish.webp"
+  },
+  "WISP": {
+    "base": "assets/cards/images/table/base/wisp.webp",
+    "upgraded": "assets/cards/images/table/upgraded/wisp.webp"
+  },
+  "WRAITH_FORM": {
+    "base": "assets/cards/images/table/base/wraith-form.webp",
+    "upgraded": "assets/cards/images/table/upgraded/wraith-form.webp"
+  },
+  "WRITHE": {
+    "base": "assets/cards/images/table/base/writhe.webp"
+  },
+  "WROUGHT_IN_WAR": {
+    "base": "assets/cards/images/table/base/wrought-in-war.webp",
+    "upgraded": "assets/cards/images/table/upgraded/wrought-in-war.webp"
+  },
+  "ZAP": {
+    "base": "assets/cards/images/table/base/zap.webp",
+    "upgraded": "assets/cards/images/table/upgraded/zap.webp"
+  }
+}

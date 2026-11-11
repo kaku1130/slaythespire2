@@ -1,0 +1,746 @@
+{
+  "source": "https://slaythespire2.net/zh-TW/event",
+  "version": "v0.107.1",
+  "retrievedDate": "2026-11-09",
+  "items": [
+    {
+      "id": "ABYSSAL_BATHS",
+      "slug": "abyssal-baths",
+      "name": "深淵浴場",
+      "imagePath": "/images/events/abyssal_baths.webp",
+      "descriptionClean": "你發現了一間僻靜的密室。\n\n氤氳的霧氣從沸騰的池水中升騰而起，池水的色澤正以一種催眠般的節奏變幻。天花板上垂掛著覆滿藤壺的異形生長物，滴落的黏稠液體在觸及水面的瞬間，一邊發出嘶嘶聲，一邊如活物般扭動掙扎。空氣粘滯沉重，充斥著鹽的味道和某種不言而喻的活物的氣息。\n\n當你靠近那口最大的水池時，液麵泛起了漣漪。水流翻騰得愈發狂亂，彷彿正期待著你的到來。",
+      "optionCount": 2,
+      "acts": [
+        "act1b"
+      ],
+      "shared": false
+    },
+    {
+      "id": "AMALGAMATOR",
+      "slug": "amalgamator",
+      "name": "熔合者",
+      "imagePath": "/images/events/amalgamator.webp",
+      "descriptionClean": "鏗！鏗！！鏘！！！\n\n牆壁的另一側傳來了陣陣金屬交擊聲的迴響…\n\n當你把頭貼在牆上準備探聽一番時——牆壁轟然開啟，露出了一個正在埋頭苦幹的魁梧六臂身影。\n它的“臉部”是一團由發光符文構成的流轉旋渦，正在不斷變幻交織。\n\n“一個擁有進階之魂的人竟然找到了我的工坊？那就讓我們開始融合吧！”",
+      "optionCount": 2,
+      "acts": [
+        "act2"
+      ],
+      "shared": false
+    },
+    {
+      "id": "AROMA_OF_CHAOS",
+      "slug": "aroma-of-chaos",
+      "name": "混沌芳香",
+      "imagePath": "/images/events/aroma_of_chaos.webp",
+      "descriptionClean": "費力地穿過一片厚密的灌木叢並來到空地後，一種莫名的懷舊感突然向你襲來。\n\n那是花朵的芬芳、腐爛的惡臭以及某種無法言說的氣息的混合體。每前進一步，這股氣味都變得愈發濃烈。與此同時，你感受到周圍的世界正開始扭曲，旋轉。\n\n一股變幻莫測的混沌將你淹沒，你開始慢慢地喪失了對自我的感知。",
+      "optionCount": 2,
+      "acts": [
+        "act1a"
+      ],
+      "shared": false
+    },
+    {
+      "id": "BATTLEWORN_DUMMY",
+      "slug": "battleworn-dummy",
+      "name": "戰痕累累的訓練假人",
+      "imagePath": "/images/events/battleworn_dummy.webp",
+      "descriptionClean": "當你靠近時，它突然開始轟鳴，滋滋作響，隨後爆發出耀眼的光芒！\n\n“滋滋！ 訓練時間到！！！你有3個回合的時間來擊敗我！\n選擇一個檔位，否則就準備好面對致命的羞辱吧。\n以下是可選方案：”\n\n在發佈完這段恐怖的宣言後，假人開始認真地讀出詳細的指令。\n\n要選哪一個呢？",
+      "optionCount": 3,
+      "acts": [
+        "act3"
+      ],
+      "shared": false
+    },
+    {
+      "id": "BRAIN_LEECH",
+      "slug": "brain-leech",
+      "name": "腦蛭",
+      "imagePath": "/images/events/brain_leech.webp",
+      "descriptionClean": "咚！\n\n你的頭頂傳來一陣刺痛，一個念頭刺入了你的腦海。\n\n“分享知識嗎？？？”\n\n你不知如何是好…",
+      "optionCount": 2,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "BUGSLAYER",
+      "slug": "bugslayer",
+      "name": "害蟲殺手",
+      "imagePath": "/images/events/bugslayer.webp",
+      "descriptionClean": "當你正奮力抵禦一群窮兇極惡的蟲群時，你突然注意到，一位威猛剽悍的戰士竟然一直就在你身邊並肩作戰！\n\n蟲群們，察覺敗局，四散而逃。你轉向這位戰友。\n“你想要一些消滅這些害蟲的建議嗎？”\n\n還挺有禮貌。你點了點頭，接受了他的提議。",
+      "optionCount": 2,
+      "acts": [
+        "act2"
+      ],
+      "shared": false
+    },
+    {
+      "id": "BYRDONIS_NEST",
+      "slug": "byrdonis-nest",
+      "name": "多尼斯異鳥巢",
+      "imagePath": "/images/events/byrdonis_nest.webp",
+      "descriptionClean": "你看見一隻巨大的蹣跚巨獸正在驅趕一隻受傷的綠色異鳥。\n\n在那隻異鳥逃離的隱蔽角落裡，一顆無人看守的蛋被遺棄在了那裡。\n\n你的肚子咕咕作響…",
+      "optionCount": 2,
+      "acts": [
+        "act1a"
+      ],
+      "shared": false
+    },
+    {
+      "id": "COLORFUL_PHILOSOPHERS",
+      "slug": "colorful-philosophers",
+      "name": "色彩哲學家",
+      "imagePath": "/images/events/colorful_philosophers.webp",
+      "descriptionClean": "在你面前的是一幕頗為宏偉的景象。\n你看到三座不同顏色的石像聳立在高臺之上，正就色彩的哲學內涵展開激烈的爭論。\n\n隨著你的傾聽，你感覺到眼下最核心的議題是，究竟哪種顏色才是最棒的。\n\n你加入其中，表達了你的見解。",
+      "optionCount": 6,
+      "acts": [
+        "act2"
+      ],
+      "shared": false
+    },
+    {
+      "id": "COLOSSAL_FLOWER",
+      "slug": "colossal-flower",
+      "name": "巨大花卉",
+      "imagePath": "/images/events/colossal_flower.webp",
+      "descriptionClean": "一朵巨型花卉正生長在一座骸骨堆積而成的山上。\n\n隨著它那變換色彩的花瓣不斷搏動，你感覺到中心處一定有一團強力花粉，但那起伏的花瓣如刀鋒般鋒利且捉摸不定。\n\n你本可以只採集一些金色花蜜，但中心處的那個獎賞實在是太誘人了…",
+      "optionCount": 2,
+      "acts": [
+        "act2"
+      ],
+      "shared": false
+    },
+    {
+      "id": "CRYSTAL_SPHERE",
+      "slug": "crystal-sphere",
+      "name": "水晶球",
+      "imagePath": "/images/events/crystal_sphere.webp",
+      "descriptionClean": "“我預見到了你的到來…！”\n\n當你走進一間神秘小屋時，一個沙啞的聲音傳了過來。\n\n“你的命運指引你來到此處。我們必須揭開你的未來與運勢，這樣你才能拯救我們所有人！！”\n“好啦，這是進行水晶球占卜的幾個選項。另外，記得把這份免責協議也簽了，”她一邊說著，一邊拿出了筆和羊皮紙。",
+      "optionCount": 2,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "DENSE_VEGETATION",
+      "slug": "dense-vegetation",
+      "name": "茂密的植被",
+      "imagePath": "/images/events/dense_vegetation.webp",
+      "descriptionClean": "你在錯路上走了一段時間之後，你發現自己置身於一片由蕨類、灌木和藤蔓構成的茂密叢林中。尤其是藤蔓。精疲力竭的感覺油然而生，一個可怕的念頭隨之浮現在腦海裡：\n\n“你迷路了，毫無防備，而死亡的陰影正悄然逼近。”\n\n你要怎麼辦呢？",
+      "optionCount": 2,
+      "acts": [
+        "act1a"
+      ],
+      "shared": false
+    },
+    {
+      "id": "DOLL_ROOM",
+      "slug": "doll-room",
+      "name": "玩偶室",
+      "imagePath": "/images/events/doll_room.webp",
+      "descriptionClean": "你走進了一間隱藏的密室……\n\n這裡堆滿了琳琅滿目的玩偶。每一隻都獨一無二，它們的表情亦從喜悅到悲哀各不相同，其服飾跨越了數個世紀，甚至來自你認知之外的領域。\n\n一陣低語的合唱變得越來越響，直到那些玩偶互相爭吵著大叫起來，放聲呼喚著你……\n\n你必須選擇一個，並立刻離開這個地方。",
+      "optionCount": 3,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "DOORS_OF_LIGHT_AND_DARK",
+      "slug": "doors-of-light-and-dark",
+      "name": "光與暗的門扉",
+      "imagePath": "/images/events/doors_of_light_and_dark.webp",
+      "descriptionClean": "一道門扉突然憑空出現了…\n\n你步入其中，見到了兩道散發著微光的門，以及一位衣著得體的看門人。\n“終於有訪客了！請，請！選一扇門，任何一扇都可以！”\n\n我們還在尖塔裡嗎？這地方為何竟如此潔淨？",
+      "optionCount": 2,
+      "acts": [
+        "act1b"
+      ],
+      "shared": false
+    },
+    {
+      "id": "DROWNING_BEACON",
+      "slug": "drowning-beacon",
+      "name": "淹水燈塔",
+      "imagePath": "/images/events/drowning_beacon.webp",
+      "descriptionClean": "穿過一片由岩石與靜水構成的夢幻之境，你來到了一座散發著逆流光的沉沒燈塔前。\n\n你可以把積聚在此的詭異發光水裝進瓶子裡，或者爬上這座破敗的建築，取下其中的透鏡。",
+      "optionCount": 2,
+      "acts": [
+        "act1b"
+      ],
+      "shared": false
+    },
+    {
+      "id": "ENDLESS_CONVEYOR",
+      "slug": "endless-conveyor",
+      "name": "無盡傳送帶",
+      "imagePath": "/images/events/endless_conveyor.webp",
+      "descriptionClean": "你走進一間掛著歪斜招牌的小木屋，招牌亮得發晃，上面寫著：\n“無盡盛宴—按餓付費！”\n\n屋裡，一位身形修長的多臂大廚正熟練地準備著一份份小食，並將它們擺在一條蜿蜒的幾丁質傳送帶上。\n\n大廚其中的一隻手臂指向一塊牌子：\n每份40金幣",
+      "optionCount": 1,
+      "acts": [
+        "act1b"
+      ],
+      "shared": false
+    },
+    {
+      "id": "FAKE_MERCHANT",
+      "slug": "the-merchant",
+      "name": "商人？？？",
+      "imagePath": "$undefined",
+      "descriptionClean": "佔位符",
+      "optionCount": 0,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "FIELD_OF_MAN_SIZED_HOLES",
+      "slug": "field-of-man-sized-holes",
+      "name": "人形洞穴之地",
+      "imagePath": "/images/events/field_of_man_sized_holes.webp",
+      "descriptionClean": "眼前突然出現一大片土地，上面鑿刻著密密麻麻的人形輪廓，讓你不由得停下了腳步。\n\n其中有一個洞的輪廓，竟然和你的體型一模一樣。\n\n完美契合…",
+      "optionCount": 2,
+      "acts": [
+        "act2"
+      ],
+      "shared": false
+    },
+    {
+      "id": "GRAVE_OF_THE_FORGOTTEN",
+      "slug": "grave-of-the-forgotten",
+      "name": "遺忘之墓",
+      "imagePath": "/images/events/grave_of_the_forgotten.webp",
+      "descriptionClean": "一座孤冢上翻騰著洶湧的藍焰…\n\n一名高傲的戰士戰死於此，靈魂卻躁動不安。但它渴望繼續戰鬥，你甚至能感覺到它在哀求你帶著它一起踏上征途。\n\n但也許，讓它直面真相才是更好的選擇？",
+      "optionCount": 3,
+      "acts": [
+        "act3"
+      ],
+      "shared": false
+    },
+    {
+      "id": "HUNGRY_FOR_MUSHROOMS",
+      "slug": "hungry-for-mushrooms",
+      "name": "蘑菇飢渴",
+      "imagePath": "/images/events/hungry_for_mushrooms.webp",
+      "descriptionClean": "上一次吃飯是什麼時候來著？\n…等等，這股奇妙的香味是怎麼回事？\n\n循著氣味，你來到了一處溫馨的營地，各種美味的蘑菇正在火上烤著！由於實在是太餓了，你甚至完全沒想過這些玩意兒安不安全。\n（你餓得甚至連旁邊有個死掉的冒險者這事都沒注意到）",
+      "optionCount": 2,
+      "acts": [
+        "act3"
+      ],
+      "shared": false
+    },
+    {
+      "id": "INFESTED_AUTOMATON",
+      "slug": "infested-automaton",
+      "name": "被寄生的自動機械",
+      "imagePath": "/images/events/infested_automaton.webp",
+      "descriptionClean": "這間密室裡堆滿了報廢的機器人。\n\n其中一臺孤零零的自動機械，其核心仍在幽幽發光，但它已被一種詭異的有機增生組織吞沒，毫無響應。",
+      "optionCount": 2,
+      "acts": [
+        "act2"
+      ],
+      "shared": false
+    },
+    {
+      "id": "JUNGLE_MAZE_ADVENTURE",
+      "slug": "jungle-maze-adventure",
+      "name": "叢林迷宮奇遇",
+      "imagePath": "/images/events/jungle_maze_adventure.webp",
+      "descriptionClean": "在一片林間空地上，你撞見了一群寒磣的冒險者小隊，他們正俯瞰著一座巨型迷宮並指手畫腳。\n\n他們邀請你入夥，共同開啟一場搜刮迷宮財富的史詩級任務。身為老手，你心知肚明這迷宮裡塞滿了致命陷阱和守衛。\n\n搭夥幹活確實容易些，但那樣你就得跟人平分戰利品了。",
+      "optionCount": 2,
+      "acts": [
+        "act1a"
+      ],
+      "shared": false
+    },
+    {
+      "id": "LOST_WISP",
+      "slug": "the-lost-wisp",
+      "name": "迷失鬼火",
+      "imagePath": "/images/events/lost_wisp.webp",
+      "descriptionClean": "遠處有一幕古怪的景象。成堆的昆蟲殘骸層層堆疊，圍繞著一個像是微小的光團的東西。\n它似乎對各種蟲子都有著不俗的吸引力，但你卻目睹了它迸發出火焰！\n\n你走近前去一探究竟。",
+      "optionCount": 3,
+      "acts": [
+        "act2"
+      ],
+      "shared": false
+    },
+    {
+      "id": "LUMINOUS_CHOIR",
+      "slug": "luminous-choir",
+      "name": "冷光合唱團",
+      "imagePath": "/images/events/luminous_choir.webp",
+      "descriptionClean": "你撞入了一片沐浴在詭異藍光下的林間空地。高聳的蘑菇隨著生物熒光起伏脈動，菌蓋腫脹而泛著光澤。當你靠近時，真菌們竟開始發出悽美而婉轉的旋律，這旋律在你的胸腔內激盪。\n\n你注意到，在那個體型最大的蘑菇肉質中嵌入了某種閃光的東西，正隨著真菌之歌有節奏地躍動。",
+      "optionCount": 3,
+      "acts": [
+        "act1a"
+      ],
+      "shared": false
+    },
+    {
+      "id": "MORPHIC_GROVE",
+      "slug": "morphic-grove",
+      "name": "變形靈林谷",
+      "imagePath": "/images/events/morphic_grove.webp",
+      "descriptionClean": "你進入了一片結晶樹的林谷，樹木開始激動地顫抖起來！\n一陣陣雜亂的問候與歡迎聲在你耳邊不斷響起，原來是一群變形靈從樹上綻放了出來。\n\n有一隻變形靈在角落裡坐立不安的樣子，顯然不像其他同類那樣善於社交。\n\n你是去找一群變形靈，還是去找落單的那個？",
+      "optionCount": 2,
+      "acts": [
+        "act1a"
+      ],
+      "shared": false
+    },
+    {
+      "id": "POTION_COURIER",
+      "slug": "potion-courier",
+      "name": "藥水快遞員",
+      "imagePath": "/images/events/potion_courier.webp",
+      "descriptionClean": "空氣中傳來一陣濃濃的酸味，不一會兒你在附近找到了一個倒在地上的藥水快遞員。\n一動不動，已經沒了氣。死了！？\n快遞員帶著的物品已經被洗劫得差不多了，只有一批很難聞的藥水好好地放在那裡，上面有一張字條：“收件人：商人”。",
+      "optionCount": 2,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "PUNCH_OFF",
+      "slug": "punch-off",
+      "name": "重拳出擊",
+      "imagePath": "/images/events/punch_off.webp",
+      "descriptionClean": "兩個拳擊構裝體正在揮拳互毆，而你看到在它們兩個之間有一些財寶……\n\n要不要把財寶順走？",
+      "optionCount": 2,
+      "acts": [
+        "act1b"
+      ],
+      "shared": false
+    },
+    {
+      "id": "RANWID_THE_ELDER",
+      "slug": "ranwid-the-elder",
+      "name": "長者蘭偉德",
+      "imagePath": "/images/events/ranwid_the_elder.webp",
+      "descriptionClean": "一個你至今為止見過最年邁的人走到了你的身前。\n“我們又見面了....是我，蘭偉德！”\n\n你不認識這個男人。",
+      "optionCount": 5,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "REFLECTIONS",
+      "slug": "reflections-snoitcelfer",
+      "name": "鏡中倒影  影倒中鏡",
+      "imagePath": "/images/events/reflections.webp",
+      "descriptionClean": "這是什麼？這裡感覺不太對勁….\n….勁對太不覺感裡這？麼什是這",
+      "optionCount": 2,
+      "acts": [
+        "act3"
+      ],
+      "shared": false
+    },
+    {
+      "id": "RELIC_TRADER",
+      "slug": "relic-trader",
+      "name": "遺物交換商",
+      "imagePath": "/images/events/relic_trader.webp",
+      "descriptionClean": "你走過一個拐角，一個黑影突然矗立在前方。他轉過身來，正對著你。\n\n“歡迎！你想換點什麼吶？”\n他開口詢問，同時猛地掀開斗篷，露出一大堆可疑貨物。",
+      "optionCount": 3,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "ROOM_FULL_OF_CHEESE",
+      "slug": "room-full-of-cheese",
+      "name": "滿屋芝士",
+      "imagePath": "/images/events/room_full_of_cheese.webp",
+      "descriptionClean": "這房間裡全是芝士！！！\n\n你環顧四周，想看看有沒有陷阱，結果發現頭頂上是…更多的芝士。屋裡的蠟燭似乎也是用芝士做的。傢俱同樣是芝士。\n突然，你身後的門砰地一聲關上了。\n\n也是芝士做的。",
+      "optionCount": 2,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "ROUND_TEA_PARTY",
+      "slug": "the-round-tea-party",
+      "name": "圓桌茶會",
+      "imagePath": "/images/events/round_tea_party.webp",
+      "descriptionClean": "你找到了一份送給“加拉洛特爵士”的請柬，邀請他參加一次茶會，於是你決定代他前去。\n\n走進其貌不揚的圓形大廳時，你發現這裡有一大群指揮官、將軍、軍閥和商人們，正在……喝著茶？\n一個頭戴金冠的巨人騎士開口說道：\n\n“汝來茶會竟敢遲到？！”",
+      "optionCount": 2,
+      "acts": [
+        "act3"
+      ],
+      "shared": false
+    },
+    {
+      "id": "SAPPHIRE_SEED",
+      "slug": "sapphire-seed",
+      "name": "藍寶石種子",
+      "imagePath": "/images/events/sapphire_seed.webp",
+      "descriptionClean": "你走路時差點踩上了一塊發光的尖銳……種子？它的顏色非常明確地表明瞭這是一枚藍寶石種子！這些稀有種子不是應該已經滅絕了嗎！？\n\n傳說裡，只要吃下一粒這個種子，就能大幅強化你的體能，但如果你把它種下然後好好養育它，又會怎麼樣呢？",
+      "optionCount": 2,
+      "acts": [
+        "act1a"
+      ],
+      "shared": false
+    },
+    {
+      "id": "SELF_HELP_BOOK",
+      "slug": "self-help-book",
+      "name": "自助指南",
+      "imagePath": "/images/events/self_help_book.webp",
+      "descriptionClean": "地上有一本書：\n《征服高塔的3種最佳方法》\n\n這本書上血跡斑斑，所以你覺得它非常可疑。\n\n你要讀它嗎？",
+      "optionCount": 7,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "SLIPPERY_BRIDGE",
+      "slug": "slippery-bridge",
+      "name": "滑腳木橋",
+      "imagePath": "/images/events/slippery_bridge.webp",
+      "descriptionClean": "當你穿過一座搖搖欲墜的木橋時，忽然間暴雨傾盆。陣陣狂風不斷向你襲來，似乎要將你的旅程終結於此。",
+      "optionCount": 2,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "SPIRALING_WHIRLPOOL",
+      "slug": "spiraling-whirlpool",
+      "name": "螺旋漩渦",
+      "imagePath": "/images/events/spiraling_whirlpool.webp",
+      "descriptionClean": "你偶遇了一個巨大的螺旋漩渦。水流以精準而優雅的韻律迴旋著，四周的牆壁也佈滿了螺旋紋路。\n\n轉啊，轉啊…轉…\n…轉個不停…何等奇景…\n\n你要做什麼呢？？",
+      "optionCount": 3,
+      "acts": [
+        "act1b"
+      ],
+      "shared": false
+    },
+    {
+      "id": "SPIRIT_GRAFTER",
+      "slug": "spirit-grafter",
+      "name": "靈魂嫁接者",
+      "imagePath": "/images/events/spirit_grafter.webp",
+      "descriptionClean": "在你上方，一個繭正在顫動扭曲，似乎就要破繭而出了！\n\n……它停止了扭動。繭燃燒了起來！發生什麼事了？\n一道光芒與烈焰閃過，一個靈魂嫁接者向你衝來，試圖要與你融為一體，以求完整。",
+      "optionCount": 2,
+      "acts": [
+        "act2"
+      ],
+      "shared": false
+    },
+    {
+      "id": "STONE_OF_ALL_TIME",
+      "slug": "stone-of-all-time",
+      "name": "永恆之石",
+      "imagePath": "/images/events/stone_of_all_time.webp",
+      "descriptionClean": "在一個廢棄庭院的當中，有一塊巨大的石頭。\n\n石頭邊的一塊牌子上寫著：\n永恆之石。\n\n從它的樣子、形狀和裝飾來看，整個庭院都是圍繞著這塊石頭建造出來的，它從來沒有離開過那個地點哪怕一次。",
+      "optionCount": 4,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "SUNKEN_STATUE",
+      "slug": "the-sunken-statue",
+      "name": "沉沒雕像",
+      "imagePath": "/images/events/sunken_statue.webp",
+      "descriptionClean": "你看見一尊古老的雕像，一半沉沒在池塘的水中。雕像的手放在一把石劍之上。\n\n同時你還看見，池塘的水底似乎有一些東西在閃爍著光芒。\n或許是人們祈願投下的金幣？\n\n錢可是個好東西……",
+      "optionCount": 2,
+      "acts": [
+        "act1a",
+        "act1b"
+      ],
+      "shared": false
+    },
+    {
+      "id": "SUNKEN_TREASURY",
+      "slug": "sunken-treasury",
+      "name": "淹水金庫",
+      "imagePath": "/images/events/sunken_treasury.webp",
+      "descriptionClean": "一條小路讓你找到了一個部分淹水的金庫。\n你看到裡面有2個箱子，但卻只有1把脆弱的鑰匙。\n\n第一個箱子：你搖晃了一下，能聽到叮鈴哐啷的輕響，應該是少量金幣。\n第二個箱子：巨大、精緻、而且顯然被詛咒了。裡面有很多金幣！",
+      "optionCount": 2,
+      "acts": [
+        "act1b"
+      ],
+      "shared": false
+    },
+    {
+      "id": "SYMBIOTE",
+      "slug": "symbiote",
+      "name": "共生體",
+      "imagePath": "/images/events/symbiote.webp",
+      "descriptionClean": "在你的旅程中，你遇到了一個黑色無定形的肉塊狀生物，你能感覺到它非常古老、並且非常邪惡。\n\n過來吧…",
+      "optionCount": 3,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "TABLET_OF_TRUTH",
+      "slug": "tablet-of-truth",
+      "name": "真理石板",
+      "imagePath": "/images/events/tablet_of_truth.webp",
+      "descriptionClean": "你打敗了兩隻同族守護者，進入了它們守護的藏寶庫。\n\n裡面有一塊刻著熟悉銘文的石板。你的直覺告訴你，上面的語言可以輕易解讀……可是一旦開始解讀，你就必須全神貫注。\n\n石板上散發出一種令人安心的能量，你也可以就這樣砸碎它，來獲取其中的治癒能量。",
+      "optionCount": 2,
+      "acts": [
+        "act1a"
+      ],
+      "shared": false
+    },
+    {
+      "id": "TEA_MASTER",
+      "slug": "tea-master",
+      "name": "茶藝大師",
+      "imagePath": "/images/events/tea_master.webp",
+      "descriptionClean": "你不知怎麼晃進了一個燈光昏暗的小棚屋，發現裡面的空間感覺非常和平，四周擺滿了種類繁多的茶葉。\n\n屋子裡面的男人做出手勢，讓你去看一批茶葉，每一種都有雅緻的標籤告知你茶葉的高昂價格。",
+      "optionCount": 5,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "THE_FUTURE_OF_POTIONS",
+      "slug": "the-future-of-potions",
+      "name": "藥水的未來？",
+      "imagePath": "/images/events/the_future_of_potions.webp",
+      "descriptionClean": "轉過拐角，你感受到一陣輕微的轟鳴，隨後發現了一臺巨大的旋轉裝置！\n它帶有幾個槽位，似乎能將液體轉化為高度壓縮的易消化藥片。\n\n將這些藥水煉成一小片的想法令人有些不適，但或許嘗試新事物也不錯？",
+      "optionCount": 1,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "THE_LANTERN_KEY",
+      "slug": "the-lantern-key",
+      "name": "燈火鑰匙",
+      "imagePath": "$undefined",
+      "descriptionClean": "你發現了一把發出微光的鑰匙，於是將它撿了起來。\n\n“我找這把鑰匙可把這裡翻了個遍！你要是不介意的話……”\n\n這傢伙看起來不是什麼好人，但或許你也不該以貌取人。",
+      "optionCount": 2,
+      "acts": [
+        "act2"
+      ],
+      "shared": false
+    },
+    {
+      "id": "THE_LEGENDS_WERE_TRUE",
+      "slug": "the-legends-were-true",
+      "name": "傳說是真的",
+      "imagePath": "/images/events/the_legends_were_true.webp",
+      "descriptionClean": "踏入漆黑的密室，一道亮光從上方刺破黑暗，與此同時，身後的門砰然關上。\n\n藉著光亮，你看到前方的石臺上放著一張地圖。你有一種強烈的想要拿走它的衝動。\n\n事出反常。",
+      "optionCount": 2,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "THIS_OR_THAT",
+      "slug": "this-or-that",
+      "name": "這個還是那個？",
+      "imagePath": "/images/events/this_or_that.webp",
+      "descriptionClean": "附近的一個坑洞裡突然躥出一雙手臂，一隻手緊握著一袋可疑的財寶，另一隻則拿著一件明顯被詛咒的遺物。\n\n“這個……還是那個？”\n一個嘶啞的聲音從地下傳來，向你低語。",
+      "optionCount": 2,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "TINKER_TIME",
+      "slug": "tinker-time",
+      "name": "打造時間",
+      "imagePath": "/images/events/tinker_time.webp",
+      "descriptionClean": "你在翻越數不盡的屍山血海之時，遇到了一位正在搜尋破爛的瘋狂科學家。\n\n“是的，嗨，你好！你看起來是個有實力的戰士……我的下一件暴行裝備正需要一個測試員！你覺得怎麼樣？”",
+      "optionCount": 1,
+      "acts": [
+        "act3"
+      ],
+      "shared": false
+    },
+    {
+      "id": "TRASH_HEAP",
+      "slug": "trash-heap",
+      "name": "垃圾堆",
+      "imagePath": "/images/events/trash_heap.webp",
+      "descriptionClean": "你發現了一座如山般堆積的垃圾，裡面有著廢舊武器、遺棄飾品和眾多其他古怪玩意兒。垃圾堆搖擺晃動著，彷彿正在從內部不斷生長變大……\n\n如果你從表面搜索，應該能找到一些好東西。但如果你努努力扎進垃圾堆裡面，那就能找到一些奇珍異寶。",
+      "optionCount": 2,
+      "acts": [
+        "act1b"
+      ],
+      "shared": false
+    },
+    {
+      "id": "TRIAL",
+      "slug": "the-trial",
+      "name": "審判",
+      "imagePath": "/images/events/trial.webp",
+      "descriptionClean": "你排起隊，和眾人一起進入一棟巨大的建築物。\n\n當你通過一道金色的拱門時，突然號角響起、彩紙爆裂飛散、天花板上還飛出了眾多彩條！\n\n“-1號進入者，你將成為今天審判的判決者。”",
+      "optionCount": 2,
+      "acts": [
+        "act3"
+      ],
+      "shared": false
+    },
+    {
+      "id": "UNREST_SITE",
+      "slug": "unrest-site",
+      "name": "無休之處",
+      "imagePath": "/images/events/unrest_site.webp",
+      "descriptionClean": "你找到了一個隔絕的休息處，於是點起篝火打算休息。\n結果只是打算而已。\n\n篝火點起後，火光立即脹大起來，不是向上而是向著側面延伸向一片滿是冒油樹木的林地。\n\n要不要不管這個情況，就這麼繼續休息？",
+      "optionCount": 2,
+      "acts": [
+        "act1a"
+      ],
+      "shared": false
+    },
+    {
+      "id": "WAR_HISTORIAN_REPY",
+      "slug": "war-historian-repy",
+      "name": "戰史學家 付襲",
+      "imagePath": "/images/events/war_historian_repy.webp",
+      "descriptionClean": "你看到一個學者被關在一個吊在空中的籠子裡，而旁邊有一個大寶箱。\n\n那個學者一邊咕噥著什麼“一次性的鑰匙”，一邊拼命地在寫著些什麼。\n\n看起來你可以二選一，要麼打開籠子，要麼打開寶箱。",
+      "optionCount": 2,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "WATERLOGGED_SCRIPTORIUM",
+      "slug": "waterlogged-scriptorium",
+      "name": "水漫繕寫室",
+      "imagePath": "/images/events/waterlogged_scriptorium.webp",
+      "descriptionClean": "在昏暗的通道中前行時，你找到了一個小店，裡面有一個憔悴的員工。四周的書架上塞滿了無數潮溼的卷軸與羊皮紙。\n\n抄寫員兼店主注意到有客人進店，猛地回過神來，為你指了指書桌上擺放著的一些器具。",
+      "optionCount": 5,
+      "acts": [
+        "act1b"
+      ],
+      "shared": false
+    },
+    {
+      "id": "WELCOME_TO_WONGOS",
+      "slug": "welcome-to-wongo-s",
+      "name": "歡迎來到旺購百貨",
+      "imagePath": "/images/events/welcome_to_wongos.webp",
+      "descriptionClean": "“歡迎來到旺購百貨，這裡有超旺商品，一定讓您越購越旺。”店員說著歡迎詞，看起來沒有絲毫熱情。\n\n“請隨意查看我們的商品，祝您在旺購過得愉快。”店員頭也不抬地繼續說著。",
+      "optionCount": 7,
+      "acts": [
+        "act1a",
+        "act1b",
+        "act2",
+        "act3"
+      ],
+      "shared": true
+    },
+    {
+      "id": "WELLSPRING",
+      "slug": "wellspring",
+      "name": "泉水",
+      "imagePath": "/images/events/wellspring.webp",
+      "descriptionClean": "你跟著一陣低沉的轟鳴聲找到了源頭：居然是一處平靜的泉水，讓你心生嚮往。泉水綠如碧玉，你還能從中看見一些發光的塵埃。\n\n看起來十分誘人，這不可能出什麼差錯的吧？",
+      "optionCount": 2,
+      "acts": [
+        "act1a"
+      ],
+      "shared": false
+    },
+    {
+      "id": "WHISPERING_HOLLOW",
+      "slug": "whispering-hollow",
+      "name": "低語空谷",
+      "imagePath": "/images/events/whispering_hollow.webp",
+      "descriptionClean": "在通過一個枯木林谷時，你遇見了一株孤單的白骨般的樹。它的枝丫如同肋骨般向內彎曲，枝條上則掛著黏土般的球狀物體。\n\n真是棵瘮人的樹。它還在發出低語：\n\n…來做交易…..",
+      "optionCount": 2,
+      "acts": [
+        "act1a"
+      ],
+      "shared": false
+    },
+    {
+      "id": "WOOD_CARVINGS",
+      "slug": "wood-carvings",
+      "name": "木雕",
+      "imagePath": "/images/events/wood_carvings.webp",
+      "descriptionClean": "你打開一個塵封的盒子，發現裡面有一組3個相當精細的木雕：\n\n一隻鳥、一條蛇、還有……一個圓環？\n\n附近有一個基座，上面的凹陷痕跡正與這些木雕底部的形狀吻合。你要把哪個木雕放在基座上呢？",
+      "optionCount": 4,
+      "acts": [
+        "act1a"
+      ],
+      "shared": false
+    },
+    {
+      "id": "ZEN_WEAVER",
+      "slug": "zen-weaver",
+      "name": "修禪織網者",
+      "imagePath": "/images/events/zen_weaver.webp",
+      "descriptionClean": "你在行走時撞到了一張蜘蛛網，立即慌了神！\n可是很快，一陣平靜的感覺席捲了你……\n\n“冷靜下來，我需要你不再弄壞我的網。”\n\n你怎麼會這麼快就冷靜下來的呢？\n一隻小之又小的蜘蛛沿著絲線降落下來與你問好，它看起來願意收取一些金幣來分享它的部分技術。",
+      "optionCount": 4,
+      "acts": [
+        "act2"
+      ],
+      "shared": false
+    }
+  ]
+}

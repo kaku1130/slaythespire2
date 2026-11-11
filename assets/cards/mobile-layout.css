@@ -1,0 +1,63 @@
+/* Compact navigation and one scrolling content area on phones. */
+@media screen and (max-width:760px){
+ .site-header>.site-header-inner{width:100%;min-height:52px;padding:4px 8px;flex-wrap:nowrap;gap:4px}
+ .site-header .site-brand{min-height:44px;flex:0 0 36px;gap:0}
+ .site-header .site-brand>span,.site-header .site-nav a>span:not([aria-hidden]){display:none}
+ .site-header .site-logo{width:30px;height:30px}
+ .site-header .site-nav{flex:1 1 auto;width:auto;gap:0;padding:0;overflow-x:auto}
+ .site-header .site-nav a{flex:1 0 34px;min-width:34px;min-height:44px;padding:4px!important;font-size:22px}
+ main#main-content,main#main-content:has(>.card-scroll,>.catalog-scroll,>.build-layout){display:block;overflow:auto;overflow-x:hidden;width:100%;padding:0 12px 24px;scroll-padding-top:72px}
+ main#main-content>:is(.tools,.filters,.character-sidebar,.tier-sidebar){position:static;height:auto;max-height:none;overflow:visible;margin:16px 0 24px}
+ main#main-content>:is(.card-scroll,.catalog-scroll,.build-layout,.build-content){height:auto;max-height:none;overflow:visible;padding:0;scrollbar-gutter:auto}
+ main#main-content :is(.character-sidebar,.tier-sidebar,.tier-index,.build-content){position:static;height:auto;max-height:none;overflow:visible}
+ main#main-content>.mobile-search-row{position:sticky;top:0;z-index:95;display:flex;align-items:center;gap:8px;margin:0 -12px;padding:10px 12px;background:#040609;border-bottom:1px solid #293340}
+ .mobile-search-row>.inline-search,.mobile-search-row>#search{flex:1 1 0;min-width:0}
+ main#main-content[data-mobile-filters-open=false]>.mobile-filter-panel{display:none}
+ main#main-content .mobile-search-row :is(.mobile-menu-toggle,#upgrade-toggle),main#main-content .tools #aoe-toggle{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;min-width:44px;min-height:44px;padding:0;gap:0;margin:0;border:1px solid #293340;border-radius:7px;background:#0d131a;color:#aab6c4;font:24px/1 Arial,sans-serif;cursor:pointer}
+ main#main-content .mobile-search-row #upgrade-toggle[aria-pressed=true]{background:#123022;border-color:#05df72;color:#05df72}
+ main#main-content .mobile-search-row .mobile-menu-toggle{border-color:#37a8ec!important}
+ main#main-content .mobile-search-row .mobile-menu-toggle[aria-expanded=true]{background:#238cc2!important;border-color:#37a8ec!important;color:#fff!important}
+ main#main-content :is(#upgrade-toggle,#aoe-toggle) .mobile-toggle-label{display:none}
+ main#main-content .mobile-search-row #upgrade-toggle .desktop-upgrade-icon{display:none}
+ main#main-content .mobile-search-row #upgrade-toggle .mobile-upgrade-icon{display:inline}
+ .mobile-search-row #search{box-sizing:border-box;display:block;width:100%;height:44px;min-width:0;margin:0;padding:8px 12px;border:1px solid #293340;border-radius:7px;background:#0d131a;color:#e3e8ee;font:16px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+ .mobile-search-row #search:focus{outline:2px solid #37a8ec;outline-offset:1px}
+ main#main-content .tools .primary-filter-row,main#main-content .tools .secondary-filter-row{display:contents}
+ main#main-content .tools{display:flex;flex-wrap:wrap;align-items:center;gap:16px 20px}
+ main#main-content .tools[hidden]{display:none}
+ main#main-content .tools .chips{display:flex;flex:1 0 100%;flex-wrap:wrap;gap:8px}
+ main#main-content .tools .primary-filter-row .chips button{display:flex;align-items:center;justify-content:center;min-width:44px;padding:8px;font-size:0;gap:0}
+ main#main-content .tools .pool-icon{width:26px;height:26px;margin:0}
+ main#main-content .tools .primary-filter-row .presentation-controls{display:none}
+ main#main-content .tools .filter-cluster{margin:0;flex:0 1 auto;max-width:100%}
+ main#main-content .tools :is(.rarity-buttons,.type-buttons){display:flex;flex-wrap:wrap;gap:6px}
+ main#main-content #tools button:is([data-category],[data-rarity-filter],[data-tier-filter],[data-type-filter])[aria-pressed=true]{background:var(--control-color)!important;border-color:var(--control-color)!important;color:#fff!important;box-shadow:none!important}
+ main#main-content .tools button{font-size:16px;min-height:44px;padding:8px 10px}
+ main#main-content .tools :is(#upgrade-toggle,#aoe-toggle){font-size:0;min-width:44px;margin:0}
+ main#main-content .tools :is(#upgrade-toggle,#aoe-toggle)>span{font-size:24px;line-height:1}
+ main#main-content .tools #aoe-toggle{height:var(--control-height,48px);min-height:var(--control-height,48px)}
+ main#main-content .tools #upgrade-toggle .desktop-upgrade-icon{display:none}
+ main#main-content .tools #upgrade-toggle .mobile-upgrade-icon{display:inline}
+ main#main-content .build-layout{display:block}
+ main#main-content.detail-split{display:block!important;overflow:auto!important}
+ main#main-content .split-body{display:block;overflow:visible}
+ main#main-content .split-list,main#main-content .split-list>.catalog-scroll{display:block;height:auto;max-height:none;overflow:visible}
+ main#main-content .split-list .catalog,main#main-content .split-list .container>.grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ main#main-content .split-detail{height:70dvh;margin-top:20px;scroll-margin-top:72px}
+ /* Catalog filters share the card page's compact, solid selected buttons. */
+ main#main-content .filters .relic-filter-group,main#main-content .filters .potion-rarities{gap:8px}
+ main#main-content .filters .catalog-search-tools:empty,main#main-content .filters .catalog-columns{display:none}
+ main#main-content .filters.relic-filters button[data-filter-group=pool]{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:48px;padding:8px;gap:0;font-size:0}
+ main#main-content .filters.relic-filters button[data-filter-group=pool] img{width:26px;height:26px;margin:0}
+ html body main#main-content .filters button:is([data-filter-group],[data-rarity-filter])[aria-pressed=true]{background:var(--control-color)!important;border-color:var(--control-color)!important;color:#fff!important;box-shadow:none!important}
+ main#main-content:is([data-mobile-page=relic],[data-mobile-page=potion]) .catalog{grid-template-columns:minmax(0,1fr)!important;width:100%;max-width:none}
+ main#main-content:is([data-mobile-page=relic],[data-mobile-page=potion]) :is(.relic-section,.potion-section){box-sizing:border-box;width:100%;max-width:none;padding:12px}
+ main#main-content:is([data-mobile-page=relic],[data-mobile-page=potion]) .entry{box-sizing:border-box;width:100%;min-width:0;max-width:none}
+ main#main-content[data-mobile-page=event] .split-list .catalog{grid-template-columns:minmax(0,1fr)!important}
+ main#main-content[data-mobile-page=ancient] .ancient-act-groups{grid-template-columns:minmax(0,1fr)}
+ main#main-content[data-mobile-page=ancient] .ancient-act-title{justify-content:center}
+ main#main-content[data-mobile-page=ancient] .split-list .compact-detail-item{justify-content:center;text-align:center}
+ main#main-content[data-mobile-page=ancient] .compact-detail-name{flex:0 1 auto}
+ main#main-content :is(section,[id^=card-],[id^=build-]){scroll-margin-top:72px}
+}
+.mobile-upgrade-icon{display:none}

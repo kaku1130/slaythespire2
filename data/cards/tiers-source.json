@@ -1,0 +1,2419 @@
+{
+  "source": "https://slaythespire2.net/card-tier-list",
+  "version": "Live v0.107.1",
+  "retrievedDate": "2026-11-08",
+  "rankings": [
+    {
+      "id": "CRIMSON_MANTLE",
+      "name": "Crimson Mantle",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "CRUELTY",
+      "name": "Cruelty",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "DARK_EMBRACE",
+      "name": "Dark Embrace",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "FIEND_FIRE",
+      "name": "Fiend Fire",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "IMPERVIOUS",
+      "name": "Impervious",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "OFFERING",
+      "name": "Offering",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "PACTS_END",
+      "name": "Pact's End",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "PRIMAL_FORCE",
+      "name": "Primal Force",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "UNMOVABLE",
+      "name": "Unmovable",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "BATTLE_TRANCE",
+      "name": "Battle Trance",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "BURNING_PACT",
+      "name": "Burning Pact",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "COLOSSUS",
+      "name": "Colossus",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "DOMINATE",
+      "name": "Dominate",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "INFERNO",
+      "name": "Inferno",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "UPPERCUT",
+      "name": "Uppercut",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "BLOODLETTING",
+      "name": "Bloodletting",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "POMMEL_STRIKE",
+      "name": "Pommel Strike",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "TREMBLE",
+      "name": "Tremble",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
+      "id": "CORRUPTION",
+      "name": "Corruption",
+      "category": "Ironclad",
+      "tier": "A"
+    },
+    {
+      "id": "FEED",
+      "name": "Feed",
+      "category": "Ironclad",
+      "tier": "A"
+    },
+    {
+      "id": "PYRE",
+      "name": "Pyre",
+      "category": "Ironclad",
+      "tier": "A"
+    },
+    {
+      "id": "STOKE",
+      "name": "Stoke",
+      "category": "Ironclad",
+      "tier": "A"
+    },
+    {
+      "id": "BLUDGEON",
+      "name": "Bludgeon",
+      "category": "Ironclad",
+      "tier": "A"
+    },
+    {
+      "id": "EXPECT_A_FIGHT",
+      "name": "Expect a Fight",
+      "category": "Ironclad",
+      "tier": "A"
+    },
+    {
+      "id": "FEEL_NO_PAIN",
+      "name": "Feel No Pain",
+      "category": "Ironclad",
+      "tier": "A"
+    },
+    {
+      "id": "FLAME_BARRIER",
+      "name": "Flame Barrier",
+      "category": "Ironclad",
+      "tier": "A"
+    },
+    {
+      "id": "HEMOKINESIS",
+      "name": "Hemokinesis",
+      "category": "Ironclad",
+      "tier": "A"
+    },
+    {
+      "id": "RAGE",
+      "name": "Rage",
+      "category": "Ironclad",
+      "tier": "A"
+    },
+    {
+      "id": "SECOND_WIND",
+      "name": "Second Wind",
+      "category": "Ironclad",
+      "tier": "A"
+    },
+    {
+      "id": "ANGER",
+      "name": "Anger",
+      "category": "Ironclad",
+      "tier": "A"
+    },
+    {
+      "id": "BLOOD_WALL",
+      "name": "Blood Wall",
+      "category": "Ironclad",
+      "tier": "A"
+    },
+    {
+      "id": "HEADBUTT",
+      "name": "Headbutt",
+      "category": "Ironclad",
+      "tier": "A"
+    },
+    {
+      "id": "SHRUG_IT_OFF",
+      "name": "Shrug It Off",
+      "category": "Ironclad",
+      "tier": "A"
+    },
+    {
+      "id": "BREAK",
+      "name": "Break",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "AGGRESSION",
+      "name": "Aggression",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "TEAR_ASUNDER",
+      "name": "Tear Asunder",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "THRASH",
+      "name": "Thrash",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "ASHEN_STRIKE",
+      "name": "Ashen Strike",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "DISMANTLE",
+      "name": "Dismantle",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "EVIL_EYE",
+      "name": "Evil Eye",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "FORGOTTEN_RITUAL",
+      "name": "Forgotten Ritual",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "SPITE",
+      "name": "Spite",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "STOMP",
+      "name": "Stomp",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "TAUNT",
+      "name": "Taunt",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "UNRELENTING",
+      "name": "Unrelenting",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "WHIRLWIND",
+      "name": "Whirlwind",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "BREAKTHROUGH",
+      "name": "Breakthrough",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "CINDER",
+      "name": "Cinder",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "IRON_WAVE",
+      "name": "Iron Wave",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "TWIN_STRIKE",
+      "name": "Twin Strike",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "BRAND",
+      "name": "Brand",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "CASCADE",
+      "name": "Cascade",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "DEMON_FORM",
+      "name": "Demon Form",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "HELLRAISER",
+      "name": "Hellraiser",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "BULLY",
+      "name": "Bully",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "DRUM_OF_BATTLE",
+      "name": "Drum of Battle",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "FIGHT_ME",
+      "name": "Fight Me!",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "HOWL_FROM_BEYOND",
+      "name": "Howl from Beyond",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "INFERNAL_BLADE",
+      "name": "Infernal Blade",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "INFLAME",
+      "name": "Inflame",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "JUGGLING",
+      "name": "Juggling",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "PILLAGE",
+      "name": "Pillage",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "RAMPAGE",
+      "name": "Rampage",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "RUPTURE",
+      "name": "Rupture",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "STAMPEDE",
+      "name": "Stampede",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "STONE_ARMOR",
+      "name": "Stone Armor",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "VICIOUS",
+      "name": "Vicious",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "ARMAMENTS",
+      "name": "Armaments",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "BODY_SLAM",
+      "name": "Body Slam",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "HAVOC",
+      "name": "Havoc",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "MOLTEN_FIST",
+      "name": "Molten Fist",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "PERFECTED_STRIKE",
+      "name": "Perfected Strike",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "SETUP_STRIKE",
+      "name": "Setup Strike",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "SWORD_BOOMERANG",
+      "name": "Sword Boomerang",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "THUNDERCLAP",
+      "name": "Thunderclap",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "TRUE_GRIT",
+      "name": "True Grit",
+      "category": "Ironclad",
+      "tier": "C"
+    },
+    {
+      "id": "BARRICADE",
+      "name": "Barricade",
+      "category": "Ironclad",
+      "tier": "D"
+    },
+    {
+      "id": "CONFLAGRATION",
+      "name": "Conflagration",
+      "category": "Ironclad",
+      "tier": "D"
+    },
+    {
+      "id": "JUGGERNAUT",
+      "name": "Juggernaut",
+      "category": "Ironclad",
+      "tier": "D"
+    },
+    {
+      "id": "MANGLE",
+      "name": "Mangle",
+      "category": "Ironclad",
+      "tier": "D"
+    },
+    {
+      "id": "ONE_TWO_PUNCH",
+      "name": "One-Two Punch",
+      "category": "Ironclad",
+      "tier": "D"
+    },
+    {
+      "id": "ABRASIVE",
+      "name": "Abrasive",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "ADRENALINE",
+      "name": "Adrenaline",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "AFTERIMAGE",
+      "name": "Afterimage",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "BLADE_OF_INK",
+      "name": "Blade of Ink",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "MALAISE",
+      "name": "Malaise",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "THE_HUNT",
+      "name": "The Hunt",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "TOOLS_OF_THE_TRADE",
+      "name": "Tools of the Trade",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "TRACKING",
+      "name": "Tracking",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "ACROBATICS",
+      "name": "Acrobatics",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "CALCULATED_GAMBLE",
+      "name": "Calculated Gamble",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "ESCAPE_PLAN",
+      "name": "Escape Plan",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "FOOTWORK",
+      "name": "Footwork",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "LEG_SWEEP",
+      "name": "Leg Sweep",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "REFLEX",
+      "name": "Reflex",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "WELL_LAID_PLANS",
+      "name": "Well-Laid Plans",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "DODGE_AND_ROLL",
+      "name": "Dodge and Roll",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "PIERCING_WAIL",
+      "name": "Piercing Wail",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "PREPARED",
+      "name": "Prepared",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "UNTOUCHABLE",
+      "name": "Untouchable",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
+      "id": "ASSASSINATE",
+      "name": "Assassinate",
+      "category": "Silent",
+      "tier": "A"
+    },
+    {
+      "id": "ECHOING_SLASH",
+      "name": "Echoing Slash",
+      "category": "Silent",
+      "tier": "A"
+    },
+    {
+      "id": "ACCURACY",
+      "name": "Accuracy",
+      "category": "Silent",
+      "tier": "A"
+    },
+    {
+      "id": "BLUR",
+      "name": "Blur",
+      "category": "Silent",
+      "tier": "A"
+    },
+    {
+      "id": "EXPOSE",
+      "name": "Expose",
+      "category": "Silent",
+      "tier": "A"
+    },
+    {
+      "id": "FLECHETTES",
+      "name": "Flechettes",
+      "category": "Silent",
+      "tier": "A"
+    },
+    {
+      "id": "HIDDEN_DAGGERS",
+      "name": "Hidden Daggers",
+      "category": "Silent",
+      "tier": "A"
+    },
+    {
+      "id": "INFINITE_BLADES",
+      "name": "Infinite Blades",
+      "category": "Silent",
+      "tier": "A"
+    },
+    {
+      "id": "NOXIOUS_FUMES",
+      "name": "Noxious Fumes",
+      "category": "Silent",
+      "tier": "A"
+    },
+    {
+      "id": "PINPOINT",
+      "name": "Pinpoint",
+      "category": "Silent",
+      "tier": "A"
+    },
+    {
+      "id": "TACTICIAN",
+      "name": "Tactician",
+      "category": "Silent",
+      "tier": "A"
+    },
+    {
+      "id": "BACKFLIP",
+      "name": "Backflip",
+      "category": "Silent",
+      "tier": "A"
+    },
+    {
+      "id": "BLADE_DANCE",
+      "name": "Blade Dance",
+      "category": "Silent",
+      "tier": "A"
+    },
+    {
+      "id": "LEADING_STRIKE",
+      "name": "Leading Strike",
+      "category": "Silent",
+      "tier": "A"
+    },
+    {
+      "id": "BACKSTAB",
+      "name": "Backstab",
+      "category": "Silent",
+      "tier": "B"
+    },
+    {
+      "id": "PHANTOM_BLADES",
+      "name": "Phantom Blades",
+      "category": "Silent",
+      "tier": "B"
+    },
+    {
+      "id": "POUNCE",
+      "name": "Pounce",
+      "category": "Silent",
+      "tier": "B"
+    },
+    {
+      "id": "PRECISE_CUT",
+      "name": "Precise Cut",
+      "category": "Silent",
+      "tier": "B"
+    },
+    {
+      "id": "CLOAK_AND_DAGGER",
+      "name": "Cloak and Dagger",
+      "category": "Silent",
+      "tier": "B"
+    },
+    {
+      "id": "DAGGER_SPRAY",
+      "name": "Dagger Spray",
+      "category": "Silent",
+      "tier": "B"
+    },
+    {
+      "id": "DAGGER_THROW",
+      "name": "Dagger Throw",
+      "category": "Silent",
+      "tier": "B"
+    },
+    {
+      "id": "DEFLECT",
+      "name": "Deflect",
+      "category": "Silent",
+      "tier": "B"
+    },
+    {
+      "id": "PREDATOR",
+      "name": "Predator",
+      "category": "Silent",
+      "tier": "B"
+    },
+    {
+      "id": "RICOCHET",
+      "name": "Ricochet",
+      "category": "Silent",
+      "tier": "B"
+    },
+    {
+      "id": "SLICE",
+      "name": "Slice",
+      "category": "Silent",
+      "tier": "B"
+    },
+    {
+      "id": "SUCKER_PUNCH",
+      "name": "Sucker Punch",
+      "category": "Silent",
+      "tier": "B"
+    },
+    {
+      "id": "ACCELERANT",
+      "name": "Accelerant",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "BURST",
+      "name": "Burst",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "CORROSIVE_WAVE",
+      "name": "Corrosive Wave",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "FAN_OF_KNIVES",
+      "name": "Fan of Knives",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "KNIFE_TRAP",
+      "name": "Knife Trap",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "MASTER_PLANNER",
+      "name": "Master Planner",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "MURDER",
+      "name": "Murder",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "SERPENT_FORM",
+      "name": "Serpent Form",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "SHADOWMELD",
+      "name": "Shadowmeld",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "SHADOW_STEP",
+      "name": "Shadow Step",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "BUBBLE_BUBBLE",
+      "name": "Bubble Bubble",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "DASH",
+      "name": "Dash",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "EXPERTISE",
+      "name": "Expertise",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "FINISHER",
+      "name": "Finisher",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "HAND_TRICK",
+      "name": "Hand Trick",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "HAZE",
+      "name": "Haze",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "OUTBREAK",
+      "name": "Outbreak",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "SKEWER",
+      "name": "Skewer",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "STRANGLE",
+      "name": "Strangle",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "ANTICIPATE",
+      "name": "Anticipate",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "DEADLY_POISON",
+      "name": "Deadly Poison",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "FLICK_FLACK",
+      "name": "Flick-Flack",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "POISONED_STAB",
+      "name": "Poisoned Stab",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "SNAKEBITE",
+      "name": "Snakebite",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "BULLET_TIME",
+      "name": "Bullet Time",
+      "category": "Silent",
+      "tier": "D"
+    },
+    {
+      "id": "ENVENOM",
+      "name": "Envenom",
+      "category": "Silent",
+      "tier": "D"
+    },
+    {
+      "id": "GRAND_FINALE",
+      "name": "Grand Finale",
+      "category": "Silent",
+      "tier": "D"
+    },
+    {
+      "id": "NIGHTMARE",
+      "name": "Nightmare",
+      "category": "Silent",
+      "tier": "D"
+    },
+    {
+      "id": "STORM_OF_STEEL",
+      "name": "Storm of Steel",
+      "category": "Silent",
+      "tier": "D"
+    },
+    {
+      "id": "BOUNCING_FLASK",
+      "name": "Bouncing Flask",
+      "category": "Silent",
+      "tier": "D"
+    },
+    {
+      "id": "MEMENTO_MORI",
+      "name": "Memento Mori",
+      "category": "Silent",
+      "tier": "D"
+    },
+    {
+      "id": "MIRAGE",
+      "name": "Mirage",
+      "category": "Silent",
+      "tier": "D"
+    },
+    {
+      "id": "SPEEDSTER",
+      "name": "Speedster",
+      "category": "Silent",
+      "tier": "D"
+    },
+    {
+      "id": "UP_MY_SLEEVE",
+      "name": "Up My Sleeve",
+      "category": "Silent",
+      "tier": "D"
+    },
+    {
+      "id": "BUFFER",
+      "name": "Buffer",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "DEFRAGMENT",
+      "name": "Defragment",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "ECHO_FORM",
+      "name": "Echo Form",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "GENETIC_ALGORITHM",
+      "name": "Genetic Algorithm",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "ICE_LANCE",
+      "name": "Ice Lance",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "MACHINE_LEARNING",
+      "name": "Machine Learning",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "MODDED",
+      "name": "Modded",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "SHATTER",
+      "name": "Shatter",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "SUPERCRITICAL",
+      "name": "Supercritical",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "TRASH_TO_TREASURE",
+      "name": "Trash to Treasure",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "BOOT_SEQUENCE",
+      "name": "Boot Sequence",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "CAPACITOR",
+      "name": "Capacitor",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "CHILL",
+      "name": "Chill",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "COMPACT",
+      "name": "Compact",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "DARKNESS",
+      "name": "Darkness",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "GLACIER",
+      "name": "Glacier",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "LOOP",
+      "name": "Loop",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "NULL",
+      "name": "Null",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "OVERCLOCK",
+      "name": "Overclock",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "SYNCHRONIZE",
+      "name": "Synchronize",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "BARRAGE",
+      "name": "Barrage",
+      "category": "Defect",
+      "tier": "S"
+    },
+    {
+      "id": "COOLANT",
+      "name": "Coolant",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "FLAK_CANNON",
+      "name": "Flak Cannon",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "SIGNAL_BOOST",
+      "name": "Signal Boost",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "SPINNER",
+      "name": "Spinner",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "BULK_UP",
+      "name": "Bulk Up",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "FIGHT_THROUGH",
+      "name": "Fight Through",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "FTL",
+      "name": "FTL",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "HAILSTORM",
+      "name": "Hailstorm",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "ITERATION",
+      "name": "Iteration",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "REFRACT",
+      "name": "Refract",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "ROCKET_PUNCH",
+      "name": "Rocket Punch",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "SHADOW_SHIELD",
+      "name": "Shadow Shield",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "SKIM",
+      "name": "Skim",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "SUBROUTINE",
+      "name": "Subroutine",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "SUNDER",
+      "name": "Sunder",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "BALL_LIGHTNING",
+      "name": "Ball Lightning",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "BOOST_AWAY",
+      "name": "Boost Away",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "CHARGE_BATTERY",
+      "name": "Charge Battery",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "COLD_SNAP",
+      "name": "Cold Snap",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "COOLHEADED",
+      "name": "Coolheaded",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "GO_FOR_THE_EYES",
+      "name": "Go for the Eyes",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "GUNK_UP",
+      "name": "Gunk Up",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "TURBO",
+      "name": "TURBO",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "UPROAR",
+      "name": "Uproar",
+      "category": "Defect",
+      "tier": "A"
+    },
+    {
+      "id": "ALL_FOR_ONE",
+      "name": "All for One",
+      "category": "Defect",
+      "tier": "B"
+    },
+    {
+      "id": "CONSUMING_SHADOW",
+      "name": "Consuming Shadow",
+      "category": "Defect",
+      "tier": "B"
+    },
+    {
+      "id": "CREATIVE_AI",
+      "name": "Creative AI",
+      "category": "Defect",
+      "tier": "B"
+    },
+    {
+      "id": "HELIX_DRILL",
+      "name": "Helix Drill",
+      "category": "Defect",
+      "tier": "B"
+    },
+    {
+      "id": "RAINBOW",
+      "name": "Rainbow",
+      "category": "Defect",
+      "tier": "B"
+    },
+    {
+      "id": "DOUBLE_ENERGY",
+      "name": "Double Energy",
+      "category": "Defect",
+      "tier": "B"
+    },
+    {
+      "id": "FERAL",
+      "name": "Feral",
+      "category": "Defect",
+      "tier": "B"
+    },
+    {
+      "id": "FUSION",
+      "name": "Fusion",
+      "category": "Defect",
+      "tier": "B"
+    },
+    {
+      "id": "SYNTHESIS",
+      "name": "Synthesis",
+      "category": "Defect",
+      "tier": "B"
+    },
+    {
+      "id": "TESLA_COIL",
+      "name": "Tesla Coil",
+      "category": "Defect",
+      "tier": "B"
+    },
+    {
+      "id": "HOLOGRAM",
+      "name": "Hologram",
+      "category": "Defect",
+      "tier": "B"
+    },
+    {
+      "id": "LEAP",
+      "name": "Leap",
+      "category": "Defect",
+      "tier": "B"
+    },
+    {
+      "id": "ADAPTIVE_STRIKE",
+      "name": "Adaptive Strike",
+      "category": "Defect",
+      "tier": "C"
+    },
+    {
+      "id": "METEOR_STRIKE",
+      "name": "Meteor Strike",
+      "category": "Defect",
+      "tier": "C"
+    },
+    {
+      "id": "MULTI_CAST",
+      "name": "Multi-Cast",
+      "category": "Defect",
+      "tier": "C"
+    },
+    {
+      "id": "REBOOT",
+      "name": "Reboot",
+      "category": "Defect",
+      "tier": "C"
+    },
+    {
+      "id": "VOLTAIC",
+      "name": "Voltaic",
+      "category": "Defect",
+      "tier": "C"
+    },
+    {
+      "id": "GLASSWORK",
+      "name": "Glasswork",
+      "category": "Defect",
+      "tier": "C"
+    },
+    {
+      "id": "SCAVENGE",
+      "name": "Scavenge",
+      "category": "Defect",
+      "tier": "C"
+    },
+    {
+      "id": "SMOKESTACK",
+      "name": "Smokestack",
+      "category": "Defect",
+      "tier": "C"
+    },
+    {
+      "id": "STORM",
+      "name": "Storm",
+      "category": "Defect",
+      "tier": "C"
+    },
+    {
+      "id": "TEMPEST",
+      "name": "Tempest",
+      "category": "Defect",
+      "tier": "C"
+    },
+    {
+      "id": "WHITE_NOISE",
+      "name": "White Noise",
+      "category": "Defect",
+      "tier": "C"
+    },
+    {
+      "id": "BEAM_CELL",
+      "name": "Beam Cell",
+      "category": "Defect",
+      "tier": "C"
+    },
+    {
+      "id": "COMPILE_DRIVER",
+      "name": "Compile Driver",
+      "category": "Defect",
+      "tier": "C"
+    },
+    {
+      "id": "HOTFIX",
+      "name": "Hotfix",
+      "category": "Defect",
+      "tier": "C"
+    },
+    {
+      "id": "LIGHTNING_ROD",
+      "name": "Lightning Rod",
+      "category": "Defect",
+      "tier": "C"
+    },
+    {
+      "id": "MOMENTUM_STRIKE",
+      "name": "Momentum Strike",
+      "category": "Defect",
+      "tier": "C"
+    },
+    {
+      "id": "HYPERBEAM",
+      "name": "Hyperbeam",
+      "category": "Defect",
+      "tier": "D"
+    },
+    {
+      "id": "CHAOS",
+      "name": "Chaos",
+      "category": "Defect",
+      "tier": "D"
+    },
+    {
+      "id": "SCRAPE",
+      "name": "Scrape",
+      "category": "Defect",
+      "tier": "D"
+    },
+    {
+      "id": "THUNDER",
+      "name": "Thunder",
+      "category": "Defect",
+      "tier": "D"
+    },
+    {
+      "id": "CLAW",
+      "name": "Claw",
+      "category": "Defect",
+      "tier": "D"
+    },
+    {
+      "id": "FOCUSED_STRIKE",
+      "name": "Focused Strike",
+      "category": "Defect",
+      "tier": "D"
+    },
+    {
+      "id": "SWEEPING_BEAM",
+      "name": "Sweeping Beam",
+      "category": "Defect",
+      "tier": "D"
+    },
+    {
+      "id": "METEOR_SHOWER",
+      "name": "Meteor Shower",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "THE_SEALED_THRONE",
+      "name": "The Sealed Throne",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "BIG_BANG",
+      "name": "Big Bang",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "COMET",
+      "name": "Comet",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "CRASH_LANDING",
+      "name": "Crash Landing",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "GUARDS",
+      "name": "GUARDS!!!",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "VOID_FORM",
+      "name": "Void Form",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "BULWARK",
+      "name": "Bulwark",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "CHARGE",
+      "name": "CHARGE!!",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "CHILD_OF_THE_STARS",
+      "name": "Child of the Stars",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "CONVERGENCE",
+      "name": "Convergence",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "PILLAR_OF_CREATION",
+      "name": "Pillar of Creation",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "REFLECT",
+      "name": "Reflect",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "ROYAL_GAMBLE",
+      "name": "Royal Gamble",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "SPECTRUM_SHIFT",
+      "name": "Spectrum Shift",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "ASTRAL_PULSE",
+      "name": "Astral Pulse",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "GLOW",
+      "name": "Glow",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "KNOW_THY_PLACE",
+      "name": "Know Thy Place",
+      "category": "Regent",
+      "tier": "S"
+    },
+    {
+      "id": "BUNDLE_OF_JOY",
+      "name": "Bundle of Joy",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "DYING_STAR",
+      "name": "Dying Star",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "MAKE_IT_SO",
+      "name": "Make It So",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "ROYALTIES",
+      "name": "Royalties",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "SWORD_SAGE",
+      "name": "Sword Sage",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "THE_SMITH",
+      "name": "The Smith",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "TYRANNY",
+      "name": "Tyranny",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "GAMMA_BLAST",
+      "name": "Gamma Blast",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "KINGLY_KICK",
+      "name": "Kingly Kick",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "MANIFEST_AUTHORITY",
+      "name": "Manifest Authority",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "ORBIT",
+      "name": "Orbit",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "PARTICLE_WALL",
+      "name": "Particle Wall",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "QUASAR",
+      "name": "Quasar",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "RADIATE",
+      "name": "Radiate",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "BEGONE",
+      "name": "BEGONE!",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "CLOAK_OF_STARS",
+      "name": "Cloak of Stars",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "COLLISION_COURSE",
+      "name": "Collision Course",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "GATHER_LIGHT",
+      "name": "Gather Light",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "HIDDEN_CACHE",
+      "name": "Hidden Cache",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "REFINE_BLADE",
+      "name": "Refine Blade",
+      "category": "Regent",
+      "tier": "A"
+    },
+    {
+      "id": "BOMBARDMENT",
+      "name": "Bombardment",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "DECISIONS_DECISIONS",
+      "name": "Decisions, Decisions",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "HEAVENLY_DRILL",
+      "name": "Heavenly Drill",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "HEIRLOOM_HAMMER",
+      "name": "Heirloom Hammer",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "I_AM_INVINCIBLE",
+      "name": "I Am Invincible",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "ALIGNMENT",
+      "name": "Alignment",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "BLACK_HOLE",
+      "name": "Black Hole",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "GLIMMER",
+      "name": "Glimmer",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "KINGLY_PUNCH",
+      "name": "Kingly Punch",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "PALE_BLUE_DOT",
+      "name": "Pale Blue Dot",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "SHINING_STRIKE",
+      "name": "Shining Strike",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "SUMMON_FORTH",
+      "name": "Summon Forth",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "SUPERMASSIVE",
+      "name": "Supermassive",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "COSMIC_INDIFFERENCE",
+      "name": "Cosmic Indifference",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "CRUSH_UNDER",
+      "name": "Crush Under",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "GLITTERSTREAM",
+      "name": "Glitterstream",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "GUIDING_STAR",
+      "name": "Guiding Star",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "PATTER",
+      "name": "Patter",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "PHOTON_CUT",
+      "name": "Photon Cut",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "SPOILS_OF_BATTLE",
+      "name": "Spoils of Battle",
+      "category": "Regent",
+      "tier": "B"
+    },
+    {
+      "id": "ARSENAL",
+      "name": "Arsenal",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "BEAT_INTO_SHAPE",
+      "name": "Beat into Shape",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "FOREGONE_CONCLUSION",
+      "name": "Foregone Conclusion",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "GENESIS",
+      "name": "Genesis",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "NEUTRON_AEGIS",
+      "name": "Neutron Aegis",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "SEEKING_EDGE",
+      "name": "Seeking Edge",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "SEVEN_STARS",
+      "name": "Seven Stars",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "CONQUEROR",
+      "name": "Conqueror",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "DEVASTATE",
+      "name": "Devastate",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "FURNACE",
+      "name": "Furnace",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "HEGEMONY",
+      "name": "Hegemony",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "KNOCKOUT_BLOW",
+      "name": "Knockout Blow",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "LUNAR_BLAST",
+      "name": "Lunar Blast",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "PARRY",
+      "name": "Parry",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "PROPHESIZE",
+      "name": "Prophesize",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "STARDUST",
+      "name": "Stardust",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "TERRAFORMING",
+      "name": "Terraforming",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "CELESTIAL_MIGHT",
+      "name": "Celestial Might",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "SOLAR_STRIKE",
+      "name": "Solar Strike",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "WROUGHT_IN_WAR",
+      "name": "Wrought in War",
+      "category": "Regent",
+      "tier": "C"
+    },
+    {
+      "id": "MONARCHS_GAZE",
+      "name": "Monarch's Gaze",
+      "category": "Regent",
+      "tier": "D"
+    },
+    {
+      "id": "MONOLOGUE",
+      "name": "Monologue",
+      "category": "Regent",
+      "tier": "D"
+    },
+    {
+      "id": "RESONANCE",
+      "name": "Resonance",
+      "category": "Regent",
+      "tier": "D"
+    },
+    {
+      "id": "CRESCENT_SPEAR",
+      "name": "Crescent Spear",
+      "category": "Regent",
+      "tier": "D"
+    },
+    {
+      "id": "BANSHEES_CRY",
+      "name": "Banshee's Cry",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "CALL_OF_THE_VOID",
+      "name": "Call of the Void",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "DEMESNE",
+      "name": "Demesne",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "NEUROSURGE",
+      "name": "Neurosurge",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "REANIMATE",
+      "name": "Reanimate",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "REAPER_FORM",
+      "name": "Reaper Form",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "SHARED_FATE",
+      "name": "Shared Fate",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "SPIRIT_OF_ASH",
+      "name": "Spirit of Ash",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "BONE_SHARDS",
+      "name": "Bone Shards",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "CAPTURE_SPIRIT",
+      "name": "Capture Spirit",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "DANSE_MACABRE",
+      "name": "Danse Macabre",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "DEATHBRINGER",
+      "name": "Deathbringer",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "DELAY",
+      "name": "Delay",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "DIRGE",
+      "name": "Dirge",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "ENFEEBLING_TOUCH",
+      "name": "Enfeebling Touch",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "FRIENDSHIP",
+      "name": "Friendship",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "LETHALITY",
+      "name": "Lethality",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "PAGESTORM",
+      "name": "Pagestorm",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "PUTREFY",
+      "name": "Putrefy",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "SLEIGHT_OF_FLESH",
+      "name": "Sleight of Flesh",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "DEFY",
+      "name": "Defy",
+      "category": "Necrobinder",
+      "tier": "S"
+    },
+    {
+      "id": "END_OF_DAYS",
+      "name": "End of Days",
+      "category": "Necrobinder",
+      "tier": "A"
+    },
+    {
+      "id": "ERADICATE",
+      "name": "Eradicate",
+      "category": "Necrobinder",
+      "tier": "A"
+    },
+    {
+      "id": "HANG",
+      "name": "Hang",
+      "category": "Necrobinder",
+      "tier": "A"
+    },
+    {
+      "id": "UNDEATH",
+      "name": "Undeath",
+      "category": "Necrobinder",
+      "tier": "A"
+    },
+    {
+      "id": "BORROWED_TIME",
+      "name": "Borrowed Time",
+      "category": "Necrobinder",
+      "tier": "A"
+    },
+    {
+      "id": "FETCH",
+      "name": "Fetch",
+      "category": "Necrobinder",
+      "tier": "A"
+    },
+    {
+      "id": "AFTERLIFE",
+      "name": "Afterlife",
+      "category": "Necrobinder",
+      "tier": "A"
+    },
+    {
+      "id": "GRAVE_WARDEN",
+      "name": "Grave Warden",
+      "category": "Necrobinder",
+      "tier": "A"
+    },
+    {
+      "id": "EIDOLON",
+      "name": "Eidolon",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "OBLIVION",
+      "name": "Oblivion",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "SENTRY_MODE",
+      "name": "Sentry Mode",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "THE_SCYTHE",
+      "name": "The Scythe",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "TIMES_UP",
+      "name": "Time's Up",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "TRANSFIGURE",
+      "name": "Transfigure",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "CALCIFY",
+      "name": "Calcify",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "COUNTDOWN",
+      "name": "Countdown",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "DEATHS_DOOR",
+      "name": "Death's Door",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "DEBILITATE",
+      "name": "Debilitate",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "DREDGE",
+      "name": "Dredge",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "HAUNT",
+      "name": "Haunt",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "HIGH_FIVE",
+      "name": "High Five",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "MELANCHOLY",
+      "name": "Melancholy",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "NO_ESCAPE",
+      "name": "No Escape",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "PULL_FROM_BELOW",
+      "name": "Pull from Below",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "SHROUD",
+      "name": "Shroud",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "SPUR",
+      "name": "Spur",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "DEFILE",
+      "name": "Defile",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "INVOKE",
+      "name": "Invoke",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "NEGATIVE_PULSE",
+      "name": "Negative Pulse",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "PULL_AGGRO",
+      "name": "Pull Aggro",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "REAP",
+      "name": "Reap",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "SOW",
+      "name": "Sow",
+      "category": "Necrobinder",
+      "tier": "B"
+    },
+    {
+      "id": "DEVOUR_LIFE",
+      "name": "Devour Life",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "MISERY",
+      "name": "Misery",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "NECRO_MASTERY",
+      "name": "Necro Mastery",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "SACRIFICE",
+      "name": "Sacrifice",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "SEANCE",
+      "name": "Seance",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "SQUEEZE",
+      "name": "Squeeze",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "CLEANSE",
+      "name": "Cleanse",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "DEATH_MARCH",
+      "name": "Death March",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "PARSE",
+      "name": "Parse",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "RATTLE",
+      "name": "Rattle",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "RIGHT_HAND_HAND",
+      "name": "Right Hand Hand",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "SEVERANCE",
+      "name": "Severance",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "SIC_EM",
+      "name": "Sic 'Em",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "VEILPIERCER",
+      "name": "Veilpiercer",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "BLIGHT_STRIKE",
+      "name": "Blight Strike",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "DRAIN_POWER",
+      "name": "Drain Power",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "FLATTEN",
+      "name": "Flatten",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "POKE",
+      "name": "Poke",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "REAVE",
+      "name": "Reave",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "SCOURGE",
+      "name": "Scourge",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "SCULPTING_STRIKE",
+      "name": "Sculpting Strike",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "SNAP",
+      "name": "Snap",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "WISP",
+      "name": "Wisp",
+      "category": "Necrobinder",
+      "tier": "C"
+    },
+    {
+      "id": "SOUL_STORM",
+      "name": "Soul Storm",
+      "category": "Necrobinder",
+      "tier": "D"
+    },
+    {
+      "id": "BURY",
+      "name": "Bury",
+      "category": "Necrobinder",
+      "tier": "D"
+    },
+    {
+      "id": "FEAR",
+      "name": "Fear",
+      "category": "Necrobinder",
+      "tier": "D"
+    },
+    {
+      "id": "GRAVEBLAST",
+      "name": "Graveblast",
+      "category": "Necrobinder",
+      "tier": "D"
+    }
+  ]
+}

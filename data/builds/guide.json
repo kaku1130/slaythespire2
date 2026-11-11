@@ -1,0 +1,1579 @@
+{
+  "source": "https://slaythespire2.net/zh-TW/build",
+  "version": "Live v0.107.1",
+  "betaVersion": "v0.111.0",
+  "retrievedDate": "2026-11-08",
+  "builds": [
+    {
+      "character": "ironclad",
+      "characterPool": "Ironclad",
+      "id": "exhaust-engine",
+      "name": "消耗流",
+      "tier": "S",
+      "summary": "每回合把最弱的牌消耗掉，並把每一次消耗都轉成格擋、抽牌與傷害。",
+      "strength": "鐵甲戰士上限最高的流派：幾乎打不完的格擋與抽牌撐得住長時間的首領戰，而且戰鬥中牌組會越打越精簡。",
+      "weakness": "要湊齊好幾張特定的能力牌才會轉起來，前期偏弱，收益牌一直沒來就很卡。腐化只能從先古之民那裡拿到，別把整局押在拿到它上。",
+      "versionNote": "測試版儀式不再需要先消耗；午夜僅見於測試版。",
+      "relics": [
+        {
+          "className": "CharonsAshes",
+          "name": "卡戎之灰",
+          "description": "每當你<g>消耗</g>一張牌，對所有敵人造成3點傷害。",
+          "imagePath": "/images/relics/charons_ashes.webp"
+        },
+        {
+          "className": "JossPaper",
+          "name": "金紙",
+          "description": "你每<g>消耗</g>5張牌，就抽1張牌。",
+          "imagePath": "/images/relics/joss_paper.webp"
+        },
+        {
+          "className": "BurningSticks",
+          "name": "燃燒木棍",
+          "description": "每場戰鬥中你第一次<g>消耗</g>技能牌時，將那張牌的複製品加入你的<g>手牌</g>",
+          "imagePath": "/images/relics/burning_sticks.webp"
+        },
+        {
+          "className": "ForgottenSoul",
+          "name": "遺忘之魂",
+          "description": "每當你<g>消耗</g>一張牌，隨機對一名敵人造成1點傷害。",
+          "imagePath": "/images/relics/forgotten_soul.webp"
+        }
+      ],
+      "core": [
+        "FEEL_NO_PAIN",
+        "DARK_EMBRACE",
+        "BURNING_PACT",
+        "TRUE_GRIT",
+        "FIEND_FIRE"
+      ],
+      "support": [
+        "CORRUPTION",
+        "SECOND_WIND",
+        "PACTS_END",
+        "OFFERING",
+        "STOKE",
+        "EVIL_EYE",
+        "FORGOTTEN_RITUAL",
+        "ASHEN_STRIKE",
+        "DRUM_OF_BATTLE",
+        "HOWL_FROM_BEYOND"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine",
+      "playstyle": "前期拿堅毅、燃燒契約、重振精神這類便宜的消耗手段，把打擊和防禦清出牌組。中期靠無懼疼痛與黑暗之擁讓每次消耗都換到格擋和一張新牌，腐化則讓所有技能牌免費。收尾用惡魔之焰、契約終結，或卡戎之灰的連續傷害。",
+      "rationale": "這是鐵甲戰士上限最高的流派：無懼疼痛和黑暗之擁都打出來後，每次消耗都會回收格擋和一張新牌，長時間的首領戰牌組會自己防守、自己抽牌。燃燒契約、堅毅這類耗能 1 的消耗手段前期就能清掉打擊和防禦，所以即使要先湊兩張能力牌才真正成形，仍然給 S。",
+      "versions": [
+        {
+          "subject": "ForgottenRitual",
+          "name": "被遺忘的儀式",
+          "live": "回能前需先消耗",
+          "beta": "移除前置條件"
+        },
+        {
+          "subject": "PactsEnd",
+          "name": "契約終結",
+          "live": "全體傷害 17",
+          "beta": "全體傷害 18"
+        },
+        {
+          "subject": "HowlFromBeyond",
+          "name": "彼岸咆哮",
+          "live": "傷害 16，升級 +5",
+          "beta": "傷害 18，升級 +6"
+        },
+        {
+          "subject": "Midnight",
+          "name": "午夜",
+          "live": "無此卡",
+          "beta": "新增：12 費／60 傷；每次消耗降費 1"
+        }
+      ],
+      "missing": [
+        {
+          "kind": "card",
+          "name": "午夜"
+        }
+      ],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "ironclad",
+      "characterPool": "Ironclad",
+      "id": "strength-scaling",
+      "name": "力量流",
+      "tier": "A",
+      "summary": "前期疊力量，再用每一擊都吃力量加成的多段攻擊兌現。",
+      "strength": "好上手，一般的卡牌獎勵就能用。力量整場戰鬥都有效，打精英與首領很快。",
+      "weakness": "前期力量多半只是暫時的，起步慢；惡魔形態耗能 3；如果都跳過格擋牌，防守會很脆。",
+      "versionNote": "測試版惡魔形態每回合力量由 2 增為 3。",
+      "relics": [
+        {
+          "className": "Vajra",
+          "name": "金剛杵",
+          "description": "在每場戰鬥開始時，獲得1點<g>力量</g>。",
+          "imagePath": "/images/relics/vajra.webp"
+        },
+        {
+          "className": "RuinedHelmet",
+          "name": "損毀頭盔",
+          "description": "你在每場戰鬥中第一次獲得的<g>力量</g>值翻倍。",
+          "imagePath": "/images/relics/ruined_helmet.webp"
+        },
+        {
+          "className": "Brimstone",
+          "name": "硫磺",
+          "description": "在你的每個回合開始時，你獲得2點<g>力量</g>，所有敵人獲得1點<g>力量</g>。",
+          "imagePath": "/images/relics/brimstone.webp"
+        },
+        {
+          "className": "SwordOfJade",
+          "name": "玉之劍",
+          "description": "在每場戰鬥開始時，獲得3點<g>力量</g>。",
+          "imagePath": "/images/relics/sword_of_jade.webp"
+        },
+        {
+          "className": "Girya",
+          "name": "壺鈴",
+          "description": "你現在能在<g>休息處</g>獲得<g>力量</g>。（最多3次）",
+          "imagePath": "/images/relics/girya.webp"
+        },
+        {
+          "className": "SlingOfCourage",
+          "name": "勇氣投石索",
+          "description": "在與<g>精英</g>敵人戰鬥時，獲得2點<g>力量</g>。",
+          "imagePath": "/images/relics/sling_of_courage.webp"
+        }
+      ],
+      "core": [
+        "INFLAME",
+        "DEMON_FORM",
+        "TWIN_STRIKE",
+        "WHIRLWIND",
+        "SWORD_BOOMERANG"
+      ],
+      "support": [
+        "SETUP_STRIKE",
+        "FIGHT_ME",
+        "DOMINATE",
+        "BRAND",
+        "THRASH",
+        "BATTLE_TRANCE",
+        "OFFERING",
+        "BLOODLETTING",
+        "SHRUG_IT_OFF",
+        "ONE_TWO_PUNCH"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling",
+      "playstyle": "第一幕先拿便宜的力量來源，例如燃燒、預備打擊、與我一戰！、主宰，再搭配雙重打擊、飛劍迴旋鏢這類多段攻擊。之後用惡魔形態應付首領戰的長期成長，旋風斬或痛毆負責爆發與群體傷害。戰鬥專注、祭品、放血提供的抽牌與能量讓輸出不中斷。",
+      "rationale": "鐵甲戰士最穩定的打法：幾乎任何力量來源配上雙重打擊這類多段攻擊就能運作，一般的卡牌獎勵就湊得起來。排在消耗流下一級，是因為打首領的成長要靠耗能 3 的惡魔形態，而前期像預備打擊給的力量只是暫時的。Beta 把惡魔形態從每回合 2 點加到 3 點，差距因此縮小。",
+      "versions": [
+        {
+          "subject": "DemonForm",
+          "name": "惡魔形態",
+          "live": "每回合力量 2",
+          "beta": "每回合力量 3"
+        },
+        {
+          "subject": "SetupStrike",
+          "name": "預備打擊",
+          "live": "暫時力量 2",
+          "beta": "暫時力量 3"
+        },
+        {
+          "subject": "Dominate",
+          "name": "主宰",
+          "live": "罕見",
+          "beta": "稀有"
+        },
+        {
+          "subject": "ExpectAFight",
+          "name": "躍躍欲試",
+          "live": "2 費；依手牌攻擊數回能",
+          "beta": "3 費；15 格擋，每點力量再加 5"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "ironclad",
+      "characterPool": "Ironclad",
+      "id": "block-barricade",
+      "name": "格擋流",
+      "tier": "A",
+      "summary": "疊起不會消失的格擋，再用全身撞擊和勢不可當轉成傷害。",
+      "strength": "面對超大單發攻擊和拖長的首領戰非常安全，是高晉階最可靠的生存打法。",
+      "weakness": "在全身撞擊或勢不可當到手之前傷害很低；壁壘耗能 3，前期抽到等於廢牌；面對多隻敵人時打得很慢。",
+      "versionNote": "緋紅披風未升級格擋在測試版由 8 降至 7。",
+      "relics": [
+        {
+          "className": "Anchor",
+          "name": "錨",
+          "description": "每場戰鬥開始時獲得10點<g>格擋</g>。",
+          "imagePath": "/images/relics/anchor.webp"
+        },
+        {
+          "className": "HornCleat",
+          "name": "船夾板",
+          "description": "在你的第二回合開始時，獲得14點<g>格擋</g>。",
+          "imagePath": "/images/relics/horn_cleat.webp"
+        },
+        {
+          "className": "CaptainsWheel",
+          "name": "舵盤",
+          "description": "在你的第三回合開始時，獲得18點<g>格擋</g>。",
+          "imagePath": "/images/relics/captains_wheel.webp"
+        },
+        {
+          "className": "Orichalcum",
+          "name": "奧利哈鋼",
+          "description": "如果你在回合結束時沒有任何<g>格擋</g>，獲得6點<g>格擋</g>。",
+          "imagePath": "/images/relics/orichalcum.webp"
+        },
+        {
+          "className": "Vambrace",
+          "name": "臂甲",
+          "description": "每場戰鬥中，你第一次從卡牌中獲得的<g>格擋</g>值翻倍。",
+          "imagePath": "/images/relics/vambrace.webp"
+        },
+        {
+          "className": "CloakClasp",
+          "name": "斗篷扣",
+          "description": "在你的回合結束時，每有一張<g>手牌</g>，就獲得1點<g>格擋</g>",
+          "imagePath": "/images/relics/cloak_clasp.webp"
+        }
+      ],
+      "core": [
+        "BARRICADE",
+        "BODY_SLAM",
+        "UNMOVABLE",
+        "SHRUG_IT_OFF",
+        "IMPERVIOUS"
+      ],
+      "support": [
+        "JUGGERNAUT",
+        "CRIMSON_MANTLE",
+        "FLAME_BARRIER",
+        "BLOOD_WALL",
+        "COLOSSUS",
+        "FEEL_NO_PAIN",
+        "STONE_ARMOR",
+        "ARMAMENTS"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade",
+      "playstyle": "前期挑效率好的格擋牌，例如聳肩無視、血牆、火焰屏障。壁壘和堅定不移讓格擋跨回合越滾越多，緋紅披風每回合再送一些格擋。全身撞擊與勢不可當把這道牆變成攻擊力。",
+      "rationale": "高晉階最安全的流派：堅定不移讓每回合第一次獲得的格擋翻倍，壁壘讓格擋不會消失，再大的單發攻擊也打不穿。只給 A 而不是 S，是因為全身撞擊或勢不可當到手前幾乎沒有傷害，壁壘又是耗能 3 的稀有牌、不一定拿得到，遇到多隻敵人時也打得很慢。",
+      "versions": [
+        {
+          "subject": "CrimsonMantle",
+          "name": "緋紅披風",
+          "live": "格擋 8，升級 +2",
+          "beta": "格擋 7，升級 +3"
+        },
+        {
+          "subject": "Colossus",
+          "name": "巨像",
+          "live": "格擋 5",
+          "beta": "格擋 4"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "ironclad",
+      "characterPool": "Ironclad",
+      "id": "vulnerable",
+      "name": "易傷流",
+      "tier": "B",
+      "summary": "讓敵人一直處於易傷，再堆疊能放大或吃到易傷收益的牌。",
+      "strength": "傷害快、前期就有爆發；很多零件是普通或罕見牌，早早就能成形，和力量也很搭。",
+      "weakness": "後期成長不如力量或消耗；帶人工製品的敵人會擋掉你的減益。",
+      "versionNote": "測試版殘酷改為罕見，主宰則改為稀有。",
+      "relics": [
+        {
+          "className": "PaperPhrog",
+          "name": "紙蛙",
+          "description": "有<g>易傷</g>狀態的敵人受到的傷害增加75%而非50%。",
+          "imagePath": "/images/relics/paper_phrog.webp"
+        },
+        {
+          "className": "BagOfMarbles",
+          "name": "彈珠袋",
+          "description": "在每場戰鬥開始時，給予所有敵人1層<g>易傷</g>。",
+          "imagePath": "/images/relics/bag_of_marbles.webp"
+        }
+      ],
+      "core": [
+        "CRUELTY",
+        "TREMBLE",
+        "MOLTEN_FIST",
+        "BULLY",
+        "DISMANTLE"
+      ],
+      "support": [
+        "BASH",
+        "THUNDERCLAP",
+        "TAUNT",
+        "UPPERCUT",
+        "DOMINATE",
+        "VICIOUS",
+        "COLOSSUS"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable",
+      "playstyle": "用痛擊、戰慄、閃電霹靂、挑釁便宜地施加易傷，再用熔融之拳翻倍。殘酷、欺凌、拆卸、主宰靠易傷放大傷害，兇惡和巨像補抽牌與防禦。",
+      "rationale": "零件便宜、多半是普通或罕見牌，熔融之拳加上殘酷能把易傷變成很大的傷害倍率，第一幕就打得很痛。給 B 是因為它本身沒有持續成長，又會被帶人工製品的敵人擋掉，到後期就落後力量流和消耗流；其中的好牌常常混進那兩套更划算。",
+      "versions": [
+        {
+          "subject": "Cruelty",
+          "name": "殘酷",
+          "live": "稀有",
+          "beta": "罕見"
+        },
+        {
+          "subject": "Taunt",
+          "name": "挑釁",
+          "live": "罕見；格擋 7",
+          "beta": "普通；格擋 6"
+        },
+        {
+          "subject": "Dominate",
+          "name": "主宰",
+          "live": "罕見",
+          "beta": "稀有"
+        },
+        {
+          "subject": "Colossus",
+          "name": "巨像",
+          "live": "格擋 5",
+          "beta": "格擋 4"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "ironclad",
+      "characterPool": "Ironclad",
+      "id": "self-damage",
+      "name": "自傷流",
+      "tier": "B",
+      "summary": "主動失去生命，換成力量、傷害與能量。",
+      "strength": "能量與抽牌爆發力強，獄火提供強力群體傷害，和力量收益牌天生合拍。",
+      "weakness": "持續扣血讓長戰鬥和走錯路線都很危險；沒有續航的話，幕後段容易崩盤。",
+      "versionNote": "放血在測試版由普通改為罕見。",
+      "relics": [
+        {
+          "className": "SelfFormingClay",
+          "name": "自成型黏土",
+          "description": "每當你在戰鬥中失去生命，就在下回合獲得3點<g>格擋</g>。",
+          "imagePath": "/images/relics/self_forming_clay.webp"
+        },
+        {
+          "className": "DemonTongue",
+          "name": "惡魔之舌",
+          "description": "每回合第一次在回合內失去生命值時，回覆等量的生命值。",
+          "imagePath": "/images/relics/demon_tongue.webp"
+        },
+        {
+          "className": "CentennialPuzzle",
+          "name": "百年積木",
+          "description": "你在每場戰鬥中第一次損失生命值時，抽3張牌。",
+          "imagePath": "/images/relics/centennial_puzzle.webp"
+        },
+        {
+          "className": "RedSkull",
+          "name": "紅頭骨",
+          "description": "當你的生命值低於或等於50%時，你額外獲得3點<g>力量</g>",
+          "imagePath": "/images/relics/red_skull.webp"
+        },
+        {
+          "className": "BeatingRemnant",
+          "name": "律動殘餘",
+          "description": "你在一回合內失去的生命值不會超過20點。",
+          "imagePath": "/images/relics/beating_remnant.webp"
+        }
+      ],
+      "core": [
+        "RUPTURE",
+        "INFERNO",
+        "BLOODLETTING",
+        "OFFERING",
+        "HEMOKINESIS"
+      ],
+      "support": [
+        "BREAKTHROUGH",
+        "TEAR_ASUNDER",
+        "SPITE",
+        "BRAND",
+        "BLOOD_WALL",
+        "CRIMSON_MANTLE",
+        "FEED"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage",
+      "playstyle": "打出放血、祭品、御血術、突破在自己回合失去生命；撕裂把它轉成力量，獄火轉成對所有敵人的傷害。扯碎和怨恨獎勵反覆失血，緋紅披風與自成型黏土這類遺物幫你撐住。",
+      "rationale": "獄火和祭品提供強力群體傷害與爆發能量，撕裂則把每次自傷轉成永久的力量。給 B 是因為每一分收益都要拿生命換：沒有撕裂或獄火時扣血不划算，缺少回復手段的話幕後段生命就見底，容錯率遠低於力量流和格擋流。",
+      "versions": [
+        {
+          "subject": "Bloodletting",
+          "name": "放血",
+          "live": "普通",
+          "beta": "罕見"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "silent",
+      "characterPool": "Silent",
+      "id": "poison",
+      "name": "中毒流",
+      "tier": "S",
+      "summary": "把中毒疊到每個敵人身上，自己撐住讓毒慢慢收割。",
+      "strength": "中毒無視敵人的格擋，打多隻敵人的戰鬥也很吃香；引擎轉起來後是靜默獵手最穩定的牌組。",
+      "weakness": "起手慢，每場戰鬥前幾回合都要靠防禦撐；短戰鬥和一開始就猛打的菁英最危險。",
+      "versionNote": "測試版毒性爆發從能力改為群體施毒技能。",
+      "relics": [
+        {
+          "className": "SneckoSkull",
+          "name": "異蛇頭骨",
+          "description": "每當你給予敵人<g>中毒</g>時，所給予的<g>中毒</g>層數增加1層。",
+          "imagePath": "/images/relics/snecko_skull.webp"
+        },
+        {
+          "className": "TwistedFunnel",
+          "name": "扭曲漏斗",
+          "description": "在每場戰鬥開始時，給予所有敵人4層<g>中毒</g>。",
+          "imagePath": "/images/relics/twisted_funnel.webp"
+        },
+        {
+          "className": "UnsettlingLamp",
+          "name": "不安油燈",
+          "description": "你在每場戰鬥中第一次打出能給予敵人<g>負面狀態</g>的牌時，將其效果翻倍。",
+          "imagePath": "/images/relics/unsettling_lamp.webp"
+        },
+        {
+          "className": "ToughBandages",
+          "name": "結實繃帶",
+          "description": "你每在你的回合丟棄一張牌，就獲得3點<g>格擋</g>。",
+          "imagePath": "/images/relics/tough_bandages.webp"
+        }
+      ],
+      "core": [
+        "NOXIOUS_FUMES",
+        "DEADLY_POISON",
+        "POISONED_STAB",
+        "BOUNCING_FLASK",
+        "ACCELERANT"
+      ],
+      "support": [
+        "HAZE",
+        "BUBBLE_BUBBLE",
+        "CORROSIVE_WAVE",
+        "ENVENOM",
+        "OUTBREAK",
+        "MIRAGE",
+        "FOOTWORK",
+        "BACKFLIP",
+        "WELL_LAID_PLANS",
+        "EXPERTISE"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/silent#build-poison",
+      "playstyle": "先用帶毒刺擊、致命毒藥這類便宜的上毒牌，同時補足格擋，再打出毒霧讓層數自己往上長。之後觸媒讓中毒多結算幾次，咕嘟冒泡替已中毒的目標再加一疊，彈跳藥瓶或腐蝕波則把毒灑到整群敵人。",
+      "rationale": "中毒無視格擋，而且毒霧一打下去，層數每回合自己往上疊、不用再花能量，觸媒還能讓每一層多結算好幾次。不論首領戰還是多隻敵人的戰鬥，它在高晉階都比靜默獵手其他牌組穩，成形也只需要幾張罕見牌，所以就算開局慢，仍排在 S。",
+      "versions": [
+        {
+          "subject": "Outbreak",
+          "name": "毒性爆發",
+          "live": "1 費能力；施毒 3 次後群傷 11",
+          "beta": "3 費技能；群體 9 毒並立即結算"
+        },
+        {
+          "subject": "Haze",
+          "name": "迷霧",
+          "live": "3 費、群體 4 毒、奇巧",
+          "beta": "2 費、另附群體 1 虛弱、移除奇巧"
+        },
+        {
+          "subject": "Mirage",
+          "name": "蜃景",
+          "live": "升級後 0 費",
+          "beta": "升級移除消耗"
+        },
+        {
+          "subject": "WellLaidPlans",
+          "name": "計劃妥當",
+          "live": "1 費罕見；保留 1／2 張",
+          "beta": "2 費稀有；不棄手牌，升級 1 費"
+        },
+        {
+          "subject": "Expertise",
+          "name": "獨門技術",
+          "live": "抽至 6 張",
+          "beta": "抽 2 張並賦予本回合保留"
+        },
+        {
+          "subject": "Accelerant",
+          "name": "觸媒",
+          "live": "稀有",
+          "beta": "罕見"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "silent",
+      "characterPool": "Silent",
+      "id": "sly-discard",
+      "name": "奇巧棄牌流",
+      "tier": "A",
+      "summary": "丟棄帶奇巧的牌來免費發動效果，把抽牌轉成傷害、格擋與能量。",
+      "strength": "靜默獵手上限最高的牌組：回合不太吃能量、過牌量驚人，攻擊與防禦類的奇巧牌都能收進來。",
+      "weakness": "需要同時湊齊啟動牌與收益牌，成形慢；手上有奇巧牌卻沒東西能丟棄時，就會卡手。",
+      "versionNote": "測試版迷霧移除奇巧，不再提供棄牌收益。",
+      "relics": [
+        {
+          "className": "Tingsha",
+          "name": "銅鈸",
+          "description": "你每在你的回合丟棄一張牌，就對一名隨機敵人造成3點傷害。",
+          "imagePath": "/images/relics/tingsha.webp"
+        },
+        {
+          "className": "ToughBandages",
+          "name": "結實繃帶",
+          "description": "你每在你的回合丟棄一張牌，就獲得3點<g>格擋</g>。",
+          "imagePath": "/images/relics/tough_bandages.webp"
+        },
+        {
+          "className": "LetterOpener",
+          "name": "開信刀",
+          "description": "你每在同一回合內打出3張技能牌，就對所有敵人造成5點傷害。",
+          "imagePath": "/images/relics/letter_opener.webp"
+        },
+        {
+          "className": "BagOfPreparation",
+          "name": "準備揹包",
+          "description": "在每場戰鬥開始時，額外抽2張牌。",
+          "imagePath": "/images/relics/bag_of_preparation.webp"
+        },
+        {
+          "className": "CentennialPuzzle",
+          "name": "百年積木",
+          "description": "你在每場戰鬥中第一次損失生命值時，抽3張牌。",
+          "imagePath": "/images/relics/centennial_puzzle.webp"
+        }
+      ],
+      "core": [
+        "TACTICIAN",
+        "REFLEX",
+        "ACROBATICS",
+        "PREPARED",
+        "CALCULATED_GAMBLE"
+      ],
+      "support": [
+        "DAGGER_THROW",
+        "FLICK_FLACK",
+        "RICOCHET",
+        "UNTOUCHABLE",
+        "ABRASIVE",
+        "HAND_TRICK",
+        "MASTER_PLANNER",
+        "TOOLS_OF_THE_TRADE",
+        "MEMENTO_MORI",
+        "HIDDEN_DAGGERS"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard",
+      "playstyle": "先拿雜技、早有準備、投擲匕首這類便宜的抽牌兼丟棄牌，再加入戰術大師、本能反應等奇巧收益牌——直接打出很彆扭，被丟棄時卻是免費發動。後期靠計算下注、必備工具、謀劃專家，每回合幾乎能把整副牌轉一輪。",
+      "rationale": "上限是靜默獵手所有牌組裡最高的：戰術大師和本能反應正常打出要 3 費，被丟棄時卻完全免費，整個回合等於不花能量。但它要同時湊齊棄牌牌和奇巧收益牌，手上握著奇巧牌卻沒東西能丟就是白費一回合，穩定度不如中毒流，所以排在 A。",
+      "versions": [
+        {
+          "subject": "FlickFlack",
+          "name": "翻越撐擊",
+          "live": "全體傷害 6",
+          "beta": "全體傷害 7"
+        },
+        {
+          "subject": "Haze",
+          "name": "迷霧",
+          "live": "3 費、群體 4 毒、奇巧",
+          "beta": "2 費、另附群體 1 虛弱、移除奇巧"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "silent",
+      "characterPool": "Silent",
+      "id": "shiv",
+      "name": "小刀流",
+      "tier": "A",
+      "summary": "用 0 費的小刀塞滿手牌，再強化每一把小刀和所有計算攻擊次數的遺物。",
+      "strength": "第一幕就容易成形、前期傷害強，許多依攻擊次數觸發的遺物能讓輸出翻倍。",
+      "weakness": "大量小額傷害遇到敵人的格擋會大打折扣；沒拿到精準或關鍵遺物的話，第三幕會後繼無力。",
+      "versionNote": "",
+      "relics": [
+        {
+          "className": "NinjaScroll",
+          "name": "忍術卷軸",
+          "description": "每場戰鬥開始時，將3張<g>小刀</g>加入你的<g>手牌</g>。",
+          "imagePath": "/images/relics/ninja_scroll.webp"
+        },
+        {
+          "className": "HelicalDart",
+          "name": "螺線飛鏢",
+          "description": "你每打出一張<g>小刀</g>，就在本回合獲得1點<g>敏捷</g>。",
+          "imagePath": "/images/relics/helical_dart.webp"
+        },
+        {
+          "className": "Kunai",
+          "name": "苦無",
+          "description": "你每在同一回合內打出3張攻擊牌，就獲得1點<g>敏捷</g>。",
+          "imagePath": "/images/relics/kunai.webp"
+        },
+        {
+          "className": "Shuriken",
+          "name": "手裡劍",
+          "description": "你每在同一回合內打出3張攻擊牌，獲得1點<g>力量</g>。",
+          "imagePath": "/images/relics/shuriken.webp"
+        },
+        {
+          "className": "OrnamentalFan",
+          "name": "精緻摺扇",
+          "description": "你每在同一回合內打出3張攻擊牌，就獲得4點<g>格擋</g>。",
+          "imagePath": "/images/relics/ornamental_fan.webp"
+        },
+        {
+          "className": "Nunchaku",
+          "name": "雙截棍",
+          "description": "你每打出10張攻擊牌，獲得<e>1</e>。",
+          "imagePath": "/images/relics/nunchaku.webp"
+        }
+      ],
+      "core": [
+        "BLADE_DANCE",
+        "ACCURACY",
+        "INFINITE_BLADES",
+        "CLOAK_AND_DAGGER",
+        "LEADING_STRIKE"
+      ],
+      "support": [
+        "FAN_OF_KNIVES",
+        "PHANTOM_BLADES",
+        "BLADE_OF_INK",
+        "KNIFE_TRAP",
+        "STORM_OF_STEEL",
+        "HIDDEN_DAGGERS",
+        "AFTERIMAGE",
+        "FINISHER",
+        "EXPOSE"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/silent#build-shiv",
+      "playstyle": "前期靠刀刃之舞、斗篷與匕首、先制打擊打出快速的前期傷害。撐到後面幾幕要靠精準與無盡刀刃；刀扇讓小刀變成群體傷害，餘像、苦無或精緻摺扇則把大量攻擊轉成防禦。",
+      "rationale": "小刀是 0 費，刀刃之舞和斗篷與匕首讓它擁有靜默獵手各牌組中最強的第一幕火力，計算攻擊次數的遺物還能再往上疊。但後期幾乎全看精準：沒有它，每刀傷害太低，打不穿格擋和第三幕首領，所以是 A 不是 S；和奇巧棄牌流同級，只是用較低的上限換來更好上手的開局。",
+      "versions": [],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "silent",
+      "characterPool": "Silent",
+      "id": "dexterity-block",
+      "name": "敏捷格擋流",
+      "tier": "B",
+      "summary": "疊敏捷、用高效率的格擋保命，再用手邊任何傷害慢慢磨死敵人。",
+      "strength": "面對重擊型敵人非常安全，而且這些牌幾乎能當任何靜默獵手牌組的防禦部分。",
+      "weakness": "本身沒有傷害引擎，戰鬥會拖很久；幽魂形態每回合會扣敏捷，長戰鬥吃虧。",
+      "versionNote": "",
+      "relics": [
+        {
+          "className": "ToughBandages",
+          "name": "結實繃帶",
+          "description": "你每在你的回合丟棄一張牌，就獲得3點<g>格擋</g>。",
+          "imagePath": "/images/relics/tough_bandages.webp"
+        },
+        {
+          "className": "Kunai",
+          "name": "苦無",
+          "description": "你每在同一回合內打出3張攻擊牌，就獲得1點<g>敏捷</g>。",
+          "imagePath": "/images/relics/kunai.webp"
+        }
+      ],
+      "core": [
+        "FOOTWORK",
+        "AFTERIMAGE",
+        "BACKFLIP",
+        "WRAITH_FORM"
+      ],
+      "support": [
+        "BURST",
+        "DASH",
+        "BLUR",
+        "DODGE_AND_ROLL",
+        "LEG_SWEEP",
+        "ABRASIVE",
+        "PIERCING_WAIL"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block",
+      "playstyle": "拿靈動步法以及後空翻、閃躲翻滾等高效率防禦牌，再加入餘像（每打一張牌就得格擋）和爆發（讓關鍵防禦技能打出兩次）。打首領時用幽魂形態換來幾回合的無實體，靠零碎傷害收尾。",
+      "rationale": "面對重擊型敵人是最安全的牌組，但它沒有自己的輸出引擎：靈動步法和餘像只負責讓你活著，幽魂形態每回合還要扣敏捷。戰鬥一拖長就會被磨掉，這些牌比較適合當中毒流或小刀流的防禦半邊，單獨成套不夠力，所以排在 B。",
+      "versions": [],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "silent",
+      "characterPool": "Silent",
+      "id": "draw-tempo",
+      "name": "過牌節奏流",
+      "tier": "B",
+      "summary": "每回合大量抽牌、出牌，讓速行者和群蛇形態順手造成傷害。",
+      "strength": "傷害來自你本來就會做的動作，速行者打所有敵人，而且和奇巧棄牌流共用很多牌。",
+      "weakness": "得先找到昂貴的能力牌；速行者只算你回合中的抽牌，需要回合中途的過牌。",
+      "versionNote": "",
+      "relics": [],
+      "core": [
+        "SPEEDSTER",
+        "SERPENT_FORM",
+        "ACROBATICS",
+        "ADRENALINE"
+      ],
+      "support": [
+        "BACKFLIP",
+        "PREDATOR",
+        "ESCAPE_PLAN",
+        "PREPARED",
+        "TOOLS_OF_THE_TRADE",
+        "MURDER",
+        "CORROSIVE_WAVE"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo",
+      "playstyle": "收集雜技、後空翻、腎上腺素、獵殺者等過牌，再打出速行者或群蛇形態，讓每次抽牌或出牌都打到敵人。謀殺能把大量抽牌轉成收尾傷害。",
+      "rationale": "速行者每抽一張牌就打所有敵人，抽牌夠多時不必花牌攻擊也有穩定輸出。但它靠的是速行者、稀有的群蛇形態這類高費能力，不一定拿得到；速行者又只算自己回合內的抽牌，成形比它借用大量牌的奇巧棄牌流更晚、也更不穩，所以排在 B。",
+      "versions": [],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "defect",
+      "characterPool": "Defect",
+      "id": "frost-focus-orbs",
+      "name": "冰霜流",
+      "tier": "S",
+      "summary": "堆疊集中與充能球欄位，讓冰霜充能球提供足夠的格擋撐過一切。",
+      "strength": "故障機器人最穩定的防禦，會自己成長；長期戰和高晉階都很強。",
+      "weakness": "殺敵慢，集中和欄位成形前很脆弱；能永久提高集中的牌不多。",
+      "versionNote": "測試版同步增益較低，但移除消耗。",
+      "relics": [
+        {
+          "className": "DataDisk",
+          "name": "數據磁盤",
+          "description": "在每場戰鬥開始時，獲得1點<g>集中</g>。",
+          "imagePath": "/images/relics/data_disk.webp"
+        },
+        {
+          "className": "GoldPlatedCables",
+          "name": "鍍金纜線",
+          "description": "你最右側的充能球會額外觸發一次被動效果。",
+          "imagePath": "/images/relics/gold_plated_cables.webp"
+        },
+        {
+          "className": "RunicCapacitor",
+          "name": "符文電容器",
+          "description": "每場戰鬥開始時，獲得3個額外<g>充能球欄位</g>。",
+          "imagePath": "/images/relics/runic_capacitor.webp"
+        },
+        {
+          "className": "EmotionChip",
+          "name": "情感芯片",
+          "description": "在每回合開始時，如果你在之前回合受到過傷害，則觸發所有充能球的被動效果。",
+          "imagePath": "/images/relics/emotion_chip.webp"
+        },
+        {
+          "className": "CrackedCore",
+          "name": "破損核心",
+          "description": "在每場戰鬥開始時，<g>生成</g>1個<g>閃電</g>充能球。",
+          "imagePath": "/images/relics/cracked_core.webp"
+        }
+      ],
+      "core": [
+        "GLACIER",
+        "DEFRAGMENT",
+        "CAPACITOR",
+        "COOLHEADED",
+        "MODDED",
+        "HOTFIX"
+      ],
+      "support": [
+        "CHILL",
+        "COLD_SNAP",
+        "LOOP",
+        "HAILSTORM",
+        "COOLANT",
+        "SYNCHRONIZE",
+        "BALL_LIGHTNING",
+        "QUADCAST",
+        "VOLTAIC",
+        "CHAOS"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs",
+      "playstyle": "前期拿冰川和冷靜頭腦凝聚冰霜，再用擴容或模組改造擴充欄位、用碎片整理和熱修復提高集中。等被動能力給的格擋擋得住敵人攻擊後，靠其餘充能球和幾張激發牌收尾。",
+      "rationale": "冰霜是故障機器人最穩定的打法：冰川和冷靜頭腦能低成本凝聚冰霜，而碎片整理每加 1 點集中、擴容每多一個充能球欄位，都會在不多花能量的情況下提高每回合的格擋。它在長期戰和高晉階都撐得住，核心牌在大多數對局都拿得到，所以排在傷害更高、但更依賴抽到特定牌的 Claw 牌組之上。",
+      "versions": [
+        {
+          "subject": "Synchronize",
+          "name": "同步",
+          "live": "每種球 2 集中、消耗",
+          "beta": "每種球 1／2 集中、不消耗"
+        },
+        {
+          "subject": "Hyperbeam",
+          "name": "超能光束",
+          "live": "傷害 28、永久失去 3 集中",
+          "beta": "傷害 24、僅本回合失去集中"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "defect",
+      "characterPool": "Defect",
+      "id": "claw-zero-cost",
+      "name": "0 費 Claw 流",
+      "tier": "A",
+      "summary": "狂打 0 費攻擊，核心是每打出一張就讓所有 Claw 傷害提高的爪擊。",
+      "strength": "故障機器人所有牌組中傷害上限最高，完全不需要集中。",
+      "weakness": "依賴萬物一心、野性等特定罕見／稀有牌；格擋少，牌組一膨脹就會崩。",
+      "versionNote": "測試版趁勢打擊基礎傷害由 10 增為 11。",
+      "relics": [
+        {
+          "className": "UnceasingTop",
+          "name": "不休陀螺",
+          "description": "在你的回合，當你沒有<g>手牌</g>時，抽一張牌。",
+          "imagePath": "/images/relics/unceasing_top.webp"
+        },
+        {
+          "className": "Shuriken",
+          "name": "手裡劍",
+          "description": "你每在同一回合內打出3張攻擊牌，獲得1點<g>力量</g>。",
+          "imagePath": "/images/relics/shuriken.webp"
+        },
+        {
+          "className": "Kunai",
+          "name": "苦無",
+          "description": "你每在同一回合內打出3張攻擊牌，就獲得1點<g>敏捷</g>。",
+          "imagePath": "/images/relics/kunai.webp"
+        }
+      ],
+      "core": [
+        "CLAW",
+        "ALL_FOR_ONE",
+        "FERAL",
+        "SCRAPE",
+        "FTL"
+      ],
+      "support": [
+        "BEAM_CELL",
+        "GO_FOR_THE_EYES",
+        "SKIM",
+        "HOLOGRAM",
+        "MOMENTUM_STRIKE",
+        "ADAPTIVE_STRIKE",
+        "BULK_UP",
+        "HOTFIX",
+        "FLASH_OF_STEEL"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost",
+      "playstyle": "拿爪擊以及刮削、超越光速這類便宜的過牌，保持牌組精簡。野性每回合把一張 0 費攻擊拿回手牌，萬物一心把棄牌堆所有 0 費牌拿回來打出爆發回合。",
+      "rationale": "爪擊本身是普通的 0 費牌，但這套牌要等野性和萬物一心到手，才能打出故障機器人最高的傷害上限，過程中格擋也很少。成形時比冰霜更強，但穩定度差很多，所以低一級排在 A。",
+      "versions": [
+        {
+          "subject": "MomentumStrike",
+          "name": "趁勢打擊",
+          "live": "傷害 10／13",
+          "beta": "傷害 11／15"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "defect",
+      "characterPool": "Defect",
+      "id": "lightning-power-engine",
+      "name": "閃電能力引擎",
+      "tier": "B",
+      "summary": "主要靠打出能力牌不斷凝聚閃電，用被動和激發慢慢磨死敵人。",
+      "strength": "一般戰鬥清怪快，對多個敵人壓力大；長期戰中能力引擎會越滾越大。",
+      "weakness": "本身格擋很少，鋪能力的準備回合遇上高傷敵人很危險。",
+      "versionNote": "測試版雷霆激發額外傷害由 6 增為 8。",
+      "relics": [
+        {
+          "className": "CrackedCore",
+          "name": "破損核心",
+          "description": "在每場戰鬥開始時，<g>生成</g>1個<g>閃電</g>充能球。",
+          "imagePath": "/images/relics/cracked_core.webp"
+        },
+        {
+          "className": "DataDisk",
+          "name": "數據磁盤",
+          "description": "在每場戰鬥開始時，獲得1點<g>集中</g>。",
+          "imagePath": "/images/relics/data_disk.webp"
+        },
+        {
+          "className": "GoldPlatedCables",
+          "name": "鍍金纜線",
+          "description": "你最右側的充能球會額外觸發一次被動效果。",
+          "imagePath": "/images/relics/gold_plated_cables.webp"
+        }
+      ],
+      "core": [
+        "BALL_LIGHTNING",
+        "STORM",
+        "TEMPEST",
+        "THUNDER",
+        "SUBROUTINE",
+        "CREATIVE_AI"
+      ],
+      "support": [
+        "ZAP",
+        "ECHO_FORM",
+        "SIGNAL_BOOST",
+        "MACHINE_LEARNING",
+        "LIGHTNING_ROD",
+        "TESLA_COIL",
+        "DEFRAGMENT",
+        "CAPACITOR",
+        "WHITE_NOISE",
+        "VOLTAIC"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine",
+      "playstyle": "前期用球狀閃電和暴風雨補傷害。之後雷暴、子程序、創造性AI會把每張打出的能力牌轉成閃電或額外收益，雷霆則在每次激發閃電時追加傷害。",
+      "rationale": "球狀閃電和暴風雨讓前期傷害不錯，雷暴加子程序則把每張打出的能力牌轉成閃電和返還的能量。但閃電不提供防禦，鋪能力牌的準備回合容易吃到重擊，長期戰不如冰霜、純傷害又不如 Claw，所以是 B。",
+      "versions": [
+        {
+          "subject": "Thunder",
+          "name": "雷霆",
+          "live": "激發閃電追加 6／8 傷",
+          "beta": "激發閃電追加 8／11 傷"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "defect",
+      "characterPool": "Defect",
+      "id": "dark-orb-evoke-burst",
+      "name": "黑暗球爆發",
+      "tier": "B",
+      "summary": "花幾回合養大黑暗充能球，再激發打出一記巨額傷害。",
+      "strength": "故障機器人最強的單體爆發，打首領特別好用。",
+      "weakness": "打多個敵人較弱，需要幾回合蓄力。",
+      "versionNote": "測試版打碎增加消耗，無法反覆打出。",
+      "relics": [
+        {
+          "className": "SymbioticVirus",
+          "name": "共生病毒",
+          "description": "在每場戰鬥開始時，<g>生成</g>1個<g>黑暗</g>充能球。",
+          "imagePath": "/images/relics/symbiotic_virus.webp"
+        },
+        {
+          "className": "GoldPlatedCables",
+          "name": "鍍金纜線",
+          "description": "你最右側的充能球會額外觸發一次被動效果。",
+          "imagePath": "/images/relics/gold_plated_cables.webp"
+        }
+      ],
+      "core": [
+        "DARKNESS",
+        "MULTI_CAST",
+        "LOOP",
+        "SHATTER",
+        "SHADOW_SHIELD"
+      ],
+      "support": [
+        "NULL",
+        "DUALCAST",
+        "QUADCAST",
+        "CONSUMING_SHADOW",
+        "SYNCHRONIZE",
+        "CAPACITOR",
+        "RAINBOW",
+        "DEFRAGMENT"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst",
+      "playstyle": "用漆黑、暗影之盾或空值凝聚黑暗，再靠循環加速成長。用多重釋放、雙重釋放或打碎兌現，最好先用同步拉高集中。",
+      "rationale": "用漆黑或循環養大的黑暗充能球，再用多重釋放激發，能打出故障機器人最高的單發傷害，打首領輕鬆很多。但蓄力要好幾回合，傷害大多集中在單一目標，又依賴多重釋放這類稀有牌，比較適合當充能球牌組的收尾手段而不是完整打法，所以是 B。",
+      "versions": [
+        {
+          "subject": "Shatter",
+          "name": "打碎",
+          "live": "不消耗",
+          "beta": "消耗"
+        },
+        {
+          "subject": "Null",
+          "name": "空值",
+          "live": "虛弱 2／3 層",
+          "beta": "虛弱 1／2 層"
+        },
+        {
+          "subject": "Synchronize",
+          "name": "同步",
+          "live": "每種球 2 集中、消耗",
+          "beta": "每種球 1／2 集中、不消耗"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "defect",
+      "characterPool": "Defect",
+      "id": "status-engine",
+      "name": "狀態牌引擎",
+      "tier": "C",
+      "summary": "刻意往牌組塞狀態牌，把每一張都轉成充能球、抽牌或傷害。",
+      "strength": "把負面效果變成成長，內核加速和超頻能便宜地提供能量與抽牌。",
+      "weakness": "需要多張特定的罕見／稀有牌；缺少收益牌時手牌會被灼傷和虛空塞滿。",
+      "versionNote": "測試版火箭飛拳改為每張狀態牌降費 1。",
+      "relics": [],
+      "core": [
+        "TRASH_TO_TREASURE",
+        "SMOKESTACK",
+        "ITERATION",
+        "ROCKET_PUNCH",
+        "FLAK_CANNON"
+      ],
+      "support": [
+        "GUNK_UP",
+        "OVERCLOCK",
+        "TURBO",
+        "COMPACT",
+        "FIGHT_THROUGH",
+        "BOOST_AWAY",
+        "HELIX_DRILL",
+        "SCAVENGE"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine",
+      "playstyle": "收集汙穢攻擊、超頻、內核加速等產出牌，再湊齊化廢為寶、煙囪、迭代、火箭飛拳等收益牌。後期用散射炮和壓縮清掉堆積的牌。",
+      "rationale": "每個零件單獨看都還行，但要等化廢為寶、煙囪、迭代等多張罕見／稀有牌都到齊才轉得起來；在那之前，汙穢攻擊和超頻塞進來的狀態牌只會卡手。它比故障機器人其他打法更吃準備、也更不穩定，高晉階尤其吃力，所以是 C。",
+      "versions": [
+        {
+          "subject": "RocketPunch",
+          "name": "火箭飛拳",
+          "live": "產生狀態牌後降為 0 費",
+          "beta": "每張狀態牌降費 1"
+        },
+        {
+          "subject": "TrashToTreasure",
+          "name": "化廢為寶",
+          "live": "升級獲得固有",
+          "beta": "升級降費 1"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "regent",
+      "characterPool": "Regent",
+      "id": "star-engine",
+      "name": "輝星引擎",
+      "tier": "S",
+      "summary": "用便宜的牌囤積輝星，再用輝星費用牌一次兌現成大量傷害與格擋。",
+      "strength": "儲君最穩定的打法，高晉階也站得住，單體首領和多敵人戰鬥都應付得來。",
+      "weakness": "第一幕若只有輝星沒地方花、或只有消耗沒有來源，節奏會很卡；來源與消耗要平衡。",
+      "versionNote": "",
+      "relics": [
+        {
+          "className": "DivineRight",
+          "name": "天賦君權",
+          "description": "在每場戰鬥開始時，獲得<s>3</s>。",
+          "imagePath": "/images/relics/divine_right.webp"
+        },
+        {
+          "className": "LunarPastry",
+          "name": "月亮糕點",
+          "description": "在你的回合結束時，獲得<s>1</s>。",
+          "imagePath": "/images/relics/lunar_pastry.webp"
+        },
+        {
+          "className": "GalacticDust",
+          "name": "星系塵埃",
+          "description": "每消耗10點<s>1</s>，就獲得10<g>格擋</g>。",
+          "imagePath": "/images/relics/galactic_dust.webp"
+        },
+        {
+          "className": "MiniRegent",
+          "name": "迷你儲君",
+          "description": "每回合你第一次花費<s>1</s>時，獲得1點<g>力量</g>。",
+          "imagePath": "/images/relics/mini_regent.webp"
+        }
+      ],
+      "core": [
+        "GLOW",
+        "GENESIS",
+        "HIDDEN_CACHE",
+        "GATHER_LIGHT",
+        "COMET",
+        "REFLECT"
+      ],
+      "support": [
+        "BIG_BANG",
+        "SOLAR_STRIKE",
+        "SHINING_STRIKE",
+        "ROYAL_GAMBLE",
+        "CHILD_OF_THE_STARS",
+        "BLACK_HOLE",
+        "SEVEN_STARS",
+        "RADIATE",
+        "PARTICLE_WALL",
+        "CLOAK_OF_STARS"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine",
+      "playstyle": "前期拿輝光、隱秘藏品、收集光輝、太陽打擊這類輝星來源，同時顧好格擋。中期加入彗星、倒映、七星等消耗手段，以及創世紀這種穩定來源。後期靠黑洞和群星之子，每獲得或花費一點輝星都能額外打傷害或加格擋。",
+      "rationale": "輝星是儲君獨有的資源，這套牌組靠每局都會看到的普通牌就能組起來：輝光、隱秘藏品、收集光輝都只要 1 點能量，還附帶抽牌或格擋；而彗星（33 點傷害外加虛弱與易傷）這類消耗手段完全不花能量。它不依賴任何一張特定稀有牌，單體首領和多敵人戰鬥都應付得來，所以排在儲君所有其他流派之上。",
+      "versions": [],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "regent",
+      "characterPool": "Regent",
+      "id": "alignment-loop",
+      "name": "星位序列循環",
+      "tier": "A",
+      "summary": "把牌組壓到只剩幾張，讓輝光與星位序列反覆輪轉，換取近乎無限的輝星、能量和抽牌。",
+      "strength": "儲君上限最高的打法，一旦轉起來，大多數戰鬥一回合就結束。",
+      "weakness": "需要特定升級、大量精簡牌組和好幾回合的準備；零件湊不齊時只是較弱的輝星牌組。",
+      "versionNote": "測試版星位序列輝星費用由 3 降至 2。",
+      "relics": [],
+      "core": [
+        "ALIGNMENT",
+        "GLOW",
+        "GUARDS",
+        "BEGONE",
+        "CHARGE"
+      ],
+      "support": [
+        "TYRANNY",
+        "BIG_BANG",
+        "RADIATE",
+        "STARDUST",
+        "CHILD_OF_THE_STARS",
+        "DECISIONS_DECISIONS",
+        "PARTICLE_WALL"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop",
+      "playstyle": "先當一般輝星牌組打，再用護駕！！！、衝鋒！！、下去！把雜牌變成會消耗的一次性牌，並用暴政繼續削減。把升級過的輝光和星位序列放進約 10 張的牌組後，每回合都能抽完整個牌組，最後用輻射或星塵收尾。",
+      "rationale": "這是儲君上限最高的打法：星位序列不花能量就能把輝星換成 2 點能量，在削到約 10 張的牌組裡，輝光每回合都能把它抽回來，循環下去能把整個牌組打完。但它需要稀有牌護駕！！！或其他變化牌、特定的升級，以及好幾回合的準備，成形前只是一套較弱的輝星牌組，所以排在它的起點——輝星引擎——下面一級。",
+      "versions": [
+        {
+          "subject": "Alignment",
+          "name": "星位序列",
+          "live": "花費輝星 3",
+          "beta": "花費輝星 2"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "regent",
+      "characterPool": "Regent",
+      "id": "sovereign-blade-forge",
+      "name": "鑄造流",
+      "tier": "B",
+      "summary": "不斷對保留在手上的君王之劍鑄造，把它養成一刀致命的大招，最好還能打全體。",
+      "strength": "養成後單體傷害極高，打首領很強，操作也簡單。",
+      "weakness": "起步慢，而且很依賴抽到追蹤之刃；沒有它時，多敵人戰鬥會很吃力。",
+      "versionNote": "測試版淬鍊刀刃鑄造量由 9 降至 8。",
+      "relics": [
+        {
+          "className": "FencingManual",
+          "name": "擊劍指南",
+          "description": "在每場戰鬥開始時，<g>鑄造</g>10。",
+          "imagePath": "/images/relics/fencing_manual.webp"
+        },
+        {
+          "className": "DivineRight",
+          "name": "天賦君權",
+          "description": "在每場戰鬥開始時，獲得<s>3</s>。",
+          "imagePath": "/images/relics/divine_right.webp"
+        }
+      ],
+      "core": [
+        "SUMMON_FORTH",
+        "SEEKING_EDGE",
+        "FURNACE",
+        "BULWARK",
+        "CONQUEROR"
+      ],
+      "support": [
+        "WROUGHT_IN_WAR",
+        "SPOILS_OF_BATTLE",
+        "THE_SMITH",
+        "REFINE_BLADE",
+        "SWORD_SAGE",
+        "BEAT_INTO_SHAPE",
+        "BIG_BANG"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge",
+      "playstyle": "先用徵召上前或擊劍指南盡早拿到君王之劍，再靠熔爐、鑄牆、戰火鑄就等牌每回合鑄造。追蹤之刃讓劍攻擊所有敵人，征服者讓它當回合傷害加倍。牌組保持精簡，才能常抽到劍。",
+      "rationale": "每張鑄造牌都把傷害疊在同一把君王之劍上，打單體首領時成長幅度勝過儲君的任何其他打法。但鑄造牌打出的當回合沒有傷害，能不能打多個敵人又取決於有沒有拿到稀有牌追蹤之刃，第一幕和多敵人戰鬥都比輝星牌組不穩得多。後期強，但起步慢、適用面窄，所以是 B。",
+      "versions": [
+        {
+          "subject": "RefineBlade",
+          "name": "淬鍊刀刃",
+          "live": "鑄造 9",
+          "beta": "鑄造 8"
+        },
+        {
+          "subject": "SpoilsOfBattle",
+          "name": "戰利品",
+          "live": "鑄造 5",
+          "beta": "鑄造 6"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "regent",
+      "characterPool": "Regent",
+      "id": "void-form",
+      "name": "虛空形態流",
+      "tier": "B",
+      "summary": "花一回合打出虛空形態，之後每回合前兩張牌都能免費打出。",
+      "strength": "不需要龐大的輝星經濟，打出後每回合的效率都大幅提升。",
+      "weakness": "要花 3 點能量加一整個回合，怕前期壓力，也要看能不能早抽到；未升級時還帶虛無。",
+      "versionNote": "",
+      "relics": [],
+      "core": [
+        "VOID_FORM",
+        "SEVEN_STARS",
+        "CONVERGENCE"
+      ],
+      "support": [
+        "GENESIS",
+        "BULWARK",
+        "COMET",
+        "REFLECT",
+        "GLOW"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/regent#build-void-form",
+      "playstyle": "虛空形態會結束你的回合，所以要在戰鬥初期打出；最好先用匯流，保留手牌並讓下回合多 1 點能量和 1 點輝星。之後把免費額度用在七星、鑄牆、創世紀這類貴的牌上，彗星和倒映則用輝星支付。",
+      "rationale": "虛空形態一旦打出，之後每回合前兩張牌免費，是儲君最強的效果之一，而且不需要龐大的輝星收入。但它要花 3 點能量還會直接結束回合，面對前期壓力很吃虧；未升級時又是虛無，抽到的那回合付不起就整場戰鬥都沒了。回報很大，卻綁在一張稀有牌和一個空過的回合上，因此和鑄造流同列 B。",
+      "versions": [],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "regent",
+      "characterPool": "Regent",
+      "id": "card-creation",
+      "name": "造牌流",
+      "tier": "C",
+      "summary": "每回合生成隨機無色牌，再用武器庫和創世之柱讓每次生成都有收益。",
+      "strength": "被動累積力量與格擋，隨機無色牌也常帶來原本沒有的解法。",
+      "weakness": "隨機牌不穩定，打出還要花能量；單靠它每回合生成的牌太少，撐不起一場戰鬥，當輝星牌組的輔助更能發揮。",
+      "versionNote": "測試版創世之柱基礎格擋由 3 降至 2。",
+      "relics": [],
+      "core": [
+        "SPECTRUM_SHIFT",
+        "ARSENAL",
+        "PILLAR_OF_CREATION",
+        "QUASAR"
+      ],
+      "support": [
+        "MANIFEST_AUTHORITY",
+        "BUNDLE_OF_JOY",
+        "SUPERMASSIVE",
+        "HEIRLOOM_HAMMER",
+        "CRASH_LANDING"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation",
+      "playstyle": "打出光譜偏移，每回合白拿一張無色牌；搭配武器庫在每次生成牌時獲得力量，創世之柱獲得格擋。類星體、君權自授、新生之喜能生成更多，超質量體則依生成數量打出傷害。",
+      "rationale": "武器庫和創世之柱靠生成數量取勝，但光譜偏移每回合只生成一張，隨機無色牌打出來也要花能量，所以力量和格擋疊得慢，手牌也難以預測。這些牌加進輝星牌組效果不錯，但單獨成套是儲君最不穩定的打法，所以是 C。",
+      "versions": [
+        {
+          "subject": "PillarOfCreation",
+          "name": "創世之柱",
+          "live": "每次造牌格擋 3／4",
+          "beta": "每次造牌格擋 2／3"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "necrobinder",
+      "characterPool": "Necrobinder",
+      "id": "soul-cycle",
+      "name": "靈魂循環",
+      "tier": "S",
+      "summary": "把靈魂塞滿抽牌堆、靠它們一路過牌，並讓打出的每一張都變成傷害。",
+      "strength": "普通、罕見牌就能成形，第一幕起就很穩，糾纏的失去生命無視敵人格擋。",
+      "weakness": "抓到糾纏之前輸出偏弱；牌組一膨脹，靈魂就被稀釋，循環轉不起來。",
+      "versionNote": "測試版糾纏每次失去生命由 6 增為 7。",
+      "relics": [
+        {
+          "className": "FuneraryMask",
+          "name": "葬禮面具",
+          "description": "在每場戰鬥開始時，將3張<g>靈魂</g>加入你的<g>抽牌堆</g>。",
+          "imagePath": "/images/relics/funerary_mask.webp"
+        }
+      ],
+      "core": [
+        "GRAVE_WARDEN",
+        "CAPTURE_SPIRIT",
+        "DIRGE",
+        "HAUNT",
+        "SOUL_STORM"
+      ],
+      "support": [
+        "REAVE",
+        "SEVERANCE",
+        "DEATH_MARCH",
+        "DEVOUR_LIFE",
+        "BORROWED_TIME",
+        "UNDEATH",
+        "SEANCE"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle",
+      "playstyle": "前期拿同時能防禦的產靈魂牌，例如守墓人和捕捉靈魂。糾纏是核心：之後每打出一張靈魂都會扣隨機敵人生命，多張可疊加。收尾靠靈魂風暴（隨消耗堆中的靈魂數量成長）與死亡行軍（吃過牌數加傷）。",
+      "rationale": "這是亡靈契約師最可靠的打法：引擎靠守墓人、捕捉靈魂這類普通、罕見牌就能組起來，產靈魂的同時還能防禦，而糾纏的失去生命無視格擋，所以從第一幕一路到高晉階都站得住。災厄處決和奧斯提召喚的爆發可能更高，但不是要更多特定零件，就是有單一弱點，所以只有它是 S。",
+      "versions": [
+        {
+          "subject": "Haunt",
+          "name": "糾纏",
+          "live": "每張靈魂扣血 6",
+          "beta": "每張靈魂扣血 7"
+        },
+        {
+          "subject": "SoulStorm",
+          "name": "靈魂風暴",
+          "live": "每張已消耗靈魂增傷 2，升級 +1",
+          "beta": "增傷 4，升級 +2"
+        },
+        {
+          "subject": "Reave",
+          "name": "剝奪",
+          "live": "傷害 9，升級 +2",
+          "beta": "傷害 10，升級 +3"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "necrobinder",
+      "characterPool": "Necrobinder",
+      "id": "doom-execute",
+      "name": "災厄處決",
+      "tier": "A",
+      "summary": "在敵人身上疊災厄直到等於其生命值，讓牠在回合結束時直接死亡，無視格擋。",
+      "strength": "無視敵人格擋與成長，打群怪很強，許多災厄牌還附帶防禦。",
+      "weakness": "起手慢，敵人總會在災厄結算前多行動一回合；沒抓到成長牌就會卡住。",
+      "versionNote": "測試版大限已至移除消耗，可再次使用。",
+      "relics": [
+        {
+          "className": "UndyingSigil",
+          "name": "不死符文",
+          "description": "當敵人的<g>災厄</g>層數大於等於其生命值時，它造成的傷害降低50%。",
+          "imagePath": "/images/relics/undying_sigil.webp"
+        },
+        {
+          "className": "BookRepairKnife",
+          "name": "修書小刀",
+          "description": "每當有一名不是“爪牙”的敵人死於<g>災厄</g>時，回覆3點生命。",
+          "imagePath": "/images/relics/book_repair_knife.webp"
+        },
+        {
+          "className": "UnsettlingLamp",
+          "name": "不安油燈",
+          "description": "你在每場戰鬥中第一次打出能給予敵人<g>負面狀態</g>的牌時，將其效果翻倍。",
+          "imagePath": "/images/relics/unsettling_lamp.webp"
+        }
+      ],
+      "core": [
+        "NO_ESCAPE",
+        "NEGATIVE_PULSE",
+        "DEATHBRINGER",
+        "COUNTDOWN",
+        "SLEIGHT_OF_FLESH"
+      ],
+      "support": [
+        "DEATHS_DOOR",
+        "BLIGHT_STRIKE",
+        "SCOURGE",
+        "SHROUD",
+        "END_OF_DAYS",
+        "TIMES_UP",
+        "OBLIVION",
+        "DEFY",
+        "ENFEEBLING_TOUCH"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute",
+      "playstyle": "前期靠同時能防禦的災厄牌撐住，例如負能量脈衝、死亡之門，再搭配虛弱減傷。接著找無處可逃、倒數計時或血肉戲法這類成長手段，用死亡使者群體施加。末日降臨與大限已至負責收尾；注意災厄要到敵人回合結束才會致死，那一輪攻擊還是得擋。",
+      "rationale": "上限不輸靈魂循環：災厄無視格擋與敵人成長，死亡使者和末日降臨還能一次處理整群敵人。之所以留在 A，是因為在抓到無處可逃或倒數計時這類成長牌之前殺不了任何東西，而且敵人在災厄結算前總會多行動一回合，起手較慢、容錯也較低。",
+      "versions": [
+        {
+          "subject": "Shroud",
+          "name": "厄運之衣",
+          "live": "每次施加災厄格擋 2",
+          "beta": "格擋 3"
+        },
+        {
+          "subject": "TimesUp",
+          "name": "大限已至",
+          "live": "消耗",
+          "beta": "不消耗"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "necrobinder",
+      "characterPool": "Necrobinder",
+      "id": "osty",
+      "name": "奧斯提召喚",
+      "tier": "A",
+      "summary": "用召喚養大奧斯提，讓他替你擋傷害，再串連他的攻擊打出大量輸出。",
+      "strength": "容錯高，奧斯提會替你吃傷害；單體爆發強，一般戰鬥結束得很快。",
+      "weakness": "奧斯提一倒，角色本身不高的生命就直接暴露；好幾張關鍵牌是稀有。",
+      "versionNote": "測試版犧牲的格擋倍率由 2 倍改為 3 倍。",
+      "relics": [
+        {
+          "className": "BoneFlute",
+          "name": "骨笛",
+          "description": "每當<g>奧斯提</g>攻擊時，獲得2點<g>格擋</g>。",
+          "imagePath": "/images/relics/bone_flute.webp"
+        },
+        {
+          "className": "Bookmark",
+          "name": "書籤",
+          "description": "每回合結束時，隨機一張被<g>保留</g>的牌在被打出前的耗能減少1。",
+          "imagePath": "/images/relics/bookmark.webp"
+        }
+      ],
+      "core": [
+        "FETCH",
+        "FLATTEN",
+        "RATTLE",
+        "SQUEEZE",
+        "CALCIFY"
+      ],
+      "support": [
+        "PULL_AGGRO",
+        "INVOKE",
+        "AFTERLIFE",
+        "SPUR",
+        "REANIMATE",
+        "NECRO_MASTERY",
+        "RIGHT_HAND_HAND",
+        "SNAP",
+        "POKE",
+        "SACRIFICE"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty",
+      "playstyle": "前期用吸引仇恨、喚起、來生等召喚牌讓奧斯提活著當肉盾。連打便宜的奧斯提攻擊（取回、戳擊、重壓、猛晃），再用鈣化加傷。榨取和起始牌出擊是收尾，死者蘇生與亡靈精通能把奧斯提的生命堆得很高。",
+      "rationale": "容錯最高的流派，奧斯提會替你吃傷害，連打奧斯提攻擊再用鈣化加傷，是這個角色最強的單體爆發。沒有到 S 是因為一切都押在奧斯提還活著：他一倒，角色本身不高的生命就直接暴露，而榨取這類收尾牌又是稀有。",
+      "versions": [
+        {
+          "subject": "Sacrifice",
+          "name": "犧牲",
+          "live": "奧斯提最大生命 ×2 格擋",
+          "beta": "最大生命 ×3 格擋"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "necrobinder",
+      "characterPool": "Necrobinder",
+      "id": "ethereal",
+      "name": "虛無流",
+      "tier": "B",
+      "summary": "盡量多打虛無牌，讓收益牌隨數量成長。",
+      "strength": "成形後爆發極高，引擎本身就帶有過牌與格擋。",
+      "weakness": "依賴特定的罕見與稀有牌，關鍵零件沒出現就會很空。",
+      "versionNote": "幻景在兩版效果不同；測試版可重打消耗堆虛無牌。",
+      "relics": [],
+      "core": [
+        "PULL_FROM_BELOW",
+        "PAGESTORM",
+        "SPIRIT_OF_ASH",
+        "BANSHEES_CRY",
+        "CALL_OF_THE_VOID"
+      ],
+      "support": [
+        "SCULPTING_STRIKE",
+        "VEILPIERCER",
+        "DREDGE",
+        "GRAVEBLAST",
+        "EIDOLON",
+        "DEFY"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal",
+      "playstyle": "用雕琢打擊、虛空之喚、刺破帷幕製造或賦予虛無牌，再用書頁風暴靠它們過牌。亡魂牽引本場戰鬥每打出一張虛無牌就多打一下，女妖之嚎會變成便宜的群體攻擊，灰燼之靈則每打出一張就給格擋。",
+      "rationale": "書頁風暴和亡魂牽引轉起來之後，是這個角色爆發最誇張的回合之一，引擎本身還帶過牌與格擋。但五張核心牌裡有三張（灰燼之靈、女妖之嚎、虛空之喚）是稀有，成形機率遠低於靈魂循環和災厄處決，所以是 B。",
+      "versions": [
+        {
+          "subject": "Eidolon",
+          "name": "幻景",
+          "live": "消耗手牌，達 9 張獲得無實體",
+          "beta": "重打消耗堆所有虛無牌，本身消耗"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    },
+    {
+      "character": "necrobinder",
+      "characterPool": "Necrobinder",
+      "id": "reaper-big-hit",
+      "name": "死神重擊",
+      "tier": "C",
+      "summary": "先疊易傷與增傷，打出超大一擊，再讓死神形態把傷害轉成災厄。",
+      "strength": "爆發非常高，出牌思路單純。",
+      "weakness": "很看抽牌、不穩定，本身幾乎沒有防禦手段。",
+      "versionNote": "測試版巨鐮每次永久增傷由 4 增為 5。",
+      "relics": [],
+      "core": [
+        "REAPER_FORM",
+        "THE_SCYTHE",
+        "ERADICATE",
+        "LETHALITY"
+      ],
+      "support": [
+        "FEAR",
+        "PUTREFY",
+        "DEBILITATE",
+        "BORROWED_TIME",
+        "HANG"
+      ],
+      "source": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit",
+      "playstyle": "用恐懼或腐敗施加易傷，再打出致死性強化每回合第一次攻擊。巨鐮每打一次就永久變強，根除則吃預借時間帶來的大量能量。死神形態在場時，每次攻擊還會施加等同傷害的災厄。",
+      "rationale": "紙面爆發很驚人，死神形態在場時每一下攻擊還會轉成災厄。但幾乎每個零件都是稀有，死神形態要 3 點能量，流派本身幾乎沒有防禦，抽牌一不順就什麼都打不出來，是五個流派中最不穩的，所以是 C。",
+      "versions": [
+        {
+          "subject": "TheScythe",
+          "name": "巨鐮",
+          "live": "每次永久增傷 4，升級 +1",
+          "beta": "增傷 5，升級 +2"
+        }
+      ],
+      "missing": [],
+      "textOrigin": "user-provided"
+    }
+  ],
+  "textMode": "25 個流派均採用使用者提供的完整文字"
+}

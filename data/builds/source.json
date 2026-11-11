@@ -1,0 +1,3474 @@
+{
+  "source": "https://slaythespire2.net/zh-TW/build",
+  "retrievedDate": "2026-11-08",
+  "version": "Live v0.107.1",
+  "buildCount": 25,
+  "byCard": {
+    "FEEL_NO_PAIN": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "exhaust-engine",
+        "name": "消耗流",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
+      },
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "block-barricade",
+        "name": "格擋流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
+      }
+    ],
+    "DARK_EMBRACE": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "exhaust-engine",
+        "name": "消耗流",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
+      }
+    ],
+    "BURNING_PACT": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "exhaust-engine",
+        "name": "消耗流",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
+      }
+    ],
+    "TRUE_GRIT": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "exhaust-engine",
+        "name": "消耗流",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
+      }
+    ],
+    "FIEND_FIRE": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "exhaust-engine",
+        "name": "消耗流",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
+      }
+    ],
+    "CORRUPTION": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "exhaust-engine",
+        "name": "消耗流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
+      }
+    ],
+    "SECOND_WIND": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "exhaust-engine",
+        "name": "消耗流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
+      }
+    ],
+    "PACTS_END": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "exhaust-engine",
+        "name": "消耗流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
+      }
+    ],
+    "OFFERING": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "exhaust-engine",
+        "name": "消耗流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
+      },
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "strength-scaling",
+        "name": "力量流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
+      },
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "self-damage",
+        "name": "自傷流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
+      }
+    ],
+    "STOKE": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "exhaust-engine",
+        "name": "消耗流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
+      }
+    ],
+    "EVIL_EYE": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "exhaust-engine",
+        "name": "消耗流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
+      }
+    ],
+    "FORGOTTEN_RITUAL": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "exhaust-engine",
+        "name": "消耗流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
+      }
+    ],
+    "ASHEN_STRIKE": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "exhaust-engine",
+        "name": "消耗流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
+      }
+    ],
+    "DRUM_OF_BATTLE": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "exhaust-engine",
+        "name": "消耗流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
+      }
+    ],
+    "HOWL_FROM_BEYOND": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "exhaust-engine",
+        "name": "消耗流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
+      }
+    ],
+    "INFLAME": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "strength-scaling",
+        "name": "力量流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
+      }
+    ],
+    "DEMON_FORM": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "strength-scaling",
+        "name": "力量流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
+      }
+    ],
+    "TWIN_STRIKE": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "strength-scaling",
+        "name": "力量流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
+      }
+    ],
+    "WHIRLWIND": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "strength-scaling",
+        "name": "力量流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
+      }
+    ],
+    "SWORD_BOOMERANG": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "strength-scaling",
+        "name": "力量流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
+      }
+    ],
+    "SETUP_STRIKE": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "strength-scaling",
+        "name": "力量流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
+      }
+    ],
+    "FIGHT_ME": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "strength-scaling",
+        "name": "力量流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
+      }
+    ],
+    "DOMINATE": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "strength-scaling",
+        "name": "力量流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
+      },
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "vulnerable",
+        "name": "易傷流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
+      }
+    ],
+    "BRAND": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "strength-scaling",
+        "name": "力量流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
+      },
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "self-damage",
+        "name": "自傷流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
+      }
+    ],
+    "THRASH": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "strength-scaling",
+        "name": "力量流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
+      }
+    ],
+    "BATTLE_TRANCE": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "strength-scaling",
+        "name": "力量流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
+      }
+    ],
+    "BLOODLETTING": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "strength-scaling",
+        "name": "力量流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
+      },
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "self-damage",
+        "name": "自傷流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
+      }
+    ],
+    "SHRUG_IT_OFF": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "strength-scaling",
+        "name": "力量流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
+      },
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "block-barricade",
+        "name": "格擋流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
+      }
+    ],
+    "ONE_TWO_PUNCH": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "strength-scaling",
+        "name": "力量流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
+      }
+    ],
+    "BARRICADE": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "block-barricade",
+        "name": "格擋流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
+      }
+    ],
+    "BODY_SLAM": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "block-barricade",
+        "name": "格擋流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
+      }
+    ],
+    "UNMOVABLE": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "block-barricade",
+        "name": "格擋流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
+      }
+    ],
+    "IMPERVIOUS": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "block-barricade",
+        "name": "格擋流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
+      }
+    ],
+    "JUGGERNAUT": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "block-barricade",
+        "name": "格擋流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
+      }
+    ],
+    "CRIMSON_MANTLE": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "block-barricade",
+        "name": "格擋流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
+      },
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "self-damage",
+        "name": "自傷流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
+      }
+    ],
+    "FLAME_BARRIER": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "block-barricade",
+        "name": "格擋流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
+      }
+    ],
+    "BLOOD_WALL": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "block-barricade",
+        "name": "格擋流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
+      },
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "self-damage",
+        "name": "自傷流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
+      }
+    ],
+    "COLOSSUS": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "block-barricade",
+        "name": "格擋流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
+      },
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "vulnerable",
+        "name": "易傷流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
+      }
+    ],
+    "STONE_ARMOR": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "block-barricade",
+        "name": "格擋流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
+      }
+    ],
+    "ARMAMENTS": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "block-barricade",
+        "name": "格擋流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
+      }
+    ],
+    "CRUELTY": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "vulnerable",
+        "name": "易傷流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
+      }
+    ],
+    "TREMBLE": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "vulnerable",
+        "name": "易傷流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
+      }
+    ],
+    "MOLTEN_FIST": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "vulnerable",
+        "name": "易傷流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
+      }
+    ],
+    "BULLY": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "vulnerable",
+        "name": "易傷流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
+      }
+    ],
+    "DISMANTLE": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "vulnerable",
+        "name": "易傷流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
+      }
+    ],
+    "BASH": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "vulnerable",
+        "name": "易傷流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
+      }
+    ],
+    "THUNDERCLAP": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "vulnerable",
+        "name": "易傷流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
+      }
+    ],
+    "TAUNT": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "vulnerable",
+        "name": "易傷流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
+      }
+    ],
+    "UPPERCUT": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "vulnerable",
+        "name": "易傷流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
+      }
+    ],
+    "VICIOUS": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "vulnerable",
+        "name": "易傷流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
+      }
+    ],
+    "RUPTURE": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "self-damage",
+        "name": "自傷流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
+      }
+    ],
+    "INFERNO": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "self-damage",
+        "name": "自傷流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
+      }
+    ],
+    "HEMOKINESIS": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "self-damage",
+        "name": "自傷流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
+      }
+    ],
+    "BREAKTHROUGH": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "self-damage",
+        "name": "自傷流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
+      }
+    ],
+    "TEAR_ASUNDER": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "self-damage",
+        "name": "自傷流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
+      }
+    ],
+    "SPITE": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "self-damage",
+        "name": "自傷流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
+      }
+    ],
+    "FEED": [
+      {
+        "character": "ironclad",
+        "characterPool": "Ironclad",
+        "buildId": "self-damage",
+        "name": "自傷流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
+      }
+    ],
+    "NOXIOUS_FUMES": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "poison",
+        "name": "中毒流",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+      }
+    ],
+    "DEADLY_POISON": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "poison",
+        "name": "中毒流",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+      }
+    ],
+    "POISONED_STAB": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "poison",
+        "name": "中毒流",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+      }
+    ],
+    "BOUNCING_FLASK": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "poison",
+        "name": "中毒流",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+      }
+    ],
+    "ACCELERANT": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "poison",
+        "name": "中毒流",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+      }
+    ],
+    "HAZE": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "poison",
+        "name": "中毒流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+      }
+    ],
+    "BUBBLE_BUBBLE": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "poison",
+        "name": "中毒流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+      }
+    ],
+    "CORROSIVE_WAVE": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "poison",
+        "name": "中毒流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+      },
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "draw-tempo",
+        "name": "過牌節奏流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
+      }
+    ],
+    "ENVENOM": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "poison",
+        "name": "中毒流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+      }
+    ],
+    "OUTBREAK": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "poison",
+        "name": "中毒流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+      }
+    ],
+    "MIRAGE": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "poison",
+        "name": "中毒流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+      }
+    ],
+    "FOOTWORK": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "poison",
+        "name": "中毒流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+      },
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "dexterity-block",
+        "name": "敏捷格擋流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
+      }
+    ],
+    "BACKFLIP": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "poison",
+        "name": "中毒流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+      },
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "dexterity-block",
+        "name": "敏捷格擋流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
+      },
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "draw-tempo",
+        "name": "過牌節奏流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
+      }
+    ],
+    "WELL_LAID_PLANS": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "poison",
+        "name": "中毒流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+      }
+    ],
+    "EXPERTISE": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "poison",
+        "name": "中毒流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+      }
+    ],
+    "TACTICIAN": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "sly-discard",
+        "name": "奇巧棄牌流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
+      }
+    ],
+    "REFLEX": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "sly-discard",
+        "name": "奇巧棄牌流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
+      }
+    ],
+    "ACROBATICS": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "sly-discard",
+        "name": "奇巧棄牌流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
+      },
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "draw-tempo",
+        "name": "過牌節奏流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
+      }
+    ],
+    "PREPARED": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "sly-discard",
+        "name": "奇巧棄牌流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
+      },
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "draw-tempo",
+        "name": "過牌節奏流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
+      }
+    ],
+    "CALCULATED_GAMBLE": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "sly-discard",
+        "name": "奇巧棄牌流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
+      }
+    ],
+    "DAGGER_THROW": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "sly-discard",
+        "name": "奇巧棄牌流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
+      }
+    ],
+    "FLICK_FLACK": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "sly-discard",
+        "name": "奇巧棄牌流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
+      }
+    ],
+    "RICOCHET": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "sly-discard",
+        "name": "奇巧棄牌流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
+      }
+    ],
+    "UNTOUCHABLE": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "sly-discard",
+        "name": "奇巧棄牌流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
+      }
+    ],
+    "ABRASIVE": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "sly-discard",
+        "name": "奇巧棄牌流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
+      },
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "dexterity-block",
+        "name": "敏捷格擋流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
+      }
+    ],
+    "HAND_TRICK": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "sly-discard",
+        "name": "奇巧棄牌流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
+      }
+    ],
+    "MASTER_PLANNER": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "sly-discard",
+        "name": "奇巧棄牌流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
+      }
+    ],
+    "TOOLS_OF_THE_TRADE": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "sly-discard",
+        "name": "奇巧棄牌流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
+      },
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "draw-tempo",
+        "name": "過牌節奏流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
+      }
+    ],
+    "MEMENTO_MORI": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "sly-discard",
+        "name": "奇巧棄牌流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
+      }
+    ],
+    "HIDDEN_DAGGERS": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "sly-discard",
+        "name": "奇巧棄牌流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
+      },
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "shiv",
+        "name": "小刀流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
+      }
+    ],
+    "BLADE_DANCE": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "shiv",
+        "name": "小刀流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
+      }
+    ],
+    "ACCURACY": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "shiv",
+        "name": "小刀流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
+      }
+    ],
+    "INFINITE_BLADES": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "shiv",
+        "name": "小刀流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
+      }
+    ],
+    "CLOAK_AND_DAGGER": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "shiv",
+        "name": "小刀流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
+      }
+    ],
+    "LEADING_STRIKE": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "shiv",
+        "name": "小刀流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
+      }
+    ],
+    "FAN_OF_KNIVES": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "shiv",
+        "name": "小刀流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
+      }
+    ],
+    "PHANTOM_BLADES": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "shiv",
+        "name": "小刀流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
+      }
+    ],
+    "BLADE_OF_INK": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "shiv",
+        "name": "小刀流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
+      }
+    ],
+    "KNIFE_TRAP": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "shiv",
+        "name": "小刀流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
+      }
+    ],
+    "STORM_OF_STEEL": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "shiv",
+        "name": "小刀流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
+      }
+    ],
+    "AFTERIMAGE": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "shiv",
+        "name": "小刀流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
+      },
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "dexterity-block",
+        "name": "敏捷格擋流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
+      }
+    ],
+    "FINISHER": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "shiv",
+        "name": "小刀流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
+      }
+    ],
+    "EXPOSE": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "shiv",
+        "name": "小刀流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
+      }
+    ],
+    "WRAITH_FORM": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "dexterity-block",
+        "name": "敏捷格擋流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
+      }
+    ],
+    "BURST": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "dexterity-block",
+        "name": "敏捷格擋流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
+      }
+    ],
+    "DASH": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "dexterity-block",
+        "name": "敏捷格擋流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
+      }
+    ],
+    "BLUR": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "dexterity-block",
+        "name": "敏捷格擋流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
+      }
+    ],
+    "DODGE_AND_ROLL": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "dexterity-block",
+        "name": "敏捷格擋流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
+      }
+    ],
+    "LEG_SWEEP": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "dexterity-block",
+        "name": "敏捷格擋流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
+      }
+    ],
+    "PIERCING_WAIL": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "dexterity-block",
+        "name": "敏捷格擋流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
+      }
+    ],
+    "SPEEDSTER": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "draw-tempo",
+        "name": "過牌節奏流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
+      }
+    ],
+    "SERPENT_FORM": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "draw-tempo",
+        "name": "過牌節奏流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
+      }
+    ],
+    "ADRENALINE": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "draw-tempo",
+        "name": "過牌節奏流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
+      }
+    ],
+    "PREDATOR": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "draw-tempo",
+        "name": "過牌節奏流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
+      }
+    ],
+    "ESCAPE_PLAN": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "draw-tempo",
+        "name": "過牌節奏流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
+      }
+    ],
+    "MURDER": [
+      {
+        "character": "silent",
+        "characterPool": "Silent",
+        "buildId": "draw-tempo",
+        "name": "過牌節奏流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
+      }
+    ],
+    "GLACIER": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "frost-focus-orbs",
+        "name": "冰霜流",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
+      }
+    ],
+    "DEFRAGMENT": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "frost-focus-orbs",
+        "name": "冰霜流",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
+      },
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "lightning-power-engine",
+        "name": "閃電能力引擎",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
+      },
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "dark-orb-evoke-burst",
+        "name": "黑暗球爆發",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
+      }
+    ],
+    "CAPACITOR": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "frost-focus-orbs",
+        "name": "冰霜流",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
+      },
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "lightning-power-engine",
+        "name": "閃電能力引擎",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
+      },
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "dark-orb-evoke-burst",
+        "name": "黑暗球爆發",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
+      }
+    ],
+    "COOLHEADED": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "frost-focus-orbs",
+        "name": "冰霜流",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
+      }
+    ],
+    "MODDED": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "frost-focus-orbs",
+        "name": "冰霜流",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
+      }
+    ],
+    "HOTFIX": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "frost-focus-orbs",
+        "name": "冰霜流",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
+      },
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "claw-zero-cost",
+        "name": "0 費 Claw 流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
+      }
+    ],
+    "CHILL": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "frost-focus-orbs",
+        "name": "冰霜流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
+      }
+    ],
+    "COLD_SNAP": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "frost-focus-orbs",
+        "name": "冰霜流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
+      }
+    ],
+    "LOOP": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "frost-focus-orbs",
+        "name": "冰霜流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
+      },
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "dark-orb-evoke-burst",
+        "name": "黑暗球爆發",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
+      }
+    ],
+    "HAILSTORM": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "frost-focus-orbs",
+        "name": "冰霜流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
+      }
+    ],
+    "COOLANT": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "frost-focus-orbs",
+        "name": "冰霜流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
+      }
+    ],
+    "SYNCHRONIZE": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "frost-focus-orbs",
+        "name": "冰霜流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
+      },
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "dark-orb-evoke-burst",
+        "name": "黑暗球爆發",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
+      }
+    ],
+    "BALL_LIGHTNING": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "frost-focus-orbs",
+        "name": "冰霜流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
+      },
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "lightning-power-engine",
+        "name": "閃電能力引擎",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
+      }
+    ],
+    "QUADCAST": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "frost-focus-orbs",
+        "name": "冰霜流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
+      },
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "dark-orb-evoke-burst",
+        "name": "黑暗球爆發",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
+      }
+    ],
+    "VOLTAIC": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "frost-focus-orbs",
+        "name": "冰霜流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
+      },
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "lightning-power-engine",
+        "name": "閃電能力引擎",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
+      }
+    ],
+    "CHAOS": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "frost-focus-orbs",
+        "name": "冰霜流",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
+      }
+    ],
+    "CLAW": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "claw-zero-cost",
+        "name": "0 費 Claw 流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
+      }
+    ],
+    "ALL_FOR_ONE": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "claw-zero-cost",
+        "name": "0 費 Claw 流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
+      }
+    ],
+    "FERAL": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "claw-zero-cost",
+        "name": "0 費 Claw 流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
+      }
+    ],
+    "SCRAPE": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "claw-zero-cost",
+        "name": "0 費 Claw 流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
+      }
+    ],
+    "FTL": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "claw-zero-cost",
+        "name": "0 費 Claw 流",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
+      }
+    ],
+    "BEAM_CELL": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "claw-zero-cost",
+        "name": "0 費 Claw 流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
+      }
+    ],
+    "GO_FOR_THE_EYES": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "claw-zero-cost",
+        "name": "0 費 Claw 流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
+      }
+    ],
+    "SKIM": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "claw-zero-cost",
+        "name": "0 費 Claw 流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
+      }
+    ],
+    "HOLOGRAM": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "claw-zero-cost",
+        "name": "0 費 Claw 流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
+      }
+    ],
+    "MOMENTUM_STRIKE": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "claw-zero-cost",
+        "name": "0 費 Claw 流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
+      }
+    ],
+    "ADAPTIVE_STRIKE": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "claw-zero-cost",
+        "name": "0 費 Claw 流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
+      }
+    ],
+    "BULK_UP": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "claw-zero-cost",
+        "name": "0 費 Claw 流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
+      }
+    ],
+    "FLASH_OF_STEEL": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "claw-zero-cost",
+        "name": "0 費 Claw 流",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
+      }
+    ],
+    "STORM": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "lightning-power-engine",
+        "name": "閃電能力引擎",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
+      }
+    ],
+    "TEMPEST": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "lightning-power-engine",
+        "name": "閃電能力引擎",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
+      }
+    ],
+    "THUNDER": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "lightning-power-engine",
+        "name": "閃電能力引擎",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
+      }
+    ],
+    "SUBROUTINE": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "lightning-power-engine",
+        "name": "閃電能力引擎",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
+      }
+    ],
+    "CREATIVE_AI": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "lightning-power-engine",
+        "name": "閃電能力引擎",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
+      }
+    ],
+    "ZAP": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "lightning-power-engine",
+        "name": "閃電能力引擎",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
+      }
+    ],
+    "ECHO_FORM": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "lightning-power-engine",
+        "name": "閃電能力引擎",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
+      }
+    ],
+    "SIGNAL_BOOST": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "lightning-power-engine",
+        "name": "閃電能力引擎",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
+      }
+    ],
+    "MACHINE_LEARNING": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "lightning-power-engine",
+        "name": "閃電能力引擎",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
+      }
+    ],
+    "LIGHTNING_ROD": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "lightning-power-engine",
+        "name": "閃電能力引擎",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
+      }
+    ],
+    "TESLA_COIL": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "lightning-power-engine",
+        "name": "閃電能力引擎",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
+      }
+    ],
+    "WHITE_NOISE": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "lightning-power-engine",
+        "name": "閃電能力引擎",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
+      }
+    ],
+    "DARKNESS": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "dark-orb-evoke-burst",
+        "name": "黑暗球爆發",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
+      }
+    ],
+    "MULTI_CAST": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "dark-orb-evoke-burst",
+        "name": "黑暗球爆發",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
+      }
+    ],
+    "SHATTER": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "dark-orb-evoke-burst",
+        "name": "黑暗球爆發",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
+      }
+    ],
+    "SHADOW_SHIELD": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "dark-orb-evoke-burst",
+        "name": "黑暗球爆發",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
+      }
+    ],
+    "NULL": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "dark-orb-evoke-burst",
+        "name": "黑暗球爆發",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
+      }
+    ],
+    "DUALCAST": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "dark-orb-evoke-burst",
+        "name": "黑暗球爆發",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
+      }
+    ],
+    "CONSUMING_SHADOW": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "dark-orb-evoke-burst",
+        "name": "黑暗球爆發",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
+      }
+    ],
+    "RAINBOW": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "dark-orb-evoke-burst",
+        "name": "黑暗球爆發",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
+      }
+    ],
+    "TRASH_TO_TREASURE": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "status-engine",
+        "name": "狀態牌引擎",
+        "tier": "C",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
+      }
+    ],
+    "SMOKESTACK": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "status-engine",
+        "name": "狀態牌引擎",
+        "tier": "C",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
+      }
+    ],
+    "ITERATION": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "status-engine",
+        "name": "狀態牌引擎",
+        "tier": "C",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
+      }
+    ],
+    "ROCKET_PUNCH": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "status-engine",
+        "name": "狀態牌引擎",
+        "tier": "C",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
+      }
+    ],
+    "FLAK_CANNON": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "status-engine",
+        "name": "狀態牌引擎",
+        "tier": "C",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
+      }
+    ],
+    "GUNK_UP": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "status-engine",
+        "name": "狀態牌引擎",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
+      }
+    ],
+    "OVERCLOCK": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "status-engine",
+        "name": "狀態牌引擎",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
+      }
+    ],
+    "TURBO": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "status-engine",
+        "name": "狀態牌引擎",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
+      }
+    ],
+    "COMPACT": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "status-engine",
+        "name": "狀態牌引擎",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
+      }
+    ],
+    "FIGHT_THROUGH": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "status-engine",
+        "name": "狀態牌引擎",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
+      }
+    ],
+    "BOOST_AWAY": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "status-engine",
+        "name": "狀態牌引擎",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
+      }
+    ],
+    "HELIX_DRILL": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "status-engine",
+        "name": "狀態牌引擎",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
+      }
+    ],
+    "SCAVENGE": [
+      {
+        "character": "defect",
+        "characterPool": "Defect",
+        "buildId": "status-engine",
+        "name": "狀態牌引擎",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
+      }
+    ],
+    "GLOW": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "star-engine",
+        "name": "輝星引擎",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
+      },
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "alignment-loop",
+        "name": "星位序列循環",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
+      },
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "void-form",
+        "name": "虛空形態流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-void-form"
+      }
+    ],
+    "GENESIS": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "star-engine",
+        "name": "輝星引擎",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
+      },
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "void-form",
+        "name": "虛空形態流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-void-form"
+      }
+    ],
+    "HIDDEN_CACHE": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "star-engine",
+        "name": "輝星引擎",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
+      }
+    ],
+    "GATHER_LIGHT": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "star-engine",
+        "name": "輝星引擎",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
+      }
+    ],
+    "COMET": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "star-engine",
+        "name": "輝星引擎",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
+      },
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "void-form",
+        "name": "虛空形態流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-void-form"
+      }
+    ],
+    "REFLECT": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "star-engine",
+        "name": "輝星引擎",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
+      },
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "void-form",
+        "name": "虛空形態流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-void-form"
+      }
+    ],
+    "BIG_BANG": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "star-engine",
+        "name": "輝星引擎",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
+      },
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "alignment-loop",
+        "name": "星位序列循環",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
+      },
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "sovereign-blade-forge",
+        "name": "鑄造流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
+      }
+    ],
+    "SOLAR_STRIKE": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "star-engine",
+        "name": "輝星引擎",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
+      }
+    ],
+    "SHINING_STRIKE": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "star-engine",
+        "name": "輝星引擎",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
+      }
+    ],
+    "ROYAL_GAMBLE": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "star-engine",
+        "name": "輝星引擎",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
+      }
+    ],
+    "CHILD_OF_THE_STARS": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "star-engine",
+        "name": "輝星引擎",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
+      },
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "alignment-loop",
+        "name": "星位序列循環",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
+      }
+    ],
+    "BLACK_HOLE": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "star-engine",
+        "name": "輝星引擎",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
+      }
+    ],
+    "SEVEN_STARS": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "star-engine",
+        "name": "輝星引擎",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
+      },
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "void-form",
+        "name": "虛空形態流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-void-form"
+      }
+    ],
+    "RADIATE": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "star-engine",
+        "name": "輝星引擎",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
+      },
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "alignment-loop",
+        "name": "星位序列循環",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
+      }
+    ],
+    "PARTICLE_WALL": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "star-engine",
+        "name": "輝星引擎",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
+      },
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "alignment-loop",
+        "name": "星位序列循環",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
+      }
+    ],
+    "CLOAK_OF_STARS": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "star-engine",
+        "name": "輝星引擎",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
+      }
+    ],
+    "ALIGNMENT": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "alignment-loop",
+        "name": "星位序列循環",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
+      }
+    ],
+    "GUARDS": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "alignment-loop",
+        "name": "星位序列循環",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
+      }
+    ],
+    "BEGONE": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "alignment-loop",
+        "name": "星位序列循環",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
+      }
+    ],
+    "CHARGE": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "alignment-loop",
+        "name": "星位序列循環",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
+      }
+    ],
+    "TYRANNY": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "alignment-loop",
+        "name": "星位序列循環",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
+      }
+    ],
+    "STARDUST": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "alignment-loop",
+        "name": "星位序列循環",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
+      }
+    ],
+    "DECISIONS_DECISIONS": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "alignment-loop",
+        "name": "星位序列循環",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
+      }
+    ],
+    "SUMMON_FORTH": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "sovereign-blade-forge",
+        "name": "鑄造流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
+      }
+    ],
+    "SEEKING_EDGE": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "sovereign-blade-forge",
+        "name": "鑄造流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
+      }
+    ],
+    "FURNACE": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "sovereign-blade-forge",
+        "name": "鑄造流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
+      }
+    ],
+    "BULWARK": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "sovereign-blade-forge",
+        "name": "鑄造流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
+      },
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "void-form",
+        "name": "虛空形態流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-void-form"
+      }
+    ],
+    "CONQUEROR": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "sovereign-blade-forge",
+        "name": "鑄造流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
+      }
+    ],
+    "WROUGHT_IN_WAR": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "sovereign-blade-forge",
+        "name": "鑄造流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
+      }
+    ],
+    "SPOILS_OF_BATTLE": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "sovereign-blade-forge",
+        "name": "鑄造流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
+      }
+    ],
+    "THE_SMITH": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "sovereign-blade-forge",
+        "name": "鑄造流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
+      }
+    ],
+    "REFINE_BLADE": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "sovereign-blade-forge",
+        "name": "鑄造流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
+      }
+    ],
+    "SWORD_SAGE": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "sovereign-blade-forge",
+        "name": "鑄造流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
+      }
+    ],
+    "BEAT_INTO_SHAPE": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "sovereign-blade-forge",
+        "name": "鑄造流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
+      }
+    ],
+    "VOID_FORM": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "void-form",
+        "name": "虛空形態流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-void-form"
+      }
+    ],
+    "CONVERGENCE": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "void-form",
+        "name": "虛空形態流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-void-form"
+      }
+    ],
+    "SPECTRUM_SHIFT": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "card-creation",
+        "name": "造牌流",
+        "tier": "C",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
+      }
+    ],
+    "ARSENAL": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "card-creation",
+        "name": "造牌流",
+        "tier": "C",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
+      }
+    ],
+    "PILLAR_OF_CREATION": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "card-creation",
+        "name": "造牌流",
+        "tier": "C",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
+      }
+    ],
+    "QUASAR": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "card-creation",
+        "name": "造牌流",
+        "tier": "C",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
+      }
+    ],
+    "MANIFEST_AUTHORITY": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "card-creation",
+        "name": "造牌流",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
+      }
+    ],
+    "BUNDLE_OF_JOY": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "card-creation",
+        "name": "造牌流",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
+      }
+    ],
+    "SUPERMASSIVE": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "card-creation",
+        "name": "造牌流",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
+      }
+    ],
+    "HEIRLOOM_HAMMER": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "card-creation",
+        "name": "造牌流",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
+      }
+    ],
+    "CRASH_LANDING": [
+      {
+        "character": "regent",
+        "characterPool": "Regent",
+        "buildId": "card-creation",
+        "name": "造牌流",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
+      }
+    ],
+    "GRAVE_WARDEN": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "soul-cycle",
+        "name": "靈魂循環",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
+      }
+    ],
+    "CAPTURE_SPIRIT": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "soul-cycle",
+        "name": "靈魂循環",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
+      }
+    ],
+    "DIRGE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "soul-cycle",
+        "name": "靈魂循環",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
+      }
+    ],
+    "HAUNT": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "soul-cycle",
+        "name": "靈魂循環",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
+      }
+    ],
+    "SOUL_STORM": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "soul-cycle",
+        "name": "靈魂循環",
+        "tier": "S",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
+      }
+    ],
+    "REAVE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "soul-cycle",
+        "name": "靈魂循環",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
+      }
+    ],
+    "SEVERANCE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "soul-cycle",
+        "name": "靈魂循環",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
+      }
+    ],
+    "DEATH_MARCH": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "soul-cycle",
+        "name": "靈魂循環",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
+      }
+    ],
+    "DEVOUR_LIFE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "soul-cycle",
+        "name": "靈魂循環",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
+      }
+    ],
+    "BORROWED_TIME": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "soul-cycle",
+        "name": "靈魂循環",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
+      },
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "reaper-big-hit",
+        "name": "死神重擊",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
+      }
+    ],
+    "UNDEATH": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "soul-cycle",
+        "name": "靈魂循環",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
+      }
+    ],
+    "SEANCE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "soul-cycle",
+        "name": "靈魂循環",
+        "tier": "S",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
+      }
+    ],
+    "NO_ESCAPE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "doom-execute",
+        "name": "災厄處決",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
+      }
+    ],
+    "NEGATIVE_PULSE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "doom-execute",
+        "name": "災厄處決",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
+      }
+    ],
+    "DEATHBRINGER": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "doom-execute",
+        "name": "災厄處決",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
+      }
+    ],
+    "COUNTDOWN": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "doom-execute",
+        "name": "災厄處決",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
+      }
+    ],
+    "SLEIGHT_OF_FLESH": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "doom-execute",
+        "name": "災厄處決",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
+      }
+    ],
+    "DEATHS_DOOR": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "doom-execute",
+        "name": "災厄處決",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
+      }
+    ],
+    "BLIGHT_STRIKE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "doom-execute",
+        "name": "災厄處決",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
+      }
+    ],
+    "SCOURGE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "doom-execute",
+        "name": "災厄處決",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
+      }
+    ],
+    "SHROUD": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "doom-execute",
+        "name": "災厄處決",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
+      }
+    ],
+    "END_OF_DAYS": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "doom-execute",
+        "name": "災厄處決",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
+      }
+    ],
+    "TIMES_UP": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "doom-execute",
+        "name": "災厄處決",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
+      }
+    ],
+    "OBLIVION": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "doom-execute",
+        "name": "災厄處決",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
+      }
+    ],
+    "DEFY": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "doom-execute",
+        "name": "災厄處決",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
+      },
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "ethereal",
+        "name": "虛無流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
+      }
+    ],
+    "ENFEEBLING_TOUCH": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "doom-execute",
+        "name": "災厄處決",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
+      }
+    ],
+    "FETCH": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "osty",
+        "name": "奧斯提召喚",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
+      }
+    ],
+    "FLATTEN": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "osty",
+        "name": "奧斯提召喚",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
+      }
+    ],
+    "RATTLE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "osty",
+        "name": "奧斯提召喚",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
+      }
+    ],
+    "SQUEEZE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "osty",
+        "name": "奧斯提召喚",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
+      }
+    ],
+    "CALCIFY": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "osty",
+        "name": "奧斯提召喚",
+        "tier": "A",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
+      }
+    ],
+    "PULL_AGGRO": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "osty",
+        "name": "奧斯提召喚",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
+      }
+    ],
+    "INVOKE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "osty",
+        "name": "奧斯提召喚",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
+      }
+    ],
+    "AFTERLIFE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "osty",
+        "name": "奧斯提召喚",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
+      }
+    ],
+    "SPUR": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "osty",
+        "name": "奧斯提召喚",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
+      }
+    ],
+    "REANIMATE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "osty",
+        "name": "奧斯提召喚",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
+      }
+    ],
+    "NECRO_MASTERY": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "osty",
+        "name": "奧斯提召喚",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
+      }
+    ],
+    "RIGHT_HAND_HAND": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "osty",
+        "name": "奧斯提召喚",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
+      }
+    ],
+    "SNAP": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "osty",
+        "name": "奧斯提召喚",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
+      }
+    ],
+    "POKE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "osty",
+        "name": "奧斯提召喚",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
+      }
+    ],
+    "SACRIFICE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "osty",
+        "name": "奧斯提召喚",
+        "tier": "A",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
+      }
+    ],
+    "PULL_FROM_BELOW": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "ethereal",
+        "name": "虛無流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
+      }
+    ],
+    "PAGESTORM": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "ethereal",
+        "name": "虛無流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
+      }
+    ],
+    "SPIRIT_OF_ASH": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "ethereal",
+        "name": "虛無流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
+      }
+    ],
+    "BANSHEES_CRY": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "ethereal",
+        "name": "虛無流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
+      }
+    ],
+    "CALL_OF_THE_VOID": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "ethereal",
+        "name": "虛無流",
+        "tier": "B",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
+      }
+    ],
+    "SCULPTING_STRIKE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "ethereal",
+        "name": "虛無流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
+      }
+    ],
+    "VEILPIERCER": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "ethereal",
+        "name": "虛無流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
+      }
+    ],
+    "DREDGE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "ethereal",
+        "name": "虛無流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
+      }
+    ],
+    "GRAVEBLAST": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "ethereal",
+        "name": "虛無流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
+      }
+    ],
+    "EIDOLON": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "ethereal",
+        "name": "虛無流",
+        "tier": "B",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
+      }
+    ],
+    "REAPER_FORM": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "reaper-big-hit",
+        "name": "死神重擊",
+        "tier": "C",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
+      }
+    ],
+    "THE_SCYTHE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "reaper-big-hit",
+        "name": "死神重擊",
+        "tier": "C",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
+      }
+    ],
+    "ERADICATE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "reaper-big-hit",
+        "name": "死神重擊",
+        "tier": "C",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
+      }
+    ],
+    "LETHALITY": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "reaper-big-hit",
+        "name": "死神重擊",
+        "tier": "C",
+        "role": "core",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
+      }
+    ],
+    "FEAR": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "reaper-big-hit",
+        "name": "死神重擊",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
+      }
+    ],
+    "PUTREFY": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "reaper-big-hit",
+        "name": "死神重擊",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
+      }
+    ],
+    "DEBILITATE": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "reaper-big-hit",
+        "name": "死神重擊",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
+      }
+    ],
+    "HANG": [
+      {
+        "character": "necrobinder",
+        "characterPool": "Necrobinder",
+        "buildId": "reaper-big-hit",
+        "name": "死神重擊",
+        "tier": "C",
+        "role": "support",
+        "url": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
+      }
+    ]
+  },
+  "locale": "zh-TW"
+}
