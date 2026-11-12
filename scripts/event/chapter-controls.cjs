@@ -1,11 +1,12 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
-const chapters=[['act1a','第一章・密林'],['act1b','第一章・暗港'],['act2','第二章・蟲巢'],['act3','第三章・榮光之殿']];
+const chapters=[['act1a','第一章・密林'],['act1b','第一章・暗港'],['act2','第二章・巢穴'],['act3','第三章・榮耀']];
 const groups=[...chapters,['shared','跨章節共用'],['other','其他']];
 const colors={act1a:'#70bf8b',act1b:'#6faeee',act2:'#e3bf72',act3:'#b595dd',shared:'#6ac1b4',other:'#aab6c4',weak:'#aab6c4',normal:'#70bf8b',elite:'#e3bf72',boss:'#dc6c68',summon:'#b595dd'};
 function groupOf(x){return x.shared||(x.acts||[]).length>1?'shared':(x.acts||[]).find(a=>colors[a])||'other';}
 function acts(x){return [...new Set([...(x.acts||[]),groupOf(x)])].join('|');}
-const types=[['weak','弱小'],['normal','一般'],['elite','菁英'],['boss','Boss'],['summon','召喚物']];
-function controls(kind,items){return [['acts',groups.filter(([key])=>(kind!=='monster'||key!=='other')&&items.some(x=>groupOf(x)===key||(x.acts||[]).includes(key))) ],...(kind==='monster'?[['encounterType',types.filter(([key])=>key!=='summon')]]:[])].map(([key,values])=>'<div class="relic-filter-group chapter-filter-group" role="group" aria-label="'+(key==='acts'?'章節篩選':'怪物類型篩選')+'">'+values.map(([value,label])=>'<button type="button" data-filter-group="'+key+'" data-filter-value="'+value+'" style="--selection-color:'+ (colors[value]||'#aab6c4')+'" aria-pressed="false">'+label+'</button>').join('')+'</div>').join('');}
+const types=[['weak','弱怪'],['normal','一般'],['elite','菁英'],['boss','Boss'],['summon','召喚物']];
+function buttonLabel(kind,label){if(kind==='monster'&&label==='菁英')return '精英';return ['event','monster'].includes(kind)?label.replace(/^第([一二三])章/,(_,number)=>'第'+({一:1,二:2,三:3})[number]+'章'):label;}
+function controls(kind,items){return [['acts',groups.filter(([key])=>key!=='shared'&&(kind!=='monster'||key!=='other')&&items.some(x=>groupOf(x)===key||(x.acts||[]).includes(key))) ],...(kind==='monster'?[['encounterType',types.filter(([key])=>key!=='summon')]]:[])].map(([key,values])=>'<div class="relic-filter-group chapter-filter-group" role="group" aria-label="'+(key==='acts'?'章節篩選':'怪物類型篩選')+'">'+values.map(([value,label])=>'<button type="button" data-filter-group="'+key+'" data-filter-value="'+value+'" style="--selection-color:'+ (colors[value]||'#aab6c4')+'" aria-pressed="false">'+buttonLabel(kind,label)+'</button>').join('')+'</div>').join('');}
 function rank(x){if(x.shared)return 4;const indexes=(x.acts||[]).map(a=>chapters.findIndex(c=>c[0]===a)).filter(i=>i>=0);return indexes.length?Math.min(...indexes):5;}
 const compare=(a,b)=>rank(a)-rank(b)||a.name.localeCompare(b.name,'zh-TW')||a.id.localeCompare(b.id);
 const styles='.chapter-filters{align-items:center;gap:18px 28px}.chapter-filter-group{display:flex;flex-wrap:wrap;gap:8px;max-width:100%}.chapter-filter-group button{font:inherit;padding:8px 13px;color:var(--muted);background:var(--paper);border:1px solid var(--line);border-radius:7px;cursor:pointer}.chapter-filter-group button:hover{border-color:var(--focus)}.chapter-filters #search{order:1;flex:0 1 360px;margin-left:auto}@media(max-width:640px){.chapter-filters #search{flex:1 1 100%;margin-left:0}}';

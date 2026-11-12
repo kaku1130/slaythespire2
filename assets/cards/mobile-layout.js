@@ -1,14 +1,82 @@
 (() => {
-  const media = window.matchMedia('(max-width:760px)');
+  const media = window.matchMedia('(max-width:1024px), (max-width:1366px) and (hover:none) and (pointer:coarse)');
   const main = document.getElementById('main-content');
   if (!main) return;
   const pageKind = location.pathname.split('/').pop().replace(/\.html$/, '');
   main.dataset.mobilePage = pageKind;
+  if (pageKind === 'builds') {
+    for (const link of main.querySelectorAll('.tier-index-item')) {
+      const panel = document.getElementById(link.hash.slice(1));
+      const overview = panel?.querySelector('.build-overview');
+      if (!overview) continue;
+      const heading = document.createElement('h3');
+      heading.className = 'mobile-build-heading';
+      const tier = link.querySelector('.build-tier').cloneNode(true);
+      tier.removeAttribute('aria-hidden');
+      tier.setAttribute('aria-label', tier.textContent.trim() + ' 級');
+      heading.append(tier, link.querySelector('.tier-index-name').cloneNode(true));
+      panel.prepend(heading);
+    }
+    const characterBar = main.querySelector('.character-sidebar');
+    const updateCharacterHeight = () => main.style.setProperty('--mobile-character-height', characterBar.getBoundingClientRect().height + 'px');
+    updateCharacterHeight();
+    if (typeof ResizeObserver !== 'undefined') new ResizeObserver(updateCharacterHeight).observe(characterBar);
+    else window.addEventListener('resize', updateCharacterHeight);
+    function scrollToBuild() {
+      if (!media.matches) return;
+      let id;
+      try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
+      const panel = document.getElementById(id);
+      const heading = panel?.querySelector('.mobile-build-heading');
+      if (!heading || panel.hidden || panel.closest('.build-section').hidden) return;
+      const pinnedHeight = main.querySelector('.character-sidebar').getBoundingClientRect().height;
+      main.scrollTo({
+        top: main.scrollTop + panel.getBoundingClientRect().top - main.getBoundingClientRect().top - pinnedHeight - 12,
+        behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
+      });
+    }
+    window.addEventListener('hashchange', () => requestAnimationFrame(scrollToBuild));
+    main.addEventListener('click', event => {
+      const link = event.target.closest('.tier-index-item');
+      if (link && link.hash === location.hash) requestAnimationFrame(scrollToBuild);
+    });
+    requestAnimationFrame(scrollToBuild);
+  }
   // Keep accessible names when the compact layout hides visible labels.
-  document.querySelectorAll('.site-brand,.site-nav a,.chips button,.relic-filters [data-filter-group="pool"],#upgrade-toggle,#aoe-toggle').forEach(el => {
+  document.querySelectorAll('.site-brand,.site-nav a,.chips button,.character-nav a,.relic-filters [data-filter-group="pool"],#upgrade-toggle,#aoe-toggle').forEach(el => {
     if (!el.hasAttribute('aria-label')) el.setAttribute('aria-label', el.textContent.trim());
     el.title = el.getAttribute('aria-label');
   });
+  if (pageKind === 'relic') {
+    const filters = main.querySelector('.relic-filters');
+    const groups = [...filters.querySelectorAll(':scope > .relic-filter-group')];
+    const menuRow = document.createElement('div');
+    menuRow.className = 'relic-menu-row';
+    groups[0].before(menuRow);
+    menuRow.append(...groups);
+  }
+  if (pageKind === 'cards') {
+    const rarityCluster = main.querySelector('.rarity-cluster');
+    const rarities = rarityCluster?.querySelector('.rarity-buttons');
+    const colorless = main.querySelector('[data-category="Colorless"]');
+    if (rarities && colorless) {
+      (main.querySelector('[data-category="Quest"]') || colorless).after(rarities);
+      rarityCluster.remove();
+    }
+    const chips = main.querySelector('.chips');
+    const professions = document.createElement('span');
+    const others = document.createElement('span');
+    professions.className = 'card-profession-row';
+    others.className = 'card-other-row';
+    professions.setAttribute('role', 'group');
+    professions.setAttribute('aria-label', '職業分類');
+    others.setAttribute('role', 'group');
+    others.setAttribute('aria-label', '其他卡牌分類');
+    for (const button of [...chips.querySelectorAll('[data-category]')]) {
+      (['Colorless', 'Curse', 'Event', 'Quest'].includes(button.dataset.category) ? others : professions).append(button);
+    }
+    chips.prepend(professions, others);
+  }
   const upgrade = document.getElementById('upgrade-toggle');
   if (upgrade) {
     upgrade.querySelector('span')?.classList.add('desktop-upgrade-icon');
@@ -20,6 +88,7 @@
   }
   const search = document.getElementById('search');
   const searchNode = search?.closest('.inline-search') || search;
+  if (pageKind === 'cards' && searchNode) main.querySelector('#tools')?.prepend(searchNode);
   const searchHome = searchNode && document.createComment('Desktop search position');
   if (searchNode) searchNode.before(searchHome);
   const row = document.createElement('div');
@@ -63,12 +132,21 @@
   const sharedHome = sharedAncients && document.createComment('Desktop shared ancient position');
   if (sharedAncients) sharedAncients.before(sharedHome);
   function update() {
+    if (pageKind === 'cards') {
+      for (const button of main.querySelectorAll('[data-category="Curse"],[data-category="Event"],[data-category="Quest"]')) button.hidden = media.matches;
+      const colorless = main.querySelector('[data-category="Colorless"]');
+      const label = media.matches ? '無色、其他' : 'Colorless';
+      colorless.setAttribute('aria-label', label);
+      colorless.title = label;
+      const text = [...colorless.childNodes].find(node => node.nodeType === Node.TEXT_NODE);
+      if (text) text.textContent = label;
+    }
     if (media.matches) {
       if (sharedAncients) main.querySelector('.ancient-act-column[data-act-column="3"]')?.append(sharedAncients);
-      if (searchNode || panels.length) {
+      if ((searchNode || panels.length) && !['event', 'monster'].includes(pageKind)) {
         main.prepend(row);
         if (panels.length) row.append(menu);
-        if (searchNode) row.append(searchNode);
+        if (searchNode && !['event', 'monster'].includes(pageKind)) row.append(searchNode);
       }
       buttons.forEach(button => {
         if (button === upgrade) row.append(button);
@@ -102,6 +180,12 @@
       requestAnimationFrame(() => main.querySelector('.split-detail')?.scrollIntoView({block:'start'}));
     }
   });
-  update();
+  if (['cards', 'relic', 'potion'].includes(pageKind)) {
+    const updateSearchHeight = () => main.style.setProperty('--mobile-search-height', row.getBoundingClientRect().height + 'px');
+    if (typeof ResizeObserver !== 'undefined') new ResizeObserver(updateSearchHeight).observe(row);
+    else window.addEventListener('resize', updateSearchHeight);
+    update();
+    updateSearchHeight();
+  } else update();
   media.addEventListener('change', update);
 })();

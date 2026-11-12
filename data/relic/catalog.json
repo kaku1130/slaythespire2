@@ -18,7 +18,8 @@
       "image": "akabeko",
       "imagePath": "/images/relics/akabeko.webp",
       "descriptionClean": "在每場戰鬥開始時，獲得8點活力。",
-      "descI18n": "在每場戰鬥開始時，獲得8點<g>活力</g>。"
+      "descI18n": "在每場戰鬥開始時，獲得8點<g>活力</g>。",
+      "nameEn": "Akabeko"
     },
     {
       "className": "AlchemicalCoffer",
@@ -35,7 +36,8 @@
       "image": "alchemical_coffer",
       "imagePath": "/images/relics/alchemical_coffer.webp",
       "descriptionClean": "拾起時，獲得4個放有隨機藥水的藥水欄位。",
-      "descI18n": "拾起時，獲得4個放有隨機藥水的藥水欄位。"
+      "descI18n": "拾起時，獲得4個放有隨機藥水的藥水欄位。",
+      "nameEn": "Alchemical Coffer"
     },
     {
       "className": "AmethystAubergine",
@@ -51,7 +53,8 @@
       "image": "amethyst_aubergine",
       "imagePath": "/images/relics/amethyst_aubergine.webp",
       "descriptionClean": "敵人額外掉落15金幣。",
-      "descI18n": "敵人額外掉落15<g>金幣</g>。"
+      "descI18n": "敵人額外掉落15<g>金幣</g>。",
+      "nameEn": "Amethyst Aubergine"
     },
     {
       "className": "Anchor",
@@ -67,7 +70,8 @@
       "image": "anchor",
       "imagePath": "/images/relics/anchor.webp",
       "descriptionClean": "每場戰鬥開始時獲得10點格擋。",
-      "descI18n": "每場戰鬥開始時獲得10點<g>格擋</g>。"
+      "descI18n": "每場戰鬥開始時獲得10點<g>格擋</g>。",
+      "nameEn": "Anchor"
     },
     {
       "className": "ArcaneScroll",
@@ -83,7 +87,8 @@
       "image": "arcane_scroll",
       "imagePath": "/images/relics/arcane_scroll.webp",
       "descriptionClean": "拾起時，將一張隨機稀有牌加入你的牌組。",
-      "descI18n": "拾起時，將一張隨機<g>稀有牌</g>加入你的<g>牌組</g>。"
+      "descI18n": "拾起時，將一張隨機<g>稀有牌</g>加入你的<g>牌組</g>。",
+      "nameEn": "Arcane Scroll"
     },
     {
       "className": "ArchaicTooth",
@@ -96,7 +101,8 @@
       "image": "archaic_tooth",
       "imagePath": "/images/relics/archaic_tooth.webp",
       "descriptionClean": "拾起時，將一張初始卡牌變化為先古版本。",
-      "descI18n": "拾起時，將一張初始卡牌<g>變化</g>為先古版本。"
+      "descI18n": "拾起時，將一張初始卡牌<g>變化</g>為先古版本。",
+      "nameEn": "Archaic Tooth"
     },
     {
       "className": "ArtOfWar",
@@ -113,7 +119,8 @@
       "image": "art_of_war",
       "imagePath": "/images/relics/art_of_war.webp",
       "descriptionClean": "如果你在本回閤中沒有打出過攻擊牌，則在下一回合額外獲得1點1。",
-      "descI18n": "如果你在本回閤中沒有打出過攻擊牌，則在下一回合額外獲得1點<e>1</e>。"
+      "descI18n": "如果你在本回閤中沒有打出過攻擊牌，則在下一回合額外獲得1點<e>1</e>。",
+      "nameEn": "Art of War"
     },
     {
       "className": "Astrolabe",
@@ -129,7 +136,8 @@
       "image": "astrolabe",
       "imagePath": "/images/relics/astrolabe.webp",
       "descriptionClean": "拾起時，選擇3張牌進行變化，然後將這些牌升級。",
-      "descI18n": "拾起時，選擇3張牌進行<g>變化</g>，然後將這些牌<g>升級</g>。"
+      "descI18n": "拾起時，選擇3張牌進行<g>變化</g>，然後將這些牌<g>升級</g>。",
+      "nameEn": "Astrolabe"
     },
     {
       "className": "BagOfMarbles",
@@ -146,7 +154,8 @@
       "image": "bag_of_marbles",
       "imagePath": "/images/relics/bag_of_marbles.webp",
       "descriptionClean": "在每場戰鬥開始時，給予所有敵人1層易傷。",
-      "descI18n": "在每場戰鬥開始時，給予所有敵人1層<g>易傷</g>。"
+      "descI18n": "在每場戰鬥開始時，給予所有敵人1層<g>易傷</g>。",
+      "nameEn": "Bag of Marbles"
     },
     {
       "className": "BagOfPreparation",
@@ -162,7 +171,8 @@
       "image": "bag_of_preparation",
       "imagePath": "/images/relics/bag_of_preparation.webp",
       "descriptionClean": "在每場戰鬥開始時，額外抽2張牌。",
-      "descI18n": "在每場戰鬥開始時，額外抽2張牌。"
+      "descI18n": "在每場戰鬥開始時，額外抽2張牌。",
+      "nameEn": "Bag of Preparation"
     },
     {
       "className": "BeatingRemnant",
@@ -179,7 +189,8 @@
       "image": "beating_remnant",
       "imagePath": "/images/relics/beating_remnant.webp",
       "descriptionClean": "你在一回合內失去的生命值不會超過20點。",
-      "descI18n": "你在一回合內失去的生命值不會超過20點。"
+      "descI18n": "你在一回合內失去的生命值不會超過20點。",
+      "nameEn": "Beating Remnant"
     },
     {
       "className": "BeautifulBracelet",
@@ -196,7 +207,8 @@
       "image": "beautiful_bracelet",
       "imagePath": "/images/relics/beautiful_bracelet.webp",
       "descriptionClean": "拾起時，從你的牌組中選擇3張牌，附魔：迅捷3。",
-      "descI18n": "拾起時，從你的<g>牌組</g>中選擇3張牌，<g>附魔</g>：迅捷3。"
+      "descI18n": "拾起時，從你的<g>牌組</g>中選擇3張牌，<g>附魔</g>：迅捷3。",
+      "nameEn": "Beautiful Bracelet"
     },
     {
       "className": "Bellows",
@@ -209,7 +221,8 @@
       "image": "bellows",
       "imagePath": "/images/relics/bellows.webp",
       "descriptionClean": "你在每場戰鬥開始時的手牌，將被升級。",
-      "descI18n": "你在每場戰鬥開始時的<g>手牌</g>，將被<g>升級</g>。"
+      "descI18n": "你在每場戰鬥開始時的<g>手牌</g>，將被<g>升級</g>。",
+      "nameEn": "Bellows"
     },
     {
       "className": "BeltBuckle",
@@ -226,7 +239,8 @@
       "image": "belt_buckle",
       "imagePath": "/images/relics/belt_buckle.webp",
       "descriptionClean": "當你沒有藥水時，你額外擁有2點敏捷。",
-      "descI18n": "當你沒有藥水時，你額外擁有2點<g>敏捷</g>。"
+      "descI18n": "當你沒有藥水時，你額外擁有2點<g>敏捷</g>。",
+      "nameEn": "Belt Buckle"
     },
     {
       "className": "BigHat",
@@ -242,7 +256,8 @@
       "image": "big_hat",
       "imagePath": "/images/relics/big_hat.webp",
       "descriptionClean": "在每場戰鬥開始時，將2張隨機虛無牌加入你的手牌。",
-      "descI18n": "在每場戰鬥開始時，將2張隨機<g>虛無</g>牌加入你的<g>手牌</g>。"
+      "descI18n": "在每場戰鬥開始時，將2張隨機<g>虛無</g>牌加入你的<g>手牌</g>。",
+      "nameEn": "Big Hat"
     },
     {
       "className": "BigMushroom",
@@ -260,7 +275,8 @@
       "image": "big_mushroom",
       "imagePath": "/images/relics/big_mushroom.webp",
       "descriptionClean": "拾起時，將你的最大生命值提升20。在每場戰鬥開始時，少抽2張牌。",
-      "descI18n": "拾起時，將你的最大生命值提升20。在每場戰鬥開始時，少抽2張牌。"
+      "descI18n": "拾起時，將你的最大生命值提升20。在每場戰鬥開始時，少抽2張牌。",
+      "nameEn": "Big Mushroom"
     },
     {
       "className": "BiiigHug",
@@ -276,7 +292,8 @@
       "image": "biiig_hug",
       "imagePath": "/images/relics/biiig_hug.webp",
       "descriptionClean": "拾起時，從你的牌組中移除4張牌。每當你的抽牌堆打亂洗牌時，將一張煤灰加入你的抽牌堆。",
-      "descI18n": "拾起時，從你的<g>牌組</g>中移除4張牌。每當你的<g>抽牌堆</g>打亂洗牌時，將一張<g>煤灰</g>加入你的<g>抽牌堆</g>。"
+      "descI18n": "拾起時，從你的<g>牌組</g>中移除4張牌。每當你的<g>抽牌堆</g>打亂洗牌時，將一張<g>煤灰</g>加入你的<g>抽牌堆</g>。",
+      "nameEn": "Biiig Hug"
     },
     {
       "className": "BingBong",
@@ -289,7 +306,8 @@
       "image": "bing_bong",
       "imagePath": "/images/relics/bing_bong.webp",
       "descriptionClean": "每當你往牌組中增添卡牌時，都將額外添加一張相同的牌。",
-      "descI18n": "每當你往<g>牌組</g>中增添卡牌時，都將額外添加一張相同的牌。"
+      "descI18n": "每當你往<g>牌組</g>中增添卡牌時，都將額外添加一張相同的牌。",
+      "nameEn": "Bing Bong"
     },
     {
       "className": "BlackBlood",
@@ -305,7 +323,8 @@
       "image": "black_blood",
       "imagePath": "/images/relics/black_blood.webp",
       "descriptionClean": "在戰鬥結束時，回覆12點生命。",
-      "descI18n": "在戰鬥結束時，回覆12點生命。"
+      "descI18n": "在戰鬥結束時，回覆12點生命。",
+      "nameEn": "Black Blood"
     },
     {
       "className": "BlackStar",
@@ -318,7 +337,8 @@
       "image": "black_star",
       "imagePath": "/images/relics/black_star.webp",
       "descriptionClean": "精英敵人在被打敗時多掉落一件遺物。",
-      "descI18n": "<g>精英</g>敵人在被打敗時多掉落一件遺物。"
+      "descI18n": "<g>精英</g>敵人在被打敗時多掉落一件遺物。",
+      "nameEn": "Black Star"
     },
     {
       "className": "BlessedAntler",
@@ -336,7 +356,8 @@
       "image": "blessed_antler",
       "imagePath": "/images/relics/blessed_antler.webp",
       "descriptionClean": "在每回合開始時獲得1。在戰鬥開始時，將3張暈眩放入你的抽牌堆。",
-      "descI18n": "在每回合開始時獲得<e>1</e>。在戰鬥開始時，將3張<g>暈眩</g>放入你的<g>抽牌堆</g>。"
+      "descI18n": "在每回合開始時獲得<e>1</e>。在戰鬥開始時，將3張<g>暈眩</g>放入你的<g>抽牌堆</g>。",
+      "nameEn": "Blessed Antler"
     },
     {
       "className": "BloodSoakedRose",
@@ -353,7 +374,8 @@
       "image": "blood_soaked_rose",
       "imagePath": "/images/relics/blood_soaked_rose.webp",
       "descriptionClean": "拾起時，將1張執迷加入你的牌組。在回合開始時獲得1。",
-      "descI18n": "拾起時，將1張執迷加入你的<g>牌組</g>。在回合開始時獲得<e>1</e>。"
+      "descI18n": "拾起時，將1張執迷加入你的<g>牌組</g>。在回合開始時獲得<e>1</e>。",
+      "nameEn": "Blood-Soaked Rose"
     },
     {
       "className": "BloodVial",
@@ -369,7 +391,8 @@
       "image": "blood_vial",
       "imagePath": "/images/relics/blood_vial.webp",
       "descriptionClean": "在每場戰鬥開始時，回覆2點生命。",
-      "descI18n": "在每場戰鬥開始時，回覆2點生命。"
+      "descI18n": "在每場戰鬥開始時，回覆2點生命。",
+      "nameEn": "Blood Vial"
     },
     {
       "className": "BoneFlute",
@@ -385,7 +408,8 @@
       "image": "bone_flute",
       "imagePath": "/images/relics/bone_flute.webp",
       "descriptionClean": "每當奧斯提攻擊時，獲得2點格擋。",
-      "descI18n": "每當<g>奧斯提</g>攻擊時，獲得2點<g>格擋</g>。"
+      "descI18n": "每當<g>奧斯提</g>攻擊時，獲得2點<g>格擋</g>。",
+      "nameEn": "Bone Flute"
     },
     {
       "className": "BoneTea",
@@ -401,7 +425,8 @@
       "image": "bone_tea",
       "imagePath": "/images/relics/bone_tea.webp",
       "descriptionClean": "在你接下來的1場戰鬥開始時，升級你的初始手牌。",
-      "descI18n": "在你接下來的1場戰鬥開始時，<g>升級</g>你的初始手牌。"
+      "descI18n": "在你接下來的1場戰鬥開始時，<g>升級</g>你的初始手牌。",
+      "nameEn": "Bone Tea"
     },
     {
       "className": "BookOfFiveRings",
@@ -418,7 +443,8 @@
       "image": "book_of_five_rings",
       "imagePath": "/images/relics/book_of_five_rings.webp",
       "descriptionClean": "你每將5張牌加入你的牌組時，回覆20點生命。",
-      "descI18n": "你每將5張牌加入你的<g>牌組</g>時，回覆20點生命。"
+      "descI18n": "你每將5張牌加入你的<g>牌組</g>時，回覆20點生命。",
+      "nameEn": "Book of Five Rings"
     },
     {
       "className": "BookRepairKnife",
@@ -434,7 +460,8 @@
       "image": "book_repair_knife",
       "imagePath": "/images/relics/book_repair_knife.webp",
       "descriptionClean": "每當有一名不是“爪牙”的敵人死於災厄時，回覆3點生命。",
-      "descI18n": "每當有一名不是“爪牙”的敵人死於<g>災厄</g>時，回覆3點生命。"
+      "descI18n": "每當有一名不是“爪牙”的敵人死於<g>災厄</g>時，回覆3點生命。",
+      "nameEn": "Book Repair Knife"
     },
     {
       "className": "Bookmark",
@@ -447,7 +474,8 @@
       "image": "bookmark",
       "imagePath": "/images/relics/bookmark.webp",
       "descriptionClean": "每回合結束時，隨機一張被保留的牌在被打出前的耗能減少1。",
-      "descI18n": "每回合結束時，隨機一張被<g>保留</g>的牌在被打出前的耗能減少1。"
+      "descI18n": "每回合結束時，隨機一張被<g>保留</g>的牌在被打出前的耗能減少1。",
+      "nameEn": "Bookmark"
     },
     {
       "className": "BoomingConch",
@@ -465,7 +493,8 @@
       "image": "booming_conch",
       "imagePath": "/images/relics/booming_conch.webp",
       "descriptionClean": "在精英戰的戰鬥開始時，額外抽2張牌並獲得1。",
-      "descI18n": "在<g>精英</g>戰的戰鬥開始時，額外抽2張牌並獲得<e>1</e>。"
+      "descI18n": "在<g>精英</g>戰的戰鬥開始時，額外抽2張牌並獲得<e>1</e>。",
+      "nameEn": "Booming Conch"
     },
     {
       "className": "BoundPhylactery",
@@ -481,7 +510,8 @@
       "image": "bound_phylactery",
       "imagePath": "/images/relics/bound_phylactery.webp",
       "descriptionClean": "在你的回合開始時，召喚1",
-      "descI18n": "在你的回合開始時，<g>召喚</g>1"
+      "descI18n": "在你的回合開始時，<g>召喚</g>1",
+      "nameEn": "Bound Phylactery"
     },
     {
       "className": "BowlerHat",
@@ -498,7 +528,8 @@
       "image": "bowler_hat",
       "imagePath": "/images/relics/bowler_hat.webp",
       "descriptionClean": "額外獲得%的金幣。",
-      "descI18n": "額外獲得%的<g>金幣</g>。"
+      "descI18n": "額外獲得%的<g>金幣</g>。",
+      "nameEn": "Bowler Hat"
     },
     {
       "className": "Bread",
@@ -517,7 +548,8 @@
       "image": "bread",
       "imagePath": "/images/relics/bread.webp",
       "descriptionClean": "在你的第一個回合開始時，失去2。在其餘的回合開始時，獲得1。",
-      "descI18n": "在你的第一個回合開始時，失去<e>2</e>。在其餘的回合開始時，獲得<e>1</e>。"
+      "descI18n": "在你的第一個回合開始時，失去<e>2</e>。在其餘的回合開始時，獲得<e>1</e>。",
+      "nameEn": "Bread"
     },
     {
       "className": "BrilliantScarf",
@@ -533,7 +565,8 @@
       "image": "brilliant_scarf",
       "imagePath": "/images/relics/brilliant_scarf.webp",
       "descriptionClean": "你每回合從你的手牌打出的第5張牌可以被免費打出。",
-      "descI18n": "你每回合從你的手牌打出的第5張牌可以被免費打出。"
+      "descI18n": "你每回合從你的手牌打出的第5張牌可以被免費打出。",
+      "nameEn": "Brilliant Scarf"
     },
     {
       "className": "Brimstone",
@@ -552,7 +585,8 @@
       "image": "brimstone",
       "imagePath": "/images/relics/brimstone.webp",
       "descriptionClean": "在你的每個回合開始時，你獲得2點力量，所有敵人獲得1點力量。",
-      "descI18n": "在你的每個回合開始時，你獲得2點<g>力量</g>，所有敵人獲得1點<g>力量</g>。"
+      "descI18n": "在你的每個回合開始時，你獲得2點<g>力量</g>，所有敵人獲得1點<g>力量</g>。",
+      "nameEn": "Brimstone"
     },
     {
       "className": "BronzeScales",
@@ -569,7 +603,8 @@
       "image": "bronze_scales",
       "imagePath": "/images/relics/bronze_scales.webp",
       "descriptionClean": "在每場戰鬥開始時，獲得3點荊棘。",
-      "descI18n": "在每場戰鬥開始時，獲得3點<g>荊棘</g>。"
+      "descI18n": "在每場戰鬥開始時，獲得3點<g>荊棘</g>。",
+      "nameEn": "Bronze Scales"
     },
     {
       "className": "BurningBlood",
@@ -585,7 +620,8 @@
       "image": "burning_blood",
       "imagePath": "/images/relics/burning_blood.webp",
       "descriptionClean": "在戰鬥結束時，回覆6點生命。",
-      "descI18n": "在戰鬥結束時，回覆6點生命。"
+      "descI18n": "在戰鬥結束時，回覆6點生命。",
+      "nameEn": "Burning Blood"
     },
     {
       "className": "BurningSticks",
@@ -598,7 +634,8 @@
       "image": "burning_sticks",
       "imagePath": "/images/relics/burning_sticks.webp",
       "descriptionClean": "每場戰鬥中你第一次消耗技能牌時，將那張牌的複製品加入你的手牌",
-      "descI18n": "每場戰鬥中你第一次<g>消耗</g>技能牌時，將那張牌的複製品加入你的<g>手牌</g>"
+      "descI18n": "每場戰鬥中你第一次<g>消耗</g>技能牌時，將那張牌的複製品加入你的<g>手牌</g>",
+      "nameEn": "Burning Sticks"
     },
     {
       "className": "Byrdpip",
@@ -611,7 +648,8 @@
       "image": "byrdpip",
       "imagePath": "/images/relics/byrdpip.webp",
       "descriptionClean": "拾起時，獲得一張異鳥撲擊。一隻幼年異鳥會在戰鬥中陪伴你。",
-      "descI18n": "拾起時，獲得一張<g>異鳥撲擊</g>。一隻<g>幼年異鳥</g>會在戰鬥中陪伴你。"
+      "descI18n": "拾起時，獲得一張<g>異鳥撲擊</g>。一隻<g>幼年異鳥</g>會在戰鬥中陪伴你。",
+      "nameEn": "Byrdpip"
     },
     {
       "className": "CallingBell",
@@ -627,7 +665,8 @@
       "image": "calling_bell",
       "imagePath": "/images/relics/calling_bell.webp",
       "descriptionClean": "拾起時，獲得一個獨特的詛咒和3件遺物。",
-      "descI18n": "拾起時，獲得一個獨特的詛咒和3件<g>遺物</g>。"
+      "descI18n": "拾起時，獲得一個獨特的詛咒和3件<g>遺物</g>。",
+      "nameEn": "Calling Bell"
     },
     {
       "className": "Candelabra",
@@ -644,7 +683,8 @@
       "image": "candelabra",
       "imagePath": "/images/relics/candelabra.webp",
       "descriptionClean": "在你的第2回合開始時，獲得2。",
-      "descI18n": "在你的第2回合開始時，獲得<e>2</e>。"
+      "descI18n": "在你的第2回合開始時，獲得<e>2</e>。",
+      "nameEn": "Candelabra"
     },
     {
       "className": "CaptainsWheel",
@@ -660,7 +700,8 @@
       "image": "captains_wheel",
       "imagePath": "/images/relics/captains_wheel.webp",
       "descriptionClean": "在你的第三回合開始時，獲得18點格擋。",
-      "descI18n": "在你的第三回合開始時，獲得18點<g>格擋</g>。"
+      "descI18n": "在你的第三回合開始時，獲得18點<g>格擋</g>。",
+      "nameEn": "Captain's Wheel"
     },
     {
       "className": "Cauldron",
@@ -676,7 +717,8 @@
       "image": "cauldron",
       "imagePath": "/images/relics/cauldron.webp",
       "descriptionClean": "拾起時，製作5瓶隨機藥水。",
-      "descI18n": "拾起時，製作5瓶隨機藥水。"
+      "descI18n": "拾起時，製作5瓶隨機藥水。",
+      "nameEn": "Cauldron"
     },
     {
       "className": "CentennialPuzzle",
@@ -692,7 +734,8 @@
       "image": "centennial_puzzle",
       "imagePath": "/images/relics/centennial_puzzle.webp",
       "descriptionClean": "你在每場戰鬥中第一次損失生命值時，抽3張牌。",
-      "descI18n": "你在每場戰鬥中第一次損失生命值時，抽3張牌。"
+      "descI18n": "你在每場戰鬥中第一次損失生命值時，抽3張牌。",
+      "nameEn": "Centennial Puzzle"
     },
     {
       "className": "Chandelier",
@@ -709,7 +752,8 @@
       "image": "chandelier",
       "imagePath": "/images/relics/chandelier.webp",
       "descriptionClean": "在你的第三回合開始時，獲得3。",
-      "descI18n": "在你的第三回合開始時，獲得<e>3</e>。"
+      "descI18n": "在你的第三回合開始時，獲得<e>3</e>。",
+      "nameEn": "Chandelier"
     },
     {
       "className": "CharonsAshes",
@@ -725,7 +769,8 @@
       "image": "charons_ashes",
       "imagePath": "/images/relics/charons_ashes.webp",
       "descriptionClean": "每當你消耗一張牌，對所有敵人造成3點傷害。",
-      "descI18n": "每當你<g>消耗</g>一張牌，對所有敵人造成3點傷害。"
+      "descI18n": "每當你<g>消耗</g>一張牌，對所有敵人造成3點傷害。",
+      "nameEn": "Charon's Ashes"
     },
     {
       "className": "ChemicalX",
@@ -741,7 +786,8 @@
       "image": "chemical_x",
       "imagePath": "/images/relics/chemical_x.webp",
       "descriptionClean": "耗能為X的牌的效果數值增加2點。",
-      "descI18n": "耗能為X的牌的效果數值增加2點。"
+      "descI18n": "耗能為X的牌的效果數值增加2點。",
+      "nameEn": "Chemical X"
     },
     {
       "className": "ChoicesParadox",
@@ -757,7 +803,8 @@
       "image": "choices_paradox",
       "imagePath": "/images/relics/choices_paradox.webp",
       "descriptionClean": "在每場戰鬥開始時，從5張隨機牌中選擇1張放入你的手牌。被選中的牌獲得保留。",
-      "descI18n": "在每場戰鬥開始時，從5張隨機牌中選擇1張放入你的<g>手牌</g>。被選中的牌獲得<g>保留</g>。"
+      "descI18n": "在每場戰鬥開始時，從5張隨機牌中選擇1張放入你的<g>手牌</g>。被選中的牌獲得<g>保留</g>。",
+      "nameEn": "Choices Paradox"
     },
     {
       "className": "ChosenCheese",
@@ -774,7 +821,8 @@
       "image": "chosen_cheese",
       "imagePath": "/images/relics/chosen_cheese.webp",
       "descriptionClean": "在戰鬥結束時，獲得1點最大生命值。",
-      "descI18n": "在戰鬥結束時，獲得1點最大生命值。"
+      "descI18n": "在戰鬥結束時，獲得1點最大生命值。",
+      "nameEn": "The Chosen Cheese"
     },
     {
       "className": "Circlet",
@@ -787,7 +835,8 @@
       "image": "circlet",
       "imagePath": "/images/relics/circlet.webp",
       "descriptionClean": "這是一個頭環。",
-      "descI18n": "這是一個頭環。"
+      "descI18n": "這是一個頭環。",
+      "nameEn": "Circlet"
     },
     {
       "className": "Claws",
@@ -803,7 +852,8 @@
       "image": "claws",
       "imagePath": "/images/relics/claws.webp",
       "descriptionClean": "拾起時，將至多6張牌變化為撕咬。",
-      "descI18n": "拾起時，將至多6張牌<g>變化</g>為<g>撕咬</g>。"
+      "descI18n": "拾起時，將至多6張牌<g>變化</g>為<g>撕咬</g>。",
+      "nameEn": "Claws"
     },
     {
       "className": "CloakClasp",
@@ -819,7 +869,8 @@
       "image": "cloak_clasp",
       "imagePath": "/images/relics/cloak_clasp.webp",
       "descriptionClean": "在你的回合結束時，每有一張手牌，就獲得1點格擋",
-      "descI18n": "在你的回合結束時，每有一張<g>手牌</g>，就獲得1點<g>格擋</g>"
+      "descI18n": "在你的回合結束時，每有一張<g>手牌</g>，就獲得1點<g>格擋</g>",
+      "nameEn": "Cloak Clasp"
     },
     {
       "className": "CrackedCore",
@@ -835,7 +886,8 @@
       "image": "cracked_core",
       "imagePath": "/images/relics/cracked_core.webp",
       "descriptionClean": "在每場戰鬥開始時，生成1個閃電充能球。",
-      "descI18n": "在每場戰鬥開始時，<g>生成</g>1個<g>閃電</g>充能球。"
+      "descI18n": "在每場戰鬥開始時，<g>生成</g>1個<g>閃電</g>充能球。",
+      "nameEn": "Cracked Core"
     },
     {
       "className": "Crossbow",
@@ -848,7 +900,8 @@
       "image": "crossbow",
       "imagePath": "/images/relics/crossbow.webp",
       "descriptionClean": "在你的回合開始時，將一張隨機攻擊牌加入你的手牌。這張牌在本回合可以免費打出。",
-      "descI18n": "在你的回合開始時，將一張隨機<g>攻擊牌</g>加入你的<g>手牌</g>。這張牌在本回合可以免費打出。"
+      "descI18n": "在你的回合開始時，將一張隨機<g>攻擊牌</g>加入你的<g>手牌</g>。這張牌在本回合可以免費打出。",
+      "nameEn": "Crossbow"
     },
     {
       "className": "CursedPearl",
@@ -864,7 +917,8 @@
       "image": "cursed_pearl",
       "imagePath": "/images/relics/cursed_pearl.webp",
       "descriptionClean": "拾起時，獲得一張貪婪，獲得333金幣。",
-      "descI18n": "拾起時，獲得一張貪婪，獲得333<g>金幣</g>。"
+      "descI18n": "拾起時，獲得一張貪婪，獲得333<g>金幣</g>。",
+      "nameEn": "Cursed Pearl"
     },
     {
       "className": "DarkstonePeriapt",
@@ -881,7 +935,8 @@
       "image": "darkstone_periapt",
       "imagePath": "/images/relics/darkstone_periapt.webp",
       "descriptionClean": "每當你獲得一張詛咒，就將你的最大生命值提升6。",
-      "descI18n": "每當你獲得一張詛咒，就將你的最大生命值提升6。"
+      "descI18n": "每當你獲得一張詛咒，就將你的最大生命值提升6。",
+      "nameEn": "Darkstone Periapt"
     },
     {
       "className": "DataDisk",
@@ -898,7 +953,8 @@
       "image": "data_disk",
       "imagePath": "/images/relics/data_disk.webp",
       "descriptionClean": "在每場戰鬥開始時，獲得1點集中。",
-      "descI18n": "在每場戰鬥開始時，獲得1點<g>集中</g>。"
+      "descI18n": "在每場戰鬥開始時，獲得1點<g>集中</g>。",
+      "nameEn": "Data Disk"
     },
     {
       "className": "DaughterOfTheWind",
@@ -914,7 +970,8 @@
       "image": "daughter_of_the_wind",
       "imagePath": "/images/relics/daughter_of_the_wind.webp",
       "descriptionClean": "每當你打出一張攻擊牌時，獲得1點格擋。",
-      "descI18n": "每當你打出一張攻擊牌時，獲得1點<g>格擋</g>。"
+      "descI18n": "每當你打出一張攻擊牌時，獲得1點<g>格擋</g>。",
+      "nameEn": "Daughter of the Wind"
     },
     {
       "className": "DelicateFrond",
@@ -927,7 +984,8 @@
       "image": "delicate_frond",
       "imagePath": "/images/relics/delicate_frond.webp",
       "descriptionClean": "在每場戰鬥開始時，用隨機藥水將你的空藥水欄位填滿。",
-      "descI18n": "在每場戰鬥開始時，用隨機藥水將你的空藥水欄位填滿。"
+      "descI18n": "在每場戰鬥開始時，用隨機藥水將你的空藥水欄位填滿。",
+      "nameEn": "Delicate Frond"
     },
     {
       "className": "DemonTongue",
@@ -940,7 +998,8 @@
       "image": "demon_tongue",
       "imagePath": "/images/relics/demon_tongue.webp",
       "descriptionClean": "每回合第一次在回合內失去生命值時，回覆等量的生命值。",
-      "descI18n": "每回合第一次在回合內失去生命值時，回覆等量的生命值。"
+      "descI18n": "每回合第一次在回合內失去生命值時，回覆等量的生命值。",
+      "nameEn": "Demon Tongue"
     },
     {
       "className": "DiamondDiadem",
@@ -957,7 +1016,8 @@
       "image": "diamond_diadem",
       "imagePath": "/images/relics/diamond_diadem.webp",
       "descriptionClean": "如果你在本回合打出的牌少於等於2張，則受到敵人的傷害減半。",
-      "descI18n": "如果你在本回合打出的牌少於等於2張，則受到敵人的傷害減半。"
+      "descI18n": "如果你在本回合打出的牌少於等於2張，則受到敵人的傷害減半。",
+      "nameEn": "Diamond Diadem"
     },
     {
       "className": "DingyRug",
@@ -970,7 +1030,8 @@
       "image": "dingy_rug",
       "imagePath": "/images/relics/dingy_rug.webp",
       "descriptionClean": "卡牌獎勵現在會包括無色牌。",
-      "descI18n": "卡牌獎勵現在會包括無色牌。"
+      "descI18n": "卡牌獎勵現在會包括無色牌。",
+      "nameEn": "Dingy Rug"
     },
     {
       "className": "DistinguishedCape",
@@ -988,7 +1049,8 @@
       "image": "distinguished_cape",
       "imagePath": "/images/relics/distinguished_cape.webp",
       "descriptionClean": "拾起時，失去9點最大生命值。將3張靈體加入你的牌組。",
-      "descI18n": "拾起時，失去9點最大生命值。將3張<g>靈體</g>加入你的<g>牌組</g>。"
+      "descI18n": "拾起時，失去9點最大生命值。將3張<g>靈體</g>加入你的<g>牌組</g>。",
+      "nameEn": "Distinguished Cape"
     },
     {
       "className": "DivineDestiny",
@@ -1004,7 +1066,8 @@
       "image": "divine_destiny",
       "imagePath": "/images/relics/divine_destiny.webp",
       "descriptionClean": "在每場戰鬥開始時，獲得6。",
-      "descI18n": "在每場戰鬥開始時，獲得<s>6</s>。"
+      "descI18n": "在每場戰鬥開始時，獲得<s>6</s>。",
+      "nameEn": "Divine Destiny"
     },
     {
       "className": "DivineRight",
@@ -1020,7 +1083,8 @@
       "image": "divine_right",
       "imagePath": "/images/relics/divine_right.webp",
       "descriptionClean": "在每場戰鬥開始時，獲得3。",
-      "descI18n": "在每場戰鬥開始時，獲得<s>3</s>。"
+      "descI18n": "在每場戰鬥開始時，獲得<s>3</s>。",
+      "nameEn": "Divine Right"
     },
     {
       "className": "DollysMirror",
@@ -1033,7 +1097,8 @@
       "image": "dollys_mirror",
       "imagePath": "/images/relics/dollys_mirror.webp",
       "descriptionClean": "拾起時，從你的牌組中選擇一張牌進行復制。",
-      "descI18n": "拾起時，從你的<g>牌組</g>中選擇一張牌進行復制。"
+      "descI18n": "拾起時，從你的<g>牌組</g>中選擇一張牌進行復制。",
+      "nameEn": "Dolly's Mirror"
     },
     {
       "className": "DragonFruit",
@@ -1050,7 +1115,8 @@
       "image": "dragon_fruit",
       "imagePath": "/images/relics/dragon_fruit.webp",
       "descriptionClean": "每當你獲得金幣時，提升1點你的最大生命值。",
-      "descI18n": "每當你獲得<g>金幣</g>時，提升1點你的最大生命值。"
+      "descI18n": "每當你獲得<g>金幣</g>時，提升1點你的最大生命值。",
+      "nameEn": "Dragon Fruit"
     },
     {
       "className": "DreamCatcher",
@@ -1063,7 +1129,8 @@
       "image": "dream_catcher",
       "imagePath": "/images/relics/dream_catcher.webp",
       "descriptionClean": "每當你休息時，可以添加一張牌到你的牌組。",
-      "descI18n": "每當你<g>休息</g>時，可以添加一張牌到你的<g>牌組</g>。"
+      "descI18n": "每當你<g>休息</g>時，可以添加一張牌到你的<g>牌組</g>。",
+      "nameEn": "Dream Catcher"
     },
     {
       "className": "Driftwood",
@@ -1076,7 +1143,8 @@
       "image": "driftwood",
       "imagePath": "/images/relics/driftwood.webp",
       "descriptionClean": "你可以在每一個卡牌獎勵中重擲一次。",
-      "descI18n": "你可以在每一個卡牌獎勵中重擲一次。"
+      "descI18n": "你可以在每一個卡牌獎勵中重擲一次。",
+      "nameEn": "Driftwood"
     },
     {
       "className": "DustyTome",
@@ -1089,7 +1157,8 @@
       "image": "dusty_tome",
       "imagePath": "/images/relics/dusty_tome.webp",
       "descriptionClean": "拾起時，獲得一張先古牌。",
-      "descI18n": "拾起時，獲得一張<g>先古牌</g>。"
+      "descI18n": "拾起時，獲得一張<g>先古牌</g>。",
+      "nameEn": "Dusty Tome"
     },
     {
       "className": "Ectoplasm",
@@ -1106,7 +1175,8 @@
       "image": "ectoplasm",
       "imagePath": "/images/relics/ectoplasm.webp",
       "descriptionClean": "你不能再獲得任何金幣。在回合開始時獲得1",
-      "descI18n": "你不能再獲得任何<g>金幣</g>。在回合開始時獲得<e>1</e>"
+      "descI18n": "你不能再獲得任何<g>金幣</g>。在回合開始時獲得<e>1</e>",
+      "nameEn": "Ectoplasm"
     },
     {
       "className": "ElectricShrymp",
@@ -1119,7 +1189,8 @@
       "image": "electric_shrymp",
       "imagePath": "/images/relics/electric_shrymp.webp",
       "descriptionClean": "拾起時，選擇一張技能牌為它附魔：注能。",
-      "descI18n": "拾起時，選擇一張技能牌為它<g>附魔</g>：注能。"
+      "descI18n": "拾起時，選擇一張技能牌為它<g>附魔</g>：注能。",
+      "nameEn": "Electric Shrymp"
     },
     {
       "className": "EmberTea",
@@ -1137,7 +1208,8 @@
       "image": "ember_tea",
       "imagePath": "/images/relics/ember_tea.webp",
       "descriptionClean": "在接下來的5場戰鬥開始時，獲得2點力量。",
-      "descI18n": "在接下來的5場戰鬥開始時，獲得2點<g>力量</g>。"
+      "descI18n": "在接下來的5場戰鬥開始時，獲得2點<g>力量</g>。",
+      "nameEn": "Ember Tea"
     },
     {
       "className": "EmotionChip",
@@ -1150,7 +1222,8 @@
       "image": "emotion_chip",
       "imagePath": "/images/relics/emotion_chip.webp",
       "descriptionClean": "在每回合開始時，如果你在之前回合受到過傷害，則觸發所有充能球的被動效果。",
-      "descI18n": "在每回合開始時，如果你在之前回合受到過傷害，則觸發所有充能球的被動效果。"
+      "descI18n": "在每回合開始時，如果你在之前回合受到過傷害，則觸發所有充能球的被動效果。",
+      "nameEn": "Emotion Chip"
     },
     {
       "className": "EmptyCage",
@@ -1166,7 +1239,8 @@
       "image": "empty_cage",
       "imagePath": "/images/relics/empty_cage.webp",
       "descriptionClean": "拾起時，選擇移除牌組中的2張牌。",
-      "descI18n": "拾起時，選擇移除<g>牌組</g>中的2張牌。"
+      "descI18n": "拾起時，選擇移除<g>牌組</g>中的2張牌。",
+      "nameEn": "Empty Cage"
     },
     {
       "className": "EternalFeather",
@@ -1183,7 +1257,8 @@
       "image": "eternal_feather",
       "imagePath": "/images/relics/eternal_feather.webp",
       "descriptionClean": "你的牌組中每有5張牌，當你進入休息處時就會回覆3點生命。",
-      "descI18n": "你的<g>牌組</g>中每有5張牌，當你進入<g>休息處</g>時就會回覆3點生命。"
+      "descI18n": "你的<g>牌組</g>中每有5張牌，當你進入<g>休息處</g>時就會回覆3點生命。",
+      "nameEn": "Eternal Feather"
     },
     {
       "className": "FakeAnchor",
@@ -1199,7 +1274,8 @@
       "image": "fake_anchor",
       "imagePath": "/images/relics/fake_anchor.webp",
       "descriptionClean": "在每場戰鬥開始時，獲得4點格擋。",
-      "descI18n": "在每場戰鬥開始時，獲得4點<g>格擋</g>。"
+      "descI18n": "在每場戰鬥開始時，獲得4點<g>格擋</g>。",
+      "nameEn": "Anchor???"
     },
     {
       "className": "FakeBloodVial",
@@ -1215,7 +1291,8 @@
       "image": "fake_blood_vial",
       "imagePath": "/images/relics/fake_blood_vial.webp",
       "descriptionClean": "在每場戰鬥開始時，回覆1點生命。",
-      "descI18n": "在每場戰鬥開始時，回覆1點生命。"
+      "descI18n": "在每場戰鬥開始時，回覆1點生命。",
+      "nameEn": "Blood Vial???"
     },
     {
       "className": "FakeHappyFlower",
@@ -1233,7 +1310,8 @@
       "image": "fake_happy_flower",
       "imagePath": "/images/relics/fake_happy_flower.webp",
       "descriptionClean": "每5個回合，獲得1。",
-      "descI18n": "每5個回合，獲得<e>1</e>。"
+      "descI18n": "每5個回合，獲得<e>1</e>。",
+      "nameEn": "Happy Flower???"
     },
     {
       "className": "FakeLeesWaffle",
@@ -1249,7 +1327,8 @@
       "image": "fake_lees_waffle",
       "imagePath": "/images/relics/fake_lees_waffle.webp",
       "descriptionClean": "拾起時，回覆你10%的生命值。",
-      "descI18n": "拾起時，回覆你10%的生命值。"
+      "descI18n": "拾起時，回覆你10%的生命值。",
+      "nameEn": "Lee's Waffle???"
     },
     {
       "className": "FakeMango",
@@ -1266,7 +1345,8 @@
       "image": "fake_mango",
       "imagePath": "/images/relics/fake_mango.webp",
       "descriptionClean": "拾起時，將你的最大生命值提升3。",
-      "descI18n": "拾起時，將你的最大生命值提升3。"
+      "descI18n": "拾起時，將你的最大生命值提升3。",
+      "nameEn": "Mango???"
     },
     {
       "className": "FakeMerchantsRug",
@@ -1279,7 +1359,8 @@
       "image": "fake_merchants_rug",
       "imagePath": "/images/relics/fake_merchants_rug.webp",
       "descriptionClean": "低劣的仿製品。沒有任何作用。",
-      "descI18n": "低劣的仿製品。沒有任何作用。"
+      "descI18n": "低劣的仿製品。沒有任何作用。",
+      "nameEn": "The Merchant's Rug???"
     },
     {
       "className": "FakeOrichalcum",
@@ -1295,7 +1376,8 @@
       "image": "fake_orichalcum",
       "imagePath": "/images/relics/fake_orichalcum.webp",
       "descriptionClean": "如果你在回合結束時沒有任何格擋，獲得3點格擋。",
-      "descI18n": "如果你在回合結束時沒有任何<g>格擋</g>，獲得3點<g>格擋</g>。"
+      "descI18n": "如果你在回合結束時沒有任何<g>格擋</g>，獲得3點<g>格擋</g>。",
+      "nameEn": "Orichalcum???"
     },
     {
       "className": "FakeSneckoEye",
@@ -1308,7 +1390,8 @@
       "image": "fake_snecko_eye",
       "imagePath": "/images/relics/fake_snecko_eye.webp",
       "descriptionClean": "每場戰鬥開始時獲得混亂效果。",
-      "descI18n": "每場戰鬥開始時獲得混亂效果。"
+      "descI18n": "每場戰鬥開始時獲得混亂效果。",
+      "nameEn": "Snecko Eye???"
     },
     {
       "className": "FakeStrikeDummy",
@@ -1325,7 +1408,8 @@
       "image": "fake_strike_dummy",
       "imagePath": "/images/relics/fake_strike_dummy.webp",
       "descriptionClean": "名字中有“打擊”的卡牌造成1點額外傷害。",
-      "descI18n": "名字中有“打擊”的卡牌造成1點額外傷害。"
+      "descI18n": "名字中有“打擊”的卡牌造成1點額外傷害。",
+      "nameEn": "Strike Dummy???"
     },
     {
       "className": "FakeVenerableTeaSet",
@@ -1342,7 +1426,8 @@
       "image": "fake_venerable_tea_set",
       "imagePath": "/images/relics/fake_venerable_tea_set.webp",
       "descriptionClean": "到達休息處後的下一場戰鬥開始時額外獲得1。",
-      "descI18n": "到達<g>休息處</g>後的下一場戰鬥開始時額外獲得<e>1</e>。"
+      "descI18n": "到達<g>休息處</g>後的下一場戰鬥開始時額外獲得<e>1</e>。",
+      "nameEn": "Venerable Tea Set???"
     },
     {
       "className": "FencingManual",
@@ -1358,7 +1443,8 @@
       "image": "fencing_manual",
       "imagePath": "/images/relics/fencing_manual.webp",
       "descriptionClean": "在每場戰鬥開始時，鑄造10。",
-      "descI18n": "在每場戰鬥開始時，<g>鑄造</g>10。"
+      "descI18n": "在每場戰鬥開始時，<g>鑄造</g>10。",
+      "nameEn": "Fencing Manual"
     },
     {
       "className": "FestivePopper",
@@ -1374,7 +1460,8 @@
       "image": "festive_popper",
       "imagePath": "/images/relics/festive_popper.webp",
       "descriptionClean": "在每場戰鬥開始時，對所有敵人造成9點傷害。",
-      "descI18n": "在每場戰鬥開始時，對所有敵人造成9點傷害。"
+      "descI18n": "在每場戰鬥開始時，對所有敵人造成9點傷害。",
+      "nameEn": "Festive Popper"
     },
     {
       "className": "Fiddle",
@@ -1390,7 +1477,8 @@
       "image": "fiddle",
       "imagePath": "/images/relics/fiddle.webp",
       "descriptionClean": "在每個回合開始時，額外抽2張牌。你在回合進行中不再能抽任何牌。",
-      "descI18n": "在每個回合開始時，額外抽2張牌。你在回合進行中不再能抽任何牌。"
+      "descI18n": "在每個回合開始時，額外抽2張牌。你在回合進行中不再能抽任何牌。",
+      "nameEn": "Fiddle"
     },
     {
       "className": "FishingRod",
@@ -1406,7 +1494,8 @@
       "image": "fishing_rod",
       "imagePath": "/images/relics/fishing_rod.webp",
       "descriptionClean": "每3場普通戰鬥，隨機升級你牌組中的一張牌。",
-      "descI18n": "每3場普通戰鬥，隨機<g>升級</g>你<g>牌組</g>中的一張牌。"
+      "descI18n": "每3場普通戰鬥，隨機<g>升級</g>你<g>牌組</g>中的一張牌。",
+      "nameEn": "Fishing Rod"
     },
     {
       "className": "ForgottenSoul",
@@ -1422,7 +1511,8 @@
       "image": "forgotten_soul",
       "imagePath": "/images/relics/forgotten_soul.webp",
       "descriptionClean": "每當你消耗一張牌，隨機對一名敵人造成1點傷害。",
-      "descI18n": "每當你<g>消耗</g>一張牌，隨機對一名敵人造成1點傷害。"
+      "descI18n": "每當你<g>消耗</g>一張牌，隨機對一名敵人造成1點傷害。",
+      "nameEn": "Forgotten Soul"
     },
     {
       "className": "FragrantMushroom",
@@ -1440,7 +1530,8 @@
       "image": "fragrant_mushroom",
       "imagePath": "/images/relics/fragrant_mushroom.webp",
       "descriptionClean": "拾起時，失去15點生命，然後隨機升級2張牌。",
-      "descI18n": "拾起時，失去15點生命，然後隨機<g>升級</g>2張牌。"
+      "descI18n": "拾起時，失去15點生命，然後隨機<g>升級</g>2張牌。",
+      "nameEn": "Fragrant Mushroom"
     },
     {
       "className": "FresnelLens",
@@ -1457,7 +1548,8 @@
       "image": "fresnel_lens",
       "imagePath": "/images/relics/fresnel_lens.webp",
       "descriptionClean": "每當你將一張帶有格擋的牌加入你的牌組時，為那張牌附魔：靈巧2",
-      "descI18n": "每當你將一張帶有<g>格擋</g>的牌加入你的<g>牌組</g>時，為那張牌<g>附魔</g>：靈巧2"
+      "descI18n": "每當你將一張帶有<g>格擋</g>的牌加入你的<g>牌組</g>時，為那張牌<g>附魔</g>：靈巧2",
+      "nameEn": "Fresnel Lens"
     },
     {
       "className": "FrozenEgg",
@@ -1470,7 +1562,8 @@
       "image": "frozen_egg",
       "imagePath": "/images/relics/frozen_egg.webp",
       "descriptionClean": "每當你獲得能力牌時，將其升級。",
-      "descI18n": "每當你獲得能力牌時，將其<g>升級</g>。"
+      "descI18n": "每當你獲得能力牌時，將其<g>升級</g>。",
+      "nameEn": "Frozen Egg"
     },
     {
       "className": "FuneraryMask",
@@ -1486,7 +1579,8 @@
       "image": "funerary_mask",
       "imagePath": "/images/relics/funerary_mask.webp",
       "descriptionClean": "在每場戰鬥開始時，將3張靈魂加入你的抽牌堆。",
-      "descI18n": "在每場戰鬥開始時，將3張<g>靈魂</g>加入你的<g>抽牌堆</g>。"
+      "descI18n": "在每場戰鬥開始時，將3張<g>靈魂</g>加入你的<g>抽牌堆</g>。",
+      "nameEn": "Funerary Mask"
     },
     {
       "className": "FurCoat",
@@ -1502,7 +1596,8 @@
       "image": "fur_coat",
       "imagePath": "/images/relics/fur_coat.webp",
       "descriptionClean": "拾起時，隨機標記7處戰鬥。這些戰鬥中的敵人將只有1點生命。",
-      "descI18n": "拾起時，隨機標記7處戰鬥。這些戰鬥中的敵人將只有1點生命。"
+      "descI18n": "拾起時，隨機標記7處戰鬥。這些戰鬥中的敵人將只有1點生命。",
+      "nameEn": "Fur Coat"
     },
     {
       "className": "GalacticDust",
@@ -1519,7 +1614,8 @@
       "image": "galactic_dust",
       "imagePath": "/images/relics/galactic_dust.webp",
       "descriptionClean": "每消耗10點1，就獲得10格擋。",
-      "descI18n": "每消耗10點<s>1</s>，就獲得10<g>格擋</g>。"
+      "descI18n": "每消耗10點<s>1</s>，就獲得10<g>格擋</g>。",
+      "nameEn": "Galactic Dust"
     },
     {
       "className": "GamblingChip",
@@ -1532,7 +1628,8 @@
       "image": "gambling_chip",
       "imagePath": "/images/relics/gambling_chip.webp",
       "descriptionClean": "在每場戰鬥開始時，丟棄任意張牌，然後抽相同數量張牌。",
-      "descI18n": "在每場戰鬥開始時，丟棄任意張牌，然後抽相同數量張牌。"
+      "descI18n": "在每場戰鬥開始時，丟棄任意張牌，然後抽相同數量張牌。",
+      "nameEn": "Gambling Chip"
     },
     {
       "className": "GamePiece",
@@ -1548,7 +1645,8 @@
       "image": "game_piece",
       "imagePath": "/images/relics/game_piece.webp",
       "descriptionClean": "每當你打出能力牌時，抽1張牌。",
-      "descI18n": "每當你打出能力牌時，抽1張牌。"
+      "descI18n": "每當你打出能力牌時，抽1張牌。",
+      "nameEn": "Game Piece"
     },
     {
       "className": "GhostSeed",
@@ -1561,7 +1659,8 @@
       "image": "ghost_seed",
       "imagePath": "/images/relics/ghost_seed.webp",
       "descriptionClean": "打擊和防禦獲得虛無。",
-      "descI18n": "<g>打擊</g>和<g>防禦</g>獲得<g>虛無</g>。"
+      "descI18n": "<g>打擊</g>和<g>防禦</g>獲得<g>虛無</g>。",
+      "nameEn": "Ghost Seed"
     },
     {
       "className": "Girya",
@@ -1574,7 +1673,8 @@
       "image": "girya",
       "imagePath": "/images/relics/girya.webp",
       "descriptionClean": "你現在能在休息處獲得力量。（最多3次）",
-      "descI18n": "你現在能在<g>休息處</g>獲得<g>力量</g>。（最多3次）"
+      "descI18n": "你現在能在<g>休息處</g>獲得<g>力量</g>。（最多3次）",
+      "nameEn": "Girya"
     },
     {
       "className": "GlassEye",
@@ -1587,7 +1687,8 @@
       "image": "glass_eye",
       "imagePath": "/images/relics/glass_eye.webp",
       "descriptionClean": "拾起時，獲得2組普通、2組罕見、和1組稀有卡牌獎勵。",
-      "descI18n": "拾起時，獲得2組<g>普通</g>、2組<g>罕見</g>、和1組<g>稀有</g>卡牌獎勵。"
+      "descI18n": "拾起時，獲得2組<g>普通</g>、2組<g>罕見</g>、和1組<g>稀有</g>卡牌獎勵。",
+      "nameEn": "Glass Eye"
     },
     {
       "className": "Glitter",
@@ -1600,7 +1701,8 @@
       "image": "glitter",
       "imagePath": "/images/relics/glitter.webp",
       "descriptionClean": "為之後的所有卡牌獎勵附魔：華彩。",
-      "descI18n": "為之後的所有卡牌獎勵<g>附魔</g>：華彩。"
+      "descI18n": "為之後的所有卡牌獎勵<g>附魔</g>：華彩。",
+      "nameEn": "Glitter"
     },
     {
       "className": "GnarledHammer",
@@ -1618,7 +1720,8 @@
       "image": "gnarled_hammer",
       "imagePath": "/images/relics/gnarled_hammer.webp",
       "descriptionClean": "拾起時，從你的牌組中選擇至多3張攻擊牌，附魔：鋒利3。",
-      "descI18n": "拾起時，從你的<g>牌組</g>中選擇至多3張攻擊牌，<g>附魔</g>：鋒利3。"
+      "descI18n": "拾起時，從你的<g>牌組</g>中選擇至多3張攻擊牌，<g>附魔</g>：鋒利3。",
+      "nameEn": "Gnarled Hammer"
     },
     {
       "className": "GoldPlatedCables",
@@ -1631,7 +1734,8 @@
       "image": "gold_plated_cables",
       "imagePath": "/images/relics/gold_plated_cables.webp",
       "descriptionClean": "你最右側的充能球會額外觸發一次被動效果。",
-      "descI18n": "你最右側的充能球會額外觸發一次被動效果。"
+      "descI18n": "你最右側的充能球會額外觸發一次被動效果。",
+      "nameEn": "Gold-Plated Cables"
     },
     {
       "className": "GoldenCompass",
@@ -1644,7 +1748,8 @@
       "image": "golden_compass",
       "imagePath": "/images/relics/golden_compass.webp",
       "descriptionClean": "拾起時，將第2階段的地圖替換為一條特殊的直道。",
-      "descI18n": "拾起時，將第2<g>階段</g>的地圖替換為一條特殊的直道。"
+      "descI18n": "拾起時，將第2<g>階段</g>的地圖替換為一條特殊的直道。",
+      "nameEn": "Golden Compass"
     },
     {
       "className": "GoldenPearl",
@@ -1660,7 +1765,8 @@
       "image": "golden_pearl",
       "imagePath": "/images/relics/golden_pearl.webp",
       "descriptionClean": "拾起時，獲得150金幣。",
-      "descI18n": "拾起時，獲得150<g>金幣</g>。"
+      "descI18n": "拾起時，獲得150<g>金幣</g>。",
+      "nameEn": "Golden Pearl"
     },
     {
       "className": "Gorget",
@@ -1677,7 +1783,8 @@
       "image": "gorget",
       "imagePath": "/images/relics/gorget.webp",
       "descriptionClean": "在每場戰鬥開始時，獲得4層覆甲。",
-      "descI18n": "在每場戰鬥開始時，獲得4層<g>覆甲</g>。"
+      "descI18n": "在每場戰鬥開始時，獲得4層<g>覆甲</g>。",
+      "nameEn": "Gorget"
     },
     {
       "className": "GremlinHorn",
@@ -1695,7 +1802,8 @@
       "image": "gremlin_horn",
       "imagePath": "/images/relics/gremlin_horn.webp",
       "descriptionClean": "每當有一名敵人死亡時，獲得1並抽1張牌。",
-      "descI18n": "每當有一名敵人死亡時，獲得<e>1</e>並抽1張牌。"
+      "descI18n": "每當有一名敵人死亡時，獲得<e>1</e>並抽1張牌。",
+      "nameEn": "Gremlin Horn"
     },
     {
       "className": "HandDrill",
@@ -1712,7 +1820,8 @@
       "image": "hand_drill",
       "imagePath": "/images/relics/hand_drill.webp",
       "descriptionClean": "每當你突破敵人的格擋時，給予其2層易傷。",
-      "descI18n": "每當你突破敵人的<g>格擋</g>時，給予其2層<g>易傷</g>。"
+      "descI18n": "每當你突破敵人的<g>格擋</g>時，給予其2層<g>易傷</g>。",
+      "nameEn": "Hand Drill"
     },
     {
       "className": "HappyFlower",
@@ -1730,7 +1839,8 @@
       "image": "happy_flower",
       "imagePath": "/images/relics/happy_flower.webp",
       "descriptionClean": "每3個回合，獲得1。",
-      "descI18n": "每3個回合，獲得<e>1</e>。"
+      "descI18n": "每3個回合，獲得<e>1</e>。",
+      "nameEn": "Happy Flower"
     },
     {
       "className": "HeftyTablet",
@@ -1746,7 +1856,8 @@
       "image": "hefty_tablet",
       "imagePath": "/images/relics/hefty_tablet.webp",
       "descriptionClean": "拾起時，從3張稀有牌中選擇1張加入你的牌組，同時將1張受傷加入你的牌組。",
-      "descI18n": "拾起時，從3張稀有牌中選擇1張加入你的<g>牌組</g>，同時將1張受傷加入你的<g>牌組</g>。"
+      "descI18n": "拾起時，從3張稀有牌中選擇1張加入你的<g>牌組</g>，同時將1張受傷加入你的<g>牌組</g>。",
+      "nameEn": "Hefty Tablet"
     },
     {
       "className": "HelicalDart",
@@ -1763,7 +1874,8 @@
       "image": "helical_dart",
       "imagePath": "/images/relics/helical_dart.webp",
       "descriptionClean": "你每打出一張小刀，就在本回合獲得1點敏捷。",
-      "descI18n": "你每打出一張<g>小刀</g>，就在本回合獲得1點<g>敏捷</g>。"
+      "descI18n": "你每打出一張<g>小刀</g>，就在本回合獲得1點<g>敏捷</g>。",
+      "nameEn": "Helical Dart"
     },
     {
       "className": "HistoryCourse",
@@ -1776,7 +1888,8 @@
       "image": "history_course",
       "imagePath": "/images/relics/history_course.webp",
       "descriptionClean": "在你的回合開始時，打出一張你上一回合最後打出的攻擊牌或技能牌的複製品。",
-      "descI18n": "在你的回合開始時，打出一張你上一回合最後打出的攻擊牌或技能牌的複製品。"
+      "descI18n": "在你的回合開始時，打出一張你上一回合最後打出的攻擊牌或技能牌的複製品。",
+      "nameEn": "History Course"
     },
     {
       "className": "HornCleat",
@@ -1792,7 +1905,8 @@
       "image": "horn_cleat",
       "imagePath": "/images/relics/horn_cleat.webp",
       "descriptionClean": "在你的第二回合開始時，獲得14點格擋。",
-      "descI18n": "在你的第二回合開始時，獲得14點<g>格擋</g>。"
+      "descI18n": "在你的第二回合開始時，獲得14點<g>格擋</g>。",
+      "nameEn": "Horn Cleat"
     },
     {
       "className": "IceCream",
@@ -1805,7 +1919,8 @@
       "image": "ice_cream",
       "imagePath": "/images/relics/ice_cream.webp",
       "descriptionClean": "多餘的能量可以留到下一回合。",
-      "descI18n": "多餘的能量可以留到下一回合。"
+      "descI18n": "多餘的能量可以留到下一回合。",
+      "nameEn": "Ice Cream"
     },
     {
       "className": "InfusedCore",
@@ -1823,7 +1938,8 @@
       "image": "infused_core",
       "imagePath": "/images/relics/infused_core.webp",
       "descriptionClean": "在每場戰鬥開始時，生成3個閃電充能球。閃電充能球額外造成1點傷害。",
-      "descI18n": "在每場戰鬥開始時，<g>生成</g>3個<g>閃電</g>充能球。<g>閃電</g>充能球額外造成1點傷害。"
+      "descI18n": "在每場戰鬥開始時，<g>生成</g>3個<g>閃電</g>充能球。<g>閃電</g>充能球額外造成1點傷害。",
+      "nameEn": "Infused Core"
     },
     {
       "className": "IntimidatingHelmet",
@@ -1841,7 +1957,8 @@
       "image": "intimidating_helmet",
       "imagePath": "/images/relics/intimidating_helmet.webp",
       "descriptionClean": "每當你打出一張耗能大於等於2的牌，獲得4點格擋。",
-      "descI18n": "每當你打出一張耗能大於等於<e>2</e>的牌，獲得4點<g>格擋</g>。"
+      "descI18n": "每當你打出一張耗能大於等於<e>2</e>的牌，獲得4點<g>格擋</g>。",
+      "nameEn": "Intimidating Helmet"
     },
     {
       "className": "IronClub",
@@ -1857,7 +1974,8 @@
       "image": "iron_club",
       "imagePath": "/images/relics/iron_club.webp",
       "descriptionClean": "你每打出4張牌，就抽1張牌。",
-      "descI18n": "你每打出4張牌，就抽1張牌。"
+      "descI18n": "你每打出4張牌，就抽1張牌。",
+      "nameEn": "Iron Club"
     },
     {
       "className": "IvoryTile",
@@ -1876,7 +1994,8 @@
       "image": "ivory_tile",
       "imagePath": "/images/relics/ivory_tile.webp",
       "descriptionClean": "每當你打出一張耗能大於等於3的牌時，獲得1。",
-      "descI18n": "每當你打出一張耗能大於等於<e>3</e>的牌時，獲得<e>1</e>。"
+      "descI18n": "每當你打出一張耗能大於等於<e>3</e>的牌時，獲得<e>1</e>。",
+      "nameEn": "Ivory Tile"
     },
     {
       "className": "JeweledMask",
@@ -1889,7 +2008,8 @@
       "image": "jeweled_mask",
       "imagePath": "/images/relics/jeweled_mask.webp",
       "descriptionClean": "在每場戰鬥開始時，將一張隨機能力牌從你的抽牌堆放入你的手牌，這張牌在本場戰鬥可以免費打出。",
-      "descI18n": "在每場戰鬥開始時，將一張隨機能力牌從你的<g>抽牌堆</g>放入你的<g>手牌</g>，這張牌在本場戰鬥可以免費打出。"
+      "descI18n": "在每場戰鬥開始時，將一張隨機能力牌從你的<g>抽牌堆</g>放入你的<g>手牌</g>，這張牌在本場戰鬥可以免費打出。",
+      "nameEn": "Jeweled Mask"
     },
     {
       "className": "JewelryBox",
@@ -1902,7 +2022,8 @@
       "image": "jewelry_box",
       "imagePath": "/images/relics/jewelry_box.webp",
       "descriptionClean": "拾起時，將1張神化加入你的牌組。",
-      "descI18n": "拾起時，將1張<g>神化</g>加入你的<g>牌組</g>。"
+      "descI18n": "拾起時，將1張<g>神化</g>加入你的<g>牌組</g>。",
+      "nameEn": "Jewelry Box"
     },
     {
       "className": "JossPaper",
@@ -1920,7 +2041,8 @@
       "image": "joss_paper",
       "imagePath": "/images/relics/joss_paper.webp",
       "descriptionClean": "你每消耗5張牌，就抽1張牌。",
-      "descI18n": "你每<g>消耗</g>5張牌，就抽1張牌。"
+      "descI18n": "你每<g>消耗</g>5張牌，就抽1張牌。",
+      "nameEn": "Joss Paper"
     },
     {
       "className": "JuzuBracelet",
@@ -1933,7 +2055,8 @@
       "image": "juzu_bracelet",
       "imagePath": "/images/relics/juzu_bracelet.webp",
       "descriptionClean": "你在?房間中不會再遭遇常規戰鬥。",
-      "descI18n": "你在<g>?</g>房間中不會再遭遇常規戰鬥。"
+      "descI18n": "你在<g>?</g>房間中不會再遭遇常規戰鬥。",
+      "nameEn": "Juzu Bracelet"
     },
     {
       "className": "Kaleidoscope",
@@ -1949,7 +2072,8 @@
       "image": "kaleidoscope",
       "imagePath": "/images/relics/kaleidoscope.webp",
       "descriptionClean": "拾起時，獲得2次來自其他角色的卡牌獎勵。",
-      "descI18n": "拾起時，獲得2次來自其他角色的卡牌獎勵。"
+      "descI18n": "拾起時，獲得2次來自其他角色的卡牌獎勵。",
+      "nameEn": "Kaleidoscope"
     },
     {
       "className": "Kifuda",
@@ -1965,7 +2089,8 @@
       "image": "kifuda",
       "imagePath": "/images/relics/kifuda.webp",
       "descriptionClean": "拾起時，從你的牌組中選擇至多3張牌，附魔：伶俐。",
-      "descI18n": "拾起時，從你的<g>牌組</g>中選擇至多3張牌，<g>附魔</g>：伶俐。"
+      "descI18n": "拾起時，從你的<g>牌組</g>中選擇至多3張牌，<g>附魔</g>：伶俐。",
+      "nameEn": "Kifuda"
     },
     {
       "className": "Kunai",
@@ -1983,7 +2108,8 @@
       "image": "kunai",
       "imagePath": "/images/relics/kunai.webp",
       "descriptionClean": "你每在同一回合內打出3張攻擊牌，就獲得1點敏捷。",
-      "descI18n": "你每在同一回合內打出3張攻擊牌，就獲得1點<g>敏捷</g>。"
+      "descI18n": "你每在同一回合內打出3張攻擊牌，就獲得1點<g>敏捷</g>。",
+      "nameEn": "Kunai"
     },
     {
       "className": "Kusarigama",
@@ -2000,7 +2126,8 @@
       "image": "kusarigama",
       "imagePath": "/images/relics/kusarigama.webp",
       "descriptionClean": "你每在同一回合內打出3張攻擊牌，就隨機對一名敵人造成6點傷害。",
-      "descI18n": "你每在同一回合內打出3張攻擊牌，就隨機對一名敵人造成6點傷害。"
+      "descI18n": "你每在同一回合內打出3張攻擊牌，就隨機對一名敵人造成6點傷害。",
+      "nameEn": "Kusarigama"
     },
     {
       "className": "Lantern",
@@ -2017,7 +2144,8 @@
       "image": "lantern",
       "imagePath": "/images/relics/lantern.webp",
       "descriptionClean": "在每場戰鬥的第一回合獲得1。",
-      "descI18n": "在每場戰鬥的第一回合獲得<e>1</e>。"
+      "descI18n": "在每場戰鬥的第一回合獲得<e>1</e>。",
+      "nameEn": "Lantern"
     },
     {
       "className": "LargeCapsule",
@@ -2033,7 +2161,8 @@
       "image": "large_capsule",
       "imagePath": "/images/relics/large_capsule.webp",
       "descriptionClean": "拾起時，獲得2件隨機遺物。額外將一對打擊和防禦，加入你的牌組。",
-      "descI18n": "拾起時，獲得2件隨機<g>遺物</g>。額外將一對<g>打擊</g>和<g>防禦</g>，加入你的<g>牌組</g>。"
+      "descI18n": "拾起時，獲得2件隨機<g>遺物</g>。額外將一對<g>打擊</g>和<g>防禦</g>，加入你的<g>牌組</g>。",
+      "nameEn": "Large Capsule"
     },
     {
       "className": "LastingCandy",
@@ -2046,7 +2175,8 @@
       "image": "lasting_candy",
       "imagePath": "/images/relics/lasting_candy.webp",
       "descriptionClean": "每兩場戰鬥，你的卡牌獎勵就會額外包含一張能力牌。",
-      "descI18n": "每兩場戰鬥，你的卡牌獎勵就會額外包含一張能力牌。"
+      "descI18n": "每兩場戰鬥，你的卡牌獎勵就會額外包含一張能力牌。",
+      "nameEn": "Lasting Candy"
     },
     {
       "className": "LavaLamp",
@@ -2059,7 +2189,8 @@
       "image": "lava_lamp",
       "imagePath": "/images/relics/lava_lamp.webp",
       "descriptionClean": "在戰鬥結束時，如果你沒有受到傷害，則升級你的所有卡牌獎勵。",
-      "descI18n": "在戰鬥結束時，如果你沒有受到傷害，則<g>升級</g>你的所有卡牌獎勵。"
+      "descI18n": "在戰鬥結束時，如果你沒有受到傷害，則<g>升級</g>你的所有卡牌獎勵。",
+      "nameEn": "Lava Lamp"
     },
     {
       "className": "LavaRock",
@@ -2075,7 +2206,8 @@
       "image": "lava_rock",
       "imagePath": "/images/relics/lava_rock.webp",
       "descriptionClean": "第一階段的Boss敵人額外掉落2件遺物。",
-      "descI18n": "第一階段的Boss敵人額外掉落2件<g>遺物</g>。"
+      "descI18n": "第一階段的Boss敵人額外掉落2件<g>遺物</g>。",
+      "nameEn": "Lava Rock"
     },
     {
       "className": "LeadPaperweight",
@@ -2088,7 +2220,8 @@
       "image": "lead_paperweight",
       "imagePath": "/images/relics/lead_paperweight.webp",
       "descriptionClean": "拾起時，從2張無色牌中選擇1張加入你的牌組。",
-      "descI18n": "拾起時，從2張無色牌中選擇1張加入你的<g>牌組</g>。"
+      "descI18n": "拾起時，從2張無色牌中選擇1張加入你的<g>牌組</g>。",
+      "nameEn": "Lead Paperweight"
     },
     {
       "className": "LeafyPoultice",
@@ -2105,7 +2238,8 @@
       "image": "leafy_poultice",
       "imagePath": "/images/relics/leafy_poultice.webp",
       "descriptionClean": "拾起時，變化你的1張打擊和1張防禦，然後失去12點最大生命。",
-      "descI18n": "拾起時，<g>變化</g>你的1張<g>打擊</g>和1張<g>防禦</g>，然後失去12點最大生命。"
+      "descI18n": "拾起時，<g>變化</g>你的1張<g>打擊</g>和1張<g>防禦</g>，然後失去12點最大生命。",
+      "nameEn": "Leafy Poultice"
     },
     {
       "className": "LeesWaffle",
@@ -2122,7 +2256,8 @@
       "image": "lees_waffle",
       "imagePath": "/images/relics/lees_waffle.webp",
       "descriptionClean": "拾起時，將你的最大生命值提升7點，並回復所有生命。",
-      "descI18n": "拾起時，將你的最大生命值提升7點，並回復所有生命。"
+      "descI18n": "拾起時，將你的最大生命值提升7點，並回復所有生命。",
+      "nameEn": "Lee's Waffle"
     },
     {
       "className": "LetterOpener",
@@ -2139,7 +2274,8 @@
       "image": "letter_opener",
       "imagePath": "/images/relics/letter_opener.webp",
       "descriptionClean": "你每在同一回合內打出3張技能牌，就對所有敵人造成5點傷害。",
-      "descI18n": "你每在同一回合內打出3張技能牌，就對所有敵人造成5點傷害。"
+      "descI18n": "你每在同一回合內打出3張技能牌，就對所有敵人造成5點傷害。",
+      "nameEn": "Letter Opener"
     },
     {
       "className": "LizardTail",
@@ -2155,7 +2291,8 @@
       "image": "lizard_tail",
       "imagePath": "/images/relics/lizard_tail.webp",
       "descriptionClean": "當你的生命值將要降低至0或以下時，回覆到最大生命值的50%（僅能起效一次）。",
-      "descI18n": "當你的生命值將要降低至0或以下時，回覆到最大生命值的50%（僅能起效一次）。"
+      "descI18n": "當你的生命值將要降低至0或以下時，回覆到最大生命值的50%（僅能起效一次）。",
+      "nameEn": "Lizard Tail"
     },
     {
       "className": "LoomingFruit",
@@ -2172,7 +2309,8 @@
       "image": "looming_fruit",
       "imagePath": "/images/relics/looming_fruit.webp",
       "descriptionClean": "拾起時，將你的最大生命值提升31。",
-      "descI18n": "拾起時，將你的最大生命值提升31。"
+      "descI18n": "拾起時，將你的最大生命值提升31。",
+      "nameEn": "Looming Fruit"
     },
     {
       "className": "LordsParasol",
@@ -2185,7 +2323,8 @@
       "image": "lords_parasol",
       "imagePath": "/images/relics/lords_parasol.webp",
       "descriptionClean": "當你遇見商人時，立刻獲得他所出售的所有物品。",
-      "descI18n": "當你遇見<g>商人</g>時，立刻獲得他所出售的所有物品。"
+      "descI18n": "當你遇見<g>商人</g>時，立刻獲得他所出售的所有物品。",
+      "nameEn": "Lord's Parasol"
     },
     {
       "className": "LostCoffer",
@@ -2198,7 +2337,8 @@
       "image": "lost_coffer",
       "imagePath": "/images/relics/lost_coffer.webp",
       "descriptionClean": "拾起時，獲得1次卡牌獎勵和1瓶隨機藥水。",
-      "descI18n": "拾起時，獲得1次卡牌獎勵和1瓶隨機藥水。"
+      "descI18n": "拾起時，獲得1次卡牌獎勵和1瓶隨機藥水。",
+      "nameEn": "Lost Coffer"
     },
     {
       "className": "LostWisp",
@@ -2214,7 +2354,8 @@
       "image": "lost_wisp",
       "imagePath": "/images/relics/lost_wisp.webp",
       "descriptionClean": "你每打出一張能力牌，就對所有敵人造成8點傷害。",
-      "descI18n": "你每打出一張能力牌，就對所有敵人造成8點傷害。"
+      "descI18n": "你每打出一張能力牌，就對所有敵人造成8點傷害。",
+      "nameEn": "Lost Wisp"
     },
     {
       "className": "LuckyFysh",
@@ -2230,7 +2371,8 @@
       "image": "lucky_fysh",
       "imagePath": "/images/relics/lucky_fysh.webp",
       "descriptionClean": "每當你將一張卡牌加入你的牌組時，獲得15金幣。",
-      "descI18n": "每當你將一張卡牌加入你的<g>牌組</g>時，獲得15<g>金幣</g>。"
+      "descI18n": "每當你將一張卡牌加入你的<g>牌組</g>時，獲得15<g>金幣</g>。",
+      "nameEn": "Lucky Fysh"
     },
     {
       "className": "LunarPastry",
@@ -2246,7 +2388,8 @@
       "image": "lunar_pastry",
       "imagePath": "/images/relics/lunar_pastry.webp",
       "descriptionClean": "在你的回合結束時，獲得1。",
-      "descI18n": "在你的回合結束時，獲得<s>1</s>。"
+      "descI18n": "在你的回合結束時，獲得<s>1</s>。",
+      "nameEn": "Lunar Pastry"
     },
     {
       "className": "Mango",
@@ -2263,7 +2406,8 @@
       "image": "mango",
       "imagePath": "/images/relics/mango.webp",
       "descriptionClean": "拾起時，將你的最大生命值提升14。",
-      "descI18n": "拾起時，將你的最大生命值提升14。"
+      "descI18n": "拾起時，將你的最大生命值提升14。",
+      "nameEn": "Mango"
     },
     {
       "className": "MassiveScroll",
@@ -2276,7 +2420,8 @@
       "image": "massive_scroll",
       "imagePath": "/images/relics/massive_scroll.webp",
       "descriptionClean": "拾起時，從3張多人遊戲牌中選擇1張加入你的牌組。",
-      "descI18n": "拾起時，從3張<g>多人遊戲牌</g>中選擇1張加入你的<g>牌組</g>。"
+      "descI18n": "拾起時，從3張<g>多人遊戲牌</g>中選擇1張加入你的<g>牌組</g>。",
+      "nameEn": "Massive Scroll"
     },
     {
       "className": "MawBank",
@@ -2292,7 +2437,8 @@
       "image": "maw_bank",
       "imagePath": "/images/relics/maw_bank.webp",
       "descriptionClean": "每攀爬一層樓層，就獲得12金幣。一旦在商店中花費金幣就會使其失效。",
-      "descI18n": "每攀爬一層樓層，就獲得12<g>金幣</g>。一旦在商店中花費<g>金幣</g>就會使其失效。"
+      "descI18n": "每攀爬一層樓層，就獲得12<g>金幣</g>。一旦在商店中花費<g>金幣</g>就會使其失效。",
+      "nameEn": "Maw Bank"
     },
     {
       "className": "MealTicket",
@@ -2308,7 +2454,8 @@
       "image": "meal_ticket",
       "imagePath": "/images/relics/meal_ticket.webp",
       "descriptionClean": "每當你進入商店房間時，回覆15點生命。",
-      "descI18n": "每當你進入商店房間時，回覆15點生命。"
+      "descI18n": "每當你進入商店房間時，回覆15點生命。",
+      "nameEn": "Meal Ticket"
     },
     {
       "className": "MeatCleaver",
@@ -2321,7 +2468,8 @@
       "image": "meat_cleaver",
       "imagePath": "/images/relics/meat_cleaver.webp",
       "descriptionClean": "你可以在休息處進行烹飪。",
-      "descI18n": "你可以在休息處進行<g>烹飪</g>。"
+      "descI18n": "你可以在休息處進行<g>烹飪</g>。",
+      "nameEn": "Meat Cleaver"
     },
     {
       "className": "MeatOnTheBone",
@@ -2339,7 +2487,8 @@
       "image": "meat_on_the_bone",
       "imagePath": "/images/relics/meat_on_the_bone.webp",
       "descriptionClean": "如果你在戰鬥結束時生命值等於或低於50%，回覆12點生命。",
-      "descI18n": "如果你在戰鬥結束時生命值等於或低於50%，回覆12點生命。"
+      "descI18n": "如果你在戰鬥結束時生命值等於或低於50%，回覆12點生命。",
+      "nameEn": "Meat on the Bone"
     },
     {
       "className": "MembershipCard",
@@ -2355,7 +2504,8 @@
       "image": "membership_card",
       "imagePath": "/images/relics/membership_card.webp",
       "descriptionClean": "所有商品打折50%！",
-      "descI18n": "所有商品打折50%！"
+      "descI18n": "所有商品打折50%！",
+      "nameEn": "Membership Card"
     },
     {
       "className": "MercuryHourglass",
@@ -2371,7 +2521,8 @@
       "image": "mercury_hourglass",
       "imagePath": "/images/relics/mercury_hourglass.webp",
       "descriptionClean": "在你的回合開始時，對所有敵人造成3點傷害。",
-      "descI18n": "在你的回合開始時，對所有敵人造成3點傷害。"
+      "descI18n": "在你的回合開始時，對所有敵人造成3點傷害。",
+      "nameEn": "Mercury Hourglass"
     },
     {
       "className": "Metronome",
@@ -2389,7 +2540,8 @@
       "image": "metronome",
       "imagePath": "/images/relics/metronome.webp",
       "descriptionClean": "每場戰鬥中你首次生成7個充能球時，對所有敵人造成30點傷害。",
-      "descI18n": "每場戰鬥中你首次<g>生成</g>7個<g>充能球</g>時，對所有敵人造成30點傷害。"
+      "descI18n": "每場戰鬥中你首次<g>生成</g>7個<g>充能球</g>時，對所有敵人造成30點傷害。",
+      "nameEn": "Metronome"
     },
     {
       "className": "MiniRegent",
@@ -2406,7 +2558,8 @@
       "image": "mini_regent",
       "imagePath": "/images/relics/mini_regent.webp",
       "descriptionClean": "每回合你第一次花費1時，獲得1點力量。",
-      "descI18n": "每回合你第一次花費<s>1</s>時，獲得1點<g>力量</g>。"
+      "descI18n": "每回合你第一次花費<s>1</s>時，獲得1點<g>力量</g>。",
+      "nameEn": "Mini Regent"
     },
     {
       "className": "MiniatureCannon",
@@ -2423,7 +2576,8 @@
       "image": "miniature_cannon",
       "imagePath": "/images/relics/miniature_cannon.webp",
       "descriptionClean": "升級的攻擊牌額外造成3點傷害。",
-      "descI18n": "<g>升級</g>的攻擊牌額外造成3點傷害。"
+      "descI18n": "<g>升級</g>的攻擊牌額外造成3點傷害。",
+      "nameEn": "Miniature Cannon"
     },
     {
       "className": "MiniatureTent",
@@ -2436,7 +2590,8 @@
       "image": "miniature_tent",
       "imagePath": "/images/relics/miniature_tent.webp",
       "descriptionClean": "你可以在休息處選擇任意數量的選項。",
-      "descI18n": "你可以在<g>休息處</g>選擇任意數量的選項。"
+      "descI18n": "你可以在<g>休息處</g>選擇任意數量的選項。",
+      "nameEn": "Miniature Tent"
     },
     {
       "className": "MoltenEgg",
@@ -2449,7 +2604,8 @@
       "image": "molten_egg",
       "imagePath": "/images/relics/molten_egg.webp",
       "descriptionClean": "每當你獲得攻擊牌時，將其升級。",
-      "descI18n": "每當你獲得<g>攻擊牌</g>時，將其<g>升級</g>。"
+      "descI18n": "每當你獲得<g>攻擊牌</g>時，將其<g>升級</g>。",
+      "nameEn": "Molten Egg"
     },
     {
       "className": "MrStruggles",
@@ -2462,7 +2618,8 @@
       "image": "mr_struggles",
       "imagePath": "/images/relics/mr_struggles.webp",
       "descriptionClean": "在你的回合開始時，對所有敵人造成等量於當前回合數的傷害。",
-      "descI18n": "在你的回合開始時，對所有敵人造成等量於當前回合數的傷害。"
+      "descI18n": "在你的回合開始時，對所有敵人造成等量於當前回合數的傷害。",
+      "nameEn": "Mr. Struggles"
     },
     {
       "className": "MummifiedHand",
@@ -2475,7 +2632,8 @@
       "image": "mummified_hand",
       "imagePath": "/images/relics/mummified_hand.webp",
       "descriptionClean": "你每打出一張能力牌，手牌中就有一張隨機牌在這個回合可以免費打出。",
-      "descI18n": "你每打出一張能力牌，<g>手牌</g>中就有一張隨機牌在這個回合可以免費打出。"
+      "descI18n": "你每打出一張能力牌，<g>手牌</g>中就有一張隨機牌在這個回合可以免費打出。",
+      "nameEn": "Mummified Hand"
     },
     {
       "className": "MusicBox",
@@ -2488,7 +2646,8 @@
       "image": "music_box",
       "imagePath": "/images/relics/music_box.webp",
       "descriptionClean": "將你每回合打出的第一張攻擊牌的一張虛無複製品加入你的手牌。",
-      "descI18n": "將你每回合打出的第一張攻擊牌的一張<g>虛無</g>複製品加入你的手牌。"
+      "descI18n": "將你每回合打出的第一張攻擊牌的一張<g>虛無</g>複製品加入你的手牌。",
+      "nameEn": "Music Box"
     },
     {
       "className": "MysticLighter",
@@ -2504,7 +2663,8 @@
       "image": "mystic_lighter",
       "imagePath": "/images/relics/mystic_lighter.webp",
       "descriptionClean": "有附魔的攻擊牌額外造成9點傷害。",
-      "descI18n": "有<g>附魔</g>的攻擊牌額外造成9點傷害。"
+      "descI18n": "有<g>附魔</g>的攻擊牌額外造成9點傷害。",
+      "nameEn": "Mystic Lighter"
     },
     {
       "className": "NeowsBones",
@@ -2521,7 +2681,8 @@
       "image": "neows_bones",
       "imagePath": "/images/relics/neows_bones.webp",
       "descriptionClean": "拾起時，獲得2件隨機涅奧遺物。將1張隨機詛咒加入你的牌組。",
-      "descI18n": "拾起時，獲得2件隨機<g>涅奧遺物</g>。將1張隨機詛咒加入你的<g>牌組</g>。"
+      "descI18n": "拾起時，獲得2件隨機<g>涅奧遺物</g>。將1張隨機詛咒加入你的<g>牌組</g>。",
+      "nameEn": "Neow's Bones"
     },
     {
       "className": "NeowsTalisman",
@@ -2534,7 +2695,8 @@
       "image": "neows_talisman",
       "imagePath": "/images/relics/neows_talisman.webp",
       "descriptionClean": "拾起時，升級你的1張打擊和1張防禦。",
-      "descI18n": "拾起時，<g>升級</g>你的1張<g>打擊</g>和1張<g>防禦</g>。"
+      "descI18n": "拾起時，<g>升級</g>你的1張<g>打擊</g>和1張<g>防禦</g>。",
+      "nameEn": "Neow's Talisman"
     },
     {
       "className": "NeowsTorment",
@@ -2547,7 +2709,8 @@
       "image": "neows_torment",
       "imagePath": "/images/relics/neows_torment.webp",
       "descriptionClean": "拾起時，將1張涅奧之怒加入你的牌組。",
-      "descI18n": "拾起時，將1張<g>涅奧之怒</g>加入你的<g>牌組</g>。"
+      "descI18n": "拾起時，將1張<g>涅奧之怒</g>加入你的<g>牌組</g>。",
+      "nameEn": "Neow's Torment"
     },
     {
       "className": "NewLeaf",
@@ -2563,7 +2726,8 @@
       "image": "new_leaf",
       "imagePath": "/images/relics/new_leaf.webp",
       "descriptionClean": "拾起時，變化1張牌。",
-      "descI18n": "拾起時，<g>變化</g>1張牌。"
+      "descI18n": "拾起時，<g>變化</g>1張牌。",
+      "nameEn": "New Leaf"
     },
     {
       "className": "NinjaScroll",
@@ -2579,7 +2743,8 @@
       "image": "ninja_scroll",
       "imagePath": "/images/relics/ninja_scroll.webp",
       "descriptionClean": "每場戰鬥開始時，將3張小刀加入你的手牌。",
-      "descI18n": "每場戰鬥開始時，將3張<g>小刀</g>加入你的<g>手牌</g>。"
+      "descI18n": "每場戰鬥開始時，將3張<g>小刀</g>加入你的<g>手牌</g>。",
+      "nameEn": "Ninja Scroll"
     },
     {
       "className": "Nunchaku",
@@ -2597,7 +2762,8 @@
       "image": "nunchaku",
       "imagePath": "/images/relics/nunchaku.webp",
       "descriptionClean": "你每打出10張攻擊牌，獲得1。",
-      "descI18n": "你每打出10張攻擊牌，獲得<e>1</e>。"
+      "descI18n": "你每打出10張攻擊牌，獲得<e>1</e>。",
+      "nameEn": "Nunchaku"
     },
     {
       "className": "NutritiousOyster",
@@ -2614,7 +2780,8 @@
       "image": "nutritious_oyster",
       "imagePath": "/images/relics/nutritious_oyster.webp",
       "descriptionClean": "拾起時，將你的最大生命值提升11。",
-      "descI18n": "拾起時，將你的最大生命值提升11。"
+      "descI18n": "拾起時，將你的最大生命值提升11。",
+      "nameEn": "Nutritious Oyster"
     },
     {
       "className": "NutritiousSoup",
@@ -2627,7 +2794,8 @@
       "image": "nutritious_soup",
       "imagePath": "/images/relics/nutritious_soup.webp",
       "descriptionClean": "拾起時，為你牌組中的所有“打擊”附魔：特茲卡塔拉的餘燼",
-      "descI18n": "拾起時，為你<g>牌組</g>中的所有“<g>打擊</g>”<g>附魔</g>：特茲卡塔拉的餘燼"
+      "descI18n": "拾起時，為你<g>牌組</g>中的所有“<g>打擊</g>”<g>附魔</g>：特茲卡塔拉的餘燼",
+      "nameEn": "Nutritious Soup"
     },
     {
       "className": "OddlySmoothStone",
@@ -2644,7 +2812,8 @@
       "image": "oddly_smooth_stone",
       "imagePath": "/images/relics/oddly_smooth_stone.webp",
       "descriptionClean": "在每場戰鬥開始時，獲得1點敏捷。",
-      "descI18n": "在每場戰鬥開始時，獲得1點<g>敏捷</g>。"
+      "descI18n": "在每場戰鬥開始時，獲得1點<g>敏捷</g>。",
+      "nameEn": "Oddly Smooth Stone"
     },
     {
       "className": "OldCoin",
@@ -2660,7 +2829,8 @@
       "image": "old_coin",
       "imagePath": "/images/relics/old_coin.webp",
       "descriptionClean": "拾起時，獲得300金幣。",
-      "descI18n": "拾起時，獲得300<g>金幣</g>。"
+      "descI18n": "拾起時，獲得300<g>金幣</g>。",
+      "nameEn": "Old Coin"
     },
     {
       "className": "OrangeDough",
@@ -2676,7 +2846,8 @@
       "image": "orange_dough",
       "imagePath": "/images/relics/orange_dough.webp",
       "descriptionClean": "在每場戰鬥開始時，將2張隨機無色牌加入你的手牌。",
-      "descI18n": "在每場戰鬥開始時，將2張隨機無色牌加入你的<g>手牌</g>。"
+      "descI18n": "在每場戰鬥開始時，將2張隨機無色牌加入你的<g>手牌</g>。",
+      "nameEn": "Orange Dough"
     },
     {
       "className": "Orichalcum",
@@ -2692,7 +2863,8 @@
       "image": "orichalcum",
       "imagePath": "/images/relics/orichalcum.webp",
       "descriptionClean": "如果你在回合結束時沒有任何格擋，獲得6點格擋。",
-      "descI18n": "如果你在回合結束時沒有任何<g>格擋</g>，獲得6點<g>格擋</g>。"
+      "descI18n": "如果你在回合結束時沒有任何<g>格擋</g>，獲得6點<g>格擋</g>。",
+      "nameEn": "Orichalcum"
     },
     {
       "className": "OrnamentalFan",
@@ -2709,7 +2881,8 @@
       "image": "ornamental_fan",
       "imagePath": "/images/relics/ornamental_fan.webp",
       "descriptionClean": "你每在同一回合內打出3張攻擊牌，就獲得4點格擋。",
-      "descI18n": "你每在同一回合內打出3張攻擊牌，就獲得4點<g>格擋</g>。"
+      "descI18n": "你每在同一回合內打出3張攻擊牌，就獲得4點<g>格擋</g>。",
+      "nameEn": "Ornamental Fan"
     },
     {
       "className": "Orrery",
@@ -2725,7 +2898,8 @@
       "image": "orrery",
       "imagePath": "/images/relics/orrery.webp",
       "descriptionClean": "拾起時，獲得5次卡牌獎勵",
-      "descI18n": "拾起時，獲得5次卡牌獎勵"
+      "descI18n": "拾起時，獲得5次卡牌獎勵",
+      "nameEn": "Orrery"
     },
     {
       "className": "PaelsBlood",
@@ -2741,7 +2915,8 @@
       "image": "paels_blood",
       "imagePath": "/images/relics/paels_blood.webp",
       "descriptionClean": "在你的回合開始時，額外抽1張牌",
-      "descI18n": "在你的回合開始時，額外抽1張牌"
+      "descI18n": "在你的回合開始時，額外抽1張牌",
+      "nameEn": "Pael's Blood"
     },
     {
       "className": "PaelsClaw",
@@ -2760,7 +2935,8 @@
       "image": "paels_claw",
       "imagePath": "/images/relics/paels_claw.webp",
       "descriptionClean": "拾起時，為所有的“防禦”附魔：黏糊。",
-      "descI18n": "拾起時，為所有的“<g>防禦</g>”<g>附魔</g>：黏糊。"
+      "descI18n": "拾起時，為所有的“<g>防禦</g>”<g>附魔</g>：黏糊。",
+      "nameEn": "Pael's Claw"
     },
     {
       "className": "PaelsEye",
@@ -2773,7 +2949,8 @@
       "image": "paels_eye",
       "imagePath": "/images/relics/paels_eye.webp",
       "descriptionClean": "你在每場戰鬥中第一次沒有打出任何牌就結束回合時，消耗所有手牌然後進行一個額外回合。",
-      "descI18n": "你在每場戰鬥中第一次沒有打出任何牌就結束回合時，<g>消耗</g>所有<g>手牌</g>然後進行一個額外回合。"
+      "descI18n": "你在每場戰鬥中第一次沒有打出任何牌就結束回合時，<g>消耗</g>所有<g>手牌</g>然後進行一個額外回合。",
+      "nameEn": "Pael's Eye"
     },
     {
       "className": "PaelsFlesh",
@@ -2790,7 +2967,8 @@
       "image": "paels_flesh",
       "imagePath": "/images/relics/paels_flesh.webp",
       "descriptionClean": "從你的第3回合開始，在回合開始時額外獲得1。",
-      "descI18n": "從你的第3回合開始，在回合開始時額外獲得<e>1</e>。"
+      "descI18n": "從你的第3回合開始，在回合開始時額外獲得<e>1</e>。",
+      "nameEn": "Pael's Flesh"
     },
     {
       "className": "PaelsGrowth",
@@ -2806,7 +2984,8 @@
       "image": "paels_growth",
       "imagePath": "/images/relics/paels_growth.webp",
       "descriptionClean": "拾起時，從牌組中選擇一張牌，為其附魔：克隆。",
-      "descI18n": "拾起時，從<g>牌組</g>中選擇一張牌，為其<g>附魔</g>：克隆。"
+      "descI18n": "拾起時，從<g>牌組</g>中選擇一張牌，為其<g>附魔</g>：克隆。",
+      "nameEn": "Pael's Growth"
     },
     {
       "className": "PaelsHorn",
@@ -2819,7 +2998,8 @@
       "image": "paels_horn",
       "imagePath": "/images/relics/paels_horn.webp",
       "descriptionClean": "拾起時，將2張放鬆加入你的牌組。",
-      "descI18n": "拾起時，將2張<g>放鬆</g>加入你的<g>牌組</g>。"
+      "descI18n": "拾起時，將2張<g>放鬆</g>加入你的<g>牌組</g>。",
+      "nameEn": "Pael's Horn"
     },
     {
       "className": "PaelsLegion",
@@ -2835,7 +3015,8 @@
       "image": "paels_legion",
       "imagePath": "/images/relics/paels_legion.webp",
       "descriptionClean": "將你從一張卡牌中獲得的格擋翻倍，然後此遺物會休眠2回合。",
-      "descI18n": "將你從一張卡牌中獲得的<g>格擋</g>翻倍，然後此遺物會休眠2回合。"
+      "descI18n": "將你從一張卡牌中獲得的<g>格擋</g>翻倍，然後此遺物會休眠2回合。",
+      "nameEn": "Pael's Legion"
     },
     {
       "className": "PaelsTears",
@@ -2852,7 +3033,8 @@
       "image": "paels_tears",
       "imagePath": "/images/relics/paels_tears.webp",
       "descriptionClean": "如果你在擁有未花費的情況下結束回合，則下個回合額外獲得2。",
-      "descI18n": "如果你在擁有未花費的<e/>情況下結束回合，則下個回合額外獲得<e>2</e>。"
+      "descI18n": "如果你在擁有未花費的<e/>情況下結束回合，則下個回合額外獲得<e>2</e>。",
+      "nameEn": "Pael's Tears"
     },
     {
       "className": "PaelsTooth",
@@ -2868,7 +3050,8 @@
       "image": "paels_tooth",
       "imagePath": "/images/relics/paels_tooth.webp",
       "descriptionClean": "拾起時，從你的牌組中選擇5張牌移除。在每場戰鬥結束時，將其中隨機1張牌升級然後返還。",
-      "descI18n": "拾起時，從你的<g>牌組</g>中選擇5張牌移除。在每場戰鬥結束時，將其中隨機1張牌<g>升級</g>然後返還。"
+      "descI18n": "拾起時，從你的<g>牌組</g>中選擇5張牌移除。在每場戰鬥結束時，將其中隨機1張牌<g>升級</g>然後返還。",
+      "nameEn": "Pael's Tooth"
     },
     {
       "className": "PaelsWing",
@@ -2884,7 +3067,8 @@
       "image": "paels_wing",
       "imagePath": "/images/relics/paels_wing.webp",
       "descriptionClean": "你可以將你的卡牌獎勵獻祭給佩爾。每獻祭2次，就能獲得一件遺物。",
-      "descI18n": "你可以將你的卡牌獎勵獻祭給佩爾。每獻祭2次，就能獲得一件<g>遺物</g>。"
+      "descI18n": "你可以將你的卡牌獎勵獻祭給佩爾。每獻祭2次，就能獲得一件<g>遺物</g>。",
+      "nameEn": "Pael's Wing"
     },
     {
       "className": "PandorasBox",
@@ -2897,7 +3081,8 @@
       "image": "pandoras_box",
       "imagePath": "/images/relics/pandoras_box.webp",
       "descriptionClean": "變化所有“打擊”和“防禦”。",
-      "descI18n": "<g>變化</g>所有“<g>打擊</g>”和“<g>防禦</g>”。"
+      "descI18n": "<g>變化</g>所有“<g>打擊</g>”和“<g>防禦</g>”。",
+      "nameEn": "Pandora's Box"
     },
     {
       "className": "Pantograph",
@@ -2913,7 +3098,8 @@
       "image": "pantograph",
       "imagePath": "/images/relics/pantograph.webp",
       "descriptionClean": "在Boss戰開始時，回覆25點生命值。",
-      "descI18n": "在<g>Boss</g>戰開始時，回覆25點生命值。"
+      "descI18n": "在<g>Boss</g>戰開始時，回覆25點生命值。",
+      "nameEn": "Pantograph"
     },
     {
       "className": "PaperKrane",
@@ -2926,7 +3112,8 @@
       "image": "paper_krane",
       "imagePath": "/images/relics/paper_krane.webp",
       "descriptionClean": "有虛弱狀態的敵人造成的傷害降低40%而非25%。",
-      "descI18n": "有<g>虛弱</g>狀態的敵人造成的傷害降低40%而非25%。"
+      "descI18n": "有<g>虛弱</g>狀態的敵人造成的傷害降低40%而非25%。",
+      "nameEn": "Paper Krane"
     },
     {
       "className": "PaperPhrog",
@@ -2939,7 +3126,8 @@
       "image": "paper_phrog",
       "imagePath": "/images/relics/paper_phrog.webp",
       "descriptionClean": "有易傷狀態的敵人受到的傷害增加75%而非50%。",
-      "descI18n": "有<g>易傷</g>狀態的敵人受到的傷害增加75%而非50%。"
+      "descI18n": "有<g>易傷</g>狀態的敵人受到的傷害增加75%而非50%。",
+      "nameEn": "Paper Phrog"
     },
     {
       "className": "ParryingShield",
@@ -2956,7 +3144,8 @@
       "image": "parrying_shield",
       "imagePath": "/images/relics/parrying_shield.webp",
       "descriptionClean": "如果你在回合結束時擁有至少10點格擋，則對隨機敵人造成6點傷害。",
-      "descI18n": "如果你在回合結束時擁有至少10點<g>格擋</g>，則對隨機敵人造成6點傷害。"
+      "descI18n": "如果你在回合結束時擁有至少10點<g>格擋</g>，則對隨機敵人造成6點傷害。",
+      "nameEn": "Parrying Shield"
     },
     {
       "className": "Pear",
@@ -2973,7 +3162,8 @@
       "image": "pear",
       "imagePath": "/images/relics/pear.webp",
       "descriptionClean": "拾起時，將你的最大生命值提升10。",
-      "descI18n": "拾起時，將你的最大生命值提升10。"
+      "descI18n": "拾起時，將你的最大生命值提升10。",
+      "nameEn": "Pear"
     },
     {
       "className": "PenNib",
@@ -2986,7 +3176,8 @@
       "image": "pen_nib",
       "imagePath": "/images/relics/pen_nib.webp",
       "descriptionClean": "你每打出的第10張攻擊牌將會造成雙倍傷害。",
-      "descI18n": "你每打出的第10張攻擊牌將會造成雙倍傷害。"
+      "descI18n": "你每打出的第10張攻擊牌將會造成雙倍傷害。",
+      "nameEn": "Pen Nib"
     },
     {
       "className": "Pendulum",
@@ -3003,7 +3194,8 @@
       "image": "pendulum",
       "imagePath": "/images/relics/pendulum.webp",
       "descriptionClean": "每3個回合，抽1張牌",
-      "descI18n": "每3個回合，抽1張牌"
+      "descI18n": "每3個回合，抽1張牌",
+      "nameEn": "Pendulum"
     },
     {
       "className": "Permafrost",
@@ -3019,7 +3211,8 @@
       "image": "permafrost",
       "imagePath": "/images/relics/permafrost.webp",
       "descriptionClean": "當你在戰鬥中第一次打出能力牌時，獲得7點格擋。",
-      "descI18n": "當你在戰鬥中第一次打出能力牌時，獲得7點<g>格擋</g>。"
+      "descI18n": "當你在戰鬥中第一次打出能力牌時，獲得7點<g>格擋</g>。",
+      "nameEn": "Permafrost"
     },
     {
       "className": "PetrifiedToad",
@@ -3032,7 +3225,8 @@
       "image": "petrified_toad",
       "imagePath": "/images/relics/petrified_toad.webp",
       "descriptionClean": "在每場戰鬥開始時，獲得一瓶藥水形狀的石頭",
-      "descI18n": "在每場戰鬥開始時，獲得一瓶<g>藥水形狀的石頭</g>"
+      "descI18n": "在每場戰鬥開始時，獲得一瓶<g>藥水形狀的石頭</g>",
+      "nameEn": "Petrified Toad"
     },
     {
       "className": "PhialHolster",
@@ -3050,7 +3244,8 @@
       "image": "phial_holster",
       "imagePath": "/images/relics/phial_holster.webp",
       "descriptionClean": "拾起時，獲得1個藥水欄位並獲得2瓶隨機藥水。",
-      "descI18n": "拾起時，獲得1個藥水欄位並獲得2瓶隨機藥水。"
+      "descI18n": "拾起時，獲得1個藥水欄位並獲得2瓶隨機藥水。",
+      "nameEn": "Phial Holster"
     },
     {
       "className": "PhilosophersStone",
@@ -3069,7 +3264,8 @@
       "image": "philosophers_stone",
       "imagePath": "/images/relics/philosophers_stone.webp",
       "descriptionClean": "在每回合開始時獲得1。所有敵人初始獲得1點力量。",
-      "descI18n": "在每回合開始時獲得<e>1</e>。所有敵人初始獲得1點<g>力量</g>。"
+      "descI18n": "在每回合開始時獲得<e>1</e>。所有敵人初始獲得1點<g>力量</g>。",
+      "nameEn": "Philosopher's Stone"
     },
     {
       "className": "PhylacteryUnbound",
@@ -3088,7 +3284,8 @@
       "image": "phylactery_unbound",
       "imagePath": "/images/relics/phylactery_unbound.webp",
       "descriptionClean": "在每場戰鬥開始時，召喚5。在你的回合開始時，召喚2。",
-      "descI18n": "在每場戰鬥開始時，<g>召喚</g>5。在你的回合開始時，<g>召喚</g>2。"
+      "descI18n": "在每場戰鬥開始時，<g>召喚</g>5。在你的回合開始時，<g>召喚</g>2。",
+      "nameEn": "Phylactery Unbound"
     },
     {
       "className": "Planisphere",
@@ -3104,7 +3301,8 @@
       "image": "planisphere",
       "imagePath": "/images/relics/planisphere.webp",
       "descriptionClean": "每當你進入？房間的時候，回覆5點生命。",
-      "descI18n": "每當你進入<g>？</g>房間的時候，回覆5點生命。"
+      "descI18n": "每當你進入<g>？</g>房間的時候，回覆5點生命。",
+      "nameEn": "Planisphere"
     },
     {
       "className": "Pocketwatch",
@@ -3122,7 +3320,8 @@
       "image": "pocketwatch",
       "imagePath": "/images/relics/pocketwatch.webp",
       "descriptionClean": "當你在本回合打出的牌少於等於3張時，則在你的下個回合開始時額外抽3張牌。",
-      "descI18n": "當你在本回合打出的牌少於等於3張時，則在你的下個回合開始時額外抽3張牌。"
+      "descI18n": "當你在本回合打出的牌少於等於3張時，則在你的下個回合開始時額外抽3張牌。",
+      "nameEn": "Pocketwatch"
     },
     {
       "className": "PollinousCore",
@@ -3139,7 +3338,8 @@
       "image": "pollinous_core",
       "imagePath": "/images/relics/pollinous_core.webp",
       "descriptionClean": "每4個回合，額外抽2張牌。",
-      "descI18n": "每4個回合，額外抽2張牌。"
+      "descI18n": "每4個回合，額外抽2張牌。",
+      "nameEn": "Pollinous Core"
     },
     {
       "className": "Pomander",
@@ -3155,7 +3355,8 @@
       "image": "pomander",
       "imagePath": "/images/relics/pomander.webp",
       "descriptionClean": "拾起時，升級一張牌。",
-      "descI18n": "拾起時，<g>升級</g>一張牌。"
+      "descI18n": "拾起時，<g>升級</g>一張牌。",
+      "nameEn": "Pomander"
     },
     {
       "className": "PotionBelt",
@@ -3172,7 +3373,8 @@
       "image": "potion_belt",
       "imagePath": "/images/relics/potion_belt.webp",
       "descriptionClean": "拾起時，獲得2個藥水欄位。",
-      "descI18n": "拾起時，獲得2個藥水欄位。"
+      "descI18n": "拾起時，獲得2個藥水欄位。",
+      "nameEn": "Potion Belt"
     },
     {
       "className": "PowerCell",
@@ -3188,7 +3390,8 @@
       "image": "power_cell",
       "imagePath": "/images/relics/power_cell.webp",
       "descriptionClean": "在每場戰鬥開始時，將2張耗能為0的卡牌從你的抽牌堆放入你的手牌。",
-      "descI18n": "在每場戰鬥開始時，將2張耗能為0的卡牌從你的<g>抽牌堆</g>放入你的<g>手牌</g>。"
+      "descI18n": "在每場戰鬥開始時，將2張耗能為0的卡牌從你的<g>抽牌堆</g>放入你的<g>手牌</g>。",
+      "nameEn": "Power Cell"
     },
     {
       "className": "PrayerWheel",
@@ -3201,7 +3404,8 @@
       "image": "prayer_wheel",
       "imagePath": "/images/relics/prayer_wheel.webp",
       "descriptionClean": "普通敵人額外掉落一次卡牌獎勵。",
-      "descI18n": "普通敵人額外掉落一次卡牌獎勵。"
+      "descI18n": "普通敵人額外掉落一次卡牌獎勵。",
+      "nameEn": "Prayer Wheel"
     },
     {
       "className": "PrecariousShears",
@@ -3218,7 +3422,8 @@
       "image": "precarious_shears",
       "imagePath": "/images/relics/precarious_shears.webp",
       "descriptionClean": "拾起時，從你的牌組中移除2張牌並失去16點生命。",
-      "descI18n": "拾起時，從你的<g>牌組</g>中移除2張牌並失去16點生命。"
+      "descI18n": "拾起時，從你的<g>牌組</g>中移除2張牌並失去16點生命。",
+      "nameEn": "Precarious Shears"
     },
     {
       "className": "PreciseScissors",
@@ -3234,7 +3439,8 @@
       "image": "precise_scissors",
       "imagePath": "/images/relics/precise_scissors.webp",
       "descriptionClean": "拾起時，從你的牌組中移除1張牌。",
-      "descI18n": "拾起時，從你的<g>牌組</g>中移除1張牌。"
+      "descI18n": "拾起時，從你的<g>牌組</g>中移除1張牌。",
+      "nameEn": "Precise Scissors"
     },
     {
       "className": "PreservedFog",
@@ -3250,7 +3456,8 @@
       "image": "preserved_fog",
       "imagePath": "/images/relics/preserved_fog.webp",
       "descriptionClean": "拾起時，從你的牌組中移除3張牌。將一張愚行加入你的牌組。",
-      "descI18n": "拾起時，從你的<g>牌組</g>中移除3張牌。將一張愚行加入你的<g>牌組</g>。"
+      "descI18n": "拾起時，從你的<g>牌組</g>中移除3張牌。將一張愚行加入你的<g>牌組</g>。",
+      "nameEn": "Preserved Fog"
     },
     {
       "className": "PrismaticGem",
@@ -3267,7 +3474,8 @@
       "image": "prismatic_gem",
       "imagePath": "/images/relics/prismatic_gem.webp",
       "descriptionClean": "在每個回合開始時獲得1。卡牌獎勵現在會包含其他顏色的卡牌。",
-      "descI18n": "在每個回合開始時獲得<e>1</e>。卡牌獎勵現在會包含其他顏色的卡牌。"
+      "descI18n": "在每個回合開始時獲得<e>1</e>。卡牌獎勵現在會包含其他顏色的卡牌。",
+      "nameEn": "Prismatic Gem"
     },
     {
       "className": "PumpkinCandle",
@@ -3286,7 +3494,8 @@
       "image": "pumpkin_candle",
       "imagePath": "/images/relics/pumpkin_candle.webp",
       "descriptionClean": "在每個回合開始時獲得1。這件遺物會在5場戰鬥後熄滅。可以在休息處為其添火。",
-      "descI18n": "在每個回合開始時獲得<e>1</e>。這件遺物會在5場戰鬥後熄滅。可以在<g>休息處</g>為其<g>添火</g>。"
+      "descI18n": "在每個回合開始時獲得<e>1</e>。這件遺物會在5場戰鬥後熄滅。可以在<g>休息處</g>為其<g>添火</g>。",
+      "nameEn": "Pumpkin Candle"
     },
     {
       "className": "PunchDagger",
@@ -3302,7 +3511,8 @@
       "image": "punch_dagger",
       "imagePath": "/images/relics/punch_dagger.webp",
       "descriptionClean": "拾起時，選擇一張攻擊牌為它附魔：動量5。",
-      "descI18n": "拾起時，選擇一張攻擊牌為它<g>附魔</g>：動量5。"
+      "descI18n": "拾起時，選擇一張攻擊牌為它<g>附魔</g>：動量5。",
+      "nameEn": "Punch Dagger"
     },
     {
       "className": "RadiantPearl",
@@ -3318,7 +3528,8 @@
       "image": "radiant_pearl",
       "imagePath": "/images/relics/radiant_pearl.webp",
       "descriptionClean": "在每場戰鬥開始時，將1張冷光加入你的手牌。",
-      "descI18n": "在每場戰鬥開始時，將1張<g>冷光</g>加入你的<g>手牌</g>。"
+      "descI18n": "在每場戰鬥開始時，將1張<g>冷光</g>加入你的<g>手牌</g>。",
+      "nameEn": "Radiant Pearl"
     },
     {
       "className": "RainbowRing",
@@ -3337,7 +3548,8 @@
       "image": "rainbow_ring",
       "imagePath": "/images/relics/rainbow_ring.webp",
       "descriptionClean": "每回合，你第一次打出攻擊牌、技能牌和能力牌各一張時，獲得1點力量和1點敏捷。",
-      "descI18n": "每回合，你第一次打出攻擊牌、技能牌和能力牌各一張時，獲得1點<g>力量</g>和1點<g>敏捷</g>。"
+      "descI18n": "每回合，你第一次打出攻擊牌、技能牌和能力牌各一張時，獲得1點<g>力量</g>和1點<g>敏捷</g>。",
+      "nameEn": "Rainbow Ring"
     },
     {
       "className": "RazorTooth",
@@ -3350,7 +3562,8 @@
       "image": "razor_tooth",
       "imagePath": "/images/relics/razor_tooth.webp",
       "descriptionClean": "你打出攻擊牌和技能牌時，將其在本場戰鬥內升級。",
-      "descI18n": "你打出攻擊牌和技能牌時，將其在本場戰鬥內<g>升級</g>。"
+      "descI18n": "你打出攻擊牌和技能牌時，將其在本場戰鬥內<g>升級</g>。",
+      "nameEn": "Razor Tooth"
     },
     {
       "className": "RedMask",
@@ -3367,7 +3580,8 @@
       "image": "red_mask",
       "imagePath": "/images/relics/red_mask.webp",
       "descriptionClean": "在每場戰鬥開始時，給於所有敵人1層虛弱。",
-      "descI18n": "在每場戰鬥開始時，給於所有敵人1層<g>虛弱</g>。"
+      "descI18n": "在每場戰鬥開始時，給於所有敵人1層<g>虛弱</g>。",
+      "nameEn": "Red Mask"
     },
     {
       "className": "RedSkull",
@@ -3386,7 +3600,8 @@
       "image": "red_skull",
       "imagePath": "/images/relics/red_skull.webp",
       "descriptionClean": "當你的生命值低於或等於50%時，你額外獲得3點力量",
-      "descI18n": "當你的生命值低於或等於50%時，你額外獲得3點<g>力量</g>"
+      "descI18n": "當你的生命值低於或等於50%時，你額外獲得3點<g>力量</g>",
+      "nameEn": "Red Skull"
     },
     {
       "className": "RegalPillow",
@@ -3402,7 +3617,8 @@
       "image": "regal_pillow",
       "imagePath": "/images/relics/regal_pillow.webp",
       "descriptionClean": "在休息時，額外回覆15點生命。",
-      "descI18n": "在<g>休息</g>時，額外回覆15點生命。"
+      "descI18n": "在<g>休息</g>時，額外回覆15點生命。",
+      "nameEn": "Regal Pillow"
     },
     {
       "className": "Regalite",
@@ -3418,7 +3634,8 @@
       "image": "regalite",
       "imagePath": "/images/relics/regalite.webp",
       "descriptionClean": "每當你生成一張牌時，獲得2點格擋。",
-      "descI18n": "每當你生成一張牌時，獲得2點<g>格擋</g>。"
+      "descI18n": "每當你生成一張牌時，獲得2點<g>格擋</g>。",
+      "nameEn": "Regalite"
     },
     {
       "className": "ReptileTrinket",
@@ -3435,7 +3652,8 @@
       "image": "reptile_trinket",
       "imagePath": "/images/relics/reptile_trinket.webp",
       "descriptionClean": "當你使用藥水時，在本回合獲得3力量。",
-      "descI18n": "當你使用藥水時，在本回合獲得3<g>力量</g>。"
+      "descI18n": "當你使用藥水時，在本回合獲得3<g>力量</g>。",
+      "nameEn": "Reptile Trinket"
     },
     {
       "className": "RingOfTheDrake",
@@ -3452,7 +3670,8 @@
       "image": "ring_of_the_drake",
       "imagePath": "/images/relics/ring_of_the_drake.webp",
       "descriptionClean": "在戰鬥開始時的前3個回合，你額外抽2張牌。",
-      "descI18n": "在戰鬥開始時的前3個回合，你額外抽2張牌。"
+      "descI18n": "在戰鬥開始時的前3個回合，你額外抽2張牌。",
+      "nameEn": "Ring of the Drake"
     },
     {
       "className": "RingOfTheSnake",
@@ -3468,7 +3687,8 @@
       "image": "ring_of_the_snake",
       "imagePath": "/images/relics/ring_of_the_snake.webp",
       "descriptionClean": "在每場戰鬥開始時，額外抽2張牌。",
-      "descI18n": "在每場戰鬥開始時，額外抽2張牌。"
+      "descI18n": "在每場戰鬥開始時，額外抽2張牌。",
+      "nameEn": "Ring of the Snake"
     },
     {
       "className": "RingingTriangle",
@@ -3481,7 +3701,8 @@
       "image": "ringing_triangle",
       "imagePath": "/images/relics/ringing_triangle.webp",
       "descriptionClean": "在每場戰鬥的第一回合保留你的手牌。",
-      "descI18n": "在每場戰鬥的第一回合<g>保留</g>你的<g>手牌</g>。"
+      "descI18n": "在每場戰鬥的第一回合<g>保留</g>你的<g>手牌</g>。",
+      "nameEn": "Ringing Triangle"
     },
     {
       "className": "RippleBasin",
@@ -3497,7 +3718,8 @@
       "image": "ripple_basin",
       "imagePath": "/images/relics/ripple_basin.webp",
       "descriptionClean": "如果你在本回閤中沒有打出過攻擊牌，則獲得4點格擋。",
-      "descI18n": "如果你在本回閤中沒有打出過攻擊牌，則獲得4點<g>格擋</g>。"
+      "descI18n": "如果你在本回閤中沒有打出過攻擊牌，則獲得4點<g>格擋</g>。",
+      "nameEn": "Ripple Basin"
     },
     {
       "className": "RoyalPoison",
@@ -3513,7 +3735,8 @@
       "image": "royal_poison",
       "imagePath": "/images/relics/royal_poison.webp",
       "descriptionClean": "在每場戰鬥開始時，失去4點生命。",
-      "descI18n": "在每場戰鬥開始時，失去4點生命。"
+      "descI18n": "在每場戰鬥開始時，失去4點生命。",
+      "nameEn": "Royal Poison"
     },
     {
       "className": "RoyalStamp",
@@ -3532,7 +3755,8 @@
       "image": "royal_stamp",
       "imagePath": "/images/relics/royal_stamp.webp",
       "descriptionClean": "拾起時，從牌組中選擇一張攻擊牌或技能牌，為它附魔：王室認證。",
-      "descI18n": "拾起時，從<g>牌組</g>中選擇一張攻擊牌或技能牌，為它<g>附魔</g>：王室認證。"
+      "descI18n": "拾起時，從<g>牌組</g>中選擇一張攻擊牌或技能牌，為它<g>附魔</g>：王室認證。",
+      "nameEn": "Royal Stamp"
     },
     {
       "className": "RuinedHelmet",
@@ -3545,7 +3769,8 @@
       "image": "ruined_helmet",
       "imagePath": "/images/relics/ruined_helmet.webp",
       "descriptionClean": "你在每場戰鬥中第一次獲得的力量值翻倍。",
-      "descI18n": "你在每場戰鬥中第一次獲得的<g>力量</g>值翻倍。"
+      "descI18n": "你在每場戰鬥中第一次獲得的<g>力量</g>值翻倍。",
+      "nameEn": "Ruined Helmet"
     },
     {
       "className": "RunicCapacitor",
@@ -3561,7 +3786,8 @@
       "image": "runic_capacitor",
       "imagePath": "/images/relics/runic_capacitor.webp",
       "descriptionClean": "每場戰鬥開始時，獲得3個額外充能球欄位。",
-      "descI18n": "每場戰鬥開始時，獲得3個額外<g>充能球欄位</g>。"
+      "descI18n": "每場戰鬥開始時，獲得3個額外<g>充能球欄位</g>。",
+      "nameEn": "Runic Capacitor"
     },
     {
       "className": "RunicPyramid",
@@ -3574,7 +3800,8 @@
       "image": "runic_pyramid",
       "imagePath": "/images/relics/runic_pyramid.webp",
       "descriptionClean": "你在回合結束時不再自動丟棄所有手牌。",
-      "descI18n": "你在回合結束時不再自動丟棄所有<g>手牌</g>。"
+      "descI18n": "你在回合結束時不再自動丟棄所有<g>手牌</g>。",
+      "nameEn": "Runic Pyramid"
     },
     {
       "className": "Sai",
@@ -3590,7 +3817,8 @@
       "image": "sai",
       "imagePath": "/images/relics/sai.webp",
       "descriptionClean": "在你的回合開始時，獲得7點格擋。",
-      "descI18n": "在你的回合開始時，獲得7點<g>格擋</g>。"
+      "descI18n": "在你的回合開始時，獲得7點<g>格擋</g>。",
+      "nameEn": "Sai"
     },
     {
       "className": "SandCastle",
@@ -3606,7 +3834,8 @@
       "image": "sand_castle",
       "imagePath": "/images/relics/sand_castle.webp",
       "descriptionClean": "拾起時，隨機升級6張牌。",
-      "descI18n": "拾起時，隨機<g>升級</g>6張牌。"
+      "descI18n": "拾起時，隨機<g>升級</g>6張牌。",
+      "nameEn": "Sand Castle"
     },
     {
       "className": "ScreamingFlagon",
@@ -3622,7 +3851,8 @@
       "image": "screaming_flagon",
       "imagePath": "/images/relics/screaming_flagon.webp",
       "descriptionClean": "如果你在回合結束時沒有任何手牌，則對所有敵人造成20點傷害。",
-      "descI18n": "如果你在回合結束時沒有任何<g>手牌</g>，則對所有敵人造成20點傷害。"
+      "descI18n": "如果你在回合結束時沒有任何<g>手牌</g>，則對所有敵人造成20點傷害。",
+      "nameEn": "Screaming Flagon"
     },
     {
       "className": "ScrollBoxes",
@@ -3635,7 +3865,8 @@
       "image": "scroll_boxes",
       "imagePath": "/images/relics/scroll_boxes.webp",
       "descriptionClean": "拾起時，從2個卡牌包中選擇1包加入你的牌組。",
-      "descI18n": "拾起時，從2個卡牌包中選擇1包加入你的<g>牌組</g>。"
+      "descI18n": "拾起時，從2個卡牌包中選擇1包加入你的<g>牌組</g>。",
+      "nameEn": "Scroll Boxes"
     },
     {
       "className": "SeaGlass",
@@ -3651,7 +3882,8 @@
       "image": "sea_glass",
       "imagePath": "/images/relics/sea_glass.webp",
       "descriptionClean": "查看15張來自其他角色的牌。從中選擇任意數量的卡牌加入你的牌組。",
-      "descI18n": "查看15張來自其他角色的牌。從中選擇任意數量的卡牌加入你的<g>牌組</g>。"
+      "descI18n": "查看15張來自其他角色的牌。從中選擇任意數量的卡牌加入你的<g>牌組</g>。",
+      "nameEn": "Sea Glass"
     },
     {
       "className": "SealOfGold",
@@ -3669,7 +3901,8 @@
       "image": "seal_of_gold",
       "imagePath": "/images/relics/seal_of_gold.webp",
       "descriptionClean": "在你的回合開始時，花費5金幣來獲得1。",
-      "descI18n": "在你的回合開始時，花費5<g>金幣</g>來獲得<e>1</e>。"
+      "descI18n": "在你的回合開始時，花費5<g>金幣</g>來獲得<e>1</e>。",
+      "nameEn": "Seal of Gold"
     },
     {
       "className": "SelfFormingClay",
@@ -3686,7 +3919,8 @@
       "image": "self_forming_clay",
       "imagePath": "/images/relics/self_forming_clay.webp",
       "descriptionClean": "每當你在戰鬥中失去生命，就在下回合獲得3點格擋。",
-      "descI18n": "每當你在戰鬥中失去生命，就在下回合獲得3點<g>格擋</g>。"
+      "descI18n": "每當你在戰鬥中失去生命，就在下回合獲得3點<g>格擋</g>。",
+      "nameEn": "Self-Forming Clay"
     },
     {
       "className": "SereTalon",
@@ -3703,7 +3937,8 @@
       "image": "sere_talon",
       "imagePath": "/images/relics/sere_talon.webp",
       "descriptionClean": "拾起時，將2張隨機詛咒牌和3張許願加入你的牌組。",
-      "descI18n": "拾起時，將2張隨機詛咒牌和3張許願加入你的<g>牌組</g>。"
+      "descI18n": "拾起時，將2張隨機詛咒牌和3張許願加入你的<g>牌組</g>。",
+      "nameEn": "Sere Talon"
     },
     {
       "className": "Shovel",
@@ -3716,7 +3951,8 @@
       "image": "shovel",
       "imagePath": "/images/relics/shovel.webp",
       "descriptionClean": "現在你可以在休息處挖掘遺物。",
-      "descI18n": "現在你可以在<g>休息處</g>挖掘<g>遺物</g>。"
+      "descI18n": "現在你可以在<g>休息處</g>挖掘<g>遺物</g>。",
+      "nameEn": "Shovel"
     },
     {
       "className": "Shuriken",
@@ -3734,7 +3970,8 @@
       "image": "shuriken",
       "imagePath": "/images/relics/shuriken.webp",
       "descriptionClean": "你每在同一回合內打出3張攻擊牌，獲得1點力量。",
-      "descI18n": "你每在同一回合內打出3張攻擊牌，獲得1點<g>力量</g>。"
+      "descI18n": "你每在同一回合內打出3張攻擊牌，獲得1點<g>力量</g>。",
+      "nameEn": "Shuriken"
     },
     {
       "className": "SignetRing",
@@ -3750,7 +3987,8 @@
       "image": "signet_ring",
       "imagePath": "/images/relics/signet_ring.webp",
       "descriptionClean": "拾起時，獲得999金幣。",
-      "descI18n": "拾起時，獲得999<g>金幣</g>。"
+      "descI18n": "拾起時，獲得999<g>金幣</g>。",
+      "nameEn": "Signet Ring"
     },
     {
       "className": "SilkenTress",
@@ -3763,7 +4001,8 @@
       "image": "silken_tress",
       "imagePath": "/images/relics/silken_tress.webp",
       "descriptionClean": "拾起時，失去所有金幣。為第一次卡牌獎勵中的所有牌附魔：華彩。",
-      "descI18n": "拾起時，失去所有<g>金幣</g>。為第一次卡牌獎勵中的所有牌<g>附魔</g>：華彩。"
+      "descI18n": "拾起時，失去所有<g>金幣</g>。為第一次卡牌獎勵中的所有牌<g>附魔</g>：華彩。",
+      "nameEn": "Silken Tress"
     },
     {
       "className": "SilverCrucible",
@@ -3779,7 +4018,8 @@
       "image": "silver_crucible",
       "imagePath": "/images/relics/silver_crucible.webp",
       "descriptionClean": "你遇到的前3次卡牌獎勵將是被升級過的。你打開的第一個寶箱將是空的",
-      "descI18n": "你遇到的前3次卡牌獎勵將是被<g>升級</g>過的。你打開的第一個寶箱將是空的"
+      "descI18n": "你遇到的前3次卡牌獎勵將是被<g>升級</g>過的。你打開的第一個寶箱將是空的",
+      "nameEn": "Silver Crucible"
     },
     {
       "className": "SlingOfCourage",
@@ -3796,7 +4036,8 @@
       "image": "sling_of_courage",
       "imagePath": "/images/relics/sling_of_courage.webp",
       "descriptionClean": "在與精英敵人戰鬥時，獲得2點力量。",
-      "descI18n": "在與<g>精英</g>敵人戰鬥時，獲得2點<g>力量</g>。"
+      "descI18n": "在與<g>精英</g>敵人戰鬥時，獲得2點<g>力量</g>。",
+      "nameEn": "Sling of Courage"
     },
     {
       "className": "SmallCapsule",
@@ -3809,7 +4050,8 @@
       "image": "small_capsule",
       "imagePath": "/images/relics/small_capsule.webp",
       "descriptionClean": "拾起時，獲得一件隨機遺物。",
-      "descI18n": "拾起時，獲得一件隨機<g>遺物</g>。"
+      "descI18n": "拾起時，獲得一件隨機<g>遺物</g>。",
+      "nameEn": "Small Capsule"
     },
     {
       "className": "SneckoEye",
@@ -3825,7 +4067,8 @@
       "image": "snecko_eye",
       "imagePath": "/images/relics/snecko_eye.webp",
       "descriptionClean": "每回合多抽2張牌。每場戰鬥開始時獲得混亂效果。",
-      "descI18n": "每回合多抽2張牌。每場戰鬥開始時獲得混亂效果。"
+      "descI18n": "每回合多抽2張牌。每場戰鬥開始時獲得混亂效果。",
+      "nameEn": "Snecko Eye"
     },
     {
       "className": "SneckoSkull",
@@ -3842,7 +4085,8 @@
       "image": "snecko_skull",
       "imagePath": "/images/relics/snecko_skull.webp",
       "descriptionClean": "每當你給予敵人中毒時，所給予的中毒層數增加1層。",
-      "descI18n": "每當你給予敵人<g>中毒</g>時，所給予的<g>中毒</g>層數增加1層。"
+      "descI18n": "每當你給予敵人<g>中毒</g>時，所給予的<g>中毒</g>層數增加1層。",
+      "nameEn": "Snecko Skull"
     },
     {
       "className": "Sozu",
@@ -3859,7 +4103,8 @@
       "image": "sozu",
       "imagePath": "/images/relics/sozu.webp",
       "descriptionClean": "你無法再獲得藥水。在每回合開始時獲得1。",
-      "descI18n": "你無法再獲得藥水。在每回合開始時獲得<e>1</e>。"
+      "descI18n": "你無法再獲得藥水。在每回合開始時獲得<e>1</e>。",
+      "nameEn": "Sozu"
     },
     {
       "className": "SparklingRouge",
@@ -3878,7 +4123,8 @@
       "image": "sparkling_rouge",
       "imagePath": "/images/relics/sparkling_rouge.webp",
       "descriptionClean": "在你的第3回合開始時，獲得1點力量和1點敏捷。",
-      "descI18n": "在你的第3回合開始時，獲得1點<g>力量</g>和1點<g>敏捷</g>。"
+      "descI18n": "在你的第3回合開始時，獲得1點<g>力量</g>和1點<g>敏捷</g>。",
+      "nameEn": "Sparkling Rouge"
     },
     {
       "className": "SpikedGauntlets",
@@ -3895,7 +4141,8 @@
       "image": "spiked_gauntlets",
       "imagePath": "/images/relics/spiked_gauntlets.webp",
       "descriptionClean": "在每回合開始時獲得1。能力牌的耗能增加1。",
-      "descI18n": "在每回合開始時獲得<e>1</e>。能力牌的耗能增加1<e/>。"
+      "descI18n": "在每回合開始時獲得<e>1</e>。能力牌的耗能增加1<e/>。",
+      "nameEn": "Spiked Gauntlets"
     },
     {
       "className": "StoneCalendar",
@@ -3913,7 +4160,8 @@
       "image": "stone_calendar",
       "imagePath": "/images/relics/stone_calendar.webp",
       "descriptionClean": "在第7回合結束時，對所有敵人造成52點傷害。",
-      "descI18n": "在第7回合結束時，對所有敵人造成52點傷害。"
+      "descI18n": "在第7回合結束時，對所有敵人造成52點傷害。",
+      "nameEn": "Stone Calendar"
     },
     {
       "className": "StoneCracker",
@@ -3929,7 +4177,8 @@
       "image": "stone_cracker",
       "imagePath": "/images/relics/stone_cracker.webp",
       "descriptionClean": "在每場戰鬥開始時，在本場戰鬥中隨機升級你抽牌堆中的2張牌。",
-      "descI18n": "在每場戰鬥開始時，在本場戰鬥中隨機<g>升級</g>你<g>抽牌堆</g>中的2張牌。"
+      "descI18n": "在每場戰鬥開始時，在本場戰鬥中隨機<g>升級</g>你<g>抽牌堆</g>中的2張牌。",
+      "nameEn": "Stone Cracker"
     },
     {
       "className": "StoneHumidifier",
@@ -3946,7 +4195,8 @@
       "image": "stone_humidifier",
       "imagePath": "/images/relics/stone_humidifier.webp",
       "descriptionClean": "每當你在休息處休息時，將你的最大生命值提升5點。",
-      "descI18n": "每當你在<g>休息處</g><g>休息</g>時，將你的最大生命值提升5點。"
+      "descI18n": "每當你在<g>休息處</g><g>休息</g>時，將你的最大生命值提升5點。",
+      "nameEn": "Stone Humidifier"
     },
     {
       "className": "Storybook",
@@ -3959,7 +4209,8 @@
       "image": "storybook",
       "imagePath": "/images/relics/storybook.webp",
       "descriptionClean": "拾起時，將1張至亮之焰添加到你的牌組中。",
-      "descI18n": "拾起時，將1張<g>至亮之焰</g>添加到你的<g>牌組</g>中。"
+      "descI18n": "拾起時，將1張<g>至亮之焰</g>添加到你的<g>牌組</g>中。",
+      "nameEn": "Storybook"
     },
     {
       "className": "Strawberry",
@@ -3976,7 +4227,8 @@
       "image": "strawberry",
       "imagePath": "/images/relics/strawberry.webp",
       "descriptionClean": "拾起時，將你的最大生命值提升7。",
-      "descI18n": "拾起時，將你的最大生命值提升7。"
+      "descI18n": "拾起時，將你的最大生命值提升7。",
+      "nameEn": "Strawberry"
     },
     {
       "className": "StrikeDummy",
@@ -3993,7 +4245,8 @@
       "image": "strike_dummy",
       "imagePath": "/images/relics/strike_dummy.webp",
       "descriptionClean": "名字中有“打擊”的卡牌造成3點額外傷害。",
-      "descI18n": "名字中有“打擊”的卡牌造成3點額外傷害。"
+      "descI18n": "名字中有“打擊”的卡牌造成3點額外傷害。",
+      "nameEn": "Strike Dummy"
     },
     {
       "className": "SturdyClamp",
@@ -4009,7 +4262,8 @@
       "image": "sturdy_clamp",
       "imagePath": "/images/relics/sturdy_clamp.webp",
       "descriptionClean": "可以跨回合保留最多10點格擋。",
-      "descI18n": "可以跨回合保留最多10點<g>格擋</g>。"
+      "descI18n": "可以跨回合保留最多10點<g>格擋</g>。",
+      "nameEn": "Sturdy Clamp"
     },
     {
       "className": "SwordOfJade",
@@ -4026,7 +4280,8 @@
       "image": "sword_of_jade",
       "imagePath": "/images/relics/sword_of_jade.webp",
       "descriptionClean": "在每場戰鬥開始時，獲得3點力量。",
-      "descI18n": "在每場戰鬥開始時，獲得3點<g>力量</g>。"
+      "descI18n": "在每場戰鬥開始時，獲得3點<g>力量</g>。",
+      "nameEn": "Sword of Jade"
     },
     {
       "className": "SwordOfStone",
@@ -4042,7 +4297,8 @@
       "image": "sword_of_stone",
       "imagePath": "/images/relics/sword_of_stone.webp",
       "descriptionClean": "在擊敗5名精英敵人之後將變化為一件強力遺物。",
-      "descI18n": "在擊敗5名<g>精英</g>敵人之後將變化為一件強力<g>遺物</g>。"
+      "descI18n": "在擊敗5名<g>精英</g>敵人之後將變化為一件強力<g>遺物</g>。",
+      "nameEn": "Sword of Stone"
     },
     {
       "className": "SymbioticVirus",
@@ -4058,7 +4314,8 @@
       "image": "symbiotic_virus",
       "imagePath": "/images/relics/symbiotic_virus.webp",
       "descriptionClean": "在每場戰鬥開始時，生成1個黑暗充能球。",
-      "descI18n": "在每場戰鬥開始時，<g>生成</g>1個<g>黑暗</g>充能球。"
+      "descI18n": "在每場戰鬥開始時，<g>生成</g>1個<g>黑暗</g>充能球。",
+      "nameEn": "Symbiotic Virus"
     },
     {
       "className": "TanxsWhistle",
@@ -4071,7 +4328,8 @@
       "image": "tanxs_whistle",
       "imagePath": "/images/relics/tanxs_whistle.webp",
       "descriptionClean": "拾起時，將1張吹哨加入你的牌組。",
-      "descI18n": "拾起時，將1張<g>吹哨</g>加入你的<g>牌組</g>。"
+      "descI18n": "拾起時，將1張<g>吹哨</g>加入你的<g>牌組</g>。",
+      "nameEn": "Tanx's Whistle"
     },
     {
       "className": "TeaOfDiscourtesy",
@@ -4090,7 +4348,8 @@
       "image": "tea_of_discourtesy",
       "imagePath": "/images/relics/tea_of_discourtesy.webp",
       "descriptionClean": "在下一場戰鬥開始時，將2張暈眩放入你的抽牌堆。",
-      "descI18n": "在下一場戰鬥開始時，將2張<g>暈眩</g>放入你的<g>抽牌堆</g>。"
+      "descI18n": "在下一場戰鬥開始時，將2張<g>暈眩</g>放入你的<g>抽牌堆</g>。",
+      "nameEn": "Tea of Discourtesy"
     },
     {
       "className": "TheAbacus",
@@ -4106,7 +4365,8 @@
       "image": "the_abacus",
       "imagePath": "/images/relics/the_abacus.webp",
       "descriptionClean": "你每次將抽牌堆洗牌時，獲得6點格擋。",
-      "descI18n": "你每次將<g>抽牌堆</g>洗牌時，獲得6點<g>格擋</g>。"
+      "descI18n": "你每次將<g>抽牌堆</g>洗牌時，獲得6點<g>格擋</g>。",
+      "nameEn": "The Abacus"
     },
     {
       "className": "TheBoot",
@@ -4125,7 +4385,8 @@
       "image": "the_boot",
       "imagePath": "/images/relics/the_boot.webp",
       "descriptionClean": "每當你造成小於等於4點未被格擋的攻擊傷害時，將傷害提升為5。",
-      "descI18n": "每當你造成小於等於4點未被格擋的攻擊傷害時，將傷害提升為5。"
+      "descI18n": "每當你造成小於等於4點未被格擋的攻擊傷害時，將傷害提升為5。",
+      "nameEn": "The Boot"
     },
     {
       "className": "TheCourier",
@@ -4141,7 +4402,8 @@
       "image": "the_courier",
       "imagePath": "/images/relics/the_courier.webp",
       "descriptionClean": "商人的卡牌、遺物和藥水不再會賣光，並且所有商品打折20%。",
-      "descI18n": "商人的卡牌、遺物和藥水不再會賣光，並且所有商品打折20%。"
+      "descI18n": "商人的卡牌、遺物和藥水不再會賣光，並且所有商品打折20%。",
+      "nameEn": "The Courier"
     },
     {
       "className": "ThrowingAxe",
@@ -4154,7 +4416,8 @@
       "image": "throwing_axe",
       "imagePath": "/images/relics/throwing_axe.webp",
       "descriptionClean": "你在每場戰鬥中打出的第一張牌會多打出一次。",
-      "descI18n": "你在每場戰鬥中打出的第一張牌會多打出一次。"
+      "descI18n": "你在每場戰鬥中打出的第一張牌會多打出一次。",
+      "nameEn": "Throwing Axe"
     },
     {
       "className": "Tingsha",
@@ -4170,7 +4433,8 @@
       "image": "tingsha",
       "imagePath": "/images/relics/tingsha.webp",
       "descriptionClean": "你每在你的回合丟棄一張牌，就對一名隨機敵人造成3點傷害。",
-      "descI18n": "你每在你的回合丟棄一張牌，就對一名隨機敵人造成3點傷害。"
+      "descI18n": "你每在你的回合丟棄一張牌，就對一名隨機敵人造成3點傷害。",
+      "nameEn": "Tingsha"
     },
     {
       "className": "TinyMailbox",
@@ -4183,7 +4447,8 @@
       "image": "tiny_mailbox",
       "imagePath": "/images/relics/tiny_mailbox.webp",
       "descriptionClean": "每當你休息時，獲得2瓶隨機藥水。",
-      "descI18n": "每當你<g>休息</g>時，獲得2瓶隨機藥水。"
+      "descI18n": "每當你<g>休息</g>時，獲得2瓶隨機藥水。",
+      "nameEn": "Tiny Mailbox"
     },
     {
       "className": "ToastyMittens",
@@ -4200,7 +4465,8 @@
       "image": "toasty_mittens",
       "imagePath": "/images/relics/toasty_mittens.webp",
       "descriptionClean": "在你的回合開始時，消耗你抽牌堆頂部的牌並獲得1點力量。",
-      "descI18n": "在你的回合開始時，<g>消耗</g>你<g>抽牌堆</g>頂部的牌並獲得1點<g>力量</g>。"
+      "descI18n": "在你的回合開始時，<g>消耗</g>你<g>抽牌堆</g>頂部的牌並獲得1點<g>力量</g>。",
+      "nameEn": "Toasty Mittens"
     },
     {
       "className": "Toolbox",
@@ -4216,7 +4482,8 @@
       "image": "toolbox",
       "imagePath": "/images/relics/toolbox.webp",
       "descriptionClean": "在每場戰鬥開始時，從3張隨機無色牌中選擇1張加入你的手牌。",
-      "descI18n": "在每場戰鬥開始時，從3張隨機無色牌中選擇1張加入你的<g>手牌</g>。"
+      "descI18n": "在每場戰鬥開始時，從3張隨機無色牌中選擇1張加入你的<g>手牌</g>。",
+      "nameEn": "Toolbox"
     },
     {
       "className": "TouchOfOrobas",
@@ -4229,7 +4496,8 @@
       "image": "touch_of_orobas",
       "imagePath": "/images/relics/touch_of_orobas.webp",
       "descriptionClean": "拾起時，將你的初始遺物替換為先古版本。",
-      "descI18n": "拾起時，將你的初始<g>遺物</g>替換為<g>先古</g>版本。"
+      "descI18n": "拾起時，將你的初始<g>遺物</g>替換為<g>先古</g>版本。",
+      "nameEn": "Touch of Orobas"
     },
     {
       "className": "ToughBandages",
@@ -4245,7 +4513,8 @@
       "image": "tough_bandages",
       "imagePath": "/images/relics/tough_bandages.webp",
       "descriptionClean": "你每在你的回合丟棄一張牌，就獲得3點格擋。",
-      "descI18n": "你每在你的回合丟棄一張牌，就獲得3點<g>格擋</g>。"
+      "descI18n": "你每在你的回合丟棄一張牌，就獲得3點<g>格擋</g>。",
+      "nameEn": "Tough Bandages"
     },
     {
       "className": "ToxicEgg",
@@ -4258,7 +4527,8 @@
       "image": "toxic_egg",
       "imagePath": "/images/relics/toxic_egg.webp",
       "descriptionClean": "每當你獲得技能牌時，將其升級。",
-      "descI18n": "每當你獲得<g>技能牌</g>時，將其<g>升級</g>。"
+      "descI18n": "每當你獲得<g>技能牌</g>時，將其<g>升級</g>。",
+      "nameEn": "Toxic Egg"
     },
     {
       "className": "ToyBox",
@@ -4275,7 +4545,8 @@
       "image": "toy_box",
       "imagePath": "/images/relics/toy_box.webp",
       "descriptionClean": "拾起時，獲得4件蠟制遺物。每經過3場戰鬥，你最左側的蠟制遺物將會融化。",
-      "descI18n": "拾起時，獲得4件<g>蠟制遺物</g>。每經過3場戰鬥，你最左側的<g>蠟制遺物</g>將會融化。"
+      "descI18n": "拾起時，獲得4件<g>蠟制遺物</g>。每經過3場戰鬥，你最左側的<g>蠟制遺物</g>將會融化。",
+      "nameEn": "Toy Box"
     },
     {
       "className": "TriBoomerang",
@@ -4291,7 +4562,8 @@
       "image": "tri_boomerang",
       "imagePath": "/images/relics/tri_boomerang.webp",
       "descriptionClean": "從你的牌組中選擇3張攻擊牌。為這些牌附魔：本能。",
-      "descI18n": "從你的<g>牌組</g>中選擇3張攻擊牌。為這些牌<g>附魔</g>：本能。"
+      "descI18n": "從你的<g>牌組</g>中選擇3張攻擊牌。為這些牌<g>附魔</g>：本能。",
+      "nameEn": "Tri-Boomerang"
     },
     {
       "className": "TungstenRod",
@@ -4308,7 +4580,8 @@
       "image": "tungsten_rod",
       "imagePath": "/images/relics/tungsten_rod.webp",
       "descriptionClean": "你每次失去生命時，減少失去的生命值1點。",
-      "descI18n": "你每次失去生命時，減少失去的生命值1點。"
+      "descI18n": "你每次失去生命時，減少失去的生命值1點。",
+      "nameEn": "Tungsten Rod"
     },
     {
       "className": "TuningFork",
@@ -4325,7 +4598,8 @@
       "image": "tuning_fork",
       "imagePath": "/images/relics/tuning_fork.webp",
       "descriptionClean": "你每打出10張技能牌，獲得7點格擋。",
-      "descI18n": "你每打出10張技能牌，獲得7點<g>格擋</g>。"
+      "descI18n": "你每打出10張技能牌，獲得7點<g>格擋</g>。",
+      "nameEn": "Tuning Fork"
     },
     {
       "className": "TwistedFunnel",
@@ -4342,7 +4616,8 @@
       "image": "twisted_funnel",
       "imagePath": "/images/relics/twisted_funnel.webp",
       "descriptionClean": "在每場戰鬥開始時，給予所有敵人4層中毒。",
-      "descI18n": "在每場戰鬥開始時，給予所有敵人4層<g>中毒</g>。"
+      "descI18n": "在每場戰鬥開始時，給予所有敵人4層<g>中毒</g>。",
+      "nameEn": "Twisted Funnel"
     },
     {
       "className": "UnceasingTop",
@@ -4355,7 +4630,8 @@
       "image": "unceasing_top",
       "imagePath": "/images/relics/unceasing_top.webp",
       "descriptionClean": "在你的回合，當你沒有手牌時，抽一張牌。",
-      "descI18n": "在你的回合，當你沒有<g>手牌</g>時，抽一張牌。"
+      "descI18n": "在你的回合，當你沒有<g>手牌</g>時，抽一張牌。",
+      "nameEn": "Unceasing Top"
     },
     {
       "className": "UndyingSigil",
@@ -4372,7 +4648,8 @@
       "image": "undying_sigil",
       "imagePath": "/images/relics/undying_sigil.webp",
       "descriptionClean": "當敵人的災厄層數大於等於其生命值時，它造成的傷害降低50%。",
-      "descI18n": "當敵人的<g>災厄</g>層數大於等於其生命值時，它造成的傷害降低50%。"
+      "descI18n": "當敵人的<g>災厄</g>層數大於等於其生命值時，它造成的傷害降低50%。",
+      "nameEn": "Undying Sigil"
     },
     {
       "className": "UnsettlingLamp",
@@ -4385,7 +4662,8 @@
       "image": "unsettling_lamp",
       "imagePath": "/images/relics/unsettling_lamp.webp",
       "descriptionClean": "你在每場戰鬥中第一次打出能給予敵人負面狀態的牌時，將其效果翻倍。",
-      "descI18n": "你在每場戰鬥中第一次打出能給予敵人<g>負面狀態</g>的牌時，將其效果翻倍。"
+      "descI18n": "你在每場戰鬥中第一次打出能給予敵人<g>負面狀態</g>的牌時，將其效果翻倍。",
+      "nameEn": "Unsettling Lamp"
     },
     {
       "className": "Vajra",
@@ -4402,7 +4680,8 @@
       "image": "vajra",
       "imagePath": "/images/relics/vajra.webp",
       "descriptionClean": "在每場戰鬥開始時，獲得1點力量。",
-      "descI18n": "在每場戰鬥開始時，獲得1點<g>力量</g>。"
+      "descI18n": "在每場戰鬥開始時，獲得1點<g>力量</g>。",
+      "nameEn": "Vajra"
     },
     {
       "className": "Vambrace",
@@ -4415,7 +4694,8 @@
       "image": "vambrace",
       "imagePath": "/images/relics/vambrace.webp",
       "descriptionClean": "每場戰鬥中，你第一次從卡牌中獲得的格擋值翻倍。",
-      "descI18n": "每場戰鬥中，你第一次從卡牌中獲得的<g>格擋</g>值翻倍。"
+      "descI18n": "每場戰鬥中，你第一次從卡牌中獲得的<g>格擋</g>值翻倍。",
+      "nameEn": "Vambrace"
     },
     {
       "className": "VelvetChoker",
@@ -4433,7 +4713,8 @@
       "image": "velvet_choker",
       "imagePath": "/images/relics/velvet_choker.webp",
       "descriptionClean": "在每回合開始時獲得1。你每回合不能打出超過6張牌。",
-      "descI18n": "在每回合開始時獲得<e>1</e>。你每回合不能打出超過6張牌。"
+      "descI18n": "在每回合開始時獲得<e>1</e>。你每回合不能打出超過6張牌。",
+      "nameEn": "Velvet Choker"
     },
     {
       "className": "VenerableTeaSet",
@@ -4450,7 +4731,8 @@
       "image": "venerable_tea_set",
       "imagePath": "/images/relics/venerable_tea_set.webp",
       "descriptionClean": "到達休息處後的下一場戰鬥開始時額外獲得2。",
-      "descI18n": "到達<g>休息處</g>後的下一場戰鬥開始時額外獲得<e>2</e>。"
+      "descI18n": "到達<g>休息處</g>後的下一場戰鬥開始時額外獲得<e>2</e>。",
+      "nameEn": "Venerable Tea Set"
     },
     {
       "className": "VeryHotCocoa",
@@ -4467,7 +4749,8 @@
       "image": "very_hot_cocoa",
       "imagePath": "/images/relics/very_hot_cocoa.webp",
       "descriptionClean": "在每場戰鬥的第一回合額外獲得4。",
-      "descI18n": "在每場戰鬥的第一回合額外獲得<e>4</e>。"
+      "descI18n": "在每場戰鬥的第一回合額外獲得<e>4</e>。",
+      "nameEn": "Very Hot Cocoa"
     },
     {
       "className": "VexingPuzzlebox",
@@ -4480,7 +4763,8 @@
       "image": "vexing_puzzlebox",
       "imagePath": "/images/relics/vexing_puzzlebox.webp",
       "descriptionClean": "在每場戰鬥開始時，將一張隨機卡牌加入你的手牌。這張牌在本回合可以免費打出。",
-      "descI18n": "在每場戰鬥開始時，將一張隨機卡牌加入你的<g>手牌</g>。這張牌在本回合可以免費打出。"
+      "descI18n": "在每場戰鬥開始時，將一張隨機卡牌加入你的<g>手牌</g>。這張牌在本回合可以免費打出。",
+      "nameEn": "Vexing Puzzlebox"
     },
     {
       "className": "VitruvianMinion",
@@ -4493,7 +4777,8 @@
       "image": "vitruvian_minion",
       "imagePath": "/images/relics/vitruvian_minion.webp",
       "descriptionClean": "名字中有“僕從”的卡牌造成雙倍的傷害與格擋。",
-      "descI18n": "名字中有“僕從”的卡牌造成雙倍的傷害與<g>格擋</g>。"
+      "descI18n": "名字中有“僕從”的卡牌造成雙倍的傷害與<g>格擋</g>。",
+      "nameEn": "Vitruvian Minion"
     },
     {
       "className": "WarHammer",
@@ -4509,7 +4794,8 @@
       "image": "war_hammer",
       "imagePath": "/images/relics/war_hammer.webp",
       "descriptionClean": "每當你擊敗一名精英敵人的時候，隨機升級4張牌。",
-      "descI18n": "每當你擊敗一名<g>精英</g>敵人的時候，隨機<g>升級</g>4張牌。"
+      "descI18n": "每當你擊敗一名<g>精英</g>敵人的時候，隨機<g>升級</g>4張牌。",
+      "nameEn": "War Hammer"
     },
     {
       "className": "WarPaint",
@@ -4525,7 +4811,8 @@
       "image": "war_paint",
       "imagePath": "/images/relics/war_paint.webp",
       "descriptionClean": "拾起時，隨機升級2張技能牌。",
-      "descI18n": "拾起時，隨機<g>升級</g>2張技能牌。"
+      "descI18n": "拾起時，隨機<g>升級</g>2張技能牌。",
+      "nameEn": "War Paint"
     },
     {
       "className": "Whetstone",
@@ -4541,7 +4828,8 @@
       "image": "whetstone",
       "imagePath": "/images/relics/whetstone.webp",
       "descriptionClean": "拾起時，隨機升級2張攻擊牌。",
-      "descI18n": "拾起時，隨機<g>升級</g>2張攻擊牌。"
+      "descI18n": "拾起時，隨機<g>升級</g>2張攻擊牌。",
+      "nameEn": "Whetstone"
     },
     {
       "className": "WhisperingEarring",
@@ -4558,7 +4846,8 @@
       "image": "whispering_earring",
       "imagePath": "/images/relics/whispering_earring.webp",
       "descriptionClean": "在每個回合開始時，獲得1。瓦庫將接管你的第一回合。",
-      "descI18n": "在每個回合開始時，獲得<e>1</e>。瓦庫將接管你的第一回合。"
+      "descI18n": "在每個回合開始時，獲得<e>1</e>。瓦庫將接管你的第一回合。",
+      "nameEn": "Whispering Earring"
     },
     {
       "className": "WhiteBeastStatue",
@@ -4571,7 +4860,8 @@
       "image": "white_beast_statue",
       "imagePath": "/images/relics/white_beast_statue.webp",
       "descriptionClean": "戰鬥結束後必定掉落藥水。",
-      "descI18n": "戰鬥結束後必定掉落藥水。"
+      "descI18n": "戰鬥結束後必定掉落藥水。",
+      "nameEn": "White Beast Statue"
     },
     {
       "className": "WhiteStar",
@@ -4584,7 +4874,8 @@
       "image": "white_star",
       "imagePath": "/images/relics/white_star.webp",
       "descriptionClean": "精英敵人額外掉落一次稀有卡牌獎勵。",
-      "descI18n": "<g>精英</g>敵人額外掉落一次<g>稀有</g>卡牌獎勵。"
+      "descI18n": "<g>精英</g>敵人額外掉落一次<g>稀有</g>卡牌獎勵。",
+      "nameEn": "White Star"
     },
     {
       "className": "WingCharm",
@@ -4601,7 +4892,8 @@
       "image": "wing_charm",
       "imagePath": "/images/relics/wing_charm.webp",
       "descriptionClean": "每次卡牌獎勵中，都會有隨機一張牌被附魔：迅捷1。",
-      "descI18n": "每次卡牌獎勵中，都會有隨機一張牌被<g>附魔</g>：迅捷1。"
+      "descI18n": "每次卡牌獎勵中，都會有隨機一張牌被<g>附魔</g>：迅捷1。",
+      "nameEn": "Wing Charm"
     },
     {
       "className": "WingedBoots",
@@ -4617,7 +4909,8 @@
       "image": "winged_boots",
       "imagePath": "/images/relics/winged_boots.webp",
       "descriptionClean": "你在選擇下一層的房間時有3次機會可以無視當前的路線。",
-      "descI18n": "你在選擇下一層的房間時有3次機會可以無視當前的路線。"
+      "descI18n": "你在選擇下一層的房間時有3次機會可以無視當前的路線。",
+      "nameEn": "Winged Boots"
     },
     {
       "className": "WongoCustomerAppreciationBadge",
@@ -4630,7 +4923,8 @@
       "image": "wongo_customer_appreciation_badge",
       "imagePath": "/images/relics/wongo_customer_appreciation_badge.webp",
       "descriptionClean": "沒有任何作用。",
-      "descI18n": "沒有任何作用。"
+      "descI18n": "沒有任何作用。",
+      "nameEn": "Wongo Customer Appreciation Badge"
     },
     {
       "className": "WongosMysteryTicket",
@@ -4648,7 +4942,8 @@
       "image": "wongos_mystery_ticket",
       "imagePath": "/images/relics/wongos_mystery_ticket.webp",
       "descriptionClean": "在5場戰鬥後，獲得隨機3件遺物。",
-      "descI18n": "在5場戰鬥後，獲得隨機3件<g>遺物</g>。"
+      "descI18n": "在5場戰鬥後，獲得隨機3件<g>遺物</g>。",
+      "nameEn": "Wongo's Mystery Ticket"
     },
     {
       "className": "YummyCookie",
@@ -4664,7 +4959,9 @@
       "image": "yummy_cookie",
       "imagePath": "/images/relics/yummy_cookie_defect.webp",
       "descriptionClean": "拾起時，升級4張牌。",
-      "descI18n": "拾起時，<g>升級</g>4張牌。"
+      "descI18n": "拾起時，<g>升級</g>4張牌。",
+      "nameEn": "Yummy Cookie"
     }
-  ]
+  ],
+  "englishNameSource": "https://slaythespire2.net/relic"
 }

@@ -1,5 +1,132 @@
+/* Card filters use the same profession palette on desktop and phones. */
+@media screen and (min-width:1025px){
+ html body main#main-content[data-mobile-page=builds]>.character-sidebar{padding-inline:0}
+ html body main#main-content[data-mobile-page=builds]>.character-sidebar .character-nav{
+  display:grid;grid-template-columns:repeat(5,minmax(0,1fr));width:100%
+ }
+ html body main#main-content[data-mobile-page=builds]>.character-sidebar .character-nav a{
+  width:100%!important;min-width:0!important;max-width:none!important;flex:1 1 0!important
+ }
+}
+.card-profession-row,.card-other-row{display:contents;gap:8px}
+@media screen and (min-width:1367px),screen and (min-width:1025px) and (hover:hover),screen and (min-width:1025px) and (pointer:fine){
+ html body main#main-content[data-mobile-page=cards]{
+  display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,3fr);
+  grid-template-rows:minmax(0,1fr);gap:20px;align-items:stretch;overflow:hidden
+ }
+ html body main#main-content[data-mobile-page=cards]>#tools{
+  grid-column:1;grid-row:1;height:100%;max-height:none;min-width:0;
+  overflow:auto;margin:0;padding:12px;border:1px solid #293340;border-radius:10px;background:#080d13
+ }
+ html body main#main-content[data-mobile-page=cards]>#tools:not([hidden]){display:flex;flex-direction:column;align-items:stretch;gap:16px}
+ html body main#main-content[data-mobile-page=cards] #tools :is(.primary-filter-row,.secondary-filter-row){display:contents}
+ html body main#main-content[data-mobile-page=cards] #tools :is(.chips,.filter-cluster,.presentation-controls,.inline-search){
+  flex:0 0 auto!important;width:100%;min-width:0;max-width:100%;margin:0;padding:0;overflow:visible
+ }
+ html body main#main-content[data-mobile-page=cards] #tools .chips{display:flex;flex-direction:column;flex-wrap:nowrap}
+ html body main#main-content[data-mobile-page=cards] #tools .chips>:is(.card-profession-row,.card-other-row,.rarity-buttons){
+  display:flex;flex:0 0 auto;flex-wrap:nowrap;gap:8px;width:100%;min-width:0;max-width:100%;
+  overflow-x:auto;overflow-y:hidden;margin:0;padding:2px
+ }
+ html body main#main-content[data-mobile-page=cards] #tools .rarity-buttons{display:flex;flex-wrap:wrap;gap:8px;min-width:0;max-width:100%}
+ html body main#main-content[data-mobile-page=cards] #tools .chips>.rarity-buttons button{flex:1 0 auto;padding-inline:4px}
+ html body main#main-content[data-mobile-page=cards] #tools .presentation-controls{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;order:5}
+ html body main#main-content[data-mobile-page=cards] #tools .image-size-controls{display:contents}
+ html body main#main-content[data-mobile-page=cards] #tools .presentation-controls button{
+  width:100%;min-width:0;padding:8px 2px;font-size:clamp(12px,1.2vw,20px);justify-content:center
+ }
+ html body main#main-content[data-mobile-page=cards] #tools .inline-search input#search{width:100%;min-width:0;max-width:none;margin:0}
+ html body main#main-content[data-mobile-page=cards] #tools .inline-search{order:-1}
+ html body main#main-content[data-mobile-page=cards] #tools .chips>:is(.card-profession-row,.card-other-row,.rarity-buttons),
+ html body main#main-content[data-mobile-page=cards] #tools .tier-buttons{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;width:100%;padding:0;overflow:visible
+ }
+ html body main#main-content[data-mobile-page=cards] #tools .chips>.card-profession-row,
+ html body main#main-content[data-mobile-page=cards] #tools .tier-buttons{grid-template-columns:repeat(5,minmax(0,1fr))}
+ html body main#main-content[data-mobile-page=cards] #tools .chips button[data-category]{
+  width:100%!important;min-width:0!important;max-width:none!important;padding:0!important
+ }
+ html body main#main-content[data-mobile-page=cards] #tools .chips>.rarity-buttons button{
+  width:100%;min-width:0;padding-inline:2px;font-size:clamp(12px,1vw,18px);line-height:1.25;white-space:normal
+ }
+ html body main#main-content[data-mobile-page=cards] #tools .tier-buttons button{width:100%;min-width:0;padding-inline:2px}
+ html body main#main-content[data-mobile-page=cards] #tools .type-buttons{
+  display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;width:100%
+ }
+ html body main#main-content[data-mobile-page=cards] #tools .type-buttons button{grid-column:span 2;width:100%;min-width:0;padding-inline:2px}
+ html body main#main-content[data-mobile-page=cards] #tools .type-buttons :is(#upgrade-toggle,#aoe-toggle){grid-column:span 3;margin:0}
+ html body main#main-content[data-mobile-page=cards]>#card-scroll{
+  grid-column:2;grid-row:1;height:100%;min-height:0;max-height:none;overflow:auto;margin:0;
+  padding:12px;border:1px solid #293340;border-radius:10px;background:#080d13
+ }
+}
+
+html body main#main-content #tools :is([data-tier-filter=S],[data-type-filter=Attack]){--selection-color:#dc6c68}
+html body main#main-content #tools :is([data-tier-filter=C],[data-type-filter=Power]){--selection-color:#70bf8b}
+html body main#main-content #tools :is([data-rarity-filter=Uncommon],[data-type-filter=Skill]),
+html body main#main-content :is(.relic-filters [data-filter-group=rarity][data-filter-value=Uncommon],.potion-filters [data-rarity-filter=Uncommon]){--selection-color:#6faeee}
+html body main#main-content #tools :is([data-rarity-filter=Rare],[data-tier-filter=A]),
+html body main#main-content :is(.relic-filters [data-filter-group=rarity][data-filter-value=Rare],.potion-filters [data-rarity-filter=Rare]){--selection-color:#e3bf72}
+
+html body main#main-content .split-list .catalog:has(>.entry.monster){grid-template-columns:minmax(0,1fr)!important}
+html body main#main-content #upgrade-toggle .desktop-upgrade-icon,
+html body main#main-content #aoe-toggle>span[aria-hidden=true]{display:none}
+html body main#main-content .relic-filters>.relic-menu-row{
+ display:flex;flex-direction:column;flex-wrap:nowrap;gap:16px;grid-column:1/-1;grid-row:2;
+ width:100%;max-width:100%;min-width:0;overflow-x:auto;overflow-y:hidden;flex-shrink:0;padding:2px 0
+}
+html body main#main-content[data-mobile-page=relic] .relic-filters>.relic-menu-row>.relic-filter-group{
+ display:flex!important;flex:0 0 auto!important;flex-wrap:nowrap!important;
+ width:100%!important;max-width:100%!important;justify-content:flex-start;gap:8px
+}
+html body main#main-content .relic-filters>.relic-menu-row button{flex:1 1 0;min-width:0;justify-content:center;white-space:nowrap}
+html body main#main-content .relic-filters>.relic-menu-row button[data-filter-group=pool]{flex:1 1 0!important;width:auto!important;min-width:0!important;max-width:none!important}
+html body main#main-content .relic-filters>.catalog-search-tools{grid-column:1/-1;grid-row:1}
+html body main#main-content .tools .chips>.rarity-buttons{
+ display:flex;flex:0 1 auto;flex-wrap:wrap;gap:8px;margin-left:12px
+}
+
+/* Match relic/potion control sizing across the other catalogs. */
+html body main#main-content:is([data-mobile-page=event],[data-mobile-page=monster],[data-mobile-page=ancient])>.filters.chapter-filters .chapter-filter-group button{
+ font-size:20px;min-height:48px;padding:8px 14px
+}
+html body main#main-content:is([data-mobile-page=event],[data-mobile-page=monster],[data-mobile-page=ancient]) .split-body .split-list .compact-detail-item[data-detail-key]{
+ min-height:48px;padding:8px 14px
+}
+html body main#main-content:is([data-mobile-page=event],[data-mobile-page=monster],[data-mobile-page=ancient]) .split-body .split-list .compact-detail-name{
+ font-size:21px!important;line-height:1.45
+}
+
+/* Compact catalog filters on phones and tablets, including iPad landscape. */
+@media screen and (max-width:1024px),screen and (max-width:1366px) and (hover:none) and (pointer:coarse){
+ html body main#main-content:is([data-mobile-page=event],[data-mobile-page=monster],[data-mobile-page=ancient])>.filters.chapter-filters .chapter-filter-group button{
+  font-size:16px;min-height:44px;padding:8px 10px
+ }
+}
+/* Profession menus show icons at every viewport size. */
+html body main#main-content .chips button[data-category][hidden]{display:none!important}
+:root{--profession-button-size:48px;--profession-icon-size:28px;--profession-button-gap:8px}
+ html body main#main-content .tools .chips button[data-category],
+ html body main#main-content .relic-filters button[data-filter-group=pool],
+ html body main#main-content .character-sidebar .character-nav a{
+  display:inline-flex;align-items:center;justify-content:center;
+  box-sizing:border-box;flex:0 0 var(--profession-button-size)!important;
+  width:var(--profession-button-size)!important;min-width:var(--profession-button-size)!important;max-width:var(--profession-button-size)!important;
+  height:var(--profession-button-size)!important;min-height:var(--profession-button-size)!important;max-height:var(--profession-button-size)!important;
+  padding:9px!important;gap:0!important;font-size:0!important;border-radius:7px
+ }
+ html body main#main-content .character-sidebar .sidebar-character-text{display:none}
+ html body main#main-content :is(.tools .chips button[data-category],.relic-filters button[data-filter-group=pool],.character-sidebar .character-nav a) img{
+  width:var(--profession-icon-size)!important;height:var(--profession-icon-size)!important;
+  flex:0 0 var(--profession-icon-size);object-fit:contain;margin:0
+ }
+ html body main#main-content :is(.tools .chips,.relic-filters .relic-filter-group:has([data-filter-group=pool]),.character-sidebar .character-nav){gap:var(--profession-button-gap)!important}
+@media screen and (max-width:640px){
+ html body main#main-content:is([data-mobile-page=event],[data-mobile-page=monster],[data-mobile-page=ancient]) .split-body .split-list .compact-detail-name{font-size:20px!important}
+}
+
 /* Compact navigation and one scrolling content area on phones. */
-@media screen and (max-width:760px){
+@media screen and (max-width:1024px),screen and (max-width:1366px) and (hover:none) and (pointer:coarse){
  .site-header>.site-header-inner{width:100%;min-height:52px;padding:4px 8px;flex-wrap:nowrap;gap:4px}
  .site-header .site-brand{min-height:44px;flex:0 0 36px;gap:0}
  .site-header .site-brand>span,.site-header .site-nav a>span:not([aria-hidden]){display:none}
@@ -26,20 +153,23 @@
  main#main-content .tools{display:flex;flex-wrap:wrap;align-items:center;gap:16px 20px}
  main#main-content .tools[hidden]{display:none}
  main#main-content .tools .chips{display:flex;flex:1 0 100%;flex-wrap:wrap;gap:8px}
- main#main-content .tools .primary-filter-row .chips button{display:flex;align-items:center;justify-content:center;min-width:44px;padding:8px;font-size:0;gap:0}
+ main#main-content .tools .primary-filter-row .chips button[data-category]{display:flex;align-items:center;justify-content:center;min-width:44px;padding:8px;font-size:0;gap:0}
  main#main-content .tools .pool-icon{width:26px;height:26px;margin:0}
  main#main-content .tools .primary-filter-row .presentation-controls{display:none}
  main#main-content .tools .filter-cluster{margin:0;flex:0 1 auto;max-width:100%}
  main#main-content .tools :is(.rarity-buttons,.type-buttons){display:flex;flex-wrap:wrap;gap:6px}
- main#main-content #tools button:is([data-category],[data-rarity-filter],[data-tier-filter],[data-type-filter])[aria-pressed=true]{background:var(--control-color)!important;border-color:var(--control-color)!important;color:#fff!important;box-shadow:none!important}
  main#main-content .tools button{font-size:16px;min-height:44px;padding:8px 10px}
  main#main-content .tools :is(#upgrade-toggle,#aoe-toggle){font-size:0;min-width:44px;margin:0}
  main#main-content .tools :is(#upgrade-toggle,#aoe-toggle)>span{font-size:24px;line-height:1}
  main#main-content .tools #aoe-toggle{height:var(--control-height,48px);min-height:var(--control-height,48px)}
+ main#main-content .tools #aoe-toggle>span[aria-hidden=true]{display:none}
+ main#main-content .tools #aoe-toggle .mobile-toggle-label{display:inline;font-size:16px;line-height:1}
  main#main-content .tools #upgrade-toggle .desktop-upgrade-icon{display:none}
  main#main-content .tools #upgrade-toggle .mobile-upgrade-icon{display:inline}
  main#main-content .build-layout{display:block}
- main#main-content.detail-split{display:block!important;overflow:auto!important}
+ html body main#main-content.detail-split[data-mobile-page]{
+  display:block!important;overflow-x:hidden!important;overflow-y:auto!important
+ }
  main#main-content .split-body{display:block;overflow:visible}
  main#main-content .split-list,main#main-content .split-list>.catalog-scroll{display:block;height:auto;max-height:none;overflow:visible}
  main#main-content .split-list .catalog,main#main-content .split-list .container>.grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
@@ -61,3 +191,138 @@
  main#main-content :is(section,[id^=card-],[id^=build-]){scroll-margin-top:72px}
 }
 .mobile-upgrade-icon{display:none}
+.mobile-build-heading{
+ display:flex;align-items:center;gap:10px;margin:0 0 24px;color:var(--accent);
+ font-size:24px;line-height:1.4;text-align:left
+}
+html body main#main-content .mobile-build-heading .build-tier{
+ flex-shrink:0;color:var(--accent);background:color-mix(in srgb,var(--accent) 20%,#0d131a);
+ border:1px solid var(--accent);font-size:20px
+}
+
+@media screen and (min-width:600px) and (max-width:1024px),screen and (min-width:600px) and (max-width:1366px) and (hover:none) and (pointer:coarse){
+ html body main#main-content[data-mobile-page=cards] .card-scroll tbody{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important
+ }
+}
+
+@media screen and (max-width:1024px),screen and (max-width:1366px) and (hover:none) and (pointer:coarse){
+ html body main#main-content[data-mobile-page=cards] .card-scroll section[data-pool]{
+  padding:12px;border:1px solid var(--accent);border-radius:12px;
+  background:color-mix(in srgb,var(--accent) 3%,var(--bg,#040609))
+ }
+ html body main#main-content[data-mobile-page=cards] .grid-pool-heading{
+  position:sticky;top:var(--mobile-search-height,65px);z-index:90;
+  margin:-12px -12px 16px;padding:12px;background:#080d13;
+  border:0;border-radius:12px 12px 0 0
+ }
+ html body main#main-content[data-mobile-page=cards] .card-scroll tbody{
+  grid-template-columns:minmax(0,1fr);gap:16px
+ }
+ html body main#main-content[data-mobile-page=cards] .card-scroll tbody tr{
+  padding:0 0 10px;border:0;border-radius:0;background:transparent;outline:none
+ }
+ html body main#main-content[data-mobile-page=cards] .card-scroll td[data-field=builds]{display:none!important}
+ html body main#main-content:is([data-mobile-page=relic],[data-mobile-page=potion],[data-mobile-page=event],[data-mobile-page=monster]) .filters button:is([data-filter-group],[data-rarity-filter])[aria-pressed=true]{
+  background:color-mix(in srgb,var(--control-color) 85%,#000)!important;
+  border-color:color-mix(in srgb,var(--control-color) 85%,#000)!important
+ }
+ html body main#main-content[data-mobile-page=cards] #tools [data-rarity-filter=Common]{--selection-color:#828e9c}
+ html body main#main-content[data-mobile-page=cards] #tools [data-rarity-filter=Ancient]{--selection-color:#9c74c4}
+ /* Keep build choices visible below the pinned character icons. */
+ html body main#main-content[data-mobile-page=builds]>.character-sidebar{
+  position:sticky;top:0;z-index:95;margin:0 -12px 16px;padding:10px 12px;
+  width:calc(100% + 24px);background:#040609;border-bottom:1px solid #293340
+ }
+ html body main#main-content[data-mobile-page=builds] .character-nav{
+  display:flex;flex-wrap:nowrap;justify-content:center;gap:8px
+ }
+ html body main#main-content[data-mobile-page=builds] .character-nav a{
+  flex:0 1 52px;min-width:44px;min-height:48px;padding:8px;gap:0
+ }
+ html body main#main-content[data-mobile-page=builds] .sidebar-character-text{display:none}
+ html body main#main-content[data-mobile-page=builds] .sidebar-character-icon{width:28px;height:28px}
+ html body main#main-content[data-mobile-page=builds]>.tier-sidebar{
+  max-height:none;overflow:visible;margin:0 0 20px;padding:0
+ }
+ html body main#main-content[data-mobile-page=builds] .tier-index{
+  display:flex;flex-wrap:wrap;gap:8px;overflow:visible;padding:0;width:100%
+ }
+ html body main#main-content[data-mobile-page=builds] .tier-sidebar .tier-index-item{
+  flex:0 0 100%;width:100%;min-width:0;max-width:100%;
+  justify-content:flex-start;text-align:left;white-space:normal;overflow-wrap:anywhere
+ }
+ html body main#main-content[data-mobile-page=builds] .mobile-build-heading{
+  display:flex;align-items:center;gap:10px;
+  margin:calc(-1 * var(--panel-padding,20px)) calc(-1 * var(--panel-padding,20px)) 24px;color:var(--accent);
+  font-size:24px;line-height:1.4;text-align:left;position:sticky;
+  top:var(--mobile-character-height,69px);z-index:90;padding:10px var(--panel-padding,20px);
+  background:#141b24;border:0;border-radius:8px 8px 0 0
+ }
+ html body main#main-content[data-mobile-page=builds] .mobile-build-heading .build-tier{
+  flex-shrink:0;color:var(--accent);background:color-mix(in srgb,var(--accent) 20%,#0d131a);
+  border:1px solid var(--accent);font-size:20px
+ }
+ html body main#main-content[data-mobile-page=builds] .build-pair-images{
+  grid-template-columns:minmax(0,1fr)
+ }
+ /* Reset desktop fixed-width filter rows so the shared menu can wrap. */
+ html body main#main-content:is([data-mobile-page=relic],[data-mobile-page=potion],[data-mobile-page=event])>.filters{
+  display:flex;flex-direction:column;flex-wrap:wrap;align-items:stretch;gap:16px;
+  width:100%;max-width:100%;margin:16px 0 24px;overflow:visible
+ }
+ html body main#main-content:is([data-mobile-page=relic],[data-mobile-page=potion],[data-mobile-page=event])[data-mobile-filters-open=false]>.mobile-filter-panel{display:none}
+ html body main#main-content:is([data-mobile-page=relic],[data-mobile-page=potion],[data-mobile-page=event])>.filters :is(.relic-filter-group,.potion-rarities,.chapter-filter-group){
+  display:flex;flex:0 1 auto;flex-wrap:wrap!important;justify-content:flex-start;gap:8px;
+  width:100%!important;max-width:100%!important;min-width:0;margin:0
+ }
+ html body main#main-content:is([data-mobile-page=relic],[data-mobile-page=potion],[data-mobile-page=event])>.filters button{
+  min-height:44px;padding:8px 10px;font-size:16px;white-space:normal
+ }
+ html body main#main-content[data-mobile-page=relic]>.relic-filters button[data-filter-group=pool]{
+  min-width:44px;padding:8px;font-size:0;gap:0
+ }
+ html body main#main-content[data-mobile-page=relic]>.relic-filters .relic-filter-group:has([data-filter-group=pool]){
+  display:grid;grid-template-columns:repeat(5,max-content)
+ }
+ html body main#main-content[data-mobile-page=relic]>.relic-filters [data-filter-group=pool][data-filter-value=Shared]{grid-column:1}
+ html body main#main-content[data-mobile-page=relic]>.relic-filters .relic-filter-group:has([data-filter-group=rarity]){
+  display:grid;grid-template-columns:repeat(4,max-content)
+ }
+ html body main#main-content[data-mobile-page=relic]>.relic-filters [data-filter-group=rarity][data-filter-value=Shop]{grid-column:1}
+ html body main#main-content:is([data-mobile-page=relic],[data-mobile-page=potion])>.catalog-scroll{
+  width:100%;max-width:none;align-self:stretch;margin:0;padding:0
+ }
+ html body main#main-content:is([data-mobile-page=relic],[data-mobile-page=potion]) :is(.relic-section-title,.potion-section-title){
+  position:sticky;top:var(--mobile-search-height,65px);z-index:90;
+  margin:-12px -12px 16px;padding:12px;background:#080d13;border:0;border-radius:12px 12px 0 0
+ }
+ html body main#main-content:is([data-mobile-page=relic],[data-mobile-page=potion],[data-mobile-page=event]) .catalog{
+  grid-template-columns:minmax(0,1fr)!important;width:100%;min-width:0
+ }
+ html body main#main-content[data-mobile-page=event] .split-list{
+  min-width:0;min-height:0;width:100%;padding:12px
+ }
+ html body main#main-content[data-mobile-page=event] .chapter-section{min-width:0;padding:12px}
+}
+
+/* Cards and builds use the ancient tier colors on every device. */
+
+:root{--catalog-tier-S:color-mix(in oklab,lab(56.101% 79.4328 31.4532) 90%,transparent);--catalog-tier-A:color-mix(in oklab,lab(64.272% 57.1788 90.3583) 90%,transparent);--catalog-tier-B:color-mix(in oklab,lab(63.3038% -18.433 -51.0407) 90%,transparent);--catalog-tier-C:color-mix(in oklab,lab(66.9756% -58.27 19.5419) 90%,transparent);--catalog-tier-D:#788491}
+html body main#main-content:is([data-mobile-page=cards],[data-mobile-page=builds]) :is(.tier,.build-tier,.card-tier-badge)[data-tier=S]{--tier-color:var(--catalog-tier-S);background:var(--tier-color);color:#fff;border-color:var(--tier-color)}
+html body main#main-content[data-mobile-page=cards] #tools button[data-tier-filter=S]{--tier-color:var(--catalog-tier-S);--selection-color:var(--tier-color)}
+html body main#main-content:is([data-mobile-page=cards],[data-mobile-page=builds]) :is(.tier,.build-tier,.card-tier-badge)[data-tier=A]{--tier-color:var(--catalog-tier-A);background:var(--tier-color);color:#fff;border-color:var(--tier-color)}
+html body main#main-content[data-mobile-page=cards] #tools button[data-tier-filter=A]{--tier-color:var(--catalog-tier-A);--selection-color:var(--tier-color)}
+html body main#main-content:is([data-mobile-page=cards],[data-mobile-page=builds]) :is(.tier,.build-tier,.card-tier-badge)[data-tier=B]{--tier-color:var(--catalog-tier-B);background:var(--tier-color);color:#fff;border-color:var(--tier-color)}
+html body main#main-content[data-mobile-page=cards] #tools button[data-tier-filter=B]{--tier-color:var(--catalog-tier-B);--selection-color:var(--tier-color)}
+html body main#main-content:is([data-mobile-page=cards],[data-mobile-page=builds]) :is(.tier,.build-tier,.card-tier-badge)[data-tier=C]{--tier-color:var(--catalog-tier-C);background:var(--tier-color);color:#fff;border-color:var(--tier-color)}
+html body main#main-content[data-mobile-page=cards] #tools button[data-tier-filter=C]{--tier-color:var(--catalog-tier-C);--selection-color:var(--tier-color)}
+html body main#main-content:is([data-mobile-page=cards],[data-mobile-page=builds]) :is(.tier,.build-tier,.card-tier-badge)[data-tier=D]{--tier-color:var(--catalog-tier-D);background:var(--tier-color);color:#fff;border-color:var(--tier-color)}
+html body main#main-content[data-mobile-page=cards] #tools button[data-tier-filter=D]{--tier-color:var(--catalog-tier-D);--selection-color:var(--tier-color)}
+
+/* Align ancient names to the left beside the fixed icon column. */
+html body main#main-content[data-mobile-page=ancient] .split-list .compact-detail-item{display:grid;grid-template-columns:48px minmax(0,1fr);align-items:center;text-align:left}
+html body main#main-content[data-mobile-page=ancient] .split-list .compact-detail-image{grid-column:1;grid-row:1;justify-self:start}
+html body main#main-content[data-mobile-page=ancient] .split-list .compact-detail-name{grid-column:2;grid-row:1;width:100%;min-width:0;margin:0;text-align:left}
+
+html body main#main-content[data-mobile-page=ancient] .ancient-act-title{justify-content:flex-start;text-align:left}

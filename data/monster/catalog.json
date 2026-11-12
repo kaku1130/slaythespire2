@@ -1064,54 +1064,6 @@
       ]
     },
     {
-      "className": "Byrdpip",
-      "id": "BYRDPIP",
-      "minHp": 9999,
-      "maxHp": 9999,
-      "flow": {
-        "initial": "NOTHING",
-        "phases": [
-          {
-            "condition": null,
-            "parsed": null,
-            "entry": "NOTHING",
-            "steps": [
-              {
-                "kind": "move",
-                "id": "NOTHING"
-              },
-              {
-                "kind": "loop",
-                "to": "NOTHING"
-              }
-            ]
-          }
-        ]
-      },
-      "name": "異鳥寶寶",
-      "image": "/images/monsters/byrdpip.webp",
-      "slug": "byrdpip",
-      "acts": [
-        "act1a"
-      ],
-      "encounterType": "summon",
-      "companions": [
-        "BYRDONIS"
-      ],
-      "encounters": [
-        {
-          "id": "(summoned by Byrdonis)",
-          "type": "summon",
-          "act": "act1a",
-          "monsters": [
-            "BYRDONIS",
-            "BYRDPIP"
-          ]
-        }
-      ],
-      "moves": []
-    },
-    {
       "className": "CalcifiedCultist",
       "id": "CALCIFIED_CULTIST",
       "minHp": 38,
@@ -6491,54 +6443,6 @@
           ]
         }
       ]
-    },
-    {
-      "className": "Osty",
-      "id": "OSTY",
-      "minHp": 1,
-      "maxHp": 1,
-      "flow": {
-        "initial": "NOTHING",
-        "phases": [
-          {
-            "condition": null,
-            "parsed": null,
-            "entry": "NOTHING",
-            "steps": [
-              {
-                "kind": "move",
-                "id": "NOTHING"
-              },
-              {
-                "kind": "loop",
-                "to": "NOTHING"
-              }
-            ]
-          }
-        ]
-      },
-      "name": "奧斯提",
-      "image": "/images/monsters/osty.webp",
-      "slug": "osty",
-      "acts": [
-        "act2"
-      ],
-      "encounterType": "summon",
-      "companions": [
-        "ENTOMANCER"
-      ],
-      "encounters": [
-        {
-          "id": "(summoned by Entomancer)",
-          "type": "summon",
-          "act": "act2",
-          "monsters": [
-            "ENTOMANCER",
-            "OSTY"
-          ]
-        }
-      ],
-      "moves": []
     },
     {
       "className": "Ovicopter",
