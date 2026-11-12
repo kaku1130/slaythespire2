@@ -17,8 +17,8 @@ const tiers = new Map(tierSource.rankings.map(c=>[c.id,c.tier]));
 const categories = ['Ironclad', 'Silent', 'Defect', 'Regent', 'Necrobinder', 'Colorless', 'Curse', 'Event', 'Quest'];
 const categoryMenu=categories;
 function renderCategoryFilter(pool, iconOnly = false) {
-  const label = ['Colorless','Curse','Event','Quest'].includes(pool) ? pool : poolLabels[pool];
-  const icon = ['Curse','Event','Quest'].includes(pool) ? '' : '<img class="pool-icon" src="'+poolIcons[pool]+'" alt="" width="20" height="20">';
+  const label = poolLabels[pool];
+  const icon = ['Colorless','Curse','Event','Quest'].includes(pool) ? '' : '<img class="pool-icon" src="'+poolIcons[pool]+'" alt="" width="20" height="20">';
   const accessibleName = iconOnly ? ' aria-label="'+label+'" title="'+label+'"' : '';
   const text = iconOnly ? '<span class="profession-filter-label">'+label+'</span>' : label;
   return '<button type="button" data-category="'+pool+'" style="--accent:'+poolColors[pool]+'" aria-pressed="false"'+accessibleName+'>'+icon+text+'</button>';
