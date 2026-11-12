@@ -39,7 +39,7 @@ function renderGuide(g,full=false){
  return '<article class="build-panel'+(full?' full-guide':'')+'" id="build-'+key+'" data-search="'+esc(search)+'"'+(guide.builds.find(first=>first.characterPool===g.characterPool).id!==g.id?' hidden':'')+'><div class="build-details"><div class="build-overview"><div class="build-explanation"><div class="guide-strategy"><h4>玩法思路</h4><p>'+renderLinkedStrategy(g.playstyle,g)+'</p></div><div class="guide-rationale"><h4>為什麼是 '+g.tier+' 級</h4><p>'+renderLinkedStrategy(g.rationale,g)+'</p></div></div><div class="build-tradeoffs"><div><h4>優點</h4><p>'+esc(g.strength)+'</p></div><div><h4>缺點</h4><p>'+esc(g.weakness)+'</p></div></div>'+'</div><div class="build-resources"><div class="build-deck-groups"><div class="build-card-group"><h4>核心卡片</h4><div class="build-card-pairs">'+renderCards(b.core)+'</div></div><div class="build-card-group"><h4>輔助卡片</h4><div class="build-card-pairs">'+renderCards(b.support)+'</div></div></div><div class="relic-group"><h4>關鍵遺物</h4>'+(g.relics.length?'<ul class="relic-list">'+g.relics.map(r=>'<li><img class="relic-icon" src="'+relicIcon(r)+'" alt="" width="40" height="40"><div class="relic-content"><strong>'+esc(r.name)+'</strong><div class="relic-effect">'+rich(r.description)+'</div></div></li>').join('')+'</ul>':'<p class="no-relics">原站未列出指定遺物。</p>')+'</div></div></div></article>';
 }
 function characterFile(pool){return '#character-'+iconName[pool];}
-function characterNav(active='Ironclad'){return '<nav class="character-nav" aria-label="流派角色">'+pools.map(([pool,label,color])=>{const icon='data:image/webp;base64,'+fs.readFileSync('assets/cards/icons/'+iconName[pool]+'.webp').toString('base64');return '<a href="'+characterFile(pool)+'" data-character="'+pool+'" style="--accent:'+color+'"'+(active===pool?' aria-current="page"':'')+'><img class="sidebar-character-icon" src="'+icon+'" alt="" width="32" height="32"><span class="sidebar-character-text"><span class="sidebar-character-zh">'+label+'</span><span class="sidebar-character-en" lang="en">'+pool+'</span></span></a>';}).join('')+'</nav>';}
+function characterNav(active='Ironclad'){return '<nav class="character-nav" aria-label="流派角色">'+pools.map(([pool,label,color])=>{const icon='data:image/webp;base64,'+fs.readFileSync('assets/cards/icons/'+iconName[pool]+'.webp').toString('base64');return '<a href="'+characterFile(pool)+'" data-character="'+pool+'" aria-label="'+label+'" title="'+label+'" style="--accent:'+color+'"'+(active===pool?' aria-current="page"':'')+'><img class="sidebar-character-icon" src="'+icon+'" alt="" width="32" height="32"><span class="sidebar-character-text"><span class="sidebar-character-zh">'+label+'</span><span class="sidebar-character-en" lang="en">'+pool+'</span></span></a>';}).join('')+'</nav>';}
 
 function renderRanking(pool){const selected=guide.builds.filter(g=>g.characterPool===pool);return '<nav class="tier-index" aria-label="流派評級總覽">'+selected.map(g=>'<a class="tier-index-item" href="#build-'+g.character+'-'+g.id+'" aria-label="'+esc(g.name)+'，'+g.tier+' 級"><span class="build-tier" data-tier="'+g.tier+'" aria-hidden="true">'+g.tier+'</span><span class="tier-index-name">'+esc(g.name)+'</span></a>').join('')+'</nav>';}
 
@@ -139,8 +139,62 @@ main#main-content .tier-sidebar .tier-index-name{font:inherit}
 
 
 /* Center menus and keep each guide in a single readable column. */
-@media screen and (min-width:761px){main#main-content>.tier-sidebar{width:50%;align-self:center;margin-inline:auto;padding-inline:0}main#main-content>.tier-sidebar .tier-index{align-items:stretch}main#main-content>.tier-sidebar .tier-index-item{flex:1 1 240px;min-width:0;justify-content:center;white-space:normal}}
-@media screen and (min-width:761px){main#main-content>.character-sidebar{width:50%;align-self:center;margin-inline:auto;padding-inline:0}}
+@media screen and (min-width:761px) {
+  main#main-content:has(>.tier-sidebar:not([hidden])) {
+    overflow-y: auto;
+  }
+
+  main#main-content>.tier-sidebar {
+    width: 50%;
+    height: auto;
+    max-height: none;
+    align-self: center;
+    margin-inline: auto;
+    padding-inline: 0;
+    overflow: visible;
+  }
+
+  main#main-content>.tier-sidebar .tier-index {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
+
+  html body main#main-content>.tier-sidebar .tier-index a.tier-index-item {
+    flex: 0 0 auto;
+    min-width: 0;
+    justify-content: flex-start;
+    text-align: left;
+    white-space: normal;
+  }
+}
+@media screen and (min-width:761px) {
+  main#main-content>.character-sidebar {
+    width: 50%;
+    align-self: center;
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+
+  main#main-content>.character-sidebar .character-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  main#main-content>.character-sidebar .character-nav a {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    padding: 8px;
+  }
+
+  main#main-content>.character-sidebar .sidebar-character-text {
+    display: none;
+  }
+}
 main#main-content>.character-sidebar .character-nav,main#main-content>.tier-sidebar .tier-index{justify-content:center}
 main#main-content>.build-layout .build-content{width:50%;justify-self:center}
 main#main-content .build-content .build-section{width:100%;min-width:0}
@@ -194,6 +248,6 @@ window.addEventListener('hashchange',applyBuildRoute);
 applyBuildRoute();
 
 </script></body></html>`;
-fs.writeFileSync('builds.html',navigation.openPageLinksInNewTab(html));
+require('../cards/desktop-page-css.cjs').writeDesktopPage('builds.html',navigation.openPageLinksInNewTab(html));
 console.log('Created local Builds page: 25 builds.');
 

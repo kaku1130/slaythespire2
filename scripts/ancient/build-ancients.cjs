@@ -4,6 +4,7 @@ const data=JSON.parse(fs.readFileSync('data/ancient/catalog.json')),assets=requi
 const list='ancient.html';
 function local(url,prefix){if(url==='/zh-TW/ancient'||url==='https://slaythespire2.net/zh-TW/ancient')return prefix+list;const match=url.match(/^(?:https:\/\/slaythespire2.net)?\/zh-TW\/ancient\/([^/#?]+)$/);if(match&&data.slugs.includes(match[1]))return prefix+'data/ancient/ancient-'+match[1]+'.html';if(url.startsWith('/'))return 'https://slaythespire2.net'+url;return url;}
 for(const slug of [null,...data.slugs]){const prefix=slug?'../../':'',file=slug?'data/ancient/ancient-'+slug+'.html':list,source=fs.readFileSync(slug?'data/ancient/source/'+slug+'.html':'data/ancient/source/index.html','utf8');let main=source.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)[1];main=main.replace(/<script\b[\s\S]*?<\/script>/gi,'').replace(/\son\w+="[^"]*"/gi,'').replace(/<button\b[\s\S]*?<\/button>/g,'').replace(/\s(?:srcset|srcSet)="[^"]*"/g,'').replace(/src="([^"]+)"/g,(_,u)=>{u=u.replace(/&amp;/g,'&');if(u.startsWith('data:'))return 'src="'+u+'"';if(!assets[u])throw Error('Uncached image '+u);return 'src="'+prefix+assets[u]+'"';}).replace(/href="([^"]+)"/g,(_,u)=>'href="'+local(u,prefix)+'"');
+if(slug)main=require('./desktop-ancient.cjs').removeDialogue(main);
 if(slug)main=require('../cards/detail-card-database.cjs').replaceCards(main);
 main=main.replaceAll('loading="lazy"','loading="eager"');
 main=require('./tier-colors.cjs')(main);
@@ -18,3 +19,5 @@ function update(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){if
 console.log('Built ancient index and '+data.slugs.length+' detail pages.');
 
 require('../event/catalog-detail-pane.cjs').build('ancient');
+const desktopHtml = fs.readFileSync(list, 'utf8').replace('</body>', '<link rel="stylesheet" href="assets/ancient/ancient-desktop.css"></body>');
+require('../cards/desktop-page-css.cjs').writeDesktopPage(list, desktopHtml);

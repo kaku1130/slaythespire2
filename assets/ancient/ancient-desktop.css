@@ -1,0 +1,51 @@
+.ancient-desktop-menu { display: none; }
+
+@media screen and (min-width:1367px), screen and (min-width:1025px) and (hover:hover), screen and (min-width:1025px) and (pointer:fine) {
+  html body main#main-content.ancient-browser .split-body {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-inline: auto;
+    gap: var(--group-gap, 16px);
+  }
+
+  html body main#main-content.ancient-browser .split-list {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  html body main#main-content.ancient-browser .split-list:has(>.ancient-desktop-menu)>:not(.ancient-desktop-menu) {
+    display: none;
+  }
+
+  html body main#main-content.ancient-browser .ancient-desktop-menu {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: var(--control-gap, 8px);
+  }
+
+  html body main#main-content.ancient-browser .ancient-desktop-menu a {
+    min-width: 0;
+    justify-content: center;
+    padding-inline: 4px;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+
+
+  html body main#main-content.ancient-browser .ancient-desktop-menu a.is-detail-selected {
+    border-color: #37a8ec;
+    background: #163047;
+  }
+
+  html body main#main-content.ancient-browser .split-detail {
+    flex: 1 1 0;
+    width: 100%;
+    min-height: 0;
+    margin: 0;
+  }
+
+  html body main#main-content.ancient-browser .split-detail:has(iframe[hidden]) {
+    display: none;
+  }
+}

@@ -55,7 +55,9 @@ for(const kind of ['event','monster'].filter(kind=>!only||kind===only)){
 
 for(const kind of ['event','monster'].filter(kind=>!only||kind===only)){const name=file(kind);let html=fs.readFileSync(name,'utf8');if(!html.includes('href="assets/cards/mobile-layout.css"'))html=html.replace(/<body\b/,'<link rel="stylesheet" href="assets/cards/mobile-layout.css"><body');if(!html.includes('src="assets/cards/mobile-layout.js"'))html=html.replace('</body>','<script src="assets/cards/mobile-layout.js"></script></body>');fs.writeFileSync(name,html);}
 
-for(const kind of Object.keys(kinds).filter(kind=>!only||kind===only)){const name=file(kind);let html=fs.readFileSync(name,'utf8');if(!html.includes('src="assets/cards/search-controls.js"'))html=html.replace('</body>','<script src="assets/cards/search-controls.js"></script></body>');fs.writeFileSync(name,html);}
+for(const kind of Object.keys(kinds).filter(kind=>!only||kind===only)){const name=file(kind);let html=fs.readFileSync(name,'utf8');if(!html.includes('src="assets/cards/search-controls.js"'))html=html.replace('</body>','<script src="assets/cards/search-controls.js"></script></body>');if(kind==='event') html=html.replace('</body>','<link rel="stylesheet" href="assets/event/event-desktop.css"></body>');
+ if(kind==='monster') html=html.replace('</body>','<link rel="stylesheet" href="assets/monster/monster-desktop.css"></body>');
+ require('../cards/desktop-page-css.cjs').writeDesktopPage(name,html);}
 }
 module.exports=buildCatalogs;
 if(require.main===module)buildCatalogs();

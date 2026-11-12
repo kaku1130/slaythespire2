@@ -1,0 +1,36 @@
+/* Desktop monster flow */
+html body main#main-content.monster-browser[data-monster-step] .split-body {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 0;
+  margin-inline: auto;
+  gap: var(--group-gap, 16px);
+}
+html body main#main-content.monster-browser[data-monster-step] .split-list {
+  flex: 0 1 auto;
+  width: 100%;
+  min-width: 0;
+}
+html body main#main-content.monster-browser[data-monster-step=list] .split-list {
+  flex: 1 1 auto;
+}
+html body main#main-content.monster-browser[data-monster-step]:not([data-monster-step=list]) :is(.monster-choices,#empty) {
+  display: none;
+}
+html body main#main-content.monster-browser[data-monster-step] .split-detail {
+  flex: 1 1 0;
+  height: auto;
+  width: 100%;
+  margin: 0;
+}
+
+html body main#main-content.monster-browser[data-monster-step] .monster-chapter-options {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+html body main#main-content.monster-browser[data-monster-step] .monster-chapter-options button[data-filter-group=acts] {
+  font-size: clamp(13px, 1.25vw, 18px);
+  padding-inline: 4px;
+  white-space: nowrap;
+}

@@ -54,9 +54,40 @@
   list.replaceChildren(filters, choices, empty);
   filters.prepend(search);
   detail.hidden = true;
-  let chapter = 'act1a';
-  const types = new Set(kind === 'monster' ? ['elite', 'boss'] : []);
+  const compact = matchMedia('(max-width:1024px), (max-width:1366px) and (hover:none) and (pointer:coarse)');
+  const desktop = () => !compact.matches;
+  const chapterLabels = new Map(buttons
+    .filter(button => button.dataset.filterGroup === 'acts')
+    .map(button => [button, button.textContent]));
+  const step = kind === 'event' ? 'eventStep' : 'monsterStep';
+  let chapter = kind === 'event' && desktop() ? null : 'act1a';
+  const types = new Set(kind === 'monster' && !desktop() ? ['elite', 'boss'] : []);
+
+  function showSelectionList() {
+    const ready = kind === 'event' ? chapter !== null : types.size > 0;
+    main.dataset[step] = ready ? 'list' : kind === 'event' ? 'chapter' : 'strength';
+    detail.hidden = true;
+    choices.scrollTop = 0;
+    for (const entry of entries) {
+      entry.classList.remove('is-detail-selected');
+      entry.removeAttribute('aria-current');
+      entry.setAttribute('aria-pressed', 'false');
+    }
+  }
+
+  if (desktop()) showSelectionList();
+  compact.addEventListener('change', () => {
+    if (desktop()) showSelectionList();
+    else {
+      delete main.dataset[step];
+      chapter ??= 'act1a';
+    }
+    filter();
+  });
   function filter() {
+    for (const [button, label] of chapterLabels) {
+      button.textContent = desktop() ? label.replaceAll('・', '') : label;
+    }
     const query = search.value.trim().toLowerCase();
     const chapterButton = buttons.find(button => button.dataset.filterGroup === 'acts' && button.dataset.filterValue === chapter);
     const chapterColor = chapterButton?.style.getPropertyValue('--selection-color');
@@ -87,16 +118,20 @@
     const button = event.target.closest('[data-filter-group]');
     if (!button) return;
     event.stopImmediatePropagation();
-    if (button.dataset.filterGroup === 'acts') chapter = button.dataset.filterValue;
-    else {
-      const wasSelected = types.has(button.dataset.filterValue);
-      if (wasSelected) types.delete(button.dataset.filterValue);
-      if (!wasSelected) types.add(button.dataset.filterValue);
+    if (button.dataset.filterGroup === 'acts') {
+      chapter = button.dataset.filterValue;
+    } else {
+      const type = button.dataset.filterValue;
+      const returningFromDetail = desktop() && main.dataset[step] === 'detail';
+      if (!types.has(type)) types.add(type);
+      else if (!returningFromDetail) types.delete(type);
     }
+    if (desktop()) showSelectionList();
     filter();
   }, true);
   search.addEventListener('input', event => {
     event.stopImmediatePropagation();
+    if (desktop()) showSelectionList();
     filter();
   }, true);
   function select(event) {
@@ -105,6 +140,7 @@
     if (event.type === 'keydown' && !['Enter', ' '].includes(event.key)) return;
     for (const item of entries) item.setAttribute('aria-pressed', String(item === entry));
     detail.hidden = false;
+    if (desktop()) main.dataset[step] = 'detail';
   }
   list.addEventListener('click', select);
   list.addEventListener('keydown', select);
