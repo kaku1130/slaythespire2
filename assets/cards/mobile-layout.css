@@ -202,7 +202,7 @@ html body main#main-content .mobile-build-heading .build-tier{
 
 @media screen and (min-width:600px) and (max-width:1024px),screen and (min-width:600px) and (max-width:1366px) and (hover:none) and (pointer:coarse){
  html body main#main-content[data-mobile-page=cards] .card-scroll tbody{
-  grid-template-columns:repeat(2,minmax(0,1fr))!important
+  grid-template-columns:minmax(0,1fr)!important
  }
 }
 
@@ -266,6 +266,34 @@ html body main#main-content .mobile-build-heading .build-tier{
  html body main#main-content[data-mobile-page=builds] .build-pair-images{
   grid-template-columns:minmax(0,1fr)
  }
+ /* Fill each mobile filter row across the available content width. */
+ html body main#main-content[data-mobile-page=cards] #tools,
+ html body main#main-content[data-mobile-page=cards] #tools :is(.chips,.filter-cluster){
+  width:100%;min-width:0;max-width:100%;flex:1 1 100%
+ }
+ html body main#main-content[data-mobile-page=cards] #tools .chips>:is(.card-profession-row,.card-other-row,.rarity-buttons),
+ html body main#main-content[data-mobile-page=cards] #tools :is(.tier-buttons,.type-buttons),
+ html body main#main-content[data-mobile-page=builds]>.character-sidebar .character-nav,
+ html body main#main-content[data-mobile-page=potion]>.filters .potion-rarities{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;width:100%;margin:0
+ }
+ html body main#main-content[data-mobile-page=cards] #tools .chips>.card-profession-row,
+ html body main#main-content[data-mobile-page=cards] #tools .tier-buttons,
+ html body main#main-content[data-mobile-page=builds]>.character-sidebar .character-nav{
+  grid-template-columns:repeat(5,minmax(0,1fr))
+ }
+ html body main#main-content[data-mobile-page=cards] #tools .chips>.card-profession-row{grid-template-columns:repeat(6,minmax(0,1fr))}
+ html body main#main-content[data-mobile-page=cards] #tools .chips>.card-other-row{display:none}
+ html body main#main-content[data-mobile-page=cards] #tools :is(.chips,.tier-buttons,.type-buttons) button,
+ html body main#main-content[data-mobile-page=builds]>.character-sidebar .character-nav a,
+ html body main#main-content[data-mobile-page=potion]>.filters .potion-rarities button{
+  width:100%!important;min-width:0!important;max-width:none!important;padding-inline:4px!important
+ }
+ html body main#main-content[data-mobile-page=relic] .relic-filters>.relic-menu-row>.relic-filter-group:has([data-filter-group=rarity]){
+  display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))
+ }
+ html body main#main-content[data-mobile-page=relic] .relic-filters>.relic-menu-row [data-filter-group=rarity][data-filter-value=Shop]{grid-column:1 / 3}
+ html body main#main-content[data-mobile-page=relic] .relic-filters>.relic-menu-row [data-filter-group=rarity][data-filter-value=Event]{grid-column:3 / 5}
  /* Reset desktop fixed-width filter rows so the shared menu can wrap. */
  html body main#main-content:is([data-mobile-page=relic],[data-mobile-page=potion],[data-mobile-page=event])>.filters{
   display:flex;flex-direction:column;flex-wrap:wrap;align-items:stretch;gap:16px;
@@ -278,6 +306,14 @@ html body main#main-content .mobile-build-heading .build-tier{
  }
  html body main#main-content:is([data-mobile-page=relic],[data-mobile-page=potion],[data-mobile-page=event])>.filters button{
   min-height:44px;padding:8px 10px;font-size:16px;white-space:normal
+ }
+ html body main#main-content[data-mobile-page=potion]>.filters.potion-filters .potion-rarities,
+ html body main#main-content:is([data-mobile-page=monster],[data-mobile-page=event])>.filters.chapter-filters>.chapter-filter-group:has([data-filter-group=acts]){
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;
+  width:100%;min-width:0;max-width:100%;flex:1 1 100%
+ }
+ html body main#main-content:is([data-mobile-page=monster],[data-mobile-page=event])>.filters.chapter-filters .chapter-filter-group button[data-filter-group=acts]{
+  width:100%;min-width:0;padding-inline:2px;font-size:16px;white-space:nowrap
  }
  html body main#main-content[data-mobile-page=relic]>.relic-filters button[data-filter-group=pool]{
   min-width:44px;padding:8px;font-size:0;gap:0
@@ -326,3 +362,17 @@ html body main#main-content[data-mobile-page=ancient] .split-list .compact-detai
 html body main#main-content[data-mobile-page=ancient] .split-list .compact-detail-name{grid-column:2;grid-row:1;width:100%;min-width:0;margin:0;text-align:left}
 
 html body main#main-content[data-mobile-page=ancient] .ancient-act-title{justify-content:flex-start;text-align:left}
+
+html body main#main-content.ancient-browser .split-detail[hidden]{display:none}
+
+/* Mobile navigation and filters scroll with the page. */
+@media screen and (max-width:1024px),screen and (max-width:1366px) and (hover:none) and (pointer:coarse){
+ html body .site-header,
+ html body main#main-content[data-mobile-page]>.mobile-search-row,
+ html body main#main-content[data-mobile-page]>:is(.tools,.filters,.character-sidebar,.tier-sidebar),
+ html body main#main-content[data-mobile-page] :is(.grid-pool-heading,.mobile-build-heading,.relic-section-title,.potion-section-title){
+  position:static;top:auto
+ }
+ html body main#main-content[data-mobile-page]{scroll-padding-top:12px}
+ html body main#main-content[data-mobile-page] :is(section,[id^=card-],[id^=build-],.split-detail){scroll-margin-top:12px}
+}

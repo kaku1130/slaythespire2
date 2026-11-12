@@ -16,7 +16,7 @@
   const chapterGroup = filters.querySelector('[aria-label="章節篩選"]');
   const typeGroup = filters.querySelector('[aria-label="怪物類型篩選"]');
   chapterGroup.setAttribute('aria-label', '章節單選');
-  typeGroup?.setAttribute('aria-label', '怪物類型單選');
+  typeGroup?.setAttribute('aria-label', '怪物類型複選');
   if (kind === 'monster') {
     const options = document.createElement('div');
     options.className = 'monster-filter-options';
@@ -55,7 +55,7 @@
   filters.prepend(search);
   detail.hidden = true;
   let chapter = 'act1a';
-  const types = new Set();
+  const types = new Set(kind === 'monster' ? ['elite', 'boss'] : []);
   function filter() {
     const query = search.value.trim().toLowerCase();
     const chapterButton = buttons.find(button => button.dataset.filterGroup === 'acts' && button.dataset.filterValue === chapter);
@@ -90,7 +90,7 @@
     if (button.dataset.filterGroup === 'acts') chapter = button.dataset.filterValue;
     else {
       const wasSelected = types.has(button.dataset.filterValue);
-      types.clear();
+      if (wasSelected) types.delete(button.dataset.filterValue);
       if (!wasSelected) types.add(button.dataset.filterValue);
     }
     filter();

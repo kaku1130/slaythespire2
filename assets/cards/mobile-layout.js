@@ -29,9 +29,8 @@
       const panel = document.getElementById(id);
       const heading = panel?.querySelector('.mobile-build-heading');
       if (!heading || panel.hidden || panel.closest('.build-section').hidden) return;
-      const pinnedHeight = main.querySelector('.character-sidebar').getBoundingClientRect().height;
       main.scrollTo({
-        top: main.scrollTop + panel.getBoundingClientRect().top - main.getBoundingClientRect().top - pinnedHeight - 12,
+        top: main.scrollTop + panel.getBoundingClientRect().top - main.getBoundingClientRect().top - 12,
         behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
       });
     }
@@ -107,7 +106,8 @@
     button.before(home);
     return home;
   });
-  const panels = pageKind === 'builds' ? [] : [...main.querySelectorAll(':scope > .tools,:scope > .filters,:scope > .character-sidebar,:scope > .tier-sidebar')];
+  // Keep these pages' filters visible without a collapsible mobile menu.
+  const panels = ['builds', 'cards', 'relic', 'potion'].includes(pageKind) ? [] : [...main.querySelectorAll(':scope > .tools,:scope > .filters,:scope > .character-sidebar,:scope > .tier-sidebar')];
   panels.forEach((panel, index) => {
     panel.id ||= 'mobile-filter-panel-' + index;
     panel.classList.add('mobile-filter-panel');
@@ -131,10 +131,15 @@
   const sharedAncients = main.querySelector('.ancient-act-section[data-act="0"]');
   const sharedHome = sharedAncients && document.createComment('Desktop shared ancient position');
   if (sharedAncients) sharedAncients.before(sharedHome);
+  const chapterButtons = ['monster', 'event'].includes(pageKind) ? [...main.querySelectorAll('[data-filter-group="acts"]')].map(button => ({button, label: button.textContent})) : [];
+  const compactChapterLabels = {act1a: '1.密林', act1b: '1.暗港', act2: '2.巢穴', act3: '3.榮耀'};
   function update() {
+    for (const {button, label} of chapterButtons) button.textContent = media.matches ? compactChapterLabels[button.dataset.filterValue] || label : label;
     if (pageKind === 'cards') {
       for (const button of main.querySelectorAll('[data-category="Curse"],[data-category="Event"],[data-category="Quest"]')) button.hidden = media.matches;
       const colorless = main.querySelector('[data-category="Colorless"]');
+      if (media.matches) main.querySelector('.card-profession-row').append(colorless);
+      else main.querySelector('.card-other-row').prepend(colorless);
       const label = media.matches ? '無色、其他' : 'Colorless';
       colorless.setAttribute('aria-label', label);
       colorless.title = label;
