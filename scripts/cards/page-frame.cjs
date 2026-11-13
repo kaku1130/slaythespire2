@@ -30,3 +30,5 @@ html body main#main-content {padding-block:20px 24px}
 module.exports+=require('./menu-spacing.cjs');
 
 module.exports+="\n/* Equal spacing above and below the header divider. */\nhtml body .site-header>.site-header-inner {padding-block:8px!important}\nhtml body main#main-content {padding-top:8px!important}\n";
+
+module.exports += "\n/* Thin scrollbars for the page and nested scroll areas. */\n* { scrollbar-width: thin; }\n";

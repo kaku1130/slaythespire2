@@ -18,3 +18,34 @@
     margin:0;padding:0;row-gap:16px;
   }
 }
+html body.cards-desktop main#main-content:has(>#card-scroll) {
+  display: flex !important;
+  flex-direction: column;
+  overflow-y: auto !important;
+}
+html body.cards-desktop main#main-content > :is(#tools,#card-scroll) {
+  flex: none;
+  width: 100%;
+  min-height: 0;
+  max-height: none;
+  overflow: visible;
+}
+html body.cards-desktop main#main-content #tools .card-search {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  display: grid;
+  grid-template-columns: minmax(0,1fr) auto;
+  align-items: center;
+  gap: var(--control-gap);
+}
+html body.cards-desktop main#main-content #tools .card-search #aoe-toggle {
+  width: auto;
+  min-height: var(--control-height);
+  order: 0;
+}
+html body.cards-desktop main#main-content #card-scroll thead {
+  position: static;
+}
+
+html body.cards-desktop[data-view=grid] main#main-content #card-scroll tbody { grid-template-columns: repeat(2, minmax(0, 1fr)); }

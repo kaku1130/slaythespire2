@@ -101,3 +101,6 @@ html body main#main-content {padding-top:8px!important}
     max-width:none;
   }
 }
+
+/* Thin scrollbars for the page and nested scroll areas. */
+* { scrollbar-width: thin; }

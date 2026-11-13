@@ -1,23 +1,16 @@
 (() => {
-  const main = document.getElementById('main-content');
-  const tools = document.getElementById('tools');
-  const search = main.querySelector('.card-search');
+  const search = document.querySelector('.card-search');
   const aoe = document.getElementById('aoe-toggle');
-  if (!tools || !search || !aoe) return;
-  const searchHome = document.createComment('Full-size search position');
-  const aoeHome = document.createComment('Full-size AOE position');
-  search.before(searchHome);
-  aoe.before(aoeHome);
-  const media = matchMedia('(max-width:1440px)');
+  if (!search || !aoe) return;
+  const aoeRow = aoe.parentElement;
+  const desktop = matchMedia('(min-width: 1441px), (width > 1024px) and (hover: hover) and (pointer: fine)');
+
   function update() {
-    if (media.matches) {
-      tools.before(search);
-      tools.append(aoe);
-    } else {
-      searchHome.after(search);
-      aoeHome.after(aoe);
-    }
+    document.body.classList.toggle('cards-desktop', desktop.matches);
+    (desktop.matches ? search : aoeRow).append(aoe);
+    aoeRow.hidden = desktop.matches;
   }
-  media.addEventListener('change', update);
+
+  desktop.addEventListener('change', update);
   update();
 })();

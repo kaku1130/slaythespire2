@@ -47,6 +47,68 @@ main{width:100%;padding:clamp(16px,2vw,32px);padding-bottom:48px}.field{min-widt
 .tools button[aria-pressed=true],.potion-rarities button[aria-pressed=true],.relic-filter-group button[aria-pressed=true],.character-nav a[aria-current=page],.tier-index-item[aria-current=location],.site-nav a[aria-current=page]{--selected-fill:var(--selection-color,var(--tier-color,var(--rarity-color,var(--accent,#238cc2))));background:color-mix(in srgb,var(--selected-fill) 22%,#0d131a)!important;color:var(--control-color)!important;border-color:color-mix(in srgb,var(--selected-fill) 65%,#293340)!important;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--selected-fill) 40%,transparent)!important}
 .character-nav a .sidebar-character-en,.tier-index-item .tier-index-name{color:inherit!important}
 
+/* Keep navigation in one row when the full labels no longer fit. */
+@media screen and (max-width:1366px) {
+  html body .site-header>.site-header-inner {flex-wrap:nowrap;gap:8px;min-height:56px}
+  html body .site-header .site-brand {flex:0 0 auto;min-height:44px;gap:0}
+  html body .site-header .site-brand>span,
+  html body .site-header .site-nav a>span:not([aria-hidden]) {
+    display:block;position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip-path:inset(50%);white-space:nowrap;
+  }
+  html body .site-header .site-logo {width:30px;height:30px}
+  html body .site-header .site-nav {flex:1 1 auto;width:auto;min-width:0;gap:4px}
+  html body .site-header .site-nav a {flex:1 1 0;min-width:0;min-height:44px;padding:4px!important;gap:0;font-size:24px}
+}
+
+/* Compact, right-aligned navigation with a GitHub brand icon. */
+html body .site-header .site-nav {flex:0 1 auto!important;width:auto!important;margin-left:auto;justify-content:flex-end}
+html body .site-header .site-nav a {flex:0 0 auto!important}
+html body .site-header .site-logo {content:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2UzZThlZSI+PHBhdGggZD0iTTEyIC4yOTdDNS4zNy4yOTcgMCA1LjY3IDAgMTIuMjk3YzAgNS4zMDMgMy40MzggOS44IDguMjA1IDExLjM4NS42LjExMy44Mi0uMjU4LjgyLS41NzcgMC0uMjg1LS4wMS0xLjA0LS4wMTUtMi4wNC0zLjMzOC43MjQtNC4wNDMtMS42MS00LjA0My0xLjYxLS41NDYtMS4zODctMS4zMzMtMS43NTYtMS4zMzMtMS43NTYtMS4wOS0uNzQ1LjA4My0uNzI5LjA4My0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNyAxLjgzOCAxLjIzNyAxLjA3IDEuODM1IDIuODA3IDEuMzA1IDMuNDkyLjk5OC4xMDgtLjc3Ni40MTgtMS4zMDUuNzYyLTEuNjA1LTIuNjY1LS4zMDUtNS40NjctMS4zMzQtNS40NjctNS45MzEgMC0xLjMxLjQ2OC0yLjM4MSAxLjIzNi0zLjIyMS0uMTI0LS4zMDMtLjUzNi0xLjUyNC4xMTctMy4xNzYgMCAwIDEuMDA4LS4zMjIgMy4zMDEgMS4yM2ExMS41MiAxMS41MiAwIDAgMSAzLjAwNC0uNDA0YzEuMDIuMDA1IDIuMDQ3LjEzOCAzLjAwNi40MDQgMi4yOTEtMS41NTIgMy4yOTctMS4yMyAzLjI5Ny0xLjIzLjY1NSAxLjY1Mi4yNDMgMi44NzMuMTE5IDMuMTc2Ljc3Ljg0IDEuMjM1IDEuOTExIDEuMjM1IDMuMjIxIDAgNC42MDktMi44MDcgNS42MjQtNS40NzkgNS45MjEuNDMuMzcyLjgyMyAxLjEwMi44MjMgMi4yMjIgMCAxLjYwNi0uMDE1IDIuODk4LS4wMTUgMy4yOTMgMCAuMzIyLjIxNi42OTQuODI1LjU3NkMyMC41NjUgMjIuMDkyIDI0IDE3LjU5NyAyNCAxMi4yOTdjMC02LjYyNy01LjM3My0xMi0xMi0xMiIvPjwvc3ZnPg0K")}
+
+/* Show navigation labels whenever tablet-sized widths have enough room, regardless of input device. */
+@media screen and (min-width:700px) and (max-width:1366px) {
+  html body .site-header .site-nav a {font-size:18px;gap:5px;padding:6px!important}
+  html body .site-header .site-nav a>span:not([aria-hidden]) {
+    display:inline;position:static;width:auto;height:auto;padding:0;margin:0;
+    overflow:visible;clip-path:none;white-space:nowrap;
+  }
+  html body .site-header .site-nav a>span[aria-hidden] {font-size:20px}
+}
+
+/* Keep the site header visible during whole-page scrolling. */
+html body>.site-header {position:sticky!important;top:0;z-index:100}
+
+/* Phones and compact tablets keep icon-only navigation in either orientation. */
+@media screen and (max-width:768px), screen and (orientation:landscape) and (max-width:1133px) and (max-height:768px) {
+  html body .site-header .site-nav a {font-size:24px;gap:0;padding:4px!important}
+  html body .site-header .site-nav a>span:not([aria-hidden]) {
+    display:block;position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip-path:inset(50%);white-space:nowrap;
+  }
+  html body .site-header .site-nav a>span[aria-hidden] {font-size:24px}
+}
+
+/* Fit all seven phone navigation buttons without clipping the first border. */
+@media screen and (max-width:600px) {
+  html body .site-header .site-nav a {
+    box-sizing:border-box;width:clamp(30px,8vw,40px);min-width:0;
+    padding:4px!important;font-size:20px;
+  }
+  html body .site-header .site-nav a>span[aria-hidden] {font-size:20px;line-height:1}
+}
+
+/* Phone navigation uses the entire header row without the brand icon. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) {
+  html body .site-header .site-brand {display:none!important}
+  html body .site-header>.site-header-inner {gap:0}
+  html body .site-header .site-nav {flex:1 1 auto!important;width:100%!important;margin:0;gap:4px}
+  html body .site-header .site-nav a {flex:1 1 0!important;width:auto;min-width:0}
+}
+
+/* Shared divider beneath the site header. */
+html body>.site-header {border-bottom:1px solid #354454!important}
+
 @media screen{main section :is(table,th,td,.name-en,.name-zh,.num,.type,.rarity,.tier,.cost-change,.star-cost,.effect-label,.effect-resource,.effect-star,.build-role,.section-count,.build-list a,.effect-upgrade-toggle summary){font-size:x-large}main section td::before{font-size:x-large}main section :is(.effect,.build-list,.name){line-height:1.8}}
 @media screen{main .chips button,main .mobile-sort label,main .mobile-sort select,main .mobile-sort-direction,main .sort-button,main .category-field select{font-size:x-large}main .chips button{white-space:normal;overflow-wrap:anywhere}main .category-field{max-width:320px}main .mobile-sort-direction{min-width:110px}}@media screen and (max-width:640px){main .chips{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .name .name-zh{margin-top:0}.name .name-en{margin-top:4px}
@@ -273,11 +335,124 @@ html body main#main-content .filters,html body main#main-content .tools .primary
 
 .site-header .site-nav a{gap:6px}.site-header .site-nav{flex-shrink:1;min-width:0}
 
+/* Keep navigation in one row when the full labels no longer fit. */
+@media screen and (max-width:1366px) {
+  html body .site-header>.site-header-inner {flex-wrap:nowrap;gap:8px;min-height:56px}
+  html body .site-header .site-brand {flex:0 0 auto;min-height:44px;gap:0}
+  html body .site-header .site-brand>span,
+  html body .site-header .site-nav a>span:not([aria-hidden]) {
+    display:block;position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip-path:inset(50%);white-space:nowrap;
+  }
+  html body .site-header .site-logo {width:30px;height:30px}
+  html body .site-header .site-nav {flex:1 1 auto;width:auto;min-width:0;gap:4px}
+  html body .site-header .site-nav a {flex:1 1 0;min-width:0;min-height:44px;padding:4px!important;gap:0;font-size:24px}
+}
+
+/* Compact, right-aligned navigation with a GitHub brand icon. */
+html body .site-header .site-nav {flex:0 1 auto!important;width:auto!important;margin-left:auto;justify-content:flex-end}
+html body .site-header .site-nav a {flex:0 0 auto!important}
+html body .site-header .site-logo {content:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2UzZThlZSI+PHBhdGggZD0iTTEyIC4yOTdDNS4zNy4yOTcgMCA1LjY3IDAgMTIuMjk3YzAgNS4zMDMgMy40MzggOS44IDguMjA1IDExLjM4NS42LjExMy44Mi0uMjU4LjgyLS41NzcgMC0uMjg1LS4wMS0xLjA0LS4wMTUtMi4wNC0zLjMzOC43MjQtNC4wNDMtMS42MS00LjA0My0xLjYxLS41NDYtMS4zODctMS4zMzMtMS43NTYtMS4zMzMtMS43NTYtMS4wOS0uNzQ1LjA4My0uNzI5LjA4My0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNyAxLjgzOCAxLjIzNyAxLjA3IDEuODM1IDIuODA3IDEuMzA1IDMuNDkyLjk5OC4xMDgtLjc3Ni40MTgtMS4zMDUuNzYyLTEuNjA1LTIuNjY1LS4zMDUtNS40NjctMS4zMzQtNS40NjctNS45MzEgMC0xLjMxLjQ2OC0yLjM4MSAxLjIzNi0zLjIyMS0uMTI0LS4zMDMtLjUzNi0xLjUyNC4xMTctMy4xNzYgMCAwIDEuMDA4LS4zMjIgMy4zMDEgMS4yM2ExMS41MiAxMS41MiAwIDAgMSAzLjAwNC0uNDA0YzEuMDIuMDA1IDIuMDQ3LjEzOCAzLjAwNi40MDQgMi4yOTEtMS41NTIgMy4yOTctMS4yMyAzLjI5Ny0xLjIzLjY1NSAxLjY1Mi4yNDMgMi44NzMuMTE5IDMuMTc2Ljc3Ljg0IDEuMjM1IDEuOTExIDEuMjM1IDMuMjIxIDAgNC42MDktMi44MDcgNS42MjQtNS40NzkgNS45MjEuNDMuMzcyLjgyMyAxLjEwMi44MjMgMi4yMjIgMCAxLjYwNi0uMDE1IDIuODk4LS4wMTUgMy4yOTMgMCAuMzIyLjIxNi42OTQuODI1LjU3NkMyMC41NjUgMjIuMDkyIDI0IDE3LjU5NyAyNCAxMi4yOTdjMC02LjYyNy01LjM3My0xMi0xMi0xMiIvPjwvc3ZnPg0K")}
+
+/* Show navigation labels whenever tablet-sized widths have enough room, regardless of input device. */
+@media screen and (min-width:700px) and (max-width:1366px) {
+  html body .site-header .site-nav a {font-size:18px;gap:5px;padding:6px!important}
+  html body .site-header .site-nav a>span:not([aria-hidden]) {
+    display:inline;position:static;width:auto;height:auto;padding:0;margin:0;
+    overflow:visible;clip-path:none;white-space:nowrap;
+  }
+  html body .site-header .site-nav a>span[aria-hidden] {font-size:20px}
+}
+
+/* Keep the site header visible during whole-page scrolling. */
+html body>.site-header {position:sticky!important;top:0;z-index:100}
+
+/* Phones and compact tablets keep icon-only navigation in either orientation. */
+@media screen and (max-width:768px), screen and (orientation:landscape) and (max-width:1133px) and (max-height:768px) {
+  html body .site-header .site-nav a {font-size:24px;gap:0;padding:4px!important}
+  html body .site-header .site-nav a>span:not([aria-hidden]) {
+    display:block;position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip-path:inset(50%);white-space:nowrap;
+  }
+  html body .site-header .site-nav a>span[aria-hidden] {font-size:24px}
+}
+
+/* Fit all seven phone navigation buttons without clipping the first border. */
+@media screen and (max-width:600px) {
+  html body .site-header .site-nav a {
+    box-sizing:border-box;width:clamp(30px,8vw,40px);min-width:0;
+    padding:4px!important;font-size:20px;
+  }
+  html body .site-header .site-nav a>span[aria-hidden] {font-size:20px;line-height:1}
+}
+
+/* Phone navigation uses the entire header row without the brand icon. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) {
+  html body .site-header .site-brand {display:none!important}
+  html body .site-header>.site-header-inner {gap:0}
+  html body .site-header .site-nav {flex:1 1 auto!important;width:100%!important;margin:0;gap:4px}
+  html body .site-header .site-nav a {flex:1 1 0!important;width:auto;min-width:0}
+}
+
+/* Shared divider beneath the site header. */
+html body>.site-header {border-bottom:1px solid #354454!important}
+
+/* All pages share a full-width frame with the same edge spacing. */
+html {--site-width:100%;--site-page-gap:20px}
+html body main#main-content,
+html body .site-header>.site-header-inner {
+  box-sizing:border-box;
+  width:100%!important;
+  max-width:none!important;
+  margin-inline:0!important;
+  padding-inline:16px!important;
+}
+html body main#main-content {padding-block:20px 24px}
+
+/* Let menus and details fill the shared page frame at tablet widths. */
+@media screen and (min-width:600px) and (max-width:1366px) {
+  html body main#main-content:is(.event-browser[data-event-step],.monster-browser[data-monster-step],.ancient-browser) .split-body,
+  html body main#main-content>:is(.character-sidebar,.tier-sidebar,.relic-filters,.potion-filters),
+  html body main#main-content>.build-layout .build-content,
+  html body main#main-content:has(>.relic-filters,>.potion-filters)>.catalog-scroll {
+    width:100%;
+    max-width:none;
+    min-width:0;
+  }
+  html body main#main-content>.filters.relic-filters>.relic-filter-group:has([data-filter-group=pool]) {
+    width:100%;
+    flex-wrap:wrap;
+  }
+}
+
+/* Use one compact vertical rhythm for search and menu groups. */
+html {--group-gap:8px;--control-gap:8px}
+html body main#main-content {row-gap:8px!important}
+html body main#main-content :is(.tools,.filters,.primary-filter-row,.secondary-filter-row,.chips,.filter-cluster,.rarity-buttons,.relic-menu-row,.chapter-filter-group,.monster-filter-options,.character-nav,.tier-index) {
+  row-gap:8px!important;
+}
+html body main#main-content :is(.primary-filter-row,.secondary-filter-row,.chips,.filter-cluster,.catalog-search-tools) {
+  margin-block:0!important;padding-block:0!important;
+}
+html body main#main-content>:is(.tools,.filters,.character-sidebar,.tier-sidebar) {
+  margin-block:0 8px!important;padding-block:0!important;
+}
+html body main#main-content:has(>#card-scroll)>#tools {margin-block:0!important}
+html body main#main-content>.mobile-search-row {margin-block:0 8px!important;padding-block:0!important}
+html body main#main-content .split-list {row-gap:8px!important}
+html body main#main-content .split-list>.filters {margin-block:0!important}
+html body main#main-content [data-ancient-top-menu] {margin-bottom:8px}
+html body main#main-content [data-ancient-top-menu]>div {margin-top:8px}
+
+/* Equal spacing above and below the header divider. */
+html body .site-header>.site-header-inner {padding-block:8px!important}
+html body main#main-content {padding-top:8px!important}
+
 @media screen {
   main#main-content:has(>#card-scroll) {
     display: grid;
     grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
-    grid-template-rows: auto minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
     gap: var(--section-gap, 24px);
   }
 
@@ -293,7 +468,7 @@ html body main#main-content .filters,html body main#main-content .tools .primary
 
   main#main-content>#card-scroll {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 1;
   }
 
   main#main-content #tools :is(.primary-filter-row,.secondary-filter-row) {
@@ -358,17 +533,9 @@ html body main#main-content .filters,html body main#main-content .tools .primary
     flex: 1 1 auto;
   }
 
-  main#main-content>.card-search {
-    grid-column: 2;
-    grid-row: 1;
-    min-width: 0;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: center;
-    gap: var(--control-gap);
-  }
+  main#main-content #tools .card-search { width: 100%; min-width: 0; margin-bottom: var(--control-gap); }
 
-  main#main-content>.card-search #aoe-toggle {
+  main#main-content #tools #aoe-toggle {
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -382,12 +549,12 @@ html body main#main-content .filters,html body main#main-content .tools .primary
     cursor: pointer;
   }
 
-  main#main-content>.card-search #aoe-toggle:is(:hover,:focus-visible,[aria-pressed=true]) {
+  main#main-content #tools #aoe-toggle:is(:hover,:focus-visible,[aria-pressed=true]) {
     color: var(--focus);
     border-color: var(--focus);
   }
 
-  main#main-content>.card-search #search {
+  main#main-content #tools .card-search #search {
     box-sizing: border-box;
     width: 100%;
     height: var(--control-height);
@@ -400,29 +567,63 @@ html body main#main-content .filters,html body main#main-content .tools .primary
     border-radius: var(--control-radius);
   }
 
-  main#main-content>.card-search #search:focus {
+  main#main-content #tools .card-search #search:focus {
     border-color: var(--focus);
     outline: 1px solid var(--focus);
   }
 }
 @media print{.card-search{display:none}}
-
-/* Keep navigation in one row when the full labels no longer fit. */
-@media screen and (max-width:1366px) {
-  html body .site-header>.site-header-inner {flex-wrap:nowrap;gap:8px;min-height:56px}
-  html body .site-header .site-brand {flex:0 0 auto;min-height:44px;gap:0}
-  html body .site-header .site-brand>span,
-  html body .site-header .site-nav a>span:not([aria-hidden]) {
-    display:block;position:absolute;width:1px;height:1px;padding:0;margin:-1px;
-    overflow:hidden;clip-path:inset(50%);white-space:nowrap;
-  }
-  html body .site-header .site-logo {width:30px;height:30px}
-  html body .site-header .site-nav {flex:1 1 auto;width:auto;min-width:0;gap:4px}
-  html body .site-header .site-nav a {flex:1 1 0;min-width:0;min-height:44px;padding:4px!important;gap:0;font-size:24px}
-}
-
 html{--site-width:100%}
 html body main#main-content,html body .site-header>.site-header-inner{width:100%;max-width:none}
+@media screen and (max-width:1440px) {
+  html body main#main-content:has(>#card-scroll) {display:flex!important;flex-direction:column;overflow-y:auto!important;gap:16px}
+  html body main#main-content>:is(.card-search,#tools,#card-scroll) {flex:none;width:100%;max-width:none;min-height:0;max-height:none;overflow:visible;margin:0;padding:0}
+  html body main#main-content>.card-search {display:block}
+  html body main#main-content #tools {display:flex;flex-direction:column;gap:16px}
+  html body main#main-content #tools :is(.primary-filter-row,.secondary-filter-row,.chips,.filter-cluster,.rarity-buttons) {width:100%;max-width:none}
+  html body main#main-content #tools #aoe-toggle {width:100%;min-height:48px;flex:none;order:10;font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:7px}
+  html body main#main-content #tools #aoe-toggle[aria-pressed=true] {color:var(--focus);border-color:var(--focus)}
+  html body[data-view=grid] #card-scroll tbody {grid-template-columns:minmax(0,1fr)}
+}
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) {
+  html body[data-view=grid] #card-scroll .card-images-pair {grid-template-columns:minmax(0,1fr)}
+  html body[data-view=grid] #card-scroll .card-images-pair figcaption {display:none}
+}
+
+@media screen and (max-width:1440px) {
+  html body main#main-content #tools :is(.primary-filter-row,.secondary-filter-row,.chips,.filter-cluster) {
+    margin:0;padding:0;row-gap:16px;
+  }
+}
+html body.cards-desktop main#main-content:has(>#card-scroll) {
+  display: flex !important;
+  flex-direction: column;
+  overflow-y: auto !important;
+}
+html body.cards-desktop main#main-content > :is(#tools,#card-scroll) {
+  flex: none;
+  width: 100%;
+  min-height: 0;
+  max-height: none;
+  overflow: visible;
+}
+html body.cards-desktop main#main-content #tools .card-search {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  display: grid;
+  grid-template-columns: minmax(0,1fr) auto;
+  align-items: center;
+  gap: var(--control-gap);
+}
+html body.cards-desktop main#main-content #tools .card-search #aoe-toggle {
+  width: auto;
+  min-height: var(--control-height);
+  order: 0;
+}
+html body.cards-desktop main#main-content #card-scroll thead {
+  position: static;
+}
 
 /* All pages share a full-width frame with the same edge spacing. */
 html {--site-width:100%;--site-page-gap:20px}
@@ -452,72 +653,6 @@ html body main#main-content {padding-block:20px 24px}
   }
 }
 
-/* Compact, right-aligned navigation with a GitHub brand icon. */
-html body .site-header .site-nav {flex:0 1 auto!important;width:auto!important;margin-left:auto;justify-content:flex-end}
-html body .site-header .site-nav a {flex:0 0 auto!important}
-html body .site-header .site-logo {content:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2UzZThlZSI+PHBhdGggZD0iTTEyIC4yOTdDNS4zNy4yOTcgMCA1LjY3IDAgMTIuMjk3YzAgNS4zMDMgMy40MzggOS44IDguMjA1IDExLjM4NS42LjExMy44Mi0uMjU4LjgyLS41NzcgMC0uMjg1LS4wMS0xLjA0LS4wMTUtMi4wNC0zLjMzOC43MjQtNC4wNDMtMS42MS00LjA0My0xLjYxLS41NDYtMS4zODctMS4zMzMtMS43NTYtMS4zMzMtMS43NTYtMS4wOS0uNzQ1LjA4My0uNzI5LjA4My0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNyAxLjgzOCAxLjIzNyAxLjA3IDEuODM1IDIuODA3IDEuMzA1IDMuNDkyLjk5OC4xMDgtLjc3Ni40MTgtMS4zMDUuNzYyLTEuNjA1LTIuNjY1LS4zMDUtNS40NjctMS4zMzQtNS40NjctNS45MzEgMC0xLjMxLjQ2OC0yLjM4MSAxLjIzNi0zLjIyMS0uMTI0LS4zMDMtLjUzNi0xLjUyNC4xMTctMy4xNzYgMCAwIDEuMDA4LS4zMjIgMy4zMDEgMS4yM2ExMS41MiAxMS41MiAwIDAgMSAzLjAwNC0uNDA0YzEuMDIuMDA1IDIuMDQ3LjEzOCAzLjAwNi40MDQgMi4yOTEtMS41NTIgMy4yOTctMS4yMyAzLjI5Ny0xLjIzLjY1NSAxLjY1Mi4yNDMgMi44NzMuMTE5IDMuMTc2Ljc3Ljg0IDEuMjM1IDEuOTExIDEuMjM1IDMuMjIxIDAgNC42MDktMi44MDcgNS42MjQtNS40NzkgNS45MjEuNDMuMzcyLjgyMyAxLjEwMi44MjMgMi4yMjIgMCAxLjYwNi0uMDE1IDIuODk4LS4wMTUgMy4yOTMgMCAuMzIyLjIxNi42OTQuODI1LjU3NkMyMC41NjUgMjIuMDkyIDI0IDE3LjU5NyAyNCAxMi4yOTdjMC02LjYyNy01LjM3My0xMi0xMi0xMiIvPjwvc3ZnPgo=")}
-
-/* Show navigation labels whenever tablet-sized widths have enough room, regardless of input device. */
-@media screen and (min-width:700px) and (max-width:1366px) {
-  html body .site-header .site-nav a {font-size:18px;gap:5px;padding:6px!important}
-  html body .site-header .site-nav a>span:not([aria-hidden]) {
-    display:inline;position:static;width:auto;height:auto;padding:0;margin:0;
-    overflow:visible;clip-path:none;white-space:nowrap;
-  }
-  html body .site-header .site-nav a>span[aria-hidden] {font-size:20px}
-}
-
-/* Keep the site header visible during whole-page scrolling. */
-html body>.site-header {position:sticky!important;top:0;z-index:100}
-
-/* Phones and compact tablets keep icon-only navigation in either orientation. */
-@media screen and (max-width:768px), screen and (orientation:landscape) and (max-width:1133px) and (max-height:768px) {
-  html body .site-header .site-nav a {font-size:24px;gap:0;padding:4px!important}
-  html body .site-header .site-nav a>span:not([aria-hidden]) {
-    display:block;position:absolute;width:1px;height:1px;padding:0;margin:-1px;
-    overflow:hidden;clip-path:inset(50%);white-space:nowrap;
-  }
-  html body .site-header .site-nav a>span[aria-hidden] {font-size:24px}
-}
-
-@media screen and (max-width:1440px) {
-  html body main#main-content:has(>#card-scroll) {display:flex!important;flex-direction:column;overflow-y:auto!important;gap:16px}
-  html body main#main-content>:is(.card-search,#tools,#card-scroll) {flex:none;width:100%;max-width:none;min-height:0;max-height:none;overflow:visible;margin:0;padding:0}
-  html body main#main-content>.card-search {display:block}
-  html body main#main-content #tools {display:flex;flex-direction:column;gap:16px}
-  html body main#main-content #tools :is(.primary-filter-row,.secondary-filter-row,.chips,.filter-cluster,.rarity-buttons) {width:100%;max-width:none}
-  html body main#main-content #tools #aoe-toggle {width:100%;min-height:48px;flex:none;order:10;font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:7px}
-  html body main#main-content #tools #aoe-toggle[aria-pressed=true] {color:var(--focus);border-color:var(--focus)}
-  html body[data-view=grid] #card-scroll tbody {grid-template-columns:minmax(0,1fr)}
-}
-@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) {
-  html body[data-view=grid] #card-scroll .card-images-pair {grid-template-columns:minmax(0,1fr)}
-  html body[data-view=grid] #card-scroll .card-images-pair figcaption {display:none}
-}
-
-@media screen and (max-width:1440px) {
-  html body main#main-content #tools :is(.primary-filter-row,.secondary-filter-row,.chips,.filter-cluster) {
-    margin:0;padding:0;row-gap:16px;
-  }
-}
-
-/* Fit all seven phone navigation buttons without clipping the first border. */
-@media screen and (max-width:600px) {
-  html body .site-header .site-nav a {
-    box-sizing:border-box;width:clamp(30px,8vw,40px);min-width:0;
-    padding:4px!important;font-size:20px;
-  }
-  html body .site-header .site-nav a>span[aria-hidden] {font-size:20px;line-height:1}
-}
-
-/* Phone navigation uses the entire header row without the brand icon. */
-@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) {
-  html body .site-header .site-brand {display:none!important}
-  html body .site-header>.site-header-inner {gap:0}
-  html body .site-header .site-nav {flex:1 1 auto!important;width:100%!important;margin:0;gap:4px}
-  html body .site-header .site-nav a {flex:1 1 0!important;width:auto;min-width:0}
-}
-
 /* Use one compact vertical rhythm for search and menu groups. */
 html {--group-gap:8px;--control-gap:8px}
 html body main#main-content {row-gap:8px!important}
@@ -537,9 +672,11 @@ html body main#main-content .split-list>.filters {margin-block:0!important}
 html body main#main-content [data-ancient-top-menu] {margin-bottom:8px}
 html body main#main-content [data-ancient-top-menu]>div {margin-top:8px}
 
-/* Shared divider beneath the site header. */
-html body>.site-header {border-bottom:1px solid #354454!important}
-
 /* Equal spacing above and below the header divider. */
 html body .site-header>.site-header-inner {padding-block:8px!important}
 html body main#main-content {padding-top:8px!important}
+
+html body.cards-desktop[data-view=grid] main#main-content #card-scroll tbody { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+/* Thin scrollbars for the page and nested scroll areas. */
+* { scrollbar-width: thin; }

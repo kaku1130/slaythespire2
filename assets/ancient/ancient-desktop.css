@@ -4,7 +4,7 @@
   html body main#main-content.ancient-browser .split-body {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     margin-inline: auto;
     gap: var(--group-gap, 16px);
   }
@@ -80,4 +80,15 @@ html body:has(main.ancient-browser) {
 }
 html body main#main-content.ancient-browser.detail-split {
   flex:1;min-height:0;height:auto;overflow-y:auto!important;overflow-x:hidden!important;
+}
+
+
+/* Match the catalog attribution below the scrolling content. */
+html body main#main-content.ancient-browser .site-attribution {
+  margin: 32px 0 0;
+  font: 400 14px/1.6 system-ui, sans-serif;
+  color: #fff !important;
+}
+html body main#main-content.ancient-browser .site-attribution a {
+  color: #74b3e6;
 }

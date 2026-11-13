@@ -218,7 +218,7 @@ ${navigation.layoutStyles}
   main#main-content:has(>#card-scroll) {
     display: grid;
     grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
-    grid-template-rows: auto minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
     gap: var(--section-gap, 24px);
   }
 
@@ -234,7 +234,7 @@ ${navigation.layoutStyles}
 
   main#main-content>#card-scroll {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 1;
   }
 
   main#main-content #tools :is(.primary-filter-row,.secondary-filter-row) {
@@ -299,17 +299,9 @@ ${navigation.layoutStyles}
     flex: 1 1 auto;
   }
 
-  main#main-content>.card-search {
-    grid-column: 2;
-    grid-row: 1;
-    min-width: 0;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: center;
-    gap: var(--control-gap);
-  }
+  main#main-content #tools .card-search { width: 100%; min-width: 0; margin-bottom: var(--control-gap); }
 
-  main#main-content>.card-search #aoe-toggle {
+  main#main-content #tools #aoe-toggle {
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -323,12 +315,12 @@ ${navigation.layoutStyles}
     cursor: pointer;
   }
 
-  main#main-content>.card-search #aoe-toggle:is(:hover,:focus-visible,[aria-pressed=true]) {
+  main#main-content #tools #aoe-toggle:is(:hover,:focus-visible,[aria-pressed=true]) {
     color: var(--focus);
     border-color: var(--focus);
   }
 
-  main#main-content>.card-search #search {
+  main#main-content #tools .card-search #search {
     box-sizing: border-box;
     width: 100%;
     height: var(--control-height);
@@ -341,7 +333,7 @@ ${navigation.layoutStyles}
     border-radius: var(--control-radius);
   }
 
-  main#main-content>.card-search #search:focus {
+  main#main-content #tools .card-search #search:focus {
     border-color: var(--focus);
     outline: 1px solid var(--focus);
   }
@@ -351,8 +343,7 @@ html{--site-width:100%}
 html body main#main-content,html body .site-header>.site-header-inner{width:100%;max-width:none}
 ${fs.readFileSync('assets/cards/compact-cards.css','utf8')}
 </style></head><body data-view="grid">${navigation.renderHeader('cards')}<main id="main-content">
-<div class="tools" id="tools" hidden><div class="primary-filter-row"><nav class="chips" aria-label="卡牌分類單選"><div class="profession-filter-row">${categoryMenu.slice(0,5).map(pool=>renderCategoryFilter(pool,true)).join('')}</div><div class="extra-category-row">${categoryMenu.slice(5).map(pool=>renderCategoryFilter(pool)).join('')}</div></nav></div><div class="secondary-filter-row"><div class="filter-cluster rarity-cluster"><div class="rarity-buttons" role="group" aria-label="稀有度篩選">${displayedRarities.filter(r=>r!=='Basic').map(r=>`<button type="button" data-rarity-filter="${r}" data-rarity="${r}" aria-pressed="false">${rarityLabels[r]}</button>`).join('')}</div></div><div class="filter-cluster type-cluster"><div class="rarity-buttons type-buttons" role="group" aria-label="類型篩選">${filterTypes.map(type=>`<button type="button" data-type-filter="${type}" style="--rarity-color:${typeColors[type]}" aria-pressed="false">${typeLabels[type]}</button>`).join('')}</div></div><div class="filter-cluster tier-cluster"><div class="rarity-buttons tier-buttons" role="group" aria-label="Tier 評級篩選"><button type="button" data-tier-filter="S" aria-pressed="false">S</button><button type="button" data-tier-filter="A" aria-pressed="false">A</button><button type="button" data-tier-filter="B" aria-pressed="false">B</button><button type="button" data-tier-filter="C" aria-pressed="false">C</button><button type="button" data-tier-filter="D" aria-pressed="false">D</button></div></div></div></div>
-<div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><input id="search" type="search" placeholder="搜尋關鍵字" autocomplete="off">${cardGrid.actionControls}</div>
+<div class="tools" id="tools" hidden><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><input id="search" type="search" placeholder="搜尋關鍵字" autocomplete="off"></div><div class="primary-filter-row"><nav class="chips" aria-label="卡牌分類單選"><div class="profession-filter-row">${categoryMenu.slice(0,5).map(pool=>renderCategoryFilter(pool,true)).join('')}</div><div class="extra-category-row">${categoryMenu.slice(5).map(pool=>renderCategoryFilter(pool)).join('')}</div></nav></div><div class="secondary-filter-row"><div class="filter-cluster rarity-cluster"><div class="rarity-buttons" role="group" aria-label="稀有度篩選">${displayedRarities.filter(r=>r!=='Basic').map(r=>`<button type="button" data-rarity-filter="${r}" data-rarity="${r}" aria-pressed="false">${rarityLabels[r]}</button>`).join('')}</div></div><div class="filter-cluster type-cluster"><div class="rarity-buttons type-buttons" role="group" aria-label="類型篩選">${filterTypes.map(type=>`<button type="button" data-type-filter="${type}" style="--rarity-color:${typeColors[type]}" aria-pressed="false">${typeLabels[type]}</button>`).join('')}</div></div><div class="filter-cluster tier-cluster"><div class="rarity-buttons tier-buttons" role="group" aria-label="Tier 評級篩選"><button type="button" data-tier-filter="S" aria-pressed="false">S</button><button type="button" data-tier-filter="A" aria-pressed="false">A</button><button type="button" data-tier-filter="B" aria-pressed="false">B</button><button type="button" data-tier-filter="C" aria-pressed="false">C</button><button type="button" data-tier-filter="D" aria-pressed="false">D</button></div></div><div class="filter-cluster">${cardGrid.actionControls}</div></div></div>
 <div id="card-scroll" class="card-scroll" role="region" aria-label="卡牌表格" tabindex="0">${sections}<p id="empty" hidden>找不到符合條件的卡片，請調整搜尋文字、分類或稀有度。</p>
 </div>
 </main>
@@ -416,7 +407,7 @@ window.addEventListener('hashchange',revealLinkedCard);revealLinkedCard();
 
 ${cardArt.createScript({paired:true,width:420})}
 </script></body></html>`;
-require('./desktop-page-css.cjs').writeDesktopPage('cards.html',navigation.openPageLinksInNewTab(html).replace('</body>','<script src="assets/cards/search-controls.js"></script><script src="assets/cards/compact-cards.js?v=2"></script></body>'));
+require('./desktop-page-css.cjs').writeDesktopPage('cards.html',navigation.openPageLinksInNewTab(html).replace('</body>','<script src="assets/cards/search-controls.js"></script><script src="assets/cards/compact-cards.js?v=3"></script></body>'));
 const manifest={source:'https://slaythespire2.net/card',chineseSource:chineseSource.source,retrievedDate:'2026-11-08',version:'Live v0.107.1',tierSource:tierSource.source,tierRetrievedDate:tierSource.retrievedDate,total:cards.length,categories:Object.fromEntries(categories.map((p,i)=>[p,expected[i]])),cards:categories.flatMap(pool=>cards.filter(c=>c.pool===pool).sort((a,b)=>compareCards({...a,tier:tiers.get(a.id)},{...b,tier:tiers.get(b.id)})).map(c=>({id:c.id,name:c.name,nameZh:chineseCards.get(c.id).name,category:c.pool,type:c.type,rarity:c.rarity,rarityZh:rarityLabels[c.rarity],tier:tiers.get(c.id)||null,images:cardImages[c.id],tableImages:cardTableImages[c.id],effect:{base:chineseCards.get(c.id).descBase,upgraded:canUpgrade(c)?chineseCards.get(c.id).descUpgraded:null},energy:c.energy??null,starCost:c.starCost??null,upgrade:c.upgrade??null,builds:(buildsByCard[c.id]||[]).map(b=>({...b,sourceUrl:b.url,url:localBuildUrl(b)})),url:'https://slaythespire2.net/zh-TW/card/'+c.slug})))};
 fs.writeFileSync('data/cards/cards.json',JSON.stringify(manifest,null,2));
 assert.equal((html.match(/<tr id="card-[^"]+" role="row" data-name=/g)||[]).length,551);

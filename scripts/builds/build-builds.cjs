@@ -36,7 +36,7 @@ function renderGuide(g,full=false){
  assert.deepEqual(b.core.map(c=>c.id).sort(),[...g.core].sort());assert.deepEqual(b.support.map(c=>c.id).sort(),[...g.support].sort());b.core=g.core.map(id=>byId.get(id));b.support=g.support.map(id=>byId.get(id));
  const search=[g.name,g.summary,g.id,g.playstyle,...b.core.flatMap(c=>[c.name,chinese.get(c.id).name]),...b.support.flatMap(c=>[c.name,chinese.get(c.id).name]),...g.relics.map(r=>r.name)].join(' ').toLowerCase();
 
- return '<article class="build-panel'+(full?' full-guide':'')+'" id="build-'+key+'" data-search="'+esc(search)+'"'+(guide.builds.find(first=>first.characterPool===g.characterPool).id!==g.id?' hidden':'')+'><div class="build-details"><div class="build-overview"><div class="build-explanation"><div class="guide-strategy"><h4>玩法思路</h4><p>'+renderLinkedStrategy(g.playstyle,g)+'</p></div><div class="guide-rationale"><h4>為什麼是 '+g.tier+' 級</h4><p>'+renderLinkedStrategy(g.rationale,g)+'</p></div></div><div class="build-tradeoffs"><div><h4>優點</h4><p>'+esc(g.strength)+'</p></div><div><h4>缺點</h4><p>'+esc(g.weakness)+'</p></div></div>'+'</div><div class="build-resources"><div class="build-deck-groups"><div class="build-card-group"><h4>核心卡片</h4><div class="build-card-pairs">'+renderCards(b.core)+'</div></div><div class="build-card-group"><h4>輔助卡片</h4><div class="build-card-pairs">'+renderCards(b.support)+'</div></div></div><div class="relic-group"><h4>關鍵遺物</h4>'+(g.relics.length?'<ul class="relic-list">'+g.relics.map(r=>'<li><img class="relic-icon" src="'+relicIcon(r)+'" alt="" width="40" height="40"><div class="relic-content"><strong>'+esc(r.name)+'</strong><div class="relic-effect">'+rich(r.description)+'</div></div></li>').join('')+'</ul>':'<p class="no-relics">原站未列出指定遺物。</p>')+'</div></div></div></article>';
+ return '<article class="build-panel'+(full?' full-guide':'')+'" id="build-'+key+'" data-search="'+esc(search)+'"'+(guide.builds.find(first=>first.characterPool===g.characterPool).id!==g.id?' hidden':'')+'><h3 class="build-panel-heading"><span class="build-tier" data-tier="'+esc(g.tier)+'" aria-label="'+esc(g.tier)+' 級">'+esc(g.tier)+'</span><span>'+esc(g.name)+'</span></h3><div class="build-details"><div class="build-overview"><div class="build-explanation"><div class="guide-strategy"><h4>玩法思路</h4><p>'+renderLinkedStrategy(g.playstyle,g)+'</p></div><div class="guide-rationale"><h4>為什麼是 '+g.tier+' 級</h4><p>'+renderLinkedStrategy(g.rationale,g)+'</p></div></div><div class="build-tradeoffs"><div><h4>優點</h4><p>'+esc(g.strength)+'</p></div><div><h4>缺點</h4><p>'+esc(g.weakness)+'</p></div></div>'+'</div><div class="build-resources"><div class="build-deck-groups"><div class="build-card-group"><h4>核心卡片</h4><div class="build-card-pairs">'+renderCards(b.core)+'</div></div><div class="build-card-group"><h4>輔助卡片</h4><div class="build-card-pairs">'+renderCards(b.support)+'</div></div></div><div class="relic-group"><h4>關鍵遺物</h4>'+(g.relics.length?'<ul class="relic-list">'+g.relics.map(r=>'<li><img class="relic-icon" src="'+relicIcon(r)+'" alt="" width="40" height="40"><div class="relic-content"><strong>'+esc(r.name)+'</strong><div class="relic-effect">'+rich(r.description)+'</div></div></li>').join('')+'</ul>':'<p class="no-relics">原站未列出指定遺物。</p>')+'</div></div></div></article>';
 }
 function characterFile(pool){return '#character-'+iconName[pool];}
 function characterNav(active='Ironclad'){return '<nav class="character-nav" aria-label="流派角色">'+pools.map(([pool,label,color])=>{const icon='data:image/webp;base64,'+fs.readFileSync('assets/cards/icons/'+iconName[pool]+'.webp').toString('base64');return '<a href="'+characterFile(pool)+'" data-character="'+pool+'" aria-label="'+label+'" title="'+label+'" style="--accent:'+color+'"'+(active===pool?' aria-current="page"':'')+'><img class="sidebar-character-icon" src="'+icon+'" alt="" width="32" height="32"><span class="sidebar-character-text"><span class="sidebar-character-zh">'+label+'</span><span class="sidebar-character-en" lang="en">'+pool+'</span></span></a>';}).join('')+'</nav>';}
@@ -145,7 +145,7 @@ main#main-content .tier-sidebar .tier-index-name{font:inherit}
   }
 
   main#main-content>.tier-sidebar {
-    width: 50%;
+    width: 100%;
     height: auto;
     max-height: none;
     align-self: center;
@@ -170,7 +170,7 @@ main#main-content .tier-sidebar .tier-index-name{font:inherit}
 }
 @media screen and (min-width:761px) {
   main#main-content>.character-sidebar {
-    width: 50%;
+    width: 100%;
     align-self: center;
     margin-inline: auto;
     padding-inline: 0;
@@ -196,11 +196,12 @@ main#main-content .tier-sidebar .tier-index-name{font:inherit}
   }
 }
 main#main-content>.character-sidebar .character-nav,main#main-content>.tier-sidebar .tier-index{justify-content:center}
-main#main-content>.build-layout .build-content{width:50%;justify-self:center}
+main#main-content>.build-layout .build-content{width:100%;justify-self:center}
 main#main-content .build-content .build-section{width:100%;min-width:0}
 main#main-content .build-content .build-details{display:flex;flex-direction:column;gap:28px}
 main#main-content .build-details::before{display:none}
 .build-card-pairs{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+@media (width > 1024px) and (hover: hover) and (pointer: fine), (width > 1366px) { .build-card-pairs { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .build-inline-card-pair{min-width:0;border:1px solid var(--line);border-radius:10px;padding:14px;background:var(--paper)}
 .build-pair-name{text-align:center;margin-bottom:12px}.build-pair-name .build-card-entry{display:inline-flex;align-items:center;gap:8px}
 .build-pair-images{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}

@@ -539,7 +539,7 @@ main#main-content .flex>div{min-width:0}
   html body main#main-content.ancient-browser .split-body {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     margin-inline: auto;
     gap: var(--group-gap, 16px);
   }
@@ -729,3 +729,17 @@ html body>.site-header {border-bottom:1px solid #354454!important}
 /* Equal spacing above and below the header divider. */
 html body .site-header>.site-header-inner {padding-block:8px!important}
 html body main#main-content {padding-top:8px!important}
+
+/* Thin scrollbars for the page and nested scroll areas. */
+* { scrollbar-width: thin; }
+
+
+/* Match the catalog attribution below the scrolling content. */
+html body main#main-content.ancient-browser .site-attribution {
+  margin: 32px 0 0;
+  font: 400 14px/1.6 system-ui, sans-serif;
+  color: #fff !important;
+}
+html body main#main-content.ancient-browser .site-attribution a {
+  color: #74b3e6;
+}

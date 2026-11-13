@@ -42,8 +42,25 @@ function runtime(){
  const data=JSON.parse(document.getElementById('detail-pane-data').textContent),main=document.getElementById('main-content');
  const filters=main.querySelector(':scope > .filters');if(filters)filters.remove();const list=document.createElement('div');list.className='split-list';while(main.firstChild)list.append(main.firstChild);const body=document.createElement('div');body.className='split-body';body.append(list);if(filters)main.append(filters);main.append(body);main.classList.add('detail-split');
  const panel=document.createElement('section');panel.className='split-detail';panel.setAttribute('aria-label','詳細內容');const heading=document.createElement('h2');heading.className='split-detail-heading';heading.textContent='詳細內容';const frame=document.createElement('iframe');frame.title='詳細內容';frame.hidden=true;heading.hidden=true;panel.append(frame);body.append(panel);
+ const encounterBrowser=Boolean(list.querySelector('.encounter'));
+ if(encounterBrowser){
+  main.classList.add('encounter-browser');
+  panel.hidden=true;
+  body.prepend(filters);
+  const back=document.createElement('button');
+  back.type='button';
+  back.className='encounter-back';
+  back.textContent='返回怪物列表';
+  panel.prepend(back);
+  back.addEventListener('click',()=>{
+   const selected=list.querySelector('[aria-current="true"]');
+   panel.hidden=true;
+   list.hidden=false;
+   selected?.focus();
+  });
+ }
  const choices=[];for(const link of list.querySelectorAll('a[href]')){const key=link.getAttribute('href').split('/').pop();if(!data.pages[key])continue;const item=link.closest('.entry')||link;item.dataset.detailKey=key;if(item.tagName!=='A')item.tabIndex=0;choices.push(item);if(link.classList.contains('details'))link.remove();}
- for(const item of choices){
+ for(const item of encounterBrowser?[]:choices){
   const sourceImage=item.querySelector('img'),sourceName=item.querySelector('h2,.font-semibold');
   if(!sourceImage||!sourceName)continue;
   const image=sourceImage.cloneNode(true);image.className='compact-detail-image';image.removeAttribute('style');
@@ -73,7 +90,7 @@ function runtime(){
  const fittedNames=choices.filter(item=>!item.classList.contains('event')).map(item=>item.querySelector('.compact-detail-name')).filter(Boolean);
  function fitListName(name){if(!name.clientWidth)return;let size=16;name.style.whiteSpace='nowrap';name.style.fontSize=size+'px';while(name.scrollWidth>name.clientWidth+1&&size>10){size-=.5;name.style.fontSize=size+'px';}if(name.scrollWidth>name.clientWidth+1)name.style.whiteSpace='normal';}
  const nameObserver=new ResizeObserver(entries=>{for(const entry of entries)fitListName(entry.target);});for(const name of fittedNames){fitListName(name);nameObserver.observe(name);}
- function open(key){const page=data.pages[key];if(!page)return;for(const item of choices){const active=item.dataset.detailKey===key;item.classList.toggle('is-detail-selected',active);if(active)item.setAttribute('aria-current','true');else item.removeAttribute('aria-current');}heading.hidden=true;frame.hidden=false;heading.textContent=page.name;frame.title=page.name+'詳細內容';const base=new URL('data/'+key.split('-')[0]+'/'+key,location.href).href;const selectedItem=choices.find(item=>item.dataset.detailKey===key),detailColor=selectedItem?getComputedStyle(selectedItem).getPropertyValue('--detail-color').trim():'';frame.srcdoc=page.html.replace(/<head\b[^>]*>/i,head=>head+'<base href="'+base+'">'+(detailColor?'<style>:root{--detail-highlight-color:'+detailColor+'}</style>':''));}
+ function open(key){const page=data.pages[key];if(!page)return;if(encounterBrowser){list.hidden=true;panel.hidden=false;}for(const item of choices){const active=item.dataset.detailKey===key;item.classList.toggle('is-detail-selected',active);if(active)item.setAttribute('aria-current','true');else item.removeAttribute('aria-current');}heading.hidden=true;frame.hidden=false;heading.textContent=page.name;frame.title=page.name+'詳細內容';const base=new URL('data/'+key.split('-')[0]+'/'+key,location.href).href;const selectedItem=choices.find(item=>item.dataset.detailKey===key),detailColor=selectedItem?getComputedStyle(selectedItem).getPropertyValue('--detail-color').trim():'';frame.srcdoc=page.html.replace(/<head\b[^>]*>/i,head=>head+'<base href="'+base+'">'+(detailColor?'<style>:root{--detail-highlight-color:'+detailColor+'}</style>':''));if(encounterBrowser)requestAnimationFrame(()=>panel.querySelector('.encounter-back').focus());}
  list.addEventListener('click',event=>{const item=event.target.closest('[data-detail-key]');if(!item||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();open(item.dataset.detailKey);});
  list.addEventListener('keydown',event=>{if((event.key==='Enter'||event.key===' ')&&event.target.matches('.entry[data-detail-key]')){event.preventDefault();open(event.target.dataset.detailKey);}});
  frame.addEventListener('load',()=>{const doc=frame.contentDocument;if(!doc)return;doc.addEventListener('click',event=>{const link=event.target.closest('a[href]');if(!link)return;const href=link.getAttribute('href');if(href.startsWith('#')){let id;try{id=decodeURIComponent(href.slice(1));}catch{return;}const target=doc.getElementById(id);if(target){event.preventDefault();if(id.startsWith('relic-')){for(const item of doc.querySelectorAll('.is-relic-highlighted'))item.classList.remove('is-relic-highlighted');target.classList.add('is-relic-highlighted');}target.style.scrollMarginTop='16px';target.tabIndex=-1;target.focus({preventScroll:true});target.scrollIntoView({block:'start',behavior:'instant'});}return;}const url=new URL(href,doc.baseURI),key=url.pathname.split('/').pop();if(data.pages[key]){event.preventDefault();open(key);}else if(url.href.split('#')[0]===location.href.split('#')[0]){event.preventDefault();list.focus();}else{link.target='_blank';link.rel='noopener';}});});
@@ -141,5 +158,5 @@ function normalizeDetailHeader(){
 }
 function build(kind){const file=kind+'.html';let html=fs.readFileSync(file,'utf8');if(html.includes('id="detail-pane-data"'))throw Error('Rebuild the original page before adding detail panes');html=html.replace(/(<a class="details"[^>]*>)[\s\S]*?(<\/a>)/g,'$1$2');const slugs=kind==='ancient'?JSON.parse(fs.readFileSync('data/ancient/catalog.json')).slugs:JSON.parse(fs.readFileSync('data/'+kind+'/catalog.json')).items.map(x=>x.slug);const pages={};for(const slug of slugs){const key=kind+'-'+slug+'.html';let detail=fs.readFileSync('data/'+key.split('-')[0]+'/'+key,'utf8');if(!detail.includes('<head>'))detail=detail.replace(/(<html[^>]*>)/,'$1<head>').replace('<body>','</head><body>');detail=detail.replace('<body>','<body data-detail-kind="'+kind+'">');detail=detail.replace('</head>','<style>'+embedStyles+typography+detailHeaderStyles+'</style></head>');if(kind==='event')detail=detail.replace('</body>','<script>('+cleanEventDetail.toString()+')();</script></body>');if(kind==='monster'||kind==='ancient')detail=detail.replace('</body>','<script>('+cleanOtherDetail.toString()+')('+JSON.stringify(kind)+');</script></body>');detail=detail.replace('</body>','<script>('+normalizeDetailHeader.toString()+')();</script></body>');pages[key]={name:(detail.match(/<title>(.*?)<\/title>/)?.[1]||slug).split('｜')[0].split(' | ')[0],html:detail};}
 const menu=kind==='ancient'?require('../ancient/desktop-ancient.cjs').desktopMenu():'';
-html=html.replace('</body>','<style>'+styles+typography+'</style>'+menu+'<script type="application/json" id="detail-pane-data">'+JSON.stringify({pages}).replace(/</g,'\\u003c')+'</script><script>('+runtime.toString()+')();</script></body>');if(['event','monster'].includes(kind))html=html.replace('</head>','<link rel="stylesheet" href="assets/event/catalog-browser.css"></head>').replace('</body>','<script src="assets/event/catalog-browser.js"></script></body>');fs.writeFileSync(file,html);console.log('Added split detail pane:',kind);}
+html=html.replace('</body>','<style>'+styles+typography+'</style>'+menu+'<script type="application/json" id="detail-pane-data">'+JSON.stringify({pages}).replace(/</g,'\\u003c')+'</script><script>('+runtime.toString()+')();</script></body>');if(kind==='event')html=html.replace('</head>','<link rel="stylesheet" href="assets/event/catalog-browser.css"></head>').replace('</body>','<script src="assets/event/catalog-browser.js"></script></body>');fs.writeFileSync(file,html);console.log('Added split detail pane:',kind);}
 module.exports={build};

@@ -1,75 +1,49 @@
-/* Desktop monster flow */
-html body main#main-content.monster-browser[data-monster-step] .split-body {
+/* Encounter browser */
+html body main#main-content.encounter-browser > .split-body {
+  display: block;
+  width: 100%;
+  margin-inline: auto;
+  overflow: auto;
+}
+.encounter-browser .split-list { overflow: visible; min-height: 0; }
+.encounter-browser .split-detail { min-height: 70dvh; }
+.encounter-back { align-self: flex-start; margin: 12px; padding: 6px 12px; font: inherit; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 7px; cursor: pointer; }
+html body main#main-content.encounter-browser > .split-body > .chapter-filters {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  min-width: 0;
-  margin-inline: auto;
-  gap: var(--group-gap, 16px);
-}
-html body main#main-content.monster-browser[data-monster-step] .split-list {
-  flex: 0 1 auto;
+  align-items: stretch;
   width: 100%;
-  min-width: 0;
+  margin: 0 0 16px;
+  gap: 8px;
 }
-html body main#main-content.monster-browser[data-monster-step=list] .split-list {
-  flex: 1 1 auto;
+html body main#main-content.encounter-browser > .split-body > .chapter-filters > input#search { flex: none; order: 0; }
+.encounter-browser .encounter-nav { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); }
+.encounter-nav [data-encounter-chapter=e-act1a] { --chapter-color: #70bf8b; }
+.encounter-nav [data-encounter-chapter=e-act1b] { --chapter-color: #6faeee; }
+.encounter-nav [data-encounter-chapter=e-act2] { --chapter-color: #e3bf72; }
+.encounter-nav [data-encounter-chapter=e-act3] { --chapter-color: #b595dd; }
+.encounter-nav button { color: var(--chapter-color); border-color: color-mix(in srgb,var(--chapter-color) 50%,var(--line)); }
+.encounter-nav button:is(:hover,[aria-pressed=true]) {
+  border-color: var(--chapter-color);
+  background: color-mix(in srgb,var(--chapter-color) 22%,var(--paper));
 }
-html body main#main-content.monster-browser[data-monster-step]:not([data-monster-step=list]) :is(.monster-choices,#empty) {
-  display: none;
+@media (max-width: 599px) {
+  .encounter-browser .encounter-grid { grid-template-columns: minmax(0,1fr); }
 }
-html body main#main-content.monster-browser[data-monster-step] .split-detail {
-  flex: 1 1 0;
-  height: auto;
-  width: 100%;
-  margin: 0;
-}
-
-html body main#main-content.monster-browser[data-monster-step] .monster-chapter-options {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-html body main#main-content.monster-browser[data-monster-step] .monster-chapter-options button[data-filter-group=acts] {
-  font-size: clamp(13px, 1.25vw, 18px);
-  padding-inline: 4px;
-  white-space: nowrap;
-}
-
-/* Monster choices use two desktop columns and one touch-device column. */
-html body main#main-content.monster-browser .split-list .monster-choices {
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  grid-auto-rows:max-content;
-  align-content:start;
-}
-html body main#main-content.monster-browser .split-list .monster-choices>.entry {
-  min-width:0;
-}
-@media screen and (width < 600px) {
-  html body main#main-content.monster-browser .split-list .monster-choices {
-    grid-template-columns:minmax(0,1fr);
-  }
-}
-
-/* Borderless event/monster panels on phones and tablets. */
-@media screen and (max-width:1366px) {
-  html body main#main-content.monster-browser .split-list,
-  html body main#main-content.monster-browser .split-detail {
-    border:0;border-radius:0;box-shadow:none;background:transparent;
-  }
-  html body main#main-content.monster-browser .split-list {padding:0}
-}
-
-/* Match the card filter menu typography. */
-html body main#main-content.monster-browser .chapter-filters button[data-filter-group],
-html body main#main-content.monster-browser .split-list .catalog-choices .compact-detail-name {
-  font-family:Arial,"Microsoft JhengHei",sans-serif;
-  font-size:20px!important;font-weight:400;line-height:1.4;
-  white-space:normal;overflow-wrap:anywhere;
-}
-
-/* Remove only the enclosing search/chapter/choice panel frame. */
-html body main#main-content.monster-browser .split-list {
-  border:0!important;border-radius:0!important;box-shadow:none!important;
-  outline:none!important;background:transparent!important;
-}
+.encounter-browser .split-detail[hidden], .encounter-browser [hidden] { display: none; }
+.encounter-nav, .encounter-members { display: flex; flex-wrap: wrap; gap: 8px; }
+.encounter-member { padding: 6px 10px; border-radius: 7px; background: #17202b; text-decoration: none; }
+.encounter-chapter { margin-bottom: 24px; scroll-margin-top: 8px; }
+.encounter-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.encounter { padding: 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); }
+main#main-content .encounter h3 { margin: 0 0 10px; font-size: 17px; }
+.encounter small { font-size: 13px; color: var(--muted); }
+.encounter-type { color: var(--type-color, #aab6c4); font-size: 14px; }
+.encounter[data-type=boss] { --type-color: #dc6c68; }
+.encounter[data-type=elite] { --type-color: #e3bf72; }
+.encounter[data-type=normal] { --type-color: #70bf8b; }
+.encounter[data-type=summon] { --type-color: #b595dd; }
+.encounter-member { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; }
+.encounter-member img { width: 44px; height: 44px; object-fit: contain; }
+.encounter-member small { display: block; }
+.encounter-random { color: var(--muted); }

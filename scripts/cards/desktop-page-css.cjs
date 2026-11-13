@@ -21,7 +21,7 @@ function writeDesktopPage(page, html) {
   });
   if (!styles.length) throw new Error('Missing stylesheet for ' + page);
   fs.writeFileSync(stylesheet, styles.join('\n\n') + '\n' + require('./page-frame.cjs'));
-  fs.writeFileSync(page, updated);
+  fs.writeFileSync(page, name === 'event' ? updated : updated.replace('</body>', "<footer class=\"site-attribution\" style=\"position:static;flex:0 0 auto;grid-column:1 / -1;padding:8px 16px;text-align:center;font-size:14px;color:var(--muted,#aab6c4)\">資料來源：<a href=\"https://slaythespire2.net/zh-TW/monster\" target=\"_blank\" rel=\"noopener\">殺戮尖塔2 攻略與Wiki</a> · 遊戲內容與圖片屬各自權利人所有。</footer><script>(()=>{const main=document.getElementById('main-content');const footer=document.querySelector('.site-attribution');const region=main.querySelector('.split-body,.build-content')||main.querySelector('.catalog-scroll,.card-scroll')||main;region.append(footer);})();</script>" + '</body>'));
 }
 
 module.exports = {writeDesktopPage};

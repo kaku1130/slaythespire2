@@ -2,7 +2,8 @@
 html body main#main-content.event-browser[data-event-step] .split-body {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
+  overflow: auto;
   min-width: 0;
   margin-inline: auto;
   gap: var(--group-gap, 16px);
@@ -78,4 +79,14 @@ html body main#main-content.event-browser .split-list .catalog-choices .compact-
 html body main#main-content.event-browser .split-list {
   border:0!important;border-radius:0!important;box-shadow:none!important;
   outline:none!important;background:transparent!important;
+}
+
+/* Keep filters and results in the same scroll area. */
+html body main#main-content.event-browser .split-list {
+  flex-shrink: 0;
+  overflow: visible;
+}
+html body main#main-content.event-browser .split-list .event-choices {
+  flex: none;
+  overflow: visible;
 }
