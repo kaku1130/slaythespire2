@@ -227,9 +227,9 @@ main#main-content .tier-sidebar .tier-index-name{font:inherit}
   }
 
   main#main-content>.character-sidebar .character-nav {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    width: 100%;
   }
 
   main#main-content>.character-sidebar .character-nav a {
@@ -635,4 +635,115 @@ html body main#main-content.ancient-browser .split-detail[hidden]{display:none}
  }
  html body main#main-content[data-mobile-page]{scroll-padding-top:12px}
  html body main#main-content[data-mobile-page] :is(section,[id^=card-],[id^=build-],.split-detail){scroll-margin-top:12px}
+}
+
+/* Stretch profession controls to the same edges as the build menu. */
+@media screen and (min-width:761px) {
+  html body main#main-content>.character-sidebar .character-nav {
+    display:grid;grid-template-columns:repeat(5,minmax(0,1fr));width:100%;
+  }
+  html body main#main-content>.character-sidebar .character-nav a {
+    width:100%!important;min-width:0!important;max-width:none!important;
+  }
+}
+
+/* Keep navigation in one row when the full labels no longer fit. */
+@media screen and (max-width:1366px) {
+  html body .site-header>.site-header-inner {flex-wrap:nowrap;gap:8px;min-height:56px}
+  html body .site-header .site-brand {flex:0 0 auto;min-height:44px;gap:0}
+  html body .site-header .site-brand>span,
+  html body .site-header .site-nav a>span:not([aria-hidden]) {
+    display:block;position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip-path:inset(50%);white-space:nowrap;
+  }
+  html body .site-header .site-logo {width:30px;height:30px}
+  html body .site-header .site-nav {flex:1 1 auto;width:auto;min-width:0;gap:4px}
+  html body .site-header .site-nav a {flex:1 1 0;min-width:0;min-height:44px;padding:4px!important;gap:0;font-size:24px}
+}
+
+/* All pages share a full-width frame with the same edge spacing. */
+html {--site-width:100%;--site-page-gap:20px}
+html body main#main-content,
+html body .site-header>.site-header-inner {
+  box-sizing:border-box;
+  width:100%!important;
+  max-width:none!important;
+  margin-inline:0!important;
+  padding-inline:16px!important;
+}
+html body main#main-content {padding-block:20px 24px}
+
+/* Compact, right-aligned navigation with a GitHub brand icon. */
+html body .site-header .site-nav {flex:0 1 auto!important;width:auto!important;margin-left:auto;justify-content:flex-end}
+html body .site-header .site-nav a {flex:0 0 auto!important}
+html body .site-header .site-logo {content:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2UzZThlZSI+PHBhdGggZD0iTTEyIC4yOTdDNS4zNy4yOTcgMCA1LjY3IDAgMTIuMjk3YzAgNS4zMDMgMy40MzggOS44IDguMjA1IDExLjM4NS42LjExMy44Mi0uMjU4LjgyLS41NzcgMC0uMjg1LS4wMS0xLjA0LS4wMTUtMi4wNC0zLjMzOC43MjQtNC4wNDMtMS42MS00LjA0My0xLjYxLS41NDYtMS4zODctMS4zMzMtMS43NTYtMS4zMzMtMS43NTYtMS4wOS0uNzQ1LjA4My0uNzI5LjA4My0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNyAxLjgzOCAxLjIzNyAxLjA3IDEuODM1IDIuODA3IDEuMzA1IDMuNDkyLjk5OC4xMDgtLjc3Ni40MTgtMS4zMDUuNzYyLTEuNjA1LTIuNjY1LS4zMDUtNS40NjctMS4zMzQtNS40NjctNS45MzEgMC0xLjMxLjQ2OC0yLjM4MSAxLjIzNi0zLjIyMS0uMTI0LS4zMDMtLjUzNi0xLjUyNC4xMTctMy4xNzYgMCAwIDEuMDA4LS4zMjIgMy4zMDEgMS4yM2ExMS41MiAxMS41MiAwIDAgMSAzLjAwNC0uNDA0YzEuMDIuMDA1IDIuMDQ3LjEzOCAzLjAwNi40MDQgMi4yOTEtMS41NTIgMy4yOTctMS4yMyAzLjI5Ny0xLjIzLjY1NSAxLjY1Mi4yNDMgMi44NzMuMTE5IDMuMTc2Ljc3Ljg0IDEuMjM1IDEuOTExIDEuMjM1IDMuMjIxIDAgNC42MDktMi44MDcgNS42MjQtNS40NzkgNS45MjEuNDMuMzcyLjgyMyAxLjEwMi44MjMgMi4yMjIgMCAxLjYwNi0uMDE1IDIuODk4LS4wMTUgMy4yOTMgMCAuMzIyLjIxNi42OTQuODI1LjU3NkMyMC41NjUgMjIuMDkyIDI0IDE3LjU5NyAyNCAxMi4yOTdjMC02LjYyNy01LjM3My0xMi0xMi0xMiIvPjwvc3ZnPgo=")}
+
+/* Show navigation labels whenever tablet-sized widths have enough room, regardless of input device. */
+@media screen and (min-width:700px) and (max-width:1366px) {
+  html body .site-header .site-nav a {font-size:18px;gap:5px;padding:6px!important}
+  html body .site-header .site-nav a>span:not([aria-hidden]) {
+    display:inline;position:static;width:auto;height:auto;padding:0;margin:0;
+    overflow:visible;clip-path:none;white-space:nowrap;
+  }
+  html body .site-header .site-nav a>span[aria-hidden] {font-size:20px}
+}
+
+/* Keep the site header visible during whole-page scrolling. */
+html body>.site-header {position:sticky!important;top:0;z-index:100}
+
+/* Full-width build menus and content on phones and tablet-sized viewports. */
+@media screen and (max-width:1133px) {
+  html body main#main-content>.character-sidebar,
+  html body main#main-content>.tier-sidebar,
+  html body main#main-content>.build-layout,
+  html body main#main-content>.build-layout .build-content {
+    width:100%!important;max-width:none;min-width:0;margin-inline:0;padding-inline:0;
+  }
+  html body main#main-content>.character-sidebar .character-nav {
+    display:grid;grid-template-columns:repeat(5,minmax(0,1fr));width:100%;
+  }
+  html body main#main-content>.character-sidebar .character-nav a {
+    width:100%!important;min-width:0!important;max-width:none!important;
+  }
+  html body main#main-content>.tier-sidebar .tier-index {
+    display:grid;grid-template-columns:minmax(0,1fr);width:100%;
+  }
+  html body main#main-content>.tier-sidebar .tier-index-item {
+    width:100%;min-width:0;white-space:normal;justify-content:flex-start;text-align:left;
+  }
+}
+
+/* Keep build menu labels left-aligned at every viewport size. */
+html body main#main-content>.tier-sidebar .tier-index-item {
+  justify-content:flex-start!important;text-align:left!important;
+}
+html body main#main-content>.tier-sidebar .tier-index-item .tier-index-name {
+  text-align:left;
+}
+
+/* Phones and compact tablets keep icon-only navigation in either orientation. */
+@media screen and (max-width:768px), screen and (orientation:landscape) and (max-width:1133px) and (max-height:768px) {
+  html body .site-header .site-nav a {font-size:24px;gap:0;padding:4px!important}
+  html body .site-header .site-nav a>span:not([aria-hidden]) {
+    display:block;position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip-path:inset(50%);white-space:nowrap;
+  }
+  html body .site-header .site-nav a>span[aria-hidden] {font-size:24px}
+}
+
+/* Fit all seven phone navigation buttons without clipping the first border. */
+@media screen and (max-width:600px) {
+  html body .site-header .site-nav a {
+    box-sizing:border-box;width:clamp(30px,8vw,40px);min-width:0;
+    padding:4px!important;font-size:20px;
+  }
+  html body .site-header .site-nav a>span[aria-hidden] {font-size:20px;line-height:1}
+}
+
+/* Phone navigation uses the entire header row without the brand icon. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) {
+  html body .site-header .site-brand {display:none!important}
+  html body .site-header>.site-header-inner {gap:0}
+  html body .site-header .site-nav {flex:1 1 auto!important;width:100%!important;margin:0;gap:4px}
+  html body .site-header .site-nav a {flex:1 1 0!important;width:auto;min-width:0}
 }

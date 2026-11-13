@@ -1,3 +1,52 @@
-process.chdir(require('path').resolve(__dirname,'../..'));
-const fs=require('fs'),path=require('path'),http=require('http'),assert=require('assert/strict'),{pathToFileURL}=require('url'),{chromium}=require('C:/Users/TBKC/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
-(async()=>{const root=process.cwd(),server=http.createServer((req,res)=>{try{const file=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname));if(!file.startsWith(root+path.sep)||!fs.statSync(file).isFile()){res.writeHead(404).end();return;}res.setHeader('Content-Type',file.endsWith('.html')?'text/html; charset=utf-8':file.endsWith('.webp')?'image/webp':'application/octet-stream');fs.createReadStream(file).pipe(res);}catch{res.writeHead(404).end();}});await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});try{const cards=JSON.parse(fs.readFileSync('data/cards/cards-source.json')),tiers=new Map(JSON.parse(fs.readFileSync('data/cards/tiers-source.json')).rankings.map(c=>[c.id,c.tier])),rarity=['Basic','Common','Uncommon','Rare','Ancient','Event','Curse','Quest'],rank=c=>{const i=['S','A','B','C','D'].indexOf(tiers.get(c.id));return i<0?5:i;};for(const mode of ['file','http']){const context=await browser.newContext({viewport:{width:1920,height:1080}}),page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));const url=file=>mode==='file'?pathToFileURL(path.join(root,file)).href:'http://127.0.0.1:'+server.address().port+'/'+file;await page.goto(url('cards.html'));const actual=await page.locator('section[data-pool]').evaluateAll(sections=>sections.map(s=>({pool:s.dataset.pool,ids:[...s.querySelectorAll('tbody tr')].map(r=>r.dataset.id)})));for(const group of actual){const expected=cards.filter(c=>c.pool===group.pool).sort((a,b)=>rarity.indexOf(a.rarity)-rarity.indexOf(b.rarity)||rank(a)-rank(b)||a.name.localeCompare(b.name,'en',{sensitivity:'base'})).map(c=>c.id);assert.deepEqual(group.ids,expected);}for(const selector of ['[data-category=Ironclad]','[data-category=Silent]','[data-rarity-filter=Uncommon]','[data-rarity-filter=Rare]','[data-type-filter=Skill]','[data-type-filter=Power]'])await page.locator(selector).click();await page.locator('#search').fill('格擋');const count=await page.locator('tbody tr:visible').count();assert.ok(count>0);await page.reload();assert.equal(await page.locator('[data-category][aria-pressed=true]').count(),2);assert.equal(await page.locator('[data-rarity-filter][aria-pressed=true]').count(),2);assert.equal(await page.locator('[data-type-filter][aria-pressed=true]').count(),2);assert.equal(await page.locator('#search').inputValue(),'格擋');assert.equal(await page.locator('body').getAttribute('data-view'),'grid');assert.equal(await page.locator('tbody tr:visible').count(),count);await page.goto(url('builds.html'));await page.locator('[data-character=Regent]').click();await page.waitForFunction(()=>document.querySelector('[data-character=Regent]').getAttribute('aria-current')==='page');const build=page.locator('.tier-index-item:visible').nth(2),hash=await build.getAttribute('href');await build.click();await page.waitForFunction(hash=>document.querySelector('.tier-index-item[aria-current=location]')?.getAttribute('href')===hash,hash);await page.reload();assert.equal(await page.locator('[data-character=Regent]').getAttribute('aria-current'),'page');assert.equal(await page.locator('.tier-index-item[aria-current=location]').getAttribute('href'),hash);await page.goto(url('builds.html'));assert.ok(await page.locator('.tier-sidebar').isHidden());assert.ok(await page.locator('.build-layout').isHidden());if(mode==='http'){const cookies=await context.cookies();assert.ok(cookies.some(c=>c.name==='sts2_preferences_v1_cards'));assert.ok(cookies.some(c=>c.name==='sts2_preferences_v1_builds'));}else assert.ok(await page.evaluate(()=>localStorage.getItem('sts2_preferences_v1_builds')));await page.goto(url('cards.html')+'#card-BASH');assert.equal(await page.locator('[data-category=Ironclad]').getAttribute('aria-pressed'),'true');await page.locator('[data-category=Ironclad]').click();await page.locator('[data-category=Silent]').click();await page.locator('#search').fill('毒');await page.reload();assert.equal(await page.locator('[data-category=Silent]').getAttribute('aria-pressed'),'true');assert.equal(await page.locator('[data-category=Ironclad]').getAttribute('aria-pressed'),'false');assert.equal(await page.locator('#search').inputValue(),'毒');assert.deepEqual(errors,[]);console.log('PASS:',mode,'rarity/Tier/name order; reload remembers multi-filters, search, role/build and respects modified filters after a linked card.');await context.close();}}finally{await browser.close();await new Promise(resolve=>server.close(resolve));}})().catch(e=>{console.error(e);process.exitCode=1});
+const fs = require('node:fs');
+const path = require('node:path');
+const assert = require('node:assert/strict');
+const {pathToFileURL} = require('node:url');
+const {chromium} = require(path.join(process.env.USERPROFILE, '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright'));
+process.chdir(path.resolve(__dirname, '../..'));
+(async () => {
+  const browser = await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe', headless:true});
+  try {
+    const context = await browser.newContext({viewport:{width:1920,height:1080}});
+    // Fail if any page tries to read or write persisted menu preferences.
+    await context.addInitScript(() => {
+      for (const name of ['localStorage', 'sessionStorage']) Object.defineProperty(window, name, {get(){throw Error('Unexpected storage access: '+name);}});
+      Object.defineProperty(document, 'cookie', {get(){throw Error('Unexpected cookie read');},set(){throw Error('Unexpected cookie write');}});
+    });
+    const page = await context.newPage(), errors = [];
+    page.on('pageerror', e => errors.push(e.message));
+    const url = kind => pathToFileURL(path.resolve(kind+'.html')).href;
+    await page.goto(url('cards'));
+    const selected = () => page.locator('[data-category][aria-pressed=true]').evaluateAll(nodes=>nodes.map(n=>n.dataset.category));
+    assert.deepEqual(await selected(), ['Ironclad']);
+    for (const pool of ['Silent','Defect','Regent','Necrobinder','Colorless','Curse','Event','Quest','Ironclad']) {
+      for (let repeat=0;repeat<2;repeat++) {
+        await page.locator('[data-category='+pool+']').click();
+        assert.deepEqual(await selected(), [pool]);
+        assert.deepEqual(await page.locator('section[data-pool]:visible').evaluateAll(nodes=>nodes.map(n=>n.dataset.pool)),[pool]);
+      }
+    }
+    await page.locator('[data-category=Silent]').click();
+    await page.locator('[data-rarity-filter=Rare]').click();
+    await page.locator('[data-type-filter=Skill]').click();
+    await page.locator('#search').fill('格擋');
+    await page.reload();
+    assert.deepEqual(await selected(), ['Ironclad']);
+    assert.equal(await page.locator('#search').inputValue(), '');
+    assert.equal(await page.locator('[data-rarity-filter][aria-pressed=true],[data-type-filter][aria-pressed=true]').count(),0);
+    for (const kind of ['ancient','builds','event','monster','potion','relic']) {
+      const html=fs.readFileSync(kind+'.html','utf8');
+      assert.ok(!/localStorage|sessionStorage|document\.cookie|sts2Preferences/.test(html),kind);
+      await page.goto(url(kind));
+      const control = page.locator('[data-filter-group], [data-character], [data-rarity-filter]').first();
+      if (await control.isVisible()) await control.click();
+      await page.goto(url('cards'));
+      await page.goto(url(kind));
+      if(kind==='monster') assert.deepEqual(await page.locator('[data-filter-group=encounterType][aria-pressed=true]').evaluateAll(nodes=>nodes.map(n=>n.dataset.filterValue)),['elite','boss']);
+      if(kind==='builds') assert.equal(await page.locator('[data-character][aria-current=page]').count(),0);
+    }
+    assert.deepEqual(errors,[]);
+    assert.deepEqual(await context.cookies(),[]);
+    console.log('PASS: exclusive card categories, Ironclad default, reload resets filters, all pages work without storage or cookies.');
+  } finally {await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});

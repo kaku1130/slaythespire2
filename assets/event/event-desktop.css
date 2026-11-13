@@ -34,3 +34,25 @@ html body main#main-content.event-browser[data-event-step] .split-list>.filters.
   padding-inline: 4px;
   white-space: nowrap;
 }
+
+/* Event choices use two desktop columns and left-aligned labels. */
+html body main#main-content.event-browser .split-list .event-choices {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-auto-rows:max-content;
+  align-content:start;
+}
+html body main#main-content.event-browser .split-list .event-choices>.entry.event {
+  min-width:0;
+  justify-content:flex-start;
+  text-align:left;
+}
+html body main#main-content.event-browser .split-list .event-choices .compact-detail-name {
+  width:100%;
+  text-align:left;
+}
+@media screen and (max-width:1024px),screen and (max-width:1366px) and (hover:none) and (pointer:coarse) {
+  html body main#main-content.event-browser .split-list .event-choices {
+    grid-template-columns:minmax(0,1fr);
+  }
+}

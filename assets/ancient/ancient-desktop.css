@@ -49,3 +49,35 @@
     display: none;
   }
 }
+
+/* Match the relic page dark native scrollbar. */
+html{color-scheme:dark;scrollbar-width:auto;scrollbar-color:auto}
+
+/* Ancient details participate in the page's single scrolling flow. */
+html:has(main.ancient-browser),html body:has(main.ancient-browser) {
+  position:static!important;display:block;height:auto!important;min-height:100%;overflow:visible!important;
+}
+html body main#main-content.ancient-browser.detail-split {
+  display:block!important;height:auto;overflow:visible!important;
+}
+html body main#main-content.ancient-browser .split-body {
+  display:block;height:auto;overflow:visible;
+}
+html body main#main-content.ancient-browser .split-detail {
+  display:block;height:auto;min-height:0;border:0;border-radius:0;background:transparent;overflow:visible;margin:0;
+}
+html body main#main-content.ancient-browser .split-detail iframe {
+  display:block;flex:none;width:100%;min-height:0;border:0;
+}
+
+/* Scroll only the content below the header, as on the relic page. */
+html:has(main.ancient-browser) {
+  height:100%!important;min-height:0;overflow:clip!important;
+}
+html body:has(main.ancient-browser) {
+  position:fixed!important;inset:0;display:flex;flex-direction:column;
+  width:100%;height:100dvh!important;min-height:0;overflow:hidden!important;
+}
+html body main#main-content.ancient-browser.detail-split {
+  flex:1;min-height:0;height:auto;overflow-y:auto!important;overflow-x:hidden!important;
+}

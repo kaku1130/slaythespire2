@@ -1,0 +1,19 @@
+/* Scroll the search, filters, and catalog together. */
+html body main#main-content:has(>.potion-filters) {
+  display: block;
+  overflow-y: auto;
+}
+html body main#main-content>.filters {
+  position: static;
+  max-height: none;
+  overflow: visible;
+}
+html body main#main-content>.catalog-scroll {
+  margin-inline: auto;
+  height: auto;
+  max-height: none;
+  overflow: visible;
+}
+
+/* No divider beneath the search bar. */
+html body main#main-content>.mobile-search-row,html body main#main-content .catalog-search-tools {border-bottom:0;box-shadow:none}

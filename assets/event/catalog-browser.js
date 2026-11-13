@@ -58,10 +58,10 @@
   const desktop = () => !compact.matches;
   const chapterLabels = new Map(buttons
     .filter(button => button.dataset.filterGroup === 'acts')
-    .map(button => [button, button.textContent]));
+    .map(button => [button, button.textContent.replace(/^第[一二三四五六七八九十\d]+章[・\s]*/, '')]));
   const step = kind === 'event' ? 'eventStep' : 'monsterStep';
-  let chapter = kind === 'event' && desktop() ? null : 'act1a';
-  const types = new Set(kind === 'monster' && !desktop() ? ['elite', 'boss'] : []);
+  let chapter = 'act1a';
+  const types = new Set(kind === 'monster' ? ['elite', 'boss'] : []);
 
   function showSelectionList() {
     const ready = kind === 'event' ? chapter !== null : types.size > 0;

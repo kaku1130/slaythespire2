@@ -34,3 +34,19 @@ html body main#main-content.monster-browser[data-monster-step] .monster-chapter-
   padding-inline: 4px;
   white-space: nowrap;
 }
+
+/* Monster choices use two desktop columns and one touch-device column. */
+html body main#main-content.monster-browser .split-list .monster-choices {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-auto-rows:max-content;
+  align-content:start;
+}
+html body main#main-content.monster-browser .split-list .monster-choices>.entry {
+  min-width:0;
+}
+@media screen and (max-width:1024px),screen and (max-width:1366px) and (hover:none) and (pointer:coarse) {
+  html body main#main-content.monster-browser .split-list .monster-choices {
+    grid-template-columns:minmax(0,1fr);
+  }
+}

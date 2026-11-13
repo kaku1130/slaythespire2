@@ -132,9 +132,8 @@
   const sharedHome = sharedAncients && document.createComment('Desktop shared ancient position');
   if (sharedAncients) sharedAncients.before(sharedHome);
   const chapterButtons = ['monster', 'event'].includes(pageKind) ? [...main.querySelectorAll('[data-filter-group="acts"]')].map(button => ({button, label: button.textContent})) : [];
-  const compactChapterLabels = {act1a: '1.密林', act1b: '1.暗港', act2: '2.巢穴', act3: '3.榮耀'};
   function update() {
-    for (const {button, label} of chapterButtons) button.textContent = media.matches ? compactChapterLabels[button.dataset.filterValue] || label : label;
+    for (const {button, label} of chapterButtons) button.textContent = label.replace(/^第[一二三四五六七八九十\d]+章[・\s]*/, '');
     if (pageKind === 'cards') {
       for (const button of main.querySelectorAll('[data-category="Curse"],[data-category="Event"],[data-category="Quest"]')) button.hidden = media.matches;
       const colorless = main.querySelector('[data-category="Colorless"]');

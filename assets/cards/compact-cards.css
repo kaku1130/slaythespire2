@@ -1,0 +1,20 @@
+@media screen and (max-width:768px), screen and (orientation:landscape) and (max-width:1133px) and (max-height:768px) {
+  html body main#main-content:has(>#card-scroll) {display:flex!important;flex-direction:column;overflow-y:auto!important;gap:16px}
+  html body main#main-content>:is(.card-search,#tools,#card-scroll) {flex:none;width:100%;max-width:none;min-height:0;max-height:none;overflow:visible;margin:0;padding:0}
+  html body main#main-content>.card-search {display:block}
+  html body main#main-content #tools {display:flex;flex-direction:column;gap:16px}
+  html body main#main-content #tools :is(.primary-filter-row,.secondary-filter-row,.chips,.filter-cluster,.rarity-buttons) {width:100%;max-width:none}
+  html body main#main-content #tools #aoe-toggle {width:100%;min-height:48px;flex:none;order:10;font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:7px}
+  html body main#main-content #tools #aoe-toggle[aria-pressed=true] {color:var(--focus);border-color:var(--focus)}
+  html body[data-view=grid] #card-scroll tbody {grid-template-columns:minmax(0,1fr)}
+}
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) {
+  html body[data-view=grid] #card-scroll .card-images-pair {grid-template-columns:minmax(0,1fr)}
+  html body[data-view=grid] #card-scroll .card-images-pair figcaption {display:none}
+}
+
+@media screen and (max-width:768px), screen and (orientation:landscape) and (max-width:1133px) and (max-height:768px) {
+  html body main#main-content #tools :is(.primary-filter-row,.secondary-filter-row,.chips,.filter-cluster) {
+    margin:0;padding:0;row-gap:16px;
+  }
+}

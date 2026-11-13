@@ -77,8 +77,26 @@ function runtime(){
  list.addEventListener('click',event=>{const item=event.target.closest('[data-detail-key]');if(!item||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();open(item.dataset.detailKey);});
  list.addEventListener('keydown',event=>{if((event.key==='Enter'||event.key===' ')&&event.target.matches('.entry[data-detail-key]')){event.preventDefault();open(event.target.dataset.detailKey);}});
  frame.addEventListener('load',()=>{const doc=frame.contentDocument;if(!doc)return;doc.addEventListener('click',event=>{const link=event.target.closest('a[href]');if(!link)return;const href=link.getAttribute('href');if(href.startsWith('#')){let id;try{id=decodeURIComponent(href.slice(1));}catch{return;}const target=doc.getElementById(id);if(target){event.preventDefault();if(id.startsWith('relic-')){for(const item of doc.querySelectorAll('.is-relic-highlighted'))item.classList.remove('is-relic-highlighted');target.classList.add('is-relic-highlighted');}target.style.scrollMarginTop='16px';target.tabIndex=-1;target.focus({preventScroll:true});target.scrollIntoView({block:'start',behavior:'instant'});}return;}const url=new URL(href,doc.baseURI),key=url.pathname.split('/').pop();if(data.pages[key]){event.preventDefault();open(key);}else if(url.href.split('#')[0]===location.href.split('#')[0]){event.preventDefault();list.focus();}else{link.target='_blank';link.rel='noopener';}});});
-
+ if(main.classList.contains('ancient-browser')){
+  let detailObserver;
+  frame.setAttribute('scrolling','no');
+  frame.addEventListener('load',()=>{
+   detailObserver?.disconnect();
+   const doc=frame.contentDocument,content=doc?.getElementById('main-content');
+   if(!content)return;
+   const style=doc.createElement('style');
+   style.textContent='html,body{min-height:0!important;height:auto!important;overflow:hidden!important}';
+   doc.head.append(style);
+   const resize=()=>{frame.style.height=Math.ceil(content.getBoundingClientRect().height)+'px';};
+   detailObserver=new ResizeObserver(resize);detailObserver.observe(content);resize();
+   main.scrollTo({top:0,behavior:'instant'});
+  });
+  list.remove();
+  document.getElementById('ancient-desktop-menu')?.remove();
+  open('ancient-neow.html');
+ }
 }
+
 function cleanEventDetail(){
  const main=document.getElementById('main-content');if(!main)return;
  for(const a of main.querySelectorAll('a'))if(a.textContent.trim()==='所有事件')a.remove();

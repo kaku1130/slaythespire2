@@ -20,7 +20,7 @@ function writeDesktopPage(page, html) {
     return styles.length === 1 ? '<link rel="stylesheet" href="' + stylesheet + '">' : '';
   });
   if (!styles.length) throw new Error('Missing stylesheet for ' + page);
-  fs.writeFileSync(stylesheet, styles.join('\n\n') + '\n');
+  fs.writeFileSync(stylesheet, styles.join('\n\n') + '\n' + require('./page-frame.cjs'));
   fs.writeFileSync(page, updated);
 }
 

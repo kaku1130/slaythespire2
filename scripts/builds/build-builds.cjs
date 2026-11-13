@@ -1,5 +1,5 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
-const preferences=require('../cards/site-preferences.cjs');
+
 const resourceIcons=require('../cards/resource-icons.cjs');
 const fs=require('node:fs'),assert=require('node:assert/strict'),navigation=require('../cards/site-navigation.cjs');
 const guide=JSON.parse(fs.readFileSync('data/builds/guide.json','utf8'));
@@ -177,9 +177,9 @@ main#main-content .tier-sidebar .tier-index-name{font:inherit}
   }
 
   main#main-content>.character-sidebar .character-nav {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    width: 100%;
   }
 
   main#main-content>.character-sidebar .character-nav a {
@@ -207,8 +207,48 @@ main#main-content .build-details::before{display:none}
 .build-pair-images figure{margin:0;min-width:0}
 .build-pair-images img{display:block;width:100%;height:auto;aspect-ratio:340/454;object-fit:contain}.build-no-upgrade{padding:40px 8px;text-align:center;color:var(--muted)}
 @media(max-width:760px){main#main-content>.build-layout .build-content{width:100%}.build-inline-card-pair{padding:8px}.build-pair-images{gap:6px}main#main-content .build-details .build-resources{border-top:0;padding-top:0}}
+
+/* Stretch profession controls to the same edges as the build menu. */
+@media screen and (min-width:761px) {
+  html body main#main-content>.character-sidebar .character-nav {
+    display:grid;grid-template-columns:repeat(5,minmax(0,1fr));width:100%;
+  }
+  html body main#main-content>.character-sidebar .character-nav a {
+    width:100%!important;min-width:0!important;max-width:none!important;
+  }
+}
+
+/* Full-width build menus and content on phones and tablet-sized viewports. */
+@media screen and (max-width:1133px) {
+  html body main#main-content>.character-sidebar,
+  html body main#main-content>.tier-sidebar,
+  html body main#main-content>.build-layout,
+  html body main#main-content>.build-layout .build-content {
+    width:100%!important;max-width:none;min-width:0;margin-inline:0;padding-inline:0;
+  }
+  html body main#main-content>.character-sidebar .character-nav {
+    display:grid;grid-template-columns:repeat(5,minmax(0,1fr));width:100%;
+  }
+  html body main#main-content>.character-sidebar .character-nav a {
+    width:100%!important;min-width:0!important;max-width:none!important;
+  }
+  html body main#main-content>.tier-sidebar .tier-index {
+    display:grid;grid-template-columns:minmax(0,1fr);width:100%;
+  }
+  html body main#main-content>.tier-sidebar .tier-index-item {
+    width:100%;min-width:0;white-space:normal;justify-content:flex-start;text-align:left;
+  }
+}
+
+/* Keep build menu labels left-aligned at every viewport size. */
+html body main#main-content>.tier-sidebar .tier-index-item {
+  justify-content:flex-start!important;text-align:left!important;
+}
+html body main#main-content>.tier-sidebar .tier-index-item .tier-index-name {
+  text-align:left;
+}
 </style></head><body class="character-guide-page">${navigation.renderHeader('builds')}<main id="main-content"><div class="character-sidebar" aria-label="角色選單">${characterNav()}</div><div class="tier-sidebar" aria-label="流派強度選單" hidden>${tierMenus}</div><div class="build-layout" hidden><div class="build-content" role="region" aria-label="流派內容" tabindex="0">${sections}</div></div><p id="build-empty" hidden>沒有符合條件的流派。</p></main><script>
-${preferences.script}
+
 let selectedPool='',selectedBuildId='';
 const buildSections=[...document.querySelectorAll('.build-section')],characterLinks=[...document.querySelectorAll('[data-character]')];
 function selectCharacter(pool,buildId=''){
@@ -225,7 +265,7 @@ function selectCharacter(pool,buildId=''){
   for(const link of document.querySelectorAll('.tier-index-item')){if(link.getAttribute('href')==='#'+selectedBuildId)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');}
   document.getElementById('build-empty').hidden=true;
   updateStickyOffsets();
-  window.sts2Preferences.save('builds',{pool:selectedPool,buildId:selectedBuildId});
+
   document.querySelector('.build-content').scrollTo({top:0,left:0,behavior:'instant'});
 }
 function applyBuildRoute(){
