@@ -59,4 +59,7 @@ html body>.site-header {position:sticky!important;top:0;z-index:100}
   html body .site-header .site-nav {flex:1 1 auto!important;width:100%!important;margin:0;gap:4px}
   html body .site-header .site-nav a {flex:1 1 0!important;width:auto;min-width:0}
 }
+
+/* Shared divider beneath the site header. */
+html body>.site-header {border-bottom:1px solid #354454!important}
 `;

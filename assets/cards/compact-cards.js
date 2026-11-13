@@ -8,7 +8,7 @@
   const aoeHome = document.createComment('Full-size AOE position');
   search.before(searchHome);
   aoe.before(aoeHome);
-  const media = matchMedia('(max-width:768px), (orientation:landscape) and (max-width:1133px) and (max-height:768px)');
+  const media = matchMedia('(max-width:1440px)');
   function update() {
     if (media.matches) {
       tools.before(search);

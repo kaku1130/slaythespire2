@@ -17,3 +17,9 @@ html body main#main-content>.catalog-scroll {
 
 /* No divider beneath the search bar. */
 html body main#main-content>.mobile-search-row,html body main#main-content .catalog-search-tools {border-bottom:0;box-shadow:none}
+
+/* Match the card filter menu typography. */
+html body main#main-content .potion-filters button:is([data-filter-group=rarity],[data-rarity-filter]) {
+  font-family:Arial,"Microsoft JhengHei",sans-serif;
+  font-size:20px!important;font-weight:400;line-height:1.4;white-space:nowrap!important;
+}

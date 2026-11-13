@@ -133,6 +133,9 @@
   if (sharedAncients) sharedAncients.before(sharedHome);
   const chapterButtons = ['monster', 'event'].includes(pageKind) ? [...main.querySelectorAll('[data-filter-group="acts"]')].map(button => ({button, label: button.textContent})) : [];
   function update() {
+    // Search controls may wrap the input after this layout initializes.
+    // Move that wrapper too so the icon stays attached during rotation.
+    const currentSearchNode = searchNode === search ? search?.closest('.search-control') || search : searchNode;
     for (const {button, label} of chapterButtons) button.textContent = label.replace(/^第[一二三四五六七八九十\d]+章[・\s]*/, '');
     if (pageKind === 'cards') {
       for (const button of main.querySelectorAll('[data-category="Curse"],[data-category="Event"],[data-category="Quest"]')) button.hidden = media.matches;
@@ -150,7 +153,7 @@
       if ((searchNode || panels.length) && !['event', 'monster'].includes(pageKind)) {
         main.prepend(row);
         if (panels.length) row.append(menu);
-        if (searchNode && !['event', 'monster'].includes(pageKind)) row.append(searchNode);
+        if (currentSearchNode && !['event', 'monster'].includes(pageKind)) row.append(currentSearchNode);
       }
       buttons.forEach(button => {
         if (button === upgrade) row.append(button);
@@ -162,7 +165,7 @@
       }
     } else {
       if (sharedAncients) sharedHome.after(sharedAncients);
-      if (searchNode) searchHome.after(searchNode);
+      if (currentSearchNode) searchHome.after(currentSearchNode);
       row.remove();
       buttons.forEach((button, index) => homes[index].after(button));
       if (desktopView !== undefined) {

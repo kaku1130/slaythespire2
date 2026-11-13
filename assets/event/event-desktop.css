@@ -56,3 +56,26 @@ html body main#main-content.event-browser .split-list .event-choices .compact-de
     grid-template-columns:minmax(0,1fr);
   }
 }
+
+/* Borderless event/monster panels on phones and tablets. */
+@media screen and (max-width:1366px) {
+  html body main#main-content.event-browser .split-list,
+  html body main#main-content.event-browser .split-detail {
+    border:0;border-radius:0;box-shadow:none;background:transparent;
+  }
+  html body main#main-content.event-browser .split-list {padding:0}
+}
+
+/* Match the card filter menu typography. */
+html body main#main-content.event-browser .chapter-filters button[data-filter-group],
+html body main#main-content.event-browser .split-list .catalog-choices .compact-detail-name {
+  font-family:Arial,"Microsoft JhengHei",sans-serif;
+  font-size:20px!important;font-weight:400;line-height:1.4;
+  white-space:normal;overflow-wrap:anywhere;
+}
+
+/* Remove only the enclosing search/chapter/choice panel frame. */
+html body main#main-content.event-browser .split-list {
+  border:0!important;border-radius:0!important;box-shadow:none!important;
+  outline:none!important;background:transparent!important;
+}
