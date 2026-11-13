@@ -614,6 +614,22 @@ html body .site-header>.site-header-inner {
 }
 html body main#main-content {padding-block:20px 24px}
 
+/* Let menus and details fill the shared page frame at tablet widths. */
+@media screen and (min-width:600px) and (max-width:1366px) {
+  html body main#main-content:is(.event-browser[data-event-step],.monster-browser[data-monster-step],.ancient-browser) .split-body,
+  html body main#main-content>:is(.character-sidebar,.tier-sidebar,.relic-filters,.potion-filters),
+  html body main#main-content>.build-layout .build-content,
+  html body main#main-content:has(>.relic-filters,>.potion-filters)>.catalog-scroll {
+    width:100%;
+    max-width:none;
+    min-width:0;
+  }
+  html body main#main-content>.filters.relic-filters>.relic-filter-group:has([data-filter-group=pool]) {
+    width:100%;
+    flex-wrap:wrap;
+  }
+}
+
 /* Compact, right-aligned navigation with a GitHub brand icon. */
 html body .site-header .site-nav {flex:0 1 auto!important;width:auto!important;margin-left:auto;justify-content:flex-end}
 html body .site-header .site-nav a {flex:0 0 auto!important}

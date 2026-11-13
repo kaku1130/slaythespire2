@@ -91,3 +91,13 @@ html body>.site-header {border-bottom:1px solid #354454!important}
 /* Equal spacing above and below the header divider. */
 html body .site-header>.site-header-inner {padding-block:8px!important}
 html body main#main-content {padding-top:8px!important}
+
+
+/* Let embedded catalog details fill their tablet viewport. */
+@media screen and (min-width:560px) and (max-width:1366px) {
+  main#main-content .container,
+  main#main-content .container > .mx-auto:is(.max-w-3xl,.max-w-6xl) {
+    width:100%;
+    max-width:none;
+  }
+}
