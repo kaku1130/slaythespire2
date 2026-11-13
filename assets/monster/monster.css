@@ -731,7 +731,7 @@ html body main#main-content.monster-browser .split-list .monster-choices {
 html body main#main-content.monster-browser .split-list .monster-choices>.entry {
   min-width:0;
 }
-@media screen and (max-width:1024px),screen and (max-width:1366px) and (hover:none) and (pointer:coarse) {
+@media screen and (width < 600px) {
   html body main#main-content.monster-browser .split-list .monster-choices {
     grid-template-columns:minmax(0,1fr);
   }

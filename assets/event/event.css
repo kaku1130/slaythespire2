@@ -737,7 +737,7 @@ html body main#main-content.event-browser .split-list .event-choices .compact-de
   width:100%;
   text-align:left;
 }
-@media screen and (max-width:1024px),screen and (max-width:1366px) and (hover:none) and (pointer:coarse) {
+@media screen and (width < 600px) {
   html body main#main-content.event-browser .split-list .event-choices {
     grid-template-columns:minmax(0,1fr);
   }
