@@ -1,6 +1,6 @@
 # 頁面設計範圍
 
-依使用者指示，除根目錄的 `mobile.html`（行動版）外，專案根目錄及其子資料夾內的 HTML 僅以電腦桌機版為設計與驗證目標。不需新增手機版斷點或滿寬例外；行動版獨立保留。
+依使用者指示，專案根目錄及其子資料夾內的 HTML 僅以電腦桌機版為設計與驗證目標。不需新增手機版斷點或滿寬例外；獨立行動版已移除，不再建置或驗證。
 
 # 素材分類
 
@@ -8,7 +8,7 @@
 
 # 頁面檔名
 
-桌機版根目錄檔名固定為 `ancient.html`、`builds.html`、`cards.html`、`event.html`、`monster.html`、`potion.html`、`relic.html`；行動版為 `mobile.html`。產生程式與連結使用上述短檔名。
+桌機版根目錄檔名固定為 `ancient.html`、`builds.html`、`cards.html`、`event.html`、`monster.html`、`potion.html`、`relic.html`。產生程式與連結使用上述短檔名。
 
 # 資料分類
 
@@ -16,7 +16,7 @@
 
 # 程式分類與執行
 
-程式依七個分類存放。各頁入口為 `node scripts/<分類>/build-<分類>.cjs`（先古之民使用 `ancient/build-ancients.cjs`）。行動版入口為 `node scripts/builds/build-mobile-device.cjs`。共用導覽、配色、資料及素材工具歸於 `cards/`；共用目錄與詳細內容工具歸於 `event/`；行動版整合介面歸於 `builds/`。各目錄透過相對路徑重用共用程式，不複製。程式的工作目錄統一解析至專案根目錄。
+程式依七個分類存放。各頁入口為 `node scripts/<分類>/build-<分類>.cjs`（先古之民使用 `ancient/build-ancients.cjs`）。共用導覽、配色、資料及素材工具歸於 `cards/`；共用目錄與詳細內容工具歸於 `event/`。各目錄透過相對路徑重用共用程式，不複製。程式的工作目錄統一解析至專案根目錄。
 
 # 桌機主頁 CSS
 

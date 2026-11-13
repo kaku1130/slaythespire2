@@ -19,16 +19,33 @@ async function main() {
       assert.equal(links.filter(link => link.active === 'page').length, 1);
       assert.ok(links.find(link => link.active === 'page').url.endsWith('/' + kind + '.html'));
       if (['ancient','event','monster'].includes(kind)) {
-        await page.locator('[data-detail-key]').first().click();
+        if (kind === 'event') await page.locator('[data-filter-group=acts]').first().click();
+        if (kind === 'monster') await page.locator('[data-filter-group=encounterType][data-filter-value=elite]').click();
+        // The ancient desktop menu replaces a hidden copy of the chapter list.
+        // Exercise the controls a user can actually see, including every ancient.
+        const choices = page.locator('.split-list [data-detail-key]:visible');
+        const count = await choices.count();
+        assert.ok(count > 0, kind + ' has no visible detail controls');
+        if (kind === 'ancient') assert.equal(count, 7);
         const frame = page.frameLocator('.split-detail iframe');
-        await frame.locator('main').waitFor();
-        assert.ok((await frame.locator('body').evaluate(node => node.ownerDocument.baseURI)).includes('/data/' + kind + '/'));
-        const failed = await frame.locator('img').evaluateAll(async images => {
-          const failed = [];
-          await Promise.all(images.map(async image => { image.loading = 'eager'; try { await image.decode(); } catch { failed.push(image.src); } }));
-          return failed;
-        });
-        assert.deepEqual(failed, []);
+        for (let index = 0; index < (kind === 'ancient' ? count : 1); index++) {
+          const choice = choices.nth(index);
+          const key = await choice.getAttribute('data-detail-key');
+          await choice.click();
+          await page.waitForFunction(expected => {
+            const iframe = document.querySelector('.split-detail iframe');
+            return iframe && !iframe.hidden && iframe.contentDocument?.baseURI.endsWith('/' + expected);
+          }, key);
+          await frame.locator('main').waitFor();
+          assert.ok(await page.locator('.split-list [data-detail-key="' + key + '"][aria-current=true]').count());
+          assert.ok((await frame.locator('body').evaluate(node => node.ownerDocument.baseURI)).includes('/data/' + kind + '/'));
+          const failed = await frame.locator('img').evaluateAll(async images => {
+            const failed = [];
+            await Promise.all(images.map(async image => { image.loading = 'eager'; try { await image.decode(); } catch { failed.push(image.src); } }));
+            return failed;
+          });
+          assert.deepEqual(failed, []);
+        }
       }
       console.log('PASS', kind);
     }
@@ -44,11 +61,8 @@ async function main() {
         }
       }
     }
-    await page.setViewportSize({width:390,height:844});
-    await page.goto(pathToFileURL(path.resolve('mobile.html')).href);
-    for (const tab of ['cards','builds','relic','potion']) await page.locator('button[data-tab=' + tab + ']').click();
     assert.deepEqual(errors, []);
-    console.log('PASS mobile tabs and', references, 'detail references');
+    console.log('PASS all desktop pages and', references, 'detail references');
   } finally { await browser.close(); }
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });
