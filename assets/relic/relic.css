@@ -687,3 +687,28 @@ html body .site-header .site-nav > a {
   html body .site-header .site-brand { display: none !important; }
   html body .site-header .site-nav { width: 100% !important; flex: 1 1 100% !important; }
 }
+
+
+@media screen and (max-width:760px), screen and (max-width:1133px) and (any-pointer:coarse) {
+  html body main#main-content .relic-filters .relic-filter-group:has(>[data-filter-group=pool]) {
+    display:grid!important;
+    grid-template-columns:repeat(10,minmax(0,1fr))!important;
+    width:100%!important;
+  }
+  html body main#main-content .relic-filters .relic-filter-group:has(>[data-filter-group=pool]) > [data-filter-group=pool] {
+    grid-column:span 2!important;
+    justify-self:stretch;
+    width:100%!important;
+    max-width:none;
+    min-width:0;
+  }
+  html body main#main-content .relic-filters .relic-filter-group:has(>[data-filter-group=pool]) > [data-filter-group=pool][data-filter-value=Shared] {
+    grid-area:2 / 1 / 3 / 6!important;
+  }
+  html body main#main-content .relic-filters .relic-filter-group:has(>[data-filter-group=pool]) > [data-filter-group=pool][data-filter-value=Event] {
+    grid-area:2 / 6 / 3 / 11!important;
+  }
+  html body main#main-content .relic-filters .relic-filter-group:has(>[data-filter-group=rarity]) {
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  }
+}

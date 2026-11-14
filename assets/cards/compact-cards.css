@@ -93,3 +93,18 @@ html body main#main-content #tools .card-search > #aoe-toggle:is(:hover,:focus-v
   border-color: var(--rarity-color);
   background: var(--paper);
 }
+
+
+@media screen and (max-width:760px), screen and (max-width:1133px) and (hover:none) and (pointer:coarse) {
+  html body main#main-content #tools .rarity-cluster > .rarity-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 100%;
+  }
+  html body main#main-content #tools .rarity-cluster > .rarity-buttons > button {
+    width: 100%;
+    min-width: 0;
+    padding-inline: 4px;
+    white-space: nowrap;
+  }
+}
