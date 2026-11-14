@@ -548,3 +548,17 @@ html body .site-header .site-nav > a {
   html body .site-header .site-brand { display: none !important; }
   html body .site-header .site-nav { width: 100% !important; flex: 1 1 100% !important; }
 }
+
+@media screen and (max-width:760px) {
+  html body main#main-content:has(>.tier-sidebar:not([hidden])) {
+    overflow-y: auto;
+  }
+  html body main#main-content > .tier-sidebar {
+    max-height: none;
+    overflow: visible;
+  }
+  html body main#main-content > .tier-sidebar .tier-index {
+    max-height: none;
+    overflow: visible;
+  }
+}

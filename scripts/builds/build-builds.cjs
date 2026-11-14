@@ -248,6 +248,19 @@ html body main#main-content>.tier-sidebar .tier-index-item {
 html body main#main-content>.tier-sidebar .tier-index-item .tier-index-name {
   text-align:left;
 }
+@media screen and (max-width:760px) {
+  html body main#main-content:has(>.tier-sidebar:not([hidden])) {
+    overflow-y: auto;
+  }
+  html body main#main-content > .tier-sidebar {
+    max-height: none;
+    overflow: visible;
+  }
+  html body main#main-content > .tier-sidebar .tier-index {
+    max-height: none;
+    overflow: visible;
+  }
+}
 </style></head><body class="character-guide-page">${navigation.renderHeader('builds')}<main id="main-content"><div class="character-sidebar" aria-label="角色選單">${characterNav()}</div><div class="tier-sidebar" aria-label="流派強度選單" hidden>${tierMenus}</div><div class="build-layout" hidden><div class="build-content" role="region" aria-label="流派內容" tabindex="0">${sections}</div></div><p id="build-empty" hidden>沒有符合條件的流派。</p></main><script>
 
 let selectedPool='',selectedBuildId='';
