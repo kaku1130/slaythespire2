@@ -572,7 +572,7 @@ html body main#main-content {padding-top:8px!important}
 
   main#main-content #tools .card-search #search:focus {
     border-color: var(--focus);
-    outline: 1px solid var(--focus);
+    outline: none;
   }
 }
 @media print{.card-search{display:none}}
@@ -584,8 +584,6 @@ html body main#main-content,html body .site-header>.site-header-inner{width:100%
   html body main#main-content>.card-search {display:block}
   html body main#main-content #tools {display:flex;flex-direction:column;gap:16px}
   html body main#main-content #tools :is(.primary-filter-row,.secondary-filter-row,.chips,.filter-cluster,.rarity-buttons) {width:100%;max-width:none}
-  html body main#main-content #tools #aoe-toggle {width:100%;min-height:48px;flex:none;order:10;font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:7px}
-  html body main#main-content #tools #aoe-toggle[aria-pressed=true] {color:var(--focus);border-color:var(--focus)}
   html body[data-view=grid] #card-scroll tbody {grid-template-columns:minmax(0,1fr)}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) {
@@ -611,15 +609,25 @@ html body.cards-desktop main#main-content > :is(#tools,#card-scroll) {
   overflow: visible;
 }
 html body main#main-content #tools .card-search {
+  flex: 0 0 auto;
   width: 100%;
   max-width: none;
   margin: 0;
   display: grid;
-  grid-template-columns: minmax(0,1fr) 20vw;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   align-items: center;
   gap: var(--control-gap);
 }
-html body.cards-desktop main#main-content #tools .card-search #aoe-toggle {
+html body main#main-content #tools .card-search > :is(#search,.search-control) {
+  grid-area: 1 / 1 / 2 / 5;
+  width: 100%;
+  min-width: 0;
+}
+html body main#main-content #tools .card-search > #aoe-toggle {
+  grid-area: 1 / 5;
+  color: var(--rarity-color);
+  border-color: var(--line);
+  background: var(--control-bg);
   width: 100%;
   min-width: 0;
   padding-inline: 0;
@@ -632,7 +640,16 @@ html body.cards-desktop main#main-content #card-scroll thead {
 
 html body.cards-desktop[data-view=grid] main#main-content #card-scroll tbody { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
-html body main#main-content #tools { row-gap: 0; }
+html body main#main-content #tools {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--control-gap);
+}
+html body main#main-content #tools :is(.primary-filter-row,.secondary-filter-row,.chips,.filter-cluster,.rarity-buttons) {
+  row-gap: var(--control-gap);
+  margin-block: 0;
+  padding-block: 0;
+}
 
 /* All pages share a full-width frame with the same edge spacing. */
 html {--site-width:100%;--site-page-gap:20px}
@@ -687,3 +704,18 @@ html body main#main-content {padding-top:8px!important}
 
 /* Thin scrollbars for the page and nested scroll areas. */
 * { scrollbar-width: thin; }
+
+html body main#main-content #tools .primary-filter-row .chips:has(>.profession-filter-row) { width: 100%; margin-inline: 0; padding-inline: 0; }
+
+html body main#main-content > #tools {
+  padding-top: 0;
+}
+html body main#main-content #tools > .card-search + .primary-filter-row {
+  margin-top: calc(-1 * var(--control-gap));
+}
+
+html body main#main-content #tools .card-search > #aoe-toggle:is(:hover,:focus-visible,[aria-pressed=true]) {
+  color: var(--rarity-color);
+  border-color: var(--rarity-color);
+  background: var(--paper);
+}
