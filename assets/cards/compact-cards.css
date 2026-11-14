@@ -76,8 +76,14 @@ html body main#main-content #tools .primary-filter-row .chips:has(>.profession-f
 html body main#main-content > #tools {
   padding-top: 0;
 }
+/* Keep the search and profession rows content-sized on touch tablets. */
+html body main#main-content #tools > .primary-filter-row > .chips {
+  flex: none;
+  align-content: start;
+}
 html body main#main-content #tools > .card-search + .primary-filter-row {
-  margin-top: calc(-1 * var(--control-gap));
+  margin-top: calc(-1 * var(--control-gap)) !important;
+  flex: none;
 }
 
 html body main#main-content #tools .card-search > #aoe-toggle:is(:hover,:focus-visible,[aria-pressed=true]) {
