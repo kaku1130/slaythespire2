@@ -261,6 +261,11 @@ html body main#main-content>.tier-sidebar .tier-index-item .tier-index-name {
     overflow: visible;
   }
 }
+@media screen and (max-width:760px), screen and (max-width:1133px) and (hover:none) and (pointer:coarse) {
+  .build-pair-images {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
 </style></head><body class="character-guide-page">${navigation.renderHeader('builds')}<main id="main-content"><div class="character-sidebar" aria-label="角色選單">${characterNav()}</div><div class="tier-sidebar" aria-label="流派強度選單" hidden>${tierMenus}</div><div class="build-layout" hidden><div class="build-content" role="region" aria-label="流派內容" tabindex="0">${sections}</div></div><p id="build-empty" hidden>沒有符合條件的流派。</p></main><script>
 
 let selectedPool='',selectedBuildId='';

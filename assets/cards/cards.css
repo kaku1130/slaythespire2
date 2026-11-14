@@ -181,9 +181,9 @@ body[data-view=grid] .card-scroll tbody tr{position:relative;display:grid;grid-t
 body[data-view=grid] .card-scroll tbody tr>td{background:transparent!important;border:0;min-width:0;max-width:none;width:auto;padding:0;text-align:center;overflow-wrap:normal;grid-column:1}
 body[data-view=grid] .card-scroll tbody td:not([data-field=images]):not([data-field=english]):not([data-field=builds]):not([data-field=tier]){display:none!important}
 body[data-view=grid] .card-scroll td::before{display:none!important}
-body[data-view=grid] .card-scroll td[data-field=images]{display:block;order:1;padding:0}
-body[data-view=grid] .card-scroll td[data-field=english]{display:none!important;align-items:center;justify-content:center;min-height:52px;order:0;padding:0 4px 6px;font-size:large;white-space:normal}
-body[data-view=grid] .card-scroll td[data-field=english] .name-en{font-size:large;white-space:normal;overflow-wrap:normal;line-height:1.4}
+body[data-view=grid] .card-scroll td[data-field=images]{display:block;order:0;padding:0}
+body[data-view=grid] .card-scroll td[data-field=english]{display:block!important;order:1;padding:6px 4px 0;font-size:large;white-space:normal}
+body[data-view=grid] .card-scroll td[data-field=english] .name-en{font-size:large;white-space:normal;overflow-wrap:normal;line-height:1.4;color:var(--rarity-color,var(--muted))}
 body[data-view=grid] .card-scroll td[data-field=builds]{display:block;order:3;padding:5px 0 0;font-size:large;line-height:1.5}
 body[data-view=grid] .card-scroll td[data-field=builds]>.not-available{display:none}
 body[data-view=grid] .card-scroll td[data-field=tier]{display:block;position:static;order:2;top:auto;right:auto;padding:5px 0 0;min-height:30px;z-index:auto}body[data-view=grid] .card-scroll td[data-field=tier]:has(.tier[data-tier=unranked]){display:none}
