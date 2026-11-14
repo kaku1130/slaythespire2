@@ -643,10 +643,13 @@ html body.cards-desktop[data-view=grid] main#main-content #card-scroll tbody { g
 html body main#main-content #tools {
   display: flex;
   flex-direction: column;
-  row-gap: var(--control-gap);
+  justify-content: flex-start;
+}
+html body main#main-content #tools,
+html body main#main-content #tools :is(.primary-filter-row,.secondary-filter-row,.chips,.filter-cluster,.rarity-buttons) {
+  row-gap: var(--control-gap) !important;
 }
 html body main#main-content #tools :is(.primary-filter-row,.secondary-filter-row,.chips,.filter-cluster,.rarity-buttons) {
-  row-gap: var(--control-gap);
   margin-block: 0;
   padding-block: 0;
 }
