@@ -330,6 +330,9 @@ html body main#main-content [data-ancient-top-menu]>div {margin-top:8px}
 html body .site-header>.site-header-inner {padding-block:8px!important}
 html body main#main-content {padding-top:8px!important}
 
+/* Thin scrollbars for the page and nested scroll areas. */
+* { scrollbar-width: thin; }
+
 main#main-content>.character-sidebar{flex:0 0 auto;position:static;width:100%;height:auto;max-height:30%;overflow:auto;margin:0 0 var(--group-gap);padding:2px}
 main#main-content>.character-sidebar .character-nav{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:var(--control-gap);margin:0}
 main#main-content>.character-sidebar .character-nav a{flex:0 0 auto;text-align:left}

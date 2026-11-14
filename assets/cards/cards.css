@@ -448,6 +448,9 @@ html body main#main-content [data-ancient-top-menu]>div {margin-top:8px}
 html body .site-header>.site-header-inner {padding-block:8px!important}
 html body main#main-content {padding-top:8px!important}
 
+/* Thin scrollbars for the page and nested scroll areas. */
+* { scrollbar-width: thin; }
+
 @media screen {
   main#main-content:has(>#card-scroll) {
     display: grid;
@@ -533,7 +536,7 @@ html body main#main-content {padding-top:8px!important}
     flex: 1 1 auto;
   }
 
-  main#main-content #tools .card-search { width: 100%; min-width: 0; margin-bottom: var(--control-gap); }
+  main#main-content #tools .card-search { width: 100%; min-width: 0; margin-bottom: 0; }
 
   main#main-content #tools #aoe-toggle {
     display: inline-flex;
@@ -607,23 +610,29 @@ html body.cards-desktop main#main-content > :is(#tools,#card-scroll) {
   max-height: none;
   overflow: visible;
 }
-html body.cards-desktop main#main-content #tools .card-search {
+html body main#main-content #tools .card-search {
   width: 100%;
   max-width: none;
-  margin-left: 0;
+  margin: 0;
   display: grid;
-  grid-template-columns: minmax(0,1fr) auto;
+  grid-template-columns: minmax(0,1fr) 20vw;
   align-items: center;
   gap: var(--control-gap);
 }
 html body.cards-desktop main#main-content #tools .card-search #aoe-toggle {
-  width: auto;
+  width: 100%;
+  min-width: 0;
+  padding-inline: 0;
   min-height: var(--control-height);
   order: 0;
 }
 html body.cards-desktop main#main-content #card-scroll thead {
   position: static;
 }
+
+html body.cards-desktop[data-view=grid] main#main-content #card-scroll tbody { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+html body main#main-content #tools { row-gap: 0; }
 
 /* All pages share a full-width frame with the same edge spacing. */
 html {--site-width:100%;--site-page-gap:20px}
@@ -675,8 +684,6 @@ html body main#main-content [data-ancient-top-menu]>div {margin-top:8px}
 /* Equal spacing above and below the header divider. */
 html body .site-header>.site-header-inner {padding-block:8px!important}
 html body main#main-content {padding-top:8px!important}
-
-html body.cards-desktop[data-view=grid] main#main-content #card-scroll tbody { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
 /* Thin scrollbars for the page and nested scroll areas. */
 * { scrollbar-width: thin; }
