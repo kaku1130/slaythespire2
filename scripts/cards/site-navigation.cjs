@@ -24,3 +24,5 @@ module.exports.layoutStyles+='\n.site-header .site-nav a{gap:6px}.site-header .s
 module.exports.styles+=require('./compact-header.cjs');
 module.exports.layoutStyles+=require('./compact-header.cjs');
 module.exports.layoutStyles+=require('./page-frame.cjs');
+
+module.exports.styles += "\n/* Equal-width icon navigation. */\nhtml body .site-header .site-nav {\n  width: calc(70vw + 24px) !important;\n  max-width: 100%;\n  min-width: 0;\n  grid-auto-columns: minmax(0, 1fr) !important;\n  padding-inline: 0;\n}\nhtml body .site-header .site-nav > a {\n  min-width: 0;\n  box-sizing: border-box;\n  padding-inline: 0 !important;\n}\n@media screen and (max-width: 1024px), screen and (max-width: 1366px) and (hover: none) and (pointer: coarse) {\n  html body .site-header .site-brand { display: none !important; }\n  html body .site-header .site-nav { width: 100% !important; flex: 1 1 100% !important; }\n}\n";

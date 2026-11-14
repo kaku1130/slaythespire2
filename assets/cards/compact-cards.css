@@ -82,7 +82,6 @@ html body main#main-content #tools > .primary-filter-row > .chips {
   align-content: start;
 }
 html body main#main-content #tools > .card-search + .primary-filter-row {
-  margin-top: calc(-1 * var(--control-gap)) !important;
   flex: none;
 }
 
