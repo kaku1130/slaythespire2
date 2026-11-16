@@ -6,11 +6,19 @@ function groupOf(x){return x.shared||(x.acts||[]).length>1?'shared':(x.acts||[])
 function acts(x){return [...new Set([...(x.acts||[]),groupOf(x)])].join('|');}
 const types=[['weak','弱怪'],['normal','一般'],['elite','菁英'],['boss','Boss'],['summon','召喚物']];
 function buttonLabel(kind,label){if(kind==='monster'&&label==='菁英')return '精英';return ['event','monster'].includes(kind)?label.replace(/^第([一二三])章/,(_,number)=>'第'+({一:1,二:2,三:3})[number]+'章'):label;}
-function controls(kind,items){return [['acts',groups.filter(([key])=>key!=='shared'&&(kind!=='monster'||key!=='other')&&items.some(x=>groupOf(x)===key||(x.acts||[]).includes(key))) ],...(kind==='monster'?[['encounterType',types.filter(([key])=>key!=='summon')]]:[])].map(([key,values])=>'<div class="relic-filter-group chapter-filter-group" role="group" aria-label="'+(key==='acts'?'章節篩選':'怪物類型篩選')+'">'+values.map(([value,label])=>'<button type="button" data-filter-group="'+key+'" data-filter-value="'+value+'" style="--selection-color:'+ (colors[value]||'#aab6c4')+'" aria-pressed="false">'+buttonLabel(kind,label)+'</button>').join('')+'</div>').join('');}
+
+const eventActLabels = { act1a: 'Overgrowth', act1b: 'Underdocks', act2: 'Hive', act3: 'Glory' };
+function eventActControls() {
+  const options = Object.entries(eventActLabels).map(([value, label]) =>
+    '<option value="' + value + '" data-color="' + colors[value] + '">' + label + '</option>').join('');
+  return '<label class="event-act-filter" lang="en">Act<select id="event-act" aria-label="Act"><option value="">All</option>' + options + '</select></label>';
+}
+
+function controls(kind,items){if(kind==='event')return eventActControls();return [['acts',groups.filter(([key])=>key!=='shared'&&(kind!=='monster'||key!=='other')&&items.some(x=>groupOf(x)===key||(x.acts||[]).includes(key))) ],...(kind==='monster'?[['encounterType',types.filter(([key])=>key!=='summon')]]:[])].map(([key,values])=>'<div class="relic-filter-group chapter-filter-group" role="group" aria-label="'+(key==='acts'?'章節篩選':'怪物類型篩選')+'">'+values.map(([value,label])=>'<button type="button" data-filter-group="'+key+'" data-filter-value="'+value+'" style="--selection-color:'+ (colors[value]||'#aab6c4')+'" aria-pressed="false">'+buttonLabel(kind,label)+'</button>').join('')+'</div>').join('');}
 function rank(x){if(x.shared)return 4;const indexes=(x.acts||[]).map(a=>chapters.findIndex(c=>c[0]===a)).filter(i=>i>=0);return indexes.length?Math.min(...indexes):5;}
 const compare=(a,b)=>rank(a)-rank(b)||a.name.localeCompare(b.name,'zh-TW')||a.id.localeCompare(b.id);
 const styles='.chapter-filters{align-items:center;gap:18px 28px}.chapter-filter-group{display:flex;flex-wrap:wrap;gap:8px;max-width:100%}.chapter-filter-group button{font:inherit;padding:8px 13px;color:var(--muted);background:var(--paper);border:1px solid var(--line);border-radius:7px;cursor:pointer}.chapter-filter-group button:hover{border-color:var(--focus)}.chapter-filters #search{order:1;flex:0 1 360px;margin-left:auto}@media(max-width:640px){.chapter-filters #search{flex:1 1 100%;margin-left:0}}';
-const script=`const entries=[...document.querySelectorAll('.entry')],search=document.querySelector('#search'),buttons=[...document.querySelectorAll('[data-filter-group]')],selected={};for(const b of buttons)selected[b.dataset.filterGroup]??=new Set();function filter(){const q=search.value.trim().toLowerCase();let count=0;for(const e of entries){e.hidden=!(e.textContent.toLowerCase().includes(q)&&Object.entries(selected).every(([key,values])=>!values.size||e.dataset[key].split('|').some(v=>values.has(v))));if(!e.hidden)count++;}for(const b of buttons)b.setAttribute('aria-pressed',String(selected[b.dataset.filterGroup].has(b.dataset.filterValue)));for(const section of document.querySelectorAll('.chapter-section,.monster-type-section')){const count=[...section.querySelectorAll('.entry')].filter(e=>!e.hidden).length;section.hidden=count===0;section.querySelector('.chapter-count').textContent='('+count+')';}document.querySelector('#empty').hidden=count>0;}search.addEventListener('input',filter);for(const b of buttons)b.addEventListener('click',()=>{const values=selected[b.dataset.filterGroup],v=b.dataset.filterValue;if(values.has(v))values.delete(v);else values.add(v);filter();});`;
+const script=`const entries=[...document.querySelectorAll('.entry')],search=document.querySelector('#search'),act=document.querySelector('#event-act'),buttons=[...document.querySelectorAll('[data-filter-group]')],selected={};for(const b of buttons)selected[b.dataset.filterGroup]??=new Set();function filter(){const q=search.value.trim().toLowerCase();let count=0;for(const e of entries){e.hidden=!(e.textContent.toLowerCase().includes(q)&&(!act?.value||e.dataset.acts.split('|').includes(act.value))&&Object.entries(selected).every(([key,values])=>!values.size||e.dataset[key].split('|').some(v=>values.has(v))));if(!e.hidden)count++;}for(const b of buttons)b.setAttribute('aria-pressed',String(selected[b.dataset.filterGroup].has(b.dataset.filterValue)));for(const section of document.querySelectorAll('.chapter-section,.monster-type-section')){const count=[...section.querySelectorAll('.entry')].filter(e=>!e.hidden).length;section.hidden=count===0;section.querySelector('.chapter-count').textContent='('+count+')';}document.querySelector('#empty').hidden=count>0;}search.addEventListener('input',filter);act?.addEventListener('change',filter);for(const b of buttons)b.addEventListener('click',()=>{const values=selected[b.dataset.filterGroup],v=b.dataset.filterValue;if(values.has(v))values.delete(v);else values.add(v);filter();});`;
 function render(content,items,kind){
  const articles=new Map([...content.matchAll(/<article\b[^>]*id="([^"]+)"[\s\S]*?<\/article>/g)].map(m=>[m[1],m[0]]));
  return groups.map(([key,label])=>{
@@ -32,3 +40,44 @@ html body main#main-content>.filters.chapter-filters>input#search{order:1;flex:1
 `;
 
 module.exports.styles+=`html body main#main-content>.filters.chapter-filters .chapter-filter-group button{font-size:18px;padding-inline:10px;white-space:nowrap}`;
+
+module.exports.styles += `
+html body main#main-content.event-browser .split-list { padding-block-start: 0; }
+html body main#main-content .chapter-filters .event-act-filter {
+  position: relative;
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  order: 2;
+  width: 100%;
+  max-width: 16rem;
+  min-width: 0;
+  color: #fff;
+  font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif;
+}
+html body main#main-content .chapter-filters #event-act {
+  appearance: none;
+  width: 100%;
+  min-width: 0;
+  min-height: 38px;
+  padding: 6px 28px 6px 9px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 16px;
+}
+.event-act-filter::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 12px;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  border: solid currentColor;
+  border-width: 0 1.5px 1.5px 0;
+  transform: translateY(-70%) rotate(45deg);
+  pointer-events: none;
+}
+`;

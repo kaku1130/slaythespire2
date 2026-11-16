@@ -42,18 +42,10 @@
     requestAnimationFrame(scrollToBuild);
   }
   // Keep accessible names when the compact layout hides visible labels.
-  document.querySelectorAll('.site-brand,.site-nav a,.chips button,.character-nav a,.relic-filters [data-filter-group="pool"],#upgrade-toggle,#aoe-toggle').forEach(el => {
+  document.querySelectorAll('.site-brand,.site-nav a,.chips button,.character-nav a,#upgrade-toggle,#aoe-toggle').forEach(el => {
     if (!el.hasAttribute('aria-label')) el.setAttribute('aria-label', el.textContent.trim());
     el.title = el.getAttribute('aria-label');
   });
-  if (pageKind === 'relic') {
-    const filters = main.querySelector('.relic-filters');
-    const groups = [...filters.querySelectorAll(':scope > .relic-filter-group')];
-    const menuRow = document.createElement('div');
-    menuRow.className = 'relic-menu-row';
-    groups[0].before(menuRow);
-    menuRow.append(...groups);
-  }
   if (pageKind === 'cards') {
     const rarityCluster = main.querySelector('.rarity-cluster');
     const rarities = rarityCluster?.querySelector('.rarity-buttons');

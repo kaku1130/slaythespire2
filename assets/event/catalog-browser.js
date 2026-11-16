@@ -13,9 +13,10 @@
   }
   const buttons = [...filters.querySelectorAll('[data-filter-group]')];
   const search = document.getElementById('search');
+  const act = filters.querySelector('#event-act');
   const chapterGroup = filters.querySelector('[aria-label="章節篩選"]');
   const typeGroup = filters.querySelector('[aria-label="怪物類型篩選"]');
-  chapterGroup.setAttribute('aria-label', '章節單選');
+  chapterGroup?.setAttribute('aria-label', '章節單選');
   typeGroup?.setAttribute('aria-label', '怪物類型複選');
   if (kind === 'monster') {
     const options = document.createElement('div');
@@ -42,6 +43,7 @@
   for (const entry of entries) {
     if (kind === 'event') {
       const color = getComputedStyle(entry).getPropertyValue('--chapter-color').trim() || '#6ac1b4';
+      entry.dataset.defaultChapterColor = color;
       entry.style.setProperty('--detail-color', color);
       entry.style.setProperty('--chapter-color', color);
       entry.querySelectorAll('img,.event-list-picture').forEach(image => image.remove());
@@ -60,7 +62,7 @@
     .filter(button => button.dataset.filterGroup === 'acts')
     .map(button => [button, button.textContent.replace(/^第[一二三四五六七八九十\d]+章[・\s]*/, '')]));
   const step = kind === 'event' ? 'eventStep' : 'monsterStep';
-  let chapter = 'act1a';
+  let chapter = act ? act.value : 'act1a';
   const types = new Set(kind === 'monster' ? ['elite', 'boss'] : []);
 
   function showSelectionList() {
@@ -90,14 +92,14 @@
     }
     const query = search.value.trim().toLowerCase();
     const chapterButton = buttons.find(button => button.dataset.filterGroup === 'acts' && button.dataset.filterValue === chapter);
-    const chapterColor = chapterButton?.style.getPropertyValue('--selection-color');
+    const chapterColor = act?.selectedOptions[0]?.dataset.color || chapterButton?.style.getPropertyValue('--selection-color');
     let count = 0;
     for (const entry of entries) {
       if (kind === 'event' && chapterColor) {
         entry.style.setProperty('--detail-color', chapterColor);
         entry.style.setProperty('--chapter-color', chapterColor);
       }
-      entry.hidden = !entry.dataset.acts.split('|').includes(chapter)
+      entry.hidden = (chapter !== '' && !entry.dataset.acts.split('|').includes(chapter))
         || (types.size > 0 && !types.has(entry.dataset.encounterType))
         || !entry.textContent.toLowerCase().includes(query);
       if (!entry.hidden) count++;
@@ -114,6 +116,11 @@
     ));
     empty.hidden = count > 0;
   }
+  act?.addEventListener('change', () => {
+    chapter = act.value;
+    if (desktop()) showSelectionList();
+    filter();
+  });
   filters.addEventListener('click', event => {
     const button = event.target.closest('[data-filter-group]');
     if (!button) return;

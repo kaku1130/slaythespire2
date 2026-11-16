@@ -665,3 +665,42 @@ html body .site-header .site-nav > a {
   html body .site-header .site-brand { display: none !important; }
   html body .site-header .site-nav { width: 100% !important; flex: 1 1 100% !important; }
 }
+
+html body main#main-content .potion-filters > .potion-rarity-dropdown {
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+  grid-template-columns: max-content minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 13rem;
+  min-width: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+html body main#main-content .potion-rarity-dropdown select {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 38px;
+  padding: 5px 8px;
+  border: 1px solid var(--line, #293340);
+  border-radius: 8px;
+  background: var(--paper, #0d131a);
+  color: var(--ink, #e3e8ee);
+  font: 16px/1.4 system-ui, sans-serif;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+html body main#main-content .potion-rarity-dropdown select:focus-visible { outline-offset: -2px; }
+html body main#main-content #potion-rarity option[value="Common"],
+html body main#main-content #potion-rarity:has(option[value="Common"]:checked) { color: #cbd5e1; }
+html body main#main-content #potion-rarity option[value="Uncommon"],
+html body main#main-content #potion-rarity:has(option[value="Uncommon"]:checked) { color: #74b3e6; }
+html body main#main-content #potion-rarity option[value="Rare"],
+html body main#main-content #potion-rarity:has(option[value="Rare"]:checked) { color: #e3bf72; }
+html body main#main-content #potion-rarity option[value="Event"],
+html body main#main-content #potion-rarity:has(option[value="Event"]:checked) { color: #6ac1b4; }

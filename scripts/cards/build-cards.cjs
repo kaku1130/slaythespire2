@@ -15,13 +15,12 @@ const buildSource = JSON.parse(fs.readFileSync('data/builds/source.json', 'utf8'
 const buildsByCard = buildSource.byCard;
 const tiers = new Map(tierSource.rankings.map(c=>[c.id,c.tier]));
 const categories = ['Ironclad', 'Silent', 'Defect', 'Regent', 'Necrobinder', 'Colorless', 'Curse', 'Event', 'Quest'];
-const categoryMenu=categories;
-function renderCategoryFilter(pool, iconOnly = false) {
-  const label = poolLabels[pool];
-  const icon = ['Colorless','Curse','Event','Quest'].includes(pool) ? '' : '<img class="pool-icon" src="'+poolIcons[pool]+'" alt="" width="20" height="20">';
-  const accessibleName = iconOnly ? ' aria-label="'+label+'" title="'+label+'"' : '';
-  const text = iconOnly ? '<span class="profession-filter-label">'+label+'</span>' : label;
-  return '<button type="button" data-category="'+pool+'" style="--accent:'+poolColors[pool]+'" aria-pressed="false"'+accessibleName+'>'+icon+text+'</button>';
+function renderCardFilters(groups) {
+  return '<div class="card-dropdowns" lang="en">' + groups.map(([label,key,values]) => {
+    const id = 'card-filter-' + key;
+    const options = ['', ...values].map(value => '<option value="' + value + '">' + (value || 'All') + '</option>').join('');
+    return '<div class="card-dropdown"><label for="' + id + '">' + label + '</label><select id="' + id + '">' + options + '</select></div>';
+  }).join('') + '</div>';
 }
 const expected = [87, 88, 88, 88, 88, 64, 18, 27, 3];
 assert.equal(cards.length, 551);
@@ -51,7 +50,6 @@ const poolIcons=Object.fromEntries(Object.entries(iconNames).map(([pool,name])=>
 
 const typeLabels={Attack:'攻擊',Skill:'技能',Power:'能力',Curse:'詛咒',Quest:'任務'};
 const typeColors={Attack:'#ff6568',Skill:'#74b3e6',Power:'#05df72',Curse:'#e3e8ee',Quest:'#e3e8ee'};
-const filterTypes=['Attack','Power','Skill'];
 const rarityLabels={Basic:'基礎',Common:'普通',Uncommon:'罕見',Rare:'稀有',Ancient:'先古之民',Event:'事件',Curse:'詛咒',Quest:'任務'};
 const displayedRarities=['Basic','Common','Uncommon','Rare','Ancient'];
 const canUpgrade=c=>!!c.upgrade||c.descBase!==c.descUpgraded;
@@ -100,7 +98,7 @@ const sections = categories.map((pool, i) => {
     const values={images:renderCardImages(c),english:'<a class="name-en" data-card-art="'+esc(c.id)+'" href="https://slaythespire2.net/card/'+encodeURIComponent(c.slug)+'" target="_blank" rel="noopener noreferrer">'+esc(c.name)+'</a>',name:'<a data-card-art="'+esc(c.id)+'" data-rarity="'+esc(c.rarity)+'" href="https://slaythespire2.net/zh-TW/card/'+encodeURIComponent(c.slug)+'" target="_blank" rel="noopener noreferrer">'+'<span class="name-zh" lang="zh-Hant">'+esc(chineseCards.get(c.id).name)+'</span></a>',type:'<span class="type" data-type="'+esc(c.type)+'">'+esc(typeLabels[c.type])+'</span>',energy:renderEnergy(c),effect:renderEffect(chineseCards.get(c.id).descBase),upgraded:renderUpgraded(c),rarity:'<span class="rarity" data-rarity="'+esc(c.rarity)+'">'+esc(displayedRarities.includes(c.rarity)?rarityLabels[c.rarity]:'—')+'</span>',tier:'<span class="tier" data-tier="'+(tiers.get(c.id)||'unranked')+'"'+(tiers.has(c.id)?'':' title="Not ranked by source"')+'>'+(tiers.get(c.id)||'—')+'</span>',builds:renderBuilds(c),pool:esc(pool)};
     return '<tr id="card-'+esc(c.id)+'" role="row" data-name="'+esc((c.name+' '+chineseCards.get(c.id).name).toLowerCase())+'" data-id="'+esc(c.id)+'" data-search="'+esc([c.id,c.name,chineseCards.get(c.id).name,chineseCards.get(c.id).descBase,canUpgrade(c)?chineseCards.get(c.id).descUpgraded:''].join(' ').replace(/<[^>]*>/g,'').toLowerCase())+'" data-type="'+esc(c.type)+'" data-rarity="'+esc(c.rarity)+'">'+columns.map(([key,label])=>'<td role="cell" data-field="'+key+'" data-label="'+label+'"'+(key==='energy'?' data-sort-value="'+esc(costLabel(c.energy))+'"':key==='name'?' data-sort-value="'+esc(c.name)+'"':key==='rarity'?' data-sort-value="'+esc(c.rarity)+'"':key==='type'?' data-sort-value="'+esc(c.type)+'"':'')+' class="'+({english:'english-name',name:'name',pool:'category',effect:'effect',upgraded:'effect upgraded',builds:'builds',energy:'energy'}[key]||key)+'">'+values[key]+'</td>').join('')+'</tr>';
   }).join('\n');
-  return `<section data-pool="${pool}" style="--accent:${colors[i]}"><h2 class="grid-pool-heading"><img src="${poolIcons[pool]}" alt="" width="28" height="28">${poolLabels[pool]} <span class="grid-pool-name-en" lang="en">${pool}</span> <span class="grid-pool-count">(${list.length})</span></h2><div class="mobile-sort"><label for="sort-${pool}">Sort by</label><select id="sort-${pool}" class="mobile-sort-key">${columns.filter(([key])=>visibleColumns.has(key)).map(([key,label])=>`<option value="${key}"${key==='pool'?' hidden disabled':''}${key==='rarity'?' selected':''}>${label}</option>`).join('')}</select><button type="button" class="mobile-sort-direction" aria-label="Ascending; click to sort descending">↑ Asc</button></div><div class="table-wrap"><table role="table"><caption class="sr-only">${pool} 卡片名稱，共 ${list.length} 張</caption>${columnGroup}${tableHead}<tbody role="rowgroup">${rows}</tbody></table></div></section>`;
+  return `<section data-pool="${pool}" style="--accent:${colors[i]}"><h2 class="grid-pool-heading"><img src="${poolIcons[pool]}" alt="" width="28" height="28">${pool} <span class="grid-pool-count">(${list.length})</span></h2><div class="mobile-sort"><label for="sort-${pool}">Sort by</label><select id="sort-${pool}" class="mobile-sort-key">${columns.filter(([key])=>visibleColumns.has(key)).map(([key,label])=>`<option value="${key}"${key==='pool'?' hidden disabled':''}${key==='rarity'?' selected':''}>${label}</option>`).join('')}</select><button type="button" class="mobile-sort-direction" aria-label="Ascending; click to sort descending">↑ Asc</button></div><div class="table-wrap"><table role="table"><caption class="sr-only">${pool} 卡片名稱，共 ${list.length} 張</caption>${columnGroup}${tableHead}<tbody role="rowgroup">${rows}</tbody></table></div></section>`;
 }).join('\n');
 const html = `<!doctype html>
 <html lang="zh-Hant"><head><meta charset="utf-8"><link rel="apple-touch-icon" sizes="180x180" href="assets/cards/icons/site-logo.png"><link rel="icon" type="image/webp" href="assets/cards/icons/site-logo.webp"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Slay the Spire 2｜551 張卡片名稱索引</title>
@@ -343,25 +341,25 @@ html{--site-width:100%}
 html body main#main-content,html body .site-header>.site-header-inner{width:100%;max-width:none}
 ${fs.readFileSync('assets/cards/compact-cards.css','utf8')}
 </style></head><body data-view="grid">${navigation.renderHeader('cards')}<main id="main-content">
-<div class="tools" id="tools" hidden><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><input id="search" type="search" placeholder="搜尋關鍵字" autocomplete="off">${cardGrid.actionControls.replace('id=', 'style="--rarity-color:'+typeColors.Attack+'" id=')}</div><div class="primary-filter-row"><nav class="chips" aria-label="卡牌分類單選"><div class="profession-filter-row">${categoryMenu.slice(0,5).map(pool=>renderCategoryFilter(pool,true)).join('')}</div><div class="extra-category-row">${categoryMenu.slice(5).map(pool=>renderCategoryFilter(pool)).join('')}</div></nav></div><div class="secondary-filter-row"><div class="filter-cluster rarity-cluster"><div class="rarity-buttons" role="group" aria-label="稀有度篩選">${displayedRarities.filter(r=>r!=='Basic').map(r=>`<button type="button" data-rarity-filter="${r}" data-rarity="${r}" aria-pressed="false">${r==='Ancient'?'先古':rarityLabels[r]}</button>`).join('')}</div></div><div class="filter-cluster type-cluster"><div class="rarity-buttons type-buttons" role="group" aria-label="類型篩選">${filterTypes.map(type=>`<button type="button" data-type-filter="${type}" style="--rarity-color:${typeColors[type]}" aria-pressed="false">${typeLabels[type]}</button>`).join('')}</div></div><div class="filter-cluster tier-cluster"><div class="rarity-buttons tier-buttons" role="group" aria-label="Tier 評級篩選"><button type="button" data-tier-filter="S" aria-pressed="false">S</button><button type="button" data-tier-filter="A" aria-pressed="false">A</button><button type="button" data-tier-filter="B" aria-pressed="false">B</button><button type="button" data-tier-filter="C" aria-pressed="false">C</button><button type="button" data-tier-filter="D" aria-pressed="false">D</button></div></div></div></div>
+<div class="tools" id="tools" hidden><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><input id="search" type="search" placeholder="搜尋關鍵字" autocomplete="off">${cardGrid.actionControls.replace('id=', 'style="--rarity-color:'+typeColors.Attack+'" id=')}</div>${renderCardFilters([['Character','character',["Ironclad","Silent","Defect","Necrobinder","Regent","Colorless"]],['Rarity','rarity',["Starter","Common","Uncommon","Rare","Ancient"]],['Type','type',["Attack","Skill","Power","Status","Curse","Event","Quest"]],['Tier','tier',['S','A','B','C','D']]])}</div>
 <div id="card-scroll" class="card-scroll" role="region" aria-label="卡牌表格" tabindex="0">${sections}<p id="empty" hidden>找不到符合條件的卡片，請調整搜尋文字、分類或稀有度。</p>
 </div>
 </main>
 ${cardArt.markup({paired:true})}<script>
 
-const search=document.getElementById('search'),rarityButtons=[...document.querySelectorAll('[data-rarity-filter]')];
-const tierButtons=[...document.querySelectorAll('[data-tier-filter]')];
-const typeButtons=[...document.querySelectorAll('[data-type-filter]')];
+const search=document.getElementById('search');
+const characterFilter=document.getElementById('card-filter-character');
+const typeFilter=document.getElementById('card-filter-type');
+const rarityFilter=document.getElementById('card-filter-rarity');
+const tierFilter=document.getElementById('card-filter-tier');
 const compactCardMedia=window.matchMedia('(max-width:1024px), (max-width:1366px) and (hover:none) and (pointer:coarse)');
-const sections=[...document.querySelectorAll('section[data-pool]')],buttons=[...document.querySelectorAll('[data-category]')];
-const selectedCategories=new Set(['Ironclad']),selectedRarities=new Set(),selectedTypes=new Set(),selectedTiers=new Set();
+const sections=[...document.querySelectorAll('section[data-pool]')];
 search.value='';
-function toggleSelection(selection,value){if(selection.has(value))selection.delete(value);else selection.add(value);filter();}
-function filter(){document.getElementById('aoe-toggle').setAttribute('aria-pressed',String(search.value==='所有敵人'));const queries=[...new Set(search.value.toLowerCase().split(/[\\s+、，,]+/).filter(Boolean))];let count=0;for(const section of sections){let found=0;for(const row of section.querySelectorAll('tbody tr')){row.classList.remove('is-selected');row.hidden=!!((selectedCategories.size&&!selectedCategories.has(section.dataset.pool))||(selectedRarities.size&&!selectedRarities.has(row.dataset.rarity)&&!(selectedRarities.has('Common')&&row.dataset.rarity==='Basic'))||(selectedTiers.size&&!selectedTiers.has(row.querySelector('.tier[data-tier]').dataset.tier))||(selectedTypes.size&&!selectedTypes.has(row.dataset.type))||(queries.length>0&&!queries.some(query=>row.dataset.search.includes(query))));if(!row.hidden)found++;}section.hidden=!found;const poolCount=section.querySelector('.grid-pool-count');if(poolCount)poolCount.textContent='('+found+')';count+=found;}document.getElementById('empty').hidden=count!==0;for(const button of tierButtons)button.setAttribute('aria-pressed',String(selectedTiers.has(button.dataset.tierFilter)));for(const button of buttons)button.setAttribute('aria-pressed',String(selectedCategories.has(button.dataset.category)));for(const button of rarityButtons)button.setAttribute('aria-pressed',String(selectedRarities.has(button.dataset.rarityFilter)));for(const button of typeButtons)button.setAttribute('aria-pressed',String(selectedTypes.has(button.dataset.typeFilter)));document.getElementById('card-scroll').scrollTo({top:0,left:0,behavior:'instant'});}
-for(const button of typeButtons)button.addEventListener('click',()=>{toggleSelection(selectedTypes,button.dataset.typeFilter);});
-for(const button of tierButtons)button.addEventListener('click',()=>{toggleSelection(selectedTiers,button.dataset.tierFilter);});
+function filter(){document.getElementById('aoe-toggle').setAttribute('aria-pressed',String(search.value==='所有敵人'));const queries=[...new Set(search.value.toLowerCase().split(/[\\s+、，,]+/).filter(Boolean))];let count=0;for(const section of sections){let found=0;for(const row of section.querySelectorAll('tbody tr')){row.classList.remove('is-selected');row.hidden=!!((characterFilter.value&&characterFilter.value!==section.dataset.pool)||(rarityFilter.value&&(rarityFilter.value==='Starter'?'Basic':rarityFilter.value)!==row.dataset.rarity)||(tierFilter.value&&tierFilter.value!==row.querySelector('.tier[data-tier]').dataset.tier)||(typeFilter.value&&(typeFilter.value==='Event'?section.dataset.pool!=='Event':typeFilter.value!==row.dataset.type))||(queries.length>0&&!queries.some(query=>row.dataset.search.includes(query))));if(!row.hidden)found++;}section.hidden=!found;const poolCount=section.querySelector('.grid-pool-count');if(poolCount)poolCount.textContent='('+found+')';count+=found;}document.getElementById('empty').hidden=count!==0;document.getElementById('card-scroll').scrollTo({top:0,left:0,behavior:'instant'});}
 document.getElementById('aoe-toggle').addEventListener('click',event=>{search.value=event.currentTarget.getAttribute('aria-pressed')==='true'?'':'所有敵人';filter();});
-search.addEventListener('input',filter);for(const button of rarityButtons)button.addEventListener('click',()=>{toggleSelection(selectedRarities,button.dataset.rarityFilter);});for(const button of buttons)button.addEventListener('click',()=>{selectedCategories.clear();selectedCategories.add(button.dataset.category);filter();});document.getElementById('tools').hidden=false;filter();
+search.addEventListener('input',filter);
+for(const select of [characterFilter,typeFilter,rarityFilter,tierFilter])select.addEventListener('change',filter);
+document.getElementById('tools').hidden=false;filter();
 
 
 ${compareCards.toString()}
@@ -400,7 +398,7 @@ compactView.addEventListener('change',updateSortFocus);updateSortFocus();
 function selectCardRow(row){for(const current of document.querySelectorAll('.card-scroll tbody tr.is-selected'))current.classList.remove('is-selected');row.classList.add('is-selected');}
 function scrollToCard(row){const area=document.getElementById('card-scroll'),head=row.closest('table').querySelector('thead'),pageScroll=getComputedStyle(area).overflowY==='visible';const headerHeight=pageScroll?document.querySelector('.site-header').getBoundingClientRect().height+(compactView.matches?0:head.getBoundingClientRect().height):compactView.matches?0:head.getBoundingClientRect().height;row.style.scrollMarginTop=(headerHeight+12)+'px';if(pageScroll){row.scrollIntoView({block:'start',behavior:'instant'});return;}const top=area.scrollTop+row.getBoundingClientRect().top-area.getBoundingClientRect().top-headerHeight-12;area.scrollTo({top:Math.max(0,top),behavior:'instant'});}
 document.getElementById('card-scroll').addEventListener('click',event=>{const row=event.target.closest('tbody tr[data-id]');if(row)selectCardRow(row);});
-function revealLinkedCard(){let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}if(!id.startsWith('card-'))return;const row=document.getElementById(id);if(!row)return;const section=row.closest('section[data-pool]');if(!section)return;selectedCategories.clear();selectedCategories.add(section.dataset.pool);search.value='';selectedRarities.clear();selectedTypes.clear();selectedTiers.clear();filter();selectCardRow(row);requestAnimationFrame(()=>scrollToCard(row));}
+function revealLinkedCard(){let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}if(!id.startsWith('card-'))return;const row=document.getElementById(id);if(!row)return;const section=row.closest('section[data-pool]');if(!section)return;characterFilter.value=[...characterFilter.options].some(option=>option.value===section.dataset.pool)?section.dataset.pool:'';search.value='';rarityFilter.value='';typeFilter.value='';tierFilter.value='';filter();selectCardRow(row);requestAnimationFrame(()=>scrollToCard(row));}
 window.addEventListener('hashchange',revealLinkedCard);revealLinkedCard();
 
 

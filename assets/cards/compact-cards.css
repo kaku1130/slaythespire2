@@ -108,3 +108,103 @@ html body main#main-content #tools .card-search > #aoe-toggle:is(:hover,:focus-v
     white-space: nowrap;
   }
 }
+
+html body main#main-content #tools > .card-dropdowns {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  width: 100%;
+  max-width: 52rem;
+  min-width: 0;
+}
+.card-dropdown {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  color: var(--muted, #aab6c4);
+  font-size: 14px;
+}
+html body main#main-content #tools .card-dropdown select {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 38px;
+  padding: 5px 4px;
+  border: 1px solid var(--line, #293340);
+  border-radius: 8px;
+  background: var(--paper, #0d131a);
+  color: var(--ink, #e3e8ee);
+  font: 16px/1.4 system-ui, sans-serif;
+  text-overflow: ellipsis;
+}
+html body main#main-content #tools .card-dropdown select:focus-visible {
+  outline: 2px solid var(--focus, #37a8ec);
+  outline-offset: -2px;
+}
+
+/* Card filter layout and classification colors. */
+@media (pointer: coarse) and (min-width: 600px) and (max-width: 1400px) {
+  html body main#main-content #tools > .card-dropdowns { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 599px), (pointer: coarse) and (max-width: 1000px) and (max-height: 500px) {
+  html body main#main-content #tools > .card-dropdowns { grid-template-columns: minmax(0, 1fr); }
+}
+html body main#main-content #tools label[for="card-filter-character"] { color: #fff; font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif; }
+html body main#main-content #tools label[for="card-filter-rarity"] { color: #fff; font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif; }
+html body main#main-content #tools label[for="card-filter-type"] { color: #fff; font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif; }
+html body main#main-content #tools label[for="card-filter-tier"] { color: #fff; font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif; }
+html body main#main-content #tools .card-dropdown #card-filter-character option[value="Ironclad"],
+html body main#main-content #tools .card-dropdown #card-filter-character:has(option[value="Ironclad"]:checked) { color: #dc6c68; }
+html body main#main-content #tools .card-dropdown #card-filter-character option[value="Silent"],
+html body main#main-content #tools .card-dropdown #card-filter-character:has(option[value="Silent"]:checked) { color: #70bf8b; }
+html body main#main-content #tools .card-dropdown #card-filter-character option[value="Defect"],
+html body main#main-content #tools .card-dropdown #card-filter-character:has(option[value="Defect"]:checked) { color: #6faeee; }
+html body main#main-content #tools .card-dropdown #card-filter-character option[value="Necrobinder"],
+html body main#main-content #tools .card-dropdown #card-filter-character:has(option[value="Necrobinder"]:checked) { color: #b595dd; }
+html body main#main-content #tools .card-dropdown #card-filter-character option[value="Regent"],
+html body main#main-content #tools .card-dropdown #card-filter-character:has(option[value="Regent"]:checked) { color: #e3bf72; }
+html body main#main-content #tools .card-dropdown #card-filter-character option[value="Colorless"],
+html body main#main-content #tools .card-dropdown #card-filter-character:has(option[value="Colorless"]:checked) { color: #aab6c4; }
+html body main#main-content #tools .card-dropdown #card-filter-rarity option[value="Starter"],
+html body main#main-content #tools .card-dropdown #card-filter-rarity:has(option[value="Starter"]:checked) { color: #a1a1aa; }
+html body main#main-content #tools .card-dropdown #card-filter-rarity option[value="Common"],
+html body main#main-content #tools .card-dropdown #card-filter-rarity:has(option[value="Common"]:checked) { color: #cbd5e1; }
+html body main#main-content #tools .card-dropdown #card-filter-rarity option[value="Uncommon"],
+html body main#main-content #tools .card-dropdown #card-filter-rarity:has(option[value="Uncommon"]:checked) { color: #74b3e6; }
+html body main#main-content #tools .card-dropdown #card-filter-rarity option[value="Rare"],
+html body main#main-content #tools .card-dropdown #card-filter-rarity:has(option[value="Rare"]:checked) { color: #e3bf72; }
+html body main#main-content #tools .card-dropdown #card-filter-rarity option[value="Ancient"],
+html body main#main-content #tools .card-dropdown #card-filter-rarity:has(option[value="Ancient"]:checked) { color: #c084fc; }
+html body main#main-content #tools .card-dropdown #card-filter-type option[value="Attack"],
+html body main#main-content #tools .card-dropdown #card-filter-type:has(option[value="Attack"]:checked) { color: #ff777a; }
+html body main#main-content #tools .card-dropdown #card-filter-type option[value="Skill"],
+html body main#main-content #tools .card-dropdown #card-filter-type:has(option[value="Skill"]:checked) { color: #74b3e6; }
+html body main#main-content #tools .card-dropdown #card-filter-type option[value="Power"],
+html body main#main-content #tools .card-dropdown #card-filter-type:has(option[value="Power"]:checked) { color: #70bf8b; }
+html body main#main-content #tools .card-dropdown #card-filter-type option[value="Status"],
+html body main#main-content #tools .card-dropdown #card-filter-type:has(option[value="Status"]:checked) { color: #aab6c4; }
+html body main#main-content #tools .card-dropdown #card-filter-type option[value="Curse"],
+html body main#main-content #tools .card-dropdown #card-filter-type:has(option[value="Curse"]:checked) { color: #cf8098; }
+html body main#main-content #tools .card-dropdown #card-filter-type option[value="Event"],
+html body main#main-content #tools .card-dropdown #card-filter-type:has(option[value="Event"]:checked) { color: #6ac1b4; }
+html body main#main-content #tools .card-dropdown #card-filter-type option[value="Quest"],
+html body main#main-content #tools .card-dropdown #card-filter-type:has(option[value="Quest"]:checked) { color: #c8ab79; }
+html body main#main-content #tools .card-dropdown #card-filter-tier option[value="S"],
+html body main#main-content #tools .card-dropdown #card-filter-tier:has(option[value="S"]:checked) { color: #dc6c68; }
+html body main#main-content #tools .card-dropdown #card-filter-tier option[value="A"],
+html body main#main-content #tools .card-dropdown #card-filter-tier:has(option[value="A"]:checked) { color: #e3bf72; }
+html body main#main-content #tools .card-dropdown #card-filter-tier option[value="B"],
+html body main#main-content #tools .card-dropdown #card-filter-tier:has(option[value="B"]:checked) { color: #70bf8b; }
+html body main#main-content #tools .card-dropdown #card-filter-tier option[value="C"],
+html body main#main-content #tools .card-dropdown #card-filter-tier:has(option[value="C"]:checked) { color: #6faeee; }
+html body main#main-content #tools .card-dropdown #card-filter-tier option[value="D"],
+html body main#main-content #tools .card-dropdown #card-filter-tier:has(option[value="D"]:checked) { color: #aab6c4; }
+
+main#main-content .mobile-sort label {
+  color: #fff;
+  font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif;
+}
