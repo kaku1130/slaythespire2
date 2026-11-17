@@ -12,13 +12,12 @@ module.exports={controls,description,styles,script,compare:(a,b)=>order.indexOf(
 module.exports.styles += `
 html body main#main-content .potion-filters > .potion-rarity-dropdown {
   display: grid;
-  grid-column: 1;
+  grid-column: 1 / -1;
   grid-row: 2;
   grid-template-columns: max-content minmax(0, 1fr);
   align-items: center;
   gap: 8px;
   width: 100%;
-  max-width: 13rem;
   min-width: 0;
   color: #fff;
   font-size: 14px;
@@ -27,22 +26,6 @@ html body main#main-content .potion-filters > .potion-rarity-dropdown {
 @media screen and (max-width: 599px), screen and (pointer: coarse) and (max-width: 1400px) {
   html body main#main-content .potion-filters > .potion-rarity-dropdown { grid-template-columns: 5rem minmax(0, 1fr); grid-column: 1 / -1; max-width: none; }
 }
-html body main#main-content .potion-rarity-dropdown select {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  min-width: 0;
-  min-height: 38px;
-  padding: 5px 8px;
-  border: 1px solid var(--line, #293340);
-  border-radius: 8px;
-  background: var(--paper, #0d131a);
-  color: var(--ink, #e3e8ee);
-  font: 16px/1.4 system-ui, sans-serif;
-  text-overflow: ellipsis;
-  cursor: pointer;
-}
-html body main#main-content .potion-rarity-dropdown select:focus-visible { outline-offset: -2px; }
 html body main#main-content #potion-rarity option[value="Common"],
 html body main#main-content #potion-rarity:has(option[value="Common"]:checked) { color: #cbd5e1; }
 html body main#main-content #potion-rarity option[value="Uncommon"],

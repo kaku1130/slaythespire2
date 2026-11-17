@@ -8,11 +8,11 @@
 
 # 頁面檔名
 
-桌機版根目錄檔名固定為 `ancient.html`、`builds.html`、`cards.html`、`event.html`、`monster.html`、`potion.html`、`relic.html`。產生程式與連結使用上述短檔名。
+桌機版根目錄檔名固定為 `ancient.html`、`builds.html`、`cards.html`、`monster.html`、`potion.html`、`relic.html`。產生程式與連結使用上述短檔名。
 
 # 資料分類
 
-`data/` 僅使用 `ancient`、`builds`、`cards`、`event`、`monster`、`potion`、`relic` 七個分類目錄，不使用 offline 命名。分類清單為 `catalog.json`，原始 HTML 放在各分類的 `source/`，詳細內容 HTML 放在該分類目錄。各分類的 `assets.json` 保存素材對照，透過 `data-assets.cjs` 統一讀寫。
+`data/` 僅使用 `ancient`、`builds`、`cards`、`monster`、`potion`、`relic` 六個分類目錄，不使用 offline 命名。分類清單為 `catalog.json`，原始 HTML 放在各分類的 `source/`，詳細內容 HTML 放在該分類目錄。各分類的 `assets.json` 保存素材對照，透過 `data-assets.cjs` 統一讀寫。
 
 # 程式分類與執行
 

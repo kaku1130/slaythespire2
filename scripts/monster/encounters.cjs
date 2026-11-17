@@ -5,13 +5,13 @@ const stsMonsters = 'https://sts.gg/v2/monsters';
 const types = { Boss: 'boss', 菁英: 'elite', 一般: 'normal', 弱化: 'weak', 召喚物: 'summon' };
 
 
-const actLabels = { 'e-act1a': '密林', 'e-act1b': '暗港', 'e-act2': '蜂巢', 'e-act3': '榮耀' };
+const actLabels = { 'e-act1a': '密林', 'e-act1b': '暗港', 'e-act2': '巢穴', 'e-act3': '榮耀' };
 const typeLabels = { boss: 'Boss', elite: 'Elite', normal: 'Normal', weak: 'Weak' };
 
 function renderFilters(acts) {
-  const options = items => items.map(([value, label]) => '<option value="' + value + '">' + label + '</option>').join('');
+  const options = (items, selectedValue) => items.map(([value, label]) => '<option value="' + value + '"' + (value === selectedValue ? ' selected' : '') + '>' + label + '</option>').join('');
   return '<div class="encounter-filters" lang="en">'
-    + '<label>Type<select id="encounter-type" aria-label="Type">' + options([['', 'All'], ...Object.entries(typeLabels)]) + '</select></label>'
+    + '<label>Type<select id="encounter-type" aria-label="Type">' + options([['', 'All'], ...Object.entries(typeLabels)], 'boss') + '</select></label>'
     + '<label lang="zh-Hant">章節<select id="encounter-act" aria-label="章節">' + options([['', 'All'], ...acts.map(id => [id, actLabels[id]])]) + '</select></label></div>';
 }
 
@@ -140,12 +140,12 @@ function filterEncounters() {
 module.exports = { render, renderFilters, renderMonsterCards, script: '(' + filterEncounters.toString() + ')();' };
 
 module.exports.styles = `
+.encounter-browser .split-list { border: 0; }
 .encounter-browser .encounter-filters {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
   width: 100%;
-  max-width: 32rem;
   min-width: 0;
 }
 .encounter-filters label {
@@ -168,37 +168,7 @@ module.exports.styles = `
 @media screen and (pointer: coarse) and (min-width: 744px) and (max-width: 1400px) and (min-height: 501px) {
   .encounter-browser .encounter-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-main#main-content .chapter-filters .encounter-filters select {
-  display: block;
-  width: 100%;
-  min-width: 0;
-  max-width: 100%;
-  appearance: none;
-  min-height: 38px;
-  padding: 6px 28px 6px 9px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--paper);
-  color: var(--ink);
-  font-size: 16px;
-  text-overflow: ellipsis;
-}
 
-.encounter-filters label::after {
-  content: "";
-  position: absolute;
-  inset-inline-end: 12px;
-  top: 50%;
-  width: 7px;
-  height: 7px;
-  border: solid currentColor;
-  border-width: 0 1.5px 1.5px 0;
-  transform: translateY(-70%) rotate(45deg);
-  pointer-events: none;
-}
-main#main-content .chapter-filters .encounter-filters select:focus-visible {
-  outline-offset: -2px;
-}
 .encounter .encounter-type {
   display: inline-block;
   padding: 2px 7px;

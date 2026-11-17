@@ -668,13 +668,12 @@ html body .site-header .site-nav > a {
 
 html body main#main-content .potion-filters > .potion-rarity-dropdown {
   display: grid;
-  grid-column: 1;
+  grid-column: 1 / -1;
   grid-row: 2;
   grid-template-columns: max-content minmax(0, 1fr);
   align-items: center;
   gap: 8px;
   width: 100%;
-  max-width: 13rem;
   min-width: 0;
   color: #fff;
   font-size: 14px;
@@ -683,22 +682,6 @@ html body main#main-content .potion-filters > .potion-rarity-dropdown {
 @media screen and (max-width: 599px), screen and (pointer: coarse) and (max-width: 1400px) {
   html body main#main-content .potion-filters > .potion-rarity-dropdown { grid-template-columns: 5rem minmax(0, 1fr); grid-column: 1 / -1; max-width: none; }
 }
-html body main#main-content .potion-rarity-dropdown select {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  min-width: 0;
-  min-height: 38px;
-  padding: 5px 8px;
-  border: 1px solid var(--line, #293340);
-  border-radius: 8px;
-  background: var(--paper, #0d131a);
-  color: var(--ink, #e3e8ee);
-  font: 16px/1.4 system-ui, sans-serif;
-  text-overflow: ellipsis;
-  cursor: pointer;
-}
-html body main#main-content .potion-rarity-dropdown select:focus-visible { outline-offset: -2px; }
 html body main#main-content #potion-rarity option[value="Common"],
 html body main#main-content #potion-rarity:has(option[value="Common"]:checked) { color: #cbd5e1; }
 html body main#main-content #potion-rarity option[value="Uncommon"],
@@ -707,3 +690,34 @@ html body main#main-content #potion-rarity option[value="Rare"],
 html body main#main-content #potion-rarity:has(option[value="Rare"]:checked) { color: #e3bf72; }
 html body main#main-content #potion-rarity option[value="Event"],
 html body main#main-content #potion-rarity:has(option[value="Event"]:checked) { color: #6ac1b4; }
+
+/* Filter dropdowns on the catalog pages. */
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) > select {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  height: 38px;
+  min-height: 38px;
+  padding: 5px 4px;
+  border: 1px solid var(--line, #293340);
+  border-radius: 8px;
+  background: var(--paper, #0d131a);
+  color: var(--ink, #e3e8ee);
+  font: 16px/1.4 system-ui, sans-serif;
+  text-overflow: ellipsis;
+}
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) > select:focus-visible {
+  outline: 2px solid var(--focus, #37a8ec);
+  outline-offset: -2px;
+}
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) {
+  color: #fff;
+  align-items: center;
+  margin-block: 0;
+  font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif;
+}
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown) > label {
+  margin-block: 0;
+}

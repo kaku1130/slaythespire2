@@ -18,9 +18,17 @@ const categories = ['Ironclad', 'Silent', 'Defect', 'Regent', 'Necrobinder', 'Co
 function renderCardFilters(groups) {
   return '<div class="card-dropdowns" lang="en">' + groups.map(([label,key,values]) => {
     const id = 'card-filter-' + key;
-    const options = ['', ...values].map(value => '<option value="' + value + '">' + (value || 'All') + '</option>').join('');
+    const options = ['', ...values].map(value => {
+      const selected = key === 'character' && value === 'Ironclad' ? ' selected' : '';
+      return '<option value="' + value + '"' + selected + '>' + (value || 'All') + '</option>';
+    }).join('');
     return '<div class="card-dropdown"><label for="' + id + '">' + label + '</label><select id="' + id + '">' + options + '</select></div>';
   }).join('') + '</div>';
+}
+function renderCardActions() {
+  const tiers = ['S', 'A', 'B', 'C', 'D'];
+  const buttons = tiers.map(tier => '<button type="button" value="' + tier + '" aria-pressed="false">' + tier + '</button>').join('');
+  return '<div class="card-action-row"><div class="card-tier-choices" id="card-filter-tier" role="group" aria-label="Tier">' + buttons + '</div>' + cardGrid.actionControls + '</div>';
 }
 const expected = [87, 88, 88, 88, 88, 64, 18, 27, 3];
 assert.equal(cards.length, 551);
@@ -113,7 +121,7 @@ footer{font-size:12px;color:var(--muted);border-top:1px solid var(--line);paddin
 @media print{:root{color-scheme:light;--ink:#17212b;--muted:#53606c;--line:#cdd3da;--paper:white;--bg:white}body{background:white}main{max-width:none;padding:0}.tools{display:none}.table-wrap{overflow:visible;border-radius:0}table{min-width:0;font-size:10px}td,th{padding:5px 8px}th{background:#eef0f2}thead{display:table-header-group}tr{break-inside:avoid}h2{color:var(--ink);break-after:avoid}a{color:var(--ink);text-decoration:none}.type,.rarity{color:var(--ink)!important;font-size:10px}.name a{color:var(--ink)!important}section{margin-bottom:20px}footer{margin-top:20px}}
 .sort-button{display:flex;align-items:center;gap:8px;width:100%;padding:0;border:0;background:none;color:inherit;text-align:left;cursor:pointer;font:inherit;white-space:nowrap}.sort-button:hover{color:var(--ink)}.sort-icon{opacity:.45;font-size:12px}th[aria-sort=ascending],th[aria-sort=descending]{color:var(--ink)}th[aria-sort=ascending] .sort-icon,th[aria-sort=descending] .sort-icon{opacity:1;color:var(--accent)}
 .pool-icon{width:20px;height:20px;flex-shrink:0;object-fit:contain}.all-icon{width:18px;height:18px;flex-shrink:0}
-span.tier{display:inline-flex;align-items:center;justify-content:center;min-width:28px;padding:1px 7px;border:1px solid transparent;border-radius:4px;font-size:12px;font-weight:700;line-height:1.6;color:#fff}.tier[data-tier=S],[data-tier-filter=S]{--tier-color:#b83b4b}.tier[data-tier=S]{background:var(--tier-color)}.tier[data-tier=A],[data-tier-filter=A]{--tier-color:#a65320}.tier[data-tier=A]{background:var(--tier-color)}.tier[data-tier=B],[data-tier-filter=B]{--tier-color:#846515}.tier[data-tier=B]{background:var(--tier-color)}.tier[data-tier=C],[data-tier-filter=C]{--tier-color:#337749}.tier[data-tier=C]{background:var(--tier-color)}.tier[data-tier=D],[data-tier-filter=D]{--tier-color:#356a9a}.tier[data-tier=D]{background:var(--tier-color)}.tier[data-tier=unranked]{background:transparent;color:var(--muted)}
+span.tier{display:inline-flex;align-items:center;justify-content:center;min-width:28px;padding:1px 7px;border:1px solid transparent;border-radius:4px;font-size:12px;font-weight:700;line-height:1.6;color:#fff}:root{--card-tier-S:#f28b94}.tier[data-tier=S],[data-tier-filter=S]{--tier-color:var(--card-tier-S)}:root{--card-tier-A:#efa66e}.tier[data-tier=A],[data-tier-filter=A]{--tier-color:var(--card-tier-A)}:root{--card-tier-B:#6faeee}.tier[data-tier=B],[data-tier-filter=B]{--tier-color:var(--card-tier-B)}:root{--card-tier-C:#70bf8b}.tier[data-tier=C],[data-tier-filter=C]{--tier-color:var(--card-tier-C)}:root{--card-tier-D:#aab6c4}.tier[data-tier=D],[data-tier-filter=D]{--tier-color:var(--card-tier-D)}span.tier[data-tier]:not([data-tier=unranked]){background:var(--tier-color);color:#10151d}.tier[data-tier=unranked]{background:transparent;color:var(--muted)}
 .effect{min-width:265px;max-width:340px;font-size:13px;line-height:1.65}.effect-keyword{color:#fbbf24;font-weight:500}.effect-resource,.effect-star,.star-cost{color:#facc15;white-space:nowrap}.not-available{color:var(--muted)}.energy{min-width:105px;font-variant-numeric:tabular-nums}.cost-change{color:#7dd3a0;font-size:12px;white-space:nowrap}.star-cost{display:block;font-size:12px}.builds{min-width:180px;max-width:240px}.build-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}.build-list a{font-size:13px;text-decoration:none}.build-list a:hover{text-decoration:underline}.build-role{display:block;font-size:11px;color:var(--muted)}.effect-heading{text-align:center}td{vertical-align:top}th{vertical-align:middle}.table-wrap{scrollbar-color:#354454 var(--paper)}@media print{.table-wrap{overflow-x:auto}table{min-width:1500px}.effect{font-size:10px;min-width:200px}.effect-keyword,.effect-resource,.effect-star,.star-cost{color:inherit}}
 
 /* Responsive layout: full table on wide screens, readable cards below 1800px. */
@@ -341,7 +349,7 @@ html{--site-width:100%}
 html body main#main-content,html body .site-header>.site-header-inner{width:100%;max-width:none}
 ${fs.readFileSync('assets/cards/compact-cards.css','utf8')}
 </style></head><body data-view="grid">${navigation.renderHeader('cards')}<main id="main-content">
-<div class="tools" id="tools" hidden><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><input id="search" type="search" placeholder="搜尋關鍵字" autocomplete="off">${cardGrid.actionControls.replace('id=', 'style="--rarity-color:'+typeColors.Attack+'" id=')}</div>${renderCardFilters([['Character','character',["Ironclad","Silent","Defect","Necrobinder","Regent","Colorless"]],['Rarity','rarity',["Starter","Common","Uncommon","Rare","Ancient"]],['Type','type',["Attack","Skill","Power","Status","Curse","Event","Quest"]],['Tier','tier',['S','A','B','C','D']]])}</div>
+<div class="tools" id="tools" hidden><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><input id="search" type="search" placeholder="搜尋關鍵字" autocomplete="off"></div>${renderCardFilters([['Character','character',["Ironclad","Silent","Defect","Necrobinder","Regent","Colorless"]],['Rarity','rarity',["Common","Uncommon","Rare","Ancient"]],['Type','type',["Attack","Skill","Power","Status","Curse","Event","Quest"]]])}${renderCardActions()}</div>
 <div id="card-scroll" class="card-scroll" role="region" aria-label="卡牌表格" tabindex="0">${sections}<p id="empty" hidden>找不到符合條件的卡片，請調整搜尋文字、分類或稀有度。</p>
 </div>
 </main>
@@ -352,13 +360,18 @@ const characterFilter=document.getElementById('card-filter-character');
 const typeFilter=document.getElementById('card-filter-type');
 const rarityFilter=document.getElementById('card-filter-rarity');
 const tierFilter=document.getElementById('card-filter-tier');
+const tierChoices=[...tierFilter.querySelectorAll('button')];
 const compactCardMedia=window.matchMedia('(max-width:1024px), (max-width:1366px) and (hover:none) and (pointer:coarse)');
 const sections=[...document.querySelectorAll('section[data-pool]')];
 search.value='';
-function filter(){document.getElementById('aoe-toggle').setAttribute('aria-pressed',String(search.value==='所有敵人'));const queries=[...new Set(search.value.toLowerCase().split(/[\\s+、，,]+/).filter(Boolean))];let count=0;for(const section of sections){let found=0;for(const row of section.querySelectorAll('tbody tr')){row.classList.remove('is-selected');row.hidden=!!((characterFilter.value&&characterFilter.value!==section.dataset.pool)||(rarityFilter.value&&(rarityFilter.value==='Starter'?'Basic':rarityFilter.value)!==row.dataset.rarity)||(tierFilter.value&&tierFilter.value!==row.querySelector('.tier[data-tier]').dataset.tier)||(typeFilter.value&&(typeFilter.value==='Event'?section.dataset.pool!=='Event':typeFilter.value!==row.dataset.type))||(queries.length>0&&!queries.some(query=>row.dataset.search.includes(query))));if(!row.hidden)found++;}section.hidden=!found;const poolCount=section.querySelector('.grid-pool-count');if(poolCount)poolCount.textContent='('+found+')';count+=found;}document.getElementById('empty').hidden=count!==0;document.getElementById('card-scroll').scrollTo({top:0,left:0,behavior:'instant'});}
+function filter(){document.getElementById('aoe-toggle').setAttribute('aria-pressed',String(search.value==='所有敵人'));const queries=[...new Set(search.value.toLowerCase().split(/[\\s+、，,]+/).filter(Boolean))];const selectedTiers=new Set(tierChoices.filter(choice=>choice.getAttribute('aria-pressed')==='true').map(choice=>choice.value));let count=0;for(const section of sections){let found=0;for(const row of section.querySelectorAll('tbody tr')){row.classList.remove('is-selected');row.hidden=!!((characterFilter.value&&characterFilter.value!==section.dataset.pool)||(rarityFilter.value&&rarityFilter.value!==row.dataset.rarity&&!(rarityFilter.value==='Common'&&row.dataset.rarity==='Basic'))||(selectedTiers.size&&!selectedTiers.has(row.querySelector('.tier[data-tier]').dataset.tier))||(typeFilter.value&&(typeFilter.value==='Event'?section.dataset.pool!=='Event':typeFilter.value!==row.dataset.type))||(queries.length>0&&!queries.some(query=>row.dataset.search.includes(query))));if(!row.hidden)found++;}section.hidden=!found;const poolCount=section.querySelector('.grid-pool-count');if(poolCount)poolCount.textContent='('+found+')';count+=found;}document.getElementById('empty').hidden=count!==0;document.getElementById('card-scroll').scrollTo({top:0,left:0,behavior:'instant'});}
 document.getElementById('aoe-toggle').addEventListener('click',event=>{search.value=event.currentTarget.getAttribute('aria-pressed')==='true'?'':'所有敵人';filter();});
 search.addEventListener('input',filter);
-for(const select of [characterFilter,typeFilter,rarityFilter,tierFilter])select.addEventListener('change',filter);
+for(const select of [characterFilter,typeFilter,rarityFilter])select.addEventListener('change',filter);
+for(const button of tierChoices)button.addEventListener('click',()=>{
+  button.setAttribute('aria-pressed',String(button.getAttribute('aria-pressed')!=='true'));
+  filter();
+});
 document.getElementById('tools').hidden=false;filter();
 
 
@@ -398,7 +411,7 @@ compactView.addEventListener('change',updateSortFocus);updateSortFocus();
 function selectCardRow(row){for(const current of document.querySelectorAll('.card-scroll tbody tr.is-selected'))current.classList.remove('is-selected');row.classList.add('is-selected');}
 function scrollToCard(row){const area=document.getElementById('card-scroll'),head=row.closest('table').querySelector('thead'),pageScroll=getComputedStyle(area).overflowY==='visible';const headerHeight=pageScroll?document.querySelector('.site-header').getBoundingClientRect().height+(compactView.matches?0:head.getBoundingClientRect().height):compactView.matches?0:head.getBoundingClientRect().height;row.style.scrollMarginTop=(headerHeight+12)+'px';if(pageScroll){row.scrollIntoView({block:'start',behavior:'instant'});return;}const top=area.scrollTop+row.getBoundingClientRect().top-area.getBoundingClientRect().top-headerHeight-12;area.scrollTo({top:Math.max(0,top),behavior:'instant'});}
 document.getElementById('card-scroll').addEventListener('click',event=>{const row=event.target.closest('tbody tr[data-id]');if(row)selectCardRow(row);});
-function revealLinkedCard(){let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}if(!id.startsWith('card-'))return;const row=document.getElementById(id);if(!row)return;const section=row.closest('section[data-pool]');if(!section)return;characterFilter.value=[...characterFilter.options].some(option=>option.value===section.dataset.pool)?section.dataset.pool:'';search.value='';rarityFilter.value='';typeFilter.value='';tierFilter.value='';filter();selectCardRow(row);requestAnimationFrame(()=>scrollToCard(row));}
+function revealLinkedCard(){let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}if(!id.startsWith('card-'))return;const row=document.getElementById(id);if(!row)return;const section=row.closest('section[data-pool]');if(!section)return;characterFilter.value=[...characterFilter.options].some(option=>option.value===section.dataset.pool)?section.dataset.pool:'';search.value='';rarityFilter.value='';typeFilter.value='';for(const choice of tierChoices)choice.setAttribute('aria-pressed','false');filter();selectCardRow(row);requestAnimationFrame(()=>scrollToCard(row));}
 window.addEventListener('hashchange',revealLinkedCard);revealLinkedCard();
 
 

@@ -32,3 +32,36 @@ module.exports+=require('./menu-spacing.cjs');
 module.exports+="\n/* Equal spacing above and below the header divider. */\nhtml body .site-header>.site-header-inner {padding-block:8px!important}\nhtml body main#main-content {padding-top:8px!important}\n";
 
 module.exports += "\n/* Thin scrollbars for the page and nested scroll areas. */\n* { scrollbar-width: thin; }\n";
+
+module.exports += `
+/* Filter dropdowns on the catalog pages. */
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) > select {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  height: 38px;
+  min-height: 38px;
+  padding: 5px 4px;
+  border: 1px solid var(--line, #293340);
+  border-radius: 8px;
+  background: var(--paper, #0d131a);
+  color: var(--ink, #e3e8ee);
+  font: 16px/1.4 system-ui, sans-serif;
+  text-overflow: ellipsis;
+}
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) > select:focus-visible {
+  outline: 2px solid var(--focus, #37a8ec);
+  outline-offset: -2px;
+}
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) {
+  color: #fff;
+  align-items: center;
+  margin-block: 0;
+  font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif;
+}
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown) > label {
+  margin-block: 0;
+}
+`;

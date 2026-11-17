@@ -1,6 +1,6 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
 const fs = require('node:fs');
-const categories = ['ancient','builds','cards','event','monster','potion','relic'];
+const categories = ['ancient','builds','cards','monster','potion','relic'];
 function load() {
   return Object.assign({}, ...categories.map(category => JSON.parse(fs.readFileSync('data/' + category + '/assets.json', 'utf8'))));
 }

@@ -853,12 +853,12 @@ html body .site-header .site-nav > a {
   html body .site-header .site-nav { width: 100% !important; flex: 1 1 100% !important; }
 }
 
+.encounter-browser .split-list { border: 0; }
 .encounter-browser .encounter-filters {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
   width: 100%;
-  max-width: 32rem;
   min-width: 0;
 }
 .encounter-filters label {
@@ -881,37 +881,7 @@ html body .site-header .site-nav > a {
 @media screen and (pointer: coarse) and (min-width: 744px) and (max-width: 1400px) and (min-height: 501px) {
   .encounter-browser .encounter-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-main#main-content .chapter-filters .encounter-filters select {
-  display: block;
-  width: 100%;
-  min-width: 0;
-  max-width: 100%;
-  appearance: none;
-  min-height: 38px;
-  padding: 6px 28px 6px 9px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--paper);
-  color: var(--ink);
-  font-size: 16px;
-  text-overflow: ellipsis;
-}
 
-.encounter-filters label::after {
-  content: "";
-  position: absolute;
-  inset-inline-end: 12px;
-  top: 50%;
-  width: 7px;
-  height: 7px;
-  border: solid currentColor;
-  border-width: 0 1.5px 1.5px 0;
-  transform: translateY(-70%) rotate(45deg);
-  pointer-events: none;
-}
-main#main-content .chapter-filters .encounter-filters select:focus-visible {
-  outline-offset: -2px;
-}
 .encounter .encounter-type {
   display: inline-block;
   padding: 2px 7px;
@@ -987,4 +957,35 @@ main#main-content .monster-card h3 { margin: 0 0 6px; overflow-wrap: anywhere; }
 .encounter-browser .encounter-results > .encounter-chapter:not([hidden]),
 .encounter-browser .encounter-results > .encounter-chapter > .encounter-grid {
   display: contents;
+}
+
+/* Filter dropdowns on the catalog pages. */
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) > select {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  height: 38px;
+  min-height: 38px;
+  padding: 5px 4px;
+  border: 1px solid var(--line, #293340);
+  border-radius: 8px;
+  background: var(--paper, #0d131a);
+  color: var(--ink, #e3e8ee);
+  font: 16px/1.4 system-ui, sans-serif;
+  text-overflow: ellipsis;
+}
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) > select:focus-visible {
+  outline: 2px solid var(--focus, #37a8ec);
+  outline-offset: -2px;
+}
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) {
+  color: #fff;
+  align-items: center;
+  margin-block: 0;
+  font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif;
+}
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown) > label {
+  margin-block: 0;
 }

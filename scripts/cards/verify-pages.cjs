@@ -4,7 +4,7 @@ const path = require('node:path');
 const assert = require('node:assert/strict');
 const {pathToFileURL, fileURLToPath} = require('node:url');
 const {chromium} = require(path.join(process.env.USERPROFILE, '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright'));
-const kinds = ['ancient','builds','cards','event','monster','potion','relic'];
+const kinds = ['ancient','builds','cards','monster','potion','relic'];
 async function main() {
   const browser = await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe', headless:true});
   try {
@@ -14,13 +14,13 @@ async function main() {
     for (const kind of kinds) {
       await page.goto(pathToFileURL(path.resolve(kind + '.html')).href);
       const links = await page.locator('.site-nav a').evaluateAll(nodes => nodes.map(node => ({url:node.href, active:node.getAttribute('aria-current')})));
-      assert.equal(links.length, 7);
+      assert.equal(links.length, kinds.length);
       for (const link of links) assert.ok(fs.existsSync(fileURLToPath(link.url)), link.url);
       assert.equal(links.filter(link => link.active === 'page').length, 1);
       assert.ok(links.find(link => link.active === 'page').url.endsWith('/' + kind + '.html'));
-      if (['ancient','event','monster'].includes(kind)) {
-        if (kind === 'event') await page.locator('[data-filter-group=acts]').first().click();
-        if (kind === 'monster') await page.locator('[data-filter-group=encounterType][data-filter-value=elite]').click();
+      if (['ancient','monster'].includes(kind)) {
+
+        if (kind === 'monster') await page.locator('#encounter-type').selectOption('elite');
         // The ancient desktop menu replaces a hidden copy of the chapter list.
         // Exercise the controls a user can actually see, including every ancient.
         const choices = page.locator('.split-list [data-detail-key]:visible');
@@ -50,7 +50,7 @@ async function main() {
       console.log('PASS', kind);
     }
     let references = 0;
-    for (const kind of ['ancient','event','monster']) {
+    for (const kind of ['ancient','monster']) {
       const dir = 'data/' + kind;
       for (const file of fs.readdirSync(dir).filter(file => file.endsWith('.html'))) {
         for (const match of fs.readFileSync(dir + '/' + file, 'utf8').matchAll(/(?:href|src)="([^"<>]+)"/g)) {

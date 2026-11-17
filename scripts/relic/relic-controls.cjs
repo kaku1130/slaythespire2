@@ -17,12 +17,9 @@ main#main-content>.relic-filters {
   grid-column: 1 / -1;
   grid-row: 2;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(8px, 2vw, 20px);
+  gap: 8px;
   width: 100%;
-  max-width: min(32rem, calc(100vw - 32px));
   min-width: 0;
-  justify-self: start;
-  margin-inline-end: auto;
 }
 .relic-dropdown {
   display: grid;
@@ -44,19 +41,6 @@ main#main-content>.relic-filters {
 @media screen and (pointer: coarse) and (min-width: 744px) and (max-width: 1400px) and (min-height: 501px) {
   .relic-dropdown-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-main#main-content .relic-filters .relic-dropdown select {
-  box-sizing: border-box;
-  width: 100%;
-  min-width: 0;
-  max-width: 100%;
-  padding-inline: 8px;
-  color: var(--ink);
-  text-overflow: ellipsis;
-  display: block;
-}
-main#main-content .relic-filters .relic-dropdown select:focus-visible {
-  outline-offset: -2px;
-}
 .relic-section .entry.relic {
   border-radius: 12px;
   transition: border-color 150ms ease, background-color 150ms ease;
@@ -65,12 +49,6 @@ main#main-content .relic-filters .relic-dropdown select:focus-visible {
 .relic-section .entry.relic:focus-within {
   border-color: color-mix(in srgb, var(--pool-color, var(--muted)) 55%, var(--line));
   background-color: color-mix(in srgb, var(--pool-color, var(--muted)) 5%, var(--paper));
-}
-@media (max-width: 599px), (pointer: coarse) and (max-width: 1000px) and (max-height: 500px) {
-  main#main-content .relic-filters .relic-dropdown select {
-    font-size: 16px;
-    padding-inline: 4px;
-  }
 }
 .relic-card-text {grid-column: 2; min-width: 0; overflow-wrap: anywhere}
 .relic-card-text .tag {font-size: 12px; color: var(--rarity-color, var(--muted))}

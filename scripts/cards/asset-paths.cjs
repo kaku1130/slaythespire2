@@ -3,7 +3,7 @@ process.chdir(require('node:path').resolve(__dirname,'../..'));
 const path = require('node:path');
 module.exports = function assetPath(url) {
   const parts = new URL(url, 'https://slaythespire2.net').pathname.split('/').filter(Boolean);
-  const groups = {potions:'potion', relics:'relic', events:'event', monsters:'monster', ancients:'ancient', intents:'monster', powers:'monster', cards:'cards', 'card-template':'cards'};
+  const groups = {potions:'potion', relics:'relic', monsters:'monster', ancients:'ancient', intents:'monster', powers:'monster', cards:'cards', 'card-template':'cards'};
   const category = groups[parts[1]];
   if (parts[0] !== 'images' || !category || parts.length < 3) throw Error('Unknown asset category: ' + url);
   const subfolder = category === 'cards' ? 'source/' + parts[1] : ['intents','powers'].includes(parts[1]) ? parts[1] : 'images';
