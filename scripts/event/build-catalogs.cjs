@@ -6,6 +6,7 @@ const columns=require('../relic/catalog-columns.cjs');
 const relic=require('../relic/relic-controls.cjs');
 const chapter=require('./chapter-controls.cjs');
 const encounters=require('../monster/encounters.cjs');
+const monsterDetail=require('../monster/monster-detail.cjs');
 const relicLayout=require('../relic/relic-layout.cjs');
 const potionLayout=require('../potion/potion-layout.cjs');
 const kinds={potion:'藥水',event:'事件',relic:'遺物',monster:'怪物'};
@@ -35,9 +36,14 @@ for(const [k,{items,version}] of Object.entries(data).filter(([kind])=>!only||ki
  const content=k==='monster'?encounters.render(items,assets,esc):items.map(x=>{const image=assets[x.imagePath||x.image]||'assets/event/no-image.svg';const desc=x.descriptionClean||('生命值：'+x.minHp+(x.maxHp!==x.minHp?'–'+x.maxHp:'')+' HP');return '<article class="entry '+k+'" id="'+x.id+'" '+fields.map(f=>'data-'+f.replace(/[A-Z]/g,c=>'-'+c.toLowerCase())+'="'+esc(f==='acts'?chapter.acts(x):[x[f]].flat().filter(Boolean).join('|'))+'"').join(' ')+'><img src="'+image+'" alt="'+esc(x.name)+'" loading="lazy">'+(['potion','relic'].includes(k)?'<div class="'+k+'-title-row">':'')+'<h2>'+esc(x.name)+(['potion','relic'].includes(k)&&x.nameEn?' <span class="catalog-name-en" lang="en">'+esc(x.nameEn)+'</span>':'')+'</h2><div class="tag">'+(k==='relic'?['rarity']:fields).flatMap(f=>[x[f]].flat()).filter(Boolean).map(v=>esc(labels[v]||v)).join(' · ')+(k==='relic'?require('../relic/ancient-rankings.cjs').render(x.id):'')+'</div>'+(['potion','relic'].includes(k)?'</div>':'')+'<p>'+(k==='potion'?potion.description(x):k==='relic'?potion.description(x).replaceAll('potion-keyword','relic-keyword'):esc(desc))+'</p>'+(['event','monster'].includes(k)?'<a class="details" href="data/'+k+'/'+k+'-'+x.slug+'.html">'+(k==='event'?'查看選項與結果':'查看招式與出招順序')+' →</a>':'')+'</article>';}).join('');
  fs.writeFileSync(file(k),'<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><link rel="apple-touch-icon" sizes="180x180" href="assets/cards/icons/site-logo.png"><link rel="icon" type="image/webp" href="assets/cards/icons/site-logo.webp"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+kinds[k]+'｜殺戮尖塔2</title><style>'+css+nav.styles+(k==='potion'?potion.styles+potionLayout.styles:k==='relic'?potion.styles.replaceAll('.potion','.relic')+relic.styles+relicLayout.styles:chapter.styles+(k==='monster'?encounters.styles:''))+nav.layoutStyles+columns.styles+'</style><body>'+header(k)+'<main id="main-content">'+'<div class="filters'+(k==='potion'?' potion-filters':k==='relic'?' relic-filters':' chapter-filters')+'">'+filterControls+'</div><div id="catalog-scroll" class="catalog-scroll" role="region" aria-label="瀏覽內容" tabindex="0">'+(k==='potion'?potionLayout.render(content,items):k==='relic'?relicLayout.render(content,items):k==='monster'?content:chapter.render(content,items,k))+'<p id="empty" hidden>沒有符合條件的內容。</p></div></main><script>'+(k==='potion'?potion.script:k==='relic'?relic.script:k==='monster'?encounters.script:chapter.script)+columns.script+'</script></body></html>');
  if(!['event','monster'].includes(k))continue;
- for(const x of items){const raw=fs.readFileSync('data/'+k+'/source/'+x.slug+'.html','utf8');let main=raw.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1];if(!main)throw Error('Missing detail '+x.slug);
+ for(const x of items){
+ if(k==='monster'){
+  const detail=monsterDetail.render(x,assets[x.imagePath||x.image],esc);
+  fs.writeFileSync('data/monster/monster-'+x.slug+'.html','<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(detail.name)+' | Monsters</title><style>'+nav.styles+'body{margin:0;background:#040609;color:#e3e8ee;font-family:system-ui,sans-serif}'+nav.layoutStyles+monsterDetail.styles+'</style></head><body>'+header(k,'../../')+'<main id="main-content" lang="en">'+detail.html+'</main></body></html>');
+  continue;
+ }
+ const raw=fs.readFileSync('data/'+k+'/source/'+x.slug+'.html','utf8');let main=raw.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1];if(!main)throw Error('Missing detail '+x.slug);
  main=main.replace(/<script\b[\s\S]*?<\/script>/gi,'').replace(/\son\w+="[^"]*"/gi,'').replace(/\s(?:srcset|srcSet)="[^"]*"/g,'').replace(/src="([^"]+)"/g,(_,u)=>{u=u.replace(/&amp;/g,'&');if(u.startsWith('data:'))return 'src="'+u+'"';if(!assets[u])throw Error('Missing detail asset '+u);return 'src="../../'+assets[u]+'"';}).replace(/href="([^"]+)"/g,(_,u)=>'href="'+href(u,'../../')+'"');
- if(k==='monster')main=main.replaceAll('border-gray-500/30">弱化</span>','border-gray-500/30">弱怪</span>').replaceAll('晉階','進階').replaceAll('進階</a>級數','進階</a>等級');
  if(k==='event')main=require('../cards/detail-card-database.cjs').replaceCards(main);
  // Source details are fully server-rendered; remove the online-only version switch.
  main=main.replace(/<button\b[^>]*>[\s\S]*?<\/button>/g,'');

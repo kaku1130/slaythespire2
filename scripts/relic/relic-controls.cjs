@@ -33,6 +33,17 @@ main#main-content>.relic-filters {
   color: #fff;
   font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif;
 }
+@media screen and (max-width: 599px), screen and (pointer: coarse) and (max-width: 1400px) {
+  .relic-dropdown-row {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: none;
+    gap: 8px;
+  }
+  .relic-dropdown { grid-template-columns: 5rem minmax(0, 1fr); }
+}
+@media screen and (pointer: coarse) and (min-width: 744px) and (max-width: 1400px) and (min-height: 501px) {
+  .relic-dropdown-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 main#main-content .relic-filters .relic-dropdown select {
   box-sizing: border-box;
   width: 100%;
@@ -56,11 +67,6 @@ main#main-content .relic-filters .relic-dropdown select:focus-visible {
   background-color: color-mix(in srgb, var(--pool-color, var(--muted)) 5%, var(--paper));
 }
 @media (max-width: 599px), (pointer: coarse) and (max-width: 1000px) and (max-height: 500px) {
-  .relic-dropdown-row {
-    grid-template-columns: minmax(0, 1fr);
-    max-width: min(100%, calc(100vw - 32px - env(safe-area-inset-left, 0px) - env(safe-area-inset-right, 0px)));
-    gap: 8px;
-  }
   main#main-content .relic-filters .relic-dropdown select {
     font-size: 16px;
     padding-inline: 4px;
@@ -69,7 +75,7 @@ main#main-content .relic-filters .relic-dropdown select:focus-visible {
 .relic-card-text {grid-column: 2; min-width: 0; overflow-wrap: anywhere}
 .relic-card-text .tag {font-size: 12px; color: var(--rarity-color, var(--muted))}
 .relic-card-text h3 {margin: 4px 0; font-size: 17px; line-height: 1.35}
-.relic-card-text p {margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5}
+.relic-card-text p {margin: 0; color: var(--muted); line-height: 1.5}
 .relic-card-ranking {margin-top: 4px}
 [data-relic-pool="Ironclad"],
 .relic-dropdown select[data-relic-filter="pool"] option[value="Ironclad"],

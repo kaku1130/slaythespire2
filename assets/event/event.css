@@ -925,6 +925,11 @@ html body main#main-content .chapter-filters .event-act-filter {
   color: #fff;
   font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif;
 }
+@media screen and (max-width: 599px), screen and (pointer: coarse) and (max-width: 1400px) {
+  html body main#main-content > .filters.chapter-filters:has(> .event-act-filter) { flex-wrap: wrap; }
+  html body main#main-content > .filters.chapter-filters:has(> .event-act-filter) > input#search { flex-basis: 100%; }
+  html body main#main-content .chapter-filters .event-act-filter { grid-template-columns: 5rem minmax(0, 1fr); grid-column: 1 / -1; max-width: none; }
+}
 html body main#main-content .chapter-filters #event-act {
   appearance: none;
   width: 100%;

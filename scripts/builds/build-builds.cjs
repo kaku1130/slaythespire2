@@ -18,7 +18,7 @@ for(const [id,links] of Object.entries(source.byCard))for(const b of links){cons
 assert.equal(builds.size,25);
 function renderCardLink(c){return '<a class="card-text-link" href="cards.html#card-'+esc(c.id)+'" data-rarity="'+c.rarity+'">'+esc(chinese.get(c.id).name)+'</a>';}
 function renderCardWithTier(c){const tier=cardTiers.get(c.id);return '<span class="build-card-entry" data-card-tier-id="'+esc(c.id)+'">'+renderCardLink(c)+'<span class="card-tier-badge" data-tier="'+(tier||'unranked')+'" aria-label="Tier '+(tier||'未評級')+'">'+(tier||'—')+'</span></span>';}
-function renderCardPair(c){const images=cardImages[c.id],name=chinese.get(c.id).name;assert(images?.base,'Missing card image '+c.id);const figure=(src,label)=>'<figure><img src="'+esc(src)+'" alt="'+esc(name+'（'+label+'）')+'" width="340" height="454" loading="lazy" decoding="async"></figure>';return '<div class="build-inline-card-pair" data-card-pair="'+esc(c.id)+'"><div class="build-pair-name">'+renderCardWithTier(c)+'</div><div class="build-pair-images">'+figure(images.base,'升級前')+(images.upgraded?figure(images.upgraded,'升級後'):'<div class="build-no-upgrade">無升級版本</div>')+'</div></div>';}
+function renderCardPair(c){const images=cardImages[c.id],name=chinese.get(c.id).name;assert(images?.base,'Missing card image '+c.id);const figure=(src,label)=>'<figure><img src="'+esc(src)+'" alt="'+esc(name+'（'+label+'）')+'" width="340" height="454" loading="lazy" decoding="async"></figure>';return '<div class="build-inline-card-pair" data-card-pair="'+esc(c.id)+'"><div class="build-pair-images">'+figure(images.base,'升級前')+(images.upgraded?figure(images.upgraded,'升級後'):'<div class="build-no-upgrade">無升級版本</div>')+'</div></div>';}
 function renderCards(list){const rarityOrder=['Basic','Common','Uncommon','Rare','Ancient','Event','Curse','Quest'];const rank=c=>{const index=rarityOrder.indexOf(c.rarity);return index<0?rarityOrder.length:index;};const tierRank=c=>{const index=['S','A','B','C','D'].indexOf(cardTiers.get(c.id));return index<0?5:index;};return [...list].sort((a,b)=>rank(a)-rank(b)||tierRank(a)-tierRank(b)||a.name.localeCompare(b.name,'en')).map(renderCardPair).join('');}
 
 function renderLinkedStrategy(text,g){
@@ -203,7 +203,7 @@ main#main-content .build-details::before{display:none}
 .build-card-pairs{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
 @media (width > 1024px) and (hover: hover) and (pointer: fine), (width > 1366px) { .build-card-pairs { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .build-inline-card-pair{min-width:0;border:1px solid var(--line);border-radius:10px;padding:14px;background:var(--paper)}
-.build-pair-name{text-align:center;margin-bottom:12px}.build-pair-name .build-card-entry{display:inline-flex;align-items:center;gap:8px}
+
 .build-pair-images{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
 .build-pair-images figure{margin:0;min-width:0}
 .build-pair-images img{display:block;width:100%;height:auto;aspect-ratio:340/454;object-fit:contain}.build-no-upgrade{padding:40px 8px;text-align:center;color:var(--muted)}

@@ -7,11 +7,11 @@ function acts(x){return [...new Set([...(x.acts||[]),groupOf(x)])].join('|');}
 const types=[['weak','弱怪'],['normal','一般'],['elite','菁英'],['boss','Boss'],['summon','召喚物']];
 function buttonLabel(kind,label){if(kind==='monster'&&label==='菁英')return '精英';return ['event','monster'].includes(kind)?label.replace(/^第([一二三])章/,(_,number)=>'第'+({一:1,二:2,三:3})[number]+'章'):label;}
 
-const eventActLabels = { act1a: 'Overgrowth', act1b: 'Underdocks', act2: 'Hive', act3: 'Glory' };
+const eventActLabels = { act1a: '密林', act1b: '暗港', act2: '蜂巢', act3: '榮耀' };
 function eventActControls() {
   const options = Object.entries(eventActLabels).map(([value, label]) =>
     '<option value="' + value + '" data-color="' + colors[value] + '">' + label + '</option>').join('');
-  return '<label class="event-act-filter" lang="en">Act<select id="event-act" aria-label="Act"><option value="">All</option>' + options + '</select></label>';
+  return '<label class="event-act-filter">章節<select id="event-act" aria-label="章節"><option value="">All</option>' + options + '</select></label>';
 }
 
 function controls(kind,items){if(kind==='event')return eventActControls();return [['acts',groups.filter(([key])=>key!=='shared'&&(kind!=='monster'||key!=='other')&&items.some(x=>groupOf(x)===key||(x.acts||[]).includes(key))) ],...(kind==='monster'?[['encounterType',types.filter(([key])=>key!=='summon')]]:[])].map(([key,values])=>'<div class="relic-filter-group chapter-filter-group" role="group" aria-label="'+(key==='acts'?'章節篩選':'怪物類型篩選')+'">'+values.map(([value,label])=>'<button type="button" data-filter-group="'+key+'" data-filter-value="'+value+'" style="--selection-color:'+ (colors[value]||'#aab6c4')+'" aria-pressed="false">'+buttonLabel(kind,label)+'</button>').join('')+'</div>').join('');}
@@ -55,6 +55,11 @@ html body main#main-content .chapter-filters .event-act-filter {
   min-width: 0;
   color: #fff;
   font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif;
+}
+@media screen and (max-width: 599px), screen and (pointer: coarse) and (max-width: 1400px) {
+  html body main#main-content > .filters.chapter-filters:has(> .event-act-filter) { flex-wrap: wrap; }
+  html body main#main-content > .filters.chapter-filters:has(> .event-act-filter) > input#search { flex-basis: 100%; }
+  html body main#main-content .chapter-filters .event-act-filter { grid-template-columns: 5rem minmax(0, 1fr); grid-column: 1 / -1; max-width: none; }
 }
 html body main#main-content .chapter-filters #event-act {
   appearance: none;

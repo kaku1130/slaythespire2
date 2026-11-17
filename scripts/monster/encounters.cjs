@@ -1,16 +1,18 @@
 const fs = require('node:fs');
+const stsDetails = require('../../data/monster/sts-gg-details.json');
+const stsMonsters = 'https://sts.gg/v2/monsters';
 
 const types = { Boss: 'boss', 菁英: 'elite', 一般: 'normal', 弱化: 'weak', 召喚物: 'summon' };
 
 
-const actLabels = { 'e-act1a': 'Overgrowth', 'e-act1b': 'Underdocks', 'e-act2': 'Hive', 'e-act3': 'Glory' };
+const actLabels = { 'e-act1a': '密林', 'e-act1b': '暗港', 'e-act2': '蜂巢', 'e-act3': '榮耀' };
 const typeLabels = { boss: 'Boss', elite: 'Elite', normal: 'Normal', weak: 'Weak' };
 
 function renderFilters(acts) {
   const options = items => items.map(([value, label]) => '<option value="' + value + '">' + label + '</option>').join('');
   return '<div class="encounter-filters" lang="en">'
     + '<label>Type<select id="encounter-type" aria-label="Type">' + options([['', 'All'], ...Object.entries(typeLabels)]) + '</select></label>'
-    + '<label>Act<select id="encounter-act" aria-label="Act">' + options([['', 'All'], ...acts.map(id => [id, actLabels[id]])]) + '</select></label></div>';
+    + '<label lang="zh-Hant">章節<select id="encounter-act" aria-label="章節">' + options([['', 'All'], ...acts.map(id => [id, actLabels[id]])]) + '</select></label></div>';
 }
 
 
@@ -38,8 +40,10 @@ function renderMonsterCards(encounters) {
   return [...cards.values()].map(card => {
     const context = card.encounters.join(' ').replaceAll('"', '&quot;');
     const label = typeLabels[card.type];
+    const slug = card.href.match(/monster-([^/]+)\.html$/)?.[1];
+    const href = Object.hasOwn(stsDetails, slug) ? stsMonsters + '/' + slug : stsMonsters;
     return '<article class="encounter monster-card" data-type="' + card.type + '" data-encounter-name="' + context + '">'
-      + '<a class="encounter-member monster-card-link" href="' + card.href + '"' + card.attrs + '>'
+      + '<a class="encounter-member monster-card-link" href="' + href + '" target="_blank" rel="noopener noreferrer"' + card.attrs + '>'
       + '<div class="monster-card-portrait"><img src="' + card.portrait + '" data-local-portrait="' + card.localImage + '" alt="" loading="lazy"></div>'
       + '<div class="monster-card-body"><h3>' + card.name + '</h3><span class="encounter-type" lang="en">' + label + '</span>'
       + '</div></a></article>';
@@ -144,9 +148,6 @@ module.exports.styles = `
   max-width: 32rem;
   min-width: 0;
 }
-@media (max-width: 599px), (pointer: coarse) and (max-width: 1000px) and (max-height: 500px) {
-  .encounter-browser .encounter-filters { grid-template-columns: minmax(0, 1fr); }
-}
 .encounter-filters label {
   display: grid;
   grid-template-columns: max-content minmax(0, 1fr);
@@ -156,6 +157,16 @@ module.exports.styles = `
   color: #fff;
   font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif;
   min-width: 0;
+}
+@media screen and (max-width: 599px), screen and (pointer: coarse) and (max-width: 1400px) {
+  .encounter-browser .encounter-filters {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: none;
+  }
+  .encounter-filters label { grid-template-columns: 5rem minmax(0, 1fr); }
+}
+@media screen and (pointer: coarse) and (min-width: 744px) and (max-width: 1400px) and (min-height: 501px) {
+  .encounter-browser .encounter-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 main#main-content .chapter-filters .encounter-filters select {
   display: block;
