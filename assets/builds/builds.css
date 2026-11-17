@@ -563,8 +563,6 @@ html body .site-header .site-nav > a {
   }
 }
 
-@media screen and (max-width:760px), screen and (max-width:1133px) and (hover:none) and (pointer:coarse) {
-  .build-pair-images {
-    grid-template-columns: minmax(0, 1fr);
-  }
+body.is-iphone .build-pair-images {
+  grid-template-columns: minmax(0, 1fr);
 }
