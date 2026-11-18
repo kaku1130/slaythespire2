@@ -16,19 +16,18 @@ const buildsByCard = buildSource.byCard;
 const tiers = new Map(tierSource.rankings.map(c=>[c.id,c.tier]));
 const categories = ['Ironclad', 'Silent', 'Defect', 'Regent', 'Necrobinder', 'Colorless', 'Curse', 'Event', 'Quest'];
 function renderCardFilters(groups) {
-  return '<div class="card-dropdowns" lang="en">' + groups.map(([label,key,values]) => {
-    const id = 'card-filter-' + key;
-    const options = ['', ...values].map(value => {
-      const selected = key === 'character' && value === 'Ironclad' ? ' selected' : '';
-      return '<option value="' + value + '"' + selected + '>' + (value || 'All') + '</option>';
+  return '<div class="card-filter-rows" lang="en">' + groups.map(([label,key,values]) => {
+    const buttons = values.map(value => {
+      const selected = key === 'character' && value === 'Ironclad';
+      return '<button type="button" value="' + value + '" aria-pressed="' + selected + '">' + (value || 'All') + '</button>';
     }).join('');
-    return '<div class="card-dropdown"><label for="' + id + '">' + label + '</label><select id="' + id + '">' + options + '</select></div>';
+    return '<div class="card-filter-row"><span>' + label + '</span><div class="card-filter-buttons" id="card-filter-' + key + '" role="group" aria-label="' + label + '">' + buttons + '</div></div>';
   }).join('') + '</div>';
 }
 function renderCardActions() {
   const tiers = ['S', 'A', 'B', 'C', 'D'];
   const buttons = tiers.map(tier => '<button type="button" value="' + tier + '" aria-pressed="false">' + tier + '</button>').join('');
-  return '<div class="card-action-row"><div class="card-tier-choices" id="card-filter-tier" role="group" aria-label="Tier">' + buttons + '</div>' + cardGrid.actionControls + '</div>';
+  return '<div class="card-action-row"><span class="card-tier-label">Tier</span><div class="card-tier-choices" id="card-filter-tier" role="group" aria-label="Tier">' + buttons + '</div>' + '</div>';
 }
 const expected = [87, 88, 88, 88, 88, 64, 18, 27, 3];
 assert.equal(cards.length, 551);
@@ -349,7 +348,7 @@ html{--site-width:100%}
 html body main#main-content,html body .site-header>.site-header-inner{width:100%;max-width:none}
 ${fs.readFileSync('assets/cards/compact-cards.css','utf8')}
 </style></head><body data-view="grid">${navigation.renderHeader('cards')}<main id="main-content">
-<div class="tools" id="tools" hidden><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><input id="search" type="search" placeholder="搜尋關鍵字" autocomplete="off"></div>${renderCardFilters([['Character','character',["Ironclad","Silent","Defect","Necrobinder","Regent","Colorless"]],['Rarity','rarity',["Common","Uncommon","Rare","Ancient"]],['Type','type',["Attack","Skill","Power","Status","Curse","Event","Quest"]]])}${renderCardActions()}</div>
+<div class="tools" id="tools" hidden><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><input id="search" type="search" placeholder="搜尋關鍵字" autocomplete="off">${cardGrid.actionControls}</div>${renderCardFilters([['Character','character',["Ironclad","Silent","Defect","Necrobinder","Regent","Colorless"]],['Rarity','rarity',["Common","Uncommon","Rare","Ancient"]],['Type','type',["Attack","Skill","Power"]]])}${renderCardActions()}</div>
 <div id="card-scroll" class="card-scroll" role="region" aria-label="卡牌表格" tabindex="0">${sections}<p id="empty" hidden>找不到符合條件的卡片，請調整搜尋文字、分類或稀有度。</p>
 </div>
 </main>
@@ -359,15 +358,39 @@ const search=document.getElementById('search');
 const characterFilter=document.getElementById('card-filter-character');
 const typeFilter=document.getElementById('card-filter-type');
 const rarityFilter=document.getElementById('card-filter-rarity');
+const multiFilters = [characterFilter, rarityFilter, typeFilter];
+function setFilterValues(group, values) {
+  for (const button of group.querySelectorAll('button')) {
+    button.setAttribute('aria-pressed', String(values.includes(button.value)));
+  }
+}
+function selectedValues(group) {
+  return new Set([...group.querySelectorAll('button[aria-pressed="true"]')].map(button => button.value));
+}
+for (const group of multiFilters) {
+  group.addEventListener('click', event => {
+    const button = event.target.closest('button');
+    if (!button) return;
+    button.setAttribute('aria-pressed', String(button.getAttribute('aria-pressed') !== 'true'));
+    filter();
+  });
+}
 const tierFilter=document.getElementById('card-filter-tier');
 const tierChoices=[...tierFilter.querySelectorAll('button')];
 const compactCardMedia=window.matchMedia('(max-width:1024px), (max-width:1366px) and (hover:none) and (pointer:coarse)');
 const sections=[...document.querySelectorAll('section[data-pool]')];
 search.value='';
-function filter(){document.getElementById('aoe-toggle').setAttribute('aria-pressed',String(search.value==='所有敵人'));const queries=[...new Set(search.value.toLowerCase().split(/[\\s+、，,]+/).filter(Boolean))];const selectedTiers=new Set(tierChoices.filter(choice=>choice.getAttribute('aria-pressed')==='true').map(choice=>choice.value));let count=0;for(const section of sections){let found=0;for(const row of section.querySelectorAll('tbody tr')){row.classList.remove('is-selected');row.hidden=!!((characterFilter.value&&characterFilter.value!==section.dataset.pool)||(rarityFilter.value&&rarityFilter.value!==row.dataset.rarity&&!(rarityFilter.value==='Common'&&row.dataset.rarity==='Basic'))||(selectedTiers.size&&!selectedTiers.has(row.querySelector('.tier[data-tier]').dataset.tier))||(typeFilter.value&&(typeFilter.value==='Event'?section.dataset.pool!=='Event':typeFilter.value!==row.dataset.type))||(queries.length>0&&!queries.some(query=>row.dataset.search.includes(query))));if(!row.hidden)found++;}section.hidden=!found;const poolCount=section.querySelector('.grid-pool-count');if(poolCount)poolCount.textContent='('+found+')';count+=found;}document.getElementById('empty').hidden=count!==0;document.getElementById('card-scroll').scrollTo({top:0,left:0,behavior:'instant'});}
-document.getElementById('aoe-toggle').addEventListener('click',event=>{search.value=event.currentTarget.getAttribute('aria-pressed')==='true'?'':'所有敵人';filter();});
-search.addEventListener('input',filter);
-for(const select of [characterFilter,typeFilter,rarityFilter])select.addEventListener('change',filter);
+function filter(){document.getElementById('aoe-toggle').setAttribute('aria-pressed',String(search.value==='所有敵人'));const queries=[...new Set(search.value.toLowerCase().split(/[\\s+、，,]+/).filter(Boolean))];const selectedTiers=new Set(tierChoices.filter(choice=>choice.getAttribute('aria-pressed')==='true').map(choice=>choice.value));const characters=selectedValues(characterFilter),rarities=selectedValues(rarityFilter),types=selectedValues(typeFilter);let count=0;for(const section of sections){let found=0;for(const row of section.querySelectorAll('tbody tr')){row.classList.remove('is-selected');row.hidden=!!((characters.size&&!characters.has(section.dataset.pool))||(rarities.size&&!rarities.has(row.dataset.rarity)&&!(rarities.has('Common')&&row.dataset.rarity==='Basic'))||(selectedTiers.size&&!selectedTiers.has(row.querySelector('.tier[data-tier]').dataset.tier))||(types.size&&!types.has(row.dataset.type)&&!(types.has('Event')&&section.dataset.pool==='Event'))||(queries.length>0&&!queries.some(query=>row.dataset.search.includes(query))));if(!row.hidden)found++;}section.hidden=!found;const poolCount=section.querySelector('.grid-pool-count');if(poolCount)poolCount.textContent='('+found+')';count+=found;}document.getElementById('empty').hidden=count!==0;document.getElementById('card-scroll').scrollTo({top:0,left:0,behavior:'instant'});}
+document.getElementById('aoe-toggle').addEventListener('click',event=>{search.value=event.currentTarget.getAttribute('aria-pressed')==='true'?'':'所有敵人';searchCards();});
+function searchCards() {
+  if (search.value.trim()) {
+    for (const group of multiFilters) setFilterValues(group, []);
+    for (const choice of tierChoices) choice.setAttribute('aria-pressed', 'false');
+  }
+  filter();
+}
+search.addEventListener('input',searchCards);
+
 for(const button of tierChoices)button.addEventListener('click',()=>{
   button.setAttribute('aria-pressed',String(button.getAttribute('aria-pressed')!=='true'));
   filter();
@@ -411,7 +434,7 @@ compactView.addEventListener('change',updateSortFocus);updateSortFocus();
 function selectCardRow(row){for(const current of document.querySelectorAll('.card-scroll tbody tr.is-selected'))current.classList.remove('is-selected');row.classList.add('is-selected');}
 function scrollToCard(row){const area=document.getElementById('card-scroll'),head=row.closest('table').querySelector('thead'),pageScroll=getComputedStyle(area).overflowY==='visible';const headerHeight=pageScroll?document.querySelector('.site-header').getBoundingClientRect().height+(compactView.matches?0:head.getBoundingClientRect().height):compactView.matches?0:head.getBoundingClientRect().height;row.style.scrollMarginTop=(headerHeight+12)+'px';if(pageScroll){row.scrollIntoView({block:'start',behavior:'instant'});return;}const top=area.scrollTop+row.getBoundingClientRect().top-area.getBoundingClientRect().top-headerHeight-12;area.scrollTo({top:Math.max(0,top),behavior:'instant'});}
 document.getElementById('card-scroll').addEventListener('click',event=>{const row=event.target.closest('tbody tr[data-id]');if(row)selectCardRow(row);});
-function revealLinkedCard(){let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}if(!id.startsWith('card-'))return;const row=document.getElementById(id);if(!row)return;const section=row.closest('section[data-pool]');if(!section)return;characterFilter.value=[...characterFilter.options].some(option=>option.value===section.dataset.pool)?section.dataset.pool:'';search.value='';rarityFilter.value='';typeFilter.value='';for(const choice of tierChoices)choice.setAttribute('aria-pressed','false');filter();selectCardRow(row);requestAnimationFrame(()=>scrollToCard(row));}
+function revealLinkedCard(){let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}if(!id.startsWith('card-'))return;const row=document.getElementById(id);if(!row)return;const section=row.closest('section[data-pool]');if(!section)return;setFilterValues(characterFilter,[section.dataset.pool]);search.value='';setFilterValues(rarityFilter,[]);setFilterValues(typeFilter,[]);for(const choice of tierChoices)choice.setAttribute('aria-pressed','false');filter();selectCardRow(row);requestAnimationFrame(()=>scrollToCard(row));}
 window.addEventListener('hashchange',revealLinkedCard);revealLinkedCard();
 
 

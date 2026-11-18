@@ -887,3 +887,98 @@ html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-ra
 html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown) > label {
   margin-block: 0;
 }
+
+html body main#main-content #tools > .card-filter-rows {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+.card-filter-row { display: grid; grid-template-columns: 76px minmax(0, 1fr); align-items: center; gap: 8px; min-width: 0; }
+.card-filter-row > span { color: #fff; font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif; }
+.card-filter-buttons { display: flex; flex-wrap: wrap; gap: var(--control-gap, 6px); min-width: 0; }
+html body main#main-content #tools .card-filter-buttons button {
+  --selection-color: #aab6c4;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: var(--control-height);
+  padding-inline: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--control-bg);
+  color: var(--selection-color);
+  font: 400 var(--control-font)/1.4 Arial, "Microsoft JhengHei", sans-serif;
+  cursor: pointer;
+}
+html body main#main-content #tools .card-filter-buttons button:is(:hover, :focus-visible, [aria-pressed=true]) {
+  border-color: var(--selection-color);
+  background: var(--paper);
+}
+html body main#main-content #tools #card-filter-character button[value="Ironclad"] { --selection-color: #dc6c68; }
+html body main#main-content #tools #card-filter-character button[value="Silent"] { --selection-color: #70bf8b; }
+html body main#main-content #tools #card-filter-character button[value="Defect"] { --selection-color: #6faeee; }
+html body main#main-content #tools #card-filter-character button[value="Necrobinder"] { --selection-color: #b595dd; }
+html body main#main-content #tools #card-filter-character button[value="Regent"] { --selection-color: #e3bf72; }
+html body main#main-content #tools #card-filter-character button[value="Colorless"] { --selection-color: #aab6c4; }
+html body main#main-content #tools #card-filter-rarity button[value="Starter"] { --selection-color: #a1a1aa; }
+html body main#main-content #tools #card-filter-rarity button[value="Common"] { --selection-color: #cbd5e1; }
+html body main#main-content #tools #card-filter-rarity button[value="Uncommon"] { --selection-color: #74b3e6; }
+html body main#main-content #tools #card-filter-rarity button[value="Rare"] { --selection-color: #e3bf72; }
+html body main#main-content #tools #card-filter-rarity button[value="Ancient"] { --selection-color: #c084fc; }
+html body main#main-content #tools #card-filter-type button[value="Attack"] { --selection-color: #ff777a; }
+html body main#main-content #tools #card-filter-type button[value="Skill"] { --selection-color: #74b3e6; }
+html body main#main-content #tools #card-filter-type button[value="Power"] { --selection-color: #70bf8b; }
+html body main#main-content #tools #card-filter-type button[value="Status"] { --selection-color: #aab6c4; }
+html body main#main-content #tools #card-filter-type button[value="Curse"] { --selection-color: #cf8098; }
+html body main#main-content #tools #card-filter-type button[value="Event"] { --selection-color: #6ac1b4; }
+html body main#main-content #tools #card-filter-type button[value="Quest"] { --selection-color: #c8ab79; }
+
+/* Text navigation labels. */
+html body .site-header .site-nav a {
+  font: 600 14px/1.4 Arial, "Microsoft JhengHei", sans-serif !important;
+  padding-inline: 4px !important;
+  white-space: nowrap;
+}
+
+/* Keep text navigation visible in every layout. */
+html body .site-header .site-nav a > span {
+  display: inline !important;
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  clip-path: none !important;
+  white-space: nowrap;
+}
+html body .site-header .site-nav a {
+  width: auto !important;
+  min-width: 0;
+  font: 600 14px/1.4 Arial, "Microsoft JhengHei", sans-serif !important;
+}
+
+html body main#main-content #tools .card-search {
+  grid-template-columns: minmax(0, 1fr) max-content;
+}
+html body main#main-content #tools .card-search > #aoe-toggle {
+  grid-area: 1 / 2;
+  --selection-color: #b595dd;
+  min-height: var(--control-height);
+  margin: 0;
+  padding-inline: 12px;
+}
+html body main#main-content #tools > .card-action-row {
+  grid-template-columns: 76px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+}
+.card-tier-label {
+  color: #fff;
+  font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif;
+}
+html body main#main-content #tools .card-tier-choices {
+  grid-column: 2;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--control-gap, 6px);
+}

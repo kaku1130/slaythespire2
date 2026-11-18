@@ -1,11 +1,6 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
-const groups={pool:['Ironclad','Silent','Defect','Necrobinder','Regent','Shared','Event'],rarity:['Starter','Common','Uncommon','Rare','Ancient','Shop','Event']};
-const controls = '<div class="relic-dropdown-row">' + Object.entries(groups).map(([key, values]) => {
-  const title = key === 'pool' ? 'Pool' : 'Rarity';
-  return '<label class="relic-dropdown"><span lang="en">' + title + '</span><select data-relic-filter="' + key
-    + '"><option value="">All</option>' + values.map(value => '<option value="' + value + '">' + value
-    + '</option>').join('') + '</select></label>';
-}).join('') + '</div>';
+const groups={pool:['Ironclad','Silent','Defect','Necrobinder','Regent','Shared','Event'],rarity:['Common','Uncommon','Rare','Ancient','Shop','Event']};
+const controls = "<div class=\"catalog-filter-rows\" lang=\"en\"><div class=\"catalog-filter-row\"><span>Character</span><div class=\"catalog-filter-buttons\" role=\"group\" aria-label=\"Pool\"><button type=\"button\" data-catalog-filter=\"pool\" value=\"Ironclad\" aria-pressed=\"false\" style=\"--selection-color:#dc6c68\">Ironclad</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Silent\" aria-pressed=\"false\" style=\"--selection-color:#70bf8b\">Silent</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Defect\" aria-pressed=\"false\" style=\"--selection-color:#6faeee\">Defect</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Necrobinder\" aria-pressed=\"false\" style=\"--selection-color:#b595dd\">Necrobinder</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Regent\" aria-pressed=\"false\" style=\"--selection-color:#e3bf72\">Regent</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Shared\" aria-pressed=\"false\" style=\"--selection-color:#aab6c4\">Shared</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Event\" aria-pressed=\"false\" style=\"--selection-color:#6ac1b4\">Event</button></div></div><div class=\"catalog-filter-row\"><span>Rarity</span><div class=\"catalog-filter-buttons\" role=\"group\" aria-label=\"Rarity\"><button type=\"button\" data-catalog-filter=\"rarity\" value=\"Common\" aria-pressed=\"false\" style=\"--selection-color:#cbd5e1\">Common</button><button type=\"button\" data-catalog-filter=\"rarity\" value=\"Uncommon\" aria-pressed=\"false\" style=\"--selection-color:#74b3e6\">Uncommon</button><button type=\"button\" data-catalog-filter=\"rarity\" value=\"Rare\" aria-pressed=\"false\" style=\"--selection-color:#e3bf72\">Rare</button><button type=\"button\" data-catalog-filter=\"rarity\" value=\"Ancient\" aria-pressed=\"false\" style=\"--selection-color:#c084fc\">Ancient</button><button type=\"button\" data-catalog-filter=\"rarity\" value=\"Shop\" aria-pressed=\"false\" style=\"--selection-color:#fb923c\">Shop</button><button type=\"button\" data-catalog-filter=\"rarity\" value=\"Event\" aria-pressed=\"false\" style=\"--selection-color:#6ac1b4\">Event</button></div></div></div>";
 const styles = `
 main#main-content>.relic-filters {
   --control-height: 40px;
@@ -105,24 +100,80 @@ main#main-content .relic-filters select[data-relic-filter="rarity"]:has(option[v
 main#main-content .relic-filters select[data-relic-filter="rarity"]:has(option[value="None"]:checked) {color: #a1a1aa}
 `;
 const script = `const entries = [...document.querySelectorAll('.entry')];
-const search = document.querySelector('#search');
-const filters = [...document.querySelectorAll('[data-relic-filter]')];
+const search = document.getElementById('search');
+const buttons = [...document.querySelectorAll('[data-catalog-filter]')];
 function filter() {
   const query = search.value.trim().toLowerCase();
-  let visible = 0;
+  const selected = {};
+  for (const button of buttons) {
+    const key = button.dataset.catalogFilter;
+    selected[key] ??= new Set();
+    if (button.getAttribute('aria-pressed') === 'true') selected[key].add(button.value);
+  }
+  let count = 0;
   for (const entry of entries) {
-    const matches = filters.every(select => !select.value || entry.dataset[select.dataset.relicFilter] === select.value);
+    const matches = Object.entries(selected).every(([key, values]) => !values.size || values.has(entry.dataset[key]) || (key === 'rarity' && values.has('Common') && entry.dataset.rarity === 'Starter'));
     entry.hidden = !matches || !entry.textContent.toLowerCase().includes(query);
-    if (!entry.hidden) visible++;
+    if (!entry.hidden) count++;
   }
   for (const section of document.querySelectorAll('.relic-section')) {
-    const count = section.querySelectorAll('.entry:not([hidden])').length;
-    section.hidden = count === 0;
-    section.querySelector('.relic-section-count').textContent = '(' + count + ')';
+    const visible = section.querySelectorAll('.entry:not([hidden])').length;
+    section.hidden = visible === 0;
+    section.querySelector('.relic-section-count').textContent = '(' + visible + ')';
   }
-  document.querySelector('#empty').hidden = visible > 0;
+  document.getElementById('empty').hidden = count > 0;
 }
 search.addEventListener('input', filter);
-for (const select of filters) select.addEventListener('change', filter);
+for (const button of buttons) button.addEventListener('click', () => {
+  button.setAttribute('aria-pressed', String(button.getAttribute('aria-pressed') !== 'true'));
+  filter();
+});
 filter();`;
 module.exports = {controls, styles, script};
+
+module.exports.styles += `
+html body main#main-content .relic-filters > .catalog-filter-rows {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+.catalog-filter-row { display: grid; grid-template-columns: 60px minmax(0, 1fr); align-items: center; gap: 8px; min-width: 0; }
+.catalog-filter-row > span { color: #fff; font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif; }
+.catalog-filter-buttons { display: flex; flex-wrap: wrap; gap: 8px; min-width: 0; }
+html body main#main-content .filters .catalog-filter-buttons button {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 40px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--control-bg, var(--paper));
+  color: var(--selection-color);
+  font: 400 16px/1.4 Arial, "Microsoft JhengHei", sans-serif;
+  cursor: pointer;
+}
+html body main#main-content .filters .catalog-filter-buttons button:is(:hover, :focus-visible, [aria-pressed=true]) {
+  border-color: var(--selection-color);
+  background: color-mix(in srgb, var(--selection-color) 15%, var(--paper));
+}
+`;
+
+module.exports.styles += `
+html body main#main-content .relic-filters .catalog-filter-row {
+  grid-template-columns: 80px minmax(0, 1fr);
+  column-gap: 16px;
+}
+`;
+
+module.exports.styles += `
+.relic[data-rarity="Rare"] { --rarity-color: #fb923c; }
+html body main#main-content .relic-filters button[data-catalog-filter="rarity"][value="Rare"] { --selection-color: #fb923c !important; }
+[data-relic-rarity="Rare"] { color: #fb923c; }
+
+.relic[data-rarity="Shop"] { --rarity-color: #b08968; }
+html body main#main-content .relic-filters button[data-catalog-filter="rarity"][value="Shop"] { --selection-color: #b08968 !important; }
+[data-relic-rarity="Shop"] { color: #b08968; }
+`;

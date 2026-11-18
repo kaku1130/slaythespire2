@@ -63,3 +63,23 @@ html body>.site-header {position:sticky!important;top:0;z-index:100}
 /* Shared divider beneath the site header. */
 html body>.site-header {border-bottom:1px solid #354454!important}
 `;
+
+module.exports += `
+/* Keep text navigation visible in every layout. */
+html body .site-header .site-nav a > span {
+  display: inline !important;
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  clip-path: none !important;
+  white-space: nowrap;
+}
+html body .site-header .site-nav a {
+  width: auto !important;
+  min-width: 0;
+  font: 600 14px/1.4 Arial, "Microsoft JhengHei", sans-serif !important;
+}
+`;

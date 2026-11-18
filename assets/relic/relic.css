@@ -841,3 +841,105 @@ html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-ra
 html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown) > label {
   margin-block: 0;
 }
+
+/* Text navigation labels. */
+html body .site-header .site-nav a {
+  font: 600 14px/1.4 Arial, "Microsoft JhengHei", sans-serif !important;
+  padding-inline: 4px !important;
+  white-space: nowrap;
+}
+
+/* Keep text navigation visible in every layout. */
+html body .site-header .site-nav a > span {
+  display: inline !important;
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  clip-path: none !important;
+  white-space: nowrap;
+}
+html body .site-header .site-nav a {
+  width: auto !important;
+  min-width: 0;
+  font: 600 14px/1.4 Arial, "Microsoft JhengHei", sans-serif !important;
+}
+
+html body main#main-content .relic-filters > .catalog-filter-rows {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+.catalog-filter-row { display: grid; grid-template-columns: 60px minmax(0, 1fr); align-items: center; gap: 8px; min-width: 0; }
+.catalog-filter-row > span { color: #fff; font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif; }
+.catalog-filter-buttons { display: flex; flex-wrap: wrap; gap: 8px; min-width: 0; }
+html body main#main-content .filters .catalog-filter-buttons button {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 40px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--control-bg, var(--paper));
+  color: var(--selection-color);
+  font: 400 16px/1.4 Arial, "Microsoft JhengHei", sans-serif;
+  cursor: pointer;
+}
+html body main#main-content .filters .catalog-filter-buttons button:is(:hover, :focus-visible, [aria-pressed=true]) {
+  border-color: var(--selection-color);
+  background: color-mix(in srgb, var(--selection-color) 15%, var(--paper));
+}
+
+.relic-card-text h3 .relic-card-classification { display: inline; margin-inline-start: 6px; font-weight: 400; }
+
+html body main#main-content .relic-filters .catalog-filter-row {
+  grid-template-columns: 80px minmax(0, 1fr);
+  column-gap: 16px;
+}
+
+.relic-name-zh { display: block; }
+.relic-name-row { display: flex; flex-wrap: nowrap; align-items: baseline; gap: 8px; min-width: 0; }
+.relic-name-en { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.relic-card-text h3 .relic-card-classification { flex: 0 0 auto; margin-inline-start: 0; white-space: nowrap; }
+
+.relic-card-text h3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 8px;
+  row-gap: 4px;
+}
+.relic-name-zh,
+.relic-name-row { display: contents; }
+.relic-name-en {
+  min-width: 0;
+  max-width: 100%;
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.relic-card-text h3 .relic-card-classification {
+  flex: 0 1 auto;
+  max-width: 100%;
+  white-space: normal;
+}
+
+.relic-card-text h3 .relic-name-zh,
+.relic-card-text h3 .relic-name-en {
+  color: var(--rarity-color, var(--ink));
+}
+.relic-card-classification [data-relic-rarity] { display: none; }
+
+.relic[data-rarity="Rare"] { --rarity-color: #fb923c; }
+html body main#main-content .relic-filters button[data-catalog-filter="rarity"][value="Rare"] { --selection-color: #fb923c !important; }
+[data-relic-rarity="Rare"] { color: #fb923c; }
+
+.relic[data-rarity="Shop"] { --rarity-color: #b08968; }
+html body main#main-content .relic-filters button[data-catalog-filter="rarity"][value="Shop"] { --selection-color: #b08968 !important; }
+[data-relic-rarity="Shop"] { color: #b08968; }
