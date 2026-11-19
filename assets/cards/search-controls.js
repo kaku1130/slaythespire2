@@ -204,8 +204,7 @@ html body main#main-content .filters .catalog-search-tools>button.catalog-random
       (selected[filter.dataset.catalogFilter] ??= new Set()).add(filter.value);
     }
     const names = [...main.querySelectorAll('.entry.' + kind)]
-      .filter(entry => Object.entries(selected).every(([key, values]) => values.has(entry.dataset[key]) ||
-        (kind === 'relic' && key === 'rarity' && values.has('Common') && entry.dataset.rarity === 'Starter')))
+      .filter(entry => Object.entries(selected).every(([key, values]) => values.has(entry.dataset[key])))
       .map(entry => entry.querySelector(kind === 'relic' ? '.relic-name-en' : '.catalog-name-en')?.textContent.trim()).filter(Boolean);
     if (!names.length) return;
     search.value = '"' + names[Math.floor(Math.random() * names.length)] + '"';

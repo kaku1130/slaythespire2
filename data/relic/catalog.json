@@ -1,7 +1,7 @@
 {
   "source": "https://slaythespire2.net/zh-TW/relic",
-  "version": "v0.107.1",
-  "retrievedDate": "2026-11-09",
+  "version": "v0.111.1",
+  "retrievedDate": "2026-11-20",
   "items": [
     {
       "className": "Akabeko",
@@ -581,7 +581,7 @@
       "descriptionClean": "在你的第一個回合開始時，失去2。在其餘的回合開始時，獲得1。",
       "descI18n": "在你的第一個回合開始時，失去<e>2</e>。在其餘的回合開始時，獲得<e>1</e>。",
       "nameEn": "Bread",
-      "descEn": "At the start of your first turn, lose <e>1</e><e>1</e>. At the start of all other turns, gain <e>1</e>."
+      "descEn": "At the start of your first turn, lose <e>2</e>. At the start of all other turns, gain <e>1</e>."
     },
     {
       "className": "BrilliantScarf",
@@ -724,7 +724,7 @@
       "descriptionClean": "在你的第2回合開始時，獲得2。",
       "descI18n": "在你的第2回合開始時，獲得<e>2</e>。",
       "nameEn": "Candelabra",
-      "descEn": "At the start of your 2nd turn, gain <e>1</e><e>1</e>."
+      "descEn": "At the start of your 2nd turn, gain <e>2</e>."
     },
     {
       "className": "CaptainsWheel",
@@ -797,7 +797,7 @@
       "descriptionClean": "在你的第三回合開始時，獲得3。",
       "descI18n": "在你的第三回合開始時，獲得<e>3</e>。",
       "nameEn": "Chandelier",
-      "descEn": "At the start of your 3rd turn, gain <e>1</e><e>1</e><e>1</e>."
+      "descEn": "At the start of your 3rd turn, gain <e>3</e>."
     },
     {
       "className": "CharonsAshes",
@@ -1130,7 +1130,7 @@
       "descriptionClean": "在每場戰鬥開始時，獲得7點輝星。",
       "descI18n": "在每場戰鬥開始時，獲得<s>7</s>。",
       "nameEn": "Divine Destiny",
-      "descEn": "At the start of each combat, gain <s>1</s><s>1</s><s>1</s><s>1</s><s>1</s><s>1</s><s>1</s>."
+      "descEn": "At the start of each combat, gain <s>7</s>."
     },
     {
       "className": "DivineRight",
@@ -1148,7 +1148,7 @@
       "descriptionClean": "在每場戰鬥開始時，獲得3。",
       "descI18n": "在每場戰鬥開始時，獲得<s>3</s>。",
       "nameEn": "Divine Right",
-      "descEn": "At the start of each combat, gain <s>1</s><s>1</s><s>1</s>."
+      "descEn": "At the start of each combat, gain <s>3</s>."
     },
     {
       "className": "DollysMirror",
@@ -2075,7 +2075,7 @@
       "descriptionClean": "每當你打出一張耗能大於等於2的牌，獲得4點格擋。",
       "descI18n": "每當你打出一張耗能大於等於<e>2</e>的牌，獲得4點<g>格擋</g>。",
       "nameEn": "Intimidating Helmet",
-      "descEn": "Whenever you play a card that costs <e>1</e><e>1</e> or more, gain 4 <g>Block</g>."
+      "descEn": "Whenever you play a card that costs <e>2</e> or more, gain 4 <g>Block</g>."
     },
     {
       "className": "IronClub",
@@ -2114,7 +2114,7 @@
       "descriptionClean": "每當你打出一張耗能大於等於3的牌時，獲得1。",
       "descI18n": "每當你打出一張耗能大於等於<e>3</e>的牌時，獲得<e>1</e>。",
       "nameEn": "Ivory Tile",
-      "descEn": "Whenever you play a card that costs <e>1</e><e>1</e><e>1</e> or more, gain <e>1</e>."
+      "descEn": "Whenever you play a card that costs <e>3</e> or more, gain <e>1</e>."
     },
     {
       "className": "JeweledMask",
@@ -3216,7 +3216,7 @@
       "descriptionClean": "如果你在擁有未花費的情況下結束回合，則下個回合額外獲得2。",
       "descI18n": "如果你在擁有未花費的<e/>情況下結束回合，則下個回合額外獲得<e>2</e>。",
       "nameEn": "Pael's Tears",
-      "descEn": "If you end your turn with unspent <e>1</e>, gain an additional <e>1</e><e>1</e> next turn."
+      "descEn": "If you end your turn with unspent <e/>, gain an additional <e>2</e> next turn."
     },
     {
       "className": "PaelsTooth",
@@ -4389,7 +4389,7 @@
       "descriptionClean": "在每回合開始時獲得1。能力牌的耗能增加1。",
       "descI18n": "在每回合開始時獲得<e>1</e>。能力牌的耗能增加1<e/>。",
       "nameEn": "Spiked Gauntlets",
-      "descEn": "Gain <e>1</e> at the start of each turn. Powers cost 1 more <e>1</e>."
+      "descEn": "Gain <e>1</e> at the start of each turn. Powers cost 1 more <e/>."
     },
     {
       "className": "StoneCalendar",
@@ -5014,7 +5014,7 @@
       "descriptionClean": "到達休息處後的下一場戰鬥開始時額外獲得2。",
       "descI18n": "到達<g>休息處</g>後的下一場戰鬥開始時額外獲得<e>2</e>。",
       "nameEn": "Venerable Tea Set",
-      "descEn": "Whenever you enter a <g>Rest Site</g>, start the next combat with an additional <e>1</e><e>1</e>."
+      "descEn": "Whenever you enter a <g>Rest Site</g>, start the next combat with an additional <e>2</e>."
     },
     {
       "className": "VeryHotCocoa",
@@ -5033,7 +5033,7 @@
       "descriptionClean": "在每場戰鬥的第一回合額外獲得4。",
       "descI18n": "在每場戰鬥的第一回合額外獲得<e>4</e>。",
       "nameEn": "Very Hot Cocoa",
-      "descEn": "Start each combat with an additional 4<e>1</e>."
+      "descEn": "Start each combat with an additional <e>4</e>."
     },
     {
       "className": "VexingPuzzlebox",
@@ -5257,6 +5257,36 @@
       "descI18n": "拾起時，<g>升級</g>4張牌。",
       "nameEn": "Yummy Cookie",
       "descEn": "Upon pickup, <g>Upgrade</g> 4 cards."
+    },
+    {
+      "className": "DowsingRod",
+      "id": "DOWSING_ROD",
+      "rarity": "Ancient",
+      "pool": "Event",
+      "name": "探尋杖",
+      "description": "Upon pickup, add [blue]1[/blue] [gold]Dowsing[/gold] to your [gold]Deck[/gold].",
+      "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+      "image": "dowsing_rod",
+      "imagePath": "/images/relics/dowsing_rod.webp",
+      "descriptionClean": "拾取時，將 1 張探尋加入你的牌組。",
+      "descI18n": "拾取時，將 1 張<g>探尋</g>加入你的<g>牌組</g>。",
+      "nameEn": "Dowsing Rod",
+      "descEn": "Upon pickup, add 1 <g>Dowsing</g> to your <g>Deck</g>."
+    },
+    {
+      "className": "NeowsSacrifice",
+      "id": "NEOWS_SACRIFICE",
+      "rarity": "Ancient",
+      "pool": "Event",
+      "name": "涅奧的犧牲",
+      "description": "Upon pickup, procure [blue]1[/blue] [gold]Ambergris[/gold] and add [blue]1[/blue] [red]Guilty[/red] to your [gold]Deck[/gold].",
+      "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+      "image": "neows_sacrifice",
+      "imagePath": "/images/relics/neows_sacrifice.webp",
+      "descriptionClean": "拾取時，取得 1 份龍涎香，並將 1 張愧疚加入你的牌組。",
+      "descI18n": "拾取時，取得 1 份<g>龍涎香</g>，並將 1 張愧疚加入你的<g>牌組</g>。",
+      "nameEn": "Neow's Sacrifice",
+      "descEn": "Upon pickup, procure 1 <g>Ambergris</g> and add 1 Guilty to your <g>Deck</g>."
     }
   ],
   "englishNameSource": "https://slaythespire2.net/relic",

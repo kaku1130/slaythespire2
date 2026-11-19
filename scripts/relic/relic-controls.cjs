@@ -1,6 +1,8 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
-const groups={pool:['Ironclad','Silent','Defect','Necrobinder','Regent','Shared','Event'],rarity:['Common','Uncommon','Rare','Ancient','Shop','Event']};
-const controls = "<div class=\"catalog-filter-rows\" lang=\"en\"><div class=\"catalog-filter-row\"><span>Character</span><div class=\"catalog-filter-buttons\" role=\"group\" aria-label=\"Pool\"><button type=\"button\" data-catalog-filter=\"pool\" value=\"Ironclad\" aria-pressed=\"false\" style=\"--selection-color:#dc6c68\">Ironclad</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Silent\" aria-pressed=\"false\" style=\"--selection-color:#70bf8b\">Silent</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Defect\" aria-pressed=\"false\" style=\"--selection-color:#6faeee\">Defect</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Necrobinder\" aria-pressed=\"false\" style=\"--selection-color:#b595dd\">Necrobinder</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Regent\" aria-pressed=\"false\" style=\"--selection-color:#e3bf72\">Regent</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Shared\" aria-pressed=\"false\" style=\"--selection-color:#aab6c4\">Shared</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Event\" aria-pressed=\"false\" style=\"--selection-color:#6ac1b4\">Event</button></div></div></div>";
+const groups={pool:['Ironclad','Silent','Defect','Necrobinder','Regent','Shared','Event'],rarity:['Starter','Common','Uncommon','Rare','Ancient','Shop','Event']};
+const poolColors={Ironclad:'#dc6c68',Silent:'#70bf8b',Defect:'#6faeee',Necrobinder:'#b595dd',Regent:'#e3bf72',Shared:'#aab6c4',Event:'#6ac1b4'};
+const rarityColors={Starter:'#9f9fa9',Common:'#d4d4d8',Uncommon:'#54a2ff',Rare:'#fac800',Ancient:'#c4b5fd',Shop:'#00d3bd',Event:'#f472b6'};
+const controls='<div class="catalog-filter-rows" lang="en">'+Object.entries(groups).map(([key,values])=>'<div class="catalog-filter-row"><span>'+(key==='pool'?'Character':'Rarity')+'</span><div class="catalog-filter-buttons" id="relic-filter-'+key+'" role="group" aria-label="'+(key==='pool'?'Pool':'Rarity')+'">'+values.map(value=>'<button type="button" data-catalog-filter="'+key+'" value="'+value+'" aria-pressed="false" style="--selection-color:'+(key==='pool'?poolColors:rarityColors)[value]+'">'+value+'</button>').join('')+'</div></div>').join('')+'</div>';
 const styles = `
 main#main-content>.relic-filters {
   --control-height: 40px;
@@ -112,7 +114,7 @@ function filter() {
   }
   let count = 0;
   for (const entry of entries) {
-    const matches = Object.entries(selected).every(([key, values]) => !values.size || values.has(entry.dataset[key]) || (key === 'rarity' && values.has('Common') && entry.dataset.rarity === 'Starter'));
+    const matches = Object.entries(selected).every(([key, values]) => !values.size || values.has(entry.dataset[key]));
     const exact = query.length >= 2 && query.startsWith('"') && query.endsWith('"');
     const matchesSearch = exact
       ? [...entry.querySelectorAll('.relic-name-en,.relic-name-zh,.catalog-name-en,.potion-name-zh')].some(node => node.textContent.trim().toLowerCase() === query.slice(1, -1))
@@ -181,3 +183,7 @@ html body main#main-content .relic-filters button[data-catalog-filter="rarity"][
 html body main#main-content .relic-filters button[data-catalog-filter="rarity"][value="Shop"] { --selection-color: #b08968 !important; }
 [data-relic-rarity="Shop"] { color: #b08968; }
 `;
+
+module.exports.styles += Object.entries(rarityColors).map(([rarity,color]) => '\nhtml body #main-content #relic-filter-rarity button[data-catalog-filter=rarity][value='+rarity+'] {--selection-color:'+color+'!important;--rarity-color:'+color+'!important}').join('');
+
+module.exports.styles += ['Ancient','Shop','Event'].map(rarity => '\nhtml body #main-content .entry.relic[data-rarity='+rarity+'] {--rarity-color:'+rarityColors[rarity]+'}\nhtml body #main-content .entry.relic[data-rarity='+rarity+'] [data-relic-rarity] {color:'+rarityColors[rarity]+'}').join('');

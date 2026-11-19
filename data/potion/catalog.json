@@ -1,7 +1,7 @@
 {
   "source": "https://slaythespire2.net/zh-TW/potion",
-  "version": "v0.107.1",
-  "retrievedDate": "2026-11-09",
+  "version": "v0.111.1",
+  "retrievedDate": "2026-11-20",
   "items": [
     {
       "className": "Ashwater",
@@ -271,7 +271,7 @@
       "descriptionClean": "獲得2。",
       "descI18n": "獲得<e>2</e>。",
       "nameEn": "Energy Potion",
-      "descEn": "Gain <e>1</e><e>1</e>."
+      "descEn": "Gain <e>2</e>."
     },
     {
       "className": "EntropicBrew",
@@ -720,7 +720,7 @@
       "descriptionClean": "獲得1。在你的下3個回合開始時，額外獲得。",
       "descI18n": "獲得<e>1</e>。在你的下3個回合開始時，額外獲得<e/>。",
       "nameEn": "Radiant Tincture",
-      "descEn": "Gain <e>1</e>. Gain an additional <e>1</e> at the start of your next 3 turns."
+      "descEn": "Gain <e>1</e>. Gain an additional <e/> at the start of your next 3 turns."
     },
     {
       "className": "RegenPotion",
@@ -855,7 +855,7 @@
       "descriptionClean": "獲得3。",
       "descI18n": "獲得<s>3</s>。",
       "nameEn": "Star Potion",
-      "descEn": "Gain <s>1</s><s>1</s><s>1</s>."
+      "descEn": "Gain <s>3</s>."
     },
     {
       "className": "StrengthPotion",
@@ -931,6 +931,21 @@
       "descI18n": "給予3層<g>虛弱</g>。",
       "nameEn": "Weak Potion",
       "descEn": "Apply 3 <g>Weak</g>."
+    },
+    {
+      "className": "Ambergris",
+      "id": "AMBERGRIS",
+      "rarity": "Event",
+      "usage": "AnyTime",
+      "target": "AnyPlayer",
+      "name": "龍涎香",
+      "description": "Heal for [green]{HealPercent}%[/green] of your Max HP. If used in combat, take an extra turn.",
+      "image": "ambergris",
+      "imagePath": "/images/potions/ambergris.webp",
+      "descriptionClean": "恢復相當於最大生命 50% 的生命。若在戰鬥中使用，則額外進行一個回合。",
+      "descI18n": "恢復相當於最大生命 50% 的生命。若在戰鬥中使用，則額外進行一個回合。",
+      "nameEn": "Ambergris",
+      "descEn": "Heal for 50% of your Max HP. If used in combat, take an extra turn."
     }
   ],
   "englishNameSource": "https://slaythespire2.net/potion",
