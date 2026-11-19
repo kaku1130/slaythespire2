@@ -70,3 +70,27 @@ html body main#main-content .relic-filters button:is([data-filter-group=rarity],
     grid-template-columns:repeat(4,minmax(0,1fr))!important;
   }
 }
+
+/* Center a half-width, single-column catalog on desktop. */
+@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine), screen and (min-width:1441px) {
+  html body main#main-content:has(>.relic-filters)>.catalog-scroll {
+    width:50%!important;
+    max-width:none;
+    min-width:0;
+    margin-inline:auto;
+  }
+  html body main#main-content:has(>.relic-filters)>.catalog-scroll .catalog {
+    grid-template-columns:minmax(0,1fr);
+  }
+}
+
+/* Chinese names lead; both language names use the heading size. */
+html body main#main-content .entry.relic .relic-card-text h3 {font:700 22px/1.35 Arial,"Microsoft JhengHei",sans-serif;align-items:baseline;gap:6px 12px}
+html body main#main-content .entry.relic .relic-card-text h3 :is(.relic-name-zh,.relic-name-en) {display:inline;font:inherit;white-space:normal;overflow-wrap:anywhere}
+html body main#main-content .entry.relic .relic-card-text h3 .relic-name-zh {order:1}
+html body main#main-content .entry.relic .relic-card-text h3 .relic-name-en {order:0}
+html body main#main-content .entry.relic .relic-card-text h3 .relic-card-classification {order:2;font:400 13px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+
+/* Rarity appears on its own second line below the bilingual title. */
+html body main#main-content .entry.relic .relic-rarity-row {margin:6px 0 8px;font:600 16px/1.4 Arial,"Microsoft JhengHei",sans-serif;color:var(--rarity-color,var(--muted))}
+html body main#main-content .entry.relic .relic-rarity-row > [data-relic-rarity] {display:inline;color:inherit}

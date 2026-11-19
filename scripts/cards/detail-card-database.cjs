@@ -17,7 +17,7 @@ function replaceCards(html,prefix='../../'){
   const upgraded=block.includes(card.nameZh+'+')||block.includes((name||'')+'+</span>');
   const image=upgraded&&images[card.id].upgraded?images[card.id].upgraded:images[card.id].base;
   const before=html.slice(0,start).match(/<a\b[^>]*>$/),after=html.slice(end).match(/^<\/a>/);if(before&&after){start-=before[0].length;end+=after[0].length;}
-  const replacement='<a class="database-card-link" data-card-id="'+card.id+'" href="'+prefix+'cards.html#card-'+card.id+'" target="_blank" rel="noopener" style="display:block;width:340px;max-width:100%"><img class="database-card-image" src="'+prefix+image+'" alt="'+esc(card.nameZh)+(upgraded?'（升級後）':'')+'" width="340" height="454" loading="lazy" style="display:block;width:100%;height:auto"></a>';
+  const replacement='<a class="database-card-link" data-card-id="'+card.id+'" href="'+prefix+'card.html#card-'+card.id+'" target="_blank" rel="noopener" style="display:block;width:340px;max-width:100%"><img class="database-card-image" src="'+prefix+image+'" alt="'+esc(card.nameZh)+(upgraded?'（升級後）':'')+'" width="340" height="454" loading="lazy" style="display:block;width:100%;height:auto"></a>';
   html=html.slice(0,start)+replacement+html.slice(end);cursor=start+replacement.length;
  }
  return html;

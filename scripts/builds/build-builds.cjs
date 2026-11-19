@@ -7,7 +7,9 @@ const source=JSON.parse(fs.readFileSync('data/builds/source.json','utf8'));
 const cards=JSON.parse(fs.readFileSync('data/cards/cards-source.json','utf8'));
 const chinese=new Map(JSON.parse(fs.readFileSync('data/cards/cards-zh-TW.json','utf8')).cards.map(c=>[c.id,c]));
 const byId=new Map(cards.map(c=>[c.id,c]));
-const cardImages=JSON.parse(fs.readFileSync('data/cards/card-images.json','utf8'));
+const cardDetails=new Map(JSON.parse(fs.readFileSync('data/cards/english-details.json','utf8')).cards.map(card=>[card.id,card]));
+const renderCardArticle=require('../cards/render-card-detail.cjs');
+const localBuildTargets=guide.builds.map(build=>'id="build-'+build.character+'-'+build.id+'"').join(' ');
 const cardTiers=new Map(JSON.parse(fs.readFileSync('data/cards/tiers-source.json','utf8')).rankings.map(card=>[card.id,card.tier]));
 
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -16,10 +18,13 @@ const pools=[['Ironclad','鐵甲戰士','#dc6c68'],['Silent','靜默獵手','#70
 const builds=new Map();
 for(const [id,links] of Object.entries(source.byCard))for(const b of links){const key=b.character+'-'+b.buildId;if(!builds.has(key))builds.set(key,{...b,key,core:[],support:[]});builds.get(key)[b.role].push(byId.get(id));}
 assert.equal(builds.size,25);
-function renderCardLink(c){return '<a class="card-text-link" href="cards.html#card-'+esc(c.id)+'" data-rarity="'+c.rarity+'">'+esc(chinese.get(c.id).name)+'</a>';}
+function renderCardLink(c){return '<a class="card-text-link" href="card.html#card-'+esc(c.id)+'" data-rarity="'+c.rarity+'">'+esc(chinese.get(c.id).name)+'</a>';}
 function renderCardWithTier(c){const tier=cardTiers.get(c.id);return '<span class="build-card-entry" data-card-tier-id="'+esc(c.id)+'">'+renderCardLink(c)+'<span class="card-tier-badge" data-tier="'+(tier||'unranked')+'" aria-label="Tier '+(tier||'未評級')+'">'+(tier||'—')+'</span></span>';}
-function renderCardPair(c){const images=cardImages[c.id],name=chinese.get(c.id).name;assert(images?.base,'Missing card image '+c.id);const figure=(src,label)=>'<figure><img src="'+esc(src)+'" alt="'+esc(name+'（'+label+'）')+'" width="340" height="454" loading="lazy" decoding="async"></figure>';return '<div class="build-inline-card-pair" data-card-pair="'+esc(c.id)+'"><div class="build-pair-images">'+figure(images.base,'升級前')+(images.upgraded?figure(images.upgraded,'升級後'):'<div class="build-no-upgrade">無升級版本</div>')+'</div></div>';}
-function renderCards(list){const rarityOrder=['Basic','Common','Uncommon','Rare','Ancient','Event','Curse','Quest'];const rank=c=>{const index=rarityOrder.indexOf(c.rarity);return index<0?rarityOrder.length:index;};const tierRank=c=>{const index=['S','A','B','C','D'].indexOf(cardTiers.get(c.id));return index<0?5:index;};return [...list].sort((a,b)=>rank(a)-rank(b)||tierRank(a)-tierRank(b)||a.name.localeCompare(b.name,'en')).map(renderCardPair).join('');}
+function renderGuideCard(c,context){
+ const detail=cardDetails.get(c.id);assert(detail,'Missing card details '+c.id);
+ return '<div class="build-guide-card card-detail-row" data-card-id="'+esc(c.id)+'" data-rarity="'+esc(detail.rarity)+'">'+renderCardArticle(detail,{prefix:'build-card-'+context+'-'+c.id.toLowerCase(),localBuilds:localBuildTargets,showBuilds:false})+'</div>';
+}
+function renderCards(list,context){const rarityOrder=['Basic','Common','Uncommon','Rare','Ancient','Event','Curse','Quest'];const rank=c=>{const index=rarityOrder.indexOf(c.rarity);return index<0?rarityOrder.length:index;};const tierRank=c=>{const index=['S','A','B','C','D'].indexOf(cardTiers.get(c.id));return index<0?5:index;};return [...list].sort((a,b)=>rank(a)-rank(b)||tierRank(a)-tierRank(b)||a.name.localeCompare(b.name,'en')).map(card=>renderGuideCard(card,context)).join('');}
 
 function renderLinkedStrategy(text,g){
  const candidates=[...new Set([...g.core,...g.support])].map(id=>byId.get(id)).sort((a,b)=>chinese.get(b.id).name.length-chinese.get(a.id).name.length);
@@ -36,7 +41,7 @@ function renderGuide(g,full=false){
  assert.deepEqual(b.core.map(c=>c.id).sort(),[...g.core].sort());assert.deepEqual(b.support.map(c=>c.id).sort(),[...g.support].sort());b.core=g.core.map(id=>byId.get(id));b.support=g.support.map(id=>byId.get(id));
  const search=[g.name,g.summary,g.id,g.playstyle,...b.core.flatMap(c=>[c.name,chinese.get(c.id).name]),...b.support.flatMap(c=>[c.name,chinese.get(c.id).name]),...g.relics.map(r=>r.name)].join(' ').toLowerCase();
 
- return '<article class="build-panel'+(full?' full-guide':'')+'" id="build-'+key+'" data-search="'+esc(search)+'"'+(guide.builds.find(first=>first.characterPool===g.characterPool).id!==g.id?' hidden':'')+'><h3 class="build-panel-heading"><span class="build-tier" data-tier="'+esc(g.tier)+'" aria-label="'+esc(g.tier)+' 級">'+esc(g.tier)+'</span><span>'+esc(g.name)+'</span></h3><div class="build-details"><div class="build-overview"><div class="build-explanation"><div class="guide-strategy"><h4>玩法思路</h4><p>'+renderLinkedStrategy(g.playstyle,g)+'</p></div><div class="guide-rationale"><h4>為什麼是 '+g.tier+' 級</h4><p>'+renderLinkedStrategy(g.rationale,g)+'</p></div></div><div class="build-tradeoffs"><div><h4>優點</h4><p>'+esc(g.strength)+'</p></div><div><h4>缺點</h4><p>'+esc(g.weakness)+'</p></div></div>'+'</div><div class="build-resources"><div class="build-deck-groups"><div class="build-card-group"><h4>核心卡片</h4><div class="build-card-pairs">'+renderCards(b.core)+'</div></div><div class="build-card-group"><h4>輔助卡片</h4><div class="build-card-pairs">'+renderCards(b.support)+'</div></div></div><div class="relic-group"><h4>關鍵遺物</h4>'+(g.relics.length?'<ul class="relic-list">'+g.relics.map(r=>'<li><img class="relic-icon" src="'+relicIcon(r)+'" alt="" width="40" height="40"><div class="relic-content"><strong>'+esc(r.name)+'</strong><div class="relic-effect">'+rich(r.description)+'</div></div></li>').join('')+'</ul>':'<p class="no-relics">原站未列出指定遺物。</p>')+'</div></div></div></article>';
+ return '<article class="build-panel'+(full?' full-guide':'')+'" id="build-'+key+'" data-search="'+esc(search)+'"'+(guide.builds.find(first=>first.characterPool===g.characterPool).id!==g.id?' hidden':'')+'><h3 class="build-panel-heading"><span class="build-tier" data-tier="'+esc(g.tier)+'" aria-label="'+esc(g.tier)+' 級">'+esc(g.tier)+'</span><span>'+esc(g.name)+'</span></h3><div class="build-details"><div class="build-overview"><div class="build-explanation"><div class="guide-strategy"><h4>玩法思路</h4><p>'+renderLinkedStrategy(g.playstyle,g)+'</p></div><div class="guide-rationale"><h4>為什麼是 '+g.tier+' 級</h4><p>'+renderLinkedStrategy(g.rationale,g)+'</p></div></div><div class="build-tradeoffs"><div><h4>優點</h4><p>'+esc(g.strength)+'</p></div><div><h4>缺點</h4><p>'+esc(g.weakness)+'</p></div></div>'+'</div><div class="build-resources"><div class="build-deck-groups"><div class="build-card-group"><h4>核心卡片</h4><div class="build-guide-cards">'+renderCards(b.core,key+'-core')+'</div></div><div class="build-card-group"><h4>輔助卡片</h4><div class="build-guide-cards">'+renderCards(b.support,key+'-support')+'</div></div></div><div class="relic-group"><h4>關鍵遺物</h4>'+(g.relics.length?'<ul class="relic-list">'+g.relics.map(r=>'<li><img class="relic-icon" src="'+relicIcon(r)+'" alt="" width="40" height="40"><div class="relic-content"><strong>'+esc(r.name)+'</strong><div class="relic-effect">'+rich(r.description)+'</div></div></li>').join('')+'</ul>':'<p class="no-relics">原站未列出指定遺物。</p>')+'</div></div></div></article>';
 }
 function characterFile(pool){return '#character-'+iconName[pool];}
 function characterNav(active='Ironclad'){return '<nav class="character-nav" aria-label="流派角色">'+pools.map(([pool,label,color])=>{const icon='data:image/webp;base64,'+fs.readFileSync('assets/cards/icons/'+iconName[pool]+'.webp').toString('base64');return '<a href="'+characterFile(pool)+'" data-character="'+pool+'" aria-label="'+label+'" title="'+label+'" style="--accent:'+color+'"'+(active===pool?' aria-current="page"':'')+'><img class="sidebar-character-icon" src="'+icon+'" alt="" width="32" height="32"></a>';}).join('')+'</nav>';}
@@ -264,11 +269,14 @@ html body main#main-content>.tier-sidebar .tier-index-item .tier-index-name {
 body.is-iphone .build-pair-images {
   grid-template-columns: minmax(0, 1fr);
 }
+${fs.readFileSync('assets/cards/card1-detail.css','utf8')}
+${require('./card-layout.cjs')}
+${require('./desktop-layout.cjs')}
 </style></head><body class="character-guide-page">${navigation.renderHeader('builds')}<main id="main-content"><div class="character-sidebar" aria-label="角色選單">${characterNav()}</div><div class="tier-sidebar" aria-label="流派強度選單" hidden>${tierMenus}</div><div class="build-layout" hidden><div class="build-content" role="region" aria-label="流派內容" tabindex="0">${sections}</div></div><p id="build-empty" hidden>沒有符合條件的流派。</p></main><script>
 
 document.body.classList.toggle('is-iphone', /\\biPhone\\b/i.test(navigator.userAgent));
 let selectedPool='',selectedBuildId='';
-const buildSections=[...document.querySelectorAll('.build-section')],characterLinks=[...document.querySelectorAll('[data-character]')];
+const buildSections=[...document.querySelectorAll('.build-section')],characterLinks=[...document.querySelectorAll('.character-nav [data-character]')];
 function selectCharacter(pool,buildId=''){
   const section=buildSections.find(section=>section.dataset.pool===pool)||buildSections[0];
   selectedPool=section.dataset.pool;
@@ -291,12 +299,7 @@ function applyBuildRoute(){
   const target=document.getElementById(id);
   if(target?.classList.contains('build-panel')){selectCharacter(target.closest('.build-section').dataset.pool,id);return;}
   if(target?.classList.contains('build-section')){selectCharacter(target.dataset.pool);return;}
-  selectedPool='';selectedBuildId='';
-  document.querySelector('.tier-sidebar').hidden=true;
-  document.querySelector('.build-layout').hidden=true;
-  for(const link of characterLinks)link.removeAttribute('aria-current');
-  for(const section of buildSections)section.hidden=true;
-  for(const link of document.querySelectorAll('.tier-index-item'))link.removeAttribute('aria-current');
+  selectCharacter('Ironclad');
 }
 function updateStickyOffsets(){const header=document.querySelector('.site-header');if(header)document.documentElement.style.setProperty('--site-header-height',header.getBoundingClientRect().height+'px');}
 updateStickyOffsets();window.addEventListener('resize',updateStickyOffsets);
@@ -306,6 +309,6 @@ window.addEventListener('hashchange',applyBuildRoute);
 applyBuildRoute();
 
 </script></body></html>`;
-require('../cards/desktop-page-css.cjs').writeDesktopPage('builds.html',navigation.openPageLinksInNewTab(html));
+require('../cards/desktop-page-css.cjs').writeDesktopPage('build.html',navigation.openPageLinksInNewTab(html));
 console.log('Created local Builds page: 25 builds.');
 

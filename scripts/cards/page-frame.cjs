@@ -27,7 +27,28 @@ html body main#main-content {padding-block:20px 24px}
   }
 }
 `;
+
+module.exports += `
+/* Preserve full navigation labels and scroll when mobile widths run out. */
+@media screen and (max-width:1024px), screen and (max-width:1366px) and (hover:none) and (pointer:coarse) {
+  html body .site-header .site-nav {
+    display:flex!important;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    min-width:0;
+    overflow-x:auto;
+    overscroll-behavior-x:contain;
+  }
+  html body .site-header .site-nav > a {
+    flex:0 0 auto!important;
+    min-width:max-content;
+    padding-inline:12px!important;
+    white-space:nowrap;
+  }
+}
+`;
 module.exports+=require('./menu-spacing.cjs');
+module.exports+=require('./filter-frames.cjs');
 
 module.exports+="\n/* Equal spacing above and below the header divider. */\nhtml body .site-header>.site-header-inner {padding-block:8px!important}\nhtml body main#main-content {padding-top:8px!important}\n";
 
@@ -63,5 +84,19 @@ html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-ra
 }
 html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown) > label {
   margin-block: 0;
+}
+`;
+module.exports+=require('./desktop-content-width.cjs');
+module.exports+=require('./page-scroll.cjs');
+module.exports+=require('./tier-colors.cjs');
+module.exports+=require('./tier-labels.cjs');
+module.exports+=require('./card-content-width.cjs');
+module.exports+=require('./catalog-content-width.cjs');
+
+module.exports += `
+/* Keep attribution text and links the same gray on every page. */
+html body main#main-content#main-content .site-attribution,
+html body main#main-content#main-content .site-attribution a {
+  color:#6b7280!important;
 }
 `;

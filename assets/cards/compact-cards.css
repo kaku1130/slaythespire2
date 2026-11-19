@@ -151,9 +151,9 @@ html body main#main-content #tools .card-dropdown #card-filter-rarity:has(option
 html body main#main-content #tools .card-dropdown #card-filter-type option[value="Attack"],
 html body main#main-content #tools .card-dropdown #card-filter-type:has(option[value="Attack"]:checked) { color: #ff777a; }
 html body main#main-content #tools .card-dropdown #card-filter-type option[value="Skill"],
-html body main#main-content #tools .card-dropdown #card-filter-type:has(option[value="Skill"]:checked) { color: #74b3e6; }
+html body main#main-content #tools .card-dropdown #card-filter-type:has(option[value="Skill"]:checked) { color: lab(78.503% -64.9265 39.7492); }
 html body main#main-content #tools .card-dropdown #card-filter-type option[value="Power"],
-html body main#main-content #tools .card-dropdown #card-filter-type:has(option[value="Power"]:checked) { color: #70bf8b; }
+html body main#main-content #tools .card-dropdown #card-filter-type:has(option[value="Power"]:checked) { color: lab(83.2664% 8.65132 106.895); }
 html body main#main-content #tools .card-dropdown #card-filter-type option[value="Status"],
 html body main#main-content #tools .card-dropdown #card-filter-type:has(option[value="Status"]:checked) { color: #aab6c4; }
 html body main#main-content #tools .card-dropdown #card-filter-type option[value="Curse"],
@@ -244,8 +244,8 @@ html body main#main-content #tools #card-filter-rarity button[value="Uncommon"] 
 html body main#main-content #tools #card-filter-rarity button[value="Rare"] { --selection-color: #e3bf72; }
 html body main#main-content #tools #card-filter-rarity button[value="Ancient"] { --selection-color: #c084fc; }
 html body main#main-content #tools #card-filter-type button[value="Attack"] { --selection-color: #ff777a; }
-html body main#main-content #tools #card-filter-type button[value="Skill"] { --selection-color: #74b3e6; }
-html body main#main-content #tools #card-filter-type button[value="Power"] { --selection-color: #70bf8b; }
+html body main#main-content #tools #card-filter-type button[value="Skill"] { --selection-color: lab(78.503% -64.9265 39.7492); }
+html body main#main-content #tools #card-filter-type button[value="Power"] { --selection-color: lab(83.2664% 8.65132 106.895); }
 html body main#main-content #tools #card-filter-type button[value="Status"] { --selection-color: #aab6c4; }
 html body main#main-content #tools #card-filter-type button[value="Curse"] { --selection-color: #cf8098; }
 html body main#main-content #tools #card-filter-type button[value="Event"] { --selection-color: #6ac1b4; }
@@ -275,3 +275,29 @@ html body main#main-content #tools .card-tier-choices {
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: var(--control-gap, 6px);
 }
+
+/* Give each mobile filter group its own frame without visible headings. */
+@media screen and (max-width: 599px), screen and (pointer: coarse) and (max-width: 1400px) {
+  html body main#main-content #tools .card-filter-row,
+  html body main#main-content #tools > .card-action-row {
+    box-sizing: border-box;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 8px;
+    border: 1px solid var(--filter-frame-color, #293340);
+    border-radius: 10px;
+  }
+  html body main#main-content #tools .card-filter-row:has(#card-filter-character) { --filter-frame-color: #b595dd; }
+  html body main#main-content #tools .card-filter-row:has(#card-filter-rarity) { --filter-frame-color: #e3bf72; }
+  html body main#main-content #tools .card-filter-row:has(#card-filter-type) { --filter-frame-color: #6faeee; }
+  html body main#main-content #tools > .card-action-row { --filter-frame-color: #70bf8b; }
+  html body main#main-content #tools .card-filter-row > span,
+  html body main#main-content #tools .card-tier-label {
+    display: none;
+  }
+  html body main#main-content #tools .card-tier-choices {
+    grid-column: 1;
+  }
+}
+
+/* Equal spacing above and below card profession headings. */
+html body main#main-content .card-scroll .grid-pool-heading {margin-block:var(--group-gap,8px)}

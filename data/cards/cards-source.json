@@ -18,7 +18,7 @@
     "name": "Accelerant",
     "pool": "Silent",
     "type": "Power",
-    "rarity": "Rare",
+    "rarity": "Uncommon",
     "slug": "accelerant",
     "descBase": "<g>Poison</g> is triggered 1 additional time.",
     "descUpgraded": "<g>Poison</g> is triggered 2 additional times.",
@@ -153,7 +153,7 @@
     "descBase": "Gain <e>2</e>.",
     "descUpgraded": "Gain <e>3</e>.",
     "energy": 0,
-    "starCost": 3,
+    "starCost": 2,
     "upgrade": {
       "energygain": "+1"
     }
@@ -210,10 +210,10 @@
     "rarity": "Common",
     "slug": "anticipate",
     "descBase": "Gain 2 <g>Dexterity</g> this turn.",
-    "descUpgraded": "Gain 3 <g>Dexterity</g> this turn.",
+    "descUpgraded": "Gain 4 <g>Dexterity</g> this turn.",
     "energy": 0,
     "upgrade": {
-      "dexterity": "+1"
+      "dexterity": "+2"
     }
   },
   {
@@ -559,8 +559,8 @@
     "type": "Power",
     "rarity": "Ancient",
     "slug": "biased-cognition",
-    "descBase": "Gain 4 <g>Focus</g>.\nAt the start of your turn, lose 1 <g>Focus</g>.",
-    "descUpgraded": "Gain 5 <g>Focus</g>.\nAt the start of your turn, lose 1 <g>Focus</g>.",
+    "descBase": "Gain 5 <g>Focus</g>.\nAt the start of your turn, lose 1 <g>Focus</g>.",
+    "descUpgraded": "Gain 6 <g>Focus</g>.\nAt the start of your turn, lose 1 <g>Focus</g>.",
     "energy": 1,
     "upgrade": {
       "focuspower": "+1"
@@ -622,7 +622,8 @@
     "energy": 1,
     "upgrade": {
       "cards": "+1"
-    }
+    },
+    "notes": "Inky applies Weak without granting additional damage."
   },
   {
     "id": "BLIGHT_STRIKE",
@@ -657,7 +658,7 @@
     "name": "Bloodletting",
     "pool": "Ironclad",
     "type": "Skill",
-    "rarity": "Common",
+    "rarity": "Uncommon",
     "slug": "bloodletting",
     "descBase": "Lose 3 HP.\nGain <e>2</e>.",
     "descUpgraded": "Lose 3 HP.\nGain <e>3</e>.",
@@ -1375,8 +1376,8 @@
     "type": "Attack",
     "rarity": "Common",
     "slug": "collision-course",
-    "descBase": "Deal 11 damage.\nAdd a <g>Debris</g> into your <g>Hand</g>.",
-    "descUpgraded": "Deal 15 damage.\nAdd a <g>Debris</g> into your <g>Hand</g>.",
+    "descBase": "Deal 10 damage.\nAdd a <g>Debris</g> into your <g>Hand</g>.",
+    "descUpgraded": "Deal 14 damage.\nAdd a <g>Debris</g> into your <g>Hand</g>.",
     "energy": 0,
     "upgrade": {
       "damage": "+4"
@@ -1389,8 +1390,8 @@
     "type": "Skill",
     "rarity": "Uncommon",
     "slug": "colossus",
-    "descBase": "Gain 5 <g>Block</g>.\nYou receive 50% less damage from <g>Vulnerable</g> enemies this turn.",
-    "descUpgraded": "Gain 8 <g>Block</g>.\nYou receive 50% less damage from <g>Vulnerable</g> enemies this turn.",
+    "descBase": "Gain 4 <g>Block</g>.\nYou receive 50% less damage from <g>Vulnerable</g> enemies this turn.",
+    "descUpgraded": "Gain 7 <g>Block</g>.\nYou receive 50% less damage from <g>Vulnerable</g> enemies this turn.",
     "energy": 1,
     "upgrade": {
       "block": "+3"
@@ -1423,7 +1424,8 @@
     "energy": 1,
     "upgrade": {
       "block": "+1"
-    }
+    },
+    "notes": "Fuel no longer draws cards. Upgrading Fuel grants 1 additional Energy instead of additional card draw."
   },
   {
     "id": "COMPILE_DRIVER",
@@ -1643,11 +1645,11 @@
     "type": "Power",
     "rarity": "Rare",
     "slug": "crimson-mantle",
-    "descBase": "At the start of your turn, lose 1 HP and gain 8 <g>Block</g>.",
+    "descBase": "At the start of your turn, lose 1 HP and gain 7 <g>Block</g>.",
     "descUpgraded": "At the start of your turn, lose 1 HP and gain 10 <g>Block</g>.",
     "energy": 1,
     "upgrade": {
-      "crimsonmantlepower": "+2"
+      "crimsonmantlepower": "+3"
     }
   },
   {
@@ -1655,7 +1657,7 @@
     "name": "Cruelty",
     "pool": "Ironclad",
     "type": "Power",
-    "rarity": "Rare",
+    "rarity": "Uncommon",
     "slug": "cruelty",
     "descBase": "<g>Vulnerable</g> enemies take an additional 25% damage.",
     "descUpgraded": "<g>Vulnerable</g> enemies take an additional 50% damage.",
@@ -1671,8 +1673,8 @@
     "type": "Attack",
     "rarity": "Common",
     "slug": "crush-under",
-    "descBase": "Deal 7 damage to ALL enemies. All enemies lose 1 <g>Strength</g> this turn.",
-    "descUpgraded": "Deal 8 damage to ALL enemies. All enemies lose 2 <g>Strength</g> this turn.",
+    "descBase": "Deal 8 damage to ALL enemies. All enemies lose 1 <g>Strength</g> this turn.",
+    "descUpgraded": "Deal 9 damage to ALL enemies. All enemies lose 2 <g>Strength</g> this turn.",
     "energy": 1,
     "upgrade": {
       "damage": "+1",
@@ -2057,8 +2059,8 @@
     "type": "Power",
     "rarity": "Rare",
     "slug": "demon-form",
-    "descBase": "At the start of your turn, gain 2 <g>Strength</g>.",
-    "descUpgraded": "At the start of your turn, gain 3 <g>Strength</g>.",
+    "descBase": "At the start of your turn, gain 3 <g>Strength</g>.",
+    "descUpgraded": "At the start of your turn, gain 4 <g>Strength</g>.",
     "energy": 3,
     "upgrade": {
       "strengthpower": "+1"
@@ -2087,8 +2089,8 @@
     "type": "Attack",
     "rarity": "Uncommon",
     "slug": "devastate",
-    "descBase": "Deal 30 damage.",
-    "descUpgraded": "Deal 40 damage.",
+    "descBase": "Deal 35 damage.",
+    "descUpgraded": "Deal 45 damage.",
     "energy": 1,
     "starCost": 4,
     "upgrade": {
@@ -2186,7 +2188,7 @@
     "name": "Dominate",
     "pool": "Ironclad",
     "type": "Skill",
-    "rarity": "Uncommon",
+    "rarity": "Rare",
     "slug": "dominate",
     "descBase": "Apply 1 <g>Vulnerable</g>.\nGain 1 <g>Strength</g> for each <g>Vulnerable</g> on the enemy.\n<g>Exhaust</g>.",
     "descUpgraded": "Apply 2 <g>Vulnerable</g>.\nGain 1 <g>Strength</g> for each <g>Vulnerable</g> on the enemy.\n<g>Exhaust</g>.",
@@ -2344,7 +2346,7 @@
     "name": "Echoing Slash",
     "pool": "Silent",
     "type": "Attack",
-    "rarity": "Rare",
+    "rarity": "Uncommon",
     "slug": "echoing-slash",
     "descBase": "Deal 10 damage to ALL enemies.\nRepeat this effect for each enemy killed.",
     "descUpgraded": "Deal 13 damage to ALL enemies.\nRepeat this effect for each enemy killed.",
@@ -2360,12 +2362,14 @@
     "type": "Skill",
     "rarity": "Rare",
     "slug": "eidolon",
-    "descBase": "<g>Exhaust</g> your <g>Hand</g>.\nIf 9 cards were <g>Exhausted</g> this way, gain 1 <g>Intangible</g>.",
-    "descUpgraded": "<g>Exhaust</g> your <g>Hand</g>.\nIf 9 cards were <g>Exhausted</g> this way, gain 1 <g>Intangible</g>.",
+    "descBase": "Play all <g>Ethereal</g> cards in your <g>Exhaust Pile</g>.\n<g>Exhaust</g>.",
+    "descUpgraded": "Play all <g>Ethereal</g> cards in your <g>Exhaust Pile</g>.\n<g>Exhaust</g>.",
     "energy": 2,
     "upgrade": {
       "energy": "-1"
-    }
+    },
+    "canGenerateInCombat": false,
+    "notes": "Does not play Unplayable cards. Cannot be generated during combat."
   },
   {
     "id": "END_OF_DAYS",
@@ -2552,11 +2556,12 @@
     "type": "Skill",
     "rarity": "Uncommon",
     "slug": "expect-a-fight",
-    "descBase": "Gain <e/> for each Attack in your <g>Hand</g>.\nYou cannot gain\nadditional <e/> this turn.",
-    "descUpgraded": "Gain <e/> for each Attack in your <g>Hand</g>.\nYou cannot gain\nadditional <e/> this turn.",
-    "energy": 2,
+    "descBase": "Gain 15 <g>Block</g>.\nGain 5 additional <g>Block</g> for each <g>Strength</g>.",
+    "descUpgraded": "Gain 16 <g>Block</g>.\nGain 8 additional <g>Block</g> for each <g>Strength</g>.",
+    "energy": 3,
     "upgrade": {
-      "energy": "-1"
+      "block": "+1",
+      "blockperstrength": "+3"
     }
   },
   {
@@ -2566,8 +2571,8 @@
     "type": "Skill",
     "rarity": "Uncommon",
     "slug": "expertise",
-    "descBase": "Draw cards until you have 6 in your <g>Hand</g>.",
-    "descUpgraded": "Draw cards until you have 7 in your <g>Hand</g>.",
+    "descBase": "Draw 2 cards.\nThey gain <g>Retain</g> this turn.",
+    "descUpgraded": "Draw 3 cards.\nThey gain <g>Retain</g> this turn.",
     "energy": 1,
     "upgrade": {
       "cards": "+1"
@@ -2907,8 +2912,8 @@
     "type": "Attack",
     "rarity": "Common",
     "slug": "flick-flack",
-    "descBase": "<g>Sly</g>.\nDeal 6 damage to ALL enemies.",
-    "descUpgraded": "<g>Sly</g>.\nDeal 8 damage to ALL enemies.",
+    "descBase": "<g>Sly</g>.\nDeal 7 damage to ALL enemies.",
+    "descUpgraded": "<g>Sly</g>.\nDeal 9 damage to ALL enemies.",
     "energy": 1,
     "upgrade": {
       "damage": "+2"
@@ -2989,8 +2994,8 @@
     "type": "Skill",
     "rarity": "Uncommon",
     "slug": "forgotten-ritual",
-    "descBase": "If you <g>Exhausted</g> a card this turn, gain <e>3</e>.\n<g>Exhaust</g>.",
-    "descUpgraded": "If you <g>Exhausted</g> a card this turn, gain <e>4</e>.\n<g>Exhaust</g>.",
+    "descBase": "Gain <e>3</e>.\n<g>Exhaust</g>.",
+    "descUpgraded": "Gain <e>4</e>.\n<g>Exhaust</g>.",
     "energy": 1,
     "upgrade": {
       "energygain": "+1"
@@ -3307,7 +3312,8 @@
     "slug": "guards",
     "descBase": "<g>Transform</g> any number of cards in your <g>Hand</g> into <g>Minion Sacrifice</g>.\n<g>Exhaust</g>.",
     "descUpgraded": "<g>Transform</g> any number of cards in your <g>Hand</g> into <g>Minion Sacrifice+</g>.\n<g>Exhaust</g>.",
-    "energy": 2
+    "energy": 2,
+    "notes": "Minion Sacrifice grants 7 Block (10 when upgraded)."
   },
   {
     "id": "GUIDING_STAR",
@@ -3316,10 +3322,10 @@
     "type": "Attack",
     "rarity": "Common",
     "slug": "guiding-star",
-    "descBase": "Deal 12 damage.\nDraw 2 cards.",
-    "descUpgraded": "Deal 13 damage.\nDraw 3 cards.",
+    "descBase": "Deal 12 damage.\nNext turn, draw 2 cards.",
+    "descUpgraded": "Deal 13 damage.\nNext turn, draw 3 cards.",
     "energy": 1,
-    "starCost": 2,
+    "starCost": 1,
     "upgrade": {
       "damage": "+1",
       "cards": "+1"
@@ -3428,8 +3434,8 @@
     "type": "Power",
     "rarity": "Uncommon",
     "slug": "haunt",
-    "descBase": "Whenever you play a <g>Soul</g>, a random enemy loses 6 HP.",
-    "descUpgraded": "Whenever you play a <g>Soul</g>, a random enemy loses 8 HP.",
+    "descBase": "Whenever you play a <g>Soul</g>, a random enemy loses 7 HP.",
+    "descUpgraded": "Whenever you play a <g>Soul</g>, a random enemy loses 9 HP.",
     "energy": 1,
     "upgrade": {
       "hploss": "+2"
@@ -3456,11 +3462,12 @@
     "type": "Skill",
     "rarity": "Uncommon",
     "slug": "haze",
-    "descBase": "<g>Sly</g>.\nApply 4 <g>Poison</g> to ALL enemies.",
-    "descUpgraded": "<g>Sly</g>.\nApply 6 <g>Poison</g> to ALL enemies.",
-    "energy": 3,
+    "descBase": "Apply 4 <g>Poison</g> and 1 <g>Weak</g> to ALL enemies.",
+    "descUpgraded": "Apply 6 <g>Poison</g> and 2 <g>Weak</g> to ALL enemies.",
+    "energy": 2,
     "upgrade": {
-      "poison": "+2"
+      "poison": "+2",
+      "weak": "+1"
     }
   },
   {
@@ -3672,11 +3679,11 @@
     "type": "Attack",
     "rarity": "Uncommon",
     "slug": "howl-from-beyond",
-    "descBase": "Deal 16 damage to ALL enemies.\nAt the end of your turn, if this is in your <g>Exhaust Pile</g>, play it.",
-    "descUpgraded": "Deal 21 damage to ALL enemies.\nAt the end of your turn, if this is in your <g>Exhaust Pile</g>, play it.",
+    "descBase": "Deal 18 damage to ALL enemies.\nAt the end of your turn, if this is in your <g>Exhaust Pile</g>, play it.",
+    "descUpgraded": "Deal 24 damage to ALL enemies.\nAt the end of your turn, if this is in your <g>Exhaust Pile</g>, play it.",
     "energy": 3,
     "upgrade": {
-      "damage": "+5"
+      "damage": "+6"
     }
   },
   {
@@ -3700,11 +3707,11 @@
     "type": "Attack",
     "rarity": "Rare",
     "slug": "hyperbeam",
-    "descBase": "Deal 28 damage to ALL enemies.\nLose 3 <g>Focus</g>.",
-    "descUpgraded": "Deal 36 damage to ALL enemies.\nLose 3 <g>Focus</g>.",
+    "descBase": "Deal 24 damage to ALL enemies.\nLose 3 <g>Focus</g> this turn.",
+    "descUpgraded": "Deal 30 damage to ALL enemies.\nLose 3 <g>Focus</g> this turn.",
     "energy": 2,
     "upgrade": {
-      "damage": "+8"
+      "damage": "+6"
     }
   },
   {
@@ -4262,11 +4269,11 @@
     "type": "Attack",
     "rarity": "Rare",
     "slug": "mangle",
-    "descBase": "Deal 15 damage.\nEnemy loses 10 <g>Strength</g> this turn.",
-    "descUpgraded": "Deal 20 damage.\nEnemy loses 15 <g>Strength</g> this turn.",
+    "descBase": "Deal 20 damage.\nEnemy loses 10 <g>Strength</g> this turn.",
+    "descUpgraded": "Deal 26 damage.\nEnemy loses 15 <g>Strength</g> this turn.",
     "energy": 3,
     "upgrade": {
-      "damage": "+5",
+      "damage": "+6",
       "strengthloss": "+5"
     }
   },
@@ -4451,10 +4458,12 @@
     "rarity": "Uncommon",
     "slug": "mirage",
     "descBase": "Gain <g>Block</g> equal to <g>Poison</g> on ALL enemies.\n<g>Exhaust</g>.",
-    "descUpgraded": "Gain <g>Block</g> equal to <g>Poison</g> on ALL enemies.\n<g>Exhaust</g>.",
+    "descUpgraded": "Gain <g>Block</g> equal to <g>Poison</g> on ALL enemies.",
     "energy": 1,
     "upgrade": {
-      "energy": "-1"
+      "keywordsRemoved": [
+        "Exhaust"
+      ]
     }
   },
   {
@@ -4509,11 +4518,11 @@
     "type": "Attack",
     "rarity": "Common",
     "slug": "momentum-strike",
-    "descBase": "Deal 10 damage.\nReduce this card's cost to 0 <e/>.",
-    "descUpgraded": "Deal 13 damage.\nReduce this card's cost to 0 <e/>.",
+    "descBase": "Deal 11 damage.\nReduce this card's cost to 0 <e/>.",
+    "descUpgraded": "Deal 15 damage.\nReduce this card's cost to 0 <e/>.",
     "energy": 1,
     "upgrade": {
-      "damage": "+3"
+      "damage": "+4"
     }
   },
   {
@@ -4747,8 +4756,8 @@
     "type": "Attack",
     "rarity": "Uncommon",
     "slug": "null",
-    "descBase": "Deal 10 damage.\nApply 2 <g>Weak</g>.\n<g>Channel</g> 1 <g>Dark</g>.",
-    "descUpgraded": "Deal 13 damage.\nApply 3 <g>Weak</g>.\n<g>Channel</g> 1 <g>Dark</g>.",
+    "descBase": "Deal 10 damage.\nApply 1 <g>Weak</g>.\n<g>Channel</g> 1 <g>Dark</g>.",
+    "descUpgraded": "Deal 13 damage.\nApply 2 <g>Weak</g>.\n<g>Channel</g> 1 <g>Dark</g>.",
     "energy": 2,
     "upgrade": {
       "damage": "+3",
@@ -4829,14 +4838,14 @@
     "id": "OUTBREAK",
     "name": "Outbreak",
     "pool": "Silent",
-    "type": "Power",
-    "rarity": "Uncommon",
+    "type": "Skill",
+    "rarity": "Rare",
     "slug": "outbreak",
-    "descBase": "Every 3 times you apply <g>Poison</g>, deal 11 damage to ALL enemies.",
-    "descUpgraded": "Every 3 times you apply <g>Poison</g>, deal 15 damage to ALL enemies.",
-    "energy": 1,
+    "descBase": "Apply 9 <g>Poison</g> to ALL enemies.\nTrigger <g>Poison</g> immediately.",
+    "descUpgraded": "Apply 12 <g>Poison</g> to ALL enemies.\nTrigger <g>Poison</g> immediately.",
+    "energy": 3,
     "upgrade": {
-      "outbreakpower": "+4"
+      "poison": "+3"
     }
   },
   {
@@ -4874,8 +4883,8 @@
     "type": "Attack",
     "rarity": "Rare",
     "slug": "pacts-end",
-    "descBase": "If you have 3 or more cards in your <g>Exhaust Pile</g>,\ndeal 17 damage to ALL enemies.",
-    "descUpgraded": "If you have 3 or more cards in your <g>Exhaust Pile</g>,\ndeal 23 damage to ALL enemies.",
+    "descBase": "If you have 3 or more cards in your <g>Exhaust Pile</g>,\ndeal 18 damage to ALL enemies.",
+    "descUpgraded": "If you have 3 or more cards in your <g>Exhaust Pile</g>,\ndeal 24 damage to ALL enemies.",
     "energy": 0,
     "upgrade": {
       "damage": "+6"
@@ -5087,8 +5096,8 @@
     "type": "Power",
     "rarity": "Uncommon",
     "slug": "pillar-of-creation",
-    "descBase": "Whenever you create a card, gain 3 <g>Block</g>.",
-    "descUpgraded": "Whenever you create a card, gain 4 <g>Block</g>.",
+    "descBase": "Whenever you create a card, gain 2 <g>Block</g>.",
+    "descUpgraded": "Whenever you create a card, gain 3 <g>Block</g>.",
     "energy": 1,
     "upgrade": {
       "block": "+1"
@@ -5242,7 +5251,8 @@
     "slug": "primal-force",
     "descBase": "Transform all Attacks in your <g>Hand</g> into <g>Giant Rock</g>.",
     "descUpgraded": "Transform all Attacks in your <g>Hand</g> into <g>Giant Rock+</g>.",
-    "energy": 0
+    "energy": 0,
+    "notes": "Giant Rock deals 20 damage (24 when upgraded)."
   },
   {
     "id": "PRODUCTION",
@@ -5480,11 +5490,11 @@
     "type": "Attack",
     "rarity": "Uncommon",
     "slug": "rampage",
-    "descBase": "Deal 9 damage.\nIncrease this card's damage by 5 this combat.",
-    "descUpgraded": "Deal 9 damage.\nIncrease this card's damage by 9 this combat.",
+    "descBase": "Deal 10 damage.\nIncrease this card's damage by 5 this combat.",
+    "descUpgraded": "Deal 10 damage.\nIncrease this card's damage by 10 this combat.",
     "energy": 1,
     "upgrade": {
-      "increase": "+4"
+      "increase": "+5"
     }
   },
   {
@@ -5552,11 +5562,11 @@
     "type": "Attack",
     "rarity": "Common",
     "slug": "reave",
-    "descBase": "Deal 9 damage.\nAdd a <g>Soul</g> into your <g>Draw Pile</g>.",
-    "descUpgraded": "Deal 11 damage.\nAdd a <g>Soul+</g> into your <g>Draw Pile</g>.",
+    "descBase": "Deal 10 damage.\nAdd a <g>Soul</g> into your <g>Draw Pile</g>.",
+    "descUpgraded": "Deal 13 damage.\nAdd a <g>Soul+</g> into your <g>Draw Pile</g>.",
     "energy": 1,
     "upgrade": {
-      "damage": "+2"
+      "damage": "+3"
     }
   },
   {
@@ -5594,8 +5604,8 @@
     "type": "Skill",
     "rarity": "Common",
     "slug": "refine-blade",
-    "descBase": "<g>Forge</g> 9.\nNext turn, gain <e>1</e>.",
-    "descUpgraded": "<g>Forge</g> 13.\nNext turn, gain <e>1</e>.",
+    "descBase": "<g>Forge</g> 8.\nNext turn, gain <e>1</e>.",
+    "descUpgraded": "<g>Forge</g> 12.\nNext turn, gain <e>1</e>.",
     "energy": 1,
     "upgrade": {
       "forge": "+4"
@@ -5637,8 +5647,8 @@
     "type": "Attack",
     "rarity": "Uncommon",
     "slug": "refract",
-    "descBase": "Deal 9 damage twice.\n<g>Channel</g> 2 <g>Glass</g>.",
-    "descUpgraded": "Deal 12 damage twice.\n<g>Channel</g> 2 <g>Glass</g>.",
+    "descBase": "Deal 10 damage twice.\n<g>Channel</g> 2 <g>Glass</g>.",
+    "descUpgraded": "Deal 13 damage twice.\n<g>Channel</g> 2 <g>Glass</g>.",
     "energy": 3,
     "upgrade": {
       "damage": "+3"
@@ -5678,12 +5688,12 @@
     "type": "Attack",
     "rarity": "Rare",
     "slug": "rend",
-    "descBase": "Deal 15 damage.\nDeals 5 additional damage for each unique debuff on the enemy.",
-    "descUpgraded": "Deal 18 damage.\nDeals 8 additional damage for each unique debuff on the enemy.",
-    "energy": 2,
+    "descBase": "Deal 10 damage.\nDeals 5 additional damage for each unique debuff on the enemy.",
+    "descUpgraded": "Deal 12 damage.\nDeals 8 additional damage for each unique debuff on the enemy.",
+    "energy": 1,
     "upgrade": {
       "extradamage": "+3",
-      "calculationbase": "+3"
+      "calculationbase": "+2"
     }
   },
   {
@@ -5696,7 +5706,7 @@
     "descBase": "Gain 1 <g>Strength</g>. ALL enemies lose 1 <g>Strength</g>.",
     "descUpgraded": "Gain 2 <g>Strength</g>. ALL enemies lose 1 <g>Strength</g>.",
     "energy": 1,
-    "starCost": 3,
+    "starCost": 2,
     "upgrade": {
       "strengthpower": "+1"
     }
@@ -5765,8 +5775,8 @@
     "type": "Attack",
     "rarity": "Uncommon",
     "slug": "rocket-punch",
-    "descBase": "Deal 13 damage.\nDraw 1 card.\nWhenever you create a Status, reduce this card's cost to 0 <e/> until played.",
-    "descUpgraded": "Deal 14 damage.\nDraw 2 cards.\nWhenever you create a Status, reduce this card's cost to 0 <e/> until played.",
+    "descBase": "Deal 13 damage.\nDraw 1 card.\nWhenever you create a Status, reduce this card's cost by 1 <e/> until played.",
+    "descUpgraded": "Deal 14 damage.\nDraw 2 cards.\nWhenever you create a Status, reduce this card's cost by 1 <e/> until played.",
     "energy": 2,
     "upgrade": {
       "damage": "+1",
@@ -5839,8 +5849,8 @@
     "type": "Skill",
     "rarity": "Rare",
     "slug": "sacrifice",
-    "descBase": "<g>Retain</g>.\nIf <g>Osty</g> is alive, he dies and you gain <g>Block</g> equal to double his Max HP.",
-    "descUpgraded": "<g>Retain</g>.\nIf <g>Osty</g> is alive, he dies and you gain <g>Block</g> equal to double his Max HP.",
+    "descBase": "<g>Retain</g>.\nIf <g>Osty</g> is alive, he dies and you gain <g>Block</g> equal to triple his Max HP.",
+    "descUpgraded": "<g>Retain</g>.\nIf <g>Osty</g> is alive, he dies and you gain <g>Block</g> equal to triple his Max HP.",
     "energy": 1,
     "upgrade": {
       "energy": "-1"
@@ -5851,7 +5861,7 @@
     "name": "Salvo",
     "pool": "Colorless",
     "type": "Attack",
-    "rarity": "Rare",
+    "rarity": "Uncommon",
     "slug": "salvo",
     "descBase": "Deal 12 damage.\n<g>Retain</g> your <g>Hand</g> this turn.",
     "descUpgraded": "Deal 16 damage.\n<g>Retain</g> your <g>Hand</g> this turn.",
@@ -5862,18 +5872,16 @@
   },
   {
     "id": "SCARE",
-    "name": "Scare",
+    "name": "Sidestep",
     "pool": "Silent",
     "type": "Skill",
     "rarity": "Uncommon",
     "slug": "scare",
-    "descBase": "Apply 1 <g>Weak</g> to ALL enemies.\n<g>Exhaust</g>.",
-    "descUpgraded": "Apply 1 <g>Weak</g> to ALL enemies.",
+    "descBase": "Next turn, gain <e>1</e>.",
+    "descUpgraded": "Next turn, gain <e>2</e>.",
     "energy": 0,
     "upgrade": {
-      "keywordsRemoved": [
-        "Exhaust"
-      ]
+      "energygain": "+1"
     }
   },
   {
@@ -5918,7 +5926,8 @@
     "upgrade": {
       "damage": "+3",
       "cards": "+1"
-    }
+    },
+    "notes": "Cards whose cost is temporarily set to 0 by a global effect, such as Pounce, are not discarded."
   },
   {
     "id": "SCRAWL",
@@ -6073,8 +6082,8 @@
     "type": "Attack",
     "rarity": "Common",
     "slug": "setup-strike",
-    "descBase": "Deal 7 damage.\nGain 2 <g>Strength</g> this turn.",
-    "descUpgraded": "Deal 9 damage.\nGain 3 <g>Strength</g> this turn.",
+    "descBase": "Deal 7 damage.\nGain 3 <g>Strength</g> this turn.",
+    "descUpgraded": "Deal 9 damage.\nGain 4 <g>Strength</g> this turn.",
     "energy": 1,
     "upgrade": {
       "damage": "+2",
@@ -6184,8 +6193,8 @@
     "type": "Attack",
     "rarity": "Rare",
     "slug": "shatter",
-    "descBase": "Deal 7 damage to ALL enemies.\n<g>Evoke</g> all of your Orbs twice.",
-    "descUpgraded": "Deal 11 damage to ALL enemies.\n<g>Evoke</g> all of your Orbs twice.",
+    "descBase": "Deal 7 damage to ALL enemies.\n<g>Evoke</g> all of your Orbs twice.\n<g>Exhaust</g>.",
+    "descUpgraded": "Deal 11 damage to ALL enemies.\n<g>Evoke</g> all of your Orbs twice.\n<g>Exhaust</g>.",
     "energy": 1,
     "upgrade": {
       "damage": "+4"
@@ -6226,8 +6235,8 @@
     "type": "Power",
     "rarity": "Uncommon",
     "slug": "shroud",
-    "descBase": "Whenever you apply <g>Doom</g>, gain 2 <g>Block</g>.",
-    "descUpgraded": "Whenever you apply <g>Doom</g>, gain 3 <g>Block</g>.",
+    "descBase": "Whenever you apply <g>Doom</g>, gain 3 <g>Block</g>.",
+    "descUpgraded": "Whenever you apply <g>Doom</g>, gain 4 <g>Block</g>.",
     "energy": 1,
     "upgrade": {
       "block": "+1"
@@ -6410,11 +6419,11 @@
     "type": "Attack",
     "rarity": "Rare",
     "slug": "soul-storm",
-    "descBase": "Deal 9 damage.\nDeals 2 additional damage for each <g>Soul</g> in your <g>Exhaust Pile</g>.",
-    "descUpgraded": "Deal 9 damage.\nDeals 3 additional damage for each <g>Soul</g> in your <g>Exhaust Pile</g>.",
+    "descBase": "Deal 9 damage.\nDeals 4 additional damage for each <g>Soul</g> in your <g>Exhaust Pile</g>.",
+    "descUpgraded": "Deal 9 damage.\nDeals 6 additional damage for each <g>Soul</g> in your <g>Exhaust Pile</g>.",
     "energy": 1,
     "upgrade": {
-      "extradamage": "+1"
+      "extradamage": "+2"
     }
   },
   {
@@ -6505,7 +6514,7 @@
     "name": "Splash",
     "pool": "Colorless",
     "type": "Skill",
-    "rarity": "Uncommon",
+    "rarity": "Rare",
     "slug": "splash",
     "descBase": "Choose 1 of 3 random Attacks from another character to add into your <g>Hand</g>. It's free to play this turn.",
     "descUpgraded": "Choose 1 of 3 random <g>Upgraded</g> Attacks from another character to add into your <g>Hand</g>. It's free to play this turn.",
@@ -6529,8 +6538,8 @@
     "type": "Skill",
     "rarity": "Common",
     "slug": "spoils-of-battle",
-    "descBase": "<g>Forge</g> 5.\nDraw 2 cards.",
-    "descUpgraded": "<g>Forge</g> 8.\nDraw 2 cards.",
+    "descBase": "<g>Forge</g> 6.\nDraw 2 cards.",
+    "descUpgraded": "<g>Forge</g> 9.\nDraw 2 cards.",
     "energy": 1,
     "upgrade": {
       "forge": "+3"
@@ -6848,8 +6857,8 @@
     "type": "Attack",
     "rarity": "Uncommon",
     "slug": "sunder",
-    "descBase": "Deal 24 damage.\nIf this kills an enemy, gain <e>3</e>.",
-    "descUpgraded": "Deal 32 damage.\nIf this kills an enemy, gain <e>3</e>.",
+    "descBase": "Deal 26 damage.\nIf this kills an enemy, gain <e>3</e>.",
+    "descUpgraded": "Deal 34 damage.\nIf this kills an enemy, gain <e>3</e>.",
     "energy": 3,
     "upgrade": {
       "damage": "+8"
@@ -6961,13 +6970,11 @@
     "type": "Skill",
     "rarity": "Uncommon",
     "slug": "synchronize",
-    "descBase": "Gain 2 <g>Focus</g> this turn for each unique Orb you have.\n<g>Exhaust</g>.",
+    "descBase": "Gain 1 <g>Focus</g> this turn for each unique Orb you have.",
     "descUpgraded": "Gain 2 <g>Focus</g> this turn for each unique Orb you have.",
     "energy": 1,
     "upgrade": {
-      "keywordsRemoved": [
-        "Exhaust"
-      ]
+      "focus": "+1"
     }
   },
   {
@@ -7031,10 +7038,10 @@
     "name": "Taunt",
     "pool": "Ironclad",
     "type": "Skill",
-    "rarity": "Uncommon",
+    "rarity": "Common",
     "slug": "taunt",
-    "descBase": "Gain 7 <g>Block</g>.\nApply 1 <g>Vulnerable</g>.",
-    "descUpgraded": "Gain 8 <g>Block</g>.\nApply 2 <g>Vulnerable</g>.",
+    "descBase": "Gain 6 <g>Block</g>.\nApply 1 <g>Vulnerable</g>.",
+    "descUpgraded": "Gain 7 <g>Block</g>.\nApply 2 <g>Vulnerable</g>.",
     "energy": 1,
     "upgrade": {
       "block": "+1",
@@ -7073,11 +7080,11 @@
     "type": "Skill",
     "rarity": "Uncommon",
     "slug": "terraforming",
-    "descBase": "Gain 6 <g>Vigor</g>.",
-    "descUpgraded": "Gain 8 <g>Vigor</g>.",
+    "descBase": "Gain 7 <g>Vigor</g>.",
+    "descUpgraded": "Gain 10 <g>Vigor</g>.",
     "energy": 1,
     "upgrade": {
-      "vigorpower": "+2"
+      "vigorpower": "+3"
     }
   },
   {
@@ -7143,11 +7150,11 @@
     "type": "Attack",
     "rarity": "Rare",
     "slug": "the-scythe",
-    "descBase": "Deal 13 damage.\nPermanently increase this card's damage by 4.\n<g>Exhaust</g>.",
-    "descUpgraded": "Deal 13 damage.\nPermanently increase this card's damage by 5.\n<g>Exhaust</g>.",
+    "descBase": "Deal 13 damage.\nPermanently increase this card's damage by 5.\n<g>Exhaust</g>.",
+    "descUpgraded": "Deal 13 damage.\nPermanently increase this card's damage by 7.\n<g>Exhaust</g>.",
     "energy": 2,
     "upgrade": {
-      "increase": "+1"
+      "increase": "+2"
     }
   },
   {
@@ -7231,11 +7238,11 @@
     "type": "Power",
     "rarity": "Uncommon",
     "slug": "thunder",
-    "descBase": "Whenever you <g>Evoke Lightning</g>, deal 6 damage to each enemy hit.",
-    "descUpgraded": "Whenever you <g>Evoke Lightning</g>, deal 8 damage to each enemy hit.",
+    "descBase": "Whenever you <g>Evoke Lightning</g>, deal 8 damage to each enemy hit.",
+    "descUpgraded": "Whenever you <g>Evoke Lightning</g>, deal 11 damage to each enemy hit.",
     "energy": 1,
     "upgrade": {
-      "thunderpower": "+2"
+      "thunderpower": "+3"
     }
   },
   {
@@ -7259,8 +7266,8 @@
     "type": "Attack",
     "rarity": "Rare",
     "slug": "times-up",
-    "descBase": "Deal damage equal to the enemy's <g>Doom</g>.\n<g>Exhaust</g>.",
-    "descUpgraded": "<g>Retain</g>.\nDeal damage equal to the enemy's <g>Doom</g>.\n<g>Exhaust</g>.",
+    "descBase": "Deal damage equal to the enemy's <g>Doom</g>.",
+    "descUpgraded": "<g>Retain</g>.\nDeal damage equal to the enemy's <g>Doom</g>.",
     "energy": 2,
     "upgrade": {
       "keywords": [
@@ -7303,8 +7310,8 @@
     "type": "Power",
     "rarity": "Rare",
     "slug": "tracking",
-    "descBase": "<g>Weak</g> enemies take double damage from Attacks.",
-    "descUpgraded": "<g>Weak</g> enemies take double damage from Attacks.",
+    "descBase": "<g>Weak</g> enemies take 50% more damage from Attacks.",
+    "descUpgraded": "<g>Weak</g> enemies take 50% more damage from Attacks.",
     "energy": 2,
     "upgrade": {
       "energy": "-1"
@@ -7334,12 +7341,10 @@
     "rarity": "Rare",
     "slug": "trash-to-treasure",
     "descBase": "Whenever you create a Status, <g>Channel</g> 1 random Orb.",
-    "descUpgraded": "<g>Innate</g>.\nWhenever you create a Status, <g>Channel</g> 1 random Orb.",
+    "descUpgraded": "Whenever you create a Status, <g>Channel</g> 1 random Orb.",
     "energy": 1,
     "upgrade": {
-      "keywords": [
-        "Innate"
-      ]
+      "energy": "-1"
     }
   },
   {
@@ -7647,14 +7652,19 @@
     "name": "Well-Laid Plans",
     "pool": "Silent",
     "type": "Power",
-    "rarity": "Uncommon",
+    "rarity": "Rare",
     "slug": "well-laid-plans",
-    "descBase": "At the end of your turn, <g>Retain</g> up to 1 card.",
-    "descUpgraded": "At the end of your turn, <g>Retain</g> up to 2 cards.",
-    "energy": 1,
+    "descBase": "You no longer discard your <g>Hand</g> at the end of your turn.",
+    "descUpgraded": "You no longer discard your <g>Hand</g> at the end of your turn.",
+    "energy": 2,
     "upgrade": {
-      "retainamount": "+1"
-    }
+      "energy": "-1"
+    },
+    "availability": {
+      "singleplayer": true,
+      "multiplayer": true
+    },
+    "notes": "Available in singleplayer and multiplayer."
   },
   {
     "id": "WHIRLWIND",

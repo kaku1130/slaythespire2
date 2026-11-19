@@ -85,5 +85,12 @@
   "/images/cards/curse/enthralled.webp": "assets/cards/source/cards/curse/enthralled.webp",
   "/images/cards/curse/folly.webp": "assets/cards/source/cards/curse/folly.webp",
   "/images/cards/event/wish.webp": "assets/cards/source/cards/event/wish.webp",
-  "/images/cards/event/apparition.webp": "assets/cards/source/cards/event/apparition.webp"
+  "/images/cards/event/apparition.webp": "assets/cards/source/cards/event/apparition.webp",
+  "/images/card-template/hover_tip.webp": "assets/cards/source/card-template/hover_tip.webp",
+  "/images/card-template/hover_tip_debuff.webp": "assets/cards/source/card-template/hover_tip_debuff.webp",
+  "/images/card-template/type_plaque_status.webp": "assets/cards/source/card-template/type_plaque_status.webp",
+  "/images/card-template/type_plaque_common.webp": "assets/cards/source/card-template/type_plaque_common.webp",
+  "/images/card-template/type_plaque_curse.webp": "assets/cards/source/card-template/type_plaque_curse.webp",
+  "/images/card-template/ancient_portrait_mask.webp": "assets/cards/source/card-template/ancient_portrait_mask.webp",
+  "/images/card-template/type_plaque_ancient.webp": "assets/cards/source/card-template/type_plaque_ancient.webp"
 }

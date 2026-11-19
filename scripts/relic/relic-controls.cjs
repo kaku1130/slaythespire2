@@ -1,6 +1,6 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
 const groups={pool:['Ironclad','Silent','Defect','Necrobinder','Regent','Shared','Event'],rarity:['Common','Uncommon','Rare','Ancient','Shop','Event']};
-const controls = "<div class=\"catalog-filter-rows\" lang=\"en\"><div class=\"catalog-filter-row\"><span>Character</span><div class=\"catalog-filter-buttons\" role=\"group\" aria-label=\"Pool\"><button type=\"button\" data-catalog-filter=\"pool\" value=\"Ironclad\" aria-pressed=\"false\" style=\"--selection-color:#dc6c68\">Ironclad</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Silent\" aria-pressed=\"false\" style=\"--selection-color:#70bf8b\">Silent</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Defect\" aria-pressed=\"false\" style=\"--selection-color:#6faeee\">Defect</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Necrobinder\" aria-pressed=\"false\" style=\"--selection-color:#b595dd\">Necrobinder</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Regent\" aria-pressed=\"false\" style=\"--selection-color:#e3bf72\">Regent</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Shared\" aria-pressed=\"false\" style=\"--selection-color:#aab6c4\">Shared</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Event\" aria-pressed=\"false\" style=\"--selection-color:#6ac1b4\">Event</button></div></div><div class=\"catalog-filter-row\"><span>Rarity</span><div class=\"catalog-filter-buttons\" role=\"group\" aria-label=\"Rarity\"><button type=\"button\" data-catalog-filter=\"rarity\" value=\"Common\" aria-pressed=\"false\" style=\"--selection-color:#cbd5e1\">Common</button><button type=\"button\" data-catalog-filter=\"rarity\" value=\"Uncommon\" aria-pressed=\"false\" style=\"--selection-color:#74b3e6\">Uncommon</button><button type=\"button\" data-catalog-filter=\"rarity\" value=\"Rare\" aria-pressed=\"false\" style=\"--selection-color:#e3bf72\">Rare</button><button type=\"button\" data-catalog-filter=\"rarity\" value=\"Ancient\" aria-pressed=\"false\" style=\"--selection-color:#c084fc\">Ancient</button><button type=\"button\" data-catalog-filter=\"rarity\" value=\"Shop\" aria-pressed=\"false\" style=\"--selection-color:#fb923c\">Shop</button><button type=\"button\" data-catalog-filter=\"rarity\" value=\"Event\" aria-pressed=\"false\" style=\"--selection-color:#6ac1b4\">Event</button></div></div></div>";
+const controls = "<div class=\"catalog-filter-rows\" lang=\"en\"><div class=\"catalog-filter-row\"><span>Character</span><div class=\"catalog-filter-buttons\" role=\"group\" aria-label=\"Pool\"><button type=\"button\" data-catalog-filter=\"pool\" value=\"Ironclad\" aria-pressed=\"false\" style=\"--selection-color:#dc6c68\">Ironclad</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Silent\" aria-pressed=\"false\" style=\"--selection-color:#70bf8b\">Silent</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Defect\" aria-pressed=\"false\" style=\"--selection-color:#6faeee\">Defect</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Necrobinder\" aria-pressed=\"false\" style=\"--selection-color:#b595dd\">Necrobinder</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Regent\" aria-pressed=\"false\" style=\"--selection-color:#e3bf72\">Regent</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Shared\" aria-pressed=\"false\" style=\"--selection-color:#aab6c4\">Shared</button><button type=\"button\" data-catalog-filter=\"pool\" value=\"Event\" aria-pressed=\"false\" style=\"--selection-color:#6ac1b4\">Event</button></div></div></div>";
 const styles = `
 main#main-content>.relic-filters {
   --control-height: 40px;
@@ -113,7 +113,11 @@ function filter() {
   let count = 0;
   for (const entry of entries) {
     const matches = Object.entries(selected).every(([key, values]) => !values.size || values.has(entry.dataset[key]) || (key === 'rarity' && values.has('Common') && entry.dataset.rarity === 'Starter'));
-    entry.hidden = !matches || !entry.textContent.toLowerCase().includes(query);
+    const exact = query.length >= 2 && query.startsWith('"') && query.endsWith('"');
+    const matchesSearch = exact
+      ? [...entry.querySelectorAll('.relic-name-en,.relic-name-zh,.catalog-name-en,.potion-name-zh')].some(node => node.textContent.trim().toLowerCase() === query.slice(1, -1))
+      : entry.textContent.toLowerCase().includes(query);
+    entry.hidden = !matches || !matchesSearch;
     if (!entry.hidden) count++;
   }
   for (const section of document.querySelectorAll('.relic-section')) {
@@ -169,9 +173,9 @@ html body main#main-content .relic-filters .catalog-filter-row {
 `;
 
 module.exports.styles += `
-.relic[data-rarity="Rare"] { --rarity-color: #fb923c; }
-html body main#main-content .relic-filters button[data-catalog-filter="rarity"][value="Rare"] { --selection-color: #fb923c !important; }
-[data-relic-rarity="Rare"] { color: #fb923c; }
+.relic[data-rarity="Rare"] { --rarity-color: #e3bf72; }
+html body main#main-content .relic-filters button[data-catalog-filter="rarity"][value="Rare"] { --selection-color: #e3bf72 !important; }
+[data-relic-rarity="Rare"] { color: #e3bf72; }
 
 .relic[data-rarity="Shop"] { --rarity-color: #b08968; }
 html body main#main-content .relic-filters button[data-catalog-filter="rarity"][value="Shop"] { --selection-color: #b08968 !important; }

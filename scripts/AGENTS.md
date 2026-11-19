@@ -8,7 +8,7 @@
 
 # 頁面檔名
 
-桌機版根目錄檔名固定為 `ancient.html`、`builds.html`、`cards.html`、`monster.html`、`potion.html`、`relic.html`。產生程式與連結使用上述短檔名。
+桌機版根目錄檔名固定為 `ancient.html`、`build.html`、`card.html`、`potion.html`、`relic.html`。產生程式與連結使用上述短檔名。
 
 # 資料分類
 
@@ -21,3 +21,7 @@
 # 桌機主頁 CSS
 
 每個桌機主頁只載入自己的 assets/<頁名>/<頁名>.css。產生程式依原本的套用順序將該頁的樣式合併至這個檔案。調整單一頁面時，請修改該頁的產生程式或專用樣式來源，並同步更新該頁 CSS。只有各頁都要改動時才調整共用樣式。
+
+# 清理範圍
+
+目前僅維護上述五個主頁及先古之民詳細頁。`assets/monster/` 與 `data/monster/assets.json` 僅存放其他頁仍需使用的共用圖示及對照資料，不產生本機怪物頁。清理素材前應同時檢查頁面引用與產生程式依賴。

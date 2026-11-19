@@ -3,19 +3,20 @@
   "chineseSource": "https://slaythespire2.net/zh-TW/card",
   "retrievedDate": "2026-11-08",
   "version": "Live v0.107.1",
+  "balanceUpdate": {
+    "source": "User-provided balance changes",
+    "updatedDate": "2026-11-19"
+  },
   "tierSource": "https://slaythespire2.net/card-tier-list",
   "tierRetrievedDate": "2026-11-08",
-  "total": 551,
+  "total": 503,
   "categories": {
     "Ironclad": 87,
     "Silent": 88,
     "Defect": 88,
     "Regent": 88,
     "Necrobinder": 88,
-    "Colorless": 64,
-    "Curse": 18,
-    "Event": 27,
-    "Quest": 3
+    "Colorless": 64
   },
   "cards": [
     {
@@ -53,7 +54,7 @@
           "name": "易傷流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-ironclad-vulnerable",
+          "url": "build.html#build-ironclad-vulnerable",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
         }
       ],
@@ -116,56 +117,6 @@
       },
       "builds": [],
       "url": "https://slaythespire2.net/zh-TW/card/strike-ironclad"
-    },
-    {
-      "id": "BLOODLETTING",
-      "name": "Bloodletting",
-      "nameZh": "放血",
-      "category": "Ironclad",
-      "type": "Skill",
-      "rarity": "Common",
-      "rarityZh": "普通",
-      "tier": "S",
-      "images": {
-        "base": "assets/cards/images/base/bloodletting.webp",
-        "upgraded": "assets/cards/images/upgraded/bloodletting.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/bloodletting.webp",
-        "upgraded": "assets/cards/images/table/upgraded/bloodletting.webp"
-      },
-      "effect": {
-        "base": "失去3點生命。\n獲得<e>2</e>。",
-        "upgraded": "失去3點生命。\n獲得<e>3</e>。"
-      },
-      "energy": 0,
-      "starCost": null,
-      "upgrade": {
-        "energygain": "+1"
-      },
-      "builds": [
-        {
-          "character": "ironclad",
-          "characterPool": "Ironclad",
-          "buildId": "strength-scaling",
-          "name": "力量流",
-          "tier": "A",
-          "role": "support",
-          "url": "builds.html#build-ironclad-strength-scaling",
-          "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
-        },
-        {
-          "character": "ironclad",
-          "characterPool": "Ironclad",
-          "buildId": "self-damage",
-          "name": "自傷流",
-          "tier": "B",
-          "role": "core",
-          "url": "builds.html#build-ironclad-self-damage",
-          "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
-        }
-      ],
-      "url": "https://slaythespire2.net/zh-TW/card/bloodletting"
     },
     {
       "id": "POMMEL_STRIKE",
@@ -231,7 +182,7 @@
           "name": "易傷流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-ironclad-vulnerable",
+          "url": "build.html#build-ironclad-vulnerable",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
         }
       ],
@@ -300,7 +251,7 @@
           "name": "格擋流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-ironclad-block-barricade",
+          "url": "build.html#build-ironclad-block-barricade",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
         },
         {
@@ -310,7 +261,7 @@
           "name": "自傷流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-ironclad-self-damage",
+          "url": "build.html#build-ironclad-self-damage",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
         }
       ],
@@ -379,7 +330,7 @@
           "name": "力量流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-ironclad-strength-scaling",
+          "url": "build.html#build-ironclad-strength-scaling",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
         },
         {
@@ -389,7 +340,7 @@
           "name": "格擋流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-ironclad-block-barricade",
+          "url": "build.html#build-ironclad-block-barricade",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
         }
       ],
@@ -429,7 +380,7 @@
           "name": "自傷流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-ironclad-self-damage",
+          "url": "build.html#build-ironclad-self-damage",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
         }
       ],
@@ -495,6 +446,50 @@
       "url": "https://slaythespire2.net/zh-TW/card/iron-wave"
     },
     {
+      "id": "TAUNT",
+      "name": "Taunt",
+      "nameZh": "挑釁",
+      "aliases": [
+        "嘲諷"
+      ],
+      "category": "Ironclad",
+      "type": "Skill",
+      "rarity": "Common",
+      "rarityZh": "普通",
+      "tier": "B",
+      "images": {
+        "base": "assets/cards/images/base/taunt.webp",
+        "upgraded": "assets/cards/images/upgraded/taunt.webp"
+      },
+      "tableImages": {
+        "base": "assets/cards/images/table/base/taunt.webp",
+        "upgraded": "assets/cards/images/table/upgraded/taunt.webp"
+      },
+      "effect": {
+        "base": "獲得6點<g>格擋</g>。\n給予1層<g>易傷</g>。",
+        "upgraded": "獲得7點<g>格擋</g>。\n給予2層<g>易傷</g>。"
+      },
+      "energy": 1,
+      "starCost": null,
+      "upgrade": {
+        "block": "+1",
+        "vulnerable": "+1"
+      },
+      "builds": [
+        {
+          "character": "ironclad",
+          "characterPool": "Ironclad",
+          "buildId": "vulnerable",
+          "name": "易傷流",
+          "tier": "B",
+          "role": "support",
+          "url": "build.html#build-ironclad-vulnerable",
+          "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
+        }
+      ],
+      "url": "https://slaythespire2.net/zh-TW/card/taunt"
+    },
+    {
       "id": "TWIN_STRIKE",
       "name": "Twin Strike",
       "nameZh": "雙重打擊",
@@ -528,7 +523,7 @@
           "name": "力量流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-ironclad-strength-scaling",
+          "url": "build.html#build-ironclad-strength-scaling",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
         }
       ],
@@ -566,7 +561,7 @@
           "name": "格擋流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-ironclad-block-barricade",
+          "url": "build.html#build-ironclad-block-barricade",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
         }
       ],
@@ -606,7 +601,7 @@
           "name": "格擋流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-ironclad-block-barricade",
+          "url": "build.html#build-ironclad-block-barricade",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
         }
       ],
@@ -675,7 +670,7 @@
           "name": "易傷流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-ironclad-vulnerable",
+          "url": "build.html#build-ironclad-vulnerable",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
         }
       ],
@@ -728,8 +723,8 @@
         "upgraded": "assets/cards/images/table/upgraded/setup-strike.webp"
       },
       "effect": {
-        "base": "造成7點傷害。\n在本回合內獲得2點<g>力量</g>。",
-        "upgraded": "造成9點傷害。\n在本回合內獲得3點<g>力量</g>。"
+        "base": "造成7點傷害。\n在本回合內獲得3點<g>力量</g>。",
+        "upgraded": "造成9點傷害。\n在本回合內獲得4點<g>力量</g>。"
       },
       "energy": 1,
       "starCost": null,
@@ -745,7 +740,7 @@
           "name": "力量流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-ironclad-strength-scaling",
+          "url": "build.html#build-ironclad-strength-scaling",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
         }
       ],
@@ -785,7 +780,7 @@
           "name": "力量流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-ironclad-strength-scaling",
+          "url": "build.html#build-ironclad-strength-scaling",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
         }
       ],
@@ -825,7 +820,7 @@
           "name": "易傷流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-ironclad-vulnerable",
+          "url": "build.html#build-ironclad-vulnerable",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
         }
       ],
@@ -865,7 +860,7 @@
           "name": "消耗流",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-ironclad-exhaust-engine",
+          "url": "build.html#build-ironclad-exhaust-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
         }
       ],
@@ -905,11 +900,61 @@
           "name": "力量流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-ironclad-strength-scaling",
+          "url": "build.html#build-ironclad-strength-scaling",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
         }
       ],
       "url": "https://slaythespire2.net/zh-TW/card/battle-trance"
+    },
+    {
+      "id": "BLOODLETTING",
+      "name": "Bloodletting",
+      "nameZh": "放血",
+      "category": "Ironclad",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "rarityZh": "罕見",
+      "tier": "S",
+      "images": {
+        "base": "assets/cards/images/base/bloodletting.webp",
+        "upgraded": "assets/cards/images/upgraded/bloodletting.webp"
+      },
+      "tableImages": {
+        "base": "assets/cards/images/table/base/bloodletting.webp",
+        "upgraded": "assets/cards/images/table/upgraded/bloodletting.webp"
+      },
+      "effect": {
+        "base": "失去3點生命。\n獲得<e>2</e>。",
+        "upgraded": "失去3點生命。\n獲得<e>3</e>。"
+      },
+      "energy": 0,
+      "starCost": null,
+      "upgrade": {
+        "energygain": "+1"
+      },
+      "builds": [
+        {
+          "character": "ironclad",
+          "characterPool": "Ironclad",
+          "buildId": "strength-scaling",
+          "name": "力量流",
+          "tier": "A",
+          "role": "support",
+          "url": "build.html#build-ironclad-strength-scaling",
+          "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
+        },
+        {
+          "character": "ironclad",
+          "characterPool": "Ironclad",
+          "buildId": "self-damage",
+          "name": "自傷流",
+          "tier": "B",
+          "role": "core",
+          "url": "build.html#build-ironclad-self-damage",
+          "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
+        }
+      ],
+      "url": "https://slaythespire2.net/zh-TW/card/bloodletting"
     },
     {
       "id": "BURNING_PACT",
@@ -945,7 +990,7 @@
           "name": "消耗流",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-ironclad-exhaust-engine",
+          "url": "build.html#build-ironclad-exhaust-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
         }
       ],
@@ -969,8 +1014,8 @@
         "upgraded": "assets/cards/images/table/upgraded/colossus.webp"
       },
       "effect": {
-        "base": "獲得5點<g>格擋</g>。\n在本回閤中，有<g>易傷</g>狀態的敵人對你造成的傷害降低50%。",
-        "upgraded": "獲得8點<g>格擋</g>。\n在本回閤中，有<g>易傷</g>狀態的敵人對你造成的傷害降低50%。"
+        "base": "獲得4點<g>格擋</g>。\n在本回閤中，有<g>易傷</g>狀態的敵人對你造成的傷害降低50%。",
+        "upgraded": "獲得7點<g>格擋</g>。\n在本回閤中，有<g>易傷</g>狀態的敵人對你造成的傷害降低50%。"
       },
       "energy": 1,
       "starCost": null,
@@ -985,7 +1030,7 @@
           "name": "格擋流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-ironclad-block-barricade",
+          "url": "build.html#build-ironclad-block-barricade",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
         },
         {
@@ -995,61 +1040,51 @@
           "name": "易傷流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-ironclad-vulnerable",
+          "url": "build.html#build-ironclad-vulnerable",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
         }
       ],
       "url": "https://slaythespire2.net/zh-TW/card/colossus"
     },
     {
-      "id": "DOMINATE",
-      "name": "Dominate",
-      "nameZh": "主宰",
+      "id": "CRUELTY",
+      "name": "Cruelty",
+      "nameZh": "殘酷",
       "category": "Ironclad",
-      "type": "Skill",
+      "type": "Power",
       "rarity": "Uncommon",
       "rarityZh": "罕見",
       "tier": "S",
       "images": {
-        "base": "assets/cards/images/base/dominate.webp",
-        "upgraded": "assets/cards/images/upgraded/dominate.webp"
+        "base": "assets/cards/images/base/cruelty.webp",
+        "upgraded": "assets/cards/images/upgraded/cruelty.webp"
       },
       "tableImages": {
-        "base": "assets/cards/images/table/base/dominate.webp",
-        "upgraded": "assets/cards/images/table/upgraded/dominate.webp"
+        "base": "assets/cards/images/table/base/cruelty.webp",
+        "upgraded": "assets/cards/images/table/upgraded/cruelty.webp"
       },
       "effect": {
-        "base": "給予1層<g>易傷</g>。\n敵人身上每有一層<g>易傷</g>，就獲得1點<g>力量</g>。\n<g>消耗</g>。",
-        "upgraded": "給予2層<g>易傷</g>。\n敵人身上每有一層<g>易傷</g>，就獲得1點<g>力量</g>。\n<g>消耗</g>。"
+        "base": "有<g>易傷</g>狀態的敵人額外受到25%的傷害。",
+        "upgraded": "有<g>易傷</g>狀態的敵人額外受到50%的傷害。"
       },
       "energy": 1,
       "starCost": null,
       "upgrade": {
-        "vulnerablepower": "+1"
+        "crueltypower": "+25"
       },
       "builds": [
-        {
-          "character": "ironclad",
-          "characterPool": "Ironclad",
-          "buildId": "strength-scaling",
-          "name": "力量流",
-          "tier": "A",
-          "role": "support",
-          "url": "builds.html#build-ironclad-strength-scaling",
-          "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
-        },
         {
           "character": "ironclad",
           "characterPool": "Ironclad",
           "buildId": "vulnerable",
           "name": "易傷流",
           "tier": "B",
-          "role": "support",
-          "url": "builds.html#build-ironclad-vulnerable",
+          "role": "core",
+          "url": "build.html#build-ironclad-vulnerable",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
         }
       ],
-      "url": "https://slaythespire2.net/zh-TW/card/dominate"
+      "url": "https://slaythespire2.net/zh-TW/card/cruelty"
     },
     {
       "id": "INFERNO",
@@ -1085,7 +1120,7 @@
           "name": "自傷流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-ironclad-self-damage",
+          "url": "build.html#build-ironclad-self-damage",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
         }
       ],
@@ -1125,7 +1160,7 @@
           "name": "易傷流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-ironclad-vulnerable",
+          "url": "build.html#build-ironclad-vulnerable",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
         }
       ],
@@ -1164,6 +1199,9 @@
       "id": "EXPECT_A_FIGHT",
       "name": "Expect a Fight",
       "nameZh": "躍躍欲試",
+      "aliases": [
+        "整裝待戰"
+      ],
       "category": "Ironclad",
       "type": "Skill",
       "rarity": "Uncommon",
@@ -1178,13 +1216,14 @@
         "upgraded": "assets/cards/images/table/upgraded/expect-a-fight.webp"
       },
       "effect": {
-        "base": "你的<g>手牌</g>中每有一張攻擊牌，就獲得<e/>。\n你在本回合內\n不能再獲得<e/>。",
-        "upgraded": "你的<g>手牌</g>中每有一張攻擊牌，就獲得<e/>。\n你在本回合內\n不能再獲得<e/>。"
+        "base": "獲得15點<g>格擋</g>。\n每有一層<g>力量</g>，額外獲得5點<g>格擋</g>。",
+        "upgraded": "獲得16點<g>格擋</g>。\n每有一層<g>力量</g>，額外獲得8點<g>格擋</g>。"
       },
-      "energy": 2,
+      "energy": 3,
       "starCost": null,
       "upgrade": {
-        "energy": "-1"
+        "block": "+1",
+        "blockperstrength": "+3"
       },
       "builds": [],
       "url": "https://slaythespire2.net/zh-TW/card/expect-a-fight"
@@ -1223,7 +1262,7 @@
           "name": "消耗流",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-ironclad-exhaust-engine",
+          "url": "build.html#build-ironclad-exhaust-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
         },
         {
@@ -1233,7 +1272,7 @@
           "name": "格擋流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-ironclad-block-barricade",
+          "url": "build.html#build-ironclad-block-barricade",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
         }
       ],
@@ -1274,7 +1313,7 @@
           "name": "格擋流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-ironclad-block-barricade",
+          "url": "build.html#build-ironclad-block-barricade",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
         }
       ],
@@ -1314,7 +1353,7 @@
           "name": "自傷流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-ironclad-self-damage",
+          "url": "build.html#build-ironclad-self-damage",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
         }
       ],
@@ -1383,7 +1422,7 @@
           "name": "消耗流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-ironclad-exhaust-engine",
+          "url": "build.html#build-ironclad-exhaust-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
         }
       ],
@@ -1423,7 +1462,7 @@
           "name": "消耗流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-ironclad-exhaust-engine",
+          "url": "build.html#build-ironclad-exhaust-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
         }
       ],
@@ -1463,7 +1502,7 @@
           "name": "易傷流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-ironclad-vulnerable",
+          "url": "build.html#build-ironclad-vulnerable",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
         }
       ],
@@ -1503,7 +1542,7 @@
           "name": "消耗流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-ironclad-exhaust-engine",
+          "url": "build.html#build-ironclad-exhaust-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
         }
       ],
@@ -1513,6 +1552,9 @@
       "id": "FORGOTTEN_RITUAL",
       "name": "Forgotten Ritual",
       "nameZh": "被遺忘的儀式",
+      "aliases": [
+        "失傳儀式"
+      ],
       "category": "Ironclad",
       "type": "Skill",
       "rarity": "Uncommon",
@@ -1527,8 +1569,8 @@
         "upgraded": "assets/cards/images/table/upgraded/forgotten-ritual.webp"
       },
       "effect": {
-        "base": "如果你在本回合<g>消耗過</g>卡牌，則獲得<e>3</e>。\n<g>消耗</g>。",
-        "upgraded": "如果你在本回合<g>消耗過</g>卡牌，則獲得<e>4</e>。\n<g>消耗</g>。"
+        "base": "獲得<e>3</e>。\n<g>消耗</g>。",
+        "upgraded": "獲得<e>4</e>。\n<g>消耗</g>。"
       },
       "energy": 1,
       "starCost": null,
@@ -1543,7 +1585,7 @@
           "name": "消耗流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-ironclad-exhaust-engine",
+          "url": "build.html#build-ironclad-exhaust-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
         }
       ],
@@ -1583,7 +1625,7 @@
           "name": "自傷流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-ironclad-self-damage",
+          "url": "build.html#build-ironclad-self-damage",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
         }
       ],
@@ -1617,47 +1659,6 @@
       },
       "builds": [],
       "url": "https://slaythespire2.net/zh-TW/card/stomp"
-    },
-    {
-      "id": "TAUNT",
-      "name": "Taunt",
-      "nameZh": "挑釁",
-      "category": "Ironclad",
-      "type": "Skill",
-      "rarity": "Uncommon",
-      "rarityZh": "罕見",
-      "tier": "B",
-      "images": {
-        "base": "assets/cards/images/base/taunt.webp",
-        "upgraded": "assets/cards/images/upgraded/taunt.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/taunt.webp",
-        "upgraded": "assets/cards/images/table/upgraded/taunt.webp"
-      },
-      "effect": {
-        "base": "獲得7點<g>格擋</g>。\n給予1層<g>易傷</g>。",
-        "upgraded": "獲得8點<g>格擋</g>。\n給予2層<g>易傷</g>。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "block": "+1",
-        "vulnerable": "+1"
-      },
-      "builds": [
-        {
-          "character": "ironclad",
-          "characterPool": "Ironclad",
-          "buildId": "vulnerable",
-          "name": "易傷流",
-          "tier": "B",
-          "role": "support",
-          "url": "builds.html#build-ironclad-vulnerable",
-          "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
-        }
-      ],
-      "url": "https://slaythespire2.net/zh-TW/card/taunt"
     },
     {
       "id": "UNRELENTING",
@@ -1722,7 +1723,7 @@
           "name": "力量流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-ironclad-strength-scaling",
+          "url": "build.html#build-ironclad-strength-scaling",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
         }
       ],
@@ -1762,7 +1763,7 @@
           "name": "易傷流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-ironclad-vulnerable",
+          "url": "build.html#build-ironclad-vulnerable",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
         }
       ],
@@ -1802,7 +1803,7 @@
           "name": "消耗流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-ironclad-exhaust-engine",
+          "url": "build.html#build-ironclad-exhaust-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
         }
       ],
@@ -1843,7 +1844,7 @@
           "name": "力量流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-ironclad-strength-scaling",
+          "url": "build.html#build-ironclad-strength-scaling",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
         }
       ],
@@ -1853,6 +1854,9 @@
       "id": "HOWL_FROM_BEYOND",
       "name": "Howl from Beyond",
       "nameZh": "彼岸咆哮",
+      "aliases": [
+        "彼岸嚎叫"
+      ],
       "category": "Ironclad",
       "type": "Attack",
       "rarity": "Uncommon",
@@ -1867,13 +1871,13 @@
         "upgraded": "assets/cards/images/table/upgraded/howl-from-beyond.webp"
       },
       "effect": {
-        "base": "對所有敵人造成16點傷害。\n在你的回合結束時，如果這張牌在你的<g>消耗牌堆</g>中，則將其打出。",
-        "upgraded": "對所有敵人造成21點傷害。\n在你的回合結束時，如果這張牌在你的<g>消耗牌堆</g>中，則將其打出。"
+        "base": "對所有敵人造成18點傷害。\n在你的回合結束時，如果這張牌在你的<g>消耗牌堆</g>中，則將其打出。",
+        "upgraded": "對所有敵人造成24點傷害。\n在你的回合結束時，如果這張牌在你的<g>消耗牌堆</g>中，則將其打出。"
       },
       "energy": 3,
       "starCost": null,
       "upgrade": {
-        "damage": "+5"
+        "damage": "+6"
       },
       "builds": [
         {
@@ -1883,7 +1887,7 @@
           "name": "消耗流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-ironclad-exhaust-engine",
+          "url": "build.html#build-ironclad-exhaust-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
         }
       ],
@@ -1952,7 +1956,7 @@
           "name": "力量流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-ironclad-strength-scaling",
+          "url": "build.html#build-ironclad-strength-scaling",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
         }
       ],
@@ -2036,13 +2040,13 @@
         "upgraded": "assets/cards/images/table/upgraded/rampage.webp"
       },
       "effect": {
-        "base": "造成9點傷害。\n將這張牌在本場戰鬥中的傷害增加5。",
-        "upgraded": "造成9點傷害。\n將這張牌在本場戰鬥中的傷害增加9。"
+        "base": "造成10點傷害。\n將這張牌在本場戰鬥中的傷害增加5。",
+        "upgraded": "造成10點傷害。\n將這張牌在本場戰鬥中的傷害增加10。"
       },
       "energy": 1,
       "starCost": null,
       "upgrade": {
-        "increase": "+4"
+        "increase": "+5"
       },
       "builds": [],
       "url": "https://slaythespire2.net/zh-TW/card/rampage"
@@ -2081,7 +2085,7 @@
           "name": "自傷流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-ironclad-self-damage",
+          "url": "build.html#build-ironclad-self-damage",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
         }
       ],
@@ -2150,7 +2154,7 @@
           "name": "格擋流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-ironclad-block-barricade",
+          "url": "build.html#build-ironclad-block-barricade",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
         }
       ],
@@ -2190,7 +2194,7 @@
           "name": "易傷流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-ironclad-vulnerable",
+          "url": "build.html#build-ironclad-vulnerable",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
         }
       ],
@@ -2245,13 +2249,13 @@
         "upgraded": "assets/cards/images/table/upgraded/crimson-mantle.webp"
       },
       "effect": {
-        "base": "在你的回合開始時，失去1點生命並獲得8點<g>格擋</g>。",
+        "base": "在你的回合開始時，失去1點生命並獲得7點<g>格擋</g>。",
         "upgraded": "在你的回合開始時，失去1點生命並獲得10點<g>格擋</g>。"
       },
       "energy": 1,
       "starCost": null,
       "upgrade": {
-        "crimsonmantlepower": "+2"
+        "crimsonmantlepower": "+3"
       },
       "builds": [
         {
@@ -2261,7 +2265,7 @@
           "name": "格擋流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-ironclad-block-barricade",
+          "url": "build.html#build-ironclad-block-barricade",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
         },
         {
@@ -2271,51 +2275,11 @@
           "name": "自傷流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-ironclad-self-damage",
+          "url": "build.html#build-ironclad-self-damage",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
         }
       ],
       "url": "https://slaythespire2.net/zh-TW/card/crimson-mantle"
-    },
-    {
-      "id": "CRUELTY",
-      "name": "Cruelty",
-      "nameZh": "殘酷",
-      "category": "Ironclad",
-      "type": "Power",
-      "rarity": "Rare",
-      "rarityZh": "稀有",
-      "tier": "S",
-      "images": {
-        "base": "assets/cards/images/base/cruelty.webp",
-        "upgraded": "assets/cards/images/upgraded/cruelty.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/cruelty.webp",
-        "upgraded": "assets/cards/images/table/upgraded/cruelty.webp"
-      },
-      "effect": {
-        "base": "有<g>易傷</g>狀態的敵人額外受到25%的傷害。",
-        "upgraded": "有<g>易傷</g>狀態的敵人額外受到50%的傷害。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "crueltypower": "+25"
-      },
-      "builds": [
-        {
-          "character": "ironclad",
-          "characterPool": "Ironclad",
-          "buildId": "vulnerable",
-          "name": "易傷流",
-          "tier": "B",
-          "role": "core",
-          "url": "builds.html#build-ironclad-vulnerable",
-          "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
-        }
-      ],
-      "url": "https://slaythespire2.net/zh-TW/card/cruelty"
     },
     {
       "id": "DARK_EMBRACE",
@@ -2351,11 +2315,61 @@
           "name": "消耗流",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-ironclad-exhaust-engine",
+          "url": "build.html#build-ironclad-exhaust-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
         }
       ],
       "url": "https://slaythespire2.net/zh-TW/card/dark-embrace"
+    },
+    {
+      "id": "DOMINATE",
+      "name": "Dominate",
+      "nameZh": "主宰",
+      "category": "Ironclad",
+      "type": "Skill",
+      "rarity": "Rare",
+      "rarityZh": "稀有",
+      "tier": "S",
+      "images": {
+        "base": "assets/cards/images/base/dominate.webp",
+        "upgraded": "assets/cards/images/upgraded/dominate.webp"
+      },
+      "tableImages": {
+        "base": "assets/cards/images/table/base/dominate.webp",
+        "upgraded": "assets/cards/images/table/upgraded/dominate.webp"
+      },
+      "effect": {
+        "base": "給予1層<g>易傷</g>。\n敵人身上每有一層<g>易傷</g>，就獲得1點<g>力量</g>。\n<g>消耗</g>。",
+        "upgraded": "給予2層<g>易傷</g>。\n敵人身上每有一層<g>易傷</g>，就獲得1點<g>力量</g>。\n<g>消耗</g>。"
+      },
+      "energy": 1,
+      "starCost": null,
+      "upgrade": {
+        "vulnerablepower": "+1"
+      },
+      "builds": [
+        {
+          "character": "ironclad",
+          "characterPool": "Ironclad",
+          "buildId": "strength-scaling",
+          "name": "力量流",
+          "tier": "A",
+          "role": "support",
+          "url": "build.html#build-ironclad-strength-scaling",
+          "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
+        },
+        {
+          "character": "ironclad",
+          "characterPool": "Ironclad",
+          "buildId": "vulnerable",
+          "name": "易傷流",
+          "tier": "B",
+          "role": "support",
+          "url": "build.html#build-ironclad-vulnerable",
+          "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-vulnerable"
+        }
+      ],
+      "url": "https://slaythespire2.net/zh-TW/card/dominate"
     },
     {
       "id": "FIEND_FIRE",
@@ -2391,7 +2405,7 @@
           "name": "消耗流",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-ironclad-exhaust-engine",
+          "url": "build.html#build-ironclad-exhaust-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
         }
       ],
@@ -2431,7 +2445,7 @@
           "name": "格擋流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-ironclad-block-barricade",
+          "url": "build.html#build-ironclad-block-barricade",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
         }
       ],
@@ -2471,7 +2485,7 @@
           "name": "消耗流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-ironclad-exhaust-engine",
+          "url": "build.html#build-ironclad-exhaust-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
         },
         {
@@ -2481,7 +2495,7 @@
           "name": "力量流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-ironclad-strength-scaling",
+          "url": "build.html#build-ironclad-strength-scaling",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
         },
         {
@@ -2491,7 +2505,7 @@
           "name": "自傷流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-ironclad-self-damage",
+          "url": "build.html#build-ironclad-self-damage",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
         }
       ],
@@ -2515,8 +2529,8 @@
         "upgraded": "assets/cards/images/table/upgraded/pacts-end.webp"
       },
       "effect": {
-        "base": "如果你的<g>消耗牌堆</g>擁有大於等於3張牌，\n則對所有敵人造成17點傷害。",
-        "upgraded": "如果你的<g>消耗牌堆</g>擁有大於等於3張牌，\n則對所有敵人造成23點傷害。"
+        "base": "如果你的<g>消耗牌堆</g>擁有大於等於3張牌，\n則對所有敵人造成18點傷害。",
+        "upgraded": "如果你的<g>消耗牌堆</g>擁有大於等於3張牌，\n則對所有敵人造成24點傷害。"
       },
       "energy": 0,
       "starCost": null,
@@ -2531,7 +2545,7 @@
           "name": "消耗流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-ironclad-exhaust-engine",
+          "url": "build.html#build-ironclad-exhaust-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
         }
       ],
@@ -2541,6 +2555,7 @@
       "id": "PRIMAL_FORCE",
       "name": "Primal Force",
       "nameZh": "原始力量",
+      "notes": "衍生牌巨石：造成20點傷害，升級後造成24點傷害。",
       "category": "Ironclad",
       "type": "Skill",
       "rarity": "Rare",
@@ -2598,7 +2613,7 @@
           "name": "格擋流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-ironclad-block-barricade",
+          "url": "build.html#build-ironclad-block-barricade",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
         }
       ],
@@ -2639,7 +2654,7 @@
           "name": "自傷流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-ironclad-self-damage",
+          "url": "build.html#build-ironclad-self-damage",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
         }
       ],
@@ -2706,7 +2721,7 @@
           "name": "消耗流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-ironclad-exhaust-engine",
+          "url": "build.html#build-ironclad-exhaust-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
         }
       ],
@@ -2777,7 +2792,7 @@
           "name": "自傷流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-ironclad-self-damage",
+          "url": "build.html#build-ironclad-self-damage",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
         }
       ],
@@ -2817,7 +2832,7 @@
           "name": "力量流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-ironclad-strength-scaling",
+          "url": "build.html#build-ironclad-strength-scaling",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
         }
       ],
@@ -2857,7 +2872,7 @@
           "name": "力量流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-ironclad-strength-scaling",
+          "url": "build.html#build-ironclad-strength-scaling",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
         },
         {
@@ -2867,7 +2882,7 @@
           "name": "自傷流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-ironclad-self-damage",
+          "url": "build.html#build-ironclad-self-damage",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-self-damage"
         }
       ],
@@ -2918,8 +2933,8 @@
         "upgraded": "assets/cards/images/table/upgraded/demon-form.webp"
       },
       "effect": {
-        "base": "在你的回合開始時，獲得2點<g>力量</g>。",
-        "upgraded": "在你的回合開始時，獲得3點<g>力量</g>。"
+        "base": "在你的回合開始時，獲得3點<g>力量</g>。",
+        "upgraded": "在你的回合開始時，獲得4點<g>力量</g>。"
       },
       "energy": 3,
       "starCost": null,
@@ -2934,7 +2949,7 @@
           "name": "力量流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-ironclad-strength-scaling",
+          "url": "build.html#build-ironclad-strength-scaling",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
         }
       ],
@@ -3003,7 +3018,7 @@
           "name": "格擋流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-ironclad-block-barricade",
+          "url": "build.html#build-ironclad-block-barricade",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
         }
       ],
@@ -3072,7 +3087,7 @@
           "name": "格擋流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-ironclad-block-barricade",
+          "url": "build.html#build-ironclad-block-barricade",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-block-barricade"
         }
       ],
@@ -3082,6 +3097,9 @@
       "id": "MANGLE",
       "name": "Mangle",
       "nameZh": "凌虐",
+      "aliases": [
+        "重創"
+      ],
       "category": "Ironclad",
       "type": "Attack",
       "rarity": "Rare",
@@ -3096,13 +3114,13 @@
         "upgraded": "assets/cards/images/table/upgraded/mangle.webp"
       },
       "effect": {
-        "base": "造成15點傷害。\n敵人在本回合失去10點<g>力量</g>。",
-        "upgraded": "造成20點傷害。\n敵人在本回合失去15點<g>力量</g>。"
+        "base": "造成20點傷害。\n敵人在本回合失去10點<g>力量</g>。",
+        "upgraded": "造成26點傷害。\n敵人在本回合失去15點<g>力量</g>。"
       },
       "energy": 3,
       "starCost": null,
       "upgrade": {
-        "damage": "+5",
+        "damage": "+6",
         "strengthloss": "+5"
       },
       "builds": [],
@@ -3142,7 +3160,7 @@
           "name": "力量流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-ironclad-strength-scaling",
+          "url": "build.html#build-ironclad-strength-scaling",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-strength-scaling"
         }
       ],
@@ -3240,7 +3258,7 @@
           "name": "消耗流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-ironclad-exhaust-engine",
+          "url": "build.html#build-ironclad-exhaust-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/ironclad#build-exhaust-engine"
         }
       ],
@@ -3427,7 +3445,7 @@
           "name": "敏捷格擋流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-silent-dexterity-block",
+          "url": "build.html#build-silent-dexterity-block",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
         }
       ],
@@ -3467,7 +3485,7 @@
           "name": "敏捷格擋流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-silent-dexterity-block",
+          "url": "build.html#build-silent-dexterity-block",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
         }
       ],
@@ -3507,7 +3525,7 @@
           "name": "奇巧棄牌流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-silent-sly-discard",
+          "url": "build.html#build-silent-sly-discard",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
         },
         {
@@ -3517,7 +3535,7 @@
           "name": "過牌節奏流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-silent-draw-tempo",
+          "url": "build.html#build-silent-draw-tempo",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
         }
       ],
@@ -3557,7 +3575,7 @@
           "name": "奇巧棄牌流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-sly-discard",
+          "url": "build.html#build-silent-sly-discard",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
         }
       ],
@@ -3597,7 +3615,7 @@
           "name": "中毒流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-silent-poison",
+          "url": "build.html#build-silent-poison",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
         },
         {
@@ -3607,7 +3625,7 @@
           "name": "敏捷格擋流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-silent-dexterity-block",
+          "url": "build.html#build-silent-dexterity-block",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
         },
         {
@@ -3617,7 +3635,7 @@
           "name": "過牌節奏流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-silent-draw-tempo",
+          "url": "build.html#build-silent-draw-tempo",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
         }
       ],
@@ -3657,7 +3675,7 @@
           "name": "小刀流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-silent-shiv",
+          "url": "build.html#build-silent-shiv",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
         }
       ],
@@ -3697,7 +3715,7 @@
           "name": "小刀流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-silent-shiv",
+          "url": "build.html#build-silent-shiv",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
         }
       ],
@@ -3737,7 +3755,7 @@
           "name": "小刀流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-silent-shiv",
+          "url": "build.html#build-silent-shiv",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
         }
       ],
@@ -3806,7 +3824,7 @@
           "name": "奇巧棄牌流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-sly-discard",
+          "url": "build.html#build-silent-sly-discard",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
         }
       ],
@@ -3875,7 +3893,7 @@
           "name": "過牌節奏流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-silent-draw-tempo",
+          "url": "build.html#build-silent-draw-tempo",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
         }
       ],
@@ -3915,7 +3933,7 @@
           "name": "奇巧棄牌流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-sly-discard",
+          "url": "build.html#build-silent-sly-discard",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
         }
       ],
@@ -3999,12 +4017,12 @@
       },
       "effect": {
         "base": "在本回合獲得2點<g>敏捷</g>。",
-        "upgraded": "在本回合獲得3點<g>敏捷</g>。"
+        "upgraded": "在本回合獲得4點<g>敏捷</g>。"
       },
       "energy": 0,
       "starCost": null,
       "upgrade": {
-        "dexterity": "+1"
+        "dexterity": "+2"
       },
       "builds": [],
       "url": "https://slaythespire2.net/zh-TW/card/anticipate"
@@ -4043,7 +4061,7 @@
           "name": "中毒流",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-silent-poison",
+          "url": "build.html#build-silent-poison",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
         }
       ],
@@ -4053,6 +4071,9 @@
       "id": "FLICK_FLACK",
       "name": "Flick-Flack",
       "nameZh": "翻越撐擊",
+      "aliases": [
+        "翻身撐擊"
+      ],
       "category": "Silent",
       "type": "Attack",
       "rarity": "Common",
@@ -4067,8 +4088,8 @@
         "upgraded": "assets/cards/images/table/upgraded/flick-flack.webp"
       },
       "effect": {
-        "base": "<g>奇巧</g>。\n對所有敵人造成6點傷害。",
-        "upgraded": "<g>奇巧</g>。\n對所有敵人造成8點傷害。"
+        "base": "<g>奇巧</g>。\n對所有敵人造成7點傷害。",
+        "upgraded": "<g>奇巧</g>。\n對所有敵人造成9點傷害。"
       },
       "energy": 1,
       "starCost": null,
@@ -4083,7 +4104,7 @@
           "name": "奇巧棄牌流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-sly-discard",
+          "url": "build.html#build-silent-sly-discard",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
         }
       ],
@@ -4124,7 +4145,7 @@
           "name": "中毒流",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-silent-poison",
+          "url": "build.html#build-silent-poison",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
         }
       ],
@@ -4193,7 +4214,7 @@
           "name": "奇巧棄牌流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-silent-sly-discard",
+          "url": "build.html#build-silent-sly-discard",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
         },
         {
@@ -4203,7 +4224,7 @@
           "name": "過牌節奏流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-silent-draw-tempo",
+          "url": "build.html#build-silent-draw-tempo",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
         }
       ],
@@ -4245,7 +4266,7 @@
           "name": "奇巧棄牌流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-silent-sly-discard",
+          "url": "build.html#build-silent-sly-discard",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
         }
       ],
@@ -4285,7 +4306,7 @@
           "name": "過牌節奏流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-silent-draw-tempo",
+          "url": "build.html#build-silent-draw-tempo",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
         }
       ],
@@ -4325,7 +4346,7 @@
           "name": "中毒流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-silent-poison",
+          "url": "build.html#build-silent-poison",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
         },
         {
@@ -4335,7 +4356,7 @@
           "name": "敏捷格擋流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-silent-dexterity-block",
+          "url": "build.html#build-silent-dexterity-block",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
         }
       ],
@@ -4376,7 +4397,7 @@
           "name": "敏捷格擋流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-silent-dexterity-block",
+          "url": "build.html#build-silent-dexterity-block",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
         }
       ],
@@ -4416,51 +4437,11 @@
           "name": "奇巧棄牌流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-silent-sly-discard",
+          "url": "build.html#build-silent-sly-discard",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
         }
       ],
       "url": "https://slaythespire2.net/zh-TW/card/reflex"
-    },
-    {
-      "id": "WELL_LAID_PLANS",
-      "name": "Well-Laid Plans",
-      "nameZh": "計劃妥當",
-      "category": "Silent",
-      "type": "Power",
-      "rarity": "Uncommon",
-      "rarityZh": "罕見",
-      "tier": "S",
-      "images": {
-        "base": "assets/cards/images/base/well-laid-plans.webp",
-        "upgraded": "assets/cards/images/upgraded/well-laid-plans.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/well-laid-plans.webp",
-        "upgraded": "assets/cards/images/table/upgraded/well-laid-plans.webp"
-      },
-      "effect": {
-        "base": "在你的回合結束時，<g>保留</g>最多1張牌。",
-        "upgraded": "在你的回合結束時，<g>保留</g>最多2張牌。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "retainamount": "+1"
-      },
-      "builds": [
-        {
-          "character": "silent",
-          "characterPool": "Silent",
-          "buildId": "poison",
-          "name": "中毒流",
-          "tier": "S",
-          "role": "support",
-          "url": "builds.html#build-silent-poison",
-          "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
-        }
-      ],
-      "url": "https://slaythespire2.net/zh-TW/card/well-laid-plans"
     },
     {
       "id": "ACCURACY",
@@ -4496,7 +4477,7 @@
           "name": "小刀流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-silent-shiv",
+          "url": "build.html#build-silent-shiv",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
         }
       ],
@@ -4536,11 +4517,40 @@
           "name": "敏捷格擋流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-silent-dexterity-block",
+          "url": "build.html#build-silent-dexterity-block",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
         }
       ],
       "url": "https://slaythespire2.net/zh-TW/card/blur"
+    },
+    {
+      "id": "ECHOING_SLASH",
+      "name": "Echoing Slash",
+      "nameZh": "迴響斬擊",
+      "category": "Silent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "rarityZh": "罕見",
+      "tier": "A",
+      "images": {
+        "base": "assets/cards/images/base/echoing-slash.webp",
+        "upgraded": "assets/cards/images/upgraded/echoing-slash.webp"
+      },
+      "tableImages": {
+        "base": "assets/cards/images/table/base/echoing-slash.webp",
+        "upgraded": "assets/cards/images/table/upgraded/echoing-slash.webp"
+      },
+      "effect": {
+        "base": "對所有敵人造成10點傷害。\n每有一名敵人被擊殺，就重複此效果。",
+        "upgraded": "對所有敵人造成13點傷害。\n每有一名敵人被擊殺，就重複此效果。"
+      },
+      "energy": 1,
+      "starCost": null,
+      "upgrade": {
+        "damage": "+3"
+      },
+      "builds": [],
+      "url": "https://slaythespire2.net/zh-TW/card/echoing-slash"
     },
     {
       "id": "EXPOSE",
@@ -4576,7 +4586,7 @@
           "name": "小刀流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-shiv",
+          "url": "build.html#build-silent-shiv",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
         }
       ],
@@ -4643,7 +4653,7 @@
           "name": "奇巧棄牌流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-sly-discard",
+          "url": "build.html#build-silent-sly-discard",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
         },
         {
@@ -4653,7 +4663,7 @@
           "name": "小刀流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-shiv",
+          "url": "build.html#build-silent-shiv",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
         }
       ],
@@ -4695,7 +4705,7 @@
           "name": "小刀流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-silent-shiv",
+          "url": "build.html#build-silent-shiv",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
         }
       ],
@@ -4735,7 +4745,7 @@
           "name": "中毒流",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-silent-poison",
+          "url": "build.html#build-silent-poison",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
         }
       ],
@@ -4804,7 +4814,7 @@
           "name": "奇巧棄牌流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-silent-sly-discard",
+          "url": "build.html#build-silent-sly-discard",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
         }
       ],
@@ -4873,7 +4883,7 @@
           "name": "小刀流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-shiv",
+          "url": "build.html#build-silent-shiv",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
         }
       ],
@@ -4938,6 +4948,49 @@
       "url": "https://slaythespire2.net/zh-TW/card/precise-cut"
     },
     {
+      "id": "ACCELERANT",
+      "name": "Accelerant",
+      "nameZh": "觸媒",
+      "aliases": [
+        "催化劑"
+      ],
+      "category": "Silent",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "rarityZh": "罕見",
+      "tier": "C",
+      "images": {
+        "base": "assets/cards/images/base/accelerant.webp",
+        "upgraded": "assets/cards/images/upgraded/accelerant.webp"
+      },
+      "tableImages": {
+        "base": "assets/cards/images/table/base/accelerant.webp",
+        "upgraded": "assets/cards/images/table/upgraded/accelerant.webp"
+      },
+      "effect": {
+        "base": "<g>中毒</g>會額外觸發1次。",
+        "upgraded": "<g>中毒</g>會額外觸發2次。"
+      },
+      "energy": 1,
+      "starCost": null,
+      "upgrade": {
+        "accelerant": "+1"
+      },
+      "builds": [
+        {
+          "character": "silent",
+          "characterPool": "Silent",
+          "buildId": "poison",
+          "name": "中毒流",
+          "tier": "S",
+          "role": "core",
+          "url": "build.html#build-silent-poison",
+          "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+        }
+      ],
+      "url": "https://slaythespire2.net/zh-TW/card/accelerant"
+    },
+    {
       "id": "BUBBLE_BUBBLE",
       "name": "Bubble Bubble",
       "nameZh": "咕嘟冒泡",
@@ -4971,7 +5024,7 @@
           "name": "中毒流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-silent-poison",
+          "url": "build.html#build-silent-poison",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
         }
       ],
@@ -5012,7 +5065,7 @@
           "name": "敏捷格擋流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-silent-dexterity-block",
+          "url": "build.html#build-silent-dexterity-block",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
         }
       ],
@@ -5022,6 +5075,9 @@
       "id": "EXPERTISE",
       "name": "Expertise",
       "nameZh": "獨門技術",
+      "aliases": [
+        "專業知識"
+      ],
       "category": "Silent",
       "type": "Skill",
       "rarity": "Uncommon",
@@ -5036,8 +5092,8 @@
         "upgraded": "assets/cards/images/table/upgraded/expertise.webp"
       },
       "effect": {
-        "base": "抽牌直至你的<g>手牌</g>有6張牌。",
-        "upgraded": "抽牌直至你的<g>手牌</g>有7張牌。"
+        "base": "抽2張牌。\n這些牌在本回合獲得<g>保留</g>。",
+        "upgraded": "抽3張牌。\n這些牌在本回合獲得<g>保留</g>。"
       },
       "energy": 1,
       "starCost": null,
@@ -5052,7 +5108,7 @@
           "name": "中毒流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-silent-poison",
+          "url": "build.html#build-silent-poison",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
         }
       ],
@@ -5092,7 +5148,7 @@
           "name": "小刀流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-shiv",
+          "url": "build.html#build-silent-shiv",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
         }
       ],
@@ -5132,7 +5188,7 @@
           "name": "奇巧棄牌流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-sly-discard",
+          "url": "build.html#build-silent-sly-discard",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
         }
       ],
@@ -5156,13 +5212,14 @@
         "upgraded": "assets/cards/images/table/upgraded/haze.webp"
       },
       "effect": {
-        "base": "<g>奇巧</g>。\n給予所有敵人4層<g>中毒</g>。",
-        "upgraded": "<g>奇巧</g>。\n給予所有敵人6層<g>中毒</g>。"
+        "base": "對所有敵人施加4層<g>中毒</g>與1層<g>虛弱</g>。",
+        "upgraded": "對所有敵人施加6層<g>中毒</g>與2層<g>虛弱</g>。"
       },
-      "energy": 3,
+      "energy": 2,
       "starCost": null,
       "upgrade": {
-        "poison": "+2"
+        "poison": "+2",
+        "weak": "+1"
       },
       "builds": [
         {
@@ -5172,51 +5229,11 @@
           "name": "中毒流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-silent-poison",
+          "url": "build.html#build-silent-poison",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
         }
       ],
       "url": "https://slaythespire2.net/zh-TW/card/haze"
-    },
-    {
-      "id": "OUTBREAK",
-      "name": "Outbreak",
-      "nameZh": "毒性爆發",
-      "category": "Silent",
-      "type": "Power",
-      "rarity": "Uncommon",
-      "rarityZh": "罕見",
-      "tier": "C",
-      "images": {
-        "base": "assets/cards/images/base/outbreak.webp",
-        "upgraded": "assets/cards/images/upgraded/outbreak.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/outbreak.webp",
-        "upgraded": "assets/cards/images/table/upgraded/outbreak.webp"
-      },
-      "effect": {
-        "base": "每當你給予3次<g>中毒</g>，就對所有敵人造成11點傷害。",
-        "upgraded": "每當你給予3次<g>中毒</g>，就對所有敵人造成15點傷害。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "outbreakpower": "+4"
-      },
-      "builds": [
-        {
-          "character": "silent",
-          "characterPool": "Silent",
-          "buildId": "poison",
-          "name": "中毒流",
-          "tier": "S",
-          "role": "support",
-          "url": "builds.html#build-silent-poison",
-          "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
-        }
-      ],
-      "url": "https://slaythespire2.net/zh-TW/card/outbreak"
     },
     {
       "id": "SKEWER",
@@ -5311,7 +5328,7 @@
           "name": "中毒流",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-silent-poison",
+          "url": "build.html#build-silent-poison",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
         }
       ],
@@ -5352,7 +5369,7 @@
           "name": "奇巧棄牌流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-sly-discard",
+          "url": "build.html#build-silent-sly-discard",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
         }
       ],
@@ -5362,6 +5379,9 @@
       "id": "MIRAGE",
       "name": "Mirage",
       "nameZh": "蜃景",
+      "aliases": [
+        "海市蜃樓"
+      ],
       "category": "Silent",
       "type": "Skill",
       "rarity": "Uncommon",
@@ -5377,12 +5397,14 @@
       },
       "effect": {
         "base": "獲得等同於所有敵人<g>中毒</g>層數的<g>格擋</g>。\n<g>消耗</g>。",
-        "upgraded": "獲得等同於所有敵人<g>中毒</g>層數的<g>格擋</g>。\n<g>消耗</g>。"
+        "upgraded": "獲得等同於所有敵人<g>中毒</g>層數的<g>格擋</g>。"
       },
       "energy": 1,
       "starCost": null,
       "upgrade": {
-        "energy": "-1"
+        "keywordsRemoved": [
+          "Exhaust"
+        ]
       },
       "builds": [
         {
@@ -5392,7 +5414,7 @@
           "name": "中毒流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-silent-poison",
+          "url": "build.html#build-silent-poison",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
         }
       ],
@@ -5434,7 +5456,7 @@
           "name": "過牌節奏流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-silent-draw-tempo",
+          "url": "build.html#build-silent-draw-tempo",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
         }
       ],
@@ -5500,8 +5522,12 @@
     },
     {
       "id": "SCARE",
-      "name": "Scare",
-      "nameZh": "恫嚇",
+      "name": "Sidestep",
+      "nameZh": "側步",
+      "aliases": [
+        "嚇唬",
+        "恫嚇"
+      ],
       "category": "Silent",
       "type": "Skill",
       "rarity": "Uncommon",
@@ -5516,15 +5542,13 @@
         "upgraded": "assets/cards/images/table/upgraded/scare.webp"
       },
       "effect": {
-        "base": "給予所有敵人1層<g>虛弱</g>。\n<g>消耗</g>。",
-        "upgraded": "給予所有敵人1層<g>虛弱</g>。"
+        "base": "下回合，獲得<e>1</e>。",
+        "upgraded": "下回合，獲得<e>2</e>。"
       },
       "energy": 0,
       "starCost": null,
       "upgrade": {
-        "keywordsRemoved": [
-          "Exhaust"
-        ]
+        "energygain": "+1"
       },
       "builds": [],
       "url": "https://slaythespire2.net/zh-TW/card/scare"
@@ -5563,7 +5587,7 @@
           "name": "奇巧棄牌流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-sly-discard",
+          "url": "build.html#build-silent-sly-discard",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
         },
         {
@@ -5573,7 +5597,7 @@
           "name": "敏捷格擋流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-silent-dexterity-block",
+          "url": "build.html#build-silent-dexterity-block",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
         }
       ],
@@ -5613,7 +5637,7 @@
           "name": "過牌節奏流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-silent-draw-tempo",
+          "url": "build.html#build-silent-draw-tempo",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
         }
       ],
@@ -5655,7 +5679,7 @@
           "name": "小刀流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-shiv",
+          "url": "build.html#build-silent-shiv",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
         },
         {
@@ -5665,7 +5689,7 @@
           "name": "敏捷格擋流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-silent-dexterity-block",
+          "url": "build.html#build-silent-dexterity-block",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
         }
       ],
@@ -5675,6 +5699,10 @@
       "id": "BLADE_OF_INK",
       "name": "Blade of Ink",
       "nameZh": "墨之刃",
+      "aliases": [
+        "墨刃"
+      ],
+      "notes": "墨影附魔仍會施加虛弱，不再提供額外傷害。",
       "category": "Silent",
       "type": "Skill",
       "rarity": "Rare",
@@ -5705,7 +5733,7 @@
           "name": "小刀流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-shiv",
+          "url": "build.html#build-silent-shiv",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
         }
       ],
@@ -5801,7 +5829,7 @@
           "name": "奇巧棄牌流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-sly-discard",
+          "url": "build.html#build-silent-sly-discard",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
         },
         {
@@ -5811,7 +5839,7 @@
           "name": "過牌節奏流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-silent-draw-tempo",
+          "url": "build.html#build-silent-draw-tempo",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
         }
       ],
@@ -5821,6 +5849,9 @@
       "id": "TRACKING",
       "name": "Tracking",
       "nameZh": "跟蹤",
+      "aliases": [
+        "追蹤"
+      ],
       "category": "Silent",
       "type": "Power",
       "rarity": "Rare",
@@ -5835,8 +5866,8 @@
         "upgraded": "assets/cards/images/table/upgraded/tracking.webp"
       },
       "effect": {
-        "base": "對<g>虛弱</g>狀態的敵人，你所造成的攻擊傷害翻倍。",
-        "upgraded": "對<g>虛弱</g>狀態的敵人，你所造成的攻擊傷害翻倍。"
+        "base": "<g>虛弱</g>的敵人受到攻擊牌造成的傷害增加50%。",
+        "upgraded": "<g>虛弱</g>的敵人受到攻擊牌造成的傷害增加50%。"
       },
       "energy": 2,
       "starCost": null,
@@ -5845,6 +5876,54 @@
       },
       "builds": [],
       "url": "https://slaythespire2.net/zh-TW/card/tracking"
+    },
+    {
+      "id": "WELL_LAID_PLANS",
+      "name": "Well-Laid Plans",
+      "nameZh": "計劃妥當",
+      "aliases": [
+        "計畫妥當"
+      ],
+      "notes": "單人與多人遊戲皆可取得。",
+      "availability": {
+        "singleplayer": true,
+        "multiplayer": true
+      },
+      "category": "Silent",
+      "type": "Power",
+      "rarity": "Rare",
+      "rarityZh": "稀有",
+      "tier": "S",
+      "images": {
+        "base": "assets/cards/images/base/well-laid-plans.webp",
+        "upgraded": "assets/cards/images/upgraded/well-laid-plans.webp"
+      },
+      "tableImages": {
+        "base": "assets/cards/images/table/base/well-laid-plans.webp",
+        "upgraded": "assets/cards/images/table/upgraded/well-laid-plans.webp"
+      },
+      "effect": {
+        "base": "在你的回合結束時，不再丟棄<g>手牌</g>。",
+        "upgraded": "在你的回合結束時，不再丟棄<g>手牌</g>。"
+      },
+      "energy": 2,
+      "starCost": null,
+      "upgrade": {
+        "energy": "-1"
+      },
+      "builds": [
+        {
+          "character": "silent",
+          "characterPool": "Silent",
+          "buildId": "poison",
+          "name": "中毒流",
+          "tier": "S",
+          "role": "support",
+          "url": "build.html#build-silent-poison",
+          "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+        }
+      ],
+      "url": "https://slaythespire2.net/zh-TW/card/well-laid-plans"
     },
     {
       "id": "ASSASSINATE",
@@ -5875,75 +5954,6 @@
       },
       "builds": [],
       "url": "https://slaythespire2.net/zh-TW/card/assassinate"
-    },
-    {
-      "id": "ECHOING_SLASH",
-      "name": "Echoing Slash",
-      "nameZh": "迴響斬擊",
-      "category": "Silent",
-      "type": "Attack",
-      "rarity": "Rare",
-      "rarityZh": "稀有",
-      "tier": "A",
-      "images": {
-        "base": "assets/cards/images/base/echoing-slash.webp",
-        "upgraded": "assets/cards/images/upgraded/echoing-slash.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/echoing-slash.webp",
-        "upgraded": "assets/cards/images/table/upgraded/echoing-slash.webp"
-      },
-      "effect": {
-        "base": "對所有敵人造成10點傷害。\n每有一名敵人被擊殺，就重複此效果。",
-        "upgraded": "對所有敵人造成13點傷害。\n每有一名敵人被擊殺，就重複此效果。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "damage": "+3"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/echoing-slash"
-    },
-    {
-      "id": "ACCELERANT",
-      "name": "Accelerant",
-      "nameZh": "觸媒",
-      "category": "Silent",
-      "type": "Power",
-      "rarity": "Rare",
-      "rarityZh": "稀有",
-      "tier": "C",
-      "images": {
-        "base": "assets/cards/images/base/accelerant.webp",
-        "upgraded": "assets/cards/images/upgraded/accelerant.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/accelerant.webp",
-        "upgraded": "assets/cards/images/table/upgraded/accelerant.webp"
-      },
-      "effect": {
-        "base": "<g>中毒</g>會額外觸發1次。",
-        "upgraded": "<g>中毒</g>會額外觸發2次。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "accelerant": "+1"
-      },
-      "builds": [
-        {
-          "character": "silent",
-          "characterPool": "Silent",
-          "buildId": "poison",
-          "name": "中毒流",
-          "tier": "S",
-          "role": "core",
-          "url": "builds.html#build-silent-poison",
-          "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
-        }
-      ],
-      "url": "https://slaythespire2.net/zh-TW/card/accelerant"
     },
     {
       "id": "BURST",
@@ -5979,7 +5989,7 @@
           "name": "敏捷格擋流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-silent-dexterity-block",
+          "url": "build.html#build-silent-dexterity-block",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
         }
       ],
@@ -6019,7 +6029,7 @@
           "name": "中毒流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-silent-poison",
+          "url": "build.html#build-silent-poison",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
         },
         {
@@ -6029,7 +6039,7 @@
           "name": "過牌節奏流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-silent-draw-tempo",
+          "url": "build.html#build-silent-draw-tempo",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
         }
       ],
@@ -6069,7 +6079,7 @@
           "name": "小刀流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-shiv",
+          "url": "build.html#build-silent-shiv",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
         }
       ],
@@ -6107,7 +6117,7 @@
           "name": "小刀流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-shiv",
+          "url": "build.html#build-silent-shiv",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
         }
       ],
@@ -6147,7 +6157,7 @@
           "name": "奇巧棄牌流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-sly-discard",
+          "url": "build.html#build-silent-sly-discard",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-sly-discard"
         }
       ],
@@ -6187,11 +6197,54 @@
           "name": "過牌節奏流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-silent-draw-tempo",
+          "url": "build.html#build-silent-draw-tempo",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
         }
       ],
       "url": "https://slaythespire2.net/zh-TW/card/murder"
+    },
+    {
+      "id": "OUTBREAK",
+      "name": "Outbreak",
+      "nameZh": "毒性爆發",
+      "aliases": [
+        "毒疫爆發"
+      ],
+      "category": "Silent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "rarityZh": "稀有",
+      "tier": "C",
+      "images": {
+        "base": "assets/cards/images/base/outbreak.webp",
+        "upgraded": "assets/cards/images/upgraded/outbreak.webp"
+      },
+      "tableImages": {
+        "base": "assets/cards/images/table/base/outbreak.webp",
+        "upgraded": "assets/cards/images/table/upgraded/outbreak.webp"
+      },
+      "effect": {
+        "base": "對所有敵人施加9層<g>中毒</g>。\n立即觸發<g>中毒</g>。",
+        "upgraded": "對所有敵人施加12層<g>中毒</g>。\n立即觸發<g>中毒</g>。"
+      },
+      "energy": 3,
+      "starCost": null,
+      "upgrade": {
+        "poison": "+3"
+      },
+      "builds": [
+        {
+          "character": "silent",
+          "characterPool": "Silent",
+          "buildId": "poison",
+          "name": "中毒流",
+          "tier": "S",
+          "role": "support",
+          "url": "build.html#build-silent-poison",
+          "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
+        }
+      ],
+      "url": "https://slaythespire2.net/zh-TW/card/outbreak"
     },
     {
       "id": "SERPENT_FORM",
@@ -6227,7 +6280,7 @@
           "name": "過牌節奏流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-silent-draw-tempo",
+          "url": "build.html#build-silent-draw-tempo",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-draw-tempo"
         }
       ],
@@ -6354,7 +6407,7 @@
           "name": "中毒流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-silent-poison",
+          "url": "build.html#build-silent-poison",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-poison"
         }
       ],
@@ -6450,7 +6503,7 @@
           "name": "小刀流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-silent-shiv",
+          "url": "build.html#build-silent-shiv",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-shiv"
         }
       ],
@@ -6549,7 +6602,7 @@
           "name": "敏捷格擋流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-silent-dexterity-block",
+          "url": "build.html#build-silent-dexterity-block",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/silent#build-dexterity-block"
         }
       ],
@@ -6618,7 +6671,7 @@
           "name": "黑暗球爆發",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-dark-orb-evoke-burst",
+          "url": "build.html#build-defect-dark-orb-evoke-burst",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
         }
       ],
@@ -6687,7 +6740,7 @@
           "name": "閃電能力引擎",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-lightning-power-engine",
+          "url": "build.html#build-defect-lightning-power-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
         }
       ],
@@ -6756,7 +6809,7 @@
           "name": "冰霜流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-defect-frost-focus-orbs",
+          "url": "build.html#build-defect-frost-focus-orbs",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
         },
         {
@@ -6766,7 +6819,7 @@
           "name": "閃電能力引擎",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-defect-lightning-power-engine",
+          "url": "build.html#build-defect-lightning-power-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
         }
       ],
@@ -6806,7 +6859,7 @@
           "name": "狀態牌引擎",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-defect-status-engine",
+          "url": "build.html#build-defect-status-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
         }
       ],
@@ -6875,7 +6928,7 @@
           "name": "冰霜流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-defect-frost-focus-orbs",
+          "url": "build.html#build-defect-frost-focus-orbs",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
         }
       ],
@@ -6915,7 +6968,7 @@
           "name": "冰霜流",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-defect-frost-focus-orbs",
+          "url": "build.html#build-defect-frost-focus-orbs",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
         }
       ],
@@ -6956,7 +7009,7 @@
           "name": "0 費 Claw 流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-defect-claw-zero-cost",
+          "url": "build.html#build-defect-claw-zero-cost",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
         }
       ],
@@ -6996,7 +7049,7 @@
           "name": "狀態牌引擎",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-defect-status-engine",
+          "url": "build.html#build-defect-status-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
         }
       ],
@@ -7036,7 +7089,7 @@
           "name": "狀態牌引擎",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-defect-status-engine",
+          "url": "build.html#build-defect-status-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
         }
       ],
@@ -7108,7 +7161,7 @@
           "name": "0 費 Claw 流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-defect-claw-zero-cost",
+          "url": "build.html#build-defect-claw-zero-cost",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
         }
       ],
@@ -7178,7 +7231,7 @@
           "name": "0 費 Claw 流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-defect-claw-zero-cost",
+          "url": "build.html#build-defect-claw-zero-cost",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
         }
       ],
@@ -7249,7 +7302,7 @@
           "name": "冰霜流",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-defect-frost-focus-orbs",
+          "url": "build.html#build-defect-frost-focus-orbs",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
         },
         {
@@ -7259,7 +7312,7 @@
           "name": "0 費 Claw 流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-defect-claw-zero-cost",
+          "url": "build.html#build-defect-claw-zero-cost",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
         }
       ],
@@ -7299,7 +7352,7 @@
           "name": "閃電能力引擎",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-lightning-power-engine",
+          "url": "build.html#build-defect-lightning-power-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
         }
       ],
@@ -7309,6 +7362,9 @@
       "id": "MOMENTUM_STRIKE",
       "name": "Momentum Strike",
       "nameZh": "趁勢打擊",
+      "aliases": [
+        "動量打擊"
+      ],
       "category": "Defect",
       "type": "Attack",
       "rarity": "Common",
@@ -7323,13 +7379,13 @@
         "upgraded": "assets/cards/images/table/upgraded/momentum-strike.webp"
       },
       "effect": {
-        "base": "造成10點傷害。\n這張牌的耗能降為0<e/>。",
-        "upgraded": "造成13點傷害。\n這張牌的耗能降為0<e/>。"
+        "base": "造成11點傷害。\n這張牌的耗能降為0<e/>。",
+        "upgraded": "造成15點傷害。\n這張牌的耗能降為0<e/>。"
       },
       "energy": 1,
       "starCost": null,
       "upgrade": {
-        "damage": "+3"
+        "damage": "+4"
       },
       "builds": [
         {
@@ -7339,7 +7395,7 @@
           "name": "0 費 Claw 流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-defect-claw-zero-cost",
+          "url": "build.html#build-defect-claw-zero-cost",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
         }
       ],
@@ -7380,7 +7436,7 @@
           "name": "0 費 Claw 流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-defect-claw-zero-cost",
+          "url": "build.html#build-defect-claw-zero-cost",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
         }
       ],
@@ -7508,7 +7564,7 @@
           "name": "冰霜流",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-defect-frost-focus-orbs",
+          "url": "build.html#build-defect-frost-focus-orbs",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
         },
         {
@@ -7518,7 +7574,7 @@
           "name": "閃電能力引擎",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-lightning-power-engine",
+          "url": "build.html#build-defect-lightning-power-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
         },
         {
@@ -7528,7 +7584,7 @@
           "name": "黑暗球爆發",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-dark-orb-evoke-burst",
+          "url": "build.html#build-defect-dark-orb-evoke-burst",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
         }
       ],
@@ -7570,7 +7626,7 @@
           "name": "冰霜流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-defect-frost-focus-orbs",
+          "url": "build.html#build-defect-frost-focus-orbs",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
         }
       ],
@@ -7580,6 +7636,7 @@
       "id": "COMPACT",
       "name": "Compact",
       "nameZh": "壓縮",
+      "notes": "衍生牌燃料：不再抽牌；升級後改為額外獲得1點能量。",
       "category": "Defect",
       "type": "Skill",
       "rarity": "Uncommon",
@@ -7610,7 +7667,7 @@
           "name": "狀態牌引擎",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-defect-status-engine",
+          "url": "build.html#build-defect-status-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
         }
       ],
@@ -7648,7 +7705,7 @@
           "name": "黑暗球爆發",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-defect-dark-orb-evoke-burst",
+          "url": "build.html#build-defect-dark-orb-evoke-burst",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
         }
       ],
@@ -7688,7 +7745,7 @@
           "name": "冰霜流",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-defect-frost-focus-orbs",
+          "url": "build.html#build-defect-frost-focus-orbs",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
         }
       ],
@@ -7728,7 +7785,7 @@
           "name": "冰霜流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-defect-frost-focus-orbs",
+          "url": "build.html#build-defect-frost-focus-orbs",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
         },
         {
@@ -7738,7 +7795,7 @@
           "name": "黑暗球爆發",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-defect-dark-orb-evoke-burst",
+          "url": "build.html#build-defect-dark-orb-evoke-burst",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
         }
       ],
@@ -7748,6 +7805,9 @@
       "id": "NULL",
       "name": "Null",
       "nameZh": "空值",
+      "aliases": [
+        "歸零"
+      ],
       "category": "Defect",
       "type": "Attack",
       "rarity": "Uncommon",
@@ -7762,8 +7822,8 @@
         "upgraded": "assets/cards/images/table/upgraded/null.webp"
       },
       "effect": {
-        "base": "造成10點傷害。\n給予2層<g>虛弱</g>。\n<g>生成</g>1個<g>黑暗</g>充能球。",
-        "upgraded": "造成13點傷害。\n給予3層<g>虛弱</g>。\n<g>生成</g>1個<g>黑暗</g>充能球。"
+        "base": "造成10點傷害。\n給予1層<g>虛弱</g>。\n<g>生成</g>1個<g>黑暗</g>充能球。",
+        "upgraded": "造成13點傷害。\n給予2層<g>虛弱</g>。\n<g>生成</g>1個<g>黑暗</g>充能球。"
       },
       "energy": 2,
       "starCost": null,
@@ -7779,7 +7839,7 @@
           "name": "黑暗球爆發",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-dark-orb-evoke-burst",
+          "url": "build.html#build-defect-dark-orb-evoke-burst",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
         }
       ],
@@ -7819,7 +7879,7 @@
           "name": "狀態牌引擎",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-defect-status-engine",
+          "url": "build.html#build-defect-status-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
         }
       ],
@@ -7843,15 +7903,13 @@
         "upgraded": "assets/cards/images/table/upgraded/synchronize.webp"
       },
       "effect": {
-        "base": "你每有一種不同的充能球，就在本回合獲得2點<g>集中</g>。\n<g>消耗</g>。",
+        "base": "你每有一種不同的充能球，就在本回合獲得1點<g>集中</g>。",
         "upgraded": "你每有一種不同的充能球，就在本回合獲得2點<g>集中</g>。"
       },
       "energy": 1,
       "starCost": null,
       "upgrade": {
-        "keywordsRemoved": [
-          "Exhaust"
-        ]
+        "focus": "+1"
       },
       "builds": [
         {
@@ -7861,7 +7919,7 @@
           "name": "冰霜流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-defect-frost-focus-orbs",
+          "url": "build.html#build-defect-frost-focus-orbs",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
         },
         {
@@ -7871,7 +7929,7 @@
           "name": "黑暗球爆發",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-dark-orb-evoke-burst",
+          "url": "build.html#build-defect-dark-orb-evoke-burst",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
         }
       ],
@@ -7912,7 +7970,7 @@
           "name": "0 費 Claw 流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-defect-claw-zero-cost",
+          "url": "build.html#build-defect-claw-zero-cost",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
         }
       ],
@@ -7952,7 +8010,7 @@
           "name": "狀態牌引擎",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-defect-status-engine",
+          "url": "build.html#build-defect-status-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
         }
       ],
@@ -7993,7 +8051,7 @@
           "name": "0 費 Claw 流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-defect-claw-zero-cost",
+          "url": "build.html#build-defect-claw-zero-cost",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
         }
       ],
@@ -8033,7 +8091,7 @@
           "name": "冰霜流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-defect-frost-focus-orbs",
+          "url": "build.html#build-defect-frost-focus-orbs",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
         }
       ],
@@ -8073,7 +8131,7 @@
           "name": "狀態牌引擎",
           "tier": "C",
           "role": "core",
-          "url": "builds.html#build-defect-status-engine",
+          "url": "build.html#build-defect-status-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
         }
       ],
@@ -8097,8 +8155,8 @@
         "upgraded": "assets/cards/images/table/upgraded/refract.webp"
       },
       "effect": {
-        "base": "造成9點傷害兩次。\n<g>生成</g>2個<g>玻璃</g>充能球。",
-        "upgraded": "造成12點傷害兩次。\n<g>生成</g>2個<g>玻璃</g>充能球。"
+        "base": "造成10點傷害兩次。\n<g>生成</g>2個<g>玻璃</g>充能球。",
+        "upgraded": "造成13點傷害兩次。\n<g>生成</g>2個<g>玻璃</g>充能球。"
       },
       "energy": 3,
       "starCost": null,
@@ -8126,8 +8184,8 @@
         "upgraded": "assets/cards/images/table/upgraded/rocket-punch.webp"
       },
       "effect": {
-        "base": "造成13點傷害。\n抽1張牌。\n每當你生成狀態牌時，此牌的耗能將在下一次打出前降為0<e/>。",
-        "upgraded": "造成14點傷害。\n抽2張牌。\n每當你生成狀態牌時，此牌的耗能將在下一次打出前降為0<e/>。"
+        "base": "造成13點傷害。\n抽1張牌。\n每當你生成狀態牌時，此牌的耗能將在下一次打出前降低1<e/>。",
+        "upgraded": "造成14點傷害。\n抽2張牌。\n每當你生成狀態牌時，此牌的耗能將在下一次打出前降低1<e/>。"
       },
       "energy": 2,
       "starCost": null,
@@ -8143,7 +8201,7 @@
           "name": "狀態牌引擎",
           "tier": "C",
           "role": "core",
-          "url": "builds.html#build-defect-status-engine",
+          "url": "build.html#build-defect-status-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
         }
       ],
@@ -8183,7 +8241,7 @@
           "name": "黑暗球爆發",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-defect-dark-orb-evoke-burst",
+          "url": "build.html#build-defect-dark-orb-evoke-burst",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
         }
       ],
@@ -8223,7 +8281,7 @@
           "name": "0 費 Claw 流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-defect-claw-zero-cost",
+          "url": "build.html#build-defect-claw-zero-cost",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
         }
       ],
@@ -8263,7 +8321,7 @@
           "name": "閃電能力引擎",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-defect-lightning-power-engine",
+          "url": "build.html#build-defect-lightning-power-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
         }
       ],
@@ -8273,6 +8331,9 @@
       "id": "SUNDER",
       "name": "Sunder",
       "nameZh": "分離",
+      "aliases": [
+        "裂解"
+      ],
       "category": "Defect",
       "type": "Attack",
       "rarity": "Uncommon",
@@ -8287,8 +8348,8 @@
         "upgraded": "assets/cards/images/table/upgraded/sunder.webp"
       },
       "effect": {
-        "base": "造成24點傷害。\n如果這張牌擊殺了敵人，則獲得<e>3</e>。",
-        "upgraded": "造成32點傷害。\n如果這張牌擊殺了敵人，則獲得<e>3</e>。"
+        "base": "造成26點傷害。\n如果這張牌擊殺了敵人，則獲得<e>3</e>。",
+        "upgraded": "造成34點傷害。\n如果這張牌擊殺了敵人，則獲得<e>3</e>。"
       },
       "energy": 3,
       "starCost": null,
@@ -8361,7 +8422,7 @@
           "name": "0 費 Claw 流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-defect-claw-zero-cost",
+          "url": "build.html#build-defect-claw-zero-cost",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
         }
       ],
@@ -8461,7 +8522,7 @@
           "name": "閃電能力引擎",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-lightning-power-engine",
+          "url": "build.html#build-defect-lightning-power-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
         }
       ],
@@ -8530,7 +8591,7 @@
           "name": "狀態牌引擎",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-defect-status-engine",
+          "url": "build.html#build-defect-status-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
         }
       ],
@@ -8570,7 +8631,7 @@
           "name": "狀態牌引擎",
           "tier": "C",
           "role": "core",
-          "url": "builds.html#build-defect-status-engine",
+          "url": "build.html#build-defect-status-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
         }
       ],
@@ -8610,7 +8671,7 @@
           "name": "閃電能力引擎",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-defect-lightning-power-engine",
+          "url": "build.html#build-defect-lightning-power-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
         }
       ],
@@ -8648,7 +8709,7 @@
           "name": "閃電能力引擎",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-defect-lightning-power-engine",
+          "url": "build.html#build-defect-lightning-power-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
         }
       ],
@@ -8688,7 +8749,7 @@
           "name": "閃電能力引擎",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-lightning-power-engine",
+          "url": "build.html#build-defect-lightning-power-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
         }
       ],
@@ -8728,7 +8789,7 @@
           "name": "冰霜流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-defect-frost-focus-orbs",
+          "url": "build.html#build-defect-frost-focus-orbs",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
         }
       ],
@@ -8738,6 +8799,7 @@
       "id": "SCRAPE",
       "name": "Scrape",
       "nameZh": "刮削",
+      "notes": "因全域暫時效果（例如撲擊／猛撲）而將耗能設為0的牌，不會被丟棄。",
       "category": "Defect",
       "type": "Attack",
       "rarity": "Uncommon",
@@ -8769,7 +8831,7 @@
           "name": "0 費 Claw 流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-defect-claw-zero-cost",
+          "url": "build.html#build-defect-claw-zero-cost",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
         }
       ],
@@ -8793,13 +8855,13 @@
         "upgraded": "assets/cards/images/table/upgraded/thunder.webp"
       },
       "effect": {
-        "base": "每當你<g>激發閃電</g>充能球時，對被命中的敵人造成6點傷害。",
-        "upgraded": "每當你<g>激發閃電</g>充能球時，對被命中的敵人造成8點傷害。"
+        "base": "每當你<g>激發閃電</g>充能球時，對被命中的敵人造成8點傷害。",
+        "upgraded": "每當你<g>激發閃電</g>充能球時，對被命中的敵人造成11點傷害。"
       },
       "energy": 1,
       "starCost": null,
       "upgrade": {
-        "thunderpower": "+2"
+        "thunderpower": "+3"
       },
       "builds": [
         {
@@ -8809,7 +8871,7 @@
           "name": "閃電能力引擎",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-defect-lightning-power-engine",
+          "url": "build.html#build-defect-lightning-power-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
         }
       ],
@@ -8907,7 +8969,7 @@
           "name": "冰霜流",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-defect-frost-focus-orbs",
+          "url": "build.html#build-defect-frost-focus-orbs",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
         },
         {
@@ -8917,7 +8979,7 @@
           "name": "閃電能力引擎",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-lightning-power-engine",
+          "url": "build.html#build-defect-lightning-power-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
         },
         {
@@ -8927,7 +8989,7 @@
           "name": "黑暗球爆發",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-dark-orb-evoke-burst",
+          "url": "build.html#build-defect-dark-orb-evoke-burst",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
         }
       ],
@@ -8969,7 +9031,7 @@
           "name": "閃電能力引擎",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-lightning-power-engine",
+          "url": "build.html#build-defect-lightning-power-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
         }
       ],
@@ -9069,7 +9131,7 @@
           "name": "閃電能力引擎",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-lightning-power-engine",
+          "url": "build.html#build-defect-lightning-power-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
         }
       ],
@@ -9109,7 +9171,7 @@
           "name": "冰霜流",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-defect-frost-focus-orbs",
+          "url": "build.html#build-defect-frost-focus-orbs",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
         }
       ],
@@ -9119,6 +9181,9 @@
       "id": "SHATTER",
       "name": "Shatter",
       "nameZh": "打碎",
+      "aliases": [
+        "粉碎"
+      ],
       "category": "Defect",
       "type": "Attack",
       "rarity": "Rare",
@@ -9133,8 +9198,8 @@
         "upgraded": "assets/cards/images/table/upgraded/shatter.webp"
       },
       "effect": {
-        "base": "對所有敵人造成7點傷害。\n<g>激發</g>你的所有充能球兩次。",
-        "upgraded": "對所有敵人造成11點傷害。\n<g>激發</g>你的所有充能球兩次。"
+        "base": "對所有敵人造成7點傷害。\n<g>激發</g>你的所有充能球兩次。\n<g>消耗</g>。",
+        "upgraded": "對所有敵人造成11點傷害。\n<g>激發</g>你的所有充能球兩次。\n<g>消耗</g>。"
       },
       "energy": 1,
       "starCost": null,
@@ -9149,7 +9214,7 @@
           "name": "黑暗球爆發",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-defect-dark-orb-evoke-burst",
+          "url": "build.html#build-defect-dark-orb-evoke-burst",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
         }
       ],
@@ -9188,6 +9253,9 @@
       "id": "TRASH_TO_TREASURE",
       "name": "Trash to Treasure",
       "nameZh": "化廢為寶",
+      "aliases": [
+        "化腐朽為神奇"
+      ],
       "category": "Defect",
       "type": "Power",
       "rarity": "Rare",
@@ -9203,14 +9271,12 @@
       },
       "effect": {
         "base": "每當你生成狀態牌的時候，隨機<g>生成</g>一個充能球。",
-        "upgraded": "<g>固有</g>。\n每當你生成狀態牌的時候，隨機<g>生成</g>一個充能球。"
+        "upgraded": "每當你生成狀態牌的時候，隨機<g>生成</g>一個充能球。"
       },
       "energy": 1,
       "starCost": null,
       "upgrade": {
-        "keywords": [
-          "Innate"
-        ]
+        "energy": "-1"
       },
       "builds": [
         {
@@ -9220,7 +9286,7 @@
           "name": "狀態牌引擎",
           "tier": "C",
           "role": "core",
-          "url": "builds.html#build-defect-status-engine",
+          "url": "build.html#build-defect-status-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
         }
       ],
@@ -9260,7 +9326,7 @@
           "name": "冰霜流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-defect-frost-focus-orbs",
+          "url": "build.html#build-defect-frost-focus-orbs",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
         }
       ],
@@ -9300,7 +9366,7 @@
           "name": "狀態牌引擎",
           "tier": "C",
           "role": "core",
-          "url": "builds.html#build-defect-status-engine",
+          "url": "build.html#build-defect-status-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
         }
       ],
@@ -9340,7 +9406,7 @@
           "name": "閃電能力引擎",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-lightning-power-engine",
+          "url": "build.html#build-defect-lightning-power-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
         }
       ],
@@ -9407,7 +9473,7 @@
           "name": "0 費 Claw 流",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-defect-claw-zero-cost",
+          "url": "build.html#build-defect-claw-zero-cost",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
         }
       ],
@@ -9447,7 +9513,7 @@
           "name": "黑暗球爆發",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-dark-orb-evoke-burst",
+          "url": "build.html#build-defect-dark-orb-evoke-burst",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
         }
       ],
@@ -9487,7 +9553,7 @@
           "name": "閃電能力引擎",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-defect-lightning-power-engine",
+          "url": "build.html#build-defect-lightning-power-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
         }
       ],
@@ -9527,7 +9593,7 @@
           "name": "狀態牌引擎",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-defect-status-engine",
+          "url": "build.html#build-defect-status-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-status-engine"
         }
       ],
@@ -9569,7 +9635,7 @@
           "name": "黑暗球爆發",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-dark-orb-evoke-burst",
+          "url": "build.html#build-defect-dark-orb-evoke-burst",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
         }
       ],
@@ -9609,7 +9675,7 @@
           "name": "0 費 Claw 流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-defect-claw-zero-cost",
+          "url": "build.html#build-defect-claw-zero-cost",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
         }
       ],
@@ -9676,7 +9742,7 @@
           "name": "黑暗球爆發",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-defect-dark-orb-evoke-burst",
+          "url": "build.html#build-defect-dark-orb-evoke-burst",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
         }
       ],
@@ -9747,7 +9813,7 @@
           "name": "冰霜流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-defect-frost-focus-orbs",
+          "url": "build.html#build-defect-frost-focus-orbs",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
         },
         {
@@ -9757,7 +9823,7 @@
           "name": "閃電能力引擎",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-lightning-power-engine",
+          "url": "build.html#build-defect-lightning-power-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-lightning-power-engine"
         }
       ],
@@ -9781,13 +9847,13 @@
         "upgraded": "assets/cards/images/table/upgraded/hyperbeam.webp"
       },
       "effect": {
-        "base": "對所有敵人造成28點傷害。\n失去3點<g>集中</g>。",
-        "upgraded": "對所有敵人造成36點傷害。\n失去3點<g>集中</g>。"
+        "base": "對所有敵人造成24點傷害。\n本回合失去3點<g>集中</g>。",
+        "upgraded": "對所有敵人造成30點傷害。\n本回合失去3點<g>集中</g>。"
       },
       "energy": 2,
       "starCost": null,
       "upgrade": {
-        "damage": "+8"
+        "damage": "+6"
       },
       "builds": [],
       "url": "https://slaythespire2.net/zh-TW/card/hyperbeam"
@@ -9841,8 +9907,8 @@
         "upgraded": "assets/cards/images/table/upgraded/biased-cognition.webp"
       },
       "effect": {
-        "base": "獲得4點<g>集中</g>。\n在你的回合開始時，失去1點<g>集中</g>。",
-        "upgraded": "獲得5點<g>集中</g>。\n在你的回合開始時，失去1點<g>集中</g>。"
+        "base": "獲得5點<g>集中</g>。\n在你的回合開始時，失去1點<g>集中</g>。",
+        "upgraded": "獲得6點<g>集中</g>。\n在你的回合開始時，失去1點<g>集中</g>。"
       },
       "energy": 1,
       "starCost": null,
@@ -9886,7 +9952,7 @@
           "name": "冰霜流",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-defect-frost-focus-orbs",
+          "url": "build.html#build-defect-frost-focus-orbs",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-frost-focus-orbs"
         },
         {
@@ -9896,7 +9962,7 @@
           "name": "黑暗球爆發",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-defect-dark-orb-evoke-burst",
+          "url": "build.html#build-defect-dark-orb-evoke-burst",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-dark-orb-evoke-burst"
         }
       ],
@@ -10081,7 +10147,7 @@
           "name": "輝星引擎",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-regent-star-engine",
+          "url": "build.html#build-regent-star-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
         },
         {
@@ -10091,7 +10157,7 @@
           "name": "星位序列循環",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-regent-alignment-loop",
+          "url": "build.html#build-regent-alignment-loop",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
         },
         {
@@ -10101,7 +10167,7 @@
           "name": "虛空形態流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-regent-void-form",
+          "url": "build.html#build-regent-void-form",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-void-form"
         }
       ],
@@ -10170,7 +10236,7 @@
           "name": "星位序列循環",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-regent-alignment-loop",
+          "url": "build.html#build-regent-alignment-loop",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
         }
       ],
@@ -10210,7 +10276,7 @@
           "name": "輝星引擎",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-regent-star-engine",
+          "url": "build.html#build-regent-star-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
         }
       ],
@@ -10234,8 +10300,8 @@
         "upgraded": "assets/cards/images/table/upgraded/collision-course.webp"
       },
       "effect": {
-        "base": "造成11點傷害。\n將一張<g>碎屑</g>添加至你的<g>手牌</g>。",
-        "upgraded": "造成15點傷害。\n將一張<g>碎屑</g>添加至你的<g>手牌</g>。"
+        "base": "造成10點傷害。\n將一張<g>碎屑</g>添加至你的<g>手牌</g>。",
+        "upgraded": "造成14點傷害。\n將一張<g>碎屑</g>添加至你的<g>手牌</g>。"
       },
       "energy": 0,
       "starCost": null,
@@ -10279,7 +10345,7 @@
           "name": "輝星引擎",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-regent-star-engine",
+          "url": "build.html#build-regent-star-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
         }
       ],
@@ -10319,7 +10385,7 @@
           "name": "輝星引擎",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-regent-star-engine",
+          "url": "build.html#build-regent-star-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
         }
       ],
@@ -10343,8 +10409,8 @@
         "upgraded": "assets/cards/images/table/upgraded/refine-blade.webp"
       },
       "effect": {
-        "base": "<g>鑄造</g>9。\n在下個回合獲得<e>1</e>。",
-        "upgraded": "<g>鑄造</g>13。\n在下個回合獲得<e>1</e>。"
+        "base": "<g>鑄造</g>8。\n在下個回合獲得<e>1</e>。",
+        "upgraded": "<g>鑄造</g>12。\n在下個回合獲得<e>1</e>。"
       },
       "energy": 1,
       "starCost": null,
@@ -10359,7 +10425,7 @@
           "name": "鑄造流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-regent-sovereign-blade-forge",
+          "url": "build.html#build-regent-sovereign-blade-forge",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
         }
       ],
@@ -10412,8 +10478,8 @@
         "upgraded": "assets/cards/images/table/upgraded/crush-under.webp"
       },
       "effect": {
-        "base": "對所有敵人造成7點傷害。所有敵人在本回合失去1點<g>力量</g>。",
-        "upgraded": "對所有敵人造成8點傷害。所有敵人在本回合失去2點<g>力量</g>。"
+        "base": "對所有敵人造成8點傷害。所有敵人在本回合失去1點<g>力量</g>。",
+        "upgraded": "對所有敵人造成9點傷害。所有敵人在本回合失去2點<g>力量</g>。"
       },
       "energy": 1,
       "starCost": null,
@@ -10458,6 +10524,9 @@
       "id": "GUIDING_STAR",
       "name": "Guiding Star",
       "nameZh": "引導之星",
+      "aliases": [
+        "引路星"
+      ],
       "category": "Regent",
       "type": "Attack",
       "rarity": "Common",
@@ -10472,11 +10541,11 @@
         "upgraded": "assets/cards/images/table/upgraded/guiding-star.webp"
       },
       "effect": {
-        "base": "造成12點傷害。\n抽2張牌。",
-        "upgraded": "造成13點傷害。\n抽3張牌。"
+        "base": "造成12點傷害。\n下回合，抽2張牌。",
+        "upgraded": "造成13點傷害。\n下回合，抽3張牌。"
       },
       "energy": 1,
-      "starCost": 2,
+      "starCost": 1,
       "upgrade": {
         "damage": "+1",
         "cards": "+1"
@@ -10548,6 +10617,9 @@
       "id": "SPOILS_OF_BATTLE",
       "name": "Spoils of Battle",
       "nameZh": "戰利品",
+      "aliases": [
+        "征戰所得"
+      ],
       "category": "Regent",
       "type": "Skill",
       "rarity": "Common",
@@ -10562,8 +10634,8 @@
         "upgraded": "assets/cards/images/table/upgraded/spoils-of-battle.webp"
       },
       "effect": {
-        "base": "<g>鑄造</g>5。\n抽2張牌。",
-        "upgraded": "<g>鑄造</g>8。\n抽2張牌。"
+        "base": "<g>鑄造</g>6。\n抽2張牌。",
+        "upgraded": "<g>鑄造</g>9。\n抽2張牌。"
       },
       "energy": 1,
       "starCost": null,
@@ -10578,7 +10650,7 @@
           "name": "鑄造流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-regent-sovereign-blade-forge",
+          "url": "build.html#build-regent-sovereign-blade-forge",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
         }
       ],
@@ -10648,7 +10720,7 @@
           "name": "輝星引擎",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-regent-star-engine",
+          "url": "build.html#build-regent-star-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
         }
       ],
@@ -10689,7 +10761,7 @@
           "name": "鑄造流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-regent-sovereign-blade-forge",
+          "url": "build.html#build-regent-sovereign-blade-forge",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
         }
       ],
@@ -10759,7 +10831,7 @@
           "name": "鑄造流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-regent-sovereign-blade-forge",
+          "url": "build.html#build-regent-sovereign-blade-forge",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
         },
         {
@@ -10769,7 +10841,7 @@
           "name": "虛空形態流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-regent-void-form",
+          "url": "build.html#build-regent-void-form",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-void-form"
         }
       ],
@@ -10807,7 +10879,7 @@
           "name": "星位序列循環",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-regent-alignment-loop",
+          "url": "build.html#build-regent-alignment-loop",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
         }
       ],
@@ -10847,7 +10919,7 @@
           "name": "輝星引擎",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-regent-star-engine",
+          "url": "build.html#build-regent-star-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
         },
         {
@@ -10857,7 +10929,7 @@
           "name": "星位序列循環",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-regent-alignment-loop",
+          "url": "build.html#build-regent-alignment-loop",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
         }
       ],
@@ -10897,7 +10969,7 @@
           "name": "虛空形態流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-regent-void-form",
+          "url": "build.html#build-regent-void-form",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-void-form"
         }
       ],
@@ -10907,6 +10979,9 @@
       "id": "PILLAR_OF_CREATION",
       "name": "Pillar of Creation",
       "nameZh": "創世之柱",
+      "aliases": [
+        "創造之柱"
+      ],
       "category": "Regent",
       "type": "Power",
       "rarity": "Uncommon",
@@ -10921,8 +10996,8 @@
         "upgraded": "assets/cards/images/table/upgraded/pillar-of-creation.webp"
       },
       "effect": {
-        "base": "每當你生成一張卡牌, 就獲得3點<g>格擋</g>。",
-        "upgraded": "每當你生成一張卡牌, 就獲得4點<g>格擋</g>。"
+        "base": "每當你生成一張卡牌, 就獲得2點<g>格擋</g>。",
+        "upgraded": "每當你生成一張卡牌, 就獲得3點<g>格擋</g>。"
       },
       "energy": 1,
       "starCost": null,
@@ -10937,7 +11012,7 @@
           "name": "造牌流",
           "tier": "C",
           "role": "core",
-          "url": "builds.html#build-regent-card-creation",
+          "url": "build.html#build-regent-card-creation",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
         }
       ],
@@ -10977,7 +11052,7 @@
           "name": "輝星引擎",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-regent-star-engine",
+          "url": "build.html#build-regent-star-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
         },
         {
@@ -10987,7 +11062,7 @@
           "name": "虛空形態流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-regent-void-form",
+          "url": "build.html#build-regent-void-form",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-void-form"
         }
       ],
@@ -11029,7 +11104,7 @@
           "name": "輝星引擎",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-regent-star-engine",
+          "url": "build.html#build-regent-star-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
         }
       ],
@@ -11069,7 +11144,7 @@
           "name": "造牌流",
           "tier": "C",
           "role": "core",
-          "url": "builds.html#build-regent-card-creation",
+          "url": "build.html#build-regent-card-creation",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
         }
       ],
@@ -11167,7 +11242,7 @@
           "name": "造牌流",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-regent-card-creation",
+          "url": "build.html#build-regent-card-creation",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
         }
       ],
@@ -11236,7 +11311,7 @@
           "name": "輝星引擎",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-regent-star-engine",
+          "url": "build.html#build-regent-star-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
         },
         {
@@ -11246,7 +11321,7 @@
           "name": "星位序列循環",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-regent-alignment-loop",
+          "url": "build.html#build-regent-alignment-loop",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
         }
       ],
@@ -11284,7 +11359,7 @@
           "name": "造牌流",
           "tier": "C",
           "role": "core",
-          "url": "builds.html#build-regent-card-creation",
+          "url": "build.html#build-regent-card-creation",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
         }
       ],
@@ -11324,7 +11399,7 @@
           "name": "輝星引擎",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-regent-star-engine",
+          "url": "build.html#build-regent-star-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
         },
         {
@@ -11334,7 +11409,7 @@
           "name": "星位序列循環",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-regent-alignment-loop",
+          "url": "build.html#build-regent-alignment-loop",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
         }
       ],
@@ -11344,6 +11419,9 @@
       "id": "ALIGNMENT",
       "name": "Alignment",
       "nameZh": "星位序列",
+      "aliases": [
+        "星位連珠"
+      ],
       "category": "Regent",
       "type": "Skill",
       "rarity": "Uncommon",
@@ -11362,7 +11440,7 @@
         "upgraded": "獲得<e>3</e>。"
       },
       "energy": 0,
-      "starCost": 3,
+      "starCost": 2,
       "upgrade": {
         "energygain": "+1"
       },
@@ -11374,7 +11452,7 @@
           "name": "星位序列循環",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-regent-alignment-loop",
+          "url": "build.html#build-regent-alignment-loop",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
         }
       ],
@@ -11414,7 +11492,7 @@
           "name": "輝星引擎",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-regent-star-engine",
+          "url": "build.html#build-regent-star-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
         }
       ],
@@ -11542,7 +11620,7 @@
           "name": "輝星引擎",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-regent-star-engine",
+          "url": "build.html#build-regent-star-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
         }
       ],
@@ -11582,7 +11660,7 @@
           "name": "鑄造流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-regent-sovereign-blade-forge",
+          "url": "build.html#build-regent-sovereign-blade-forge",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
         }
       ],
@@ -11622,7 +11700,7 @@
           "name": "造牌流",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-regent-card-creation",
+          "url": "build.html#build-regent-card-creation",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
         }
       ],
@@ -11662,7 +11740,7 @@
           "name": "鑄造流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-regent-sovereign-blade-forge",
+          "url": "build.html#build-regent-sovereign-blade-forge",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
         }
       ],
@@ -11672,6 +11750,9 @@
       "id": "DEVASTATE",
       "name": "Devastate",
       "nameZh": "葬送",
+      "aliases": [
+        "摧毀"
+      ],
       "category": "Regent",
       "type": "Attack",
       "rarity": "Uncommon",
@@ -11686,8 +11767,8 @@
         "upgraded": "assets/cards/images/table/upgraded/devastate.webp"
       },
       "effect": {
-        "base": "造成30點傷害。",
-        "upgraded": "造成40點傷害。"
+        "base": "造成35點傷害。",
+        "upgraded": "造成45點傷害。"
       },
       "energy": 1,
       "starCost": 4,
@@ -11731,7 +11812,7 @@
           "name": "鑄造流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-regent-sovereign-blade-forge",
+          "url": "build.html#build-regent-sovereign-blade-forge",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
         }
       ],
@@ -11917,7 +11998,7 @@
           "name": "星位序列循環",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-regent-alignment-loop",
+          "url": "build.html#build-regent-alignment-loop",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
         }
       ],
@@ -11927,6 +12008,9 @@
       "id": "TERRAFORMING",
       "name": "Terraforming",
       "nameZh": "地形改造",
+      "aliases": [
+        "地貌改造"
+      ],
       "category": "Regent",
       "type": "Skill",
       "rarity": "Uncommon",
@@ -11941,13 +12025,13 @@
         "upgraded": "assets/cards/images/table/upgraded/terraforming.webp"
       },
       "effect": {
-        "base": "獲得6點<g>活力</g>。",
-        "upgraded": "獲得8點<g>活力</g>。"
+        "base": "獲得7點<g>活力</g>。",
+        "upgraded": "獲得10點<g>活力</g>。"
       },
       "energy": 1,
       "starCost": null,
       "upgrade": {
-        "vigorpower": "+2"
+        "vigorpower": "+3"
       },
       "builds": [],
       "url": "https://slaythespire2.net/zh-TW/card/terraforming"
@@ -11987,6 +12071,9 @@
       "id": "RESONANCE",
       "name": "Resonance",
       "nameZh": "共鳴",
+      "aliases": [
+        "共振"
+      ],
       "category": "Regent",
       "type": "Skill",
       "rarity": "Uncommon",
@@ -12005,7 +12092,7 @@
         "upgraded": "獲得2點<g>力量</g>。所有敵人失去1點<g>力量</g>。"
       },
       "energy": 1,
-      "starCost": 3,
+      "starCost": 2,
       "upgrade": {
         "strengthpower": "+1"
       },
@@ -12075,7 +12162,7 @@
           "name": "輝星引擎",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-regent-star-engine",
+          "url": "build.html#build-regent-star-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
         },
         {
@@ -12085,7 +12172,7 @@
           "name": "星位序列循環",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-regent-alignment-loop",
+          "url": "build.html#build-regent-alignment-loop",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
         },
         {
@@ -12095,7 +12182,7 @@
           "name": "鑄造流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-regent-sovereign-blade-forge",
+          "url": "build.html#build-regent-sovereign-blade-forge",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
         }
       ],
@@ -12135,7 +12222,7 @@
           "name": "輝星引擎",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-regent-star-engine",
+          "url": "build.html#build-regent-star-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
         },
         {
@@ -12145,7 +12232,7 @@
           "name": "虛空形態流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-regent-void-form",
+          "url": "build.html#build-regent-void-form",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-void-form"
         }
       ],
@@ -12185,7 +12272,7 @@
           "name": "造牌流",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-regent-card-creation",
+          "url": "build.html#build-regent-card-creation",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
         }
       ],
@@ -12195,6 +12282,7 @@
       "id": "GUARDS",
       "name": "GUARDS!!!",
       "nameZh": "護駕！！！",
+      "notes": "衍生牌手下犧牲（僕從捐軀）：獲得7點格擋，升級後獲得10點格擋。",
       "category": "Regent",
       "type": "Skill",
       "rarity": "Rare",
@@ -12223,7 +12311,7 @@
           "name": "星位序列循環",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-regent-alignment-loop",
+          "url": "build.html#build-regent-alignment-loop",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
         }
       ],
@@ -12265,7 +12353,7 @@
           "name": "虛空形態流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-regent-void-form",
+          "url": "build.html#build-regent-void-form",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-void-form"
         }
       ],
@@ -12305,7 +12393,7 @@
           "name": "造牌流",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-regent-card-creation",
+          "url": "build.html#build-regent-card-creation",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
         }
       ],
@@ -12433,7 +12521,7 @@
           "name": "鑄造流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-regent-sovereign-blade-forge",
+          "url": "build.html#build-regent-sovereign-blade-forge",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
         }
       ],
@@ -12473,7 +12561,7 @@
           "name": "鑄造流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-regent-sovereign-blade-forge",
+          "url": "build.html#build-regent-sovereign-blade-forge",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
         }
       ],
@@ -12515,7 +12603,7 @@
           "name": "星位序列循環",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-regent-alignment-loop",
+          "url": "build.html#build-regent-alignment-loop",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
         }
       ],
@@ -12584,7 +12672,7 @@
           "name": "星位序列循環",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-regent-alignment-loop",
+          "url": "build.html#build-regent-alignment-loop",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-alignment-loop"
         }
       ],
@@ -12653,7 +12741,7 @@
           "name": "造牌流",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-regent-card-creation",
+          "url": "build.html#build-regent-card-creation",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
         }
       ],
@@ -12724,7 +12812,7 @@
           "name": "造牌流",
           "tier": "C",
           "role": "core",
-          "url": "builds.html#build-regent-card-creation",
+          "url": "build.html#build-regent-card-creation",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-card-creation"
         }
       ],
@@ -12766,7 +12854,7 @@
           "name": "鑄造流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-regent-sovereign-blade-forge",
+          "url": "build.html#build-regent-sovereign-blade-forge",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
         }
       ],
@@ -12835,7 +12923,7 @@
           "name": "輝星引擎",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-regent-star-engine",
+          "url": "build.html#build-regent-star-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
         },
         {
@@ -12845,7 +12933,7 @@
           "name": "虛空形態流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-regent-void-form",
+          "url": "build.html#build-regent-void-form",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-void-form"
         }
       ],
@@ -12914,7 +13002,7 @@
           "name": "鑄造流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-regent-sovereign-blade-forge",
+          "url": "build.html#build-regent-sovereign-blade-forge",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-sovereign-blade-forge"
         }
       ],
@@ -12954,7 +13042,7 @@
           "name": "輝星引擎",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-regent-star-engine",
+          "url": "build.html#build-regent-star-engine",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-star-engine"
         },
         {
@@ -12964,7 +13052,7 @@
           "name": "虛空形態流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-regent-void-form",
+          "url": "build.html#build-regent-void-form",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/regent#build-void-form"
         }
       ],
@@ -13236,7 +13324,7 @@
           "name": "災厄處決",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-doom-execute",
+          "url": "build.html#build-necrobinder-doom-execute",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
         },
         {
@@ -13246,7 +13334,7 @@
           "name": "虛無流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-necrobinder-ethereal",
+          "url": "build.html#build-necrobinder-ethereal",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
         }
       ],
@@ -13286,7 +13374,7 @@
           "name": "奧斯提召喚",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-osty",
+          "url": "build.html#build-necrobinder-osty",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
         }
       ],
@@ -13326,7 +13414,7 @@
           "name": "靈魂循環",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-necrobinder-soul-cycle",
+          "url": "build.html#build-necrobinder-soul-cycle",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
         }
       ],
@@ -13396,7 +13484,7 @@
           "name": "奧斯提召喚",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-osty",
+          "url": "build.html#build-necrobinder-osty",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
         }
       ],
@@ -13437,7 +13525,7 @@
           "name": "災厄處決",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-necrobinder-doom-execute",
+          "url": "build.html#build-necrobinder-doom-execute",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
         }
       ],
@@ -13478,7 +13566,7 @@
           "name": "奧斯提召喚",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-osty",
+          "url": "build.html#build-necrobinder-osty",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
         }
       ],
@@ -13576,7 +13664,7 @@
           "name": "災厄處決",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-doom-execute",
+          "url": "build.html#build-necrobinder-doom-execute",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
         }
       ],
@@ -13646,7 +13734,7 @@
           "name": "奧斯提召喚",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-necrobinder-osty",
+          "url": "build.html#build-necrobinder-osty",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
         }
       ],
@@ -13686,7 +13774,7 @@
           "name": "奧斯提召喚",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-osty",
+          "url": "build.html#build-necrobinder-osty",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
         }
       ],
@@ -13710,13 +13798,13 @@
         "upgraded": "assets/cards/images/table/upgraded/reave.webp"
       },
       "effect": {
-        "base": "造成9點傷害。\n將一張<g>靈魂</g>加入你的<g>抽牌堆</g>。",
-        "upgraded": "造成11點傷害。\n將一張<g>靈魂+</g>加入你的<g>抽牌堆</g>。"
+        "base": "造成10點傷害。\n將一張<g>靈魂</g>加入你的<g>抽牌堆</g>。",
+        "upgraded": "造成13點傷害。\n將一張<g>靈魂+</g>加入你的<g>抽牌堆</g>。"
       },
       "energy": 1,
       "starCost": null,
       "upgrade": {
-        "damage": "+2"
+        "damage": "+3"
       },
       "builds": [
         {
@@ -13726,7 +13814,7 @@
           "name": "靈魂循環",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-necrobinder-soul-cycle",
+          "url": "build.html#build-necrobinder-soul-cycle",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
         }
       ],
@@ -13767,7 +13855,7 @@
           "name": "災厄處決",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-doom-execute",
+          "url": "build.html#build-necrobinder-doom-execute",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
         }
       ],
@@ -13807,7 +13895,7 @@
           "name": "虛無流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-necrobinder-ethereal",
+          "url": "build.html#build-necrobinder-ethereal",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
         }
       ],
@@ -13847,7 +13935,7 @@
           "name": "奧斯提召喚",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-osty",
+          "url": "build.html#build-necrobinder-osty",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
         }
       ],
@@ -13919,7 +14007,7 @@
           "name": "死神重擊",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-necrobinder-reaper-big-hit",
+          "url": "build.html#build-necrobinder-reaper-big-hit",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
         }
       ],
@@ -13962,7 +14050,7 @@
           "name": "虛無流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-necrobinder-ethereal",
+          "url": "build.html#build-necrobinder-ethereal",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
         }
       ],
@@ -14033,7 +14121,7 @@
           "name": "靈魂循環",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-necrobinder-soul-cycle",
+          "url": "build.html#build-necrobinder-soul-cycle",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
         }
       ],
@@ -14102,7 +14190,7 @@
           "name": "災厄處決",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-necrobinder-doom-execute",
+          "url": "build.html#build-necrobinder-doom-execute",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
         }
       ],
@@ -14172,7 +14260,7 @@
           "name": "靈魂循環",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-necrobinder-soul-cycle",
+          "url": "build.html#build-necrobinder-soul-cycle",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
         }
       ],
@@ -14212,7 +14300,7 @@
           "name": "災厄處決",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-doom-execute",
+          "url": "build.html#build-necrobinder-doom-execute",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
         }
       ],
@@ -14281,7 +14369,7 @@
           "name": "死神重擊",
           "tier": "C",
           "role": "core",
-          "url": "builds.html#build-necrobinder-reaper-big-hit",
+          "url": "build.html#build-necrobinder-reaper-big-hit",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
         }
       ],
@@ -14321,7 +14409,7 @@
           "name": "虛無流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-necrobinder-ethereal",
+          "url": "build.html#build-necrobinder-ethereal",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
         }
       ],
@@ -14361,7 +14449,7 @@
           "name": "死神重擊",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-necrobinder-reaper-big-hit",
+          "url": "build.html#build-necrobinder-reaper-big-hit",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
         }
       ],
@@ -14401,7 +14489,7 @@
           "name": "災厄處決",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-necrobinder-doom-execute",
+          "url": "build.html#build-necrobinder-doom-execute",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
         }
       ],
@@ -14441,7 +14529,7 @@
           "name": "靈魂循環",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-necrobinder-soul-cycle",
+          "url": "build.html#build-necrobinder-soul-cycle",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
         },
         {
@@ -14451,7 +14539,7 @@
           "name": "死神重擊",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-necrobinder-reaper-big-hit",
+          "url": "build.html#build-necrobinder-reaper-big-hit",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
         }
       ],
@@ -14491,7 +14579,7 @@
           "name": "奧斯提召喚",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-necrobinder-osty",
+          "url": "build.html#build-necrobinder-osty",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
         }
       ],
@@ -14531,7 +14619,7 @@
           "name": "奧斯提召喚",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-necrobinder-osty",
+          "url": "build.html#build-necrobinder-osty",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
         }
       ],
@@ -14571,7 +14659,7 @@
           "name": "災厄處決",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-necrobinder-doom-execute",
+          "url": "build.html#build-necrobinder-doom-execute",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
         }
       ],
@@ -14611,7 +14699,7 @@
           "name": "災厄處決",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-doom-execute",
+          "url": "build.html#build-necrobinder-doom-execute",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
         }
       ],
@@ -14652,7 +14740,7 @@
           "name": "死神重擊",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-necrobinder-reaper-big-hit",
+          "url": "build.html#build-necrobinder-reaper-big-hit",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
         }
       ],
@@ -14694,7 +14782,7 @@
           "name": "虛無流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-necrobinder-ethereal",
+          "url": "build.html#build-necrobinder-ethereal",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
         }
       ],
@@ -14704,6 +14792,9 @@
       "id": "HAUNT",
       "name": "Haunt",
       "nameZh": "糾纏",
+      "aliases": [
+        "作祟"
+      ],
       "category": "Necrobinder",
       "type": "Power",
       "rarity": "Uncommon",
@@ -14718,8 +14809,8 @@
         "upgraded": "assets/cards/images/table/upgraded/haunt.webp"
       },
       "effect": {
-        "base": "每當你打出一張<g>靈魂</g>時，隨機一名敵人失去6點生命。",
-        "upgraded": "每當你打出一張<g>靈魂</g>時，隨機一名敵人失去8點生命。"
+        "base": "每當你打出一張<g>靈魂</g>時，隨機一名敵人失去7點生命。",
+        "upgraded": "每當你打出一張<g>靈魂</g>時，隨機一名敵人失去9點生命。"
       },
       "energy": 1,
       "starCost": null,
@@ -14734,7 +14825,7 @@
           "name": "靈魂循環",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-necrobinder-soul-cycle",
+          "url": "build.html#build-necrobinder-soul-cycle",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
         }
       ],
@@ -14833,7 +14924,7 @@
           "name": "災厄處決",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-necrobinder-doom-execute",
+          "url": "build.html#build-necrobinder-doom-execute",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
         }
       ],
@@ -14873,7 +14964,7 @@
           "name": "虛無流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-necrobinder-ethereal",
+          "url": "build.html#build-necrobinder-ethereal",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
         }
       ],
@@ -14883,6 +14974,9 @@
       "id": "SHROUD",
       "name": "Shroud",
       "nameZh": "厄運之衣",
+      "aliases": [
+        "暗幕"
+      ],
       "category": "Necrobinder",
       "type": "Power",
       "rarity": "Uncommon",
@@ -14897,8 +14991,8 @@
         "upgraded": "assets/cards/images/table/upgraded/shroud.webp"
       },
       "effect": {
-        "base": "每當你給予<g>災厄</g>時，獲得2點<g>格擋</g>。",
-        "upgraded": "每當你給予<g>災厄</g>時，獲得3點<g>格擋</g>。"
+        "base": "每當你給予<g>災厄</g>時，獲得3點<g>格擋</g>。",
+        "upgraded": "每當你給予<g>災厄</g>時，獲得4點<g>格擋</g>。"
       },
       "energy": 1,
       "starCost": null,
@@ -14913,7 +15007,7 @@
           "name": "災厄處決",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-doom-execute",
+          "url": "build.html#build-necrobinder-doom-execute",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
         }
       ],
@@ -14954,7 +15048,7 @@
           "name": "奧斯提召喚",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-osty",
+          "url": "build.html#build-necrobinder-osty",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
         }
       ],
@@ -15024,7 +15118,7 @@
           "name": "靈魂循環",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-necrobinder-soul-cycle",
+          "url": "build.html#build-necrobinder-soul-cycle",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
         }
       ],
@@ -15093,7 +15187,7 @@
           "name": "奧斯提召喚",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-necrobinder-osty",
+          "url": "build.html#build-necrobinder-osty",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
         }
       ],
@@ -15133,7 +15227,7 @@
           "name": "奧斯提召喚",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-osty",
+          "url": "build.html#build-necrobinder-osty",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
         }
       ],
@@ -15173,7 +15267,7 @@
           "name": "靈魂循環",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-necrobinder-soul-cycle",
+          "url": "build.html#build-necrobinder-soul-cycle",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
         }
       ],
@@ -15243,7 +15337,7 @@
           "name": "虛無流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-necrobinder-ethereal",
+          "url": "build.html#build-necrobinder-ethereal",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
         }
       ],
@@ -15341,7 +15435,7 @@
           "name": "虛無流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-necrobinder-ethereal",
+          "url": "build.html#build-necrobinder-ethereal",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
         }
       ],
@@ -15383,7 +15477,7 @@
           "name": "虛無流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-necrobinder-ethereal",
+          "url": "build.html#build-necrobinder-ethereal",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
         }
       ],
@@ -15481,7 +15575,7 @@
           "name": "奧斯提召喚",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-osty",
+          "url": "build.html#build-necrobinder-osty",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
         }
       ],
@@ -15523,7 +15617,7 @@
           "name": "死神重擊",
           "tier": "C",
           "role": "core",
-          "url": "builds.html#build-necrobinder-reaper-big-hit",
+          "url": "build.html#build-necrobinder-reaper-big-hit",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
         }
       ],
@@ -15592,7 +15686,7 @@
           "name": "虛無流",
           "tier": "B",
           "role": "core",
-          "url": "builds.html#build-necrobinder-ethereal",
+          "url": "build.html#build-necrobinder-ethereal",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
         }
       ],
@@ -15632,7 +15726,7 @@
           "name": "災厄處決",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-doom-execute",
+          "url": "build.html#build-necrobinder-doom-execute",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
         }
       ],
@@ -15672,7 +15766,7 @@
           "name": "死神重擊",
           "tier": "C",
           "role": "core",
-          "url": "builds.html#build-necrobinder-reaper-big-hit",
+          "url": "build.html#build-necrobinder-reaper-big-hit",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
         }
       ],
@@ -15712,7 +15806,7 @@
           "name": "死神重擊",
           "tier": "C",
           "role": "support",
-          "url": "builds.html#build-necrobinder-reaper-big-hit",
+          "url": "build.html#build-necrobinder-reaper-big-hit",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
         }
       ],
@@ -15752,7 +15846,7 @@
           "name": "靈魂循環",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-necrobinder-soul-cycle",
+          "url": "build.html#build-necrobinder-soul-cycle",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
         }
       ],
@@ -15762,6 +15856,11 @@
       "id": "EIDOLON",
       "name": "Eidolon",
       "nameZh": "幻景",
+      "aliases": [
+        "靈影"
+      ],
+      "notes": "不會打出具有「無法打出」的牌；無法於戰鬥中途生成。",
+      "canGenerateInCombat": false,
       "category": "Necrobinder",
       "type": "Skill",
       "rarity": "Rare",
@@ -15776,8 +15875,8 @@
         "upgraded": "assets/cards/images/table/upgraded/eidolon.webp"
       },
       "effect": {
-        "base": "<g>消耗</g>所有<g>手牌</g>。\n如果有9張牌被<g>消耗</g>，則獲得1層<g>無實體</g>。",
-        "upgraded": "<g>消耗</g>所有<g>手牌</g>。\n如果有9張牌被<g>消耗</g>，則獲得1層<g>無實體</g>。"
+        "base": "打出你<g>消耗牌堆</g>中所有<g>虛無</g>牌。\n<g>消耗</g>。",
+        "upgraded": "打出你<g>消耗牌堆</g>中所有<g>虛無</g>牌。\n<g>消耗</g>。"
       },
       "energy": 2,
       "starCost": null,
@@ -15792,7 +15891,7 @@
           "name": "虛無流",
           "tier": "B",
           "role": "support",
-          "url": "builds.html#build-necrobinder-ethereal",
+          "url": "build.html#build-necrobinder-ethereal",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-ethereal"
         }
       ],
@@ -15832,7 +15931,7 @@
           "name": "災厄處決",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-doom-execute",
+          "url": "build.html#build-necrobinder-doom-execute",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
         }
       ],
@@ -15885,13 +15984,13 @@
         "upgraded": "assets/cards/images/table/upgraded/the-scythe.webp"
       },
       "effect": {
-        "base": "造成13點傷害。\n這張牌在本局遊戲中的傷害永久性增加4。\n<g>消耗</g>。",
-        "upgraded": "造成13點傷害。\n這張牌在本局遊戲中的傷害永久性增加5。\n<g>消耗</g>。"
+        "base": "造成13點傷害。\n這張牌在本局遊戲中的傷害永久性增加5。\n<g>消耗</g>。",
+        "upgraded": "造成13點傷害。\n這張牌在本局遊戲中的傷害永久性增加7。\n<g>消耗</g>。"
       },
       "energy": 2,
       "starCost": null,
       "upgrade": {
-        "increase": "+1"
+        "increase": "+2"
       },
       "builds": [
         {
@@ -15901,7 +16000,7 @@
           "name": "死神重擊",
           "tier": "C",
           "role": "core",
-          "url": "builds.html#build-necrobinder-reaper-big-hit",
+          "url": "build.html#build-necrobinder-reaper-big-hit",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-reaper-big-hit"
         }
       ],
@@ -15925,8 +16024,8 @@
         "upgraded": "assets/cards/images/table/upgraded/times-up.webp"
       },
       "effect": {
-        "base": "造成等量於該敵人身上的<g>災厄</g>層數的傷害。\n<g>消耗</g>。",
-        "upgraded": "<g>保留</g>。\n造成等量於該敵人身上的<g>災厄</g>層數的傷害。\n<g>消耗</g>。"
+        "base": "造成等量於該敵人身上的<g>災厄</g>層數的傷害。",
+        "upgraded": "<g>保留</g>。\n造成等量於該敵人身上的<g>災厄</g>層數的傷害。"
       },
       "energy": 2,
       "starCost": null,
@@ -15943,7 +16042,7 @@
           "name": "災厄處決",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-doom-execute",
+          "url": "build.html#build-necrobinder-doom-execute",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-doom-execute"
         }
       ],
@@ -16014,7 +16113,7 @@
           "name": "靈魂循環",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-necrobinder-soul-cycle",
+          "url": "build.html#build-necrobinder-soul-cycle",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
         }
       ],
@@ -16086,7 +16185,7 @@
           "name": "奧斯提召喚",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-osty",
+          "url": "build.html#build-necrobinder-osty",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
         }
       ],
@@ -16110,8 +16209,8 @@
         "upgraded": "assets/cards/images/table/upgraded/sacrifice.webp"
       },
       "effect": {
-        "base": "<g>保留</g>。\n如果<g>奧斯提</g>存活，則他死去，然後你獲得等量於其雙倍最大生命值的<g>格擋</g>。",
-        "upgraded": "<g>保留</g>。\n如果<g>奧斯提</g>存活，則他死去，然後你獲得等量於其雙倍最大生命值的<g>格擋</g>。"
+        "base": "<g>保留</g>。\n如果<g>奧斯提</g>存活，則他死去，然後你獲得等量於其三倍最大生命值的<g>格擋</g>。",
+        "upgraded": "<g>保留</g>。\n如果<g>奧斯提</g>存活，則他死去，然後你獲得等量於其三倍最大生命值的<g>格擋</g>。"
       },
       "energy": 1,
       "starCost": null,
@@ -16126,7 +16225,7 @@
           "name": "奧斯提召喚",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-necrobinder-osty",
+          "url": "build.html#build-necrobinder-osty",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
         }
       ],
@@ -16166,7 +16265,7 @@
           "name": "靈魂循環",
           "tier": "S",
           "role": "support",
-          "url": "builds.html#build-necrobinder-soul-cycle",
+          "url": "build.html#build-necrobinder-soul-cycle",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
         }
       ],
@@ -16207,7 +16306,7 @@
           "name": "奧斯提召喚",
           "tier": "A",
           "role": "core",
-          "url": "builds.html#build-necrobinder-osty",
+          "url": "build.html#build-necrobinder-osty",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-osty"
         }
       ],
@@ -16231,13 +16330,13 @@
         "upgraded": "assets/cards/images/table/upgraded/soul-storm.webp"
       },
       "effect": {
-        "base": "造成9點傷害。\n你的<g>消耗牌堆</g>中每有一張<g>靈魂</g>，傷害增加2。",
-        "upgraded": "造成9點傷害。\n你的<g>消耗牌堆</g>中每有一張<g>靈魂</g>，傷害增加3。"
+        "base": "造成9點傷害。\n你的<g>消耗牌堆</g>中每有一張<g>靈魂</g>，傷害增加4。",
+        "upgraded": "造成9點傷害。\n你的<g>消耗牌堆</g>中每有一張<g>靈魂</g>，傷害增加6。"
       },
       "energy": 1,
       "starCost": null,
       "upgrade": {
-        "extradamage": "+1"
+        "extradamage": "+2"
       },
       "builds": [
         {
@@ -16247,7 +16346,7 @@
           "name": "靈魂循環",
           "tier": "S",
           "role": "core",
-          "url": "builds.html#build-necrobinder-soul-cycle",
+          "url": "build.html#build-necrobinder-soul-cycle",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/necrobinder#build-soul-cycle"
         }
       ],
@@ -16696,7 +16795,7 @@
           "name": "0 費 Claw 流",
           "tier": "A",
           "role": "support",
-          "url": "builds.html#build-defect-claw-zero-cost",
+          "url": "build.html#build-defect-claw-zero-cost",
           "sourceUrl": "https://slaythespire2.net/zh-TW/build/defect#build-claw-zero-cost"
         }
       ],
@@ -17171,6 +17270,38 @@
       "url": "https://slaythespire2.net/zh-TW/card/restlessness"
     },
     {
+      "id": "SALVO",
+      "name": "Salvo",
+      "nameZh": "箭雨",
+      "aliases": [
+        "齊射"
+      ],
+      "category": "Colorless",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "rarityZh": "罕見",
+      "tier": null,
+      "images": {
+        "base": "assets/cards/images/base/salvo.webp",
+        "upgraded": "assets/cards/images/upgraded/salvo.webp"
+      },
+      "tableImages": {
+        "base": "assets/cards/images/table/base/salvo.webp",
+        "upgraded": "assets/cards/images/table/upgraded/salvo.webp"
+      },
+      "effect": {
+        "base": "造成12點傷害。\n在本回合<g>保留</g>你的<g>手牌</g>。",
+        "upgraded": "造成16點傷害。\n在本回合<g>保留</g>你的<g>手牌</g>。"
+      },
+      "energy": 1,
+      "starCost": null,
+      "upgrade": {
+        "damage": "+4"
+      },
+      "builds": [],
+      "url": "https://slaythespire2.net/zh-TW/card/salvo"
+    },
+    {
       "id": "SEEKER_STRIKE",
       "name": "Seeker Strike",
       "nameZh": "探尋打擊",
@@ -17227,33 +17358,6 @@
       },
       "builds": [],
       "url": "https://slaythespire2.net/zh-TW/card/shockwave"
-    },
-    {
-      "id": "SPLASH",
-      "name": "Splash",
-      "nameZh": "飛濺",
-      "category": "Colorless",
-      "type": "Skill",
-      "rarity": "Uncommon",
-      "rarityZh": "罕見",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/splash.webp",
-        "upgraded": "assets/cards/images/upgraded/splash.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/splash.webp",
-        "upgraded": "assets/cards/images/table/upgraded/splash.webp"
-      },
-      "effect": {
-        "base": "從3張其他角色的攻擊牌中選擇1張加入你的<g>手牌</g>。這張牌在本回合免費打出。",
-        "upgraded": "從3張其他角色的<g>升級過的</g>攻擊牌中選擇1張加入你的<g>手牌</g>。這張牌在本回合免費打出。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/splash"
     },
     {
       "id": "STRATAGEM",
@@ -18027,6 +18131,9 @@
       "id": "REND",
       "name": "Rend",
       "nameZh": "撕碎",
+      "aliases": [
+        "撕扯破碎"
+      ],
       "category": "Colorless",
       "type": "Attack",
       "rarity": "Rare",
@@ -18041,14 +18148,14 @@
         "upgraded": "assets/cards/images/table/upgraded/rend.webp"
       },
       "effect": {
-        "base": "造成15點傷害。\n該名敵人身上每有一種負面效果，就額外造成5點傷害。",
-        "upgraded": "造成18點傷害。\n該名敵人身上每有一種負面效果，就額外造成8點傷害。"
+        "base": "造成10點傷害。\n該名敵人身上每有一種負面效果，就額外造成5點傷害。",
+        "upgraded": "造成12點傷害。\n該名敵人身上每有一種負面效果，就額外造成8點傷害。"
       },
-      "energy": 2,
+      "energy": 1,
       "starCost": null,
       "upgrade": {
         "extradamage": "+3",
-        "calculationbase": "+3"
+        "calculationbase": "+2"
       },
       "builds": [],
       "url": "https://slaythespire2.net/zh-TW/card/rend"
@@ -18081,35 +18188,6 @@
       },
       "builds": [],
       "url": "https://slaythespire2.net/zh-TW/card/rolling-boulder"
-    },
-    {
-      "id": "SALVO",
-      "name": "Salvo",
-      "nameZh": "箭雨",
-      "category": "Colorless",
-      "type": "Attack",
-      "rarity": "Rare",
-      "rarityZh": "稀有",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/salvo.webp",
-        "upgraded": "assets/cards/images/upgraded/salvo.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/salvo.webp",
-        "upgraded": "assets/cards/images/table/upgraded/salvo.webp"
-      },
-      "effect": {
-        "base": "造成12點傷害。\n在本回合<g>保留</g>你的<g>手牌</g>。",
-        "upgraded": "造成16點傷害。\n在本回合<g>保留</g>你的<g>手牌</g>。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "damage": "+4"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/salvo"
     },
     {
       "id": "SCRAWL",
@@ -18205,6 +18283,33 @@
       "url": "https://slaythespire2.net/zh-TW/card/secret-weapon"
     },
     {
+      "id": "SPLASH",
+      "name": "Splash",
+      "nameZh": "飛濺",
+      "category": "Colorless",
+      "type": "Skill",
+      "rarity": "Rare",
+      "rarityZh": "稀有",
+      "tier": null,
+      "images": {
+        "base": "assets/cards/images/base/splash.webp",
+        "upgraded": "assets/cards/images/upgraded/splash.webp"
+      },
+      "tableImages": {
+        "base": "assets/cards/images/table/base/splash.webp",
+        "upgraded": "assets/cards/images/table/upgraded/splash.webp"
+      },
+      "effect": {
+        "base": "從3張其他角色的攻擊牌中選擇1張加入你的<g>手牌</g>。這張牌在本回合免費打出。",
+        "upgraded": "從3張其他角色的<g>升級過的</g>攻擊牌中選擇1張加入你的<g>手牌</g>。這張牌在本回合免費打出。"
+      },
+      "energy": 1,
+      "starCost": null,
+      "upgrade": null,
+      "builds": [],
+      "url": "https://slaythespire2.net/zh-TW/card/splash"
+    },
+    {
       "id": "THE_GAMBIT",
       "name": "The Gambit",
       "nameZh": "孤注一擲",
@@ -18232,1326 +18337,6 @@
       },
       "builds": [],
       "url": "https://slaythespire2.net/zh-TW/card/the-gambit"
-    },
-    {
-      "id": "ASCENDERS_BANE",
-      "name": "Ascender's Bane",
-      "nameZh": "進階之災",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/ascenders-bane.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/ascenders-bane.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n<g>虛無</g>。\n<g>永恆</g>。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/ascenders-bane"
-    },
-    {
-      "id": "BAD_LUCK",
-      "name": "Bad Luck",
-      "nameZh": "黴運",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/bad-luck.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/bad-luck.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的手牌中，你失去13點生命。\n<g>永恆</g>。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/bad-luck"
-    },
-    {
-      "id": "CLUMSY",
-      "name": "Clumsy",
-      "nameZh": "笨拙",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/clumsy.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/clumsy.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n<g>虛無</g>。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/clumsy"
-    },
-    {
-      "id": "CURSE_OF_THE_BELL",
-      "name": "Curse of the Bell",
-      "nameZh": "鈴鐺的詛咒",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/curse-of-the-bell.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/curse-of-the-bell.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n<g>永恆</g>。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/curse-of-the-bell"
-    },
-    {
-      "id": "DEBT",
-      "name": "Debt",
-      "nameZh": "債務",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/debt.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/debt.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的<g>手牌</g>中，你失去10<g>金幣</g>。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/debt"
-    },
-    {
-      "id": "DECAY",
-      "name": "Decay",
-      "nameZh": "腐朽",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/decay.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/decay.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的<g>手牌</g>中, 你受到2點傷害。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/decay"
-    },
-    {
-      "id": "DOUBT",
-      "name": "Doubt",
-      "nameZh": "疑慮",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/doubt.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/doubt.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的<g>手牌</g>中，獲得1層<g>虛弱</g>。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/doubt"
-    },
-    {
-      "id": "ENTHRALLED",
-      "name": "Enthralled",
-      "nameZh": "執迷",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/enthralled.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/enthralled.webp"
-      },
-      "effect": {
-        "base": "如果這張牌在你的<g>手牌</g>中，你必須優先打出這張牌。\n<g>永恆</g>。",
-        "upgraded": null
-      },
-      "energy": 2,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/enthralled"
-    },
-    {
-      "id": "FOLLY",
-      "name": "Folly",
-      "nameZh": "愚行",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/folly.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/folly.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n<g>固有</g>。\n<g>虛無</g>。\n<g>永恆</g>。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/folly"
-    },
-    {
-      "id": "GREED",
-      "name": "Greed",
-      "nameZh": "貪婪",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/greed.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/greed.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n<g>永恆</g>。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/greed"
-    },
-    {
-      "id": "GUILTY",
-      "name": "Guilty",
-      "nameZh": "愧疚",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/guilty.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/guilty.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n在5場戰鬥後從你的<g>牌組</g>中移除。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/guilty"
-    },
-    {
-      "id": "INJURY",
-      "name": "Injury",
-      "nameZh": "受傷",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/injury.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/injury.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/injury"
-    },
-    {
-      "id": "NORMALITY",
-      "name": "Normality",
-      "nameZh": "凡庸",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/normality.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/normality.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n你在本回合不能打出超過3張牌。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/normality"
-    },
-    {
-      "id": "POOR_SLEEP",
-      "name": "Poor Sleep",
-      "nameZh": "睡眠不佳",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/poor-sleep.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/poor-sleep.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n<g>保留</g>。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/poor-sleep"
-    },
-    {
-      "id": "REGRET",
-      "name": "Regret",
-      "nameZh": "悔恨",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/regret.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/regret.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的<g>手牌</g>中，失去相當於<g>手牌</g>數量的生命。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/regret"
-    },
-    {
-      "id": "SHAME",
-      "name": "Shame",
-      "nameZh": "羞恥",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/shame.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/shame.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的<g>手牌</g>中，則獲得1層<g>脆弱</g>。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/shame"
-    },
-    {
-      "id": "SPORE_MIND",
-      "name": "Spore Mind",
-      "nameZh": "孢子心靈",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/spore-mind.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/spore-mind.webp"
-      },
-      "effect": {
-        "base": "<g>消耗</g>。",
-        "upgraded": null
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/spore-mind"
-    },
-    {
-      "id": "WRITHE",
-      "name": "Writhe",
-      "nameZh": "苦惱",
-      "category": "Curse",
-      "type": "Curse",
-      "rarity": "Curse",
-      "rarityZh": "詛咒",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/writhe.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/writhe.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n<g>固有</g>。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/writhe"
-    },
-    {
-      "id": "APOTHEOSIS",
-      "name": "Apotheosis",
-      "nameZh": "神化",
-      "category": "Event",
-      "type": "Skill",
-      "rarity": "Ancient",
-      "rarityZh": "先古之民",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/apotheosis.webp",
-        "upgraded": "assets/cards/images/upgraded/apotheosis.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/apotheosis.webp",
-        "upgraded": "assets/cards/images/table/upgraded/apotheosis.webp"
-      },
-      "effect": {
-        "base": "<g>固有</g>。\n<g>升級</g>你的全部卡牌。\n<g>消耗</g>。",
-        "upgraded": "<g>固有</g>。\n<g>升級</g>你的全部卡牌。\n<g>消耗</g>。"
-      },
-      "energy": 2,
-      "starCost": null,
-      "upgrade": {
-        "energy": "-1"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/apotheosis"
-    },
-    {
-      "id": "APPARITION",
-      "name": "Apparition",
-      "nameZh": "靈體",
-      "category": "Event",
-      "type": "Skill",
-      "rarity": "Ancient",
-      "rarityZh": "先古之民",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/apparition.webp",
-        "upgraded": "assets/cards/images/upgraded/apparition.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/apparition.webp",
-        "upgraded": "assets/cards/images/table/upgraded/apparition.webp"
-      },
-      "effect": {
-        "base": "<g>虛無</g>。\n獲得1層<g>無實體</g>。\n<g>消耗</g>。",
-        "upgraded": "獲得1層<g>無實體</g>。\n<g>消耗</g>。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "keywordsRemoved": [
-          "Ethereal"
-        ]
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/apparition"
-    },
-    {
-      "id": "BRIGHTEST_FLAME",
-      "name": "Brightest Flame",
-      "nameZh": "至亮之焰",
-      "category": "Event",
-      "type": "Skill",
-      "rarity": "Ancient",
-      "rarityZh": "先古之民",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/brightest-flame.webp",
-        "upgraded": "assets/cards/images/upgraded/brightest-flame.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/brightest-flame.webp",
-        "upgraded": "assets/cards/images/table/upgraded/brightest-flame.webp"
-      },
-      "effect": {
-        "base": "獲得<e>2</e>。\n抽2張牌。\n失去1點最大生命。",
-        "upgraded": "獲得<e>3</e>。\n抽3張牌。\n失去1點最大生命。"
-      },
-      "energy": 0,
-      "starCost": null,
-      "upgrade": {
-        "energygain": "+1",
-        "cards": "+1"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/brightest-flame"
-    },
-    {
-      "id": "MAUL",
-      "name": "Maul",
-      "nameZh": "撕咬",
-      "category": "Event",
-      "type": "Attack",
-      "rarity": "Ancient",
-      "rarityZh": "先古之民",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/maul.webp",
-        "upgraded": "assets/cards/images/upgraded/maul.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/maul.webp",
-        "upgraded": "assets/cards/images/table/upgraded/maul.webp"
-      },
-      "effect": {
-        "base": "造成5點傷害兩次。\n在這場戰鬥中，將所有“撕咬”牌的傷害增加1。",
-        "upgraded": "造成6點傷害兩次。\n在這場戰鬥中，將所有“撕咬”牌的傷害增加2。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "damage": "+1",
-        "increase": "+1"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/maul"
-    },
-    {
-      "id": "NEOWS_FURY",
-      "name": "Neow's Fury",
-      "nameZh": "涅奧之怒",
-      "category": "Event",
-      "type": "Attack",
-      "rarity": "Ancient",
-      "rarityZh": "先古之民",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/neows-fury.webp",
-        "upgraded": "assets/cards/images/upgraded/neows-fury.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/neows-fury.webp",
-        "upgraded": "assets/cards/images/table/upgraded/neows-fury.webp"
-      },
-      "effect": {
-        "base": "造成10點傷害。\n將你<g>棄牌堆</g>中的至多2張牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
-        "upgraded": "造成14點傷害。\n將你<g>棄牌堆</g>中的至多3張牌放入你的<g>手牌</g>。\n<g>消耗</g>。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "damage": "+4",
-        "cards": "+1"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/neows-fury"
-    },
-    {
-      "id": "RELAX",
-      "name": "Relax",
-      "nameZh": "放鬆",
-      "category": "Event",
-      "type": "Skill",
-      "rarity": "Ancient",
-      "rarityZh": "先古之民",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/relax.webp",
-        "upgraded": "assets/cards/images/upgraded/relax.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/relax.webp",
-        "upgraded": "assets/cards/images/table/upgraded/relax.webp"
-      },
-      "effect": {
-        "base": "獲得15點<g>格擋</g>。\n下個回合，抽2張牌並獲得<e>2</e>。\n<g>消耗</g>。",
-        "upgraded": "獲得17點<g>格擋</g>。\n下個回合，抽3張牌並獲得<e>3</e>。\n<g>消耗</g>。"
-      },
-      "energy": 3,
-      "starCost": null,
-      "upgrade": {
-        "block": "+2",
-        "cards": "+1",
-        "energygain": "+1"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/relax"
-    },
-    {
-      "id": "WHISTLE",
-      "name": "Whistle",
-      "nameZh": "吹哨",
-      "category": "Event",
-      "type": "Attack",
-      "rarity": "Ancient",
-      "rarityZh": "先古之民",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/whistle.webp",
-        "upgraded": "assets/cards/images/upgraded/whistle.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/whistle.webp",
-        "upgraded": "assets/cards/images/table/upgraded/whistle.webp"
-      },
-      "effect": {
-        "base": "造成33點傷害。\n<g>擊暈</g>該敵人。\n<g>消耗</g>。",
-        "upgraded": "造成44點傷害。\n<g>擊暈</g>該敵人。\n<g>消耗</g>。"
-      },
-      "energy": 3,
-      "starCost": null,
-      "upgrade": {
-        "damage": "+11"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/whistle"
-    },
-    {
-      "id": "WISH",
-      "name": "Wish",
-      "nameZh": "許願",
-      "category": "Event",
-      "type": "Skill",
-      "rarity": "Ancient",
-      "rarityZh": "先古之民",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/wish.webp",
-        "upgraded": "assets/cards/images/upgraded/wish.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/wish.webp",
-        "upgraded": "assets/cards/images/table/upgraded/wish.webp"
-      },
-      "effect": {
-        "base": "將你<g>抽牌堆</g>中的一張牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
-        "upgraded": "<g>保留</g>。\n將你<g>抽牌堆</g>中的一張牌放入你的<g>手牌</g>。\n<g>消耗</g>。"
-      },
-      "energy": 0,
-      "starCost": null,
-      "upgrade": {
-        "keywords": [
-          "Retain"
-        ]
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/wish"
-    },
-    {
-      "id": "BYRD_SWOOP",
-      "name": "Byrd Swoop",
-      "nameZh": "異鳥撲擊",
-      "category": "Event",
-      "type": "Attack",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/byrd-swoop.webp",
-        "upgraded": "assets/cards/images/upgraded/byrd-swoop.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/byrd-swoop.webp",
-        "upgraded": "assets/cards/images/table/upgraded/byrd-swoop.webp"
-      },
-      "effect": {
-        "base": "造成14點傷害。",
-        "upgraded": "造成18點傷害。"
-      },
-      "energy": 0,
-      "starCost": null,
-      "upgrade": {
-        "damage": "+4"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/byrd-swoop"
-    },
-    {
-      "id": "CALTROPS",
-      "name": "Caltrops",
-      "nameZh": "鐵蒺藜",
-      "category": "Event",
-      "type": "Power",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/caltrops.webp",
-        "upgraded": "assets/cards/images/upgraded/caltrops.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/caltrops.webp",
-        "upgraded": "assets/cards/images/table/upgraded/caltrops.webp"
-      },
-      "effect": {
-        "base": "每當你被攻擊時，對攻擊者造成3點傷害。",
-        "upgraded": "每當你被攻擊時，對攻擊者造成5點傷害。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "thornspower": "+2"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/caltrops"
-    },
-    {
-      "id": "CLASH",
-      "name": "Clash",
-      "nameZh": "交鋒",
-      "category": "Event",
-      "type": "Attack",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/clash.webp",
-        "upgraded": "assets/cards/images/upgraded/clash.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/clash.webp",
-        "upgraded": "assets/cards/images/table/upgraded/clash.webp"
-      },
-      "effect": {
-        "base": "只有在<g>手牌</g>中每一張牌都是攻擊牌時才能被打出。\n造成14點傷害。",
-        "upgraded": "只有在<g>手牌</g>中每一張牌都是攻擊牌時才能被打出。\n造成18點傷害。"
-      },
-      "energy": 0,
-      "starCost": null,
-      "upgrade": {
-        "damage": "+4"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/clash"
-    },
-    {
-      "id": "DISTRACTION",
-      "name": "Distraction",
-      "nameZh": "聲東擊西",
-      "category": "Event",
-      "type": "Skill",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/distraction.webp",
-        "upgraded": "assets/cards/images/upgraded/distraction.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/distraction.webp",
-        "upgraded": "assets/cards/images/table/upgraded/distraction.webp"
-      },
-      "effect": {
-        "base": "將一張隨機技能牌添加到你的<g>手牌</g>中。這張牌在本回合內可以免費打出。\n<g>消耗</g>。",
-        "upgraded": "將一張隨機技能牌添加到你的<g>手牌</g>中。這張牌在本回合內可以免費打出。\n<g>消耗</g>。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "energy": "-1"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/distraction"
-    },
-    {
-      "id": "DUAL_WIELD",
-      "name": "Dual Wield",
-      "nameZh": "雙持",
-      "category": "Event",
-      "type": "Skill",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/dual-wield.webp",
-        "upgraded": "assets/cards/images/upgraded/dual-wield.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/dual-wield.webp",
-        "upgraded": "assets/cards/images/table/upgraded/dual-wield.webp"
-      },
-      "effect": {
-        "base": "選擇一張攻擊牌或能力牌。將該牌的一張複製品加入你的<g>手牌</g>。",
-        "upgraded": "選擇一張攻擊牌或能力牌。將該牌的2張複製品加入你的<g>手牌</g>。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "cards": "+1"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/dual-wield"
-    },
-    {
-      "id": "ENLIGHTENMENT",
-      "name": "Enlightenment",
-      "nameZh": "開悟",
-      "category": "Event",
-      "type": "Skill",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/enlightenment.webp",
-        "upgraded": "assets/cards/images/upgraded/enlightenment.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/enlightenment.webp",
-        "upgraded": "assets/cards/images/table/upgraded/enlightenment.webp"
-      },
-      "effect": {
-        "base": "在這個回合，你當前<g>手牌</g>中所有牌的耗能降低至1。\n<g>消耗</g>。",
-        "upgraded": "在這場戰鬥，你當前<g>手牌</g>中所有牌的耗能降低至1。\n<g>消耗</g>。"
-      },
-      "energy": 0,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/enlightenment"
-    },
-    {
-      "id": "ENTRENCH",
-      "name": "Entrench",
-      "nameZh": "鞏固",
-      "category": "Event",
-      "type": "Skill",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/entrench.webp",
-        "upgraded": "assets/cards/images/upgraded/entrench.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/entrench.webp",
-        "upgraded": "assets/cards/images/table/upgraded/entrench.webp"
-      },
-      "effect": {
-        "base": "將你當前的<g>格擋</g>翻倍。",
-        "upgraded": "將你當前的<g>格擋</g>翻倍。"
-      },
-      "energy": 2,
-      "starCost": null,
-      "upgrade": {
-        "energy": "-1"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/entrench"
-    },
-    {
-      "id": "EXTERMINATE",
-      "name": "Exterminate",
-      "nameZh": "殺滅",
-      "category": "Event",
-      "type": "Attack",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/exterminate.webp",
-        "upgraded": "assets/cards/images/upgraded/exterminate.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/exterminate.webp",
-        "upgraded": "assets/cards/images/table/upgraded/exterminate.webp"
-      },
-      "effect": {
-        "base": "對所有敵人造成3點傷害4次。",
-        "upgraded": "對所有敵人造成4點傷害4次。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "damage": "+1"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/exterminate"
-    },
-    {
-      "id": "FEEDING_FRENZY",
-      "name": "Feeding Frenzy",
-      "nameZh": "瘋狂進食",
-      "category": "Event",
-      "type": "Skill",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/feeding-frenzy.webp",
-        "upgraded": "assets/cards/images/upgraded/feeding-frenzy.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/feeding-frenzy.webp",
-        "upgraded": "assets/cards/images/table/upgraded/feeding-frenzy.webp"
-      },
-      "effect": {
-        "base": "在本回合內獲得5點<g>力量</g>。",
-        "upgraded": "在本回合內獲得7點<g>力量</g>。"
-      },
-      "energy": 0,
-      "starCost": null,
-      "upgrade": {
-        "strength": "+2"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/feeding-frenzy"
-    },
-    {
-      "id": "HELLO_WORLD",
-      "name": "Hello World",
-      "nameZh": "你好世界",
-      "category": "Event",
-      "type": "Power",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/hello-world.webp",
-        "upgraded": "assets/cards/images/upgraded/hello-world.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/hello-world.webp",
-        "upgraded": "assets/cards/images/table/upgraded/hello-world.webp"
-      },
-      "effect": {
-        "base": "在你的回合開始時，將一張隨機普通牌加入你的<g>手牌</g>。",
-        "upgraded": "<g>固有</g>。\n在你的回合開始時，將一張隨機普通牌加入你的<g>手牌</g>。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "keywords": [
-          "Innate"
-        ]
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/hello-world"
-    },
-    {
-      "id": "MAD_SCIENCE",
-      "name": "Mad Science",
-      "nameZh": "瘋狂科學",
-      "category": "Event",
-      "type": "Attack",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/mad-science.webp",
-        "upgraded": "assets/cards/images/upgraded/mad-science.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/mad-science.webp",
-        "upgraded": "assets/cards/images/table/upgraded/mad-science.webp"
-      },
-      "effect": {
-        "base": "造成12點傷害。\n？？？",
-        "upgraded": "<g>固有</g>。\n造成12點傷害。\n？？？"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "keywords": [
-          "Innate"
-        ]
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/mad-science"
-    },
-    {
-      "id": "METAMORPHOSIS",
-      "name": "Metamorphosis",
-      "nameZh": "羽化",
-      "category": "Event",
-      "type": "Skill",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/metamorphosis.webp",
-        "upgraded": "assets/cards/images/upgraded/metamorphosis.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/metamorphosis.webp",
-        "upgraded": "assets/cards/images/table/upgraded/metamorphosis.webp"
-      },
-      "effect": {
-        "base": "在你的<g>抽牌堆</g>中加入3張隨機攻擊牌。它們在本場戰鬥中可以被免費打出。\n<g>消耗</g>。",
-        "upgraded": "在你的<g>抽牌堆</g>中加入5張隨機攻擊牌。它們在本場戰鬥中可以被免費打出。\n<g>消耗</g>。"
-      },
-      "energy": 2,
-      "starCost": null,
-      "upgrade": {
-        "cards": "+2"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/metamorphosis"
-    },
-    {
-      "id": "OUTMANEUVER",
-      "name": "Outmaneuver",
-      "nameZh": "搶佔先機",
-      "category": "Event",
-      "type": "Skill",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/outmaneuver.webp",
-        "upgraded": "assets/cards/images/upgraded/outmaneuver.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/outmaneuver.webp",
-        "upgraded": "assets/cards/images/table/upgraded/outmaneuver.webp"
-      },
-      "effect": {
-        "base": "在下個回合獲得<e>2</e>。",
-        "upgraded": "在下個回合獲得<e>3</e>。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "energygain": "+1"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/outmaneuver"
-    },
-    {
-      "id": "PECK",
-      "name": "Peck",
-      "nameZh": "啄擊",
-      "category": "Event",
-      "type": "Attack",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/peck.webp",
-        "upgraded": "assets/cards/images/upgraded/peck.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/peck.webp",
-        "upgraded": "assets/cards/images/table/upgraded/peck.webp"
-      },
-      "effect": {
-        "base": "造成2點傷害3次。",
-        "upgraded": "造成2點傷害4次。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "repeat": "+1"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/peck"
-    },
-    {
-      "id": "REBOUND",
-      "name": "Rebound",
-      "nameZh": "彈回",
-      "category": "Event",
-      "type": "Attack",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/rebound.webp",
-        "upgraded": "assets/cards/images/upgraded/rebound.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/rebound.webp",
-        "upgraded": "assets/cards/images/table/upgraded/rebound.webp"
-      },
-      "effect": {
-        "base": "造成9點傷害。\n將你在本回合打出的下一張牌放置到你的<g>抽牌堆</g>頂部。",
-        "upgraded": "造成12點傷害。\n將你在本回合打出的下一張牌放置到你的<g>抽牌堆</g>頂部。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "damage": "+3"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/rebound"
-    },
-    {
-      "id": "RIP_AND_TEAR",
-      "name": "Rip and Tear",
-      "nameZh": "狂亂撕扯",
-      "category": "Event",
-      "type": "Attack",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/rip-and-tear.webp",
-        "upgraded": "assets/cards/images/upgraded/rip-and-tear.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/rip-and-tear.webp",
-        "upgraded": "assets/cards/images/table/upgraded/rip-and-tear.webp"
-      },
-      "effect": {
-        "base": "隨機對敵人造成7點傷害兩次。",
-        "upgraded": "隨機對敵人造成9點傷害兩次。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "damage": "+2"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/rip-and-tear"
-    },
-    {
-      "id": "SQUASH",
-      "name": "Squash",
-      "nameZh": "壓扁",
-      "category": "Event",
-      "type": "Attack",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/squash.webp",
-        "upgraded": "assets/cards/images/upgraded/squash.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/squash.webp",
-        "upgraded": "assets/cards/images/table/upgraded/squash.webp"
-      },
-      "effect": {
-        "base": "造成10點傷害。\n給予2層<g>易傷</g>。",
-        "upgraded": "造成12點傷害。\n給予3層<g>易傷</g>。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "damage": "+2",
-        "vulnerable": "+1"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/squash"
-    },
-    {
-      "id": "STACK",
-      "name": "Stack",
-      "nameZh": "堆棧",
-      "category": "Event",
-      "type": "Skill",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/stack.webp",
-        "upgraded": "assets/cards/images/upgraded/stack.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/stack.webp",
-        "upgraded": "assets/cards/images/table/upgraded/stack.webp"
-      },
-      "effect": {
-        "base": "獲得等量於與你當前<g>棄牌堆</g>中牌數的<g>格擋</g>值。",
-        "upgraded": "獲得等量於與你當前<g>棄牌堆</g>中牌數+3的<g>格擋</g>值。"
-      },
-      "energy": 1,
-      "starCost": null,
-      "upgrade": {
-        "calculationbase": "+3"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/stack"
-    },
-    {
-      "id": "TORIC_TOUGHNESS",
-      "name": "Toric Toughness",
-      "nameZh": "堅韌之環",
-      "category": "Event",
-      "type": "Skill",
-      "rarity": "Event",
-      "rarityZh": "事件",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/toric-toughness.webp",
-        "upgraded": "assets/cards/images/upgraded/toric-toughness.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/toric-toughness.webp",
-        "upgraded": "assets/cards/images/table/upgraded/toric-toughness.webp"
-      },
-      "effect": {
-        "base": "獲得5點<g>格擋</g>。\n在接下來的2個回合開始時，獲得5點<g>格擋</g>。",
-        "upgraded": "獲得7點<g>格擋</g>。\n在接下來的2個回合開始時，獲得7點<g>格擋</g>。"
-      },
-      "energy": 2,
-      "starCost": null,
-      "upgrade": {
-        "block": "+2"
-      },
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/toric-toughness"
-    },
-    {
-      "id": "BYRDONIS_EGG",
-      "name": "Byrdonis Egg",
-      "nameZh": "多尼斯異鳥蛋",
-      "category": "Quest",
-      "type": "Quest",
-      "rarity": "Quest",
-      "rarityZh": "任務",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/byrdonis-egg.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/byrdonis-egg.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n能在<g>休息處</g>被孵化。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/byrdonis-egg"
-    },
-    {
-      "id": "LANTERN_KEY",
-      "name": "Lantern Key",
-      "nameZh": "燈火鑰匙",
-      "category": "Quest",
-      "type": "Quest",
-      "rarity": "Quest",
-      "rarityZh": "任務",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/lantern-key.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/lantern-key.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n在下一階段解鎖一個特殊事件。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/lantern-key"
-    },
-    {
-      "id": "SPOILS_MAP",
-      "name": "Spoils Map",
-      "nameZh": "藏寶圖",
-      "category": "Quest",
-      "type": "Quest",
-      "rarity": "Quest",
-      "rarityZh": "任務",
-      "tier": null,
-      "images": {
-        "base": "assets/cards/images/base/spoils-map.webp"
-      },
-      "tableImages": {
-        "base": "assets/cards/images/table/base/spoils-map.webp"
-      },
-      "effect": {
-        "base": "<g>不能被打出</g>。\n在下一階段的地圖上，標記一個有600額外<g>金幣</g>的地點。",
-        "upgraded": null
-      },
-      "energy": null,
-      "starCost": null,
-      "upgrade": null,
-      "builds": [],
-      "url": "https://slaythespire2.net/zh-TW/card/spoils-map"
     }
   ]
 }

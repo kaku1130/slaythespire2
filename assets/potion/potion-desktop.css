@@ -23,3 +23,22 @@ html body main#main-content .potion-filters button:is([data-filter-group=rarity]
   font-family:Arial,"Microsoft JhengHei",sans-serif;
   font-size:20px!important;font-weight:400;line-height:1.4;white-space:nowrap!important;
 }
+
+/* Center a half-width, single-column catalog on desktop. */
+@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine), screen and (min-width:1441px) {
+  html body main#main-content:has(>.potion-filters)>.catalog-scroll {
+    width:50%!important;
+    max-width:none;
+    min-width:0;
+    margin-inline:auto;
+  }
+  html body main#main-content:has(>.potion-filters)>.catalog-scroll .catalog {
+    grid-template-columns:minmax(0,1fr);
+  }
+}
+
+/* Chinese names lead; both language names use the heading size. */
+html body main#main-content .entry.potion .potion-title-row h2 {font:700 22px/1.35 Arial,"Microsoft JhengHei",sans-serif;align-items:baseline;gap:6px 12px}
+html body main#main-content .entry.potion .potion-title-row h2 :is(.potion-name-zh,.catalog-name-en) {font:inherit;white-space:normal;overflow-wrap:anywhere}
+html body main#main-content .entry.potion .potion-title-row h2 .potion-name-zh {order:1}
+html body main#main-content .entry.potion .potion-title-row h2 .catalog-name-en {order:0}

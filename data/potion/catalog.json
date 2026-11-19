@@ -15,7 +15,8 @@
       "imagePath": "/images/potions/ashwater.webp",
       "descriptionClean": "消耗你手牌中的任意張牌。",
       "descI18n": "<g>消耗</g>你<g>手牌</g>中的任意張牌。",
-      "nameEn": "Ashwater"
+      "nameEn": "Ashwater",
+      "descEn": "<g>Exhaust</g> any number of cards in your <g>Hand</g>."
     },
     {
       "className": "AttackPotion",
@@ -29,7 +30,8 @@
       "imagePath": "/images/potions/attack_potion.webp",
       "descriptionClean": "從3張隨機攻擊牌中選擇1張加入你的手牌。這張牌在本回合可以免費打出。",
       "descI18n": "從3張隨機攻擊牌中選擇1張加入你的<g>手牌</g>。這張牌在本回合可以免費打出。",
-      "nameEn": "Attack Potion"
+      "nameEn": "Attack Potion",
+      "descEn": "Choose 1 of 3 random Attack cards to add into your <g>Hand</g>. It's free to play this turn."
     },
     {
       "className": "BeetleJuice",
@@ -43,7 +45,8 @@
       "imagePath": "/images/potions/beetle_juice.webp",
       "descriptionClean": "敵人的攻擊在下4個回合中造成的傷害減少30%。",
       "descI18n": "敵人的攻擊在下4個回合中造成的傷害減少30%。",
-      "nameEn": "Beetle Juice"
+      "nameEn": "Beetle Juice",
+      "descEn": "Enemy's attacks deal 30% less damage for the next 4 turns."
     },
     {
       "className": "BlessingOfTheForge",
@@ -57,7 +60,8 @@
       "imagePath": "/images/potions/blessing_of_the_forge.webp",
       "descriptionClean": "在本場戰鬥中升級你手牌中的所有牌。",
       "descI18n": "在本場戰鬥中<g>升級</g>你<g>手牌</g>中的所有牌。",
-      "nameEn": "Blessing of the Forge"
+      "nameEn": "Blessing of the Forge",
+      "descEn": "<g>Upgrade</g> all cards in your <g>Hand</g> for the rest of combat."
     },
     {
       "className": "BlockPotion",
@@ -71,7 +75,8 @@
       "imagePath": "/images/potions/block_potion.webp",
       "descriptionClean": "獲得12點格擋。",
       "descI18n": "獲得12點<g>格擋</g>。",
-      "nameEn": "Block Potion"
+      "nameEn": "Block Potion",
+      "descEn": "Gain 12 <g>Block</g>."
     },
     {
       "className": "BloodPotion",
@@ -85,7 +90,8 @@
       "imagePath": "/images/potions/blood_potion.webp",
       "descriptionClean": "回覆你最大生命值的20%。",
       "descI18n": "回覆你最大生命值的20%。",
-      "nameEn": "Blood Potion"
+      "nameEn": "Blood Potion",
+      "descEn": "Heal for 20% of your Max HP."
     },
     {
       "className": "BoneBrew",
@@ -99,7 +105,8 @@
       "imagePath": "/images/potions/bone_brew.webp",
       "descriptionClean": "召喚15。",
       "descI18n": "<g>召喚</g>15。",
-      "nameEn": "Bone Brew"
+      "nameEn": "Bone Brew",
+      "descEn": "<g>Summon</g> 15."
     },
     {
       "className": "BottledPotential",
@@ -113,7 +120,8 @@
       "imagePath": "/images/potions/bottled_potential.webp",
       "descriptionClean": "將你的所有牌洗入你的抽牌堆。抽5張牌。",
       "descI18n": "將你的所有牌洗入你的<g>抽牌堆</g>。抽5張牌。",
-      "nameEn": "Bottled Potential"
+      "nameEn": "Bottled Potential",
+      "descEn": "Shuffle ALL your cards into your <g>Draw Pile</g>. Draw 5 cards."
     },
     {
       "className": "Clarity",
@@ -127,7 +135,8 @@
       "imagePath": "/images/potions/clarity.webp",
       "descriptionClean": "抽1張牌。在你的下3個回合開始時，額外抽1張牌。",
       "descI18n": "抽1張牌。在你的下3個回合開始時，額外抽1張牌。",
-      "nameEn": "Clarity Extract"
+      "nameEn": "Clarity Extract",
+      "descEn": "Draw 1 card. At the start of your next 3 turns, draw 1 additional card."
     },
     {
       "className": "ColorlessPotion",
@@ -141,7 +150,8 @@
       "imagePath": "/images/potions/colorless_potion.webp",
       "descriptionClean": "從3張隨機無色牌中選擇1張加入你的手牌。這張牌在本回合可以免費打出。",
       "descI18n": "從3張隨機無色牌中選擇1張加入你的<g>手牌</g>。這張牌在本回合可以免費打出。",
-      "nameEn": "Colorless Potion"
+      "nameEn": "Colorless Potion",
+      "descEn": "Choose 1 of 3 random Colorless cards to add into your <g>Hand</g>. It's free to play this turn."
     },
     {
       "className": "CosmicConcoction",
@@ -155,7 +165,8 @@
       "imagePath": "/images/potions/cosmic_concoction.webp",
       "descriptionClean": "將3張升級的無色牌加入你的手牌。",
       "descI18n": "將3張<g>升級</g>的無色牌加入你的<g>手牌</g>。",
-      "nameEn": "Cosmic Concoction"
+      "nameEn": "Cosmic Concoction",
+      "descEn": "Add 3 <g>Upgraded</g> Colorless cards into your <g>Hand</g>."
     },
     {
       "className": "CunningPotion",
@@ -169,7 +180,8 @@
       "imagePath": "/images/potions/cunning_potion.webp",
       "descriptionClean": "將3張小刀+加入你的手牌。",
       "descI18n": "將3張<g>小刀+</g>加入你的<g>手牌</g>。",
-      "nameEn": "Cunning Potion"
+      "nameEn": "Cunning Potion",
+      "descEn": "Add 3 <g>Upgraded Shivs</g> into your <g>Hand</g>."
     },
     {
       "className": "CureAll",
@@ -183,7 +195,8 @@
       "imagePath": "/images/potions/cure_all.webp",
       "descriptionClean": "獲得1。抽2張牌。",
       "descI18n": "獲得<e>1</e>。抽2張牌。",
-      "nameEn": "Cure All"
+      "nameEn": "Cure All",
+      "descEn": "Gain <e>1</e>. Draw 2 cards."
     },
     {
       "className": "DexterityPotion",
@@ -197,7 +210,8 @@
       "imagePath": "/images/potions/dexterity_potion.webp",
       "descriptionClean": "獲得2點敏捷。",
       "descI18n": "獲得2點<g>敏捷</g>。",
-      "nameEn": "Dexterity Potion"
+      "nameEn": "Dexterity Potion",
+      "descEn": "Gain 2 <g>Dexterity</g>."
     },
     {
       "className": "DistilledChaos",
@@ -211,7 +225,8 @@
       "imagePath": "/images/potions/distilled_chaos.webp",
       "descriptionClean": "打出你抽牌堆頂部的3張牌。",
       "descI18n": "打出你<g>抽牌堆</g>頂部的3張牌。",
-      "nameEn": "Distilled Chaos"
+      "nameEn": "Distilled Chaos",
+      "descEn": "Play the top 3 cards of your <g>Draw Pile</g>."
     },
     {
       "className": "DropletOfPrecognition",
@@ -225,7 +240,8 @@
       "imagePath": "/images/potions/droplet_of_precognition.webp",
       "descriptionClean": "選擇你抽牌堆中的一張牌加入你的手牌。",
       "descI18n": "選擇你<g>抽牌堆</g>中的一張牌加入你的<g>手牌</g>。",
-      "nameEn": "Droplet of Precognition"
+      "nameEn": "Droplet of Precognition",
+      "descEn": "Choose a card in your <g>Draw Pile</g> and add it into your <g>Hand</g>."
     },
     {
       "className": "Duplicator",
@@ -239,7 +255,8 @@
       "imagePath": "/images/potions/duplicator.webp",
       "descriptionClean": "本回合，你打出的下一張牌會額外打出一次。",
       "descI18n": "本回合，你打出的下一張牌會額外打出一次。",
-      "nameEn": "Duplicator"
+      "nameEn": "Duplicator",
+      "descEn": "This turn, your next card is played an extra time."
     },
     {
       "className": "EnergyPotion",
@@ -253,7 +270,8 @@
       "imagePath": "/images/potions/energy_potion.webp",
       "descriptionClean": "獲得2。",
       "descI18n": "獲得<e>2</e>。",
-      "nameEn": "Energy Potion"
+      "nameEn": "Energy Potion",
+      "descEn": "Gain <e>1</e><e>1</e>."
     },
     {
       "className": "EntropicBrew",
@@ -267,7 +285,8 @@
       "imagePath": "/images/potions/entropic_brew.webp",
       "descriptionClean": "在所有空藥水欄位中獲得隨機藥水。",
       "descI18n": "在所有空藥水欄位中獲得隨機藥水。",
-      "nameEn": "Entropic Brew"
+      "nameEn": "Entropic Brew",
+      "descEn": "Fill all your empty potion slots with random potions."
     },
     {
       "className": "EssenceOfDarkness",
@@ -281,7 +300,8 @@
       "imagePath": "/images/potions/essence_of_darkness.webp",
       "descriptionClean": "生成你充能球欄位數量個黑暗充能球。",
       "descI18n": "<g>生成</g>你<g>充能球欄位</g>數量個<g>黑暗</g>充能球。",
-      "nameEn": "Essence of Darkness"
+      "nameEn": "Essence of Darkness",
+      "descEn": "<g>Channel</g> a <g>Dark</g> for each of your <g>Orb Slots</g>."
     },
     {
       "className": "ExplosiveAmpoule",
@@ -295,7 +315,8 @@
       "imagePath": "/images/potions/explosive_ampoule.webp",
       "descriptionClean": "對所有敵人造成10點傷害。",
       "descI18n": "對所有敵人造成10點傷害。",
-      "nameEn": "Explosive Ampoule"
+      "nameEn": "Explosive Ampoule",
+      "descEn": "Deal 10 damage to ALL enemies."
     },
     {
       "className": "FairyInABottle",
@@ -309,7 +330,8 @@
       "imagePath": "/images/potions/fairy_in_a_bottle.webp",
       "descriptionClean": "當你的生命值將被減少至0或以下時，改為丟棄這瓶藥水，然後將你回覆到你最大生命值的30%。",
       "descI18n": "當你的生命值將被減少至0或以下時，改為丟棄這瓶藥水，然後將你回覆到你最大生命值的30%。",
-      "nameEn": "Fairy in a Bottle"
+      "nameEn": "Fairy in a Bottle",
+      "descEn": "When your HP would be reduced to 0, instead this potion is discarded and you heal to 30% of your Max HP."
     },
     {
       "className": "FirePotion",
@@ -323,7 +345,8 @@
       "imagePath": "/images/potions/fire_potion.webp",
       "descriptionClean": "造成20點傷害。",
       "descI18n": "造成20點傷害。",
-      "nameEn": "Fire Potion"
+      "nameEn": "Fire Potion",
+      "descEn": "Deal 20 damage."
     },
     {
       "className": "FlexPotion",
@@ -337,7 +360,8 @@
       "imagePath": "/images/potions/flex_potion.webp",
       "descriptionClean": "獲得5點力量。在你的這個回合結束時，失去5點力量。",
       "descI18n": "獲得5點<g>力量</g>。在你的這個回合結束時，失去5點<g>力量</g>。",
-      "nameEn": "Flex Potion"
+      "nameEn": "Flex Potion",
+      "descEn": "Gain 5 <g>Strength</g>. At the end of your turn, lose 5 <g>Strength</g>."
     },
     {
       "className": "FocusPotion",
@@ -351,7 +375,8 @@
       "imagePath": "/images/potions/focus_potion.webp",
       "descriptionClean": "獲得2點集中。",
       "descI18n": "獲得2點<g>集中</g>。",
-      "nameEn": "Focus Potion"
+      "nameEn": "Focus Potion",
+      "descEn": "Gain 2 <g>Focus</g>."
     },
     {
       "className": "Fortifier",
@@ -365,7 +390,8 @@
       "imagePath": "/images/potions/fortifier.webp",
       "descriptionClean": "將你的格擋變為三倍。",
       "descI18n": "將你的<g>格擋</g>變為三倍。",
-      "nameEn": "Fortifier"
+      "nameEn": "Fortifier",
+      "descEn": "Triple your <g>Block</g>."
     },
     {
       "className": "FoulPotion",
@@ -378,7 +404,8 @@
       "imagePath": "/images/potions/foul_potion.webp",
       "descriptionClean": "對所有玩家和敵人造成12點傷害。\n也可以投擲給商人換取100金幣。",
       "descI18n": "對所有玩家和敵人造成12點傷害。\n也可以投擲給<g>商人</g>換取100<g>金幣</g>。",
-      "nameEn": "Foul Potion"
+      "nameEn": "Foul Potion",
+      "descEn": "Deal 12 damage to ALL players and enemies.\nCan be thrown at the <g>Merchant</g> for 100 <g>Gold</g> instead."
     },
     {
       "className": "FruitJuice",
@@ -392,7 +419,8 @@
       "imagePath": "/images/potions/fruit_juice.webp",
       "descriptionClean": "獲得5點最大生命值。",
       "descI18n": "獲得5點最大生命值。",
-      "nameEn": "Fruit Juice"
+      "nameEn": "Fruit Juice",
+      "descEn": "Gain 5 Max HP."
     },
     {
       "className": "FyshOil",
@@ -406,7 +434,8 @@
       "imagePath": "/images/potions/fysh_oil.webp",
       "descriptionClean": "獲得1點力量和1點敏捷。",
       "descI18n": "獲得1點<g>力量</g>和1點<g>敏捷</g>。",
-      "nameEn": "Fysh Oil"
+      "nameEn": "Fysh Oil",
+      "descEn": "Gain 1 <g>Strength</g> and 1 <g>Dexterity</g>."
     },
     {
       "className": "GamblersBrew",
@@ -420,7 +449,8 @@
       "imagePath": "/images/potions/gamblers_brew.webp",
       "descriptionClean": "丟棄任意張牌，然後抽相同數量的牌。",
       "descI18n": "丟棄任意張牌，然後抽相同數量的牌。",
-      "nameEn": "Gambler's Brew"
+      "nameEn": "Gambler's Brew",
+      "descEn": "Discard any number of cards, then draw that many."
     },
     {
       "className": "GhostInAJar",
@@ -434,7 +464,8 @@
       "imagePath": "/images/potions/ghost_in_a_jar.webp",
       "descriptionClean": "獲得1層無實體。",
       "descI18n": "獲得1層<g>無實體</g>。",
-      "nameEn": "Ghost in a Jar"
+      "nameEn": "Ghost in a Jar",
+      "descEn": "Gain 1 <g>Intangible</g>."
     },
     {
       "className": "GigantificationPotion",
@@ -448,7 +479,8 @@
       "imagePath": "/images/potions/gigantification_potion.webp",
       "descriptionClean": "你打出的下一張攻擊牌將會造成三倍傷害。",
       "descI18n": "你打出的下一張攻擊牌將會造成三倍傷害。",
-      "nameEn": "Gigantification Potion"
+      "nameEn": "Gigantification Potion",
+      "descEn": "The next Attack you play deals triple damage."
     },
     {
       "className": "GlowwaterPotion",
@@ -462,7 +494,8 @@
       "imagePath": "/images/potions/glowwater_potion.webp",
       "descriptionClean": "消耗你的手牌。抽10張牌。",
       "descI18n": "<g>消耗</g>你的<g>手牌</g>。抽10張牌。",
-      "nameEn": "Glowwater Potion"
+      "nameEn": "Glowwater Potion",
+      "descEn": "<g>Exhaust</g> your <g>Hand</g>. Draw 10 cards."
     },
     {
       "className": "HeartOfIron",
@@ -476,7 +509,8 @@
       "imagePath": "/images/potions/heart_of_iron.webp",
       "descriptionClean": "獲得7層覆甲。",
       "descI18n": "獲得7層<g>覆甲</g>。",
-      "nameEn": "Heart of Iron"
+      "nameEn": "Heart of Iron",
+      "descEn": "Gain 7 <g>Plating</g>."
     },
     {
       "className": "KingsCourage",
@@ -490,7 +524,8 @@
       "imagePath": "/images/potions/kings_courage.webp",
       "descriptionClean": "鑄造15。",
       "descI18n": "<g>鑄造</g>15。",
-      "nameEn": "King's Courage"
+      "nameEn": "King's Courage",
+      "descEn": "<g>Forge</g> 15."
     },
     {
       "className": "LiquidBronze",
@@ -504,7 +539,8 @@
       "imagePath": "/images/potions/liquid_bronze.webp",
       "descriptionClean": "獲得3點荊棘。",
       "descI18n": "獲得3點<g>荊棘</g>。",
-      "nameEn": "Liquid Bronze"
+      "nameEn": "Liquid Bronze",
+      "descEn": "Gain 3 <g>Thorns</g>."
     },
     {
       "className": "LiquidMemories",
@@ -518,7 +554,8 @@
       "imagePath": "/images/potions/liquid_memories.webp",
       "descriptionClean": "將你棄牌堆中的一張牌放入你的手牌。這張牌在本回合可以免費打出。",
       "descI18n": "將你<g>棄牌堆</g>中的一張牌放入你的<g>手牌</g>。這張牌在本回合可以免費打出。",
-      "nameEn": "Liquid Memories"
+      "nameEn": "Liquid Memories",
+      "descEn": "Put a card from your <g>Discard Pile</g> into your <g>Hand</g>. It's free to play this turn."
     },
     {
       "className": "LuckyTonic",
@@ -532,7 +569,8 @@
       "imagePath": "/images/potions/lucky_tonic.webp",
       "descriptionClean": "獲得1層緩衝。",
       "descI18n": "獲得1層<g>緩衝</g>。",
-      "nameEn": "Lucky Tonic"
+      "nameEn": "Lucky Tonic",
+      "descEn": "Gain 1 <g>Buffer</g>."
     },
     {
       "className": "MazalethsGift",
@@ -546,7 +584,8 @@
       "imagePath": "/images/potions/mazaleths_gift.webp",
       "descriptionClean": "獲得1層儀式。",
       "descI18n": "獲得1層<g>儀式</g>。",
-      "nameEn": "Mazaleth's Gift"
+      "nameEn": "Mazaleth's Gift",
+      "descEn": "Gain 1 <g>Ritual</g>."
     },
     {
       "className": "OrobicAcid",
@@ -560,7 +599,8 @@
       "imagePath": "/images/potions/orobic_acid.webp",
       "descriptionClean": "往你的手牌中加入一張隨機攻擊牌、一張隨機技能牌和一張隨機能力牌。這些牌在本回合免費。",
       "descI18n": "往你的<g>手牌</g>中加入一張隨機攻擊牌、一張隨機技能牌和一張隨機能力牌。這些牌在本回合免費。",
-      "nameEn": "Orobic Acid"
+      "nameEn": "Orobic Acid",
+      "descEn": "Add a random Attack, Skill, and Power into your <g>Hand</g>. They're free to play this turn."
     },
     {
       "className": "PoisonPotion",
@@ -574,7 +614,8 @@
       "imagePath": "/images/potions/poison_potion.webp",
       "descriptionClean": "給予6層中毒。",
       "descI18n": "給予6層<g>中毒</g>。",
-      "nameEn": "Poison Potion"
+      "nameEn": "Poison Potion",
+      "descEn": "Apply 6 <g>Poison</g>."
     },
     {
       "className": "PotOfGhouls",
@@ -588,7 +629,8 @@
       "imagePath": "/images/potions/pot_of_ghouls.webp",
       "descriptionClean": "將2張靈魂加入你的手牌。",
       "descI18n": "將2張<g>靈魂</g>加入你的<g>手牌</g>。",
-      "nameEn": "Pot of Ghouls"
+      "nameEn": "Pot of Ghouls",
+      "descEn": "Add 2 <g>Souls</g> into your <g>Hand</g>."
     },
     {
       "className": "PotionOfBinding",
@@ -602,7 +644,8 @@
       "imagePath": "/images/potions/potion_of_binding.webp",
       "descriptionClean": "給予所有敵人1層虛弱和1層易傷。",
       "descI18n": "給予所有敵人1層<g>虛弱</g>和1層<g>易傷</g>。",
-      "nameEn": "Potion of Binding"
+      "nameEn": "Potion of Binding",
+      "descEn": "Apply 1 <g>Weak</g> and 1 <g>Vulnerable</g> to ALL enemies."
     },
     {
       "className": "PotionOfCapacity",
@@ -616,7 +659,8 @@
       "imagePath": "/images/potions/potion_of_capacity.webp",
       "descriptionClean": "獲得2個充能球欄位。",
       "descI18n": "獲得2個<g>充能球欄位</g>。",
-      "nameEn": "Potion of Capacity"
+      "nameEn": "Potion of Capacity",
+      "descEn": "Gain 2 <g>Orb Slots</g>."
     },
     {
       "className": "PotionOfDoom",
@@ -630,7 +674,8 @@
       "imagePath": "/images/potions/potion_of_doom.webp",
       "descriptionClean": "給予33層災厄。",
       "descI18n": "給予33層<g>災厄</g>。",
-      "nameEn": "Potion of Doom"
+      "nameEn": "Potion of Doom",
+      "descEn": "Apply 33 <g>Doom</g>."
     },
     {
       "className": "PowderedDemise",
@@ -644,7 +689,8 @@
       "imagePath": "/images/potions/powdered_demise.webp",
       "descriptionClean": "敵人在自身的每個回合結束時，失去9點生命。",
       "descI18n": "敵人在自身的每個回合結束時，失去9點生命。",
-      "nameEn": "Powdered Demise"
+      "nameEn": "Powdered Demise",
+      "descEn": "Enemy loses 9 HP at the end of each of its turns."
     },
     {
       "className": "PowerPotion",
@@ -658,7 +704,8 @@
       "imagePath": "/images/potions/power_potion.webp",
       "descriptionClean": "從3張隨機能力牌中選擇1張加入你的手牌。這張牌在本回合可以免費打出。",
       "descI18n": "從3張隨機能力牌中選擇1張加入你的<g>手牌</g>。這張牌在本回合可以免費打出。",
-      "nameEn": "Power Potion"
+      "nameEn": "Power Potion",
+      "descEn": "Choose 1 of 3 random Power cards to add into your <g>Hand</g>. It's free to play this turn."
     },
     {
       "className": "RadiantTincture",
@@ -672,7 +719,8 @@
       "imagePath": "/images/potions/radiant_tincture.webp",
       "descriptionClean": "獲得1。在你的下3個回合開始時，額外獲得。",
       "descI18n": "獲得<e>1</e>。在你的下3個回合開始時，額外獲得<e/>。",
-      "nameEn": "Radiant Tincture"
+      "nameEn": "Radiant Tincture",
+      "descEn": "Gain <e>1</e>. Gain an additional <e>1</e> at the start of your next 3 turns."
     },
     {
       "className": "RegenPotion",
@@ -686,7 +734,8 @@
       "imagePath": "/images/potions/regen_potion.webp",
       "descriptionClean": "獲得5層再生。",
       "descI18n": "獲得5層<g>再生</g>。",
-      "nameEn": "Regen Potion"
+      "nameEn": "Regen Potion",
+      "descEn": "Gain 5 <g>Regen</g>."
     },
     {
       "className": "ShacklingPotion",
@@ -700,7 +749,8 @@
       "imagePath": "/images/potions/shackling_potion.webp",
       "descriptionClean": "所有敵人在這個回合失去7點力量。",
       "descI18n": "所有敵人在這個回合失去7點<g>力量</g>。",
-      "nameEn": "Shackling Potion"
+      "nameEn": "Shackling Potion",
+      "descEn": "ALL enemies lose 7 <g>Strength</g> this turn."
     },
     {
       "className": "ShipInABottle",
@@ -714,7 +764,8 @@
       "imagePath": "/images/potions/ship_in_a_bottle.webp",
       "descriptionClean": "獲得10點格擋。在下個回合開始時獲得10點格擋。",
       "descI18n": "獲得10點<g>格擋</g>。在下個回合開始時獲得10點<g>格擋</g>。",
-      "nameEn": "Ship in a Bottle"
+      "nameEn": "Ship in a Bottle",
+      "descEn": "Gain 10 <g>Block</g>. Next turn, gain 10 <g>Block</g>."
     },
     {
       "className": "SkillPotion",
@@ -728,7 +779,8 @@
       "imagePath": "/images/potions/skill_potion.webp",
       "descriptionClean": "從3張隨機技能牌中選擇1張加入你的手牌。這張牌在本回合可以免費打出。",
       "descI18n": "從3張隨機技能牌中選擇1張加入你的<g>手牌</g>。這張牌在本回合可以免費打出。",
-      "nameEn": "Skill Potion"
+      "nameEn": "Skill Potion",
+      "descEn": "Choose 1 of 3 random Skill cards to add into your <g>Hand</g>. It's free to play this turn."
     },
     {
       "className": "SneckoOil",
@@ -742,7 +794,8 @@
       "imagePath": "/images/potions/snecko_oil.webp",
       "descriptionClean": "抽7張牌。在本回合隨機化你手牌中所有牌的耗能。",
       "descI18n": "抽7張牌。在本回合隨機化你<g>手牌</g>中所有牌的耗能。",
-      "nameEn": "Snecko Oil"
+      "nameEn": "Snecko Oil",
+      "descEn": "Draw 7 cards. Randomize the cost of cards in your <g>Hand</g> this turn."
     },
     {
       "className": "SoldiersStew",
@@ -756,7 +809,8 @@
       "imagePath": "/images/potions/soldiers_stew.webp",
       "descriptionClean": "在本場戰鬥中，所有名字中有“打擊”的牌獲得重放：1。",
       "descI18n": "在本場戰鬥中，所有名字中有“<g>打擊</g>”的牌獲得<g>重放</g>：1。",
-      "nameEn": "Soldier's Stew"
+      "nameEn": "Soldier's Stew",
+      "descEn": "All cards containing <g>Strike</g> gain 1 <g>Replay</g> this combat."
     },
     {
       "className": "SpeedPotion",
@@ -770,7 +824,8 @@
       "imagePath": "/images/potions/speed_potion.webp",
       "descriptionClean": "獲得5點敏捷。在你的這個回合結束時，失去5點敏捷。",
       "descI18n": "獲得5點<g>敏捷</g>。在你的這個回合結束時，失去5點<g>敏捷</g>。",
-      "nameEn": "Speed Potion"
+      "nameEn": "Speed Potion",
+      "descEn": "Gain 5 <g>Dexterity</g>. At the end of your turn, lose 5 <g>Dexterity</g>."
     },
     {
       "className": "StableSerum",
@@ -784,7 +839,8 @@
       "imagePath": "/images/potions/stable_serum.webp",
       "descriptionClean": "保留你的手牌2回合。",
       "descI18n": "<g>保留</g>你的<g>手牌</g>2回合。",
-      "nameEn": "Stable Serum"
+      "nameEn": "Stable Serum",
+      "descEn": "<g>Retain</g> your <g>Hand</g> for 2 turns."
     },
     {
       "className": "StarPotion",
@@ -798,7 +854,8 @@
       "imagePath": "/images/potions/star_potion.webp",
       "descriptionClean": "獲得3。",
       "descI18n": "獲得<s>3</s>。",
-      "nameEn": "Star Potion"
+      "nameEn": "Star Potion",
+      "descEn": "Gain <s>1</s><s>1</s><s>1</s>."
     },
     {
       "className": "StrengthPotion",
@@ -812,7 +869,8 @@
       "imagePath": "/images/potions/strength_potion.webp",
       "descriptionClean": "獲得2點力量。",
       "descI18n": "獲得2點<g>力量</g>。",
-      "nameEn": "Strength Potion"
+      "nameEn": "Strength Potion",
+      "descEn": "Gain 2 <g>Strength</g>."
     },
     {
       "className": "SwiftPotion",
@@ -826,7 +884,8 @@
       "imagePath": "/images/potions/swift_potion.webp",
       "descriptionClean": "抽3張牌。",
       "descI18n": "抽3張牌。",
-      "nameEn": "Swift Potion"
+      "nameEn": "Swift Potion",
+      "descEn": "Draw 3 cards."
     },
     {
       "className": "TouchOfInsanity",
@@ -840,7 +899,8 @@
       "imagePath": "/images/potions/touch_of_insanity.webp",
       "descriptionClean": "選擇你手牌中的一張牌，使其在本場戰鬥可以免費打出。",
       "descI18n": "選擇你<g>手牌</g>中的一張牌，使其在本場戰鬥可以免費打出。",
-      "nameEn": "Touch of Insanity"
+      "nameEn": "Touch of Insanity",
+      "descEn": "Choose a card in your <g>Hand</g>. It is free to play this combat."
     },
     {
       "className": "VulnerablePotion",
@@ -854,7 +914,8 @@
       "imagePath": "/images/potions/vulnerable_potion.webp",
       "descriptionClean": "給予3層易傷。",
       "descI18n": "給予3層<g>易傷</g>。",
-      "nameEn": "Vulnerable Potion"
+      "nameEn": "Vulnerable Potion",
+      "descEn": "Apply 3 <g>Vulnerable</g>."
     },
     {
       "className": "WeakPotion",
@@ -868,8 +929,13 @@
       "imagePath": "/images/potions/weak_potion.webp",
       "descriptionClean": "給予3層虛弱。",
       "descI18n": "給予3層<g>虛弱</g>。",
-      "nameEn": "Weak Potion"
+      "nameEn": "Weak Potion",
+      "descEn": "Apply 3 <g>Weak</g>."
     }
   ],
-  "englishNameSource": "https://slaythespire2.net/potion"
+  "englishNameSource": "https://slaythespire2.net/potion",
+  "englishSource": {
+    "url": "https://slaythespire2.net/potion",
+    "retrievedDate": "2026-11-19"
+  }
 }
