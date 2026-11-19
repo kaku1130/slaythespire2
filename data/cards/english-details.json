@@ -118,7 +118,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Poison",
+          "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by 1."
+        }
+      ],
       "builds": [
         {
           "name": "Poison",
@@ -487,7 +492,7 @@
       "keywords": [
         {
           "name": "Summon 6",
-          "description": "Summon Osty with 6 HP.\nIf already summoned, raise his Max HP by 6 for this combat."
+          "description": "Summon Osty with 6 HP. If already summoned, raise his Max HP by 6 for this combat."
         },
         {
           "name": "Exhaust",
@@ -1304,6 +1309,10 @@
       ],
       "keywords": [
         {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        },
+        {
           "name": "Innate",
           "description": "Start each combat with this card in your Hand."
         },
@@ -1888,7 +1897,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        }
+      ],
       "builds": [
         {
           "name": "Vulnerable",
@@ -2051,7 +2065,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        }
+      ],
       "builds": [
         {
           "name": "Claw Zero-Cost",
@@ -2576,6 +2595,10 @@
         {
           "name": "Inky",
           "description": "This card applies 1 Weak."
+        },
+        {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
         }
       ],
       "builds": [
@@ -2633,7 +2656,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Doom",
+          "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies."
+        }
+      ],
       "builds": [
         {
           "name": "Doom Execute",
@@ -2986,7 +3014,7 @@
       "keywords": [
         {
           "name": "Summon 5",
-          "description": "Summon Osty with 5 HP.\nIf already summoned, raise his Max HP by 5 for this combat."
+          "description": "Summon Osty with 5 HP. If already summoned, raise his Max HP by 5 for this combat."
         }
       ],
       "builds": [],
@@ -3374,7 +3402,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Poison",
+          "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by 1."
+        }
+      ],
       "builds": [
         {
           "name": "Poison",
@@ -3498,7 +3531,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        }
+      ],
       "builds": [],
       "version": "Live v0.111.1",
       "id": "BREAK",
@@ -3649,7 +3687,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Poison",
+          "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by 1."
+        }
+      ],
       "builds": [
         {
           "name": "Poison",
@@ -3858,7 +3901,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        }
+      ],
       "builds": [
         {
           "name": "Vulnerable",
@@ -5305,7 +5353,7 @@
       "keywords": [
         {
           "name": "Summon 3",
-          "description": "Summon Osty with 3 HP.\nIf already summoned, raise his Max HP by 3 for this combat."
+          "description": "Summon Osty with 3 HP. If already summoned, raise his Max HP by 3 for this combat."
         },
         {
           "name": "Exhaust",
@@ -5653,6 +5701,10 @@
       ],
       "keywords": [
         {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        },
+        {
           "name": "Block",
           "description": "Until next turn, prevents damage."
         }
@@ -5721,7 +5773,16 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        },
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        }
+      ],
       "builds": [
         {
           "name": "Star Engine",
@@ -6303,7 +6364,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Poison",
+          "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by 1."
+        }
+      ],
       "builds": [
         {
           "name": "Poison",
@@ -6474,7 +6540,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Doom",
+          "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies."
+        }
+      ],
       "builds": [
         {
           "name": "Doom Execute",
@@ -6752,7 +6823,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        }
+      ],
       "builds": [
         {
           "name": "Vulnerable",
@@ -7307,7 +7383,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Poison",
+          "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by 1."
+        }
+      ],
       "builds": [
         {
           "name": "Poison",
@@ -7415,7 +7496,16 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Doom",
+          "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies."
+        },
+        {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        }
+      ],
       "builds": [
         {
           "name": "Doom Execute",
@@ -7470,6 +7560,10 @@
         }
       ],
       "keywords": [
+        {
+          "name": "Doom",
+          "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies."
+        },
         {
           "name": "Block",
           "description": "Until next turn, prevents damage."
@@ -7528,7 +7622,16 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        },
+        {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        }
+      ],
       "builds": [
         {
           "name": "Reaper Big Hit",
@@ -8203,6 +8306,10 @@
       ],
       "keywords": [
         {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        },
+        {
           "name": "Block",
           "description": "Until next turn, prevents damage."
         },
@@ -8566,7 +8673,7 @@
       "keywords": [
         {
           "name": "Summon",
-          "description": "Summon Osty.\nIf already summoned, raise his Max HP for this combat."
+          "description": "Summon Osty. If already summoned, raise his Max HP for this combat."
         }
       ],
       "builds": [
@@ -8629,7 +8736,7 @@
       "keywords": [
         {
           "name": "Summon 3",
-          "description": "Summon Osty with 3 HP.\nIf already summoned, raise his Max HP by 3 for this combat."
+          "description": "Summon Osty with 3 HP. If already summoned, raise his Max HP by 3 for this combat."
         },
         {
           "name": "Exhaust",
@@ -8744,7 +8851,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        }
+      ],
       "builds": [
         {
           "name": "Vulnerable",
@@ -8920,6 +9032,10 @@
         {
           "name": "Strength",
           "description": "Strength adds additional damage to Attacks."
+        },
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
         },
         {
           "name": "Exhaust",
@@ -9685,7 +9801,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Doom",
+          "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies."
+        }
+      ],
       "builds": [
         {
           "name": "Doom Execute",
@@ -10085,7 +10206,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Poison",
+          "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by 1."
+        }
+      ],
       "builds": [
         {
           "name": "Poison",
@@ -10553,6 +10679,10 @@
       ],
       "keywords": [
         {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        },
+        {
           "name": "Artifact",
           "description": "Negates debuffs."
         },
@@ -10668,7 +10798,16 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        },
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        }
+      ],
       "builds": [],
       "version": "Live v0.111.1",
       "id": "FALLING_STAR",
@@ -10824,6 +10963,10 @@
         }
       ],
       "keywords": [
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        },
         {
           "name": "Ethereal",
           "description": "If this card is in your Hand at the end of this turn, it is Exhausted."
@@ -12491,7 +12634,16 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        },
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        }
+      ],
       "builds": [],
       "version": "Live v0.111.1",
       "id": "GAMMA_BLAST",
@@ -13108,7 +13260,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        }
+      ],
       "builds": [
         {
           "name": "Claw Zero-Cost",
@@ -14049,7 +14206,16 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Poison",
+          "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by 1."
+        },
+        {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        }
+      ],
       "builds": [
         {
           "name": "Poison",
@@ -14676,7 +14842,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        }
+      ],
       "builds": [],
       "version": "Live v0.111.1",
       "id": "HIGH_FIVE",
@@ -15648,7 +15819,7 @@
       "keywords": [
         {
           "name": "Summon 2",
-          "description": "Summon Osty with 2 HP.\nIf already summoned, raise his Max HP by 2 for this combat."
+          "description": "Summon Osty with 2 HP. If already summoned, raise his Max HP by 2 for this combat."
         },
         {
           "name": "Energy",
@@ -16268,6 +16439,14 @@
       ],
       "keywords": [
         {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        },
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        },
+        {
           "name": "Exhaust",
           "description": "Removed until the end of combat."
         }
@@ -16525,6 +16704,10 @@
       ],
       "keywords": [
         {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        },
+        {
           "name": "Block",
           "description": "Until next turn, prevents damage."
         }
@@ -16585,7 +16768,7 @@
       "keywords": [
         {
           "name": "Summon 6",
-          "description": "Summon Osty with 6 HP.\nIf already summoned, raise his Max HP by 6 for this combat."
+          "description": "Summon Osty with 6 HP. If already summoned, raise his Max HP by 6 for this combat."
         }
       ],
       "builds": [],
@@ -17089,6 +17272,10 @@
         {
           "name": "Strength",
           "description": "Strength adds additional damage to Attacks."
+        },
+        {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
         },
         {
           "name": "Exhaust",
@@ -17626,7 +17813,16 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        },
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        }
+      ],
       "builds": [],
       "version": "Live v0.111.1",
       "id": "METEOR_SHOWER",
@@ -17847,6 +18043,10 @@
       ],
       "keywords": [
         {
+          "name": "Poison",
+          "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by 1."
+        },
+        {
           "name": "Block",
           "description": "Until next turn, prevents damage."
         },
@@ -18020,6 +18220,10 @@
         }
       ],
       "keywords": [
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        },
         {
           "name": "Exhaust",
           "description": "Removed until the end of combat."
@@ -18356,7 +18560,7 @@
       "keywords": [
         {
           "name": "Summon 5",
-          "description": "Summon Osty with 5 HP.\nIf already summoned, raise his Max HP by 5 for this combat."
+          "description": "Summon Osty with 5 HP. If already summoned, raise his Max HP by 5 for this combat."
         }
       ],
       "builds": [
@@ -18413,6 +18617,10 @@
         }
       ],
       "keywords": [
+        {
+          "name": "Doom",
+          "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies."
+        },
         {
           "name": "Block",
           "description": "Until next turn, prevents damage."
@@ -18528,6 +18736,10 @@
       ],
       "keywords": [
         {
+          "name": "Doom",
+          "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies."
+        },
+        {
           "name": "Energy",
           "description": "Energy is used to play cards from your Hand."
         }
@@ -18577,7 +18789,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        }
+      ],
       "builds": [],
       "version": "Live v0.111.1",
       "id": "NEUTRALIZE",
@@ -18733,7 +18950,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Doom",
+          "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies."
+        }
+      ],
       "builds": [
         {
           "name": "Doom Execute",
@@ -18943,7 +19165,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Poison",
+          "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by 1."
+        }
+      ],
       "builds": [
         {
           "name": "Poison",
@@ -18998,6 +19225,10 @@
         }
       ],
       "keywords": [
+        {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        },
         {
           "name": "Channel",
           "description": "Channeling an Orb puts it into your first empty slot. If you have no empty slots, your first Orb is automatically Evoked to make room."
@@ -19062,7 +19293,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Doom",
+          "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies."
+        }
+      ],
       "builds": [
         {
           "name": "Doom Execute",
@@ -19348,7 +19584,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Poison",
+          "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by 1."
+        }
+      ],
       "builds": [
         {
           "name": "Poison",
@@ -20425,7 +20666,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Poison",
+          "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by 1."
+        }
+      ],
       "builds": [
         {
           "name": "Poison",
@@ -21210,7 +21456,7 @@
       "keywords": [
         {
           "name": "Summon 4",
-          "description": "Summon Osty with 4 HP.\nIf already summoned, raise his Max HP by 4 for this combat."
+          "description": "Summon Osty with 4 HP. If already summoned, raise his Max HP by 4 for this combat."
         },
         {
           "name": "Block",
@@ -21393,6 +21639,14 @@
         }
       ],
       "keywords": [
+        {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        },
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        },
         {
           "name": "Exhaust",
           "description": "Removed until the end of combat."
@@ -21975,7 +22229,7 @@
       "keywords": [
         {
           "name": "Summon 20",
-          "description": "Summon Osty with 20 HP.\nIf already summoned, raise his Max HP by 20 for this combat."
+          "description": "Summon Osty with 20 HP. If already summoned, raise his Max HP by 20 for this combat."
         },
         {
           "name": "Exhaust",
@@ -22091,6 +22345,10 @@
         }
       ],
       "keywords": [
+        {
+          "name": "Doom",
+          "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies."
+        },
         {
           "name": "Retain",
           "description": "Retained cards are not discarded at the end of turn."
@@ -23514,7 +23772,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Doom",
+          "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies."
+        }
+      ],
       "builds": [
         {
           "name": "Doom Execute",
@@ -24770,6 +25033,14 @@
       ],
       "keywords": [
         {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        },
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        },
+        {
           "name": "Exhaust",
           "description": "Removed until the end of combat."
         }
@@ -24820,6 +25091,10 @@
         }
       ],
       "keywords": [
+        {
+          "name": "Doom",
+          "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies."
+        },
         {
           "name": "Block",
           "description": "Until next turn, prevents damage."
@@ -24949,7 +25224,7 @@
       "keywords": [
         {
           "name": "Summon",
-          "description": "Summon Osty.\nIf already summoned, raise his Max HP for this combat."
+          "description": "Summon Osty. If already summoned, raise his Max HP for this combat."
         }
       ],
       "builds": [],
@@ -25319,6 +25594,10 @@
         }
       ],
       "keywords": [
+        {
+          "name": "Poison",
+          "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by 1."
+        },
         {
           "name": "Retain",
           "description": "Retained cards are not discarded at the end of turn."
@@ -26159,7 +26438,7 @@
       "keywords": [
         {
           "name": "Summon 3",
-          "description": "Summon Osty with 3 HP.\nIf already summoned, raise his Max HP by 3 for this combat."
+          "description": "Summon Osty with 3 HP. If already summoned, raise his Max HP by 3 for this combat."
         },
         {
           "name": "Retain",
@@ -27130,7 +27409,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        }
+      ],
       "builds": [],
       "version": "Live v0.111.1",
       "id": "SUCKER_PUNCH",
@@ -27410,6 +27694,10 @@
         }
       ],
       "keywords": [
+        {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        },
         {
           "name": "Innate",
           "description": "Start each combat with this card in your Hand."
@@ -27942,6 +28230,10 @@
         }
       ],
       "keywords": [
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        },
         {
           "name": "Block",
           "description": "Until next turn, prevents damage."
@@ -28786,7 +29078,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        }
+      ],
       "builds": [
         {
           "name": "Vulnerable",
@@ -28841,6 +29138,10 @@
         }
       ],
       "keywords": [
+        {
+          "name": "Doom",
+          "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies."
+        },
         {
           "name": "Retain",
           "description": "Retained cards are not discarded at the end of turn."
@@ -29011,7 +29312,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        }
+      ],
       "builds": [],
       "version": "Live v0.111.1",
       "id": "TRACKING",
@@ -29188,6 +29494,10 @@
         }
       ],
       "keywords": [
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        },
         {
           "name": "Exhaust",
           "description": "Removed until the end of combat."
@@ -29905,7 +30215,16 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Weak",
+          "description": "Weakened creatures deal 25% less damage with Attacks."
+        },
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        }
+      ],
       "builds": [
         {
           "name": "Vulnerable",
@@ -30110,7 +30429,12 @@
           "value": "Available"
         }
       ],
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Vulnerable",
+          "description": "Vulnerable creatures take 50% more damage from Attacks."
+        }
+      ],
       "builds": [
         {
           "name": "Vulnerable",
@@ -30912,5 +31236,6 @@
       "image": "assets/cards/source/cards/defect/zap.webp",
       "characterIcon": "assets/cards/icons/defect.webp"
     }
-  ]
+  ],
+  "keywordNotesCheckedAt": "2026-11-19T14:08:29.838Z"
 }

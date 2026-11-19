@@ -11,6 +11,10 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
    page.on('pageerror',e=>errors.push(e.message));
    page.on('requestfailed',request=>{if(request.url().startsWith('file:') && request.failure()?.errorText!=='net::ERR_ABORTED')failed.push(request.url()+' '+request.failure()?.errorText);});
    await page.goto(pathToFileURL(path.resolve(file)).href);
+   if(file==='card.html') {
+    await page.locator('#search').fill('"Tremble"');
+    assert.deepEqual(await page.locator('#card-TREMBLE .detail-keyword strong').allTextContents(),['Vulnerable','Exhaust']);
+   }
    const missingLinks=await page.locator('a[href]').evaluateAll(nodes=>nodes.map(n=>n.href).filter(h=>h.startsWith('file:')));
    for(const url of missingLinks)assert.ok(fs.existsSync(fileURLToPath(url)),file+' missing link '+url);
    const broken=await page.locator('img[src]').evaluateAll(async nodes=>{

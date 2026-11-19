@@ -1477,9 +1477,3 @@ html body[data-view=grid] main#main-content#main-content #card-scroll .grid-pool
 }
 html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-child(1 of :not([hidden])) .card-detail {margin-top:0}
 html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-last-child(1 of :not([hidden])) .card-detail {margin-bottom:0}
-
-/* Keep attribution text and links the same gray on every page. */
-html body main#main-content#main-content .site-attribution,
-html body main#main-content#main-content .site-attribution a {
-  color:#6b7280!important;
-}
