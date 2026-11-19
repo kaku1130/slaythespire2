@@ -2,9 +2,9 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 // Bundle each desktop index's styles in cascade order.
-function writeDesktopPage(page, html) {
+function writeDesktopPage(page, html, {searchControls = true} = {}) {
   if (!html.includes('src="assets/cards/page-scroll.js"')) html = html.replace('</body>', '<script src="assets/cards/page-scroll.js"></script></body>');
-  if (!html.includes('src="assets/cards/search-controls.js"')) html = html.replace('</body>', '<script src="assets/cards/search-controls.js"></script></body>');
+  if (searchControls && !html.includes('src="assets/cards/search-controls.js"')) html = html.replace('</body>', '<script src="assets/cards/search-controls.js"></script></body>');
   const basename = path.basename(page, '.html');
   const name = ({card:'cards',build:'builds'})[basename] || basename;
   const stylesheet = path.posix.join('assets', name, name + '.css');

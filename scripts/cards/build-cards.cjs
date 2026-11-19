@@ -16,13 +16,13 @@ const buildsByCard = buildSource.byCard;
 const tiers = new Map(tierSource.rankings.map(c=>[c.id,c.tier]));
 const categories = ['Ironclad', 'Silent', 'Defect', 'Regent', 'Necrobinder', 'Colorless'];
 function renderCardFilters(groups) {
-  return '<div class="card-filter-rows" lang="en">' + groups.map(([label,key,values]) => {
+  return require('./character-filter.cjs')('<div class="card-filter-rows" lang="en">' + groups.map(([label,key,values]) => {
     const buttons = values.map(value => {
       const selected = key === 'character' && value === 'Ironclad';
       return '<button type="button" value="' + value + '" aria-pressed="' + selected + '">' + (value || 'All') + '</button>';
     }).join('');
     return '<div class="card-filter-row"><span>' + label + '</span><div class="card-filter-buttons" id="card-filter-' + key + '" role="group" aria-label="' + label + '">' + buttons + '</div></div>';
-  }).join('') + '</div>';
+  }).join('') + '</div>');
 }
 function renderCardActions() {
   const tiers = ['S', 'A', 'B', 'C', 'D'];
@@ -105,7 +105,7 @@ const sections = categories.map((pool, i) => {
     const values={images:renderCardImages(c),english:'<a class="name-en" href="https://slaythespire2.net/card/'+encodeURIComponent(c.slug)+'" target="_blank" rel="noopener noreferrer">'+esc(c.name)+'</a>',name:'<a data-card-art="'+esc(c.id)+'" data-rarity="'+esc(c.rarity)+'" href="https://slaythespire2.net/zh-TW/card/'+encodeURIComponent(c.slug)+'" target="_blank" rel="noopener noreferrer">'+'<span class="name-zh" lang="zh-Hant">'+esc(chineseCards.get(c.id).name)+'</span></a>',type:'<span class="type" data-type="'+esc(c.type)+'">'+esc(typeLabels[c.type])+'</span>',energy:renderEnergy(c),effect:renderEffect(chineseCards.get(c.id).descBase)+(chineseCards.get(c.id).notes?'<br><small>'+renderEffect(chineseCards.get(c.id).notes)+'</small>':''),upgraded:renderUpgraded(c),rarity:'<span class="rarity" data-rarity="'+esc(c.rarity)+'">'+esc(displayedRarities.includes(c.rarity)?rarityLabels[c.rarity]:'—')+'</span>',tier:'<span class="tier" data-tier="'+(tiers.get(c.id)||'unranked')+'"'+(tiers.has(c.id)?'':' title="Not ranked by source"')+'>'+(tiers.get(c.id)||'—')+'</span>',builds:renderBuilds(c),pool:esc(pool)};
     return '<tr id="card-'+esc(c.id)+'" role="row" data-name="'+esc((c.name+' '+chineseCards.get(c.id).name).toLowerCase())+'" data-id="'+esc(c.id)+'" data-search="'+esc([c.id,c.name,chineseCards.get(c.id).name,...(chineseCards.get(c.id).aliases||[]),chineseCards.get(c.id).notes||'',chineseCards.get(c.id).descBase,canUpgrade(c)?chineseCards.get(c.id).descUpgraded:''].join(' ').replace(/<[^>]*>/g,'').toLowerCase())+'" data-type="'+esc(c.type)+'" data-rarity="'+esc(c.rarity)+'">'+columns.map(([key,label])=>'<td role="cell" data-field="'+key+'" data-label="'+label+'"'+(key==='energy'?' data-sort-value="'+esc(costLabel(c.energy))+'"':key==='name'?' data-sort-value="'+esc(c.name)+'"':key==='rarity'?' data-sort-value="'+esc(c.rarity)+'"':key==='type'?' data-sort-value="'+esc(c.type)+'"':'')+' class="'+({english:'english-name',name:'name',pool:'category',effect:'effect',upgraded:'effect upgraded',builds:'builds',energy:'energy'}[key]||key)+'">'+values[key]+'</td>').join('')+'</tr>';
   }).join('\n');
-  return `<section data-pool="${pool}" style="--accent:${colors[i]}"><h2 class="grid-pool-heading"><img src="${poolIcons[pool]}" alt="" width="28" height="28">${pool} <span class="grid-pool-count">(${list.length})</span></h2><div class="mobile-sort"><label for="sort-${pool}">Sort by</label><select id="sort-${pool}" class="mobile-sort-key">${columns.filter(([key])=>visibleColumns.has(key)).map(([key,label])=>`<option value="${key}"${key==='pool'?' hidden disabled':''}${key==='rarity'?' selected':''}>${label}</option>`).join('')}</select><button type="button" class="mobile-sort-direction" aria-label="Ascending; click to sort descending">↑ Asc</button></div><div class="table-wrap"><table role="table"><caption class="sr-only">${pool} 卡片名稱，共 ${list.length} 張</caption>${columnGroup}${tableHead}<tbody role="rowgroup">${rows}</tbody></table></div></section>`;
+  return `<section data-pool="${pool}"${pool === 'Ironclad' ? '' : ' hidden'} style="--accent:${colors[i]}"><h2 class="grid-pool-heading"><img src="${poolIcons[pool]}" alt="" width="28" height="28">${pool} <span class="grid-pool-count">(${list.length})</span></h2><div class="mobile-sort"><label for="sort-${pool}">Sort by</label><select id="sort-${pool}" class="mobile-sort-key">${columns.filter(([key])=>visibleColumns.has(key)).map(([key,label])=>`<option value="${key}"${key==='pool'?' hidden disabled':''}${key==='rarity'?' selected':''}>${label}</option>`).join('')}</select><button type="button" class="mobile-sort-direction" aria-label="Ascending; click to sort descending">↑ Asc</button></div><div class="table-wrap"><table role="table"><caption class="sr-only">${pool} 卡片名稱，共 ${list.length} 張</caption>${columnGroup}${tableHead}<tbody role="rowgroup">${rows}</tbody></table></div></section>`;
 }).join('\n');
 const html = `<!doctype html>
 <html lang="zh-Hant"><head><meta charset="utf-8"><link rel="apple-touch-icon" sizes="180x180" href="assets/cards/icons/site-logo.png"><link rel="icon" type="image/webp" href="assets/cards/icons/site-logo.webp"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Slay the Spire 2｜503 張卡片名稱索引</title>
@@ -347,8 +347,9 @@ ${navigation.layoutStyles}
 html{--site-width:100%}
 html body main#main-content,html body .site-header>.site-header-inner{width:100%;max-width:none}
 ${fs.readFileSync('assets/cards/compact-cards.css','utf8')}
+${fs.readFileSync('assets/cards/search-control.css','utf8')}
 </style></head><body data-view="grid">${navigation.renderHeader('cards')}<main id="main-content">
-<div class="tools" id="tools" hidden><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><input id="search" type="search" placeholder="搜尋關鍵字" autocomplete="off">${cardGrid.actionControls}</div>${renderCardFilters([['Character','character',["Ironclad","Silent","Defect","Necrobinder","Regent","Colorless"]],['Rarity','rarity',["Common","Uncommon","Rare","Ancient"]],['Type','type',["Attack","Skill","Power"]]])}${renderCardActions()}</div>
+<div class="tools" id="tools"><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><div class="search-control"><input id="search" type="text" inputmode="search" role="searchbox" placeholder="搜尋關鍵字" autocomplete="off"><button type="button" class="search-clear" aria-label="清除搜尋關鍵字" title="清除搜尋關鍵字"><span class="search-icon" aria-hidden="true">🔍</span></button></div>${cardGrid.actionControls}</div>${renderCardFilters([['Character','character',["Ironclad","Silent","Defect","Necrobinder","Regent","Colorless"]],['Rarity','rarity',["Common","Uncommon","Rare","Ancient"]],['Type','type',["Attack","Skill","Power"]]])}${renderCardActions()}</div>
 <div id="card-scroll" class="card-scroll" role="region" aria-label="卡牌表格" tabindex="0">${sections}<p id="empty" hidden>找不到符合條件的卡片，請調整搜尋文字、分類或稀有度。</p>
 </div>
 </main>
@@ -380,8 +381,40 @@ const tierChoices=[...tierFilter.querySelectorAll('button')];
 const compactCardMedia=window.matchMedia('(max-width:1024px), (max-width:1366px) and (hover:none) and (pointer:coarse)');
 const sections=[...document.querySelectorAll('section[data-pool]')];
 search.value='';
-function filter(){const queries=cardSearchQueries();const selectedTiers=new Set(tierChoices.filter(choice=>choice.getAttribute('aria-pressed')==='true').map(choice=>choice.value));const characters=selectedValues(characterFilter),rarities=selectedValues(rarityFilter),types=selectedValues(typeFilter);let count=0;for(const section of sections){let found=0;for(const row of section.querySelectorAll('tbody tr')){row.classList.remove('is-selected');row.hidden=!!((characters.size&&!characters.has(section.dataset.pool))||(rarities.size&&!rarities.has(row.dataset.rarity)&&!(rarities.has('Common')&&row.dataset.rarity==='Basic'))||(selectedTiers.size&&!selectedTiers.has(row.querySelector('.tier[data-tier]').dataset.tier))||(types.size&&!types.has(row.dataset.type)&&!(types.has('Event')&&section.dataset.pool==='Event'))||(queries.length>0&&!cardMatchesSearch(row,queries)));if(!row.hidden)found++;}section.hidden=!found;const poolCount=section.querySelector('.grid-pool-count');if(poolCount)poolCount.textContent='('+found+')';count+=found;}document.getElementById('empty').hidden=count!==0;document.getElementById('card-scroll').scrollTo({top:0,left:0,behavior:'instant'});}
-document.getElementById('aoe-toggle').addEventListener('click',()=>{const names=[...document.querySelectorAll('.card-scroll .name-en')].map(name=>name.textContent.trim()).filter(Boolean);if(!names.length)return;search.value='"'+names[Math.floor(Math.random()*names.length)]+'"';search.dispatchEvent(new Event('input',{bubbles:true}));});
+function selectedCardFilters() {
+  return {characters:selectedValues(characterFilter), rarities:selectedValues(rarityFilter), types:selectedValues(typeFilter), tiers:selectedValues(tierFilter)};
+}
+function cardMatchesFilters(row, section, selected) {
+  const {characters, rarities, types, tiers}=selected;
+  return (!characters.size||characters.has(section.dataset.pool))
+    && (!rarities.size||rarities.has(row.dataset.rarity)||(rarities.has('Common')&&row.dataset.rarity==='Basic'))
+    && (!types.size||types.has(row.dataset.type)||(types.has('Event')&&section.dataset.pool==='Event'))
+    && (!tiers.size||tiers.has(row.querySelector('.tier[data-tier]').dataset.tier));
+}
+function filter() {
+  const queries=cardSearchQueries(),selected=selectedCardFilters();let count=0;
+  for(const section of sections){
+    let found=0;
+    for(const row of section.querySelectorAll('tbody tr')){
+      row.classList.remove('is-selected');
+      row.hidden=!cardMatchesFilters(row,section,selected)||(queries.length>0&&!cardMatchesSearch(row,queries));
+      if(!row.hidden)found++;
+    }
+    section.hidden=!found;
+    const poolCount=section.querySelector('.grid-pool-count');if(poolCount)poolCount.textContent='('+found+')';
+    count+=found;
+  }
+  document.getElementById('empty').hidden=count!==0;
+  document.getElementById('card-scroll').scrollTo({top:0,left:0,behavior:'instant'});
+}
+
+document.getElementById('aoe-toggle').addEventListener('click',()=>{
+  const selected=selectedCardFilters();
+  const names=sections.flatMap(section=>[...section.querySelectorAll('tbody tr')].filter(row=>cardMatchesFilters(row,section,selected)).map(row=>row.querySelector('.name-en').textContent.trim())).filter(Boolean);
+  if(!names.length)return;
+  search.value='"'+names[Math.floor(Math.random()*names.length)]+'"';
+  search.dispatchEvent(new Event('input',{bubbles:true}));
+});
 function cardSearchQueries() {
   return [...new Set(search.value.trim().toLowerCase().split(/[\\s+、，,]+/).filter(Boolean))];
 }
@@ -393,36 +426,14 @@ function cardMatchesSearch(row, queries) {
   }
   return queries.some(value => row.dataset.search.includes(value));
 }
-function selectSearchCharacters(pools) {
-  for (const pool of pools) {
-    if (characterFilter.querySelector('button[value="' + pool + '"]')) continue;
-    const button = document.createElement('button');
-    button.type = 'button'; button.value = pool; button.textContent = pool;
-    button.setAttribute('aria-pressed', 'false'); characterFilter.append(button);
-  }
-  setFilterValues(characterFilter, pools);
-}
-function searchCards() {
-  if (search.value.trim()) {
-    for (const group of [rarityFilter, typeFilter]) setFilterValues(group, []);
-    for (const choice of tierChoices) choice.setAttribute('aria-pressed', 'false');
-    const queries = cardSearchQueries();
-    const rows = sections.flatMap(section => [...section.querySelectorAll('tbody tr')]);
-    const matches = rows.filter(row => cardMatchesSearch(row,queries));
-    const pools = [...new Set(matches.map(row => row.closest('section[data-pool]').dataset.pool))];
-    if (pools.length) selectSearchCharacters(pools);
-  }
-  delete search.dataset.preferredPool;
-  filter();
-}
-search.addEventListener('input',searchCards);
+search.addEventListener('input',filter);
 
 for(const button of tierChoices)button.addEventListener('click',()=>{
   button.setAttribute('aria-pressed',String(button.getAttribute('aria-pressed')!=='true'));
   filter();
 });
 setFilterValues(characterFilter, ['Ironclad']);
-document.getElementById('tools').hidden=false;filter();
+filter();
 
 
 ${compareCards.toString()}

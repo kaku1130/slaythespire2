@@ -41,3 +41,26 @@ ${metadata}>.detail-rarity[data-rarity=${rarity}] {color:${color}}
 for(const [tier,[color,background]] of Object.entries(tierColors))module.exports += `
 ${metadata}>.detail-tier[data-tier=${tier}][data-tier] {color:${color}!important;background:${background}!important}
 `;
+
+module.exports += require('./rarity-colors.cjs');
+
+module.exports += `
+/* Card tier filters use the same filled presentation as the rating badges. */
+html body #main-content #tools #card-filter-tier button {
+  min-height:48px;padding:0 10px;border-radius:6px;
+  font:800 30px/1 Arial,"Microsoft JhengHei",sans-serif;
+  position:relative;
+}
+html body #main-content #tools #card-filter-tier button[aria-pressed=true] {
+  box-shadow:none!important;
+}
+html body #main-content #tools #card-filter-tier button[aria-pressed=true]::after {
+  content:"✓";position:absolute;right:4px;top:3px;
+  display:grid;place-items:center;width:18px;height:18px;
+  border-radius:50%;background:#fff;color:#040609;font:800 14px/1 Arial,sans-serif;
+}
+` + Object.entries(colors).map(([tier,{color,background}]) => `
+html body #main-content #tools #card-filter-tier button[value=${tier}] {
+  color:${color}!important;background:${background}!important;border:1px solid ${background}!important;
+}
+`).join('');

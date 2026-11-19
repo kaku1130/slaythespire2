@@ -252,6 +252,7 @@ html body .site-header .site-nav a {
 }
 
 /* Category artwork replaces the navigation text labels. */
+html body>.site-header {box-sizing:border-box;width:100vw!important;max-width:none!important;margin-inline:0}
 html body .site-header .site-nav > a {min-width:60px;min-height:48px;padding:6px 12px!important}
 html body .site-header .site-nav a > .site-nav-visual {display:flex!important;align-items:center;justify-content:center}
 html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max-width:none}
@@ -558,6 +559,66 @@ html body main#main-content #tools > .card-action-row {--filter-frame-color:#70b
   }
 }
 
+/* Filter buttons fill their frames without visible group headings. */
+html body main#main-content #tools .card-filter-row,
+html body main#main-content #tools > .card-action-row,
+html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
+  grid-template-columns:minmax(0,1fr);
+}
+html body main#main-content #tools .card-filter-row > span,
+html body main#main-content #tools .card-tier-label,
+html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row > span {
+  display:none;
+}
+html body main#main-content #tools .card-tier-choices {grid-column:1}
+
+/* Fill each filter frame while keeping content-based button proportions. */
+html body main#main-content #tools .card-filter-buttons,
+html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-buttons {
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+  min-width:0;
+}
+html body main#main-content #tools .card-tier-choices {
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+  min-width:0;
+}
+html body main#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button,
+html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-buttons button {
+  box-sizing:border-box;
+  width:auto;
+  flex:1 1 auto;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:0;
+  max-width:none;
+  margin:0;
+}
+html body main#main-content :is(#tools,.relic-filters,.potion-filters) .filter-character-icon {
+  display:block;width:32px;height:32px;object-fit:contain;
+}
+
+/* Card filter groups share a blue outer frame. */
+html body main#main-content #tools .card-filter-row,
+html body main#main-content #tools > .card-action-row {
+  border-color:#6faeee;
+}
+
+/* Relic and potion filter groups use the same blue outer frame. */
+html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
+  border-color:#6faeee;
+}
+
+/* Random-search buttons share the blue filter-frame border. */
+html body main#main-content #tools #aoe-toggle,
+html body main#main-content .filters .catalog-search-tools>button.catalog-random {
+  border-color:#6faeee!important;
+}
+
 /* Equal spacing above and below the header divider. */
 html body .site-header>.site-header-inner {padding-block:8px!important}
 html body main#main-content {padding-top:8px!important}
@@ -596,7 +657,199 @@ html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-ra
   margin-block: 0;
 }
 
+/* Desktop pages share one centered half-width content area below the header. */
+@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine), screen and (min-width:1441px) {
+  html body:not([data-detail-kind]) main#main-content {
+    box-sizing:border-box;
+    width:50%!important;
+    max-width:none!important;
+    margin-inline:auto!important;
+  }
+  html body:not([data-detail-kind]) main#main-content:has(>.relic-filters,>.potion-filters)>.catalog-scroll {
+    width:100%!important;
+    max-width:none;
+    margin-inline:0;
+  }
+  html body:not([data-detail-kind]) main#main-content .card-detail .detail-keyword {width:100%;justify-self:stretch}
+}
+
+/* Catalogs scroll with the document; only the navigation stays at the top. */
+@media screen {
+  html:has(main#main-content.ancient-browser,main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
+    height:auto!important;min-height:100%;overflow-x:clip!important;overflow-y:auto!important;
+  }
+  body:has(main#main-content.ancient-browser,main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
+    position:static!important;inset:auto!important;display:block!important;width:100%;
+    height:auto!important;min-height:100dvh;overflow:visible!important;
+  }
+  body:has(main#main-content.ancient-browser,main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters)>.site-header {
+    position:sticky!important;top:0!important;z-index:100;
+  }
+  html body main#main-content#main-content:is(.ancient-browser,:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters)) {
+    display:block!important;flex:none!important;height:auto!important;min-height:0;
+    max-height:none!important;overflow:visible!important;
+  }
+  html body main#main-content#main-content:is(.ancient-browser,:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters))>:is(.tools,.filters,.card-scroll,.catalog-scroll,.split-body,.mobile-search-row),
+  html body main#main-content#main-content.ancient-browser .split-detail {
+    position:static!important;flex:none!important;height:auto!important;
+    min-height:0;max-height:none!important;overflow:visible!important;scrollbar-gutter:auto;
+  }
+  html body main#main-content#main-content:is(:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters)) :is(.grid-pool-heading,.relic-section-title,.potion-section-title) {
+    position:static!important;top:auto;
+  }
+}
+
+/* Tier A uses orange throughout labels, filters and rankings. */
+:root {--card-tier-A:#f97316;--catalog-tier-A:#f97316}
+html body :is(.tier,.build-tier,.card-tier-badge,.relic-tier-label,.font-extrabold)[data-tier=A] {
+  --tier-color:#f97316!important;background:#f97316!important;color:#fff!important;border-color:#f97316!important;
+}
+html body :is([data-tier-filter=A],#card-filter-tier button[value=A]) {
+  --tier-color:#f97316!important;--selection-color:#f97316!important;
+}
+html body .card-detail :is(.detail-tier,.detail-build-tier)[data-tier=A] {
+  color:#f97316;background:color-mix(in srgb,#f97316 16%,#0b1119);border-color:#f97316;
+}
+
+/* Solid tier labels, matching the ancient ranking label presentation. */
+
+html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,body.character-guide-page .build-tier,body.character-guide-page .card-tier-badge)[data-tier] {
+  display:inline-flex;align-items:center;justify-content:center;
+  box-sizing:border-box;flex:0 0 auto;min-width:36px;min-height:34px;height:auto;
+  padding:3px 10px;border-radius:4px;font:800 20px/1.3 Arial,"Microsoft JhengHei",sans-serif;
+}
+
+html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=S][data-tier] {
+  color:rgb(255, 255, 255)!important;background:oklab(0.645008 0.235914 0.0696316 / 0.9)!important;border:1px solid oklab(0.645008 0.235914 0.0696316 / 0.9)!important;
+}
+
+html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {
+  color:rgb(255, 255, 255)!important;background:rgb(249, 115, 22)!important;border:1px solid rgb(249, 115, 22)!important;
+}
+
+html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=B][data-tier] {
+  color:rgb(255, 255, 255)!important;background:oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;border:1px solid oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;
+}
+
+html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=C][data-tier] {
+  color:rgb(255, 255, 255)!important;background:oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;border:1px solid oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;
+}
+
+html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=D][data-tier] {
+  color:rgb(255, 255, 255)!important;background:rgb(120, 132, 145)!important;border:1px solid rgb(120, 132, 145)!important;
+}
+
+/* Tier A labels use white lettering on their existing background. */
+html body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#fff!important}
+
+/* English card metadata: plain rarity/type text and compact solid tier badges. */
+html body #main-content .card-detail .detail-meta>:is(.detail-type,.detail-rarity) {
+  min-height:0;height:auto;padding:0;border:0;border-radius:0;background:transparent;
+}
+html body #main-content .card-detail .detail-meta>.detail-type {font-size:16px;font-weight:500;line-height:24px}
+html body #main-content .card-detail .detail-meta>.detail-rarity {font-size:14px;font-weight:400;line-height:20px}
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier][data-tier] {
+  flex:0 1 auto;min-width:0;min-height:0;height:auto;
+  padding:2px 8px;border:0!important;border-radius:6px;
+  font:700 12px/16px Arial,"Microsoft JhengHei",sans-serif;
+}
+
+html body #main-content .card-detail .detail-meta>.detail-type[data-type=Attack] {color:lab(63.7053% 60.745 31.3109)}
+
+html body #main-content .card-detail .detail-meta>.detail-type[data-type=Skill] {color:lab(78.503% -64.9265 39.7492)}
+
+html body #main-content .card-detail .detail-meta>.detail-type[data-type=Power] {color:lab(83.2664% 8.65132 106.895)}
+
+html body #main-content .card-detail .detail-meta>.detail-rarity[data-rarity=Basic] {color:lab(84.9837% .601262 -2.17986)}
+
+html body #main-content .card-detail .detail-meta>.detail-rarity[data-rarity=Common] {color:lab(84.9837% .601262 -2.17986)}
+
+html body #main-content .card-detail .detail-meta>.detail-rarity[data-rarity=Uncommon] {color:lab(65.0361% -1.42065 -56.9802)}
+
+html body #main-content .card-detail .detail-meta>.detail-rarity[data-rarity=Rare] {color:lab(83.2664% 8.65132 106.895)}
+
+html body #main-content .card-detail .detail-meta>.detail-rarity[data-rarity=Ancient] {color:lab(72.7183% 31.8672 97.9407)}
+
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=S][data-tier] {color:#fff!important;background:var(--card-tier-S)!important}
+
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=A][data-tier] {color:#fff!important;background:var(--card-tier-A)!important}
+
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=B][data-tier] {color:#000!important;background:var(--card-tier-B)!important}
+
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=C][data-tier] {color:#000!important;background:var(--card-tier-C)!important}
+
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=D][data-tier] {color:#000!important;background:var(--card-tier-D)!important}
+
+/* Use a deeper blue consistently for Uncommon text. */
+html body #main-content [data-rarity=Uncommon] {--rarity-color:#4f9bd9!important}
+html body #main-content .card-detail-row[data-rarity=Uncommon] .card-detail {--detail-rarity-color:#4f9bd9}
+html body #main-content :is([data-stat-rarity=Uncommon],[data-relic-rarity=Uncommon],.rarity[data-rarity=Uncommon],.card-text-link[data-rarity=Uncommon],.build-card-list a[data-rarity=Uncommon]) {color:#4f9bd9!important}
+html body #main-content .potion-section[data-rarity=Uncommon]>.potion-section-title {color:#4f9bd9}
+html body #main-content :is(#card-filter-rarity button[value=Uncommon],[data-catalog-filter=rarity][value=Uncommon],button[data-rarity-filter=Uncommon],[data-filter-group=rarity][data-filter-value=Uncommon]) {--selection-color:#4f9bd9!important;--rarity-color:#4f9bd9!important}
+
+/* Set the card page width once; every nested content wrapper fills it. */
+html body main#main-content#main-content:has(>#card-scroll) {
+  box-sizing:border-box;width:100%!important;max-width:none!important;
+  margin-inline:auto!important;padding-inline:0!important;
+}
+@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine) {
+  html body main#main-content#main-content:has(>#card-scroll) {width:50vw!important}
+}
+html body main#main-content#main-content>#tools,
+html body main#main-content#main-content>#card-scroll {
+  box-sizing:border-box;width:100%!important;max-width:none!important;padding-inline:0;
+}
+html body[data-view=grid] main#main-content#main-content #card-scroll :is(section[data-pool],.table-wrap,table,tbody,.card-detail-row,.card-detail-cell,.card-detail) {
+  box-sizing:border-box;width:100%;max-width:none;min-width:0;
+}
+html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:minmax(0,1fr)}
+/* Keyword notes share the centered artwork width on every device. */
+html body main#main-content#main-content .card-detail>.detail-keyword {
+  box-sizing:border-box;width:100%;justify-self:stretch;margin-inline:0;
+}
+
+
+/* Align card information with the centered artwork width. */
+html body main#main-content#main-content .card-detail>:is(header,.detail-meta,.detail-section) {
+  box-sizing:border-box;width:100%;max-width:700px;min-width:0;
+  justify-self:center;overflow-wrap:anywhere;
+}
+html body main#main-content#main-content .card-detail>.detail-keyword {
+  box-sizing:border-box;width:100%;max-width:700px;min-width:0;justify-self:center;overflow-wrap:anywhere;
+}
+
+/* Keep profession headings equally spaced between the surrounding content. */
+html body[data-view=grid] main#main-content#main-content #card-scroll>section[data-pool] {
+  display:flow-root;margin-block:0;
+}
+html body[data-view=grid] main#main-content#main-content #card-scroll .grid-pool-heading {
+  margin-block:0;padding-block:24px;
+}
+html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-child(1 of :not([hidden])) .card-detail {margin-top:0}
+html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-last-child(1 of :not([hidden])) .card-detail {margin-bottom:0}
+
+/* Size each catalog or guide once against the viewport, never its nested panels. */
+html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu])) {
+  box-sizing:border-box;width:100%!important;max-width:none!important;
+  margin-inline:auto!important;padding-inline:0!important;
+}
+@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine) {
+  html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu])) {width:50vw!important}
+}
+html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),
+html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu])) :is(.relic-section,.potion-section,.catalog,.split-detail,.split-detail iframe,.build-content,.build-section,.build-panel) {
+  box-sizing:border-box;width:100%!important;max-width:none!important;min-width:0;
+}
+html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>.catalog-scroll {margin-inline:0}
+
+/* Keep attribution text and links the same gray on every page. */
+html body main#main-content#main-content .site-attribution,
+html body main#main-content#main-content .site-attribution a {
+  color:#6b7280!important;
+}
+
 /* Category artwork replaces the navigation text labels. */
+html body>.site-header {box-sizing:border-box;width:100vw!important;max-width:none!important;margin-inline:0}
 html body .site-header .site-nav > a {min-width:60px;min-height:48px;padding:6px 12px!important}
 html body .site-header .site-nav a > .site-nav-visual {display:flex!important;align-items:center;justify-content:center}
 html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max-width:none}
@@ -668,58 +921,6 @@ main#main-content .truncate{white-space:normal;overflow-wrap:anywhere;text-overf
 main#main-content .split-list .entry,main#main-content .split-detail{overflow-wrap:anywhere}
 main#main-content .flex>div{min-width:0}
 @media(max-width:640px){main#main-content .whitespace-nowrap{white-space:normal;overflow-wrap:anywhere}main#main-content{font-size:18px}main#main-content .entry>p{font-size:18px}main#main-content :is(h2,h3,.chapter-title){font-size:22px}main#main-content h1{font-size:28px}}
-
-.ancient-desktop-menu { display: none; }
-
-@media screen and (min-width:1367px), screen and (min-width:1025px) and (hover:hover), screen and (min-width:1025px) and (pointer:fine) {
-  html body main#main-content.ancient-browser .split-body {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-inline: auto;
-    gap: var(--group-gap, 16px);
-  }
-
-  html body main#main-content.ancient-browser .split-list {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-
-  html body main#main-content.ancient-browser .split-list:has(>.ancient-desktop-menu)>:not(.ancient-desktop-menu) {
-    display: none;
-  }
-
-  html body main#main-content.ancient-browser .ancient-desktop-menu {
-    display: grid;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-    gap: var(--control-gap, 8px);
-  }
-
-  html body main#main-content.ancient-browser .ancient-desktop-menu a {
-    min-width: 0;
-    justify-content: center;
-    padding-inline: 4px;
-    text-align: center;
-    overflow-wrap: anywhere;
-  }
-
-
-  html body main#main-content.ancient-browser .ancient-desktop-menu a.is-detail-selected {
-    border-color: #37a8ec;
-    background: #163047;
-  }
-
-  html body main#main-content.ancient-browser .split-detail {
-    flex: 1 1 0;
-    width: 100%;
-    min-height: 0;
-    margin: 0;
-  }
-
-  html body main#main-content.ancient-browser .split-detail:has(iframe[hidden]) {
-    display: none;
-  }
-}
 
 /* Match the relic page dark native scrollbar. */
 html{color-scheme:dark;scrollbar-width:auto;scrollbar-color:auto}
@@ -858,6 +1059,66 @@ html body main#main-content #tools > .card-action-row {--filter-frame-color:#70b
   }
 }
 
+/* Filter buttons fill their frames without visible group headings. */
+html body main#main-content #tools .card-filter-row,
+html body main#main-content #tools > .card-action-row,
+html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
+  grid-template-columns:minmax(0,1fr);
+}
+html body main#main-content #tools .card-filter-row > span,
+html body main#main-content #tools .card-tier-label,
+html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row > span {
+  display:none;
+}
+html body main#main-content #tools .card-tier-choices {grid-column:1}
+
+/* Fill each filter frame while keeping content-based button proportions. */
+html body main#main-content #tools .card-filter-buttons,
+html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-buttons {
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+  min-width:0;
+}
+html body main#main-content #tools .card-tier-choices {
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+  min-width:0;
+}
+html body main#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button,
+html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-buttons button {
+  box-sizing:border-box;
+  width:auto;
+  flex:1 1 auto;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:0;
+  max-width:none;
+  margin:0;
+}
+html body main#main-content :is(#tools,.relic-filters,.potion-filters) .filter-character-icon {
+  display:block;width:32px;height:32px;object-fit:contain;
+}
+
+/* Card filter groups share a blue outer frame. */
+html body main#main-content #tools .card-filter-row,
+html body main#main-content #tools > .card-action-row {
+  border-color:#6faeee;
+}
+
+/* Relic and potion filter groups use the same blue outer frame. */
+html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
+  border-color:#6faeee;
+}
+
+/* Random-search buttons share the blue filter-frame border. */
+html body main#main-content #tools #aoe-toggle,
+html body main#main-content .filters .catalog-search-tools>button.catalog-random {
+  border-color:#6faeee!important;
+}
+
 /* Equal spacing above and below the header divider. */
 html body .site-header>.site-header-inner {padding-block:8px!important}
 html body main#main-content {padding-top:8px!important}
@@ -896,8 +1157,200 @@ html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-ra
   margin-block: 0;
 }
 
+/* Desktop pages share one centered half-width content area below the header. */
+@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine), screen and (min-width:1441px) {
+  html body:not([data-detail-kind]) main#main-content {
+    box-sizing:border-box;
+    width:50%!important;
+    max-width:none!important;
+    margin-inline:auto!important;
+  }
+  html body:not([data-detail-kind]) main#main-content:has(>.relic-filters,>.potion-filters)>.catalog-scroll {
+    width:100%!important;
+    max-width:none;
+    margin-inline:0;
+  }
+  html body:not([data-detail-kind]) main#main-content .card-detail .detail-keyword {width:100%;justify-self:stretch}
+}
+
+/* Catalogs scroll with the document; only the navigation stays at the top. */
+@media screen {
+  html:has(main#main-content.ancient-browser,main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
+    height:auto!important;min-height:100%;overflow-x:clip!important;overflow-y:auto!important;
+  }
+  body:has(main#main-content.ancient-browser,main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
+    position:static!important;inset:auto!important;display:block!important;width:100%;
+    height:auto!important;min-height:100dvh;overflow:visible!important;
+  }
+  body:has(main#main-content.ancient-browser,main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters)>.site-header {
+    position:sticky!important;top:0!important;z-index:100;
+  }
+  html body main#main-content#main-content:is(.ancient-browser,:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters)) {
+    display:block!important;flex:none!important;height:auto!important;min-height:0;
+    max-height:none!important;overflow:visible!important;
+  }
+  html body main#main-content#main-content:is(.ancient-browser,:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters))>:is(.tools,.filters,.card-scroll,.catalog-scroll,.split-body,.mobile-search-row),
+  html body main#main-content#main-content.ancient-browser .split-detail {
+    position:static!important;flex:none!important;height:auto!important;
+    min-height:0;max-height:none!important;overflow:visible!important;scrollbar-gutter:auto;
+  }
+  html body main#main-content#main-content:is(:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters)) :is(.grid-pool-heading,.relic-section-title,.potion-section-title) {
+    position:static!important;top:auto;
+  }
+}
+
+/* Tier A uses orange throughout labels, filters and rankings. */
+:root {--card-tier-A:#f97316;--catalog-tier-A:#f97316}
+html body :is(.tier,.build-tier,.card-tier-badge,.relic-tier-label,.font-extrabold)[data-tier=A] {
+  --tier-color:#f97316!important;background:#f97316!important;color:#fff!important;border-color:#f97316!important;
+}
+html body :is([data-tier-filter=A],#card-filter-tier button[value=A]) {
+  --tier-color:#f97316!important;--selection-color:#f97316!important;
+}
+html body .card-detail :is(.detail-tier,.detail-build-tier)[data-tier=A] {
+  color:#f97316;background:color-mix(in srgb,#f97316 16%,#0b1119);border-color:#f97316;
+}
+
+/* Solid tier labels, matching the ancient ranking label presentation. */
+
+html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,body.character-guide-page .build-tier,body.character-guide-page .card-tier-badge)[data-tier] {
+  display:inline-flex;align-items:center;justify-content:center;
+  box-sizing:border-box;flex:0 0 auto;min-width:36px;min-height:34px;height:auto;
+  padding:3px 10px;border-radius:4px;font:800 20px/1.3 Arial,"Microsoft JhengHei",sans-serif;
+}
+
+html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=S][data-tier] {
+  color:rgb(255, 255, 255)!important;background:oklab(0.645008 0.235914 0.0696316 / 0.9)!important;border:1px solid oklab(0.645008 0.235914 0.0696316 / 0.9)!important;
+}
+
+html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {
+  color:rgb(255, 255, 255)!important;background:rgb(249, 115, 22)!important;border:1px solid rgb(249, 115, 22)!important;
+}
+
+html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=B][data-tier] {
+  color:rgb(255, 255, 255)!important;background:oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;border:1px solid oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;
+}
+
+html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=C][data-tier] {
+  color:rgb(255, 255, 255)!important;background:oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;border:1px solid oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;
+}
+
+html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=D][data-tier] {
+  color:rgb(255, 255, 255)!important;background:rgb(120, 132, 145)!important;border:1px solid rgb(120, 132, 145)!important;
+}
+
+/* Tier A labels use white lettering on their existing background. */
+html body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#fff!important}
+
+/* English card metadata: plain rarity/type text and compact solid tier badges. */
+html body #main-content .card-detail .detail-meta>:is(.detail-type,.detail-rarity) {
+  min-height:0;height:auto;padding:0;border:0;border-radius:0;background:transparent;
+}
+html body #main-content .card-detail .detail-meta>.detail-type {font-size:16px;font-weight:500;line-height:24px}
+html body #main-content .card-detail .detail-meta>.detail-rarity {font-size:14px;font-weight:400;line-height:20px}
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier][data-tier] {
+  flex:0 1 auto;min-width:0;min-height:0;height:auto;
+  padding:2px 8px;border:0!important;border-radius:6px;
+  font:700 12px/16px Arial,"Microsoft JhengHei",sans-serif;
+}
+
+html body #main-content .card-detail .detail-meta>.detail-type[data-type=Attack] {color:lab(63.7053% 60.745 31.3109)}
+
+html body #main-content .card-detail .detail-meta>.detail-type[data-type=Skill] {color:lab(78.503% -64.9265 39.7492)}
+
+html body #main-content .card-detail .detail-meta>.detail-type[data-type=Power] {color:lab(83.2664% 8.65132 106.895)}
+
+html body #main-content .card-detail .detail-meta>.detail-rarity[data-rarity=Basic] {color:lab(84.9837% .601262 -2.17986)}
+
+html body #main-content .card-detail .detail-meta>.detail-rarity[data-rarity=Common] {color:lab(84.9837% .601262 -2.17986)}
+
+html body #main-content .card-detail .detail-meta>.detail-rarity[data-rarity=Uncommon] {color:lab(65.0361% -1.42065 -56.9802)}
+
+html body #main-content .card-detail .detail-meta>.detail-rarity[data-rarity=Rare] {color:lab(83.2664% 8.65132 106.895)}
+
+html body #main-content .card-detail .detail-meta>.detail-rarity[data-rarity=Ancient] {color:lab(72.7183% 31.8672 97.9407)}
+
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=S][data-tier] {color:#fff!important;background:var(--card-tier-S)!important}
+
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=A][data-tier] {color:#fff!important;background:var(--card-tier-A)!important}
+
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=B][data-tier] {color:#000!important;background:var(--card-tier-B)!important}
+
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=C][data-tier] {color:#000!important;background:var(--card-tier-C)!important}
+
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=D][data-tier] {color:#000!important;background:var(--card-tier-D)!important}
+
+/* Use a deeper blue consistently for Uncommon text. */
+html body #main-content [data-rarity=Uncommon] {--rarity-color:#4f9bd9!important}
+html body #main-content .card-detail-row[data-rarity=Uncommon] .card-detail {--detail-rarity-color:#4f9bd9}
+html body #main-content :is([data-stat-rarity=Uncommon],[data-relic-rarity=Uncommon],.rarity[data-rarity=Uncommon],.card-text-link[data-rarity=Uncommon],.build-card-list a[data-rarity=Uncommon]) {color:#4f9bd9!important}
+html body #main-content .potion-section[data-rarity=Uncommon]>.potion-section-title {color:#4f9bd9}
+html body #main-content :is(#card-filter-rarity button[value=Uncommon],[data-catalog-filter=rarity][value=Uncommon],button[data-rarity-filter=Uncommon],[data-filter-group=rarity][data-filter-value=Uncommon]) {--selection-color:#4f9bd9!important;--rarity-color:#4f9bd9!important}
+
+/* Set the card page width once; every nested content wrapper fills it. */
+html body main#main-content#main-content:has(>#card-scroll) {
+  box-sizing:border-box;width:100%!important;max-width:none!important;
+  margin-inline:auto!important;padding-inline:0!important;
+}
+@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine) {
+  html body main#main-content#main-content:has(>#card-scroll) {width:50vw!important}
+}
+html body main#main-content#main-content>#tools,
+html body main#main-content#main-content>#card-scroll {
+  box-sizing:border-box;width:100%!important;max-width:none!important;padding-inline:0;
+}
+html body[data-view=grid] main#main-content#main-content #card-scroll :is(section[data-pool],.table-wrap,table,tbody,.card-detail-row,.card-detail-cell,.card-detail) {
+  box-sizing:border-box;width:100%;max-width:none;min-width:0;
+}
+html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:minmax(0,1fr)}
+/* Keyword notes share the centered artwork width on every device. */
+html body main#main-content#main-content .card-detail>.detail-keyword {
+  box-sizing:border-box;width:100%;justify-self:stretch;margin-inline:0;
+}
+
+
+/* Align card information with the centered artwork width. */
+html body main#main-content#main-content .card-detail>:is(header,.detail-meta,.detail-section) {
+  box-sizing:border-box;width:100%;max-width:700px;min-width:0;
+  justify-self:center;overflow-wrap:anywhere;
+}
+html body main#main-content#main-content .card-detail>.detail-keyword {
+  box-sizing:border-box;width:100%;max-width:700px;min-width:0;justify-self:center;overflow-wrap:anywhere;
+}
+
+/* Keep profession headings equally spaced between the surrounding content. */
+html body[data-view=grid] main#main-content#main-content #card-scroll>section[data-pool] {
+  display:flow-root;margin-block:0;
+}
+html body[data-view=grid] main#main-content#main-content #card-scroll .grid-pool-heading {
+  margin-block:0;padding-block:24px;
+}
+html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-child(1 of :not([hidden])) .card-detail {margin-top:0}
+html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-last-child(1 of :not([hidden])) .card-detail {margin-bottom:0}
+
+/* Size each catalog or guide once against the viewport, never its nested panels. */
+html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu])) {
+  box-sizing:border-box;width:100%!important;max-width:none!important;
+  margin-inline:auto!important;padding-inline:0!important;
+}
+@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine) {
+  html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu])) {width:50vw!important}
+}
+html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),
+html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu])) :is(.relic-section,.potion-section,.catalog,.split-detail,.split-detail iframe,.build-content,.build-section,.build-panel) {
+  box-sizing:border-box;width:100%!important;max-width:none!important;min-width:0;
+}
+html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>.catalog-scroll {margin-inline:0}
+
+/* Keep attribution text and links the same gray on every page. */
+html body main#main-content#main-content .site-attribution,
+html body main#main-content#main-content .site-attribution a {
+  color:#6b7280!important;
+}
+
 
 /* Category artwork replaces the navigation text labels. */
+html body>.site-header {box-sizing:border-box;width:100vw!important;max-width:none!important;margin-inline:0}
 html body .site-header .site-nav > a {min-width:60px;min-height:48px;padding:6px 12px!important}
 html body .site-header .site-nav a > .site-nav-visual {display:flex!important;align-items:center;justify-content:center}
 html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max-width:none}
@@ -934,24 +1387,6 @@ html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max
   html body .site-header .site-nav > a {box-sizing:border-box;min-width:0!important;width:100%!important;max-width:100%;padding:6px 0!important}
 }
 
-
-/* Desktop pages share one centered half-width content area below the header. */
-@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine), screen and (min-width:1441px) {
-  html body:not([data-detail-kind]) main#main-content {
-    box-sizing:border-box;
-    width:50%!important;
-    max-width:none!important;
-    margin-inline:auto!important;
-  }
-  html body:not([data-detail-kind]) main#main-content:has(>.relic-filters,>.potion-filters)>.catalog-scroll {
-    width:100%!important;
-    max-width:none;
-    margin-inline:0;
-  }
-  html body:not([data-detail-kind]) main#main-content .card-detail .detail-keyword {width:100%;justify-self:stretch}
-}
-
-
 /* Catalogs scroll with the document; only the navigation stays at the top. */
 @media screen {
   html:has(main#main-content.ancient-browser,main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
@@ -976,134 +1411,4 @@ html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max
   html body main#main-content#main-content:is(:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters)) :is(.grid-pool-heading,.relic-section-title,.potion-section-title) {
     position:static!important;top:auto;
   }
-}
-
-
-/* Tier A uses the Regent gold throughout labels, filters and rankings. */
-:root {--card-tier-A:#e3bf72;--catalog-tier-A:#e3bf72}
-html body :is(.tier,.build-tier,.card-tier-badge,.relic-tier-label,.font-extrabold)[data-tier=A] {
-  --tier-color:#e3bf72!important;background:#e3bf72!important;color:#10151d!important;border-color:#e3bf72!important;
-}
-html body :is([data-tier-filter=A],#card-filter-tier button[value=A]) {
-  --tier-color:#e3bf72!important;--selection-color:#e3bf72!important;
-}
-html body .card-detail :is(.detail-tier,.detail-build-tier)[data-tier=A] {
-  color:#e3bf72;background:color-mix(in srgb,#e3bf72 16%,#0b1119);border-color:#e3bf72;
-}
-
-
-/* Solid tier labels, matching the ancient ranking label presentation. */
-
-html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,body.character-guide-page .build-tier,body.character-guide-page .card-tier-badge)[data-tier] {
-  display:inline-flex;align-items:center;justify-content:center;
-  box-sizing:border-box;flex:0 0 auto;min-width:36px;min-height:34px;height:auto;
-  padding:3px 10px;border-radius:4px;font:800 20px/1.3 Arial,"Microsoft JhengHei",sans-serif;
-}
-
-html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label)[data-tier=S] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.645008 0.235914 0.0696316 / 0.9)!important;border:1px solid oklab(0.645008 0.235914 0.0696316 / 0.9)!important;
-}
-
-html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label)[data-tier=A] {
-  color:rgb(16, 21, 29)!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
-}
-
-html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label)[data-tier=B] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;border:1px solid oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;
-}
-
-html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label)[data-tier=C] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;border:1px solid oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;
-}
-
-html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label)[data-tier=D] {
-  color:rgb(255, 255, 255)!important;background:rgb(120, 132, 145)!important;border:1px solid rgb(120, 132, 145)!important;
-}
-
-
-/* Solid tier labels, matching the ancient ranking label presentation. */
-
-html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,body.character-guide-page .build-tier,body.character-guide-page .card-tier-badge)[data-tier] {
-  display:inline-flex;align-items:center;justify-content:center;
-  box-sizing:border-box;flex:0 0 auto;min-width:36px;min-height:34px;height:auto;
-  padding:3px 10px;border-radius:4px;font:800 20px/1.3 Arial,"Microsoft JhengHei",sans-serif;
-}
-
-html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label)[data-tier=S][data-tier] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.645008 0.235914 0.0696316 / 0.9)!important;border:1px solid oklab(0.645008 0.235914 0.0696316 / 0.9)!important;
-}
-
-html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label)[data-tier=A][data-tier] {
-  color:rgb(16, 21, 29)!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
-}
-
-html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label)[data-tier=B][data-tier] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;border:1px solid oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;
-}
-
-html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label)[data-tier=C][data-tier] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;border:1px solid oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;
-}
-
-html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label)[data-tier=D][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(120, 132, 145)!important;border:1px solid rgb(120, 132, 145)!important;
-}
-
-/* Tier A labels use white lettering on their existing background. */
-html body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#fff!important}
-
-
-/* Solid tier labels, matching the ancient ranking label presentation. */
-
-html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,body.character-guide-page .build-tier,body.character-guide-page .card-tier-badge)[data-tier] {
-  display:inline-flex;align-items:center;justify-content:center;
-  box-sizing:border-box;flex:0 0 auto;min-width:36px;min-height:34px;height:auto;
-  padding:3px 10px;border-radius:4px;font:800 20px/1.3 Arial,"Microsoft JhengHei",sans-serif;
-}
-
-html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=S][data-tier] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.645008 0.235914 0.0696316 / 0.9)!important;border:1px solid oklab(0.645008 0.235914 0.0696316 / 0.9)!important;
-}
-
-html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
-}
-
-html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=B][data-tier] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;border:1px solid oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;
-}
-
-html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=C][data-tier] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;border:1px solid oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;
-}
-
-html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=D][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(120, 132, 145)!important;border:1px solid rgb(120, 132, 145)!important;
-}
-
-/* Tier A labels use white lettering on their existing background. */
-html body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#fff!important}
-
-
-/* Size each catalog or guide once against the viewport, never its nested panels. */
-html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu])) {
-  box-sizing:border-box;width:100%!important;max-width:none!important;
-  margin-inline:auto!important;padding-inline:0!important;
-}
-@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine) {
-  html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu])) {width:50vw!important}
-}
-html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),
-html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu])) :is(.relic-section,.potion-section,.catalog,.split-detail,.split-detail iframe,.build-content,.build-section,.build-panel) {
-  box-sizing:border-box;width:100%!important;max-width:none!important;min-width:0;
-}
-html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>.catalog-scroll {margin-inline:0}
-
-/* Keep the header viewport-wide regardless of the document scrollbar. */
-html body>.site-header {box-sizing:border-box;width:100vw!important;max-width:none!important;margin-inline:0}
-
-/* Keep attribution text and links the same gray on every page. */
-html body main#main-content#main-content .site-attribution,
-html body main#main-content#main-content .site-attribution a {
-  color:#6b7280!important;
 }

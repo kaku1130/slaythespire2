@@ -19,7 +19,7 @@ module.exports = function compareEffects(base, upgraded, render) {
   }
   const html = tokens => tokens.map(token => {
     const value = render(token.value);
-    return token.compare && !token.same ? '<span class="detail-effect-change">' + value + '</span>' : value;
+    return token.compare && !token.same && /^\d+(?:\.\d+)?$/.test(token.value) ? '<span class="detail-effect-change">' + value + '</span>' : value;
   }).join('');
   return {base:render(base), upgraded:html(right)};
 };

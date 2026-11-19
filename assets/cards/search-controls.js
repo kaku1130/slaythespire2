@@ -144,7 +144,8 @@ mark.shared-search-match{background:#184e35;color:#a8f0bf;border-radius:2px}
 
 (() => {
   const search = document.getElementById('search');
-  if (!search || search.closest('.search-control')) return;
+  if (!search) return;
+  const existingField = search.closest('.search-control');
   search.type = 'text';
   search.inputMode = 'search';
   search.setAttribute('role', 'searchbox');
@@ -158,11 +159,11 @@ html body main#main-content .search-control>button.search-clear:hover{color:#37a
 html body main#main-content .search-clear .search-icon{font-size:20px;line-height:1;pointer-events:none}
 html body main#main-content:is(.event-browser,.monster-browser,.encounter-browser) .chapter-filters>.search-control{order:-1;flex:0 0 auto}
 `;
-  document.head.append(style);
-  const field = document.createElement('div');
+  if (!existingField) document.head.append(style);
+  const field = existingField || document.createElement('div');
   field.className = 'search-control';
-  search.before(field);
-  const clear = document.createElement('button');
+  if (!existingField) search.before(field);
+  const clear = field.querySelector('.search-clear') || document.createElement('button');
   clear.type = 'button';
   clear.className = 'search-clear';
   clear.setAttribute('aria-label', '清除搜尋關鍵字');
@@ -198,10 +199,15 @@ html body main#main-content .filters .catalog-search-tools>button.catalog-random
   button.setAttribute('aria-label', button.title);
   toolbar.append(button);
   button.addEventListener('click', () => {
-    const names = [...main.querySelectorAll(kind === 'relic' ? '.entry.relic .relic-name-en' : '.entry.potion .catalog-name-en')]
-      .map(name => name.textContent.trim()).filter(Boolean);
+    const selected = {};
+    for (const filter of main.querySelectorAll('[data-catalog-filter][aria-pressed="true"]')) {
+      (selected[filter.dataset.catalogFilter] ??= new Set()).add(filter.value);
+    }
+    const names = [...main.querySelectorAll('.entry.' + kind)]
+      .filter(entry => Object.entries(selected).every(([key, values]) => values.has(entry.dataset[key]) ||
+        (kind === 'relic' && key === 'rarity' && values.has('Common') && entry.dataset.rarity === 'Starter')))
+      .map(entry => entry.querySelector(kind === 'relic' ? '.relic-name-en' : '.catalog-name-en')?.textContent.trim()).filter(Boolean);
     if (!names.length) return;
-    for (const filter of main.querySelectorAll('[data-catalog-filter]')) filter.setAttribute('aria-pressed','false');
     search.value = '"' + names[Math.floor(Math.random() * names.length)] + '"';
     search.dispatchEvent(new Event('input', {bubbles:true}));
   });

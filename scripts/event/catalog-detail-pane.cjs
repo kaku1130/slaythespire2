@@ -58,25 +58,6 @@ function runtime(){
   item.classList.add('compact-detail-item');if(item.classList.contains('monster'))item.style.setProperty('--detail-color',({weak:'#aab6c4',normal:'#70bf8b',elite:'#e3bf72',boss:'#dc6c68',summon:'#b595dd'})[item.dataset.encounterType]);
   item.append(image,name);
  }
- if(choices[0]?.dataset.detailKey.startsWith('ancient-')){
-  main.classList.add('ancient-browser');
-  const grid=choices[0].parentElement,container=grid.parentElement;
-  for(const sibling of [...container.children])if(sibling!==grid&&sibling.querySelector('[aria-label="切換遊戲版本"]'))sibling.remove();
-  const groups=new Map();
-  for(const item of choices){const act=item.textContent.match(/第\s*(\d+)\s*幕/);const key=act?Number(act[1]):0;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(item);}
-  const darv=choices.find(item=>item.dataset.detailKey==='ancient-darv.html');
-  if(darv)for(const act of [2,3]){const copy=darv.cloneNode(true);if(!groups.has(act))groups.set(act,[]);groups.get(act).push(copy);choices.push(copy);}
-  for(const item of groups.get(0)||[]){const index=choices.indexOf(item);if(index>=0)choices.splice(index,1);item.remove();}groups.delete(0);
-  const sections=document.createElement('div');sections.className='ancient-act-groups';const actColumns=new Map();for(const act of [1,2,3]){const column=document.createElement('div');column.className='ancient-act-column';column.dataset.actColumn=act;actColumns.set(act,column);sections.append(column);}
-  for(const key of [...groups.keys()].sort((a,b)=>(a||99)-(b||99))){const section=document.createElement('section'),title=document.createElement('h2'),items=document.createElement('div');section.className='ancient-act-section';section.dataset.act=key;section.style.setProperty('--detail-color',({1:'#70bf8b',2:'#e3bf72',3:'#b595dd',0:'#6ac1b4'})[key]||'#aab6c4');title.className='ancient-act-title';title.textContent=key?'第 '+key+' 幕':'跨幕共用';items.className='ancient-act-grid';items.append(...groups.get(key));section.append(title,items);(actColumns.get(key)||actColumns.get(1)).append(section);}
-  grid.replaceWith(sections);
-  const template = document.getElementById('ancient-desktop-menu');
-  if (template) {
-    const menu = template.content.firstElementChild.cloneNode(true);
-    choices.push(...menu.querySelectorAll('[data-detail-key]'));
-    list.append(menu);
-  }
- }
  const fittedNames=choices.map(item=>item.querySelector('.compact-detail-name')).filter(Boolean);
  function fitListName(name){if(!name.clientWidth)return;let size=16;name.style.whiteSpace='nowrap';name.style.fontSize=size+'px';while(name.scrollWidth>name.clientWidth+1&&size>10){size-=.5;name.style.fontSize=size+'px';}if(name.scrollWidth>name.clientWidth+1)name.style.whiteSpace='normal';}
  const nameObserver=new ResizeObserver(entries=>{for(const entry of entries)fitListName(entry.target);});for(const name of fittedNames){fitListName(name);nameObserver.observe(name);}
@@ -84,24 +65,7 @@ function runtime(){
  list.addEventListener('click',event=>{const item=event.target.closest('[data-detail-key]');if(!item||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();open(item.dataset.detailKey);});
  list.addEventListener('keydown',event=>{if((event.key==='Enter'||event.key===' ')&&event.target.matches('.entry[data-detail-key]')){event.preventDefault();open(event.target.dataset.detailKey);}});
  frame.addEventListener('load',()=>{const doc=frame.contentDocument;if(!doc)return;doc.addEventListener('click',event=>{const link=event.target.closest('a[href]');if(!link)return;const href=link.getAttribute('href');if(href.startsWith('#')){let id;try{id=decodeURIComponent(href.slice(1));}catch{return;}const target=doc.getElementById(id);if(target){event.preventDefault();if(id.startsWith('relic-')){for(const item of doc.querySelectorAll('.is-relic-highlighted'))item.classList.remove('is-relic-highlighted');target.classList.add('is-relic-highlighted');}target.style.scrollMarginTop='16px';target.tabIndex=-1;target.focus({preventScroll:true});target.scrollIntoView({block:'start',behavior:'instant'});}return;}const url=new URL(href,doc.baseURI),key=url.pathname.split('/').pop();if(data.pages[key]){event.preventDefault();open(key);}else if(url.href.split('#')[0]===location.href.split('#')[0]){event.preventDefault();list.focus();}else{link.target='_blank';link.rel='noopener';}});});
- if(main.classList.contains('ancient-browser')){
-  let detailObserver;
-  frame.setAttribute('scrolling','no');
-  frame.addEventListener('load',()=>{
-   detailObserver?.disconnect();
-   const doc=frame.contentDocument,content=doc?.getElementById('main-content');
-   if(!content)return;
-   const style=doc.createElement('style');
-   style.textContent='html,body{min-height:0!important;height:auto!important;overflow:hidden!important}';
-   doc.head.append(style);
-   const resize=()=>{frame.style.height=Math.ceil(content.getBoundingClientRect().height)+'px';};
-   detailObserver=new ResizeObserver(resize);detailObserver.observe(content);resize();
-   main.scrollTo({top:0,behavior:'instant'});
-  });
-  list.remove();
-  document.getElementById('ancient-desktop-menu')?.remove();
-  open('ancient-neow.html');
- }
+
 }
 
 function cleanOtherDetail(kind){
@@ -139,6 +103,7 @@ function normalizeDetailHeader(){
 
 }
 function build(kind){const file=kind+'.html';let html=fs.readFileSync(file,'utf8');if(html.includes('id="detail-pane-data"'))throw Error('Rebuild the original page before adding detail panes');html=html.replace(/(<a class="details"[^>]*>)[\s\S]*?(<\/a>)/g,'$1$2');const slugs=kind==='ancient'?JSON.parse(fs.readFileSync('data/ancient/catalog.json')).slugs:JSON.parse(fs.readFileSync('data/'+kind+'/catalog.json')).items.map(x=>x.slug);const pages={};for(const slug of slugs){const key=kind+'-'+slug+'.html';let detail=fs.readFileSync('data/'+key.split('-')[0]+'/'+key,'utf8');if(!detail.includes('<head>'))detail=detail.replace(/(<html[^>]*>)/,'$1<head>').replace('<body>','</head><body>');detail=detail.replace('<body>','<body data-detail-kind="'+kind+'">');detail=detail.replace('</head>','<style>'+embedStyles+typography+detailHeaderStyles+'</style></head>');if(kind==='monster'||kind==='ancient')detail=detail.replace('</body>','<script>('+cleanOtherDetail.toString()+')('+JSON.stringify(kind)+');</script></body>');detail=detail.replace('</body>','<script>('+normalizeDetailHeader.toString()+')();</script></body>');pages[key]={name:(detail.match(/<title>(.*?)<\/title>/)?.[1]||slug).split('｜')[0].split(' | ')[0],html:detail};}
-const menu=kind==='ancient'?require('../ancient/desktop-ancient.cjs').desktopMenu():'';
-html=html.replace('</body>','<style>'+styles+typography+'</style>'+menu+'<script type="application/json" id="detail-pane-data">'+JSON.stringify({pages}).replace(/</g,'\\u003c')+'</script><script>('+runtime.toString()+')();</script></body>');fs.writeFileSync(file,html);console.log('Added split detail pane:',kind);}
+if(kind==='ancient')html=html.replace(/(<main\b[^>]*>)[\s\S]*?<\/main>/,'$1</main>');
+const pageRuntime=kind==='ancient'?require('../ancient/detail-runtime.cjs'):runtime;
+html=html.replace('</body>','<style>'+styles+typography+'</style><script type="application/json" id="detail-pane-data">'+JSON.stringify({pages}).replace(/</g,'\\u003c')+'</script><script>('+pageRuntime.toString()+')();</script></body>');fs.writeFileSync(file,html);console.log('Added split detail pane:',kind);}
 module.exports={build};

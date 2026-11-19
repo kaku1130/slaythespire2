@@ -7,7 +7,7 @@ for(const slug of [null,...data.slugs]){const prefix=slug?'../../':'',file=slug?
 main=main.replace(/url\((\/images\/[^)]+)\)/g,(_,url)=>{if(!assets[url])throw Error('Uncached CSS image '+url);return 'url('+prefix+assets[url]+')';});
 if(slug)main=require('./desktop-ancient.cjs').removeDialogue(main);
 if(slug)main=require('../cards/detail-card-database.cjs').replaceCards(main);
-main=main.replaceAll('loading="lazy"','loading="eager"');
+main=main.replaceAll('loading="lazy"','loading="eager"').replace(/<template\b[^>]*><\/template>/g,'').replace(/<!--\/?\$[^>]*-->/g,'');
 main=require('./tier-colors.cjs')(main);
 if(slug)main=require('./desktop-ancient.cjs').addTopRelicMenu(main);
 if(!slug)main=main.replace(/<h1\b[\s\S]*?<\/h1>/,'').replace(/<p\b[^>]*>殺戮尖塔2 全部[\s\S]*?強度排行。<\/p>/,'');
@@ -15,11 +15,11 @@ if(!slug)main=main.replace(/<div class="mt-auto flex items-center gap-1\.5 pt-3 
 const header=nav.renderHeader('ancient').replace(/href="((?:ancient|build|card|event|monster|potion|relic)\.html)"/g,(_,u)=>'href="'+prefix+u+'"');
 const title=source.match(/<title>([\s\S]*?)<\/title>/)?.[1]||'先古之民';
 const css=nav.styles+'html{color-scheme:dark;scrollbar-width:auto;scrollbar-color:auto}body{background:#040609;color:#e3e8ee}main{min-width:0}main img{max-width:100%}main [class*="flex-wrap"]:has(>[aria-label="切換遊戲版本"]){display:none}'+nav.layoutStyles;
-fs.writeFileSync(file,'<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><link rel="apple-touch-icon" sizes="180x180" href="'+prefix+'assets/cards/icons/site-logo.png"><link rel="icon" type="image/webp" href="'+prefix+'assets/cards/icons/site-logo.webp"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+title+'</title><link rel="stylesheet" href="'+prefix+'assets/event/styles/source.css"><style>'+css+'</style></head><body>'+header+'<main id="main-content">'+main+'</main><script src="'+prefix+'assets/cards/search-controls.js"></script><script src="'+prefix+'assets/cards/page-scroll.js"></script></body></html>');}
+fs.writeFileSync(file,'<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><link rel="apple-touch-icon" sizes="180x180" href="'+prefix+'assets/cards/icons/site-logo.png"><link rel="icon" type="image/webp" href="'+prefix+'assets/cards/icons/site-logo.webp"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+title+'</title><link rel="stylesheet" href="'+prefix+'assets/event/styles/source.css"><style>'+css+'</style></head><body>'+header+'<main id="main-content">'+main+'</main><script src="'+prefix+'assets/cards/page-scroll.js"></script></body></html>');}
 // Keep existing pages and their custom content, updating only ancient navigation.
 function update(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){if(['.git','node_modules','source'].includes(e.name))continue;const f=path.join(dir,e.name);if(e.isDirectory())update(f);else if(e.name.endsWith('.html')){let html=fs.readFileSync(f,'utf8');if(!html.includes('class="site-header"'))continue;const prefix=path.relative(path.dirname(f),'.').replaceAll('\\','/');html=html.replace(/<a\b[^>]*href="https:\/\/slaythespire2.net\/zh-TW\/ancient"[^>]*>/g,()=>'<a href="'+(prefix?prefix+'/':'')+list+'" data-same-tab="true" target="_self">');fs.writeFileSync(f,html);}}}update('.');
 console.log('Built ancient index and '+data.slugs.length+' detail pages.');
 
 require('../event/catalog-detail-pane.cjs').build('ancient');
 const desktopHtml = fs.readFileSync(list, 'utf8').replace('</body>', '<link rel="stylesheet" href="assets/ancient/ancient-desktop.css"></body>');
-require('../cards/desktop-page-css.cjs').writeDesktopPage(list, desktopHtml);
+require('../cards/desktop-page-css.cjs').writeDesktopPage(list, desktopHtml, {searchControls:false});

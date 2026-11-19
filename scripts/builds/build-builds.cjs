@@ -22,7 +22,7 @@ function renderCardLink(c){return '<a class="card-text-link" href="card.html#car
 function renderCardWithTier(c){const tier=cardTiers.get(c.id);return '<span class="build-card-entry" data-card-tier-id="'+esc(c.id)+'">'+renderCardLink(c)+'<span class="card-tier-badge" data-tier="'+(tier||'unranked')+'" aria-label="Tier '+(tier||'未評級')+'">'+(tier||'—')+'</span></span>';}
 function renderGuideCard(c,context){
  const detail=cardDetails.get(c.id);assert(detail,'Missing card details '+c.id);
- return '<div class="build-guide-card card-detail-row" data-card-id="'+esc(c.id)+'" data-rarity="'+esc(detail.rarity)+'">'+renderCardArticle(detail,{prefix:'build-card-'+context+'-'+c.id.toLowerCase(),localBuilds:localBuildTargets,showBuilds:false})+'</div>';
+ return '<div class="build-guide-card card-detail-row" data-card-id="'+esc(c.id)+'" data-rarity="'+esc(detail.rarity)+'">'+renderCardArticle(detail,{prefix:'build-card-'+context+'-'+c.id.toLowerCase(),localBuilds:localBuildTargets,showBuilds:false,showKeywords:false,showTierRating:false})+'</div>';
 }
 function renderCards(list,context){const rarityOrder=['Basic','Common','Uncommon','Rare','Ancient','Event','Curse','Quest'];const rank=c=>{const index=rarityOrder.indexOf(c.rarity);return index<0?rarityOrder.length:index;};const tierRank=c=>{const index=['S','A','B','C','D'].indexOf(cardTiers.get(c.id));return index<0?5:index;};return [...list].sort((a,b)=>rank(a)-rank(b)||tierRank(a)-tierRank(b)||a.name.localeCompare(b.name,'en')).map(card=>renderGuideCard(card,context)).join('');}
 

@@ -43,26 +43,34 @@ html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-
 html body main#main-content #tools .card-tier-choices {grid-column:1}
 `;
 module.exports += `
-/* Equal-width filter buttons occupy the entire available frame. */
+/* Fill each filter frame while keeping content-based button proportions. */
 html body main#main-content #tools .card-filter-buttons,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-buttons {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(min(100%,96px),1fr));
+  display:flex;
+  flex-wrap:wrap;
   width:100%;
   min-width:0;
 }
 html body main#main-content #tools .card-tier-choices {
+  display:flex;
+  flex-wrap:wrap;
   width:100%;
   min-width:0;
-  grid-template-columns:repeat(5,minmax(0,1fr));
 }
 html body main#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-buttons button {
   box-sizing:border-box;
-  width:100%;
+  width:auto;
+  flex:1 1 auto;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
   min-width:0;
   max-width:none;
   margin:0;
+}
+html body main#main-content :is(#tools,.relic-filters,.potion-filters) .filter-character-icon {
+  display:block;width:32px;height:32px;object-fit:contain;
 }
 `;
 module.exports += `

@@ -14,9 +14,9 @@ function renderClassification(rarity, pool) {
 function formatCard(article, item) {
   return article.replace(/<div class="relic-title-row"><h2>(.*?) <span class="catalog-name-en" lang="en">(.*?)<\/span><\/h2><div class="tag">[^<]*(.*?)<\/div><\/div><p(?: lang="en")?>(.*?)<\/p>/s,
     (_, localizedName, englishName, ranking, localizedEffect) => {
-      return '<div class="relic-card-text"><h3><span class="relic-name-en" lang="en" title="' + englishName.replaceAll('"', '&quot;') + '">' + englishName
-        + '</span><span class="relic-name-zh" lang="zh-Hant">' + localizedName
-        + '</span></h3><div class="relic-rarity-row" lang="en">' + renderClassification(item.rarity) + '</div><p lang="en">' + localizedEffect + '</p>'
+      return '<div class="relic-card-text"><h3><span class="relic-name-zh" lang="zh-Hant">' + localizedName
+        + '</span><span class="relic-name-en" lang="en" title="' + englishName.replaceAll('"', '&quot;') + '">' + englishName
+        + '</span><span class="relic-rarity-row" lang="en">' + renderClassification(item.rarity) + '</span></h3><p lang="en">' + localizedEffect + '</p>'
         + (ranking ? '<div class="tag relic-card-ranking">' + ranking + '</div>' : '') + '</div>';
     });
 }

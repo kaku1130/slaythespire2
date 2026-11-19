@@ -10,7 +10,7 @@ const guide=JSON.parse(fs.readFileSync('data/builds/guide.json','utf8'));
   const image=path.join(require('node:os').tmpdir(),'slaythespire2-build-card-preview.png');
   await page.locator('.build-guide-card:visible').first().evaluate(node=>node.scrollIntoView({block:'start'}));await page.locator('.build-guide-card:visible').first().locator('img').evaluateAll(async nodes=>{for(const n of nodes)n.loading='eager';await Promise.all(nodes.map(n=>n.decode()));});await page.screenshot({path:image});console.log(image);return;
  }
- for(const width of [1440,390]) {
+ for(const width of [1440,1920]) {
   const page=await browser.newPage({viewport:{width,height:1000}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(pathToFileURL(path.resolve('build.html')).href);
   const duplicates=await page.locator('[id]').evaluateAll(nodes=>nodes.map(n=>n.id).filter((id,index,ids)=>ids.indexOf(id)!==index));assert.deepEqual(duplicates,[],'unique card headings');
@@ -32,6 +32,10 @@ const guide=JSON.parse(fs.readFileSync('data/builds/guide.json','utf8'));
      const r=group.getBoundingClientRect();return [...group.children].filter(n=>{const b=n.getBoundingClientRect();return Math.abs(b.width-r.width)>1||b.left<r.left-1||b.right>r.right+1;}).length;
     });assert.equal(bad,0,id+' '+role+' one full-width column');
     for(const card of await group.locator('.card-detail').all()) {
+     assert.equal(await card.locator('.detail-keyword').count(),0);
+     assert.equal(await card.locator('.detail-meta :is(.detail-character,.detail-rarity,.detail-type)').count(),0);
+     const statLabels=await card.locator('.detail-stats dt').allTextContents();
+     for(const label of ['Character','Rarity','Type'])assert.equal(statLabels.filter(value=>value===label).length,1,label+' appears once in Card Stats');
      assert.equal(await card.locator('.detail-title a').count(),2);assert.equal(await card.locator('.detail-art img').count(),1);
      assert.equal(await card.locator('[data-detail-row="5"]').count(),1);assert.equal(await card.locator('[data-detail-row="6"]').count(),1);
      const widths=await card.evaluate(card=>{const art=card.querySelector('.detail-art').getBoundingClientRect();return [...card.children].every(n=>{const b=n.getBoundingClientRect();return b.left>=art.left-1&&b.right<=art.right+1;});});assert.ok(widths,id+' card content aligns to art');

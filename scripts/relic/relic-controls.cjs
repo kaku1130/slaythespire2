@@ -133,7 +133,7 @@ for (const button of buttons) button.addEventListener('click', () => {
   filter();
 });
 filter();`;
-module.exports = {controls, styles, script};
+module.exports = {controls:require('../cards/character-filter.cjs')(controls), styles, script};
 
 module.exports.styles += `
 html body main#main-content .relic-filters > .catalog-filter-rows {

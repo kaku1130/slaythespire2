@@ -92,5 +92,21 @@
   "/images/card-template/type_plaque_common.webp": "assets/cards/source/card-template/type_plaque_common.webp",
   "/images/card-template/type_plaque_curse.webp": "assets/cards/source/card-template/type_plaque_curse.webp",
   "/images/card-template/ancient_portrait_mask.webp": "assets/cards/source/card-template/ancient_portrait_mask.webp",
-  "/images/card-template/type_plaque_ancient.webp": "assets/cards/source/card-template/type_plaque_ancient.webp"
+  "/images/card-template/type_plaque_ancient.webp": "assets/cards/source/card-template/type_plaque_ancient.webp",
+  "/images/powers/poison_power.webp": "assets/cards/icons/keywords/poison_power.webp",
+  "/images/powers/dexterity_power.webp": "assets/cards/icons/keywords/dexterity_power.webp",
+  "/images/powers/thorns_power.webp": "assets/cards/icons/keywords/thorns_power.webp",
+  "/images/powers/vulnerable_power.webp": "assets/cards/icons/keywords/vulnerable_power.webp",
+  "/images/orbs/lightning_orb.webp": "assets/cards/icons/keywords/lightning_orb.webp",
+  "/images/powers/focus_power.webp": "assets/cards/icons/keywords/focus_power.webp",
+  "/images/powers/doom_power.webp": "assets/cards/icons/keywords/doom_power.webp",
+  "/images/powers/weak_power.webp": "assets/cards/icons/keywords/weak_power.webp",
+  "/images/orbs/frost_orb.webp": "assets/cards/icons/keywords/frost_orb.webp",
+  "/images/orbs/dark_orb.webp": "assets/cards/icons/keywords/dark_orb.webp",
+  "/images/powers/plating_power.webp": "assets/cards/icons/keywords/plating_power.webp",
+  "/images/powers/artifact_power.webp": "assets/cards/icons/keywords/artifact_power.webp",
+  "/images/orbs/plasma_orb.webp": "assets/cards/icons/keywords/plasma_orb.webp",
+  "/images/orbs/glass_orb.webp": "assets/cards/icons/keywords/glass_orb.webp",
+  "/images/powers/vigor_power.webp": "assets/cards/icons/keywords/vigor_power.webp",
+  "/images/powers/intangible_power.webp": "assets/cards/icons/keywords/intangible_power.webp"
 }
