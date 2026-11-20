@@ -8,7 +8,7 @@ const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&
 const plain = value => value.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 const renderArticle = require('./render-card-detail.cjs');
 function render(card) {
-  return '<td class="card-detail-cell" data-field="detail" role="cell" colspan="10">'+renderArticle(card,{localBuilds,showBuilds:false,showKeywords:false,searchableEffects:true})+'</td>';
+  return '<td class="card-detail-cell" data-field="detail" role="cell" colspan="10">'+renderArticle(card,{localBuilds,showBuilds:false,showKeywords:false,searchableEffects:true,rarityBeforeType:true})+'</td>';
 }
 function attribute(tag, name, value) {
   const pattern = new RegExp('\\b' + name + '="[^"]*"');

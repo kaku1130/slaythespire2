@@ -11,7 +11,7 @@ function buildLink(card, build, localBuilds) {
   }
   return new URL(build.url, card.source).href;
 }
-function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds = '', showBuilds = true, showKeywords = true, showTierRating = true, searchableEffects = false} = {}) {
+function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds = '', showBuilds = true, showKeywords = true, showTierRating = true, searchableEffects = false, rarityBeforeType = false} = {}) {
   const chineseUrl = new URL(card.source);
   chineseUrl.pathname = '/zh-TW' + chineseUrl.pathname;
   const energyCost = card.stats.find(stat => stat.label === 'Energy cost')?.value;
@@ -30,7 +30,13 @@ function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds =
     baseContent = highlight(baseContent);
     upgradedContent = highlight(upgradedContent);
   }
-  const stats = card.stats.filter(({label}) => !['Keywords', 'Upgrade', 'Target'].includes(label)).map(({label, value}) => {
+  const statRows = card.stats.filter(({label}) => !['Keywords', 'Upgrade', 'Target'].includes(label));
+  if (rarityBeforeType) {
+    const typeIndex = statRows.findIndex(({label}) => label === 'Type');
+    const rarityIndex = statRows.findIndex(({label}) => label === 'Rarity');
+    if (typeIndex !== -1 && rarityIndex !== -1) [statRows[typeIndex], statRows[rarityIndex]] = [statRows[rarityIndex], statRows[typeIndex]];
+  }
+  const stats = statRows.map(({label, value}) => {
     const rendered = label === 'Character' ? '<img src="' + card.characterIcon + '" alt="">' + esc(value) : label === 'Rarity' ? '<span class="rarity-label" data-label-rarity="' + esc(value) + '">' + esc(value) + '</span>' : effect(value).replace(/→/g, '<span class="detail-cost-arrow" aria-label="upgrades to">→</span>');
     return '<div class="detail-stat"><dt>' + esc(label) + '</dt><dd' + (label === 'Type' ? ' data-type="' + esc(value) + '"' : label === 'Rarity' ? ' data-stat-rarity="' + esc(value) + '"' : label === 'Character' ? ' data-stat-character="' + esc(value) + '"' : '') + '>' + rendered + '</dd></div>';
   }).join('');
