@@ -416,7 +416,7 @@ document.getElementById('aoe-toggle').addEventListener('click',()=>{
   search.dispatchEvent(new Event('input',{bubbles:true}));
 });
 function cardSearchQueries() {
-  return [...new Set(search.value.trim().toLowerCase().split(/[\\s+、，,]+/).filter(Boolean))];
+  return [...new Set((search.value.trim().toLowerCase().match(/all\\s+enemies|[^\\s+、，,]+/g) || []).map(value => value.replace(/\\s+/g, ' ')))];
 }
 function cardMatchesSearch(row, queries) {
   const query = search.value.trim().toLowerCase();

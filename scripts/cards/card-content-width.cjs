@@ -35,7 +35,7 @@ html body[data-view=grid] main#main-content#main-content #card-scroll>section[da
   display:flow-root;margin-block:0;
 }
 html body[data-view=grid] main#main-content#main-content #card-scroll .grid-pool-heading {
-  margin-block:0;padding-block:24px;
+  margin-block:0;padding-block:24px;padding-inline:16px;
 }
 html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-child(1 of :not([hidden])) .card-detail {margin-top:0}
 html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-last-child(1 of :not([hidden])) .card-detail {margin-bottom:0}

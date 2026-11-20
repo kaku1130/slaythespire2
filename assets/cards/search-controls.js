@@ -4,6 +4,7 @@
   if (!main) return;
   let search = document.getElementById('search');
   const buildPage = !!main.querySelector('.build-panel');
+  const cardPage = !!main.querySelector('#card-scroll .card-detail');
   const ancientPage = main.classList.contains('ancient-browser');
   if (buildPage || ancientPage || /\/data\/ancient\//.test(location.pathname)) return;
   const highlightPage = !search;
@@ -80,6 +81,7 @@ mark.shared-search-match{background:#184e35;color:#a8f0bf;border-radius:2px}
     doc.addEventListener('click', event => {
       if (replayedClicks.has(event)) return;
       const target = event.target;
+      if (cardPage && !target.closest?.('#card-scroll .detail-effect-panel')) return;
       const clickable = target.closest?.('main a[href],main [data-detail-key]');
       if (!clickable || !clickable.textContent.trim() || target.closest('img,svg,button,input,select,textarea') || clickable.closest('.site-header,.site-attribution') || event.button !== 0 || !event.detail || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
@@ -95,6 +97,7 @@ mark.shared-search-match{background:#184e35;color:#a8f0bf;border-radius:2px}
     doc.addEventListener('dblclick', event => {
       const target = event.target;
       if (!(target instanceof doc.defaultView.Element) || !target.closest('main') || target.closest('input,textarea,select,button,[contenteditable=true],.site-header')) return;
+      if (cardPage && !target.closest('#card-scroll .detail-effect-panel')) return;
       clearTimeout(pendingClick);
       // Native word selection is finalized after the dblclick event.
       setTimeout(() => {
@@ -203,6 +206,7 @@ html body main#main-content .filters .catalog-search-tools>button.catalog-random
     for (const filter of main.querySelectorAll('[data-catalog-filter][aria-pressed="true"]')) {
       (selected[filter.dataset.catalogFilter] ??= new Set()).add(filter.value);
     }
+    if (kind === 'relic' && selected.rarity?.has('Common')) selected.rarity.add('Starter');
     const names = [...main.querySelectorAll('.entry.' + kind)]
       .filter(entry => Object.entries(selected).every(([key, values]) => values.has(entry.dataset[key])))
       .map(entry => entry.querySelector(kind === 'relic' ? '.relic-name-en' : '.catalog-name-en')?.textContent.trim()).filter(Boolean);

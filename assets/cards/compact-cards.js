@@ -7,4 +7,14 @@
 
   desktop.addEventListener('change', update);
   update();
+
+  document.addEventListener('click', event => {
+    const button = event.target.closest('[data-effect-search]');
+    const search = document.getElementById('search');
+    if (!button || !search) return;
+    search.value = button.dataset.effectSearch;
+    search.dispatchEvent(new Event('input', {bubbles:true}));
+    search.focus({preventScroll:true});
+    search.scrollIntoView({block:'center',behavior:'instant'});
+  });
 })();

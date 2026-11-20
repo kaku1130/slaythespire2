@@ -1,19 +1,19 @@
 {
   "S": {
     "color": "rgb(255, 255, 255)",
-    "background": "oklab(0.645008 0.235914 0.0696316 / 0.9)"
+    "background": "rgb(225, 112, 132)"
   },
   "A": {
     "color": "rgb(255, 255, 255)",
-    "background": "rgb(249, 115, 22)"
+    "background": "rgb(250, 153, 83)"
   },
   "B": {
     "color": "rgb(255, 255, 255)",
-    "background": "oklab(0.684991 -0.0912492 -0.142231 / 0.9)"
+    "background": "rgb(105, 176, 222)"
   },
   "C": {
     "color": "rgb(255, 255, 255)",
-    "background": "oklab(0.695996 -0.162107 0.0511875 / 0.9)"
+    "background": "rgb(105, 183, 139)"
   },
   "D": {
     "color": "rgb(255, 255, 255)",

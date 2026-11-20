@@ -3,13 +3,12 @@ const fs = require('node:fs');
 const assert = require('node:assert/strict');
 const source = JSON.parse(fs.readFileSync('data/cards/english-details.json', 'utf8'));
 const details = new Map(source.cards.map(card => [card.id, card]));
-const chinese = new Map(JSON.parse(fs.readFileSync('data/cards/cards-zh-TW.json', 'utf8')).cards.map(card => [card.id, card]));
 const localBuilds = fs.readFileSync('build.html', 'utf8');
 const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const plain = value => value.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 const renderArticle = require('./render-card-detail.cjs');
 function render(card) {
-  return '<td class="card-detail-cell" data-field="detail" role="cell" colspan="10">'+renderArticle(card,{localBuilds})+'</td>';
+  return '<td class="card-detail-cell" data-field="detail" role="cell" colspan="10">'+renderArticle(card,{localBuilds,showBuilds:false,showKeywords:false,searchableEffects:true})+'</td>';
 }
 function attribute(tag, name, value) {
   const pattern = new RegExp('\\b' + name + '="[^"]*"');
@@ -24,13 +23,12 @@ html = html.replace(/<tr id="card-([^"]+)"[^>]*>[\s\S]*?<\/tr>/g, (original, id)
   const card = details.get(id);
   assert.ok(card, 'Missing English detail: ' + id);
   count++;
-  const zh = chinese.get(id);
   let row = original.replace(/^<tr[^>]*>/, tag => {
     tag = attribute(tag, 'class', 'card-detail-row');
     tag = attribute(tag, 'data-type', card.type);
     tag = attribute(tag, 'data-rarity', card.rarity);
     tag = attribute(tag, 'data-name', (card.name + ' ' + card.nameZh).toLowerCase());
-    return attribute(tag, 'data-search', plain([id, card.name, card.nameZh, ...card.aliases, card.effect.base, card.effect.upgraded || '', ...card.keywords.map(k => k.name), zh.descBase, zh.descUpgraded].join(' ')).toLowerCase());
+    return attribute(tag, 'data-search', plain([card.name, card.nameZh, card.effect.base, card.effect.upgraded || ''].join(' ')).toLowerCase());
   });
   // Keep filter/sort data in the existing cells, aligned with the English source.
   row = row.replace(/(<td\b[^>]*data-field="([^"]+)"[^>]*>)([\s\S]*?)<\/td>/g, (cell, tag, field, content) => {
@@ -60,6 +58,7 @@ html = html.replaceAll(hashScript, '').replace('</body>', hashScript + '</body>'
 const baseCss = fs.readFileSync('assets/cards/cards.css', 'utf8').split('/* Each card occupies one full row with seven detail sections. */')[0].trimEnd();
 fs.writeFileSync('assets/cards/' + output + '.css', baseCss + '\n' + fs.readFileSync('assets/cards/card1-detail.css', 'utf8') + require('./navigation-icons.cjs').styles + require('./desktop-content-width.cjs') + require('./filter-frames.cjs') + require('./page-scroll.cjs') + require('./tier-colors.cjs') + require('./tier-labels.cjs') + require('./card-content-width.cjs'));
 fs.writeFileSync((output === 'cards' ? 'card' : output) + '.html', html);
+fs.appendFileSync('assets/cards/' + output + '.css', require('./rarity-labels.cjs'));
 console.log('Created ' + (output === 'cards' ? 'card' : output) + '.html: ' + count + ' cards with English detail sections.');
 }
 module.exports = buildCardDetails;

@@ -631,15 +631,15 @@ html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-ra
 }
 
 /* Tier A uses orange throughout labels, filters and rankings. */
-:root {--card-tier-A:#f97316;--catalog-tier-A:#f97316}
+:root {--card-tier-A:rgb(250, 153, 83);--catalog-tier-A:rgb(250, 153, 83)}
 html body :is(.tier,.build-tier,.card-tier-badge,.relic-tier-label,.font-extrabold)[data-tier=A] {
-  --tier-color:#f97316!important;background:#f97316!important;color:#fff!important;border-color:#f97316!important;
+  --tier-color:rgb(250, 153, 83)!important;background:rgb(250, 153, 83)!important;color:#fff!important;border-color:rgb(250, 153, 83)!important;
 }
 html body :is([data-tier-filter=A],#card-filter-tier button[value=A]) {
-  --tier-color:#f97316!important;--selection-color:#f97316!important;
+  --tier-color:rgb(250, 153, 83)!important;--selection-color:rgb(250, 153, 83)!important;
 }
 html body .card-detail :is(.detail-tier,.detail-build-tier)[data-tier=A] {
-  color:#f97316;background:color-mix(in srgb,#f97316 16%,#0b1119);border-color:#f97316;
+  color:rgb(250, 153, 83);background:color-mix(in srgb,rgb(250, 153, 83) 16%,#0b1119);border-color:rgb(250, 153, 83);
 }
 
 /* Solid tier labels, matching the ancient ranking label presentation. */
@@ -651,19 +651,19 @@ html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,body.cha
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=S][data-tier] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.645008 0.235914 0.0696316 / 0.9)!important;border:1px solid oklab(0.645008 0.235914 0.0696316 / 0.9)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(225, 112, 132)!important;border:1px solid rgb(225, 112, 132)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(249, 115, 22)!important;border:1px solid rgb(249, 115, 22)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(250, 153, 83)!important;border:1px solid rgb(250, 153, 83)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=B][data-tier] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;border:1px solid oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(105, 176, 222)!important;border:1px solid rgb(105, 176, 222)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=C][data-tier] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;border:1px solid oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(105, 183, 139)!important;border:1px solid rgb(105, 183, 139)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=D][data-tier] {
@@ -734,19 +734,19 @@ html body #main-content #tools #card-filter-tier button[aria-pressed=true]::afte
 }
 
 html body #main-content #tools #card-filter-tier button[value=S] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.645008 0.235914 0.0696316 / 0.9)!important;border:1px solid oklab(0.645008 0.235914 0.0696316 / 0.9)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(225, 112, 132)!important;border:1px solid rgb(225, 112, 132)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=A] {
-  color:rgb(255, 255, 255)!important;background:rgb(249, 115, 22)!important;border:1px solid rgb(249, 115, 22)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(250, 153, 83)!important;border:1px solid rgb(250, 153, 83)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=B] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;border:1px solid oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(105, 176, 222)!important;border:1px solid rgb(105, 176, 222)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=C] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;border:1px solid oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(105, 183, 139)!important;border:1px solid rgb(105, 183, 139)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=D] {
@@ -789,7 +789,7 @@ html body[data-view=grid] main#main-content#main-content #card-scroll>section[da
   display:flow-root;margin-block:0;
 }
 html body[data-view=grid] main#main-content#main-content #card-scroll .grid-pool-heading {
-  margin-block:0;padding-block:24px;
+  margin-block:0;padding-block:24px;padding-inline:16px;
 }
 html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-child(1 of :not([hidden])) .card-detail {margin-top:0}
 html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-last-child(1 of :not([hidden])) .card-detail {margin-bottom:0}
@@ -927,21 +927,101 @@ html body main#main-content .potion-filters button:is([data-filter-group=rarity]
   }
 }
 
+/* Center each entry with its icon in the first row. */
+html body main#main-content .entry.potion {grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto;gap:12px;justify-items:center;text-align:center}
+html body main#main-content .entry.potion > img {grid-column:1;grid-row:1;justify-self:center;margin:0}
+html body main#main-content .entry.potion > .potion-title-row {grid-column:1;grid-row:2;justify-content:center;width:100%}
+html body main#main-content .entry.potion > p {grid-column:1;grid-row:3;width:100%}
+html body main#main-content .entry.potion > p {color:#fff}
+
 /* Chinese names lead; both language names use the heading size. */
-html body main#main-content .entry.potion .potion-title-row h2 {font:700 22px/1.35 Arial,"Microsoft JhengHei",sans-serif;flex-direction:column;align-items:flex-start;gap:4px}
+html body main#main-content .entry.potion .potion-title-row h2 {font:700 22px/1.35 Arial,"Microsoft JhengHei",sans-serif;flex-direction:column;align-items:center;gap:4px}
 html body main#main-content .entry.potion .potion-title-row h2 :is(.potion-name-zh,.catalog-name-en) {font:inherit;white-space:normal;overflow-wrap:anywhere}
+html body main#main-content .entry.potion .potion-title-row h2 :is(.potion-name-zh,.catalog-name-en) {color:#fff}
 html body main#main-content .entry.potion .potion-title-row h2 .potion-name-zh {order:0}
 html body main#main-content .entry.potion .potion-title-row h2 .catalog-name-en {order:1}
+html body main#main-content .entry.potion .potion-rarity-row {order:2;margin-top:8px;font:600 16px/1.4 Arial,"Microsoft JhengHei",sans-serif;color:var(--rarity-color,var(--muted))}
 
 /* Stack the bilingual title on iPhone-sized screens. */
 @media screen and (max-width:599px), screen and (pointer:coarse) and (max-width:1000px) and (max-height:500px) {
   html body main#main-content .entry.potion .potion-title-row h2 {
-    flex-direction:column;align-items:flex-start;gap:4px;
+    flex-direction:column;align-items:center;gap:4px;
   }
   html body main#main-content .entry.potion .potion-title-row h2 > span {
     display:block;max-width:100%;
   }
 }
+
+
+/* Rarity uses the same filled label in filters and entry details. */
+html body main#main-content :is(.rarity-label,[data-relic-rarity],.potion-rarity-row) {
+ display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;
+ width:max-content;max-width:100%;min-height:26px;padding:3px 10px;
+ border:0;border-radius:4px;font:700 16px/1.4 Arial,"Microsoft JhengHei",sans-serif;
+}
+html body main#main-content :is(#card-filter-rarity button,button[data-catalog-filter=rarity]) {border-radius:4px!important;position:relative;font-weight:700!important}
+html body main#main-content :is(#card-filter-rarity button,button[data-catalog-filter=rarity])[aria-pressed=true] {outline:none;box-shadow:none!important}
+html body main#main-content :is(#card-filter-rarity button,button[data-catalog-filter=rarity])[aria-pressed=true]::after {
+ content:"✓";position:absolute;right:4px;top:3px;
+ display:grid;place-items:center;width:18px;height:18px;
+ border-radius:50%;background:#fff;color:#040609;font:800 14px/1 Arial,sans-serif;
+}
+html body main#main-content :is(#card-filter-rarity button,button[data-catalog-filter=rarity]):focus-visible {outline:2px solid #fff;outline-offset:3px}
+html body main#main-content :is(#card-filter-rarity button,button[data-catalog-filter=rarity]):hover {filter:brightness(1.12)}
+
+html body main#main-content :is(.rarity-label[data-label-rarity=Basic],[data-relic-rarity=Basic],.entry.potion[data-rarity=Basic] .potion-rarity-row,#card-filter-rarity button[value=Basic],button[data-catalog-filter=rarity][value=Basic]) {
+ color:rgb(255, 255, 255)!important;background:rgb(120, 132, 145)!important;border-color:rgb(120, 132, 145)!important;
+}
+
+html body main#main-content :is(.rarity-label[data-label-rarity=Starter],[data-relic-rarity=Starter],.entry.potion[data-rarity=Starter] .potion-rarity-row,#card-filter-rarity button[value=Starter],button[data-catalog-filter=rarity][value=Starter]) {
+ color:rgb(255, 255, 255)!important;background:rgb(120, 132, 145)!important;border-color:rgb(120, 132, 145)!important;
+}
+
+html body main#main-content :is(.rarity-label[data-label-rarity=Common],[data-relic-rarity=Common],.entry.potion[data-rarity=Common] .potion-rarity-row,#card-filter-rarity button[value=Common],button[data-catalog-filter=rarity][value=Common]) {
+ color:rgb(255, 255, 255)!important;background:rgb(120, 132, 145)!important;border-color:rgb(120, 132, 145)!important;
+}
+
+html body main#main-content :is(.rarity-label[data-label-rarity=Uncommon],[data-relic-rarity=Uncommon],.entry.potion[data-rarity=Uncommon] .potion-rarity-row,#card-filter-rarity button[value=Uncommon],button[data-catalog-filter=rarity][value=Uncommon]) {
+ color:rgb(255, 255, 255)!important;background:rgb(105, 176, 222)!important;border-color:rgb(105, 176, 222)!important;
+}
+
+html body main#main-content :is(.rarity-label[data-label-rarity=Rare],[data-relic-rarity=Rare],.entry.potion[data-rarity=Rare] .potion-rarity-row,#card-filter-rarity button[value=Rare],button[data-catalog-filter=rarity][value=Rare]) {
+ color:rgb(255, 255, 255)!important;background:rgb(250, 153, 83)!important;border-color:rgb(250, 153, 83)!important;
+}
+
+html body main#main-content :is(.rarity-label[data-label-rarity=Ancient],[data-relic-rarity=Ancient],.entry.potion[data-rarity=Ancient] .potion-rarity-row,#card-filter-rarity button[value=Ancient],button[data-catalog-filter=rarity][value=Ancient]) {
+ color:rgb(255, 255, 255)!important;background:rgb(225, 112, 132)!important;border-color:rgb(225, 112, 132)!important;
+}
+
+html body main#main-content :is(.rarity-label[data-label-rarity=Shop],[data-relic-rarity=Shop],.entry.potion[data-rarity=Shop] .potion-rarity-row,#card-filter-rarity button[value=Shop],button[data-catalog-filter=rarity][value=Shop]) {
+ color:rgb(255, 255, 255)!important;background:rgb(105, 183, 139)!important;border-color:rgb(105, 183, 139)!important;
+}
+
+html body main#main-content :is(.rarity-label[data-label-rarity=Event],[data-relic-rarity=Event],.entry.potion[data-rarity=Event] .potion-rarity-row,#card-filter-rarity button[value=Event],button[data-catalog-filter=rarity][value=Event]) {
+ color:rgb(255, 255, 255)!important;background:rgb(105, 183, 139)!important;border-color:rgb(105, 183, 139)!important;
+}
+
+html body main#main-content :is(.rarity-label[data-label-rarity=Curse],[data-relic-rarity=Curse],.entry.potion[data-rarity=Curse] .potion-rarity-row,#card-filter-rarity button[value=Curse],button[data-catalog-filter=rarity][value=Curse]) {
+ color:rgb(255, 255, 255)!important;background:rgb(225, 112, 132)!important;border-color:rgb(225, 112, 132)!important;
+}
+
+html body main#main-content :is(.rarity-label[data-label-rarity=Quest],[data-relic-rarity=Quest],.entry.potion[data-rarity=Quest] .potion-rarity-row,#card-filter-rarity button[value=Quest],button[data-catalog-filter=rarity][value=Quest]) {
+ color:rgb(255, 255, 255)!important;background:rgb(250, 153, 83)!important;border-color:rgb(250, 153, 83)!important;
+}
+
+html body main#main-content :is(.rarity-label[data-label-rarity=None],[data-relic-rarity=None],.entry.potion[data-rarity=None] .potion-rarity-row,#card-filter-rarity button[value=None],button[data-catalog-filter=rarity][value=None]) {
+ color:rgb(255, 255, 255)!important;background:rgb(120, 132, 145)!important;border-color:rgb(120, 132, 145)!important;
+}
+
+/* Ancient labels share the same purple in filters and details. */
+html body main#main-content :is(.rarity-label[data-label-rarity=Ancient],[data-relic-rarity=Ancient],.entry.potion[data-rarity=Ancient] .potion-rarity-row,#card-filter-rarity button[value=Ancient],button[data-catalog-filter=rarity][value=Ancient]) {
+ background:#a78bdf!important;border-color:#a78bdf!important;
+}
+/* Event labels use a light coffee brown to distinguish them from Shop. */
+html body main#main-content :is(.rarity-label[data-label-rarity=Event],[data-relic-rarity=Event],.entry.potion[data-rarity=Event] .potion-rarity-row,#card-filter-rarity button[value=Event],button[data-catalog-filter=rarity][value=Event]) {
+ background:#b08b70!important;border-color:#b08b70!important;
+}
+
 
 /* All pages share a full-width frame with the same edge spacing. */
 html {--site-width:100%;--site-page-gap:20px}
@@ -1178,15 +1258,15 @@ html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-ra
 }
 
 /* Tier A uses orange throughout labels, filters and rankings. */
-:root {--card-tier-A:#f97316;--catalog-tier-A:#f97316}
+:root {--card-tier-A:rgb(250, 153, 83);--catalog-tier-A:rgb(250, 153, 83)}
 html body :is(.tier,.build-tier,.card-tier-badge,.relic-tier-label,.font-extrabold)[data-tier=A] {
-  --tier-color:#f97316!important;background:#f97316!important;color:#fff!important;border-color:#f97316!important;
+  --tier-color:rgb(250, 153, 83)!important;background:rgb(250, 153, 83)!important;color:#fff!important;border-color:rgb(250, 153, 83)!important;
 }
 html body :is([data-tier-filter=A],#card-filter-tier button[value=A]) {
-  --tier-color:#f97316!important;--selection-color:#f97316!important;
+  --tier-color:rgb(250, 153, 83)!important;--selection-color:rgb(250, 153, 83)!important;
 }
 html body .card-detail :is(.detail-tier,.detail-build-tier)[data-tier=A] {
-  color:#f97316;background:color-mix(in srgb,#f97316 16%,#0b1119);border-color:#f97316;
+  color:rgb(250, 153, 83);background:color-mix(in srgb,rgb(250, 153, 83) 16%,#0b1119);border-color:rgb(250, 153, 83);
 }
 
 /* Solid tier labels, matching the ancient ranking label presentation. */
@@ -1198,19 +1278,19 @@ html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,body.cha
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=S][data-tier] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.645008 0.235914 0.0696316 / 0.9)!important;border:1px solid oklab(0.645008 0.235914 0.0696316 / 0.9)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(225, 112, 132)!important;border:1px solid rgb(225, 112, 132)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(249, 115, 22)!important;border:1px solid rgb(249, 115, 22)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(250, 153, 83)!important;border:1px solid rgb(250, 153, 83)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=B][data-tier] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;border:1px solid oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(105, 176, 222)!important;border:1px solid rgb(105, 176, 222)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=C][data-tier] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;border:1px solid oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(105, 183, 139)!important;border:1px solid rgb(105, 183, 139)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=D][data-tier] {
@@ -1281,19 +1361,19 @@ html body #main-content #tools #card-filter-tier button[aria-pressed=true]::afte
 }
 
 html body #main-content #tools #card-filter-tier button[value=S] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.645008 0.235914 0.0696316 / 0.9)!important;border:1px solid oklab(0.645008 0.235914 0.0696316 / 0.9)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(225, 112, 132)!important;border:1px solid rgb(225, 112, 132)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=A] {
-  color:rgb(255, 255, 255)!important;background:rgb(249, 115, 22)!important;border:1px solid rgb(249, 115, 22)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(250, 153, 83)!important;border:1px solid rgb(250, 153, 83)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=B] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;border:1px solid oklab(0.684991 -0.0912492 -0.142231 / 0.9)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(105, 176, 222)!important;border:1px solid rgb(105, 176, 222)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=C] {
-  color:rgb(255, 255, 255)!important;background:oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;border:1px solid oklab(0.695996 -0.162107 0.0511875 / 0.9)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(105, 183, 139)!important;border:1px solid rgb(105, 183, 139)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=D] {
@@ -1336,7 +1416,7 @@ html body[data-view=grid] main#main-content#main-content #card-scroll>section[da
   display:flow-root;margin-block:0;
 }
 html body[data-view=grid] main#main-content#main-content #card-scroll .grid-pool-heading {
-  margin-block:0;padding-block:24px;
+  margin-block:0;padding-block:24px;padding-inline:16px;
 }
 html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-child(1 of :not([hidden])) .card-detail {margin-top:0}
 html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-last-child(1 of :not([hidden])) .card-detail {margin-bottom:0}
