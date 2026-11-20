@@ -71,9 +71,9 @@ html body main#main-content .relic-filters button:is([data-filter-group=rarity],
   }
 }
 
-/* Keep two columns below the full-width header in a centered half-width page. */
+/* Keep one column below the full-width header in a centered quarter-width page. */
 @media screen and (min-width:1025px) and (hover:hover) and (pointer:fine), screen and (min-width:1441px) {
-  html body main#main-content#main-content#main-content:has(>.relic-filters) {width:50vw!important;margin-inline:auto!important}
+  html body main#main-content#main-content#main-content:has(>.relic-filters) {width:25vw!important;margin-inline:auto!important}
   html body main#main-content#main-content#main-content:has(>.relic-filters)>.catalog-scroll {
     width:100%!important;
     max-width:none;
@@ -81,7 +81,7 @@ html body main#main-content .relic-filters button:is([data-filter-group=rarity],
     margin-inline:auto;
   }
   html body main#main-content:has(>.relic-filters)>.catalog-scroll .catalog {
-    grid-template-columns:repeat(2,minmax(0,1fr));
+    grid-template-columns:minmax(0,1fr);
   }
   html body main#main-content .entry.relic {align-content:start}
 }

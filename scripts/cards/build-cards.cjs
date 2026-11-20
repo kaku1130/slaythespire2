@@ -420,7 +420,7 @@ document.getElementById('aoe-toggle').addEventListener('click',()=>{
   search.dispatchEvent(new Event('input',{bubbles:true}));
 });
 function cardSearchQueries() {
-  return [...new Set((search.value.trim().toLowerCase().match(/all\\s+enemies|[^\\s+、，,]+/g) || []).map(value => value.replace(/\\s+/g, ' ')))];
+  return [...new Set(search.value.toLowerCase().split(/[、，,+]+/).map(value => value.trim().replace(/\\s+/g, ' ')).filter(Boolean))];
 }
 function cardMatchesSearch(row, queries) {
   const query = search.value.trim().toLowerCase();

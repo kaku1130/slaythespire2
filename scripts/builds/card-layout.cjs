@@ -4,15 +4,6 @@ html body main#main-content .build-content .build-guide-cards {
  display:grid;grid-template-columns:minmax(0,1fr);gap:24px;min-width:0;
 }
 html body main#main-content .build-content .build-guide-card {min-width:0}
-@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine), screen and (min-width:1441px) {
- html body main#main-content .build-content .build-guide-cards {grid-template-columns:repeat(2,minmax(0,1fr))}
- html body main#main-content .build-content .build-guide-card {display:grid;grid-row:span 5;grid-template-rows:subgrid}
- html body main#main-content .build-content .build-guide-card>.card-detail {grid-row:1 / -1;grid-template-rows:subgrid}
- html body main#main-content .build-content .build-guide-card .detail-overview {grid-row:span 4;grid-template-rows:subgrid}
- html body main#main-content .build-content .build-guide-card .detail-overview>header {display:grid;grid-row:span 2;grid-template-rows:subgrid;min-width:0}
- html body main#main-content .build-content .build-guide-card .detail-title {display:grid;grid-row:1 / -1;grid-template-rows:subgrid;justify-items:center;align-items:start;min-width:0}
- html body main#main-content .build-content .build-guide-card .detail-stat:first-child {align-items:start}
-}
 html body main#main-content .build-content .build-guide-card>.card-detail {
  box-sizing:border-box;width:100%;max-width:none;min-width:0;margin:0;
  --card-tier-S:#d05a68;--card-tier-A:#f97316;--card-tier-B:#4e8dcc;--card-tier-C:#4e9c68;--card-tier-D:#828e9d;

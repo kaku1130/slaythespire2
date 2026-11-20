@@ -54,4 +54,23 @@ function markup(){
  const data=JSON.stringify(entries).replace(/</g,'\\u003c');
  return `<!--card-effect-tooltips--><dialog id="card-effect-dialog" aria-labelledby="card-effect-dialog-title" lang="en"><header class="effect-dialog-header"><h2 id="card-effect-dialog-title"></h2><form method="dialog"><button class="effect-dialog-close" type="submit" aria-label="關閉效果說明">×</button></form></header><div id="card-effect-dialog-content"></div></dialog><script type="application/json" id="card-effect-tooltips-data">${data}</script><!--/card-effect-tooltips-->`;
 }
-module.exports={decorate,markup};
+function note(cardId,key){
+ const term=source.cards[cardId]?.keys.map(id=>source.terms[id]).find(term=>term.key===key);
+ if(!term)return '';
+ return '<aside class="detail-resource-note" aria-label="'+escape(term.title)+'"><h3>'+escape(term.title)+'</h3><p>'+content(term.description)+'</p></aside>';
+}
+function notes(cardId){
+ decorate('',cardId);decorate('',cardId,true);
+ const seen=new Set(),items=[];
+ for(const [key,entry] of Object.entries(entries)){
+  if(!key.startsWith(cardId+'|'))continue;
+  const signature=entry.title+'|'+entry.html;
+  if(seen.has(signature))continue;
+  seen.add(signature);
+  const upgraded=key.endsWith('|upgraded');
+  const title=entry.title+(upgraded?' (Upgraded)':'');
+  items.push('<aside class="detail-resource-note"><h3>'+escape(title)+'</h3><p>'+entry.html+'</p></aside>');
+ }
+ return items.length?'<figcaption class="detail-effect-notes">'+items.join('')+'</figcaption>':'';
+}
+module.exports={decorate,markup,note,notes};

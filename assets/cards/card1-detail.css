@@ -53,6 +53,12 @@ html body #card-scroll .card-detail-row > .card-detail-cell::before {display:non
 .card-detail-row[data-rarity=Quest] .card-detail {--detail-rarity-color:#c8ab79}
 .card-detail h2,.card-detail h3,.card-detail p,.card-detail dl,.card-detail figure {margin:0}
 .card-detail .detail-overview {display:grid;align-content:start;gap:16px;min-width:0}
+.card-detail .detail-resource-note {margin-top:16px;padding:16px;border:1px solid #303d4e;border-radius:9px;background:#222e33}
+.card-detail .detail-resource-note h3 {margin:0 0 9px;color:#f1cd7f;font-size:16px}
+.card-detail .detail-resource-note p {margin:0;color:#e0e7ef;font-size:16px}
+.card-detail .detail-resource-note em {color:#f1cd7f;font-style:normal;font-weight:600}
+.card-detail .detail-effect-notes {display:grid;gap:16px;margin-top:16px;text-align:left}
+.card-detail .detail-effect-notes .detail-resource-note {margin-top:0}
 .card-detail .detail-title {
   display:flex;
   flex-direction:column;

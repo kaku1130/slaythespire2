@@ -89,7 +89,7 @@ mark.shared-search-match{background:#184e35;color:#a8f0bf;border-radius:2px}
     doc.addEventListener('click', event => {
       if (replayedClicks.has(event)) return;
       const target = event.target;
-      if (cardPage && !target.closest?.('#card-scroll .detail-effect-panel')) return;
+      if (cardPage && !target.closest?.('#card-scroll :is(.detail-effect-panel,.detail-resource-note)')) return;
       const clickable = target.closest?.('main a[href],main [data-detail-key]');
       if (!clickable || !clickable.textContent.trim() || target.closest('img,svg,button,input,select,textarea') || clickable.closest('.site-header,.site-attribution') || event.button !== 0 || !event.detail || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
@@ -105,7 +105,7 @@ mark.shared-search-match{background:#184e35;color:#a8f0bf;border-radius:2px}
     doc.addEventListener('dblclick', event => {
       const target = event.target;
       if (!(target instanceof doc.defaultView.Element) || !target.closest('main') || target.closest('input,textarea,select,button,[contenteditable=true],.site-header')) return;
-      if (cardPage && !target.closest('#card-scroll .detail-effect-panel')) return;
+      if (cardPage && !target.closest('#card-scroll :is(.detail-effect-panel,.detail-resource-note)')) return;
       clearTimeout(pendingClick);
       // Native word selection is finalized after the dblclick event.
       setTimeout(() => {

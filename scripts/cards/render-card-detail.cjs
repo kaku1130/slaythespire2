@@ -11,7 +11,7 @@ function buildLink(card, build, localBuilds) {
   }
   return new URL(build.url, card.source).href;
 }
-function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds = '', showBuilds = true, showKeywords = true, showTierRating = true, searchableEffects = false, rarityBeforeType = false, showEffectTooltips = false} = {}) {
+function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds = '', showBuilds = true, showKeywords = true, showTierRating = true, searchableEffects = false, rarityBeforeType = false, showEffectTooltips = false, showEffectNotes = false} = {}) {
   const chineseUrl = new URL(card.sourceZh || card.source);
   if (!card.sourceZh) chineseUrl.pathname = '/zh-TW' + chineseUrl.pathname;
   const energyCost = card.stats.find(stat => stat.label === 'Energy cost')?.value;
@@ -59,7 +59,7 @@ function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds =
   const tierDescription = 'Ranked ' + card.tier + ' tier in our ' + card.character + ' card tier list.';
   return `<article class="card-detail" aria-labelledby="${prefix}-title" lang="en" data-source="${esc(card.source)}" data-character="${esc(card.character)}">
   <div class="detail-overview">
-  <figure class="detail-art" data-detail-row="1"><img src="${esc(card.image)}" width="700" height="532" alt="${esc(card.name)} illustration" loading="lazy" decoding="async"></figure>
+  <figure class="detail-art" data-detail-row="1"><img src="${esc(card.image)}" width="700" height="532" alt="${esc(card.name)} illustration" loading="lazy" decoding="async">${showEffectNotes ? require('./effect-tooltips.cjs').notes(card.id) : ''}</figure>
   <header data-detail-row="2"><h2 class="detail-title" id="${prefix}-title"><a class="detail-name-zh" lang="zh-Hant" href="${esc(chineseUrl.href)}" target="_blank" rel="noopener noreferrer">${esc(card.nameZh)}</a><a href="${esc(card.source)}" target="_blank" rel="noopener noreferrer">${esc(card.name)}</a></h2></header>
   <section class="detail-section detail-effects" data-detail-row="5" aria-label="Card effects"><div class="detail-effect-columns"><div class="detail-effect-panel"><h4>Base</h4><p>${baseContent}</p></div><div class="detail-effect-panel"><h4 class="detail-upgraded">Upgraded</h4><p>${upgradedContent}</p></div></div>${showKeywords && keywords ? '<aside class="detail-keyword">' + keywords + '</aside>' : ''}</section>
   </div>
