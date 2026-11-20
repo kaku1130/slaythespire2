@@ -4,8 +4,7 @@ module.exports = `
 /* Keep navigation in one row when the full labels no longer fit. */
 @media screen and (max-width:1366px) {
   html body .site-header>.site-header-inner {flex-wrap:nowrap;gap:8px;min-height:56px}
-  html body .site-header .site-brand {flex:0 0 auto;min-height:44px;gap:0}
-  html body .site-header .site-brand>span,
+  html body .site-header .site-brand {flex:0 0 auto;min-height:44px;gap:10px}
   html body .site-header .site-nav a>span:not([aria-hidden]) {
     display:block;position:absolute;width:1px;height:1px;padding:0;margin:-1px;
     overflow:hidden;clip-path:inset(50%);white-space:nowrap;
@@ -53,7 +52,7 @@ html body>.site-header {position:sticky!important;top:0;z-index:100}
 }
 
 /* Phone navigation uses the entire header row without the brand icon. */
-@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) {
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
   html body .site-header>.site-header-inner {gap:0}
   html body .site-header .site-nav {flex:1 1 auto!important;width:100%!important;margin:0;gap:4px}

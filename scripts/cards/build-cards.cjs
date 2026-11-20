@@ -7,38 +7,41 @@ const fs = require('node:fs');
 const assert = require('node:assert/strict');
 const navigation = require('./site-navigation.cjs');
 
-const cards = JSON.parse(fs.readFileSync('data/cards/cards-source.json', 'utf8')).filter(card => !['Curse', 'Event', 'Quest'].includes(card.pool));
+const cards = JSON.parse(fs.readFileSync('data/cards/cards-source.json', 'utf8'));
 const chineseSource = JSON.parse(fs.readFileSync('data/cards/cards-zh-TW.json','utf8'));
 const chineseCards = new Map(chineseSource.cards.map(c=>[c.id,c]));
 const tierSource = JSON.parse(fs.readFileSync('data/cards/tiers-source.json', 'utf8'));
 const buildSource = JSON.parse(fs.readFileSync('data/builds/source.json', 'utf8'));
 const buildsByCard = buildSource.byCard;
 const tiers = new Map(tierSource.rankings.map(c=>[c.id,c.tier]));
-const categories = ['Ironclad', 'Silent', 'Defect', 'Regent', 'Necrobinder', 'Colorless'];
+const {categories, category, groups, group, filterCategory} = require('./card-categories.cjs');
+const filterLabels = {Event:'Event', Curse:'Curse', Other:'Other'};
 function renderCardFilters(groups) {
-  return require('./character-filter.cjs')('<div class="card-filter-rows" lang="en">' + groups.map(([label,key,values]) => {
-    const buttons = values.map(value => {
+  return '<div class="card-filter-rows" lang="en">' + groups.map(([label,key,values]) => {
+    let buttons = values.map(value => {
       const selected = key === 'character' && value === 'Ironclad';
-      return '<button type="button" value="' + value + '" aria-pressed="' + selected + '">' + (value || 'All') + '</button>';
+      return '<button type="button" value="' + value + '" aria-pressed="' + selected + '">' + ((key !== 'rarity' && filterLabels[value]) || value || 'All') + '</button>';
     }).join('');
+    if (key === 'character') buttons = require('./character-filter.cjs')(buttons, {
+      iconPaths:{Colorless:'assets/cards/icons/colorless.webp', Event:'assets/cards/icons/event.webp', Curse:'assets/cards/icons/other.webp'},
+      labels:{Colorless:'Colorless', Event:'Event', Curse:'Curse、Quest'}
+    });
     return '<div class="card-filter-row"><span>' + label + '</span><div class="card-filter-buttons" id="card-filter-' + key + '" role="group" aria-label="' + label + '">' + buttons + '</div></div>';
-  }).join('') + '</div>');
+  }).join('') + '</div>';
 }
 function renderCardActions() {
   const tiers = ['S', 'A', 'B', 'C', 'D'];
   const buttons = tiers.map(tier => '<button type="button" value="' + tier + '" aria-pressed="false">' + tier + '</button>').join('');
   return '<div class="card-action-row"><span class="card-tier-label">Tier</span><div class="card-tier-choices" id="card-filter-tier" role="group" aria-label="Tier">' + buttons + '</div>' + '</div>';
 }
-const expected = [87, 88, 88, 88, 88, 64];
-assert.equal(cards.length, 503);
-assert.equal(new Set(cards.map(c => c.id)).size, 503);
-categories.forEach((p, i) => assert.equal(cards.filter(c => c.pool === p).length, expected[i]));
+const expected = categories.map(pool=>cards.filter(card=>category(card)===pool).length);
+assert.equal(new Set(cards.map(c => c.id)).size, cards.length);
+assert.equal(expected.reduce((sum,count)=>sum+count,0), cards.length);
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
 const poolLabels={Ironclad:'鐵甲戰士',Silent:'靜默獵手',Defect:'故障機器人',Necrobinder:'亡靈契約師',Regent:'儲君',Colorless:'無色',Curse:'詛咒',Event:'事件',Quest:'任務'};
-const colors = ['#dc6c68', '#70bf8b', '#6faeee', '#e3bf72', '#b595dd', '#aab6c4', '#cf8098', '#6ac1b4', '#c8ab79'];
-const poolColors=Object.fromEntries(categories.map((pool,i)=>[pool,colors[i]]));
+const poolColors={Ironclad:'#dc6c68',Silent:'#70bf8b',Regent:'#e3bf72',Necrobinder:'#b595dd',Defect:'#6faeee',Colorless:'#aab6c4',Curse:'#cf8098',Status:'#aab6c4',Event:'#6ac1b4',Token:'#aab6c4',Quest:'#c8ab79'};
 function compareCards(a,b,key='rarity',direction=1){
-  const rarityOrder=['Basic','Common','Uncommon','Rare','Ancient','Event','Curse','Quest'];
+  const rarityOrder=['Basic','Common','Uncommon','Rare','Ancient','Event','Curse','Status','Token','Quest'];
   const text=(x,y)=>String(x).localeCompare(String(y),'en',{sensitivity:'base'});
   const rank=x=>{const i=rarityOrder.indexOf(x);return i<0?rarityOrder.length:i;};
   const rarity=(x,y)=>rank(x)-rank(y)||text(x,y);
@@ -46,18 +49,18 @@ function compareCards(a,b,key='rarity',direction=1){
   if(key==='tier'){const ar=tierRank(a.tier),br=tierRank(b.tier);if(ar===5||br===5){if(ar!==br)return ar===5?1:-1;}else if(ar!==br)return (ar-br)*direction;}
   if(key==='energy'){const energyRank=x=>x==='X'?100:x==='—'||x===undefined?101:Number(x);const ar=energyRank(a.energy),br=energyRank(b.energy);if(ar===101||br===101){if(ar!==br)return ar===101?1:-1;}else if(ar!==br)return (ar-br)*direction;}
   const primary=['tier','energy'].includes(key)?0:key==='rarity'?rarity(a.rarity,b.rarity):text(a[key],b[key]);
-  return primary*direction||(key==='rarity'?tierRank(a.tier)-tierRank(b.tier):0)||text(a.name,b.name)||rarity(a.rarity,b.rarity)||text(a.id,b.id);
+  return primary*direction||text(a.name,b.name)||rarity(a.rarity,b.rarity)||text(a.id,b.id);
 }
-const iconNames={Ironclad:'ironclad',Silent:'silent',Defect:'defect',Necrobinder:'necrobinder',Regent:'regent',Colorless:'colorless',Curse:'other',Event:'event',Quest:'other'};
+const iconNames={Ironclad:'ironclad',Silent:'silent',Defect:'defect',Necrobinder:'necrobinder',Regent:'regent',Colorless:'colorless',Ancient:'event',Curse:'other',Status:'other',Event:'event',Token:'colorless',Quest:'other'};
 const poolIcons=Object.fromEntries(Object.entries(iconNames).map(([pool,name])=>{
   const image=fs.readFileSync('assets/cards/icons/'+name+'.webp');
   assert.equal(image.toString('ascii',0,4),'RIFF');assert.equal(image.toString('ascii',8,12),'WEBP');
   return [pool,'data:image/webp;base64,'+image.toString('base64')];
 }));
 
-const typeLabels={Attack:'攻擊',Skill:'技能',Power:'能力',Curse:'詛咒',Quest:'任務'};
+const typeLabels={Attack:'攻擊',Skill:'技能',Power:'能力',Curse:'詛咒',Status:'狀態',Quest:'任務'};
 const typeColors={Attack:'#ff6568',Skill:'#74b3e6',Power:'#05df72',Curse:'#e3e8ee',Quest:'#e3e8ee'};
-const rarityLabels={Basic:'基礎',Common:'普通',Uncommon:'罕見',Rare:'稀有',Ancient:'先古之民',Event:'事件',Curse:'詛咒',Quest:'任務'};
+const rarityLabels={Basic:'基礎',Common:'普通',Uncommon:'罕見',Rare:'稀有',Ancient:'先古之民',Event:'事件',Curse:'詛咒',Status:'狀態',Token:'衍生',Quest:'任務'};
 const displayedRarities=['Basic','Common','Uncommon','Rare','Ancient'];
 const canUpgrade=c=>!!c.upgrade||c.descBase!==c.descUpgraded;
 const renderEffect=value=>esc(value||'—').replace(/&lt;g&gt;/g,'<span class="effect-keyword">').replace(/&lt;\/g&gt;/g,'</span>').replace(/&lt;e\/&gt;/g,'<span class="effect-resource" title="Energy">'+resourceIcons.energy+'</span>').replace(/&lt;e&gt;(.*?)&lt;\/e&gt;/g,(_,amount)=>'<span class="effect-resource" title="Energy">'+amount.replace(/\s+/g,'')+resourceIcons.energy+'</span>').replace(/&lt;s&gt;(.*?)&lt;\/s&gt;/g,(_,amount)=>'<span class="effect-star" title="Stars">'+amount.replace(/\s+/g,'')+resourceIcons.star+'</span>').replace(/\\n|\r?\n/g,'<br>');
@@ -99,16 +102,16 @@ const columnGroup='<colgroup>'+columns.filter(([key])=>visibleColumns.has(key)).
 function heading(key,label,rowspan=''){return '<th scope="col" data-field="'+key+'"'+(key==='pool'?' class="category-column"':'')+(rowspan?' rowspan="2"':'')+(key==='english'?' class="english-name"':'')+' aria-sort="'+(key==='rarity'?'ascending':'none')+'"><button type="button" class="sort-button" data-sort="'+key+'" aria-label="'+label+(key==='rarity'?', ascending; click to sort descending':', click to sort ascending')+'">'+label+'<span class="sort-icon" aria-hidden="true">'+(key==='rarity'?'↑':'↕')+'</span></button></th>';}
 const tableHead='<thead role="rowgroup"><tr>'+columns.filter(([key])=>visibleColumns.has(key)).map(([key,label])=>heading(key,label)).join('')+'</tr></thead>';
 
-const sections = categories.map((pool, i) => {
-  const list = cards.filter(c => c.pool === pool).sort((a,b) => compareCards({...a,tier:tiers.get(a.id)},{...b,tier:tiers.get(b.id)}));
+const sections = groups.map(pool => {
+  const list = cards.filter(c => group(c) === pool).sort((a,b) => compareCards({...a,tier:tiers.get(a.id)},{...b,tier:tiers.get(b.id)}));
   const rows = list.map(c => {
     const values={images:renderCardImages(c),english:'<a class="name-en" href="https://slaythespire2.net/card/'+encodeURIComponent(c.slug)+'" target="_blank" rel="noopener noreferrer">'+esc(c.name)+'</a>',name:'<a data-card-art="'+esc(c.id)+'" data-rarity="'+esc(c.rarity)+'" href="https://slaythespire2.net/zh-TW/card/'+encodeURIComponent(c.slug)+'" target="_blank" rel="noopener noreferrer">'+'<span class="name-zh" lang="zh-Hant">'+esc(chineseCards.get(c.id).name)+'</span></a>',type:'<span class="type" data-type="'+esc(c.type)+'">'+esc(typeLabels[c.type])+'</span>',energy:renderEnergy(c),effect:renderEffect(chineseCards.get(c.id).descBase)+(chineseCards.get(c.id).notes?'<br><small>'+renderEffect(chineseCards.get(c.id).notes)+'</small>':''),upgraded:renderUpgraded(c),rarity:'<span class="rarity" data-rarity="'+esc(c.rarity)+'">'+esc(displayedRarities.includes(c.rarity)?rarityLabels[c.rarity]:'—')+'</span>',tier:'<span class="tier" data-tier="'+(tiers.get(c.id)||'unranked')+'"'+(tiers.has(c.id)?'':' title="Not ranked by source"')+'>'+(tiers.get(c.id)||'—')+'</span>',builds:renderBuilds(c),pool:esc(pool)};
     return '<tr id="card-'+esc(c.id)+'" role="row" data-name="'+esc((c.name+' '+chineseCards.get(c.id).name).toLowerCase())+'" data-id="'+esc(c.id)+'" data-search="'+esc([c.id,c.name,chineseCards.get(c.id).name,...(chineseCards.get(c.id).aliases||[]),chineseCards.get(c.id).notes||'',chineseCards.get(c.id).descBase,canUpgrade(c)?chineseCards.get(c.id).descUpgraded:''].join(' ').replace(/<[^>]*>/g,'').toLowerCase())+'" data-type="'+esc(c.type)+'" data-rarity="'+esc(c.rarity)+'">'+columns.map(([key,label])=>'<td role="cell" data-field="'+key+'" data-label="'+label+'"'+(key==='energy'?' data-sort-value="'+esc(costLabel(c.energy))+'"':key==='name'?' data-sort-value="'+esc(c.name)+'"':key==='rarity'?' data-sort-value="'+esc(c.rarity)+'"':key==='type'?' data-sort-value="'+esc(c.type)+'"':'')+' class="'+({english:'english-name',name:'name',pool:'category',effect:'effect',upgraded:'effect upgraded',builds:'builds',energy:'energy'}[key]||key)+'">'+values[key]+'</td>').join('')+'</tr>';
   }).join('\n');
-  return `<section data-pool="${pool}"${pool === 'Ironclad' ? '' : ' hidden'} style="--accent:${colors[i]}"><h2 class="grid-pool-heading"><img src="${poolIcons[pool]}" alt="" width="28" height="28">${pool} <span class="grid-pool-count">(${list.length})</span></h2><div class="mobile-sort"><label for="sort-${pool}">Sort by</label><select id="sort-${pool}" class="mobile-sort-key">${columns.filter(([key])=>visibleColumns.has(key)).map(([key,label])=>`<option value="${key}"${key==='pool'?' hidden disabled':''}${key==='rarity'?' selected':''}>${label}</option>`).join('')}</select><button type="button" class="mobile-sort-direction" aria-label="Ascending; click to sort descending">↑ Asc</button></div><div class="table-wrap"><table role="table"><caption class="sr-only">${pool} 卡片名稱，共 ${list.length} 張</caption>${columnGroup}${tableHead}<tbody role="rowgroup">${rows}</tbody></table></div></section>`;
+  return `<section data-pool="${pool}" data-filter-category="${filterCategory(pool)}"${pool === 'Ironclad' ? '' : ' hidden'} style="--accent:${poolColors[pool]}"><h2 class="grid-pool-heading"><img src="${poolIcons[pool]}" alt="" width="28" height="28">${pool} <span class="grid-pool-count">(${list.length})</span></h2><div class="mobile-sort"><label for="sort-${pool}">Sort by</label><select id="sort-${pool}" class="mobile-sort-key">${columns.filter(([key])=>visibleColumns.has(key)).map(([key,label])=>`<option value="${key}"${key==='pool'?' hidden disabled':''}${key==='rarity'?' selected':''}>${label}</option>`).join('')}</select><button type="button" class="mobile-sort-direction" aria-label="Ascending; click to sort descending">↑ Asc</button></div><div class="table-wrap"><table role="table"><caption class="sr-only">${pool} 卡片名稱，共 ${list.length} 張</caption>${columnGroup}${tableHead}<tbody role="rowgroup">${rows}</tbody></table></div></section>`;
 }).join('\n');
 const html = `<!doctype html>
-<html lang="zh-Hant"><head><meta charset="utf-8"><link rel="apple-touch-icon" sizes="180x180" href="assets/cards/icons/site-logo.png"><link rel="icon" type="image/webp" href="assets/cards/icons/site-logo.webp"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Slay the Spire 2｜503 張卡片名稱索引</title>
+<html lang="zh-Hant"><head><meta charset="utf-8"><link rel="apple-touch-icon" sizes="180x180" href="assets/cards/icons/site-logo.png"><link rel="icon" type="image/webp" href="assets/cards/icons/site-logo.webp"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Slay the Spire 2｜${cards.length} 張卡片名稱索引</title>
 <style>
 :root{color-scheme:dark;--ink:#e3e8ee;--muted:#86909b;--line:#1a222b;--paper:#080e14;--bg:#040609;--link:#0a8fd1;--focus:#37a8ec}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,"Microsoft JhengHei",sans-serif;font-size:14px;line-height:1.6}main{max-width:2200px;margin:0 auto;padding:28px 32px 48px}a{color:var(--link);text-underline-offset:4px}a:hover{color:#19affe}input,select,button{font:inherit}input,select{width:100%;height:42px;padding:9px 12px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink)}input::placeholder{color:var(--muted)}input:focus-visible,select:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
@@ -349,7 +352,7 @@ html body main#main-content,html body .site-header>.site-header-inner{width:100%
 ${fs.readFileSync('assets/cards/compact-cards.css','utf8')}
 ${fs.readFileSync('assets/cards/search-control.css','utf8')}
 </style></head><body data-view="grid">${navigation.renderHeader('cards')}<main id="main-content">
-<div class="tools" id="tools"><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><div class="search-control"><input id="search" type="text" inputmode="search" role="searchbox" placeholder="搜尋關鍵字" autocomplete="off"><button type="button" class="search-clear" aria-label="清除搜尋關鍵字" title="清除搜尋關鍵字"><span class="search-icon" aria-hidden="true">🔍</span></button></div>${cardGrid.actionControls}</div>${renderCardFilters([['Character','character',["Ironclad","Silent","Defect","Necrobinder","Regent","Colorless"]],['Type','type',["Attack","Skill","Power"]],['Rarity','rarity',["Common","Uncommon","Rare","Ancient"]]])}${renderCardActions()}</div>
+<div class="tools" id="tools"><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><div class="search-control"><input id="search" type="text" inputmode="search" role="searchbox" placeholder="搜尋關鍵字" autocomplete="off"><button type="button" class="search-clear" aria-label="清除搜尋關鍵字" title="清除搜尋關鍵字"><span class="search-icon" aria-hidden="true">🔍</span></button></div>${cardGrid.actionControls}</div>${renderCardFilters([['Character','character',["Ironclad","Silent","Regent","Necrobinder","Defect","Colorless","Event","Curse"]],['Type','type',["Attack","Skill","Power"]],['Rarity','rarity',["Common","Uncommon","Rare","Ancient"]]])}${renderCardActions()}<p id="card-filter-result" class="card-filter-result" role="status" aria-live="polite" aria-atomic="true">符合張數 / 總卡片數：0 / ${cards.length}</p></div>
 <div id="card-scroll" class="card-scroll" role="region" aria-label="卡牌表格" tabindex="0">${sections}<p id="empty" hidden>找不到符合條件的卡片，請調整搜尋文字、分類或稀有度。</p>
 </div>
 </main>
@@ -386,9 +389,9 @@ function selectedCardFilters() {
 }
 function cardMatchesFilters(row, section, selected) {
   const {characters, rarities, types, tiers}=selected;
-  return (!characters.size||characters.has(section.dataset.pool))
+  return (!characters.size||characters.has(section.dataset.filterCategory))
     && (!rarities.size||rarities.has(row.dataset.rarity)||(rarities.has('Common')&&row.dataset.rarity==='Basic'))
-    && (!types.size||types.has(row.dataset.type)||(types.has('Event')&&section.dataset.pool==='Event'))
+    && (!types.size||types.has(row.dataset.type))
     && (!tiers.size||tiers.has(row.querySelector('.tier[data-tier]').dataset.tier));
 }
 function filter() {
@@ -405,6 +408,7 @@ function filter() {
     count+=found;
   }
   document.getElementById('empty').hidden=count!==0;
+  document.getElementById('card-filter-result').textContent='符合張數 / 總卡片數：'+count+' / ${cards.length}';
   document.getElementById('card-scroll').scrollTo({top:0,left:0,behavior:'instant'});
 }
 
@@ -472,7 +476,7 @@ compactView.addEventListener('change',updateSortFocus);updateSortFocus();
 function selectCardRow(row){for(const current of document.querySelectorAll('.card-scroll tbody tr.is-selected'))current.classList.remove('is-selected');row.classList.add('is-selected');}
 function scrollToCard(row){const area=document.getElementById('card-scroll'),head=row.closest('table').querySelector('thead'),pageScroll=getComputedStyle(area).overflowY==='visible';const headerHeight=pageScroll?document.querySelector('.site-header').getBoundingClientRect().height+(compactView.matches?0:head.getBoundingClientRect().height):compactView.matches?0:head.getBoundingClientRect().height;row.style.scrollMarginTop=(headerHeight+12)+'px';if(pageScroll){row.scrollIntoView({block:'start',behavior:'instant'});return;}const top=area.scrollTop+row.getBoundingClientRect().top-area.getBoundingClientRect().top-headerHeight-12;area.scrollTo({top:Math.max(0,top),behavior:'instant'});}
 document.getElementById('card-scroll').addEventListener('click',event=>{const row=event.target.closest('tbody tr[data-id]');if(row)selectCardRow(row);});
-function revealLinkedCard(){let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}if(!id.startsWith('card-'))return;const row=document.getElementById(id);if(!row)return;const section=row.closest('section[data-pool]');if(!section)return;setFilterValues(characterFilter,[section.dataset.pool]);search.value='';setFilterValues(rarityFilter,[]);setFilterValues(typeFilter,[]);for(const choice of tierChoices)choice.setAttribute('aria-pressed','false');filter();selectCardRow(row);requestAnimationFrame(()=>scrollToCard(row));}
+function revealLinkedCard(){let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}if(!id.startsWith('card-'))return;const row=document.getElementById(id);if(!row)return;const section=row.closest('section[data-pool]');if(!section)return;setFilterValues(characterFilter,[section.dataset.filterCategory]);search.value='';setFilterValues(rarityFilter,[]);setFilterValues(typeFilter,[]);for(const choice of tierChoices)choice.setAttribute('aria-pressed','false');filter();selectCardRow(row);requestAnimationFrame(()=>scrollToCard(row));}
 window.addEventListener('hashchange',revealLinkedCard);revealLinkedCard();
 
 
@@ -480,10 +484,10 @@ window.addEventListener('hashchange',revealLinkedCard);revealLinkedCard();
 ${cardArt.createScript({paired:true,width:420})}
 </script></body></html>`;
 require('./desktop-page-css.cjs').writeDesktopPage('card.html',navigation.openPageLinksInNewTab(html).replace('</body>','<script src="assets/cards/search-controls.js"></script><script src="assets/cards/compact-cards.js?v=4"></script></body>'));
-const manifest={source:'https://slaythespire2.net/card',chineseSource:chineseSource.source,retrievedDate:'2026-11-08',version:'Live v0.107.1',balanceUpdate:chineseSource.balanceUpdate,tierSource:tierSource.source,tierRetrievedDate:tierSource.retrievedDate,total:cards.length,categories:Object.fromEntries(categories.map((p,i)=>[p,expected[i]])),cards:categories.flatMap(pool=>cards.filter(c=>c.pool===pool).sort((a,b)=>compareCards({...a,tier:tiers.get(a.id)},{...b,tier:tiers.get(b.id)})).map(c=>({id:c.id,name:c.name,nameZh:chineseCards.get(c.id).name,...(chineseCards.get(c.id).aliases?{aliases:chineseCards.get(c.id).aliases}:{}),...(chineseCards.get(c.id).notes?{notes:chineseCards.get(c.id).notes}:{}),...(c.availability?{availability:c.availability}:{}),...(c.canGenerateInCombat!==undefined?{canGenerateInCombat:c.canGenerateInCombat}:{}),category:c.pool,type:c.type,rarity:c.rarity,rarityZh:rarityLabels[c.rarity],tier:tiers.get(c.id)||null,images:cardImages[c.id],tableImages:cardTableImages[c.id],effect:{base:chineseCards.get(c.id).descBase,upgraded:canUpgrade(c)?chineseCards.get(c.id).descUpgraded:null},energy:c.energy??null,starCost:c.starCost??null,upgrade:c.upgrade??null,builds:(buildsByCard[c.id]||[]).map(b=>({...b,sourceUrl:b.url,url:localBuildUrl(b)})),url:'https://slaythespire2.net/zh-TW/card/'+c.slug})))};
+const manifest={source:'https://slaythespire2.net/card',chineseSource:chineseSource.source,retrievedDate:chineseSource.retrievedDate,version:chineseSource.version,balanceUpdate:chineseSource.balanceUpdate,tierSource:tierSource.source,tierRetrievedDate:tierSource.retrievedDate,total:cards.length,categories:Object.fromEntries(categories.map((p,i)=>[p,expected[i]])),cards:groups.flatMap(pool=>cards.filter(c=>group(c)===pool).sort((a,b)=>compareCards({...a,tier:tiers.get(a.id)},{...b,tier:tiers.get(b.id)})).map(c=>({id:c.id,name:c.name,nameZh:chineseCards.get(c.id).name,...(chineseCards.get(c.id).aliases?{aliases:chineseCards.get(c.id).aliases}:{}),...(chineseCards.get(c.id).notes?{notes:chineseCards.get(c.id).notes}:{}),...(c.availability?{availability:c.availability}:{}),...(c.canGenerateInCombat!==undefined?{canGenerateInCombat:c.canGenerateInCombat}:{}),category:category(c),originalPool:c.pool,type:c.type,rarity:c.rarity,rarityZh:rarityLabels[c.rarity],tier:tiers.get(c.id)||null,images:cardImages[c.id],tableImages:cardTableImages[c.id],effect:{base:chineseCards.get(c.id).descBase,upgraded:canUpgrade(c)?chineseCards.get(c.id).descUpgraded:null},energy:c.energy??null,starCost:c.starCost??null,upgrade:c.upgrade??null,builds:(buildsByCard[c.id]||[]).map(b=>({...b,sourceUrl:b.url,url:localBuildUrl(b)})),url:c.sourceZh||'https://slaythespire2.net/zh-TW/card/'+c.slug})))};
 fs.writeFileSync('data/cards/cards.json',JSON.stringify(manifest,null,2));
-assert.equal((html.match(/<tr id="card-[^"]+" role="row" data-name=/g)||[]).length,503);
-assert.equal((html.match(/<section data-pool=/g)||[]).length,6);
-console.log(JSON.stringify({total:503,categories:manifest.categories,htmlBytes:Buffer.byteLength(html)},null,2));
+assert.equal((html.match(/<tr id="card-[^"]+" role="row" data-name=/g)||[]).length,cards.length);
+assert.equal((html.match(/<section data-pool=/g)||[]).length,groups.length);
+console.log(JSON.stringify({total:cards.length,categories:manifest.categories,htmlBytes:Buffer.byteLength(html)},null,2));
 require('../builds/build-builds.cjs');
 require('./build-card1.cjs')({output:'cards'});

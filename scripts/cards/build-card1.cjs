@@ -8,7 +8,7 @@ const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&
 const plain = value => value.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 const renderArticle = require('./render-card-detail.cjs');
 function render(card) {
-  return '<td class="card-detail-cell" data-field="detail" role="cell" colspan="10">'+renderArticle(card,{localBuilds,showBuilds:false,showKeywords:false,searchableEffects:true,rarityBeforeType:true})+'</td>';
+  return '<td class="card-detail-cell" data-field="detail" role="cell" colspan="10">'+renderArticle(card,{localBuilds,showBuilds:false,showKeywords:false,searchableEffects:true,rarityBeforeType:true,showEffectTooltips:true})+'</td>';
 }
 function attribute(tag, name, value) {
   const pattern = new RegExp('\\b' + name + '="[^"]*"');
@@ -48,15 +48,15 @@ html = html.replace(/<tr id="card-([^"]+)"[^>]*>[\s\S]*?<\/tr>/g, (original, id)
   });
   return row.replace('</tr>', render(card) + '</tr>');
 });
-assert.equal(count, source.cards.filter(card => !['Curse', 'Event', 'Quest'].includes(card.character)).length);
-assert.equal(count, 503);
+assert.equal(count, details.size);
 html = html.replace('href="assets/cards/cards.css"', 'href="assets/cards/' + output + '.css"');
-html = html.replace(/<title>[\s\S]*?<\/title>/, '<title>' + (output === 'cards' ? 'Slay the Spire 2' : 'Card 1') + '｜503 張卡牌詳細資料</title>');
+html = html.replace(/<title>[\s\S]*?<\/title>/, '<title>' + (output === 'cards' ? 'Slay the Spire 2' : 'Card 1') + '｜' + count + ' 張卡牌詳細資料</title>');
 html = html.replace(/href="(?:card|card1)\.html#card-/g, 'href="' + (output === 'cards' ? 'card' : output) + '.html#card-');
 const hashScript = '<script>if(location.hash.startsWith("#card-"))requestAnimationFrame(()=>{const row=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(row){row.style.scrollMarginTop="12px";row.scrollIntoView({block:"start",behavior:"instant"});}});</script>';
 html = html.replaceAll(hashScript, '').replace('</body>', hashScript + '</body>');
 const baseCss = fs.readFileSync('assets/cards/cards.css', 'utf8').split('/* Each card occupies one full row with seven detail sections. */')[0].trimEnd();
 fs.writeFileSync('assets/cards/' + output + '.css', baseCss + '\n' + fs.readFileSync('assets/cards/card1-detail.css', 'utf8') + require('./navigation-icons.cjs').styles + require('./desktop-content-width.cjs') + require('./filter-frames.cjs') + require('./page-scroll.cjs') + require('./tier-colors.cjs') + require('./tier-labels.cjs') + require('./card-content-width.cjs'));
+html = html.replace(/<!--card-effect-tooltips-->[\s\S]*?<!--\/card-effect-tooltips-->/g, '').replace('</main>', '</main>' + require('./effect-tooltips.cjs').markup());
 fs.writeFileSync((output === 'cards' ? 'card' : output) + '.html', html);
 fs.appendFileSync('assets/cards/' + output + '.css', require('./rarity-labels.cjs'));
 console.log('Created ' + (output === 'cards' ? 'card' : output) + '.html: ' + count + ' cards with English detail sections.');

@@ -1,0 +1,1600 @@
+{
+  "source": "https://spire-codex.com/api/cards",
+  "checkedAt": "2026-11-20T03:31:27.896Z",
+  "cards": [
+    {
+      "card": {
+        "id": "BECKON",
+        "name": "Beckon",
+        "pool": "Status",
+        "type": "Status",
+        "rarity": "Status",
+        "slug": "beckon",
+        "descBase": "At the end of your turn, if this is in your <g>Hand</g>,\n lose 6 HP.",
+        "descUpgraded": "At the end of your turn, if this is in your <g>Hand</g>,\n lose 6 HP.",
+        "energy": 1,
+        "source": "https://spire-codex.com/cards/beckon",
+        "sourceZh": "https://spire-codex.com/cards/beckon?lang=zht"
+      },
+      "chinese": {
+        "id": "BECKON",
+        "name": "呼喚",
+        "slug": "beckon",
+        "descBase": "在你的回合結束時，若此牌在你的<g>手牌</g>中，\n失去 6 點生命。",
+        "descUpgraded": "在你的回合結束時，若此牌在你的<g>手牌</g>中，\n失去 6 點生命。"
+      },
+      "detail": {
+        "id": "BECKON",
+        "name": "Beckon",
+        "nameZh": "呼喚",
+        "source": "https://spire-codex.com/cards/beckon",
+        "sourceZh": "https://spire-codex.com/cards/beckon?lang=zht",
+        "type": "Status",
+        "rarity": "Status",
+        "character": "Status",
+        "tier": null,
+        "effect": {
+          "base": "At the end of your turn, if this is in your <g>Hand</g>,\n lose 6 HP.",
+          "upgraded": null
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "1<e/>"
+          },
+          {
+            "label": "Type",
+            "value": "Status"
+          },
+          {
+            "label": "Rarity",
+            "value": "Status"
+          },
+          {
+            "label": "Character",
+            "value": "Status"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/status/beckon.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "BURN",
+        "name": "Burn",
+        "pool": "Status",
+        "type": "Status",
+        "rarity": "Status",
+        "slug": "burn",
+        "descBase": "<g>Unplayable</g>.\nAt the end of your turn, if this is in your <g>Hand</g>, take 2 damage.",
+        "descUpgraded": "<g>Unplayable</g>.\nAt the end of your turn, if this is in your <g>Hand</g>, take 2 damage.",
+        "unplayable": true,
+        "source": "https://spire-codex.com/cards/burn",
+        "sourceZh": "https://spire-codex.com/cards/burn?lang=zht"
+      },
+      "chinese": {
+        "id": "BURN",
+        "name": "灼傷",
+        "slug": "burn",
+        "descBase": "<g>無法打出</g>.\n在你的回合結束時，若此牌在你的<g>手牌</g>中，受到 2 點傷害。",
+        "descUpgraded": "<g>無法打出</g>.\n在你的回合結束時，若此牌在你的<g>手牌</g>中，受到 2 點傷害。"
+      },
+      "detail": {
+        "id": "BURN",
+        "name": "Burn",
+        "nameZh": "灼傷",
+        "source": "https://spire-codex.com/cards/burn",
+        "sourceZh": "https://spire-codex.com/cards/burn?lang=zht",
+        "type": "Status",
+        "rarity": "Status",
+        "character": "Status",
+        "tier": null,
+        "effect": {
+          "base": "<g>Unplayable</g>.\nAt the end of your turn, if this is in your <g>Hand</g>, take 2 damage.",
+          "upgraded": null
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "No cost (unplayable)"
+          },
+          {
+            "label": "Type",
+            "value": "Status"
+          },
+          {
+            "label": "Rarity",
+            "value": "Status"
+          },
+          {
+            "label": "Character",
+            "value": "Status"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/status/burn.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "DAZED",
+        "name": "Dazed",
+        "pool": "Status",
+        "type": "Status",
+        "rarity": "Status",
+        "slug": "dazed",
+        "descBase": "<g>Ethereal</g>.\n<g>Unplayable</g>.",
+        "descUpgraded": "<g>Ethereal</g>.\n<g>Unplayable</g>.",
+        "unplayable": true,
+        "source": "https://spire-codex.com/cards/dazed",
+        "sourceZh": "https://spire-codex.com/cards/dazed?lang=zht"
+      },
+      "chinese": {
+        "id": "DAZED",
+        "name": "暈眩",
+        "slug": "dazed",
+        "descBase": "<g>虛無</g>.\n<g>無法打出</g>.",
+        "descUpgraded": "<g>虛無</g>.\n<g>無法打出</g>."
+      },
+      "detail": {
+        "id": "DAZED",
+        "name": "Dazed",
+        "nameZh": "暈眩",
+        "source": "https://spire-codex.com/cards/dazed",
+        "sourceZh": "https://spire-codex.com/cards/dazed?lang=zht",
+        "type": "Status",
+        "rarity": "Status",
+        "character": "Status",
+        "tier": null,
+        "effect": {
+          "base": "<g>Ethereal</g>.\n<g>Unplayable</g>.",
+          "upgraded": null
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "No cost (unplayable)"
+          },
+          {
+            "label": "Type",
+            "value": "Status"
+          },
+          {
+            "label": "Rarity",
+            "value": "Status"
+          },
+          {
+            "label": "Character",
+            "value": "Status"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/status/dazed.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "DEBRIS",
+        "name": "Debris",
+        "pool": "Status",
+        "type": "Status",
+        "rarity": "Status",
+        "slug": "debris",
+        "descBase": "<g>Exhaust</g>.",
+        "descUpgraded": "<g>Exhaust</g>.",
+        "energy": 1,
+        "source": "https://spire-codex.com/cards/debris",
+        "sourceZh": "https://spire-codex.com/cards/debris?lang=zht"
+      },
+      "chinese": {
+        "id": "DEBRIS",
+        "name": "殘骸",
+        "slug": "debris",
+        "descBase": "<g>消耗</g>.",
+        "descUpgraded": "<g>消耗</g>."
+      },
+      "detail": {
+        "id": "DEBRIS",
+        "name": "Debris",
+        "nameZh": "殘骸",
+        "source": "https://spire-codex.com/cards/debris",
+        "sourceZh": "https://spire-codex.com/cards/debris?lang=zht",
+        "type": "Status",
+        "rarity": "Status",
+        "character": "Status",
+        "tier": null,
+        "effect": {
+          "base": "<g>Exhaust</g>.",
+          "upgraded": null
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "1<e/>"
+          },
+          {
+            "label": "Type",
+            "value": "Status"
+          },
+          {
+            "label": "Rarity",
+            "value": "Status"
+          },
+          {
+            "label": "Character",
+            "value": "Status"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/status/debris.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "DISINTEGRATION",
+        "name": "Disintegration",
+        "pool": "Status",
+        "type": "Status",
+        "rarity": "Status",
+        "slug": "disintegration",
+        "descBase": "At the end of your turn, take 6 damage.",
+        "descUpgraded": "At the end of your turn, take 6 damage.",
+        "unplayable": true,
+        "source": "https://spire-codex.com/cards/disintegration",
+        "sourceZh": "https://spire-codex.com/cards/disintegration?lang=zht"
+      },
+      "chinese": {
+        "id": "DISINTEGRATION",
+        "name": "崩解",
+        "slug": "disintegration",
+        "descBase": "在你的回合結束時，受到 6 點傷害。",
+        "descUpgraded": "在你的回合結束時，受到 6 點傷害。"
+      },
+      "detail": {
+        "id": "DISINTEGRATION",
+        "name": "Disintegration",
+        "nameZh": "崩解",
+        "source": "https://spire-codex.com/cards/disintegration",
+        "sourceZh": "https://spire-codex.com/cards/disintegration?lang=zht",
+        "type": "Status",
+        "rarity": "Status",
+        "character": "Status",
+        "tier": null,
+        "effect": {
+          "base": "At the end of your turn, take 6 damage.",
+          "upgraded": null
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "No cost (unplayable)"
+          },
+          {
+            "label": "Type",
+            "value": "Status"
+          },
+          {
+            "label": "Rarity",
+            "value": "Status"
+          },
+          {
+            "label": "Character",
+            "value": "Status"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/status/disintegration.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "FRANTIC_ESCAPE",
+        "name": "Frantic Escape",
+        "pool": "Status",
+        "type": "Status",
+        "rarity": "Status",
+        "slug": "frantic-escape",
+        "descBase": "Get farther away.\nIncrease <g>Sandpit</g> by 1.\nIncrease the cost of this card by 1.",
+        "descUpgraded": "Get farther away.\nIncrease <g>Sandpit</g> by 1.\nIncrease the cost of this card by 1.",
+        "energy": 1,
+        "source": "https://spire-codex.com/cards/frantic-escape",
+        "sourceZh": "https://spire-codex.com/cards/frantic-escape?lang=zht"
+      },
+      "chinese": {
+        "id": "FRANTIC_ESCAPE",
+        "name": "倉皇脫逃",
+        "slug": "frantic-escape",
+        "descBase": "拉開更多距離。\n使<g>沙坑</g>增加 1 層。\n此牌耗能增加 1 點。",
+        "descUpgraded": "拉開更多距離。\n使<g>沙坑</g>增加 1 層。\n此牌耗能增加 1 點。"
+      },
+      "detail": {
+        "id": "FRANTIC_ESCAPE",
+        "name": "Frantic Escape",
+        "nameZh": "倉皇脫逃",
+        "source": "https://spire-codex.com/cards/frantic-escape",
+        "sourceZh": "https://spire-codex.com/cards/frantic-escape?lang=zht",
+        "type": "Status",
+        "rarity": "Status",
+        "character": "Status",
+        "tier": null,
+        "effect": {
+          "base": "Get farther away.\nIncrease <g>Sandpit</g> by 1.\nIncrease the cost of this card by 1.",
+          "upgraded": null
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "1<e/>"
+          },
+          {
+            "label": "Type",
+            "value": "Status"
+          },
+          {
+            "label": "Rarity",
+            "value": "Status"
+          },
+          {
+            "label": "Character",
+            "value": "Status"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/status/frantic_escape.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "FUEL",
+        "name": "Fuel",
+        "pool": "Token",
+        "type": "Skill",
+        "rarity": "Token",
+        "slug": "fuel",
+        "descBase": "<g>Exhaust</g>.\nGain <e/>.",
+        "descUpgraded": "<g>Exhaust</g>.\nGain <e/><e/>.",
+        "energy": 0,
+        "upgrade": {
+          "energy": "+1"
+        },
+        "source": "https://spire-codex.com/cards/fuel",
+        "sourceZh": "https://spire-codex.com/cards/fuel?lang=zht"
+      },
+      "chinese": {
+        "id": "FUEL",
+        "name": "燃料",
+        "slug": "fuel",
+        "descBase": "<g>消耗</g>.\n獲得 <e/>。",
+        "descUpgraded": "<g>消耗</g>.\n獲得 <e/><e/>。"
+      },
+      "detail": {
+        "id": "FUEL",
+        "name": "Fuel",
+        "nameZh": "燃料",
+        "source": "https://spire-codex.com/cards/fuel",
+        "sourceZh": "https://spire-codex.com/cards/fuel?lang=zht",
+        "type": "Skill",
+        "rarity": "Token",
+        "character": "Token",
+        "tier": null,
+        "effect": {
+          "base": "<g>Exhaust</g>.\nGain <e/>.",
+          "upgraded": "<g>Exhaust</g>.\nGain <e/><e/>."
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "0<e/>"
+          },
+          {
+            "label": "Type",
+            "value": "Skill"
+          },
+          {
+            "label": "Rarity",
+            "value": "Token"
+          },
+          {
+            "label": "Character",
+            "value": "Token"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/token/fuel.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "GIANT_ROCK",
+        "name": "Giant Rock",
+        "pool": "Token",
+        "type": "Attack",
+        "rarity": "Token",
+        "slug": "giant-rock",
+        "descBase": "Deal 20 damage.",
+        "descUpgraded": "Deal 24 damage.",
+        "energy": 1,
+        "upgrade": {
+          "damage": "+4"
+        },
+        "source": "https://spire-codex.com/cards/giant-rock",
+        "sourceZh": "https://spire-codex.com/cards/giant-rock?lang=zht"
+      },
+      "chinese": {
+        "id": "GIANT_ROCK",
+        "name": "巨石",
+        "slug": "giant-rock",
+        "descBase": "造成 20 點傷害。",
+        "descUpgraded": "造成 24 點傷害。"
+      },
+      "detail": {
+        "id": "GIANT_ROCK",
+        "name": "Giant Rock",
+        "nameZh": "巨石",
+        "source": "https://spire-codex.com/cards/giant-rock",
+        "sourceZh": "https://spire-codex.com/cards/giant-rock?lang=zht",
+        "type": "Attack",
+        "rarity": "Token",
+        "character": "Token",
+        "tier": null,
+        "effect": {
+          "base": "Deal 20 damage.",
+          "upgraded": "Deal 24 damage."
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "1<e/>"
+          },
+          {
+            "label": "Type",
+            "value": "Attack"
+          },
+          {
+            "label": "Rarity",
+            "value": "Token"
+          },
+          {
+            "label": "Character",
+            "value": "Token"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/token/giant_rock.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "INFECTION",
+        "name": "Infection",
+        "pool": "Status",
+        "type": "Status",
+        "rarity": "Status",
+        "slug": "infection",
+        "descBase": "<g>Unplayable</g>.\nAt the end of your turn, if this is in your <g>Hand</g>, take 3 damage.",
+        "descUpgraded": "<g>Unplayable</g>.\nAt the end of your turn, if this is in your <g>Hand</g>, take 3 damage.",
+        "unplayable": true,
+        "source": "https://spire-codex.com/cards/infection",
+        "sourceZh": "https://spire-codex.com/cards/infection?lang=zht"
+      },
+      "chinese": {
+        "id": "INFECTION",
+        "name": "感染",
+        "slug": "infection",
+        "descBase": "<g>無法打出</g>.\n在你的回合結束時，若此牌在你的<g>手牌</g>中，受到 3 點傷害。",
+        "descUpgraded": "<g>無法打出</g>.\n在你的回合結束時，若此牌在你的<g>手牌</g>中，受到 3 點傷害。"
+      },
+      "detail": {
+        "id": "INFECTION",
+        "name": "Infection",
+        "nameZh": "感染",
+        "source": "https://spire-codex.com/cards/infection",
+        "sourceZh": "https://spire-codex.com/cards/infection?lang=zht",
+        "type": "Status",
+        "rarity": "Status",
+        "character": "Status",
+        "tier": null,
+        "effect": {
+          "base": "<g>Unplayable</g>.\nAt the end of your turn, if this is in your <g>Hand</g>, take 3 damage.",
+          "upgraded": null
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "No cost (unplayable)"
+          },
+          {
+            "label": "Type",
+            "value": "Status"
+          },
+          {
+            "label": "Rarity",
+            "value": "Status"
+          },
+          {
+            "label": "Character",
+            "value": "Status"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/status/infection.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "LUMINESCE",
+        "name": "Luminesce",
+        "pool": "Token",
+        "type": "Skill",
+        "rarity": "Token",
+        "slug": "luminesce",
+        "descBase": "<g>Exhaust</g>.\n<g>Retain</g>.\nGain <e/><e/>.",
+        "descUpgraded": "<g>Exhaust</g>.\n<g>Retain</g>.\nGain <e/><e/><e/>.",
+        "energy": 0,
+        "upgrade": {
+          "energy": "+1"
+        },
+        "source": "https://spire-codex.com/cards/luminesce",
+        "sourceZh": "https://spire-codex.com/cards/luminesce?lang=zht"
+      },
+      "chinese": {
+        "id": "LUMINESCE",
+        "name": "幽光",
+        "slug": "luminesce",
+        "descBase": "<g>消耗</g>.\n<g>保留</g>.\n獲得 <e/><e/>。",
+        "descUpgraded": "<g>消耗</g>.\n<g>保留</g>.\n獲得 <e/><e/><e/>。"
+      },
+      "detail": {
+        "id": "LUMINESCE",
+        "name": "Luminesce",
+        "nameZh": "幽光",
+        "source": "https://spire-codex.com/cards/luminesce",
+        "sourceZh": "https://spire-codex.com/cards/luminesce?lang=zht",
+        "type": "Skill",
+        "rarity": "Token",
+        "character": "Token",
+        "tier": null,
+        "effect": {
+          "base": "<g>Exhaust</g>.\n<g>Retain</g>.\nGain <e/><e/>.",
+          "upgraded": "<g>Exhaust</g>.\n<g>Retain</g>.\nGain <e/><e/><e/>."
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "0<e/>"
+          },
+          {
+            "label": "Type",
+            "value": "Skill"
+          },
+          {
+            "label": "Rarity",
+            "value": "Token"
+          },
+          {
+            "label": "Character",
+            "value": "Token"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/token/luminesce.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "MIND_ROT",
+        "name": "Mind Rot",
+        "pool": "Status",
+        "type": "Status",
+        "rarity": "Status",
+        "slug": "mind-rot",
+        "descBase": "Draw 1 fewer card each turn.",
+        "descUpgraded": "Draw 1 fewer card each turn.",
+        "unplayable": true,
+        "source": "https://spire-codex.com/cards/mind-rot",
+        "sourceZh": "https://spire-codex.com/cards/mind-rot?lang=zht"
+      },
+      "chinese": {
+        "id": "MIND_ROT",
+        "name": "心智侵蝕",
+        "slug": "mind-rot",
+        "descBase": "每回合少抽 1 張牌。",
+        "descUpgraded": "每回合少抽 1 張牌。"
+      },
+      "detail": {
+        "id": "MIND_ROT",
+        "name": "Mind Rot",
+        "nameZh": "心智侵蝕",
+        "source": "https://spire-codex.com/cards/mind-rot",
+        "sourceZh": "https://spire-codex.com/cards/mind-rot?lang=zht",
+        "type": "Status",
+        "rarity": "Status",
+        "character": "Status",
+        "tier": null,
+        "effect": {
+          "base": "Draw 1 fewer card each turn.",
+          "upgraded": null
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "No cost (unplayable)"
+          },
+          {
+            "label": "Type",
+            "value": "Status"
+          },
+          {
+            "label": "Rarity",
+            "value": "Status"
+          },
+          {
+            "label": "Character",
+            "value": "Status"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/status/mind_rot.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "MINION_DIVE_BOMB",
+        "name": "Minion Dive Bomb",
+        "pool": "Token",
+        "type": "Attack",
+        "rarity": "Token",
+        "slug": "minion-dive-bomb",
+        "descBase": "<g>Exhaust</g>.\nDeal 13 damage.",
+        "descUpgraded": "<g>Exhaust</g>.\nDeal 16 damage.",
+        "energy": 0,
+        "upgrade": {
+          "damage": "+3"
+        },
+        "source": "https://spire-codex.com/cards/minion-dive-bomb",
+        "sourceZh": "https://spire-codex.com/cards/minion-dive-bomb?lang=zht"
+      },
+      "chinese": {
+        "id": "MINION_DIVE_BOMB",
+        "name": "手下墜擊",
+        "slug": "minion-dive-bomb",
+        "descBase": "<g>消耗</g>.\n造成 13 點傷害。",
+        "descUpgraded": "<g>消耗</g>.\n造成 16 點傷害。"
+      },
+      "detail": {
+        "id": "MINION_DIVE_BOMB",
+        "name": "Minion Dive Bomb",
+        "nameZh": "手下墜擊",
+        "source": "https://spire-codex.com/cards/minion-dive-bomb",
+        "sourceZh": "https://spire-codex.com/cards/minion-dive-bomb?lang=zht",
+        "type": "Attack",
+        "rarity": "Token",
+        "character": "Token",
+        "tier": null,
+        "effect": {
+          "base": "<g>Exhaust</g>.\nDeal 13 damage.",
+          "upgraded": "<g>Exhaust</g>.\nDeal 16 damage."
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "0<e/>"
+          },
+          {
+            "label": "Type",
+            "value": "Attack"
+          },
+          {
+            "label": "Rarity",
+            "value": "Token"
+          },
+          {
+            "label": "Character",
+            "value": "Token"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/token/minion_dive_bomb.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "MINION_SACRIFICE",
+        "name": "Minion Sacrifice",
+        "pool": "Token",
+        "type": "Skill",
+        "rarity": "Token",
+        "slug": "minion-sacrifice",
+        "descBase": "<g>Exhaust</g>.\nGain 7 <g>Block</g>.",
+        "descUpgraded": "<g>Exhaust</g>.\nGain 10 <g>Block</g>.",
+        "energy": 0,
+        "upgrade": {
+          "block": "+3"
+        },
+        "source": "https://spire-codex.com/cards/minion-sacrifice",
+        "sourceZh": "https://spire-codex.com/cards/minion-sacrifice?lang=zht"
+      },
+      "chinese": {
+        "id": "MINION_SACRIFICE",
+        "name": "手下犧牲",
+        "slug": "minion-sacrifice",
+        "descBase": "<g>消耗</g>.\n獲得 7 點<g>格擋</g>。",
+        "descUpgraded": "<g>消耗</g>.\n獲得 10 點<g>格擋</g>。"
+      },
+      "detail": {
+        "id": "MINION_SACRIFICE",
+        "name": "Minion Sacrifice",
+        "nameZh": "手下犧牲",
+        "source": "https://spire-codex.com/cards/minion-sacrifice",
+        "sourceZh": "https://spire-codex.com/cards/minion-sacrifice?lang=zht",
+        "type": "Skill",
+        "rarity": "Token",
+        "character": "Token",
+        "tier": null,
+        "effect": {
+          "base": "<g>Exhaust</g>.\nGain 7 <g>Block</g>.",
+          "upgraded": "<g>Exhaust</g>.\nGain 10 <g>Block</g>."
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "0<e/>"
+          },
+          {
+            "label": "Type",
+            "value": "Skill"
+          },
+          {
+            "label": "Rarity",
+            "value": "Token"
+          },
+          {
+            "label": "Character",
+            "value": "Token"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/token/minion_sacrifice.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "MINION_STRIKE",
+        "name": "Minion Strike",
+        "pool": "Token",
+        "type": "Attack",
+        "rarity": "Token",
+        "slug": "minion-strike",
+        "descBase": "<g>Exhaust</g>.\nDeal 6 damage.\nDraw 1 card.",
+        "descUpgraded": "<g>Exhaust</g>.\nDeal 9 damage.\nDraw 1 card.",
+        "energy": 0,
+        "upgrade": {
+          "damage": "+3"
+        },
+        "source": "https://spire-codex.com/cards/minion-strike",
+        "sourceZh": "https://spire-codex.com/cards/minion-strike?lang=zht"
+      },
+      "chinese": {
+        "id": "MINION_STRIKE",
+        "name": "手下打擊",
+        "slug": "minion-strike",
+        "descBase": "<g>消耗</g>.\n造成 6 點傷害。\n抽 1 張牌。",
+        "descUpgraded": "<g>消耗</g>.\n造成 9 點傷害。\n抽 1 張牌。"
+      },
+      "detail": {
+        "id": "MINION_STRIKE",
+        "name": "Minion Strike",
+        "nameZh": "手下打擊",
+        "source": "https://spire-codex.com/cards/minion-strike",
+        "sourceZh": "https://spire-codex.com/cards/minion-strike?lang=zht",
+        "type": "Attack",
+        "rarity": "Token",
+        "character": "Token",
+        "tier": null,
+        "effect": {
+          "base": "<g>Exhaust</g>.\nDeal 6 damage.\nDraw 1 card.",
+          "upgraded": "<g>Exhaust</g>.\nDeal 9 damage.\nDraw 1 card."
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "0<e/>"
+          },
+          {
+            "label": "Type",
+            "value": "Attack"
+          },
+          {
+            "label": "Rarity",
+            "value": "Token"
+          },
+          {
+            "label": "Character",
+            "value": "Token"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/token/minion_strike.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "SHIV",
+        "name": "Shiv",
+        "pool": "Token",
+        "type": "Attack",
+        "rarity": "Token",
+        "slug": "shiv",
+        "descBase": "<g>Exhaust</g>.\nDeal 4 damage.",
+        "descUpgraded": "<g>Exhaust</g>.\nDeal 6 damage.",
+        "energy": 0,
+        "upgrade": {
+          "damage": "+2"
+        },
+        "source": "https://spire-codex.com/cards/shiv",
+        "sourceZh": "https://spire-codex.com/cards/shiv?lang=zht"
+      },
+      "chinese": {
+        "id": "SHIV",
+        "name": "小刀",
+        "slug": "shiv",
+        "descBase": "<g>消耗</g>.\n造成 4 點傷害。",
+        "descUpgraded": "<g>消耗</g>.\n造成 6 點傷害。"
+      },
+      "detail": {
+        "id": "SHIV",
+        "name": "Shiv",
+        "nameZh": "小刀",
+        "source": "https://spire-codex.com/cards/shiv",
+        "sourceZh": "https://spire-codex.com/cards/shiv?lang=zht",
+        "type": "Attack",
+        "rarity": "Token",
+        "character": "Token",
+        "tier": null,
+        "effect": {
+          "base": "<g>Exhaust</g>.\nDeal 4 damage.",
+          "upgraded": "<g>Exhaust</g>.\nDeal 6 damage."
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "0<e/>"
+          },
+          {
+            "label": "Type",
+            "value": "Attack"
+          },
+          {
+            "label": "Rarity",
+            "value": "Token"
+          },
+          {
+            "label": "Character",
+            "value": "Token"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/token/shiv.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "SLIMED",
+        "name": "Slimed",
+        "pool": "Status",
+        "type": "Status",
+        "rarity": "Status",
+        "slug": "slimed",
+        "descBase": "<g>Exhaust</g>.\nDraw 1 card.",
+        "descUpgraded": "<g>Exhaust</g>.\nDraw 1 card.",
+        "energy": 1,
+        "source": "https://spire-codex.com/cards/slimed",
+        "sourceZh": "https://spire-codex.com/cards/slimed?lang=zht"
+      },
+      "chinese": {
+        "id": "SLIMED",
+        "name": "黏液覆體",
+        "slug": "slimed",
+        "descBase": "<g>消耗</g>.\n抽 1 張牌。",
+        "descUpgraded": "<g>消耗</g>.\n抽 1 張牌。"
+      },
+      "detail": {
+        "id": "SLIMED",
+        "name": "Slimed",
+        "nameZh": "黏液覆體",
+        "source": "https://spire-codex.com/cards/slimed",
+        "sourceZh": "https://spire-codex.com/cards/slimed?lang=zht",
+        "type": "Status",
+        "rarity": "Status",
+        "character": "Status",
+        "tier": null,
+        "effect": {
+          "base": "<g>Exhaust</g>.\nDraw 1 card.",
+          "upgraded": null
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "1<e/>"
+          },
+          {
+            "label": "Type",
+            "value": "Status"
+          },
+          {
+            "label": "Rarity",
+            "value": "Status"
+          },
+          {
+            "label": "Character",
+            "value": "Status"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/status/slimed.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "SLOTH",
+        "name": "Sloth",
+        "pool": "Status",
+        "type": "Status",
+        "rarity": "Status",
+        "slug": "sloth",
+        "descBase": "You cannot play more than 3 cards each turn.",
+        "descUpgraded": "You cannot play more than 3 cards each turn.",
+        "unplayable": true,
+        "source": "https://spire-codex.com/cards/sloth",
+        "sourceZh": "https://spire-codex.com/cards/sloth?lang=zht"
+      },
+      "chinese": {
+        "id": "SLOTH",
+        "name": "怠惰",
+        "slug": "sloth",
+        "descBase": "你每回合最多只能打出 3 張牌。",
+        "descUpgraded": "你每回合最多只能打出 3 張牌。"
+      },
+      "detail": {
+        "id": "SLOTH",
+        "name": "Sloth",
+        "nameZh": "怠惰",
+        "source": "https://spire-codex.com/cards/sloth",
+        "sourceZh": "https://spire-codex.com/cards/sloth?lang=zht",
+        "type": "Status",
+        "rarity": "Status",
+        "character": "Status",
+        "tier": null,
+        "effect": {
+          "base": "You cannot play more than 3 cards each turn.",
+          "upgraded": null
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "No cost (unplayable)"
+          },
+          {
+            "label": "Type",
+            "value": "Status"
+          },
+          {
+            "label": "Rarity",
+            "value": "Status"
+          },
+          {
+            "label": "Character",
+            "value": "Status"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/status/sloth.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "SOOT",
+        "name": "Soot",
+        "pool": "Status",
+        "type": "Status",
+        "rarity": "Status",
+        "slug": "soot",
+        "descBase": "<g>Unplayable</g>.",
+        "descUpgraded": "<g>Unplayable</g>.",
+        "unplayable": true,
+        "source": "https://spire-codex.com/cards/soot",
+        "sourceZh": "https://spire-codex.com/cards/soot?lang=zht"
+      },
+      "chinese": {
+        "id": "SOOT",
+        "name": "煙灰",
+        "slug": "soot",
+        "descBase": "<g>無法打出</g>.",
+        "descUpgraded": "<g>無法打出</g>."
+      },
+      "detail": {
+        "id": "SOOT",
+        "name": "Soot",
+        "nameZh": "煙灰",
+        "source": "https://spire-codex.com/cards/soot",
+        "sourceZh": "https://spire-codex.com/cards/soot?lang=zht",
+        "type": "Status",
+        "rarity": "Status",
+        "character": "Status",
+        "tier": null,
+        "effect": {
+          "base": "<g>Unplayable</g>.",
+          "upgraded": null
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "No cost (unplayable)"
+          },
+          {
+            "label": "Type",
+            "value": "Status"
+          },
+          {
+            "label": "Rarity",
+            "value": "Status"
+          },
+          {
+            "label": "Character",
+            "value": "Status"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/status/soot.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "SOUL",
+        "name": "Soul",
+        "pool": "Token",
+        "type": "Skill",
+        "rarity": "Token",
+        "slug": "soul",
+        "descBase": "<g>Exhaust</g>.\nDraw 2 cards.",
+        "descUpgraded": "<g>Exhaust</g>.\nDraw 3 cards.",
+        "energy": 0,
+        "upgrade": {
+          "cards": "+1"
+        },
+        "source": "https://spire-codex.com/cards/soul",
+        "sourceZh": "https://spire-codex.com/cards/soul?lang=zht"
+      },
+      "chinese": {
+        "id": "SOUL",
+        "name": "靈魂",
+        "slug": "soul",
+        "descBase": "<g>消耗</g>.\n抽 2 張牌。",
+        "descUpgraded": "<g>消耗</g>.\n抽 3 張牌。"
+      },
+      "detail": {
+        "id": "SOUL",
+        "name": "Soul",
+        "nameZh": "靈魂",
+        "source": "https://spire-codex.com/cards/soul",
+        "sourceZh": "https://spire-codex.com/cards/soul?lang=zht",
+        "type": "Skill",
+        "rarity": "Token",
+        "character": "Token",
+        "tier": null,
+        "effect": {
+          "base": "<g>Exhaust</g>.\nDraw 2 cards.",
+          "upgraded": "<g>Exhaust</g>.\nDraw 3 cards."
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "0<e/>"
+          },
+          {
+            "label": "Type",
+            "value": "Skill"
+          },
+          {
+            "label": "Rarity",
+            "value": "Token"
+          },
+          {
+            "label": "Character",
+            "value": "Token"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/token/soul.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "SOVEREIGN_BLADE",
+        "name": "Sovereign Blade",
+        "pool": "Token",
+        "type": "Attack",
+        "rarity": "Token",
+        "slug": "sovereign-blade",
+        "descBase": "<g>Retain</g>.\nDeal 10 damage.",
+        "descUpgraded": "<g>Retain</g>.\nDeal 10 damage.",
+        "energy": 2,
+        "upgrade": {
+          "cost": 1,
+          "energy": 1
+        },
+        "source": "https://spire-codex.com/cards/sovereign-blade",
+        "sourceZh": "https://spire-codex.com/cards/sovereign-blade?lang=zht"
+      },
+      "chinese": {
+        "id": "SOVEREIGN_BLADE",
+        "name": "君王之劍",
+        "slug": "sovereign-blade",
+        "descBase": "<g>保留</g>.\n造成 10 點傷害choose:。",
+        "descUpgraded": "<g>保留</g>.\n造成 10 點傷害choose:。"
+      },
+      "detail": {
+        "id": "SOVEREIGN_BLADE",
+        "name": "Sovereign Blade",
+        "nameZh": "君王之劍",
+        "source": "https://spire-codex.com/cards/sovereign-blade",
+        "sourceZh": "https://spire-codex.com/cards/sovereign-blade?lang=zht",
+        "type": "Attack",
+        "rarity": "Token",
+        "character": "Token",
+        "tier": null,
+        "effect": {
+          "base": "<g>Retain</g>.\nDeal 10 damage.",
+          "upgraded": "<g>Retain</g>.\nDeal 10 damage."
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "2<e/> → 1<e/>"
+          },
+          {
+            "label": "Type",
+            "value": "Attack"
+          },
+          {
+            "label": "Rarity",
+            "value": "Token"
+          },
+          {
+            "label": "Character",
+            "value": "Token"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/token/sovereign_blade.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "SWEEPING_GAZE",
+        "name": "Sweeping Gaze",
+        "pool": "Token",
+        "type": "Attack",
+        "rarity": "Token",
+        "slug": "sweeping-gaze",
+        "descBase": "<g>Exhaust</g>.\n<g>Ethereal</g>.\n<g>Osty</g> deals 10 damage to a random enemy.",
+        "descUpgraded": "<g>Exhaust</g>.\n<g>Ethereal</g>.\n<g>Osty</g> deals 15 damage to a random enemy.",
+        "energy": 0,
+        "upgrade": {
+          "ostydamage": "+5"
+        },
+        "source": "https://spire-codex.com/cards/sweeping-gaze",
+        "sourceZh": "https://spire-codex.com/cards/sweeping-gaze?lang=zht"
+      },
+      "chinese": {
+        "id": "SWEEPING_GAZE",
+        "name": "掃蕩凝視",
+        "slug": "sweeping-gaze",
+        "descBase": "<g>消耗</g>.\n<g>虛無</g>.\n<g>奧斯提</g>對一名隨機敵人造成 10 點傷害。",
+        "descUpgraded": "<g>消耗</g>.\n<g>虛無</g>.\n<g>奧斯提</g>對一名隨機敵人造成 15 點傷害。"
+      },
+      "detail": {
+        "id": "SWEEPING_GAZE",
+        "name": "Sweeping Gaze",
+        "nameZh": "掃蕩凝視",
+        "source": "https://spire-codex.com/cards/sweeping-gaze",
+        "sourceZh": "https://spire-codex.com/cards/sweeping-gaze?lang=zht",
+        "type": "Attack",
+        "rarity": "Token",
+        "character": "Token",
+        "tier": null,
+        "effect": {
+          "base": "<g>Exhaust</g>.\n<g>Ethereal</g>.\n<g>Osty</g> deals 10 damage to a random enemy.",
+          "upgraded": "<g>Exhaust</g>.\n<g>Ethereal</g>.\n<g>Osty</g> deals 15 damage to a random enemy."
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "0<e/>"
+          },
+          {
+            "label": "Type",
+            "value": "Attack"
+          },
+          {
+            "label": "Rarity",
+            "value": "Token"
+          },
+          {
+            "label": "Character",
+            "value": "Token"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/token/sweeping_gaze.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "TOXIC",
+        "name": "Toxic",
+        "pool": "Status",
+        "type": "Status",
+        "rarity": "Status",
+        "slug": "toxic",
+        "descBase": "<g>Exhaust</g>.\nAt the end of your turn, if this is in your <g>Hand</g>, take 5 damage.",
+        "descUpgraded": "<g>Exhaust</g>.\nAt the end of your turn, if this is in your <g>Hand</g>, take 5 damage.",
+        "energy": 1,
+        "source": "https://spire-codex.com/cards/toxic",
+        "sourceZh": "https://spire-codex.com/cards/toxic?lang=zht"
+      },
+      "chinese": {
+        "id": "TOXIC",
+        "name": "劇毒",
+        "slug": "toxic",
+        "descBase": "<g>消耗</g>.\n在你的回合結束時，若此牌在你的<g>手牌</g>中，受到 5 點傷害。",
+        "descUpgraded": "<g>消耗</g>.\n在你的回合結束時，若此牌在你的<g>手牌</g>中，受到 5 點傷害。"
+      },
+      "detail": {
+        "id": "TOXIC",
+        "name": "Toxic",
+        "nameZh": "劇毒",
+        "source": "https://spire-codex.com/cards/toxic",
+        "sourceZh": "https://spire-codex.com/cards/toxic?lang=zht",
+        "type": "Status",
+        "rarity": "Status",
+        "character": "Status",
+        "tier": null,
+        "effect": {
+          "base": "<g>Exhaust</g>.\nAt the end of your turn, if this is in your <g>Hand</g>, take 5 damage.",
+          "upgraded": null
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "1<e/>"
+          },
+          {
+            "label": "Type",
+            "value": "Status"
+          },
+          {
+            "label": "Rarity",
+            "value": "Status"
+          },
+          {
+            "label": "Character",
+            "value": "Status"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/status/toxic.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "VOID",
+        "name": "Void",
+        "pool": "Status",
+        "type": "Status",
+        "rarity": "Status",
+        "slug": "void",
+        "descBase": "<g>Ethereal</g>.\n<g>Unplayable</g>.\nWhenever you draw this card, lose <e/>.",
+        "descUpgraded": "<g>Ethereal</g>.\n<g>Unplayable</g>.\nWhenever you draw this card, lose <e/>.",
+        "unplayable": true,
+        "source": "https://spire-codex.com/cards/void",
+        "sourceZh": "https://spire-codex.com/cards/void?lang=zht"
+      },
+      "chinese": {
+        "id": "VOID",
+        "name": "虛空",
+        "slug": "void",
+        "descBase": "<g>虛無</g>.\n<g>無法打出</g>.\n每當你抽到此牌時，失去 <e/>。",
+        "descUpgraded": "<g>虛無</g>.\n<g>無法打出</g>.\n每當你抽到此牌時，失去 <e/>。"
+      },
+      "detail": {
+        "id": "VOID",
+        "name": "Void",
+        "nameZh": "虛空",
+        "source": "https://spire-codex.com/cards/void",
+        "sourceZh": "https://spire-codex.com/cards/void?lang=zht",
+        "type": "Status",
+        "rarity": "Status",
+        "character": "Status",
+        "tier": null,
+        "effect": {
+          "base": "<g>Ethereal</g>.\n<g>Unplayable</g>.\nWhenever you draw this card, lose <e/>.",
+          "upgraded": null
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "No cost (unplayable)"
+          },
+          {
+            "label": "Type",
+            "value": "Status"
+          },
+          {
+            "label": "Rarity",
+            "value": "Status"
+          },
+          {
+            "label": "Character",
+            "value": "Status"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/status/void.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "WASTE_AWAY",
+        "name": "Waste Away",
+        "pool": "Status",
+        "type": "Status",
+        "rarity": "Status",
+        "slug": "waste-away",
+        "descBase": "Gain 1 less <e/> per turn.",
+        "descUpgraded": "Gain 1 less <e/> per turn.",
+        "unplayable": true,
+        "source": "https://spire-codex.com/cards/waste-away",
+        "sourceZh": "https://spire-codex.com/cards/waste-away?lang=zht"
+      },
+      "chinese": {
+        "id": "WASTE_AWAY",
+        "name": "衰朽",
+        "slug": "waste-away",
+        "descBase": "每回合少獲得 1 <e/>。",
+        "descUpgraded": "每回合少獲得 1 <e/>。"
+      },
+      "detail": {
+        "id": "WASTE_AWAY",
+        "name": "Waste Away",
+        "nameZh": "衰朽",
+        "source": "https://spire-codex.com/cards/waste-away",
+        "sourceZh": "https://spire-codex.com/cards/waste-away?lang=zht",
+        "type": "Status",
+        "rarity": "Status",
+        "character": "Status",
+        "tier": null,
+        "effect": {
+          "base": "Gain 1 less <e/> per turn.",
+          "upgraded": null
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "No cost (unplayable)"
+          },
+          {
+            "label": "Type",
+            "value": "Status"
+          },
+          {
+            "label": "Rarity",
+            "value": "Status"
+          },
+          {
+            "label": "Character",
+            "value": "Status"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/status/waste_away.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "WITHER",
+        "name": "Wither",
+        "pool": "Status",
+        "type": "Status",
+        "rarity": "Status",
+        "slug": "wither",
+        "descBase": "<g>Unplayable</g>.\nAt the end of your turn, if this is in your <g>Hand</g>, take 3 damage.",
+        "descUpgraded": "<g>Unplayable</g>.\nAt the end of your turn, if this is in your <g>Hand</g>, take 6 damage.",
+        "unplayable": true,
+        "upgrade": {
+          "damage": "+3"
+        },
+        "source": "https://spire-codex.com/cards/wither",
+        "sourceZh": "https://spire-codex.com/cards/wither?lang=zht"
+      },
+      "chinese": {
+        "id": "WITHER",
+        "name": "凋萎",
+        "slug": "wither",
+        "descBase": "<g>無法打出</g>.\n在你的回合結束時，若此牌在你的<g>手牌</g>中，受到 3 點傷害。",
+        "descUpgraded": "<g>無法打出</g>.\n在你的回合結束時，若此牌在你的<g>手牌</g>中，受到 6 點傷害。"
+      },
+      "detail": {
+        "id": "WITHER",
+        "name": "Wither",
+        "nameZh": "凋萎",
+        "source": "https://spire-codex.com/cards/wither",
+        "sourceZh": "https://spire-codex.com/cards/wither?lang=zht",
+        "type": "Status",
+        "rarity": "Status",
+        "character": "Status",
+        "tier": null,
+        "effect": {
+          "base": "<g>Unplayable</g>.\nAt the end of your turn, if this is in your <g>Hand</g>, take 3 damage.",
+          "upgraded": "<g>Unplayable</g>.\nAt the end of your turn, if this is in your <g>Hand</g>, take 6 damage."
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "No cost (unplayable)"
+          },
+          {
+            "label": "Type",
+            "value": "Status"
+          },
+          {
+            "label": "Rarity",
+            "value": "Status"
+          },
+          {
+            "label": "Character",
+            "value": "Status"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/status/wither.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    },
+    {
+      "card": {
+        "id": "WOUND",
+        "name": "Wound",
+        "pool": "Status",
+        "type": "Status",
+        "rarity": "Status",
+        "slug": "wound",
+        "descBase": "<g>Unplayable</g>.",
+        "descUpgraded": "<g>Unplayable</g>.",
+        "unplayable": true,
+        "source": "https://spire-codex.com/cards/wound",
+        "sourceZh": "https://spire-codex.com/cards/wound?lang=zht"
+      },
+      "chinese": {
+        "id": "WOUND",
+        "name": "傷口",
+        "slug": "wound",
+        "descBase": "<g>無法打出</g>.",
+        "descUpgraded": "<g>無法打出</g>."
+      },
+      "detail": {
+        "id": "WOUND",
+        "name": "Wound",
+        "nameZh": "傷口",
+        "source": "https://spire-codex.com/cards/wound",
+        "sourceZh": "https://spire-codex.com/cards/wound?lang=zht",
+        "type": "Status",
+        "rarity": "Status",
+        "character": "Status",
+        "tier": null,
+        "effect": {
+          "base": "<g>Unplayable</g>.",
+          "upgraded": null
+        },
+        "stats": [
+          {
+            "label": "Energy cost",
+            "value": "No cost (unplayable)"
+          },
+          {
+            "label": "Type",
+            "value": "Status"
+          },
+          {
+            "label": "Rarity",
+            "value": "Status"
+          },
+          {
+            "label": "Character",
+            "value": "Status"
+          }
+        ],
+        "keywords": [],
+        "builds": [],
+        "aliases": [],
+        "image": "assets/cards/source/cards/status/wound.webp",
+        "characterIcon": "assets/cards/icons/other.webp"
+      }
+    }
+  ]
+}

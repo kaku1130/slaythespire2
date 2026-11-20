@@ -25,7 +25,7 @@ html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max
     display:grid!important;
     grid-template-columns:repeat(6,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 0 auto!important;
+    flex:0 1 392px!important;
     width:392px!important;
     max-width:100%;
     margin-left:auto;
@@ -52,4 +52,19 @@ html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max
   html body .site-header .site-nav > a {box-sizing:border-box;min-width:0!important;width:100%!important;max-width:100%;padding:6px 0!important}
 }
 `;
-module.exports = {icons,styles};
+const brandStyles = `
+/* Brand visibility is shared by every page, including bundled legacy styles. */
+@media screen and (min-width:601px) {
+  html body .site-header .site-brand {display:flex!important}
+  html body .site-header .site-brand > span {
+    display:block!important;position:static!important;width:auto!important;height:auto!important;
+    margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
+  }
+  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+}
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+  html body .site-header .site-brand {display:none!important}
+  html body .site-header .site-nav {flex:1 1 100%!important;width:100%!important}
+}
+`;
+module.exports = {icons,styles:styles+brandStyles};

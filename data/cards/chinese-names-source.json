@@ -1,0 +1,2851 @@
+{
+  "source": "https://slaythespire2.net/zh-TW/card",
+  "checkedAt": "2026-11-20T05:16:59.986Z",
+  "cards": [
+    {
+      "id": "ABRASIVE",
+      "name": "磨蝕",
+      "source": "https://slaythespire2.net/zh-TW/card/abrasive"
+    },
+    {
+      "id": "ABUNDANCE",
+      "name": "富足",
+      "source": "https://slaythespire2.net/zh-TW/card/abundance"
+    },
+    {
+      "id": "ACCELERANT",
+      "name": "催化劑",
+      "source": "https://slaythespire2.net/zh-TW/card/accelerant"
+    },
+    {
+      "id": "ACCURACY",
+      "name": "精準",
+      "source": "https://slaythespire2.net/zh-TW/card/accuracy"
+    },
+    {
+      "id": "ACROBATICS",
+      "name": "雜技",
+      "source": "https://slaythespire2.net/zh-TW/card/acrobatics"
+    },
+    {
+      "id": "ADAPTIVE_STRIKE",
+      "name": "適應打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/adaptive-strike"
+    },
+    {
+      "id": "ADRENALINE",
+      "name": "腎上腺素",
+      "source": "https://slaythespire2.net/zh-TW/card/adrenaline"
+    },
+    {
+      "id": "AFTERIMAGE",
+      "name": "殘影",
+      "source": "https://slaythespire2.net/zh-TW/card/afterimage"
+    },
+    {
+      "id": "AFTERLIFE",
+      "name": "來生",
+      "source": "https://slaythespire2.net/zh-TW/card/afterlife"
+    },
+    {
+      "id": "AGGRESSION",
+      "name": "進攻態勢",
+      "source": "https://slaythespire2.net/zh-TW/card/aggression"
+    },
+    {
+      "id": "ALCHEMIZE",
+      "name": "煉製藥水",
+      "source": "https://slaythespire2.net/zh-TW/card/alchemize"
+    },
+    {
+      "id": "ALIGNMENT",
+      "name": "星位連珠",
+      "source": "https://slaythespire2.net/zh-TW/card/alignment"
+    },
+    {
+      "id": "ALL_FOR_ONE",
+      "name": "全為一",
+      "source": "https://slaythespire2.net/zh-TW/card/all-for-one"
+    },
+    {
+      "id": "ANGER",
+      "name": "怒火",
+      "source": "https://slaythespire2.net/zh-TW/card/anger"
+    },
+    {
+      "id": "ANOINTED",
+      "name": "受膏",
+      "source": "https://slaythespire2.net/zh-TW/card/anointed"
+    },
+    {
+      "id": "ANTICIPATE",
+      "name": "預判",
+      "source": "https://slaythespire2.net/zh-TW/card/anticipate"
+    },
+    {
+      "id": "APOTHEOSIS",
+      "name": "神化",
+      "source": "https://slaythespire2.net/zh-TW/card/apotheosis"
+    },
+    {
+      "id": "APPARITION",
+      "name": "靈體",
+      "source": "https://slaythespire2.net/zh-TW/card/apparition"
+    },
+    {
+      "id": "ARMAMENTS",
+      "name": "武裝",
+      "source": "https://slaythespire2.net/zh-TW/card/armaments"
+    },
+    {
+      "id": "ARSENAL",
+      "name": "武器庫",
+      "source": "https://slaythespire2.net/zh-TW/card/arsenal"
+    },
+    {
+      "id": "ASCENDERS_BANE",
+      "name": "晉階者之禍",
+      "source": "https://slaythespire2.net/zh-TW/card/ascenders-bane"
+    },
+    {
+      "id": "ASHEN_STRIKE",
+      "name": "灰燼打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/ashen-strike"
+    },
+    {
+      "id": "ASSASSINATE",
+      "name": "刺殺",
+      "source": "https://slaythespire2.net/zh-TW/card/assassinate"
+    },
+    {
+      "id": "ASTRAL_PULSE",
+      "name": "星界脈衝",
+      "source": "https://slaythespire2.net/zh-TW/card/astral-pulse"
+    },
+    {
+      "id": "AUTOMATION",
+      "name": "自動化",
+      "source": "https://slaythespire2.net/zh-TW/card/automation"
+    },
+    {
+      "id": "BACKFLIP",
+      "name": "後空翻",
+      "source": "https://slaythespire2.net/zh-TW/card/backflip"
+    },
+    {
+      "id": "BACKSTAB",
+      "name": "背刺",
+      "source": "https://slaythespire2.net/zh-TW/card/backstab"
+    },
+    {
+      "id": "BAD_LUCK",
+      "name": "霉運",
+      "source": "https://slaythespire2.net/zh-TW/card/bad-luck"
+    },
+    {
+      "id": "BALL_LIGHTNING",
+      "name": "球狀閃電",
+      "source": "https://slaythespire2.net/zh-TW/card/ball-lightning"
+    },
+    {
+      "id": "BANSHEES_CRY",
+      "name": "女妖之嚎",
+      "source": "https://slaythespire2.net/zh-TW/card/banshees-cry"
+    },
+    {
+      "id": "BARRAGE",
+      "name": "彈幕",
+      "source": "https://slaythespire2.net/zh-TW/card/barrage"
+    },
+    {
+      "id": "BARRICADE",
+      "name": "壁壘",
+      "source": "https://slaythespire2.net/zh-TW/card/barricade"
+    },
+    {
+      "id": "BASH",
+      "name": "猛擊",
+      "source": "https://slaythespire2.net/zh-TW/card/bash"
+    },
+    {
+      "id": "BATTLE_TRANCE",
+      "name": "戰鬥專注",
+      "source": "https://slaythespire2.net/zh-TW/card/battle-trance"
+    },
+    {
+      "id": "BEACON_OF_HOPE",
+      "name": "希望燈塔",
+      "source": "https://slaythespire2.net/zh-TW/card/beacon-of-hope"
+    },
+    {
+      "id": "BEAM_CELL",
+      "name": "光束電池",
+      "source": "https://slaythespire2.net/zh-TW/card/beam-cell"
+    },
+    {
+      "id": "BEAT_DOWN",
+      "name": "狠揍",
+      "source": "https://slaythespire2.net/zh-TW/card/beat-down"
+    },
+    {
+      "id": "BEAT_INTO_SHAPE",
+      "name": "鍛打成型",
+      "source": "https://slaythespire2.net/zh-TW/card/beat-into-shape"
+    },
+    {
+      "id": "BEGONE",
+      "name": "滾開！",
+      "source": "https://slaythespire2.net/zh-TW/card/begone"
+    },
+    {
+      "id": "BELIEVE_IN_YOU",
+      "name": "相信你",
+      "source": "https://slaythespire2.net/zh-TW/card/believe-in-you"
+    },
+    {
+      "id": "BIASED_COGNITION",
+      "name": "偏差認知",
+      "source": "https://slaythespire2.net/zh-TW/card/biased-cognition"
+    },
+    {
+      "id": "BIG_BANG",
+      "name": "宇宙大爆炸",
+      "source": "https://slaythespire2.net/zh-TW/card/big-bang"
+    },
+    {
+      "id": "BLACK_HOLE",
+      "name": "黑洞",
+      "source": "https://slaythespire2.net/zh-TW/card/black-hole"
+    },
+    {
+      "id": "BLADE_DANCE",
+      "name": "刀刃之舞",
+      "source": "https://slaythespire2.net/zh-TW/card/blade-dance"
+    },
+    {
+      "id": "BLADE_OF_INK",
+      "name": "墨刃",
+      "source": "https://slaythespire2.net/zh-TW/card/blade-of-ink"
+    },
+    {
+      "id": "BLADE_SYMPHONY",
+      "name": "刀刃交響曲",
+      "source": "https://slaythespire2.net/zh-TW/card/blade-symphony"
+    },
+    {
+      "id": "BLAZE",
+      "name": "熾焰",
+      "source": "https://slaythespire2.net/zh-TW/card/blaze"
+    },
+    {
+      "id": "BLIGHT_STRIKE",
+      "name": "荒疫打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/blight-strike"
+    },
+    {
+      "id": "BLOOD_WALL",
+      "name": "血牆",
+      "source": "https://slaythespire2.net/zh-TW/card/blood-wall"
+    },
+    {
+      "id": "BLOODLETTING",
+      "name": "放血",
+      "source": "https://slaythespire2.net/zh-TW/card/bloodletting"
+    },
+    {
+      "id": "BLUDGEON",
+      "name": "重錘",
+      "source": "https://slaythespire2.net/zh-TW/card/bludgeon"
+    },
+    {
+      "id": "BLUR",
+      "name": "疾影",
+      "source": "https://slaythespire2.net/zh-TW/card/blur"
+    },
+    {
+      "id": "BODY_SLAM",
+      "name": "全身砸擊",
+      "source": "https://slaythespire2.net/zh-TW/card/body-slam"
+    },
+    {
+      "id": "BODYGUARD",
+      "name": "護衛",
+      "source": "https://slaythespire2.net/zh-TW/card/bodyguard"
+    },
+    {
+      "id": "BOLAS",
+      "name": "流星索",
+      "source": "https://slaythespire2.net/zh-TW/card/bolas"
+    },
+    {
+      "id": "BOMBARDMENT",
+      "name": "轟炸",
+      "source": "https://slaythespire2.net/zh-TW/card/bombardment"
+    },
+    {
+      "id": "BONE_SHARDS",
+      "name": "碎骨",
+      "source": "https://slaythespire2.net/zh-TW/card/bone-shards"
+    },
+    {
+      "id": "BOOST_AWAY",
+      "name": "推進脫離",
+      "source": "https://slaythespire2.net/zh-TW/card/boost-away"
+    },
+    {
+      "id": "BOOT_SEQUENCE",
+      "name": "啟動流程",
+      "source": "https://slaythespire2.net/zh-TW/card/boot-sequence"
+    },
+    {
+      "id": "BORROWED_TIME",
+      "name": "預支時間",
+      "source": "https://slaythespire2.net/zh-TW/card/borrowed-time"
+    },
+    {
+      "id": "BOUNCING_FLASK",
+      "name": "彈跳藥瓶",
+      "source": "https://slaythespire2.net/zh-TW/card/bouncing-flask"
+    },
+    {
+      "id": "BRAND",
+      "name": "烙印",
+      "source": "https://slaythespire2.net/zh-TW/card/brand"
+    },
+    {
+      "id": "BREAK",
+      "name": "破壞",
+      "source": "https://slaythespire2.net/zh-TW/card/break"
+    },
+    {
+      "id": "BREAKTHROUGH",
+      "name": "突破",
+      "source": "https://slaythespire2.net/zh-TW/card/breakthrough"
+    },
+    {
+      "id": "BRIGHTEST_FLAME",
+      "name": "至明烈焰",
+      "source": "https://slaythespire2.net/zh-TW/card/brightest-flame"
+    },
+    {
+      "id": "BUBBLE_BUBBLE",
+      "name": "咕嘟冒泡",
+      "source": "https://slaythespire2.net/zh-TW/card/bubble-bubble"
+    },
+    {
+      "id": "BUFFER",
+      "name": "緩衝",
+      "source": "https://slaythespire2.net/zh-TW/card/buffer"
+    },
+    {
+      "id": "BULK_UP",
+      "name": "強化體魄",
+      "source": "https://slaythespire2.net/zh-TW/card/bulk-up"
+    },
+    {
+      "id": "BULLET_TIME",
+      "name": "子彈時間",
+      "source": "https://slaythespire2.net/zh-TW/card/bullet-time"
+    },
+    {
+      "id": "BULLY",
+      "name": "恃強凌弱",
+      "source": "https://slaythespire2.net/zh-TW/card/bully"
+    },
+    {
+      "id": "BULWARK",
+      "name": "堡壘",
+      "source": "https://slaythespire2.net/zh-TW/card/bulwark"
+    },
+    {
+      "id": "BUNDLE_OF_JOY",
+      "name": "新生之喜",
+      "source": "https://slaythespire2.net/zh-TW/card/bundle-of-joy"
+    },
+    {
+      "id": "BURNING_PACT",
+      "name": "燃燒契約",
+      "source": "https://slaythespire2.net/zh-TW/card/burning-pact"
+    },
+    {
+      "id": "BURST",
+      "name": "爆發",
+      "source": "https://slaythespire2.net/zh-TW/card/burst"
+    },
+    {
+      "id": "BURY",
+      "name": "埋葬",
+      "source": "https://slaythespire2.net/zh-TW/card/bury"
+    },
+    {
+      "id": "BYRD_SWOOP",
+      "name": "異鳥俯衝",
+      "source": "https://slaythespire2.net/zh-TW/card/byrd-swoop"
+    },
+    {
+      "id": "BYRDONIS_EGG",
+      "name": "異鳥成鳥之蛋",
+      "source": "https://slaythespire2.net/zh-TW/card/byrdonis-egg"
+    },
+    {
+      "id": "CACOPHONY",
+      "name": "不協雜音",
+      "source": "https://slaythespire2.net/zh-TW/card/cacophony"
+    },
+    {
+      "id": "CALAMITY",
+      "name": "災厄",
+      "source": "https://slaythespire2.net/zh-TW/card/calamity"
+    },
+    {
+      "id": "CALCIFY",
+      "name": "鈣化",
+      "source": "https://slaythespire2.net/zh-TW/card/calcify"
+    },
+    {
+      "id": "CALCULATED_GAMBLE",
+      "name": "精算一搏",
+      "source": "https://slaythespire2.net/zh-TW/card/calculated-gamble"
+    },
+    {
+      "id": "CALL_OF_THE_VOID",
+      "name": "虛空呼喚",
+      "source": "https://slaythespire2.net/zh-TW/card/call-of-the-void"
+    },
+    {
+      "id": "CALTROPS",
+      "name": "鐵蒺藜",
+      "source": "https://slaythespire2.net/zh-TW/card/caltrops"
+    },
+    {
+      "id": "CAPACITOR",
+      "name": "擴容",
+      "source": "https://slaythespire2.net/zh-TW/card/capacitor"
+    },
+    {
+      "id": "CAPTURE_SPIRIT",
+      "name": "捕捉靈魂",
+      "source": "https://slaythespire2.net/zh-TW/card/capture-spirit"
+    },
+    {
+      "id": "CASCADE",
+      "name": "連鎖傾瀉",
+      "source": "https://slaythespire2.net/zh-TW/card/cascade"
+    },
+    {
+      "id": "CATASTROPHE",
+      "name": "浩劫",
+      "source": "https://slaythespire2.net/zh-TW/card/catastrophe"
+    },
+    {
+      "id": "CELESTIAL_MIGHT",
+      "name": "天界神威",
+      "source": "https://slaythespire2.net/zh-TW/card/celestial-might"
+    },
+    {
+      "id": "CHAOS",
+      "name": "混沌",
+      "source": "https://slaythespire2.net/zh-TW/card/chaos"
+    },
+    {
+      "id": "CHARGE",
+      "name": "衝鋒！！",
+      "source": "https://slaythespire2.net/zh-TW/card/charge"
+    },
+    {
+      "id": "CHARGE_BATTERY",
+      "name": "充電",
+      "source": "https://slaythespire2.net/zh-TW/card/charge-battery"
+    },
+    {
+      "id": "CHILD_OF_THE_STARS",
+      "name": "群星之子",
+      "source": "https://slaythespire2.net/zh-TW/card/child-of-the-stars"
+    },
+    {
+      "id": "CHILL",
+      "name": "冰寒",
+      "source": "https://slaythespire2.net/zh-TW/card/chill"
+    },
+    {
+      "id": "CINDER",
+      "name": "餘燼",
+      "source": "https://slaythespire2.net/zh-TW/card/cinder"
+    },
+    {
+      "id": "CLASH",
+      "name": "交鋒",
+      "source": "https://slaythespire2.net/zh-TW/card/clash"
+    },
+    {
+      "id": "CLAW",
+      "name": "爪擊",
+      "source": "https://slaythespire2.net/zh-TW/card/claw"
+    },
+    {
+      "id": "CLEANSE",
+      "name": "淨化",
+      "source": "https://slaythespire2.net/zh-TW/card/cleanse"
+    },
+    {
+      "id": "CLOAK_AND_DAGGER",
+      "name": "斗篷與匕首",
+      "source": "https://slaythespire2.net/zh-TW/card/cloak-and-dagger"
+    },
+    {
+      "id": "CLOAK_OF_STARS",
+      "name": "群星斗篷",
+      "source": "https://slaythespire2.net/zh-TW/card/cloak-of-stars"
+    },
+    {
+      "id": "CLUMSY",
+      "name": "笨拙",
+      "source": "https://slaythespire2.net/zh-TW/card/clumsy"
+    },
+    {
+      "id": "COLD_SNAP",
+      "name": "寒流",
+      "source": "https://slaythespire2.net/zh-TW/card/cold-snap"
+    },
+    {
+      "id": "COLLISION_COURSE",
+      "name": "碰撞軌跡",
+      "source": "https://slaythespire2.net/zh-TW/card/collision-course"
+    },
+    {
+      "id": "COLOSSUS",
+      "name": "巨像",
+      "source": "https://slaythespire2.net/zh-TW/card/colossus"
+    },
+    {
+      "id": "COMET",
+      "name": "彗星",
+      "source": "https://slaythespire2.net/zh-TW/card/comet"
+    },
+    {
+      "id": "COMPACT",
+      "name": "壓縮",
+      "source": "https://slaythespire2.net/zh-TW/card/compact"
+    },
+    {
+      "id": "COMPILE_DRIVER",
+      "name": "編譯衝擊",
+      "source": "https://slaythespire2.net/zh-TW/card/compile-driver"
+    },
+    {
+      "id": "CONCOCT",
+      "name": "調製",
+      "source": "https://slaythespire2.net/zh-TW/card/concoct"
+    },
+    {
+      "id": "CONFLAGRATION",
+      "name": "燎原烈火",
+      "source": "https://slaythespire2.net/zh-TW/card/conflagration"
+    },
+    {
+      "id": "CONQUEROR",
+      "name": "征服者",
+      "source": "https://slaythespire2.net/zh-TW/card/conqueror"
+    },
+    {
+      "id": "CONSTELLATION",
+      "name": "星座",
+      "source": "https://slaythespire2.net/zh-TW/card/constellation"
+    },
+    {
+      "id": "CONSUMING_SHADOW",
+      "name": "吞噬暗影",
+      "source": "https://slaythespire2.net/zh-TW/card/consuming-shadow"
+    },
+    {
+      "id": "CONVERGENCE",
+      "name": "收斂",
+      "source": "https://slaythespire2.net/zh-TW/card/convergence"
+    },
+    {
+      "id": "COOLANT",
+      "name": "冷卻液",
+      "source": "https://slaythespire2.net/zh-TW/card/coolant"
+    },
+    {
+      "id": "COOLHEADED",
+      "name": "冷靜頭腦",
+      "source": "https://slaythespire2.net/zh-TW/card/coolheaded"
+    },
+    {
+      "id": "COORDINATE",
+      "name": "協調",
+      "source": "https://slaythespire2.net/zh-TW/card/coordinate"
+    },
+    {
+      "id": "CORROSIVE_WAVE",
+      "name": "腐蝕波",
+      "source": "https://slaythespire2.net/zh-TW/card/corrosive-wave"
+    },
+    {
+      "id": "CORRUPTION",
+      "name": "腐化",
+      "source": "https://slaythespire2.net/zh-TW/card/corruption"
+    },
+    {
+      "id": "COSMIC_INDIFFERENCE",
+      "name": "宇宙冷漠",
+      "source": "https://slaythespire2.net/zh-TW/card/cosmic-indifference"
+    },
+    {
+      "id": "COUNTDOWN",
+      "name": "倒數計時",
+      "source": "https://slaythespire2.net/zh-TW/card/countdown"
+    },
+    {
+      "id": "CRASH_LANDING",
+      "name": "迫降",
+      "source": "https://slaythespire2.net/zh-TW/card/crash-landing"
+    },
+    {
+      "id": "CREATIVE_AI",
+      "name": "創造性 AI",
+      "source": "https://slaythespire2.net/zh-TW/card/creative-ai"
+    },
+    {
+      "id": "CRESCENT_SPEAR",
+      "name": "新月長矛",
+      "source": "https://slaythespire2.net/zh-TW/card/crescent-spear"
+    },
+    {
+      "id": "CRIMSON_MANTLE",
+      "name": "緋紅披風",
+      "source": "https://slaythespire2.net/zh-TW/card/crimson-mantle"
+    },
+    {
+      "id": "CRUELTY",
+      "name": "殘酷",
+      "source": "https://slaythespire2.net/zh-TW/card/cruelty"
+    },
+    {
+      "id": "CRUSH_UNDER",
+      "name": "下砸",
+      "source": "https://slaythespire2.net/zh-TW/card/crush-under"
+    },
+    {
+      "id": "CURSE_OF_THE_BELL",
+      "name": "鈴鐺詛咒",
+      "source": "https://slaythespire2.net/zh-TW/card/curse-of-the-bell"
+    },
+    {
+      "id": "DAGGER_SPRAY",
+      "name": "匕首雨",
+      "source": "https://slaythespire2.net/zh-TW/card/dagger-spray"
+    },
+    {
+      "id": "DAGGER_THROW",
+      "name": "投擲匕首",
+      "source": "https://slaythespire2.net/zh-TW/card/dagger-throw"
+    },
+    {
+      "id": "DANSE_MACABRE",
+      "name": "死亡之舞",
+      "source": "https://slaythespire2.net/zh-TW/card/danse-macabre"
+    },
+    {
+      "id": "DARK_EMBRACE",
+      "name": "黑暗之擁",
+      "source": "https://slaythespire2.net/zh-TW/card/dark-embrace"
+    },
+    {
+      "id": "DARK_SHACKLES",
+      "name": "黑暗鐐銬",
+      "source": "https://slaythespire2.net/zh-TW/card/dark-shackles"
+    },
+    {
+      "id": "DARKNESS",
+      "name": "漆黑",
+      "source": "https://slaythespire2.net/zh-TW/card/darkness"
+    },
+    {
+      "id": "DASH",
+      "name": "衝刺",
+      "source": "https://slaythespire2.net/zh-TW/card/dash"
+    },
+    {
+      "id": "DEADLY_POISON",
+      "name": "致命毒藥",
+      "source": "https://slaythespire2.net/zh-TW/card/deadly-poison"
+    },
+    {
+      "id": "DEATH_MARCH",
+      "name": "死亡行軍",
+      "source": "https://slaythespire2.net/zh-TW/card/death-march"
+    },
+    {
+      "id": "DEATHBRINGER",
+      "name": "死亡使者",
+      "source": "https://slaythespire2.net/zh-TW/card/deathbringer"
+    },
+    {
+      "id": "DEATHS_DOOR",
+      "name": "死亡之門",
+      "source": "https://slaythespire2.net/zh-TW/card/deaths-door"
+    },
+    {
+      "id": "DEBILITATE",
+      "name": "摧殘",
+      "source": "https://slaythespire2.net/zh-TW/card/debilitate"
+    },
+    {
+      "id": "DEBT",
+      "name": "債務",
+      "source": "https://slaythespire2.net/zh-TW/card/debt"
+    },
+    {
+      "id": "DECAY",
+      "name": "腐朽",
+      "source": "https://slaythespire2.net/zh-TW/card/decay"
+    },
+    {
+      "id": "DECISIONS_DECISIONS",
+      "name": "抉擇，抉擇",
+      "source": "https://slaythespire2.net/zh-TW/card/decisions-decisions"
+    },
+    {
+      "id": "DEFEND_DEFECT",
+      "name": "防禦",
+      "source": "https://slaythespire2.net/zh-TW/card/defend-defect"
+    },
+    {
+      "id": "DEFEND_IRONCLAD",
+      "name": "防禦",
+      "source": "https://slaythespire2.net/zh-TW/card/defend-ironclad"
+    },
+    {
+      "id": "DEFEND_NECROBINDER",
+      "name": "防禦",
+      "source": "https://slaythespire2.net/zh-TW/card/defend-necrobinder"
+    },
+    {
+      "id": "DEFEND_REGENT",
+      "name": "防禦",
+      "source": "https://slaythespire2.net/zh-TW/card/defend-regent"
+    },
+    {
+      "id": "DEFEND_SILENT",
+      "name": "防禦",
+      "source": "https://slaythespire2.net/zh-TW/card/defend-silent"
+    },
+    {
+      "id": "DEFILE",
+      "name": "褻瀆",
+      "source": "https://slaythespire2.net/zh-TW/card/defile"
+    },
+    {
+      "id": "DEFLECT",
+      "name": "偏轉",
+      "source": "https://slaythespire2.net/zh-TW/card/deflect"
+    },
+    {
+      "id": "DEFRAGMENT",
+      "name": "碎片整理",
+      "source": "https://slaythespire2.net/zh-TW/card/defragment"
+    },
+    {
+      "id": "DEFY",
+      "name": "違逆",
+      "source": "https://slaythespire2.net/zh-TW/card/defy"
+    },
+    {
+      "id": "DELAY",
+      "name": "延遲",
+      "source": "https://slaythespire2.net/zh-TW/card/delay"
+    },
+    {
+      "id": "DEMESNE",
+      "name": "領地",
+      "source": "https://slaythespire2.net/zh-TW/card/demesne"
+    },
+    {
+      "id": "DEMON_FORM",
+      "name": "惡魔形態",
+      "source": "https://slaythespire2.net/zh-TW/card/demon-form"
+    },
+    {
+      "id": "DEMONIC_SHIELD",
+      "name": "惡魔護盾",
+      "source": "https://slaythespire2.net/zh-TW/card/demonic-shield"
+    },
+    {
+      "id": "DEVASTATE",
+      "name": "摧毀",
+      "source": "https://slaythespire2.net/zh-TW/card/devastate"
+    },
+    {
+      "id": "DEVOUR_LIFE",
+      "name": "吞噬生命",
+      "source": "https://slaythespire2.net/zh-TW/card/devour-life"
+    },
+    {
+      "id": "DIRGE",
+      "name": "輓歌",
+      "source": "https://slaythespire2.net/zh-TW/card/dirge"
+    },
+    {
+      "id": "DISCOVERY",
+      "name": "發現",
+      "source": "https://slaythespire2.net/zh-TW/card/discovery"
+    },
+    {
+      "id": "DISMANTLE",
+      "name": "拆卸",
+      "source": "https://slaythespire2.net/zh-TW/card/dismantle"
+    },
+    {
+      "id": "DISTRACTION",
+      "name": "聲東擊西",
+      "source": "https://slaythespire2.net/zh-TW/card/distraction"
+    },
+    {
+      "id": "DODGE_AND_ROLL",
+      "name": "閃躲翻滾",
+      "source": "https://slaythespire2.net/zh-TW/card/dodge-and-roll"
+    },
+    {
+      "id": "DOMINATE",
+      "name": "主宰",
+      "source": "https://slaythespire2.net/zh-TW/card/dominate"
+    },
+    {
+      "id": "DOUBLE_ENERGY",
+      "name": "雙倍能量",
+      "source": "https://slaythespire2.net/zh-TW/card/double-energy"
+    },
+    {
+      "id": "DOUBT",
+      "name": "疑慮",
+      "source": "https://slaythespire2.net/zh-TW/card/doubt"
+    },
+    {
+      "id": "DOWSING",
+      "name": "探尋",
+      "source": "https://slaythespire2.net/zh-TW/card/dowsing"
+    },
+    {
+      "id": "DRAIN_POWER",
+      "name": "能量汲取",
+      "source": "https://slaythespire2.net/zh-TW/card/drain-power"
+    },
+    {
+      "id": "DRAMATIC_ENTRANCE",
+      "name": "閃亮登場",
+      "source": "https://slaythespire2.net/zh-TW/card/dramatic-entrance"
+    },
+    {
+      "id": "DREDGE",
+      "name": "打撈",
+      "source": "https://slaythespire2.net/zh-TW/card/dredge"
+    },
+    {
+      "id": "DRUM_OF_BATTLE",
+      "name": "戰鼓",
+      "source": "https://slaythespire2.net/zh-TW/card/drum-of-battle"
+    },
+    {
+      "id": "DUAL_WIELD",
+      "name": "雙持",
+      "source": "https://slaythespire2.net/zh-TW/card/dual-wield"
+    },
+    {
+      "id": "DUALCAST",
+      "name": "雙重施放",
+      "source": "https://slaythespire2.net/zh-TW/card/dualcast"
+    },
+    {
+      "id": "DYING_STAR",
+      "name": "垂死之星",
+      "source": "https://slaythespire2.net/zh-TW/card/dying-star"
+    },
+    {
+      "id": "ECHO_FORM",
+      "name": "迴響形態",
+      "source": "https://slaythespire2.net/zh-TW/card/echo-form"
+    },
+    {
+      "id": "ECHOING_SLASH",
+      "name": "迴響斬擊",
+      "source": "https://slaythespire2.net/zh-TW/card/echoing-slash"
+    },
+    {
+      "id": "EIDOLON",
+      "name": "靈影",
+      "source": "https://slaythespire2.net/zh-TW/card/eidolon"
+    },
+    {
+      "id": "END_OF_DAYS",
+      "name": "末日",
+      "source": "https://slaythespire2.net/zh-TW/card/end-of-days"
+    },
+    {
+      "id": "ENERGY_SURGE",
+      "name": "能量湧動",
+      "source": "https://slaythespire2.net/zh-TW/card/energy-surge"
+    },
+    {
+      "id": "ENFEEBLING_TOUCH",
+      "name": "衰弱之觸",
+      "source": "https://slaythespire2.net/zh-TW/card/enfeebling-touch"
+    },
+    {
+      "id": "ENLIGHTENMENT",
+      "name": "開悟",
+      "source": "https://slaythespire2.net/zh-TW/card/enlightenment"
+    },
+    {
+      "id": "ENTHRALLED",
+      "name": "執迷",
+      "source": "https://slaythespire2.net/zh-TW/card/enthralled"
+    },
+    {
+      "id": "ENTRENCH",
+      "name": "鞏固",
+      "source": "https://slaythespire2.net/zh-TW/card/entrench"
+    },
+    {
+      "id": "ENTROPY",
+      "name": "熵",
+      "source": "https://slaythespire2.net/zh-TW/card/entropy"
+    },
+    {
+      "id": "ENVENOM",
+      "name": "塗毒",
+      "source": "https://slaythespire2.net/zh-TW/card/envenom"
+    },
+    {
+      "id": "EQUILIBRIUM",
+      "name": "均衡",
+      "source": "https://slaythespire2.net/zh-TW/card/equilibrium"
+    },
+    {
+      "id": "ERADICATE",
+      "name": "根除",
+      "source": "https://slaythespire2.net/zh-TW/card/eradicate"
+    },
+    {
+      "id": "ESCAPE_PLAN",
+      "name": "逃脫計畫",
+      "source": "https://slaythespire2.net/zh-TW/card/escape-plan"
+    },
+    {
+      "id": "ETERNAL_ARMOR",
+      "name": "永恆護甲",
+      "source": "https://slaythespire2.net/zh-TW/card/eternal-armor"
+    },
+    {
+      "id": "EVIL_EYE",
+      "name": "邪眼",
+      "source": "https://slaythespire2.net/zh-TW/card/evil-eye"
+    },
+    {
+      "id": "EXPECT_A_FIGHT",
+      "name": "整裝待戰",
+      "source": "https://slaythespire2.net/zh-TW/card/expect-a-fight"
+    },
+    {
+      "id": "EXPERTISE",
+      "name": "專業知識",
+      "source": "https://slaythespire2.net/zh-TW/card/expertise"
+    },
+    {
+      "id": "EXPOSE",
+      "name": "暴露",
+      "source": "https://slaythespire2.net/zh-TW/card/expose"
+    },
+    {
+      "id": "EXTERMINATE",
+      "name": "滅絕",
+      "source": "https://slaythespire2.net/zh-TW/card/exterminate"
+    },
+    {
+      "id": "FADE",
+      "name": "消散",
+      "source": "https://slaythespire2.net/zh-TW/card/fade"
+    },
+    {
+      "id": "FALLING_STAR",
+      "name": "隕星",
+      "source": "https://slaythespire2.net/zh-TW/card/falling-star"
+    },
+    {
+      "id": "FAN_OF_KNIVES",
+      "name": "刀扇",
+      "source": "https://slaythespire2.net/zh-TW/card/fan-of-knives"
+    },
+    {
+      "id": "FASTEN",
+      "name": "綁緊",
+      "source": "https://slaythespire2.net/zh-TW/card/fasten"
+    },
+    {
+      "id": "FEAR",
+      "name": "驚懼",
+      "source": "https://slaythespire2.net/zh-TW/card/fear"
+    },
+    {
+      "id": "FEED",
+      "name": "吞食",
+      "source": "https://slaythespire2.net/zh-TW/card/feed"
+    },
+    {
+      "id": "FEEDING_FRENZY",
+      "name": "瘋狂吞食",
+      "source": "https://slaythespire2.net/zh-TW/card/feeding-frenzy"
+    },
+    {
+      "id": "FEEL_NO_PAIN",
+      "name": "無懼疼痛",
+      "source": "https://slaythespire2.net/zh-TW/card/feel-no-pain"
+    },
+    {
+      "id": "FERAL",
+      "name": "野性",
+      "source": "https://slaythespire2.net/zh-TW/card/feral"
+    },
+    {
+      "id": "FETCH",
+      "name": "取回",
+      "source": "https://slaythespire2.net/zh-TW/card/fetch"
+    },
+    {
+      "id": "FIEND_FIRE",
+      "name": "惡魔之焰",
+      "source": "https://slaythespire2.net/zh-TW/card/fiend-fire"
+    },
+    {
+      "id": "FIGHT_ME",
+      "name": "與我一戰！",
+      "source": "https://slaythespire2.net/zh-TW/card/fight-me"
+    },
+    {
+      "id": "FIGHT_THROUGH",
+      "name": "強撐",
+      "source": "https://slaythespire2.net/zh-TW/card/fight-through"
+    },
+    {
+      "id": "FINESSE",
+      "name": "妙計",
+      "source": "https://slaythespire2.net/zh-TW/card/finesse"
+    },
+    {
+      "id": "FINISHER",
+      "name": "終結技",
+      "source": "https://slaythespire2.net/zh-TW/card/finisher"
+    },
+    {
+      "id": "FISTICUFFS",
+      "name": "揮拳相向",
+      "source": "https://slaythespire2.net/zh-TW/card/fisticuffs"
+    },
+    {
+      "id": "FLAK_CANNON",
+      "name": "破片砲",
+      "source": "https://slaythespire2.net/zh-TW/card/flak-cannon"
+    },
+    {
+      "id": "FLAME_BARRIER",
+      "name": "火焰屏障",
+      "source": "https://slaythespire2.net/zh-TW/card/flame-barrier"
+    },
+    {
+      "id": "FLANKING",
+      "name": "夾擊",
+      "source": "https://slaythespire2.net/zh-TW/card/flanking"
+    },
+    {
+      "id": "FLASH_OF_STEEL",
+      "name": "鋼芒一閃",
+      "source": "https://slaythespire2.net/zh-TW/card/flash-of-steel"
+    },
+    {
+      "id": "FLATTEN",
+      "name": "砸扁",
+      "source": "https://slaythespire2.net/zh-TW/card/flatten"
+    },
+    {
+      "id": "FLECHETTES",
+      "name": "飛鏢",
+      "source": "https://slaythespire2.net/zh-TW/card/flechettes"
+    },
+    {
+      "id": "FLICK_FLACK",
+      "name": "翻身撐擊",
+      "source": "https://slaythespire2.net/zh-TW/card/flick-flack"
+    },
+    {
+      "id": "FOCUSED_STRIKE",
+      "name": "集中打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/focused-strike"
+    },
+    {
+      "id": "FOLLY",
+      "name": "愚行",
+      "source": "https://slaythespire2.net/zh-TW/card/folly"
+    },
+    {
+      "id": "FOOTWORK",
+      "name": "步法",
+      "source": "https://slaythespire2.net/zh-TW/card/footwork"
+    },
+    {
+      "id": "FORBIDDEN_GRIMOIRE",
+      "name": "禁忌魔典",
+      "source": "https://slaythespire2.net/zh-TW/card/forbidden-grimoire"
+    },
+    {
+      "id": "FOREGONE_CONCLUSION",
+      "name": "既定事項",
+      "source": "https://slaythespire2.net/zh-TW/card/foregone-conclusion"
+    },
+    {
+      "id": "FORGOTTEN_RITUAL",
+      "name": "失傳儀式",
+      "source": "https://slaythespire2.net/zh-TW/card/forgotten-ritual"
+    },
+    {
+      "id": "FRIENDSHIP",
+      "name": "友誼",
+      "source": "https://slaythespire2.net/zh-TW/card/friendship"
+    },
+    {
+      "id": "FTL",
+      "name": "超光速",
+      "source": "https://slaythespire2.net/zh-TW/card/ftl"
+    },
+    {
+      "id": "FURNACE",
+      "name": "熔爐",
+      "source": "https://slaythespire2.net/zh-TW/card/furnace"
+    },
+    {
+      "id": "FUSION",
+      "name": "融合",
+      "source": "https://slaythespire2.net/zh-TW/card/fusion"
+    },
+    {
+      "id": "GAMMA_BLAST",
+      "name": "伽瑪轟射",
+      "source": "https://slaythespire2.net/zh-TW/card/gamma-blast"
+    },
+    {
+      "id": "GANG_UP",
+      "name": "圍攻",
+      "source": "https://slaythespire2.net/zh-TW/card/gang-up"
+    },
+    {
+      "id": "GATHER_LIGHT",
+      "name": "聚光",
+      "source": "https://slaythespire2.net/zh-TW/card/gather-light"
+    },
+    {
+      "id": "GENESIS",
+      "name": "創世",
+      "source": "https://slaythespire2.net/zh-TW/card/genesis"
+    },
+    {
+      "id": "GENETIC_ALGORITHM",
+      "name": "基因演算法",
+      "source": "https://slaythespire2.net/zh-TW/card/genetic-algorithm"
+    },
+    {
+      "id": "GLACIER",
+      "name": "冰川",
+      "source": "https://slaythespire2.net/zh-TW/card/glacier"
+    },
+    {
+      "id": "GLASSWORK",
+      "name": "玻璃工藝",
+      "source": "https://slaythespire2.net/zh-TW/card/glasswork"
+    },
+    {
+      "id": "GLIMMER",
+      "name": "微光",
+      "source": "https://slaythespire2.net/zh-TW/card/glimmer"
+    },
+    {
+      "id": "GLIMPSE_BEYOND",
+      "name": "彼岸一瞥",
+      "source": "https://slaythespire2.net/zh-TW/card/glimpse-beyond"
+    },
+    {
+      "id": "GLITTERSTREAM",
+      "name": "流光溢彩",
+      "source": "https://slaythespire2.net/zh-TW/card/glitterstream"
+    },
+    {
+      "id": "GLOW",
+      "name": "輝光",
+      "source": "https://slaythespire2.net/zh-TW/card/glow"
+    },
+    {
+      "id": "GO_FOR_THE_EYES",
+      "name": "瞄準眼睛",
+      "source": "https://slaythespire2.net/zh-TW/card/go-for-the-eyes"
+    },
+    {
+      "id": "GOLD_AXE",
+      "name": "金斧",
+      "source": "https://slaythespire2.net/zh-TW/card/gold-axe"
+    },
+    {
+      "id": "GRAND_FINALE",
+      "name": "華麗收場",
+      "source": "https://slaythespire2.net/zh-TW/card/grand-finale"
+    },
+    {
+      "id": "GRAVE_WARDEN",
+      "name": "墓穴守衛",
+      "source": "https://slaythespire2.net/zh-TW/card/grave-warden"
+    },
+    {
+      "id": "GRAVEBLAST",
+      "name": "墓冢轟射",
+      "source": "https://slaythespire2.net/zh-TW/card/graveblast"
+    },
+    {
+      "id": "GREED",
+      "name": "貪婪",
+      "source": "https://slaythespire2.net/zh-TW/card/greed"
+    },
+    {
+      "id": "GUARDS",
+      "name": "護駕！！！",
+      "source": "https://slaythespire2.net/zh-TW/card/guards"
+    },
+    {
+      "id": "GUIDING_STAR",
+      "name": "引路星",
+      "source": "https://slaythespire2.net/zh-TW/card/guiding-star"
+    },
+    {
+      "id": "GUILTY",
+      "name": "愧疚",
+      "source": "https://slaythespire2.net/zh-TW/card/guilty"
+    },
+    {
+      "id": "GUNK_UP",
+      "name": "污泥覆體",
+      "source": "https://slaythespire2.net/zh-TW/card/gunk-up"
+    },
+    {
+      "id": "HAILSTORM",
+      "name": "冰雹風暴",
+      "source": "https://slaythespire2.net/zh-TW/card/hailstorm"
+    },
+    {
+      "id": "HAMMER_TIME",
+      "name": "鎚子時間",
+      "source": "https://slaythespire2.net/zh-TW/card/hammer-time"
+    },
+    {
+      "id": "HAND_OF_GREED",
+      "name": "貪婪之手",
+      "source": "https://slaythespire2.net/zh-TW/card/hand-of-greed"
+    },
+    {
+      "id": "HAND_TRICK",
+      "name": "掌上戲法",
+      "source": "https://slaythespire2.net/zh-TW/card/hand-trick"
+    },
+    {
+      "id": "HANG",
+      "name": "吊掛",
+      "source": "https://slaythespire2.net/zh-TW/card/hang"
+    },
+    {
+      "id": "HAUNT",
+      "name": "作祟",
+      "source": "https://slaythespire2.net/zh-TW/card/haunt"
+    },
+    {
+      "id": "HAVOC",
+      "name": "破滅",
+      "source": "https://slaythespire2.net/zh-TW/card/havoc"
+    },
+    {
+      "id": "HAZE",
+      "name": "迷霧",
+      "source": "https://slaythespire2.net/zh-TW/card/haze"
+    },
+    {
+      "id": "HEADBUTT",
+      "name": "頭槌",
+      "source": "https://slaythespire2.net/zh-TW/card/headbutt"
+    },
+    {
+      "id": "HEAVENLY_DRILL",
+      "name": "天際鑽頭",
+      "source": "https://slaythespire2.net/zh-TW/card/heavenly-drill"
+    },
+    {
+      "id": "HEGEMONY",
+      "name": "霸權",
+      "source": "https://slaythespire2.net/zh-TW/card/hegemony"
+    },
+    {
+      "id": "HEIRLOOM_HAMMER",
+      "name": "傳家戰鎚",
+      "source": "https://slaythespire2.net/zh-TW/card/heirloom-hammer"
+    },
+    {
+      "id": "HELIX_DRILL",
+      "name": "螺旋鑽頭",
+      "source": "https://slaythespire2.net/zh-TW/card/helix-drill"
+    },
+    {
+      "id": "HELLO_WORLD",
+      "name": "你好世界",
+      "source": "https://slaythespire2.net/zh-TW/card/hello-world"
+    },
+    {
+      "id": "HELLRAISER",
+      "name": "地獄狂徒",
+      "source": "https://slaythespire2.net/zh-TW/card/hellraiser"
+    },
+    {
+      "id": "HEMOKINESIS",
+      "name": "御血術",
+      "source": "https://slaythespire2.net/zh-TW/card/hemokinesis"
+    },
+    {
+      "id": "HIBERNATE",
+      "name": "休眠",
+      "source": "https://slaythespire2.net/zh-TW/card/hibernate"
+    },
+    {
+      "id": "HIDDEN_CACHE",
+      "name": "隱密寶庫",
+      "source": "https://slaythespire2.net/zh-TW/card/hidden-cache"
+    },
+    {
+      "id": "HIDDEN_DAGGERS",
+      "name": "暗藏匕首",
+      "source": "https://slaythespire2.net/zh-TW/card/hidden-daggers"
+    },
+    {
+      "id": "HIDDEN_GEM",
+      "name": "秘藏瑰寶",
+      "source": "https://slaythespire2.net/zh-TW/card/hidden-gem"
+    },
+    {
+      "id": "HIGH_FIVE",
+      "name": "擊掌",
+      "source": "https://slaythespire2.net/zh-TW/card/high-five"
+    },
+    {
+      "id": "HOLOGRAM",
+      "name": "全像投影",
+      "source": "https://slaythespire2.net/zh-TW/card/hologram"
+    },
+    {
+      "id": "HOTFIX",
+      "name": "緊急修正",
+      "source": "https://slaythespire2.net/zh-TW/card/hotfix"
+    },
+    {
+      "id": "HOWL_FROM_BEYOND",
+      "name": "彼岸嚎叫",
+      "source": "https://slaythespire2.net/zh-TW/card/howl-from-beyond"
+    },
+    {
+      "id": "HUDDLE_UP",
+      "name": "圍攏",
+      "source": "https://slaythespire2.net/zh-TW/card/huddle-up"
+    },
+    {
+      "id": "HYPERBEAM",
+      "name": "超能光束",
+      "source": "https://slaythespire2.net/zh-TW/card/hyperbeam"
+    },
+    {
+      "id": "I_AM_INVINCIBLE",
+      "name": "所向無敵",
+      "source": "https://slaythespire2.net/zh-TW/card/i-am-invincible"
+    },
+    {
+      "id": "ICE_LANCE",
+      "name": "冰槍",
+      "source": "https://slaythespire2.net/zh-TW/card/ice-lance"
+    },
+    {
+      "id": "IGNITION",
+      "name": "引火",
+      "source": "https://slaythespire2.net/zh-TW/card/ignition"
+    },
+    {
+      "id": "IMITATION_LEARNING",
+      "name": "模仿學習",
+      "source": "https://slaythespire2.net/zh-TW/card/imitation-learning"
+    },
+    {
+      "id": "IMPATIENCE",
+      "name": "急躁",
+      "source": "https://slaythespire2.net/zh-TW/card/impatience"
+    },
+    {
+      "id": "IMPERVIOUS",
+      "name": "堅不可摧",
+      "source": "https://slaythespire2.net/zh-TW/card/impervious"
+    },
+    {
+      "id": "INFERNAL_BLADE",
+      "name": "地獄之刃",
+      "source": "https://slaythespire2.net/zh-TW/card/infernal-blade"
+    },
+    {
+      "id": "INFERNO",
+      "name": "煉獄",
+      "source": "https://slaythespire2.net/zh-TW/card/inferno"
+    },
+    {
+      "id": "INFINITE_BLADES",
+      "name": "無盡刀刃",
+      "source": "https://slaythespire2.net/zh-TW/card/infinite-blades"
+    },
+    {
+      "id": "INFLAME",
+      "name": "燃燒",
+      "source": "https://slaythespire2.net/zh-TW/card/inflame"
+    },
+    {
+      "id": "INJURY",
+      "name": "受傷",
+      "source": "https://slaythespire2.net/zh-TW/card/injury"
+    },
+    {
+      "id": "INTERCEPT",
+      "name": "攔截",
+      "source": "https://slaythespire2.net/zh-TW/card/intercept"
+    },
+    {
+      "id": "INVOKE",
+      "name": "喚起",
+      "source": "https://slaythespire2.net/zh-TW/card/invoke"
+    },
+    {
+      "id": "IRON_WAVE",
+      "name": "鐵斬波",
+      "source": "https://slaythespire2.net/zh-TW/card/iron-wave"
+    },
+    {
+      "id": "ITERATION",
+      "name": "迭代",
+      "source": "https://slaythespire2.net/zh-TW/card/iteration"
+    },
+    {
+      "id": "JACK_OF_ALL_TRADES",
+      "name": "萬事通",
+      "source": "https://slaythespire2.net/zh-TW/card/jack-of-all-trades"
+    },
+    {
+      "id": "JACKPOT",
+      "name": "大獎",
+      "source": "https://slaythespire2.net/zh-TW/card/jackpot"
+    },
+    {
+      "id": "JUGGERNAUT",
+      "name": "勢不可擋",
+      "source": "https://slaythespire2.net/zh-TW/card/juggernaut"
+    },
+    {
+      "id": "JUGGLING",
+      "name": "雜耍",
+      "source": "https://slaythespire2.net/zh-TW/card/juggling"
+    },
+    {
+      "id": "KINGLY_KICK",
+      "name": "王者之踢",
+      "source": "https://slaythespire2.net/zh-TW/card/kingly-kick"
+    },
+    {
+      "id": "KINGLY_PUNCH",
+      "name": "王者之拳",
+      "source": "https://slaythespire2.net/zh-TW/card/kingly-punch"
+    },
+    {
+      "id": "KNIFE_TRAP",
+      "name": "刀刃陷阱",
+      "source": "https://slaythespire2.net/zh-TW/card/knife-trap"
+    },
+    {
+      "id": "KNOCKDOWN",
+      "name": "擊倒",
+      "source": "https://slaythespire2.net/zh-TW/card/knockdown"
+    },
+    {
+      "id": "KNOCKOUT_BLOW",
+      "name": "終結重拳",
+      "source": "https://slaythespire2.net/zh-TW/card/knockout-blow"
+    },
+    {
+      "id": "KNOW_THY_PLACE",
+      "name": "休得僭越",
+      "source": "https://slaythespire2.net/zh-TW/card/know-thy-place"
+    },
+    {
+      "id": "LANTERN_KEY",
+      "name": "燈火鑰匙",
+      "source": "https://slaythespire2.net/zh-TW/card/lantern-key"
+    },
+    {
+      "id": "LARGESSE",
+      "name": "慷慨賞賜",
+      "source": "https://slaythespire2.net/zh-TW/card/largesse"
+    },
+    {
+      "id": "LEADING_STRIKE",
+      "name": "先導打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/leading-strike"
+    },
+    {
+      "id": "LEAP",
+      "name": "飛躍",
+      "source": "https://slaythespire2.net/zh-TW/card/leap"
+    },
+    {
+      "id": "LEG_SWEEP",
+      "name": "掃腿",
+      "source": "https://slaythespire2.net/zh-TW/card/leg-sweep"
+    },
+    {
+      "id": "LEGION_OF_BONE",
+      "name": "骸骨軍團",
+      "source": "https://slaythespire2.net/zh-TW/card/legion-of-bone"
+    },
+    {
+      "id": "LETHALITY",
+      "name": "殺傷性",
+      "source": "https://slaythespire2.net/zh-TW/card/lethality"
+    },
+    {
+      "id": "LIFT",
+      "name": "托舉",
+      "source": "https://slaythespire2.net/zh-TW/card/lift"
+    },
+    {
+      "id": "LIGHTNING_ROD",
+      "name": "引雷針",
+      "source": "https://slaythespire2.net/zh-TW/card/lightning-rod"
+    },
+    {
+      "id": "LOOP",
+      "name": "循環",
+      "source": "https://slaythespire2.net/zh-TW/card/loop"
+    },
+    {
+      "id": "LUNAR_BLAST",
+      "name": "月面轟射",
+      "source": "https://slaythespire2.net/zh-TW/card/lunar-blast"
+    },
+    {
+      "id": "MACHINE_LEARNING",
+      "name": "機器學習",
+      "source": "https://slaythespire2.net/zh-TW/card/machine-learning"
+    },
+    {
+      "id": "MAD_SCIENCE",
+      "name": "瘋狂科學",
+      "source": "https://slaythespire2.net/zh-TW/card/mad-science"
+    },
+    {
+      "id": "MAKE_IT_SO",
+      "name": "如此甚好",
+      "source": "https://slaythespire2.net/zh-TW/card/make-it-so"
+    },
+    {
+      "id": "MALAISE",
+      "name": "萎靡",
+      "source": "https://slaythespire2.net/zh-TW/card/malaise"
+    },
+    {
+      "id": "MANGLE",
+      "name": "重創",
+      "source": "https://slaythespire2.net/zh-TW/card/mangle"
+    },
+    {
+      "id": "MANIFEST_AUTHORITY",
+      "name": "彰顯權威",
+      "source": "https://slaythespire2.net/zh-TW/card/manifest-authority"
+    },
+    {
+      "id": "MASTER_OF_STRATEGY",
+      "name": "戰略大師",
+      "source": "https://slaythespire2.net/zh-TW/card/master-of-strategy"
+    },
+    {
+      "id": "MASTER_PLANNER",
+      "name": "謀劃專家",
+      "source": "https://slaythespire2.net/zh-TW/card/master-planner"
+    },
+    {
+      "id": "MAUL",
+      "name": "猛襲",
+      "source": "https://slaythespire2.net/zh-TW/card/maul"
+    },
+    {
+      "id": "MAYHEM",
+      "name": "亂戰",
+      "source": "https://slaythespire2.net/zh-TW/card/mayhem"
+    },
+    {
+      "id": "MELANCHOLY",
+      "name": "憂鬱",
+      "source": "https://slaythespire2.net/zh-TW/card/melancholy"
+    },
+    {
+      "id": "MEMENTO_MORI",
+      "name": "銘記死亡",
+      "source": "https://slaythespire2.net/zh-TW/card/memento-mori"
+    },
+    {
+      "id": "METAMORPHOSIS",
+      "name": "蛻變",
+      "source": "https://slaythespire2.net/zh-TW/card/metamorphosis"
+    },
+    {
+      "id": "METEOR_SHOWER",
+      "name": "流星雨",
+      "source": "https://slaythespire2.net/zh-TW/card/meteor-shower"
+    },
+    {
+      "id": "METEOR_STRIKE",
+      "name": "隕石打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/meteor-strike"
+    },
+    {
+      "id": "MIDNIGHT",
+      "name": "午夜",
+      "source": "https://slaythespire2.net/zh-TW/card/midnight"
+    },
+    {
+      "id": "MIMIC",
+      "name": "模仿",
+      "source": "https://slaythespire2.net/zh-TW/card/mimic"
+    },
+    {
+      "id": "MIND_BLAST",
+      "name": "心靈轟射",
+      "source": "https://slaythespire2.net/zh-TW/card/mind-blast"
+    },
+    {
+      "id": "MIRAGE",
+      "name": "海市蜃樓",
+      "source": "https://slaythespire2.net/zh-TW/card/mirage"
+    },
+    {
+      "id": "MISERY",
+      "name": "苦難",
+      "source": "https://slaythespire2.net/zh-TW/card/misery"
+    },
+    {
+      "id": "MODDED",
+      "name": "模組改造",
+      "source": "https://slaythespire2.net/zh-TW/card/modded"
+    },
+    {
+      "id": "MOLTEN_FIST",
+      "name": "熔融之拳",
+      "source": "https://slaythespire2.net/zh-TW/card/molten-fist"
+    },
+    {
+      "id": "MOMENTUM_STRIKE",
+      "name": "動量打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/momentum-strike"
+    },
+    {
+      "id": "MONARCHS_GAZE",
+      "name": "王之凝視",
+      "source": "https://slaythespire2.net/zh-TW/card/monarchs-gaze"
+    },
+    {
+      "id": "MONOLOGUE",
+      "name": "獨白",
+      "source": "https://slaythespire2.net/zh-TW/card/monologue"
+    },
+    {
+      "id": "MULTI_CAST",
+      "name": "多重施放",
+      "source": "https://slaythespire2.net/zh-TW/card/multi-cast"
+    },
+    {
+      "id": "MURDER",
+      "name": "謀殺",
+      "source": "https://slaythespire2.net/zh-TW/card/murder"
+    },
+    {
+      "id": "NECRO_MASTERY",
+      "name": "亡靈精通",
+      "source": "https://slaythespire2.net/zh-TW/card/necro-mastery"
+    },
+    {
+      "id": "NEGATIVE_PULSE",
+      "name": "負能脈衝",
+      "source": "https://slaythespire2.net/zh-TW/card/negative-pulse"
+    },
+    {
+      "id": "NEOWS_FURY",
+      "name": "涅奧之怒",
+      "source": "https://slaythespire2.net/zh-TW/card/neows-fury"
+    },
+    {
+      "id": "NEUROSURGE",
+      "name": "神經湧動",
+      "source": "https://slaythespire2.net/zh-TW/card/neurosurge"
+    },
+    {
+      "id": "NEUTRALIZE",
+      "name": "中和",
+      "source": "https://slaythespire2.net/zh-TW/card/neutralize"
+    },
+    {
+      "id": "NEUTRON_AEGIS",
+      "name": "中子神盾",
+      "source": "https://slaythespire2.net/zh-TW/card/neutron-aegis"
+    },
+    {
+      "id": "NIGHTMARE",
+      "name": "夢魘",
+      "source": "https://slaythespire2.net/zh-TW/card/nightmare"
+    },
+    {
+      "id": "NO_ESCAPE",
+      "name": "無處可逃",
+      "source": "https://slaythespire2.net/zh-TW/card/no-escape"
+    },
+    {
+      "id": "NORMALITY",
+      "name": "凡庸",
+      "source": "https://slaythespire2.net/zh-TW/card/normality"
+    },
+    {
+      "id": "NOSTALGIA",
+      "name": "懷舊",
+      "source": "https://slaythespire2.net/zh-TW/card/nostalgia"
+    },
+    {
+      "id": "NOT_YET",
+      "name": "時候未到",
+      "source": "https://slaythespire2.net/zh-TW/card/not-yet"
+    },
+    {
+      "id": "NOXIOUS_FUMES",
+      "name": "毒霧",
+      "source": "https://slaythespire2.net/zh-TW/card/noxious-fumes"
+    },
+    {
+      "id": "NULL",
+      "name": "歸零",
+      "source": "https://slaythespire2.net/zh-TW/card/null"
+    },
+    {
+      "id": "OBLIVION",
+      "name": "湮滅",
+      "source": "https://slaythespire2.net/zh-TW/card/oblivion"
+    },
+    {
+      "id": "OFFERING",
+      "name": "祭品",
+      "source": "https://slaythespire2.net/zh-TW/card/offering"
+    },
+    {
+      "id": "OMNISLICE",
+      "name": "萬向斬",
+      "source": "https://slaythespire2.net/zh-TW/card/omnislice"
+    },
+    {
+      "id": "ONE_FOR_ALL",
+      "name": "一為全",
+      "source": "https://slaythespire2.net/zh-TW/card/one-for-all"
+    },
+    {
+      "id": "ONE_TWO_PUNCH",
+      "name": "連環拳",
+      "source": "https://slaythespire2.net/zh-TW/card/one-two-punch"
+    },
+    {
+      "id": "ORBIT",
+      "name": "環繞軌道",
+      "source": "https://slaythespire2.net/zh-TW/card/orbit"
+    },
+    {
+      "id": "OUTBREAK",
+      "name": "毒疫爆發",
+      "source": "https://slaythespire2.net/zh-TW/card/outbreak"
+    },
+    {
+      "id": "OUTMANEUVER",
+      "name": "搶占先機",
+      "source": "https://slaythespire2.net/zh-TW/card/outmaneuver"
+    },
+    {
+      "id": "OUTRAGE",
+      "name": "暴怒",
+      "source": "https://slaythespire2.net/zh-TW/card/outrage"
+    },
+    {
+      "id": "OVERCLOCK",
+      "name": "超頻",
+      "source": "https://slaythespire2.net/zh-TW/card/overclock"
+    },
+    {
+      "id": "PACTS_END",
+      "name": "契約終結",
+      "source": "https://slaythespire2.net/zh-TW/card/pacts-end"
+    },
+    {
+      "id": "PAGESTORM",
+      "name": "書頁風暴",
+      "source": "https://slaythespire2.net/zh-TW/card/pagestorm"
+    },
+    {
+      "id": "PALE_BLUE_DOT",
+      "name": "暗淡藍點",
+      "source": "https://slaythespire2.net/zh-TW/card/pale-blue-dot"
+    },
+    {
+      "id": "PANACHE",
+      "name": "瀟灑制勝",
+      "source": "https://slaythespire2.net/zh-TW/card/panache"
+    },
+    {
+      "id": "PANIC_BUTTON",
+      "name": "應急按鈕",
+      "source": "https://slaythespire2.net/zh-TW/card/panic-button"
+    },
+    {
+      "id": "PARRY",
+      "name": "招架",
+      "source": "https://slaythespire2.net/zh-TW/card/parry"
+    },
+    {
+      "id": "PARSE",
+      "name": "領會",
+      "source": "https://slaythespire2.net/zh-TW/card/parse"
+    },
+    {
+      "id": "PARTICLE_WALL",
+      "name": "粒子牆",
+      "source": "https://slaythespire2.net/zh-TW/card/particle-wall"
+    },
+    {
+      "id": "PATTER",
+      "name": "星點輕敲",
+      "source": "https://slaythespire2.net/zh-TW/card/patter"
+    },
+    {
+      "id": "PECK",
+      "name": "啄擊",
+      "source": "https://slaythespire2.net/zh-TW/card/peck"
+    },
+    {
+      "id": "PERFECTED_STRIKE",
+      "name": "完美打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/perfected-strike"
+    },
+    {
+      "id": "PHANTOM_BLADES",
+      "name": "幻影之刃",
+      "source": "https://slaythespire2.net/zh-TW/card/phantom-blades"
+    },
+    {
+      "id": "PHOTON_CUT",
+      "name": "光子切割",
+      "source": "https://slaythespire2.net/zh-TW/card/photon-cut"
+    },
+    {
+      "id": "PIERCING_WAIL",
+      "name": "刺耳尖嚎",
+      "source": "https://slaythespire2.net/zh-TW/card/piercing-wail"
+    },
+    {
+      "id": "PILLAGE",
+      "name": "搶掠",
+      "source": "https://slaythespire2.net/zh-TW/card/pillage"
+    },
+    {
+      "id": "PILLAR_OF_CREATION",
+      "name": "創造之柱",
+      "source": "https://slaythespire2.net/zh-TW/card/pillar-of-creation"
+    },
+    {
+      "id": "PINPOINT",
+      "name": "精密瞄準",
+      "source": "https://slaythespire2.net/zh-TW/card/pinpoint"
+    },
+    {
+      "id": "PLOT",
+      "name": "謀劃",
+      "source": "https://slaythespire2.net/zh-TW/card/plot"
+    },
+    {
+      "id": "POISONED_STAB",
+      "name": "帶毒刺擊",
+      "source": "https://slaythespire2.net/zh-TW/card/poisoned-stab"
+    },
+    {
+      "id": "POKE",
+      "name": "戳刺",
+      "source": "https://slaythespire2.net/zh-TW/card/poke"
+    },
+    {
+      "id": "POMMEL_STRIKE",
+      "name": "劍柄打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/pommel-strike"
+    },
+    {
+      "id": "POOR_SLEEP",
+      "name": "輾轉難眠",
+      "source": "https://slaythespire2.net/zh-TW/card/poor-sleep"
+    },
+    {
+      "id": "POUNCE",
+      "name": "撲擊",
+      "source": "https://slaythespire2.net/zh-TW/card/pounce"
+    },
+    {
+      "id": "PRECISE_CUT",
+      "name": "精確切割",
+      "source": "https://slaythespire2.net/zh-TW/card/precise-cut"
+    },
+    {
+      "id": "PREDATOR",
+      "name": "獵殺者",
+      "source": "https://slaythespire2.net/zh-TW/card/predator"
+    },
+    {
+      "id": "PREP_TIME",
+      "name": "準備時間",
+      "source": "https://slaythespire2.net/zh-TW/card/prep-time"
+    },
+    {
+      "id": "PREPARED",
+      "name": "早有準備",
+      "source": "https://slaythespire2.net/zh-TW/card/prepared"
+    },
+    {
+      "id": "PRIMAL_FORCE",
+      "name": "原始力量",
+      "source": "https://slaythespire2.net/zh-TW/card/primal-force"
+    },
+    {
+      "id": "PRODUCTION",
+      "name": "生產",
+      "source": "https://slaythespire2.net/zh-TW/card/production"
+    },
+    {
+      "id": "PROLONG",
+      "name": "延長",
+      "source": "https://slaythespire2.net/zh-TW/card/prolong"
+    },
+    {
+      "id": "PROPHESIZE",
+      "name": "預言",
+      "source": "https://slaythespire2.net/zh-TW/card/prophesize"
+    },
+    {
+      "id": "PROTECTOR",
+      "name": "護衛者",
+      "source": "https://slaythespire2.net/zh-TW/card/protector"
+    },
+    {
+      "id": "PROWESS",
+      "name": "非凡技藝",
+      "source": "https://slaythespire2.net/zh-TW/card/prowess"
+    },
+    {
+      "id": "PULL_AGGRO",
+      "name": "吸引仇恨",
+      "source": "https://slaythespire2.net/zh-TW/card/pull-aggro"
+    },
+    {
+      "id": "PULL_FROM_BELOW",
+      "name": "幽冥牽引",
+      "source": "https://slaythespire2.net/zh-TW/card/pull-from-below"
+    },
+    {
+      "id": "PURITY",
+      "name": "純淨",
+      "source": "https://slaythespire2.net/zh-TW/card/purity"
+    },
+    {
+      "id": "PUTREFY",
+      "name": "腐敗",
+      "source": "https://slaythespire2.net/zh-TW/card/putrefy"
+    },
+    {
+      "id": "PYRE",
+      "name": "燃火",
+      "source": "https://slaythespire2.net/zh-TW/card/pyre"
+    },
+    {
+      "id": "QUADCAST",
+      "name": "四重施放",
+      "source": "https://slaythespire2.net/zh-TW/card/quadcast"
+    },
+    {
+      "id": "QUASAR",
+      "name": "類星體",
+      "source": "https://slaythespire2.net/zh-TW/card/quasar"
+    },
+    {
+      "id": "RADIATE",
+      "name": "輻射",
+      "source": "https://slaythespire2.net/zh-TW/card/radiate"
+    },
+    {
+      "id": "RAGE",
+      "name": "狂怒",
+      "source": "https://slaythespire2.net/zh-TW/card/rage"
+    },
+    {
+      "id": "RAINBOW",
+      "name": "彩虹",
+      "source": "https://slaythespire2.net/zh-TW/card/rainbow"
+    },
+    {
+      "id": "RALLY",
+      "name": "集結",
+      "source": "https://slaythespire2.net/zh-TW/card/rally"
+    },
+    {
+      "id": "RAMPAGE",
+      "name": "暴走",
+      "source": "https://slaythespire2.net/zh-TW/card/rampage"
+    },
+    {
+      "id": "RATTLE",
+      "name": "猛晃",
+      "source": "https://slaythespire2.net/zh-TW/card/rattle"
+    },
+    {
+      "id": "REANIMATE",
+      "name": "復生",
+      "source": "https://slaythespire2.net/zh-TW/card/reanimate"
+    },
+    {
+      "id": "REAP",
+      "name": "收割",
+      "source": "https://slaythespire2.net/zh-TW/card/reap"
+    },
+    {
+      "id": "REAPER_FORM",
+      "name": "死神形態",
+      "source": "https://slaythespire2.net/zh-TW/card/reaper-form"
+    },
+    {
+      "id": "REAVE",
+      "name": "剝奪",
+      "source": "https://slaythespire2.net/zh-TW/card/reave"
+    },
+    {
+      "id": "REBOOT",
+      "name": "重新啟動",
+      "source": "https://slaythespire2.net/zh-TW/card/reboot"
+    },
+    {
+      "id": "REBOUND",
+      "name": "回彈",
+      "source": "https://slaythespire2.net/zh-TW/card/rebound"
+    },
+    {
+      "id": "REFINE_BLADE",
+      "name": "淬鍊刀刃",
+      "source": "https://slaythespire2.net/zh-TW/card/refine-blade"
+    },
+    {
+      "id": "REFLECT",
+      "name": "反射",
+      "source": "https://slaythespire2.net/zh-TW/card/reflect"
+    },
+    {
+      "id": "REFLEX",
+      "name": "反射神經",
+      "source": "https://slaythespire2.net/zh-TW/card/reflex"
+    },
+    {
+      "id": "REFRACT",
+      "name": "折射",
+      "source": "https://slaythespire2.net/zh-TW/card/refract"
+    },
+    {
+      "id": "REGRET",
+      "name": "悔恨",
+      "source": "https://slaythespire2.net/zh-TW/card/regret"
+    },
+    {
+      "id": "RELAX",
+      "name": "放鬆",
+      "source": "https://slaythespire2.net/zh-TW/card/relax"
+    },
+    {
+      "id": "REND",
+      "name": "撕扯破碎",
+      "source": "https://slaythespire2.net/zh-TW/card/rend"
+    },
+    {
+      "id": "RESONANCE",
+      "name": "共振",
+      "source": "https://slaythespire2.net/zh-TW/card/resonance"
+    },
+    {
+      "id": "RESTLESSNESS",
+      "name": "心神不寧",
+      "source": "https://slaythespire2.net/zh-TW/card/restlessness"
+    },
+    {
+      "id": "RICOCHET",
+      "name": "彈射",
+      "source": "https://slaythespire2.net/zh-TW/card/ricochet"
+    },
+    {
+      "id": "RIGHT_HAND_HAND",
+      "name": "助手之手",
+      "source": "https://slaythespire2.net/zh-TW/card/right-hand-hand"
+    },
+    {
+      "id": "RIP_AND_TEAR",
+      "name": "撕裂猛扯",
+      "source": "https://slaythespire2.net/zh-TW/card/rip-and-tear"
+    },
+    {
+      "id": "ROCKET_PUNCH",
+      "name": "火箭飛拳",
+      "source": "https://slaythespire2.net/zh-TW/card/rocket-punch"
+    },
+    {
+      "id": "ROLLING_BOULDER",
+      "name": "滾動巨石",
+      "source": "https://slaythespire2.net/zh-TW/card/rolling-boulder"
+    },
+    {
+      "id": "ROYAL_GAMBLE",
+      "name": "王室豪賭",
+      "source": "https://slaythespire2.net/zh-TW/card/royal-gamble"
+    },
+    {
+      "id": "ROYALTIES",
+      "name": "王室權利金",
+      "source": "https://slaythespire2.net/zh-TW/card/royalties"
+    },
+    {
+      "id": "RUPTURE",
+      "name": "綻裂",
+      "source": "https://slaythespire2.net/zh-TW/card/rupture"
+    },
+    {
+      "id": "SACRIFICE",
+      "name": "犧牲",
+      "source": "https://slaythespire2.net/zh-TW/card/sacrifice"
+    },
+    {
+      "id": "SALVO",
+      "name": "齊射",
+      "source": "https://slaythespire2.net/zh-TW/card/salvo"
+    },
+    {
+      "id": "SCAVENGE",
+      "name": "搜刮",
+      "source": "https://slaythespire2.net/zh-TW/card/scavenge"
+    },
+    {
+      "id": "SCOURGE",
+      "name": "鞭笞",
+      "source": "https://slaythespire2.net/zh-TW/card/scourge"
+    },
+    {
+      "id": "SCRAPE",
+      "name": "刮削",
+      "source": "https://slaythespire2.net/zh-TW/card/scrape"
+    },
+    {
+      "id": "SCRAWL",
+      "name": "潦草疾書",
+      "source": "https://slaythespire2.net/zh-TW/card/scrawl"
+    },
+    {
+      "id": "SCULPTING_STRIKE",
+      "name": "雕琢打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/sculpting-strike"
+    },
+    {
+      "id": "SEANCE",
+      "name": "降靈",
+      "source": "https://slaythespire2.net/zh-TW/card/seance"
+    },
+    {
+      "id": "SECOND_WIND",
+      "name": "重振精神",
+      "source": "https://slaythespire2.net/zh-TW/card/second-wind"
+    },
+    {
+      "id": "SECRET_TECHNIQUE",
+      "name": "秘密技法",
+      "source": "https://slaythespire2.net/zh-TW/card/secret-technique"
+    },
+    {
+      "id": "SECRET_WEAPON",
+      "name": "秘密武器",
+      "source": "https://slaythespire2.net/zh-TW/card/secret-weapon"
+    },
+    {
+      "id": "SEEKER_STRIKE",
+      "name": "追蹤打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/seeker-strike"
+    },
+    {
+      "id": "SEEKING_EDGE",
+      "name": "尋敵鋒刃",
+      "source": "https://slaythespire2.net/zh-TW/card/seeking-edge"
+    },
+    {
+      "id": "SENTRY_MODE",
+      "name": "哨衛模式",
+      "source": "https://slaythespire2.net/zh-TW/card/sentry-mode"
+    },
+    {
+      "id": "SERPENT_FORM",
+      "name": "群蛇形態",
+      "source": "https://slaythespire2.net/zh-TW/card/serpent-form"
+    },
+    {
+      "id": "SETUP_STRIKE",
+      "name": "預備打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/setup-strike"
+    },
+    {
+      "id": "SEVEN_STARS",
+      "name": "七星",
+      "source": "https://slaythespire2.net/zh-TW/card/seven-stars"
+    },
+    {
+      "id": "SEVERANCE",
+      "name": "斷絕",
+      "source": "https://slaythespire2.net/zh-TW/card/severance"
+    },
+    {
+      "id": "SHADOW_SHIELD",
+      "name": "暗影護盾",
+      "source": "https://slaythespire2.net/zh-TW/card/shadow-shield"
+    },
+    {
+      "id": "SHADOW_STEP",
+      "name": "暗影步",
+      "source": "https://slaythespire2.net/zh-TW/card/shadow-step"
+    },
+    {
+      "id": "SHADOWMELD",
+      "name": "融入暗影",
+      "source": "https://slaythespire2.net/zh-TW/card/shadowmeld"
+    },
+    {
+      "id": "SHAME",
+      "name": "羞恥",
+      "source": "https://slaythespire2.net/zh-TW/card/shame"
+    },
+    {
+      "id": "SHARED_FATE",
+      "name": "命運同擔",
+      "source": "https://slaythespire2.net/zh-TW/card/shared-fate"
+    },
+    {
+      "id": "SHATTER",
+      "name": "粉碎",
+      "source": "https://slaythespire2.net/zh-TW/card/shatter"
+    },
+    {
+      "id": "SHINING_STRIKE",
+      "name": "明耀打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/shining-strike"
+    },
+    {
+      "id": "SHOCKWAVE",
+      "name": "震盪波",
+      "source": "https://slaythespire2.net/zh-TW/card/shockwave"
+    },
+    {
+      "id": "SHROUD",
+      "name": "暗幕",
+      "source": "https://slaythespire2.net/zh-TW/card/shroud"
+    },
+    {
+      "id": "SHRUG_IT_OFF",
+      "name": "聳肩帶過",
+      "source": "https://slaythespire2.net/zh-TW/card/shrug-it-off"
+    },
+    {
+      "id": "SIC_EM",
+      "name": "揍他",
+      "source": "https://slaythespire2.net/zh-TW/card/sic-em"
+    },
+    {
+      "id": "SIDESTEP",
+      "name": "側步",
+      "source": "https://slaythespire2.net/zh-TW/card/sidestep"
+    },
+    {
+      "id": "SIGNAL_BOOST",
+      "name": "訊號增幅",
+      "source": "https://slaythespire2.net/zh-TW/card/signal-boost"
+    },
+    {
+      "id": "SKEWER",
+      "name": "串刺",
+      "source": "https://slaythespire2.net/zh-TW/card/skewer"
+    },
+    {
+      "id": "SKIM",
+      "name": "掃讀",
+      "source": "https://slaythespire2.net/zh-TW/card/skim"
+    },
+    {
+      "id": "SLEIGHT_OF_FLESH",
+      "name": "血肉戲法",
+      "source": "https://slaythespire2.net/zh-TW/card/sleight-of-flesh"
+    },
+    {
+      "id": "SLICE",
+      "name": "切割",
+      "source": "https://slaythespire2.net/zh-TW/card/slice"
+    },
+    {
+      "id": "SMOKESTACK",
+      "name": "煙囪",
+      "source": "https://slaythespire2.net/zh-TW/card/smokestack"
+    },
+    {
+      "id": "SNAKEBITE",
+      "name": "蛇咬",
+      "source": "https://slaythespire2.net/zh-TW/card/snakebite"
+    },
+    {
+      "id": "SNAP",
+      "name": "彈指",
+      "source": "https://slaythespire2.net/zh-TW/card/snap"
+    },
+    {
+      "id": "SNEAKY",
+      "name": "鬼祟",
+      "source": "https://slaythespire2.net/zh-TW/card/sneaky"
+    },
+    {
+      "id": "SOLAR_STRIKE",
+      "name": "太陽打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/solar-strike"
+    },
+    {
+      "id": "SOUL_STORM",
+      "name": "靈魂風暴",
+      "source": "https://slaythespire2.net/zh-TW/card/soul-storm"
+    },
+    {
+      "id": "SOULBOUND",
+      "name": "靈魂綁定",
+      "source": "https://slaythespire2.net/zh-TW/card/soulbound"
+    },
+    {
+      "id": "SOW",
+      "name": "播種",
+      "source": "https://slaythespire2.net/zh-TW/card/sow"
+    },
+    {
+      "id": "SPECTRUM_SHIFT",
+      "name": "光譜偏移",
+      "source": "https://slaythespire2.net/zh-TW/card/spectrum-shift"
+    },
+    {
+      "id": "SPEEDSTER",
+      "name": "速行者",
+      "source": "https://slaythespire2.net/zh-TW/card/speedster"
+    },
+    {
+      "id": "SPINNER",
+      "name": "迴旋凝聚",
+      "source": "https://slaythespire2.net/zh-TW/card/spinner"
+    },
+    {
+      "id": "SPIRIT_OF_ASH",
+      "name": "灰燼之靈",
+      "source": "https://slaythespire2.net/zh-TW/card/spirit-of-ash"
+    },
+    {
+      "id": "SPITE",
+      "name": "怨恨",
+      "source": "https://slaythespire2.net/zh-TW/card/spite"
+    },
+    {
+      "id": "SPLASH",
+      "name": "飛濺",
+      "source": "https://slaythespire2.net/zh-TW/card/splash"
+    },
+    {
+      "id": "SPOILS_MAP",
+      "name": "藏寶圖",
+      "source": "https://slaythespire2.net/zh-TW/card/spoils-map"
+    },
+    {
+      "id": "SPOILS_OF_BATTLE",
+      "name": "征戰所得",
+      "source": "https://slaythespire2.net/zh-TW/card/spoils-of-battle"
+    },
+    {
+      "id": "SPORE_MIND",
+      "name": "孢子心智",
+      "source": "https://slaythespire2.net/zh-TW/card/spore-mind"
+    },
+    {
+      "id": "SPUR",
+      "name": "激勵",
+      "source": "https://slaythespire2.net/zh-TW/card/spur"
+    },
+    {
+      "id": "SQUASH",
+      "name": "壓扁",
+      "source": "https://slaythespire2.net/zh-TW/card/squash"
+    },
+    {
+      "id": "SQUEEZE",
+      "name": "緊握",
+      "source": "https://slaythespire2.net/zh-TW/card/squeeze"
+    },
+    {
+      "id": "STACK",
+      "name": "堆疊",
+      "source": "https://slaythespire2.net/zh-TW/card/stack"
+    },
+    {
+      "id": "STAMPEDE",
+      "name": "奔踏",
+      "source": "https://slaythespire2.net/zh-TW/card/stampede"
+    },
+    {
+      "id": "STARDUST",
+      "name": "星塵",
+      "source": "https://slaythespire2.net/zh-TW/card/stardust"
+    },
+    {
+      "id": "STOKE",
+      "name": "添柴",
+      "source": "https://slaythespire2.net/zh-TW/card/stoke"
+    },
+    {
+      "id": "STOMP",
+      "name": "踐踏",
+      "source": "https://slaythespire2.net/zh-TW/card/stomp"
+    },
+    {
+      "id": "STONE_ARMOR",
+      "name": "岩石護甲",
+      "source": "https://slaythespire2.net/zh-TW/card/stone-armor"
+    },
+    {
+      "id": "STORM",
+      "name": "雷暴",
+      "source": "https://slaythespire2.net/zh-TW/card/storm"
+    },
+    {
+      "id": "STORM_OF_STEEL",
+      "name": "鋼鐵風暴",
+      "source": "https://slaythespire2.net/zh-TW/card/storm-of-steel"
+    },
+    {
+      "id": "STRANGLE",
+      "name": "絞殺",
+      "source": "https://slaythespire2.net/zh-TW/card/strangle"
+    },
+    {
+      "id": "STRATAGEM",
+      "name": "計策",
+      "source": "https://slaythespire2.net/zh-TW/card/stratagem"
+    },
+    {
+      "id": "STRIKE_DEFECT",
+      "name": "打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/strike-defect"
+    },
+    {
+      "id": "STRIKE_IRONCLAD",
+      "name": "打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/strike-ironclad"
+    },
+    {
+      "id": "STRIKE_NECROBINDER",
+      "name": "打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/strike-necrobinder"
+    },
+    {
+      "id": "STRIKE_REGENT",
+      "name": "打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/strike-regent"
+    },
+    {
+      "id": "STRIKE_SILENT",
+      "name": "打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/strike-silent"
+    },
+    {
+      "id": "SUBROUTINE",
+      "name": "子程序",
+      "source": "https://slaythespire2.net/zh-TW/card/subroutine"
+    },
+    {
+      "id": "SUCKER_PUNCH",
+      "name": "突襲拳",
+      "source": "https://slaythespire2.net/zh-TW/card/sucker-punch"
+    },
+    {
+      "id": "SUMMON_FORTH",
+      "name": "召喚現身",
+      "source": "https://slaythespire2.net/zh-TW/card/summon-forth"
+    },
+    {
+      "id": "SUNDER",
+      "name": "裂解",
+      "source": "https://slaythespire2.net/zh-TW/card/sunder"
+    },
+    {
+      "id": "SUPERCRITICAL",
+      "name": "超臨界",
+      "source": "https://slaythespire2.net/zh-TW/card/supercritical"
+    },
+    {
+      "id": "SUPERMASSIVE",
+      "name": "超大質量",
+      "source": "https://slaythespire2.net/zh-TW/card/supermassive"
+    },
+    {
+      "id": "SUPPRESS",
+      "name": "壓制",
+      "source": "https://slaythespire2.net/zh-TW/card/suppress"
+    },
+    {
+      "id": "SURVIVOR",
+      "name": "生存者",
+      "source": "https://slaythespire2.net/zh-TW/card/survivor"
+    },
+    {
+      "id": "SWEEPING_BEAM",
+      "name": "掃射光束",
+      "source": "https://slaythespire2.net/zh-TW/card/sweeping-beam"
+    },
+    {
+      "id": "SWORD_BOOMERANG",
+      "name": "迴力劍",
+      "source": "https://slaythespire2.net/zh-TW/card/sword-boomerang"
+    },
+    {
+      "id": "SWORD_SAGE",
+      "name": "劍聖",
+      "source": "https://slaythespire2.net/zh-TW/card/sword-sage"
+    },
+    {
+      "id": "SYNCHRONIZE",
+      "name": "同步",
+      "source": "https://slaythespire2.net/zh-TW/card/synchronize"
+    },
+    {
+      "id": "SYNTHESIS",
+      "name": "合成",
+      "source": "https://slaythespire2.net/zh-TW/card/synthesis"
+    },
+    {
+      "id": "TACTICIAN",
+      "name": "戰術家",
+      "source": "https://slaythespire2.net/zh-TW/card/tactician"
+    },
+    {
+      "id": "TAG_TEAM",
+      "name": "聯手合擊",
+      "source": "https://slaythespire2.net/zh-TW/card/tag-team"
+    },
+    {
+      "id": "TANK",
+      "name": "坦護",
+      "source": "https://slaythespire2.net/zh-TW/card/tank"
+    },
+    {
+      "id": "TAUNT",
+      "name": "嘲諷",
+      "source": "https://slaythespire2.net/zh-TW/card/taunt"
+    },
+    {
+      "id": "TEAR_ASUNDER",
+      "name": "撕碎",
+      "source": "https://slaythespire2.net/zh-TW/card/tear-asunder"
+    },
+    {
+      "id": "TEMPEST",
+      "name": "暴風雨",
+      "source": "https://slaythespire2.net/zh-TW/card/tempest"
+    },
+    {
+      "id": "TERRAFORMING",
+      "name": "地貌改造",
+      "source": "https://slaythespire2.net/zh-TW/card/terraforming"
+    },
+    {
+      "id": "TESLA_COIL",
+      "name": "特斯拉線圈",
+      "source": "https://slaythespire2.net/zh-TW/card/tesla-coil"
+    },
+    {
+      "id": "THE_BALL",
+      "name": "魔球",
+      "source": "https://slaythespire2.net/zh-TW/card/the-ball"
+    },
+    {
+      "id": "THE_BOMB",
+      "name": "炸彈",
+      "source": "https://slaythespire2.net/zh-TW/card/the-bomb"
+    },
+    {
+      "id": "THE_GAMBIT",
+      "name": "孤注一擲",
+      "source": "https://slaythespire2.net/zh-TW/card/the-gambit"
+    },
+    {
+      "id": "THE_HUNT",
+      "name": "狩獵",
+      "source": "https://slaythespire2.net/zh-TW/card/the-hunt"
+    },
+    {
+      "id": "THE_SCYTHE",
+      "name": "巨鐮",
+      "source": "https://slaythespire2.net/zh-TW/card/the-scythe"
+    },
+    {
+      "id": "THE_SEALED_THRONE",
+      "name": "封印王座",
+      "source": "https://slaythespire2.net/zh-TW/card/the-sealed-throne"
+    },
+    {
+      "id": "THE_SMITH",
+      "name": "鍛匠",
+      "source": "https://slaythespire2.net/zh-TW/card/the-smith"
+    },
+    {
+      "id": "THINKING_AHEAD",
+      "name": "深謀遠慮",
+      "source": "https://slaythespire2.net/zh-TW/card/thinking-ahead"
+    },
+    {
+      "id": "THRASH",
+      "name": "狂擊",
+      "source": "https://slaythespire2.net/zh-TW/card/thrash"
+    },
+    {
+      "id": "THRUMMING_HATCHET",
+      "name": "震鳴手斧",
+      "source": "https://slaythespire2.net/zh-TW/card/thrumming-hatchet"
+    },
+    {
+      "id": "THUNDER",
+      "name": "雷霆",
+      "source": "https://slaythespire2.net/zh-TW/card/thunder"
+    },
+    {
+      "id": "THUNDERCLAP",
+      "name": "雷霆霹靂",
+      "source": "https://slaythespire2.net/zh-TW/card/thunderclap"
+    },
+    {
+      "id": "TIMES_UP",
+      "name": "大限已至",
+      "source": "https://slaythespire2.net/zh-TW/card/times-up"
+    },
+    {
+      "id": "TOOLS_OF_THE_TRADE",
+      "name": "行家工具",
+      "source": "https://slaythespire2.net/zh-TW/card/tools-of-the-trade"
+    },
+    {
+      "id": "TORIC_TOUGHNESS",
+      "name": "環狀韌性",
+      "source": "https://slaythespire2.net/zh-TW/card/toric-toughness"
+    },
+    {
+      "id": "TRACKING",
+      "name": "追蹤",
+      "source": "https://slaythespire2.net/zh-TW/card/tracking"
+    },
+    {
+      "id": "TRANSFIGURE",
+      "name": "重構",
+      "source": "https://slaythespire2.net/zh-TW/card/transfigure"
+    },
+    {
+      "id": "TRASH_TO_TREASURE",
+      "name": "化腐朽為神奇",
+      "source": "https://slaythespire2.net/zh-TW/card/trash-to-treasure"
+    },
+    {
+      "id": "TREMBLE",
+      "name": "戰慄",
+      "source": "https://slaythespire2.net/zh-TW/card/tremble"
+    },
+    {
+      "id": "TRUE_GRIT",
+      "name": "堅毅不屈",
+      "source": "https://slaythespire2.net/zh-TW/card/true-grit"
+    },
+    {
+      "id": "TURBO",
+      "name": "渦輪加速",
+      "source": "https://slaythespire2.net/zh-TW/card/turbo"
+    },
+    {
+      "id": "TUTOR",
+      "name": "指導",
+      "source": "https://slaythespire2.net/zh-TW/card/tutor"
+    },
+    {
+      "id": "TWIN_STRIKE",
+      "name": "雙重打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/twin-strike"
+    },
+    {
+      "id": "TYRANNY",
+      "name": "暴政",
+      "source": "https://slaythespire2.net/zh-TW/card/tyranny"
+    },
+    {
+      "id": "ULTIMATE_DEFEND",
+      "name": "究極防禦",
+      "source": "https://slaythespire2.net/zh-TW/card/ultimate-defend"
+    },
+    {
+      "id": "ULTIMATE_STRIKE",
+      "name": "究極打擊",
+      "source": "https://slaythespire2.net/zh-TW/card/ultimate-strike"
+    },
+    {
+      "id": "UNDEATH",
+      "name": "不死",
+      "source": "https://slaythespire2.net/zh-TW/card/undeath"
+    },
+    {
+      "id": "UNDERWORLD",
+      "name": "幽冥之界",
+      "source": "https://slaythespire2.net/zh-TW/card/underworld"
+    },
+    {
+      "id": "UNLEASH",
+      "name": "解縛出擊",
+      "source": "https://slaythespire2.net/zh-TW/card/unleash"
+    },
+    {
+      "id": "UNMOVABLE",
+      "name": "堅定不移",
+      "source": "https://slaythespire2.net/zh-TW/card/unmovable"
+    },
+    {
+      "id": "UNRELENTING",
+      "name": "毫不留情",
+      "source": "https://slaythespire2.net/zh-TW/card/unrelenting"
+    },
+    {
+      "id": "UNTOUCHABLE",
+      "name": "觸不可及",
+      "source": "https://slaythespire2.net/zh-TW/card/untouchable"
+    },
+    {
+      "id": "UP_MY_SLEEVE",
+      "name": "袖裡乾坤",
+      "source": "https://slaythespire2.net/zh-TW/card/up-my-sleeve"
+    },
+    {
+      "id": "UPPERCUT",
+      "name": "上勾拳",
+      "source": "https://slaythespire2.net/zh-TW/card/uppercut"
+    },
+    {
+      "id": "UPROAR",
+      "name": "騷動",
+      "source": "https://slaythespire2.net/zh-TW/card/uproar"
+    },
+    {
+      "id": "VEILPIERCER",
+      "name": "帷幕貫穿",
+      "source": "https://slaythespire2.net/zh-TW/card/veilpiercer"
+    },
+    {
+      "id": "VENERATE",
+      "name": "崇敬",
+      "source": "https://slaythespire2.net/zh-TW/card/venerate"
+    },
+    {
+      "id": "VICIOUS",
+      "name": "兇狠",
+      "source": "https://slaythespire2.net/zh-TW/card/vicious"
+    },
+    {
+      "id": "VOID_FORM",
+      "name": "虛空形態",
+      "source": "https://slaythespire2.net/zh-TW/card/void-form"
+    },
+    {
+      "id": "VOLLEY",
+      "name": "連射",
+      "source": "https://slaythespire2.net/zh-TW/card/volley"
+    },
+    {
+      "id": "VOLTAIC",
+      "name": "電流相生",
+      "source": "https://slaythespire2.net/zh-TW/card/voltaic"
+    },
+    {
+      "id": "WELL_LAID_PLANS",
+      "name": "計畫妥當",
+      "source": "https://slaythespire2.net/zh-TW/card/well-laid-plans"
+    },
+    {
+      "id": "WHIRLWIND",
+      "name": "旋風斬",
+      "source": "https://slaythespire2.net/zh-TW/card/whirlwind"
+    },
+    {
+      "id": "WHISTLE",
+      "name": "吹哨",
+      "source": "https://slaythespire2.net/zh-TW/card/whistle"
+    },
+    {
+      "id": "WHITE_NOISE",
+      "name": "白噪音",
+      "source": "https://slaythespire2.net/zh-TW/card/white-noise"
+    },
+    {
+      "id": "WISH",
+      "name": "祈願",
+      "source": "https://slaythespire2.net/zh-TW/card/wish"
+    },
+    {
+      "id": "WISP",
+      "name": "幽火",
+      "source": "https://slaythespire2.net/zh-TW/card/wisp"
+    },
+    {
+      "id": "WRAITH_FORM",
+      "name": "幽魂形態",
+      "source": "https://slaythespire2.net/zh-TW/card/wraith-form"
+    },
+    {
+      "id": "WRITHE",
+      "name": "掙扭",
+      "source": "https://slaythespire2.net/zh-TW/card/writhe"
+    },
+    {
+      "id": "WROUGHT_IN_WAR",
+      "name": "戰火鑄就",
+      "source": "https://slaythespire2.net/zh-TW/card/wrought-in-war"
+    },
+    {
+      "id": "ZAP",
+      "name": "電擊",
+      "source": "https://slaythespire2.net/zh-TW/card/zap"
+    }
+  ]
+}

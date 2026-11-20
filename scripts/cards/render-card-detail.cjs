@@ -11,24 +11,30 @@ function buildLink(card, build, localBuilds) {
   }
   return new URL(build.url, card.source).href;
 }
-function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds = '', showBuilds = true, showKeywords = true, showTierRating = true, searchableEffects = false, rarityBeforeType = false} = {}) {
-  const chineseUrl = new URL(card.source);
-  chineseUrl.pathname = '/zh-TW' + chineseUrl.pathname;
+function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds = '', showBuilds = true, showKeywords = true, showTierRating = true, searchableEffects = false, rarityBeforeType = false, showEffectTooltips = false} = {}) {
+  const chineseUrl = new URL(card.sourceZh || card.source);
+  if (!card.sourceZh) chineseUrl.pathname = '/zh-TW' + chineseUrl.pathname;
   const energyCost = card.stats.find(stat => stat.label === 'Energy cost')?.value;
   const costChange = energyCost?.match(/^(\d+)<e\/>\s*→\s*(\d+)<e\/>$/);
   let baseContent = effect(card.effect.base), upgradedContent;
-  if (costChange && Number(costChange[2]) < Number(costChange[1])) {
-    upgradedContent = effect(energyCost).replace('→', '<span class="detail-cost-arrow" aria-label="upgrades to">→</span>');
-  } else if (card.effect.upgraded === null) {
+  if (card.effect.upgraded === null) {
     upgradedContent = '<span class="detail-empty">Cannot be upgraded.</span>';
   } else {
     const difference = compareEffects(card.effect.base, card.effect.upgraded, effect);
     upgradedContent = difference.upgraded;
   }
+  if (costChange && Number(costChange[2]) < Number(costChange[1])) {
+    upgradedContent += '<br>' + effect(energyCost).replace('→', '<span class="detail-cost-arrow" aria-label="upgrades to">→</span>');
+  }
   if (searchableEffects) {
     const highlight = html => html.replace(/\bALL enemies\b/g, '<button type="button" class="detail-effect-search" data-effect-search="ALL enemies" aria-label="搜尋 ALL enemies">ALL enemies</button>');
     baseContent = highlight(baseContent);
     upgradedContent = highlight(upgradedContent);
+  }
+  if (showEffectTooltips) {
+    const tooltips = require('./effect-tooltips.cjs');
+    baseContent = tooltips.decorate(baseContent, card.id);
+    upgradedContent = tooltips.decorate(upgradedContent, card.id, true);
   }
   const statRows = card.stats.filter(({label}) => !['Keywords', 'Upgrade', 'Target'].includes(label));
   if (rarityBeforeType) {
@@ -52,9 +58,11 @@ function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds =
     ? new URL('/card-tier-list/' + card.character.toLowerCase(), card.source).href : null;
   const tierDescription = 'Ranked ' + card.tier + ' tier in our ' + card.character + ' card tier list.';
   return `<article class="card-detail" aria-labelledby="${prefix}-title" lang="en" data-source="${esc(card.source)}" data-character="${esc(card.character)}">
+  <div class="detail-overview">
   <figure class="detail-art" data-detail-row="1"><img src="${esc(card.image)}" width="700" height="532" alt="${esc(card.name)} illustration" loading="lazy" decoding="async"></figure>
   <header data-detail-row="2"><h2 class="detail-title" id="${prefix}-title"><a class="detail-name-zh" lang="zh-Hant" href="${esc(chineseUrl.href)}" target="_blank" rel="noopener noreferrer">${esc(card.nameZh)}</a><a href="${esc(card.source)}" target="_blank" rel="noopener noreferrer">${esc(card.name)}</a></h2></header>
   <section class="detail-section detail-effects" data-detail-row="5" aria-label="Card effects"><div class="detail-effect-columns"><div class="detail-effect-panel"><h4>Base</h4><p>${baseContent}</p></div><div class="detail-effect-panel"><h4 class="detail-upgraded">Upgraded</h4><p>${upgradedContent}</p></div></div>${showKeywords && keywords ? '<aside class="detail-keyword">' + keywords + '</aside>' : ''}</section>
+  </div>
   <section class="detail-section detail-card-stats" data-detail-row="6" aria-label="Card stats"><dl class="detail-stats">${stats}</dl></section>
   ${tierList ? '<section class="detail-section detail-card-rating" data-detail-row="8" aria-label="Tier rating"><a class="detail-rating" href="' + esc(tierList) + '" target="_blank" rel="noopener noreferrer"><span class="tier detail-rating-badge" data-tier="' + esc(card.tier) + '" aria-label="Tier ' + esc(card.tier) + '">' + esc(card.tier) + '</span><span class="detail-rating-description">' + esc(tierDescription) + '</span></a></section>' : ''}
   ${builds ? '<section class="detail-section detail-card-builds" data-detail-row="7" aria-label="Builds using this card"><div class="detail-build-list">' + builds + '</div></section>' : ''}

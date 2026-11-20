@@ -27,9 +27,12 @@ function renderGuideCard(c,context){
 function renderCards(list,context){const rarityOrder=['Basic','Common','Uncommon','Rare','Ancient','Event','Curse','Quest'];const rank=c=>{const index=rarityOrder.indexOf(c.rarity);return index<0?rarityOrder.length:index;};const tierRank=c=>{const index=['S','A','B','C','D'].indexOf(cardTiers.get(c.id));return index<0?5:index;};return [...list].sort((a,b)=>rank(a)-rank(b)||tierRank(a)-tierRank(b)||a.name.localeCompare(b.name,'en')).map(card=>renderGuideCard(card,context)).join('');}
 
 function renderLinkedStrategy(text,g){
- const candidates=[...new Set([...g.core,...g.support])].map(id=>byId.get(id)).sort((a,b)=>chinese.get(b.id).name.length-chinese.get(a.id).name.length);
+ const candidates=[...new Set([...g.core,...g.support])].flatMap(id=>{
+  const card=byId.get(id),localized=chinese.get(id);
+  return [...(localized.aliases||[]),localized.name].map(name=>({card,name,alias:name!==localized.name}));
+ }).sort((a,b)=>b.name.length-a.name.length||Number(b.alias)-Number(a.alias));
  let output='',offset=0;
- while(offset<text.length){const card=candidates.find(c=>text.startsWith(chinese.get(c.id).name,offset));if(card){output+=renderCardLink(card);offset+=chinese.get(card.id).name.length;}else{output+=esc(text[offset]);offset++;}}
+ while(offset<text.length){const match=candidates.find(candidate=>text.startsWith(candidate.name,offset));if(match){output+=renderCardLink(match.card);offset+=match.name.length;}else{output+=esc(text[offset]);offset++;}}
  return output;
 }
 const relicIcons=new Map();

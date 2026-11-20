@@ -149,8 +149,7 @@ html body .site-header .site-nav a {
 /* Keep navigation in one row when the full labels no longer fit. */
 @media screen and (max-width:1366px) {
   html body .site-header>.site-header-inner {flex-wrap:nowrap;gap:8px;min-height:56px}
-  html body .site-header .site-brand {flex:0 0 auto;min-height:44px;gap:0}
-  html body .site-header .site-brand>span,
+  html body .site-header .site-brand {flex:0 0 auto;min-height:44px;gap:10px}
   html body .site-header .site-nav a>span:not([aria-hidden]) {
     display:block;position:absolute;width:1px;height:1px;padding:0;margin:-1px;
     overflow:hidden;clip-path:inset(50%);white-space:nowrap;
@@ -198,7 +197,7 @@ html body>.site-header {position:sticky!important;top:0;z-index:100}
 }
 
 /* Phone navigation uses the entire header row without the brand icon. */
-@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) {
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
   html body .site-header>.site-header-inner {gap:0}
   html body .site-header .site-nav {flex:1 1 auto!important;width:100%!important;margin:0;gap:4px}
@@ -239,7 +238,7 @@ html body .site-header .site-nav > a {
   box-sizing: border-box;
   padding-inline: 0 !important;
 }
-@media screen and (max-width: 1024px), screen and (max-width: 1366px) and (hover: none) and (pointer: coarse) {
+@media screen and (max-width: 600px), screen and (orientation: landscape) and (max-height: 500px) and (max-width: 1000px) and (hover: none) and (pointer: coarse) {
   html body .site-header .site-brand { display: none !important; }
   html body .site-header .site-nav { width: 100% !important; flex: 1 1 100% !important; }
 }
@@ -262,7 +261,7 @@ html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max
     display:grid!important;
     grid-template-columns:repeat(6,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 0 auto!important;
+    flex:0 1 392px!important;
     width:392px!important;
     max-width:100%;
     margin-left:auto;
@@ -287,6 +286,20 @@ html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max
     overflow:visible;
   }
   html body .site-header .site-nav > a {box-sizing:border-box;min-width:0!important;width:100%!important;max-width:100%;padding:6px 0!important}
+}
+
+/* Brand visibility is shared by every page, including bundled legacy styles. */
+@media screen and (min-width:601px) {
+  html body .site-header .site-brand {display:flex!important}
+  html body .site-header .site-brand > span {
+    display:block!important;position:static!important;width:auto!important;height:auto!important;
+    margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
+  }
+  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+}
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+  html body .site-header .site-brand {display:none!important}
+  html body .site-header .site-nav {flex:1 1 100%!important;width:100%!important}
 }
 html{color-scheme:dark;scrollbar-width:auto;scrollbar-color:auto}body{background:#040609;color:#e3e8ee}main{min-width:0}main img{max-width:100%}main [class*="flex-wrap"]:has(>[aria-label="切換遊戲版本"]){display:none}/* Shared page frame: content and navigation use the same edges. */
 :root{--site-width:90%;--site-page-gap:20px}
@@ -388,8 +401,7 @@ html body main#main-content .filters,html body main#main-content .tools .primary
 /* Keep navigation in one row when the full labels no longer fit. */
 @media screen and (max-width:1366px) {
   html body .site-header>.site-header-inner {flex-wrap:nowrap;gap:8px;min-height:56px}
-  html body .site-header .site-brand {flex:0 0 auto;min-height:44px;gap:0}
-  html body .site-header .site-brand>span,
+  html body .site-header .site-brand {flex:0 0 auto;min-height:44px;gap:10px}
   html body .site-header .site-nav a>span:not([aria-hidden]) {
     display:block;position:absolute;width:1px;height:1px;padding:0;margin:-1px;
     overflow:hidden;clip-path:inset(50%);white-space:nowrap;
@@ -437,7 +449,7 @@ html body>.site-header {position:sticky!important;top:0;z-index:100}
 }
 
 /* Phone navigation uses the entire header row without the brand icon. */
-@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) {
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
   html body .site-header>.site-header-inner {gap:0}
   html body .site-header .site-nav {flex:1 1 auto!important;width:100%!important;margin:0;gap:4px}
@@ -699,16 +711,16 @@ html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-ra
   }
 }
 
-/* Tier A uses orange throughout labels, filters and rankings. */
-:root {--card-tier-A:rgb(250, 153, 83);--catalog-tier-A:rgb(250, 153, 83)}
+/* Tier A matches the Crimson Mantle name color throughout labels and filters. */
+:root {--card-tier-A:rgb(227, 191, 114);--catalog-tier-A:rgb(227, 191, 114)}
 html body :is(.tier,.build-tier,.card-tier-badge,.relic-tier-label,.font-extrabold)[data-tier=A] {
-  --tier-color:rgb(250, 153, 83)!important;background:rgb(250, 153, 83)!important;color:#fff!important;border-color:rgb(250, 153, 83)!important;
+  --tier-color:rgb(227, 191, 114)!important;background:rgb(227, 191, 114)!important;color:#fff!important;border-color:rgb(227, 191, 114)!important;
 }
 html body :is([data-tier-filter=A],#card-filter-tier button[value=A]) {
-  --tier-color:rgb(250, 153, 83)!important;--selection-color:rgb(250, 153, 83)!important;
+  --tier-color:rgb(227, 191, 114)!important;--selection-color:rgb(227, 191, 114)!important;
 }
 html body .card-detail :is(.detail-tier,.detail-build-tier)[data-tier=A] {
-  color:rgb(250, 153, 83);background:color-mix(in srgb,rgb(250, 153, 83) 16%,#0b1119);border-color:rgb(250, 153, 83);
+  color:rgb(227, 191, 114);background:color-mix(in srgb,rgb(227, 191, 114) 16%,#0b1119);border-color:rgb(227, 191, 114);
 }
 
 /* Solid tier labels, matching the ancient ranking label presentation. */
@@ -724,7 +736,7 @@ html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(250, 153, 83)!important;border:1px solid rgb(250, 153, 83)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=B][data-tier] {
@@ -807,7 +819,7 @@ html body #main-content #tools #card-filter-tier button[value=S] {
 }
 
 html body #main-content #tools #card-filter-tier button[value=A] {
-  color:rgb(255, 255, 255)!important;background:rgb(250, 153, 83)!important;border:1px solid rgb(250, 153, 83)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=B] {
@@ -838,6 +850,14 @@ html body[data-view=grid] main#main-content#main-content #card-scroll :is(sectio
   box-sizing:border-box;width:100%;max-width:none;min-width:0;
 }
 html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:minmax(0,1fr)}
+@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine) {
+  html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  /* Share section tracks across each pair so their Energy cost rows line up. */
+  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:not([hidden]) {grid-column:auto;grid-row:span 3;display:grid!important;grid-template-rows:subgrid;align-self:stretch}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row > .card-detail-cell {display:grid!important;grid-row:1 / -1;grid-template-rows:subgrid}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail {grid-row:1 / -1;grid-template-rows:subgrid;margin:0;align-content:start}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .detail-stat:first-child {align-items:start}
+}
 /* Keyword notes share the centered artwork width on every device. */
 html body main#main-content#main-content .card-detail>.detail-keyword {
   box-sizing:border-box;width:100%;justify-self:stretch;margin-inline:0;
@@ -845,7 +865,7 @@ html body main#main-content#main-content .card-detail>.detail-keyword {
 
 
 /* Align card information with the centered artwork width. */
-html body main#main-content#main-content .card-detail>:is(header,.detail-meta,.detail-section) {
+html body main#main-content#main-content .card-detail>:is(.detail-overview,header,.detail-meta,.detail-section) {
   box-sizing:border-box;width:100%;max-width:700px;min-width:0;
   justify-self:center;overflow-wrap:anywhere;
 }
@@ -894,7 +914,7 @@ html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max
     display:grid!important;
     grid-template-columns:repeat(6,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 0 auto!important;
+    flex:0 1 392px!important;
     width:392px!important;
     max-width:100%;
     margin-left:auto;
@@ -919,6 +939,20 @@ html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max
     overflow:visible;
   }
   html body .site-header .site-nav > a {box-sizing:border-box;min-width:0!important;width:100%!important;max-width:100%;padding:6px 0!important}
+}
+
+/* Brand visibility is shared by every page, including bundled legacy styles. */
+@media screen and (min-width:601px) {
+  html body .site-header .site-brand {display:flex!important}
+  html body .site-header .site-brand > span {
+    display:block!important;position:static!important;width:auto!important;height:auto!important;
+    margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
+  }
+  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+}
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+  html body .site-header .site-brand {display:none!important}
+  html body .site-header .site-nav {flex:1 1 100%!important;width:100%!important}
 }
 
 main#main-content.detail-split{display:flex!important;flex-direction:column;gap:16px;overflow:hidden!important}.detail-split>.filters{flex:0 0 auto;max-height:40%;overflow:auto;margin:0;padding:0 0 4px}.split-body{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;flex:1;min-height:0;min-width:0;overflow:hidden}
@@ -1234,16 +1268,16 @@ html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-ra
   }
 }
 
-/* Tier A uses orange throughout labels, filters and rankings. */
-:root {--card-tier-A:rgb(250, 153, 83);--catalog-tier-A:rgb(250, 153, 83)}
+/* Tier A matches the Crimson Mantle name color throughout labels and filters. */
+:root {--card-tier-A:rgb(227, 191, 114);--catalog-tier-A:rgb(227, 191, 114)}
 html body :is(.tier,.build-tier,.card-tier-badge,.relic-tier-label,.font-extrabold)[data-tier=A] {
-  --tier-color:rgb(250, 153, 83)!important;background:rgb(250, 153, 83)!important;color:#fff!important;border-color:rgb(250, 153, 83)!important;
+  --tier-color:rgb(227, 191, 114)!important;background:rgb(227, 191, 114)!important;color:#fff!important;border-color:rgb(227, 191, 114)!important;
 }
 html body :is([data-tier-filter=A],#card-filter-tier button[value=A]) {
-  --tier-color:rgb(250, 153, 83)!important;--selection-color:rgb(250, 153, 83)!important;
+  --tier-color:rgb(227, 191, 114)!important;--selection-color:rgb(227, 191, 114)!important;
 }
 html body .card-detail :is(.detail-tier,.detail-build-tier)[data-tier=A] {
-  color:rgb(250, 153, 83);background:color-mix(in srgb,rgb(250, 153, 83) 16%,#0b1119);border-color:rgb(250, 153, 83);
+  color:rgb(227, 191, 114);background:color-mix(in srgb,rgb(227, 191, 114) 16%,#0b1119);border-color:rgb(227, 191, 114);
 }
 
 /* Solid tier labels, matching the ancient ranking label presentation. */
@@ -1259,7 +1293,7 @@ html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(250, 153, 83)!important;border:1px solid rgb(250, 153, 83)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=B][data-tier] {
@@ -1342,7 +1376,7 @@ html body #main-content #tools #card-filter-tier button[value=S] {
 }
 
 html body #main-content #tools #card-filter-tier button[value=A] {
-  color:rgb(255, 255, 255)!important;background:rgb(250, 153, 83)!important;border:1px solid rgb(250, 153, 83)!important;
+  color:rgb(255, 255, 255)!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=B] {
@@ -1373,6 +1407,14 @@ html body[data-view=grid] main#main-content#main-content #card-scroll :is(sectio
   box-sizing:border-box;width:100%;max-width:none;min-width:0;
 }
 html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:minmax(0,1fr)}
+@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine) {
+  html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  /* Share section tracks across each pair so their Energy cost rows line up. */
+  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:not([hidden]) {grid-column:auto;grid-row:span 3;display:grid!important;grid-template-rows:subgrid;align-self:stretch}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row > .card-detail-cell {display:grid!important;grid-row:1 / -1;grid-template-rows:subgrid}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail {grid-row:1 / -1;grid-template-rows:subgrid;margin:0;align-content:start}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .detail-stat:first-child {align-items:start}
+}
 /* Keyword notes share the centered artwork width on every device. */
 html body main#main-content#main-content .card-detail>.detail-keyword {
   box-sizing:border-box;width:100%;justify-self:stretch;margin-inline:0;
@@ -1380,7 +1422,7 @@ html body main#main-content#main-content .card-detail>.detail-keyword {
 
 
 /* Align card information with the centered artwork width. */
-html body main#main-content#main-content .card-detail>:is(header,.detail-meta,.detail-section) {
+html body main#main-content#main-content .card-detail>:is(.detail-overview,header,.detail-meta,.detail-section) {
   box-sizing:border-box;width:100%;max-width:700px;min-width:0;
   justify-self:center;overflow-wrap:anywhere;
 }
@@ -1430,7 +1472,7 @@ html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max
     display:grid!important;
     grid-template-columns:repeat(6,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 0 auto!important;
+    flex:0 1 392px!important;
     width:392px!important;
     max-width:100%;
     margin-left:auto;
@@ -1455,6 +1497,20 @@ html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max
     overflow:visible;
   }
   html body .site-header .site-nav > a {box-sizing:border-box;min-width:0!important;width:100%!important;max-width:100%;padding:6px 0!important}
+}
+
+/* Brand visibility is shared by every page, including bundled legacy styles. */
+@media screen and (min-width:601px) {
+  html body .site-header .site-brand {display:flex!important}
+  html body .site-header .site-brand > span {
+    display:block!important;position:static!important;width:auto!important;height:auto!important;
+    margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
+  }
+  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+}
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+  html body .site-header .site-brand {display:none!important}
+  html body .site-header .site-nav {flex:1 1 100%!important;width:100%!important}
 }
 
 /* Catalogs scroll with the document; only the navigation stays at the top. */

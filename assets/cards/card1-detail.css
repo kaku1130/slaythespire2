@@ -24,6 +24,7 @@ html body #card-scroll .card-detail-row > .card-detail-cell::before {display:non
   --character-color:#aab6c4;
   --detail-rarity-color:#b9c2cc;
   display:grid;
+  align-content:start;
   gap:16px;
   max-width:960px;
   margin:8px auto 28px;
@@ -51,12 +52,13 @@ html body #card-scroll .card-detail-row > .card-detail-cell::before {display:non
 .card-detail-row[data-rarity=Event] .card-detail {--detail-rarity-color:#6ac1b4}
 .card-detail-row[data-rarity=Quest] .card-detail {--detail-rarity-color:#c8ab79}
 .card-detail h2,.card-detail h3,.card-detail p,.card-detail dl,.card-detail figure {margin:0}
+.card-detail .detail-overview {display:grid;align-content:start;gap:16px;min-width:0}
 .card-detail .detail-title {
   display:flex;
   flex-direction:column;
   align-items:center;
   text-align:center;
-  gap:8px 16px;
+  gap:16px;
   margin:0;
   font-size:clamp(30px,3vw,42px);
   line-height:1.25;
@@ -119,6 +121,21 @@ html body #card-scroll .card-detail .detail-effect-panel p {text-align:center}
 .card-detail .detail-effect-panel .detail-effect-search {display:inline;width:auto;min-height:0;margin:0;padding:0;border:0;border-radius:2px;background:transparent;color:#74b3e6;font:inherit;font-weight:700;cursor:pointer;text-decoration:none}
 .card-detail .detail-effect-panel .detail-effect-search:hover {color:#a5d5ff}
 .card-detail .detail-effect-panel .detail-effect-search:focus-visible {outline:2px solid #74b3e6;outline-offset:3px}
+.card-detail .detail-effect-panel .detail-effect-keyword {display:inline;width:auto;min-height:0;margin:0;padding:0;border:0;border-radius:2px;background:transparent;color:#f1cd7f;font:inherit;font-weight:600;cursor:pointer;text-decoration:none}
+.card-detail .detail-effect-panel .detail-effect-keyword:hover {color:#ffe5a7}
+.card-detail .detail-effect-panel .detail-effect-keyword:focus-visible {outline:2px solid #74b3e6;outline-offset:3px}
+#card-effect-dialog {box-sizing:border-box;width:min(480px,calc(100% - 32px));max-height:calc(100dvh - 48px);margin:auto;padding:20px 24px;border:1px solid #405063;border-radius:12px;background:#101923;color:#e3e8ee;font:16px/1.6 Arial,"Microsoft JhengHei",sans-serif;box-shadow:0 20px 70px #0008;overflow:auto}
+#card-effect-dialog::backdrop {background:#000a}
+#card-effect-dialog .effect-dialog-header {display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px}
+#card-effect-dialog h2 {display:flex;align-items:center;gap:8px;min-width:0;margin:0;color:#f1cd7f;font:700 22px/1.3 Arial,"Microsoft JhengHei",sans-serif}
+#card-effect-dialog h2 img {flex:0 0 24px;width:24px;height:24px;object-fit:contain}
+#card-effect-dialog form {flex:0 0 auto;margin:0}
+#card-effect-dialog .effect-dialog-close {display:grid;place-items:center;width:32px;height:32px;min-height:0;padding:0;border:0;border-radius:6px;background:transparent;color:#aab6c4;font:26px/1 Arial,sans-serif;cursor:pointer}
+#card-effect-dialog .effect-dialog-close:hover {background:#233244;color:#fff}
+#card-effect-dialog :is(button,a):focus-visible {outline:2px solid #74b3e6;outline-offset:3px}
+#card-effect-dialog-content {overflow-wrap:anywhere}
+#card-effect-dialog-content em {color:#f1cd7f;font-style:normal;font-weight:600}
+#card-effect-dialog-content strong {color:#87ceeb}
 .card-detail .detail-stats {display:grid;gap:0}
 .card-detail .detail-stat {display:grid;grid-template-columns:minmax(96px,1fr) minmax(0,2fr);align-items:center;gap:16px;padding:11px 0;border-bottom:1px solid #1e2a38}
 .card-detail .detail-stat:last-child {border-bottom:0}
@@ -182,3 +199,6 @@ html body #card-scroll .card-detail .detail-effect-panel p {font-size:20px}
 html body #card-scroll .card-detail .detail-build-name {font-size:21.25px}
 html body #card-scroll .card-detail .detail-build-tier {font-size:25px}
 html body #card-scroll .card-detail .detail-rating-badge {font-size:30px}
+
+/* Keep the live result count at the bottom-left of the card menus. */
+html body main#main-content #tools #card-filter-result {display:block;grid-column:1 / -1;justify-self:start;width:100%;margin:0;padding:0 8px;color:#9aabbf;text-align:left;font:14px/1.4 Arial,"Microsoft JhengHei",sans-serif;font-variant-numeric:tabular-nums}

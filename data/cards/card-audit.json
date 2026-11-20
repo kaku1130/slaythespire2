@@ -1,0 +1,385 @@
+{
+  "source": "https://slaythespire2.net/card",
+  "version": "v0.111.1",
+  "checkedAt": "2026-11-20T05:16:59.986Z",
+  "referenceCount": 569,
+  "supplementalCount": 26,
+  "ancient": [
+    {
+      "id": "ABUNDANCE",
+      "name": "Abundance",
+      "nameZh": "富足",
+      "source": "https://slaythespire2.net/card/abundance"
+    },
+    {
+      "id": "APOTHEOSIS",
+      "name": "Apotheosis",
+      "nameZh": "神化",
+      "source": "https://slaythespire2.net/card/apotheosis"
+    },
+    {
+      "id": "APPARITION",
+      "name": "Apparition",
+      "nameZh": "靈體",
+      "source": "https://slaythespire2.net/card/apparition"
+    },
+    {
+      "id": "BIASED_COGNITION",
+      "name": "Biased Cognition",
+      "nameZh": "偏差認知",
+      "source": "https://slaythespire2.net/card/biased-cognition"
+    },
+    {
+      "id": "BREAK",
+      "name": "Break",
+      "nameZh": "破壞",
+      "source": "https://slaythespire2.net/card/break"
+    },
+    {
+      "id": "BRIGHTEST_FLAME",
+      "name": "Brightest Flame",
+      "nameZh": "至明烈焰",
+      "source": "https://slaythespire2.net/card/brightest-flame"
+    },
+    {
+      "id": "CORRUPTION",
+      "name": "Corruption",
+      "nameZh": "腐化",
+      "source": "https://slaythespire2.net/card/corruption"
+    },
+    {
+      "id": "FORBIDDEN_GRIMOIRE",
+      "name": "Forbidden Grimoire",
+      "nameZh": "禁忌魔典",
+      "source": "https://slaythespire2.net/card/forbidden-grimoire"
+    },
+    {
+      "id": "MAUL",
+      "name": "Maul",
+      "nameZh": "猛襲",
+      "source": "https://slaythespire2.net/card/maul"
+    },
+    {
+      "id": "METEOR_SHOWER",
+      "name": "Meteor Shower",
+      "nameZh": "流星雨",
+      "source": "https://slaythespire2.net/card/meteor-shower"
+    },
+    {
+      "id": "NEOWS_FURY",
+      "name": "Neow's Fury",
+      "nameZh": "涅奧之怒",
+      "source": "https://slaythespire2.net/card/neows-fury"
+    },
+    {
+      "id": "PROTECTOR",
+      "name": "Protector",
+      "nameZh": "護衛者",
+      "source": "https://slaythespire2.net/card/protector"
+    },
+    {
+      "id": "QUADCAST",
+      "name": "Quadcast",
+      "nameZh": "四重施放",
+      "source": "https://slaythespire2.net/card/quadcast"
+    },
+    {
+      "id": "RELAX",
+      "name": "Relax",
+      "nameZh": "放鬆",
+      "source": "https://slaythespire2.net/card/relax"
+    },
+    {
+      "id": "SUPPRESS",
+      "name": "Suppress",
+      "nameZh": "壓制",
+      "source": "https://slaythespire2.net/card/suppress"
+    },
+    {
+      "id": "THE_SEALED_THRONE",
+      "name": "The Sealed Throne",
+      "nameZh": "封印王座",
+      "source": "https://slaythespire2.net/card/the-sealed-throne"
+    },
+    {
+      "id": "WHISTLE",
+      "name": "Whistle",
+      "nameZh": "吹哨",
+      "source": "https://slaythespire2.net/card/whistle"
+    },
+    {
+      "id": "WISH",
+      "name": "Wish",
+      "nameZh": "祈願",
+      "source": "https://slaythespire2.net/card/wish"
+    },
+    {
+      "id": "WRAITH_FORM",
+      "name": "Wraith Form",
+      "nameZh": "幽魂形態",
+      "source": "https://slaythespire2.net/card/wraith-form"
+    }
+  ],
+  "added": [
+    {
+      "id": "ABUNDANCE",
+      "name": "Abundance",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "BLADE_SYMPHONY",
+      "name": "Blade Symphony",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "BLAZE",
+      "name": "Blaze",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "CACOPHONY",
+      "name": "Cacophony",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "CONCOCT",
+      "name": "Concoct",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "CONSTELLATION",
+      "name": "Constellation",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "DOWSING",
+      "name": "Dowsing",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "FADE",
+      "name": "Fade",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "HIBERNATE",
+      "name": "Hibernate",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "IMITATION_LEARNING",
+      "name": "Imitation Learning",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "MIDNIGHT",
+      "name": "Midnight",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "ONE_FOR_ALL",
+      "name": "One for All",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "OUTRAGE",
+      "name": "Outrage",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "PLOT",
+      "name": "Plot",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "SIDESTEP",
+      "name": "Sidestep",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "SOULBOUND",
+      "name": "Soulbound",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "THE_BALL",
+      "name": "The Ball",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "TUTOR",
+      "name": "Tutor",
+      "fields": [
+        "added"
+      ]
+    },
+    {
+      "id": "UNDERWORLD",
+      "name": "Underworld",
+      "fields": [
+        "added"
+      ]
+    }
+  ],
+  "changed": [
+    {
+      "id": "BEACON_OF_HOPE",
+      "name": "Beacon of Hope",
+      "fields": [
+        "energy"
+      ]
+    },
+    {
+      "id": "BRIGHTEST_FLAME",
+      "name": "Brightest Flame",
+      "fields": [
+        "descBase",
+        "descUpgraded"
+      ]
+    },
+    {
+      "id": "EIDOLON",
+      "name": "Eidolon",
+      "fields": [
+        "descBase",
+        "descUpgraded"
+      ]
+    },
+    {
+      "id": "EXPECT_A_FIGHT",
+      "name": "Expect a Fight",
+      "fields": [
+        "upgrade",
+        "descBase",
+        "descUpgraded"
+      ]
+    },
+    {
+      "id": "FLANKING",
+      "name": "Flanking",
+      "fields": [
+        "rarity"
+      ]
+    },
+    {
+      "id": "HELIX_DRILL",
+      "name": "Helix Drill",
+      "fields": [
+        "descBase",
+        "descUpgraded"
+      ]
+    },
+    {
+      "id": "IGNITION",
+      "name": "Ignition",
+      "fields": [
+        "rarity"
+      ]
+    },
+    {
+      "id": "LEGION_OF_BONE",
+      "name": "Legion of Bone",
+      "fields": [
+        "descBase",
+        "descUpgraded"
+      ]
+    },
+    {
+      "id": "MAUL",
+      "name": "Maul",
+      "fields": [
+        "descBase",
+        "descUpgraded"
+      ]
+    },
+    {
+      "id": "OUTBREAK",
+      "name": "Outbreak",
+      "fields": [
+        "descBase",
+        "descUpgraded"
+      ]
+    },
+    {
+      "id": "RELAX",
+      "name": "Relax",
+      "fields": [
+        "descBase",
+        "descUpgraded"
+      ]
+    },
+    {
+      "id": "SYNCHRONIZE",
+      "name": "Synchronize",
+      "fields": [
+        "upgrade"
+      ]
+    },
+    {
+      "id": "TANK",
+      "name": "Tank",
+      "fields": [
+        "descBase",
+        "descUpgraded"
+      ]
+    },
+    {
+      "id": "WELL_LAID_PLANS",
+      "name": "Well-Laid Plans",
+      "fields": [
+        "descBase",
+        "descUpgraded"
+      ]
+    },
+    {
+      "id": "WHISTLE",
+      "name": "Whistle",
+      "fields": [
+        "energy"
+      ]
+    }
+  ],
+  "removed": [
+    {
+      "id": "SCARE",
+      "name": "Sidestep"
+    }
+  ],
+  "mergedSupplemental": [
+    "DOWSING"
+  ]
+}

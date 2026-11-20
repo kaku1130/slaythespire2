@@ -24,6 +24,14 @@
     main.prepend(toolbar);
   }
   if (!search) return;
+  // Clear catalog selections before each page applies a new keyword search.
+  search.addEventListener('input', () => {
+    if (!search.value.trim()) return;
+    for (const button of main.querySelectorAll('#card-filter-character button,#card-filter-type button,#card-filter-rarity button,#card-filter-tier button,button[data-catalog-filter]')) {
+      button.setAttribute('aria-pressed', 'false');
+    }
+    delete search.dataset.preferredPool;
+  }, true);
   const style = document.createElement('style');
   style.textContent = `
 .shared-page-search{display:flex;flex:0 0 auto;align-items:center;gap:12px;width:100%;min-width:0;margin:0 0 8px}

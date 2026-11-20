@@ -1,0 +1,3778 @@
+{
+  "source": "https://slaythespire2.net/card",
+  "version": "v0.111.1",
+  "checkedAt": "2026-11-20T05:43:59.514Z",
+  "terms": {
+    "card:Shiv:9ef3cfd0574e": {
+      "key": "card:Shiv",
+      "title": "Shiv",
+      "description": "",
+      "card": {
+        "name": "Shiv",
+        "description": "Deal 4 damage.\n<g>Exhaust</g>.",
+        "energy": 0,
+        "starCost": "$undefined",
+        "type": "Attack",
+        "rarity": "Token",
+        "pool": "Token",
+        "imagePath": "/images/cards/token/shiv.webp"
+      }
+    },
+    "power:POISON_POWER:935963d6350c": {
+      "key": "power:POISON_POWER",
+      "title": "Poison",
+      "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by <b>1</b>.",
+      "icon": "/images/powers/poison_power.webp",
+      "debuff": true
+    },
+    "keyword:EXHAUST:100a1f833df4": {
+      "key": "keyword:EXHAUST",
+      "title": "Exhaust",
+      "description": "Removed until the end of combat."
+    },
+    "power:DEXTERITY_POWER:7be76cc63be8": {
+      "key": "power:DEXTERITY_POWER",
+      "title": "Dexterity",
+      "description": "Dexterity improves <g>Block</g> gained from cards.",
+      "icon": "/images/powers/dexterity_power.webp"
+    },
+    "power:THORNS_POWER:a6ae39d87e5d": {
+      "key": "power:THORNS_POWER",
+      "title": "Thorns",
+      "description": "When hit by an attack, deal damage back.",
+      "icon": "/images/powers/thorns_power.webp"
+    },
+    "keyword:SLY:86386fee6e80": {
+      "key": "keyword:SLY",
+      "title": "Sly",
+      "description": "If this card is discarded from your <g>Hand</g> before the end of your turn, play it for free."
+    },
+    "static:ENERGY:a783d31e41bc": {
+      "key": "static:ENERGY",
+      "title": "Energy",
+      "description": "Energy is used to play cards from your <g>Hand</g>."
+    },
+    "static:SUMMON_DYNAMIC:e2bf7a712176": {
+      "key": "static:SUMMON_DYNAMIC",
+      "title": "Summon {Summon}",
+      "description": "Summon <g>Osty</g> with <b>{Summon}</b> HP.\nIf already summoned, raise his Max HP by <b>{Summon}</b> for this combat."
+    },
+    "keyword:INNATE:60218b99a8c9": {
+      "key": "keyword:INNATE",
+      "title": "Innate",
+      "description": "Start each combat with this card in your <g>Hand</g>."
+    },
+    "static:BLOCK:bad33e82d153": {
+      "key": "static:BLOCK",
+      "title": "Block",
+      "description": "Until next turn, prevents damage."
+    },
+    "keyword:RETAIN:4562fe2ab21b": {
+      "key": "keyword:RETAIN",
+      "title": "Retain",
+      "description": "Retained cards are not discarded at the end of turn."
+    },
+    "power:INTANGIBLE_POWER:30cc817f7450": {
+      "key": "power:INTANGIBLE_POWER",
+      "title": "Intangible",
+      "description": "Reduce all damage taken and HP loss to <b>1</b> this turn.",
+      "icon": "/images/powers/intangible_power.webp"
+    },
+    "keyword:ETHEREAL:8a3066702cff": {
+      "key": "keyword:ETHEREAL",
+      "title": "Ethereal",
+      "description": "If this card is in your <g>Hand</g> at the end of this turn, it is <g>Exhausted</g>."
+    },
+    "power:STRENGTH_POWER:88bb8b08758c": {
+      "key": "power:STRENGTH_POWER",
+      "title": "Strength",
+      "description": "Strength adds additional damage to Attacks.",
+      "icon": "/images/powers/strength_power.webp"
+    },
+    "keyword:ETERNAL:342c66e2f2f7": {
+      "key": "keyword:ETERNAL",
+      "title": "Eternal",
+      "description": "Cannot be removed or transformed from your <g>Deck</g>."
+    },
+    "keyword:UNPLAYABLE:f4e9117fd412": {
+      "key": "keyword:UNPLAYABLE",
+      "title": "Unplayable",
+      "description": "Unplayable cards cannot be played."
+    },
+    "power:VULNERABLE_POWER:fa50fe906817": {
+      "key": "power:VULNERABLE_POWER",
+      "title": "Vulnerable",
+      "description": "Vulnerable creatures take <b>50%</b> more damage from Attacks.",
+      "icon": "/images/powers/vulnerable_power.webp",
+      "debuff": true
+    },
+    "static:CHANNELING:80956c06559a": {
+      "key": "static:CHANNELING",
+      "title": "Channel",
+      "description": "Channeling an Orb puts it into your first empty slot. If you have no empty slots, your first Orb is automatically <g>Evoked</g> to make room."
+    },
+    "orb:LIGHTNING_ORB:fa461daf2382": {
+      "key": "orb:LIGHTNING_ORB",
+      "title": "Lightning",
+      "description": "Orb: Deals damage to random enemies.",
+      "icon": "/images/orbs/lightning_orb.webp"
+    },
+    "static:FORGE:a357f5fb12be": {
+      "key": "static:FORGE",
+      "title": "Forge",
+      "description": "The first time you <g>Forge</g> each combat, add <g>Sovereign Blade</g> into your <g>Hand</g>. Adds additional damage to <g>Sovereign Blade</g>."
+    },
+    "card:SovereignBlade:251eef95c1b4": {
+      "key": "card:SovereignBlade",
+      "title": "Sovereign Blade",
+      "description": "",
+      "card": {
+        "name": "Sovereign Blade",
+        "description": "<g>Retain</g>.\nDeal 10 damage.",
+        "energy": 2,
+        "starCost": "$undefined",
+        "type": "Attack",
+        "rarity": "Token",
+        "pool": "Token",
+        "imagePath": "/images/cards/token/sovereign_blade.webp"
+      }
+    },
+    "card:MinionStrike:f2fee39fc1bd": {
+      "key": "card:MinionStrike",
+      "title": "Minion Strike",
+      "description": "",
+      "card": {
+        "name": "Minion Strike",
+        "description": "Deal 6 damage.\nDraw 1 card.\n<g>Exhaust</g>.",
+        "energy": 0,
+        "starCost": "$undefined",
+        "type": "Attack",
+        "rarity": "Token",
+        "pool": "Token",
+        "imagePath": "/images/cards/token/minion_strike.webp"
+      }
+    },
+    "power:FOCUS_POWER:38572dbaae07": {
+      "key": "power:FOCUS_POWER",
+      "title": "Focus",
+      "description": "Increases the effectiveness of Orbs.",
+      "icon": "/images/powers/focus_power.webp"
+    },
+    "enchantment:INKY:60b258e5f6df": {
+      "key": "enchantment:INKY",
+      "title": "Inky",
+      "description": "This card applies <b>{WeakPower}</b> <g>Weak</g>."
+    },
+    "power:WEAK_POWER:eb231a537947": {
+      "key": "power:WEAK_POWER",
+      "title": "Weak",
+      "description": "Weakened creatures deal <b>25%</b> less damage with Attacks.",
+      "icon": "/images/powers/weak_power.webp",
+      "debuff": true
+    },
+    "power:DOOM_POWER:0e2948813424": {
+      "key": "power:DOOM_POWER",
+      "title": "Doom",
+      "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies.",
+      "icon": "/images/powers/doom_power.webp",
+      "debuff": true
+    },
+    "card:Dazed:6ddbc3cf2eb3": {
+      "key": "card:Dazed",
+      "title": "Dazed",
+      "description": "",
+      "card": {
+        "name": "Dazed",
+        "description": "<g>Unplayable</g>.\n<g>Ethereal</g>.",
+        "energy": "$undefined",
+        "starCost": "$undefined",
+        "type": "Status",
+        "rarity": "Status",
+        "pool": "Status",
+        "imagePath": "/images/cards/status/dazed.webp"
+      }
+    },
+    "card:Soul:afbf4481f2ec": {
+      "key": "card:Soul",
+      "title": "Soul",
+      "description": "",
+      "card": {
+        "name": "Soul",
+        "description": "Draw 2 cards.\n<g>Exhaust</g>.",
+        "energy": 0,
+        "starCost": "$undefined",
+        "type": "Skill",
+        "rarity": "Token",
+        "pool": "Token",
+        "imagePath": "/images/cards/token/soul.webp"
+      }
+    },
+    "card:MinionDiveBomb:b63fcdb7ab38": {
+      "key": "card:MinionDiveBomb",
+      "title": "Minion Dive Bomb",
+      "description": "",
+      "card": {
+        "name": "Minion Dive Bomb",
+        "description": "Deal 13 damage.\n<g>Exhaust</g>.",
+        "energy": 0,
+        "starCost": "$undefined",
+        "type": "Attack",
+        "rarity": "Token",
+        "pool": "Token",
+        "imagePath": "/images/cards/token/minion_dive_bomb.webp"
+      }
+    },
+    "orb:FROST_ORB:02bad19409dc": {
+      "key": "orb:FROST_ORB",
+      "title": "Frost",
+      "description": "Orb: Gains <g>Block</g>.",
+      "icon": "/images/orbs/frost_orb.webp"
+    },
+    "card:Debris:406d3dd2155d": {
+      "key": "card:Debris",
+      "title": "Debris",
+      "description": "",
+      "card": {
+        "name": "Debris",
+        "description": "<g>Exhaust</g>.",
+        "energy": 1,
+        "starCost": "$undefined",
+        "type": "Status",
+        "rarity": "Status",
+        "pool": "Status",
+        "imagePath": "/images/cards/status/debris.webp"
+      }
+    },
+    "card:Fuel:fe4763e7ac53": {
+      "key": "card:Fuel",
+      "title": "Fuel",
+      "description": "",
+      "card": {
+        "name": "Fuel",
+        "description": "Gain <e>1</e>.\n<g>Exhaust</g>.",
+        "energy": 0,
+        "starCost": "$undefined",
+        "type": "Skill",
+        "rarity": "Token",
+        "pool": "Token",
+        "imagePath": "/images/cards/token/fuel.webp"
+      }
+    },
+    "static:TRANSFORM:2b6623d04d6d": {
+      "key": "static:TRANSFORM",
+      "title": "Transform",
+      "description": "Transformed cards become a random card of any rarity."
+    },
+    "orb:DARK_ORB:d51c2efff3da": {
+      "key": "orb:DARK_ORB",
+      "title": "Dark",
+      "description": "Orb: When <g>Evoked</g>, deals damage to the enemy with the least HP. Increases damage every turn.",
+      "icon": "/images/orbs/dark_orb.webp"
+    },
+    "static:EVOKE:66a30e74ae3e": {
+      "key": "static:EVOKE",
+      "title": "Evoke",
+      "description": "Consume your rightmost Orb and use its Evoke effect."
+    },
+    "static:SUMMON_STATIC:6bd721600dea": {
+      "key": "static:SUMMON_STATIC",
+      "title": "Summon",
+      "description": "Summon <g>Osty</g>.\nIf already summoned, raise his Max HP for this combat."
+    },
+    "card:Abundance:3622e0cc7fd5": {
+      "key": "card:Abundance",
+      "title": "Abundance",
+      "description": "",
+      "card": {
+        "name": "Abundance",
+        "description": "Choose 1 of 3 <g>Upgraded</g> <g>Powers</g> to add into your <g>Hand</g>. It's free to play this turn.\n<g>Exhaust</g>.",
+        "energy": 1,
+        "starCost": "$undefined",
+        "type": "Skill",
+        "rarity": "Ancient",
+        "pool": "Event",
+        "imagePath": "/images/cards/event/abundance.webp"
+      }
+    },
+    "power:PLATING_POWER:0c9bb7067554": {
+      "key": "power:PLATING_POWER",
+      "title": "Plating",
+      "description": "At the end of your turn, gain <g>Block</g>. <g>Plating</g> is reduced by <b>1</b> at the start of your turn.",
+      "icon": "/images/powers/plating_power.webp"
+    },
+    "power:ARTIFACT_POWER:cbf0cf6cd8f7": {
+      "key": "power:ARTIFACT_POWER",
+      "title": "Artifact",
+      "description": "<g>Negates</g> debuffs.",
+      "icon": "/images/powers/artifact_power.webp"
+    },
+    "static:FATAL:34d586a3829b": {
+      "key": "static:FATAL",
+      "title": "Fatal",
+      "description": "Triggers whenever this card kills a non-minion enemy."
+    },
+    "card:Wound:ce6b927a830f": {
+      "key": "card:Wound",
+      "title": "Wound",
+      "description": "",
+      "card": {
+        "name": "Wound",
+        "description": "<g>Unplayable</g>.",
+        "energy": "$undefined",
+        "starCost": "$undefined",
+        "type": "Status",
+        "rarity": "Status",
+        "pool": "Status",
+        "imagePath": "/images/cards/status/wound.webp"
+      }
+    },
+    "orb:PLASMA_ORB:03f242c4f672": {
+      "key": "orb:PLASMA_ORB",
+      "title": "Plasma",
+      "description": "Orb: Gains Energy.",
+      "icon": "/images/orbs/plasma_orb.webp"
+    },
+    "orb:GLASS_ORB:c6fd352fa803": {
+      "key": "orb:GLASS_ORB",
+      "title": "Glass",
+      "description": "Orb: Deals damage to ALL enemies. Decreases damage every turn.",
+      "icon": "/images/orbs/glass_orb.webp"
+    },
+    "card:MinionSacrifice:5e5cee069566": {
+      "key": "card:MinionSacrifice",
+      "title": "Minion Sacrifice",
+      "description": "",
+      "card": {
+        "name": "Minion Sacrifice",
+        "description": "Gain 7 <g>Block</g>.\n<g>Exhaust</g>.",
+        "energy": 0,
+        "starCost": "$undefined",
+        "type": "Skill",
+        "rarity": "Token",
+        "pool": "Token",
+        "imagePath": "/images/cards/token/minion_sacrifice.webp"
+      }
+    },
+    "card:Slimed:3554d91572ec": {
+      "key": "card:Slimed",
+      "title": "Slimed",
+      "description": "",
+      "card": {
+        "name": "Slimed",
+        "description": "Draw 1 card.\n<g>Exhaust</g>.",
+        "energy": 1,
+        "starCost": "$undefined",
+        "type": "Status",
+        "rarity": "Status",
+        "pool": "Status",
+        "imagePath": "/images/cards/status/slimed.webp"
+      }
+    },
+    "static:REPLAY_STATIC:9173528f8804": {
+      "key": "static:REPLAY_STATIC",
+      "title": "Replay",
+      "description": "Plays this card an additional time."
+    },
+    "card:Burn:82afe9ccf3b5": {
+      "key": "card:Burn",
+      "title": "Burn",
+      "description": "",
+      "card": {
+        "name": "Burn",
+        "description": "<g>Unplayable</g>.\nAt the end of your turn, if this is in your <g>Hand</g>, take 2 damage.",
+        "energy": "$undefined",
+        "starCost": "$undefined",
+        "type": "Status",
+        "rarity": "Status",
+        "pool": "Status",
+        "imagePath": "/images/cards/status/burn.webp"
+      }
+    },
+    "power:VIGOR_POWER:d589c8e854ba": {
+      "key": "power:VIGOR_POWER",
+      "title": "Vigor",
+      "description": "Your next Attack deals additional damage.",
+      "icon": "/images/powers/vigor_power.webp"
+    },
+    "card:GiantRock:14cc4f430fcc": {
+      "key": "card:GiantRock",
+      "title": "Giant Rock",
+      "description": "",
+      "card": {
+        "name": "Giant Rock",
+        "description": "Deal 20 damage.",
+        "energy": 1,
+        "starCost": "$undefined",
+        "type": "Attack",
+        "rarity": "Token",
+        "pool": "Token",
+        "imagePath": "/images/cards/token/giant_rock.webp"
+      }
+    },
+    "card:SweepingGaze:388cc4be871a": {
+      "key": "card:SweepingGaze",
+      "title": "Sweeping Gaze",
+      "description": "",
+      "card": {
+        "name": "Sweeping Gaze",
+        "description": "<g>Ethereal</g>.\n<g>Osty</g> deals 10 damage to a random enemy.\n<g>Exhaust</g>.",
+        "energy": 0,
+        "starCost": "$undefined",
+        "type": "Attack",
+        "rarity": "Token",
+        "pool": "Token",
+        "imagePath": "/images/cards/token/sweeping_gaze.webp"
+      }
+    },
+    "power:FRAIL_POWER:212bdc114f23": {
+      "key": "power:FRAIL_POWER",
+      "title": "Frail",
+      "description": "While Frail, gain <b>25%</b> less <g>Block</g> from cards.",
+      "icon": "/images/powers/frail_power.webp",
+      "debuff": true
+    },
+    "card:Void:20b31506b0d4": {
+      "key": "card:Void",
+      "title": "Void",
+      "description": "",
+      "card": {
+        "name": "Void",
+        "description": "<g>Unplayable</g>.\n<g>Ethereal</g>.\nWhenever you draw this card, lose <e>1</e>.",
+        "energy": "$undefined",
+        "starCost": "$undefined",
+        "type": "Status",
+        "rarity": "Status",
+        "pool": "Status",
+        "imagePath": "/images/cards/status/void.webp"
+      }
+    }
+  },
+  "cards": {
+    "ABRASIVE": {
+      "source": "https://slaythespire2.net/card/abrasive",
+      "keys": [
+        "power:DEXTERITY_POWER:7be76cc63be8",
+        "power:THORNS_POWER:a6ae39d87e5d",
+        "keyword:SLY:86386fee6e80"
+      ]
+    },
+    "ABUNDANCE": {
+      "source": "https://slaythespire2.net/card/abundance",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "ACCELERANT": {
+      "source": "https://slaythespire2.net/card/accelerant",
+      "keys": [
+        "power:POISON_POWER:935963d6350c"
+      ]
+    },
+    "ACCURACY": {
+      "source": "https://slaythespire2.net/card/accuracy",
+      "keys": [
+        "card:Shiv:9ef3cfd0574e"
+      ]
+    },
+    "ACROBATICS": {
+      "source": "https://slaythespire2.net/card/acrobatics",
+      "keys": []
+    },
+    "ADAPTIVE_STRIKE": {
+      "source": "https://slaythespire2.net/card/adaptive-strike",
+      "keys": []
+    },
+    "ADRENALINE": {
+      "source": "https://slaythespire2.net/card/adrenaline",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "AFTERIMAGE": {
+      "source": "https://slaythespire2.net/card/afterimage",
+      "keys": [
+        "static:BLOCK:bad33e82d153",
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "AFTERLIFE": {
+      "source": "https://slaythespire2.net/card/afterlife",
+      "keys": [
+        "static:SUMMON_DYNAMIC:e2bf7a712176",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "AGGRESSION": {
+      "source": "https://slaythespire2.net/card/aggression",
+      "keys": [
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "ALCHEMIZE": {
+      "source": "https://slaythespire2.net/card/alchemize",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "ALIGNMENT": {
+      "source": "https://slaythespire2.net/card/alignment",
+      "keys": [
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "ALL_FOR_ONE": {
+      "source": "https://slaythespire2.net/card/all-for-one",
+      "keys": []
+    },
+    "ANGER": {
+      "source": "https://slaythespire2.net/card/anger",
+      "keys": []
+    },
+    "ANOINTED": {
+      "source": "https://slaythespire2.net/card/anointed",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "ANTICIPATE": {
+      "source": "https://slaythespire2.net/card/anticipate",
+      "keys": [
+        "power:DEXTERITY_POWER:7be76cc63be8"
+      ]
+    },
+    "APOTHEOSIS": {
+      "source": "https://slaythespire2.net/card/apotheosis",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4",
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "APPARITION": {
+      "source": "https://slaythespire2.net/card/apparition",
+      "keys": [
+        "power:INTANGIBLE_POWER:30cc817f7450",
+        "keyword:ETHEREAL:8a3066702cff",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "ARMAMENTS": {
+      "source": "https://slaythespire2.net/card/armaments",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "ARSENAL": {
+      "source": "https://slaythespire2.net/card/arsenal",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c",
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "ASCENDERS_BANE": {
+      "source": "https://slaythespire2.net/card/ascenders-bane",
+      "keys": [
+        "keyword:ETERNAL:342c66e2f2f7",
+        "keyword:UNPLAYABLE:f4e9117fd412",
+        "keyword:ETHEREAL:8a3066702cff",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "ASHEN_STRIKE": {
+      "source": "https://slaythespire2.net/card/ashen-strike",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "ASSASSINATE": {
+      "source": "https://slaythespire2.net/card/assassinate",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817",
+        "keyword:INNATE:60218b99a8c9",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "ASTRAL_PULSE": {
+      "source": "https://slaythespire2.net/card/astral-pulse",
+      "keys": []
+    },
+    "AUTOMATION": {
+      "source": "https://slaythespire2.net/card/automation",
+      "keys": [
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "BACKFLIP": {
+      "source": "https://slaythespire2.net/card/backflip",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "BACKSTAB": {
+      "source": "https://slaythespire2.net/card/backstab",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4",
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "BAD_LUCK": {
+      "source": "https://slaythespire2.net/card/bad-luck",
+      "keys": [
+        "keyword:ETERNAL:342c66e2f2f7",
+        "keyword:UNPLAYABLE:f4e9117fd412"
+      ]
+    },
+    "BALL_LIGHTNING": {
+      "source": "https://slaythespire2.net/card/ball-lightning",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:LIGHTNING_ORB:fa461daf2382"
+      ]
+    },
+    "BANSHEES_CRY": {
+      "source": "https://slaythespire2.net/card/banshees-cry",
+      "keys": [
+        "keyword:ETHEREAL:8a3066702cff"
+      ]
+    },
+    "BARRAGE": {
+      "source": "https://slaythespire2.net/card/barrage",
+      "keys": [
+        "static:CHANNELING:80956c06559a"
+      ]
+    },
+    "BARRICADE": {
+      "source": "https://slaythespire2.net/card/barricade",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "BASH": {
+      "source": "https://slaythespire2.net/card/bash",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817"
+      ]
+    },
+    "BATTLE_TRANCE": {
+      "source": "https://slaythespire2.net/card/battle-trance",
+      "keys": []
+    },
+    "BEACON_OF_HOPE": {
+      "source": "https://slaythespire2.net/card/beacon-of-hope",
+      "keys": [
+        "static:BLOCK:bad33e82d153",
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "BEAM_CELL": {
+      "source": "https://slaythespire2.net/card/beam-cell",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817"
+      ]
+    },
+    "BEAT_DOWN": {
+      "source": "https://slaythespire2.net/card/beat-down",
+      "keys": []
+    },
+    "BEAT_INTO_SHAPE": {
+      "source": "https://slaythespire2.net/card/beat-into-shape",
+      "keys": [
+        "static:FORGE:a357f5fb12be",
+        "card:SovereignBlade:251eef95c1b4"
+      ]
+    },
+    "BEGONE": {
+      "source": "https://slaythespire2.net/card/begone",
+      "keys": [
+        "card:MinionStrike:f2fee39fc1bd"
+      ]
+    },
+    "BELIEVE_IN_YOU": {
+      "source": "https://slaythespire2.net/card/believe-in-you",
+      "keys": [
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "BIASED_COGNITION": {
+      "source": "https://slaythespire2.net/card/biased-cognition",
+      "keys": [
+        "power:FOCUS_POWER:38572dbaae07"
+      ]
+    },
+    "BIG_BANG": {
+      "source": "https://slaythespire2.net/card/big-bang",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "static:FORGE:a357f5fb12be",
+        "card:SovereignBlade:251eef95c1b4",
+        "keyword:EXHAUST:100a1f833df4",
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "BLACK_HOLE": {
+      "source": "https://slaythespire2.net/card/black-hole",
+      "keys": []
+    },
+    "BLADE_DANCE": {
+      "source": "https://slaythespire2.net/card/blade-dance",
+      "keys": [
+        "card:Shiv:9ef3cfd0574e",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "BLADE_OF_INK": {
+      "source": "https://slaythespire2.net/card/blade-of-ink",
+      "keys": [
+        "card:Shiv:9ef3cfd0574e",
+        "enchantment:INKY:60b258e5f6df",
+        "power:WEAK_POWER:eb231a537947"
+      ]
+    },
+    "BLADE_SYMPHONY": {
+      "source": "https://slaythespire2.net/card/blade-symphony",
+      "keys": [
+        "card:Shiv:9ef3cfd0574e"
+      ]
+    },
+    "BLAZE": {
+      "source": "https://slaythespire2.net/card/blaze",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c"
+      ]
+    },
+    "BLIGHT_STRIKE": {
+      "source": "https://slaythespire2.net/card/blight-strike",
+      "keys": [
+        "power:DOOM_POWER:0e2948813424"
+      ]
+    },
+    "BLOOD_WALL": {
+      "source": "https://slaythespire2.net/card/blood-wall",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "BLOODLETTING": {
+      "source": "https://slaythespire2.net/card/bloodletting",
+      "keys": [
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "BLUDGEON": {
+      "source": "https://slaythespire2.net/card/bludgeon",
+      "keys": []
+    },
+    "BLUR": {
+      "source": "https://slaythespire2.net/card/blur",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "BODY_SLAM": {
+      "source": "https://slaythespire2.net/card/body-slam",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "BODYGUARD": {
+      "source": "https://slaythespire2.net/card/bodyguard",
+      "keys": [
+        "static:SUMMON_DYNAMIC:e2bf7a712176"
+      ]
+    },
+    "BOLAS": {
+      "source": "https://slaythespire2.net/card/bolas",
+      "keys": []
+    },
+    "BOMBARDMENT": {
+      "source": "https://slaythespire2.net/card/bombardment",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "BONE_SHARDS": {
+      "source": "https://slaythespire2.net/card/bone-shards",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "BOOST_AWAY": {
+      "source": "https://slaythespire2.net/card/boost-away",
+      "keys": [
+        "card:Dazed:6ddbc3cf2eb3",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "BOOT_SEQUENCE": {
+      "source": "https://slaythespire2.net/card/boot-sequence",
+      "keys": [
+        "static:BLOCK:bad33e82d153",
+        "keyword:INNATE:60218b99a8c9",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "BORROWED_TIME": {
+      "source": "https://slaythespire2.net/card/borrowed-time",
+      "keys": [
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "BOUNCING_FLASK": {
+      "source": "https://slaythespire2.net/card/bouncing-flask",
+      "keys": [
+        "power:POISON_POWER:935963d6350c"
+      ]
+    },
+    "BRAND": {
+      "source": "https://slaythespire2.net/card/brand",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4",
+        "power:STRENGTH_POWER:88bb8b08758c"
+      ]
+    },
+    "BREAK": {
+      "source": "https://slaythespire2.net/card/break",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817"
+      ]
+    },
+    "BREAKTHROUGH": {
+      "source": "https://slaythespire2.net/card/breakthrough",
+      "keys": []
+    },
+    "BRIGHTEST_FLAME": {
+      "source": "https://slaythespire2.net/card/brightest-flame",
+      "keys": [
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "BUBBLE_BUBBLE": {
+      "source": "https://slaythespire2.net/card/bubble-bubble",
+      "keys": [
+        "power:POISON_POWER:935963d6350c"
+      ]
+    },
+    "BUFFER": {
+      "source": "https://slaythespire2.net/card/buffer",
+      "keys": []
+    },
+    "BULK_UP": {
+      "source": "https://slaythespire2.net/card/bulk-up",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c",
+        "power:DEXTERITY_POWER:7be76cc63be8"
+      ]
+    },
+    "BULLET_TIME": {
+      "source": "https://slaythespire2.net/card/bullet-time",
+      "keys": []
+    },
+    "BULLY": {
+      "source": "https://slaythespire2.net/card/bully",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817"
+      ]
+    },
+    "BULWARK": {
+      "source": "https://slaythespire2.net/card/bulwark",
+      "keys": [
+        "static:FORGE:a357f5fb12be",
+        "card:SovereignBlade:251eef95c1b4",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "BUNDLE_OF_JOY": {
+      "source": "https://slaythespire2.net/card/bundle-of-joy",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "BURNING_PACT": {
+      "source": "https://slaythespire2.net/card/burning-pact",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "BURST": {
+      "source": "https://slaythespire2.net/card/burst",
+      "keys": []
+    },
+    "BURY": {
+      "source": "https://slaythespire2.net/card/bury",
+      "keys": []
+    },
+    "BYRD_SWOOP": {
+      "source": "https://slaythespire2.net/card/byrd-swoop",
+      "keys": []
+    },
+    "BYRDONIS_EGG": {
+      "source": "https://slaythespire2.net/card/byrdonis-egg",
+      "keys": [
+        "keyword:UNPLAYABLE:f4e9117fd412"
+      ]
+    },
+    "CACOPHONY": {
+      "source": "https://slaythespire2.net/card/cacophony",
+      "keys": []
+    },
+    "CALAMITY": {
+      "source": "https://slaythespire2.net/card/calamity",
+      "keys": []
+    },
+    "CALCIFY": {
+      "source": "https://slaythespire2.net/card/calcify",
+      "keys": []
+    },
+    "CALCULATED_GAMBLE": {
+      "source": "https://slaythespire2.net/card/calculated-gamble",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "CALL_OF_THE_VOID": {
+      "source": "https://slaythespire2.net/card/call-of-the-void",
+      "keys": [
+        "keyword:ETHEREAL:8a3066702cff",
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "CALTROPS": {
+      "source": "https://slaythespire2.net/card/caltrops",
+      "keys": [
+        "power:THORNS_POWER:a6ae39d87e5d"
+      ]
+    },
+    "CAPACITOR": {
+      "source": "https://slaythespire2.net/card/capacitor",
+      "keys": []
+    },
+    "CAPTURE_SPIRIT": {
+      "source": "https://slaythespire2.net/card/capture-spirit",
+      "keys": [
+        "card:Soul:afbf4481f2ec"
+      ]
+    },
+    "CASCADE": {
+      "source": "https://slaythespire2.net/card/cascade",
+      "keys": []
+    },
+    "CATASTROPHE": {
+      "source": "https://slaythespire2.net/card/catastrophe",
+      "keys": []
+    },
+    "CELESTIAL_MIGHT": {
+      "source": "https://slaythespire2.net/card/celestial-might",
+      "keys": []
+    },
+    "CHAOS": {
+      "source": "https://slaythespire2.net/card/chaos",
+      "keys": [
+        "static:CHANNELING:80956c06559a"
+      ]
+    },
+    "CHARGE": {
+      "source": "https://slaythespire2.net/card/charge",
+      "keys": [
+        "card:MinionDiveBomb:b63fcdb7ab38"
+      ]
+    },
+    "CHARGE_BATTERY": {
+      "source": "https://slaythespire2.net/card/charge-battery",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "CHILD_OF_THE_STARS": {
+      "source": "https://slaythespire2.net/card/child-of-the-stars",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "CHILL": {
+      "source": "https://slaythespire2.net/card/chill",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:FROST_ORB:02bad19409dc",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "CINDER": {
+      "source": "https://slaythespire2.net/card/cinder",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "CLASH": {
+      "source": "https://slaythespire2.net/card/clash",
+      "keys": []
+    },
+    "CLAW": {
+      "source": "https://slaythespire2.net/card/claw",
+      "keys": []
+    },
+    "CLEANSE": {
+      "source": "https://slaythespire2.net/card/cleanse",
+      "keys": [
+        "static:SUMMON_DYNAMIC:e2bf7a712176",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "CLOAK_AND_DAGGER": {
+      "source": "https://slaythespire2.net/card/cloak-and-dagger",
+      "keys": [
+        "card:Shiv:9ef3cfd0574e",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "CLOAK_OF_STARS": {
+      "source": "https://slaythespire2.net/card/cloak-of-stars",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "CLUMSY": {
+      "source": "https://slaythespire2.net/card/clumsy",
+      "keys": [
+        "keyword:UNPLAYABLE:f4e9117fd412",
+        "keyword:ETHEREAL:8a3066702cff",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "COLD_SNAP": {
+      "source": "https://slaythespire2.net/card/cold-snap",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:FROST_ORB:02bad19409dc"
+      ]
+    },
+    "COLLISION_COURSE": {
+      "source": "https://slaythespire2.net/card/collision-course",
+      "keys": [
+        "card:Debris:406d3dd2155d"
+      ]
+    },
+    "COLOSSUS": {
+      "source": "https://slaythespire2.net/card/colossus",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "COMET": {
+      "source": "https://slaythespire2.net/card/comet",
+      "keys": [
+        "power:WEAK_POWER:eb231a537947",
+        "power:VULNERABLE_POWER:fa50fe906817"
+      ]
+    },
+    "COMPACT": {
+      "source": "https://slaythespire2.net/card/compact",
+      "keys": [
+        "card:Fuel:fe4763e7ac53",
+        "static:TRANSFORM:2b6623d04d6d",
+        "static:ENERGY:a783d31e41bc",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "COMPILE_DRIVER": {
+      "source": "https://slaythespire2.net/card/compile-driver",
+      "keys": []
+    },
+    "CONCOCT": {
+      "source": "https://slaythespire2.net/card/concoct",
+      "keys": [
+        "power:POISON_POWER:935963d6350c"
+      ]
+    },
+    "CONFLAGRATION": {
+      "source": "https://slaythespire2.net/card/conflagration",
+      "keys": []
+    },
+    "CONQUEROR": {
+      "source": "https://slaythespire2.net/card/conqueror",
+      "keys": [
+        "static:FORGE:a357f5fb12be",
+        "card:SovereignBlade:251eef95c1b4"
+      ]
+    },
+    "CONSTELLATION": {
+      "source": "https://slaythespire2.net/card/constellation",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "CONSUMING_SHADOW": {
+      "source": "https://slaythespire2.net/card/consuming-shadow",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:DARK_ORB:d51c2efff3da",
+        "static:EVOKE:66a30e74ae3e"
+      ]
+    },
+    "CONVERGENCE": {
+      "source": "https://slaythespire2.net/card/convergence",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "COOLANT": {
+      "source": "https://slaythespire2.net/card/coolant",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "COOLHEADED": {
+      "source": "https://slaythespire2.net/card/coolheaded",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:FROST_ORB:02bad19409dc"
+      ]
+    },
+    "COORDINATE": {
+      "source": "https://slaythespire2.net/card/coordinate",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c"
+      ]
+    },
+    "CORROSIVE_WAVE": {
+      "source": "https://slaythespire2.net/card/corrosive-wave",
+      "keys": [
+        "power:POISON_POWER:935963d6350c"
+      ]
+    },
+    "CORRUPTION": {
+      "source": "https://slaythespire2.net/card/corruption",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "COSMIC_INDIFFERENCE": {
+      "source": "https://slaythespire2.net/card/cosmic-indifference",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "COUNTDOWN": {
+      "source": "https://slaythespire2.net/card/countdown",
+      "keys": [
+        "power:DOOM_POWER:0e2948813424"
+      ]
+    },
+    "CRASH_LANDING": {
+      "source": "https://slaythespire2.net/card/crash-landing",
+      "keys": [
+        "card:Debris:406d3dd2155d"
+      ]
+    },
+    "CREATIVE_AI": {
+      "source": "https://slaythespire2.net/card/creative-ai",
+      "keys": []
+    },
+    "CRESCENT_SPEAR": {
+      "source": "https://slaythespire2.net/card/crescent-spear",
+      "keys": []
+    },
+    "CRIMSON_MANTLE": {
+      "source": "https://slaythespire2.net/card/crimson-mantle",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "CRUELTY": {
+      "source": "https://slaythespire2.net/card/cruelty",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817"
+      ]
+    },
+    "CRUSH_UNDER": {
+      "source": "https://slaythespire2.net/card/crush-under",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c"
+      ]
+    },
+    "CURSE_OF_THE_BELL": {
+      "source": "https://slaythespire2.net/card/curse-of-the-bell",
+      "keys": [
+        "keyword:ETERNAL:342c66e2f2f7",
+        "keyword:UNPLAYABLE:f4e9117fd412"
+      ]
+    },
+    "DAGGER_SPRAY": {
+      "source": "https://slaythespire2.net/card/dagger-spray",
+      "keys": []
+    },
+    "DAGGER_THROW": {
+      "source": "https://slaythespire2.net/card/dagger-throw",
+      "keys": []
+    },
+    "DANSE_MACABRE": {
+      "source": "https://slaythespire2.net/card/danse-macabre",
+      "keys": [
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "DARK_EMBRACE": {
+      "source": "https://slaythespire2.net/card/dark-embrace",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "DARK_SHACKLES": {
+      "source": "https://slaythespire2.net/card/dark-shackles",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "DARKNESS": {
+      "source": "https://slaythespire2.net/card/darkness",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:DARK_ORB:d51c2efff3da"
+      ]
+    },
+    "DASH": {
+      "source": "https://slaythespire2.net/card/dash",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "DEADLY_POISON": {
+      "source": "https://slaythespire2.net/card/deadly-poison",
+      "keys": [
+        "power:POISON_POWER:935963d6350c"
+      ]
+    },
+    "DEATH_MARCH": {
+      "source": "https://slaythespire2.net/card/death-march",
+      "keys": []
+    },
+    "DEATHBRINGER": {
+      "source": "https://slaythespire2.net/card/deathbringer",
+      "keys": [
+        "power:DOOM_POWER:0e2948813424",
+        "power:WEAK_POWER:eb231a537947"
+      ]
+    },
+    "DEATHS_DOOR": {
+      "source": "https://slaythespire2.net/card/deaths-door",
+      "keys": [
+        "power:DOOM_POWER:0e2948813424",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "DEBILITATE": {
+      "source": "https://slaythespire2.net/card/debilitate",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817",
+        "power:WEAK_POWER:eb231a537947"
+      ]
+    },
+    "DEBT": {
+      "source": "https://slaythespire2.net/card/debt",
+      "keys": [
+        "keyword:UNPLAYABLE:f4e9117fd412"
+      ]
+    },
+    "DECAY": {
+      "source": "https://slaythespire2.net/card/decay",
+      "keys": [
+        "keyword:UNPLAYABLE:f4e9117fd412"
+      ]
+    },
+    "DECISIONS_DECISIONS": {
+      "source": "https://slaythespire2.net/card/decisions-decisions",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "DEFEND_DEFECT": {
+      "source": "https://slaythespire2.net/card/defend-defect",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "DEFEND_IRONCLAD": {
+      "source": "https://slaythespire2.net/card/defend-ironclad",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "DEFEND_NECROBINDER": {
+      "source": "https://slaythespire2.net/card/defend-necrobinder",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "DEFEND_REGENT": {
+      "source": "https://slaythespire2.net/card/defend-regent",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "DEFEND_SILENT": {
+      "source": "https://slaythespire2.net/card/defend-silent",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "DEFILE": {
+      "source": "https://slaythespire2.net/card/defile",
+      "keys": [
+        "keyword:ETHEREAL:8a3066702cff",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "DEFLECT": {
+      "source": "https://slaythespire2.net/card/deflect",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "DEFRAGMENT": {
+      "source": "https://slaythespire2.net/card/defragment",
+      "keys": [
+        "power:FOCUS_POWER:38572dbaae07"
+      ]
+    },
+    "DEFY": {
+      "source": "https://slaythespire2.net/card/defy",
+      "keys": [
+        "power:WEAK_POWER:eb231a537947",
+        "static:BLOCK:bad33e82d153",
+        "keyword:ETHEREAL:8a3066702cff",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "DELAY": {
+      "source": "https://slaythespire2.net/card/delay",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "DEMESNE": {
+      "source": "https://slaythespire2.net/card/demesne",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "keyword:ETHEREAL:8a3066702cff",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "DEMON_FORM": {
+      "source": "https://slaythespire2.net/card/demon-form",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c"
+      ]
+    },
+    "DEMONIC_SHIELD": {
+      "source": "https://slaythespire2.net/card/demonic-shield",
+      "keys": [
+        "static:BLOCK:bad33e82d153",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "DEVASTATE": {
+      "source": "https://slaythespire2.net/card/devastate",
+      "keys": []
+    },
+    "DEVOUR_LIFE": {
+      "source": "https://slaythespire2.net/card/devour-life",
+      "keys": [
+        "card:Soul:afbf4481f2ec",
+        "static:SUMMON_STATIC:6bd721600dea"
+      ]
+    },
+    "DIRGE": {
+      "source": "https://slaythespire2.net/card/dirge",
+      "keys": [
+        "static:SUMMON_DYNAMIC:e2bf7a712176",
+        "card:Soul:afbf4481f2ec",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "DISCOVERY": {
+      "source": "https://slaythespire2.net/card/discovery",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "DISMANTLE": {
+      "source": "https://slaythespire2.net/card/dismantle",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817"
+      ]
+    },
+    "DISTRACTION": {
+      "source": "https://slaythespire2.net/card/distraction",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "DODGE_AND_ROLL": {
+      "source": "https://slaythespire2.net/card/dodge-and-roll",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "DOMINATE": {
+      "source": "https://slaythespire2.net/card/dominate",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c",
+        "power:VULNERABLE_POWER:fa50fe906817",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "DOUBLE_ENERGY": {
+      "source": "https://slaythespire2.net/card/double-energy",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "DOUBT": {
+      "source": "https://slaythespire2.net/card/doubt",
+      "keys": [
+        "power:WEAK_POWER:eb231a537947",
+        "keyword:UNPLAYABLE:f4e9117fd412"
+      ]
+    },
+    "DOWSING": {
+      "source": "https://slaythespire2.net/card/dowsing",
+      "keys": [
+        "card:Abundance:3622e0cc7fd5",
+        "keyword:UNPLAYABLE:f4e9117fd412"
+      ]
+    },
+    "DRAIN_POWER": {
+      "source": "https://slaythespire2.net/card/drain-power",
+      "keys": []
+    },
+    "DRAMATIC_ENTRANCE": {
+      "source": "https://slaythespire2.net/card/dramatic-entrance",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4",
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "DREDGE": {
+      "source": "https://slaythespire2.net/card/dredge",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "DRUM_OF_BATTLE": {
+      "source": "https://slaythespire2.net/card/drum-of-battle",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "DUAL_WIELD": {
+      "source": "https://slaythespire2.net/card/dual-wield",
+      "keys": []
+    },
+    "DUALCAST": {
+      "source": "https://slaythespire2.net/card/dualcast",
+      "keys": [
+        "static:EVOKE:66a30e74ae3e"
+      ]
+    },
+    "DYING_STAR": {
+      "source": "https://slaythespire2.net/card/dying-star",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c",
+        "keyword:ETHEREAL:8a3066702cff",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "ECHO_FORM": {
+      "source": "https://slaythespire2.net/card/echo-form",
+      "keys": [
+        "keyword:ETHEREAL:8a3066702cff",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "ECHOING_SLASH": {
+      "source": "https://slaythespire2.net/card/echoing-slash",
+      "keys": []
+    },
+    "EIDOLON": {
+      "source": "https://slaythespire2.net/card/eidolon",
+      "keys": [
+        "keyword:ETHEREAL:8a3066702cff",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "END_OF_DAYS": {
+      "source": "https://slaythespire2.net/card/end-of-days",
+      "keys": [
+        "power:DOOM_POWER:0e2948813424"
+      ]
+    },
+    "ENERGY_SURGE": {
+      "source": "https://slaythespire2.net/card/energy-surge",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "ENFEEBLING_TOUCH": {
+      "source": "https://slaythespire2.net/card/enfeebling-touch",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c",
+        "keyword:ETHEREAL:8a3066702cff",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "ENLIGHTENMENT": {
+      "source": "https://slaythespire2.net/card/enlightenment",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "ENTHRALLED": {
+      "source": "https://slaythespire2.net/card/enthralled",
+      "keys": [
+        "keyword:ETERNAL:342c66e2f2f7"
+      ]
+    },
+    "ENTRENCH": {
+      "source": "https://slaythespire2.net/card/entrench",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "ENTROPY": {
+      "source": "https://slaythespire2.net/card/entropy",
+      "keys": [
+        "static:TRANSFORM:2b6623d04d6d",
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "ENVENOM": {
+      "source": "https://slaythespire2.net/card/envenom",
+      "keys": [
+        "power:POISON_POWER:935963d6350c"
+      ]
+    },
+    "EQUILIBRIUM": {
+      "source": "https://slaythespire2.net/card/equilibrium",
+      "keys": [
+        "keyword:RETAIN:4562fe2ab21b",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "ERADICATE": {
+      "source": "https://slaythespire2.net/card/eradicate",
+      "keys": [
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "ESCAPE_PLAN": {
+      "source": "https://slaythespire2.net/card/escape-plan",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "ETERNAL_ARMOR": {
+      "source": "https://slaythespire2.net/card/eternal-armor",
+      "keys": [
+        "power:PLATING_POWER:0c9bb7067554",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "EVIL_EYE": {
+      "source": "https://slaythespire2.net/card/evil-eye",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "EXPECT_A_FIGHT": {
+      "source": "https://slaythespire2.net/card/expect-a-fight",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "EXPERTISE": {
+      "source": "https://slaythespire2.net/card/expertise",
+      "keys": []
+    },
+    "EXPOSE": {
+      "source": "https://slaythespire2.net/card/expose",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817",
+        "power:ARTIFACT_POWER:cbf0cf6cd8f7",
+        "static:BLOCK:bad33e82d153",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "EXTERMINATE": {
+      "source": "https://slaythespire2.net/card/exterminate",
+      "keys": []
+    },
+    "FADE": {
+      "source": "https://slaythespire2.net/card/fade",
+      "keys": [
+        "power:DEXTERITY_POWER:7be76cc63be8",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "FALLING_STAR": {
+      "source": "https://slaythespire2.net/card/falling-star",
+      "keys": [
+        "power:WEAK_POWER:eb231a537947",
+        "power:VULNERABLE_POWER:fa50fe906817"
+      ]
+    },
+    "FAN_OF_KNIVES": {
+      "source": "https://slaythespire2.net/card/fan-of-knives",
+      "keys": [
+        "card:Shiv:9ef3cfd0574e"
+      ]
+    },
+    "FASTEN": {
+      "source": "https://slaythespire2.net/card/fasten",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "FEAR": {
+      "source": "https://slaythespire2.net/card/fear",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817",
+        "keyword:ETHEREAL:8a3066702cff",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "FEED": {
+      "source": "https://slaythespire2.net/card/feed",
+      "keys": [
+        "static:FATAL:34d586a3829b",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "FEEDING_FRENZY": {
+      "source": "https://slaythespire2.net/card/feeding-frenzy",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c"
+      ]
+    },
+    "FEEL_NO_PAIN": {
+      "source": "https://slaythespire2.net/card/feel-no-pain",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "FERAL": {
+      "source": "https://slaythespire2.net/card/feral",
+      "keys": []
+    },
+    "FETCH": {
+      "source": "https://slaythespire2.net/card/fetch",
+      "keys": []
+    },
+    "FIEND_FIRE": {
+      "source": "https://slaythespire2.net/card/fiend-fire",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "FIGHT_ME": {
+      "source": "https://slaythespire2.net/card/fight-me",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c"
+      ]
+    },
+    "FIGHT_THROUGH": {
+      "source": "https://slaythespire2.net/card/fight-through",
+      "keys": [
+        "card:Wound:ce6b927a830f",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "FINESSE": {
+      "source": "https://slaythespire2.net/card/finesse",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "FINISHER": {
+      "source": "https://slaythespire2.net/card/finisher",
+      "keys": []
+    },
+    "FISTICUFFS": {
+      "source": "https://slaythespire2.net/card/fisticuffs",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "FLAK_CANNON": {
+      "source": "https://slaythespire2.net/card/flak-cannon",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "FLAME_BARRIER": {
+      "source": "https://slaythespire2.net/card/flame-barrier",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "FLANKING": {
+      "source": "https://slaythespire2.net/card/flanking",
+      "keys": []
+    },
+    "FLASH_OF_STEEL": {
+      "source": "https://slaythespire2.net/card/flash-of-steel",
+      "keys": []
+    },
+    "FLATTEN": {
+      "source": "https://slaythespire2.net/card/flatten",
+      "keys": []
+    },
+    "FLECHETTES": {
+      "source": "https://slaythespire2.net/card/flechettes",
+      "keys": []
+    },
+    "FLICK_FLACK": {
+      "source": "https://slaythespire2.net/card/flick-flack",
+      "keys": [
+        "keyword:SLY:86386fee6e80"
+      ]
+    },
+    "FOCUSED_STRIKE": {
+      "source": "https://slaythespire2.net/card/focused-strike",
+      "keys": [
+        "power:FOCUS_POWER:38572dbaae07"
+      ]
+    },
+    "FOLLY": {
+      "source": "https://slaythespire2.net/card/folly",
+      "keys": [
+        "keyword:UNPLAYABLE:f4e9117fd412",
+        "keyword:ETERNAL:342c66e2f2f7",
+        "keyword:INNATE:60218b99a8c9",
+        "keyword:ETHEREAL:8a3066702cff",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "FOOTWORK": {
+      "source": "https://slaythespire2.net/card/footwork",
+      "keys": [
+        "power:DEXTERITY_POWER:7be76cc63be8"
+      ]
+    },
+    "FORBIDDEN_GRIMOIRE": {
+      "source": "https://slaythespire2.net/card/forbidden-grimoire",
+      "keys": [
+        "keyword:ETERNAL:342c66e2f2f7"
+      ]
+    },
+    "FOREGONE_CONCLUSION": {
+      "source": "https://slaythespire2.net/card/foregone-conclusion",
+      "keys": []
+    },
+    "FORGOTTEN_RITUAL": {
+      "source": "https://slaythespire2.net/card/forgotten-ritual",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "FRIENDSHIP": {
+      "source": "https://slaythespire2.net/card/friendship",
+      "keys": [
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "FTL": {
+      "source": "https://slaythespire2.net/card/ftl",
+      "keys": []
+    },
+    "FURNACE": {
+      "source": "https://slaythespire2.net/card/furnace",
+      "keys": [
+        "static:FORGE:a357f5fb12be",
+        "card:SovereignBlade:251eef95c1b4"
+      ]
+    },
+    "FUSION": {
+      "source": "https://slaythespire2.net/card/fusion",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:PLASMA_ORB:03f242c4f672",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "GAMMA_BLAST": {
+      "source": "https://slaythespire2.net/card/gamma-blast",
+      "keys": [
+        "power:WEAK_POWER:eb231a537947",
+        "power:VULNERABLE_POWER:fa50fe906817"
+      ]
+    },
+    "GANG_UP": {
+      "source": "https://slaythespire2.net/card/gang-up",
+      "keys": []
+    },
+    "GATHER_LIGHT": {
+      "source": "https://slaythespire2.net/card/gather-light",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "GENESIS": {
+      "source": "https://slaythespire2.net/card/genesis",
+      "keys": []
+    },
+    "GENETIC_ALGORITHM": {
+      "source": "https://slaythespire2.net/card/genetic-algorithm",
+      "keys": [
+        "static:BLOCK:bad33e82d153",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "GLACIER": {
+      "source": "https://slaythespire2.net/card/glacier",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:FROST_ORB:02bad19409dc",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "GLASSWORK": {
+      "source": "https://slaythespire2.net/card/glasswork",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:GLASS_ORB:c6fd352fa803",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "GLIMMER": {
+      "source": "https://slaythespire2.net/card/glimmer",
+      "keys": []
+    },
+    "GLIMPSE_BEYOND": {
+      "source": "https://slaythespire2.net/card/glimpse-beyond",
+      "keys": [
+        "card:Soul:afbf4481f2ec",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "GLITTERSTREAM": {
+      "source": "https://slaythespire2.net/card/glitterstream",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "GLOW": {
+      "source": "https://slaythespire2.net/card/glow",
+      "keys": []
+    },
+    "GO_FOR_THE_EYES": {
+      "source": "https://slaythespire2.net/card/go-for-the-eyes",
+      "keys": [
+        "power:WEAK_POWER:eb231a537947"
+      ]
+    },
+    "GOLD_AXE": {
+      "source": "https://slaythespire2.net/card/gold-axe",
+      "keys": [
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "GRAND_FINALE": {
+      "source": "https://slaythespire2.net/card/grand-finale",
+      "keys": []
+    },
+    "GRAVE_WARDEN": {
+      "source": "https://slaythespire2.net/card/grave-warden",
+      "keys": [
+        "card:Soul:afbf4481f2ec",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "GRAVEBLAST": {
+      "source": "https://slaythespire2.net/card/graveblast",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "GREED": {
+      "source": "https://slaythespire2.net/card/greed",
+      "keys": [
+        "keyword:ETERNAL:342c66e2f2f7",
+        "keyword:UNPLAYABLE:f4e9117fd412"
+      ]
+    },
+    "GUARDS": {
+      "source": "https://slaythespire2.net/card/guards",
+      "keys": [
+        "card:MinionSacrifice:5e5cee069566",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "GUIDING_STAR": {
+      "source": "https://slaythespire2.net/card/guiding-star",
+      "keys": []
+    },
+    "GUILTY": {
+      "source": "https://slaythespire2.net/card/guilty",
+      "keys": [
+        "keyword:UNPLAYABLE:f4e9117fd412"
+      ]
+    },
+    "GUNK_UP": {
+      "source": "https://slaythespire2.net/card/gunk-up",
+      "keys": [
+        "card:Slimed:3554d91572ec"
+      ]
+    },
+    "HAILSTORM": {
+      "source": "https://slaythespire2.net/card/hailstorm",
+      "keys": [
+        "orb:FROST_ORB:02bad19409dc"
+      ]
+    },
+    "HAMMER_TIME": {
+      "source": "https://slaythespire2.net/card/hammer-time",
+      "keys": [
+        "static:FORGE:a357f5fb12be",
+        "card:SovereignBlade:251eef95c1b4"
+      ]
+    },
+    "HAND_OF_GREED": {
+      "source": "https://slaythespire2.net/card/hand-of-greed",
+      "keys": [
+        "static:FATAL:34d586a3829b"
+      ]
+    },
+    "HAND_TRICK": {
+      "source": "https://slaythespire2.net/card/hand-trick",
+      "keys": [
+        "keyword:SLY:86386fee6e80",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "HANG": {
+      "source": "https://slaythespire2.net/card/hang",
+      "keys": []
+    },
+    "HAUNT": {
+      "source": "https://slaythespire2.net/card/haunt",
+      "keys": [
+        "card:Soul:afbf4481f2ec"
+      ]
+    },
+    "HAVOC": {
+      "source": "https://slaythespire2.net/card/havoc",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "HAZE": {
+      "source": "https://slaythespire2.net/card/haze",
+      "keys": [
+        "power:POISON_POWER:935963d6350c",
+        "power:WEAK_POWER:eb231a537947"
+      ]
+    },
+    "HEADBUTT": {
+      "source": "https://slaythespire2.net/card/headbutt",
+      "keys": []
+    },
+    "HEAVENLY_DRILL": {
+      "source": "https://slaythespire2.net/card/heavenly-drill",
+      "keys": []
+    },
+    "HEGEMONY": {
+      "source": "https://slaythespire2.net/card/hegemony",
+      "keys": [
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "HEIRLOOM_HAMMER": {
+      "source": "https://slaythespire2.net/card/heirloom-hammer",
+      "keys": []
+    },
+    "HELIX_DRILL": {
+      "source": "https://slaythespire2.net/card/helix-drill",
+      "keys": [
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "HELLO_WORLD": {
+      "source": "https://slaythespire2.net/card/hello-world",
+      "keys": [
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "HELLRAISER": {
+      "source": "https://slaythespire2.net/card/hellraiser",
+      "keys": []
+    },
+    "HEMOKINESIS": {
+      "source": "https://slaythespire2.net/card/hemokinesis",
+      "keys": []
+    },
+    "HIBERNATE": {
+      "source": "https://slaythespire2.net/card/hibernate",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:FROST_ORB:02bad19409dc",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "HIDDEN_CACHE": {
+      "source": "https://slaythespire2.net/card/hidden-cache",
+      "keys": []
+    },
+    "HIDDEN_DAGGERS": {
+      "source": "https://slaythespire2.net/card/hidden-daggers",
+      "keys": [
+        "card:Shiv:9ef3cfd0574e"
+      ]
+    },
+    "HIDDEN_GEM": {
+      "source": "https://slaythespire2.net/card/hidden-gem",
+      "keys": [
+        "static:REPLAY_STATIC:9173528f8804"
+      ]
+    },
+    "HIGH_FIVE": {
+      "source": "https://slaythespire2.net/card/high-five",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817"
+      ]
+    },
+    "HOLOGRAM": {
+      "source": "https://slaythespire2.net/card/hologram",
+      "keys": [
+        "static:BLOCK:bad33e82d153",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "HOTFIX": {
+      "source": "https://slaythespire2.net/card/hotfix",
+      "keys": [
+        "power:FOCUS_POWER:38572dbaae07",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "HOWL_FROM_BEYOND": {
+      "source": "https://slaythespire2.net/card/howl-from-beyond",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "HUDDLE_UP": {
+      "source": "https://slaythespire2.net/card/huddle-up",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "HYPERBEAM": {
+      "source": "https://slaythespire2.net/card/hyperbeam",
+      "keys": [
+        "power:FOCUS_POWER:38572dbaae07"
+      ]
+    },
+    "I_AM_INVINCIBLE": {
+      "source": "https://slaythespire2.net/card/i-am-invincible",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "ICE_LANCE": {
+      "source": "https://slaythespire2.net/card/ice-lance",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:FROST_ORB:02bad19409dc"
+      ]
+    },
+    "IGNITION": {
+      "source": "https://slaythespire2.net/card/ignition",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:PLASMA_ORB:03f242c4f672",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "IMITATION_LEARNING": {
+      "source": "https://slaythespire2.net/card/imitation-learning",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "IMPATIENCE": {
+      "source": "https://slaythespire2.net/card/impatience",
+      "keys": []
+    },
+    "IMPERVIOUS": {
+      "source": "https://slaythespire2.net/card/impervious",
+      "keys": [
+        "static:BLOCK:bad33e82d153",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "INFERNAL_BLADE": {
+      "source": "https://slaythespire2.net/card/infernal-blade",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "INFERNO": {
+      "source": "https://slaythespire2.net/card/inferno",
+      "keys": []
+    },
+    "INFINITE_BLADES": {
+      "source": "https://slaythespire2.net/card/infinite-blades",
+      "keys": [
+        "card:Shiv:9ef3cfd0574e",
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "INFLAME": {
+      "source": "https://slaythespire2.net/card/inflame",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c"
+      ]
+    },
+    "INJURY": {
+      "source": "https://slaythespire2.net/card/injury",
+      "keys": [
+        "keyword:UNPLAYABLE:f4e9117fd412"
+      ]
+    },
+    "INTERCEPT": {
+      "source": "https://slaythespire2.net/card/intercept",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "INVOKE": {
+      "source": "https://slaythespire2.net/card/invoke",
+      "keys": [
+        "static:SUMMON_DYNAMIC:e2bf7a712176",
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "IRON_WAVE": {
+      "source": "https://slaythespire2.net/card/iron-wave",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "ITERATION": {
+      "source": "https://slaythespire2.net/card/iteration",
+      "keys": []
+    },
+    "JACK_OF_ALL_TRADES": {
+      "source": "https://slaythespire2.net/card/jack-of-all-trades",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "JACKPOT": {
+      "source": "https://slaythespire2.net/card/jackpot",
+      "keys": []
+    },
+    "JUGGERNAUT": {
+      "source": "https://slaythespire2.net/card/juggernaut",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "JUGGLING": {
+      "source": "https://slaythespire2.net/card/juggling",
+      "keys": [
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "KINGLY_KICK": {
+      "source": "https://slaythespire2.net/card/kingly-kick",
+      "keys": []
+    },
+    "KINGLY_PUNCH": {
+      "source": "https://slaythespire2.net/card/kingly-punch",
+      "keys": []
+    },
+    "KNIFE_TRAP": {
+      "source": "https://slaythespire2.net/card/knife-trap",
+      "keys": [
+        "card:Shiv:9ef3cfd0574e"
+      ]
+    },
+    "KNOCKDOWN": {
+      "source": "https://slaythespire2.net/card/knockdown",
+      "keys": []
+    },
+    "KNOCKOUT_BLOW": {
+      "source": "https://slaythespire2.net/card/knockout-blow",
+      "keys": []
+    },
+    "KNOW_THY_PLACE": {
+      "source": "https://slaythespire2.net/card/know-thy-place",
+      "keys": [
+        "power:WEAK_POWER:eb231a537947",
+        "power:VULNERABLE_POWER:fa50fe906817",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "LANTERN_KEY": {
+      "source": "https://slaythespire2.net/card/lantern-key",
+      "keys": [
+        "keyword:UNPLAYABLE:f4e9117fd412"
+      ]
+    },
+    "LARGESSE": {
+      "source": "https://slaythespire2.net/card/largesse",
+      "keys": []
+    },
+    "LEADING_STRIKE": {
+      "source": "https://slaythespire2.net/card/leading-strike",
+      "keys": [
+        "card:Shiv:9ef3cfd0574e"
+      ]
+    },
+    "LEAP": {
+      "source": "https://slaythespire2.net/card/leap",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "LEG_SWEEP": {
+      "source": "https://slaythespire2.net/card/leg-sweep",
+      "keys": [
+        "power:WEAK_POWER:eb231a537947",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "LEGION_OF_BONE": {
+      "source": "https://slaythespire2.net/card/legion-of-bone",
+      "keys": [
+        "static:SUMMON_DYNAMIC:e2bf7a712176"
+      ]
+    },
+    "LETHALITY": {
+      "source": "https://slaythespire2.net/card/lethality",
+      "keys": [
+        "keyword:ETHEREAL:8a3066702cff",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "LIFT": {
+      "source": "https://slaythespire2.net/card/lift",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "LIGHTNING_ROD": {
+      "source": "https://slaythespire2.net/card/lightning-rod",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:LIGHTNING_ORB:fa461daf2382",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "LOOP": {
+      "source": "https://slaythespire2.net/card/loop",
+      "keys": []
+    },
+    "LUNAR_BLAST": {
+      "source": "https://slaythespire2.net/card/lunar-blast",
+      "keys": []
+    },
+    "MACHINE_LEARNING": {
+      "source": "https://slaythespire2.net/card/machine-learning",
+      "keys": [
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "MAD_SCIENCE": {
+      "source": "https://slaythespire2.net/card/mad-science",
+      "keys": [
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "MAKE_IT_SO": {
+      "source": "https://slaythespire2.net/card/make-it-so",
+      "keys": []
+    },
+    "MALAISE": {
+      "source": "https://slaythespire2.net/card/malaise",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c",
+        "power:WEAK_POWER:eb231a537947",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "MANGLE": {
+      "source": "https://slaythespire2.net/card/mangle",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c"
+      ]
+    },
+    "MANIFEST_AUTHORITY": {
+      "source": "https://slaythespire2.net/card/manifest-authority",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "MASTER_OF_STRATEGY": {
+      "source": "https://slaythespire2.net/card/master-of-strategy",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "MASTER_PLANNER": {
+      "source": "https://slaythespire2.net/card/master-planner",
+      "keys": [
+        "keyword:SLY:86386fee6e80"
+      ]
+    },
+    "MAUL": {
+      "source": "https://slaythespire2.net/card/maul",
+      "keys": []
+    },
+    "MAYHEM": {
+      "source": "https://slaythespire2.net/card/mayhem",
+      "keys": []
+    },
+    "MELANCHOLY": {
+      "source": "https://slaythespire2.net/card/melancholy",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "MEMENTO_MORI": {
+      "source": "https://slaythespire2.net/card/memento-mori",
+      "keys": []
+    },
+    "METAMORPHOSIS": {
+      "source": "https://slaythespire2.net/card/metamorphosis",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "METEOR_SHOWER": {
+      "source": "https://slaythespire2.net/card/meteor-shower",
+      "keys": [
+        "power:WEAK_POWER:eb231a537947",
+        "power:VULNERABLE_POWER:fa50fe906817"
+      ]
+    },
+    "METEOR_STRIKE": {
+      "source": "https://slaythespire2.net/card/meteor-strike",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:PLASMA_ORB:03f242c4f672"
+      ]
+    },
+    "MIDNIGHT": {
+      "source": "https://slaythespire2.net/card/midnight",
+      "keys": []
+    },
+    "MIMIC": {
+      "source": "https://slaythespire2.net/card/mimic",
+      "keys": [
+        "static:BLOCK:bad33e82d153",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "MIND_BLAST": {
+      "source": "https://slaythespire2.net/card/mind-blast",
+      "keys": [
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "MIRAGE": {
+      "source": "https://slaythespire2.net/card/mirage",
+      "keys": [
+        "power:POISON_POWER:935963d6350c",
+        "static:BLOCK:bad33e82d153",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "MISERY": {
+      "source": "https://slaythespire2.net/card/misery",
+      "keys": [
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "MODDED": {
+      "source": "https://slaythespire2.net/card/modded",
+      "keys": []
+    },
+    "MOLTEN_FIST": {
+      "source": "https://slaythespire2.net/card/molten-fist",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "MOMENTUM_STRIKE": {
+      "source": "https://slaythespire2.net/card/momentum-strike",
+      "keys": []
+    },
+    "MONARCHS_GAZE": {
+      "source": "https://slaythespire2.net/card/monarchs-gaze",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c"
+      ]
+    },
+    "MONOLOGUE": {
+      "source": "https://slaythespire2.net/card/monologue",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "MULTI_CAST": {
+      "source": "https://slaythespire2.net/card/multi-cast",
+      "keys": [
+        "static:EVOKE:66a30e74ae3e"
+      ]
+    },
+    "MURDER": {
+      "source": "https://slaythespire2.net/card/murder",
+      "keys": []
+    },
+    "NECRO_MASTERY": {
+      "source": "https://slaythespire2.net/card/necro-mastery",
+      "keys": [
+        "static:SUMMON_DYNAMIC:e2bf7a712176"
+      ]
+    },
+    "NEGATIVE_PULSE": {
+      "source": "https://slaythespire2.net/card/negative-pulse",
+      "keys": [
+        "power:DOOM_POWER:0e2948813424",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "NEOWS_FURY": {
+      "source": "https://slaythespire2.net/card/neows-fury",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "NEUROSURGE": {
+      "source": "https://slaythespire2.net/card/neurosurge",
+      "keys": [
+        "power:DOOM_POWER:0e2948813424",
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "NEUTRALIZE": {
+      "source": "https://slaythespire2.net/card/neutralize",
+      "keys": [
+        "power:WEAK_POWER:eb231a537947"
+      ]
+    },
+    "NEUTRON_AEGIS": {
+      "source": "https://slaythespire2.net/card/neutron-aegis",
+      "keys": [
+        "power:PLATING_POWER:0c9bb7067554"
+      ]
+    },
+    "NIGHTMARE": {
+      "source": "https://slaythespire2.net/card/nightmare",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "NO_ESCAPE": {
+      "source": "https://slaythespire2.net/card/no-escape",
+      "keys": [
+        "power:DOOM_POWER:0e2948813424"
+      ]
+    },
+    "NORMALITY": {
+      "source": "https://slaythespire2.net/card/normality",
+      "keys": [
+        "keyword:UNPLAYABLE:f4e9117fd412"
+      ]
+    },
+    "NOSTALGIA": {
+      "source": "https://slaythespire2.net/card/nostalgia",
+      "keys": []
+    },
+    "NOT_YET": {
+      "source": "https://slaythespire2.net/card/not-yet",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "NOXIOUS_FUMES": {
+      "source": "https://slaythespire2.net/card/noxious-fumes",
+      "keys": [
+        "power:POISON_POWER:935963d6350c"
+      ]
+    },
+    "NULL": {
+      "source": "https://slaythespire2.net/card/null",
+      "keys": [
+        "power:WEAK_POWER:eb231a537947",
+        "static:CHANNELING:80956c06559a",
+        "orb:DARK_ORB:d51c2efff3da"
+      ]
+    },
+    "OBLIVION": {
+      "source": "https://slaythespire2.net/card/oblivion",
+      "keys": [
+        "power:DOOM_POWER:0e2948813424"
+      ]
+    },
+    "OFFERING": {
+      "source": "https://slaythespire2.net/card/offering",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "OMNISLICE": {
+      "source": "https://slaythespire2.net/card/omnislice",
+      "keys": []
+    },
+    "ONE_FOR_ALL": {
+      "source": "https://slaythespire2.net/card/one-for-all",
+      "keys": []
+    },
+    "ONE_TWO_PUNCH": {
+      "source": "https://slaythespire2.net/card/one-two-punch",
+      "keys": []
+    },
+    "ORBIT": {
+      "source": "https://slaythespire2.net/card/orbit",
+      "keys": [
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "OUTBREAK": {
+      "source": "https://slaythespire2.net/card/outbreak",
+      "keys": [
+        "power:POISON_POWER:935963d6350c"
+      ]
+    },
+    "OUTMANEUVER": {
+      "source": "https://slaythespire2.net/card/outmaneuver",
+      "keys": [
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "OUTRAGE": {
+      "source": "https://slaythespire2.net/card/outrage",
+      "keys": []
+    },
+    "OVERCLOCK": {
+      "source": "https://slaythespire2.net/card/overclock",
+      "keys": [
+        "card:Burn:82afe9ccf3b5"
+      ]
+    },
+    "PACTS_END": {
+      "source": "https://slaythespire2.net/card/pacts-end",
+      "keys": []
+    },
+    "PAGESTORM": {
+      "source": "https://slaythespire2.net/card/pagestorm",
+      "keys": [
+        "keyword:ETHEREAL:8a3066702cff"
+      ]
+    },
+    "PALE_BLUE_DOT": {
+      "source": "https://slaythespire2.net/card/pale-blue-dot",
+      "keys": []
+    },
+    "PANACHE": {
+      "source": "https://slaythespire2.net/card/panache",
+      "keys": []
+    },
+    "PANIC_BUTTON": {
+      "source": "https://slaythespire2.net/card/panic-button",
+      "keys": [
+        "static:BLOCK:bad33e82d153",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "PARRY": {
+      "source": "https://slaythespire2.net/card/parry",
+      "keys": [
+        "card:SovereignBlade:251eef95c1b4",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "PARSE": {
+      "source": "https://slaythespire2.net/card/parse",
+      "keys": [
+        "keyword:ETHEREAL:8a3066702cff",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "PARTICLE_WALL": {
+      "source": "https://slaythespire2.net/card/particle-wall",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "PATTER": {
+      "source": "https://slaythespire2.net/card/patter",
+      "keys": [
+        "power:VIGOR_POWER:d589c8e854ba",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "PECK": {
+      "source": "https://slaythespire2.net/card/peck",
+      "keys": []
+    },
+    "PERFECTED_STRIKE": {
+      "source": "https://slaythespire2.net/card/perfected-strike",
+      "keys": []
+    },
+    "PHANTOM_BLADES": {
+      "source": "https://slaythespire2.net/card/phantom-blades",
+      "keys": [
+        "card:Shiv:9ef3cfd0574e",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "PHOTON_CUT": {
+      "source": "https://slaythespire2.net/card/photon-cut",
+      "keys": []
+    },
+    "PIERCING_WAIL": {
+      "source": "https://slaythespire2.net/card/piercing-wail",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "PILLAGE": {
+      "source": "https://slaythespire2.net/card/pillage",
+      "keys": []
+    },
+    "PILLAR_OF_CREATION": {
+      "source": "https://slaythespire2.net/card/pillar-of-creation",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "PINPOINT": {
+      "source": "https://slaythespire2.net/card/pinpoint",
+      "keys": []
+    },
+    "PLOT": {
+      "source": "https://slaythespire2.net/card/plot",
+      "keys": []
+    },
+    "POISONED_STAB": {
+      "source": "https://slaythespire2.net/card/poisoned-stab",
+      "keys": [
+        "power:POISON_POWER:935963d6350c"
+      ]
+    },
+    "POKE": {
+      "source": "https://slaythespire2.net/card/poke",
+      "keys": []
+    },
+    "POMMEL_STRIKE": {
+      "source": "https://slaythespire2.net/card/pommel-strike",
+      "keys": []
+    },
+    "POOR_SLEEP": {
+      "source": "https://slaythespire2.net/card/poor-sleep",
+      "keys": [
+        "keyword:UNPLAYABLE:f4e9117fd412",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "POUNCE": {
+      "source": "https://slaythespire2.net/card/pounce",
+      "keys": []
+    },
+    "PRECISE_CUT": {
+      "source": "https://slaythespire2.net/card/precise-cut",
+      "keys": []
+    },
+    "PREDATOR": {
+      "source": "https://slaythespire2.net/card/predator",
+      "keys": []
+    },
+    "PREP_TIME": {
+      "source": "https://slaythespire2.net/card/prep-time",
+      "keys": [
+        "power:VIGOR_POWER:d589c8e854ba"
+      ]
+    },
+    "PREPARED": {
+      "source": "https://slaythespire2.net/card/prepared",
+      "keys": []
+    },
+    "PRIMAL_FORCE": {
+      "source": "https://slaythespire2.net/card/primal-force",
+      "keys": [
+        "card:GiantRock:14cc4f430fcc"
+      ]
+    },
+    "PRODUCTION": {
+      "source": "https://slaythespire2.net/card/production",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "PROLONG": {
+      "source": "https://slaythespire2.net/card/prolong",
+      "keys": [
+        "static:BLOCK:bad33e82d153",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "PROPHESIZE": {
+      "source": "https://slaythespire2.net/card/prophesize",
+      "keys": []
+    },
+    "PROTECTOR": {
+      "source": "https://slaythespire2.net/card/protector",
+      "keys": []
+    },
+    "PROWESS": {
+      "source": "https://slaythespire2.net/card/prowess",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c",
+        "power:DEXTERITY_POWER:7be76cc63be8"
+      ]
+    },
+    "PULL_AGGRO": {
+      "source": "https://slaythespire2.net/card/pull-aggro",
+      "keys": [
+        "static:SUMMON_DYNAMIC:e2bf7a712176",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "PULL_FROM_BELOW": {
+      "source": "https://slaythespire2.net/card/pull-from-below",
+      "keys": [
+        "keyword:ETHEREAL:8a3066702cff"
+      ]
+    },
+    "PURITY": {
+      "source": "https://slaythespire2.net/card/purity",
+      "keys": [
+        "keyword:RETAIN:4562fe2ab21b",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "PUTREFY": {
+      "source": "https://slaythespire2.net/card/putrefy",
+      "keys": [
+        "power:WEAK_POWER:eb231a537947",
+        "power:VULNERABLE_POWER:fa50fe906817",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "PYRE": {
+      "source": "https://slaythespire2.net/card/pyre",
+      "keys": [
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "QUADCAST": {
+      "source": "https://slaythespire2.net/card/quadcast",
+      "keys": [
+        "static:EVOKE:66a30e74ae3e"
+      ]
+    },
+    "QUASAR": {
+      "source": "https://slaythespire2.net/card/quasar",
+      "keys": []
+    },
+    "RADIATE": {
+      "source": "https://slaythespire2.net/card/radiate",
+      "keys": []
+    },
+    "RAGE": {
+      "source": "https://slaythespire2.net/card/rage",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "RAINBOW": {
+      "source": "https://slaythespire2.net/card/rainbow",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:LIGHTNING_ORB:fa461daf2382",
+        "orb:FROST_ORB:02bad19409dc",
+        "orb:DARK_ORB:d51c2efff3da",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "RALLY": {
+      "source": "https://slaythespire2.net/card/rally",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "RAMPAGE": {
+      "source": "https://slaythespire2.net/card/rampage",
+      "keys": []
+    },
+    "RATTLE": {
+      "source": "https://slaythespire2.net/card/rattle",
+      "keys": []
+    },
+    "REANIMATE": {
+      "source": "https://slaythespire2.net/card/reanimate",
+      "keys": [
+        "static:SUMMON_DYNAMIC:e2bf7a712176",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "REAP": {
+      "source": "https://slaythespire2.net/card/reap",
+      "keys": [
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "REAPER_FORM": {
+      "source": "https://slaythespire2.net/card/reaper-form",
+      "keys": [
+        "power:DOOM_POWER:0e2948813424",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "REAVE": {
+      "source": "https://slaythespire2.net/card/reave",
+      "keys": [
+        "card:Soul:afbf4481f2ec"
+      ]
+    },
+    "REBOOT": {
+      "source": "https://slaythespire2.net/card/reboot",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "REBOUND": {
+      "source": "https://slaythespire2.net/card/rebound",
+      "keys": []
+    },
+    "REFINE_BLADE": {
+      "source": "https://slaythespire2.net/card/refine-blade",
+      "keys": [
+        "static:FORGE:a357f5fb12be",
+        "card:SovereignBlade:251eef95c1b4"
+      ]
+    },
+    "REFLECT": {
+      "source": "https://slaythespire2.net/card/reflect",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "REFLEX": {
+      "source": "https://slaythespire2.net/card/reflex",
+      "keys": [
+        "keyword:SLY:86386fee6e80"
+      ]
+    },
+    "REFRACT": {
+      "source": "https://slaythespire2.net/card/refract",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:GLASS_ORB:c6fd352fa803"
+      ]
+    },
+    "REGRET": {
+      "source": "https://slaythespire2.net/card/regret",
+      "keys": [
+        "keyword:UNPLAYABLE:f4e9117fd412"
+      ]
+    },
+    "RELAX": {
+      "source": "https://slaythespire2.net/card/relax",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "static:BLOCK:bad33e82d153",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "REND": {
+      "source": "https://slaythespire2.net/card/rend",
+      "keys": []
+    },
+    "RESONANCE": {
+      "source": "https://slaythespire2.net/card/resonance",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c"
+      ]
+    },
+    "RESTLESSNESS": {
+      "source": "https://slaythespire2.net/card/restlessness",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "RICOCHET": {
+      "source": "https://slaythespire2.net/card/ricochet",
+      "keys": [
+        "keyword:SLY:86386fee6e80"
+      ]
+    },
+    "RIGHT_HAND_HAND": {
+      "source": "https://slaythespire2.net/card/right-hand-hand",
+      "keys": [
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "RIP_AND_TEAR": {
+      "source": "https://slaythespire2.net/card/rip-and-tear",
+      "keys": []
+    },
+    "ROCKET_PUNCH": {
+      "source": "https://slaythespire2.net/card/rocket-punch",
+      "keys": []
+    },
+    "ROLLING_BOULDER": {
+      "source": "https://slaythespire2.net/card/rolling-boulder",
+      "keys": []
+    },
+    "ROYAL_GAMBLE": {
+      "source": "https://slaythespire2.net/card/royal-gamble",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "ROYALTIES": {
+      "source": "https://slaythespire2.net/card/royalties",
+      "keys": []
+    },
+    "RUPTURE": {
+      "source": "https://slaythespire2.net/card/rupture",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c"
+      ]
+    },
+    "SACRIFICE": {
+      "source": "https://slaythespire2.net/card/sacrifice",
+      "keys": [
+        "static:BLOCK:bad33e82d153",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "SALVO": {
+      "source": "https://slaythespire2.net/card/salvo",
+      "keys": [
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "SCAVENGE": {
+      "source": "https://slaythespire2.net/card/scavenge",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "SCOURGE": {
+      "source": "https://slaythespire2.net/card/scourge",
+      "keys": [
+        "power:DOOM_POWER:0e2948813424"
+      ]
+    },
+    "SCRAPE": {
+      "source": "https://slaythespire2.net/card/scrape",
+      "keys": []
+    },
+    "SCRAWL": {
+      "source": "https://slaythespire2.net/card/scrawl",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "SCULPTING_STRIKE": {
+      "source": "https://slaythespire2.net/card/sculpting-strike",
+      "keys": [
+        "keyword:ETHEREAL:8a3066702cff"
+      ]
+    },
+    "SEANCE": {
+      "source": "https://slaythespire2.net/card/seance",
+      "keys": [
+        "card:Soul:afbf4481f2ec",
+        "keyword:ETHEREAL:8a3066702cff",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "SECOND_WIND": {
+      "source": "https://slaythespire2.net/card/second-wind",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "SECRET_TECHNIQUE": {
+      "source": "https://slaythespire2.net/card/secret-technique",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "SECRET_WEAPON": {
+      "source": "https://slaythespire2.net/card/secret-weapon",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "SEEKER_STRIKE": {
+      "source": "https://slaythespire2.net/card/seeker-strike",
+      "keys": []
+    },
+    "SEEKING_EDGE": {
+      "source": "https://slaythespire2.net/card/seeking-edge",
+      "keys": [
+        "static:FORGE:a357f5fb12be",
+        "card:SovereignBlade:251eef95c1b4"
+      ]
+    },
+    "SENTRY_MODE": {
+      "source": "https://slaythespire2.net/card/sentry-mode",
+      "keys": [
+        "card:SweepingGaze:388cc4be871a"
+      ]
+    },
+    "SERPENT_FORM": {
+      "source": "https://slaythespire2.net/card/serpent-form",
+      "keys": []
+    },
+    "SETUP_STRIKE": {
+      "source": "https://slaythespire2.net/card/setup-strike",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c"
+      ]
+    },
+    "SEVEN_STARS": {
+      "source": "https://slaythespire2.net/card/seven-stars",
+      "keys": []
+    },
+    "SEVERANCE": {
+      "source": "https://slaythespire2.net/card/severance",
+      "keys": [
+        "card:Soul:afbf4481f2ec"
+      ]
+    },
+    "SHADOW_SHIELD": {
+      "source": "https://slaythespire2.net/card/shadow-shield",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:DARK_ORB:d51c2efff3da",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "SHADOW_STEP": {
+      "source": "https://slaythespire2.net/card/shadow-step",
+      "keys": []
+    },
+    "SHADOWMELD": {
+      "source": "https://slaythespire2.net/card/shadowmeld",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "SHAME": {
+      "source": "https://slaythespire2.net/card/shame",
+      "keys": [
+        "power:FRAIL_POWER:212bdc114f23",
+        "keyword:UNPLAYABLE:f4e9117fd412"
+      ]
+    },
+    "SHARED_FATE": {
+      "source": "https://slaythespire2.net/card/shared-fate",
+      "keys": [
+        "power:STRENGTH_POWER:88bb8b08758c",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "SHATTER": {
+      "source": "https://slaythespire2.net/card/shatter",
+      "keys": [
+        "static:EVOKE:66a30e74ae3e",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "SHINING_STRIKE": {
+      "source": "https://slaythespire2.net/card/shining-strike",
+      "keys": []
+    },
+    "SHOCKWAVE": {
+      "source": "https://slaythespire2.net/card/shockwave",
+      "keys": [
+        "power:WEAK_POWER:eb231a537947",
+        "power:VULNERABLE_POWER:fa50fe906817",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "SHROUD": {
+      "source": "https://slaythespire2.net/card/shroud",
+      "keys": [
+        "power:DOOM_POWER:0e2948813424",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "SHRUG_IT_OFF": {
+      "source": "https://slaythespire2.net/card/shrug-it-off",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "SIC_EM": {
+      "source": "https://slaythespire2.net/card/sic-em",
+      "keys": [
+        "static:SUMMON_STATIC:6bd721600dea"
+      ]
+    },
+    "SIDESTEP": {
+      "source": "https://slaythespire2.net/card/sidestep",
+      "keys": [
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "SIGNAL_BOOST": {
+      "source": "https://slaythespire2.net/card/signal-boost",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "SKEWER": {
+      "source": "https://slaythespire2.net/card/skewer",
+      "keys": []
+    },
+    "SKIM": {
+      "source": "https://slaythespire2.net/card/skim",
+      "keys": []
+    },
+    "SLEIGHT_OF_FLESH": {
+      "source": "https://slaythespire2.net/card/sleight-of-flesh",
+      "keys": []
+    },
+    "SLICE": {
+      "source": "https://slaythespire2.net/card/slice",
+      "keys": []
+    },
+    "SMOKESTACK": {
+      "source": "https://slaythespire2.net/card/smokestack",
+      "keys": []
+    },
+    "SNAKEBITE": {
+      "source": "https://slaythespire2.net/card/snakebite",
+      "keys": [
+        "power:POISON_POWER:935963d6350c",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "SNAP": {
+      "source": "https://slaythespire2.net/card/snap",
+      "keys": [
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "SNEAKY": {
+      "source": "https://slaythespire2.net/card/sneaky",
+      "keys": [
+        "static:BLOCK:bad33e82d153",
+        "keyword:SLY:86386fee6e80"
+      ]
+    },
+    "SOLAR_STRIKE": {
+      "source": "https://slaythespire2.net/card/solar-strike",
+      "keys": []
+    },
+    "SOUL_STORM": {
+      "source": "https://slaythespire2.net/card/soul-storm",
+      "keys": [
+        "card:Soul:afbf4481f2ec"
+      ]
+    },
+    "SOULBOUND": {
+      "source": "https://slaythespire2.net/card/soulbound",
+      "keys": [
+        "card:Soul:afbf4481f2ec",
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "SOW": {
+      "source": "https://slaythespire2.net/card/sow",
+      "keys": [
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "SPECTRUM_SHIFT": {
+      "source": "https://slaythespire2.net/card/spectrum-shift",
+      "keys": []
+    },
+    "SPEEDSTER": {
+      "source": "https://slaythespire2.net/card/speedster",
+      "keys": [
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "SPINNER": {
+      "source": "https://slaythespire2.net/card/spinner",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:GLASS_ORB:c6fd352fa803"
+      ]
+    },
+    "SPIRIT_OF_ASH": {
+      "source": "https://slaythespire2.net/card/spirit-of-ash",
+      "keys": [
+        "keyword:ETHEREAL:8a3066702cff",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "SPITE": {
+      "source": "https://slaythespire2.net/card/spite",
+      "keys": []
+    },
+    "SPLASH": {
+      "source": "https://slaythespire2.net/card/splash",
+      "keys": []
+    },
+    "SPOILS_MAP": {
+      "source": "https://slaythespire2.net/card/spoils-map",
+      "keys": [
+        "keyword:UNPLAYABLE:f4e9117fd412"
+      ]
+    },
+    "SPOILS_OF_BATTLE": {
+      "source": "https://slaythespire2.net/card/spoils-of-battle",
+      "keys": [
+        "static:FORGE:a357f5fb12be",
+        "card:SovereignBlade:251eef95c1b4"
+      ]
+    },
+    "SPORE_MIND": {
+      "source": "https://slaythespire2.net/card/spore-mind",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "SPUR": {
+      "source": "https://slaythespire2.net/card/spur",
+      "keys": [
+        "static:SUMMON_DYNAMIC:e2bf7a712176",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "SQUASH": {
+      "source": "https://slaythespire2.net/card/squash",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817"
+      ]
+    },
+    "SQUEEZE": {
+      "source": "https://slaythespire2.net/card/squeeze",
+      "keys": []
+    },
+    "STACK": {
+      "source": "https://slaythespire2.net/card/stack",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "STAMPEDE": {
+      "source": "https://slaythespire2.net/card/stampede",
+      "keys": []
+    },
+    "STARDUST": {
+      "source": "https://slaythespire2.net/card/stardust",
+      "keys": []
+    },
+    "STOKE": {
+      "source": "https://slaythespire2.net/card/stoke",
+      "keys": []
+    },
+    "STOMP": {
+      "source": "https://slaythespire2.net/card/stomp",
+      "keys": []
+    },
+    "STONE_ARMOR": {
+      "source": "https://slaythespire2.net/card/stone-armor",
+      "keys": [
+        "power:PLATING_POWER:0c9bb7067554",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "STORM": {
+      "source": "https://slaythespire2.net/card/storm",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:LIGHTNING_ORB:fa461daf2382"
+      ]
+    },
+    "STORM_OF_STEEL": {
+      "source": "https://slaythespire2.net/card/storm-of-steel",
+      "keys": [
+        "card:Shiv:9ef3cfd0574e"
+      ]
+    },
+    "STRANGLE": {
+      "source": "https://slaythespire2.net/card/strangle",
+      "keys": []
+    },
+    "STRATAGEM": {
+      "source": "https://slaythespire2.net/card/stratagem",
+      "keys": []
+    },
+    "STRIKE_DEFECT": {
+      "source": "https://slaythespire2.net/card/strike-defect",
+      "keys": []
+    },
+    "STRIKE_IRONCLAD": {
+      "source": "https://slaythespire2.net/card/strike-ironclad",
+      "keys": []
+    },
+    "STRIKE_NECROBINDER": {
+      "source": "https://slaythespire2.net/card/strike-necrobinder",
+      "keys": []
+    },
+    "STRIKE_REGENT": {
+      "source": "https://slaythespire2.net/card/strike-regent",
+      "keys": []
+    },
+    "STRIKE_SILENT": {
+      "source": "https://slaythespire2.net/card/strike-silent",
+      "keys": []
+    },
+    "SUBROUTINE": {
+      "source": "https://slaythespire2.net/card/subroutine",
+      "keys": []
+    },
+    "SUCKER_PUNCH": {
+      "source": "https://slaythespire2.net/card/sucker-punch",
+      "keys": [
+        "power:WEAK_POWER:eb231a537947"
+      ]
+    },
+    "SUMMON_FORTH": {
+      "source": "https://slaythespire2.net/card/summon-forth",
+      "keys": [
+        "static:FORGE:a357f5fb12be",
+        "card:SovereignBlade:251eef95c1b4",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "SUNDER": {
+      "source": "https://slaythespire2.net/card/sunder",
+      "keys": [
+        "static:ENERGY:a783d31e41bc"
+      ]
+    },
+    "SUPERCRITICAL": {
+      "source": "https://slaythespire2.net/card/supercritical",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "SUPERMASSIVE": {
+      "source": "https://slaythespire2.net/card/supermassive",
+      "keys": []
+    },
+    "SUPPRESS": {
+      "source": "https://slaythespire2.net/card/suppress",
+      "keys": [
+        "power:WEAK_POWER:eb231a537947",
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "SURVIVOR": {
+      "source": "https://slaythespire2.net/card/survivor",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "SWEEPING_BEAM": {
+      "source": "https://slaythespire2.net/card/sweeping-beam",
+      "keys": []
+    },
+    "SWORD_BOOMERANG": {
+      "source": "https://slaythespire2.net/card/sword-boomerang",
+      "keys": []
+    },
+    "SWORD_SAGE": {
+      "source": "https://slaythespire2.net/card/sword-sage",
+      "keys": [
+        "card:SovereignBlade:251eef95c1b4",
+        "static:REPLAY_STATIC:9173528f8804"
+      ]
+    },
+    "SYNCHRONIZE": {
+      "source": "https://slaythespire2.net/card/synchronize",
+      "keys": [
+        "power:FOCUS_POWER:38572dbaae07"
+      ]
+    },
+    "SYNTHESIS": {
+      "source": "https://slaythespire2.net/card/synthesis",
+      "keys": []
+    },
+    "TACTICIAN": {
+      "source": "https://slaythespire2.net/card/tactician",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "keyword:SLY:86386fee6e80"
+      ]
+    },
+    "TAG_TEAM": {
+      "source": "https://slaythespire2.net/card/tag-team",
+      "keys": []
+    },
+    "TANK": {
+      "source": "https://slaythespire2.net/card/tank",
+      "keys": []
+    },
+    "TAUNT": {
+      "source": "https://slaythespire2.net/card/taunt",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "TEAR_ASUNDER": {
+      "source": "https://slaythespire2.net/card/tear-asunder",
+      "keys": []
+    },
+    "TEMPEST": {
+      "source": "https://slaythespire2.net/card/tempest",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:LIGHTNING_ORB:fa461daf2382"
+      ]
+    },
+    "TERRAFORMING": {
+      "source": "https://slaythespire2.net/card/terraforming",
+      "keys": [
+        "power:VIGOR_POWER:d589c8e854ba"
+      ]
+    },
+    "TESLA_COIL": {
+      "source": "https://slaythespire2.net/card/tesla-coil",
+      "keys": [
+        "orb:LIGHTNING_ORB:fa461daf2382"
+      ]
+    },
+    "THE_BALL": {
+      "source": "https://slaythespire2.net/card/the-ball",
+      "keys": []
+    },
+    "THE_BOMB": {
+      "source": "https://slaythespire2.net/card/the-bomb",
+      "keys": []
+    },
+    "THE_GAMBIT": {
+      "source": "https://slaythespire2.net/card/the-gambit",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "THE_HUNT": {
+      "source": "https://slaythespire2.net/card/the-hunt",
+      "keys": [
+        "static:FATAL:34d586a3829b",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "THE_SCYTHE": {
+      "source": "https://slaythespire2.net/card/the-scythe",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "THE_SEALED_THRONE": {
+      "source": "https://slaythespire2.net/card/the-sealed-throne",
+      "keys": []
+    },
+    "THE_SMITH": {
+      "source": "https://slaythespire2.net/card/the-smith",
+      "keys": [
+        "static:FORGE:a357f5fb12be",
+        "card:SovereignBlade:251eef95c1b4"
+      ]
+    },
+    "THINKING_AHEAD": {
+      "source": "https://slaythespire2.net/card/thinking-ahead",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "THRASH": {
+      "source": "https://slaythespire2.net/card/thrash",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "THRUMMING_HATCHET": {
+      "source": "https://slaythespire2.net/card/thrumming-hatchet",
+      "keys": []
+    },
+    "THUNDER": {
+      "source": "https://slaythespire2.net/card/thunder",
+      "keys": [
+        "static:EVOKE:66a30e74ae3e",
+        "orb:LIGHTNING_ORB:fa461daf2382"
+      ]
+    },
+    "THUNDERCLAP": {
+      "source": "https://slaythespire2.net/card/thunderclap",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817"
+      ]
+    },
+    "TIMES_UP": {
+      "source": "https://slaythespire2.net/card/times-up",
+      "keys": [
+        "power:DOOM_POWER:0e2948813424",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "TOOLS_OF_THE_TRADE": {
+      "source": "https://slaythespire2.net/card/tools-of-the-trade",
+      "keys": []
+    },
+    "TORIC_TOUGHNESS": {
+      "source": "https://slaythespire2.net/card/toric-toughness",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "TRACKING": {
+      "source": "https://slaythespire2.net/card/tracking",
+      "keys": [
+        "power:WEAK_POWER:eb231a537947"
+      ]
+    },
+    "TRANSFIGURE": {
+      "source": "https://slaythespire2.net/card/transfigure",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "static:REPLAY_STATIC:9173528f8804",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "TRASH_TO_TREASURE": {
+      "source": "https://slaythespire2.net/card/trash-to-treasure",
+      "keys": [
+        "static:CHANNELING:80956c06559a"
+      ]
+    },
+    "TREMBLE": {
+      "source": "https://slaythespire2.net/card/tremble",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "TRUE_GRIT": {
+      "source": "https://slaythespire2.net/card/true-grit",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4",
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "TURBO": {
+      "source": "https://slaythespire2.net/card/turbo",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "card:Void:20b31506b0d4"
+      ]
+    },
+    "TUTOR": {
+      "source": "https://slaythespire2.net/card/tutor",
+      "keys": []
+    },
+    "TWIN_STRIKE": {
+      "source": "https://slaythespire2.net/card/twin-strike",
+      "keys": []
+    },
+    "TYRANNY": {
+      "source": "https://slaythespire2.net/card/tyranny",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4",
+        "keyword:INNATE:60218b99a8c9"
+      ]
+    },
+    "ULTIMATE_DEFEND": {
+      "source": "https://slaythespire2.net/card/ultimate-defend",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "ULTIMATE_STRIKE": {
+      "source": "https://slaythespire2.net/card/ultimate-strike",
+      "keys": []
+    },
+    "UNDEATH": {
+      "source": "https://slaythespire2.net/card/undeath",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "UNDERWORLD": {
+      "source": "https://slaythespire2.net/card/underworld",
+      "keys": [
+        "power:DOOM_POWER:0e2948813424",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "UNLEASH": {
+      "source": "https://slaythespire2.net/card/unleash",
+      "keys": []
+    },
+    "UNMOVABLE": {
+      "source": "https://slaythespire2.net/card/unmovable",
+      "keys": [
+        "static:BLOCK:bad33e82d153"
+      ]
+    },
+    "UNRELENTING": {
+      "source": "https://slaythespire2.net/card/unrelenting",
+      "keys": []
+    },
+    "UNTOUCHABLE": {
+      "source": "https://slaythespire2.net/card/untouchable",
+      "keys": [
+        "static:BLOCK:bad33e82d153",
+        "keyword:SLY:86386fee6e80"
+      ]
+    },
+    "UP_MY_SLEEVE": {
+      "source": "https://slaythespire2.net/card/up-my-sleeve",
+      "keys": [
+        "card:Shiv:9ef3cfd0574e"
+      ]
+    },
+    "UPPERCUT": {
+      "source": "https://slaythespire2.net/card/uppercut",
+      "keys": [
+        "power:WEAK_POWER:eb231a537947",
+        "power:VULNERABLE_POWER:fa50fe906817"
+      ]
+    },
+    "UPROAR": {
+      "source": "https://slaythespire2.net/card/uproar",
+      "keys": []
+    },
+    "VEILPIERCER": {
+      "source": "https://slaythespire2.net/card/veilpiercer",
+      "keys": [
+        "keyword:ETHEREAL:8a3066702cff"
+      ]
+    },
+    "VENERATE": {
+      "source": "https://slaythespire2.net/card/venerate",
+      "keys": []
+    },
+    "VICIOUS": {
+      "source": "https://slaythespire2.net/card/vicious",
+      "keys": [
+        "power:VULNERABLE_POWER:fa50fe906817"
+      ]
+    },
+    "VOID_FORM": {
+      "source": "https://slaythespire2.net/card/void-form",
+      "keys": [
+        "keyword:ETHEREAL:8a3066702cff",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "VOLLEY": {
+      "source": "https://slaythespire2.net/card/volley",
+      "keys": []
+    },
+    "VOLTAIC": {
+      "source": "https://slaythespire2.net/card/voltaic",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:LIGHTNING_ORB:fa461daf2382",
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "WELL_LAID_PLANS": {
+      "source": "https://slaythespire2.net/card/well-laid-plans",
+      "keys": []
+    },
+    "WHIRLWIND": {
+      "source": "https://slaythespire2.net/card/whirlwind",
+      "keys": []
+    },
+    "WHISTLE": {
+      "source": "https://slaythespire2.net/card/whistle",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "WHITE_NOISE": {
+      "source": "https://slaythespire2.net/card/white-noise",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4"
+      ]
+    },
+    "WISH": {
+      "source": "https://slaythespire2.net/card/wish",
+      "keys": [
+        "keyword:EXHAUST:100a1f833df4",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "WISP": {
+      "source": "https://slaythespire2.net/card/wisp",
+      "keys": [
+        "static:ENERGY:a783d31e41bc",
+        "keyword:EXHAUST:100a1f833df4",
+        "keyword:RETAIN:4562fe2ab21b"
+      ]
+    },
+    "WRAITH_FORM": {
+      "source": "https://slaythespire2.net/card/wraith-form",
+      "keys": [
+        "power:INTANGIBLE_POWER:30cc817f7450",
+        "power:DEXTERITY_POWER:7be76cc63be8"
+      ]
+    },
+    "WRITHE": {
+      "source": "https://slaythespire2.net/card/writhe",
+      "keys": [
+        "keyword:INNATE:60218b99a8c9",
+        "keyword:UNPLAYABLE:f4e9117fd412"
+      ]
+    },
+    "WROUGHT_IN_WAR": {
+      "source": "https://slaythespire2.net/card/wrought-in-war",
+      "keys": [
+        "static:FORGE:a357f5fb12be",
+        "card:SovereignBlade:251eef95c1b4"
+      ]
+    },
+    "ZAP": {
+      "source": "https://slaythespire2.net/card/zap",
+      "keys": [
+        "static:CHANNELING:80956c06559a",
+        "orb:LIGHTNING_ORB:fa461daf2382"
+      ]
+    }
+  }
+}

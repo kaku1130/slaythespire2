@@ -13,6 +13,19 @@ module.exports = function ancientDetailRuntime() {
   panel.append(frame);
   body.append(panel);
   main.append(body);
+  // The detail frame grows with its content; keep dialogs in the visible page area.
+  function positionCardDialog() {
+    const dialog=frame.contentDocument?.getElementById('card-effect-dialog');
+    if(!dialog?.open)return;
+    const bounds=frame.getBoundingClientRect(),viewport=main.getBoundingClientRect();
+    const top=Math.max(bounds.top,viewport.top,0),bottom=Math.min(bounds.bottom,viewport.bottom,innerHeight);
+    const height=Math.max(100,bottom-top);
+    dialog.style.margin='0 auto';dialog.style.bottom='auto';
+    dialog.style.maxHeight=Math.max(68,height-32)+'px';
+    dialog.style.top=(top-bounds.top+Math.max(16,(height-dialog.getBoundingClientRect().height)/2))+'px';
+  }
+  main.addEventListener('scroll',positionCardDialog);
+  window.addEventListener('resize',positionCardDialog);
   function open(key) {
     const page = data.pages[key];
     if (!page) return;
@@ -25,6 +38,7 @@ module.exports = function ancientDetailRuntime() {
     observer?.disconnect();
     const doc = frame.contentDocument, content = doc?.getElementById('main-content');
     if (!content) return;
+    doc.getElementById('card-effect-dialog')?.addEventListener('toggle',positionCardDialog);
     const style = doc.createElement('style');
     style.textContent = 'html,body{min-height:0!important;height:auto!important;overflow:hidden!important}';
     doc.head.append(style);

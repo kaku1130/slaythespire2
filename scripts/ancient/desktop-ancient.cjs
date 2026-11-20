@@ -19,6 +19,7 @@ function addTopRelicMenu(html) {
   if (!menu) throw Error('Missing ancient relic menu');
   const copy = menu.replace(/<section\b[^>]*>/, '<section data-ancient-top-menu class="mb-6" aria-label="其他先古之民的最強遺物">')
     .replace(/<h2\b[^>]*>其他(?:先古|遠古)之民的最強遺物<\/h2>/, '');
+  html = html.replace(menu, '');
   return /<main\b/.test(html) ? html.replace(/(<main\b[^>]*>)/, '$1' + copy) : copy + html;
 }
 

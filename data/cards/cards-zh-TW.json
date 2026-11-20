@@ -1,1801 +1,2082 @@
 {
   "source": "https://slaythespire2.net/zh-TW/card",
-  "version": "Live v0.107.1",
-  "retrievedDate": "2026-11-08",
+  "version": "v0.111.1",
+  "retrievedDate": "2026-11-20",
+  "namesCheckedAt": "2026-11-20T05:16:59.986Z",
   "cards": [
     {
       "id": "ABRASIVE",
       "name": "磨蝕",
       "slug": "abrasive",
-      "descBase": "<g>奇巧</g>。\n獲得1點<g>敏捷</g>。\n獲得4點<g>荊棘</g>。",
-      "descUpgraded": "<g>奇巧</g>。\n獲得1點<g>敏捷</g>。\n獲得6點<g>荊棘</g>。"
+      "descBase": "<g>奇巧</g>。\n獲得 1 層<g>敏捷</g>。\n獲得 4 層<g>荊棘</g>。",
+      "descUpgraded": "<g>奇巧</g>。\n獲得 1 層<g>敏捷</g>。\n獲得 6 層<g>荊棘</g>。"
+    },
+    {
+      "id": "ABUNDANCE",
+      "name": "富足",
+      "slug": "abundance",
+      "descBase": "從 3 張<g>已升級</g>的<g>能力牌</g>中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。\n<g>消耗</g>。",
+      "descUpgraded": "從 3 張<g>已升級</g>的<g>能力牌</g>中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。\n<g>消耗</g>。"
     },
     {
       "id": "ACCELERANT",
-      "name": "觸媒",
+      "name": "催化劑",
       "slug": "accelerant",
-      "descBase": "<g>中毒</g>會額外觸發1次。",
-      "descUpgraded": "<g>中毒</g>會額外觸發2次。",
+      "descBase": "<g>中毒</g>會額外觸發 1 次。",
+      "descUpgraded": "<g>中毒</g>會額外觸發 2 次。",
       "aliases": [
-        "催化劑"
+        "觸媒"
       ]
     },
     {
       "id": "ACCURACY",
       "name": "精準",
       "slug": "accuracy",
-      "descBase": "<g>小刀</g>額外造成4點傷害。",
-      "descUpgraded": "<g>小刀</g>額外造成6點傷害。"
+      "descBase": "<g>小刀</g>額外造成 4 點傷害。",
+      "descUpgraded": "<g>小刀</g>額外造成 6 點傷害。"
     },
     {
       "id": "ACROBATICS",
       "name": "雜技",
       "slug": "acrobatics",
-      "descBase": "抽3張牌。\n丟棄1張牌。",
-      "descUpgraded": "抽4張牌。\n丟棄1張牌。"
+      "descBase": "抽 3 張牌。\n丟棄 1 張牌。",
+      "descUpgraded": "抽 4 張牌。\n丟棄 1 張牌。"
     },
     {
       "id": "ADAPTIVE_STRIKE",
       "name": "適應打擊",
       "slug": "adaptive-strike",
-      "descBase": "造成18點傷害。\n將這張牌的一張0<e/>複製品添加到你的<g>棄牌堆</g>。",
-      "descUpgraded": "造成23點傷害。\n將這張牌的一張0<e/>複製品添加到你的<g>棄牌堆</g>。"
+      "descBase": "造成 18 點傷害。\n將此牌的一張 0<e/> 複製品加入你的<g>棄牌堆</g>。",
+      "descUpgraded": "造成 23 點傷害。\n將此牌的一張 0<e/> 複製品加入你的<g>棄牌堆</g>。"
     },
     {
       "id": "ADRENALINE",
       "name": "腎上腺素",
       "slug": "adrenaline",
-      "descBase": "獲得<e>1</e>。\n抽2張牌。\n<g>消耗</g>。",
-      "descUpgraded": "獲得<e>2</e>。\n抽2張牌。\n<g>消耗</g>。"
+      "descBase": "獲得 <e/>。\n抽 2 張牌。\n<g>消耗</g>。",
+      "descUpgraded": "獲得 <e/><e/>。\n抽 2 張牌。\n<g>消耗</g>。"
     },
     {
       "id": "AFTERIMAGE",
-      "name": "餘像",
+      "name": "殘影",
       "slug": "afterimage",
-      "descBase": "你每打出一張牌，都獲得1點<g>格擋</g>。",
-      "descUpgraded": "<g>固有</g>。\n你每打出一張牌，都獲得1點<g>格擋</g>。"
+      "descBase": "每當你打出一張牌時，獲得 1 點<g>格擋</g>。",
+      "descUpgraded": "<g>固有</g>。\n每當你打出一張牌時，獲得 1 點<g>格擋</g>。",
+      "aliases": [
+        "餘像"
+      ]
     },
     {
       "id": "AFTERLIFE",
       "name": "來生",
       "slug": "afterlife",
-      "descBase": "<g>召喚</g>6。\n<g>消耗</g>。",
-      "descUpgraded": "<g>召喚</g>9。\n<g>消耗</g>。"
+      "descBase": "<g>召喚</g> 6。\n<g>消耗</g>。",
+      "descUpgraded": "<g>召喚</g> 9。\n<g>消耗</g>。"
     },
     {
       "id": "AGGRESSION",
-      "name": "好勇鬥狠",
+      "name": "進攻態勢",
       "slug": "aggression",
-      "descBase": "在你的回合開始時，將你<g>棄牌堆</g>的一張隨機攻擊牌放入你的<g>手牌</g>並將其<g>升級</g>。",
-      "descUpgraded": "<g>固有</g>。\n在你的回合開始時，將你<g>棄牌堆</g>的一張隨機攻擊牌放入你的<g>手牌</g>並將其<g>升級</g>。"
+      "descBase": "在你的回合開始時，將你<g>棄牌堆</g>中的一張隨機攻擊牌放入你的<g>手牌</g>，並將其<g>升級</g>。",
+      "descUpgraded": "<g>固有</g>。\n在你的回合開始時，將你<g>棄牌堆</g>中的一張隨機攻擊牌放入你的<g>手牌</g>，並將其<g>升級</g>。",
+      "aliases": [
+        "好勇鬥狠"
+      ]
     },
     {
       "id": "ALCHEMIZE",
       "name": "煉製藥水",
       "slug": "alchemize",
-      "descBase": "獲得一瓶隨機藥水。\n<g>消耗</g>。",
-      "descUpgraded": "獲得一瓶隨機藥水。\n<g>消耗</g>。"
+      "descBase": "取得一瓶隨機藥水。\n<g>消耗</g>。",
+      "descUpgraded": "取得一瓶隨機藥水。\n<g>消耗</g>。"
     },
     {
       "id": "ALIGNMENT",
-      "name": "星位序列",
+      "name": "星位連珠",
       "slug": "alignment",
-      "descBase": "獲得<e>2</e>。",
-      "descUpgraded": "獲得<e>3</e>。",
+      "descBase": "獲得 <e/><e/>。",
+      "descUpgraded": "獲得 <e/><e/><e/>。",
       "aliases": [
-        "星位連珠"
+        "星位序列"
       ]
     },
     {
       "id": "ALL_FOR_ONE",
-      "name": "萬物一心",
+      "name": "全為一",
       "slug": "all-for-one",
-      "descBase": "造成10點傷害。\n將你<g>棄牌堆</g>中的所有0<e/>牌放入你的<g>手牌</g>。",
-      "descUpgraded": "造成14點傷害。\n將你<g>棄牌堆</g>中的所有0<e/>牌放入你的<g>手牌</g>。"
+      "descBase": "造成 10 點傷害。\n將你<g>棄牌堆</g>中所有耗能為 0<e/> 的牌放入你的<g>手牌</g>。",
+      "descUpgraded": "造成 14 點傷害。\n將你<g>棄牌堆</g>中所有耗能為 0<e/> 的牌放入你的<g>手牌</g>。",
+      "aliases": [
+        "萬物一心"
+      ]
     },
     {
       "id": "ANGER",
-      "name": "憤怒",
+      "name": "怒火",
       "slug": "anger",
-      "descBase": "造成6點傷害。\n將一張此牌的複製品加入你的<g>棄牌堆</g>。",
-      "descUpgraded": "造成8點傷害。\n將一張此牌的複製品加入你的<g>棄牌堆</g>。"
+      "descBase": "造成 6 點傷害。\n將此牌的一張複製品加入你的<g>棄牌堆</g>。",
+      "descUpgraded": "造成 8 點傷害。\n將此牌的一張複製品加入你的<g>棄牌堆</g>。",
+      "aliases": [
+        "憤怒"
+      ]
     },
     {
       "id": "ANOINTED",
-      "name": "天選",
+      "name": "受膏",
       "slug": "anointed",
-      "descBase": "將你<g>抽牌堆</g>中的所有<g>稀有</g>牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
-      "descUpgraded": "<g>保留</g>。\n將你<g>抽牌堆</g>中的所有<g>稀有</g>牌放入你的<g>手牌</g>。\n<g>消耗</g>。"
+      "descBase": "將你<g>抽牌堆</g>中所有<g>稀有</g>牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
+      "descUpgraded": "<g>保留</g>。\n將你<g>抽牌堆</g>中所有<g>稀有</g>牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
+      "aliases": [
+        "天選"
+      ]
     },
     {
       "id": "ANTICIPATE",
       "name": "預判",
       "slug": "anticipate",
-      "descBase": "在本回合獲得2點<g>敏捷</g>。",
-      "descUpgraded": "在本回合獲得4點<g>敏捷</g>。"
+      "descBase": "在本回合獲得 2 層<g>敏捷</g>。",
+      "descUpgraded": "在本回合獲得 4 層<g>敏捷</g>。"
     },
     {
       "id": "APOTHEOSIS",
       "name": "神化",
       "slug": "apotheosis",
-      "descBase": "<g>固有</g>。\n<g>升級</g>你的全部卡牌。\n<g>消耗</g>。",
-      "descUpgraded": "<g>固有</g>。\n<g>升級</g>你的全部卡牌。\n<g>消耗</g>。"
+      "descBase": "<g>固有</g>。\n<g>升級</g>你的所有卡牌。\n<g>消耗</g>。",
+      "descUpgraded": "<g>固有</g>。\n<g>升級</g>你的所有卡牌。\n<g>消耗</g>。"
     },
     {
       "id": "APPARITION",
       "name": "靈體",
       "slug": "apparition",
-      "descBase": "<g>虛無</g>。\n獲得1層<g>無實體</g>。\n<g>消耗</g>。",
-      "descUpgraded": "獲得1層<g>無實體</g>。\n<g>消耗</g>。"
+      "descBase": "<g>虛無</g>。\n獲得 1 層<g>無形</g>。\n<g>消耗</g>。",
+      "descUpgraded": "獲得 1 層<g>無形</g>。\n<g>消耗</g>。"
     },
     {
       "id": "ARMAMENTS",
       "name": "武裝",
       "slug": "armaments",
-      "descBase": "獲得5點<g>格擋</g>。\n<g>升級</g>你<g>手牌</g>中的一張牌。",
-      "descUpgraded": "獲得5點<g>格擋</g>。\n<g>升級</g>你<g>手牌</g>中的所有牌。"
+      "descBase": "獲得 5 點<g>格擋</g>。\n<g>升級</g>你<g>手牌</g>中的一張牌。",
+      "descUpgraded": "獲得 5 點<g>格擋</g>。\n<g>升級</g>你<g>手牌</g>中的所有牌。"
     },
     {
       "id": "ARSENAL",
       "name": "武器庫",
       "slug": "arsenal",
-      "descBase": "每當你生成一張牌，就獲得1點<g>力量</g>。",
-      "descUpgraded": "<g>固有</g>。\n每當你生成一張牌，就獲得1點<g>力量</g>。"
+      "descBase": "每當你創造一張牌時，獲得 1 層<g>力量</g>。",
+      "descUpgraded": "<g>固有</g>。\n每當你創造一張牌時，獲得 1 層<g>力量</g>。"
     },
     {
       "id": "ASCENDERS_BANE",
-      "name": "進階之災",
+      "name": "晉階者之禍",
       "slug": "ascenders-bane",
-      "descBase": "<g>不能被打出</g>。\n<g>虛無</g>。\n<g>永恆</g>。",
-      "descUpgraded": "<g>不能被打出</g>。\n<g>虛無</g>。\n<g>永恆</g>。"
+      "descBase": "<g>無法打出</g>。\n<g>虛無</g>。\n<g>永恆</g>。",
+      "descUpgraded": "<g>無法打出</g>。\n<g>虛無</g>。\n<g>永恆</g>。",
+      "aliases": [
+        "進階之災"
+      ]
     },
     {
       "id": "ASHEN_STRIKE",
       "name": "灰燼打擊",
       "slug": "ashen-strike",
-      "descBase": "造成6點傷害。\n你的<g>消耗牌堆</g>中每有一張牌，傷害增加3。",
-      "descUpgraded": "造成6點傷害。\n你的<g>消耗牌堆</g>中每有一張牌，傷害增加4。"
+      "descBase": "造成 6 點傷害。\n你<g>消耗堆</g>中每有一張牌，就額外造成 3 點傷害。",
+      "descUpgraded": "造成 6 點傷害。\n你<g>消耗堆</g>中每有一張牌，就額外造成 4 點傷害。"
     },
     {
       "id": "ASSASSINATE",
       "name": "刺殺",
       "slug": "assassinate",
-      "descBase": "<g>固有</g>。\n造成10點傷害。\n給予1層<g>易傷</g>。\n<g>消耗</g>。",
-      "descUpgraded": "<g>固有</g>。\n造成13點傷害。\n給予2層<g>易傷</g>。\n<g>消耗</g>。"
+      "descBase": "<g>固有</g>。\n造成 10 點傷害。\n施加 1 層<g>易傷</g>。\n<g>消耗</g>。",
+      "descUpgraded": "<g>固有</g>。\n造成 13 點傷害。\n施加 2 層<g>易傷</g>。\n<g>消耗</g>。"
     },
     {
       "id": "ASTRAL_PULSE",
       "name": "星界脈衝",
       "slug": "astral-pulse",
-      "descBase": "對所有敵人造成6點傷害兩次。",
-      "descUpgraded": "對所有敵人造成8點傷害兩次。"
+      "descBase": "對所有敵人造成 2 次 6 點傷害。",
+      "descUpgraded": "對所有敵人造成 2 次 8 點傷害。"
     },
     {
       "id": "AUTOMATION",
       "name": "自動化",
       "slug": "automation",
-      "descBase": "你每抽10張牌，獲得<e>1</e>。",
-      "descUpgraded": "你每抽10張牌，獲得<e>1</e>。"
+      "descBase": "你每抽 10 張牌，就獲得 <e/>。",
+      "descUpgraded": "你每抽 10 張牌，就獲得 <e/>。"
     },
     {
       "id": "BACKFLIP",
       "name": "後空翻",
       "slug": "backflip",
-      "descBase": "獲得5點<g>格擋</g>。\n抽2張牌。",
-      "descUpgraded": "獲得8點<g>格擋</g>。\n抽2張牌。"
+      "descBase": "獲得 5 點<g>格擋</g>。\n抽 2 張牌。",
+      "descUpgraded": "獲得 8 點<g>格擋</g>。\n抽 2 張牌。"
     },
     {
       "id": "BACKSTAB",
       "name": "背刺",
       "slug": "backstab",
-      "descBase": "<g>固有</g>。\n造成11點傷害。\n<g>消耗</g>。",
-      "descUpgraded": "<g>固有</g>。\n造成15點傷害。\n<g>消耗</g>。"
+      "descBase": "<g>固有</g>。\n造成 11 點傷害。\n<g>消耗</g>。",
+      "descUpgraded": "<g>固有</g>。\n造成 15 點傷害。\n<g>消耗</g>。"
     },
     {
       "id": "BAD_LUCK",
-      "name": "黴運",
+      "name": "霉運",
       "slug": "bad-luck",
-      "descBase": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的手牌中，你失去13點生命。\n<g>永恆</g>。",
-      "descUpgraded": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的手牌中，你失去13點生命。\n<g>永恆</g>。"
+      "descBase": "<g>無法打出</g>。\n在你的回合結束時，若此牌在你的手牌中，失去 13 點生命。\n<g>永恆</g>。",
+      "descUpgraded": "<g>無法打出</g>。\n在你的回合結束時，若此牌在你的手牌中，失去 13 點生命。\n<g>永恆</g>。",
+      "aliases": [
+        "黴運"
+      ]
     },
     {
       "id": "BALL_LIGHTNING",
       "name": "球狀閃電",
       "slug": "ball-lightning",
-      "descBase": "造成7點傷害。\n<g>生成</g>1個<g>閃電</g>充能球。",
-      "descUpgraded": "造成10點傷害。\n<g>生成</g>1個<g>閃電</g>充能球。"
+      "descBase": "造成 7 點傷害。\n<g>凝聚</g> 1 個<g>閃電</g>。",
+      "descUpgraded": "造成 10 點傷害。\n<g>凝聚</g> 1 個<g>閃電</g>。"
     },
     {
       "id": "BANSHEES_CRY",
       "name": "女妖之嚎",
       "slug": "banshees-cry",
-      "descBase": "對所有敵人造成33點傷害。\n本場戰鬥中每打出過一張<g>虛無</g>牌，此牌的耗能就減少<e>2</e>。",
-      "descUpgraded": "對所有敵人造成33點傷害。\n本場戰鬥中每打出過一張<g>虛無</g>牌，此牌的耗能就減少<e>2</e>。"
+      "descBase": "對所有敵人造成 33 點傷害。\n本場戰鬥中每打出一張<g>虛無</g>牌，此牌耗能就減少 <e/><e/>。",
+      "descUpgraded": "對所有敵人造成 33 點傷害。\n本場戰鬥中每打出一張<g>虛無</g>牌，此牌耗能就減少 <e/><e/>。"
     },
     {
       "id": "BARRAGE",
-      "name": "彈幕齊射",
+      "name": "彈幕",
       "slug": "barrage",
-      "descBase": "當前每有一個<g>充能球</g>，造成5點傷害。",
-      "descUpgraded": "當前每有一個<g>充能球</g>，造成7點傷害。"
+      "descBase": "你每有一個已<g>凝聚</g>的充能球，就造成 5 點傷害。",
+      "descUpgraded": "你每有一個已<g>凝聚</g>的充能球，就造成 7 點傷害。",
+      "aliases": [
+        "彈幕齊射"
+      ]
     },
     {
       "id": "BARRICADE",
       "name": "壁壘",
       "slug": "barricade",
-      "descBase": "<g>格擋</g>不再在你的回合開始時消失。",
-      "descUpgraded": "<g>格擋</g>不再在你的回合開始時消失。"
+      "descBase": "你的回合開始時不會移除<g>格擋</g>。",
+      "descUpgraded": "你的回合開始時不會移除<g>格擋</g>。"
     },
     {
       "id": "BASH",
-      "name": "痛擊",
+      "name": "猛擊",
       "slug": "bash",
-      "descBase": "造成8點傷害。\n給予2層<g>易傷</g>。",
-      "descUpgraded": "造成10點傷害。\n給予3層<g>易傷</g>。"
+      "descBase": "造成 8 點傷害。\n施加 2 層<g>易傷</g>。",
+      "descUpgraded": "造成 10 點傷害。\n施加 3 層<g>易傷</g>。",
+      "aliases": [
+        "痛擊"
+      ]
     },
     {
       "id": "BATTLE_TRANCE",
       "name": "戰鬥專注",
       "slug": "battle-trance",
-      "descBase": "抽3張牌。\n你在本回合內不能再抽任何牌。",
-      "descUpgraded": "抽4張牌。\n你在本回合內不能再抽任何牌。"
+      "descBase": "抽 3 張牌。\n本回合你無法再抽牌。",
+      "descUpgraded": "抽 4 張牌。\n本回合你無法再抽牌。"
     },
     {
       "id": "BEACON_OF_HOPE",
       "name": "希望燈塔",
       "slug": "beacon-of-hope",
-      "descBase": "每當你在你的回合獲得<g>格擋</g>時，其他玩家獲得相應一半的<g>格擋</g>。",
-      "descUpgraded": "<g>固有</g>。\n每當你在你的回合獲得<g>格擋</g>時，其他玩家獲得相應一半的<g>格擋</g>。"
+      "descBase": "每當你在自己的回合獲得<g>格擋</g>時，其他玩家獲得該數值一半的<g>格擋</g>。",
+      "descUpgraded": "<g>固有</g>。\n每當你在自己的回合獲得<g>格擋</g>時，其他玩家獲得該數值一半的<g>格擋</g>。"
     },
     {
       "id": "BEAM_CELL",
-      "name": "光束射線",
+      "name": "光束電池",
       "slug": "beam-cell",
-      "descBase": "造成3點傷害。\n給予1層<g>易傷</g>。",
-      "descUpgraded": "造成4點傷害。\n給予2層<g>易傷</g>。"
+      "descBase": "造成 3 點傷害。\n施加 1 層<g>易傷</g>。",
+      "descUpgraded": "造成 4 點傷害。\n施加 2 層<g>易傷</g>。",
+      "aliases": [
+        "光束射線"
+      ]
     },
     {
       "id": "BEAT_DOWN",
       "name": "狠揍",
       "slug": "beat-down",
-      "descBase": "打出你<g>棄牌堆</g>中的3張隨機攻擊牌。",
-      "descUpgraded": "打出你<g>棄牌堆</g>中的4張隨機攻擊牌。"
+      "descBase": "隨機打出你<g>棄牌堆</g>中的 3 張攻擊牌。",
+      "descUpgraded": "隨機打出你<g>棄牌堆</g>中的 4 張攻擊牌。"
     },
     {
       "id": "BEAT_INTO_SHAPE",
       "name": "鍛打成型",
       "slug": "beat-into-shape",
-      "descBase": "造成5點傷害。\n<g>鑄造</g>5。\n本回合內，你此前每擊中過該敵人一次，這張牌就額外<g>鑄造</g>5點。",
-      "descUpgraded": "造成7點傷害。\n<g>鑄造</g>7。\n本回合內，你此前每擊中過該敵人一次，這張牌就額外<g>鑄造</g>7點。"
+      "descBase": "造成 5 點傷害。\n<g>鑄造</g> 5。\n在本回合內每擊中過此敵人一次，就額外<g>鑄造</g> 5。",
+      "descUpgraded": "造成 7 點傷害。\n<g>鑄造</g> 7。\n在本回合內每擊中過此敵人一次，就額外<g>鑄造</g> 7。"
     },
     {
       "id": "BEGONE",
-      "name": "下去！",
+      "name": "滾開！",
       "slug": "begone",
-      "descBase": "選擇你<g>手牌</g>中的一張牌，將其<g>變化</g>為<g>僕從打擊</g>。",
-      "descUpgraded": "選擇你<g>手牌</g>中的一張牌，將其<g>變化</g>為<g>僕從打擊+</g>。"
+      "descBase": "選擇你<g>手牌</g>中的一張牌，將其<g>轉化</g>為<g>手下打擊</g>。",
+      "descUpgraded": "選擇你<g>手牌</g>中的一張牌，將其<g>轉化</g>為<g>手下打擊+</g>。",
+      "aliases": [
+        "下去！"
+      ]
     },
     {
       "id": "BELIEVE_IN_YOU",
-      "name": "相信著你",
+      "name": "相信你",
       "slug": "believe-in-you",
-      "descBase": "另一名玩家獲得<e>2</e>。",
-      "descUpgraded": "另一名玩家獲得<e>3</e>。"
+      "descBase": "另一名玩家獲得 <e/><e/>。",
+      "descUpgraded": "另一名玩家獲得 <e/><e/><e/>。",
+      "aliases": [
+        "相信著你"
+      ]
     },
     {
       "id": "BIASED_COGNITION",
       "name": "偏差認知",
       "slug": "biased-cognition",
-      "descBase": "獲得5點<g>集中</g>。\n在你的回合開始時，失去1點<g>集中</g>。",
-      "descUpgraded": "獲得6點<g>集中</g>。\n在你的回合開始時，失去1點<g>集中</g>。"
+      "descBase": "獲得 5 層<g>集中</g>。\n在你的回合開始時，失去 1 層<g>集中</g>。",
+      "descUpgraded": "獲得 6 層<g>集中</g>。\n在你的回合開始時，失去 1 層<g>集中</g>。"
     },
     {
       "id": "BIG_BANG",
-      "name": "大爆炸",
+      "name": "宇宙大爆炸",
       "slug": "big-bang",
-      "descBase": "抽1張牌。\n獲得<e>1</e>。\n獲得<s>1</s>。\n<g>鑄造</g>5。\n<g>消耗</g>。",
-      "descUpgraded": "<g>固有</g>。\n抽1張牌。\n獲得<e>1</e>。\n獲得<s>1</s>。\n<g>鑄造</g>5。\n<g>消耗</g>。"
+      "descBase": "抽 1 張牌。\n獲得 <e/>。\n獲得 1<s/>。\n<g>鑄造</g> 5。\n<g>消耗</g>。",
+      "descUpgraded": "<g>固有</g>。\n抽 1 張牌。\n獲得 <e/>。\n獲得 1<s/>。\n<g>鑄造</g> 5。\n<g>消耗</g>。",
+      "aliases": [
+        "大爆炸"
+      ]
     },
     {
       "id": "BLACK_HOLE",
       "name": "黑洞",
       "slug": "black-hole",
-      "descBase": "每當你花費或獲得<s>1</s>時，對所有敵人造成3點傷害。",
-      "descUpgraded": "每當你花費或獲得<s>1</s>時，對所有敵人造成4點傷害。"
+      "descBase": "每當你花費或獲得 1<s/> 時，對所有敵人造成 3 點傷害。",
+      "descUpgraded": "每當你花費或獲得 1<s/> 時，對所有敵人造成 4 點傷害。"
     },
     {
       "id": "BLADE_DANCE",
       "name": "刀刃之舞",
       "slug": "blade-dance",
-      "descBase": "添加3張<g>小刀</g>到你的<g>手牌</g>。\n<g>消耗</g>。",
-      "descUpgraded": "添加4張<g>小刀</g>到你的<g>手牌</g>。\n<g>消耗</g>。"
+      "descBase": "將 3 張<g>小刀</g>加入你的<g>手牌</g>。\n<g>消耗</g>。",
+      "descUpgraded": "將 4 張<g>小刀</g>加入你的<g>手牌</g>。\n<g>消耗</g>。"
     },
     {
       "id": "BLADE_OF_INK",
-      "name": "墨之刃",
+      "name": "墨刃",
       "slug": "blade-of-ink",
-      "descBase": "添加2張墨影<g>小刀</g>到你的<g>手牌</g>。",
-      "descUpgraded": "添加3張墨影<g>小刀</g>到你的<g>手牌</g>。",
-      "notes": "墨影附魔仍會施加虛弱，不再提供額外傷害。",
+      "descBase": "將 2 張墨影<g>小刀</g>加入你的<g>手牌</g>。",
+      "descUpgraded": "將 3 張墨影<g>小刀</g>加入你的<g>手牌</g>。",
       "aliases": [
-        "墨刃"
+        "墨之刃"
       ]
+    },
+    {
+      "id": "BLADE_SYMPHONY",
+      "name": "刀刃交響曲",
+      "slug": "blade-symphony",
+      "descBase": "將 2 張<g>小刀</g>加入所有玩家的<g>手牌</g>。",
+      "descUpgraded": "將 2 張<g>小刀</g>加入所有玩家的<g>手牌</g>。"
+    },
+    {
+      "id": "BLAZE",
+      "name": "熾焰",
+      "slug": "blaze",
+      "descBase": "使另一名玩家獲得 5 層<g>力量</g>。",
+      "descUpgraded": "使另一名玩家獲得 7 層<g>力量</g>。"
     },
     {
       "id": "BLIGHT_STRIKE",
       "name": "荒疫打擊",
       "slug": "blight-strike",
-      "descBase": "造成8點傷害。\n給予等量於所造成傷害的<g>災厄</g>。",
-      "descUpgraded": "造成10點傷害。\n給予等量於所造成傷害的<g>災厄</g>。"
+      "descBase": "造成 8 點傷害。\n施加與所造成傷害等量的<g>惡兆</g>。",
+      "descUpgraded": "造成 10 點傷害。\n施加與所造成傷害等量的<g>惡兆</g>。"
     },
     {
       "id": "BLOOD_WALL",
       "name": "血牆",
       "slug": "blood-wall",
-      "descBase": "失去2點生命。\n獲得16點<g>格擋</g>。",
-      "descUpgraded": "失去2點生命。\n獲得20點<g>格擋</g>。"
+      "descBase": "失去 2 點生命。\n獲得 16 點<g>格擋</g>。",
+      "descUpgraded": "失去 2 點生命。\n獲得 20 點<g>格擋</g>。"
     },
     {
       "id": "BLOODLETTING",
       "name": "放血",
       "slug": "bloodletting",
-      "descBase": "失去3點生命。\n獲得<e>2</e>。",
-      "descUpgraded": "失去3點生命。\n獲得<e>3</e>。"
+      "descBase": "失去 3 點生命。\n獲得 <e/><e/>。",
+      "descUpgraded": "失去 3 點生命。\n獲得 <e/><e/><e/>。"
     },
     {
       "id": "BLUDGEON",
       "name": "重錘",
       "slug": "bludgeon",
-      "descBase": "造成32點傷害。",
-      "descUpgraded": "造成42點傷害。"
+      "descBase": "造成 32 點傷害。",
+      "descUpgraded": "造成 42 點傷害。"
     },
     {
       "id": "BLUR",
-      "name": "殘影",
+      "name": "疾影",
       "slug": "blur",
-      "descBase": "獲得5點<g>格擋</g>。\n你的下一回合開始時<g>格擋</g>不會消失。",
-      "descUpgraded": "獲得8點<g>格擋</g>。\n你的下一回合開始時<g>格擋</g>不會消失。"
+      "descBase": "獲得 5 點<g>格擋</g>。\n下回合開始時不會移除<g>格擋</g>。",
+      "descUpgraded": "獲得 8 點<g>格擋</g>。\n下回合開始時不會移除<g>格擋</g>。",
+      "aliases": [
+        "殘影"
+      ]
     },
     {
       "id": "BODY_SLAM",
-      "name": "全身撞擊",
+      "name": "全身砸擊",
       "slug": "body-slam",
-      "descBase": "造成你當前<g>格擋</g>值的傷害。",
-      "descUpgraded": "造成你當前<g>格擋</g>值的傷害。"
+      "descBase": "造成與你<g>格擋</g>值相同的傷害。",
+      "descUpgraded": "造成與你<g>格擋</g>值相同的傷害。",
+      "aliases": [
+        "全身撞擊"
+      ]
     },
     {
       "id": "BODYGUARD",
       "name": "護衛",
       "slug": "bodyguard",
-      "descBase": "<g>召喚</g>5。",
-      "descUpgraded": "<g>召喚</g>7。"
+      "descBase": "<g>召喚</g> 5。",
+      "descUpgraded": "<g>召喚</g> 7。"
     },
     {
       "id": "BOLAS",
-      "name": "流星錘",
+      "name": "流星索",
       "slug": "bolas",
-      "descBase": "造成3點傷害。\n在你的下個回合開始時，將此卡返回你的<g>手牌</g>。",
-      "descUpgraded": "造成4點傷害。\n在你的下個回合開始時，將此卡返回你的<g>手牌</g>。"
+      "descBase": "造成 3 點傷害。\n下回合開始時，將此牌放回你的<g>手牌</g>。",
+      "descUpgraded": "造成 4 點傷害。\n下回合開始時，將此牌放回你的<g>手牌</g>。",
+      "aliases": [
+        "流星錘"
+      ]
     },
     {
       "id": "BOMBARDMENT",
-      "name": "轟擊",
+      "name": "轟炸",
       "slug": "bombardment",
-      "descBase": "造成18點傷害。\n你的回合開始時，如果這張牌在你的<g>消耗牌堆</g>中，則將其打出。\n<g>消耗</g>。",
-      "descUpgraded": "造成24點傷害。\n你的回合開始時，如果這張牌在你的<g>消耗牌堆</g>中，則將其打出。\n<g>消耗</g>。"
+      "descBase": "造成 18 點傷害。\n在你的回合開始時，若此牌在你的<g>消耗堆</g>中，將其打出。\n<g>消耗</g>。",
+      "descUpgraded": "造成 24 點傷害。\n在你的回合開始時，若此牌在你的<g>消耗堆</g>中，將其打出。\n<g>消耗</g>。",
+      "aliases": [
+        "轟擊"
+      ]
     },
     {
       "id": "BONE_SHARDS",
       "name": "碎骨",
       "slug": "bone-shards",
-      "descBase": "如果<g>奧斯提</g>存活，則他對所有敵人造成9點傷害並且你獲得9點<g>格擋</g>。\n然後<g>奧斯提</g>死去。",
-      "descUpgraded": "如果<g>奧斯提</g>存活，則他對所有敵人造成12點傷害並且你獲得12點<g>格擋</g>。\n然後<g>奧斯提</g>死去。"
+      "descBase": "若<g>奧斯提</g>存活，他會對所有敵人造成 9 點傷害，且你獲得 9 點<g>格擋</g>。\n<g>奧斯提</g>死亡。",
+      "descUpgraded": "若<g>奧斯提</g>存活，他會對所有敵人造成 12 點傷害，且你獲得 12 點<g>格擋</g>。\n<g>奧斯提</g>死亡。"
     },
     {
       "id": "BOOST_AWAY",
-      "name": "高速脫離",
+      "name": "推進脫離",
       "slug": "boost-away",
-      "descBase": "獲得6點<g>格擋</g>。\n將一張<g>暈眩</g>添加到你的<g>棄牌堆</g>中。",
-      "descUpgraded": "獲得9點<g>格擋</g>。\n將一張<g>暈眩</g>添加到你的<g>棄牌堆</g>中。"
+      "descBase": "獲得 6 點<g>格擋</g>。\n將一張<g>暈眩</g>牌加入你的<g>棄牌堆</g>。",
+      "descUpgraded": "獲得 9 點<g>格擋</g>。\n將一張<g>暈眩</g>牌加入你的<g>棄牌堆</g>。",
+      "aliases": [
+        "高速脫離"
+      ]
     },
     {
       "id": "BOOT_SEQUENCE",
       "name": "啟動流程",
       "slug": "boot-sequence",
-      "descBase": "<g>固有</g>。\n獲得10點<g>格擋</g>。\n<g>消耗</g>。",
-      "descUpgraded": "<g>固有</g>。\n獲得13點<g>格擋</g>。\n<g>消耗</g>。"
+      "descBase": "<g>固有</g>。\n獲得 10 點<g>格擋</g>。\n<g>消耗</g>。",
+      "descUpgraded": "<g>固有</g>。\n獲得 13 點<g>格擋</g>。\n<g>消耗</g>。"
     },
     {
       "id": "BORROWED_TIME",
-      "name": "預借時間",
+      "name": "預支時間",
       "slug": "borrowed-time",
-      "descBase": "獲得<e>4</e>。\n所有卡牌在本回合耗能增加<e>1</e>。",
-      "descUpgraded": "獲得<e>6</e>。\n所有卡牌在本回合耗能增加<e>1</e>。"
+      "descBase": "獲得 <e/><e/><e/><e/>。\n本回合卡牌需額外消耗 <e/>。",
+      "descUpgraded": "獲得 <e/><e/><e/><e/><e/><e/>。\n本回合卡牌需額外消耗 <e/>。",
+      "aliases": [
+        "預借時間"
+      ]
     },
     {
       "id": "BOUNCING_FLASK",
       "name": "彈跳藥瓶",
       "slug": "bouncing-flask",
-      "descBase": "隨機給予敵人3層<g>中毒</g>3次。",
-      "descUpgraded": "隨機給予敵人3層<g>中毒</g>4次。"
+      "descBase": "對一名隨機敵人施加 3 層<g>中毒</g>，重複 3 次。",
+      "descUpgraded": "對一名隨機敵人施加 3 層<g>中毒</g>，重複 4 次。"
     },
     {
       "id": "BRAND",
       "name": "烙印",
       "slug": "brand",
-      "descBase": "失去1點生命。\n<g>消耗</g>1張牌。\n獲得1點<g>力量</g>。",
-      "descUpgraded": "失去1點生命。\n<g>消耗</g>1張牌。\n獲得2點<g>力量</g>。"
+      "descBase": "失去 1 點生命。\n<g>消耗</g> 1 張牌。\n獲得 1 層<g>力量</g>。",
+      "descUpgraded": "失去 1 點生命。\n<g>消耗</g> 1 張牌。\n獲得 2 層<g>力量</g>。"
     },
     {
       "id": "BREAK",
-      "name": "破擊",
+      "name": "破壞",
       "slug": "break",
-      "descBase": "造成20點傷害。\n給予5層<g>易傷</g>。",
-      "descUpgraded": "造成30點傷害。\n給予7層<g>易傷</g>。"
+      "descBase": "造成 20 點傷害。\n施加 5 層<g>易傷</g>。",
+      "descUpgraded": "造成 30 點傷害。\n施加 7 層<g>易傷</g>。",
+      "aliases": [
+        "破擊"
+      ]
     },
     {
       "id": "BREAKTHROUGH",
       "name": "突破",
       "slug": "breakthrough",
-      "descBase": "失去1點生命。\n對所有敵人造成9點傷害。",
-      "descUpgraded": "失去1點生命。\n對所有敵人造成13點傷害。"
+      "descBase": "失去 1 點生命。\n對所有敵人造成 9 點傷害。",
+      "descUpgraded": "失去 1 點生命。\n對所有敵人造成 13 點傷害。"
     },
     {
       "id": "BRIGHTEST_FLAME",
-      "name": "至亮之焰",
+      "name": "至明烈焰",
       "slug": "brightest-flame",
-      "descBase": "獲得<e>2</e>。\n抽2張牌。\n失去1點最大生命。",
-      "descUpgraded": "獲得<e>3</e>。\n抽3張牌。\n失去1點最大生命。"
+      "descBase": "獲得 <e/><e/>。\n抽 2 張牌。\n失去 2 點最大生命。",
+      "descUpgraded": "獲得 <e/><e/><e/>。\n抽 3 張牌。\n失去 2 點最大生命。",
+      "aliases": [
+        "至亮之焰"
+      ]
     },
     {
       "id": "BUBBLE_BUBBLE",
       "name": "咕嘟冒泡",
       "slug": "bubble-bubble",
-      "descBase": "如果敵方擁有<g>中毒</g>，則給予9層<g>中毒</g>。",
-      "descUpgraded": "如果敵方擁有<g>中毒</g>，則給予12層<g>中毒</g>。"
+      "descBase": "若敵人有<g>中毒</g>，施加 9 層<g>中毒</g>。",
+      "descUpgraded": "若敵人有<g>中毒</g>，施加 12 層<g>中毒</g>。"
     },
     {
       "id": "BUFFER",
       "name": "緩衝",
       "slug": "buffer",
-      "descBase": "阻止下1次你受到的生命值損傷。",
-      "descUpgraded": "阻止下2次你受到的生命值損傷。"
+      "descBase": "防止你接下來一次失去生命。",
+      "descUpgraded": "防止你接下來 2 次失去生命。"
     },
     {
       "id": "BULK_UP",
-      "name": "暴漲",
+      "name": "強化體魄",
       "slug": "bulk-up",
-      "descBase": "失去1個充能球欄位。\n獲得2點<g>力量</g>。\n獲得2點<g>敏捷</g>。",
-      "descUpgraded": "失去1個充能球欄位。\n獲得3點<g>力量</g>。\n獲得3點<g>敏捷</g>。"
+      "descBase": "失去 1 個充能球欄位。\n獲得 2 層<g>力量</g>。\n獲得 2 層<g>敏捷</g>。",
+      "descUpgraded": "失去 1 個充能球欄位。\n獲得 3 層<g>力量</g>。\n獲得 3 層<g>敏捷</g>。",
+      "aliases": [
+        "暴漲"
+      ]
     },
     {
       "id": "BULLET_TIME",
       "name": "子彈時間",
       "slug": "bullet-time",
-      "descBase": "你在本回合內不能再抽牌。你<g>手牌</g>中的所有牌在本回合免費打出。",
-      "descUpgraded": "你在本回合內不能再抽牌。你<g>手牌</g>中的所有牌在本回合免費打出。"
+      "descBase": "本回合你無法再抽牌。你<g>手牌</g>中的所有牌本回合均可免費打出。",
+      "descUpgraded": "本回合你無法再抽牌。你<g>手牌</g>中的所有牌本回合均可免費打出。"
     },
     {
       "id": "BULLY",
-      "name": "欺凌",
+      "name": "恃強凌弱",
       "slug": "bully",
-      "descBase": "造成4點傷害。\n該敵人身上每有一層<g>易傷</g>就額外造成2點傷害。",
-      "descUpgraded": "造成4點傷害。\n該敵人身上每有一層<g>易傷</g>就額外造成3點傷害。"
+      "descBase": "造成 4 點傷害。\n敵人每有一層<g>易傷</g>，就額外造成 2 點傷害。",
+      "descUpgraded": "造成 4 點傷害。\n敵人每有一層<g>易傷</g>，就額外造成 3 點傷害。",
+      "aliases": [
+        "欺凌"
+      ]
     },
     {
       "id": "BULWARK",
-      "name": "鑄牆",
+      "name": "堡壘",
       "slug": "bulwark",
-      "descBase": "獲得12點<g>格擋</g>。\n<g>鑄造</g>10。",
-      "descUpgraded": "獲得15點<g>格擋</g>。\n<g>鑄造</g>13。"
+      "descBase": "獲得 12 點<g>格擋</g>。\n<g>鑄造</g> 10。",
+      "descUpgraded": "獲得 15 點<g>格擋</g>。\n<g>鑄造</g> 13。",
+      "aliases": [
+        "鑄牆"
+      ]
     },
     {
       "id": "BUNDLE_OF_JOY",
       "name": "新生之喜",
       "slug": "bundle-of-joy",
-      "descBase": "將3張隨機無色牌添加到你的<g>手牌</g>。\n<g>消耗</g>。",
-      "descUpgraded": "將4張隨機無色牌添加到你的<g>手牌</g>。\n<g>消耗</g>。"
+      "descBase": "將 3 張隨機無色牌加入你的<g>手牌</g>。\n<g>消耗</g>。",
+      "descUpgraded": "將 4 張隨機無色牌加入你的<g>手牌</g>。\n<g>消耗</g>。"
     },
     {
       "id": "BURNING_PACT",
       "name": "燃燒契約",
       "slug": "burning-pact",
-      "descBase": "<g>消耗</g>1張牌。\n抽2張牌。",
-      "descUpgraded": "<g>消耗</g>1張牌。\n抽3張牌。"
+      "descBase": "<g>消耗</g> 1 張牌。\n抽 2 張牌。",
+      "descUpgraded": "<g>消耗</g> 1 張牌。\n抽 3 張牌。"
     },
     {
       "id": "BURST",
       "name": "爆發",
       "slug": "burst",
-      "descBase": "在這個回合，你打出的下1張技能牌會被額外打出一次。",
-      "descUpgraded": "在這個回合，你打出的下2張技能牌會被額外打出一次。"
+      "descBase": "本回合，你打出的下 1 張技能牌會額外打出一次。",
+      "descUpgraded": "本回合，你打出的下 2 張技能牌會額外打出一次。"
     },
     {
       "id": "BURY",
       "name": "埋葬",
       "slug": "bury",
-      "descBase": "造成52點傷害。",
-      "descUpgraded": "造成63點傷害。"
+      "descBase": "造成 52 點傷害。",
+      "descUpgraded": "造成 63 點傷害。"
     },
     {
       "id": "BYRD_SWOOP",
-      "name": "異鳥撲擊",
+      "name": "異鳥俯衝",
       "slug": "byrd-swoop",
-      "descBase": "造成14點傷害。",
-      "descUpgraded": "造成18點傷害。"
+      "descBase": "造成 14 點傷害。",
+      "descUpgraded": "造成 18 點傷害。",
+      "aliases": [
+        "異鳥撲擊"
+      ]
     },
     {
       "id": "BYRDONIS_EGG",
-      "name": "多尼斯異鳥蛋",
+      "name": "異鳥成鳥之蛋",
       "slug": "byrdonis-egg",
-      "descBase": "<g>不能被打出</g>。\n能在<g>休息處</g>被孵化。",
-      "descUpgraded": "<g>不能被打出</g>。\n能在<g>休息處</g>被孵化。"
+      "descBase": "<g>無法打出</g>。\n可在<g>休息處</g>孵化。",
+      "descUpgraded": "<g>無法打出</g>。\n可在<g>休息處</g>孵化。",
+      "aliases": [
+        "多尼斯異鳥蛋"
+      ]
+    },
+    {
+      "id": "CACOPHONY",
+      "name": "不協雜音",
+      "slug": "cacophony",
+      "descBase": "所有玩家合計每抽 33 張牌，就對一名隨機敵人造成 66 點傷害。",
+      "descUpgraded": "所有玩家合計每抽 33 張牌，就對一名隨機敵人造成 99 點傷害。"
     },
     {
       "id": "CALAMITY",
-      "name": "劫難",
+      "name": "災厄",
       "slug": "calamity",
-      "descBase": "每當你打出一張攻擊牌時，將一張隨機攻擊牌添加到你的<g>手牌</g>。",
-      "descUpgraded": "每當你打出一張攻擊牌時，將一張隨機攻擊牌添加到你的<g>手牌</g>。"
+      "descBase": "每當你打出一張攻擊牌時，將一張隨機攻擊牌加入你的<g>手牌</g>。",
+      "descUpgraded": "每當你打出一張攻擊牌時，將一張隨機攻擊牌加入你的<g>手牌</g>。",
+      "aliases": [
+        "劫難"
+      ]
     },
     {
       "id": "CALCIFY",
       "name": "鈣化",
       "slug": "calcify",
-      "descBase": "<g>奧斯提</g>的攻擊額外造成4點傷害。",
-      "descUpgraded": "<g>奧斯提</g>的攻擊額外造成6點傷害。"
+      "descBase": "<g>奧斯提</g>的攻擊額外造成 4 點傷害。",
+      "descUpgraded": "<g>奧斯提</g>的攻擊額外造成 6 點傷害。"
     },
     {
       "id": "CALCULATED_GAMBLE",
-      "name": "計算下注",
+      "name": "精算一搏",
       "slug": "calculated-gamble",
-      "descBase": "丟棄你的所有<g>手牌</g>,\n然後抽相同數量的牌。\n<g>消耗</g>。",
-      "descUpgraded": "<g>保留</g>。\n丟棄你的所有<g>手牌</g>,\n然後抽相同數量的牌。\n<g>消耗</g>。"
+      "descBase": "丟棄你的<g>手牌</g>，\n然後抽取等量的牌。\n<g>消耗</g>。",
+      "descUpgraded": "<g>保留</g>。\n丟棄你的<g>手牌</g>，\n然後抽取等量的牌。\n<g>消耗</g>。",
+      "aliases": [
+        "計算下注"
+      ]
     },
     {
       "id": "CALL_OF_THE_VOID",
-      "name": "虛空之喚",
+      "name": "虛空呼喚",
       "slug": "call-of-the-void",
-      "descBase": "在你的回合開始時，將1張隨機牌添加到你的<g>手牌</g>中。添加的牌會獲得<g>虛無</g>。",
-      "descUpgraded": "<g>固有</g>。\n在你的回合開始時，將1張隨機牌添加到你的<g>手牌</g>中。添加的牌會獲得<g>虛無</g>。"
+      "descBase": "在你的回合開始時，將 1 張隨機卡牌加入你的<g>手牌</g>。該牌獲得<g>虛無</g>。",
+      "descUpgraded": "<g>固有</g>。\n在你的回合開始時，將 1 張隨機卡牌加入你的<g>手牌</g>。該牌獲得<g>虛無</g>。",
+      "aliases": [
+        "虛空之喚"
+      ]
     },
     {
       "id": "CALTROPS",
       "name": "鐵蒺藜",
       "slug": "caltrops",
-      "descBase": "每當你被攻擊時，對攻擊者造成3點傷害。",
-      "descUpgraded": "每當你被攻擊時，對攻擊者造成5點傷害。"
+      "descBase": "每當你被攻擊時，對攻擊者造成 3 點傷害。",
+      "descUpgraded": "每當你被攻擊時，對攻擊者造成 5 點傷害。"
     },
     {
       "id": "CAPACITOR",
       "name": "擴容",
       "slug": "capacitor",
-      "descBase": "獲得2個充能球欄位。",
-      "descUpgraded": "獲得3個充能球欄位。"
+      "descBase": "獲得 2 個充能球欄位。",
+      "descUpgraded": "獲得 3 個充能球欄位。"
     },
     {
       "id": "CAPTURE_SPIRIT",
       "name": "捕捉靈魂",
       "slug": "capture-spirit",
-      "descBase": "敵人失去3點生命。\n將3張<g>靈魂</g>加入你的<g>抽牌堆</g>。",
-      "descUpgraded": "敵人失去4點生命。\n將4張<g>靈魂</g>加入你的<g>抽牌堆</g>。"
+      "descBase": "敵人失去 3 點生命。\n將 3 張<g>靈魂</g>加入你的<g>抽牌堆</g>。",
+      "descUpgraded": "敵人失去 4 點生命。\n將 4 張<g>靈魂</g>加入你的<g>抽牌堆</g>。"
     },
     {
       "id": "CASCADE",
-      "name": "傾瀉",
+      "name": "連鎖傾瀉",
       "slug": "cascade",
-      "descBase": "打出你<g>抽牌堆</g>頂部的X張牌。",
-      "descUpgraded": "打出你<g>抽牌堆</g>頂部的X+1張牌。"
+      "descBase": "打出你<g>抽牌堆</g>頂部的 X 張牌。",
+      "descUpgraded": "打出你<g>抽牌堆</g>頂部的 X+1 張牌。",
+      "aliases": [
+        "傾瀉"
+      ]
     },
     {
       "id": "CATASTROPHE",
-      "name": "橫禍",
+      "name": "浩劫",
       "slug": "catastrophe",
-      "descBase": "從你的<g>抽牌堆</g>中隨機打出2張牌。",
-      "descUpgraded": "從你的<g>抽牌堆</g>中隨機打出3張牌。"
+      "descBase": "打出你<g>抽牌堆</g>中的 2 張隨機卡牌。",
+      "descUpgraded": "打出你<g>抽牌堆</g>中的 3 張隨機卡牌。",
+      "aliases": [
+        "橫禍"
+      ]
     },
     {
       "id": "CELESTIAL_MIGHT",
-      "name": "天穹之力",
+      "name": "天界神威",
       "slug": "celestial-might",
-      "descBase": "造成6點傷害3次。",
-      "descUpgraded": "造成6點傷害4次。"
+      "descBase": "造成 3 次 6 點傷害。",
+      "descUpgraded": "造成 4 次 6 點傷害。",
+      "aliases": [
+        "天穹之力"
+      ]
     },
     {
       "id": "CHAOS",
       "name": "混沌",
       "slug": "chaos",
-      "descBase": "<g>生成</g>1個隨機充能球。",
-      "descUpgraded": "<g>生成</g>2個隨機充能球。"
+      "descBase": "<g>凝聚</g> 1 個隨機充能球。",
+      "descUpgraded": "<g>凝聚</g> 2 個隨機充能球。"
     },
     {
       "id": "CHARGE",
       "name": "衝鋒！！",
       "slug": "charge",
-      "descBase": "選擇你<g>抽牌堆</g>中的2張牌，將其<g>變化</g>為\n<g>僕從俯衝</g>。",
-      "descUpgraded": "選擇你<g>抽牌堆</g>中的2張牌，將其<g>變化</g>為\n<g>僕從俯衝+</g>。"
+      "descBase": "選擇你<g>抽牌堆</g>中的 2 張牌，將其<g>轉化</g>為\n<g>手下墜擊</g>。",
+      "descUpgraded": "選擇你<g>抽牌堆</g>中的 2 張牌，將其<g>轉化</g>為\n<g>手下墜擊+</g>。"
     },
     {
       "id": "CHARGE_BATTERY",
       "name": "充電",
       "slug": "charge-battery",
-      "descBase": "獲得7點<g>格擋</g>。\n在下個回合獲得<e>1</e>。",
-      "descUpgraded": "獲得10點<g>格擋</g>。\n在下個回合獲得<e>1</e>。"
+      "descBase": "獲得 7 點<g>格擋</g>。\n下回合，獲得 <e/>。",
+      "descUpgraded": "獲得 10 點<g>格擋</g>。\n下回合，獲得 <e/>。"
     },
     {
       "id": "CHILD_OF_THE_STARS",
       "name": "群星之子",
       "slug": "child-of-the-stars",
-      "descBase": "每當你花費<s>1</s>時，每花費一點<s>1</s>，獲得2點<g>格擋</g>。",
-      "descUpgraded": "每當你花費<s>1</s>時，每花費一點<s>1</s>，獲得3點<g>格擋</g>。"
+      "descBase": "每當你花費 1<s/> 時，每個 1<s/> 都會使你獲得 2 點<g>格擋</g>。",
+      "descUpgraded": "每當你花費 1<s/> 時，每個 1<s/> 都會使你獲得 3 點<g>格擋</g>。"
     },
     {
       "id": "CHILL",
       "name": "冰寒",
       "slug": "chill",
-      "descBase": "當前每有一名敵人，就<g>生成</g>1個<g>冰霜</g>充能球。\n<g>消耗</g>。",
-      "descUpgraded": "當前每有一名敵人，就<g>生成</g>1個<g>冰霜</g>充能球。"
+      "descBase": "每有一名敵人，就<g>凝聚</g> 1 個<g>冰霜</g>。\n<g>消耗</g>。",
+      "descUpgraded": "每有一名敵人，就<g>凝聚</g> 1 個<g>冰霜</g>。"
     },
     {
       "id": "CINDER",
       "name": "餘燼",
       "slug": "cinder",
-      "descBase": "造成18點傷害。\n隨機<g>消耗</g>1張牌。",
-      "descUpgraded": "造成24點傷害。\n隨機<g>消耗</g>1張牌。"
+      "descBase": "造成 18 點傷害。\n隨機<g>消耗</g> 1 張牌。",
+      "descUpgraded": "造成 24 點傷害。\n隨機<g>消耗</g> 1 張牌。"
     },
     {
       "id": "CLASH",
       "name": "交鋒",
       "slug": "clash",
-      "descBase": "只有在<g>手牌</g>中每一張牌都是攻擊牌時才能被打出。\n造成14點傷害。",
-      "descUpgraded": "只有在<g>手牌</g>中每一張牌都是攻擊牌時才能被打出。\n造成18點傷害。"
+      "descBase": "只有在你<g>手牌</g>中的每張牌都是攻擊牌時才能打出。\n造成 14 點傷害。",
+      "descUpgraded": "只有在你<g>手牌</g>中的每張牌都是攻擊牌時才能打出。\n造成 18 點傷害。"
     },
     {
       "id": "CLAW",
       "name": "爪擊",
       "slug": "claw",
-      "descBase": "造成3點傷害。\n本場戰鬥中所有爪擊卡牌的傷害增加2點。",
-      "descUpgraded": "造成4點傷害。\n本場戰鬥中所有爪擊卡牌的傷害增加3點。"
+      "descBase": "造成 3 點傷害。\n本場戰鬥中，所有爪擊牌的傷害提高 2 點。",
+      "descUpgraded": "造成 4 點傷害。\n本場戰鬥中，所有爪擊牌的傷害提高 3 點。"
     },
     {
       "id": "CLEANSE",
-      "name": "潔淨",
+      "name": "淨化",
       "slug": "cleanse",
-      "descBase": "<g>召喚</g>3。\n從你的<g>抽牌堆</g>中選擇一張牌將其<g>消耗</g>。",
-      "descUpgraded": "<g>召喚</g>5。\n從你的<g>抽牌堆</g>中選擇一張牌將其<g>消耗</g>。"
+      "descBase": "<g>召喚</g> 3。\n<g>消耗</g>你<g>抽牌堆</g>中的 1 張牌。",
+      "descUpgraded": "<g>召喚</g> 5。\n<g>消耗</g>你<g>抽牌堆</g>中的 1 張牌。",
+      "aliases": [
+        "潔淨"
+      ]
     },
     {
       "id": "CLOAK_AND_DAGGER",
       "name": "斗篷與匕首",
       "slug": "cloak-and-dagger",
-      "descBase": "獲得6點<g>格擋</g>。\n將1張<g>小刀</g>添加到你的<g>手牌</g>。",
-      "descUpgraded": "獲得6點<g>格擋</g>。\n將2張<g>小刀</g>添加到你的<g>手牌</g>。"
+      "descBase": "獲得 6 點<g>格擋</g>。\n將 1 張<g>小刀</g>加入你的<g>手牌</g>。",
+      "descUpgraded": "獲得 6 點<g>格擋</g>。\n將 2 張<g>小刀</g>加入你的<g>手牌</g>。"
     },
     {
       "id": "CLOAK_OF_STARS",
       "name": "群星斗篷",
       "slug": "cloak-of-stars",
-      "descBase": "獲得7點<g>格擋</g>。",
-      "descUpgraded": "獲得10點<g>格擋</g>。"
+      "descBase": "獲得 7 點<g>格擋</g>。",
+      "descUpgraded": "獲得 10 點<g>格擋</g>。"
     },
     {
       "id": "CLUMSY",
       "name": "笨拙",
       "slug": "clumsy",
-      "descBase": "<g>不能被打出</g>。\n<g>虛無</g>。",
-      "descUpgraded": "<g>不能被打出</g>。\n<g>虛無</g>。"
+      "descBase": "<g>無法打出</g>。\n<g>虛無</g>。",
+      "descUpgraded": "<g>無法打出</g>。\n<g>虛無</g>。"
     },
     {
       "id": "COLD_SNAP",
       "name": "寒流",
       "slug": "cold-snap",
-      "descBase": "造成6點傷害。\n<g>生成</g>1個<g>冰霜</g>充能球。",
-      "descUpgraded": "造成9點傷害。\n<g>生成</g>1個<g>冰霜</g>充能球。"
+      "descBase": "造成 6 點傷害。\n<g>凝聚</g> 1 個<g>冰霜</g>。",
+      "descUpgraded": "造成 9 點傷害。\n<g>凝聚</g> 1 個<g>冰霜</g>。"
     },
     {
       "id": "COLLISION_COURSE",
       "name": "碰撞軌跡",
       "slug": "collision-course",
-      "descBase": "造成10點傷害。\n將一張<g>碎屑</g>添加至你的<g>手牌</g>。",
-      "descUpgraded": "造成14點傷害。\n將一張<g>碎屑</g>添加至你的<g>手牌</g>。"
+      "descBase": "造成 10 點傷害。\n將一張<g>殘骸</g>加入你的<g>手牌</g>。",
+      "descUpgraded": "造成 14 點傷害。\n將一張<g>殘骸</g>加入你的<g>手牌</g>。"
     },
     {
       "id": "COLOSSUS",
       "name": "巨像",
       "slug": "colossus",
-      "descBase": "獲得4點<g>格擋</g>。\n在本回閤中，有<g>易傷</g>狀態的敵人對你造成的傷害降低50%。",
-      "descUpgraded": "獲得7點<g>格擋</g>。\n在本回閤中，有<g>易傷</g>狀態的敵人對你造成的傷害降低50%。"
+      "descBase": "獲得 4 點<g>格擋</g>。\n本回合<g>易傷</g>狀態敵人對你造成的傷害減少 50%。",
+      "descUpgraded": "獲得 7 點<g>格擋</g>。\n本回合<g>易傷</g>狀態敵人對你造成的傷害減少 50%。"
     },
     {
       "id": "COMET",
       "name": "彗星",
       "slug": "comet",
-      "descBase": "造成33點傷害。\n給予3層<g>虛弱</g>。\n給予3層<g>易傷</g>。",
-      "descUpgraded": "造成44點傷害。\n給予3層<g>虛弱</g>。\n給予3層<g>易傷</g>。"
+      "descBase": "造成 33 點傷害。\n施加 3 層<g>虛弱</g>。\n施加 3 層<g>易傷</g>。",
+      "descUpgraded": "造成 44 點傷害。\n施加 3 層<g>虛弱</g>。\n施加 3 層<g>易傷</g>。"
     },
     {
       "id": "COMPACT",
       "name": "壓縮",
       "slug": "compact",
-      "descBase": "獲得6點<g>格擋</g>。\n將你<g>手牌</g>中的全部狀態牌<g>變化</g>為<g>燃料</g>。",
-      "descUpgraded": "獲得7點<g>格擋</g>。\n將你<g>手牌</g>中的全部狀態牌<g>變化</g>為<g>燃料+</g>。",
-      "notes": "衍生牌燃料：不再抽牌；升級後改為額外獲得1點能量。"
+      "descBase": "獲得 6 點<g>格擋</g>。\n將你<g>手牌</g>中的所有狀態牌<g>轉化</g>為<g>燃料</g>。",
+      "descUpgraded": "獲得 7 點<g>格擋</g>。\n將你<g>手牌</g>中的所有狀態牌<g>轉化</g>為<g>燃料+</g>。"
     },
     {
       "id": "COMPILE_DRIVER",
       "name": "編譯衝擊",
       "slug": "compile-driver",
-      "descBase": "造成7點傷害。\n你每有一種不同的充能球，就抽一張牌。",
-      "descUpgraded": "造成10點傷害。\n你每有一種不同的充能球，就抽一張牌。"
+      "descBase": "造成 7 點傷害。\n你每擁有一種不同的充能球，就抽 1 張牌。",
+      "descUpgraded": "造成 10 點傷害。\n你每擁有一種不同的充能球，就抽 1 張牌。"
+    },
+    {
+      "id": "CONCOCT",
+      "name": "調製",
+      "slug": "concoct",
+      "descBase": "選擇另一名玩家。本回合每當該玩家的攻擊造成未被格擋的傷害時，就會施加 3 層<g>中毒</g>。",
+      "descUpgraded": "選擇另一名玩家。本回合每當該玩家的攻擊造成未被格擋的傷害時，就會施加 4 層<g>中毒</g>。"
     },
     {
       "id": "CONFLAGRATION",
-      "name": "焚燒",
+      "name": "燎原烈火",
       "slug": "conflagration",
-      "descBase": "對所有敵人造成2點傷害4次。",
-      "descUpgraded": "對所有敵人造成2點傷害5次。"
+      "descBase": "對所有敵人造成 4 次 2 點傷害。",
+      "descUpgraded": "對所有敵人造成 5 次 2 點傷害。",
+      "aliases": [
+        "焚燒"
+      ]
     },
     {
       "id": "CONQUEROR",
       "name": "征服者",
       "slug": "conqueror",
-      "descBase": "<g>鑄造</g>3。\n<g>君王之劍</g>在本回合對敵人造成雙倍傷害。",
-      "descUpgraded": "<g>鑄造</g>5。\n<g>君王之劍</g>在本回合對敵人造成雙倍傷害。"
+      "descBase": "<g>鑄造</g> 3。\n本回合<g>君王之劍</g>對該敵人造成雙倍傷害。",
+      "descUpgraded": "<g>鑄造</g> 5。\n本回合<g>君王之劍</g>對該敵人造成雙倍傷害。"
+    },
+    {
+      "id": "CONSTELLATION",
+      "name": "星座",
+      "slug": "constellation",
+      "descBase": "另一名玩家抽 1 張牌、獲得 <e/>，並獲得 9 點<g>格擋</g>。",
+      "descUpgraded": "另一名玩家抽 1 張牌、獲得 <e/>，並獲得 12 點<g>格擋</g>。"
     },
     {
       "id": "CONSUMING_SHADOW",
       "name": "吞噬暗影",
       "slug": "consuming-shadow",
-      "descBase": "<g>生成</g>2個<g>黑暗</g>充能球。\n在你的回合結束時，<g>激發</g>你最左側的充能球。",
-      "descUpgraded": "<g>生成</g>3個<g>黑暗</g>充能球。\n在你的回合結束時，<g>激發</g>你最左側的充能球。"
+      "descBase": "<g>凝聚</g> 2 個<g>黑暗</g>。\n在你的回合結束時，<g>激發</g>你最左側的充能球。",
+      "descUpgraded": "<g>凝聚</g> 3 個<g>黑暗</g>。\n在你的回合結束時，<g>激發</g>你最左側的充能球。"
     },
     {
       "id": "CONVERGENCE",
-      "name": "匯流",
+      "name": "收斂",
       "slug": "convergence",
-      "descBase": "在本回合<g>保留</g>你的<g>手牌</g>。\n在下個回合，\n獲得<e>1</e>與<s>1</s>。",
-      "descUpgraded": "在本回合<g>保留</g>你的<g>手牌</g>。\n在下個回合，\n獲得<e>1</e>與<s>2</s>。"
+      "descBase": "下回合，\n獲得 <e/> 和 1<s/>。\n在本回合<g>保留</g>你的<g>手牌</g>。",
+      "descUpgraded": "下回合，\n獲得 <e/> 和 2<s/>。\n在本回合<g>保留</g>你的<g>手牌</g>。",
+      "aliases": [
+        "匯流"
+      ]
     },
     {
       "id": "COOLANT",
-      "name": "冷卻劑",
+      "name": "冷卻液",
       "slug": "coolant",
-      "descBase": "在你的回合開始時，你每有一種不同的充能球，就獲得2點<g>格擋</g>。",
-      "descUpgraded": "在你的回合開始時，你每有一種不同的充能球，就獲得3點<g>格擋</g>。"
+      "descBase": "在你的回合開始時，你每擁有一種不同的充能球，就獲得 2 點<g>格擋</g>。",
+      "descUpgraded": "在你的回合開始時，你每擁有一種不同的充能球，就獲得 3 點<g>格擋</g>。",
+      "aliases": [
+        "冷卻劑"
+      ]
     },
     {
       "id": "COOLHEADED",
       "name": "冷靜頭腦",
       "slug": "coolheaded",
-      "descBase": "<g>生成</g>1個<g>冰霜</g>充能球。\n抽1張牌。",
-      "descUpgraded": "<g>生成</g>1個<g>冰霜</g>充能球。\n抽2張牌。"
+      "descBase": "<g>凝聚</g> 1 個<g>冰霜</g>。\n抽 1 張牌。",
+      "descUpgraded": "<g>凝聚</g> 1 個<g>冰霜</g>。\n抽 2 張牌。"
     },
     {
       "id": "COORDINATE",
-      "name": "協同配合",
+      "name": "協調",
       "slug": "coordinate",
-      "descBase": "在本回合給予其他玩家5點<g>力量</g>。",
-      "descUpgraded": "在本回合給予其他玩家8點<g>力量</g>。"
+      "descBase": "本回合使另一名玩家獲得 5 層<g>力量</g>。",
+      "descUpgraded": "本回合使另一名玩家獲得 8 層<g>力量</g>。",
+      "aliases": [
+        "協同配合"
+      ]
     },
     {
       "id": "CORROSIVE_WAVE",
       "name": "腐蝕波",
       "slug": "corrosive-wave",
-      "descBase": "打出此牌後，你在本回合每抽到一張牌，就給予所有敵人2層<g>中毒</g>。",
-      "descUpgraded": "打出此牌後，你在本回合每抽到一張牌，就給予所有敵人3層<g>中毒</g>。"
+      "descBase": "本回合每當你抽一張牌時，對所有敵人施加 2 層<g>中毒</g>。",
+      "descUpgraded": "本回合每當你抽一張牌時，對所有敵人施加 3 層<g>中毒</g>。"
     },
     {
       "id": "CORRUPTION",
       "name": "腐化",
       "slug": "corruption",
-      "descBase": "技能牌消耗變為0<e/>。\n每當你打出一張技能牌時，將其<g>消耗</g>。",
-      "descUpgraded": "技能牌消耗變為0<e/>。\n每當你打出一張技能牌時，將其<g>消耗</g>。"
+      "descBase": "技能牌耗能為 0 <e/>。\n每當你打出一張技能牌時，將其<g>消耗</g>。",
+      "descUpgraded": "技能牌耗能為 0 <e/>。\n每當你打出一張技能牌時，將其<g>消耗</g>。"
     },
     {
       "id": "COSMIC_INDIFFERENCE",
       "name": "宇宙冷漠",
       "slug": "cosmic-indifference",
-      "descBase": "獲得6點<g>格擋</g>。\n將<g>棄牌堆</g>中的一張牌放到你的<g>抽牌堆</g>的頂部。",
-      "descUpgraded": "獲得9點<g>格擋</g>。\n將<g>棄牌堆</g>中的一張牌放到你的<g>抽牌堆</g>的頂部。"
+      "descBase": "獲得 6 點<g>格擋</g>。\n將你<g>棄牌堆</g>中的一張牌放到<g>抽牌堆</g>頂部。",
+      "descUpgraded": "獲得 9 點<g>格擋</g>。\n將你<g>棄牌堆</g>中的一張牌放到<g>抽牌堆</g>頂部。"
     },
     {
       "id": "COUNTDOWN",
       "name": "倒數計時",
       "slug": "countdown",
-      "descBase": "在你的回合開始時，給予隨機敵人6層<g>災厄</g>。",
-      "descUpgraded": "在你的回合開始時，給予隨機敵人9層<g>災厄</g>。"
+      "descBase": "在你的回合開始時，對一名隨機敵人施加 6 層<g>惡兆</g>。",
+      "descUpgraded": "在你的回合開始時，對一名隨機敵人施加 9 層<g>惡兆</g>。"
     },
     {
       "id": "CRASH_LANDING",
       "name": "迫降",
       "slug": "crash-landing",
-      "descBase": "對所有敵人造成21點傷害。\n用<g>碎屑</g>填滿你的<g>手牌</g>。",
-      "descUpgraded": "對所有敵人造成26點傷害。\n用<g>碎屑</g>填滿你的<g>手牌</g>。"
+      "descBase": "對所有敵人造成 21 點傷害。\n以<g>殘骸</g>填滿你的<g>手牌</g>。",
+      "descUpgraded": "對所有敵人造成 26 點傷害。\n以<g>殘骸</g>填滿你的<g>手牌</g>。"
     },
     {
       "id": "CREATIVE_AI",
-      "name": "創造性AI",
+      "name": "創造性 AI",
       "slug": "creative-ai",
       "descBase": "在你的回合開始時，將一張隨機能力牌加入你的<g>手牌</g>。",
-      "descUpgraded": "在你的回合開始時，將一張隨機能力牌加入你的<g>手牌</g>。"
+      "descUpgraded": "在你的回合開始時，將一張隨機能力牌加入你的<g>手牌</g>。",
+      "aliases": [
+        "創造性AI"
+      ]
     },
     {
       "id": "CRESCENT_SPEAR",
       "name": "新月長矛",
       "slug": "crescent-spear",
-      "descBase": "造成8點傷害。\n你每有一張擁有<s>1</s>耗能的卡牌，這張牌就額外造成2點傷害。",
-      "descUpgraded": "造成8點傷害。\n你每有一張擁有<s>1</s>耗能的卡牌，這張牌就額外造成3點傷害。"
+      "descBase": "造成 8 點傷害。\n你的牌中每有一張耗能為 1<s/> 的牌，就額外造成 2 點傷害。",
+      "descUpgraded": "造成 8 點傷害。\n你的牌中每有一張耗能為 1<s/> 的牌，就額外造成 3 點傷害。"
     },
     {
       "id": "CRIMSON_MANTLE",
       "name": "緋紅披風",
       "slug": "crimson-mantle",
-      "descBase": "在你的回合開始時，失去1點生命並獲得7點<g>格擋</g>。",
-      "descUpgraded": "在你的回合開始時，失去1點生命並獲得10點<g>格擋</g>。"
+      "descBase": "在你的回合開始時，失去 1 點生命並獲得 7 點<g>格擋</g>。",
+      "descUpgraded": "在你的回合開始時，失去 1 點生命並獲得 10 點<g>格擋</g>。"
     },
     {
       "id": "CRUELTY",
       "name": "殘酷",
       "slug": "cruelty",
-      "descBase": "有<g>易傷</g>狀態的敵人額外受到25%的傷害。",
-      "descUpgraded": "有<g>易傷</g>狀態的敵人額外受到50%的傷害。"
+      "descBase": "<g>易傷</g>狀態的敵人受到的傷害提高 25%。",
+      "descUpgraded": "<g>易傷</g>狀態的敵人受到的傷害提高 50%。"
     },
     {
       "id": "CRUSH_UNDER",
       "name": "下砸",
       "slug": "crush-under",
-      "descBase": "對所有敵人造成8點傷害。所有敵人在本回合失去1點<g>力量</g>。",
-      "descUpgraded": "對所有敵人造成9點傷害。所有敵人在本回合失去2點<g>力量</g>。"
+      "descBase": "對所有敵人造成 8 點傷害。所有敵人本回合失去 1 層<g>力量</g>。",
+      "descUpgraded": "對所有敵人造成 9 點傷害。所有敵人本回合失去 2 層<g>力量</g>。"
     },
     {
       "id": "CURSE_OF_THE_BELL",
-      "name": "鈴鐺的詛咒",
+      "name": "鈴鐺詛咒",
       "slug": "curse-of-the-bell",
-      "descBase": "<g>不能被打出</g>。\n<g>永恆</g>。",
-      "descUpgraded": "<g>不能被打出</g>。\n<g>永恆</g>。"
+      "descBase": "<g>無法打出</g>。\n<g>永恆</g>。",
+      "descUpgraded": "<g>無法打出</g>。\n<g>永恆</g>。",
+      "aliases": [
+        "鈴鐺的詛咒"
+      ]
     },
     {
       "id": "DAGGER_SPRAY",
       "name": "匕首雨",
       "slug": "dagger-spray",
-      "descBase": "對所有敵人造成4點傷害兩次。",
-      "descUpgraded": "對所有敵人造成6點傷害兩次。"
+      "descBase": "對所有敵人造成 2 次 4 點傷害。",
+      "descUpgraded": "對所有敵人造成 2 次 6 點傷害。"
     },
     {
       "id": "DAGGER_THROW",
       "name": "投擲匕首",
       "slug": "dagger-throw",
-      "descBase": "造成9點傷害。\n抽1張牌。\n丟棄1張牌。",
-      "descUpgraded": "造成12點傷害。\n抽1張牌。\n丟棄1張牌。"
+      "descBase": "造成 9 點傷害。\n抽 1 張牌。\n丟棄 1 張牌。",
+      "descUpgraded": "造成 12 點傷害。\n抽 1 張牌。\n丟棄 1 張牌。"
     },
     {
       "id": "DANSE_MACABRE",
       "name": "死亡之舞",
       "slug": "danse-macabre",
-      "descBase": "每當你打出一張耗能大於等於<e>2</e>的牌時，獲得4點<g>格擋</g>。",
-      "descUpgraded": "每當你打出一張耗能大於等於<e>2</e>的牌時，獲得6點<g>格擋</g>。"
+      "descBase": "每當你打出一張耗能不少於 <e/><e/> 的牌時，獲得 4 點<g>格擋</g>。",
+      "descUpgraded": "每當你打出一張耗能不少於 <e/><e/> 的牌時，獲得 6 點<g>格擋</g>。"
     },
     {
       "id": "DARK_EMBRACE",
       "name": "黑暗之擁",
       "slug": "dark-embrace",
-      "descBase": "每當有一張牌被<g>消耗</g>時，\n抽1張牌。",
-      "descUpgraded": "每當有一張牌被<g>消耗</g>時，\n抽1張牌。"
+      "descBase": "每當一張牌被<g>消耗</g>時，\n就抽 1 張牌。",
+      "descUpgraded": "每當一張牌被<g>消耗</g>時，\n就抽 1 張牌。"
     },
     {
       "id": "DARK_SHACKLES",
       "name": "黑暗鐐銬",
       "slug": "dark-shackles",
-      "descBase": "使一名敵人在本回合失去9點<g>力量</g>。\n<g>消耗</g>。",
-      "descUpgraded": "使一名敵人在本回合失去15點<g>力量</g>。\n<g>消耗</g>。"
+      "descBase": "敵人本回合失去 9 層<g>力量</g>。\n<g>消耗</g>。",
+      "descUpgraded": "敵人本回合失去 15 層<g>力量</g>。\n<g>消耗</g>。"
     },
     {
       "id": "DARKNESS",
       "name": "漆黑",
       "slug": "darkness",
-      "descBase": "<g>生成</g>1<g>黑暗</g>充能球。\n觸發所有<g>黑暗</g>充能球的被動。",
-      "descUpgraded": "<g>生成</g>1<g>黑暗</g>充能球。\n觸發所有<g>黑暗</g>充能球的被動兩次。"
+      "descBase": "<g>凝聚</g> 1 個<g>黑暗</g>。\n觸發所有<g>黑暗</g>充能球的被動能力。",
+      "descUpgraded": "<g>凝聚</g> 1 個<g>黑暗</g>。\n觸發所有<g>黑暗</g>充能球的被動能力兩次。"
     },
     {
       "id": "DASH",
       "name": "衝刺",
       "slug": "dash",
-      "descBase": "獲得10點<g>格擋</g>。\n造成10點傷害。",
-      "descUpgraded": "獲得13點<g>格擋</g>。\n造成13點傷害。"
+      "descBase": "獲得 10 點<g>格擋</g>。\n造成 10 點傷害。",
+      "descUpgraded": "獲得 13 點<g>格擋</g>。\n造成 13 點傷害。"
     },
     {
       "id": "DEADLY_POISON",
       "name": "致命毒藥",
       "slug": "deadly-poison",
-      "descBase": "給予5層<g>中毒</g>。",
-      "descUpgraded": "給予7層<g>中毒</g>。"
+      "descBase": "施加 5 層<g>中毒</g>。",
+      "descUpgraded": "施加 7 層<g>中毒</g>。"
     },
     {
       "id": "DEATH_MARCH",
       "name": "死亡行軍",
       "slug": "death-march",
-      "descBase": "造成8點傷害。\n你在回合進行中每抽到一張牌，都會使其額外造成4點傷害。",
-      "descUpgraded": "造成9點傷害。\n你在回合進行中每抽到一張牌，都會使其額外造成6點傷害。"
+      "descBase": "造成 8 點傷害。\n本回合每抽一張牌，就額外造成 4 點傷害。",
+      "descUpgraded": "造成 9 點傷害。\n本回合每抽一張牌，就額外造成 6 點傷害。"
     },
     {
       "id": "DEATHBRINGER",
       "name": "死亡使者",
       "slug": "deathbringer",
-      "descBase": "給予所有敵人21層<g>災厄</g>和1層<g>虛弱</g>。",
-      "descUpgraded": "給予所有敵人26層<g>災厄</g>和1層<g>虛弱</g>。"
+      "descBase": "對所有敵人施加 21 層<g>惡兆</g>和 1 層<g>虛弱</g>。",
+      "descUpgraded": "對所有敵人施加 26 層<g>惡兆</g>和 1 層<g>虛弱</g>。"
     },
     {
       "id": "DEATHS_DOOR",
       "name": "死亡之門",
       "slug": "deaths-door",
-      "descBase": "獲得6點<g>格擋</g>。\n如果你在本回閤中曾給予過<g>災厄</g>，則額外獲得2次<g>格擋</g>。",
-      "descUpgraded": "獲得7點<g>格擋</g>。\n如果你在本回閤中曾給予過<g>災厄</g>，則額外獲得2次<g>格擋</g>。"
+      "descBase": "獲得 6 點<g>格擋</g>。\n若你本回合有施加過<g>惡兆</g>，就額外獲得 2 次<g>格擋</g>。",
+      "descUpgraded": "獲得 7 點<g>格擋</g>。\n若你本回合有施加過<g>惡兆</g>，就額外獲得 2 次<g>格擋</g>。"
     },
     {
       "id": "DEBILITATE",
       "name": "摧殘",
       "slug": "debilitate",
-      "descBase": "造成10點傷害。\n在接下來的2回合內，該敵人身上的<g>易傷</g>與<g>虛弱</g>效果翻倍。",
-      "descUpgraded": "造成12點傷害。\n在接下來的3回合內，該敵人身上的<g>易傷</g>與<g>虛弱</g>效果翻倍。"
+      "descBase": "造成 10 點傷害。\n接下來 2 個回合，<g>易傷</g>與<g>虛弱</g>對該敵人的效果加倍。",
+      "descUpgraded": "造成 12 點傷害。\n接下來 3 個回合，<g>易傷</g>與<g>虛弱</g>對該敵人的效果加倍。"
     },
     {
       "id": "DEBT",
       "name": "債務",
       "slug": "debt",
-      "descBase": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的<g>手牌</g>中，你失去10<g>金幣</g>。",
-      "descUpgraded": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的<g>手牌</g>中，你失去10<g>金幣</g>。"
+      "descBase": "<g>無法打出</g>。\n在你的回合結束時，若此牌在你的<g>手牌</g>中，失去 10 枚<g>金幣</g>。",
+      "descUpgraded": "<g>無法打出</g>。\n在你的回合結束時，若此牌在你的<g>手牌</g>中，失去 10 枚<g>金幣</g>。"
     },
     {
       "id": "DECAY",
       "name": "腐朽",
       "slug": "decay",
-      "descBase": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的<g>手牌</g>中, 你受到2點傷害。",
-      "descUpgraded": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的<g>手牌</g>中, 你受到2點傷害。"
+      "descBase": "<g>無法打出</g>。\n在你的回合結束時，若此牌在你的<g>手牌</g>中，受到 2 點傷害。",
+      "descUpgraded": "<g>無法打出</g>。\n在你的回合結束時，若此牌在你的<g>手牌</g>中，受到 2 點傷害。"
     },
     {
       "id": "DECISIONS_DECISIONS",
       "name": "抉擇，抉擇",
       "slug": "decisions-decisions",
-      "descBase": "抽3張牌。\n選擇你<g>手牌</g>中的一張技能牌，並將其打出3次。\n<g>消耗</g>。",
-      "descUpgraded": "抽5張牌。\n選擇你<g>手牌</g>中的一張技能牌，並將其打出3次。\n<g>消耗</g>。"
+      "descBase": "抽 3 張牌。\n選擇你<g>手牌</g>中的一張技能牌，將其打出 3 次。\n<g>消耗</g>。",
+      "descUpgraded": "抽 5 張牌。\n選擇你<g>手牌</g>中的一張技能牌，將其打出 3 次。\n<g>消耗</g>。"
     },
     {
       "id": "DEFEND_DEFECT",
       "name": "防禦",
       "slug": "defend-defect",
-      "descBase": "獲得5點<g>格擋</g>。",
-      "descUpgraded": "獲得8點<g>格擋</g>。"
+      "descBase": "獲得 5 點<g>格擋</g>。",
+      "descUpgraded": "獲得 8 點<g>格擋</g>。"
     },
     {
       "id": "DEFEND_IRONCLAD",
       "name": "防禦",
       "slug": "defend-ironclad",
-      "descBase": "獲得5點<g>格擋</g>。",
-      "descUpgraded": "獲得8點<g>格擋</g>。"
+      "descBase": "獲得 5 點<g>格擋</g>。",
+      "descUpgraded": "獲得 8 點<g>格擋</g>。"
     },
     {
       "id": "DEFEND_NECROBINDER",
       "name": "防禦",
       "slug": "defend-necrobinder",
-      "descBase": "獲得5點<g>格擋</g>。",
-      "descUpgraded": "獲得8點<g>格擋</g>。"
+      "descBase": "獲得 5 點<g>格擋</g>。",
+      "descUpgraded": "獲得 8 點<g>格擋</g>。"
     },
     {
       "id": "DEFEND_REGENT",
       "name": "防禦",
       "slug": "defend-regent",
-      "descBase": "獲得5點<g>格擋</g>。",
-      "descUpgraded": "獲得8點<g>格擋</g>。"
+      "descBase": "獲得 5 點<g>格擋</g>。",
+      "descUpgraded": "獲得 8 點<g>格擋</g>。"
     },
     {
       "id": "DEFEND_SILENT",
       "name": "防禦",
       "slug": "defend-silent",
-      "descBase": "獲得5點<g>格擋</g>。",
-      "descUpgraded": "獲得8點<g>格擋</g>。"
+      "descBase": "獲得 5 點<g>格擋</g>。",
+      "descUpgraded": "獲得 8 點<g>格擋</g>。"
     },
     {
       "id": "DEFILE",
-      "name": "玷汙",
+      "name": "褻瀆",
       "slug": "defile",
-      "descBase": "<g>虛無</g>。\n造成13點傷害。",
-      "descUpgraded": "<g>虛無</g>。\n造成17點傷害。"
+      "descBase": "<g>虛無</g>。\n造成 13 點傷害。",
+      "descUpgraded": "<g>虛無</g>。\n造成 17 點傷害。",
+      "aliases": [
+        "玷汙"
+      ]
     },
     {
       "id": "DEFLECT",
-      "name": "偏折",
+      "name": "偏轉",
       "slug": "deflect",
-      "descBase": "獲得4點<g>格擋</g>。",
-      "descUpgraded": "獲得7點<g>格擋</g>。"
+      "descBase": "獲得 4 點<g>格擋</g>。",
+      "descUpgraded": "獲得 7 點<g>格擋</g>。",
+      "aliases": [
+        "偏折"
+      ]
     },
     {
       "id": "DEFRAGMENT",
       "name": "碎片整理",
       "slug": "defragment",
-      "descBase": "獲得1點<g>集中</g>。",
-      "descUpgraded": "獲得2點<g>集中</g>。"
+      "descBase": "獲得 1 層<g>集中</g>。",
+      "descUpgraded": "獲得 2 層<g>集中</g>。"
     },
     {
       "id": "DEFY",
       "name": "違逆",
       "slug": "defy",
-      "descBase": "<g>虛無</g>。\n獲得6點<g>格擋</g>。\n給予1層<g>虛弱</g>。",
-      "descUpgraded": "<g>虛無</g>。\n獲得9點<g>格擋</g>。\n給予1層<g>虛弱</g>。"
+      "descBase": "<g>虛無</g>。\n獲得 6 點<g>格擋</g>。\n施加 1 層<g>虛弱</g>。",
+      "descUpgraded": "<g>虛無</g>。\n獲得 9 點<g>格擋</g>。\n施加 1 層<g>虛弱</g>。"
     },
     {
       "id": "DELAY",
-      "name": "拖延",
+      "name": "延遲",
       "slug": "delay",
-      "descBase": "獲得11點<g>格擋</g>。\n在下個回合，\n獲得<e>1</e>。",
-      "descUpgraded": "獲得13點<g>格擋</g>。\n在下個回合，\n獲得<e>2</e>。"
+      "descBase": "獲得 11 點<g>格擋</g>。\n下回合，\n獲得 <e/>。",
+      "descUpgraded": "獲得 13 點<g>格擋</g>。\n下回合，\n獲得 <e/><e/>。",
+      "aliases": [
+        "拖延"
+      ]
     },
     {
       "id": "DEMESNE",
-      "name": "領域",
+      "name": "領地",
       "slug": "demesne",
-      "descBase": "<g>虛無</g>。\n在你的回合開始時，獲得<e>1</e>並額外多抽1張牌。",
-      "descUpgraded": "<g>虛無</g>。\n在你的回合開始時，獲得<e>1</e>並額外多抽1張牌。"
+      "descBase": "<g>虛無</g>。\n在你的回合開始時，獲得 <e/> 並額外抽 1 張牌。",
+      "descUpgraded": "<g>虛無</g>。\n在你的回合開始時，獲得 <e/> 並額外抽 1 張牌。",
+      "aliases": [
+        "領域"
+      ]
     },
     {
       "id": "DEMON_FORM",
       "name": "惡魔形態",
       "slug": "demon-form",
-      "descBase": "在你的回合開始時，獲得3點<g>力量</g>。",
-      "descUpgraded": "在你的回合開始時，獲得4點<g>力量</g>。"
+      "descBase": "在你的回合開始時，獲得 3 層<g>力量</g>。",
+      "descUpgraded": "在你的回合開始時，獲得 4 層<g>力量</g>。"
     },
     {
       "id": "DEMONIC_SHIELD",
       "name": "惡魔護盾",
       "slug": "demonic-shield",
-      "descBase": "失去1點生命。\n給予另一位玩家你當前<g>格擋</g>值的<g>格擋</g>。\n<g>消耗</g>。",
-      "descUpgraded": "失去1點生命。\n給予另一位玩家你當前<g>格擋</g>值的<g>格擋</g>。"
+      "descBase": "失去 1 點生命。\n使另一名玩家獲得與你目前的<g>格擋</g>值相同的<g>格擋</g>。\n<g>消耗</g>。",
+      "descUpgraded": "失去 1 點生命。\n使另一名玩家獲得與你目前的<g>格擋</g>值相同的<g>格擋</g>。"
     },
     {
       "id": "DEVASTATE",
-      "name": "葬送",
+      "name": "摧毀",
       "slug": "devastate",
-      "descBase": "造成35點傷害。",
-      "descUpgraded": "造成45點傷害。",
+      "descBase": "造成 35 點傷害。",
+      "descUpgraded": "造成 45 點傷害。",
       "aliases": [
-        "摧毀"
+        "葬送"
       ]
     },
     {
       "id": "DEVOUR_LIFE",
       "name": "吞噬生命",
       "slug": "devour-life",
-      "descBase": "每當你打出一張<g>靈魂</g>時，<g>召喚</g>1。",
-      "descUpgraded": "每當你打出一張<g>靈魂</g>時，<g>召喚</g>2。"
+      "descBase": "每當你打出一張<g>靈魂</g>時，<g>召喚</g> 1。",
+      "descUpgraded": "每當你打出一張<g>靈魂</g>時，<g>召喚</g> 2。"
     },
     {
       "id": "DIRGE",
       "name": "輓歌",
       "slug": "dirge",
-      "descBase": "<g>召喚</g>3X次。\n將X張<g>靈魂</g>添加到你的<g>抽牌堆</g>中。\n<g>消耗</g>。",
-      "descUpgraded": "<g>召喚</g>4X次。\n將X張<g>靈魂+</g>添加到你的<g>抽牌堆</g>中。\n<g>消耗</g>。"
+      "descBase": "<g>召喚</g> 3，共 X 次。\n將 X 張<g>靈魂</g>加入你的<g>抽牌堆</g>。\n<g>消耗</g>。",
+      "descUpgraded": "<g>召喚</g> 4，共 X 次。\n將 X 張<g>靈魂+</g>加入你的<g>抽牌堆</g>。\n<g>消耗</g>。"
     },
     {
       "id": "DISCOVERY",
       "name": "發現",
       "slug": "discovery",
-      "descBase": "從3張隨機牌中選擇1張加入你的<g>手牌</g>。這張牌在本回合可以免費打出。\n<g>消耗</g>。",
-      "descUpgraded": "從3張隨機牌中選擇1張加入你的<g>手牌</g>。這張牌在本回合可以免費打出。"
+      "descBase": "從 3 張隨機卡牌中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。\n<g>消耗</g>。",
+      "descUpgraded": "從 3 張隨機卡牌中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。"
     },
     {
       "id": "DISMANTLE",
       "name": "拆卸",
       "slug": "dismantle",
-      "descBase": "造成8點傷害。\n如果該敵人有<g>易傷</g>狀態，則攻擊兩次。",
-      "descUpgraded": "造成10點傷害。\n如果該敵人有<g>易傷</g>狀態，則攻擊兩次。"
+      "descBase": "造成 8 點傷害。\n若敵人處於<g>易傷</g>狀態，則此牌會擊中 2 次。",
+      "descUpgraded": "造成 10 點傷害。\n若敵人處於<g>易傷</g>狀態，則此牌會擊中 2 次。"
     },
     {
       "id": "DISTRACTION",
       "name": "聲東擊西",
       "slug": "distraction",
-      "descBase": "將一張隨機技能牌添加到你的<g>手牌</g>中。這張牌在本回合內可以免費打出。\n<g>消耗</g>。",
-      "descUpgraded": "將一張隨機技能牌添加到你的<g>手牌</g>中。這張牌在本回合內可以免費打出。\n<g>消耗</g>。"
+      "descBase": "將一張隨機技能牌加入你的<g>手牌</g>。本回合可免費打出。\n<g>消耗</g>。",
+      "descUpgraded": "將一張隨機技能牌加入你的<g>手牌</g>。本回合可免費打出。\n<g>消耗</g>。"
     },
     {
       "id": "DODGE_AND_ROLL",
       "name": "閃躲翻滾",
       "slug": "dodge-and-roll",
-      "descBase": "獲得4點<g>格擋</g>。\n在下個回合，獲得4點<g>格擋</g>。",
-      "descUpgraded": "獲得6點<g>格擋</g>。\n在下個回合，獲得6點<g>格擋</g>。"
+      "descBase": "獲得 4 點<g>格擋</g>。\n下回合，獲得 4 點<g>格擋</g>。",
+      "descUpgraded": "獲得 6 點<g>格擋</g>。\n下回合，獲得 6 點<g>格擋</g>。"
     },
     {
       "id": "DOMINATE",
       "name": "主宰",
       "slug": "dominate",
-      "descBase": "給予1層<g>易傷</g>。\n敵人身上每有一層<g>易傷</g>，就獲得1點<g>力量</g>。\n<g>消耗</g>。",
-      "descUpgraded": "給予2層<g>易傷</g>。\n敵人身上每有一層<g>易傷</g>，就獲得1點<g>力量</g>。\n<g>消耗</g>。"
+      "descBase": "施加 1 層<g>易傷</g>。\n敵人每有一層<g>易傷</g>，就獲得 1 層<g>力量</g>。\n<g>消耗</g>。",
+      "descUpgraded": "施加 2 層<g>易傷</g>。\n敵人每有一層<g>易傷</g>，就獲得 1 層<g>力量</g>。\n<g>消耗</g>。"
     },
     {
       "id": "DOUBLE_ENERGY",
       "name": "雙倍能量",
       "slug": "double-energy",
-      "descBase": "將你的能量翻倍。\n<g>消耗</g>。",
-      "descUpgraded": "將你的能量翻倍。\n<g>消耗</g>。"
+      "descBase": "使你的能量加倍。\n<g>消耗</g>。",
+      "descUpgraded": "使你的能量加倍。\n<g>消耗</g>。"
     },
     {
       "id": "DOUBT",
       "name": "疑慮",
       "slug": "doubt",
-      "descBase": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的<g>手牌</g>中，獲得1層<g>虛弱</g>。",
-      "descUpgraded": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的<g>手牌</g>中，獲得1層<g>虛弱</g>。"
+      "descBase": "<g>無法打出</g>。\n在你的回合結束時，若此牌在你的<g>手牌</g>中，就獲得 1 層<g>虛弱</g>。",
+      "descUpgraded": "<g>無法打出</g>。\n在你的回合結束時，若此牌在你的<g>手牌</g>中，就獲得 1 層<g>虛弱</g>。"
+    },
+    {
+      "id": "DOWSING",
+      "name": "探尋",
+      "slug": "dowsing",
+      "descBase": "<g>無法打出</g>。\n再進入 5 個<g>？</g>房間後，轉化為<g>富足</g>。",
+      "descUpgraded": "<g>無法打出</g>。\n再進入 5 個<g>？</g>房間後，轉化為<g>富足</g>。"
     },
     {
       "id": "DRAIN_POWER",
       "name": "能量汲取",
       "slug": "drain-power",
-      "descBase": "造成10點傷害。\n隨機<g>升級</g>你<g>棄牌堆</g>中的2張牌。",
-      "descUpgraded": "造成12點傷害。\n隨機<g>升級</g>你<g>棄牌堆</g>中的3張牌。"
+      "descBase": "造成 10 點傷害。\n<g>升級</g>你<g>棄牌堆</g>中的 2 張隨機卡牌。",
+      "descUpgraded": "造成 12 點傷害。\n<g>升級</g>你<g>棄牌堆</g>中的 3 張隨機卡牌。"
     },
     {
       "id": "DRAMATIC_ENTRANCE",
       "name": "閃亮登場",
       "slug": "dramatic-entrance",
-      "descBase": "<g>固有</g>。\n對所有敵人造成11點傷害。\n<g>消耗</g>。",
-      "descUpgraded": "<g>固有</g>。\n對所有敵人造成15點傷害。\n<g>消耗</g>。"
+      "descBase": "<g>固有</g>。\n對所有敵人造成 11 點傷害。\n<g>消耗</g>。",
+      "descUpgraded": "<g>固有</g>。\n對所有敵人造成 15 點傷害。\n<g>消耗</g>。"
     },
     {
       "id": "DREDGE",
-      "name": "清淤",
+      "name": "打撈",
       "slug": "dredge",
-      "descBase": "將3張牌從<g>棄牌堆</g>加入你的<g>手牌</g>。\n<g>消耗</g>。",
-      "descUpgraded": "<g>保留</g>。\n將3張牌從<g>棄牌堆</g>加入你的<g>手牌</g>。\n<g>消耗</g>。"
+      "descBase": "將你<g>棄牌堆</g>中的 3 張牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
+      "descUpgraded": "<g>保留</g>。\n將你<g>棄牌堆</g>中的 3 張牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
+      "aliases": [
+        "清淤"
+      ]
     },
     {
       "id": "DRUM_OF_BATTLE",
       "name": "戰鼓",
       "slug": "drum-of-battle",
-      "descBase": "抽2張牌。\n這張牌被<g>消耗</g>時，獲得<e>2</e>。",
-      "descUpgraded": "抽2張牌。\n這張牌被<g>消耗</g>時，獲得<e>3</e>。"
+      "descBase": "抽 2 張牌。\n此牌被<g>消耗</g>時，獲得 <e/><e/>。",
+      "descUpgraded": "抽 2 張牌。\n此牌被<g>消耗</g>時，獲得 <e/><e/><e/>。"
     },
     {
       "id": "DUAL_WIELD",
       "name": "雙持",
       "slug": "dual-wield",
       "descBase": "選擇一張攻擊牌或能力牌。將該牌的一張複製品加入你的<g>手牌</g>。",
-      "descUpgraded": "選擇一張攻擊牌或能力牌。將該牌的2張複製品加入你的<g>手牌</g>。"
+      "descUpgraded": "選擇一張攻擊牌或能力牌。將該牌的 2 張複製品加入你的<g>手牌</g>。"
     },
     {
       "id": "DUALCAST",
-      "name": "雙重釋放",
+      "name": "雙重施放",
       "slug": "dualcast",
       "descBase": "<g>激發</g>你最右側的充能球兩次。",
-      "descUpgraded": "<g>激發</g>你最右側的充能球兩次。"
+      "descUpgraded": "<g>激發</g>你最右側的充能球兩次。",
+      "aliases": [
+        "雙重釋放"
+      ]
     },
     {
       "id": "DYING_STAR",
-      "name": "星滅",
+      "name": "垂死之星",
       "slug": "dying-star",
-      "descBase": "<g>虛無</g>。\n對所有敵人造成9點傷害。所有敵人在本回合中失去9點<g>力量</g>。",
-      "descUpgraded": "<g>虛無</g>。\n對所有敵人造成11點傷害。所有敵人在本回合中失去11點<g>力量</g>。"
+      "descBase": "<g>虛無</g>。\n對所有敵人造成 9 點傷害。所有敵人本回合失去 9 層<g>力量</g>。",
+      "descUpgraded": "<g>虛無</g>。\n對所有敵人造成 11 點傷害。所有敵人本回合失去 11 層<g>力量</g>。",
+      "aliases": [
+        "星滅"
+      ]
     },
     {
       "id": "ECHO_FORM",
       "name": "迴響形態",
       "slug": "echo-form",
-      "descBase": "<g>虛無</g>。\n你每回合打出的第一張牌會被打出兩次。",
-      "descUpgraded": "你每回合打出的第一張牌會被打出兩次。"
+      "descBase": "<g>虛無</g>。\n你每回合打出的第一張牌會額外打出一次。",
+      "descUpgraded": "你每回合打出的第一張牌會額外打出一次。"
     },
     {
       "id": "ECHOING_SLASH",
       "name": "迴響斬擊",
       "slug": "echoing-slash",
-      "descBase": "對所有敵人造成10點傷害。\n每有一名敵人被擊殺，就重複此效果。",
-      "descUpgraded": "對所有敵人造成13點傷害。\n每有一名敵人被擊殺，就重複此效果。"
+      "descBase": "對所有敵人造成 10 點傷害。\n每殺死一名敵人，就重複此效果一次。",
+      "descUpgraded": "對所有敵人造成 13 點傷害。\n每殺死一名敵人，就重複此效果一次。"
     },
     {
       "id": "EIDOLON",
-      "name": "幻景",
+      "name": "靈影",
       "slug": "eidolon",
-      "descBase": "打出你<g>消耗牌堆</g>中所有<g>虛無</g>牌。\n<g>消耗</g>。",
-      "descUpgraded": "打出你<g>消耗牌堆</g>中所有<g>虛無</g>牌。\n<g>消耗</g>。",
-      "notes": "不會打出具有「無法打出」的牌；無法於戰鬥中途生成。",
+      "descBase": "打出你<g>消耗堆</g>中所有<g>虛無</g>牌。\n<g>消耗</g>。",
+      "descUpgraded": "打出你<g>消耗堆</g>中所有<g>虛無</g>牌。\n<g>消耗</g>。",
       "aliases": [
-        "靈影"
+        "幻景"
       ]
     },
     {
       "id": "END_OF_DAYS",
-      "name": "末日降臨",
+      "name": "末日",
       "slug": "end-of-days",
-      "descBase": "給予所有敵人29層<g>災厄</g>。\n殺死所有<g>災厄</g>大於等於當前生命值的敵人。",
-      "descUpgraded": "給予所有敵人37層<g>災厄</g>。\n殺死所有<g>災厄</g>大於等於當前生命值的敵人。"
+      "descBase": "對所有敵人施加 29 層<g>惡兆</g>。\n殺死<g>惡兆</g>層數不低於其生命的敵人。",
+      "descUpgraded": "對所有敵人施加 37 層<g>惡兆</g>。\n殺死<g>惡兆</g>層數不低於其生命的敵人。",
+      "aliases": [
+        "末日降臨"
+      ]
     },
     {
       "id": "ENERGY_SURGE",
       "name": "能量湧動",
       "slug": "energy-surge",
-      "descBase": "所有玩家獲得<e>2</e>。\n<g>消耗</g>。",
-      "descUpgraded": "所有玩家獲得<e>3</e>。\n<g>消耗</g>。"
+      "descBase": "所有玩家獲得 <e/><e/>。\n<g>消耗</g>。",
+      "descUpgraded": "所有玩家獲得 <e/><e/><e/>。\n<g>消耗</g>。"
     },
     {
       "id": "ENFEEBLING_TOUCH",
-      "name": "弱化之觸",
+      "name": "衰弱之觸",
       "slug": "enfeebling-touch",
-      "descBase": "<g>虛無</g>。\n讓一名敵人在本回合內失去8點<g>力量</g>。",
-      "descUpgraded": "<g>虛無</g>。\n讓一名敵人在本回合內失去11點<g>力量</g>。"
+      "descBase": "<g>虛無</g>。\n敵人本回合失去 8 層<g>力量</g>。",
+      "descUpgraded": "<g>虛無</g>。\n敵人本回合失去 11 層<g>力量</g>。",
+      "aliases": [
+        "弱化之觸"
+      ]
     },
     {
       "id": "ENLIGHTENMENT",
       "name": "開悟",
       "slug": "enlightenment",
-      "descBase": "在這個回合，你當前<g>手牌</g>中所有牌的耗能降低至1。\n<g>消耗</g>。",
-      "descUpgraded": "在這場戰鬥，你當前<g>手牌</g>中所有牌的耗能降低至1。\n<g>消耗</g>。"
+      "descBase": "本回合中，將你<g>手牌</g>中所有牌的耗能降為 1。\n<g>消耗</g>。",
+      "descUpgraded": "本場戰鬥中，將你<g>手牌</g>中所有牌的耗能降為 1。\n<g>消耗</g>。"
     },
     {
       "id": "ENTHRALLED",
       "name": "執迷",
       "slug": "enthralled",
-      "descBase": "如果這張牌在你的<g>手牌</g>中，你必須優先打出這張牌。\n<g>永恆</g>。",
-      "descUpgraded": "如果這張牌在你的<g>手牌</g>中，你必須優先打出這張牌。\n<g>永恆</g>。"
+      "descBase": "若此牌在你的<g>手牌</g>中，必須先打出此牌才能打出其他牌。\n<g>永恆</g>。",
+      "descUpgraded": "若此牌在你的<g>手牌</g>中，必須先打出此牌才能打出其他牌。\n<g>永恆</g>。"
     },
     {
       "id": "ENTRENCH",
       "name": "鞏固",
       "slug": "entrench",
-      "descBase": "將你當前的<g>格擋</g>翻倍。",
-      "descUpgraded": "將你當前的<g>格擋</g>翻倍。"
+      "descBase": "使你的<g>格擋</g>加倍。",
+      "descUpgraded": "使你的<g>格擋</g>加倍。"
     },
     {
       "id": "ENTROPY",
       "name": "熵",
       "slug": "entropy",
-      "descBase": "在你的回合開始時，<g>變化</g>你<g>手牌</g>中的1張牌。",
-      "descUpgraded": "<g>固有</g>。\n在你的回合開始時，<g>變化</g>你<g>手牌</g>中的1張牌。"
+      "descBase": "在你的回合開始時，<g>轉化</g>你<g>手牌</g>中的 1 張牌。",
+      "descUpgraded": "<g>固有</g>。\n在你的回合開始時，<g>轉化</g>你<g>手牌</g>中的 1 張牌。"
     },
     {
       "id": "ENVENOM",
       "name": "塗毒",
       "slug": "envenom",
-      "descBase": "每有一次攻擊造成未被格擋的傷害，就給予1層<g>中毒</g>。",
-      "descUpgraded": "每有一次攻擊造成未被格擋的傷害，就給予2層<g>中毒</g>。"
+      "descBase": "每當攻擊造成未被格擋的傷害時，施加 1 層<g>中毒</g>。",
+      "descUpgraded": "每當攻擊造成未被格擋的傷害時，施加 2 層<g>中毒</g>。"
     },
     {
       "id": "EQUILIBRIUM",
       "name": "均衡",
       "slug": "equilibrium",
-      "descBase": "獲得13點<g>格擋</g>。\n在本回合<g>保留</g>你的<g>手牌</g>。",
-      "descUpgraded": "獲得16點<g>格擋</g>。\n在本回合<g>保留</g>你的<g>手牌</g>。"
+      "descBase": "獲得 13 點<g>格擋</g>。\n本回合<g>保留</g>你的<g>手牌</g>。",
+      "descUpgraded": "獲得 16 點<g>格擋</g>。\n本回合<g>保留</g>你的<g>手牌</g>。"
     },
     {
       "id": "ERADICATE",
       "name": "根除",
       "slug": "eradicate",
-      "descBase": "<g>保留</g>。\n造成11點傷害X次。",
-      "descUpgraded": "<g>保留</g>。\n造成14點傷害X次。"
+      "descBase": "<g>保留</g>。\n造成 X 次 11 點傷害。",
+      "descUpgraded": "<g>保留</g>。\n造成 X 次 14 點傷害。"
     },
     {
       "id": "ESCAPE_PLAN",
-      "name": "逃脫計劃",
+      "name": "逃脫計畫",
       "slug": "escape-plan",
-      "descBase": "抽1張牌。\n如果抽到的是技能牌，則獲得3點<g>格擋</g>。",
-      "descUpgraded": "抽1張牌。\n如果抽到的是技能牌，則獲得5點<g>格擋</g>。"
+      "descBase": "抽 1 張牌。\n若抽到技能牌，就獲得 3 點<g>格擋</g>。",
+      "descUpgraded": "抽 1 張牌。\n若抽到技能牌，就獲得 5 點<g>格擋</g>。",
+      "aliases": [
+        "逃脫計劃"
+      ]
     },
     {
       "id": "ETERNAL_ARMOR",
-      "name": "永恆鎧甲",
+      "name": "永恆護甲",
       "slug": "eternal-armor",
-      "descBase": "獲得9層<g>覆甲</g>。",
-      "descUpgraded": "獲得12層<g>覆甲</g>。"
+      "descBase": "獲得 9 層<g>鍍甲</g>。",
+      "descUpgraded": "獲得 12 層<g>鍍甲</g>。",
+      "aliases": [
+        "永恆鎧甲"
+      ]
     },
     {
       "id": "EVIL_EYE",
       "name": "邪眼",
       "slug": "evil-eye",
-      "descBase": "獲得8點<g>格擋</g>。\n如果你在本回合<g>消耗</g>過卡牌，則額外獲得8點<g>格擋</g>。",
-      "descUpgraded": "獲得11點<g>格擋</g>。\n如果你在本回合<g>消耗</g>過卡牌，則額外獲得11點<g>格擋</g>。"
+      "descBase": "獲得 8 點<g>格擋</g>。\n你本回合每<g>消耗</g>過一張牌，就獲得額外 8 點<g>格擋</g>。",
+      "descUpgraded": "獲得 11 點<g>格擋</g>。\n你本回合每<g>消耗</g>過一張牌，就獲得額外 11 點<g>格擋</g>。"
     },
     {
       "id": "EXPECT_A_FIGHT",
-      "name": "躍躍欲試",
+      "name": "整裝待戰",
       "slug": "expect-a-fight",
-      "descBase": "獲得15點<g>格擋</g>。\n每有一層<g>力量</g>，額外獲得5點<g>格擋</g>。",
-      "descUpgraded": "獲得16點<g>格擋</g>。\n每有一層<g>力量</g>，額外獲得8點<g>格擋</g>。",
+      "descBase": "獲得 15 點<g>格擋</g>。\n你每有一層<g>力量</g>，就額外獲得 5 點<g>格擋</g>。",
+      "descUpgraded": "獲得 16 點<g>格擋</g>。\n你每有一層<g>力量</g>，就額外獲得 8 點<g>格擋</g>。",
       "aliases": [
-        "整裝待戰"
+        "躍躍欲試"
       ]
     },
     {
       "id": "EXPERTISE",
-      "name": "獨門技術",
+      "name": "專業知識",
       "slug": "expertise",
-      "descBase": "抽2張牌。\n這些牌在本回合獲得<g>保留</g>。",
-      "descUpgraded": "抽3張牌。\n這些牌在本回合獲得<g>保留</g>。",
+      "descBase": "抽 2 張牌。\n這些牌會在本回合獲得<g>保留</g>。",
+      "descUpgraded": "抽 3 張牌。\n這些牌會在本回合獲得<g>保留</g>。",
       "aliases": [
-        "專業知識"
+        "獨門技術"
       ]
     },
     {
       "id": "EXPOSE",
       "name": "暴露",
       "slug": "expose",
-      "descBase": "去除敵人身上的所有<g>格擋</g>值和<g>人工製品</g>。\n並給予2層<g>易傷</g>。\n<g>消耗</g>。",
-      "descUpgraded": "去除敵人身上的所有<g>格擋</g>值和<g>人工製品</g>。\n並給予3層<g>易傷</g>。\n<g>消耗</g>。"
+      "descBase": "移除敵人所有<g>人工製品</g>與<g>格擋</g>。\n施加 2 層<g>易傷</g>。\n<g>消耗</g>。",
+      "descUpgraded": "移除敵人所有<g>人工製品</g>與<g>格擋</g>。\n施加 3 層<g>易傷</g>。\n<g>消耗</g>。"
     },
     {
       "id": "EXTERMINATE",
-      "name": "殺滅",
+      "name": "滅絕",
       "slug": "exterminate",
-      "descBase": "對所有敵人造成3點傷害4次。",
-      "descUpgraded": "對所有敵人造成4點傷害4次。"
+      "descBase": "對所有敵人造成 4 次 3 點傷害。",
+      "descUpgraded": "對所有敵人造成 4 次 4 點傷害。",
+      "aliases": [
+        "殺滅"
+      ]
+    },
+    {
+      "id": "FADE",
+      "name": "消散",
+      "slug": "fade",
+      "descBase": "<g>保留</g>。\n本回合另一名玩家獲得 6 層<g>敏捷</g>。",
+      "descUpgraded": "<g>保留</g>。\n本回合另一名玩家獲得 9 層<g>敏捷</g>。"
     },
     {
       "id": "FALLING_STAR",
       "name": "隕星",
       "slug": "falling-star",
-      "descBase": "造成8點傷害。\n給予1層<g>虛弱</g>。\n給予1層<g>易傷</g>。",
-      "descUpgraded": "造成12點傷害。\n給予1層<g>虛弱</g>。\n給予1層<g>易傷</g>。"
+      "descBase": "造成 8 點傷害。\n施加 1 層<g>虛弱</g>。\n施加 1 層<g>易傷</g>。",
+      "descUpgraded": "造成 12 點傷害。\n施加 1 層<g>虛弱</g>。\n施加 1 層<g>易傷</g>。"
     },
     {
       "id": "FAN_OF_KNIVES",
       "name": "刀扇",
       "slug": "fan-of-knives",
-      "descBase": "<g>小刀</g>現在會攻擊所有敵人。\n將4張<g>小刀</g>添加到你的<g>手牌</g>。",
-      "descUpgraded": "<g>小刀</g>現在會攻擊所有敵人。\n將5張<g>小刀</g>添加到你的<g>手牌</g>。"
+      "descBase": "<g>小刀</g>現在會擊中所有敵人。\n將 4 張<g>小刀</g>加入你的<g>手牌</g>。",
+      "descUpgraded": "<g>小刀</g>現在會擊中所有敵人。\n將 5 張<g>小刀</g>加入你的<g>手牌</g>。"
     },
     {
       "id": "FASTEN",
-      "name": "勒緊",
+      "name": "綁緊",
       "slug": "fasten",
-      "descBase": "從“防禦”牌中額外獲得4點<g>格擋</g>。",
-      "descUpgraded": "從“防禦”牌中額外獲得6點<g>格擋</g>。"
+      "descBase": "從防禦牌獲得額外 4 點<g>格擋</g>。",
+      "descUpgraded": "從防禦牌獲得額外 6 點<g>格擋</g>。",
+      "aliases": [
+        "勒緊"
+      ]
     },
     {
       "id": "FEAR",
-      "name": "恐懼",
+      "name": "驚懼",
       "slug": "fear",
-      "descBase": "<g>虛無</g>。\n造成7點傷害。\n給予1層<g>易傷</g>。",
-      "descUpgraded": "<g>虛無</g>。\n造成8點傷害。\n給予2層<g>易傷</g>。"
+      "descBase": "<g>虛無</g>。\n造成 7 點傷害。\n施加 1 層<g>易傷</g>。",
+      "descUpgraded": "<g>虛無</g>。\n造成 8 點傷害。\n施加 2 層<g>易傷</g>。",
+      "aliases": [
+        "恐懼"
+      ]
     },
     {
       "id": "FEED",
-      "name": "狂宴",
+      "name": "吞食",
       "slug": "feed",
-      "descBase": "造成10點傷害。\n<g>斬殺</g>時，永久獲得3點最大生命值。\n<g>消耗</g>。",
-      "descUpgraded": "造成12點傷害。\n<g>斬殺</g>時，永久獲得4點最大生命值。\n<g>消耗</g>。"
+      "descBase": "造成 10 點傷害。\n<g>致死</g>時，將你的最大生命提高 3 點。\n<g>消耗</g>。",
+      "descUpgraded": "造成 12 點傷害。\n<g>致死</g>時，將你的最大生命提高 4 點。\n<g>消耗</g>。",
+      "aliases": [
+        "狂宴"
+      ]
     },
     {
       "id": "FEEDING_FRENZY",
-      "name": "瘋狂進食",
+      "name": "瘋狂吞食",
       "slug": "feeding-frenzy",
-      "descBase": "在本回合內獲得5點<g>力量</g>。",
-      "descUpgraded": "在本回合內獲得7點<g>力量</g>。"
+      "descBase": "本回合獲得 5 層<g>力量</g>。",
+      "descUpgraded": "本回合獲得 7 層<g>力量</g>。",
+      "aliases": [
+        "瘋狂進食"
+      ]
     },
     {
       "id": "FEEL_NO_PAIN",
       "name": "無懼疼痛",
       "slug": "feel-no-pain",
-      "descBase": "每當有一張牌被<g>消耗</g>時，獲得3點<g>格擋</g>。",
-      "descUpgraded": "每當有一張牌被<g>消耗</g>時，獲得4點<g>格擋</g>。"
+      "descBase": "每當一張牌被<g>消耗</g>時，獲得 3 點<g>格擋</g>。",
+      "descUpgraded": "每當一張牌被<g>消耗</g>時，獲得 4 點<g>格擋</g>。"
     },
     {
       "id": "FERAL",
       "name": "野性",
       "slug": "feral",
-      "descBase": "你每回合打出的前1張\n耗能為0<e/>的攻擊牌，\n會放回你的<g>手牌</g>。",
-      "descUpgraded": "你每回合打出的前1張\n耗能為0<e/>的攻擊牌，\n會放回你的<g>手牌</g>。"
+      "descBase": "你每回合首次打出的\n0<e/> 攻擊牌，\n會放回你的<g>手牌</g>。",
+      "descUpgraded": "你每回合首次打出的\n0<e/> 攻擊牌，\n會放回你的<g>手牌</g>。"
     },
     {
       "id": "FETCH",
       "name": "取回",
       "slug": "fetch",
-      "descBase": "<g>奧斯提</g>造成3點傷害。\n如果這是這張牌第一次在本回合被打出，則抽1張牌。",
-      "descUpgraded": "<g>奧斯提</g>造成6點傷害。\n如果這是這張牌第一次在本回合被打出，則抽1張牌。"
+      "descBase": "<g>奧斯提</g>造成 3 點傷害。\n若這是本回合第一次打出此牌，抽 1 張牌。",
+      "descUpgraded": "<g>奧斯提</g>造成 6 點傷害。\n若這是本回合第一次打出此牌，抽 1 張牌。"
     },
     {
       "id": "FIEND_FIRE",
       "name": "惡魔之焰",
       "slug": "fiend-fire",
-      "descBase": "<g>消耗</g>所有<g>手牌</g>。\n每張被<g>消耗</g>的牌造成7點傷害。\n<g>消耗</g>。",
-      "descUpgraded": "<g>消耗</g>所有<g>手牌</g>。\n每張被<g>消耗</g>的牌造成10點傷害。\n<g>消耗</g>。"
+      "descBase": "<g>消耗</g>你的<g>手牌</g>。\n每以此方式<g>消耗</g>一張牌，就造成 7 點傷害。\n<g>消耗</g>。",
+      "descUpgraded": "<g>消耗</g>你的<g>手牌</g>。\n每以此方式<g>消耗</g>一張牌，就造成 10 點傷害。\n<g>消耗</g>。"
     },
     {
       "id": "FIGHT_ME",
       "name": "與我一戰！",
       "slug": "fight-me",
-      "descBase": "造成5點傷害兩次。\n獲得3點<g>力量</g>。\n該敵人獲得1點<g>力量</g>。",
-      "descUpgraded": "造成6點傷害兩次。\n獲得4點<g>力量</g>。\n該敵人獲得1點<g>力量</g>。"
+      "descBase": "造成 2 次 5 點傷害。\n獲得 3 層<g>力量</g>。\n敵人獲得 1 層<g>力量</g>。",
+      "descUpgraded": "造成 2 次 6 點傷害。\n獲得 4 層<g>力量</g>。\n敵人獲得 1 層<g>力量</g>。"
     },
     {
       "id": "FIGHT_THROUGH",
       "name": "強撐",
       "slug": "fight-through",
-      "descBase": "獲得13點<g>格擋</g>。\n將2張<g>傷口</g>加入你的<g>棄牌堆</g>。",
-      "descUpgraded": "獲得17點<g>格擋</g>。\n將2張<g>傷口</g>加入你的<g>棄牌堆</g>。"
+      "descBase": "獲得 13 點<g>格擋</g>。\n將 2 張<g>傷口</g>加入你的<g>棄牌堆</g>。",
+      "descUpgraded": "獲得 17 點<g>格擋</g>。\n將 2 張<g>傷口</g>加入你的<g>棄牌堆</g>。"
     },
     {
       "id": "FINESSE",
       "name": "妙計",
       "slug": "finesse",
-      "descBase": "獲得4點<g>格擋</g>。\n抽1張牌。",
-      "descUpgraded": "獲得7點<g>格擋</g>。\n抽1張牌。"
+      "descBase": "獲得 4 點<g>格擋</g>。\n抽 1 張牌。",
+      "descUpgraded": "獲得 7 點<g>格擋</g>。\n抽 1 張牌。"
     },
     {
       "id": "FINISHER",
       "name": "終結技",
       "slug": "finisher",
-      "descBase": "在這個回合內每打出過一張攻擊牌，就造成6點傷害一次。",
-      "descUpgraded": "在這個回合內每打出過一張攻擊牌，就造成8點傷害一次。"
+      "descBase": "本回合每打出過一張攻擊牌，就造成 6 點傷害。",
+      "descUpgraded": "本回合每打出過一張攻擊牌，就造成 8 點傷害。"
     },
     {
       "id": "FISTICUFFS",
-      "name": "拳鬥",
+      "name": "揮拳相向",
       "slug": "fisticuffs",
-      "descBase": "造成7點傷害。\n獲得等量於所造成傷害的<g>格擋</g>。",
-      "descUpgraded": "造成9點傷害。\n獲得等量於所造成傷害的<g>格擋</g>。"
+      "descBase": "造成 7 點傷害。\n獲得與所造成傷害等量的<g>格擋</g>。",
+      "descUpgraded": "造成 9 點傷害。\n獲得與所造成傷害等量的<g>格擋</g>。",
+      "aliases": [
+        "拳鬥"
+      ]
     },
     {
       "id": "FLAK_CANNON",
-      "name": "散射炮",
+      "name": "破片砲",
       "slug": "flak-cannon",
-      "descBase": "<g>消耗</g>你所有的狀態牌。\n每有一張被<g>消耗</g>的牌，就隨機對敵人造成8點傷害。",
-      "descUpgraded": "<g>消耗</g>你所有的狀態牌。\n每有一張被<g>消耗</g>的牌，就隨機對敵人造成11點傷害。"
+      "descBase": "<g>消耗</g>你所有的狀態牌。\n每以此方式<g>消耗</g>一張牌，就對一名隨機敵人造成 8 點傷害。",
+      "descUpgraded": "<g>消耗</g>你所有的狀態牌。\n每以此方式<g>消耗</g>一張牌，就對一名隨機敵人造成 11 點傷害。",
+      "aliases": [
+        "散射炮"
+      ]
     },
     {
       "id": "FLAME_BARRIER",
       "name": "火焰屏障",
       "slug": "flame-barrier",
-      "descBase": "獲得12點<g>格擋</g>。\n你在這個回合每受到一次攻擊，都會對攻擊者造成4點傷害。",
-      "descUpgraded": "獲得16點<g>格擋</g>。\n你在這個回合每受到一次攻擊，都會對攻擊者造成6點傷害。"
+      "descBase": "獲得 12 點<g>格擋</g>。\n本回合每當你被攻擊時，對攻擊者造成 4 點傷害。",
+      "descUpgraded": "獲得 16 點<g>格擋</g>。\n本回合每當你被攻擊時，對攻擊者造成 6 點傷害。"
     },
     {
       "id": "FLANKING",
       "name": "夾擊",
       "slug": "flanking",
-      "descBase": "一名敵人在本回合受到的來自其他玩家的攻擊傷害翻倍。",
-      "descUpgraded": "一名敵人在本回合受到的來自其他玩家的攻擊傷害翻倍。"
+      "descBase": "本回合該敵人受到其他玩家的攻擊傷害加倍。",
+      "descUpgraded": "本回合該敵人受到其他玩家的攻擊傷害加倍。"
     },
     {
       "id": "FLASH_OF_STEEL",
-      "name": "亮劍",
+      "name": "鋼芒一閃",
       "slug": "flash-of-steel",
-      "descBase": "造成5點傷害。\n抽1張牌。",
-      "descUpgraded": "造成8點傷害。\n抽1張牌。"
+      "descBase": "造成 5 點傷害。\n抽 1 張牌。",
+      "descUpgraded": "造成 8 點傷害。\n抽 1 張牌。",
+      "aliases": [
+        "亮劍"
+      ]
     },
     {
       "id": "FLATTEN",
-      "name": "重壓",
+      "name": "砸扁",
       "slug": "flatten",
-      "descBase": "<g>奧斯提</g>造成12點傷害。\n如果<g>奧斯提</g>本回合攻擊過，則這張牌的耗能變為0<e/>。",
-      "descUpgraded": "<g>奧斯提</g>造成16點傷害。\n如果<g>奧斯提</g>本回合攻擊過，則這張牌的耗能變為0<e/>。"
+      "descBase": "<g>奧斯提</g>造成 12 點傷害。\n若<g>奧斯提</g>本回合攻擊過，此牌耗能為 0 <e/>。",
+      "descUpgraded": "<g>奧斯提</g>造成 16 點傷害。\n若<g>奧斯提</g>本回合攻擊過，此牌耗能為 0 <e/>。",
+      "aliases": [
+        "重壓"
+      ]
     },
     {
       "id": "FLECHETTES",
       "name": "飛鏢",
       "slug": "flechettes",
-      "descBase": "<g>手牌</g>中每有一張技能牌，造成5點傷害。",
-      "descUpgraded": "<g>手牌</g>中每有一張技能牌，造成7點傷害。"
+      "descBase": "你<g>手牌</g>中每有一張技能牌，就造成 5 點傷害。",
+      "descUpgraded": "你<g>手牌</g>中每有一張技能牌，就造成 7 點傷害。"
     },
     {
       "id": "FLICK_FLACK",
-      "name": "翻越撐擊",
+      "name": "翻身撐擊",
       "slug": "flick-flack",
-      "descBase": "<g>奇巧</g>。\n對所有敵人造成7點傷害。",
-      "descUpgraded": "<g>奇巧</g>。\n對所有敵人造成9點傷害。",
+      "descBase": "<g>奇巧</g>。\n對所有敵人造成 7 點傷害。",
+      "descUpgraded": "<g>奇巧</g>。\n對所有敵人造成 9 點傷害。",
       "aliases": [
-        "翻身撐擊"
+        "翻越撐擊"
       ]
     },
     {
       "id": "FOCUSED_STRIKE",
       "name": "集中打擊",
       "slug": "focused-strike",
-      "descBase": "造成9點傷害。\n在本回合獲得1點<g>集中</g>。",
-      "descUpgraded": "造成11點傷害。\n在本回合獲得2點<g>集中</g>。"
+      "descBase": "造成 9 點傷害。\n本回合獲得 1 層<g>集中</g>。",
+      "descUpgraded": "造成 11 點傷害。\n本回合獲得 2 層<g>集中</g>。"
     },
     {
       "id": "FOLLY",
       "name": "愚行",
       "slug": "folly",
-      "descBase": "<g>不能被打出</g>。\n<g>固有</g>。\n<g>虛無</g>。\n<g>永恆</g>。",
-      "descUpgraded": "<g>不能被打出</g>。\n<g>固有</g>。\n<g>虛無</g>。\n<g>永恆</g>。"
+      "descBase": "<g>無法打出</g>。\n<g>固有</g>。\n<g>虛無</g>。\n<g>永恆</g>。",
+      "descUpgraded": "<g>無法打出</g>。\n<g>固有</g>。\n<g>虛無</g>。\n<g>永恆</g>。"
     },
     {
       "id": "FOOTWORK",
-      "name": "靈動步法",
+      "name": "步法",
       "slug": "footwork",
-      "descBase": "獲得2點<g>敏捷</g>。",
-      "descUpgraded": "獲得3點<g>敏捷</g>。"
+      "descBase": "獲得 2 層<g>敏捷</g>。",
+      "descUpgraded": "獲得 3 層<g>敏捷</g>。",
+      "aliases": [
+        "靈動步法"
+      ]
     },
     {
       "id": "FORBIDDEN_GRIMOIRE",
       "name": "禁忌魔典",
       "slug": "forbidden-grimoire",
-      "descBase": "在戰鬥結束時，你可以從你的<g>牌組</g>中選一張牌移除。\n<g>永恆</g>。",
-      "descUpgraded": "在戰鬥結束時，你可以從你的<g>牌組</g>中選一張牌移除。\n<g>永恆</g>。"
+      "descBase": "戰鬥結束時，你可以從你的<g>牌組</g>中移除一張牌。\n<g>永恆</g>。",
+      "descUpgraded": "戰鬥結束時，你可以從你的<g>牌組</g>中移除一張牌。\n<g>永恆</g>。"
     },
     {
       "id": "FOREGONE_CONCLUSION",
       "name": "既定事項",
       "slug": "foregone-conclusion",
-      "descBase": "在下個回合，從你的<g>抽牌堆</g>中選擇2張牌放入你的<g>手牌</g>。",
-      "descUpgraded": "在下個回合，從你的<g>抽牌堆</g>中選擇3張牌放入你的<g>手牌</g>。"
+      "descBase": "下回合，將你<g>抽牌堆</g>中的 2 張牌放入你的<g>手牌</g>。",
+      "descUpgraded": "下回合，將你<g>抽牌堆</g>中的 3 張牌放入你的<g>手牌</g>。"
     },
     {
       "id": "FORGOTTEN_RITUAL",
-      "name": "被遺忘的儀式",
+      "name": "失傳儀式",
       "slug": "forgotten-ritual",
-      "descBase": "獲得<e>3</e>。\n<g>消耗</g>。",
-      "descUpgraded": "獲得<e>4</e>。\n<g>消耗</g>。",
+      "descBase": "獲得 <e/><e/><e/>。\n<g>消耗</g>。",
+      "descUpgraded": "獲得 <e/><e/><e/><e/>。\n<g>消耗</g>。",
       "aliases": [
-        "失傳儀式"
+        "被遺忘的儀式"
       ]
     },
     {
       "id": "FRIENDSHIP",
       "name": "友誼",
       "slug": "friendship",
-      "descBase": "失去2點<g>力量</g>。\n在每個回合開始時獲得<e>1</e>。",
-      "descUpgraded": "失去1點<g>力量</g>。\n在每個回合開始時獲得<e>1</e>。"
+      "descBase": "失去 2 層<g>力量</g>。\n每回合開始時獲得 <e/>。",
+      "descUpgraded": "失去 1 層<g>力量</g>。\n每回合開始時獲得 <e/>。"
     },
     {
       "id": "FTL",
-      "name": "超越光速",
+      "name": "超光速",
       "slug": "ftl",
-      "descBase": "造成5點傷害。\n如果你在這回合打出的牌數小於3張，抽1張牌。",
-      "descUpgraded": "造成6點傷害。\n如果你在這回合打出的牌數小於4張，抽1張牌。"
+      "descBase": "造成 5 點傷害。\n若你本回合打出的牌少於 3 張，抽 1 張牌。",
+      "descUpgraded": "造成 6 點傷害。\n若你本回合打出的牌少於 4 張，抽 1 張牌。",
+      "aliases": [
+        "超越光速"
+      ]
     },
     {
       "id": "FURNACE",
       "name": "熔爐",
       "slug": "furnace",
-      "descBase": "在你的回合開始時，<g>鑄造</g>5。",
-      "descUpgraded": "在你的回合開始時，<g>鑄造</g>7。"
+      "descBase": "在你的回合開始時，<g>鑄造</g> 5。",
+      "descUpgraded": "在你的回合開始時，<g>鑄造</g> 7。"
     },
     {
       "id": "FUSION",
-      "name": "聚變",
+      "name": "融合",
       "slug": "fusion",
-      "descBase": "<g>生成</g>1個<g>等離子</g>充能球。\n<g>消耗</g>。",
-      "descUpgraded": "<g>生成</g>1個<g>等離子</g>充能球。"
+      "descBase": "<g>凝聚</g> 1 個<g>電漿</g>。\n<g>消耗</g>。",
+      "descUpgraded": "<g>凝聚</g> 1 個<g>電漿</g>。",
+      "aliases": [
+        "聚變"
+      ]
     },
     {
       "id": "GAMMA_BLAST",
-      "name": "伽馬爆破",
+      "name": "伽瑪轟射",
       "slug": "gamma-blast",
-      "descBase": "造成13點傷害。\n給予2層<g>虛弱</g>。\n給予2層<g>易傷</g>。",
-      "descUpgraded": "造成18點傷害。\n給予2層<g>虛弱</g>。\n給予2層<g>易傷</g>。"
+      "descBase": "造成 13 點傷害。\n施加 2 層<g>虛弱</g>。\n施加 2 層<g>易傷</g>。",
+      "descUpgraded": "造成 18 點傷害。\n施加 2 層<g>虛弱</g>。\n施加 2 層<g>易傷</g>。",
+      "aliases": [
+        "伽馬爆破"
+      ]
     },
     {
       "id": "GANG_UP",
-      "name": "群起攻之",
+      "name": "圍攻",
       "slug": "gang-up",
-      "descBase": "造成5點傷害。\n本回合其他玩家每攻擊過一次該敵人，該牌造成的傷害就額外增加5點。",
-      "descUpgraded": "造成5點傷害。\n本回合其他玩家每攻擊過一次該敵人，該牌造成的傷害就額外增加7點。"
+      "descBase": "造成 5 點傷害。\n本回合內其他玩家每攻擊過該敵人一次，就額外造成 5 點傷害。",
+      "descUpgraded": "造成 5 點傷害。\n本回合內其他玩家每攻擊過該敵人一次，就額外造成 7 點傷害。",
+      "aliases": [
+        "群起攻之"
+      ]
     },
     {
       "id": "GATHER_LIGHT",
-      "name": "收集光輝",
+      "name": "聚光",
       "slug": "gather-light",
-      "descBase": "獲得8點<g>格擋</g>。\n獲得<s>1</s>。",
-      "descUpgraded": "獲得11點<g>格擋</g>。\n獲得<s>1</s>。"
+      "descBase": "獲得 8 點<g>格擋</g>。\n獲得 1<s/>。",
+      "descUpgraded": "獲得 11 點<g>格擋</g>。\n獲得 1<s/>。",
+      "aliases": [
+        "收集光輝"
+      ]
     },
     {
       "id": "GENESIS",
-      "name": "創世紀",
+      "name": "創世",
       "slug": "genesis",
-      "descBase": "在你的回合開始時，獲得<s>2</s>。",
-      "descUpgraded": "在你的回合開始時，獲得<s>3</s>。"
+      "descBase": "在你的回合開始時，獲得 2<s/>。",
+      "descUpgraded": "在你的回合開始時，獲得 3<s/>。",
+      "aliases": [
+        "創世紀"
+      ]
     },
     {
       "id": "GENETIC_ALGORITHM",
-      "name": "遺傳算法",
+      "name": "基因演算法",
       "slug": "genetic-algorithm",
-      "descBase": "獲得1點<g>格擋</g>。\n每打出一次，這張牌在本局遊戲中的<g>格擋</g>值永久增加3點。\n<g>消耗</g>。",
-      "descUpgraded": "獲得1點<g>格擋</g>。\n每打出一次，這張牌在本局遊戲中的<g>格擋</g>值永久增加4點。\n<g>消耗</g>。"
+      "descBase": "獲得 1 點<g>格擋</g>。\n使此牌的<g>格擋</g>永久提高 3 點。\n<g>消耗</g>。",
+      "descUpgraded": "獲得 1 點<g>格擋</g>。\n使此牌的<g>格擋</g>永久提高 4 點。\n<g>消耗</g>。",
+      "aliases": [
+        "遺傳算法"
+      ]
     },
     {
       "id": "GLACIER",
       "name": "冰川",
       "slug": "glacier",
-      "descBase": "獲得6點<g>格擋</g>。\n<g>生成</g>2個<g>冰霜</g>充能球。",
-      "descUpgraded": "獲得9點<g>格擋</g>。\n<g>生成</g>2個<g>冰霜</g>充能球。"
+      "descBase": "獲得 6 點<g>格擋</g>。\n<g>凝聚</g> 2 個<g>冰霜</g>。",
+      "descUpgraded": "獲得 9 點<g>格擋</g>。\n<g>凝聚</g> 2 個<g>冰霜</g>。"
     },
     {
       "id": "GLASSWORK",
       "name": "玻璃工藝",
       "slug": "glasswork",
-      "descBase": "獲得5點<g>格擋</g>。\n<g>生成</g>1個<g>玻璃</g>充能球。",
-      "descUpgraded": "獲得8點<g>格擋</g>。\n<g>生成</g>1個<g>玻璃</g>充能球。"
+      "descBase": "獲得 5 點<g>格擋</g>。\n<g>凝聚</g> 1 個<g>玻璃</g>。",
+      "descUpgraded": "獲得 8 點<g>格擋</g>。\n<g>凝聚</g> 1 個<g>玻璃</g>。"
     },
     {
       "id": "GLIMMER",
       "name": "微光",
       "slug": "glimmer",
-      "descBase": "抽3張牌。\n將你<g>手牌</g>中的1張牌放到<g>抽牌堆</g>頂部。",
-      "descUpgraded": "抽4張牌。\n將你<g>手牌</g>中的1張牌放到<g>抽牌堆</g>頂部。"
+      "descBase": "抽 3 張牌。\n將你<g>手牌</g>中的 1 張牌放到<g>抽牌堆</g>頂部。",
+      "descUpgraded": "抽 4 張牌。\n將你<g>手牌</g>中的 1 張牌放到<g>抽牌堆</g>頂部。"
     },
     {
       "id": "GLIMPSE_BEYOND",
       "name": "彼岸一瞥",
       "slug": "glimpse-beyond",
-      "descBase": "在所有玩家的<g>抽牌堆</g>中加入3張<g>靈魂</g>。\n<g>消耗</g>。",
-      "descUpgraded": "在所有玩家的<g>抽牌堆</g>中加入4張<g>靈魂</g>。\n<g>消耗</g>。"
+      "descBase": "所有玩家將 3 張<g>靈魂</g>加入各自的<g>抽牌堆</g>。\n<g>消耗</g>。",
+      "descUpgraded": "所有玩家將 4 張<g>靈魂</g>加入各自的<g>抽牌堆</g>。\n<g>消耗</g>。"
     },
     {
       "id": "GLITTERSTREAM",
       "name": "流光溢彩",
       "slug": "glitterstream",
-      "descBase": "獲得11點<g>格擋</g>。\n在下一回合獲得5點<g>格擋</g>。",
-      "descUpgraded": "獲得13點<g>格擋</g>。\n在下一回合獲得7點<g>格擋</g>。"
+      "descBase": "獲得 11 點<g>格擋</g>。\n下回合，獲得 5 點<g>格擋</g>。",
+      "descUpgraded": "獲得 13 點<g>格擋</g>。\n下回合，獲得 7 點<g>格擋</g>。"
     },
     {
       "id": "GLOW",
       "name": "輝光",
       "slug": "glow",
-      "descBase": "獲得<s>1</s>。\n抽1張牌。\n下一回合抽1張牌。",
-      "descUpgraded": "獲得<s>2</s>。\n抽1張牌。\n下一回合抽1張牌。"
+      "descBase": "獲得 1<s/>。\n抽 1 張牌。\n下回合，抽 1 張牌。",
+      "descUpgraded": "獲得 2<s/>。\n抽 1 張牌。\n下回合，抽 1 張牌。"
     },
     {
       "id": "GO_FOR_THE_EYES",
-      "name": "眼部攻擊",
+      "name": "瞄準眼睛",
       "slug": "go-for-the-eyes",
-      "descBase": "造成3點傷害。\n如果敵人的意圖是攻擊，則給予1層<g>虛弱</g>。",
-      "descUpgraded": "造成4點傷害。\n如果敵人的意圖是攻擊，則給予2層<g>虛弱</g>。"
+      "descBase": "造成 3 點傷害。\n若敵人意圖攻擊，施加 1 層<g>虛弱</g>。",
+      "descUpgraded": "造成 4 點傷害。\n若敵人意圖攻擊，施加 2 層<g>虛弱</g>。",
+      "aliases": [
+        "眼部攻擊"
+      ]
     },
     {
       "id": "GOLD_AXE",
       "name": "金斧",
       "slug": "gold-axe",
-      "descBase": "造成本場戰鬥中所打出牌數的傷害。",
-      "descUpgraded": "<g>保留</g>。\n造成本場戰鬥中所打出牌數的傷害。"
+      "descBase": "造成與本場戰鬥中已打出卡牌數量相同的傷害。",
+      "descUpgraded": "<g>保留</g>。\n造成與本場戰鬥中已打出卡牌數量相同的傷害。"
     },
     {
       "id": "GRAND_FINALE",
       "name": "華麗收場",
       "slug": "grand-finale",
-      "descBase": "只有當你的<g>抽牌堆</g>中沒有牌時才能打出。對所有敵人造成60點傷害。",
-      "descUpgraded": "只有當你的<g>抽牌堆</g>中沒有牌時才能打出。對所有敵人造成75點傷害。"
+      "descBase": "只有在你的<g>抽牌堆</g>中沒有牌時才能打出。對所有敵人造成 60 點傷害。",
+      "descUpgraded": "只有在你的<g>抽牌堆</g>中沒有牌時才能打出。對所有敵人造成 75 點傷害。"
     },
     {
       "id": "GRAVE_WARDEN",
-      "name": "守墓人",
+      "name": "墓穴守衛",
       "slug": "grave-warden",
-      "descBase": "獲得8點<g>格擋</g>。\n將一張<g>靈魂</g>放入你的<g>抽牌堆</g>中。",
-      "descUpgraded": "獲得11點<g>格擋</g>。\n將一張<g>靈魂</g>放入你的<g>抽牌堆</g>中。"
+      "descBase": "獲得 8 點<g>格擋</g>。\n將一張<g>靈魂</g>加入你的<g>抽牌堆</g>。",
+      "descUpgraded": "獲得 11 點<g>格擋</g>。\n將一張<g>靈魂</g>加入你的<g>抽牌堆</g>。",
+      "aliases": [
+        "守墓人"
+      ]
     },
     {
       "id": "GRAVEBLAST",
-      "name": "墳冢爆射",
+      "name": "墓冢轟射",
       "slug": "graveblast",
-      "descBase": "造成4點傷害。\n將<g>棄牌堆</g>中的一張牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
-      "descUpgraded": "造成6點傷害。\n將<g>棄牌堆</g>中的一張牌放入你的<g>手牌</g>。"
+      "descBase": "造成 4 點傷害。\n將你<g>棄牌堆</g>中的一張牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
+      "descUpgraded": "造成 6 點傷害。\n將你<g>棄牌堆</g>中的一張牌放入你的<g>手牌</g>。",
+      "aliases": [
+        "墳冢爆射"
+      ]
     },
     {
       "id": "GREED",
       "name": "貪婪",
       "slug": "greed",
-      "descBase": "<g>不能被打出</g>。\n<g>永恆</g>。",
-      "descUpgraded": "<g>不能被打出</g>。\n<g>永恆</g>。"
+      "descBase": "<g>無法打出</g>。\n<g>永恆</g>。",
+      "descUpgraded": "<g>無法打出</g>。\n<g>永恆</g>。"
     },
     {
       "id": "GUARDS",
       "name": "護駕！！！",
       "slug": "guards",
-      "descBase": "將你<g>手牌</g>中的任意張牌<g>變化</g>為<g>僕從捐軀</g>。\n<g>消耗</g>。",
-      "descUpgraded": "將你<g>手牌</g>中的任意張牌<g>變化</g>為<g>僕從捐軀+</g>。\n<g>消耗</g>。",
-      "notes": "衍生牌手下犧牲（僕從捐軀）：獲得7點格擋，升級後獲得10點格擋。"
+      "descBase": "將你<g>手牌</g>中任意數量的牌<g>轉化</g>為<g>手下犧牲</g>。\n<g>消耗</g>。",
+      "descUpgraded": "將你<g>手牌</g>中任意數量的牌<g>轉化</g>為<g>手下犧牲+</g>。\n<g>消耗</g>。"
     },
     {
       "id": "GUIDING_STAR",
-      "name": "引導之星",
+      "name": "引路星",
       "slug": "guiding-star",
-      "descBase": "造成12點傷害。\n下回合，抽2張牌。",
-      "descUpgraded": "造成13點傷害。\n下回合，抽3張牌。",
+      "descBase": "造成 12 點傷害。\n下回合，抽 2 張牌。",
+      "descUpgraded": "造成 13 點傷害。\n下回合，抽 3 張牌。",
       "aliases": [
-        "引路星"
+        "引導之星"
       ]
     },
     {
       "id": "GUILTY",
       "name": "愧疚",
       "slug": "guilty",
-      "descBase": "<g>不能被打出</g>。\n在5場戰鬥後從你的<g>牌組</g>中移除。",
-      "descUpgraded": "<g>不能被打出</g>。\n在5場戰鬥後從你的<g>牌組</g>中移除。"
+      "descBase": "<g>無法打出</g>。\n經過 5 場戰鬥後，從你的<g>牌組</g>中移除。",
+      "descUpgraded": "<g>無法打出</g>。\n經過 5 場戰鬥後，從你的<g>牌組</g>中移除。"
     },
     {
       "id": "GUNK_UP",
-      "name": "汙穢攻擊",
+      "name": "污泥覆體",
       "slug": "gunk-up",
-      "descBase": "造成4點傷害3次。\n在你的<g>棄牌堆</g>中加入一張<g>黏液</g>。",
-      "descUpgraded": "造成5點傷害3次。\n在你的<g>棄牌堆</g>中加入一張<g>黏液</g>。"
+      "descBase": "造成 3 次 4 點傷害。\n將一張<g>黏液覆體</g>加入你的<g>棄牌堆</g>。",
+      "descUpgraded": "造成 3 次 5 點傷害。\n將一張<g>黏液覆體</g>加入你的<g>棄牌堆</g>。",
+      "aliases": [
+        "汙穢攻擊"
+      ]
     },
     {
       "id": "HAILSTORM",
       "name": "冰雹風暴",
       "slug": "hailstorm",
-      "descBase": "在你的回合結束時，如果你有<g>冰霜</g>充能球，則對所有敵人造成6點傷害。",
-      "descUpgraded": "在你的回合結束時，如果你有<g>冰霜</g>充能球，則對所有敵人造成8點傷害。"
+      "descBase": "在你的回合結束時，若你擁有<g>冰霜</g>，對所有敵人造成 6 點傷害。",
+      "descUpgraded": "在你的回合結束時，若你擁有<g>冰霜</g>，對所有敵人造成 8 點傷害。"
     },
     {
       "id": "HAMMER_TIME",
-      "name": "錘子時間",
+      "name": "鎚子時間",
       "slug": "hammer-time",
-      "descBase": "每當你<g>鑄造</g>時，所有盟友也都<g>鑄造</g>相同的數值。",
-      "descUpgraded": "每當你<g>鑄造</g>時，所有盟友也都<g>鑄造</g>相同的數值。"
+      "descBase": "每當你<g>鑄造</g>時，所有盟友也會<g>鑄造</g>。",
+      "descUpgraded": "每當你<g>鑄造</g>時，所有盟友也會<g>鑄造</g>。",
+      "aliases": [
+        "錘子時間"
+      ]
     },
     {
       "id": "HAND_OF_GREED",
       "name": "貪婪之手",
       "slug": "hand-of-greed",
-      "descBase": "造成20點傷害。\n<g>斬殺</g>時，獲得20<g>金幣</g>。",
-      "descUpgraded": "造成25點傷害。\n<g>斬殺</g>時，獲得25<g>金幣</g>。"
+      "descBase": "造成 20 點傷害。\n<g>致死</g>時，獲得 20 枚<g>金幣</g>。",
+      "descUpgraded": "造成 25 點傷害。\n<g>致死</g>時，獲得 25 枚<g>金幣</g>。"
     },
     {
       "id": "HAND_TRICK",
-      "name": "手上技法",
+      "name": "掌上戲法",
       "slug": "hand-trick",
-      "descBase": "獲得7點<g>格擋</g>。\n在本回合給你<g>手牌</g>中的一張技能牌添加<g>奇巧</g>。",
-      "descUpgraded": "獲得10點<g>格擋</g>。\n在本回合給你<g>手牌</g>中的一張技能牌添加<g>奇巧</g>。"
+      "descBase": "獲得 7 點<g>格擋</g>。\n本回合為你<g>手牌</g>中的一張技能牌附加<g>奇巧</g>。",
+      "descUpgraded": "獲得 10 點<g>格擋</g>。\n本回合為你<g>手牌</g>中的一張技能牌附加<g>奇巧</g>。",
+      "aliases": [
+        "手上技法"
+      ]
     },
     {
       "id": "HANG",
-      "name": "吊殺",
+      "name": "吊掛",
       "slug": "hang",
-      "descBase": "造成10點傷害。\n讓所有“吊殺”牌對這名敵人造成的傷害翻倍。",
-      "descUpgraded": "造成13點傷害。\n讓所有“吊殺”牌對這名敵人造成的傷害翻倍。"
+      "descBase": "造成 10 點傷害。\n使所有吊掛牌對該敵人造成的傷害加倍。",
+      "descUpgraded": "造成 13 點傷害。\n使所有吊掛牌對該敵人造成的傷害加倍。",
+      "aliases": [
+        "吊殺"
+      ]
     },
     {
       "id": "HAUNT",
-      "name": "糾纏",
+      "name": "作祟",
       "slug": "haunt",
-      "descBase": "每當你打出一張<g>靈魂</g>時，隨機一名敵人失去7點生命。",
-      "descUpgraded": "每當你打出一張<g>靈魂</g>時，隨機一名敵人失去9點生命。",
+      "descBase": "每當你打出一張<g>靈魂</g>時，一名隨機敵人失去 7 點生命。",
+      "descUpgraded": "每當你打出一張<g>靈魂</g>時，一名隨機敵人失去 9 點生命。",
       "aliases": [
-        "作祟"
+        "糾纏"
       ]
     },
     {
       "id": "HAVOC",
       "name": "破滅",
       "slug": "havoc",
-      "descBase": "打出<g>抽牌堆</g>頂部的牌並將其<g>消耗</g>。",
-      "descUpgraded": "打出<g>抽牌堆</g>頂部的牌並將其<g>消耗</g>。"
+      "descBase": "打出你<g>抽牌堆</g>頂部的牌並將其<g>消耗</g>。",
+      "descUpgraded": "打出你<g>抽牌堆</g>頂部的牌並將其<g>消耗</g>。"
     },
     {
       "id": "HAZE",
       "name": "迷霧",
       "slug": "haze",
-      "descBase": "對所有敵人施加4層<g>中毒</g>與1層<g>虛弱</g>。",
-      "descUpgraded": "對所有敵人施加6層<g>中毒</g>與2層<g>虛弱</g>。"
+      "descBase": "對所有敵人施加 4 層<g>中毒</g>和 1 層<g>虛弱</g>。",
+      "descUpgraded": "對所有敵人施加 6 層<g>中毒</g>和 2 層<g>虛弱</g>。"
     },
     {
       "id": "HEADBUTT",
       "name": "頭槌",
       "slug": "headbutt",
-      "descBase": "造成9點傷害。\n將你<g>棄牌堆</g>中的一張牌放到<g>抽牌堆</g>頂部。",
-      "descUpgraded": "造成12點傷害。\n將你<g>棄牌堆</g>中的一張牌放到<g>抽牌堆</g>頂部。"
+      "descBase": "造成 9 點傷害。\n將你<g>棄牌堆</g>中的一張牌放到<g>抽牌堆</g>頂部。",
+      "descUpgraded": "造成 12 點傷害。\n將你<g>棄牌堆</g>中的一張牌放到<g>抽牌堆</g>頂部。"
     },
     {
       "id": "HEAVENLY_DRILL",
       "name": "天際鑽頭",
       "slug": "heavenly-drill",
-      "descBase": "造成8點傷害X次。\n如果X的最終數值為4或以上，則將X的數值翻倍。",
-      "descUpgraded": "造成10點傷害X次。\n如果X的最終數值為4或以上，則將X的數值翻倍。"
+      "descBase": "造成 X 次 8 點傷害。\n若 X 不少於 4，則使 X 加倍。",
+      "descUpgraded": "造成 X 次 10 點傷害。\n若 X 不少於 4，則使 X 加倍。"
     },
     {
       "id": "HEGEMONY",
       "name": "霸權",
       "slug": "hegemony",
-      "descBase": "造成15點傷害。\n在下個回合獲得<e>2</e>。",
-      "descUpgraded": "造成18點傷害。\n在下個回合獲得<e>3</e>。"
+      "descBase": "造成 15 點傷害。\n下回合，獲得 <e/><e/>。",
+      "descUpgraded": "造成 18 點傷害。\n下回合，獲得 <e/><e/><e/>。"
     },
     {
       "id": "HEIRLOOM_HAMMER",
-      "name": "傳承之錘",
+      "name": "傳家戰鎚",
       "slug": "heirloom-hammer",
-      "descBase": "造成20點傷害。\n選擇你<g>手牌</g>中的一張無色牌。將這張牌的一張複製品放入你的<g>手牌</g>。",
-      "descUpgraded": "造成25點傷害。\n選擇你<g>手牌</g>中的一張無色牌。將這張牌的一張複製品放入你的<g>手牌</g>。"
+      "descBase": "造成 20 點傷害。\n選擇你<g>手牌</g>中的一張無色牌，將該牌的一張複製品加入你的<g>手牌</g>。",
+      "descUpgraded": "造成 25 點傷害。\n選擇你<g>手牌</g>中的一張無色牌，將該牌的一張複製品加入你的<g>手牌</g>。",
+      "aliases": [
+        "傳承之錘"
+      ]
     },
     {
       "id": "HELIX_DRILL",
-      "name": "螺旋鑽擊",
+      "name": "螺旋鑽頭",
       "slug": "helix-drill",
-      "descBase": "在本回閤中，每個被使用的<e/>，都會使此牌造成3點傷害一次。",
-      "descUpgraded": "在本回閤中，每個被使用的<e/>，都會使此牌造成5點傷害一次。"
+      "descBase": "本回合每在其他牌上花費 <e/>，就造成 3 點傷害。",
+      "descUpgraded": "本回合每在其他牌上花費 <e/>，就造成 5 點傷害。",
+      "aliases": [
+        "螺旋鑽擊"
+      ]
     },
     {
       "id": "HELLO_WORLD",
@@ -1808,392 +2089,466 @@
       "id": "HELLRAISER",
       "name": "地獄狂徒",
       "slug": "hellraiser",
-      "descBase": "每當你抽到名字中有“打擊”的牌時，對一名隨機敵人打出這張牌。",
-      "descUpgraded": "每當你抽到名字中有“打擊”的牌時，對一名隨機敵人打出這張牌。"
+      "descBase": "每當你抽到一張含有「打擊」的牌時，對一名隨機敵人打出該牌。",
+      "descUpgraded": "每當你抽到一張含有「打擊」的牌時，對一名隨機敵人打出該牌。"
     },
     {
       "id": "HEMOKINESIS",
       "name": "御血術",
       "slug": "hemokinesis",
-      "descBase": "失去2點生命。\n造成15點傷害。",
-      "descUpgraded": "失去2點生命。\n造成20點傷害。"
+      "descBase": "失去 2 點生命。\n造成 15 點傷害。",
+      "descUpgraded": "失去 2 點生命。\n造成 20 點傷害。"
+    },
+    {
+      "id": "HIBERNATE",
+      "name": "休眠",
+      "slug": "hibernate",
+      "descBase": "本回合你的<g>冰霜</g>會使所有盟友獲得<g>格擋</g>。\n凝聚 2 個<g>冰霜</g>。",
+      "descUpgraded": "本回合你的<g>冰霜</g>會使所有盟友獲得<g>格擋</g>。\n凝聚 3 個<g>冰霜</g>。"
     },
     {
       "id": "HIDDEN_CACHE",
-      "name": "隱秘藏品",
+      "name": "隱密寶庫",
       "slug": "hidden-cache",
-      "descBase": "獲得<s>1</s>。\n在下個回合獲得<s>3</s>。",
-      "descUpgraded": "獲得<s>1</s>。\n在下個回合獲得<s>4</s>。"
+      "descBase": "獲得 1<s/>。\n下回合，獲得 3<s/>。",
+      "descUpgraded": "獲得 1<s/>。\n下回合，獲得 4<s/>。",
+      "aliases": [
+        "隱秘藏品"
+      ]
     },
     {
       "id": "HIDDEN_DAGGERS",
-      "name": "隱秘匕首",
+      "name": "暗藏匕首",
       "slug": "hidden-daggers",
-      "descBase": "丟棄2張牌。\n將2張<g>小刀</g>加入你的<g>手牌</g>。",
-      "descUpgraded": "丟棄2張牌。\n將2張<g>小刀+</g>加入你的<g>手牌</g>。"
+      "descBase": "丟棄 2 張牌。\n將 2 張<g>小刀</g>加入你的<g>手牌</g>。",
+      "descUpgraded": "丟棄 2 張牌。\n將 2 張<g>小刀+</g>加入你的<g>手牌</g>。",
+      "aliases": [
+        "隱秘匕首"
+      ]
     },
     {
       "id": "HIDDEN_GEM",
-      "name": "未掘寶石",
+      "name": "秘藏瑰寶",
       "slug": "hidden-gem",
-      "descBase": "你<g>抽牌堆</g>中的一張沒有<g>重放</g>的隨機牌獲得2層<g>重放</g>。",
-      "descUpgraded": "你<g>抽牌堆</g>中的一張沒有<g>重放</g>的隨機牌獲得3層<g>重放</g>。"
+      "descBase": "你<g>抽牌堆</g>中一張不具有<g>重演</g>的隨機卡牌獲得<g>重演</g> 2。",
+      "descUpgraded": "你<g>抽牌堆</g>中一張不具有<g>重演</g>的隨機卡牌獲得<g>重演</g> 3。",
+      "aliases": [
+        "未掘寶石"
+      ]
     },
     {
       "id": "HIGH_FIVE",
       "name": "擊掌",
       "slug": "high-five",
-      "descBase": "<g>奧斯提</g>對所有敵人\n造成11點傷害並給予它們\n2層<g>易傷</g>。",
-      "descUpgraded": "<g>奧斯提</g>對所有敵人\n造成13點傷害並給予它們\n3層<g>易傷</g>。"
+      "descBase": "<g>奧斯提</g>對所有敵人\n造成 11 點傷害，並施加\n2 層<g>易傷</g>。",
+      "descUpgraded": "<g>奧斯提</g>對所有敵人\n造成 13 點傷害，並施加\n3 層<g>易傷</g>。"
     },
     {
       "id": "HOLOGRAM",
-      "name": "全息影像",
+      "name": "全像投影",
       "slug": "hologram",
-      "descBase": "獲得3點<g>格擋</g>。\n將<g>棄牌堆</g>中的一張牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
-      "descUpgraded": "獲得5點<g>格擋</g>。\n將<g>棄牌堆</g>中的一張牌放入你的<g>手牌</g>。"
+      "descBase": "獲得 3 點<g>格擋</g>。\n將你<g>棄牌堆</g>中的一張牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
+      "descUpgraded": "獲得 5 點<g>格擋</g>。\n將你<g>棄牌堆</g>中的一張牌放入你的<g>手牌</g>。",
+      "aliases": [
+        "全息影像"
+      ]
     },
     {
       "id": "HOTFIX",
-      "name": "熱修復",
+      "name": "緊急修正",
       "slug": "hotfix",
-      "descBase": "在本回合獲得2點<g>集中</g>。\n<g>消耗</g>。",
-      "descUpgraded": "在本回合獲得2點<g>集中</g>。"
+      "descBase": "本回合獲得 2 層<g>集中</g>。\n<g>消耗</g>。",
+      "descUpgraded": "本回合獲得 2 層<g>集中</g>。",
+      "aliases": [
+        "熱修復"
+      ]
     },
     {
       "id": "HOWL_FROM_BEYOND",
-      "name": "彼岸咆哮",
+      "name": "彼岸嚎叫",
       "slug": "howl-from-beyond",
-      "descBase": "對所有敵人造成18點傷害。\n在你的回合結束時，如果這張牌在你的<g>消耗牌堆</g>中，則將其打出。",
-      "descUpgraded": "對所有敵人造成24點傷害。\n在你的回合結束時，如果這張牌在你的<g>消耗牌堆</g>中，則將其打出。",
+      "descBase": "對所有敵人造成 18 點傷害。\n在你的回合結束時，若此牌在你的<g>消耗堆</g>中，將其打出。",
+      "descUpgraded": "對所有敵人造成 24 點傷害。\n在你的回合結束時，若此牌在你的<g>消耗堆</g>中，將其打出。",
       "aliases": [
-        "彼岸嚎叫"
+        "彼岸咆哮"
       ]
     },
     {
       "id": "HUDDLE_UP",
-      "name": "抱團",
+      "name": "圍攏",
       "slug": "huddle-up",
-      "descBase": "所有玩家抽2張牌。\n<g>消耗</g>。",
-      "descUpgraded": "所有玩家抽3張牌。\n<g>消耗</g>。"
+      "descBase": "所有玩家抽 2 張牌。\n<g>消耗</g>。",
+      "descUpgraded": "所有玩家抽 3 張牌。\n<g>消耗</g>。",
+      "aliases": [
+        "抱團"
+      ]
     },
     {
       "id": "HYPERBEAM",
       "name": "超能光束",
       "slug": "hyperbeam",
-      "descBase": "對所有敵人造成24點傷害。\n本回合失去3點<g>集中</g>。",
-      "descUpgraded": "對所有敵人造成30點傷害。\n本回合失去3點<g>集中</g>。"
+      "descBase": "對所有敵人造成 24 點傷害。\n失去 3 層<g>集中</g>。",
+      "descUpgraded": "對所有敵人造成 30 點傷害。\n失去 3 層<g>集中</g>。"
     },
     {
       "id": "I_AM_INVINCIBLE",
       "name": "所向無敵",
       "slug": "i-am-invincible",
-      "descBase": "獲得10點<g>格擋</g>。\n在你的回合結束時，如果這張牌位於<g>抽牌堆</g>頂部，則將其打出。",
-      "descUpgraded": "獲得13點<g>格擋</g>。\n在你的回合結束時，如果這張牌位於<g>抽牌堆</g>頂部，則將其打出。"
+      "descBase": "獲得 10 點<g>格擋</g>。\n在你的回合結束時，若此牌位於你的<g>抽牌堆</g>頂部，將其打出。",
+      "descUpgraded": "獲得 13 點<g>格擋</g>。\n在你的回合結束時，若此牌位於你的<g>抽牌堆</g>頂部，將其打出。"
     },
     {
       "id": "ICE_LANCE",
-      "name": "冰之長槍",
+      "name": "冰槍",
       "slug": "ice-lance",
-      "descBase": "造成19點傷害。\n<g>生成</g>3個<g>冰霜</g>充能球。",
-      "descUpgraded": "造成24點傷害。\n<g>生成</g>3個<g>冰霜</g>充能球。"
+      "descBase": "造成 19 點傷害。\n<g>凝聚</g> 3 個<g>冰霜</g>。",
+      "descUpgraded": "造成 24 點傷害。\n<g>凝聚</g> 3 個<g>冰霜</g>。",
+      "aliases": [
+        "冰之長槍"
+      ]
     },
     {
       "id": "IGNITION",
       "name": "引火",
       "slug": "ignition",
-      "descBase": "使另一名玩家<g>生成</g><g>等離子</g>充能球。\n<g>消耗</g>。",
-      "descUpgraded": "使另一名玩家<g>生成</g><g>等離子</g>充能球。"
+      "descBase": "另一名玩家<g>凝聚</g>一個<g>電漿</g>。\n<g>消耗</g>。",
+      "descUpgraded": "另一名玩家<g>凝聚</g>一個<g>電漿</g>。"
+    },
+    {
+      "id": "IMITATION_LEARNING",
+      "name": "模仿學習",
+      "slug": "imitation-learning",
+      "descBase": "選擇另一名玩家。\n該玩家接下來 2 次打出能力牌時，你都會打出一張該牌的複製品。\n<g>消耗</g>。",
+      "descUpgraded": "選擇另一名玩家。\n該玩家接下來 3 次打出能力牌時，你都會打出一張該牌的複製品。\n<g>消耗</g>。"
     },
     {
       "id": "IMPATIENCE",
       "name": "急躁",
       "slug": "impatience",
-      "descBase": "如果你的<g>手牌</g>中沒有攻擊牌，抽2張牌。",
-      "descUpgraded": "如果你的<g>手牌</g>中沒有攻擊牌，抽3張牌。"
+      "descBase": "若你的<g>手牌</g>中沒有攻擊牌，抽 2 張牌。",
+      "descUpgraded": "若你的<g>手牌</g>中沒有攻擊牌，抽 3 張牌。"
     },
     {
       "id": "IMPERVIOUS",
-      "name": "巋然不動",
+      "name": "堅不可摧",
       "slug": "impervious",
-      "descBase": "獲得30點<g>格擋</g>。\n<g>消耗</g>。",
-      "descUpgraded": "獲得40點<g>格擋</g>。\n<g>消耗</g>。"
+      "descBase": "獲得 30 點<g>格擋</g>。\n<g>消耗</g>。",
+      "descUpgraded": "獲得 40 點<g>格擋</g>。\n<g>消耗</g>。",
+      "aliases": [
+        "巋然不動"
+      ]
     },
     {
       "id": "INFERNAL_BLADE",
       "name": "地獄之刃",
       "slug": "infernal-blade",
-      "descBase": "將一張隨機攻擊牌加入你的<g>手牌</g>。那張牌在本回合內可以免費打出。\n<g>消耗</g>。",
-      "descUpgraded": "將一張隨機攻擊牌加入你的<g>手牌</g>。那張牌在本回合內可以免費打出。\n<g>消耗</g>。"
+      "descBase": "將一張隨機攻擊牌加入你的<g>手牌</g>。本回合可免費打出。\n<g>消耗</g>。",
+      "descUpgraded": "將一張隨機攻擊牌加入你的<g>手牌</g>。本回合可免費打出。\n<g>消耗</g>。"
     },
     {
       "id": "INFERNO",
-      "name": "獄火",
+      "name": "煉獄",
       "slug": "inferno",
-      "descBase": "在你的回合開始時，失去1點生命。\n每當你在你的回合內失去生命時，對所有敵人造成6點傷害。",
-      "descUpgraded": "在你的回合開始時，失去1點生命。\n每當你在你的回合內失去生命時，對所有敵人造成9點傷害。"
+      "descBase": "在你的回合開始時，失去 1 點生命。\n每當你在自己的回合失去生命時，對所有敵人造成 6 點傷害。",
+      "descUpgraded": "在你的回合開始時，失去 1 點生命。\n每當你在自己的回合失去生命時，對所有敵人造成 9 點傷害。",
+      "aliases": [
+        "獄火"
+      ]
     },
     {
       "id": "INFINITE_BLADES",
       "name": "無盡刀刃",
       "slug": "infinite-blades",
-      "descBase": "在你的回合開始時，在你的<g>手牌</g>中加入1張<g>小刀</g>。",
-      "descUpgraded": "<g>固有</g>。\n在你的回合開始時，在你的<g>手牌</g>中加入1張<g>小刀</g>。"
+      "descBase": "在你的回合開始時，將 1 張<g>小刀</g>加入你的<g>手牌</g>。",
+      "descUpgraded": "<g>固有</g>。\n在你的回合開始時，將 1 張<g>小刀</g>加入你的<g>手牌</g>。"
     },
     {
       "id": "INFLAME",
       "name": "燃燒",
       "slug": "inflame",
-      "descBase": "獲得2點<g>力量</g>。",
-      "descUpgraded": "獲得3點<g>力量</g>。"
+      "descBase": "獲得 2 層<g>力量</g>。",
+      "descUpgraded": "獲得 3 層<g>力量</g>。"
     },
     {
       "id": "INJURY",
       "name": "受傷",
       "slug": "injury",
-      "descBase": "<g>不能被打出</g>。",
-      "descUpgraded": "<g>不能被打出</g>。"
+      "descBase": "<g>無法打出</g>。",
+      "descUpgraded": "<g>無法打出</g>。"
     },
     {
       "id": "INTERCEPT",
       "name": "攔截",
       "slug": "intercept",
-      "descBase": "獲得9點<g>格擋</g>。\n將本回合所有要對另一名玩家發起的攻擊轉移到你的身上。",
-      "descUpgraded": "獲得13點<g>格擋</g>。\n將本回合所有要對另一名玩家發起的攻擊轉移到你的身上。"
+      "descBase": "獲得 9 點<g>格擋</g>。\n本回合將原本指向另一名玩家的所有攻擊轉移至你。",
+      "descUpgraded": "獲得 13 點<g>格擋</g>。\n本回合將原本指向另一名玩家的所有攻擊轉移至你。"
     },
     {
       "id": "INVOKE",
       "name": "喚起",
       "slug": "invoke",
-      "descBase": "在下個回合<g>召喚</g>2並獲得<e>2</e>。",
-      "descUpgraded": "在下個回合<g>召喚</g>3並獲得<e>3</e>。"
+      "descBase": "下回合，<g>召喚</g> 2 並獲得 <e/><e/>。",
+      "descUpgraded": "下回合，<g>召喚</g> 3 並獲得 <e/><e/><e/>。"
     },
     {
       "id": "IRON_WAVE",
       "name": "鐵斬波",
       "slug": "iron-wave",
-      "descBase": "獲得5點<g>格擋</g>。\n造成5點傷害。",
-      "descUpgraded": "獲得7點<g>格擋</g>。\n造成7點傷害。"
+      "descBase": "獲得 5 點<g>格擋</g>。\n造成 5 點傷害。",
+      "descUpgraded": "獲得 7 點<g>格擋</g>。\n造成 7 點傷害。"
     },
     {
       "id": "ITERATION",
       "name": "迭代",
       "slug": "iteration",
-      "descBase": "每回合你第一次抽到狀態牌時，抽2張牌。",
-      "descUpgraded": "每回合你第一次抽到狀態牌時，抽3張牌。"
+      "descBase": "每回合第一次抽到狀態牌時，抽 2 張牌。",
+      "descUpgraded": "每回合第一次抽到狀態牌時，抽 3 張牌。"
     },
     {
       "id": "JACK_OF_ALL_TRADES",
-      "name": "花樣百出",
+      "name": "萬事通",
       "slug": "jack-of-all-trades",
-      "descBase": "將1張隨機無色牌加入你的<g>手牌</g>。\n<g>消耗</g>。",
-      "descUpgraded": "將2張隨機無色牌加入你的<g>手牌</g>。\n<g>消耗</g>。"
+      "descBase": "將 1 張隨機無色牌加入你的<g>手牌</g>。\n<g>消耗</g>。",
+      "descUpgraded": "將 2 張隨機無色牌加入你的<g>手牌</g>。\n<g>消耗</g>。",
+      "aliases": [
+        "花樣百出"
+      ]
     },
     {
       "id": "JACKPOT",
       "name": "大獎",
       "slug": "jackpot",
-      "descBase": "造成25點傷害。\n將3張隨機0<e/>的牌加入你的<g>手牌</g>。",
-      "descUpgraded": "造成30點傷害。\n將3張隨機<g>升級過</g>的0<e/>的牌加入你的<g>手牌</g>。"
+      "descBase": "造成 25 點傷害。\n將 3 張耗能為 0<e/> 的隨機卡牌加入你的<g>手牌</g>。",
+      "descUpgraded": "造成 30 點傷害。\n將 3 張<g>已升級</g>且耗能為 0<e/> 的隨機卡牌加入你的<g>手牌</g>。"
     },
     {
       "id": "JUGGERNAUT",
-      "name": "勢不可當",
+      "name": "勢不可擋",
       "slug": "juggernaut",
-      "descBase": "每當你獲得<g>格擋</g>時，對隨機敵人造成6點傷害。",
-      "descUpgraded": "每當你獲得<g>格擋</g>時，對隨機敵人造成8點傷害。"
+      "descBase": "每當你獲得<g>格擋</g>時，對一名隨機敵人造成 6 點傷害。",
+      "descUpgraded": "每當你獲得<g>格擋</g>時，對一名隨機敵人造成 8 點傷害。",
+      "aliases": [
+        "勢不可當"
+      ]
     },
     {
       "id": "JUGGLING",
       "name": "雜耍",
       "slug": "juggling",
-      "descBase": "將你在每回合打出的第三張<g>攻擊牌</g>的複製品加入你的<g>手牌</g>。",
-      "descUpgraded": "<g>固有</g>。\n將你在每回合打出的第三張<g>攻擊牌</g>的複製品加入你的<g>手牌</g>。"
+      "descBase": "將你每回合打出的第三張<g>攻擊牌</g>的一張複製品會加入你的<g>手牌</g>。",
+      "descUpgraded": "<g>固有</g>。\n將你每回合打出的第三張<g>攻擊牌</g>的一張複製品會加入你的<g>手牌</g>。"
     },
     {
       "id": "KINGLY_KICK",
       "name": "王者之踢",
       "slug": "kingly-kick",
-      "descBase": "造成27點傷害。\n每當你抽到這張牌時，這張牌的耗能減少1。",
-      "descUpgraded": "造成35點傷害。\n每當你抽到這張牌時，這張牌的耗能減少1。"
+      "descBase": "造成 27 點傷害。\n每當你抽到此牌時，就使其耗能減少 1 點。",
+      "descUpgraded": "造成 35 點傷害。\n每當你抽到此牌時，就使其耗能減少 1 點。"
     },
     {
       "id": "KINGLY_PUNCH",
       "name": "王者之拳",
       "slug": "kingly-punch",
-      "descBase": "造成8點傷害。\n每當你抽到這張牌時，在這場戰鬥中其傷害增加4。",
-      "descUpgraded": "造成10點傷害。\n每當你抽到這張牌時，在這場戰鬥中其傷害增加6。"
+      "descBase": "造成 8 點傷害。\n本場戰鬥中，每當你抽到此牌時，其傷害就提高 4 點。",
+      "descUpgraded": "造成 10 點傷害。\n本場戰鬥中，每當你抽到此牌時，其傷害就提高 6 點。"
     },
     {
       "id": "KNIFE_TRAP",
       "name": "刀刃陷阱",
       "slug": "knife-trap",
-      "descBase": "將你<g>消耗牌堆</g>中的所有<g>小刀</g>對一名敵人打出。",
-      "descUpgraded": "將你<g>消耗牌堆</g>中的所有<g>小刀</g><g>升級</g>然後對一名敵人打出。"
+      "descBase": "以該敵人為目標，打出你<g>消耗堆</g>中每一張<g>小刀</g>。",
+      "descUpgraded": "以該敵人為目標，<g>升級</g>並打出你<g>消耗堆</g>中每一張<g>小刀</g>。"
     },
     {
       "id": "KNOCKDOWN",
       "name": "擊倒",
       "slug": "knockdown",
-      "descBase": "造成10點傷害。\n該敵人在本回合受到的來自其他玩家的傷害變為兩倍。",
-      "descUpgraded": "造成14點傷害。\n該敵人在本回合受到的來自其他玩家的傷害變為三倍。"
+      "descBase": "造成 10 點傷害。\n本回合該敵人受到其他玩家的傷害變為兩倍。",
+      "descUpgraded": "造成 14 點傷害。\n本回合該敵人受到其他玩家的傷害變為三倍。"
     },
     {
       "id": "KNOCKOUT_BLOW",
-      "name": "決勝一擊",
+      "name": "終結重拳",
       "slug": "knockout-blow",
-      "descBase": "造成30點傷害。\n如果此牌擊殺了敵人，獲得<s>5</s>。",
-      "descUpgraded": "造成38點傷害。\n如果此牌擊殺了敵人，獲得<s>5</s>。"
+      "descBase": "造成 30 點傷害。\n若此牌殺死敵人，就獲得 5<s/>。",
+      "descUpgraded": "造成 38 點傷害。\n若此牌殺死敵人，就獲得 5<s/>。",
+      "aliases": [
+        "決勝一擊"
+      ]
     },
     {
       "id": "KNOW_THY_PLACE",
-      "name": "何人僭越",
+      "name": "休得僭越",
       "slug": "know-thy-place",
-      "descBase": "給予1層<g>虛弱</g>。\n給予1層<g>易傷</g>。\n<g>消耗</g>。",
-      "descUpgraded": "給予1層<g>虛弱</g>。\n給予1層<g>易傷</g>。"
+      "descBase": "施加 1 層<g>虛弱</g>。\n施加 1 層<g>易傷</g>。\n<g>消耗</g>。",
+      "descUpgraded": "施加 1 層<g>虛弱</g>。\n施加 1 層<g>易傷</g>。",
+      "aliases": [
+        "何人僭越"
+      ]
     },
     {
       "id": "LANTERN_KEY",
       "name": "燈火鑰匙",
       "slug": "lantern-key",
-      "descBase": "<g>不能被打出</g>。\n在下一階段解鎖一個特殊事件。",
-      "descUpgraded": "<g>不能被打出</g>。\n在下一階段解鎖一個特殊事件。"
+      "descBase": "<g>無法打出</g>。\n解鎖下一幕中的特殊事件。",
+      "descUpgraded": "<g>無法打出</g>。\n解鎖下一幕中的特殊事件。"
     },
     {
       "id": "LARGESSE",
-      "name": "慷慨捐助",
+      "name": "慷慨賞賜",
       "slug": "largesse",
-      "descBase": "將一張隨機的無色牌添加至一位其他玩家的<g>手牌</g>中。",
-      "descUpgraded": "將一張隨機的<g>升級過的</g>無色牌添加至一位其他玩家的<g>手牌</g>中。"
+      "descBase": "另一名玩家將 1 張隨機無色牌加入其<g>手牌</g>。",
+      "descUpgraded": "另一名玩家將 1 張隨機<g>已升級</g>的無色牌加入其<g>手牌</g>。",
+      "aliases": [
+        "慷慨捐助"
+      ]
     },
     {
       "id": "LEADING_STRIKE",
-      "name": "先制打擊",
+      "name": "先導打擊",
       "slug": "leading-strike",
-      "descBase": "造成3點傷害。\n將2張<g>小刀</g>加入你的<g>手牌</g>。",
-      "descUpgraded": "造成6點傷害。\n將2張<g>小刀</g>加入你的<g>手牌</g>。"
+      "descBase": "造成 3 點傷害。\n將 2 張<g>小刀</g>加入你的<g>手牌</g>。",
+      "descUpgraded": "造成 6 點傷害。\n將 2 張<g>小刀</g>加入你的<g>手牌</g>。",
+      "aliases": [
+        "先制打擊"
+      ]
     },
     {
       "id": "LEAP",
       "name": "飛躍",
       "slug": "leap",
-      "descBase": "獲得9點<g>格擋</g>。",
-      "descUpgraded": "獲得12點<g>格擋</g>。"
+      "descBase": "獲得 9 點<g>格擋</g>。",
+      "descUpgraded": "獲得 12 點<g>格擋</g>。"
     },
     {
       "id": "LEG_SWEEP",
       "name": "掃腿",
       "slug": "leg-sweep",
-      "descBase": "給予2層<g>虛弱</g>。\n獲得11點<g>格擋</g>。",
-      "descUpgraded": "給予3層<g>虛弱</g>。\n獲得14點<g>格擋</g>。"
+      "descBase": "施加 2 層<g>虛弱</g>。\n獲得 11 點<g>格擋</g>。",
+      "descUpgraded": "施加 3 層<g>虛弱</g>。\n獲得 14 點<g>格擋</g>。"
     },
     {
       "id": "LEGION_OF_BONE",
       "name": "骸骨軍團",
       "slug": "legion-of-bone",
-      "descBase": "所有玩家<g>召喚</g>6。\n<g>消耗</g>。",
-      "descUpgraded": "所有玩家<g>召喚</g>8。\n<g>消耗</g>。"
+      "descBase": "所有玩家<g>召喚</g> 6。",
+      "descUpgraded": "所有玩家<g>召喚</g> 8。"
     },
     {
       "id": "LETHALITY",
-      "name": "致死性",
+      "name": "殺傷性",
       "slug": "lethality",
-      "descBase": "<g>虛無</g>。\n每回合的第一張攻擊牌會造成50%額外傷害。",
-      "descUpgraded": "<g>虛無</g>。\n每回合的第一張攻擊牌會造成75%額外傷害。"
+      "descBase": "<g>虛無</g>。\n每回合第一張攻擊牌的傷害提高 50%。",
+      "descUpgraded": "<g>虛無</g>。\n每回合第一張攻擊牌的傷害提高 75%。",
+      "aliases": [
+        "致死性"
+      ]
     },
     {
       "id": "LIFT",
-      "name": "託舉",
+      "name": "托舉",
       "slug": "lift",
-      "descBase": "給另一名玩家11點<g>格擋</g>。",
-      "descUpgraded": "給另一名玩家16點<g>格擋</g>。"
+      "descBase": "使另一名玩家獲得 11 點<g>格擋</g>。",
+      "descUpgraded": "使另一名玩家獲得 16 點<g>格擋</g>。",
+      "aliases": [
+        "託舉"
+      ]
     },
     {
       "id": "LIGHTNING_ROD",
       "name": "引雷針",
       "slug": "lightning-rod",
-      "descBase": "獲得4點<g>格擋</g>。\n在下2個回合開始時,<g>生成</g>1個<g>閃電</g>充能球。",
-      "descUpgraded": "獲得7點<g>格擋</g>。\n在下2個回合開始時,<g>生成</g>1個<g>閃電</g>充能球。"
+      "descBase": "獲得 4 點<g>格擋</g>。\n接下來 2 個回合開始時，<g>凝聚</g> 1 個<g>閃電</g>。",
+      "descUpgraded": "獲得 7 點<g>格擋</g>。\n接下來 2 個回合開始時，<g>凝聚</g> 1 個<g>閃電</g>。"
     },
     {
       "id": "LOOP",
       "name": "循環",
       "slug": "loop",
-      "descBase": "在你的回合開始時，觸發你最右側的一個充能球的被動能力。",
-      "descUpgraded": "在你的回合開始時，觸發你最右側的一個充能球的被動能力2次。"
+      "descBase": "在你的回合開始時，觸發你最右側充能球的被動能力。",
+      "descUpgraded": "在你的回合開始時，觸發你最右側充能球的被動能力 2 次。"
     },
     {
       "id": "LUNAR_BLAST",
-      "name": "月面射擊",
+      "name": "月面轟射",
       "slug": "lunar-blast",
-      "descBase": "本回閤中每打出過一張技能牌，此牌額外造成4點傷害一次。",
-      "descUpgraded": "本回閤中每打出過一張技能牌，此牌額外造成5點傷害一次。"
+      "descBase": "本回合每打出過一張技能牌，就造成 4 點傷害。",
+      "descUpgraded": "本回合每打出過一張技能牌，就造成 5 點傷害。",
+      "aliases": [
+        "月面射擊"
+      ]
     },
     {
       "id": "MACHINE_LEARNING",
       "name": "機器學習",
       "slug": "machine-learning",
-      "descBase": "在你的回合開始時，額外抽1張牌。",
-      "descUpgraded": "<g>固有</g>。\n在你的回合開始時，額外抽1張牌。"
+      "descBase": "在你的回合開始時，額外抽 1 張牌。",
+      "descUpgraded": "<g>固有</g>。\n在你的回合開始時，額外抽 1 張牌。"
     },
     {
       "id": "MAD_SCIENCE",
       "name": "瘋狂科學",
       "slug": "mad-science",
-      "descBase": "造成12點傷害。\n？？？",
-      "descUpgraded": "<g>固有</g>。\n造成12點傷害。\n？？？"
+      "descBase": "造成 12 點傷害。\n？？？",
+      "descUpgraded": "<g>固有</g>。\n造成 12 點傷害。\n？？？"
     },
     {
       "id": "MAKE_IT_SO",
       "name": "如此甚好",
       "slug": "make-it-so",
-      "descBase": "造成6點傷害。\n你每在一回合內打出3張技能牌，就將這張牌放入你的<g>手牌</g>。",
-      "descUpgraded": "造成9點傷害。\n你每在一回合內打出3張技能牌，就將這張牌放入你的<g>手牌</g>。"
+      "descBase": "造成 6 點傷害。\n每回合每打出 3 張技能牌，就將此牌放入你的<g>手牌</g>。",
+      "descUpgraded": "造成 9 點傷害。\n每回合每打出 3 張技能牌，就將此牌放入你的<g>手牌</g>。"
     },
     {
       "id": "MALAISE",
       "name": "萎靡",
       "slug": "malaise",
-      "descBase": "敵人失去X點<g>力量</g>。給予X層<g>虛弱</g>。\n<g>消耗</g>。",
-      "descUpgraded": "敵人失去X+1點<g>力量</g>。給予X+1層<g>虛弱</g>。\n<g>消耗</g>。"
+      "descBase": "敵人失去 X 層<g>力量</g>。施加 X 層<g>虛弱</g>。\n<g>消耗</g>。",
+      "descUpgraded": "敵人失去 X+1 層<g>力量</g>。施加 X+1 層<g>虛弱</g>。\n<g>消耗</g>。"
     },
     {
       "id": "MANGLE",
-      "name": "凌虐",
+      "name": "重創",
       "slug": "mangle",
-      "descBase": "造成20點傷害。\n敵人在本回合失去10點<g>力量</g>。",
-      "descUpgraded": "造成26點傷害。\n敵人在本回合失去15點<g>力量</g>。",
+      "descBase": "造成 20 點傷害。\n敵人本回合失去 10 層<g>力量</g>。",
+      "descUpgraded": "造成 26 點傷害。\n敵人本回合失去 15 層<g>力量</g>。",
       "aliases": [
-        "重創"
+        "凌虐"
       ]
     },
     {
       "id": "MANIFEST_AUTHORITY",
-      "name": "君權自授",
+      "name": "彰顯權威",
       "slug": "manifest-authority",
-      "descBase": "獲得7點<g>格擋</g>。\n將一張隨機無色牌加入你的<g>手牌</g>。",
-      "descUpgraded": "獲得8點<g>格擋</g>。\n將一張隨機<g>升級過的</g>無色牌加入你的<g>手牌</g>。"
+      "descBase": "獲得 7 點<g>格擋</g>。\n將 1 張隨機無色牌加入你的<g>手牌</g>。",
+      "descUpgraded": "獲得 8 點<g>格擋</g>。\n將 1 張隨機<g>已升級</g>的無色牌加入你的<g>手牌</g>。",
+      "aliases": [
+        "君權自授"
+      ]
     },
     {
       "id": "MASTER_OF_STRATEGY",
       "name": "戰略大師",
       "slug": "master-of-strategy",
-      "descBase": "抽3張牌。\n<g>消耗</g>。",
-      "descUpgraded": "抽4張牌。\n<g>消耗</g>。"
+      "descBase": "抽 3 張牌。\n<g>消耗</g>。",
+      "descUpgraded": "抽 4 張牌。\n<g>消耗</g>。"
     },
     {
       "id": "MASTER_PLANNER",
       "name": "謀劃專家",
       "slug": "master-planner",
-      "descBase": "當你打出技能牌時，該牌獲得<g>奇巧</g>。",
-      "descUpgraded": "當你打出技能牌時，該牌獲得<g>奇巧</g>。"
+      "descBase": "當你打出一張技能牌時，該牌獲得<g>奇巧</g>。",
+      "descUpgraded": "當你打出一張技能牌時，該牌獲得<g>奇巧</g>。"
     },
     {
       "id": "MAUL",
-      "name": "撕咬",
+      "name": "猛襲",
       "slug": "maul",
-      "descBase": "造成5點傷害兩次。\n在這場戰鬥中，將所有“撕咬”牌的傷害增加1。",
-      "descUpgraded": "造成6點傷害兩次。\n在這場戰鬥中，將所有“撕咬”牌的傷害增加2。"
+      "descBase": "造成 2 次 5 點傷害。\n本場戰鬥中，所有猛襲牌的傷害提高 2 點。",
+      "descUpgraded": "造成 2 次 6 點傷害。\n本場戰鬥中，所有猛襲牌的傷害提高 3 點。",
+      "aliases": [
+        "撕咬"
+      ]
     },
     {
       "id": "MAYHEM",
@@ -2206,1764 +2561,2061 @@
       "id": "MELANCHOLY",
       "name": "憂鬱",
       "slug": "melancholy",
-      "descBase": "獲得13點<g>格擋</g>。\n每當有任何生物死亡時，這張牌的耗能減少<e>1</e>。",
-      "descUpgraded": "獲得17點<g>格擋</g>。\n每當有任何生物死亡時，這張牌的耗能減少<e>1</e>。"
+      "descBase": "獲得 13 點<g>格擋</g>。\n每當任何人死亡時，此牌耗能減少 <e/>。",
+      "descUpgraded": "獲得 17 點<g>格擋</g>。\n每當任何人死亡時，此牌耗能減少 <e/>。"
     },
     {
       "id": "MEMENTO_MORI",
       "name": "銘記死亡",
       "slug": "memento-mori",
-      "descBase": "造成9點傷害。\n本回合每丟棄過一張牌，則增加4點額外傷害。",
-      "descUpgraded": "造成11點傷害。\n本回合每丟棄過一張牌，則增加5點額外傷害。"
+      "descBase": "造成 9 點傷害。\n本回合每丟棄過一張牌，就額外造成 4 點傷害。",
+      "descUpgraded": "造成 11 點傷害。\n本回合每丟棄過一張牌，就額外造成 5 點傷害。"
     },
     {
       "id": "METAMORPHOSIS",
-      "name": "羽化",
+      "name": "蛻變",
       "slug": "metamorphosis",
-      "descBase": "在你的<g>抽牌堆</g>中加入3張隨機攻擊牌。它們在本場戰鬥中可以被免費打出。\n<g>消耗</g>。",
-      "descUpgraded": "在你的<g>抽牌堆</g>中加入5張隨機攻擊牌。它們在本場戰鬥中可以被免費打出。\n<g>消耗</g>。"
+      "descBase": "將 3 張隨機攻擊牌加入你的<g>抽牌堆</g>。本場戰鬥中可免費打出。\n<g>消耗</g>。",
+      "descUpgraded": "將 5 張隨機攻擊牌加入你的<g>抽牌堆</g>。本場戰鬥中可免費打出。\n<g>消耗</g>。",
+      "aliases": [
+        "羽化"
+      ]
     },
     {
       "id": "METEOR_SHOWER",
       "name": "流星雨",
       "slug": "meteor-shower",
-      "descBase": "對所有敵人造成14點傷害。\n給予所有敵人2層<g>虛弱</g>和<g>易傷</g>。",
-      "descUpgraded": "對所有敵人造成21點傷害。\n給予所有敵人2層<g>虛弱</g>和<g>易傷</g>。"
+      "descBase": "對所有敵人造成 14 點傷害。\n對所有敵人施加 2 層<g>虛弱</g>和<g>易傷</g>。",
+      "descUpgraded": "對所有敵人造成 21 點傷害。\n對所有敵人施加 2 層<g>虛弱</g>和<g>易傷</g>。"
     },
     {
       "id": "METEOR_STRIKE",
       "name": "隕石打擊",
       "slug": "meteor-strike",
-      "descBase": "造成24點傷害。\n<g>生成</g>3個<g>等離子</g>充能球。",
-      "descUpgraded": "造成30點傷害。\n<g>生成</g>3個<g>等離子</g>充能球。"
+      "descBase": "造成 24 點傷害。\n<g>凝聚</g> 3 個<g>電漿</g>。",
+      "descUpgraded": "造成 30 點傷害。\n<g>凝聚</g> 3 個<g>電漿</g>。"
+    },
+    {
+      "id": "MIDNIGHT",
+      "name": "午夜",
+      "slug": "midnight",
+      "descBase": "造成 60 點傷害。\n本場戰鬥中，每當任何人<g>消耗</g>一張牌，此牌耗能就減少 1 <e/>。",
+      "descUpgraded": "造成 72 點傷害。\n本場戰鬥中，每當任何人<g>消耗</g>一張牌，此牌耗能就減少 1 <e/>。"
     },
     {
       "id": "MIMIC",
-      "name": "擬態",
+      "name": "模仿",
       "slug": "mimic",
-      "descBase": "獲得等同於另一位玩家<g>格擋</g>值的<g>格擋</g>。\n<g>消耗</g>。",
-      "descUpgraded": "獲得等同於另一位玩家<g>格擋</g>值的<g>格擋</g>。"
+      "descBase": "獲得與另一名玩家的<g>格擋</g>值相同的<g>格擋</g>。\n<g>消耗</g>。",
+      "descUpgraded": "獲得與另一名玩家的<g>格擋</g>值相同的<g>格擋</g>。",
+      "aliases": [
+        "擬態"
+      ]
     },
     {
       "id": "MIND_BLAST",
-      "name": "心靈震懾",
+      "name": "心靈轟射",
       "slug": "mind-blast",
-      "descBase": "<g>固有</g>。\n造成你<g>抽牌堆</g>中剩餘牌數的傷害。",
-      "descUpgraded": "<g>固有</g>。\n造成你<g>抽牌堆</g>中剩餘牌數的傷害。"
+      "descBase": "<g>固有</g>。\n造成與你<g>抽牌堆</g>中的卡牌數量相同的傷害。",
+      "descUpgraded": "<g>固有</g>。\n造成與你<g>抽牌堆</g>中的卡牌數量相同的傷害。",
+      "aliases": [
+        "心靈震懾"
+      ]
     },
     {
       "id": "MIRAGE",
-      "name": "蜃景",
+      "name": "海市蜃樓",
       "slug": "mirage",
-      "descBase": "獲得等同於所有敵人<g>中毒</g>層數的<g>格擋</g>。\n<g>消耗</g>。",
-      "descUpgraded": "獲得等同於所有敵人<g>中毒</g>層數的<g>格擋</g>。",
+      "descBase": "獲得與所有敵人<g>中毒</g>層數等量的<g>格擋</g>。\n<g>消耗</g>。",
+      "descUpgraded": "獲得與所有敵人<g>中毒</g>層數等量的<g>格擋</g>。",
       "aliases": [
-        "海市蜃樓"
+        "蜃景"
       ]
     },
     {
       "id": "MISERY",
       "name": "苦難",
       "slug": "misery",
-      "descBase": "造成7點傷害。\n給予其他敵人該名敵人身上的所有負面效果。",
-      "descUpgraded": "<g>保留</g>。\n造成9點傷害。\n給予其他敵人該名敵人身上的所有負面效果。"
+      "descBase": "造成 7 點傷害。\n將該敵人身上的所有弱化效果施加給所有其他敵人。",
+      "descUpgraded": "<g>保留</g>。\n造成 9 點傷害。\n將該敵人身上的所有弱化效果施加給所有其他敵人。"
     },
     {
       "id": "MODDED",
       "name": "模組改造",
       "slug": "modded",
-      "descBase": "獲得1個充能球欄位。\n抽1張牌。這張牌的耗能加1。",
-      "descUpgraded": "獲得1個充能球欄位。\n抽2張牌。這張牌的耗能加1。"
+      "descBase": "獲得 1 個充能球欄位。\n抽 1 張牌。此牌耗能增加 1 點。",
+      "descUpgraded": "獲得 1 個充能球欄位。\n抽 2 張牌。此牌耗能增加 1 點。"
     },
     {
       "id": "MOLTEN_FIST",
       "name": "熔融之拳",
       "slug": "molten-fist",
-      "descBase": "造成10點傷害。\n將該敵人身上的<g>易傷</g>層數翻倍。\n<g>消耗</g>。",
-      "descUpgraded": "造成14點傷害。\n將該敵人身上的<g>易傷</g>層數翻倍。\n<g>消耗</g>。"
+      "descBase": "造成 10 點傷害。\n使敵人的<g>易傷</g>加倍。\n<g>消耗</g>。",
+      "descUpgraded": "造成 14 點傷害。\n使敵人的<g>易傷</g>加倍。\n<g>消耗</g>。"
     },
     {
       "id": "MOMENTUM_STRIKE",
-      "name": "趁勢打擊",
+      "name": "動量打擊",
       "slug": "momentum-strike",
-      "descBase": "造成11點傷害。\n這張牌的耗能降為0<e/>。",
-      "descUpgraded": "造成15點傷害。\n這張牌的耗能降為0<e/>。",
+      "descBase": "造成 11 點傷害。\n使此牌耗能降為 0 <e/>。",
+      "descUpgraded": "造成 15 點傷害。\n使此牌耗能降為 0 <e/>。",
       "aliases": [
-        "動量打擊"
+        "趁勢打擊"
       ]
     },
     {
       "id": "MONARCHS_GAZE",
       "name": "王之凝視",
       "slug": "monarchs-gaze",
-      "descBase": "每當你攻擊敵人的時候，這名敵人在本回合失去1點<g>力量</g>。",
-      "descUpgraded": "每當你攻擊敵人的時候，這名敵人在本回合失去1點<g>力量</g>。"
+      "descBase": "每當你攻擊一名敵人時，該敵人本回合失去 1 層<g>力量</g>。",
+      "descUpgraded": "每當你攻擊一名敵人時，該敵人本回合失去 1 層<g>力量</g>。"
     },
     {
       "id": "MONOLOGUE",
       "name": "獨白",
       "slug": "monologue",
-      "descBase": "每當你在本回合打出卡牌時，在本回合獲得1點<g>力量</g>。",
-      "descUpgraded": "<g>保留</g>。\n每當你在本回合打出卡牌時，在本回合獲得1點<g>力量</g>。"
+      "descBase": "本回合每當你打出一張牌時，獲得 1 層<g>力量</g>。",
+      "descUpgraded": "<g>保留</g>。\n本回合每當你打出一張牌時，獲得 1 層<g>力量</g>。"
     },
     {
       "id": "MULTI_CAST",
-      "name": "多重釋放",
+      "name": "多重施放",
       "slug": "multi-cast",
-      "descBase": "<g>激發</g>你最右側的充能球X次。",
-      "descUpgraded": "<g>激發</g>你最右側的充能球X+1次。"
+      "descBase": "<g>激發</g>你最右側的充能球 X 次。",
+      "descUpgraded": "<g>激發</g>你最右側的充能球 X+1 次。",
+      "aliases": [
+        "多重釋放"
+      ]
     },
     {
       "id": "MURDER",
       "name": "謀殺",
       "slug": "murder",
-      "descBase": "造成1點傷害。\n你在本場戰鬥中每抽過一張牌，此牌就額外造成1點傷害。",
-      "descUpgraded": "造成1點傷害。\n你在本場戰鬥中每抽過一張牌，此牌就額外造成1點傷害。"
+      "descBase": "造成 1 點傷害。\n本場戰鬥中每抽一張牌，就額外造成 1 點傷害。",
+      "descUpgraded": "造成 1 點傷害。\n本場戰鬥中每抽一張牌，就額外造成 1 點傷害。"
     },
     {
       "id": "NECRO_MASTERY",
       "name": "亡靈精通",
       "slug": "necro-mastery",
-      "descBase": "<g>召喚</g>5。\n每當<g>奧斯提</g>失去生命值時，\n所有敵人失去等量生命值。",
-      "descUpgraded": "<g>召喚</g>8。\n每當<g>奧斯提</g>失去生命值時，\n所有敵人失去等量生命值。"
+      "descBase": "<g>召喚</g> 5。\n每當<g>奧斯提</g>失去生命時，\n所有敵人也失去等量生命。",
+      "descUpgraded": "<g>召喚</g> 8。\n每當<g>奧斯提</g>失去生命時，\n所有敵人也失去等量生命。"
     },
     {
       "id": "NEGATIVE_PULSE",
-      "name": "負能量脈衝",
+      "name": "負能脈衝",
       "slug": "negative-pulse",
-      "descBase": "獲得5點<g>格擋</g>。\n給予所有敵人7層<g>災厄</g>。",
-      "descUpgraded": "獲得6點<g>格擋</g>。\n給予所有敵人11層<g>災厄</g>。"
+      "descBase": "獲得 5 點<g>格擋</g>。\n對所有敵人施加 7 層<g>惡兆</g>。",
+      "descUpgraded": "獲得 6 點<g>格擋</g>。\n對所有敵人施加 11 層<g>惡兆</g>。",
+      "aliases": [
+        "負能量脈衝"
+      ]
     },
     {
       "id": "NEOWS_FURY",
       "name": "涅奧之怒",
       "slug": "neows-fury",
-      "descBase": "造成10點傷害。\n將你<g>棄牌堆</g>中的至多2張牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
-      "descUpgraded": "造成14點傷害。\n將你<g>棄牌堆</g>中的至多3張牌放入你的<g>手牌</g>。\n<g>消耗</g>。"
+      "descBase": "造成 10 點傷害。\n將你<g>棄牌堆</g>中最多 2 張牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
+      "descUpgraded": "造成 14 點傷害。\n將你<g>棄牌堆</g>中最多 3 張牌放入你的<g>手牌</g>。\n<g>消耗</g>。"
     },
     {
       "id": "NEUROSURGE",
-      "name": "精神過載",
+      "name": "神經湧動",
       "slug": "neurosurge",
-      "descBase": "獲得<e>3</e>。\n抽2張牌。\n在你的回合開始時，給予自身3層<g>災厄</g>。",
-      "descUpgraded": "獲得<e>4</e>。\n抽2張牌。\n在你的回合開始時，給予自身3層<g>災厄</g>。"
+      "descBase": "獲得 <e/><e/><e/>。\n抽 2 張牌。\n在你的回合開始時，對自己施加 3 層<g>惡兆</g>。",
+      "descUpgraded": "獲得 <e/><e/><e/><e/>。\n抽 2 張牌。\n在你的回合開始時，對自己施加 3 層<g>惡兆</g>。",
+      "aliases": [
+        "精神過載"
+      ]
     },
     {
       "id": "NEUTRALIZE",
       "name": "中和",
       "slug": "neutralize",
-      "descBase": "造成3點傷害。\n給予1層<g>虛弱</g>。",
-      "descUpgraded": "造成4點傷害。\n給予2層<g>虛弱</g>。"
+      "descBase": "造成 3 點傷害。\n施加 1 層<g>虛弱</g>。",
+      "descUpgraded": "造成 4 點傷害。\n施加 2 層<g>虛弱</g>。"
     },
     {
       "id": "NEUTRON_AEGIS",
-      "name": "中子護盾",
+      "name": "中子神盾",
       "slug": "neutron-aegis",
-      "descBase": "獲得8層<g>覆甲</g>。",
-      "descUpgraded": "獲得11層<g>覆甲</g>。"
+      "descBase": "獲得 8 層<g>鍍甲</g>。",
+      "descUpgraded": "獲得 11 層<g>鍍甲</g>。",
+      "aliases": [
+        "中子護盾"
+      ]
     },
     {
       "id": "NIGHTMARE",
-      "name": "夜魘",
+      "name": "夢魘",
       "slug": "nightmare",
-      "descBase": "選擇一張牌。\n在下個回合將這張牌的3張複製品加入你的<g>手牌</g>。\n<g>消耗</g>。",
-      "descUpgraded": "選擇一張牌。\n在下個回合將這張牌的3張複製品加入你的<g>手牌</g>。\n<g>消耗</g>。"
+      "descBase": "選擇一張牌。\n下回合，將該牌的 3 張複製牌加入你的<g>手牌</g>。\n<g>消耗</g>。",
+      "descUpgraded": "選擇一張牌。\n下回合，將該牌的 3 張複製牌加入你的<g>手牌</g>。\n<g>消耗</g>。",
+      "aliases": [
+        "夜魘"
+      ]
     },
     {
       "id": "NO_ESCAPE",
       "name": "無處可逃",
       "slug": "no-escape",
-      "descBase": "給予10層<g>災厄</g>，敵人身上每有10層<g>災厄</g>，則額外給予這名敵人5層<g>災厄</g>。",
-      "descUpgraded": "給予15層<g>災厄</g>，敵人身上每有10層<g>災厄</g>，則額外給予這名敵人5層<g>災厄</g>。"
+      "descBase": "施加 10 層<g>惡兆</g>，該敵人原本每有 10 層<g>惡兆</g>，就額外施加 5 層<g>惡兆</g>。",
+      "descUpgraded": "施加 15 層<g>惡兆</g>，該敵人原本每有 10 層<g>惡兆</g>，就額外施加 5 層<g>惡兆</g>。"
     },
     {
       "id": "NORMALITY",
       "name": "凡庸",
       "slug": "normality",
-      "descBase": "<g>不能被打出</g>。\n你在本回合不能打出超過3張牌。",
-      "descUpgraded": "<g>不能被打出</g>。\n你在本回合不能打出超過3張牌。"
+      "descBase": "<g>無法打出</g>。\n本回合你最多只能打出 3 張牌。",
+      "descUpgraded": "<g>無法打出</g>。\n本回合你最多只能打出 3 張牌。"
     },
     {
       "id": "NOSTALGIA",
       "name": "懷舊",
       "slug": "nostalgia",
-      "descBase": "每回合首次打出攻擊或技能牌時，將其置於你的<g>抽牌堆</g>頂端。",
-      "descUpgraded": "每回合首次打出攻擊或技能牌時，將其置於你的<g>抽牌堆</g>頂端。"
+      "descBase": "你每回合打出的第一張攻擊牌或技能牌會被放到你的<g>抽牌堆</g>頂部。",
+      "descUpgraded": "你每回合打出的第一張攻擊牌或技能牌會被放到你的<g>抽牌堆</g>頂部。"
     },
     {
       "id": "NOT_YET",
       "name": "時候未到",
       "slug": "not-yet",
-      "descBase": "回覆10點生命。\n<g>消耗</g>。",
-      "descUpgraded": "回覆13點生命。\n<g>消耗</g>。"
+      "descBase": "恢復 10 點生命。\n<g>消耗</g>。",
+      "descUpgraded": "恢復 13 點生命。\n<g>消耗</g>。"
     },
     {
       "id": "NOXIOUS_FUMES",
       "name": "毒霧",
       "slug": "noxious-fumes",
-      "descBase": "在你的回合開始時，給予所有敵人2層<g>中毒</g>。",
-      "descUpgraded": "在你的回合開始時，給予所有敵人3層<g>中毒</g>。"
+      "descBase": "在你的回合開始時，對所有敵人施加 2 層<g>中毒</g>。",
+      "descUpgraded": "在你的回合開始時，對所有敵人施加 3 層<g>中毒</g>。"
     },
     {
       "id": "NULL",
-      "name": "空值",
+      "name": "歸零",
       "slug": "null",
-      "descBase": "造成10點傷害。\n給予1層<g>虛弱</g>。\n<g>生成</g>1個<g>黑暗</g>充能球。",
-      "descUpgraded": "造成13點傷害。\n給予2層<g>虛弱</g>。\n<g>生成</g>1個<g>黑暗</g>充能球。",
+      "descBase": "造成 10 點傷害。\n施加 1 層<g>虛弱</g>。\n<g>凝聚</g> 1 個<g>黑暗</g>。",
+      "descUpgraded": "造成 13 點傷害。\n施加 2 層<g>虛弱</g>。\n<g>凝聚</g> 1 個<g>黑暗</g>。",
       "aliases": [
-        "歸零"
+        "空值"
       ]
     },
     {
       "id": "OBLIVION",
       "name": "湮滅",
       "slug": "oblivion",
-      "descBase": "打出此牌後，你在本回合內每打出一張牌，就給予該敵人3層<g>災厄</g>。",
-      "descUpgraded": "打出此牌後，你在本回合內每打出一張牌，就給予該敵人4層<g>災厄</g>。"
+      "descBase": "本回合每當你打出一張牌時，對敵人施加 3 層<g>惡兆</g>。",
+      "descUpgraded": "本回合每當你打出一張牌時，對敵人施加 4 層<g>惡兆</g>。"
     },
     {
       "id": "OFFERING",
       "name": "祭品",
       "slug": "offering",
-      "descBase": "失去6點生命。\n獲得<e>2</e>。\n抽3張牌。\n<g>消耗</g>。",
-      "descUpgraded": "失去6點生命。\n獲得<e>2</e>。\n抽5張牌。\n<g>消耗</g>。"
+      "descBase": "失去 6 點生命。\n獲得 <e/><e/>。\n抽 3 張牌。\n<g>消耗</g>。",
+      "descUpgraded": "失去 6 點生命。\n獲得 <e/><e/>。\n抽 5 張牌。\n<g>消耗</g>。"
     },
     {
       "id": "OMNISLICE",
       "name": "萬向斬",
       "slug": "omnislice",
-      "descBase": "造成8點傷害。\n對所有其他敵人造成等量的傷害。",
-      "descUpgraded": "造成11點傷害。\n對所有其他敵人造成等量的傷害。"
+      "descBase": "造成 8 點傷害。\n對所有其他敵人造成等量的傷害。",
+      "descUpgraded": "造成 11 點傷害。\n對所有其他敵人造成等量的傷害。"
+    },
+    {
+      "id": "ONE_FOR_ALL",
+      "name": "一為全",
+      "slug": "one-for-all",
+      "descBase": "所有人的 0 <e/> 攻擊牌額外造成 3 點傷害。",
+      "descUpgraded": "所有人的 0 <e/> 攻擊牌額外造成 4 點傷害。"
     },
     {
       "id": "ONE_TWO_PUNCH",
       "name": "連環拳",
       "slug": "one-two-punch",
-      "descBase": "在這個回合，你打出的下1張攻擊牌會被額外打出一次。",
-      "descUpgraded": "在這個回合，你打出的下2張攻擊牌會被額外打出一次。"
+      "descBase": "本回合你打出的下 1 張攻擊牌會額外打出一次。",
+      "descUpgraded": "本回合你打出的下 2 張攻擊牌會額外打出一次。"
     },
     {
       "id": "ORBIT",
       "name": "環繞軌道",
       "slug": "orbit",
-      "descBase": "你每花費<e/>，\n就獲得<e>1</e>。",
-      "descUpgraded": "你每花費<e/>，\n就獲得<e>1</e>。"
+      "descBase": "每花費 <e/>，\n就獲得 <e/>。",
+      "descUpgraded": "每花費 <e/>，\n就獲得 <e/>。"
     },
     {
       "id": "OUTBREAK",
-      "name": "毒性爆發",
+      "name": "毒疫爆發",
       "slug": "outbreak",
-      "descBase": "對所有敵人施加9層<g>中毒</g>。\n立即觸發<g>中毒</g>。",
-      "descUpgraded": "對所有敵人施加12層<g>中毒</g>。\n立即觸發<g>中毒</g>。",
+      "descBase": "對所有敵人施加 9 層<g>中毒</g>。\n<g>中毒</g>會被立即觸發。",
+      "descUpgraded": "對所有敵人施加 12 層<g>中毒</g>。\n<g>中毒</g>會被立即觸發。",
       "aliases": [
-        "毒疫爆發"
+        "毒性爆發"
       ]
     },
     {
       "id": "OUTMANEUVER",
-      "name": "搶佔先機",
+      "name": "搶占先機",
       "slug": "outmaneuver",
-      "descBase": "在下個回合獲得<e>2</e>。",
-      "descUpgraded": "在下個回合獲得<e>3</e>。"
+      "descBase": "下回合，獲得 <e/><e/>。",
+      "descUpgraded": "下回合，獲得 <e/><e/><e/>。",
+      "aliases": [
+        "搶佔先機"
+      ]
+    },
+    {
+      "id": "OUTRAGE",
+      "name": "暴怒",
+      "slug": "outrage",
+      "descBase": "造成 9 點傷害。\n將此牌的一張複製品加入每個人的<g>棄牌堆</g>。",
+      "descUpgraded": "造成 13 點傷害。\n將此牌的一張複製品加入每個人的<g>棄牌堆</g>。"
     },
     {
       "id": "OVERCLOCK",
       "name": "超頻",
       "slug": "overclock",
-      "descBase": "抽2張牌。\n將一張<g>灼傷</g>加入你的<g>棄牌堆</g>。",
-      "descUpgraded": "抽3張牌。\n將一張<g>灼傷</g>加入你的<g>棄牌堆</g>。"
+      "descBase": "抽 2 張牌。\n將一張<g>灼傷</g>加入你的<g>棄牌堆</g>。",
+      "descUpgraded": "抽 3 張牌。\n將一張<g>灼傷</g>加入你的<g>棄牌堆</g>。"
     },
     {
       "id": "PACTS_END",
       "name": "契約終結",
       "slug": "pacts-end",
-      "descBase": "如果你的<g>消耗牌堆</g>擁有大於等於3張牌，\n則對所有敵人造成18點傷害。",
-      "descUpgraded": "如果你的<g>消耗牌堆</g>擁有大於等於3張牌，\n則對所有敵人造成24點傷害。"
+      "descBase": "若你的<g>消耗堆</g>中有不少於 3 張牌，\n對所有敵人造成 18 點傷害。",
+      "descUpgraded": "若你的<g>消耗堆</g>中有不少於 3 張牌，\n對所有敵人造成 24 點傷害。"
     },
     {
       "id": "PAGESTORM",
       "name": "書頁風暴",
       "slug": "pagestorm",
-      "descBase": "每當你抽到一張<g>虛無</g>牌時, 抽1張牌。",
-      "descUpgraded": "每當你抽到一張<g>虛無</g>牌時, 抽1張牌。"
+      "descBase": "每當你抽到一張<g>虛無</g>牌時，抽 1 張牌。",
+      "descUpgraded": "每當你抽到一張<g>虛無</g>牌時，抽 1 張牌。"
     },
     {
       "id": "PALE_BLUE_DOT",
       "name": "暗淡藍點",
       "slug": "pale-blue-dot",
-      "descBase": "如果你在一回合內打出了大於等於張牌，在下個回合開始時抽1張牌。",
-      "descUpgraded": "如果你在一回合內打出了大於等於張牌，在下個回合開始時抽2張牌。"
+      "descBase": "若你在一回合內打出不少於 張牌，則在下回合開始時抽 1 張牌。",
+      "descUpgraded": "若你在一回合內打出不少於 張牌，則在下回合開始時抽 2 張牌。"
     },
     {
       "id": "PANACHE",
-      "name": "神氣制勝",
+      "name": "瀟灑制勝",
       "slug": "panache",
-      "descBase": "每當你在一回合內打出五張牌時，對所有敵人造成10點傷害。",
-      "descUpgraded": "每當你在一回合內打出五張牌時，對所有敵人造成14點傷害。"
+      "descBase": "每當你在單一回合內打出 5 張牌時，對所有敵人造成 10 點傷害。",
+      "descUpgraded": "每當你在單一回合內打出 5 張牌時，對所有敵人造成 14 點傷害。",
+      "aliases": [
+        "神氣制勝"
+      ]
     },
     {
       "id": "PANIC_BUTTON",
       "name": "應急按鈕",
       "slug": "panic-button",
-      "descBase": "獲得30點<g>格擋</g>。\n你在接下來的2回合內無法再從卡牌中獲得<g>格擋</g>。\n<g>消耗</g>。",
-      "descUpgraded": "獲得40點<g>格擋</g>。\n你在接下來的2回合內無法再從卡牌中獲得<g>格擋</g>。\n<g>消耗</g>。"
+      "descBase": "獲得 30 點<g>格擋</g>。\n接下來 2 個回合，你無法從卡牌獲得<g>格擋</g>。\n<g>消耗</g>。",
+      "descUpgraded": "獲得 40 點<g>格擋</g>。\n接下來 2 個回合，你無法從卡牌獲得<g>格擋</g>。\n<g>消耗</g>。"
     },
     {
       "id": "PARRY",
       "name": "招架",
       "slug": "parry",
-      "descBase": "<g>君王之劍</g>現在能讓你獲得10點<g>格擋</g>。",
-      "descUpgraded": "<g>君王之劍</g>現在能讓你獲得14點<g>格擋</g>。"
+      "descBase": "<g>君王之劍</g>現在會獲得 10 點<g>格擋</g>。",
+      "descUpgraded": "<g>君王之劍</g>現在會獲得 14 點<g>格擋</g>。"
     },
     {
       "id": "PARSE",
       "name": "領會",
       "slug": "parse",
-      "descBase": "<g>虛無</g>。\n抽3張牌。",
-      "descUpgraded": "<g>虛無</g>。\n抽4張牌。"
+      "descBase": "<g>虛無</g>。\n抽 3 張牌。",
+      "descUpgraded": "<g>虛無</g>。\n抽 4 張牌。"
     },
     {
       "id": "PARTICLE_WALL",
       "name": "粒子牆",
       "slug": "particle-wall",
-      "descBase": "獲得9點<g>格擋</g>。\n將此牌返回你的<g>手牌</g>。",
-      "descUpgraded": "獲得12點<g>格擋</g>。\n將此牌返回你的<g>手牌</g>。"
+      "descBase": "獲得 9 點<g>格擋</g>。\n將此牌放回你的<g>手牌</g>。",
+      "descUpgraded": "獲得 12 點<g>格擋</g>。\n將此牌放回你的<g>手牌</g>。"
     },
     {
       "id": "PATTER",
-      "name": "星星點點",
+      "name": "星點輕敲",
       "slug": "patter",
-      "descBase": "獲得8點<g>格擋</g>。\n獲得2點<g>活力</g>。",
-      "descUpgraded": "獲得10點<g>格擋</g>。\n獲得3點<g>活力</g>。"
+      "descBase": "獲得 8 點<g>格擋</g>。\n獲得 2 層<g>活力</g>。",
+      "descUpgraded": "獲得 10 點<g>格擋</g>。\n獲得 3 層<g>活力</g>。",
+      "aliases": [
+        "星星點點"
+      ]
     },
     {
       "id": "PECK",
       "name": "啄擊",
       "slug": "peck",
-      "descBase": "造成2點傷害3次。",
-      "descUpgraded": "造成2點傷害4次。"
+      "descBase": "造成 3 次 2 點傷害。",
+      "descUpgraded": "造成 4 次 2 點傷害。"
     },
     {
       "id": "PERFECTED_STRIKE",
       "name": "完美打擊",
       "slug": "perfected-strike",
-      "descBase": "造成6點傷害。\n你每有一張名字中含有“打擊”的牌，傷害+2。",
-      "descUpgraded": "造成6點傷害。\n你每有一張名字中含有“打擊”的牌，傷害+3。"
+      "descBase": "造成 6 點傷害。\n你的牌中每有一張名稱包含「打擊」的牌，就額外造成 2 點傷害。",
+      "descUpgraded": "造成 6 點傷害。\n你的牌中每有一張名稱包含「打擊」的牌，就額外造成 3 點傷害。"
     },
     {
       "id": "PHANTOM_BLADES",
       "name": "幻影之刃",
       "slug": "phantom-blades",
-      "descBase": "<g>小刀</g>獲得<g>保留</g>。\n你在每回合打出的第一張<g>小刀</g>額外造成9點傷害。",
-      "descUpgraded": "<g>小刀</g>獲得<g>保留</g>。\n你在每回合打出的第一張<g>小刀</g>額外造成12點傷害。"
+      "descBase": "<g>小刀</g>獲得<g>保留</g>。\n你每回合打出的第一張<g>小刀</g>額外造成 9 點傷害。",
+      "descUpgraded": "<g>小刀</g>獲得<g>保留</g>。\n你每回合打出的第一張<g>小刀</g>額外造成 12 點傷害。"
     },
     {
       "id": "PHOTON_CUT",
       "name": "光子切割",
       "slug": "photon-cut",
-      "descBase": "造成10點傷害。\n抽1張牌。\n將<g>手牌</g>中的一張牌放到<g>抽牌堆</g>頂部。",
-      "descUpgraded": "造成13點傷害。\n抽2張牌。\n將<g>手牌</g>中的一張牌放到<g>抽牌堆</g>頂部。"
+      "descBase": "造成 10 點傷害。\n抽 1 張牌。\n將你<g>手牌</g>中的 1 張牌放到<g>抽牌堆</g>頂部。",
+      "descUpgraded": "造成 13 點傷害。\n抽 2 張牌。\n將你<g>手牌</g>中的 1 張牌放到<g>抽牌堆</g>頂部。"
     },
     {
       "id": "PIERCING_WAIL",
-      "name": "尖嘯",
+      "name": "刺耳尖嚎",
       "slug": "piercing-wail",
-      "descBase": "所有敵人在本回合失去6點<g>力量</g>。\n<g>消耗</g>。",
-      "descUpgraded": "所有敵人在本回合失去8點<g>力量</g>。\n<g>消耗</g>。"
+      "descBase": "所有敵人本回合失去 6 層<g>力量</g>。\n<g>消耗</g>。",
+      "descUpgraded": "所有敵人本回合失去 8 層<g>力量</g>。\n<g>消耗</g>。",
+      "aliases": [
+        "尖嘯"
+      ]
     },
     {
       "id": "PILLAGE",
-      "name": "劫掠",
+      "name": "搶掠",
       "slug": "pillage",
-      "descBase": "造成6點傷害。\n抽牌直到你抽到一張非攻擊牌。",
-      "descUpgraded": "造成9點傷害。\n抽牌直到你抽到一張非攻擊牌。"
+      "descBase": "造成 6 點傷害。\n持續抽牌，直到抽到一張非攻擊牌。",
+      "descUpgraded": "造成 9 點傷害。\n持續抽牌，直到抽到一張非攻擊牌。",
+      "aliases": [
+        "劫掠"
+      ]
     },
     {
       "id": "PILLAR_OF_CREATION",
-      "name": "創世之柱",
+      "name": "創造之柱",
       "slug": "pillar-of-creation",
-      "descBase": "每當你生成一張卡牌, 就獲得2點<g>格擋</g>。",
-      "descUpgraded": "每當你生成一張卡牌, 就獲得3點<g>格擋</g>。",
+      "descBase": "你每次創造一張牌時，獲得 2 點<g>格擋</g>。",
+      "descUpgraded": "你每次創造一張牌時，獲得 3 點<g>格擋</g>。",
       "aliases": [
-        "創造之柱"
+        "創世之柱"
       ]
     },
     {
       "id": "PINPOINT",
       "name": "精密瞄準",
       "slug": "pinpoint",
-      "descBase": "造成15點傷害。\n你在本回閤中每打出過一張技能牌，其耗能減少1<e/>。",
-      "descUpgraded": "造成19點傷害。\n你在本回閤中每打出過一張技能牌，其耗能減少1<e/>。"
+      "descBase": "造成 15 點傷害。\n本回合每打出一張技能牌，此牌耗能就減少 1 <e/>。",
+      "descUpgraded": "造成 19 點傷害。\n本回合每打出一張技能牌，此牌耗能就減少 1 <e/>。"
+    },
+    {
+      "id": "PLOT",
+      "name": "謀劃",
+      "slug": "plot",
+      "descBase": "下回合，所有玩家抽 2 張牌。",
+      "descUpgraded": "下回合，所有玩家抽 3 張牌。"
     },
     {
       "id": "POISONED_STAB",
       "name": "帶毒刺擊",
       "slug": "poisoned-stab",
-      "descBase": "造成6點傷害。\n給予3層<g>中毒</g>。",
-      "descUpgraded": "造成8點傷害。\n給予4層<g>中毒</g>。"
+      "descBase": "造成 6 點傷害。\n施加 3 層<g>中毒</g>。",
+      "descUpgraded": "造成 8 點傷害。\n施加 4 層<g>中毒</g>。"
     },
     {
       "id": "POKE",
-      "name": "戳擊",
+      "name": "戳刺",
       "slug": "poke",
-      "descBase": "<g>奧斯提</g>造成6點傷害。",
-      "descUpgraded": "<g>奧斯提</g>造成9點傷害。"
+      "descBase": "<g>奧斯提</g>造成 6 點傷害。",
+      "descUpgraded": "<g>奧斯提</g>造成 9 點傷害。",
+      "aliases": [
+        "戳擊"
+      ]
     },
     {
       "id": "POMMEL_STRIKE",
       "name": "劍柄打擊",
       "slug": "pommel-strike",
-      "descBase": "造成9點傷害。\n抽1張牌。",
-      "descUpgraded": "造成10點傷害。\n抽2張牌。"
+      "descBase": "造成 9 點傷害。\n抽 1 張牌。",
+      "descUpgraded": "造成 10 點傷害。\n抽 2 張牌。"
     },
     {
       "id": "POOR_SLEEP",
-      "name": "睡眠不佳",
+      "name": "輾轉難眠",
       "slug": "poor-sleep",
-      "descBase": "<g>不能被打出</g>。\n<g>保留</g>。",
-      "descUpgraded": "<g>不能被打出</g>。\n<g>保留</g>。"
+      "descBase": "<g>無法打出</g>。\n<g>保留</g>。",
+      "descUpgraded": "<g>無法打出</g>。\n<g>保留</g>。",
+      "aliases": [
+        "睡眠不佳"
+      ]
     },
     {
       "id": "POUNCE",
-      "name": "猛撲",
+      "name": "撲擊",
       "slug": "pounce",
-      "descBase": "造成14點傷害。\n你的下一張技能牌耗能變為0<e/>。",
-      "descUpgraded": "造成20點傷害。\n你的下一張技能牌耗能變為0<e/>。"
+      "descBase": "造成 14 點傷害。\n你打出的下一張技能牌耗能為 0 <e/>。",
+      "descUpgraded": "造成 20 點傷害。\n你打出的下一張技能牌耗能為 0 <e/>。",
+      "aliases": [
+        "猛撲"
+      ]
     },
     {
       "id": "PRECISE_CUT",
-      "name": "精確切擊",
+      "name": "精確切割",
       "slug": "precise-cut",
-      "descBase": "造成13點傷害。\n你的<g>手牌</g>中每有一張牌，此牌的傷害就降低2點。",
-      "descUpgraded": "造成16點傷害。\n你的<g>手牌</g>中每有一張牌，此牌的傷害就降低2點。"
+      "descBase": "造成 13 點傷害。\n你<g>手牌</g>中每有一張其他牌，就少造成 2 點傷害。",
+      "descUpgraded": "造成 16 點傷害。\n你<g>手牌</g>中每有一張其他牌，就少造成 2 點傷害。",
+      "aliases": [
+        "精確切擊"
+      ]
     },
     {
       "id": "PREDATOR",
       "name": "獵殺者",
       "slug": "predator",
-      "descBase": "造成15點傷害。\n在下個回合抽2張牌。",
-      "descUpgraded": "造成20點傷害。\n在下個回合抽2張牌。"
+      "descBase": "造成 15 點傷害。\n下回合，抽 2 張牌。",
+      "descUpgraded": "造成 20 點傷害。\n下回合，抽 2 張牌。"
     },
     {
       "id": "PREP_TIME",
       "name": "準備時間",
       "slug": "prep-time",
-      "descBase": "在你的回合開始時，獲得4點<g>活力</g>。",
-      "descUpgraded": "在你的回合開始時，獲得6點<g>活力</g>。"
+      "descBase": "在你的回合開始時，獲得 4 層<g>活力</g>。",
+      "descUpgraded": "在你的回合開始時，獲得 6 層<g>活力</g>。"
     },
     {
       "id": "PREPARED",
       "name": "早有準備",
       "slug": "prepared",
-      "descBase": "抽1張牌。\n丟棄1張牌。",
-      "descUpgraded": "抽2張牌。\n丟棄2張牌。"
+      "descBase": "抽 1 張牌。\n丟棄 1 張牌。",
+      "descUpgraded": "抽 2 張牌。\n丟棄 2 張牌。"
     },
     {
       "id": "PRIMAL_FORCE",
       "name": "原始力量",
       "slug": "primal-force",
-      "descBase": "將<g>手牌</g>中的所有攻擊牌變化為<g>巨石</g>。",
-      "descUpgraded": "將<g>手牌</g>中的所有攻擊牌變化為<g>巨石+</g>。",
-      "notes": "衍生牌巨石：造成20點傷害，升級後造成24點傷害。"
+      "descBase": "將你<g>手牌</g>中的所有攻擊牌轉化為<g>巨石</g>。",
+      "descUpgraded": "將你<g>手牌</g>中的所有攻擊牌轉化為<g>巨石+</g>。"
     },
     {
       "id": "PRODUCTION",
-      "name": "生產製造",
+      "name": "生產",
       "slug": "production",
-      "descBase": "獲得<e>2</e>。\n<g>消耗</g>。",
-      "descUpgraded": "獲得<e>3</e>。\n<g>消耗</g>。"
+      "descBase": "獲得 <e/><e/>。\n<g>消耗</g>。",
+      "descUpgraded": "獲得 <e/><e/><e/>。\n<g>消耗</g>。",
+      "aliases": [
+        "生產製造"
+      ]
     },
     {
       "id": "PROLONG",
-      "name": "延伸",
+      "name": "延長",
       "slug": "prolong",
-      "descBase": "在下個回合獲得等量於你當前<g>格擋</g>值的<g>格擋</g>。\n<g>消耗</g>。",
-      "descUpgraded": "在下個回合獲得等量於你當前<g>格擋</g>值的<g>格擋</g>。"
+      "descBase": "下回合，獲得與你目前的<g>格擋</g>值相同的<g>格擋</g>。\n<g>消耗</g>。",
+      "descUpgraded": "下回合，獲得與你目前的<g>格擋</g>值相同的<g>格擋</g>。",
+      "aliases": [
+        "延伸"
+      ]
     },
     {
       "id": "PROPHESIZE",
       "name": "預言",
       "slug": "prophesize",
-      "descBase": "抽6張牌。",
-      "descUpgraded": "抽9張牌。"
+      "descBase": "抽 6 張牌。",
+      "descUpgraded": "抽 9 張牌。"
     },
     {
       "id": "PROTECTOR",
-      "name": "守護者",
+      "name": "護衛者",
       "slug": "protector",
-      "descBase": "<g>奧斯提</g>造成10點傷害。\n額外造成等量於<g>奧斯提</g><g>最大生命值</g>的傷害。",
-      "descUpgraded": "<g>奧斯提</g>造成15點傷害。\n額外造成等量於<g>奧斯提</g><g>最大生命值</g>的傷害。"
+      "descBase": "<g>奧斯提</g>造成 10 點傷害。\n額外造成與<g>奧斯提</g>的<g>最大生命</g>等量的傷害。",
+      "descUpgraded": "<g>奧斯提</g>造成 15 點傷害。\n額外造成與<g>奧斯提</g>的<g>最大生命</g>等量的傷害。",
+      "aliases": [
+        "守護者"
+      ]
     },
     {
       "id": "PROWESS",
       "name": "非凡技藝",
       "slug": "prowess",
-      "descBase": "獲得1點<g>力量</g>。\n獲得1點<g>敏捷</g>。",
-      "descUpgraded": "獲得2點<g>力量</g>。\n獲得2點<g>敏捷</g>。"
+      "descBase": "獲得 1 層<g>力量</g>。\n獲得 1 層<g>敏捷</g>。",
+      "descUpgraded": "獲得 2 層<g>力量</g>。\n獲得 2 層<g>敏捷</g>。"
     },
     {
       "id": "PULL_AGGRO",
       "name": "吸引仇恨",
       "slug": "pull-aggro",
-      "descBase": "<g>召喚</g>4。\n獲得7點<g>格擋</g>。",
-      "descUpgraded": "<g>召喚</g>5。\n獲得9點<g>格擋</g>。"
+      "descBase": "<g>召喚</g> 4。\n獲得 7 點<g>格擋</g>。",
+      "descUpgraded": "<g>召喚</g> 5。\n獲得 9 點<g>格擋</g>。"
     },
     {
       "id": "PULL_FROM_BELOW",
-      "name": "亡魂牽引",
+      "name": "幽冥牽引",
       "slug": "pull-from-below",
-      "descBase": "本場戰鬥中每打出過一張<g>虛無</g>牌，此牌就造成5點傷害一次。",
-      "descUpgraded": "本場戰鬥中每打出過一張<g>虛無</g>牌，此牌就造成7點傷害一次。"
+      "descBase": "本場戰鬥中每打出過一張<g>虛無</g>牌，就造成 5 點傷害。",
+      "descUpgraded": "本場戰鬥中每打出過一張<g>虛無</g>牌，就造成 7 點傷害。",
+      "aliases": [
+        "亡魂牽引"
+      ]
     },
     {
       "id": "PURITY",
-      "name": "淨化",
+      "name": "純淨",
       "slug": "purity",
-      "descBase": "<g>保留</g>。\n從<g>手牌</g>中選擇最多3張牌消耗。\n<g>消耗</g>。",
-      "descUpgraded": "<g>保留</g>。\n從<g>手牌</g>中選擇最多5張牌消耗。\n<g>消耗</g>。"
+      "descBase": "<g>保留</g>。\n消耗你<g>手牌</g>中最多 3 張牌。\n<g>消耗</g>。",
+      "descUpgraded": "<g>保留</g>。\n消耗你<g>手牌</g>中最多 5 張牌。\n<g>消耗</g>。",
+      "aliases": [
+        "淨化"
+      ]
     },
     {
       "id": "PUTREFY",
       "name": "腐敗",
       "slug": "putrefy",
-      "descBase": "給予2層<g>虛弱</g>。\n給予2層<g>易傷</g>。\n<g>消耗</g>。",
-      "descUpgraded": "給予3層<g>虛弱</g>。\n給予3層<g>易傷</g>。\n<g>消耗</g>。"
+      "descBase": "施加 2 層<g>虛弱</g>。\n施加 2 層<g>易傷</g>。\n<g>消耗</g>。",
+      "descUpgraded": "施加 3 層<g>虛弱</g>。\n施加 3 層<g>易傷</g>。\n<g>消耗</g>。"
     },
     {
       "id": "PYRE",
-      "name": "薪火之源",
+      "name": "燃火",
       "slug": "pyre",
-      "descBase": "在回合開始時，獲得<e>1</e>。",
-      "descUpgraded": "在回合開始時，獲得<e>2</e>。"
+      "descBase": "每回合開始時，獲得 <e/>。",
+      "descUpgraded": "每回合開始時，獲得 <e/><e/>。",
+      "aliases": [
+        "薪火之源"
+      ]
     },
     {
       "id": "QUADCAST",
-      "name": "四重釋放",
+      "name": "四重施放",
       "slug": "quadcast",
-      "descBase": "<g>激發</g>你最右側的充能球4次。",
-      "descUpgraded": "<g>激發</g>你最右側的充能球4次。"
+      "descBase": "<g>激發</g>你最右側的充能球 4 次。",
+      "descUpgraded": "<g>激發</g>你最右側的充能球 4 次。",
+      "aliases": [
+        "四重釋放"
+      ]
     },
     {
       "id": "QUASAR",
       "name": "類星體",
       "slug": "quasar",
-      "descBase": "從3張隨機無色牌中選擇1張加入你的<g>手牌</g>。",
-      "descUpgraded": "從3張隨機<g>升級過</g>的無色牌中選擇1張加入你的<g>手牌</g>。"
+      "descBase": "從 3 張隨機無色牌中選擇 1 張加入你的<g>手牌</g>。",
+      "descUpgraded": "從 3 張隨機<g>已升級</g>的無色牌中選擇 1 張加入你的<g>手牌</g>。"
     },
     {
       "id": "RADIATE",
       "name": "輻射",
       "slug": "radiate",
-      "descBase": "你在本回合每獲得一點<s>1</s>，此牌就對所有敵人造成3點傷害一次。",
-      "descUpgraded": "你在本回合每獲得一點<s>1</s>，此牌就對所有敵人造成4點傷害一次。"
+      "descBase": "本回合每獲得 1<s/>，就對所有敵人造成 3 點傷害。",
+      "descUpgraded": "本回合每獲得 1<s/>，就對所有敵人造成 4 點傷害。"
     },
     {
       "id": "RAGE",
       "name": "狂怒",
       "slug": "rage",
-      "descBase": "打出此牌後，你在這個回合內每打出一張攻擊牌，獲得3點<g>格擋</g>。",
-      "descUpgraded": "打出此牌後，你在這個回合內每打出一張攻擊牌，獲得5點<g>格擋</g>。"
+      "descBase": "本回合每當你打出一張攻擊牌時，獲得 3 點<g>格擋</g>。",
+      "descUpgraded": "本回合每當你打出一張攻擊牌時，獲得 5 點<g>格擋</g>。"
     },
     {
       "id": "RAINBOW",
       "name": "彩虹",
       "slug": "rainbow",
-      "descBase": "<g>生成</g>1個<g>閃電</g>充能球。\n<g>生成</g>1個<g>冰霜</g>充能球。\n<g>生成</g>1個<g>黑暗</g>充能球。\n<g>消耗</g>。",
-      "descUpgraded": "<g>生成</g>1個<g>閃電</g>充能球。\n<g>生成</g>1個<g>冰霜</g>充能球。\n<g>生成</g>1個<g>黑暗</g>充能球。"
+      "descBase": "<g>凝聚</g> 1 個<g>閃電</g>。\n<g>凝聚</g> 1 個<g>冰霜</g>。\n<g>凝聚</g> 1 個<g>黑暗</g>。\n<g>消耗</g>。",
+      "descUpgraded": "<g>凝聚</g> 1 個<g>閃電</g>。\n<g>凝聚</g> 1 個<g>冰霜</g>。\n<g>凝聚</g> 1 個<g>黑暗</g>。"
     },
     {
       "id": "RALLY",
       "name": "集結",
       "slug": "rally",
-      "descBase": "所有玩家獲得12點<g>格擋</g>。",
-      "descUpgraded": "所有玩家獲得17點<g>格擋</g>。"
+      "descBase": "所有玩家獲得 12 點<g>格擋</g>。",
+      "descUpgraded": "所有玩家獲得 17 點<g>格擋</g>。"
     },
     {
       "id": "RAMPAGE",
       "name": "暴走",
       "slug": "rampage",
-      "descBase": "造成10點傷害。\n將這張牌在本場戰鬥中的傷害增加5。",
-      "descUpgraded": "造成10點傷害。\n將這張牌在本場戰鬥中的傷害增加10。"
+      "descBase": "造成 10 點傷害。\n本場戰鬥中，此牌傷害提高 5 點。",
+      "descUpgraded": "造成 10 點傷害。\n本場戰鬥中，此牌傷害提高 10 點。"
     },
     {
       "id": "RATTLE",
       "name": "猛晃",
       "slug": "rattle",
-      "descBase": "<g>奧斯提</g>造成7點傷害。\n本回合每使用過一次奧斯提攻擊牌，此牌就額外造成一次傷害。",
-      "descUpgraded": "<g>奧斯提</g>造成9點傷害。\n本回合每使用過一次奧斯提攻擊牌，此牌就額外造成一次傷害。"
+      "descBase": "<g>奧斯提</g>造成 7 點傷害。\n本回合內他每攻擊過一次，就額外擊中一次。",
+      "descUpgraded": "<g>奧斯提</g>造成 9 點傷害。\n本回合內他每攻擊過一次，就額外擊中一次。"
     },
     {
       "id": "REANIMATE",
-      "name": "死者蘇生",
+      "name": "復生",
       "slug": "reanimate",
-      "descBase": "<g>召喚</g>20。\n<g>消耗</g>。",
-      "descUpgraded": "<g>召喚</g>25。\n<g>消耗</g>。"
+      "descBase": "<g>召喚</g> 20。\n<g>消耗</g>。",
+      "descUpgraded": "<g>召喚</g> 25。\n<g>消耗</g>。",
+      "aliases": [
+        "死者蘇生"
+      ]
     },
     {
       "id": "REAP",
       "name": "收割",
       "slug": "reap",
-      "descBase": "<g>保留</g>。\n造成27點傷害。",
-      "descUpgraded": "<g>保留</g>。\n造成33點傷害。"
+      "descBase": "<g>保留</g>。\n造成 27 點傷害。",
+      "descUpgraded": "<g>保留</g>。\n造成 33 點傷害。"
     },
     {
       "id": "REAPER_FORM",
       "name": "死神形態",
       "slug": "reaper-form",
-      "descBase": "每當你的攻擊造成傷害時，同時給予等量的<g>災厄</g>。",
-      "descUpgraded": "<g>保留</g>。\n每當你的攻擊造成傷害時，同時給予等量的<g>災厄</g>。"
+      "descBase": "每當攻擊牌造成傷害時，施加等量<g>惡兆</g>。",
+      "descUpgraded": "<g>保留</g>。\n每當攻擊牌造成傷害時，施加等量<g>惡兆</g>。"
     },
     {
       "id": "REAVE",
       "name": "剝奪",
       "slug": "reave",
-      "descBase": "造成10點傷害。\n將一張<g>靈魂</g>加入你的<g>抽牌堆</g>。",
-      "descUpgraded": "造成13點傷害。\n將一張<g>靈魂+</g>加入你的<g>抽牌堆</g>。"
+      "descBase": "造成 10 點傷害。\n將一張<g>靈魂</g>加入你的<g>抽牌堆</g>。",
+      "descUpgraded": "造成 13 點傷害。\n將一張<g>靈魂+</g>加入你的<g>抽牌堆</g>。"
     },
     {
       "id": "REBOOT",
-      "name": "重啟",
+      "name": "重新啟動",
       "slug": "reboot",
-      "descBase": "將你的所有未消耗的卡牌重新洗牌放入<g>抽牌堆</g>。\n抽4張牌。\n<g>消耗</g>。",
-      "descUpgraded": "將你的所有未消耗的卡牌重新洗牌放入<g>抽牌堆</g>。\n抽6張牌。\n<g>消耗</g>。"
+      "descBase": "將你的所有牌洗入<g>抽牌堆</g>。\n抽 4 張牌。\n<g>消耗</g>。",
+      "descUpgraded": "將你的所有牌洗入<g>抽牌堆</g>。\n抽 6 張牌。\n<g>消耗</g>。",
+      "aliases": [
+        "重啟"
+      ]
     },
     {
       "id": "REBOUND",
-      "name": "彈回",
+      "name": "回彈",
       "slug": "rebound",
-      "descBase": "造成9點傷害。\n將你在本回合打出的下一張牌放置到你的<g>抽牌堆</g>頂部。",
-      "descUpgraded": "造成12點傷害。\n將你在本回合打出的下一張牌放置到你的<g>抽牌堆</g>頂部。"
+      "descBase": "造成 9 點傷害。\n將你本回合打出的下一張牌放到你的<g>抽牌堆</g>頂部。",
+      "descUpgraded": "造成 12 點傷害。\n將你本回合打出的下一張牌放到你的<g>抽牌堆</g>頂部。",
+      "aliases": [
+        "彈回"
+      ]
     },
     {
       "id": "REFINE_BLADE",
       "name": "淬鍊刀刃",
       "slug": "refine-blade",
-      "descBase": "<g>鑄造</g>8。\n在下個回合獲得<e>1</e>。",
-      "descUpgraded": "<g>鑄造</g>12。\n在下個回合獲得<e>1</e>。"
+      "descBase": "<g>鑄造</g> 8。\n下回合，獲得 <e/>。",
+      "descUpgraded": "<g>鑄造</g> 12。\n下回合，獲得 <e/>。"
     },
     {
       "id": "REFLECT",
-      "name": "倒映",
+      "name": "反射",
       "slug": "reflect",
-      "descBase": "獲得15點<g>格擋</g>。\n在本回合將你格擋掉的攻擊傷害反彈給攻擊者。",
-      "descUpgraded": "獲得20點<g>格擋</g>。\n在本回合將你格擋掉的攻擊傷害反彈給攻擊者。"
+      "descBase": "獲得 15 點<g>格擋</g>。\n在本回合將被格擋的攻擊傷害反射給攻擊者。",
+      "descUpgraded": "獲得 20 點<g>格擋</g>。\n在本回合將被格擋的攻擊傷害反射給攻擊者。",
+      "aliases": [
+        "倒映"
+      ]
     },
     {
       "id": "REFLEX",
-      "name": "本能反應",
+      "name": "反射神經",
       "slug": "reflex",
-      "descBase": "<g>奇巧</g>。\n抽2張牌。",
-      "descUpgraded": "<g>奇巧</g>。\n抽3張牌。"
+      "descBase": "<g>奇巧</g>。\n抽 2 張牌。",
+      "descUpgraded": "<g>奇巧</g>。\n抽 3 張牌。",
+      "aliases": [
+        "本能反應"
+      ]
     },
     {
       "id": "REFRACT",
       "name": "折射",
       "slug": "refract",
-      "descBase": "造成10點傷害兩次。\n<g>生成</g>2個<g>玻璃</g>充能球。",
-      "descUpgraded": "造成13點傷害兩次。\n<g>生成</g>2個<g>玻璃</g>充能球。"
+      "descBase": "造成 2 次 10 點傷害。\n<g>凝聚</g> 2 個<g>玻璃</g>。",
+      "descUpgraded": "造成 2 次 13 點傷害。\n<g>凝聚</g> 2 個<g>玻璃</g>。"
     },
     {
       "id": "REGRET",
       "name": "悔恨",
       "slug": "regret",
-      "descBase": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的<g>手牌</g>中，失去相當於<g>手牌</g>數量的生命。",
-      "descUpgraded": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的<g>手牌</g>中，失去相當於<g>手牌</g>數量的生命。"
+      "descBase": "<g>無法打出</g>。\n在你的回合結束時，若此牌在你的<g>手牌</g>中，則<g>手牌</g>每有 1 張牌就失去 1 點生命。",
+      "descUpgraded": "<g>無法打出</g>。\n在你的回合結束時，若此牌在你的<g>手牌</g>中，則<g>手牌</g>每有 1 張牌就失去 1 點生命。"
     },
     {
       "id": "RELAX",
       "name": "放鬆",
       "slug": "relax",
-      "descBase": "獲得15點<g>格擋</g>。\n下個回合，抽2張牌並獲得<e>2</e>。\n<g>消耗</g>。",
-      "descUpgraded": "獲得17點<g>格擋</g>。\n下個回合，抽3張牌並獲得<e>3</e>。\n<g>消耗</g>。"
+      "descBase": "獲得 16 點<g>格擋</g>。\n下回合，抽 2 張牌並獲得 <e/><e/>。\n<g>消耗</g>。",
+      "descUpgraded": "獲得 18 點<g>格擋</g>。\n下回合，抽 3 張牌並獲得 <e/><e/><e/>。\n<g>消耗</g>。"
     },
     {
       "id": "REND",
-      "name": "撕碎",
+      "name": "撕扯破碎",
       "slug": "rend",
-      "descBase": "造成10點傷害。\n該名敵人身上每有一種負面效果，就額外造成5點傷害。",
-      "descUpgraded": "造成12點傷害。\n該名敵人身上每有一種負面效果，就額外造成8點傷害。",
+      "descBase": "造成 10 點傷害。\n敵人身上每有一種不同的弱化效果，就額外造成 5 點傷害。",
+      "descUpgraded": "造成 12 點傷害。\n敵人身上每有一種不同的弱化效果，就額外造成 8 點傷害。",
       "aliases": [
-        "撕扯破碎"
+        "撕碎"
       ]
     },
     {
       "id": "RESONANCE",
-      "name": "共鳴",
+      "name": "共振",
       "slug": "resonance",
-      "descBase": "獲得1點<g>力量</g>。所有敵人失去1點<g>力量</g>。",
-      "descUpgraded": "獲得2點<g>力量</g>。所有敵人失去1點<g>力量</g>。",
+      "descBase": "獲得 1 層<g>力量</g>。所有敵人失去 1 層<g>力量</g>。",
+      "descUpgraded": "獲得 2 層<g>力量</g>。所有敵人失去 1 層<g>力量</g>。",
       "aliases": [
-        "共振"
+        "共鳴"
       ]
     },
     {
       "id": "RESTLESSNESS",
       "name": "心神不寧",
       "slug": "restlessness",
-      "descBase": "<g>保留</g>。\n如果你的<g>手牌</g>為空，則抽2張牌並獲得<e>2</e>。",
-      "descUpgraded": "<g>保留</g>。\n如果你的<g>手牌</g>為空，則抽3張牌並獲得<e>3</e>。"
+      "descBase": "<g>保留</g>。\n若你的<g>手牌</g>為空，抽 2 張牌並獲得 <e/><e/>。",
+      "descUpgraded": "<g>保留</g>。\n若你的<g>手牌</g>為空，抽 3 張牌並獲得 <e/><e/><e/>。"
     },
     {
       "id": "RICOCHET",
-      "name": "連續反彈",
+      "name": "彈射",
       "slug": "ricochet",
-      "descBase": "<g>奇巧</g>。\n隨機對敵人造成3點傷害4次。",
-      "descUpgraded": "<g>奇巧</g>。\n隨機對敵人造成3點傷害5次。"
+      "descBase": "<g>奇巧</g>。\n對一名隨機敵人造成 4 次 3 點傷害。",
+      "descUpgraded": "<g>奇巧</g>。\n對一名隨機敵人造成 5 次 3 點傷害。",
+      "aliases": [
+        "連續反彈"
+      ]
     },
     {
       "id": "RIGHT_HAND_HAND",
-      "name": "得力助手",
+      "name": "助手之手",
       "slug": "right-hand-hand",
-      "descBase": "<g>奧斯提</g>造成4點傷害。\n每當你打出耗能為<e>2</e>或以上的牌，將此牌從<g>棄牌堆</g>放回你的<g>手牌</g>。",
-      "descUpgraded": "<g>奧斯提</g>造成6點傷害。\n每當你打出耗能為<e>2</e>或以上的牌，將此牌從<g>棄牌堆</g>放回你的<g>手牌</g>。"
+      "descBase": "<g>奧斯提</g>造成 4 點傷害。\n每當你打出一張耗能不少於 <e/><e/> 的牌時，將此牌從<g>棄牌堆</g>放回你的<g>手牌</g>。",
+      "descUpgraded": "<g>奧斯提</g>造成 6 點傷害。\n每當你打出一張耗能不少於 <e/><e/> 的牌時，將此牌從<g>棄牌堆</g>放回你的<g>手牌</g>。",
+      "aliases": [
+        "得力助手"
+      ]
     },
     {
       "id": "RIP_AND_TEAR",
-      "name": "狂亂撕扯",
+      "name": "撕裂猛扯",
       "slug": "rip-and-tear",
-      "descBase": "隨機對敵人造成7點傷害兩次。",
-      "descUpgraded": "隨機對敵人造成9點傷害兩次。"
+      "descBase": "對一名隨機敵人造成 2 次 7 點傷害。",
+      "descUpgraded": "對一名隨機敵人造成 2 次 9 點傷害。",
+      "aliases": [
+        "狂亂撕扯"
+      ]
     },
     {
       "id": "ROCKET_PUNCH",
       "name": "火箭飛拳",
       "slug": "rocket-punch",
-      "descBase": "造成13點傷害。\n抽1張牌。\n每當你生成狀態牌時，此牌的耗能將在下一次打出前降低1<e/>。",
-      "descUpgraded": "造成14點傷害。\n抽2張牌。\n每當你生成狀態牌時，此牌的耗能將在下一次打出前降低1<e/>。"
+      "descBase": "造成 13 點傷害。\n抽 1 張牌。\n每當你創造一張狀態牌時，使此牌耗能降低 1 <e/>，直到打出為止。",
+      "descUpgraded": "造成 14 點傷害。\n抽 2 張牌。\n每當你創造一張狀態牌時，使此牌耗能降低 1 <e/>，直到打出為止。"
     },
     {
       "id": "ROLLING_BOULDER",
-      "name": "滾石",
+      "name": "滾動巨石",
       "slug": "rolling-boulder",
-      "descBase": "在你的回合開始時，對所有敵人造成5點傷害，然後將該傷害增加5點。",
-      "descUpgraded": "在你的回合開始時，對所有敵人造成10點傷害，然後將該傷害增加5點。"
+      "descBase": "在你的回合開始時，對所有敵人造成 5 點傷害，並使此傷害提高 5 點。",
+      "descUpgraded": "在你的回合開始時，對所有敵人造成 10 點傷害，並使此傷害提高 5 點。",
+      "aliases": [
+        "滾石"
+      ]
     },
     {
       "id": "ROYAL_GAMBLE",
-      "name": "勝券在王",
+      "name": "王室豪賭",
       "slug": "royal-gamble",
-      "descBase": "獲得9<s>1</s>。\n<g>消耗</g>。",
-      "descUpgraded": "<g>保留</g>。\n獲得9<s>1</s>。\n<g>消耗</g>。"
+      "descBase": "獲得 9 1<s/>。\n<g>消耗</g>。",
+      "descUpgraded": "<g>保留</g>。\n獲得 9 1<s/>。\n<g>消耗</g>。",
+      "aliases": [
+        "勝券在王"
+      ]
     },
     {
       "id": "ROYALTIES",
-      "name": "王國資產",
+      "name": "王室權利金",
       "slug": "royalties",
-      "descBase": "在戰鬥結束時，獲得30<g>金幣</g>。",
-      "descUpgraded": "在戰鬥結束時，獲得40<g>金幣</g>。"
+      "descBase": "戰鬥結束時，獲得 30 枚<g>金幣</g>。",
+      "descUpgraded": "戰鬥結束時，獲得 40 枚<g>金幣</g>。",
+      "aliases": [
+        "王國資產"
+      ]
     },
     {
       "id": "RUPTURE",
-      "name": "撕裂",
+      "name": "綻裂",
       "slug": "rupture",
-      "descBase": "每當你在你的回合失去生命值時, 獲得1點<g>力量</g>。",
-      "descUpgraded": "每當你在你的回合失去生命值時, 獲得2點<g>力量</g>。"
+      "descBase": "每當你在自己的回合失去生命時，獲得 1 層<g>力量</g>。",
+      "descUpgraded": "每當你在自己的回合失去生命時，獲得 2 層<g>力量</g>。",
+      "aliases": [
+        "撕裂"
+      ]
     },
     {
       "id": "SACRIFICE",
       "name": "犧牲",
       "slug": "sacrifice",
-      "descBase": "<g>保留</g>。\n如果<g>奧斯提</g>存活，則他死去，然後你獲得等量於其三倍最大生命值的<g>格擋</g>。",
-      "descUpgraded": "<g>保留</g>。\n如果<g>奧斯提</g>存活，則他死去，然後你獲得等量於其三倍最大生命值的<g>格擋</g>。"
+      "descBase": "<g>保留</g>。\n若<g>奧斯提</g>存活，他會死亡，且你獲得等量於其最大生命三倍的<g>格擋</g>。",
+      "descUpgraded": "<g>保留</g>。\n若<g>奧斯提</g>存活，他會死亡，且你獲得等量於其最大生命三倍的<g>格擋</g>。"
     },
     {
       "id": "SALVO",
-      "name": "箭雨",
+      "name": "齊射",
       "slug": "salvo",
-      "descBase": "造成12點傷害。\n在本回合<g>保留</g>你的<g>手牌</g>。",
-      "descUpgraded": "造成16點傷害。\n在本回合<g>保留</g>你的<g>手牌</g>。",
+      "descBase": "造成 12 點傷害。\n本回合<g>保留</g>你的<g>手牌</g>。",
+      "descUpgraded": "造成 16 點傷害。\n本回合<g>保留</g>你的<g>手牌</g>。",
       "aliases": [
-        "齊射"
-      ]
-    },
-    {
-      "id": "SCARE",
-      "name": "側步",
-      "slug": "scare",
-      "descBase": "下回合，獲得<e>1</e>。",
-      "descUpgraded": "下回合，獲得<e>2</e>。",
-      "aliases": [
-        "嚇唬",
-        "恫嚇"
+        "箭雨"
       ]
     },
     {
       "id": "SCAVENGE",
-      "name": "內存清理",
+      "name": "搜刮",
       "slug": "scavenge",
-      "descBase": "<g>消耗</g>一張牌。\n在下個回合獲得<e>2</e>。",
-      "descUpgraded": "<g>消耗</g>一張牌。\n在下個回合獲得<e>3</e>。"
+      "descBase": "<g>消耗</g>一張牌。\n下回合，獲得 <e/><e/>。",
+      "descUpgraded": "<g>消耗</g>一張牌。\n下回合，獲得 <e/><e/><e/>。",
+      "aliases": [
+        "內存清理"
+      ]
     },
     {
       "id": "SCOURGE",
-      "name": "鞭打",
+      "name": "鞭笞",
       "slug": "scourge",
-      "descBase": "給予13層<g>災厄</g>。\n抽1張牌。",
-      "descUpgraded": "給予16層<g>災厄</g>。\n抽2張牌。"
+      "descBase": "施加 13 層<g>惡兆</g>。\n抽 1 張牌。",
+      "descUpgraded": "施加 16 層<g>惡兆</g>。\n抽 2 張牌。",
+      "aliases": [
+        "鞭打"
+      ]
     },
     {
       "id": "SCRAPE",
       "name": "刮削",
       "slug": "scrape",
-      "descBase": "造成7點傷害。\n抽4張牌。\n丟棄抽到的牌中耗能不為0<e/>的牌。",
-      "descUpgraded": "造成10點傷害。\n抽5張牌。\n丟棄抽到的牌中耗能不為0<e/>的牌。",
-      "notes": "因全域暫時效果（例如撲擊／猛撲）而將耗能設為0的牌，不會被丟棄。"
+      "descBase": "造成 7 點傷害。\n抽 4 張牌。\n丟棄以此方式抽到且耗能不為 0 <e/> 的所有牌。",
+      "descUpgraded": "造成 10 點傷害。\n抽 5 張牌。\n丟棄以此方式抽到且耗能不為 0 <e/> 的所有牌。"
     },
     {
       "id": "SCRAWL",
-      "name": "潦草急就",
+      "name": "潦草疾書",
       "slug": "scrawl",
-      "descBase": "抽牌直到抽滿<g>手牌</g>。\n<g>消耗</g>。",
-      "descUpgraded": "<g>保留</g>。\n抽牌直到抽滿<g>手牌</g>。\n<g>消耗</g>。"
+      "descBase": "持續抽牌，直到你的<g>手牌</g>滿為止。\n<g>消耗</g>。",
+      "descUpgraded": "<g>保留</g>。\n持續抽牌，直到你的<g>手牌</g>滿為止。\n<g>消耗</g>。",
+      "aliases": [
+        "潦草急就"
+      ]
     },
     {
       "id": "SCULPTING_STRIKE",
       "name": "雕琢打擊",
       "slug": "sculpting-strike",
-      "descBase": "造成9點傷害。\n為一張<g>手牌</g>添加<g>虛無</g>。",
-      "descUpgraded": "造成12點傷害。\n為一張<g>手牌</g>添加<g>虛無</g>。"
+      "descBase": "造成 9 點傷害。\n為你<g>手牌</g>中的一張牌附加<g>虛無</g>。",
+      "descUpgraded": "造成 12 點傷害。\n為你<g>手牌</g>中的一張牌附加<g>虛無</g>。"
     },
     {
       "id": "SEANCE",
       "name": "降靈",
       "slug": "seance",
-      "descBase": "<g>虛無</g>。\n將你<g>抽牌堆</g>中的一張牌變化為<g>靈魂</g>。",
-      "descUpgraded": "<g>虛無</g>。\n將你<g>抽牌堆</g>中的一張牌變化為<g>靈魂</g>。"
+      "descBase": "<g>虛無</g>。\n將你<g>抽牌堆</g>中的一張牌轉化為<g>靈魂</g>。",
+      "descUpgraded": "<g>虛無</g>。\n將你<g>抽牌堆</g>中的一張牌轉化為<g>靈魂</g>。"
     },
     {
       "id": "SECOND_WIND",
       "name": "重振精神",
       "slug": "second-wind",
-      "descBase": "<g>消耗</g><g>手牌</g>中所有非攻擊牌，每張獲得5點<g>格擋</g>。",
-      "descUpgraded": "<g>消耗</g><g>手牌</g>中所有非攻擊牌，每張獲得7點<g>格擋</g>。"
+      "descBase": "<g>消耗</g>你<g>手牌</g>中所有非攻擊牌。每<g>消耗</g>一張牌，就獲得 5 點<g>格擋</g>。",
+      "descUpgraded": "<g>消耗</g>你<g>手牌</g>中所有非攻擊牌。每<g>消耗</g>一張牌，就獲得 7 點<g>格擋</g>。"
     },
     {
       "id": "SECRET_TECHNIQUE",
       "name": "秘密技法",
       "slug": "secret-technique",
-      "descBase": "從<g>抽牌堆</g>中選擇一張技能牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
-      "descUpgraded": "從<g>抽牌堆</g>中選擇一張技能牌放入你的<g>手牌</g>。"
+      "descBase": "將你<g>抽牌堆</g>中的一張技能牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
+      "descUpgraded": "將你<g>抽牌堆</g>中的一張技能牌放入你的<g>手牌</g>。"
     },
     {
       "id": "SECRET_WEAPON",
       "name": "秘密武器",
       "slug": "secret-weapon",
-      "descBase": "從<g>抽牌堆</g>中選擇一張攻擊牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
-      "descUpgraded": "從<g>抽牌堆</g>中選擇一張攻擊牌放入你的<g>手牌</g>。"
+      "descBase": "將你<g>抽牌堆</g>中的一張攻擊牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
+      "descUpgraded": "將你<g>抽牌堆</g>中的一張攻擊牌放入你的<g>手牌</g>。"
     },
     {
       "id": "SEEKER_STRIKE",
-      "name": "探尋打擊",
+      "name": "追蹤打擊",
       "slug": "seeker-strike",
-      "descBase": "造成9點傷害。\n從<g>抽牌堆</g>的隨機3張牌中選擇一張加入你的<g>手牌</g>。",
-      "descUpgraded": "造成12點傷害。\n從<g>抽牌堆</g>的隨機3張牌中選擇一張加入你的<g>手牌</g>。"
+      "descBase": "造成 9 點傷害。\n從你<g>抽牌堆</g>中的 3 張牌中選擇 1 張加入你的<g>手牌</g>。",
+      "descUpgraded": "造成 12 點傷害。\n從你<g>抽牌堆</g>中的 3 張牌中選擇 1 張加入你的<g>手牌</g>。",
+      "aliases": [
+        "探尋打擊"
+      ]
     },
     {
       "id": "SEEKING_EDGE",
-      "name": "追蹤之刃",
+      "name": "尋敵鋒刃",
       "slug": "seeking-edge",
-      "descBase": "<g>鑄造</g>7。\n<g>君王之劍</g>現在會對所有敵人造成傷害。",
-      "descUpgraded": "<g>鑄造</g>11。\n<g>君王之劍</g>現在會對所有敵人造成傷害。"
+      "descBase": "<g>鑄造</g> 7。\n<g>君王之劍</g>現在會對所有敵人造成傷害。",
+      "descUpgraded": "<g>鑄造</g> 11。\n<g>君王之劍</g>現在會對所有敵人造成傷害。",
+      "aliases": [
+        "追蹤之刃"
+      ]
     },
     {
       "id": "SENTRY_MODE",
       "name": "哨衛模式",
       "slug": "sentry-mode",
-      "descBase": "在你的回合開始時，將1張<g>掃蕩凝視</g>加入你的<g>手牌</g>。",
-      "descUpgraded": "在你的回合開始時，將1張<g>掃蕩凝視</g>加入你的<g>手牌</g>。"
+      "descBase": "在你的回合開始時，將 1 張<g>掃蕩凝視</g>加入你的<g>手牌</g>。",
+      "descUpgraded": "在你的回合開始時，將 1 張<g>掃蕩凝視</g>加入你的<g>手牌</g>。"
     },
     {
       "id": "SERPENT_FORM",
       "name": "群蛇形態",
       "slug": "serpent-form",
-      "descBase": "你每打出一張牌，就對隨機一名敵人造成4點傷害。",
-      "descUpgraded": "你每打出一張牌，就對隨機一名敵人造成6點傷害。"
+      "descBase": "每當你打出一張牌時，對一名隨機敵人造成 4 點傷害。",
+      "descUpgraded": "每當你打出一張牌時，對一名隨機敵人造成 6 點傷害。"
     },
     {
       "id": "SETUP_STRIKE",
       "name": "預備打擊",
       "slug": "setup-strike",
-      "descBase": "造成7點傷害。\n在本回合內獲得3點<g>力量</g>。",
-      "descUpgraded": "造成9點傷害。\n在本回合內獲得4點<g>力量</g>。"
+      "descBase": "造成 7 點傷害。\n本回合獲得 3 層<g>力量</g>。",
+      "descUpgraded": "造成 9 點傷害。\n本回合獲得 4 層<g>力量</g>。"
     },
     {
       "id": "SEVEN_STARS",
       "name": "七星",
       "slug": "seven-stars",
-      "descBase": "對所有敵人造成7點傷害7次。",
-      "descUpgraded": "對所有敵人造成7點傷害7次。"
+      "descBase": "對所有敵人造成 7 次 7 點傷害。",
+      "descUpgraded": "對所有敵人造成 7 次 7 點傷害。"
     },
     {
       "id": "SEVERANCE",
-      "name": "切斷",
+      "name": "斷絕",
       "slug": "severance",
-      "descBase": "造成13點傷害。\n將一張<g>靈魂</g>分別加入你的<g>抽牌堆</g>，<g>手牌</g>和<g>棄牌堆</g>中。",
-      "descUpgraded": "造成18點傷害。\n將一張<g>靈魂</g>分別加入你的<g>抽牌堆</g>，<g>手牌</g>和<g>棄牌堆</g>中。"
+      "descBase": "造成 13 點傷害。\n分別將一張<g>靈魂</g>加入你的<g>抽牌堆</g>、<g>手牌</g>與<g>棄牌堆</g>。",
+      "descUpgraded": "造成 18 點傷害。\n分別將一張<g>靈魂</g>加入你的<g>抽牌堆</g>、<g>手牌</g>與<g>棄牌堆</g>。",
+      "aliases": [
+        "切斷"
+      ]
     },
     {
       "id": "SHADOW_SHIELD",
-      "name": "暗影之盾",
+      "name": "暗影護盾",
       "slug": "shadow-shield",
-      "descBase": "獲得11點<g>格擋</g>。\n<g>生成</g>1個<g>黑暗</g>充能球。",
-      "descUpgraded": "獲得15點<g>格擋</g>。\n<g>生成</g>1個<g>黑暗</g>充能球。"
+      "descBase": "獲得 11 點<g>格擋</g>。\n<g>凝聚</g> 1 個<g>黑暗</g>。",
+      "descUpgraded": "獲得 15 點<g>格擋</g>。\n<g>凝聚</g> 1 個<g>黑暗</g>。",
+      "aliases": [
+        "暗影之盾"
+      ]
     },
     {
       "id": "SHADOW_STEP",
       "name": "暗影步",
       "slug": "shadow-step",
-      "descBase": "丟棄所有<g>手牌</g>。\n在下個回合，你所有的攻擊傷害翻倍。",
-      "descUpgraded": "丟棄所有<g>手牌</g>。\n在下個回合，你所有的攻擊傷害翻倍。"
+      "descBase": "丟棄你的<g>手牌</g>。\n下回合，攻擊牌造成雙倍傷害。",
+      "descUpgraded": "丟棄你的<g>手牌</g>。\n下回合，攻擊牌造成雙倍傷害。"
     },
     {
       "id": "SHADOWMELD",
       "name": "融入暗影",
       "slug": "shadowmeld",
-      "descBase": "本回合你獲得的<g>格擋</g>值翻倍。",
-      "descUpgraded": "本回合你獲得的<g>格擋</g>值翻倍。"
+      "descBase": "在本回合你的<g>格擋</g>獲得量加倍。",
+      "descUpgraded": "在本回合你的<g>格擋</g>獲得量加倍。"
     },
     {
       "id": "SHAME",
       "name": "羞恥",
       "slug": "shame",
-      "descBase": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的<g>手牌</g>中，則獲得1層<g>脆弱</g>。",
-      "descUpgraded": "<g>不能被打出</g>。\n在你的回合結束時，如果這張牌在你的<g>手牌</g>中，則獲得1層<g>脆弱</g>。"
+      "descBase": "<g>無法打出</g>。\n在你的回合結束時，若此牌在你的<g>手牌</g>中，就獲得 1 層<g>脆弱</g>。",
+      "descUpgraded": "<g>無法打出</g>。\n在你的回合結束時，若此牌在你的<g>手牌</g>中，就獲得 1 層<g>脆弱</g>。"
     },
     {
       "id": "SHARED_FATE",
       "name": "命運同擔",
       "slug": "shared-fate",
-      "descBase": "失去2點<g>力量</g>。\n敵人失去2點<g>力量</g>。\n<g>消耗</g>。",
-      "descUpgraded": "失去2點<g>力量</g>。\n敵人失去3點<g>力量</g>。\n<g>消耗</g>。"
+      "descBase": "失去 2 層<g>力量</g>。\n敵人失去 2 層<g>力量</g>。\n<g>消耗</g>。",
+      "descUpgraded": "失去 2 層<g>力量</g>。\n敵人失去 3 層<g>力量</g>。\n<g>消耗</g>。"
     },
     {
       "id": "SHATTER",
-      "name": "打碎",
+      "name": "粉碎",
       "slug": "shatter",
-      "descBase": "對所有敵人造成7點傷害。\n<g>激發</g>你的所有充能球兩次。\n<g>消耗</g>。",
-      "descUpgraded": "對所有敵人造成11點傷害。\n<g>激發</g>你的所有充能球兩次。\n<g>消耗</g>。",
+      "descBase": "對所有敵人造成 7 點傷害。\n將你的所有充能球<g>激發</g>兩次。\n<g>消耗</g>。",
+      "descUpgraded": "對所有敵人造成 11 點傷害。\n將你的所有充能球<g>激發</g>兩次。\n<g>消耗</g>。",
       "aliases": [
-        "粉碎"
+        "打碎"
       ]
     },
     {
       "id": "SHINING_STRIKE",
       "name": "明耀打擊",
       "slug": "shining-strike",
-      "descBase": "造成8點傷害。\n獲得<s>2</s>。\n將這張牌放置於你的<g>抽牌堆</g>頂部。",
-      "descUpgraded": "造成11點傷害。\n獲得<s>2</s>。\n將這張牌放置於你的<g>抽牌堆</g>頂部。"
+      "descBase": "造成 8 點傷害。\n獲得 2<s/>。\n將此牌放到你的<g>抽牌堆</g>頂部。",
+      "descUpgraded": "造成 11 點傷害。\n獲得 2<s/>。\n將此牌放到你的<g>抽牌堆</g>頂部。"
     },
     {
       "id": "SHOCKWAVE",
       "name": "震盪波",
       "slug": "shockwave",
-      "descBase": "給予所有敵人3層<g>虛弱</g>和<g>易傷</g>。\n<g>消耗</g>。",
-      "descUpgraded": "給予所有敵人5層<g>虛弱</g>和<g>易傷</g>。\n<g>消耗</g>。"
+      "descBase": "對所有敵人施加 3 層<g>虛弱</g>和<g>易傷</g>。\n<g>消耗</g>。",
+      "descUpgraded": "對所有敵人施加 5 層<g>虛弱</g>和<g>易傷</g>。\n<g>消耗</g>。"
     },
     {
       "id": "SHROUD",
-      "name": "厄運之衣",
+      "name": "暗幕",
       "slug": "shroud",
-      "descBase": "每當你給予<g>災厄</g>時，獲得3點<g>格擋</g>。",
-      "descUpgraded": "每當你給予<g>災厄</g>時，獲得4點<g>格擋</g>。",
+      "descBase": "每當你施加<g>惡兆</g>時，獲得 3 點<g>格擋</g>。",
+      "descUpgraded": "每當你施加<g>惡兆</g>時，獲得 4 點<g>格擋</g>。",
       "aliases": [
-        "暗幕"
+        "厄運之衣"
       ]
     },
     {
       "id": "SHRUG_IT_OFF",
-      "name": "聳肩無視",
+      "name": "聳肩帶過",
       "slug": "shrug-it-off",
-      "descBase": "獲得8點<g>格擋</g>。\n抽1張牌。",
-      "descUpgraded": "獲得11點<g>格擋</g>。\n抽1張牌。"
+      "descBase": "獲得 8 點<g>格擋</g>。\n抽 1 張牌。",
+      "descUpgraded": "獲得 11 點<g>格擋</g>。\n抽 1 張牌。",
+      "aliases": [
+        "聳肩無視"
+      ]
     },
     {
       "id": "SIC_EM",
-      "name": "緊追不放",
+      "name": "揍他",
       "slug": "sic-em",
-      "descBase": "<g>奧斯提</g>造成5點傷害。\n在本回合內，每當<g>奧斯提</g>攻擊這名敵人時，<g>召喚</g>3。",
-      "descUpgraded": "<g>奧斯提</g>造成6點傷害。\n在本回合內，每當<g>奧斯提</g>攻擊這名敵人時，<g>召喚</g>4。"
+      "descBase": "<g>奧斯提</g>造成 5 點傷害。\n本回合每當<g>奧斯提</g>擊中該敵人時，<g>召喚</g> 3。",
+      "descUpgraded": "<g>奧斯提</g>造成 6 點傷害。\n本回合每當<g>奧斯提</g>擊中該敵人時，<g>召喚</g> 4。",
+      "aliases": [
+        "緊追不放"
+      ]
+    },
+    {
+      "id": "SIDESTEP",
+      "name": "側步",
+      "slug": "sidestep",
+      "descBase": "下回合，獲得 <e/>。",
+      "descUpgraded": "下回合，獲得 <e/><e/>。"
     },
     {
       "id": "SIGNAL_BOOST",
-      "name": "信號增強",
+      "name": "訊號增幅",
       "slug": "signal-boost",
-      "descBase": "你的下一張能力牌會額外打出一次。\n<g>消耗</g>。",
-      "descUpgraded": "你的下一張能力牌會額外打出一次。\n<g>消耗</g>。"
+      "descBase": "你打出的下一張能力牌會額外打出一次。\n<g>消耗</g>。",
+      "descUpgraded": "你打出的下一張能力牌會額外打出一次。\n<g>消耗</g>。",
+      "aliases": [
+        "信號增強"
+      ]
     },
     {
       "id": "SKEWER",
       "name": "串刺",
       "slug": "skewer",
-      "descBase": "造成8點傷害X次。",
-      "descUpgraded": "造成11點傷害X次。"
+      "descBase": "造成 X 次 8 點傷害。",
+      "descUpgraded": "造成 X 次 11 點傷害。"
     },
     {
       "id": "SKIM",
-      "name": "快速檢索",
+      "name": "掃讀",
       "slug": "skim",
-      "descBase": "抽3張牌。",
-      "descUpgraded": "抽4張牌。"
+      "descBase": "抽 3 張牌。",
+      "descUpgraded": "抽 4 張牌。",
+      "aliases": [
+        "快速檢索"
+      ]
     },
     {
       "id": "SLEIGHT_OF_FLESH",
       "name": "血肉戲法",
       "slug": "sleight-of-flesh",
-      "descBase": "每當你給予一個敵人負面狀態時，使其受到9點傷害。",
-      "descUpgraded": "每當你給予一個敵人負面狀態時，使其受到13點傷害。"
+      "descBase": "每當你對敵人施加弱化效果時，該敵人受到 9 點傷害。",
+      "descUpgraded": "每當你對敵人施加弱化效果時，該敵人受到 13 點傷害。"
     },
     {
       "id": "SLICE",
       "name": "切割",
       "slug": "slice",
-      "descBase": "造成6點傷害。",
-      "descUpgraded": "造成9點傷害。"
+      "descBase": "造成 6 點傷害。",
+      "descUpgraded": "造成 9 點傷害。"
     },
     {
       "id": "SMOKESTACK",
       "name": "煙囪",
       "slug": "smokestack",
-      "descBase": "每當你生成一張狀態牌時，對所有敵人造成5點傷害。",
-      "descUpgraded": "每當你生成一張狀態牌時，對所有敵人造成7點傷害。"
+      "descBase": "每當你創造一張狀態牌時，對所有敵人造成 5 點傷害。",
+      "descUpgraded": "每當你創造一張狀態牌時，對所有敵人造成 7 點傷害。"
     },
     {
       "id": "SNAKEBITE",
       "name": "蛇咬",
       "slug": "snakebite",
-      "descBase": "<g>保留</g>。\n給予7層<g>中毒</g>。",
-      "descUpgraded": "<g>保留</g>。\n給予10層<g>中毒</g>。"
+      "descBase": "<g>保留</g>。\n施加 7 層<g>中毒</g>。",
+      "descUpgraded": "<g>保留</g>。\n施加 10 層<g>中毒</g>。"
     },
     {
       "id": "SNAP",
-      "name": "響指",
+      "name": "彈指",
       "slug": "snap",
-      "descBase": "<g>奧斯提</g>造成7點傷害。\n給<g>手牌</g>中的一張牌添加<g>保留</g>。",
-      "descUpgraded": "<g>奧斯提</g>造成10點傷害。\n給<g>手牌</g>中的一張牌添加<g>保留</g>。"
+      "descBase": "<g>奧斯提</g>造成 7 點傷害。\n為你<g>手牌</g>中的一張牌附加<g>保留</g>。",
+      "descUpgraded": "<g>奧斯提</g>造成 10 點傷害。\n為你<g>手牌</g>中的一張牌附加<g>保留</g>。",
+      "aliases": [
+        "響指"
+      ]
     },
     {
       "id": "SNEAKY",
       "name": "鬼祟",
       "slug": "sneaky",
-      "descBase": "<g>奇巧</g>。\n每當其他玩家攻擊一名敵人時，獲得1點<g>格擋</g>。",
-      "descUpgraded": "<g>奇巧</g>。\n每當其他玩家攻擊一名敵人時，獲得2點<g>格擋</g>。"
+      "descBase": "<g>奇巧</g>。\n每當另一名玩家攻擊一名敵人時，獲得 1 點<g>格擋</g>。",
+      "descUpgraded": "<g>奇巧</g>。\n每當另一名玩家攻擊一名敵人時，獲得 2 點<g>格擋</g>。"
     },
     {
       "id": "SOLAR_STRIKE",
       "name": "太陽打擊",
       "slug": "solar-strike",
-      "descBase": "造成9點傷害。\n獲得<s>1</s>。",
-      "descUpgraded": "造成10點傷害。\n獲得<s>2</s>。"
+      "descBase": "造成 9 點傷害。\n獲得 1<s/>。",
+      "descUpgraded": "造成 10 點傷害。\n獲得 2<s/>。"
     },
     {
       "id": "SOUL_STORM",
       "name": "靈魂風暴",
       "slug": "soul-storm",
-      "descBase": "造成9點傷害。\n你的<g>消耗牌堆</g>中每有一張<g>靈魂</g>，傷害增加4。",
-      "descUpgraded": "造成9點傷害。\n你的<g>消耗牌堆</g>中每有一張<g>靈魂</g>，傷害增加6。"
+      "descBase": "造成 9 點傷害。\n你<g>消耗堆</g>中每有一張<g>靈魂</g>，就額外造成 4 點傷害。",
+      "descUpgraded": "造成 9 點傷害。\n你<g>消耗堆</g>中每有一張<g>靈魂</g>，就額外造成 6 點傷害。"
+    },
+    {
+      "id": "SOULBOUND",
+      "name": "靈魂綁定",
+      "slug": "soulbound",
+      "descBase": "選擇一名盟友。\n每當你創造一張<g>靈魂</g>時，將一張<g>靈魂</g>加入其<g>抽牌堆</g>。",
+      "descUpgraded": "<g>固有</g>。\n選擇一名盟友。\n每當你創造一張<g>靈魂</g>時，將一張<g>靈魂</g>加入其<g>抽牌堆</g>。"
     },
     {
       "id": "SOW",
       "name": "播種",
       "slug": "sow",
-      "descBase": "<g>保留</g>。\n對所有敵人造成8點傷害。",
-      "descUpgraded": "<g>保留</g>。\n對所有敵人造成11點傷害。"
+      "descBase": "<g>保留</g>。\n對所有敵人造成 8 點傷害。",
+      "descUpgraded": "<g>保留</g>。\n對所有敵人造成 11 點傷害。"
     },
     {
       "id": "SPECTRUM_SHIFT",
       "name": "光譜偏移",
       "slug": "spectrum-shift",
-      "descBase": "在你的回合開始時，將1張隨機無色牌添加到你的<g>手牌</g>中。",
-      "descUpgraded": "在你的回合開始時，將1張隨機無色牌添加到你的<g>手牌</g>中。"
+      "descBase": "在你的回合開始時，將 1 張隨機無色牌加入你的<g>手牌</g>。",
+      "descUpgraded": "在你的回合開始時，將 1 張隨機無色牌加入你的<g>手牌</g>。"
     },
     {
       "id": "SPEEDSTER",
       "name": "速行者",
       "slug": "speedster",
-      "descBase": "每當你在回合進行中抽到一張牌時，對所有敵人造成2點傷害。",
-      "descUpgraded": "<g>固有</g>。\n每當你在回合進行中抽到一張牌時，對所有敵人造成2點傷害。"
+      "descBase": "每當你在自己的回合抽一張牌時，對所有敵人造成 2 點傷害。",
+      "descUpgraded": "<g>固有</g>。\n每當你在自己的回合抽一張牌時，對所有敵人造成 2 點傷害。"
     },
     {
       "id": "SPINNER",
-      "name": "旋轉工藝",
+      "name": "迴旋凝聚",
       "slug": "spinner",
-      "descBase": "在你的回合開始時，<g>生成</g>1個<g>玻璃</g>充能球。",
-      "descUpgraded": "<g>生成</g>1個<g>玻璃</g>充能球。\n在你的回合開始時，<g>生成</g>1個<g>玻璃</g>充能球。"
+      "descBase": "在你的回合開始時，<g>凝聚</g> 1 個<g>玻璃</g>。",
+      "descUpgraded": "<g>凝聚</g> 1 個<g>玻璃</g>。\n在你的回合開始時，<g>凝聚</g> 1 個<g>玻璃</g>。",
+      "aliases": [
+        "旋轉工藝"
+      ]
     },
     {
       "id": "SPIRIT_OF_ASH",
       "name": "灰燼之靈",
       "slug": "spirit-of-ash",
-      "descBase": "每當你打出一張<g>虛無</g>牌時，獲得4點<g>格擋</g>。",
-      "descUpgraded": "每當你打出一張<g>虛無</g>牌時，獲得5點<g>格擋</g>。"
+      "descBase": "每當你打出一張<g>虛無</g>牌時，獲得 4 點<g>格擋</g>。",
+      "descUpgraded": "每當你打出一張<g>虛無</g>牌時，獲得 5 點<g>格擋</g>。"
     },
     {
       "id": "SPITE",
       "name": "怨恨",
       "slug": "spite",
-      "descBase": "造成5點傷害。\n如果你在本回合失去過生命值，\n則攻擊2次。",
-      "descUpgraded": "造成5點傷害。\n如果你在本回合失去過生命值，\n則攻擊3次。"
+      "descBase": "造成 5 點傷害。\n若你本回合失去過生命，\n則此牌會擊中 2 次。",
+      "descUpgraded": "造成 5 點傷害。\n若你本回合失去過生命，\n則此牌會擊中 3 次。"
     },
     {
       "id": "SPLASH",
       "name": "飛濺",
       "slug": "splash",
-      "descBase": "從3張其他角色的攻擊牌中選擇1張加入你的<g>手牌</g>。這張牌在本回合免費打出。",
-      "descUpgraded": "從3張其他角色的<g>升級過的</g>攻擊牌中選擇1張加入你的<g>手牌</g>。這張牌在本回合免費打出。"
+      "descBase": "從另一名角色的 3 張隨機攻擊牌中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。",
+      "descUpgraded": "從另一名角色的 3 張隨機<g>已升級</g>的攻擊牌中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。"
     },
     {
       "id": "SPOILS_MAP",
       "name": "藏寶圖",
       "slug": "spoils-map",
-      "descBase": "<g>不能被打出</g>。\n在下一階段的地圖上，標記一個有600額外<g>金幣</g>的地點。",
-      "descUpgraded": "<g>不能被打出</g>。\n在下一階段的地圖上，標記一個有600額外<g>金幣</g>的地點。"
+      "descBase": "<g>無法打出</g>。\n在下一幕標記一個可獲得額外 600 枚<g>金幣</g>的地點。",
+      "descUpgraded": "<g>無法打出</g>。\n在下一幕標記一個可獲得額外 600 枚<g>金幣</g>的地點。"
     },
     {
       "id": "SPOILS_OF_BATTLE",
-      "name": "戰利品",
+      "name": "征戰所得",
       "slug": "spoils-of-battle",
-      "descBase": "<g>鑄造</g>6。\n抽2張牌。",
-      "descUpgraded": "<g>鑄造</g>9。\n抽2張牌。",
+      "descBase": "<g>鑄造</g> 6。\n抽 2 張牌。",
+      "descUpgraded": "<g>鑄造</g> 9。\n抽 2 張牌。",
       "aliases": [
-        "征戰所得"
+        "戰利品"
       ]
     },
     {
       "id": "SPORE_MIND",
-      "name": "孢子心靈",
+      "name": "孢子心智",
       "slug": "spore-mind",
       "descBase": "<g>消耗</g>。",
-      "descUpgraded": "<g>消耗</g>。"
+      "descUpgraded": "<g>消耗</g>。",
+      "aliases": [
+        "孢子心靈"
+      ]
     },
     {
       "id": "SPUR",
-      "name": "增生",
+      "name": "激勵",
       "slug": "spur",
-      "descBase": "<g>保留</g>。\n<g>召喚</g>3。\n<g>奧斯提</g>回覆5點生命。",
-      "descUpgraded": "<g>保留</g>。\n<g>召喚</g>5。\n<g>奧斯提</g>回覆7點生命。"
+      "descBase": "<g>保留</g>。\n<g>召喚</g> 3。\n<g>奧斯提</g>恢復 5 點生命。",
+      "descUpgraded": "<g>保留</g>。\n<g>召喚</g> 5。\n<g>奧斯提</g>恢復 7 點生命。",
+      "aliases": [
+        "增生"
+      ]
     },
     {
       "id": "SQUASH",
       "name": "壓扁",
       "slug": "squash",
-      "descBase": "造成10點傷害。\n給予2層<g>易傷</g>。",
-      "descUpgraded": "造成12點傷害。\n給予3層<g>易傷</g>。"
+      "descBase": "造成 10 點傷害。\n施加 2 層<g>易傷</g>。",
+      "descUpgraded": "造成 12 點傷害。\n施加 3 層<g>易傷</g>。"
     },
     {
       "id": "SQUEEZE",
       "name": "緊握",
       "slug": "squeeze",
-      "descBase": "<g>奧斯提</g>造成25點傷害。\n你每有一張<g>奧斯提</g>的攻擊牌，這張牌就額外造成5點傷害。",
-      "descUpgraded": "<g>奧斯提</g>造成30點傷害。\n你每有一張<g>奧斯提</g>的攻擊牌，這張牌就額外造成6點傷害。"
+      "descBase": "<g>奧斯提</g>造成 25 點傷害。\n你每擁有一張其他<g>奧斯提</g>攻擊牌，就額外造成 5 點傷害。",
+      "descUpgraded": "<g>奧斯提</g>造成 30 點傷害。\n你每擁有一張其他<g>奧斯提</g>攻擊牌，就額外造成 6 點傷害。"
     },
     {
       "id": "STACK",
-      "name": "堆棧",
+      "name": "堆疊",
       "slug": "stack",
-      "descBase": "獲得等量於與你當前<g>棄牌堆</g>中牌數的<g>格擋</g>值。",
-      "descUpgraded": "獲得等量於與你當前<g>棄牌堆</g>中牌數+3的<g>格擋</g>值。"
+      "descBase": "獲得與你<g>棄牌堆</g>中卡牌數量等量的<g>格擋</g>。",
+      "descUpgraded": "獲得與你<g>棄牌堆</g>中卡牌數量 +3等量的<g>格擋</g>。",
+      "aliases": [
+        "堆棧"
+      ]
     },
     {
       "id": "STAMPEDE",
-      "name": "驚逃",
+      "name": "奔踏",
       "slug": "stampede",
-      "descBase": "在你的回合結束時，隨機打出你<g>手牌</g>中的1張攻擊牌攻擊隨機敵人。",
-      "descUpgraded": "在你的回合結束時，隨機打出你<g>手牌</g>中的1張攻擊牌攻擊隨機敵人。"
+      "descBase": "在你的回合結束時，從你的<g>手牌</g>中打出 1 張隨機攻擊牌，並以隨機敵人為目標。",
+      "descUpgraded": "在你的回合結束時，從你的<g>手牌</g>中打出 1 張隨機攻擊牌，並以隨機敵人為目標。",
+      "aliases": [
+        "驚逃"
+      ]
     },
     {
       "id": "STARDUST",
       "name": "星塵",
       "slug": "stardust",
-      "descBase": "隨機對敵人造成5點傷害X次。",
-      "descUpgraded": "隨機對敵人造成7點傷害X次。"
+      "descBase": "對一名隨機敵人造成 X 次 5 點傷害。",
+      "descUpgraded": "對一名隨機敵人造成 X 次 7 點傷害。"
     },
     {
       "id": "STOKE",
       "name": "添柴",
       "slug": "stoke",
-      "descBase": "<g>消耗</g>所有<g>手牌</g>。\n每<g>消耗</g>一張牌，將1張隨機牌加入你的<g>手牌</g>。",
-      "descUpgraded": "<g>消耗</g>所有<g>手牌</g>。\n每<g>消耗</g>一張牌，將1張隨機已<g>升級</g>的牌加入你的<g>手牌</g>。"
+      "descBase": "<g>消耗</g>你的<g>手牌</g>。\n每以此方式<g>消耗</g>一張牌，就將 1 張隨機卡牌加入你的<g>手牌</g>。",
+      "descUpgraded": "<g>消耗</g>你的<g>手牌</g>。\n每以此方式<g>消耗</g>一張牌，就將 1 張<g>已升級</g>的隨機卡牌加入你的<g>手牌</g>。"
     },
     {
       "id": "STOMP",
-      "name": "踩踏",
+      "name": "踐踏",
       "slug": "stomp",
-      "descBase": "對所有敵人造成12點傷害。\n你在本回閤中每打出過一張攻擊牌，其耗能減少1<e/>。",
-      "descUpgraded": "對所有敵人造成15點傷害。\n你在本回閤中每打出過一張攻擊牌，其耗能減少1<e/>。"
+      "descBase": "對所有敵人造成 12 點傷害。\n本回合每打出一張攻擊牌，此牌耗能就減少 1 <e/>。",
+      "descUpgraded": "對所有敵人造成 15 點傷害。\n本回合每打出一張攻擊牌，此牌耗能就減少 1 <e/>。",
+      "aliases": [
+        "踩踏"
+      ]
     },
     {
       "id": "STONE_ARMOR",
-      "name": "岩石鎧甲",
+      "name": "岩石護甲",
       "slug": "stone-armor",
-      "descBase": "獲得4層<g>覆甲</g>。",
-      "descUpgraded": "獲得6層<g>覆甲</g>。"
+      "descBase": "獲得 4 層<g>鍍甲</g>。",
+      "descUpgraded": "獲得 6 層<g>鍍甲</g>。",
+      "aliases": [
+        "岩石鎧甲"
+      ]
     },
     {
       "id": "STORM",
       "name": "雷暴",
       "slug": "storm",
-      "descBase": "每當你打出一張能力牌時，<g>生成</g>1個<g>閃電</g>充能球。",
-      "descUpgraded": "每當你打出一張能力牌時，<g>生成</g>2個<g>閃電</g>充能球。"
+      "descBase": "每當你打出一張能力牌時，<g>凝聚</g> 1 個<g>閃電</g>。",
+      "descUpgraded": "每當你打出一張能力牌時，<g>凝聚</g> 2 個<g>閃電</g>。"
     },
     {
       "id": "STORM_OF_STEEL",
       "name": "鋼鐵風暴",
       "slug": "storm-of-steel",
-      "descBase": "丟棄所有<g>手牌</g>。\n每丟棄一張牌，就將一張<g>小刀</g>添加至你的<g>手牌</g>。",
-      "descUpgraded": "丟棄所有<g>手牌</g>。\n每丟棄一張牌，就將一張<g>小刀+</g>添加至你的<g>手牌</g>。"
+      "descBase": "丟棄你的<g>手牌</g>。\n每丟棄一張牌，就將 1 張<g>小刀</g>加入你的<g>手牌</g>。",
+      "descUpgraded": "丟棄你的<g>手牌</g>。\n每丟棄一張牌，就將 1 張<g>小刀+</g>加入你的<g>手牌</g>。"
     },
     {
       "id": "STRANGLE",
-      "name": "緊勒",
+      "name": "絞殺",
       "slug": "strangle",
-      "descBase": "造成8點傷害。\n你在這個回合內每出一張牌，該名敵人都會失去2點生命。",
-      "descUpgraded": "造成10點傷害。\n你在這個回合內每出一張牌，該名敵人都會失去3點生命。"
+      "descBase": "造成 8 點傷害。\n本回合每當你打出一張牌時，敵人失去 2 點生命。",
+      "descUpgraded": "造成 10 點傷害。\n本回合每當你打出一張牌時，敵人失去 3 點生命。",
+      "aliases": [
+        "緊勒"
+      ]
     },
     {
       "id": "STRATAGEM",
       "name": "計策",
       "slug": "stratagem",
-      "descBase": "每當你的<g>抽牌堆</g>打亂洗牌時，選擇一張牌放入你的<g>手牌</g>。",
-      "descUpgraded": "每當你的<g>抽牌堆</g>打亂洗牌時，選擇一張牌放入你的<g>手牌</g>。"
+      "descBase": "每當你的<g>抽牌堆</g>洗牌時，從中選擇一張牌放入你的<g>手牌</g>。",
+      "descUpgraded": "每當你的<g>抽牌堆</g>洗牌時，從中選擇一張牌放入你的<g>手牌</g>。"
     },
     {
       "id": "STRIKE_DEFECT",
       "name": "打擊",
       "slug": "strike-defect",
-      "descBase": "造成6點傷害。",
-      "descUpgraded": "造成9點傷害。"
+      "descBase": "造成 6 點傷害。",
+      "descUpgraded": "造成 9 點傷害。"
     },
     {
       "id": "STRIKE_IRONCLAD",
       "name": "打擊",
       "slug": "strike-ironclad",
-      "descBase": "造成6點傷害。",
-      "descUpgraded": "造成9點傷害。"
+      "descBase": "造成 6 點傷害。",
+      "descUpgraded": "造成 9 點傷害。"
     },
     {
       "id": "STRIKE_NECROBINDER",
       "name": "打擊",
       "slug": "strike-necrobinder",
-      "descBase": "造成6點傷害。",
-      "descUpgraded": "造成9點傷害。"
+      "descBase": "造成 6 點傷害。",
+      "descUpgraded": "造成 9 點傷害。"
     },
     {
       "id": "STRIKE_REGENT",
       "name": "打擊",
       "slug": "strike-regent",
-      "descBase": "造成6點傷害。",
-      "descUpgraded": "造成9點傷害。"
+      "descBase": "造成 6 點傷害。",
+      "descUpgraded": "造成 9 點傷害。"
     },
     {
       "id": "STRIKE_SILENT",
       "name": "打擊",
       "slug": "strike-silent",
-      "descBase": "造成6點傷害。",
-      "descUpgraded": "造成9點傷害。"
+      "descBase": "造成 6 點傷害。",
+      "descUpgraded": "造成 9 點傷害。"
     },
     {
       "id": "SUBROUTINE",
       "name": "子程序",
       "slug": "subroutine",
-      "descBase": "當你打出一張能力牌時，獲得<e/>。",
-      "descUpgraded": "當你打出一張能力牌時，獲得<e/>。"
+      "descBase": "每當你打出一張能力牌時，獲得 <e/>。",
+      "descUpgraded": "每當你打出一張能力牌時，獲得 <e/>。"
     },
     {
       "id": "SUCKER_PUNCH",
-      "name": "突然一拳",
+      "name": "突襲拳",
       "slug": "sucker-punch",
-      "descBase": "造成8點傷害。\n給予1層<g>虛弱</g>。",
-      "descUpgraded": "造成10點傷害。\n給予2層<g>虛弱</g>。"
+      "descBase": "造成 8 點傷害。\n施加 1 層<g>虛弱</g>。",
+      "descUpgraded": "造成 10 點傷害。\n施加 2 層<g>虛弱</g>。",
+      "aliases": [
+        "突然一拳"
+      ]
     },
     {
       "id": "SUMMON_FORTH",
-      "name": "徵召上前",
+      "name": "召喚現身",
       "slug": "summon-forth",
-      "descBase": "不論何處，將<g>君王之劍</g>放入你的<g>手牌</g>。\n<g>鑄造</g>8。",
-      "descUpgraded": "不論何處，將<g>君王之劍</g>放入你的<g>手牌</g>。\n<g>鑄造</g>11。"
+      "descBase": "無論<g>君王之劍</g>在何處，將其放入你的<g>手牌</g>。\n<g>鑄造</g> 8。",
+      "descUpgraded": "無論<g>君王之劍</g>在何處，將其放入你的<g>手牌</g>。\n<g>鑄造</g> 11。",
+      "aliases": [
+        "徵召上前"
+      ]
     },
     {
       "id": "SUNDER",
-      "name": "分離",
+      "name": "裂解",
       "slug": "sunder",
-      "descBase": "造成26點傷害。\n如果這張牌擊殺了敵人，則獲得<e>3</e>。",
-      "descUpgraded": "造成34點傷害。\n如果這張牌擊殺了敵人，則獲得<e>3</e>。",
+      "descBase": "造成 26 點傷害。\n若此牌殺死敵人，就獲得 <e/><e/><e/>。",
+      "descUpgraded": "造成 34 點傷害。\n若此牌殺死敵人，就獲得 <e/><e/><e/>。",
       "aliases": [
-        "裂解"
+        "分離"
       ]
     },
     {
       "id": "SUPERCRITICAL",
-      "name": "超臨界態",
+      "name": "超臨界",
       "slug": "supercritical",
-      "descBase": "獲得<e>4</e>。\n<g>消耗</g>。",
-      "descUpgraded": "獲得<e>6</e>。\n<g>消耗</g>。"
+      "descBase": "獲得 <e/><e/><e/><e/>。\n<g>消耗</g>。",
+      "descUpgraded": "獲得 <e/><e/><e/><e/><e/><e/>。\n<g>消耗</g>。",
+      "aliases": [
+        "超臨界態"
+      ]
     },
     {
       "id": "SUPERMASSIVE",
-      "name": "超質量體",
+      "name": "超大質量",
       "slug": "supermassive",
-      "descBase": "造成5點傷害。\n你在本場戰鬥中每生成過一張牌，這張牌就額外造成3點傷害。",
-      "descUpgraded": "造成5點傷害。\n你在本場戰鬥中每生成過一張牌，這張牌就額外造成4點傷害。"
+      "descBase": "造成 5 點傷害。\n本場戰鬥中每創造一張牌，就額外造成 3 點傷害。",
+      "descUpgraded": "造成 5 點傷害。\n本場戰鬥中每創造一張牌，就額外造成 4 點傷害。",
+      "aliases": [
+        "超質量體"
+      ]
     },
     {
       "id": "SUPPRESS",
       "name": "壓制",
       "slug": "suppress",
-      "descBase": "<g>固有</g>。\n造成11點傷害。\n給予3層<g>虛弱</g>。",
-      "descUpgraded": "<g>固有</g>。\n造成17點傷害。\n給予5層<g>虛弱</g>。"
+      "descBase": "<g>固有</g>。\n造成 11 點傷害。\n施加 3 層<g>虛弱</g>。",
+      "descUpgraded": "<g>固有</g>。\n造成 17 點傷害。\n施加 5 層<g>虛弱</g>。"
     },
     {
       "id": "SURVIVOR",
       "name": "生存者",
       "slug": "survivor",
-      "descBase": "獲得8點<g>格擋</g>。\n丟棄1張牌。",
-      "descUpgraded": "獲得11點<g>格擋</g>。\n丟棄1張牌。"
+      "descBase": "獲得 8 點<g>格擋</g>。\n丟棄 1 張牌。",
+      "descUpgraded": "獲得 11 點<g>格擋</g>。\n丟棄 1 張牌。"
     },
     {
       "id": "SWEEPING_BEAM",
-      "name": "掃蕩射線",
+      "name": "掃射光束",
       "slug": "sweeping-beam",
-      "descBase": "對所有敵人造成6點傷害。\n抽1張牌。",
-      "descUpgraded": "對所有敵人造成9點傷害。\n抽1張牌。"
+      "descBase": "對所有敵人造成 6 點傷害。\n抽 1 張牌。",
+      "descUpgraded": "對所有敵人造成 9 點傷害。\n抽 1 張牌。",
+      "aliases": [
+        "掃蕩射線"
+      ]
     },
     {
       "id": "SWORD_BOOMERANG",
-      "name": "飛劍迴旋鏢",
+      "name": "迴力劍",
       "slug": "sword-boomerang",
-      "descBase": "隨機對敵人造成3點傷害3次。",
-      "descUpgraded": "隨機對敵人造成3點傷害4次。"
+      "descBase": "對一名隨機敵人造成 3 次 3 點傷害。",
+      "descUpgraded": "對一名隨機敵人造成 4 次 3 點傷害。",
+      "aliases": [
+        "飛劍迴旋鏢"
+      ]
     },
     {
       "id": "SWORD_SAGE",
       "name": "劍聖",
       "slug": "sword-sage",
-      "descBase": "<g>君王之劍</g>獲得<g>重放</g>1。",
-      "descUpgraded": "<g>君王之劍</g>獲得<g>重放</g>1。"
+      "descBase": "<g>君王之劍</g>獲得<g>重演</g> 1。",
+      "descUpgraded": "<g>君王之劍</g>獲得<g>重演</g> 1。"
     },
     {
       "id": "SYNCHRONIZE",
       "name": "同步",
       "slug": "synchronize",
-      "descBase": "你每有一種不同的充能球，就在本回合獲得1點<g>集中</g>。",
-      "descUpgraded": "你每有一種不同的充能球，就在本回合獲得2點<g>集中</g>。"
+      "descBase": "在本回合你每擁有一種不同的充能球，就獲得 1 層<g>集中</g>。",
+      "descUpgraded": "在本回合你每擁有一種不同的充能球，就獲得 2 層<g>集中</g>。"
     },
     {
       "id": "SYNTHESIS",
-      "name": "人工合成",
+      "name": "合成",
       "slug": "synthesis",
-      "descBase": "造成14點傷害。\n你打出的下一張能力牌耗能變為0<e/>。",
-      "descUpgraded": "造成20點傷害。\n你打出的下一張能力牌耗能變為0<e/>。"
+      "descBase": "造成 14 點傷害。\n你打出的下一張能力牌耗能為 0 <e/>。",
+      "descUpgraded": "造成 20 點傷害。\n你打出的下一張能力牌耗能為 0 <e/>。",
+      "aliases": [
+        "人工合成"
+      ]
     },
     {
       "id": "TACTICIAN",
-      "name": "戰術大師",
+      "name": "戰術家",
       "slug": "tactician",
-      "descBase": "<g>奇巧</g>。\n獲得<e>1</e>。",
-      "descUpgraded": "<g>奇巧</g>。\n獲得<e>2</e>。"
+      "descBase": "<g>奇巧</g>。\n獲得 <e/>。",
+      "descUpgraded": "<g>奇巧</g>。\n獲得 <e/><e/>。",
+      "aliases": [
+        "戰術大師"
+      ]
     },
     {
       "id": "TAG_TEAM",
-      "name": "雙打組合",
+      "name": "聯手合擊",
       "slug": "tag-team",
-      "descBase": "造成11點傷害。\n其他玩家的下一張攻擊牌將在該名敵人身上額外生效一次。",
-      "descUpgraded": "造成15點傷害。\n其他玩家的下一張攻擊牌將在該名敵人身上額外生效一次。"
+      "descBase": "造成 11 點傷害。\n另一名玩家對該敵人打出的下一張攻擊牌會額外打出一次。",
+      "descUpgraded": "造成 15 點傷害。\n另一名玩家對該敵人打出的下一張攻擊牌會額外打出一次。",
+      "aliases": [
+        "雙打組合"
+      ]
     },
     {
       "id": "TANK",
-      "name": "肉盾",
+      "name": "坦護",
       "slug": "tank",
-      "descBase": "承受雙倍來自敵人的傷害。\n敵人的傷害對盟友減半。",
-      "descUpgraded": "承受雙倍來自敵人的傷害。\n敵人的傷害對盟友減半。"
+      "descBase": "敵人對你造成的傷害提高 %。\n敵人對盟友造成的傷害減少 %。",
+      "descUpgraded": "敵人對你造成的傷害提高 %。\n敵人對盟友造成的傷害減少 %。",
+      "aliases": [
+        "肉盾"
+      ]
     },
     {
       "id": "TAUNT",
-      "name": "挑釁",
+      "name": "嘲諷",
       "slug": "taunt",
-      "descBase": "獲得6點<g>格擋</g>。\n給予1層<g>易傷</g>。",
-      "descUpgraded": "獲得7點<g>格擋</g>。\n給予2層<g>易傷</g>。",
+      "descBase": "獲得 6 點<g>格擋</g>。\n施加 1 層<g>易傷</g>。",
+      "descUpgraded": "獲得 7 點<g>格擋</g>。\n施加 2 層<g>易傷</g>。",
       "aliases": [
-        "嘲諷"
+        "挑釁"
       ]
     },
     {
       "id": "TEAR_ASUNDER",
-      "name": "扯碎",
+      "name": "撕碎",
       "slug": "tear-asunder",
-      "descBase": "造成5點傷害。\n在本場戰鬥中，你每失去過一次生命值，這張牌就額外造成一次傷害。",
-      "descUpgraded": "造成7點傷害。\n在本場戰鬥中，你每失去過一次生命值，這張牌就額外造成一次傷害。"
+      "descBase": "造成 5 點傷害。\n本場戰鬥中，你每失去過一次生命，就額外擊中一次。",
+      "descUpgraded": "造成 7 點傷害。\n本場戰鬥中，你每失去過一次生命，就額外擊中一次。",
+      "aliases": [
+        "扯碎"
+      ]
     },
     {
       "id": "TEMPEST",
       "name": "暴風雨",
       "slug": "tempest",
-      "descBase": "<g>生成</g>X個<g>閃電</g>充能球。",
-      "descUpgraded": "<g>生成</g>X+1個<g>閃電</g>充能球。"
+      "descBase": "<g>凝聚</g> X 個<g>閃電</g>。",
+      "descUpgraded": "<g>凝聚</g> X+1 個<g>閃電</g>。"
     },
     {
       "id": "TERRAFORMING",
-      "name": "地形改造",
+      "name": "地貌改造",
       "slug": "terraforming",
-      "descBase": "獲得7點<g>活力</g>。",
-      "descUpgraded": "獲得10點<g>活力</g>。",
+      "descBase": "獲得 7 層<g>活力</g>。",
+      "descUpgraded": "獲得 10 層<g>活力</g>。",
       "aliases": [
-        "地貌改造"
+        "地形改造"
       ]
     },
     {
       "id": "TESLA_COIL",
       "name": "特斯拉線圈",
       "slug": "tesla-coil",
-      "descBase": "造成3點傷害。\n對該敵人觸發你的所有<g>閃電</g>充能球的被動。",
-      "descUpgraded": "造成4點傷害。\n對該敵人觸發你的所有<g>閃電</g>充能球的被動 兩次。"
+      "descBase": "造成 3 點傷害。\n觸發你所有<g>閃電</g>充能球對該敵人的被動能力。",
+      "descUpgraded": "造成 4 點傷害。\n觸發你所有<g>閃電</g>充能球對該敵人的被動能力兩次。"
+    },
+    {
+      "id": "THE_BALL",
+      "name": "魔球",
+      "slug": "the-ball",
+      "descBase": "造成 10 點傷害。\n本場戰鬥中，此牌傷害提高 10 點，然後將其交給一名隨機盟友。",
+      "descUpgraded": "造成 10 點傷害。\n本場戰鬥中，此牌傷害提高 15 點，然後將其交給一名隨機盟友。"
     },
     {
       "id": "THE_BOMB",
       "name": "炸彈",
       "slug": "the-bomb",
-      "descBase": "在3回合結束後，對所有敵人造成40點傷害。",
-      "descUpgraded": "在3回合結束後，對所有敵人造成50點傷害。"
+      "descBase": "3 個回合後，對所有敵人造成 40 點傷害。",
+      "descUpgraded": "3 個回合後，對所有敵人造成 50 點傷害。"
     },
     {
       "id": "THE_GAMBIT",
       "name": "孤注一擲",
       "slug": "the-gambit",
-      "descBase": "獲得50點<g>格擋</g>。\n如果你在本場戰鬥中受到未被格擋的攻擊傷害，則立刻死亡。",
-      "descUpgraded": "獲得75點<g>格擋</g>。\n如果你在本場戰鬥中受到未被格擋的攻擊傷害，則立刻死亡。"
+      "descBase": "獲得 50 點<g>格擋</g>。\n若你在本場戰鬥受到未被格擋的攻擊傷害，就會死亡。",
+      "descUpgraded": "獲得 75 點<g>格擋</g>。\n若你在本場戰鬥受到未被格擋的攻擊傷害，就會死亡。"
     },
     {
       "id": "THE_HUNT",
       "name": "狩獵",
       "slug": "the-hunt",
-      "descBase": "造成10點傷害。\n<g>斬殺</g>時，額外獲得一次卡牌獎勵。\n<g>消耗</g>。",
-      "descUpgraded": "造成15點傷害。\n<g>斬殺</g>時，額外獲得一次卡牌獎勵。\n<g>消耗</g>。"
+      "descBase": "造成 10 點傷害。\n<g>致死</g>時，獲得一份額外卡牌獎勵。\n<g>消耗</g>。",
+      "descUpgraded": "造成 15 點傷害。\n<g>致死</g>時，獲得一份額外卡牌獎勵。\n<g>消耗</g>。"
     },
     {
       "id": "THE_SCYTHE",
       "name": "巨鐮",
       "slug": "the-scythe",
-      "descBase": "造成13點傷害。\n這張牌在本局遊戲中的傷害永久性增加5。\n<g>消耗</g>。",
-      "descUpgraded": "造成13點傷害。\n這張牌在本局遊戲中的傷害永久性增加7。\n<g>消耗</g>。"
+      "descBase": "造成 13 點傷害。\n使此牌的傷害永久提高 5 點。\n<g>消耗</g>。",
+      "descUpgraded": "造成 13 點傷害。\n使此牌的傷害永久提高 7 點。\n<g>消耗</g>。"
     },
     {
       "id": "THE_SEALED_THRONE",
       "name": "封印王座",
       "slug": "the-sealed-throne",
-      "descBase": "你每打出一張牌，獲得<s>1</s>。",
-      "descUpgraded": "你每打出一張牌，獲得<s>1</s>。"
+      "descBase": "每當你打出一張牌時，獲得 1<s/>。",
+      "descUpgraded": "每當你打出一張牌時，獲得 1<s/>。"
     },
     {
       "id": "THE_SMITH",
-      "name": "鑄劍者",
+      "name": "鍛匠",
       "slug": "the-smith",
-      "descBase": "<g>鑄造</g>30。",
-      "descUpgraded": "<g>鑄造</g>40。"
+      "descBase": "<g>鑄造</g> 30。",
+      "descUpgraded": "<g>鑄造</g> 40。",
+      "aliases": [
+        "鑄劍者"
+      ]
     },
     {
       "id": "THINKING_AHEAD",
       "name": "深謀遠慮",
       "slug": "thinking-ahead",
-      "descBase": "抽2張牌。\n將<g>手牌</g>中的一張牌放到你的<g>抽牌堆</g>的頂端。\n<g>消耗</g>。",
-      "descUpgraded": "抽2張牌。\n將<g>手牌</g>中的一張牌放到你的<g>抽牌堆</g>的頂端。"
+      "descBase": "抽 2 張牌。\n將你<g>手牌</g>中的 1 張牌放到<g>抽牌堆</g>頂部。\n<g>消耗</g>。",
+      "descUpgraded": "抽 2 張牌。\n將你<g>手牌</g>中的 1 張牌放到<g>抽牌堆</g>頂部。"
     },
     {
       "id": "THRASH",
-      "name": "痛毆",
+      "name": "狂擊",
       "slug": "thrash",
-      "descBase": "造成4點傷害兩次。\n<g>消耗</g>你的<g>手牌</g>中隨機一張攻擊牌，並將它的傷害添加給這張牌。",
-      "descUpgraded": "造成6點傷害兩次。\n<g>消耗</g>你的<g>手牌</g>中隨機一張攻擊牌，並將它的傷害添加給這張牌。"
+      "descBase": "造成 2 次 4 點傷害。\n隨機<g>消耗</g>你<g>手牌</g>中的一張攻擊牌，並將其傷害加到此牌上。",
+      "descUpgraded": "造成 2 次 6 點傷害。\n隨機<g>消耗</g>你<g>手牌</g>中的一張攻擊牌，並將其傷害加到此牌上。",
+      "aliases": [
+        "痛毆"
+      ]
     },
     {
       "id": "THRUMMING_HATCHET",
-      "name": "無休手斧",
+      "name": "震鳴手斧",
       "slug": "thrumming-hatchet",
-      "descBase": "造成11點傷害。\n在你的下個回合開始時，將此卡返回你的<g>手牌</g>。",
-      "descUpgraded": "造成14點傷害。\n在你的下個回合開始時，將此卡返回你的<g>手牌</g>。"
+      "descBase": "造成 11 點傷害。\n下回合開始時，將此牌放回你的<g>手牌</g>。",
+      "descUpgraded": "造成 14 點傷害。\n下回合開始時，將此牌放回你的<g>手牌</g>。",
+      "aliases": [
+        "無休手斧"
+      ]
     },
     {
       "id": "THUNDER",
       "name": "雷霆",
       "slug": "thunder",
-      "descBase": "每當你<g>激發閃電</g>充能球時，對被命中的敵人造成8點傷害。",
-      "descUpgraded": "每當你<g>激發閃電</g>充能球時，對被命中的敵人造成11點傷害。"
+      "descBase": "每當你<g>激發閃電</g>時，對每名被擊中的敵人造成 8 點傷害。",
+      "descUpgraded": "每當你<g>激發閃電</g>時，對每名被擊中的敵人造成 11 點傷害。"
     },
     {
       "id": "THUNDERCLAP",
-      "name": "閃電霹靂",
+      "name": "雷霆霹靂",
       "slug": "thunderclap",
-      "descBase": "對所有敵人造成4點傷害，給予1層<g>易傷</g>。",
-      "descUpgraded": "對所有敵人造成7點傷害，給予1層<g>易傷</g>。"
+      "descBase": "對所有敵人造成 4 點傷害並施加 1 層<g>易傷</g>。",
+      "descUpgraded": "對所有敵人造成 7 點傷害並施加 1 層<g>易傷</g>。",
+      "aliases": [
+        "閃電霹靂"
+      ]
     },
     {
       "id": "TIMES_UP",
       "name": "大限已至",
       "slug": "times-up",
-      "descBase": "造成等量於該敵人身上的<g>災厄</g>層數的傷害。",
-      "descUpgraded": "<g>保留</g>。\n造成等量於該敵人身上的<g>災厄</g>層數的傷害。"
+      "descBase": "造成與敵人<g>惡兆</g>層數等量的傷害。",
+      "descUpgraded": "<g>保留</g>。\n造成與敵人<g>惡兆</g>層數等量的傷害。"
     },
     {
       "id": "TOOLS_OF_THE_TRADE",
-      "name": "必備工具",
+      "name": "行家工具",
       "slug": "tools-of-the-trade",
-      "descBase": "在你的回合開始時，抽1張牌，丟棄1張牌。",
-      "descUpgraded": "在你的回合開始時，抽1張牌，丟棄1張牌。"
+      "descBase": "在你的回合開始時，抽 1 張牌並丟棄 1 張牌。",
+      "descUpgraded": "在你的回合開始時，抽 1 張牌並丟棄 1 張牌。",
+      "aliases": [
+        "必備工具"
+      ]
     },
     {
       "id": "TORIC_TOUGHNESS",
-      "name": "堅韌之環",
+      "name": "環狀韌性",
       "slug": "toric-toughness",
-      "descBase": "獲得5點<g>格擋</g>。\n在接下來的2個回合開始時，獲得5點<g>格擋</g>。",
-      "descUpgraded": "獲得7點<g>格擋</g>。\n在接下來的2個回合開始時，獲得7點<g>格擋</g>。"
+      "descBase": "獲得 5 點<g>格擋</g>。\n接下來 2 個回合開始時，獲得 5 點<g>格擋</g>。",
+      "descUpgraded": "獲得 7 點<g>格擋</g>。\n接下來 2 個回合開始時，獲得 7 點<g>格擋</g>。",
+      "aliases": [
+        "堅韌之環"
+      ]
     },
     {
       "id": "TRACKING",
-      "name": "跟蹤",
+      "name": "追蹤",
       "slug": "tracking",
-      "descBase": "<g>虛弱</g>的敵人受到攻擊牌造成的傷害增加50%。",
-      "descUpgraded": "<g>虛弱</g>的敵人受到攻擊牌造成的傷害增加50%。",
+      "descBase": "<g>虛弱</g>狀態的敵人受到攻擊牌的傷害增加 50%。",
+      "descUpgraded": "<g>虛弱</g>狀態的敵人受到攻擊牌的傷害增加 50%。",
       "aliases": [
-        "追蹤"
+        "跟蹤"
       ]
     },
     {
       "id": "TRANSFIGURE",
       "name": "重構",
       "slug": "transfigure",
-      "descBase": "給一張<g>手牌</g>添加<g>重放</g>。\n其耗能增加1<e>1</e>。\n<g>消耗</g>。",
-      "descUpgraded": "給一張<g>手牌</g>添加<g>重放</g>。\n其耗能增加1<e>1</e>。"
+      "descBase": "為你<g>手牌</g>中的一張牌附加<g>重演</g>。\n該牌會額外消耗 <e/>。\n<g>消耗</g>。",
+      "descUpgraded": "為你<g>手牌</g>中的一張牌附加<g>重演</g>。\n該牌會額外消耗 <e/>。"
     },
     {
       "id": "TRASH_TO_TREASURE",
-      "name": "化廢為寶",
+      "name": "化腐朽為神奇",
       "slug": "trash-to-treasure",
-      "descBase": "每當你生成狀態牌的時候，隨機<g>生成</g>一個充能球。",
-      "descUpgraded": "每當你生成狀態牌的時候，隨機<g>生成</g>一個充能球。",
+      "descBase": "每當你創造一張狀態牌時，<g>凝聚</g> 1 個隨機充能球。",
+      "descUpgraded": "每當你創造一張狀態牌時，<g>凝聚</g> 1 個隨機充能球。",
       "aliases": [
-        "化腐朽為神奇"
+        "化廢為寶"
       ]
     },
     {
       "id": "TREMBLE",
       "name": "戰慄",
       "slug": "tremble",
-      "descBase": "給予3層<g>易傷</g>。\n<g>消耗</g>。",
-      "descUpgraded": "給予4層<g>易傷</g>。\n<g>消耗</g>。"
+      "descBase": "施加 3 層<g>易傷</g>。\n<g>消耗</g>。",
+      "descUpgraded": "施加 4 層<g>易傷</g>。\n<g>消耗</g>。"
     },
     {
       "id": "TRUE_GRIT",
-      "name": "堅毅",
+      "name": "堅毅不屈",
       "slug": "true-grit",
-      "descBase": "獲得7點<g>格擋</g>。\n 隨機<g>消耗</g>1張牌。",
-      "descUpgraded": "獲得9點<g>格擋</g>。\n<g>消耗</g>1張牌。"
+      "descBase": "獲得 7 點<g>格擋</g>。\n隨機<g>消耗</g> 1 張牌。",
+      "descUpgraded": "獲得 9 點<g>格擋</g>。\n<g>消耗</g> 1 張牌。",
+      "aliases": [
+        "堅毅"
+      ]
     },
     {
       "id": "TURBO",
-      "name": "內核加速",
+      "name": "渦輪加速",
       "slug": "turbo",
-      "descBase": "獲得<e>2</e>。\n將一張<g>虛空</g>加入你的<g>棄牌堆</g>。",
-      "descUpgraded": "獲得<e>3</e>。\n將一張<g>虛空</g>加入你的<g>棄牌堆</g>。"
+      "descBase": "獲得 <e/><e/>。\n將一張<g>虛空</g>牌加入你的<g>棄牌堆</g>。",
+      "descUpgraded": "獲得 <e/><e/><e/>。\n將一張<g>虛空</g>牌加入你的<g>棄牌堆</g>。",
+      "aliases": [
+        "內核加速"
+      ]
+    },
+    {
+      "id": "TUTOR",
+      "name": "指導",
+      "slug": "tutor",
+      "descBase": "另一名玩家從其<g>抽牌堆</g>中選擇一張牌加入其<g>手牌</g>。",
+      "descUpgraded": "另一名玩家從其<g>抽牌堆</g>中選擇一張牌加入其<g>手牌</g>。"
     },
     {
       "id": "TWIN_STRIKE",
       "name": "雙重打擊",
       "slug": "twin-strike",
-      "descBase": "造成5點傷害兩次。",
-      "descUpgraded": "造成7點傷害兩次。"
+      "descBase": "造成 2 次 5 點傷害。",
+      "descUpgraded": "造成 2 次 7 點傷害。"
     },
     {
       "id": "TYRANNY",
       "name": "暴政",
       "slug": "tyranny",
-      "descBase": "在你的回合開始時，抽一張牌，並從你的<g>手牌</g>中<g>消耗</g>1張牌。",
-      "descUpgraded": "<g>固有</g>。\n在你的回合開始時，抽一張牌，並從你的<g>手牌</g>中<g>消耗</g>1張牌。"
+      "descBase": "在你的回合開始時，抽 1 張牌並<g>消耗</g>你<g>手牌</g>中的 1 張牌。",
+      "descUpgraded": "<g>固有</g>。\n在你的回合開始時，抽 1 張牌並<g>消耗</g>你<g>手牌</g>中的 1 張牌。"
     },
     {
       "id": "ULTIMATE_DEFEND",
       "name": "究極防禦",
       "slug": "ultimate-defend",
-      "descBase": "獲得11點<g>格擋</g>。",
-      "descUpgraded": "獲得15點<g>格擋</g>。"
+      "descBase": "獲得 11 點<g>格擋</g>。",
+      "descUpgraded": "獲得 15 點<g>格擋</g>。"
     },
     {
       "id": "ULTIMATE_STRIKE",
       "name": "究極打擊",
       "slug": "ultimate-strike",
-      "descBase": "造成14點傷害。",
-      "descUpgraded": "造成20點傷害。"
+      "descBase": "造成 14 點傷害。",
+      "descUpgraded": "造成 20 點傷害。"
     },
     {
       "id": "UNDEATH",
       "name": "不死",
       "slug": "undeath",
-      "descBase": "獲得7點<g>格擋</g>。\n在<g>棄牌堆</g>放入一張此牌的複製品。",
-      "descUpgraded": "獲得9點<g>格擋</g>。\n在<g>棄牌堆</g>放入一張此牌的複製品。"
+      "descBase": "獲得 7 點<g>格擋</g>。\n將此牌的一張複製品加入你的<g>棄牌堆</g>。",
+      "descUpgraded": "獲得 9 點<g>格擋</g>。\n將此牌的一張複製品加入你的<g>棄牌堆</g>。"
+    },
+    {
+      "id": "UNDERWORLD",
+      "name": "幽冥之界",
+      "slug": "underworld",
+      "descBase": "在本回合每當其他玩家造成攻擊傷害時，施加等量<g>惡兆</g>。\n<g>消耗</g>。",
+      "descUpgraded": "在本回合每當其他玩家造成攻擊傷害時，施加等量<g>惡兆</g>。"
     },
     {
       "id": "UNLEASH",
-      "name": "出擊",
+      "name": "解縛出擊",
       "slug": "unleash",
-      "descBase": "<g>奧斯提</g>造成6點傷害。\n這張牌額外造成等量於<g>奧斯提</g>當前生命值的傷害。",
-      "descUpgraded": "<g>奧斯提</g>造成9點傷害。\n這張牌額外造成等量於<g>奧斯提</g>當前生命值的傷害。"
+      "descBase": "<g>奧斯提</g>造成 6 點傷害。\n額外造成與<g>奧斯提</g>目前生命等量的傷害。",
+      "descUpgraded": "<g>奧斯提</g>造成 9 點傷害。\n額外造成與<g>奧斯提</g>目前生命等量的傷害。",
+      "aliases": [
+        "出擊"
+      ]
     },
     {
       "id": "UNMOVABLE",
       "name": "堅定不移",
       "slug": "unmovable",
-      "descBase": "翻倍你每回合第一次從卡牌中獲得的<g>格擋</g>。",
-      "descUpgraded": "翻倍你每回合第一次從卡牌中獲得的<g>格擋</g>。"
+      "descBase": "你每回合第一次從卡牌獲得<g>格擋</g>時，該次獲得量加倍。",
+      "descUpgraded": "你每回合第一次從卡牌獲得<g>格擋</g>時，該次獲得量加倍。"
     },
     {
       "id": "UNRELENTING",
-      "name": "無情猛攻",
+      "name": "毫不留情",
       "slug": "unrelenting",
-      "descBase": "造成14點傷害。\n你打出的下一張攻擊牌耗能變為0<e/>。",
-      "descUpgraded": "造成20點傷害。\n你打出的下一張攻擊牌耗能變為0<e/>。"
+      "descBase": "造成 14 點傷害。\n你打出的下一張攻擊牌耗能為 0 <e/>。",
+      "descUpgraded": "造成 20 點傷害。\n你打出的下一張攻擊牌耗能為 0 <e/>。",
+      "aliases": [
+        "無情猛攻"
+      ]
     },
     {
       "id": "UNTOUCHABLE",
       "name": "觸不可及",
       "slug": "untouchable",
-      "descBase": "<g>奇巧</g>。\n獲得6點<g>格擋</g>。",
-      "descUpgraded": "<g>奇巧</g>。\n獲得9點<g>格擋</g>。"
+      "descBase": "<g>奇巧</g>。\n獲得 6 點<g>格擋</g>。",
+      "descUpgraded": "<g>奇巧</g>。\n獲得 9 點<g>格擋</g>。"
     },
     {
       "id": "UP_MY_SLEEVE",
       "name": "袖裡乾坤",
       "slug": "up-my-sleeve",
-      "descBase": "將3張<g>小刀</g>加入你的<g>手牌</g>。\n這張牌的耗能減少1。",
-      "descUpgraded": "將4張<g>小刀</g>加入你的<g>手牌</g>。\n這張牌的耗能減少1。"
+      "descBase": "將 3 張<g>小刀</g>加入你的<g>手牌</g>。\n此牌耗能減少 1 點。",
+      "descUpgraded": "將 4 張<g>小刀</g>加入你的<g>手牌</g>。\n此牌耗能減少 1 點。"
     },
     {
       "id": "UPPERCUT",
       "name": "上勾拳",
       "slug": "uppercut",
-      "descBase": "造成13點傷害。\n給予1層<g>虛弱</g>。\n給予1層<g>易傷</g>。",
-      "descUpgraded": "造成13點傷害。\n給予2層<g>虛弱</g>。\n給予2層<g>易傷</g>。"
+      "descBase": "造成 13 點傷害。\n施加 1 層<g>虛弱</g>。\n施加 1 層<g>易傷</g>。",
+      "descUpgraded": "造成 13 點傷害。\n施加 2 層<g>虛弱</g>。\n施加 2 層<g>易傷</g>。"
     },
     {
       "id": "UPROAR",
       "name": "騷動",
       "slug": "uproar",
-      "descBase": "造成6點傷害兩次。\n隨機打出你的<g>抽牌堆</g>中的1張攻擊牌。",
-      "descUpgraded": "造成8點傷害兩次。\n隨機打出你的<g>抽牌堆</g>中的1張攻擊牌。"
+      "descBase": "造成 2 次 6 點傷害。\n打出你<g>抽牌堆</g>中的一張隨機攻擊牌。",
+      "descUpgraded": "造成 2 次 8 點傷害。\n打出你<g>抽牌堆</g>中的一張隨機攻擊牌。"
     },
     {
       "id": "VEILPIERCER",
-      "name": "刺破帷幕",
+      "name": "帷幕貫穿",
       "slug": "veilpiercer",
-      "descBase": "造成10點傷害。\n你打出的下一張<g>虛無</g>牌耗能變為0<e/>。",
-      "descUpgraded": "造成13點傷害。\n你打出的下一張<g>虛無</g>牌耗能變為0<e/>。"
+      "descBase": "造成 10 點傷害。\n你打出的下一張<g>虛無</g>牌耗能為 0 <e/>。",
+      "descUpgraded": "造成 13 點傷害。\n你打出的下一張<g>虛無</g>牌耗能為 0 <e/>。",
+      "aliases": [
+        "刺破帷幕"
+      ]
     },
     {
       "id": "VENERATE",
-      "name": "崇拜",
+      "name": "崇敬",
       "slug": "venerate",
-      "descBase": "獲得<s>2</s>。",
-      "descUpgraded": "獲得<s>3</s>。"
+      "descBase": "獲得 2<s/>。",
+      "descUpgraded": "獲得 3<s/>。",
+      "aliases": [
+        "崇拜"
+      ]
     },
     {
       "id": "VICIOUS",
-      "name": "兇惡",
+      "name": "兇狠",
       "slug": "vicious",
-      "descBase": "每當你給予<g>易傷</g>時，抽1張牌。",
-      "descUpgraded": "每當你給予<g>易傷</g>時，抽2張牌。"
+      "descBase": "每當你施加<g>易傷</g>時，抽 1 張牌。",
+      "descUpgraded": "每當你施加<g>易傷</g>時，抽 2 張牌。",
+      "aliases": [
+        "兇惡"
+      ]
     },
     {
       "id": "VOID_FORM",
       "name": "虛空形態",
       "slug": "void-form",
-      "descBase": "<g>虛無</g>。\n結束你的回合。\n你可以免費打出每回合的前2張牌。",
-      "descUpgraded": "結束你的回合。\n你可以免費打出每回合的前2張牌。"
+      "descBase": "<g>虛無</g>。\n結束你的回合。\n你每回合打出的前 2 張牌均可免費打出。",
+      "descUpgraded": "結束你的回合。\n你每回合打出的前 2 張牌均可免費打出。"
     },
     {
       "id": "VOLLEY",
       "name": "連射",
       "slug": "volley",
-      "descBase": "隨機對敵人造成10點傷害X次。",
-      "descUpgraded": "隨機對敵人造成14點傷害X次。"
+      "descBase": "對一名隨機敵人造成 X 次 10 點傷害。",
+      "descUpgraded": "對一名隨機敵人造成 X 次 14 點傷害。"
     },
     {
       "id": "VOLTAIC",
       "name": "電流相生",
       "slug": "voltaic",
-      "descBase": "<g>生成</g>等量於你在這場戰鬥中<g>生成過</g>的<g>閃電</g>充能球數量的<g>閃電</g>充能球。\n<g>消耗</g>。",
-      "descUpgraded": "<g>生成</g>等量於你在這場戰鬥中<g>生成過</g>的<g>閃電</g>充能球數量的<g>閃電</g>充能球。"
+      "descBase": "本場戰鬥中已<g>凝聚</g>多少個<g>閃電</g>，就再<g>凝聚等量的閃電</g>。\n<g>消耗</g>。",
+      "descUpgraded": "本場戰鬥中已<g>凝聚</g>多少個<g>閃電</g>，就再<g>凝聚等量的閃電</g>。"
     },
     {
       "id": "WELL_LAID_PLANS",
-      "name": "計劃妥當",
+      "name": "計畫妥當",
       "slug": "well-laid-plans",
-      "descBase": "在你的回合結束時，不再丟棄<g>手牌</g>。",
-      "descUpgraded": "在你的回合結束時，不再丟棄<g>手牌</g>。",
-      "notes": "單人與多人遊戲皆可取得。",
+      "descBase": "在你的回合結束時，你不再丟棄<g>手牌</g>。",
+      "descUpgraded": "在你的回合結束時，你不再丟棄<g>手牌</g>。",
       "aliases": [
-        "計畫妥當"
+        "計劃妥當"
       ]
     },
     {
       "id": "WHIRLWIND",
       "name": "旋風斬",
       "slug": "whirlwind",
-      "descBase": "對所有敵人造成5點傷害X次。",
-      "descUpgraded": "對所有敵人造成8點傷害X次。"
+      "descBase": "對所有敵人造成 X 次 5 點傷害。",
+      "descUpgraded": "對所有敵人造成 X 次 8 點傷害。"
     },
     {
       "id": "WHISTLE",
       "name": "吹哨",
       "slug": "whistle",
-      "descBase": "造成33點傷害。\n<g>擊暈</g>該敵人。\n<g>消耗</g>。",
-      "descUpgraded": "造成44點傷害。\n<g>擊暈</g>該敵人。\n<g>消耗</g>。"
+      "descBase": "造成 33 點傷害。\n<g>擊暈</g>敵人。\n<g>消耗</g>。",
+      "descUpgraded": "造成 44 點傷害。\n<g>擊暈</g>敵人。\n<g>消耗</g>。"
     },
     {
       "id": "WHITE_NOISE",
-      "name": "白噪聲",
+      "name": "白噪音",
       "slug": "white-noise",
-      "descBase": "將一張隨機能力牌加入你的<g>手牌</g>。這張牌在本回合內免費打出。\n<g>消耗</g>。",
-      "descUpgraded": "將一張隨機能力牌加入你的<g>手牌</g>。這張牌在本回合內免費打出。\n<g>消耗</g>。"
+      "descBase": "將一張隨機能力牌加入你的<g>手牌</g>。本回合可免費打出。\n<g>消耗</g>。",
+      "descUpgraded": "將一張隨機能力牌加入你的<g>手牌</g>。本回合可免費打出。\n<g>消耗</g>。",
+      "aliases": [
+        "白噪聲"
+      ]
     },
     {
       "id": "WISH",
-      "name": "許願",
+      "name": "祈願",
       "slug": "wish",
       "descBase": "將你<g>抽牌堆</g>中的一張牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
-      "descUpgraded": "<g>保留</g>。\n將你<g>抽牌堆</g>中的一張牌放入你的<g>手牌</g>。\n<g>消耗</g>。"
+      "descUpgraded": "<g>保留</g>。\n將你<g>抽牌堆</g>中的一張牌放入你的<g>手牌</g>。\n<g>消耗</g>。",
+      "aliases": [
+        "許願"
+      ]
     },
     {
       "id": "WISP",
-      "name": "鬼火",
+      "name": "幽火",
       "slug": "wisp",
-      "descBase": "獲得<e>1</e>。\n<g>消耗</g>。",
-      "descUpgraded": "<g>保留</g>。\n獲得<e>1</e>。\n<g>消耗</g>。"
+      "descBase": "獲得 <e/>。\n<g>消耗</g>。",
+      "descUpgraded": "<g>保留</g>。\n獲得 <e/>。\n<g>消耗</g>。",
+      "aliases": [
+        "鬼火"
+      ]
     },
     {
       "id": "WRAITH_FORM",
       "name": "幽魂形態",
       "slug": "wraith-form",
-      "descBase": "獲得2<g>無實體</g>。\n在你的回合開始時，失去1點<g>敏捷</g>。",
-      "descUpgraded": "獲得3<g>無實體</g>。\n在你的回合開始時，失去1點<g>敏捷</g>。"
+      "descBase": "獲得 2 層<g>無形</g>。\n在你的回合開始時，失去 1 層<g>敏捷</g>。",
+      "descUpgraded": "獲得 3 層<g>無形</g>。\n在你的回合開始時，失去 1 層<g>敏捷</g>。"
     },
     {
       "id": "WRITHE",
-      "name": "苦惱",
+      "name": "掙扭",
       "slug": "writhe",
-      "descBase": "<g>不能被打出</g>。\n<g>固有</g>。",
-      "descUpgraded": "<g>不能被打出</g>。\n<g>固有</g>。"
+      "descBase": "<g>無法打出</g>。\n<g>固有</g>。",
+      "descUpgraded": "<g>無法打出</g>。\n<g>固有</g>。",
+      "aliases": [
+        "苦惱"
+      ]
     },
     {
       "id": "WROUGHT_IN_WAR",
       "name": "戰火鑄就",
       "slug": "wrought-in-war",
-      "descBase": "造成7點傷害。\n<g>鑄造</g>7。",
-      "descUpgraded": "造成9點傷害。\n<g>鑄造</g>9。"
+      "descBase": "造成 7 點傷害。\n<g>鑄造</g> 7。",
+      "descUpgraded": "造成 9 點傷害。\n<g>鑄造</g> 9。"
     },
     {
       "id": "ZAP",
       "name": "電擊",
       "slug": "zap",
-      "descBase": "<g>生成</g>1個<g>閃電</g>充能球。",
-      "descUpgraded": "<g>生成</g>1個<g>閃電</g>充能球。"
+      "descBase": "<g>凝聚</g> 1 個<g>閃電</g>。",
+      "descUpgraded": "<g>凝聚</g> 1 個<g>閃電</g>。"
     }
-  ],
-  "balanceUpdate": {
-    "source": "User-provided balance changes",
-    "updatedDate": "2026-11-19"
-  }
+  ]
 }

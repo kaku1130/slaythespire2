@@ -29,8 +29,17 @@ const guide=JSON.parse(fs.readFileSync('data/builds/guide.json','utf8'));
     const group=panel.locator('.build-guide-cards').nth(index);
     assert.deepEqual((await group.locator('.build-guide-card').evaluateAll(nodes=>nodes.map(n=>n.dataset.cardId))).sort(),[...build[role]].sort());
     const bad=await group.evaluate(group=>{
-     const r=group.getBoundingClientRect();return [...group.children].filter(n=>{const b=n.getBoundingClientRect();return Math.abs(b.width-r.width)>1||b.left<r.left-1||b.right>r.right+1;}).length;
-    });assert.equal(bad,0,id+' '+role+' one full-width column');
+     const r=group.getBoundingClientRect(),gap=parseFloat(getComputedStyle(group).columnGap),width=(r.width-gap)/2;
+     return [...group.children].filter(n=>{const b=n.getBoundingClientRect();return Math.abs(b.width-width)>1||b.left<r.left-1||b.right>r.right+1;}).length;
+    });assert.equal(bad,0,id+' '+role+' two equal columns');
+    const misaligned=await group.evaluate(group=>{
+     const cards=[...group.children],errors=[];
+     for(let i=0;i+1<cards.length;i+=2)for(const selector of ['.detail-name-zh','.detail-title a:last-child','.detail-effect-panel','.detail-stat dt','.card-detail']){
+      const a=cards[i].querySelector(selector).getBoundingClientRect(),b=cards[i+1].querySelector(selector).getBoundingClientRect();
+      if(Math.abs(a.top-b.top)>1||(selector==='.card-detail'&&Math.abs(a.height-b.height)>1))errors.push(selector+' '+cards[i].dataset.cardId+' / '+cards[i+1].dataset.cardId);
+     }
+     return errors;
+    });assert.deepEqual(misaligned,[],id+' '+role+' paired card alignment');
     for(const card of await group.locator('.card-detail').all()) {
      assert.equal(await card.locator('.detail-keyword').count(),0);
      assert.equal(await card.locator('.detail-meta :is(.detail-character,.detail-rarity,.detail-type)').count(),0);
@@ -43,7 +52,7 @@ const guide=JSON.parse(fs.readFileSync('data/builds/guide.json','utf8'));
    }
   }
   assert.deepEqual(errors,[]);
-  console.log('PASS '+width+'px: all 25 guides, core/support membership, unique headings, full-width single-column card details');
+  console.log('PASS '+width+'px: all 25 guides, core/support membership, unique headings, two-column card details');
   await page.close();
  }
 }finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

@@ -1,7 +1,7 @@
 {
   "source": "https://slaythespire2.net/card-tier-list",
-  "version": "Live v0.107.1",
-  "retrievedDate": "2026-11-08",
+  "version": "v0.111.1",
+  "retrievedDate": "2026-11-20",
   "rankings": [
     {
       "id": "CRIMSON_MANTLE",
@@ -10,14 +10,14 @@
       "tier": "S"
     },
     {
-      "id": "CRUELTY",
-      "name": "Cruelty",
+      "id": "DARK_EMBRACE",
+      "name": "Dark Embrace",
       "category": "Ironclad",
       "tier": "S"
     },
     {
-      "id": "DARK_EMBRACE",
-      "name": "Dark Embrace",
+      "id": "DOMINATE",
+      "name": "Dominate",
       "category": "Ironclad",
       "tier": "S"
     },
@@ -64,6 +64,12 @@
       "tier": "S"
     },
     {
+      "id": "BLOODLETTING",
+      "name": "Bloodletting",
+      "category": "Ironclad",
+      "tier": "S"
+    },
+    {
       "id": "BURNING_PACT",
       "name": "Burning Pact",
       "category": "Ironclad",
@@ -76,8 +82,8 @@
       "tier": "S"
     },
     {
-      "id": "DOMINATE",
-      "name": "Dominate",
+      "id": "CRUELTY",
+      "name": "Cruelty",
       "category": "Ironclad",
       "tier": "S"
     },
@@ -90,12 +96,6 @@
     {
       "id": "UPPERCUT",
       "name": "Uppercut",
-      "category": "Ironclad",
-      "tier": "S"
-    },
-    {
-      "id": "BLOODLETTING",
-      "name": "Bloodletting",
       "category": "Ironclad",
       "tier": "S"
     },
@@ -262,12 +262,6 @@
       "tier": "B"
     },
     {
-      "id": "TAUNT",
-      "name": "Taunt",
-      "category": "Ironclad",
-      "tier": "B"
-    },
-    {
       "id": "UNRELENTING",
       "name": "Unrelenting",
       "category": "Ironclad",
@@ -294,6 +288,12 @@
     {
       "id": "IRON_WAVE",
       "name": "Iron Wave",
+      "category": "Ironclad",
+      "tier": "B"
+    },
+    {
+      "id": "TAUNT",
+      "name": "Taunt",
       "category": "Ironclad",
       "tier": "B"
     },
@@ -538,6 +538,12 @@
       "tier": "S"
     },
     {
+      "id": "WELL_LAID_PLANS",
+      "name": "Well-Laid Plans",
+      "category": "Silent",
+      "tier": "S"
+    },
+    {
       "id": "ACROBATICS",
       "name": "Acrobatics",
       "category": "Silent",
@@ -574,12 +580,6 @@
       "tier": "S"
     },
     {
-      "id": "WELL_LAID_PLANS",
-      "name": "Well-Laid Plans",
-      "category": "Silent",
-      "tier": "S"
-    },
-    {
       "id": "DODGE_AND_ROLL",
       "name": "Dodge and Roll",
       "category": "Silent",
@@ -610,12 +610,6 @@
       "tier": "A"
     },
     {
-      "id": "ECHOING_SLASH",
-      "name": "Echoing Slash",
-      "category": "Silent",
-      "tier": "A"
-    },
-    {
       "id": "ACCURACY",
       "name": "Accuracy",
       "category": "Silent",
@@ -624,6 +618,12 @@
     {
       "id": "BLUR",
       "name": "Blur",
+      "category": "Silent",
+      "tier": "A"
+    },
+    {
+      "id": "ECHOING_SLASH",
+      "name": "Echoing Slash",
       "category": "Silent",
       "tier": "A"
     },
@@ -760,12 +760,6 @@
       "tier": "B"
     },
     {
-      "id": "ACCELERANT",
-      "name": "Accelerant",
-      "category": "Silent",
-      "tier": "C"
-    },
-    {
       "id": "BURST",
       "name": "Burst",
       "category": "Silent",
@@ -802,6 +796,12 @@
       "tier": "C"
     },
     {
+      "id": "OUTBREAK",
+      "name": "Outbreak",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
       "id": "SERPENT_FORM",
       "name": "Serpent Form",
       "category": "Silent",
@@ -816,6 +816,12 @@
     {
       "id": "SHADOW_STEP",
       "name": "Shadow Step",
+      "category": "Silent",
+      "tier": "C"
+    },
+    {
+      "id": "ACCELERANT",
+      "name": "Accelerant",
       "category": "Silent",
       "tier": "C"
     },
@@ -852,12 +858,6 @@
     {
       "id": "HAZE",
       "name": "Haze",
-      "category": "Silent",
-      "tier": "C"
-    },
-    {
-      "id": "OUTBREAK",
-      "name": "Outbreak",
       "category": "Silent",
       "tier": "C"
     },

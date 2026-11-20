@@ -1,5 +1,5 @@
 const palette = require('../../data/ancient/tier-palette.json');
-const tiers = {Basic:'D',Starter:'D',Common:'D',Uncommon:'B',Rare:'A',Ancient:'S',Shop:'C',Event:'C',Curse:'S',Quest:'A',None:'D'};
+const tiers = {Basic:'D',Starter:'D',Common:'D',Uncommon:'B',Rare:'A',Ancient:'S',Shop:'C',Event:'C',Curse:'S',Status:'D',Token:'D',Quest:'A',None:'D'};
 const labels = 'html body main#main-content :is(.rarity-label,[data-relic-rarity],.potion-rarity-row)';
 const filters = 'html body main#main-content :is(#card-filter-rarity button,button[data-catalog-filter=rarity])';
 module.exports = `

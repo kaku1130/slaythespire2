@@ -15,6 +15,17 @@ html body[data-view=grid] main#main-content#main-content #card-scroll :is(sectio
   box-sizing:border-box;width:100%;max-width:none;min-width:0;
 }
 html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:minmax(0,1fr)}
+@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine) {
+  html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  /* Share artwork, both names, effects, stats and rating tracks across each pair. */
+  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:not([hidden]) {grid-column:auto;grid-row:span 6;display:grid!important;grid-template-rows:subgrid;align-self:stretch}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row > .card-detail-cell {display:grid!important;grid-row:1 / -1;grid-template-rows:subgrid}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail {grid-row:1 / -1;grid-template-rows:subgrid;margin:0;align-content:start}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .detail-overview {grid-row:span 4;grid-template-rows:subgrid}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .detail-overview>header {display:grid;grid-row:span 2;grid-template-rows:subgrid;min-width:0}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .detail-title {display:grid;grid-row:1 / -1;grid-template-rows:subgrid;justify-items:center;align-items:start;min-width:0}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .detail-stat:first-child {align-items:start}
+}
 /* Keyword notes share the centered artwork width on every device. */
 html body main#main-content#main-content .card-detail>.detail-keyword {
   box-sizing:border-box;width:100%;justify-self:stretch;margin-inline:0;
@@ -22,7 +33,7 @@ html body main#main-content#main-content .card-detail>.detail-keyword {
 
 
 /* Align card information with the centered artwork width. */
-html body main#main-content#main-content .card-detail>:is(header,.detail-meta,.detail-section) {
+html body main#main-content#main-content .card-detail>:is(.detail-overview,header,.detail-meta,.detail-section) {
   box-sizing:border-box;width:100%;max-width:700px;min-width:0;
   justify-self:center;overflow-wrap:anywhere;
 }

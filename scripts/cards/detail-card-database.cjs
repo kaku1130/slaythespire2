@@ -1,11 +1,14 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
 const fs=require('fs');
 const cards=JSON.parse(fs.readFileSync('data/cards/cards.json')).cards;
-const images=JSON.parse(fs.readFileSync('data/cards/card-images.json'));
 const previews=JSON.parse(fs.readFileSync('data/cards/card-art-previews.json'));
 const assets=require('./data-assets.cjs').load();
+const details=new Map(JSON.parse(fs.readFileSync('data/cards/english-details.json','utf8')).cards.map(card=>[card.id,card]));
+for(const {detail} of JSON.parse(fs.readFileSync('data/cards/special-cards.json','utf8')).cards)if(!details.has(detail.id))details.set(detail.id,detail);
+const render=require('./render-card-detail.cjs');
 const byArt=new Map(),byName=new Map();
 for(const card of cards){byName.set(card.nameZh,card);const art=previews[card.id]?.match(/<img[^>]+src="([^"]+)"/)?.[1];if(art){byArt.set(art,card);if(assets[art])byArt.set(assets[art],card);}}
+for(const card of details.values()){byArt.set(card.image,card);byName.set(card.nameZh,card);}
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function replaceCards(html,prefix='../../'){
  let cursor=0;
@@ -14,10 +17,12 @@ function replaceCards(html,prefix='../../'){
   const block=html.slice(start,end),firstImage=block.match(/<img\b[^>]*>/)?.[0]||'',src=firstImage.match(/src="([^"]+)"/)?.[1],name=firstImage.match(/alt="([^"]*)"/)?.[1];
   const card=byArt.get(src?.replace(/^(?:\.\.\/)+/,''))||byName.get(name?.replace(/\+$/,''));
   if(!card){replaceCards.unmatched.push({name,src});cursor=end;continue;}
-  const upgraded=block.includes(card.nameZh+'+')||block.includes((name||'')+'+</span>');
-  const image=upgraded&&images[card.id].upgraded?images[card.id].upgraded:images[card.id].base;
   const before=html.slice(0,start).match(/<a\b[^>]*>$/),after=html.slice(end).match(/^<\/a>/);if(before&&after){start-=before[0].length;end+=after[0].length;}
-  const replacement='<a class="database-card-link" data-card-id="'+card.id+'" href="'+prefix+'card.html#card-'+card.id+'" target="_blank" rel="noopener" style="display:block;width:340px;max-width:100%"><img class="database-card-image" src="'+prefix+image+'" alt="'+esc(card.nameZh)+(upgraded?'（升級後）':'')+'" width="340" height="454" loading="lazy" style="display:block;width:100%;height:auto"></a>';
+  const detail=details.get(card.id);
+  if(!detail)throw Error('Missing ancient card detail '+card.id);
+  const article=render(detail,{prefix:'ancient-card-'+start+'-'+card.id.toLowerCase(),showBuilds:false,showKeywords:false,rarityBeforeType:true,showEffectTooltips:true})
+    .replace(/(src|href)="(assets\/|build\.html|card\.html)/g,'$1="'+prefix+'$2');
+  const replacement='<div class="ancient-card-entry card-detail-row" data-card-id="'+card.id+'" data-rarity="'+esc(detail.rarity)+'">'+article+'</div>';
   html=html.slice(0,start)+replacement+html.slice(end);cursor=start+replacement.length;
  }
  return html;
