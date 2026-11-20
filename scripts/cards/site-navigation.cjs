@@ -1,7 +1,7 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
 const fs=require('node:fs');
 const siteLogo='data:image/svg+xml;base64,'+fs.readFileSync('assets/cards/icons/github.svg').toString('base64');
-const items=[['cards','卡牌','card.html'],['relic','遺物','relic.html'],['potion','藥水','potion.html'],['builds','流派','build.html'],['ancient','先古之民','ancient.html'],['monster','怪物','https://sts.gg/v2/monsters']];
+const items=[['builds','流派','build.html'],['cards','卡牌','card.html'],['relic','遺物','relic.html'],['potion','藥水','potion.html'],['ancient','先古之民','ancient.html'],['monster','怪物','https://sts.gg/v2/monsters']];
 const relicIcon='<img src="'+'data:image/webp;base64,'+fs.readFileSync('assets/relic/images/snecko_eye.webp').toString('base64')+'" alt="" width="24" height="24" style="display:inline-block;object-fit:contain;vertical-align:middle">';
 const potionIcon='<img src="'+'data:image/webp;base64,'+fs.readFileSync('assets/potion/images/strength_potion.webp').toString('base64')+'" alt="" width="24" height="24" style="display:inline-block;object-fit:contain;vertical-align:middle">';
 const ancientIcon='<img src="'+'data:image/webp;base64,'+fs.readFileSync('assets/ancient/images/icon/neow.webp').toString('base64')+'" alt="" width="24" height="24" style="display:inline-block;object-fit:contain;vertical-align:middle">';
