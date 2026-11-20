@@ -2,12 +2,14 @@ process.chdir(require('path').resolve(__dirname,'../..'));
 const fs=require('fs'),path=require('path'),nav=require('../cards/site-navigation.cjs');
 const data=JSON.parse(fs.readFileSync('data/ancient/catalog.json')),assets=require('../cards/data-assets.cjs').load();
 const list='ancient.html';
+const relicLayout=require('./relic-layout.cjs');
 const cardStyles=require('../cards/resource-icons.cjs').styles+fs.readFileSync('assets/cards/card1-detail.css','utf8').replaceAll('#card-scroll','.ancient-card-entry')+require('../cards/tier-labels.cjs')+require('../cards/rarity-labels.cjs')+fs.readFileSync('assets/ancient/ancient-cards.css','utf8');
 function local(url,prefix){if(url==='/zh-TW/ancient'||url==='https://slaythespire2.net/zh-TW/ancient')return prefix+list;const match=url.match(/^(?:https:\/\/slaythespire2.net)?\/zh-TW\/ancient\/([^/#?]+)$/);if(match&&data.slugs.includes(match[1]))return prefix+'data/ancient/ancient-'+match[1]+'.html';if(url.startsWith('/'))return 'https://slaythespire2.net'+url;return url;}
 for(const slug of [null,...data.slugs]){const prefix=slug?'../../':'',file=slug?'data/ancient/ancient-'+slug+'.html':list,source=fs.readFileSync(slug?'data/ancient/source/'+slug+'.html':'data/ancient/source/index.html','utf8');let main=source.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)[1];main=main.replace(/<script\b[\s\S]*?<\/script>/gi,'').replace(/\son\w+="[^"]*"/gi,'').replace(/<button\b[\s\S]*?<\/button>/g,'').replace(/\s(?:srcset|srcSet)="[^"]*"/g,'').replace(/src="([^"]+)"/g,(_,u)=>{u=u.replace(/&amp;/g,'&');if(u.startsWith('data:'))return 'src="'+u+'"';if(!assets[u])throw Error('Uncached image '+u);return 'src="'+prefix+assets[u]+'"';}).replace(/href="([^"]+)"/g,(_,u)=>'href="'+local(u,prefix)+'"');
 main=main.replace(/url\((\/images\/[^)]+)\)/g,(_,url)=>{if(!assets[url])throw Error('Uncached CSS image '+url);return 'url('+prefix+assets[url]+')';});
 if(slug)main=require('./desktop-ancient.cjs').removeDialogue(main).replace(/<a\b[^>]*>(?:(?!<\/a>)[\s\S])*?所有遠古之民\s*<\/a>/g,'');
 if(slug)main=require('../cards/detail-card-database.cjs').replaceCards(main);
+if(slug)main=relicLayout.replaceRelics(main);
 main=main.replaceAll('loading="lazy"','loading="eager"').replace(/<template\b[^>]*><\/template>/g,'').replace(/<!--\/?\$[^>]*-->/g,'');
 main=require('./tier-colors.cjs')(main);
 if(slug)main=require('./desktop-ancient.cjs').addTopRelicMenu(main);
@@ -15,7 +17,7 @@ if(!slug)main=main.replace(/<h1\b[\s\S]*?<\/h1>/,'').replace(/<p\b[^>]*>殺戮�
 if(!slug)main=main.replace(/<div class="mt-auto flex items-center gap-1\.5 pt-3 text-sm font-semibold text-link">[^<]*最強遺物[\s\S]*?<\/div>/g,'');
 const header=nav.renderHeader('ancient').replace(/href="((?:ancient|build|card|event|monster|potion|relic)\.html)"/g,(_,u)=>'href="'+prefix+u+'"');
 const title=source.match(/<title>([\s\S]*?)<\/title>/)?.[1]||'先古之民';
-const css=nav.styles+'html{color-scheme:dark;scrollbar-width:auto;scrollbar-color:auto}body{background:#040609;color:#e3e8ee}main{min-width:0}main img{max-width:100%}main [class*="flex-wrap"]:has(>[aria-label="切換遊戲版本"]){display:none}'+nav.layoutStyles+(slug?cardStyles:'');
+const css=nav.styles+'html{color-scheme:dark;scrollbar-width:auto;scrollbar-color:auto}body{background:#040609;color:#e3e8ee}main{min-width:0}main img{max-width:100%}main [class*="flex-wrap"]:has(>[aria-label="切換遊戲版本"]){display:none}'+nav.layoutStyles+(slug?cardStyles+relicLayout.styles:'');
 if(slug)main+=require('../cards/effect-tooltips.cjs').markup().replaceAll('"icon":"assets/','"icon":"'+prefix+'assets/')+'<script src="'+prefix+'assets/cards/compact-cards.js"></script><script defer src="'+prefix+'assets/ancient/text-scale.js"></script>';
 fs.writeFileSync(file,'<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><link rel="apple-touch-icon" sizes="180x180" href="'+prefix+'assets/cards/icons/site-logo.png"><link rel="icon" type="image/webp" href="'+prefix+'assets/cards/icons/site-logo.webp"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+title+'</title><link rel="stylesheet" href="'+prefix+'assets/event/styles/source.css"><style>'+css+'</style></head><body>'+header+'<main id="main-content">'+main+'</main><script src="'+prefix+'assets/cards/page-scroll.js"></script></body></html>');}
 // Keep existing pages and their custom content, updating only ancient navigation.

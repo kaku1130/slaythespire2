@@ -1,7 +1,7 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
 const fs=require('fs');
 const source=fs.readFileSync('data/relic/source/index.html','utf8').split('</main>')[0];
-const groups=[['Ironclad','Ironclad','#dc6c68'],['Silent','Silent','#70bf8b'],['Defect','Defect','#6faeee'],['Necrobinder','Necrobinder','#b595dd'],['Regent','Regent','#e3bf72'],['Shared','Shared','#aab6c4'],['Event','Event','#6ac1b4'],['Fallback','Other','#c8ab79']];
+const groups=[['Ironclad','Ironclad','#dc6c68'],['Silent','Silent','#70bf8b'],['Defect','Defect','#6faeee'],['Regent','Regent','#e3bf72'],['Necrobinder','Necrobinder','#b595dd'],['Shared','Shared','#aab6c4'],['Event','Event','#6ac1b4'],['Fallback','Other','#c8ab79']];
 const iconNames={Ironclad:'ironclad',Silent:'silent',Defect:'defect',Necrobinder:'necrobinder',Regent:'regent',Shared:'colorless',Event:'event',Fallback:'other'};
 function compare(a,b){const group=x=>groups.findIndex(g=>g[0]===x.pool),rank=x=>{const i=source.indexOf('src="'+x.imagePath+'"');return i<0?Infinity:i;};return group(a)-group(b)||rank(a)-rank(b)||a.name.localeCompare(b.name,'zh-TW');}
 
@@ -12,11 +12,12 @@ function renderClassification(rarity, pool) {
 }
 
 function formatCard(article, item) {
-  return article.replace(/<div class="relic-title-row"><h2>(.*?) <span class="catalog-name-en" lang="en">(.*?)<\/span><\/h2><div class="tag">[^<]*(.*?)<\/div><\/div><p(?: lang="en")?>(.*?)<\/p>/s,
-    (_, localizedName, englishName, ranking, localizedEffect) => {
-      return '<div class="relic-rarity-row" lang="en">' + renderClassification(item.rarity) + '</div><div class="relic-card-text"><h3><span class="relic-name-zh" lang="zh-Hant">' + localizedName
+  return article.replace(/(<img\b[^>]*>)<div class="relic-title-row"><h2>(.*?) <span class="catalog-name-en" lang="en">(.*?)<\/span><\/h2><div class="tag">[^<]*(.*?)<\/div><\/div><p(?: lang="en")?>(.*?)<\/p>/s,
+    (_, image, localizedName, englishName, ranking, localizedEffect) => {
+      return '<div class="relic-card-text">' + image + '<h3><span class="relic-name-zh" lang="zh-Hant">' + localizedName
         + '</span><span class="relic-name-en" lang="en" title="' + englishName.replaceAll('"', '&quot;') + '">' + englishName
         + '</span></h3><p lang="en">' + localizedEffect + '</p>'
+        + '<div class="relic-rarity-row" lang="en">' + renderClassification(item.rarity) + '</div>'
         + (ranking ? '<div class="tag relic-card-ranking">' + ranking + '</div>' : '') + '</div>';
     });
 }

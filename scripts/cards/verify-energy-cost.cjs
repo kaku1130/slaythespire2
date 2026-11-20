@@ -13,20 +13,36 @@ async function main() {
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(pathToFileURL(path.resolve('card.html')).href);
     const rows = await page.locator('.card-detail-row').evaluateAll(rows => rows.map(row => {
-      const stat = [...row.querySelectorAll('.detail-stat')].find(stat => stat.querySelector('dt').textContent === 'Energy cost');
-      return {id:row.dataset.id,value:stat.querySelector('dd').textContent.replace(/\s/g,''),icons:[...stat.querySelectorAll('img')].map(img => img.getAttribute('src'))};
+      const panels = [...row.querySelectorAll('.detail-panel-cost')].map(panel => {const copy=panel.cloneNode(true);copy.querySelector('.detail-panel-stars')?.remove();return copy;});
+      return {id:row.dataset.id,values:panels.map(panel=>panel.textContent.replace(/\s/g,'')),icons:panels.map(panel=>[...panel.querySelectorAll('img')].map(img=>img.getAttribute('src')))};
     }));
     assert.equal(rows.length, audit.cards.length);
     const byId = new Map(rows.map(row => [row.id,row]));
     for (const card of audit.cards) {
       const row = byId.get(card.id);
-      assert.equal(row.value, card.value.replace(/\s/g,''), card.id + ' cost');
-      assert.deepEqual(row.icons, card.icons.map(icon => 'assets/cards/source/' + icon.slice('/images/'.length)), card.id + ' icons');
+      const costs=card.value.replace(/\s/g,'').split('→');
+      assert.equal(row.values[0],costs[0],card.id+' base cost');
+      if(row.values.length>1)assert.equal(row.values[1],costs[1]||costs[0],card.id+' upgraded cost');
+      for(const icons of row.icons)assert.deepEqual(icons,card.icons.length?['assets/cards/source/'+card.icons[0].slice('/images/'.length)]:[],card.id+' icons');
     }
+    const effectIcons = await page.locator('.detail-effect-panel .energy-resource-icon,.detail-resource-note .energy-resource-icon,.detail-keyword .energy-resource-icon').evaluateAll(icons => icons.map(icon => ({
+      id:icon.closest('tr').dataset.id,
+      character:icon.closest('.card-detail').dataset.character,
+      src:icon.getAttribute('src'),
+      tag:icon.tagName
+    })));
+    assert.ok(effectIcons.length > 0, 'Effect energy icons are present');
+    for (const icon of effectIcons) {
+      const pool = ['Ironclad','Silent','Defect','Necrobinder','Regent'].includes(icon.character) ? icon.character.toLowerCase() : 'colorless';
+      assert.equal(icon.tag, 'IMG', icon.id + ' effect uses character icon');
+      assert.equal(icon.src, 'assets/cards/source/card-template/energy_inline_' + pool + '.webp', icon.id + ' effect icon');
+    }
+    assert.equal(await page.locator('.detail-resource-note').count(), 0, 'Keyword descriptions removed');
+    console.log('PASS: ' + effectIcons.length + ' effect energy icons use the corresponding character artwork.');
     await page.locator('#search').fill('Untouchable');
     const card = page.locator('#card-UNTOUCHABLE .card-detail');
     await card.locator('img').evaluateAll(images => Promise.all(images.map(img => img.decode())));
-    const energy = card.locator('.detail-stat').filter({has:page.locator('dt', {hasText:'Energy cost'})}).locator('img');
+    const energy = card.locator('[aria-label="Base energy cost"] img');
     assert.ok(await energy.evaluate(img => img.naturalWidth > 0));
     await card.screenshot({path:'assets/cards/previews/untouchable-energy-1440.png'});
     await page.locator('#search').fill('Untouchable+Abundance');

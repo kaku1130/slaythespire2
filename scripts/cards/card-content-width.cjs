@@ -5,7 +5,7 @@ html body main#main-content#main-content:has(>#card-scroll) {
   margin-inline:auto!important;padding-inline:0!important;
 }
 @media screen and (min-width:1025px) and (hover:hover) and (pointer:fine) {
-  html body main#main-content#main-content:has(>#card-scroll) {width:25vw!important}
+  html body main#main-content#main-content:has(>#card-scroll) {width:max(25vw,460px)!important}
 }
 html body main#main-content#main-content>#tools,
 html body main#main-content#main-content>#card-scroll {

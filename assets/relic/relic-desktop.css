@@ -30,6 +30,19 @@ html body .entry.relic .relic-ancient-ranking img {display:inline-block;width:24
 /* No divider beneath the search bar. */
 html body main#main-content>.mobile-search-row,html body main#main-content .catalog-search-tools {border-bottom:0;box-shadow:none}
 
+/* Shared and Event always occupy the second profession row. */
+html body main#main-content #relic-filter-pool > .relic-pool-extra {
+  display:flex;flex:1 0 100%;width:100%;min-width:0;gap:8px;
+}
+
+/* Shop and Event share the second rarity row. */
+html body main#main-content #relic-filter-rarity {
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1.5fr) minmax(0,.75fr) minmax(0,1.1fr);gap:8px;
+}
+html body main#main-content #relic-filter-rarity button {width:100%;white-space:nowrap;padding-inline:2px}
+html body main#main-content #relic-filter-rarity button[value=Shop] {grid-column:1 / 3}
+html body main#main-content #relic-filter-rarity button[value=Event] {grid-column:3 / 5}
+
 /* Keep the first four rarity choices together without wrapping their labels. */
 html body main#main-content .relic-filters .relic-filter-group:has(>[data-filter-group=rarity]) {
   display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1.6fr)!important;gap:8px;width:100%;
@@ -86,23 +99,23 @@ html body main#main-content .relic-filters button:is([data-filter-group=rarity],
   html body main#main-content .entry.relic {align-content:start}
 }
 
-/* Center each entry with its icon in the first row. */
-html body main#main-content .entry.relic {grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto;gap:12px;justify-items:center;text-align:center}
-html body main#main-content .entry.relic > img {grid-column:1;grid-row:1;justify-self:center;margin:0}
-html body main#main-content .entry.relic > .relic-card-text {display:grid;gap:12px;grid-column:1;grid-row:3;width:100%;min-width:0}
+/* Icon, names, description, and rarity follow the same reading order. */
+html body main#main-content .entry.relic {grid-template-columns:minmax(0,1fr);grid-template-rows:auto;gap:12px;justify-items:center;text-align:center}
+html body main#main-content .entry.relic .relic-card-text > img {width:72px;height:72px;justify-self:center;margin:0;object-fit:contain}
+html body main#main-content .entry.relic > .relic-card-text {display:grid;gap:12px;grid-column:1;grid-row:1;width:100%;min-width:0}
 html body main#main-content .entry.relic .relic-card-text p {color:#fff;font-size:22.5px}
 html body main#main-content .entry.relic .relic-card-text .tag {justify-content:center}
 
 /* Chinese names lead; both language names use the heading size. */
 html body main#main-content .entry.relic .relic-card-text h3 {margin:0;font:700 27.5px/1.35 Arial,"Microsoft JhengHei",sans-serif;flex-direction:column;align-items:center;gap:4px}
 html body main#main-content .entry.relic .relic-card-text h3 :is(.relic-name-zh,.relic-name-en) {display:inline;font:inherit;white-space:normal;overflow-wrap:anywhere}
-html body main#main-content .entry.relic .relic-card-text h3 :is(.relic-name-zh,.relic-name-en) {color:#fff}
+html body main#main-content .entry.relic .relic-card-text h3 :is(.relic-name-zh,.relic-name-en) {color:var(--plain-rarity-color,var(--rarity-color,var(--ink)))}
 html body main#main-content .entry.relic .relic-card-text h3 .relic-name-zh {order:0}
 html body main#main-content .entry.relic .relic-card-text h3 .relic-name-en {order:1}
 html body main#main-content .entry.relic .relic-card-text h3 .relic-card-classification {order:2;font:400 13px/1.4 Arial,"Microsoft JhengHei",sans-serif}
 
-/* Rarity occupies the row immediately below the icon. */
-html body main#main-content .entry.relic .relic-rarity-row {display:flex;justify-content:center;grid-column:1;grid-row:2;margin:0;font:600 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;color:var(--rarity-color,var(--muted))}
+/* Rarity follows the effect description. */
+html body main#main-content .entry.relic .relic-rarity-row {display:flex;justify-content:center;grid-column:1;margin:0;font:600 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;color:var(--rarity-color,var(--muted))}
 html body main#main-content .entry.relic .relic-rarity-row > [data-relic-rarity] {display:inline;color:inherit;font-size:20px}
 html body main#main-content .entry.relic .relic-card-text .tag {margin:0;font-size:15px}
 html body main#main-content .entry.relic .relic-tier-label {font-size:25px}

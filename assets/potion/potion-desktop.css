@@ -39,20 +39,20 @@ html body main#main-content .potion-filters button:is([data-filter-group=rarity]
   html body main#main-content .entry.potion {align-content:start}
 }
 
-/* Center each entry with its icon in the first row. */
+/* Icon, names, description, and rarity follow the same reading order. */
 html body main#main-content .entry.potion {grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto auto;gap:12px;justify-items:center;text-align:center}
 html body main#main-content .entry.potion > img {grid-column:1;grid-row:1;justify-self:center;margin:0}
-html body main#main-content .entry.potion > .potion-title-row {grid-column:1;grid-row:3;justify-content:center;width:100%}
-html body main#main-content .entry.potion > p {grid-column:1;grid-row:4;width:100%}
+html body main#main-content .entry.potion > .potion-title-row {grid-column:1;grid-row:2;justify-content:center;width:100%}
+html body main#main-content .entry.potion > p {grid-column:1;grid-row:3;width:100%}
 html body main#main-content .entry.potion > p {color:#fff;font-size:22.5px}
 
 /* Chinese names lead; both language names use the heading size. */
 html body main#main-content .entry.potion .potion-title-row h2 {font:700 27.5px/1.35 Arial,"Microsoft JhengHei",sans-serif;flex-direction:column;align-items:center;gap:4px;width:100%}
 html body main#main-content .entry.potion .potion-title-row h2 :is(.potion-name-zh,.catalog-name-en) {font:inherit;white-space:normal;overflow-wrap:anywhere}
-html body main#main-content .entry.potion .potion-title-row h2 :is(.potion-name-zh,.catalog-name-en) {color:#fff}
+html body main#main-content .entry.potion .potion-title-row h2 :is(.potion-name-zh,.catalog-name-en) {color:var(--plain-rarity-color,var(--rarity-color,var(--ink)))}
 html body main#main-content .entry.potion .potion-title-row h2 .potion-name-zh {order:0}
 html body main#main-content .entry.potion .potion-title-row h2 .catalog-name-en {order:1}
-html body main#main-content .entry.potion .potion-rarity-row {grid-column:1;grid-row:2;margin:0;font:600 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;color:var(--rarity-color,var(--muted))}
+html body main#main-content .entry.potion .potion-rarity-row {grid-column:1;grid-row:4;margin:0;font:600 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;color:var(--rarity-color,var(--muted))}
 
 
 /* Stack the bilingual title on iPhone-sized screens. */

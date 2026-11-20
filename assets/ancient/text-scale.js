@@ -2,7 +2,7 @@
   const root = document.getElementById('main-content');
   if (!root) return;
   const elements = [root, ...root.querySelectorAll('*')].filter(element =>
-    !element.closest('script,style,svg')
+    !element.closest('script,style,svg,.card-detail,.catalog-relic-card')
   );
   const original = elements.map(element => ({
     element,

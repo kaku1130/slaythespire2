@@ -1,0 +1,23 @@
+const {formatCard}=require('./relic-layout.cjs');
+const {description}=require('../potion/potion-controls.cjs');
+const colors=require('../cards/rarity-text-colors.cjs');
+const escape=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+function render(relic,{image,id='',className='',extras=''}={}){
+ if(!image)throw Error('Missing relic image: '+relic.id);
+ const article='<article class="entry relic catalog-relic-card '+escape(className)+'"'+(id?' id="'+escape(id)+'"':'')+' data-relic-id="'+escape(relic.id)+'" data-rarity="'+escape(relic.rarity)+'"><img src="'+escape(image)+'" alt="'+escape(relic.name)+'" width="72" height="72"><div class="relic-title-row"><h2>'+escape(relic.name)+' <span class="catalog-name-en" lang="en">'+escape(relic.nameEn)+'</span></h2><div class="tag"></div></div><p lang="en">'+description(relic).replaceAll('potion-keyword','relic-keyword')+'</p></article>';
+ return formatCard(article,relic).replace('</article>',extras+'</article>');
+}
+const card='html body main#main-content .catalog-relic-card[data-relic-id]';
+const styles=`
+/* Reuse the relic catalog presentation in build and ancient pages. */
+${card} {display:grid;gap:12px;box-sizing:border-box;width:100%;min-width:0;padding:18px;border:1px solid var(--line,#293340);border-radius:10px;background:var(--paper,#0d131a);text-align:center}
+${card} .relic-card-text {display:grid;gap:12px;min-width:0}
+${card} .relic-card-text > img {display:block;width:72px;height:72px;justify-self:center;margin:0;object-fit:contain}
+${card} .relic-card-text h3 {display:flex;flex-direction:column;align-items:center;gap:4px;margin:0;font:700 27.5px/1.35 Arial,"Microsoft JhengHei",sans-serif}
+${card} .relic-card-text h3 :is(.relic-name-zh,.relic-name-en) {font:inherit;color:var(--plain-rarity-color);overflow-wrap:anywhere}
+${card} .relic-card-text > p {margin:0;color:#fff;font:400 22.5px/1.6 Arial,"Microsoft JhengHei",sans-serif;white-space:pre-line}
+${card} .relic-keyword {color:#fbbf24;font-weight:500}
+${card} .relic-rarity-row {display:flex;justify-content:center;font:600 20px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+html body main#main-content#main-content .catalog-relic-card .relic-rarity-row [data-relic-rarity] {padding:0;border:0!important;background:transparent!important;color:var(--plain-rarity-color)!important;font:inherit}
+`+Object.entries(colors).map(([rarity,color])=>`${card}[data-rarity=${rarity}] {--plain-rarity-color:${color}}`).join('\n');
+module.exports={render,styles};

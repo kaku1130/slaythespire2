@@ -16,9 +16,9 @@ function context(text,card,upgraded){
  }
  return normalize(text).replace(/\{([a-z][a-z0-9]*)(?::diff\(\))?\}/gi,(match,key)=>values[key.toLowerCase()]??match);
 }
-function content(value){
+function content(value,character){
  return escape(value).replace(/&lt;g&gt;/g,'<em>').replace(/&lt;\/g&gt;/g,'</em>').replace(/&lt;b&gt;/g,'<strong>').replace(/&lt;\/b&gt;/g,'</strong>')
-  .replace(/&lt;e\s*\/&gt;/g,icons.energy).replace(/&lt;s\s*\/&gt;/g,icons.star).replace(/\n/g,'<br>');
+  .replace(/&lt;e\s*\/&gt;/g,icons.energyFor(character)).replace(/&lt;s\s*\/&gt;/g,icons.star).replace(/\n/g,'<br>');
 }
 function decorate(html,cardId,upgraded=false){
  const page=source.cards[cardId],card=cards.get(cardId);if(!page||!card)return html;
@@ -31,7 +31,7 @@ function decorate(html,cardId,upgraded=false){
   const id=cardId+'|'+key+'|'+(upgraded?'upgraded':'base');
   let icon=tip.icon&&(assets[tip.icon]||'assets/cards/icons/keywords/'+tip.icon.split('/').pop());
   if(icon&&!fs.existsSync(icon))icon=undefined;
-  entries[id]={title,html:content(description),...(icon?{icon}:{})};
+  entries[id]={title,html:content(description,card.pool),...(icon?{icon}:{})};
   const name=plain(tip.title.replace(/\s*\{[^}]*\}/g,'')).toLowerCase();
   const forms=[name];
   if(tip.card)forms.push(name+'s',name+'+',name+'s+');
@@ -57,7 +57,7 @@ function markup(){
 function note(cardId,key){
  const term=source.cards[cardId]?.keys.map(id=>source.terms[id]).find(term=>term.key===key);
  if(!term)return '';
- return '<aside class="detail-resource-note" aria-label="'+escape(term.title)+'"><h3>'+escape(term.title)+'</h3><p>'+content(term.description)+'</p></aside>';
+ return '<details class="detail-resource-note"><summary><h3>'+escape(term.title)+'</h3></summary><p>'+content(term.description,cards.get(cardId)?.pool)+'</p></details>';
 }
 function notes(cardId){
  decorate('',cardId);decorate('',cardId,true);
@@ -69,8 +69,8 @@ function notes(cardId){
   seen.add(signature);
   const upgraded=key.endsWith('|upgraded');
   const title=entry.title+(upgraded?' (Upgraded)':'');
-  items.push('<aside class="detail-resource-note"><h3>'+escape(title)+'</h3><p>'+entry.html+'</p></aside>');
+  items.push('<details class="detail-resource-note"><summary><h3>'+escape(title)+'</h3></summary><p>'+entry.html+'</p></details>');
  }
- return items.length?'<figcaption class="detail-effect-notes">'+items.join('')+'</figcaption>':'';
+ return items.length?'<div class="detail-effect-notes">'+items.join('')+'</div>':'';
 }
 module.exports={decorate,markup,note,notes};

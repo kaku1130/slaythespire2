@@ -119,37 +119,25 @@ html body>.site-header {box-sizing:border-box;width:100vw!important;max-width:no
 html body .site-header .site-nav > a {min-width:60px;min-height:48px;padding:6px 12px!important}
 html body .site-header .site-nav a > .site-nav-visual {display:flex!important;align-items:center;justify-content:center}
 html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max-width:none}
+html body .site-header .site-nav {margin-left:auto!important;justify-content:end}
 /* Match the compact button widths used by the relic page. */
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(6,62px)!important;
+    grid-template-columns:repeat(5,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 392px!important;
-    width:392px!important;
+    flex:0 1 326px!important;
+    width:326px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
   }
   html body .site-header .site-nav > a {box-sizing:border-box;flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important}
 }
-/* Portrait phones show all six navigation buttons across the full header. */
+/* Portrait phones keep the compact header edge spacing. */
 @media screen and (max-width:600px) and (orientation:portrait) {
   html body .site-header>.site-header-inner {width:100%!important;padding-inline:8px!important;gap:0}
   html body .site-header .site-brand {display:none!important}
-  html body .site-header .site-nav {
-    display:grid!important;
-    grid-template-columns:repeat(6,minmax(0,1fr))!important;
-    grid-auto-flow:row!important;
-    grid-auto-columns:auto!important;
-    flex:1 1 100%!important;
-    width:100%!important;
-    max-width:100%;
-    margin:0;
-    gap:4px;
-    overflow:visible;
-  }
-  html body .site-header .site-nav > a {box-sizing:border-box;min-width:0!important;width:100%!important;max-width:100%;padding:6px 0!important}
 }
 
 /* Brand visibility is shared by every page, including bundled legacy styles. */
@@ -159,11 +147,12 @@ html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
-  html body .site-header .site-nav {flex:1 1 100%!important;width:100%!important}
+  html body .site-header .site-nav {display:flex!important;flex:0 0 auto!important;width:max-content!important;max-width:100%;margin-left:auto!important;justify-content:flex-end!important;gap:4px}
+  html body .site-header .site-nav > a {box-sizing:border-box;flex:0 0 52px!important;width:52px!important;min-width:52px!important;max-width:52px!important;padding:6px 8px!important}
 }
 
 
@@ -667,6 +656,11 @@ html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build
 /* Tier A labels use white lettering on their existing background. */
 html body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#fff!important}
 
+html body .card-detail .detail-inline-tier[data-tier=S] {--inline-tier-color:rgb(225, 112, 132)}
+html body .card-detail .detail-inline-tier[data-tier=A] {--inline-tier-color:rgb(227, 191, 114)}
+html body .card-detail .detail-inline-tier[data-tier=B] {--inline-tier-color:rgb(105, 176, 222)}
+html body .card-detail .detail-inline-tier[data-tier=C] {--inline-tier-color:rgb(105, 183, 139)}
+html body .card-detail .detail-inline-tier[data-tier=D] {--inline-tier-color:rgb(120, 132, 145)}
 /* English card metadata: plain rarity/type text and compact solid tier badges. */
 html body #main-content .card-detail .detail-meta>:is(.detail-type,.detail-rarity) {
   min-height:0;height:auto;padding:0;border:0;border-radius:0;background:transparent;
@@ -712,39 +706,46 @@ html body #main-content :is([data-stat-rarity=Uncommon],[data-relic-rarity=Uncom
 html body #main-content .potion-section[data-rarity=Uncommon]>.potion-section-title {color:#4f9bd9}
 html body #main-content :is(#card-filter-rarity button[value=Uncommon],[data-catalog-filter=rarity][value=Uncommon],button[data-rarity-filter=Uncommon],[data-filter-group=rarity][data-filter-value=Uncommon]) {--selection-color:#4f9bd9!important;--rarity-color:#4f9bd9!important}
 
-/* Card tier filters use the same filled presentation as the rating badges. */
+/* Card tier filters use the same button presentation as Type filters. */
 html body #main-content #tools #card-filter-tier button {
-  min-height:48px;padding:0 10px;border-radius:6px;
-  font:800 30px/1 Arial,"Microsoft JhengHei",sans-serif;
+  min-height:48px;padding:8px;border-radius:8px;
+  font:400 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
   position:relative;
 }
-html body #main-content #tools #card-filter-tier button[aria-pressed=true] {
-  box-shadow:none!important;
+html body #main-content #tools #card-filter-tier button[value][aria-pressed=true] {
+  border-color:var(--tier-text-color)!important;
+  background:color-mix(in srgb,var(--tier-text-color) 22%,#0d131a)!important;
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tier-text-color) 40%,transparent)!important;
 }
 html body #main-content #tools #card-filter-tier button[aria-pressed=true]::after {
-  content:"✓";position:absolute;right:4px;top:3px;
-  display:grid;place-items:center;width:18px;height:18px;
-  border-radius:50%;background:#fff;color:#040609;font:800 14px/1 Arial,sans-serif;
+  content:none;
 }
+html body #main-content #tools #card-filter-tier button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
 
 html body #main-content #tools #card-filter-tier button[value=S] {
-  color:rgb(255, 255, 255)!important;background:rgb(225, 112, 132)!important;border:1px solid rgb(225, 112, 132)!important;
+  --tier-text-color:rgb(225, 112, 132);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=A] {
-  color:rgb(255, 255, 255)!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
+  --tier-text-color:rgb(227, 191, 114);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=B] {
-  color:rgb(255, 255, 255)!important;background:rgb(105, 176, 222)!important;border:1px solid rgb(105, 176, 222)!important;
+  --tier-text-color:rgb(105, 176, 222);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=C] {
-  color:rgb(255, 255, 255)!important;background:rgb(105, 183, 139)!important;border:1px solid rgb(105, 183, 139)!important;
+  --tier-text-color:rgb(105, 183, 139);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=D] {
-  color:rgb(255, 255, 255)!important;background:rgb(120, 132, 145)!important;border:1px solid rgb(120, 132, 145)!important;
+  --tier-text-color:rgb(120, 132, 145);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 /* Set the card page width once; every nested content wrapper fills it. */
@@ -753,7 +754,7 @@ html body main#main-content#main-content:has(>#card-scroll) {
   margin-inline:auto!important;padding-inline:0!important;
 }
 @media screen and (min-width:1025px) and (hover:hover) and (pointer:fine) {
-  html body main#main-content#main-content:has(>#card-scroll) {width:25vw!important}
+  html body main#main-content#main-content:has(>#card-scroll) {width:max(25vw,460px)!important}
 }
 html body main#main-content#main-content>#tools,
 html body main#main-content#main-content>#card-scroll {
@@ -817,37 +818,25 @@ html body>.site-header {box-sizing:border-box;width:100vw!important;max-width:no
 html body .site-header .site-nav > a {min-width:60px;min-height:48px;padding:6px 12px!important}
 html body .site-header .site-nav a > .site-nav-visual {display:flex!important;align-items:center;justify-content:center}
 html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max-width:none}
+html body .site-header .site-nav {margin-left:auto!important;justify-content:end}
 /* Match the compact button widths used by the relic page. */
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(6,62px)!important;
+    grid-template-columns:repeat(5,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 392px!important;
-    width:392px!important;
+    flex:0 1 326px!important;
+    width:326px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
   }
   html body .site-header .site-nav > a {box-sizing:border-box;flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important}
 }
-/* Portrait phones show all six navigation buttons across the full header. */
+/* Portrait phones keep the compact header edge spacing. */
 @media screen and (max-width:600px) and (orientation:portrait) {
   html body .site-header>.site-header-inner {width:100%!important;padding-inline:8px!important;gap:0}
   html body .site-header .site-brand {display:none!important}
-  html body .site-header .site-nav {
-    display:grid!important;
-    grid-template-columns:repeat(6,minmax(0,1fr))!important;
-    grid-auto-flow:row!important;
-    grid-auto-columns:auto!important;
-    flex:1 1 100%!important;
-    width:100%!important;
-    max-width:100%;
-    margin:0;
-    gap:4px;
-    overflow:visible;
-  }
-  html body .site-header .site-nav > a {box-sizing:border-box;min-width:0!important;width:100%!important;max-width:100%;padding:6px 0!important}
 }
 
 /* Brand visibility is shared by every page, including bundled legacy styles. */
@@ -857,11 +846,12 @@ html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
-  html body .site-header .site-nav {flex:1 1 100%!important;width:100%!important}
+  html body .site-header .site-nav {display:flex!important;flex:0 0 auto!important;width:max-content!important;max-width:100%;margin-left:auto!important;justify-content:flex-end!important;gap:4px}
+  html body .site-header .site-nav > a {box-sizing:border-box;flex:0 0 52px!important;width:52px!important;min-width:52px!important;max-width:52px!important;padding:6px 8px!important}
 }
 
 main#main-content>.character-sidebar{flex:0 0 auto;position:static;width:100%;height:auto;max-height:30%;overflow:auto;margin:0 0 var(--group-gap);padding:2px}
@@ -1078,8 +1068,30 @@ html body #card-scroll .card-detail-row > .card-detail-cell::before {display:non
 .card-detail-row[data-rarity=Quest] .card-detail {--detail-rarity-color:#c8ab79}
 .card-detail h2,.card-detail h3,.card-detail p,.card-detail dl,.card-detail figure {margin:0}
 .card-detail .detail-overview {display:grid;align-content:start;gap:16px;min-width:0}
+.card-detail .detail-card-metadata {display:flex;align-items:center;justify-content:center;flex-wrap:nowrap;gap:14px;margin:0 -28px}
+.card-detail[data-card-layout=compact] {padding-bottom:8px}
+.card-detail .detail-character-metadata {display:flex;align-items:center;justify-content:space-between;flex-wrap:nowrap;gap:8px;margin:-8px 0 0;font:400 20px/1.6 Arial,"Microsoft JhengHei",sans-serif}
+html body .card-detail[data-card-layout=compact] .detail-character-metadata :is(.detail-meta-item,dd,.detail-inline-tier,.detail-plain-rarity) {font:inherit}
+.card-detail .detail-tier-footer {display:flex;justify-content:center;margin:0}
+.card-detail[data-card-layout=compact] > :is(.detail-overview,.detail-tier-footer) {box-sizing:border-box;width:100%;max-width:700px;justify-self:center}
+.card-detail .detail-type-metadata {display:flex;align-items:center;justify-content:center;margin:-8px 0}
+html body main#main-content .card-detail[data-card-layout=compact] .detail-overview > .detail-effects {margin-block:0}
+.card-detail .detail-meta-item {display:flex;align-items:center;flex:0 0 auto;white-space:nowrap;font-size:20px}
+.card-detail .detail-meta-item dt {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.card-detail .detail-meta-item dd {display:flex;align-items:center;gap:4px;margin:0}
+html body .card-detail[data-card-layout=compact] .detail-inline-tier {display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;padding:0;border:0;border-radius:0;background:transparent;color:var(--inline-tier-color,#aab6c4);font:400 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;text-decoration:none;letter-spacing:normal}
+.card-detail .detail-plain-rarity {font-size:20px;color:var(--detail-rarity-color)}
+.card-detail .detail-meta-item dd > img {width:22px;height:22px;object-fit:contain}
+.card-detail .detail-meta-item dd[data-stat-character] {color:var(--character-color)}
+.card-detail .detail-meta-item dd[data-type=Attack] {color:#ff777a}
+.card-detail .detail-meta-item dd[data-type=Skill] {color:lab(78.503% -64.9265 39.7492)}
+.card-detail .detail-meta-item dd[data-type=Power] {color:lab(83.2664% 8.65132 106.895)}
+.card-detail .detail-panel-stars {display:inline-flex;align-items:center;gap:3px;margin-left:12px}
 .card-detail .detail-resource-note {margin-top:16px;padding:16px;border:1px solid #303d4e;border-radius:9px;background:#222e33}
-.card-detail .detail-resource-note h3 {margin:0 0 9px;color:#f1cd7f;font-size:16px}
+.card-detail .detail-effect-notes .detail-resource-note h3 {display:inline;margin:0;color:#f1cd7f;font-size:16px}
+.card-detail .detail-resource-note summary {cursor:pointer;color:#f1cd7f}
+.card-detail .detail-resource-note summary:focus-visible {outline:2px solid #74b3e6;outline-offset:5px;border-radius:2px}
+.card-detail .detail-resource-note[open] > p {margin-top:9px}
 .card-detail .detail-resource-note p {margin:0;color:#e0e7ef;font-size:16px}
 .card-detail .detail-resource-note em {color:#f1cd7f;font-style:normal;font-weight:600}
 .card-detail .detail-effect-notes {display:grid;gap:16px;margin-top:16px;text-align:left}
@@ -1092,6 +1104,7 @@ html body #card-scroll .card-detail-row > .card-detail-cell::before {display:non
   gap:16px;
   margin:0;
   font-size:clamp(30px,3vw,42px);
+  font-weight:700;
   line-height:1.25;
   letter-spacing:-.02em;
 }
@@ -1130,7 +1143,7 @@ html body #card-scroll .card-detail-row > .card-detail-cell::before {display:non
 .card-detail .detail-keyword p {color:#fff6e2;font-size:13px;line-height:1.375}
 
 .card-detail .detail-section {padding-top:22px;border-top:1px solid #273241;scroll-margin-top:84px}
-html body #card-scroll .card-detail > .detail-section {margin-block:0}
+html body .card-detail[data-card-layout=compact] > .detail-section {margin-block:0}
 .card-detail .detail-effects,.card-detail .detail-card-stats,.card-detail .detail-card-rating {padding-top:0;border-top:0}
 .card-detail .detail-card-builds {padding-top:0;border-top:0}
 .card-detail .detail-section h3 {margin:0 0 14px;color:#ecf1f7;font-size:22px;line-height:1.3;letter-spacing:-.01em}
@@ -1141,12 +1154,16 @@ html body #card-scroll .card-detail > .detail-section {margin-block:0}
 .card-detail .detail-rating:hover .detail-rating-description {color:#74b3e6;text-decoration:underline}
 .card-detail .detail-rating:focus-visible {outline:2px solid #74b3e6;outline-offset:3px}
 .card-detail .detail-effect-columns {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px}
+html body .card-detail[data-card-layout=compact] .detail-effect-columns {grid-template-columns:minmax(0,1fr);gap:0;border:1px solid #303d4e;border-radius:9px;background:#101923;overflow:hidden}
 .card-detail .detail-effect-panel {padding:16px;border:1px solid #303d4e;border-radius:9px;background:#101923}
+html body .card-detail[data-card-layout=compact] .detail-effect-columns > .detail-effect-panel {border:0;border-radius:0;background:transparent}
+html body .card-detail[data-card-layout=compact] .detail-effect-columns > .detail-effect-panel + .detail-effect-panel {border-top:1px solid #303d4e}
 .card-detail .detail-effect-panel h4 {margin:0 0 9px;color:#aab8cb;font-size:13px;font-weight:600;letter-spacing:.05em}
-html body #card-scroll .card-detail .detail-effect-panel h4 {text-align:center}
-html body #card-scroll .card-detail .detail-effect-panel p {text-align:center}
+html body .card-detail[data-card-layout=compact] .detail-effect-panel h4 {text-align:center}
+html body .card-detail[data-card-layout=compact] .detail-effect-panel p {text-align:center}
 .card-detail .detail-effect-panel .detail-upgraded {color:#aab8cb}
 .card-detail .detail-effect-panel p {font-size:16px;color:#e0e7ef}
+.card-detail .detail-effect-panel .detail-panel-cost + .detail-panel-description {margin-top:9px}
 .card-detail .detail-effect-panel em {color:#f1cd7f;font-style:normal;font-weight:600}
 .card-detail .detail-effect-panel .detail-effect-change {color:#7fff00;font-weight:700}
 .card-detail .detail-effect-panel .detail-effect-search {display:inline;width:auto;min-height:0;margin:0;padding:0;border:0;border-radius:2px;background:transparent;color:#74b3e6;font:inherit;font-weight:700;cursor:pointer;text-decoration:none}
@@ -1174,8 +1191,8 @@ html body #card-scroll .card-detail .detail-effect-panel p {text-align:center}
 .card-detail .detail-stat:last-child {padding-bottom:0}
 .card-detail .detail-stat dt {color:#9aabbf;font-size:14px}
 .card-detail .detail-stat dd {display:flex;align-items:center;gap:9px;margin:0;color:#edf1f7;font-size:15px}
-html body #card-scroll .card-detail .detail-stat {grid-template-columns:repeat(2,minmax(0,1fr));column-gap:0}
-html body #card-scroll .card-detail .detail-stat dd {justify-content:flex-start;text-align:left}
+html body .card-detail[data-card-layout=compact] .detail-stat {grid-template-columns:repeat(2,minmax(0,1fr));column-gap:0}
+html body .card-detail[data-card-layout=compact] .detail-stat dd {justify-content:flex-start;text-align:left}
 .card-detail .detail-stat dd[data-stat-character] {color:var(--character-color)}
 .card-detail .detail-stat dd[data-type=Attack] {color:#ff777a}
 .card-detail .detail-stat dd[data-type=Skill] {color:lab(78.503% -64.9265 39.7492)}
@@ -1221,18 +1238,39 @@ html body[data-view=table] #card-scroll .card-detail-row > .card-detail-cell {di
 .card-detail .detail-tier[data-tier=D],.card-detail .detail-build-tier[data-tier=D] {color:#b9c2cc;background:#202630;border-color:#414b59}
 
 /* Enlarge card-page reading text while preserving names and effect/stats headings. */
-html body #card-scroll .card-detail {font-size:20px}
-html body #card-scroll .card-detail .detail-keyword strong {font-size:18.75px}
-html body #card-scroll .card-detail :is(.detail-keyword p,.detail-effect-panel h4,.detail-build-meta) {font-size:16.25px}
-html body #card-scroll .card-detail :is(.detail-stat dt,.detail-rating-description,.detail-build-name small,.detail-empty) {font-size:17.5px}
-html body #card-scroll .card-detail .detail-stat dd {font-size:18.75px}
-html body #card-scroll .card-detail .detail-effect-panel p {font-size:20px}
-html body #card-scroll .card-detail .detail-build-name {font-size:21.25px}
-html body #card-scroll .card-detail .detail-build-tier {font-size:25px}
-html body #card-scroll .card-detail .detail-rating-badge {font-size:30px}
+html body .card-detail[data-card-layout=compact] {font-size:20px}
+html body .card-detail[data-card-layout=compact] .detail-keyword strong {font-size:18.75px}
+html body .card-detail[data-card-layout=compact] :is(.detail-keyword p,.detail-effect-panel h4,.detail-resource-note h3,.detail-build-meta) {font-size:16.25px}
+html body .card-detail[data-card-layout=compact] :is(.detail-stat dt,.detail-rating-description,.detail-build-name small,.detail-empty) {font-size:17.5px}
+html body .card-detail[data-card-layout=compact] .detail-stat dd {font-size:18.75px}
+html body .card-detail[data-card-layout=compact] :is(.detail-effect-panel p,.detail-resource-note p) {font-size:20px}
+html body .card-detail[data-card-layout=compact] .detail-build-name {font-size:21.25px}
+html body .card-detail[data-card-layout=compact] .detail-build-tier {font-size:25px}
+html body .card-detail[data-card-layout=compact] .detail-rating-badge {font-size:30px}
 
-/* Keep the live result count at the bottom-left of the card menus. */
-html body main#main-content #tools #card-filter-result {display:block;grid-column:1 / -1;justify-self:start;width:100%;margin:0;padding:0 8px;color:#9aabbf;text-align:left;font:14px/1.4 Arial,"Microsoft JhengHei",sans-serif;font-variant-numeric:tabular-nums}
+/* Card rarity filters use the same outlined buttons as Type filters. */
+html body main#main-content #tools #card-filter-rarity button {
+  background:var(--control-bg)!important;border:1px solid var(--line)!important;border-radius:8px!important;box-shadow:none!important;
+  padding:8px;font:400 var(--control-font)/1.4 Arial,"Microsoft JhengHei",sans-serif!important;
+  color:var(--rarity-text-color,#b9c2cc)!important;
+}
+html body main#main-content #tools #card-filter-rarity button[value=Uncommon] {--rarity-text-color:#88bcec}
+html body main#main-content #tools #card-filter-rarity button[value=Rare] {--rarity-text-color:#e3bf72}
+html body main#main-content #tools #card-filter-rarity button[value=Ancient] {--rarity-text-color:#c5a2e8}
+html body main#main-content #tools #card-filter-rarity button:is(:hover,:focus-visible,[aria-pressed=true]) {border-color:var(--rarity-text-color,#b9c2cc)!important}
+html body main#main-content #tools #card-filter-rarity button[aria-pressed=true] {background:color-mix(in srgb,var(--rarity-text-color,#b9c2cc) 22%,#0d131a)!important;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--rarity-text-color,#b9c2cc) 40%,transparent)!important}
+html body main#main-content #tools #card-filter-rarity button[aria-pressed=true]::after {content:none}
+/* Keep the live result count at the page footer. */
+html body main#main-content .card-results-footer {margin:24px 0 0;padding:12px 8px;border-top:1px solid #293340}
+html body main#main-content .card-results-footer #card-filter-result {display:block;width:100%;margin:0;color:#9aabbf;text-align:center;font:14px/1.4 Arial,"Microsoft JhengHei",sans-serif;font-variant-numeric:tabular-nums}
+html body main#main-content .card-results-footer .card-source {margin:8px 0 0;color:#aab6c4;text-align:center;font:12px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+
+/* On phones, keep the five professions above the three shared card pools. */
+@media screen and (max-width:640px) {
+  html body main#main-content #tools #card-filter-character {display:grid;grid-template-columns:repeat(30,minmax(0,1fr))}
+  html body main#main-content #tools #card-filter-character button {grid-column:span 6;width:100%}
+  html body main#main-content #tools #card-filter-character button:is([value=Colorless],[value=Event],[value=Curse]) {grid-column:span 10}
+}
 
 
 /* Use the card page presentation for core and support cards. */
@@ -1247,18 +1285,39 @@ html body main#main-content .build-content .build-guide-card>.card-detail {
 html body main#main-content .build-guide-card .detail-title {
  font-size:clamp(30px,3vw,42px);line-height:1.25;
 }
-html body main#main-content .build-guide-card .detail-title a {font:inherit}
+html body main#main-content .build-guide-card .detail-title :is(.detail-name-zh,.detail-name-en) {font:inherit}
 html body main#main-content .build-guide-card .detail-effect-panel h4 {
  margin:0 0 9px;color:#aab8cb;font-size:13px;font-weight:600;line-height:1.6;letter-spacing:.05em;
 }
 html body main#main-content .build-guide-card .detail-build {font-size:16px}
 
 
+html body main#main-content .relic-list > .build-key-relic-item {display:block;min-width:0;padding:0;border:0;background:transparent}
+
+/* Reuse the relic catalog presentation in build and ancient pages. */
+html body main#main-content .catalog-relic-card[data-relic-id] {display:grid;gap:12px;box-sizing:border-box;width:100%;min-width:0;padding:18px;border:1px solid var(--line,#293340);border-radius:10px;background:var(--paper,#0d131a);text-align:center}
+html body main#main-content .catalog-relic-card[data-relic-id] .relic-card-text {display:grid;gap:12px;min-width:0}
+html body main#main-content .catalog-relic-card[data-relic-id] .relic-card-text > img {display:block;width:72px;height:72px;justify-self:center;margin:0;object-fit:contain}
+html body main#main-content .catalog-relic-card[data-relic-id] .relic-card-text h3 {display:flex;flex-direction:column;align-items:center;gap:4px;margin:0;font:700 27.5px/1.35 Arial,"Microsoft JhengHei",sans-serif}
+html body main#main-content .catalog-relic-card[data-relic-id] .relic-card-text h3 :is(.relic-name-zh,.relic-name-en) {font:inherit;color:var(--plain-rarity-color);overflow-wrap:anywhere}
+html body main#main-content .catalog-relic-card[data-relic-id] .relic-card-text > p {margin:0;color:#fff;font:400 22.5px/1.6 Arial,"Microsoft JhengHei",sans-serif;white-space:pre-line}
+html body main#main-content .catalog-relic-card[data-relic-id] .relic-keyword {color:#fbbf24;font-weight:500}
+html body main#main-content .catalog-relic-card[data-relic-id] .relic-rarity-row {display:flex;justify-content:center;font:600 20px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+html body main#main-content#main-content .catalog-relic-card .relic-rarity-row [data-relic-rarity] {padding:0;border:0!important;background:transparent!important;color:var(--plain-rarity-color)!important;font:inherit}
+html body main#main-content .catalog-relic-card[data-relic-id][data-rarity=Starter] {--plain-rarity-color:#b9c2cc}
+html body main#main-content .catalog-relic-card[data-relic-id][data-rarity=Common] {--plain-rarity-color:#b9c2cc}
+html body main#main-content .catalog-relic-card[data-relic-id][data-rarity=Uncommon] {--plain-rarity-color:#88bcec}
+html body main#main-content .catalog-relic-card[data-relic-id][data-rarity=Rare] {--plain-rarity-color:#e3bf72}
+html body main#main-content .catalog-relic-card[data-relic-id][data-rarity=Ancient] {--plain-rarity-color:#c5a2e8}
+html body main#main-content .catalog-relic-card[data-relic-id][data-rarity=Shop] {--plain-rarity-color:#b08968}
+html body main#main-content .catalog-relic-card[data-relic-id][data-rarity=Event] {--plain-rarity-color:#6ac1b4}
+html body main#main-content .catalog-relic-card[data-relic-id][data-rarity=None] {--plain-rarity-color:#b9c2cc}
+
 /* Center the complete build guide, including menus and content, on desktop. */
 @media screen and (min-width:1025px) and (hover:hover) and (pointer:fine), screen and (min-width:1441px) {
   html body.character-guide-page main#main-content#main-content#main-content {
     box-sizing:border-box;
-    width:25%!important;
+    width:max(25%,500px)!important;
     max-width:none!important;
     margin-inline:auto!important;
   }
@@ -1295,6 +1354,11 @@ html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build
 /* Tier A labels use white lettering on their existing background. */
 html body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#fff!important}
 
+html body .card-detail .detail-inline-tier[data-tier=S] {--inline-tier-color:rgb(225, 112, 132)}
+html body .card-detail .detail-inline-tier[data-tier=A] {--inline-tier-color:rgb(227, 191, 114)}
+html body .card-detail .detail-inline-tier[data-tier=B] {--inline-tier-color:rgb(105, 176, 222)}
+html body .card-detail .detail-inline-tier[data-tier=C] {--inline-tier-color:rgb(105, 183, 139)}
+html body .card-detail .detail-inline-tier[data-tier=D] {--inline-tier-color:rgb(120, 132, 145)}
 /* English card metadata: plain rarity/type text and compact solid tier badges. */
 html body #main-content .card-detail .detail-meta>:is(.detail-type,.detail-rarity) {
   min-height:0;height:auto;padding:0;border:0;border-radius:0;background:transparent;
@@ -1340,39 +1404,46 @@ html body #main-content :is([data-stat-rarity=Uncommon],[data-relic-rarity=Uncom
 html body #main-content .potion-section[data-rarity=Uncommon]>.potion-section-title {color:#4f9bd9}
 html body #main-content :is(#card-filter-rarity button[value=Uncommon],[data-catalog-filter=rarity][value=Uncommon],button[data-rarity-filter=Uncommon],[data-filter-group=rarity][data-filter-value=Uncommon]) {--selection-color:#4f9bd9!important;--rarity-color:#4f9bd9!important}
 
-/* Card tier filters use the same filled presentation as the rating badges. */
+/* Card tier filters use the same button presentation as Type filters. */
 html body #main-content #tools #card-filter-tier button {
-  min-height:48px;padding:0 10px;border-radius:6px;
-  font:800 30px/1 Arial,"Microsoft JhengHei",sans-serif;
+  min-height:48px;padding:8px;border-radius:8px;
+  font:400 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
   position:relative;
 }
-html body #main-content #tools #card-filter-tier button[aria-pressed=true] {
-  box-shadow:none!important;
+html body #main-content #tools #card-filter-tier button[value][aria-pressed=true] {
+  border-color:var(--tier-text-color)!important;
+  background:color-mix(in srgb,var(--tier-text-color) 22%,#0d131a)!important;
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tier-text-color) 40%,transparent)!important;
 }
 html body #main-content #tools #card-filter-tier button[aria-pressed=true]::after {
-  content:"✓";position:absolute;right:4px;top:3px;
-  display:grid;place-items:center;width:18px;height:18px;
-  border-radius:50%;background:#fff;color:#040609;font:800 14px/1 Arial,sans-serif;
+  content:none;
 }
+html body #main-content #tools #card-filter-tier button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
 
 html body #main-content #tools #card-filter-tier button[value=S] {
-  color:rgb(255, 255, 255)!important;background:rgb(225, 112, 132)!important;border:1px solid rgb(225, 112, 132)!important;
+  --tier-text-color:rgb(225, 112, 132);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=A] {
-  color:rgb(255, 255, 255)!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
+  --tier-text-color:rgb(227, 191, 114);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=B] {
-  color:rgb(255, 255, 255)!important;background:rgb(105, 176, 222)!important;border:1px solid rgb(105, 176, 222)!important;
+  --tier-text-color:rgb(105, 176, 222);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=C] {
-  color:rgb(255, 255, 255)!important;background:rgb(105, 183, 139)!important;border:1px solid rgb(105, 183, 139)!important;
+  --tier-text-color:rgb(105, 183, 139);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=D] {
-  color:rgb(255, 255, 255)!important;background:rgb(120, 132, 145)!important;border:1px solid rgb(120, 132, 145)!important;
+  --tier-text-color:rgb(120, 132, 145);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 
@@ -1452,6 +1523,44 @@ html body main#main-content :is(.rarity-label[data-label-rarity=Ancient],[data-r
 html body main#main-content :is(.rarity-label[data-label-rarity=Event],[data-relic-rarity=Event],.entry.potion[data-rarity=Event] .potion-rarity-row,#card-filter-rarity button[value=Event],button[data-catalog-filter=rarity][value=Event]) {
  background:#b08b70!important;border-color:#b08b70!important;
 }
+
+/* Relic and potion rarity filters share the Type button style; entry rarity stays plain. */
+html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity] {
+ background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;border-radius:8px!important;box-shadow:none!important;
+ padding:8px;font-weight:400!important;text-decoration:none;
+ color:var(--plain-rarity-color,#b9c2cc)!important;
+}
+html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity]:is(:hover,:focus-visible,[aria-pressed=true]) {border-color:var(--plain-rarity-color,#b9c2cc)!important}
+html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity][aria-pressed=true] {background:color-mix(in srgb,var(--plain-rarity-color,#b9c2cc) 22%,#0d131a)!important;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--plain-rarity-color,#b9c2cc) 40%,transparent)!important}
+html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity][aria-pressed=true]::after {content:none}
+html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion) :is([data-relic-rarity],.potion-rarity-row) {
+ background:transparent!important;border:0!important;border-radius:0;padding:0;min-height:0;
+ color:var(--plain-rarity-color,#b9c2cc)!important;font:inherit;
+}
+
+html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity][value=Starter],
+html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=Starter] {--plain-rarity-color:#b9c2cc}
+
+html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity][value=Common],
+html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=Common] {--plain-rarity-color:#b9c2cc}
+
+html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity][value=Uncommon],
+html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=Uncommon] {--plain-rarity-color:#88bcec}
+
+html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity][value=Rare],
+html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=Rare] {--plain-rarity-color:#e3bf72}
+
+html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity][value=Ancient],
+html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=Ancient] {--plain-rarity-color:#c5a2e8}
+
+html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity][value=Shop],
+html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=Shop] {--plain-rarity-color:#b08968}
+
+html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity][value=Event],
+html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=Event] {--plain-rarity-color:#6ac1b4}
+
+html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity][value=None],
+html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=None] {--plain-rarity-color:#b9c2cc}
 
 
 /* All pages share a full-width frame with the same edge spacing. */
@@ -1731,6 +1840,11 @@ html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build
 /* Tier A labels use white lettering on their existing background. */
 html body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#fff!important}
 
+html body .card-detail .detail-inline-tier[data-tier=S] {--inline-tier-color:rgb(225, 112, 132)}
+html body .card-detail .detail-inline-tier[data-tier=A] {--inline-tier-color:rgb(227, 191, 114)}
+html body .card-detail .detail-inline-tier[data-tier=B] {--inline-tier-color:rgb(105, 176, 222)}
+html body .card-detail .detail-inline-tier[data-tier=C] {--inline-tier-color:rgb(105, 183, 139)}
+html body .card-detail .detail-inline-tier[data-tier=D] {--inline-tier-color:rgb(120, 132, 145)}
 /* English card metadata: plain rarity/type text and compact solid tier badges. */
 html body #main-content .card-detail .detail-meta>:is(.detail-type,.detail-rarity) {
   min-height:0;height:auto;padding:0;border:0;border-radius:0;background:transparent;
@@ -1776,39 +1890,46 @@ html body #main-content :is([data-stat-rarity=Uncommon],[data-relic-rarity=Uncom
 html body #main-content .potion-section[data-rarity=Uncommon]>.potion-section-title {color:#4f9bd9}
 html body #main-content :is(#card-filter-rarity button[value=Uncommon],[data-catalog-filter=rarity][value=Uncommon],button[data-rarity-filter=Uncommon],[data-filter-group=rarity][data-filter-value=Uncommon]) {--selection-color:#4f9bd9!important;--rarity-color:#4f9bd9!important}
 
-/* Card tier filters use the same filled presentation as the rating badges. */
+/* Card tier filters use the same button presentation as Type filters. */
 html body #main-content #tools #card-filter-tier button {
-  min-height:48px;padding:0 10px;border-radius:6px;
-  font:800 30px/1 Arial,"Microsoft JhengHei",sans-serif;
+  min-height:48px;padding:8px;border-radius:8px;
+  font:400 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
   position:relative;
 }
-html body #main-content #tools #card-filter-tier button[aria-pressed=true] {
-  box-shadow:none!important;
+html body #main-content #tools #card-filter-tier button[value][aria-pressed=true] {
+  border-color:var(--tier-text-color)!important;
+  background:color-mix(in srgb,var(--tier-text-color) 22%,#0d131a)!important;
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tier-text-color) 40%,transparent)!important;
 }
 html body #main-content #tools #card-filter-tier button[aria-pressed=true]::after {
-  content:"✓";position:absolute;right:4px;top:3px;
-  display:grid;place-items:center;width:18px;height:18px;
-  border-radius:50%;background:#fff;color:#040609;font:800 14px/1 Arial,sans-serif;
+  content:none;
 }
+html body #main-content #tools #card-filter-tier button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
 
 html body #main-content #tools #card-filter-tier button[value=S] {
-  color:rgb(255, 255, 255)!important;background:rgb(225, 112, 132)!important;border:1px solid rgb(225, 112, 132)!important;
+  --tier-text-color:rgb(225, 112, 132);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=A] {
-  color:rgb(255, 255, 255)!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
+  --tier-text-color:rgb(227, 191, 114);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=B] {
-  color:rgb(255, 255, 255)!important;background:rgb(105, 176, 222)!important;border:1px solid rgb(105, 176, 222)!important;
+  --tier-text-color:rgb(105, 176, 222);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=C] {
-  color:rgb(255, 255, 255)!important;background:rgb(105, 183, 139)!important;border:1px solid rgb(105, 183, 139)!important;
+  --tier-text-color:rgb(105, 183, 139);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=D] {
-  color:rgb(255, 255, 255)!important;background:rgb(120, 132, 145)!important;border:1px solid rgb(120, 132, 145)!important;
+  --tier-text-color:rgb(120, 132, 145);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 /* Set the card page width once; every nested content wrapper fills it. */
@@ -1817,7 +1938,7 @@ html body main#main-content#main-content:has(>#card-scroll) {
   margin-inline:auto!important;padding-inline:0!important;
 }
 @media screen and (min-width:1025px) and (hover:hover) and (pointer:fine) {
-  html body main#main-content#main-content:has(>#card-scroll) {width:25vw!important}
+  html body main#main-content#main-content:has(>#card-scroll) {width:max(25vw,460px)!important}
 }
 html body main#main-content#main-content>#tools,
 html body main#main-content#main-content>#card-scroll {
@@ -1882,37 +2003,25 @@ html body>.site-header {box-sizing:border-box;width:100vw!important;max-width:no
 html body .site-header .site-nav > a {min-width:60px;min-height:48px;padding:6px 12px!important}
 html body .site-header .site-nav a > .site-nav-visual {display:flex!important;align-items:center;justify-content:center}
 html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max-width:none}
+html body .site-header .site-nav {margin-left:auto!important;justify-content:end}
 /* Match the compact button widths used by the relic page. */
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(6,62px)!important;
+    grid-template-columns:repeat(5,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 392px!important;
-    width:392px!important;
+    flex:0 1 326px!important;
+    width:326px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
   }
   html body .site-header .site-nav > a {box-sizing:border-box;flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important}
 }
-/* Portrait phones show all six navigation buttons across the full header. */
+/* Portrait phones keep the compact header edge spacing. */
 @media screen and (max-width:600px) and (orientation:portrait) {
   html body .site-header>.site-header-inner {width:100%!important;padding-inline:8px!important;gap:0}
   html body .site-header .site-brand {display:none!important}
-  html body .site-header .site-nav {
-    display:grid!important;
-    grid-template-columns:repeat(6,minmax(0,1fr))!important;
-    grid-auto-flow:row!important;
-    grid-auto-columns:auto!important;
-    flex:1 1 100%!important;
-    width:100%!important;
-    max-width:100%;
-    margin:0;
-    gap:4px;
-    overflow:visible;
-  }
-  html body .site-header .site-nav > a {box-sizing:border-box;min-width:0!important;width:100%!important;max-width:100%;padding:6px 0!important}
 }
 
 /* Brand visibility is shared by every page, including bundled legacy styles. */
@@ -1922,11 +2031,12 @@ html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
-  html body .site-header .site-nav {flex:1 1 100%!important;width:100%!important}
+  html body .site-header .site-nav {display:flex!important;flex:0 0 auto!important;width:max-content!important;max-width:100%;margin-left:auto!important;justify-content:flex-end!important;gap:4px}
+  html body .site-header .site-nav > a {box-sizing:border-box;flex:0 0 52px!important;width:52px!important;min-width:52px!important;max-width:52px!important;padding:6px 8px!important}
 }
 
 /* Catalogs scroll with the document; only the navigation stays at the top. */

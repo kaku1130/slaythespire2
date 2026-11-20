@@ -16,6 +16,7 @@ ${colorSelector}[data-tier=${tier}][data-tier] {
 module.exports += "\n/* Tier A labels use white lettering on their existing background. */\nhtml body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#fff!important}\n";
 // Metadata follows the badges on the English card detail pages.
 const metadata = 'html body #main-content .card-detail .detail-meta';
+module.exports += Object.entries(colors).map(([tier,{background}]) => '\nhtml body .card-detail .detail-inline-tier[data-tier='+tier+'] {--inline-tier-color:'+background+'}').join('');
 module.exports += `
 /* English card metadata: plain rarity/type text and compact solid tier badges. */
 ${metadata}>:is(.detail-type,.detail-rarity) {
@@ -45,22 +46,25 @@ ${metadata}>.detail-tier[data-tier=${tier}][data-tier] {color:${color}!important
 module.exports += require('./rarity-colors.cjs');
 
 module.exports += `
-/* Card tier filters use the same filled presentation as the rating badges. */
+/* Card tier filters use the same button presentation as Type filters. */
 html body #main-content #tools #card-filter-tier button {
-  min-height:48px;padding:0 10px;border-radius:6px;
-  font:800 30px/1 Arial,"Microsoft JhengHei",sans-serif;
+  min-height:48px;padding:8px;border-radius:8px;
+  font:400 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
   position:relative;
 }
-html body #main-content #tools #card-filter-tier button[aria-pressed=true] {
-  box-shadow:none!important;
+html body #main-content #tools #card-filter-tier button[value][aria-pressed=true] {
+  border-color:var(--tier-text-color)!important;
+  background:color-mix(in srgb,var(--tier-text-color) 22%,#0d131a)!important;
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tier-text-color) 40%,transparent)!important;
 }
 html body #main-content #tools #card-filter-tier button[aria-pressed=true]::after {
-  content:"✓";position:absolute;right:4px;top:3px;
-  display:grid;place-items:center;width:18px;height:18px;
-  border-radius:50%;background:#fff;color:#040609;font:800 14px/1 Arial,sans-serif;
+  content:none;
 }
-` + Object.entries(colors).map(([tier,{color,background}]) => `
+html body #main-content #tools #card-filter-tier button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
+` + Object.entries(colors).map(([tier,{background}]) => `
 html body #main-content #tools #card-filter-tier button[value=${tier}] {
-  color:${color}!important;background:${background}!important;border:1px solid ${background}!important;
+  --tier-text-color:${background};color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 `).join('');

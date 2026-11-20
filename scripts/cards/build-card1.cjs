@@ -11,7 +11,7 @@ const plain = value => value.replace(/<\/?(?:article|section|div|p|header|h[1-6]
 }).replace(/\s+/g, ' ').trim();
 const renderArticle = require('./render-card-detail.cjs');
 function render(card) {
-  const article=renderArticle(card,{localBuilds,showBuilds:false,showKeywords:false,searchableEffects:true,rarityBeforeType:true,showEffectNotes:true});
+  const article=renderArticle(card,{localBuilds,showBuilds:false,showKeywords:false,searchableEffects:true,rarityBeforeType:true,showEffectNotes:false,metadataAboveEffects:true});
   return '<td class="card-detail-cell" data-field="detail" role="cell" colspan="10">'+article+'</td>';
 }
 function attribute(tag, name, value) {
@@ -54,6 +54,14 @@ html = html.replace(/<tr id="card-([^"]+)"[^>]*>[\s\S]*?<\/tr>/g, (original, id)
   return row.replace('</tr>', detailCell + '</tr>');
 });
 assert.equal(count, details.size);
+html = html.replace(/<footer class="card-results-footer">([\s\S]*?)<\/footer>/g, '$1');
+html = html.replace(/<footer class="site-attribution"[^>]*>[\s\S]*?<\/footer>/g, '')
+  .replace(/<p class="card-source">[\s\S]*?<\/p>/g, '')
+  .replace(/<script>\(\(\)=>\{const main=document\.getElementById\('main-content'\);const footer=document\.querySelector\('\.site-attribution'\);[\s\S]*?<\/script>/g, '');
+const resultCount = html.match(/<p\b[^>]*id="card-filter-result"[^>]*>[\s\S]*?<\/p>/);
+assert.ok(resultCount, 'Missing card filter count');
+const sourceCredit = '<p class="card-source">資料來源：<a href="https://slaythespire2.net/" target="_blank" rel="noopener noreferrer">Slay the Spire 2 Guide &amp; Wiki</a> · 遊戲內容與圖片屬各自權利人所有。</p>';
+html = html.replace(resultCount[0], '').replace('</main>', '<footer class="card-results-footer">' + resultCount[0] + sourceCredit + '</footer></main>');
 html = html.replace('href="assets/cards/cards.css"', 'href="assets/cards/' + output + '.css"');
 html = html.replace(/<title>[\s\S]*?<\/title>/, '<title>' + (output === 'cards' ? 'Slay the Spire 2' : 'Card 1') + '｜' + count + ' 張卡牌詳細資料</title>');
 html = html.replace(/href="(?:card|card1)\.html#card-/g, 'href="' + (output === 'cards' ? 'card' : output) + '.html#card-');

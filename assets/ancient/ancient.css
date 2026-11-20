@@ -255,37 +255,25 @@ html body>.site-header {box-sizing:border-box;width:100vw!important;max-width:no
 html body .site-header .site-nav > a {min-width:60px;min-height:48px;padding:6px 12px!important}
 html body .site-header .site-nav a > .site-nav-visual {display:flex!important;align-items:center;justify-content:center}
 html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max-width:none}
+html body .site-header .site-nav {margin-left:auto!important;justify-content:end}
 /* Match the compact button widths used by the relic page. */
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(6,62px)!important;
+    grid-template-columns:repeat(5,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 392px!important;
-    width:392px!important;
+    flex:0 1 326px!important;
+    width:326px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
   }
   html body .site-header .site-nav > a {box-sizing:border-box;flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important}
 }
-/* Portrait phones show all six navigation buttons across the full header. */
+/* Portrait phones keep the compact header edge spacing. */
 @media screen and (max-width:600px) and (orientation:portrait) {
   html body .site-header>.site-header-inner {width:100%!important;padding-inline:8px!important;gap:0}
   html body .site-header .site-brand {display:none!important}
-  html body .site-header .site-nav {
-    display:grid!important;
-    grid-template-columns:repeat(6,minmax(0,1fr))!important;
-    grid-auto-flow:row!important;
-    grid-auto-columns:auto!important;
-    flex:1 1 100%!important;
-    width:100%!important;
-    max-width:100%;
-    margin:0;
-    gap:4px;
-    overflow:visible;
-  }
-  html body .site-header .site-nav > a {box-sizing:border-box;min-width:0!important;width:100%!important;max-width:100%;padding:6px 0!important}
 }
 
 /* Brand visibility is shared by every page, including bundled legacy styles. */
@@ -295,11 +283,12 @@ html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
-  html body .site-header .site-nav {flex:1 1 100%!important;width:100%!important}
+  html body .site-header .site-nav {display:flex!important;flex:0 0 auto!important;width:max-content!important;max-width:100%;margin-left:auto!important;justify-content:flex-end!important;gap:4px}
+  html body .site-header .site-nav > a {box-sizing:border-box;flex:0 0 52px!important;width:52px!important;min-width:52px!important;max-width:52px!important;padding:6px 8px!important}
 }
 html{color-scheme:dark;scrollbar-width:auto;scrollbar-color:auto}body{background:#040609;color:#e3e8ee}main{min-width:0}main img{max-width:100%}main [class*="flex-wrap"]:has(>[aria-label="切換遊戲版本"]){display:none}/* Shared page frame: content and navigation use the same edges. */
 :root{--site-width:90%;--site-page-gap:20px}
@@ -754,6 +743,11 @@ html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build
 /* Tier A labels use white lettering on their existing background. */
 html body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#fff!important}
 
+html body .card-detail .detail-inline-tier[data-tier=S] {--inline-tier-color:rgb(225, 112, 132)}
+html body .card-detail .detail-inline-tier[data-tier=A] {--inline-tier-color:rgb(227, 191, 114)}
+html body .card-detail .detail-inline-tier[data-tier=B] {--inline-tier-color:rgb(105, 176, 222)}
+html body .card-detail .detail-inline-tier[data-tier=C] {--inline-tier-color:rgb(105, 183, 139)}
+html body .card-detail .detail-inline-tier[data-tier=D] {--inline-tier-color:rgb(120, 132, 145)}
 /* English card metadata: plain rarity/type text and compact solid tier badges. */
 html body #main-content .card-detail .detail-meta>:is(.detail-type,.detail-rarity) {
   min-height:0;height:auto;padding:0;border:0;border-radius:0;background:transparent;
@@ -799,39 +793,46 @@ html body #main-content :is([data-stat-rarity=Uncommon],[data-relic-rarity=Uncom
 html body #main-content .potion-section[data-rarity=Uncommon]>.potion-section-title {color:#4f9bd9}
 html body #main-content :is(#card-filter-rarity button[value=Uncommon],[data-catalog-filter=rarity][value=Uncommon],button[data-rarity-filter=Uncommon],[data-filter-group=rarity][data-filter-value=Uncommon]) {--selection-color:#4f9bd9!important;--rarity-color:#4f9bd9!important}
 
-/* Card tier filters use the same filled presentation as the rating badges. */
+/* Card tier filters use the same button presentation as Type filters. */
 html body #main-content #tools #card-filter-tier button {
-  min-height:48px;padding:0 10px;border-radius:6px;
-  font:800 30px/1 Arial,"Microsoft JhengHei",sans-serif;
+  min-height:48px;padding:8px;border-radius:8px;
+  font:400 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
   position:relative;
 }
-html body #main-content #tools #card-filter-tier button[aria-pressed=true] {
-  box-shadow:none!important;
+html body #main-content #tools #card-filter-tier button[value][aria-pressed=true] {
+  border-color:var(--tier-text-color)!important;
+  background:color-mix(in srgb,var(--tier-text-color) 22%,#0d131a)!important;
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tier-text-color) 40%,transparent)!important;
 }
 html body #main-content #tools #card-filter-tier button[aria-pressed=true]::after {
-  content:"✓";position:absolute;right:4px;top:3px;
-  display:grid;place-items:center;width:18px;height:18px;
-  border-radius:50%;background:#fff;color:#040609;font:800 14px/1 Arial,sans-serif;
+  content:none;
 }
+html body #main-content #tools #card-filter-tier button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
 
 html body #main-content #tools #card-filter-tier button[value=S] {
-  color:rgb(255, 255, 255)!important;background:rgb(225, 112, 132)!important;border:1px solid rgb(225, 112, 132)!important;
+  --tier-text-color:rgb(225, 112, 132);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=A] {
-  color:rgb(255, 255, 255)!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
+  --tier-text-color:rgb(227, 191, 114);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=B] {
-  color:rgb(255, 255, 255)!important;background:rgb(105, 176, 222)!important;border:1px solid rgb(105, 176, 222)!important;
+  --tier-text-color:rgb(105, 176, 222);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=C] {
-  color:rgb(255, 255, 255)!important;background:rgb(105, 183, 139)!important;border:1px solid rgb(105, 183, 139)!important;
+  --tier-text-color:rgb(105, 183, 139);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=D] {
-  color:rgb(255, 255, 255)!important;background:rgb(120, 132, 145)!important;border:1px solid rgb(120, 132, 145)!important;
+  --tier-text-color:rgb(120, 132, 145);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 /* Set the card page width once; every nested content wrapper fills it. */
@@ -840,7 +841,7 @@ html body main#main-content#main-content:has(>#card-scroll) {
   margin-inline:auto!important;padding-inline:0!important;
 }
 @media screen and (min-width:1025px) and (hover:hover) and (pointer:fine) {
-  html body main#main-content#main-content:has(>#card-scroll) {width:25vw!important}
+  html body main#main-content#main-content:has(>#card-scroll) {width:max(25vw,460px)!important}
 }
 html body main#main-content#main-content>#tools,
 html body main#main-content#main-content>#card-scroll {
@@ -904,37 +905,25 @@ html body>.site-header {box-sizing:border-box;width:100vw!important;max-width:no
 html body .site-header .site-nav > a {min-width:60px;min-height:48px;padding:6px 12px!important}
 html body .site-header .site-nav a > .site-nav-visual {display:flex!important;align-items:center;justify-content:center}
 html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max-width:none}
+html body .site-header .site-nav {margin-left:auto!important;justify-content:end}
 /* Match the compact button widths used by the relic page. */
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(6,62px)!important;
+    grid-template-columns:repeat(5,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 392px!important;
-    width:392px!important;
+    flex:0 1 326px!important;
+    width:326px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
   }
   html body .site-header .site-nav > a {box-sizing:border-box;flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important}
 }
-/* Portrait phones show all six navigation buttons across the full header. */
+/* Portrait phones keep the compact header edge spacing. */
 @media screen and (max-width:600px) and (orientation:portrait) {
   html body .site-header>.site-header-inner {width:100%!important;padding-inline:8px!important;gap:0}
   html body .site-header .site-brand {display:none!important}
-  html body .site-header .site-nav {
-    display:grid!important;
-    grid-template-columns:repeat(6,minmax(0,1fr))!important;
-    grid-auto-flow:row!important;
-    grid-auto-columns:auto!important;
-    flex:1 1 100%!important;
-    width:100%!important;
-    max-width:100%;
-    margin:0;
-    gap:4px;
-    overflow:visible;
-  }
-  html body .site-header .site-nav > a {box-sizing:border-box;min-width:0!important;width:100%!important;max-width:100%;padding:6px 0!important}
 }
 
 /* Brand visibility is shared by every page, including bundled legacy styles. */
@@ -944,11 +933,12 @@ html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
-  html body .site-header .site-nav {flex:1 1 100%!important;width:100%!important}
+  html body .site-header .site-nav {display:flex!important;flex:0 0 auto!important;width:max-content!important;max-width:100%;margin-left:auto!important;justify-content:flex-end!important;gap:4px}
+  html body .site-header .site-nav > a {box-sizing:border-box;flex:0 0 52px!important;width:52px!important;min-width:52px!important;max-width:52px!important;padding:6px 8px!important}
 }
 
 main#main-content.detail-split{display:flex!important;flex-direction:column;gap:16px;overflow:hidden!important}.detail-split>.filters{flex:0 0 auto;max-height:40%;overflow:auto;margin:0;padding:0 0 4px}.split-body{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;flex:1;min-height:0;min-width:0;overflow:hidden}
@@ -1313,6 +1303,11 @@ html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build
 /* Tier A labels use white lettering on their existing background. */
 html body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#fff!important}
 
+html body .card-detail .detail-inline-tier[data-tier=S] {--inline-tier-color:rgb(225, 112, 132)}
+html body .card-detail .detail-inline-tier[data-tier=A] {--inline-tier-color:rgb(227, 191, 114)}
+html body .card-detail .detail-inline-tier[data-tier=B] {--inline-tier-color:rgb(105, 176, 222)}
+html body .card-detail .detail-inline-tier[data-tier=C] {--inline-tier-color:rgb(105, 183, 139)}
+html body .card-detail .detail-inline-tier[data-tier=D] {--inline-tier-color:rgb(120, 132, 145)}
 /* English card metadata: plain rarity/type text and compact solid tier badges. */
 html body #main-content .card-detail .detail-meta>:is(.detail-type,.detail-rarity) {
   min-height:0;height:auto;padding:0;border:0;border-radius:0;background:transparent;
@@ -1358,39 +1353,46 @@ html body #main-content :is([data-stat-rarity=Uncommon],[data-relic-rarity=Uncom
 html body #main-content .potion-section[data-rarity=Uncommon]>.potion-section-title {color:#4f9bd9}
 html body #main-content :is(#card-filter-rarity button[value=Uncommon],[data-catalog-filter=rarity][value=Uncommon],button[data-rarity-filter=Uncommon],[data-filter-group=rarity][data-filter-value=Uncommon]) {--selection-color:#4f9bd9!important;--rarity-color:#4f9bd9!important}
 
-/* Card tier filters use the same filled presentation as the rating badges. */
+/* Card tier filters use the same button presentation as Type filters. */
 html body #main-content #tools #card-filter-tier button {
-  min-height:48px;padding:0 10px;border-radius:6px;
-  font:800 30px/1 Arial,"Microsoft JhengHei",sans-serif;
+  min-height:48px;padding:8px;border-radius:8px;
+  font:400 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
   position:relative;
 }
-html body #main-content #tools #card-filter-tier button[aria-pressed=true] {
-  box-shadow:none!important;
+html body #main-content #tools #card-filter-tier button[value][aria-pressed=true] {
+  border-color:var(--tier-text-color)!important;
+  background:color-mix(in srgb,var(--tier-text-color) 22%,#0d131a)!important;
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tier-text-color) 40%,transparent)!important;
 }
 html body #main-content #tools #card-filter-tier button[aria-pressed=true]::after {
-  content:"✓";position:absolute;right:4px;top:3px;
-  display:grid;place-items:center;width:18px;height:18px;
-  border-radius:50%;background:#fff;color:#040609;font:800 14px/1 Arial,sans-serif;
+  content:none;
 }
+html body #main-content #tools #card-filter-tier button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
 
 html body #main-content #tools #card-filter-tier button[value=S] {
-  color:rgb(255, 255, 255)!important;background:rgb(225, 112, 132)!important;border:1px solid rgb(225, 112, 132)!important;
+  --tier-text-color:rgb(225, 112, 132);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=A] {
-  color:rgb(255, 255, 255)!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
+  --tier-text-color:rgb(227, 191, 114);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=B] {
-  color:rgb(255, 255, 255)!important;background:rgb(105, 176, 222)!important;border:1px solid rgb(105, 176, 222)!important;
+  --tier-text-color:rgb(105, 176, 222);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=C] {
-  color:rgb(255, 255, 255)!important;background:rgb(105, 183, 139)!important;border:1px solid rgb(105, 183, 139)!important;
+  --tier-text-color:rgb(105, 183, 139);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 html body #main-content #tools #card-filter-tier button[value=D] {
-  color:rgb(255, 255, 255)!important;background:rgb(120, 132, 145)!important;border:1px solid rgb(120, 132, 145)!important;
+  --tier-text-color:rgb(120, 132, 145);color:var(--tier-text-color)!important;
+  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
 /* Set the card page width once; every nested content wrapper fills it. */
@@ -1399,7 +1401,7 @@ html body main#main-content#main-content:has(>#card-scroll) {
   margin-inline:auto!important;padding-inline:0!important;
 }
 @media screen and (min-width:1025px) and (hover:hover) and (pointer:fine) {
-  html body main#main-content#main-content:has(>#card-scroll) {width:25vw!important}
+  html body main#main-content#main-content:has(>#card-scroll) {width:max(25vw,460px)!important}
 }
 html body main#main-content#main-content>#tools,
 html body main#main-content#main-content>#card-scroll {
@@ -1464,37 +1466,25 @@ html body>.site-header {box-sizing:border-box;width:100vw!important;max-width:no
 html body .site-header .site-nav > a {min-width:60px;min-height:48px;padding:6px 12px!important}
 html body .site-header .site-nav a > .site-nav-visual {display:flex!important;align-items:center;justify-content:center}
 html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max-width:none}
+html body .site-header .site-nav {margin-left:auto!important;justify-content:end}
 /* Match the compact button widths used by the relic page. */
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(6,62px)!important;
+    grid-template-columns:repeat(5,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 392px!important;
-    width:392px!important;
+    flex:0 1 326px!important;
+    width:326px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
   }
   html body .site-header .site-nav > a {box-sizing:border-box;flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important}
 }
-/* Portrait phones show all six navigation buttons across the full header. */
+/* Portrait phones keep the compact header edge spacing. */
 @media screen and (max-width:600px) and (orientation:portrait) {
   html body .site-header>.site-header-inner {width:100%!important;padding-inline:8px!important;gap:0}
   html body .site-header .site-brand {display:none!important}
-  html body .site-header .site-nav {
-    display:grid!important;
-    grid-template-columns:repeat(6,minmax(0,1fr))!important;
-    grid-auto-flow:row!important;
-    grid-auto-columns:auto!important;
-    flex:1 1 100%!important;
-    width:100%!important;
-    max-width:100%;
-    margin:0;
-    gap:4px;
-    overflow:visible;
-  }
-  html body .site-header .site-nav > a {box-sizing:border-box;min-width:0!important;width:100%!important;max-width:100%;padding:6px 0!important}
 }
 
 /* Brand visibility is shared by every page, including bundled legacy styles. */
@@ -1504,11 +1494,12 @@ html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
-  html body .site-header .site-nav {flex:1 1 100%!important;width:100%!important}
+  html body .site-header .site-nav {display:flex!important;flex:0 0 auto!important;width:max-content!important;max-width:100%;margin-left:auto!important;justify-content:flex-end!important;gap:4px}
+  html body .site-header .site-nav > a {box-sizing:border-box;flex:0 0 52px!important;width:52px!important;min-width:52px!important;max-width:52px!important;padding:6px 8px!important}
 }
 
 /* Catalogs scroll with the document; only the navigation stays at the top. */

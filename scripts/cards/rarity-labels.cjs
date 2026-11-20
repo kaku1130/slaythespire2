@@ -32,3 +32,25 @@ html body main#main-content :is(.rarity-label[data-label-rarity=Event],[data-rel
  background:#b08b70!important;border-color:#b08b70!important;
 }
 `;
+
+const plainRarityColors = require('./rarity-text-colors.cjs');
+const textFilters = 'html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity]';
+const textLabels = 'html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion) :is([data-relic-rarity],.potion-rarity-row)';
+module.exports += `
+/* Relic and potion rarity filters share the Type button style; entry rarity stays plain. */
+${textFilters} {
+ background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;border-radius:8px!important;box-shadow:none!important;
+ padding:8px;font-weight:400!important;text-decoration:none;
+ color:var(--plain-rarity-color,#b9c2cc)!important;
+}
+${textFilters}:is(:hover,:focus-visible,[aria-pressed=true]) {border-color:var(--plain-rarity-color,#b9c2cc)!important}
+${textFilters}[aria-pressed=true] {background:color-mix(in srgb,var(--plain-rarity-color,#b9c2cc) 22%,#0d131a)!important;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--plain-rarity-color,#b9c2cc) 40%,transparent)!important}
+${textFilters}[aria-pressed=true]::after {content:none}
+${textLabels} {
+ background:transparent!important;border:0!important;border-radius:0;padding:0;min-height:0;
+ color:var(--plain-rarity-color,#b9c2cc)!important;font:inherit;
+}
+` + Object.entries(plainRarityColors).map(([rarity,color]) => `
+${textFilters}[value=${rarity}],
+html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=${rarity}] {--plain-rarity-color:${color}}
+`).join('');

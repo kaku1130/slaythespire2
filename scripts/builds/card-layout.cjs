@@ -11,7 +11,7 @@ html body main#main-content .build-content .build-guide-card>.card-detail {
 html body main#main-content .build-guide-card .detail-title {
  font-size:clamp(30px,3vw,42px);line-height:1.25;
 }
-html body main#main-content .build-guide-card .detail-title a {font:inherit}
+html body main#main-content .build-guide-card .detail-title :is(.detail-name-zh,.detail-name-en) {font:inherit}
 html body main#main-content .build-guide-card .detail-effect-panel h4 {
  margin:0 0 9px;color:#aab8cb;font-size:13px;font-weight:600;line-height:1.6;letter-spacing:.05em;
 }

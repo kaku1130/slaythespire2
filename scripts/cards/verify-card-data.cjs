@@ -25,9 +25,10 @@ async function main(){
    await page.goto(pathToFileURL(path.resolve('card.html')).href);
    const rendered=await page.locator('.card-detail-row').evaluateAll(rows=>rows.map(row=>{
     const text=element=>{const copy=element.cloneNode(true);for(const br of copy.querySelectorAll('br'))br.replaceWith('\n');return copy.textContent.replace(/\s+/g,' ').trim();};
-    const panels=row.querySelectorAll('.detail-effect-panel p');
-    return {id:row.dataset.id,name:text(row.querySelector('.detail-title a:last-child')),zh:text(row.querySelector('.detail-name-zh')),
-     base:text(panels[0]),upgraded:text(panels[1]),stats:Object.fromEntries([...row.querySelectorAll('.detail-stat')].map(stat=>[text(stat.querySelector('dt')),text(stat.querySelector('dd'))]))};
+   const panels=row.querySelectorAll('.detail-panel-description');
+    const costText=selector=>{const cost=row.querySelector(selector)?.cloneNode(true);if(!cost)return null;cost.querySelector('.detail-panel-stars')?.remove();return text(cost);};
+    return {id:row.dataset.id,name:text(row.querySelector('.detail-name-en')),zh:text(row.querySelector('.detail-name-zh')),tier:row.querySelector('.detail-character-metadata .detail-inline-tier')?.textContent.trim(),
+     base:text(panels[0]),upgraded:text(panels[1]),baseCost:costText('[aria-label="Base energy cost"]'),upgradedCost:costText('[aria-label="Upgraded energy cost"]'),stars:row.querySelector('.detail-panel-stars')?.textContent.trim(),stats:Object.fromEntries([...row.querySelectorAll('.detail-meta-item')].map(stat=>[text(stat.querySelector('dt')),text(stat.querySelector('dd'))]))};
    }));
    assert.equal(rendered.length,reference.cards.length);const byId=new Map(rendered.map(card=>[card.id,card]));
    for(const card of reference.cards){
@@ -35,12 +36,23 @@ async function main(){
     assert.equal(row.base,plain(card.descBase),card.id+' Base');
     let upgraded=card.upgrade||card.descBase!==card.descUpgraded?plain(card.descUpgraded):'Cannot be upgraded.';
     const next=upgradeCost(card),cost=card.energy===undefined?'No cost (unplayable)':card.energy===-1?'X':String(card.energy);
-    if(Number.isFinite(card.energy)&&card.energy>=0&&next<card.energy)upgraded+=' '+card.energy+' → '+next;
     assert.equal(row.upgraded,upgraded,card.id+' Upgraded');
-    assert.equal(row.stats['Energy cost'],next!==card.energy?cost+' → '+next:cost,card.id+' energy');
+    assert.equal(row.baseCost,cost,card.id+' base energy');
+    assert.equal(row.upgradedCost,detail.get(card.id).effect.upgraded===null?null:next===-1?'X':next===undefined?cost:String(next),card.id+' upgraded energy');
     assert.equal(row.stats.Type,card.type);assert.equal(row.stats.Rarity,card.rarity);assert.equal(row.stats.Character,card.pool);
-    if(card.starCost!==undefined)assert.equal(row.stats['Star cost'],String(card.starCost),card.id+' stars');
+    const tier=detail.get(card.id).tier;
+    assert.equal(row.tier,tier&&['Ironclad','Silent','Defect','Necrobinder','Regent'].includes(card.pool)?'Tier '+tier:undefined,card.id+' footer Tier');
+    if(card.starCost!==undefined)assert.equal(row.stars,String(card.starCost),card.id+' stars');
    }
+   assert.equal(await page.locator('.detail-card-stats').count(),0,'old table removed');
+   assert.equal(await page.locator('.detail-card-rating,.detail-rating-description').count(),0,'bottom Tier rating and description removed');
+   assert.equal(await page.locator('.detail-title .detail-inline-tier').count(),0,'Tier removed from title');
+   assert.equal(await page.locator('.detail-tier-footer').count(),0,'Tier shares the bottom metadata row');
+   assert.equal(await page.locator('.detail-overview > header + .detail-art + .detail-type-metadata + .detail-effects').count(),reference.cards.length,'title, artwork, type, then effects');
+   assert.equal(await page.locator('.detail-card-metadata [data-type]').count(),0,'Type removed from top metadata');
+   assert.equal(await page.locator('.detail-overview > .detail-effects + .detail-character-metadata').count(),reference.cards.length,'character follows effects');
+   assert.equal(await page.locator('.detail-card-metadata [data-stat-character]').count(),0,'character removed from top metadata');
+   assert.equal(await page.locator('.detail-effect-notes,.detail-resource-note').count(),0,'keyword explanations removed');
    await page.locator('#card-filter-character button[aria-pressed=true]').click();
    const ancient=page.locator('#card-filter-rarity button[value=Ancient]');await ancient.click();
    assert.equal(await page.locator('.card-detail-row:visible').count(),19,'Ancient filter includes all 19 cards');assert.ok(await page.locator('#card-ABUNDANCE').isVisible());
