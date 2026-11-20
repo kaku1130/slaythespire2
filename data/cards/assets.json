@@ -652,5 +652,10 @@
   "/images/cards/defect/zap.webp": "assets/cards/source/cards/defect/zap.webp",
   "/images/cards/regent/tutor.webp": "assets/cards/source/cards/regent/tutor.webp",
   "/images/cards/necrobinder/underworld.webp": "assets/cards/source/cards/necrobinder/underworld.webp",
-  "/images/cards/colorless/the_ball.webp": "assets/cards/source/cards/colorless/the_ball.webp"
+  "/images/cards/colorless/the_ball.webp": "assets/cards/source/cards/colorless/the_ball.webp",
+  "/images/card-template/energy_inline_silent.webp": "assets/cards/source/card-template/energy_inline_silent.webp",
+  "/images/card-template/energy_inline_defect.webp": "assets/cards/source/card-template/energy_inline_defect.webp",
+  "/images/card-template/energy_inline_necrobinder.webp": "assets/cards/source/card-template/energy_inline_necrobinder.webp",
+  "/images/card-template/energy_inline_ironclad.webp": "assets/cards/source/card-template/energy_inline_ironclad.webp",
+  "/images/card-template/energy_inline_regent.webp": "assets/cards/source/card-template/energy_inline_regent.webp"
 }

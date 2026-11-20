@@ -24,7 +24,7 @@ function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds =
     upgradedContent = difference.upgraded;
   }
   if (costChange && Number(costChange[2]) < Number(costChange[1])) {
-    upgradedContent += '<br>' + effect(energyCost).replace('→', '<span class="detail-cost-arrow" aria-label="upgrades to">→</span>');
+    upgradedContent += '<br>' + effect(energyCost).replaceAll(icons.energy, icons.energyFor(card.character)).replace('→', '<span class="detail-cost-arrow" aria-label="upgrades to">→</span>');
   }
   if (searchableEffects) {
     const highlight = html => html.replace(/\bALL enemies\b/g, '<button type="button" class="detail-effect-search" data-effect-search="ALL enemies" aria-label="搜尋 ALL enemies">ALL enemies</button>');
@@ -43,7 +43,7 @@ function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds =
     if (typeIndex !== -1 && rarityIndex !== -1) [statRows[typeIndex], statRows[rarityIndex]] = [statRows[rarityIndex], statRows[typeIndex]];
   }
   const stats = statRows.map(({label, value}) => {
-    const rendered = label === 'Character' ? '<img src="' + card.characterIcon + '" alt="">' + esc(value) : label === 'Rarity' ? '<span class="rarity-label" data-label-rarity="' + esc(value) + '">' + esc(value) + '</span>' : effect(value).replace(/→/g, '<span class="detail-cost-arrow" aria-label="upgrades to">→</span>');
+    const rendered = label === 'Character' ? '<img src="' + card.characterIcon + '" alt="">' + esc(value) : label === 'Rarity' ? '<span class="rarity-label" data-label-rarity="' + esc(value) + '">' + esc(value) + '</span>' : effect(value).replaceAll(icons.energy, label === 'Energy cost' ? icons.energyFor(card.character) : icons.energy).replace(/→/g, '<span class="detail-cost-arrow" aria-label="upgrades to">→</span>');
     return '<div class="detail-stat"><dt>' + esc(label) + '</dt><dd' + (label === 'Type' ? ' data-type="' + esc(value) + '"' : label === 'Rarity' ? ' data-stat-rarity="' + esc(value) + '"' : label === 'Character' ? ' data-stat-character="' + esc(value) + '"' : '') + '>' + rendered + '</dd></div>';
   }).join('');
   const keywords = card.keywords.map(keyword => {

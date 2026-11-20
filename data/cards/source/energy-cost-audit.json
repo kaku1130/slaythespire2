@@ -1,0 +1,4576 @@
+{
+  "checkedAt": "2026-11-20T10:55:10.110Z",
+  "cards": [
+    {
+      "id": "ABRASIVE",
+      "source": "https://slaythespire2.net/card/abrasive",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "ABUNDANCE",
+      "source": "https://slaythespire2.net/card/abundance",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp",
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "ACCELERANT",
+      "source": "https://slaythespire2.net/card/accelerant",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "ACCURACY",
+      "source": "https://slaythespire2.net/card/accuracy",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "ACROBATICS",
+      "source": "https://slaythespire2.net/card/acrobatics",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "ADAPTIVE_STRIKE",
+      "source": "https://slaythespire2.net/card/adaptive-strike",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "ADRENALINE",
+      "source": "https://slaythespire2.net/card/adrenaline",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "AFTERIMAGE",
+      "source": "https://slaythespire2.net/card/afterimage",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "AFTERLIFE",
+      "source": "https://slaythespire2.net/card/afterlife",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "AGGRESSION",
+      "source": "https://slaythespire2.net/card/aggression",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "ALCHEMIZE",
+      "source": "https://slaythespire2.net/card/alchemize",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp",
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "ALIGNMENT",
+      "source": "https://slaythespire2.net/card/alignment",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "ALL_FOR_ONE",
+      "source": "https://slaythespire2.net/card/all-for-one",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "ANGER",
+      "source": "https://slaythespire2.net/card/anger",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "ANOINTED",
+      "source": "https://slaythespire2.net/card/anointed",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "ANTICIPATE",
+      "source": "https://slaythespire2.net/card/anticipate",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "APOTHEOSIS",
+      "source": "https://slaythespire2.net/card/apotheosis",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp",
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "APPARITION",
+      "source": "https://slaythespire2.net/card/apparition",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "ARMAMENTS",
+      "source": "https://slaythespire2.net/card/armaments",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "ARSENAL",
+      "source": "https://slaythespire2.net/card/arsenal",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "ASCENDERS_BANE",
+      "source": "https://slaythespire2.net/card/ascenders-bane",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "ASHEN_STRIKE",
+      "source": "https://slaythespire2.net/card/ashen-strike",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "ASSASSINATE",
+      "source": "https://slaythespire2.net/card/assassinate",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "ASTRAL_PULSE",
+      "source": "https://slaythespire2.net/card/astral-pulse",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "AUTOMATION",
+      "source": "https://slaythespire2.net/card/automation",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp",
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "BACKFLIP",
+      "source": "https://slaythespire2.net/card/backflip",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "BACKSTAB",
+      "source": "https://slaythespire2.net/card/backstab",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "BAD_LUCK",
+      "source": "https://slaythespire2.net/card/bad-luck",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "BALL_LIGHTNING",
+      "source": "https://slaythespire2.net/card/ball-lightning",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "BANSHEES_CRY",
+      "source": "https://slaythespire2.net/card/banshees-cry",
+      "value": "9→7",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp",
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "BARRAGE",
+      "source": "https://slaythespire2.net/card/barrage",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "BARRICADE",
+      "source": "https://slaythespire2.net/card/barricade",
+      "value": "3→2",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp",
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "BASH",
+      "source": "https://slaythespire2.net/card/bash",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "BATTLE_TRANCE",
+      "source": "https://slaythespire2.net/card/battle-trance",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "BEACON_OF_HOPE",
+      "source": "https://slaythespire2.net/card/beacon-of-hope",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "BEAM_CELL",
+      "source": "https://slaythespire2.net/card/beam-cell",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "BEAT_DOWN",
+      "source": "https://slaythespire2.net/card/beat-down",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "BEAT_INTO_SHAPE",
+      "source": "https://slaythespire2.net/card/beat-into-shape",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "BEGONE",
+      "source": "https://slaythespire2.net/card/begone",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "BELIEVE_IN_YOU",
+      "source": "https://slaythespire2.net/card/believe-in-you",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "BIASED_COGNITION",
+      "source": "https://slaythespire2.net/card/biased-cognition",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "BIG_BANG",
+      "source": "https://slaythespire2.net/card/big-bang",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "BLACK_HOLE",
+      "source": "https://slaythespire2.net/card/black-hole",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "BLADE_DANCE",
+      "source": "https://slaythespire2.net/card/blade-dance",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "BLADE_OF_INK",
+      "source": "https://slaythespire2.net/card/blade-of-ink",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "BLADE_SYMPHONY",
+      "source": "https://slaythespire2.net/card/blade-symphony",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp",
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "BLAZE",
+      "source": "https://slaythespire2.net/card/blaze",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "BLIGHT_STRIKE",
+      "source": "https://slaythespire2.net/card/blight-strike",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "BLOOD_WALL",
+      "source": "https://slaythespire2.net/card/blood-wall",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "BLOODLETTING",
+      "source": "https://slaythespire2.net/card/bloodletting",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "BLUDGEON",
+      "source": "https://slaythespire2.net/card/bludgeon",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "BLUR",
+      "source": "https://slaythespire2.net/card/blur",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "BODY_SLAM",
+      "source": "https://slaythespire2.net/card/body-slam",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp",
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "BODYGUARD",
+      "source": "https://slaythespire2.net/card/bodyguard",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "BOLAS",
+      "source": "https://slaythespire2.net/card/bolas",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "BOMBARDMENT",
+      "source": "https://slaythespire2.net/card/bombardment",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "BONE_SHARDS",
+      "source": "https://slaythespire2.net/card/bone-shards",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "BOOST_AWAY",
+      "source": "https://slaythespire2.net/card/boost-away",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "BOOT_SEQUENCE",
+      "source": "https://slaythespire2.net/card/boot-sequence",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "BORROWED_TIME",
+      "source": "https://slaythespire2.net/card/borrowed-time",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "BOUNCING_FLASK",
+      "source": "https://slaythespire2.net/card/bouncing-flask",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "BRAND",
+      "source": "https://slaythespire2.net/card/brand",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "BREAK",
+      "source": "https://slaythespire2.net/card/break",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "BREAKTHROUGH",
+      "source": "https://slaythespire2.net/card/breakthrough",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "BRIGHTEST_FLAME",
+      "source": "https://slaythespire2.net/card/brightest-flame",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "BUBBLE_BUBBLE",
+      "source": "https://slaythespire2.net/card/bubble-bubble",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "BUFFER",
+      "source": "https://slaythespire2.net/card/buffer",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "BULK_UP",
+      "source": "https://slaythespire2.net/card/bulk-up",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "BULLET_TIME",
+      "source": "https://slaythespire2.net/card/bullet-time",
+      "value": "3→2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp",
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "BULLY",
+      "source": "https://slaythespire2.net/card/bully",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "BULWARK",
+      "source": "https://slaythespire2.net/card/bulwark",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "BUNDLE_OF_JOY",
+      "source": "https://slaythespire2.net/card/bundle-of-joy",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "BURNING_PACT",
+      "source": "https://slaythespire2.net/card/burning-pact",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "BURST",
+      "source": "https://slaythespire2.net/card/burst",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "BURY",
+      "source": "https://slaythespire2.net/card/bury",
+      "value": "4",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "BYRD_SWOOP",
+      "source": "https://slaythespire2.net/card/byrd-swoop",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "BYRDONIS_EGG",
+      "source": "https://slaythespire2.net/card/byrdonis-egg",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "CACOPHONY",
+      "source": "https://slaythespire2.net/card/cacophony",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "CALAMITY",
+      "source": "https://slaythespire2.net/card/calamity",
+      "value": "3→2",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp",
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "CALCIFY",
+      "source": "https://slaythespire2.net/card/calcify",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "CALCULATED_GAMBLE",
+      "source": "https://slaythespire2.net/card/calculated-gamble",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "CALL_OF_THE_VOID",
+      "source": "https://slaythespire2.net/card/call-of-the-void",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "CALTROPS",
+      "source": "https://slaythespire2.net/card/caltrops",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "CAPACITOR",
+      "source": "https://slaythespire2.net/card/capacitor",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "CAPTURE_SPIRIT",
+      "source": "https://slaythespire2.net/card/capture-spirit",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "CASCADE",
+      "source": "https://slaythespire2.net/card/cascade",
+      "value": "X",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "CATASTROPHE",
+      "source": "https://slaythespire2.net/card/catastrophe",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "CELESTIAL_MIGHT",
+      "source": "https://slaythespire2.net/card/celestial-might",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "CHAOS",
+      "source": "https://slaythespire2.net/card/chaos",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "CHARGE",
+      "source": "https://slaythespire2.net/card/charge",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "CHARGE_BATTERY",
+      "source": "https://slaythespire2.net/card/charge-battery",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "CHILD_OF_THE_STARS",
+      "source": "https://slaythespire2.net/card/child-of-the-stars",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "CHILL",
+      "source": "https://slaythespire2.net/card/chill",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "CINDER",
+      "source": "https://slaythespire2.net/card/cinder",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "CLASH",
+      "source": "https://slaythespire2.net/card/clash",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "CLAW",
+      "source": "https://slaythespire2.net/card/claw",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "CLEANSE",
+      "source": "https://slaythespire2.net/card/cleanse",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "CLOAK_AND_DAGGER",
+      "source": "https://slaythespire2.net/card/cloak-and-dagger",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "CLOAK_OF_STARS",
+      "source": "https://slaythespire2.net/card/cloak-of-stars",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "CLUMSY",
+      "source": "https://slaythespire2.net/card/clumsy",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "COLD_SNAP",
+      "source": "https://slaythespire2.net/card/cold-snap",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "COLLISION_COURSE",
+      "source": "https://slaythespire2.net/card/collision-course",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "COLOSSUS",
+      "source": "https://slaythespire2.net/card/colossus",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "COMET",
+      "source": "https://slaythespire2.net/card/comet",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "COMPACT",
+      "source": "https://slaythespire2.net/card/compact",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "COMPILE_DRIVER",
+      "source": "https://slaythespire2.net/card/compile-driver",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "CONCOCT",
+      "source": "https://slaythespire2.net/card/concoct",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "CONFLAGRATION",
+      "source": "https://slaythespire2.net/card/conflagration",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "CONQUEROR",
+      "source": "https://slaythespire2.net/card/conqueror",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "CONSTELLATION",
+      "source": "https://slaythespire2.net/card/constellation",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "CONSUMING_SHADOW",
+      "source": "https://slaythespire2.net/card/consuming-shadow",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "CONVERGENCE",
+      "source": "https://slaythespire2.net/card/convergence",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "COOLANT",
+      "source": "https://slaythespire2.net/card/coolant",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "COOLHEADED",
+      "source": "https://slaythespire2.net/card/coolheaded",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "COORDINATE",
+      "source": "https://slaythespire2.net/card/coordinate",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "CORROSIVE_WAVE",
+      "source": "https://slaythespire2.net/card/corrosive-wave",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "CORRUPTION",
+      "source": "https://slaythespire2.net/card/corruption",
+      "value": "3→2",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp",
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "COSMIC_INDIFFERENCE",
+      "source": "https://slaythespire2.net/card/cosmic-indifference",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "COUNTDOWN",
+      "source": "https://slaythespire2.net/card/countdown",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "CRASH_LANDING",
+      "source": "https://slaythespire2.net/card/crash-landing",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "CREATIVE_AI",
+      "source": "https://slaythespire2.net/card/creative-ai",
+      "value": "3→2",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp",
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "CRESCENT_SPEAR",
+      "source": "https://slaythespire2.net/card/crescent-spear",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "CRIMSON_MANTLE",
+      "source": "https://slaythespire2.net/card/crimson-mantle",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "CRUELTY",
+      "source": "https://slaythespire2.net/card/cruelty",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "CRUSH_UNDER",
+      "source": "https://slaythespire2.net/card/crush-under",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "CURSE_OF_THE_BELL",
+      "source": "https://slaythespire2.net/card/curse-of-the-bell",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "DAGGER_SPRAY",
+      "source": "https://slaythespire2.net/card/dagger-spray",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "DAGGER_THROW",
+      "source": "https://slaythespire2.net/card/dagger-throw",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "DANSE_MACABRE",
+      "source": "https://slaythespire2.net/card/danse-macabre",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "DARK_EMBRACE",
+      "source": "https://slaythespire2.net/card/dark-embrace",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp",
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "DARK_SHACKLES",
+      "source": "https://slaythespire2.net/card/dark-shackles",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "DARKNESS",
+      "source": "https://slaythespire2.net/card/darkness",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "DASH",
+      "source": "https://slaythespire2.net/card/dash",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "DEADLY_POISON",
+      "source": "https://slaythespire2.net/card/deadly-poison",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "DEATH_MARCH",
+      "source": "https://slaythespire2.net/card/death-march",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "DEATHBRINGER",
+      "source": "https://slaythespire2.net/card/deathbringer",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "DEATHS_DOOR",
+      "source": "https://slaythespire2.net/card/deaths-door",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "DEBILITATE",
+      "source": "https://slaythespire2.net/card/debilitate",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "DEBT",
+      "source": "https://slaythespire2.net/card/debt",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "DECAY",
+      "source": "https://slaythespire2.net/card/decay",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "DECISIONS_DECISIONS",
+      "source": "https://slaythespire2.net/card/decisions-decisions",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "DEFEND_DEFECT",
+      "source": "https://slaythespire2.net/card/defend-defect",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "DEFEND_IRONCLAD",
+      "source": "https://slaythespire2.net/card/defend-ironclad",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "DEFEND_NECROBINDER",
+      "source": "https://slaythespire2.net/card/defend-necrobinder",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "DEFEND_REGENT",
+      "source": "https://slaythespire2.net/card/defend-regent",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "DEFEND_SILENT",
+      "source": "https://slaythespire2.net/card/defend-silent",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "DEFILE",
+      "source": "https://slaythespire2.net/card/defile",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "DEFLECT",
+      "source": "https://slaythespire2.net/card/deflect",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "DEFRAGMENT",
+      "source": "https://slaythespire2.net/card/defragment",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "DEFY",
+      "source": "https://slaythespire2.net/card/defy",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "DELAY",
+      "source": "https://slaythespire2.net/card/delay",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "DEMESNE",
+      "source": "https://slaythespire2.net/card/demesne",
+      "value": "3→2",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp",
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "DEMON_FORM",
+      "source": "https://slaythespire2.net/card/demon-form",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "DEMONIC_SHIELD",
+      "source": "https://slaythespire2.net/card/demonic-shield",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "DEVASTATE",
+      "source": "https://slaythespire2.net/card/devastate",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "DEVOUR_LIFE",
+      "source": "https://slaythespire2.net/card/devour-life",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "DIRGE",
+      "source": "https://slaythespire2.net/card/dirge",
+      "value": "X",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "DISCOVERY",
+      "source": "https://slaythespire2.net/card/discovery",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "DISMANTLE",
+      "source": "https://slaythespire2.net/card/dismantle",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "DISTRACTION",
+      "source": "https://slaythespire2.net/card/distraction",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp",
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "DODGE_AND_ROLL",
+      "source": "https://slaythespire2.net/card/dodge-and-roll",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "DOMINATE",
+      "source": "https://slaythespire2.net/card/dominate",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "DOUBLE_ENERGY",
+      "source": "https://slaythespire2.net/card/double-energy",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp",
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "DOUBT",
+      "source": "https://slaythespire2.net/card/doubt",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "DOWSING",
+      "source": "https://slaythespire2.net/card/dowsing",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "DRAIN_POWER",
+      "source": "https://slaythespire2.net/card/drain-power",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "DRAMATIC_ENTRANCE",
+      "source": "https://slaythespire2.net/card/dramatic-entrance",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "DREDGE",
+      "source": "https://slaythespire2.net/card/dredge",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "DRUM_OF_BATTLE",
+      "source": "https://slaythespire2.net/card/drum-of-battle",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "DUAL_WIELD",
+      "source": "https://slaythespire2.net/card/dual-wield",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "DUALCAST",
+      "source": "https://slaythespire2.net/card/dualcast",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp",
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "DYING_STAR",
+      "source": "https://slaythespire2.net/card/dying-star",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "ECHO_FORM",
+      "source": "https://slaythespire2.net/card/echo-form",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "ECHOING_SLASH",
+      "source": "https://slaythespire2.net/card/echoing-slash",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "EIDOLON",
+      "source": "https://slaythespire2.net/card/eidolon",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp",
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "END_OF_DAYS",
+      "source": "https://slaythespire2.net/card/end-of-days",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "ENERGY_SURGE",
+      "source": "https://slaythespire2.net/card/energy-surge",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "ENFEEBLING_TOUCH",
+      "source": "https://slaythespire2.net/card/enfeebling-touch",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "ENLIGHTENMENT",
+      "source": "https://slaythespire2.net/card/enlightenment",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "ENTHRALLED",
+      "source": "https://slaythespire2.net/card/enthralled",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "ENTRENCH",
+      "source": "https://slaythespire2.net/card/entrench",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp",
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "ENTROPY",
+      "source": "https://slaythespire2.net/card/entropy",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "ENVENOM",
+      "source": "https://slaythespire2.net/card/envenom",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "EQUILIBRIUM",
+      "source": "https://slaythespire2.net/card/equilibrium",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "ERADICATE",
+      "source": "https://slaythespire2.net/card/eradicate",
+      "value": "X",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "ESCAPE_PLAN",
+      "source": "https://slaythespire2.net/card/escape-plan",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "ETERNAL_ARMOR",
+      "source": "https://slaythespire2.net/card/eternal-armor",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "EVIL_EYE",
+      "source": "https://slaythespire2.net/card/evil-eye",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "EXPECT_A_FIGHT",
+      "source": "https://slaythespire2.net/card/expect-a-fight",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "EXPERTISE",
+      "source": "https://slaythespire2.net/card/expertise",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "EXPOSE",
+      "source": "https://slaythespire2.net/card/expose",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "EXTERMINATE",
+      "source": "https://slaythespire2.net/card/exterminate",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "FADE",
+      "source": "https://slaythespire2.net/card/fade",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "FALLING_STAR",
+      "source": "https://slaythespire2.net/card/falling-star",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "FAN_OF_KNIVES",
+      "source": "https://slaythespire2.net/card/fan-of-knives",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "FASTEN",
+      "source": "https://slaythespire2.net/card/fasten",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "FEAR",
+      "source": "https://slaythespire2.net/card/fear",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "FEED",
+      "source": "https://slaythespire2.net/card/feed",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "FEEDING_FRENZY",
+      "source": "https://slaythespire2.net/card/feeding-frenzy",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "FEEL_NO_PAIN",
+      "source": "https://slaythespire2.net/card/feel-no-pain",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "FERAL",
+      "source": "https://slaythespire2.net/card/feral",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp",
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "FETCH",
+      "source": "https://slaythespire2.net/card/fetch",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "FIEND_FIRE",
+      "source": "https://slaythespire2.net/card/fiend-fire",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "FIGHT_ME",
+      "source": "https://slaythespire2.net/card/fight-me",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "FIGHT_THROUGH",
+      "source": "https://slaythespire2.net/card/fight-through",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "FINESSE",
+      "source": "https://slaythespire2.net/card/finesse",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "FINISHER",
+      "source": "https://slaythespire2.net/card/finisher",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "FISTICUFFS",
+      "source": "https://slaythespire2.net/card/fisticuffs",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "FLAK_CANNON",
+      "source": "https://slaythespire2.net/card/flak-cannon",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "FLAME_BARRIER",
+      "source": "https://slaythespire2.net/card/flame-barrier",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "FLANKING",
+      "source": "https://slaythespire2.net/card/flanking",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp",
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "FLASH_OF_STEEL",
+      "source": "https://slaythespire2.net/card/flash-of-steel",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "FLATTEN",
+      "source": "https://slaythespire2.net/card/flatten",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "FLECHETTES",
+      "source": "https://slaythespire2.net/card/flechettes",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "FLICK_FLACK",
+      "source": "https://slaythespire2.net/card/flick-flack",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "FOCUSED_STRIKE",
+      "source": "https://slaythespire2.net/card/focused-strike",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "FOLLY",
+      "source": "https://slaythespire2.net/card/folly",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "FOOTWORK",
+      "source": "https://slaythespire2.net/card/footwork",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "FORBIDDEN_GRIMOIRE",
+      "source": "https://slaythespire2.net/card/forbidden-grimoire",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp",
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "FOREGONE_CONCLUSION",
+      "source": "https://slaythespire2.net/card/foregone-conclusion",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "FORGOTTEN_RITUAL",
+      "source": "https://slaythespire2.net/card/forgotten-ritual",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "FRIENDSHIP",
+      "source": "https://slaythespire2.net/card/friendship",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "FTL",
+      "source": "https://slaythespire2.net/card/ftl",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "FURNACE",
+      "source": "https://slaythespire2.net/card/furnace",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "FUSION",
+      "source": "https://slaythespire2.net/card/fusion",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "GAMMA_BLAST",
+      "source": "https://slaythespire2.net/card/gamma-blast",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "GANG_UP",
+      "source": "https://slaythespire2.net/card/gang-up",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "GATHER_LIGHT",
+      "source": "https://slaythespire2.net/card/gather-light",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "GENESIS",
+      "source": "https://slaythespire2.net/card/genesis",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "GENETIC_ALGORITHM",
+      "source": "https://slaythespire2.net/card/genetic-algorithm",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "GLACIER",
+      "source": "https://slaythespire2.net/card/glacier",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "GLASSWORK",
+      "source": "https://slaythespire2.net/card/glasswork",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "GLIMMER",
+      "source": "https://slaythespire2.net/card/glimmer",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "GLIMPSE_BEYOND",
+      "source": "https://slaythespire2.net/card/glimpse-beyond",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "GLITTERSTREAM",
+      "source": "https://slaythespire2.net/card/glitterstream",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "GLOW",
+      "source": "https://slaythespire2.net/card/glow",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "GO_FOR_THE_EYES",
+      "source": "https://slaythespire2.net/card/go-for-the-eyes",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "GOLD_AXE",
+      "source": "https://slaythespire2.net/card/gold-axe",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "GRAND_FINALE",
+      "source": "https://slaythespire2.net/card/grand-finale",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "GRAVE_WARDEN",
+      "source": "https://slaythespire2.net/card/grave-warden",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "GRAVEBLAST",
+      "source": "https://slaythespire2.net/card/graveblast",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "GREED",
+      "source": "https://slaythespire2.net/card/greed",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "GUARDS",
+      "source": "https://slaythespire2.net/card/guards",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "GUIDING_STAR",
+      "source": "https://slaythespire2.net/card/guiding-star",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "GUILTY",
+      "source": "https://slaythespire2.net/card/guilty",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "GUNK_UP",
+      "source": "https://slaythespire2.net/card/gunk-up",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "HAILSTORM",
+      "source": "https://slaythespire2.net/card/hailstorm",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "HAMMER_TIME",
+      "source": "https://slaythespire2.net/card/hammer-time",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp",
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "HAND_OF_GREED",
+      "source": "https://slaythespire2.net/card/hand-of-greed",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "HAND_TRICK",
+      "source": "https://slaythespire2.net/card/hand-trick",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "HANG",
+      "source": "https://slaythespire2.net/card/hang",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "HAUNT",
+      "source": "https://slaythespire2.net/card/haunt",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "HAVOC",
+      "source": "https://slaythespire2.net/card/havoc",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp",
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "HAZE",
+      "source": "https://slaythespire2.net/card/haze",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "HEADBUTT",
+      "source": "https://slaythespire2.net/card/headbutt",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "HEAVENLY_DRILL",
+      "source": "https://slaythespire2.net/card/heavenly-drill",
+      "value": "X",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "HEGEMONY",
+      "source": "https://slaythespire2.net/card/hegemony",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "HEIRLOOM_HAMMER",
+      "source": "https://slaythespire2.net/card/heirloom-hammer",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "HELIX_DRILL",
+      "source": "https://slaythespire2.net/card/helix-drill",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "HELLO_WORLD",
+      "source": "https://slaythespire2.net/card/hello-world",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "HELLRAISER",
+      "source": "https://slaythespire2.net/card/hellraiser",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp",
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "HEMOKINESIS",
+      "source": "https://slaythespire2.net/card/hemokinesis",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "HIBERNATE",
+      "source": "https://slaythespire2.net/card/hibernate",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "HIDDEN_CACHE",
+      "source": "https://slaythespire2.net/card/hidden-cache",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "HIDDEN_DAGGERS",
+      "source": "https://slaythespire2.net/card/hidden-daggers",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "HIDDEN_GEM",
+      "source": "https://slaythespire2.net/card/hidden-gem",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "HIGH_FIVE",
+      "source": "https://slaythespire2.net/card/high-five",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "HOLOGRAM",
+      "source": "https://slaythespire2.net/card/hologram",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "HOTFIX",
+      "source": "https://slaythespire2.net/card/hotfix",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "HOWL_FROM_BEYOND",
+      "source": "https://slaythespire2.net/card/howl-from-beyond",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "HUDDLE_UP",
+      "source": "https://slaythespire2.net/card/huddle-up",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "HYPERBEAM",
+      "source": "https://slaythespire2.net/card/hyperbeam",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "I_AM_INVINCIBLE",
+      "source": "https://slaythespire2.net/card/i-am-invincible",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "ICE_LANCE",
+      "source": "https://slaythespire2.net/card/ice-lance",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "IGNITION",
+      "source": "https://slaythespire2.net/card/ignition",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "IMITATION_LEARNING",
+      "source": "https://slaythespire2.net/card/imitation-learning",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "IMPATIENCE",
+      "source": "https://slaythespire2.net/card/impatience",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "IMPERVIOUS",
+      "source": "https://slaythespire2.net/card/impervious",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "INFERNAL_BLADE",
+      "source": "https://slaythespire2.net/card/infernal-blade",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp",
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "INFERNO",
+      "source": "https://slaythespire2.net/card/inferno",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "INFINITE_BLADES",
+      "source": "https://slaythespire2.net/card/infinite-blades",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "INFLAME",
+      "source": "https://slaythespire2.net/card/inflame",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "INJURY",
+      "source": "https://slaythespire2.net/card/injury",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "INTERCEPT",
+      "source": "https://slaythespire2.net/card/intercept",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "INVOKE",
+      "source": "https://slaythespire2.net/card/invoke",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "IRON_WAVE",
+      "source": "https://slaythespire2.net/card/iron-wave",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "ITERATION",
+      "source": "https://slaythespire2.net/card/iteration",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "JACK_OF_ALL_TRADES",
+      "source": "https://slaythespire2.net/card/jack-of-all-trades",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "JACKPOT",
+      "source": "https://slaythespire2.net/card/jackpot",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "JUGGERNAUT",
+      "source": "https://slaythespire2.net/card/juggernaut",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "JUGGLING",
+      "source": "https://slaythespire2.net/card/juggling",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "KINGLY_KICK",
+      "source": "https://slaythespire2.net/card/kingly-kick",
+      "value": "4",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "KINGLY_PUNCH",
+      "source": "https://slaythespire2.net/card/kingly-punch",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "KNIFE_TRAP",
+      "source": "https://slaythespire2.net/card/knife-trap",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "KNOCKDOWN",
+      "source": "https://slaythespire2.net/card/knockdown",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "KNOCKOUT_BLOW",
+      "source": "https://slaythespire2.net/card/knockout-blow",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "KNOW_THY_PLACE",
+      "source": "https://slaythespire2.net/card/know-thy-place",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "LANTERN_KEY",
+      "source": "https://slaythespire2.net/card/lantern-key",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "LARGESSE",
+      "source": "https://slaythespire2.net/card/largesse",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "LEADING_STRIKE",
+      "source": "https://slaythespire2.net/card/leading-strike",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "LEAP",
+      "source": "https://slaythespire2.net/card/leap",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "LEG_SWEEP",
+      "source": "https://slaythespire2.net/card/leg-sweep",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "LEGION_OF_BONE",
+      "source": "https://slaythespire2.net/card/legion-of-bone",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "LETHALITY",
+      "source": "https://slaythespire2.net/card/lethality",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "LIFT",
+      "source": "https://slaythespire2.net/card/lift",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "LIGHTNING_ROD",
+      "source": "https://slaythespire2.net/card/lightning-rod",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "LOOP",
+      "source": "https://slaythespire2.net/card/loop",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "LUNAR_BLAST",
+      "source": "https://slaythespire2.net/card/lunar-blast",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "MACHINE_LEARNING",
+      "source": "https://slaythespire2.net/card/machine-learning",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "MAD_SCIENCE",
+      "source": "https://slaythespire2.net/card/mad-science",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "MAKE_IT_SO",
+      "source": "https://slaythespire2.net/card/make-it-so",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "MALAISE",
+      "source": "https://slaythespire2.net/card/malaise",
+      "value": "X",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "MANGLE",
+      "source": "https://slaythespire2.net/card/mangle",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "MANIFEST_AUTHORITY",
+      "source": "https://slaythespire2.net/card/manifest-authority",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "MASTER_OF_STRATEGY",
+      "source": "https://slaythespire2.net/card/master-of-strategy",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "MASTER_PLANNER",
+      "source": "https://slaythespire2.net/card/master-planner",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp",
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "MAUL",
+      "source": "https://slaythespire2.net/card/maul",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "MAYHEM",
+      "source": "https://slaythespire2.net/card/mayhem",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp",
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "MELANCHOLY",
+      "source": "https://slaythespire2.net/card/melancholy",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "MEMENTO_MORI",
+      "source": "https://slaythespire2.net/card/memento-mori",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "METAMORPHOSIS",
+      "source": "https://slaythespire2.net/card/metamorphosis",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "METEOR_SHOWER",
+      "source": "https://slaythespire2.net/card/meteor-shower",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "METEOR_STRIKE",
+      "source": "https://slaythespire2.net/card/meteor-strike",
+      "value": "5",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "MIDNIGHT",
+      "source": "https://slaythespire2.net/card/midnight",
+      "value": "12",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "MIMIC",
+      "source": "https://slaythespire2.net/card/mimic",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "MIND_BLAST",
+      "source": "https://slaythespire2.net/card/mind-blast",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp",
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "MIRAGE",
+      "source": "https://slaythespire2.net/card/mirage",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "MISERY",
+      "source": "https://slaythespire2.net/card/misery",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "MODDED",
+      "source": "https://slaythespire2.net/card/modded",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "MOLTEN_FIST",
+      "source": "https://slaythespire2.net/card/molten-fist",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "MOMENTUM_STRIKE",
+      "source": "https://slaythespire2.net/card/momentum-strike",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "MONARCHS_GAZE",
+      "source": "https://slaythespire2.net/card/monarchs-gaze",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp",
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "MONOLOGUE",
+      "source": "https://slaythespire2.net/card/monologue",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "MULTI_CAST",
+      "source": "https://slaythespire2.net/card/multi-cast",
+      "value": "X",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "MURDER",
+      "source": "https://slaythespire2.net/card/murder",
+      "value": "3→2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp",
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "NECRO_MASTERY",
+      "source": "https://slaythespire2.net/card/necro-mastery",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "NEGATIVE_PULSE",
+      "source": "https://slaythespire2.net/card/negative-pulse",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "NEOWS_FURY",
+      "source": "https://slaythespire2.net/card/neows-fury",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "NEUROSURGE",
+      "source": "https://slaythespire2.net/card/neurosurge",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "NEUTRALIZE",
+      "source": "https://slaythespire2.net/card/neutralize",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "NEUTRON_AEGIS",
+      "source": "https://slaythespire2.net/card/neutron-aegis",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "NIGHTMARE",
+      "source": "https://slaythespire2.net/card/nightmare",
+      "value": "3→2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp",
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "NO_ESCAPE",
+      "source": "https://slaythespire2.net/card/no-escape",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "NORMALITY",
+      "source": "https://slaythespire2.net/card/normality",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "NOSTALGIA",
+      "source": "https://slaythespire2.net/card/nostalgia",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp",
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "NOT_YET",
+      "source": "https://slaythespire2.net/card/not-yet",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "NOXIOUS_FUMES",
+      "source": "https://slaythespire2.net/card/noxious-fumes",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "NULL",
+      "source": "https://slaythespire2.net/card/null",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "OBLIVION",
+      "source": "https://slaythespire2.net/card/oblivion",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "OFFERING",
+      "source": "https://slaythespire2.net/card/offering",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "OMNISLICE",
+      "source": "https://slaythespire2.net/card/omnislice",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "ONE_FOR_ALL",
+      "source": "https://slaythespire2.net/card/one-for-all",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "ONE_TWO_PUNCH",
+      "source": "https://slaythespire2.net/card/one-two-punch",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "ORBIT",
+      "source": "https://slaythespire2.net/card/orbit",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp",
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "OUTBREAK",
+      "source": "https://slaythespire2.net/card/outbreak",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "OUTMANEUVER",
+      "source": "https://slaythespire2.net/card/outmaneuver",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "OUTRAGE",
+      "source": "https://slaythespire2.net/card/outrage",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "OVERCLOCK",
+      "source": "https://slaythespire2.net/card/overclock",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "PACTS_END",
+      "source": "https://slaythespire2.net/card/pacts-end",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "PAGESTORM",
+      "source": "https://slaythespire2.net/card/pagestorm",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp",
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "PALE_BLUE_DOT",
+      "source": "https://slaythespire2.net/card/pale-blue-dot",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "PANACHE",
+      "source": "https://slaythespire2.net/card/panache",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "PANIC_BUTTON",
+      "source": "https://slaythespire2.net/card/panic-button",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "PARRY",
+      "source": "https://slaythespire2.net/card/parry",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "PARSE",
+      "source": "https://slaythespire2.net/card/parse",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "PARTICLE_WALL",
+      "source": "https://slaythespire2.net/card/particle-wall",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "PATTER",
+      "source": "https://slaythespire2.net/card/patter",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "PECK",
+      "source": "https://slaythespire2.net/card/peck",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "PERFECTED_STRIKE",
+      "source": "https://slaythespire2.net/card/perfected-strike",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "PHANTOM_BLADES",
+      "source": "https://slaythespire2.net/card/phantom-blades",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "PHOTON_CUT",
+      "source": "https://slaythespire2.net/card/photon-cut",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "PIERCING_WAIL",
+      "source": "https://slaythespire2.net/card/piercing-wail",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "PILLAGE",
+      "source": "https://slaythespire2.net/card/pillage",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "PILLAR_OF_CREATION",
+      "source": "https://slaythespire2.net/card/pillar-of-creation",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "PINPOINT",
+      "source": "https://slaythespire2.net/card/pinpoint",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "PLOT",
+      "source": "https://slaythespire2.net/card/plot",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "POISONED_STAB",
+      "source": "https://slaythespire2.net/card/poisoned-stab",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "POKE",
+      "source": "https://slaythespire2.net/card/poke",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "POMMEL_STRIKE",
+      "source": "https://slaythespire2.net/card/pommel-strike",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "POOR_SLEEP",
+      "source": "https://slaythespire2.net/card/poor-sleep",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "POUNCE",
+      "source": "https://slaythespire2.net/card/pounce",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "PRECISE_CUT",
+      "source": "https://slaythespire2.net/card/precise-cut",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "PREDATOR",
+      "source": "https://slaythespire2.net/card/predator",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "PREP_TIME",
+      "source": "https://slaythespire2.net/card/prep-time",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "PREPARED",
+      "source": "https://slaythespire2.net/card/prepared",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "PRIMAL_FORCE",
+      "source": "https://slaythespire2.net/card/primal-force",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "PRODUCTION",
+      "source": "https://slaythespire2.net/card/production",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "PROLONG",
+      "source": "https://slaythespire2.net/card/prolong",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "PROPHESIZE",
+      "source": "https://slaythespire2.net/card/prophesize",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "PROTECTOR",
+      "source": "https://slaythespire2.net/card/protector",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp",
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "PROWESS",
+      "source": "https://slaythespire2.net/card/prowess",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "PULL_AGGRO",
+      "source": "https://slaythespire2.net/card/pull-aggro",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "PULL_FROM_BELOW",
+      "source": "https://slaythespire2.net/card/pull-from-below",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "PURITY",
+      "source": "https://slaythespire2.net/card/purity",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "PUTREFY",
+      "source": "https://slaythespire2.net/card/putrefy",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "PYRE",
+      "source": "https://slaythespire2.net/card/pyre",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "QUADCAST",
+      "source": "https://slaythespire2.net/card/quadcast",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp",
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "QUASAR",
+      "source": "https://slaythespire2.net/card/quasar",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "RADIATE",
+      "source": "https://slaythespire2.net/card/radiate",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "RAGE",
+      "source": "https://slaythespire2.net/card/rage",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "RAINBOW",
+      "source": "https://slaythespire2.net/card/rainbow",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "RALLY",
+      "source": "https://slaythespire2.net/card/rally",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "RAMPAGE",
+      "source": "https://slaythespire2.net/card/rampage",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "RATTLE",
+      "source": "https://slaythespire2.net/card/rattle",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "REANIMATE",
+      "source": "https://slaythespire2.net/card/reanimate",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "REAP",
+      "source": "https://slaythespire2.net/card/reap",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "REAPER_FORM",
+      "source": "https://slaythespire2.net/card/reaper-form",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "REAVE",
+      "source": "https://slaythespire2.net/card/reave",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "REBOOT",
+      "source": "https://slaythespire2.net/card/reboot",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "REBOUND",
+      "source": "https://slaythespire2.net/card/rebound",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "REFINE_BLADE",
+      "source": "https://slaythespire2.net/card/refine-blade",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "REFLECT",
+      "source": "https://slaythespire2.net/card/reflect",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "REFLEX",
+      "source": "https://slaythespire2.net/card/reflex",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "REFRACT",
+      "source": "https://slaythespire2.net/card/refract",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "REGRET",
+      "source": "https://slaythespire2.net/card/regret",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "RELAX",
+      "source": "https://slaythespire2.net/card/relax",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "REND",
+      "source": "https://slaythespire2.net/card/rend",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "RESONANCE",
+      "source": "https://slaythespire2.net/card/resonance",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "RESTLESSNESS",
+      "source": "https://slaythespire2.net/card/restlessness",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "RICOCHET",
+      "source": "https://slaythespire2.net/card/ricochet",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "RIGHT_HAND_HAND",
+      "source": "https://slaythespire2.net/card/right-hand-hand",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "RIP_AND_TEAR",
+      "source": "https://slaythespire2.net/card/rip-and-tear",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "ROCKET_PUNCH",
+      "source": "https://slaythespire2.net/card/rocket-punch",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "ROLLING_BOULDER",
+      "source": "https://slaythespire2.net/card/rolling-boulder",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "ROYAL_GAMBLE",
+      "source": "https://slaythespire2.net/card/royal-gamble",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "ROYALTIES",
+      "source": "https://slaythespire2.net/card/royalties",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "RUPTURE",
+      "source": "https://slaythespire2.net/card/rupture",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "SACRIFICE",
+      "source": "https://slaythespire2.net/card/sacrifice",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp",
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "SALVO",
+      "source": "https://slaythespire2.net/card/salvo",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "SCAVENGE",
+      "source": "https://slaythespire2.net/card/scavenge",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "SCOURGE",
+      "source": "https://slaythespire2.net/card/scourge",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "SCRAPE",
+      "source": "https://slaythespire2.net/card/scrape",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "SCRAWL",
+      "source": "https://slaythespire2.net/card/scrawl",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "SCULPTING_STRIKE",
+      "source": "https://slaythespire2.net/card/sculpting-strike",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "SEANCE",
+      "source": "https://slaythespire2.net/card/seance",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp",
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "SECOND_WIND",
+      "source": "https://slaythespire2.net/card/second-wind",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "SECRET_TECHNIQUE",
+      "source": "https://slaythespire2.net/card/secret-technique",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "SECRET_WEAPON",
+      "source": "https://slaythespire2.net/card/secret-weapon",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "SEEKER_STRIKE",
+      "source": "https://slaythespire2.net/card/seeker-strike",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "SEEKING_EDGE",
+      "source": "https://slaythespire2.net/card/seeking-edge",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "SENTRY_MODE",
+      "source": "https://slaythespire2.net/card/sentry-mode",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp",
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "SERPENT_FORM",
+      "source": "https://slaythespire2.net/card/serpent-form",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "SETUP_STRIKE",
+      "source": "https://slaythespire2.net/card/setup-strike",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "SEVEN_STARS",
+      "source": "https://slaythespire2.net/card/seven-stars",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp",
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "SEVERANCE",
+      "source": "https://slaythespire2.net/card/severance",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "SHADOW_SHIELD",
+      "source": "https://slaythespire2.net/card/shadow-shield",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "SHADOW_STEP",
+      "source": "https://slaythespire2.net/card/shadow-step",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp",
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "SHADOWMELD",
+      "source": "https://slaythespire2.net/card/shadowmeld",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp",
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "SHAME",
+      "source": "https://slaythespire2.net/card/shame",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "SHARED_FATE",
+      "source": "https://slaythespire2.net/card/shared-fate",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "SHATTER",
+      "source": "https://slaythespire2.net/card/shatter",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "SHINING_STRIKE",
+      "source": "https://slaythespire2.net/card/shining-strike",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "SHOCKWAVE",
+      "source": "https://slaythespire2.net/card/shockwave",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "SHROUD",
+      "source": "https://slaythespire2.net/card/shroud",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "SHRUG_IT_OFF",
+      "source": "https://slaythespire2.net/card/shrug-it-off",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "SIC_EM",
+      "source": "https://slaythespire2.net/card/sic-em",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "SIDESTEP",
+      "source": "https://slaythespire2.net/card/sidestep",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "SIGNAL_BOOST",
+      "source": "https://slaythespire2.net/card/signal-boost",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp",
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "SKEWER",
+      "source": "https://slaythespire2.net/card/skewer",
+      "value": "X",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "SKIM",
+      "source": "https://slaythespire2.net/card/skim",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "SLEIGHT_OF_FLESH",
+      "source": "https://slaythespire2.net/card/sleight-of-flesh",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "SLICE",
+      "source": "https://slaythespire2.net/card/slice",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "SMOKESTACK",
+      "source": "https://slaythespire2.net/card/smokestack",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "SNAKEBITE",
+      "source": "https://slaythespire2.net/card/snakebite",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "SNAP",
+      "source": "https://slaythespire2.net/card/snap",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "SNEAKY",
+      "source": "https://slaythespire2.net/card/sneaky",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "SOLAR_STRIKE",
+      "source": "https://slaythespire2.net/card/solar-strike",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "SOUL_STORM",
+      "source": "https://slaythespire2.net/card/soul-storm",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "SOULBOUND",
+      "source": "https://slaythespire2.net/card/soulbound",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "SOW",
+      "source": "https://slaythespire2.net/card/sow",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "SPECTRUM_SHIFT",
+      "source": "https://slaythespire2.net/card/spectrum-shift",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp",
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "SPEEDSTER",
+      "source": "https://slaythespire2.net/card/speedster",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "SPINNER",
+      "source": "https://slaythespire2.net/card/spinner",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "SPIRIT_OF_ASH",
+      "source": "https://slaythespire2.net/card/spirit-of-ash",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "SPITE",
+      "source": "https://slaythespire2.net/card/spite",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "SPLASH",
+      "source": "https://slaythespire2.net/card/splash",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "SPOILS_MAP",
+      "source": "https://slaythespire2.net/card/spoils-map",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "SPOILS_OF_BATTLE",
+      "source": "https://slaythespire2.net/card/spoils-of-battle",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "SPORE_MIND",
+      "source": "https://slaythespire2.net/card/spore-mind",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "SPUR",
+      "source": "https://slaythespire2.net/card/spur",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "SQUASH",
+      "source": "https://slaythespire2.net/card/squash",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "SQUEEZE",
+      "source": "https://slaythespire2.net/card/squeeze",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "STACK",
+      "source": "https://slaythespire2.net/card/stack",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "STAMPEDE",
+      "source": "https://slaythespire2.net/card/stampede",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp",
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "STARDUST",
+      "source": "https://slaythespire2.net/card/stardust",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "STOKE",
+      "source": "https://slaythespire2.net/card/stoke",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "STOMP",
+      "source": "https://slaythespire2.net/card/stomp",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "STONE_ARMOR",
+      "source": "https://slaythespire2.net/card/stone-armor",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "STORM",
+      "source": "https://slaythespire2.net/card/storm",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "STORM_OF_STEEL",
+      "source": "https://slaythespire2.net/card/storm-of-steel",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "STRANGLE",
+      "source": "https://slaythespire2.net/card/strangle",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "STRATAGEM",
+      "source": "https://slaythespire2.net/card/stratagem",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp",
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "STRIKE_DEFECT",
+      "source": "https://slaythespire2.net/card/strike-defect",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "STRIKE_IRONCLAD",
+      "source": "https://slaythespire2.net/card/strike-ironclad",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "STRIKE_NECROBINDER",
+      "source": "https://slaythespire2.net/card/strike-necrobinder",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "STRIKE_REGENT",
+      "source": "https://slaythespire2.net/card/strike-regent",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "STRIKE_SILENT",
+      "source": "https://slaythespire2.net/card/strike-silent",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "SUBROUTINE",
+      "source": "https://slaythespire2.net/card/subroutine",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp",
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "SUCKER_PUNCH",
+      "source": "https://slaythespire2.net/card/sucker-punch",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "SUMMON_FORTH",
+      "source": "https://slaythespire2.net/card/summon-forth",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "SUNDER",
+      "source": "https://slaythespire2.net/card/sunder",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "SUPERCRITICAL",
+      "source": "https://slaythespire2.net/card/supercritical",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "SUPERMASSIVE",
+      "source": "https://slaythespire2.net/card/supermassive",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "SUPPRESS",
+      "source": "https://slaythespire2.net/card/suppress",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "SURVIVOR",
+      "source": "https://slaythespire2.net/card/survivor",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "SWEEPING_BEAM",
+      "source": "https://slaythespire2.net/card/sweeping-beam",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "SWORD_BOOMERANG",
+      "source": "https://slaythespire2.net/card/sword-boomerang",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "SWORD_SAGE",
+      "source": "https://slaythespire2.net/card/sword-sage",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp",
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "SYNCHRONIZE",
+      "source": "https://slaythespire2.net/card/synchronize",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "SYNTHESIS",
+      "source": "https://slaythespire2.net/card/synthesis",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "TACTICIAN",
+      "source": "https://slaythespire2.net/card/tactician",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "TAG_TEAM",
+      "source": "https://slaythespire2.net/card/tag-team",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "TANK",
+      "source": "https://slaythespire2.net/card/tank",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp",
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "TAUNT",
+      "source": "https://slaythespire2.net/card/taunt",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "TEAR_ASUNDER",
+      "source": "https://slaythespire2.net/card/tear-asunder",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "TEMPEST",
+      "source": "https://slaythespire2.net/card/tempest",
+      "value": "X",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "TERRAFORMING",
+      "source": "https://slaythespire2.net/card/terraforming",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "TESLA_COIL",
+      "source": "https://slaythespire2.net/card/tesla-coil",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "THE_BALL",
+      "source": "https://slaythespire2.net/card/the-ball",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "THE_BOMB",
+      "source": "https://slaythespire2.net/card/the-bomb",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "THE_GAMBIT",
+      "source": "https://slaythespire2.net/card/the-gambit",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "THE_HUNT",
+      "source": "https://slaythespire2.net/card/the-hunt",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "THE_SCYTHE",
+      "source": "https://slaythespire2.net/card/the-scythe",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "THE_SEALED_THRONE",
+      "source": "https://slaythespire2.net/card/the-sealed-throne",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp",
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "THE_SMITH",
+      "source": "https://slaythespire2.net/card/the-smith",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "THINKING_AHEAD",
+      "source": "https://slaythespire2.net/card/thinking-ahead",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "THRASH",
+      "source": "https://slaythespire2.net/card/thrash",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "THRUMMING_HATCHET",
+      "source": "https://slaythespire2.net/card/thrumming-hatchet",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "THUNDER",
+      "source": "https://slaythespire2.net/card/thunder",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "THUNDERCLAP",
+      "source": "https://slaythespire2.net/card/thunderclap",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "TIMES_UP",
+      "source": "https://slaythespire2.net/card/times-up",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "TOOLS_OF_THE_TRADE",
+      "source": "https://slaythespire2.net/card/tools-of-the-trade",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp",
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "TORIC_TOUGHNESS",
+      "source": "https://slaythespire2.net/card/toric-toughness",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "TRACKING",
+      "source": "https://slaythespire2.net/card/tracking",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp",
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "TRANSFIGURE",
+      "source": "https://slaythespire2.net/card/transfigure",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "TRASH_TO_TREASURE",
+      "source": "https://slaythespire2.net/card/trash-to-treasure",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp",
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "TREMBLE",
+      "source": "https://slaythespire2.net/card/tremble",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "TRUE_GRIT",
+      "source": "https://slaythespire2.net/card/true-grit",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "TURBO",
+      "source": "https://slaythespire2.net/card/turbo",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "TUTOR",
+      "source": "https://slaythespire2.net/card/tutor",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp",
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "TWIN_STRIKE",
+      "source": "https://slaythespire2.net/card/twin-strike",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "TYRANNY",
+      "source": "https://slaythespire2.net/card/tyranny",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "ULTIMATE_DEFEND",
+      "source": "https://slaythespire2.net/card/ultimate-defend",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "ULTIMATE_STRIKE",
+      "source": "https://slaythespire2.net/card/ultimate-strike",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "UNDEATH",
+      "source": "https://slaythespire2.net/card/undeath",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "UNDERWORLD",
+      "source": "https://slaythespire2.net/card/underworld",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "UNLEASH",
+      "source": "https://slaythespire2.net/card/unleash",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "UNMOVABLE",
+      "source": "https://slaythespire2.net/card/unmovable",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp",
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "UNRELENTING",
+      "source": "https://slaythespire2.net/card/unrelenting",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "UNTOUCHABLE",
+      "source": "https://slaythespire2.net/card/untouchable",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "UP_MY_SLEEVE",
+      "source": "https://slaythespire2.net/card/up-my-sleeve",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "UPPERCUT",
+      "source": "https://slaythespire2.net/card/uppercut",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "UPROAR",
+      "source": "https://slaythespire2.net/card/uproar",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "VEILPIERCER",
+      "source": "https://slaythespire2.net/card/veilpiercer",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "VENERATE",
+      "source": "https://slaythespire2.net/card/venerate",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "VICIOUS",
+      "source": "https://slaythespire2.net/card/vicious",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "VOID_FORM",
+      "source": "https://slaythespire2.net/card/void-form",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "VOLLEY",
+      "source": "https://slaythespire2.net/card/volley",
+      "value": "X",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "VOLTAIC",
+      "source": "https://slaythespire2.net/card/voltaic",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "WELL_LAID_PLANS",
+      "source": "https://slaythespire2.net/card/well-laid-plans",
+      "value": "2→1",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp",
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "WHIRLWIND",
+      "source": "https://slaythespire2.net/card/whirlwind",
+      "value": "X",
+      "icons": [
+        "/images/card-template/energy_inline_ironclad.webp"
+      ]
+    },
+    {
+      "id": "WHISTLE",
+      "source": "https://slaythespire2.net/card/whistle",
+      "value": "2",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "WHITE_NOISE",
+      "source": "https://slaythespire2.net/card/white-noise",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp",
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    },
+    {
+      "id": "WISH",
+      "source": "https://slaythespire2.net/card/wish",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_colorless.webp"
+      ]
+    },
+    {
+      "id": "WISP",
+      "source": "https://slaythespire2.net/card/wisp",
+      "value": "0",
+      "icons": [
+        "/images/card-template/energy_inline_necrobinder.webp"
+      ]
+    },
+    {
+      "id": "WRAITH_FORM",
+      "source": "https://slaythespire2.net/card/wraith-form",
+      "value": "3",
+      "icons": [
+        "/images/card-template/energy_inline_silent.webp"
+      ]
+    },
+    {
+      "id": "WRITHE",
+      "source": "https://slaythespire2.net/card/writhe",
+      "value": "No cost (unplayable)",
+      "icons": []
+    },
+    {
+      "id": "WROUGHT_IN_WAR",
+      "source": "https://slaythespire2.net/card/wrought-in-war",
+      "value": "1",
+      "icons": [
+        "/images/card-template/energy_inline_regent.webp"
+      ]
+    },
+    {
+      "id": "ZAP",
+      "source": "https://slaythespire2.net/card/zap",
+      "value": "1→0",
+      "icons": [
+        "/images/card-template/energy_inline_defect.webp",
+        "/images/card-template/energy_inline_defect.webp"
+      ]
+    }
+  ]
+}
