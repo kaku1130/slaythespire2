@@ -223,3 +223,34 @@ html body main#main-content .filters .catalog-search-tools>button.catalog-random
     search.dispatchEvent(new Event('input', {bubbles:true}));
   });
 })();
+(() => {
+  const main = document.getElementById('main-content');
+  const controls = main?.querySelector('#tools,.relic-filters,.potion-filters');
+  const random = controls?.querySelector('#aoe-toggle,.catalog-random');
+  if (!random || controls.querySelector('.filter-menu-toggle')) return;
+  const panels = [...controls.children].filter(element => element.matches('.card-filter-rows,.card-action-row,.catalog-filter-rows'));
+  if (!panels.length) return;
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'filter-menu-toggle';
+  button.title = '展開或收合篩選選單';
+  button.setAttribute('aria-expanded', 'false');
+  button.setAttribute('aria-label', '選單');
+  panels.forEach((panel, index) => {
+    panel.id ||= 'filter-menu-panel-' + index;
+  });
+  button.setAttribute('aria-controls', panels.map(panel => panel.id).join(' '));
+  button.innerHTML = '<span aria-hidden="true">&#9776;</span>';
+  random.after(button);
+  button.addEventListener('click', () => {
+    const expanded = button.getAttribute('aria-expanded') !== 'true';
+    button.setAttribute('aria-expanded', String(expanded));
+    controls.classList.toggle('filter-menu-open', expanded);
+  });
+  document.addEventListener('click', event => {
+    if (button.getAttribute('aria-expanded') !== 'true') return;
+    if (button.contains(event.target) || panels.some(panel => panel.contains(event.target))) return;
+    button.setAttribute('aria-expanded', 'false');
+    controls.classList.remove('filter-menu-open');
+  });
+})();

@@ -22,7 +22,16 @@ function replaceRelics(html){
   const textBlock=divAt(original,text.index),body=original.slice(textBlock.contentStart,textBlock.contentEnd);
   const name=divAt(body,body.search(/<div\b/));
   const description=divAt(body,body.indexOf('<div',name.end));
-  let remaining=body.slice(description.end).trim(),previous;
+  let remaining=body.slice(description.end).trim(),noteCursor=0;
+  // Delete source help boxes while keeping the attached card entries and context.
+  while(true){
+   const note=/<div\b[^>]*style="[^"]*border-image:[^"]*"[^>]*>/.exec(remaining.slice(noteCursor));
+   if(!note)break;
+   const noteBlock=divAt(remaining,noteCursor+note.index);
+   remaining=remaining.slice(0,noteBlock.start)+remaining.slice(noteBlock.end);
+   noteCursor=noteBlock.start;
+  }
+  let previous;
   do{previous=remaining;remaining=remaining.replace(/<div\b[^>]*>\s*<\/div>/g,'').trim();}while(remaining!==previous);
   const extras=remaining?'<div class="ancient-relic-extras">'+remaining+'</div>':'';
   const replacement=render(relic,{image,id:match[1],className:'ancient-relic-entry',extras});

@@ -7,3 +7,14 @@ html body main#main-content .search-control>button.search-clear:hover{color:#37a
 html body main#main-content .search-clear .search-icon{font-size:20px;line-height:1;pointer-events:none}
 html body main#main-content:is(.event-browser,.monster-browser,.encounter-browser) .chapter-filters>.search-control{order:-1;flex:0 0 auto}
 
+
+/* Keep filter menus collapsed until their menu button is opened. */
+html body main#main-content #tools:not(.filter-menu-open)>:is(.card-filter-rows,.card-action-row),
+html body main#main-content .filters:not(.filter-menu-open)>.catalog-filter-rows {display:none!important}
+html body main#main-content #tools .card-search,
+html body main#main-content .filters .catalog-search-tools:has(.filter-menu-toggle) {display:grid!important;grid-template-columns:minmax(0,1fr) 52px 52px!important;gap:8px;align-items:center;width:100%;min-width:0}
+html body main#main-content .filters:has(.filter-menu-toggle) {display:flex!important;flex-direction:column;align-items:stretch}
+html body main#main-content .filters .catalog-search-tools:has(.filter-menu-toggle) {order:-1;margin:0}
+html body main#main-content :is(#tools,.filters) button.filter-menu-toggle {display:inline-flex!important;align-items:center;justify-content:center;gap:6px;box-sizing:border-box;width:52px;min-width:52px;height:48px;min-height:48px;margin:0;padding:8px;border:1px solid #6faeee;border-radius:7px;background:#0d131a;color:#e3e8ee!important;font:16px/1.4 Arial,"Microsoft JhengHei",sans-serif;cursor:pointer}
+html body main#main-content :is(#tools,.filters) button.filter-menu-toggle:is(:hover,:focus-visible,[aria-expanded=true]) {border-color:#37a8ec;background:#163047}
+html body main#main-content button.filter-menu-toggle>span {display:block;font:22px/1 Arial,sans-serif;flex:none}
