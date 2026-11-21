@@ -3,6 +3,12 @@ const fs=require('node:fs'),path=require('node:path'),assert=require('node:asser
 const {catalog,payload,jsonAt}=require('./site-card-source.cjs');
 const sourceDirectory='data/cards/source';
 const normalize=value=>String(value||'').replace(/\\n/g,'\n').replace(/<e>(\d+)<\/e>/g,(_,n)=>'<e/>'.repeat(Number(n))).replace(/<s>(\d+)<\/s>/g,(_,n)=>n+'<s/>');
+function normalizeEffect(value,card){
+ const effect=normalize(value);
+ // The catalog drops fixed energy prefixes such as Orbit's four-energy threshold.
+ const threshold=card.description?.match(/\{energyPrefix:energyIcons\((\d+)\)\}/)?.[1];
+ return Number(threshold)>1?effect.replace(/<e\/>/,(icon,index)=>/\d\s*$/.test(effect.slice(0,index))?icon:threshold+icon):effect;
+}
 const comparable=value=>typeof value==='string'?normalize(value).replace(/\s+/g,' ').trim():JSON.stringify(value);
 const date=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 const write=(file,data)=>fs.writeFileSync(file,JSON.stringify(data,null,2)+'\n');
@@ -50,9 +56,9 @@ async function main(){
  for(const raw of reference){
   const zh=localized.get(raw.id);assert.ok(zh&&zh.slug===raw.slug,raw.id+' localized card');
   const card=Object.fromEntries(fields.filter(key=>raw[key]!==undefined).map(key=>[key,raw[key]]));
-  card.descBase=normalize(raw.descBase);card.descUpgraded=normalize(raw.descUpgraded);cards.push(card);
+  card.descBase=normalizeEffect(raw.descBase,raw);card.descUpgraded=normalizeEffect(raw.descUpgraded,raw);cards.push(card);
   const prior=oldChinese.get(card.id),aliases=[...(prior?.aliases||[]),...(prior&&prior.name!==zh.name?[prior.name]:[])];
-  chinese.push({id:card.id,name:zh.name,slug:card.slug,descBase:normalize(zh.descBase),descUpgraded:normalize(zh.descUpgraded),...(aliases.length?{aliases:[...new Set(aliases)].filter(name=>name!==zh.name)}:{})});
+  chinese.push({id:card.id,name:zh.name,slug:card.slug,descBase:normalizeEffect(zh.descBase,zh),descUpgraded:normalizeEffect(zh.descUpgraded,zh),...(aliases.length?{aliases:[...new Set(aliases)].filter(name=>name!==zh.name)}:{})});
   const changed=old.has(card.id)?['name','pool','type','rarity','energy','starCost','upgrade','descBase','descUpgraded'].filter(key=>comparable(old.get(card.id)[key])!==comparable(card[key])):['added'];
   if(changed.length)changes.push({id:card.id,name:card.name,fields:changed});
   const cost=card.energy===undefined?'No cost (unplayable)':(card.energy===-1?'X':card.energy)+'<e/>',next=upgradeCost(card);
@@ -83,5 +89,5 @@ async function main(){
  write('data/cards/card-audit.json',audit);
  console.log(JSON.stringify({version:audit.version,checked:cards.length,ancient:audit.ancient.length,added:audit.added.length,changed:audit.changed.length,removed,mergedSupplemental:merged,supplemental:special.cards.length,rankings:rankings.length},null,2));
 }
-module.exports={normalize,upgradeCost};
+module.exports={normalize,normalizeEffect,upgradeCost};
 if(require.main===module)main().catch(error=>{console.error(error);process.exitCode=1;});

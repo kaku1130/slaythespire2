@@ -139,10 +139,17 @@ html body .card-detail[data-card-layout=compact] > .detail-section {margin-block
 .card-detail .detail-rating:hover .detail-rating-description {color:#74b3e6;text-decoration:underline}
 .card-detail .detail-rating:focus-visible {outline:2px solid #74b3e6;outline-offset:3px}
 .card-detail .detail-effect-columns {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px}
-html body .card-detail[data-card-layout=compact] .detail-effect-columns {grid-template-columns:minmax(0,1fr);gap:0;border:1px solid #303d4e;border-radius:9px;background:#101923;overflow:hidden}
+html body .card-detail[data-card-layout=compact] .detail-effect-columns {grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto auto;gap:0;border:1px solid #303d4e;border-radius:9px;background:#101923;overflow:hidden}
 .card-detail .detail-effect-panel {padding:16px;border:1px solid #303d4e;border-radius:9px;background:#101923}
-html body .card-detail[data-card-layout=compact] .detail-effect-columns > .detail-effect-panel {border:0;border-radius:0;background:transparent}
-html body .card-detail[data-card-layout=compact] .detail-effect-columns > .detail-effect-panel + .detail-effect-panel {border-top:1px solid #303d4e}
+html body .card-detail[data-card-layout=compact] .detail-effect-columns > .detail-effect-panel {display:grid;grid-row:span 2;grid-template-rows:subgrid;min-width:0;overflow-wrap:anywhere;border:0;border-radius:0;background:transparent}
+html body .card-detail[data-card-layout=compact] .detail-effect-panel .detail-panel-cost {grid-row:1;align-self:start}
+html body .card-detail[data-card-layout=compact] .detail-effect-panel .detail-panel-description {grid-row:2;align-self:start;margin-top:9px}
+html body .card-detail[data-card-layout=compact] .detail-effect-columns > .detail-effect-panel + .detail-effect-panel {border-left:1px solid #303d4e}
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+  html body .card-detail[data-card-layout=compact] .detail-effect-columns {grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-auto-rows:1fr}
+  html body .card-detail[data-card-layout=compact] .detail-effect-columns > .detail-effect-panel {grid-row:auto;grid-template-rows:auto 1fr}
+  html body .card-detail[data-card-layout=compact] .detail-effect-columns > .detail-effect-panel + .detail-effect-panel {border-left:0;border-top:1px solid #303d4e}
+}
 .card-detail .detail-effect-panel h4 {margin:0 0 9px;color:#aab8cb;font-size:13px;font-weight:600;letter-spacing:.05em}
 html body .card-detail[data-card-layout=compact] .detail-effect-panel h4 {text-align:center}
 html body .card-detail[data-card-layout=compact] .detail-effect-panel p {text-align:center}

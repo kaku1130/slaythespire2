@@ -11,7 +11,7 @@ function buildLink(card, build, localBuilds) {
   }
   return new URL(build.url, card.source).href;
 }
-function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds = '', showBuilds = true, showKeywords = true, showTierRating = true, searchableEffects = false, rarityBeforeType = false, showEffectTooltips = false, showEffectNotes = false, metadataAboveEffects = false} = {}) {
+function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds = '', showBuilds = true, showKeywords = true, showTierRating = true, searchableEffects = false, rarityBeforeType = false, showEffectTooltips = false, showEffectNotes = false, metadataAboveEffects = false, tierBesideName = false} = {}) {
   const chineseUrl = new URL(card.sourceZh || card.source);
   if (!card.sourceZh) chineseUrl.pathname = '/zh-TW' + chineseUrl.pathname;
   const energyCost = card.stats.find(stat => stat.label === 'Energy cost')?.value;
@@ -64,12 +64,12 @@ function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds =
     ? new URL('/card-tier-list/' + card.character.toLowerCase(), card.source).href : null;
   const tierDescription = 'Ranked ' + card.tier + ' tier in our ' + card.character + ' card tier list.';
   const tierBadge = tierList ? '<a class="detail-inline-tier" data-tier="' + esc(card.tier) + '" aria-label="Tier ' + esc(card.tier) + '" href="' + esc(tierList) + '" target="_blank" rel="noopener noreferrer">Tier ' + esc(card.tier) + '</a>' : '';
-  const characterMetadata = metadataAboveEffects ? '<dl class="detail-character-metadata" aria-label="Character, Tier and rarity">' + renderStat({label:'Character',value:card.character}) + (tierBadge ? '<div class="detail-meta-item detail-tier-item"><dt>Tier</dt><dd>' + tierBadge + '</dd></div>' : '') + renderStat({label:'Rarity',value:card.rarity}) + '</dl>' : '';
+  const characterMetadata = metadataAboveEffects ? '<dl class="detail-character-metadata" aria-label="Character, Tier and rarity">' + renderStat({label:'Character',value:card.character}) + (tierBadge && !tierBesideName ? '<div class="detail-meta-item detail-tier-item"><dt>Tier</dt><dd>' + tierBadge + '</dd></div>' : '') + renderStat({label:'Rarity',value:card.rarity}) + '</dl>' : '';
   const art = '<figure class="detail-art" data-detail-row="1"><img src="' + esc(card.image) + '" width="700" height="532" alt="' + esc(card.name) + ' illustration" loading="lazy" decoding="async"></figure>';
   return `<article class="card-detail"${metadataAboveEffects ? ' data-card-layout="compact"' : ''} aria-labelledby="${prefix}-title" lang="en" data-source="${esc(card.source)}" data-character="${esc(card.character)}">
   <div class="detail-overview">
   ${metadataAboveEffects ? '' : art}
-  <header data-detail-row="2"><h2 class="detail-title" id="${prefix}-title"><a class="detail-name-zh" lang="zh-Hant" href="${esc(chineseUrl.href)}" target="_blank" rel="noopener noreferrer">${esc(card.nameZh)}</a><a class="detail-name-en" href="${esc(card.source)}" target="_blank" rel="noopener noreferrer">${esc(card.name)}</a></h2></header>
+  <header data-detail-row="2"><h2 class="detail-title" id="${prefix}-title">${tierBesideName ? '<span class="detail-name-line">' : ''}<a class="detail-name-zh" lang="zh-Hant" href="${esc(chineseUrl.href)}" target="_blank" rel="noopener noreferrer">${esc(card.nameZh)}</a>${tierBesideName ? (tierList ? '<a class="detail-name-tier" data-tier="' + esc(card.tier) + '" aria-label="Tier ' + esc(card.tier) + '" href="' + esc(tierList) + '" target="_blank" rel="noopener noreferrer">' + esc(card.tier) + '</a>' : '') + '</span>' : ''}<a class="detail-name-en" href="${esc(card.source)}" target="_blank" rel="noopener noreferrer">${esc(card.name)}</a></h2></header>
   ${metadataAboveEffects ? art : ''}
   ${typeMetadata}
   <section class="detail-section detail-effects" data-detail-row="5" aria-label="Card effects"><div class="detail-effect-columns"><div class="detail-effect-panel" role="group" aria-label="Base">${metadataAboveEffects ? '' : '<h4>Base</h4>'}${baseCostContent}<p class="detail-panel-description">${baseContent}</p></div><div class="detail-effect-panel" role="group" aria-label="Upgraded">${metadataAboveEffects ? '' : '<h4 class="detail-upgraded">Upgraded</h4>'}${upgradedCostContent}<p class="detail-panel-description">${upgradedContent}</p></div></div>${showEffectNotes ? require('./effect-tooltips.cjs').notes(card.id) : ''}${showKeywords && keywords ? '<aside class="detail-keyword">' + keywords + '</aside>' : ''}</section>

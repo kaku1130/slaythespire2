@@ -2839,8 +2839,8 @@
       "id": "ORBIT",
       "name": "環繞軌道",
       "slug": "orbit",
-      "descBase": "每花費 <e/>，\n就獲得 <e/>。",
-      "descUpgraded": "每花費 <e/>，\n就獲得 <e/>。"
+      "descBase": "每花費 4<e/>，\n就獲得 <e/>。",
+      "descUpgraded": "每花費 4<e/>，\n就獲得 <e/>。"
     },
     {
       "id": "OUTBREAK",

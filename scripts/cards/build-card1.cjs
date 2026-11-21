@@ -11,7 +11,7 @@ const plain = value => value.replace(/<\/?(?:article|section|div|p|header|h[1-6]
 }).replace(/\s+/g, ' ').trim();
 const renderArticle = require('./render-card-detail.cjs');
 function render(card) {
-  const article=renderArticle(card,{localBuilds,showBuilds:false,showKeywords:false,searchableEffects:true,rarityBeforeType:true,showEffectNotes:false,metadataAboveEffects:true});
+  const article=renderArticle(card,{localBuilds,showBuilds:false,showKeywords:false,searchableEffects:true,rarityBeforeType:true,showEffectNotes:false,metadataAboveEffects:true,tierBesideName:true});
   return '<td class="card-detail-cell" data-field="detail" role="cell" colspan="10">'+article+'</td>';
 }
 function attribute(tag, name, value) {
@@ -51,7 +51,11 @@ html = html.replace(/<tr id="card-([^"]+)"[^>]*>[\s\S]*?<\/tr>/g, (original, id)
     if (field === 'type') content = '<span class="type" data-type="' + esc(card.type) + '">' + esc(card.type) + '</span>';
     return tag + content + '</td>';
   });
-  return row.replace('</tr>', detailCell + '</tr>');
+  const sortValues=Object.fromEntries([...row.matchAll(/<td\b([^>]*)data-field="([^"]+)"([^>]*)>([\s\S]*?)<\/td>/g)].map(([,before,field,after,content])=>[field,(before+after).match(/data-sort-value="([^"]*)"/)?.[1]??plain(content)]));
+  let rowTag=row.match(/^<tr[^>]*>/)[0];
+  rowTag=attribute(rowTag,'data-sort-values',JSON.stringify(sortValues));
+  rowTag=attribute(rowTag,'data-tier',card.tier||'unranked');
+  return rowTag+detailCell+'</tr>';
 });
 assert.equal(count, details.size);
 html = html.replace(/<footer class="card-results-footer">([\s\S]*?)<\/footer>/g, '$1');

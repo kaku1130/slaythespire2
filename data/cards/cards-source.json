@@ -4992,8 +4992,8 @@
     "upgrade": {
       "energy": "-1"
     },
-    "descBase": "Every <e/> you spend,\ngain <e/>.",
-    "descUpgraded": "Every <e/> you spend,\ngain <e/>."
+    "descBase": "Every 4<e/> you spend,\ngain <e/>.",
+    "descUpgraded": "Every 4<e/> you spend,\ngain <e/>."
   },
   {
     "id": "OUTBREAK",

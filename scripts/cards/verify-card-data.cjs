@@ -2,12 +2,12 @@ process.chdir(require('node:path').resolve(__dirname,'../..'));
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const {pathToFileURL}=require('node:url');
 const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright'));
-const {normalize,upgradeCost}=require('./sync-card-data.cjs');
+const {normalizeEffect,upgradeCost}=require('./sync-card-data.cjs');
 const reference=JSON.parse(fs.readFileSync('data/cards/source/catalog-en.json'));
 const localized=new Map(JSON.parse(fs.readFileSync('data/cards/source/catalog-zh-TW.json')).cards.map(card=>[card.id,card]));
 const source=JSON.parse(fs.readFileSync('data/cards/cards-source.json'));
 const detail=new Map(JSON.parse(fs.readFileSync('data/cards/english-details.json')).cards.map(card=>[card.id,card]));
-const plain=value=>normalize(value).replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim();
+const plain=(value,card)=>normalizeEffect(value,card).replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim();
 async function main(){
  assert.equal(reference.version,'v0.111.1');assert.equal(reference.cards.length,569);
  assert.deepEqual(source.map(card=>card.id).sort(),reference.cards.map(card=>card.id).sort());
@@ -15,7 +15,7 @@ async function main(){
  for(const card of reference.cards){
   const row=detail.get(card.id),zh=localized.get(card.id);assert.ok(row,card.id);
   assert.equal(row.name,card.name);assert.equal(row.nameZh,zh.name);assert.equal(row.type,card.type);assert.equal(row.rarity,card.rarity);assert.equal(row.character,card.pool);
-  assert.equal(row.effect.base,normalize(card.descBase));assert.equal(row.effect.upgraded,card.upgrade||card.descBase!==card.descUpgraded?normalize(card.descUpgraded):null);
+  assert.equal(row.effect.base,normalizeEffect(card.descBase,card));assert.equal(row.effect.upgraded,card.upgrade||card.descBase!==card.descUpgraded?normalizeEffect(card.descUpgraded,card):null);
   assert.ok(fs.existsSync(row.image),card.id+' illustration');
  }
  const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
@@ -33,8 +33,8 @@ async function main(){
    assert.equal(rendered.length,reference.cards.length);const byId=new Map(rendered.map(card=>[card.id,card]));
    for(const card of reference.cards){
     const row=byId.get(card.id);assert.equal(row.name,card.name,card.id+' English name');assert.equal(row.zh,localized.get(card.id).name,card.id+' Chinese name');
-    assert.equal(row.base,plain(card.descBase),card.id+' Base');
-    let upgraded=card.upgrade||card.descBase!==card.descUpgraded?plain(card.descUpgraded):'Cannot be upgraded.';
+    assert.equal(row.base,plain(card.descBase,card),card.id+' Base');
+    let upgraded=card.upgrade||card.descBase!==card.descUpgraded?plain(card.descUpgraded,card):'Cannot be upgraded.';
     const next=upgradeCost(card),cost=card.energy===undefined?'No cost (unplayable)':card.energy===-1?'X':String(card.energy);
     assert.equal(row.upgraded,upgraded,card.id+' Upgraded');
     assert.equal(row.baseCost,cost,card.id+' base energy');

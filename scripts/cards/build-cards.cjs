@@ -1,5 +1,4 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
-const cardArt=require('./card-art-preview.cjs');
 const cardGrid=require('./card-grid-view.cjs');
 const toolbarRwd=require('./card-toolbar-rwd.cjs');
 const resourceIcons=require('./resource-icons.cjs');
@@ -83,15 +82,8 @@ function renderEnergy(c){
 const localBuildUrl=b=>'build.html#build-'+b.character+'-'+b.buildId;
 function renderBuilds(c){const builds=buildsByCard[c.id]||[];if(!builds.length)return '<span class="not-available">—</span>';return '<div class="build-inline-list">'+builds.map(b=>'<div class="build-association"><a data-build-pool="'+esc(b.characterPool)+'" style="--build-color:'+poolColors[b.characterPool]+'" href="'+esc(localBuildUrl(b))+'">'+esc(b.name)+'</a><span class="build-role-label">'+(b.role==='core'?'核心卡片':'輔助卡片')+'</span></div>').join('')+'</div>';}
 
-const cardImages=JSON.parse(fs.readFileSync('data/cards/card-images.json','utf8'));
-const cardTableImages=JSON.parse(fs.readFileSync('data/cards/card-table-images.json','utf8'));
-function renderCardImage(c,kind){const src=cardImages[c.id]?.[kind];if(!src)return '<span class="not-available">—</span>';const alt=chineseCards.get(c.id).name+(kind==='base'?'（升級前）':'（升級後）');return '<button type="button" class="card-image-button" aria-label="' +esc(alt)+'"><img class="card-image" src="'+esc(src)+'" alt="'+esc(alt)+'" width="340" height="454" loading="lazy" decoding="async"></button>';}
-function renderCardImages(c){
-  return '<div class="card-images-pair"><figure>'+renderCardImage(c,'base')+'</figure><figure class="card-image-upgraded">'+renderCardImage(c,'upgraded')+'</figure></div>';
-}
-
-const columns=[['english','ID'],['name','Name'],['images','圖片'],['effect','Effect'],['upgraded','Upgraded'],['tier','Tier'],['builds','Builds'],['type','Type'],['energy','Cost'],['rarity','Rarity'],['pool','Category']];
-const visibleColumns=new Set(columns.map(([key])=>key).filter(key=>key!=='images'));
+const columns=[['english','ID'],['name','Name'],['effect','Effect'],['upgraded','Upgraded'],['tier','Tier'],['builds','Builds'],['type','Type'],['energy','Cost'],['rarity','Rarity'],['pool','Category']];
+const visibleColumns=new Set(columns.map(([key])=>key));
 const buildNameWidth=Math.max(...Object.values(buildsByCard).flat().map(b=>Array.from(b.name).reduce((width,char)=>width+(/[\u2e80-\uffff]/.test(char)?24:14),0)));
 const fixedColumnWidths={english:196,name:144,builds:Math.ceil(buildNameWidth)+24,type:112,energy:112,tier:100,rarity:120,pool:144};
 const flexibleColumnWeights={effect:1,upgraded:1};
@@ -105,7 +97,7 @@ const tableHead='<thead role="rowgroup"><tr>'+columns.filter(([key])=>visibleCol
 const sections = groups.map(pool => {
   const list = cards.filter(c => group(c) === pool).sort((a,b) => compareCards({...a,tier:tiers.get(a.id)},{...b,tier:tiers.get(b.id)}));
   const rows = list.map(c => {
-    const values={images:renderCardImages(c),english:'<a class="name-en" href="https://slaythespire2.net/card/'+encodeURIComponent(c.slug)+'" target="_blank" rel="noopener noreferrer">'+esc(c.name)+'</a>',name:'<a data-card-art="'+esc(c.id)+'" data-rarity="'+esc(c.rarity)+'" href="https://slaythespire2.net/zh-TW/card/'+encodeURIComponent(c.slug)+'" target="_blank" rel="noopener noreferrer">'+'<span class="name-zh" lang="zh-Hant">'+esc(chineseCards.get(c.id).name)+'</span></a>',type:'<span class="type" data-type="'+esc(c.type)+'">'+esc(typeLabels[c.type])+'</span>',energy:renderEnergy(c),effect:renderEffect(chineseCards.get(c.id).descBase)+(chineseCards.get(c.id).notes?'<br><small>'+renderEffect(chineseCards.get(c.id).notes)+'</small>':''),upgraded:renderUpgraded(c),rarity:'<span class="rarity" data-rarity="'+esc(c.rarity)+'">'+esc(displayedRarities.includes(c.rarity)?rarityLabels[c.rarity]:'—')+'</span>',tier:'<span class="tier" data-tier="'+(tiers.get(c.id)||'unranked')+'"'+(tiers.has(c.id)?'':' title="Not ranked by source"')+'>'+(tiers.get(c.id)||'—')+'</span>',builds:renderBuilds(c),pool:esc(pool)};
+    const values={english:'<a class="name-en" href="https://slaythespire2.net/card/'+encodeURIComponent(c.slug)+'" target="_blank" rel="noopener noreferrer">'+esc(c.name)+'</a>',name:'<a data-rarity="'+esc(c.rarity)+'" href="https://slaythespire2.net/zh-TW/card/'+encodeURIComponent(c.slug)+'" target="_blank" rel="noopener noreferrer">'+'<span class="name-zh" lang="zh-Hant">'+esc(chineseCards.get(c.id).name)+'</span></a>',type:'<span class="type" data-type="'+esc(c.type)+'">'+esc(typeLabels[c.type])+'</span>',energy:renderEnergy(c),effect:renderEffect(chineseCards.get(c.id).descBase)+(chineseCards.get(c.id).notes?'<br><small>'+renderEffect(chineseCards.get(c.id).notes)+'</small>':''),upgraded:renderUpgraded(c),rarity:'<span class="rarity" data-rarity="'+esc(c.rarity)+'">'+esc(displayedRarities.includes(c.rarity)?rarityLabels[c.rarity]:'—')+'</span>',tier:'<span class="tier" data-tier="'+(tiers.get(c.id)||'unranked')+'"'+(tiers.has(c.id)?'':' title="Not ranked by source"')+'>'+(tiers.get(c.id)||'—')+'</span>',builds:renderBuilds(c),pool:esc(pool)};
     return '<tr id="card-'+esc(c.id)+'" role="row" data-name="'+esc((c.name+' '+chineseCards.get(c.id).name).toLowerCase())+'" data-id="'+esc(c.id)+'" data-search="'+esc([c.id,c.name,chineseCards.get(c.id).name,...(chineseCards.get(c.id).aliases||[]),chineseCards.get(c.id).notes||'',chineseCards.get(c.id).descBase,canUpgrade(c)?chineseCards.get(c.id).descUpgraded:''].join(' ').replace(/<[^>]*>/g,'').toLowerCase())+'" data-type="'+esc(c.type)+'" data-rarity="'+esc(c.rarity)+'">'+columns.map(([key,label])=>'<td role="cell" data-field="'+key+'" data-label="'+label+'"'+(key==='energy'?' data-sort-value="'+esc(costLabel(c.energy))+'"':key==='name'?' data-sort-value="'+esc(c.name)+'"':key==='rarity'?' data-sort-value="'+esc(c.rarity)+'"':key==='type'?' data-sort-value="'+esc(c.type)+'"':'')+' class="'+({english:'english-name',name:'name',pool:'category',effect:'effect',upgraded:'effect upgraded',builds:'builds',energy:'energy'}[key]||key)+'">'+values[key]+'</td>').join('')+'</tr>';
   }).join('\n');
   return `<section data-pool="${pool}" data-filter-category="${filterCategory(pool)}"${pool === 'Ironclad' ? '' : ' hidden'} style="--accent:${poolColors[pool]}"><h2 class="grid-pool-heading"><img src="${poolIcons[pool]}" alt="" width="28" height="28">${pool} <span class="grid-pool-count">(${list.length})</span></h2><div class="mobile-sort"><label for="sort-${pool}">Sort by</label><select id="sort-${pool}" class="mobile-sort-key">${columns.filter(([key])=>visibleColumns.has(key)).map(([key,label])=>`<option value="${key}"${key==='pool'?' hidden disabled':''}${key==='rarity'?' selected':''}>${label}</option>`).join('')}</select><button type="button" class="mobile-sort-direction" aria-label="Ascending; click to sort descending">↑ Asc</button></div><div class="table-wrap"><table role="table"><caption class="sr-only">${pool} 卡片名稱，共 ${list.length} 張</caption>${columnGroup}${tableHead}<tbody role="rowgroup">${rows}</tbody></table></div></section>`;
@@ -195,16 +187,11 @@ ${resourceIcons.styles}
 .card-scroll section .build-list li{justify-content:flex-start;gap:6px}.card-scroll section .build-list li a{flex:0 1 auto}.card-scroll section .build-list li .build-role{margin-left:0}
 .build-inline-list{white-space:normal;max-width:100%;overflow:visible;overflow-wrap:normal;word-break:normal}.build-inline-list a,.build-inline-list a:hover{display:inline;color:var(--build-color);font-size:inherit;text-decoration:none}.build-inline-list a:hover{text-decoration:underline}
 .build-inline-list a{display:inline-block;white-space:nowrap;overflow-wrap:normal;word-break:keep-all}
-${cardArt.styles}
-.card-image-link{display:block;width:100%;max-width:204px;margin:0 auto}.card-image{display:block;width:100%;height:auto;aspect-ratio:340/454;object-fit:contain}.card-image-link:hover{filter:brightness(1.12)}
-@media screen and (max-width:1799px){td[data-field=tier]{order:4}td[data-field=imageBase]{grid-column:1/span 2}td[data-field=imageUpgraded]{grid-column:3/span 2}td[data-field=imageBase],td[data-field=imageUpgraded]{order:5;min-width:0}.card-image-link{max-width:204px}td[data-field=imageBase]::before,td[data-field=imageUpgraded]::before{display:block}}
-@media screen and (max-width:640px){td[data-field=imageBase]{grid-column:1}td[data-field=imageUpgraded]{grid-column:2}}
 
 
 
-.card-images-pair{display:grid;grid-template-columns:minmax(0,120px);justify-content:center;gap:8px;width:100%;max-width:120px;margin:0 auto}.card-images-pair figure{margin:0;min-width:0;text-align:center}.card-images-pair .card-image{display:block;width:120px;max-width:100%;height:auto}.card-images-pair .not-available{display:block;padding:16px 0;font-size:large}.card-image-button{display:block;padding:0;border:0;background:transparent;cursor:zoom-in;width:100%}.card-image-button:hover{filter:brightness(1.15)}.card-image-button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:5px}
+
 @media screen and (min-width:1800px){.card-scroll section,.card-scroll section table{min-width:2400px;width:100%}.card-scroll section table{table-layout:fixed}.card-scroll section td[data-field=builds]{max-width:none}}
-@media screen and (max-width:1799px){td[data-field=images]{order:5;grid-column:1/-1}td[data-field=pool]{grid-column:1/-1}}
 
 main section td:is([data-field=english],[data-field=name]){text-align:center}main section th{text-align:center}main section th .sort-button{justify-content:center;text-align:center}
 main section td:is([data-field=type],[data-field=energy],[data-field=tier]){text-align:center}
@@ -217,8 +204,6 @@ main section td[data-field=english],main section td[data-field=english] .name-en
 ${cardGrid.styles}
 .tools .primary-filter-row>.result{flex:0 0 auto;white-space:nowrap;margin:0;align-self:center}.tools .secondary-filter-row .presentation-controls{flex:0 0 auto;flex-wrap:nowrap;margin:0 0 0 auto}.presentation-controls .image-size-controls{flex:0 0 auto;margin:0 0 0 8px}.presentation-controls button{min-height:48px;white-space:nowrap}
 @media(min-width:901px){.tools .primary-filter-row{overflow:visible}.tools .primary-filter-row .chips{flex:0 1 auto;min-width:0;overflow-x:auto;padding:2px;scrollbar-width:thin}.inline-search{flex:1 1 320px;min-width:240px}}
-.card-image-button{cursor:pointer}.card-image-button:disabled{cursor:default}.card-image-button:disabled:hover{filter:none;transform:none}
-body[data-view=table] main section :is(th,td)[data-field=images]{display:none!important}
 ${toolbarRwd}
 .build-association{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:center;gap:0 6px;min-width:0;max-width:100%}.build-role-label{color:var(--muted);font-size:14px;white-space:nowrap;line-height:1.5}
 ${navigation.layoutStyles}
@@ -356,7 +341,7 @@ ${fs.readFileSync('assets/cards/search-control.css','utf8')}
 <div id="card-scroll" class="card-scroll" role="region" aria-label="卡牌表格" tabindex="0">${sections}<p id="empty" hidden>找不到符合條件的卡片，請調整搜尋文字、分類或稀有度。</p>
 </div>
 </main>
-${cardArt.markup({paired:true})}<script>
+<script>
 
 const search=document.getElementById('search');
 const characterFilter=document.getElementById('card-filter-character');
@@ -392,7 +377,7 @@ function cardMatchesFilters(row, section, selected) {
   return (!characters.size||characters.has(section.dataset.filterCategory))
     && (!rarities.size||rarities.has(row.dataset.rarity)||(rarities.has('Common')&&row.dataset.rarity==='Basic'))
     && (!types.size||types.has(row.dataset.type))
-    && (!tiers.size||tiers.has(row.querySelector('.tier[data-tier]').dataset.tier));
+    && (!tiers.size||tiers.has(row.dataset.tier));
 }
 function filter() {
   const queries=cardSearchQueries(),selected=selectedCardFilters();let count=0;
@@ -414,7 +399,7 @@ function filter() {
 
 document.getElementById('aoe-toggle').addEventListener('click',()=>{
   const selected=selectedCardFilters();
-  const names=sections.flatMap(section=>[...section.querySelectorAll('tbody tr')].filter(row=>cardMatchesFilters(row,section,selected)).map(row=>row.querySelector('.name-en').textContent.trim())).filter(Boolean);
+  const names=sections.flatMap(section=>[...section.querySelectorAll('tbody tr')].filter(row=>cardMatchesFilters(row,section,selected)).map(row=>row.querySelector('.detail-name-en').textContent.trim())).filter(Boolean);
   if(!names.length)return;
   search.value='"'+names[Math.floor(Math.random()*names.length)]+'"';
   search.dispatchEvent(new Event('input',{bubbles:true}));
@@ -426,7 +411,7 @@ function cardMatchesSearch(row, queries) {
   const query = search.value.trim().toLowerCase();
   if (query.length >= 2 && query.startsWith('"') && query.endsWith('"')) {
     const name = query.slice(1, -1);
-    return [...row.querySelectorAll('.name-en,.name-zh')].some(node => node.textContent.trim().toLowerCase() === name);
+    return [...row.querySelectorAll('.detail-name-en,.detail-name-zh')].some(node => node.textContent.trim().toLowerCase() === name);
   }
   return queries.some(value => row.dataset.search.includes(value));
 }
@@ -448,7 +433,7 @@ for(const table of document.querySelectorAll('table')){
   function applySort(key,direction){
     sortKey=key;sortDirection=direction;
     const rows=[...tbody.rows];
-    const values=row=>({...Object.fromEntries([...row.cells].map(cell=>[cell.dataset.field,cell.dataset.sortValue??cell.textContent])),id:row.dataset.id});
+    const values=row=>({...JSON.parse(row.dataset.sortValues),id:row.dataset.id});
     rows.sort((a,b)=>compareCards(values(a),values(b),sortKey,sortDirection));
     tbody.append(...rows);
     sortSelect.value=sortKey;
@@ -481,10 +466,10 @@ window.addEventListener('hashchange',revealLinkedCard);revealLinkedCard();
 
 
 
-${cardArt.createScript({paired:true,width:420})}
+
 </script></body></html>`;
 require('./desktop-page-css.cjs').writeDesktopPage('card.html',navigation.openPageLinksInNewTab(html).replace('</body>','<script src="assets/cards/search-controls.js"></script><script src="assets/cards/compact-cards.js?v=4"></script></body>'));
-const manifest={source:'https://slaythespire2.net/card',chineseSource:chineseSource.source,retrievedDate:chineseSource.retrievedDate,version:chineseSource.version,balanceUpdate:chineseSource.balanceUpdate,tierSource:tierSource.source,tierRetrievedDate:tierSource.retrievedDate,total:cards.length,categories:Object.fromEntries(categories.map((p,i)=>[p,expected[i]])),cards:groups.flatMap(pool=>cards.filter(c=>group(c)===pool).sort((a,b)=>compareCards({...a,tier:tiers.get(a.id)},{...b,tier:tiers.get(b.id)})).map(c=>({id:c.id,name:c.name,nameZh:chineseCards.get(c.id).name,...(chineseCards.get(c.id).aliases?{aliases:chineseCards.get(c.id).aliases}:{}),...(chineseCards.get(c.id).notes?{notes:chineseCards.get(c.id).notes}:{}),...(c.availability?{availability:c.availability}:{}),...(c.canGenerateInCombat!==undefined?{canGenerateInCombat:c.canGenerateInCombat}:{}),category:category(c),originalPool:c.pool,type:c.type,rarity:c.rarity,rarityZh:rarityLabels[c.rarity],tier:tiers.get(c.id)||null,images:cardImages[c.id],tableImages:cardTableImages[c.id],effect:{base:chineseCards.get(c.id).descBase,upgraded:canUpgrade(c)?chineseCards.get(c.id).descUpgraded:null},energy:c.energy??null,starCost:c.starCost??null,upgrade:c.upgrade??null,builds:(buildsByCard[c.id]||[]).map(b=>({...b,sourceUrl:b.url,url:localBuildUrl(b)})),url:c.sourceZh||'https://slaythespire2.net/zh-TW/card/'+c.slug})))};
+const manifest={source:'https://slaythespire2.net/card',chineseSource:chineseSource.source,retrievedDate:chineseSource.retrievedDate,version:chineseSource.version,balanceUpdate:chineseSource.balanceUpdate,tierSource:tierSource.source,tierRetrievedDate:tierSource.retrievedDate,total:cards.length,categories:Object.fromEntries(categories.map((p,i)=>[p,expected[i]])),cards:groups.flatMap(pool=>cards.filter(c=>group(c)===pool).sort((a,b)=>compareCards({...a,tier:tiers.get(a.id)},{...b,tier:tiers.get(b.id)})).map(c=>({id:c.id,name:c.name,nameZh:chineseCards.get(c.id).name,...(chineseCards.get(c.id).aliases?{aliases:chineseCards.get(c.id).aliases}:{}),...(chineseCards.get(c.id).notes?{notes:chineseCards.get(c.id).notes}:{}),...(c.availability?{availability:c.availability}:{}),...(c.canGenerateInCombat!==undefined?{canGenerateInCombat:c.canGenerateInCombat}:{}),category:category(c),originalPool:c.pool,type:c.type,rarity:c.rarity,rarityZh:rarityLabels[c.rarity],tier:tiers.get(c.id)||null,effect:{base:chineseCards.get(c.id).descBase,upgraded:canUpgrade(c)?chineseCards.get(c.id).descUpgraded:null},energy:c.energy??null,starCost:c.starCost??null,upgrade:c.upgrade??null,builds:(buildsByCard[c.id]||[]).map(b=>({...b,sourceUrl:b.url,url:localBuildUrl(b)})),url:c.sourceZh||'https://slaythespire2.net/zh-TW/card/'+c.slug})))};
 fs.writeFileSync('data/cards/cards.json',JSON.stringify(manifest,null,2));
 assert.equal((html.match(/<tr id="card-[^"]+" role="row" data-name=/g)||[]).length,cards.length);
 assert.equal((html.match(/<section data-pool=/g)||[]).length,groups.length);

@@ -1,13 +1,9 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
 const fs=require('fs');
-const cards=JSON.parse(fs.readFileSync('data/cards/cards.json')).cards;
-const previews=JSON.parse(fs.readFileSync('data/cards/card-art-previews.json'));
-const assets=require('./data-assets.cjs').load();
 const details=new Map(JSON.parse(fs.readFileSync('data/cards/english-details.json','utf8')).cards.map(card=>[card.id,card]));
 for(const {detail} of JSON.parse(fs.readFileSync('data/cards/special-cards.json','utf8')).cards)if(!details.has(detail.id))details.set(detail.id,detail);
 const render=require('./render-card-detail.cjs');
 const byArt=new Map(),byName=new Map();
-for(const card of cards){byName.set(card.nameZh,card);const art=previews[card.id]?.match(/<img[^>]+src="([^"]+)"/)?.[1];if(art){byArt.set(art,card);if(assets[art])byArt.set(assets[art],card);}}
 for(const card of details.values()){byArt.set(card.image,card);byName.set(card.nameZh,card);}
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function replaceCards(html,prefix='../../'){

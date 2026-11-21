@@ -17260,8 +17260,8 @@
       "character": "Regent",
       "tier": "A",
       "effect": {
-        "base": "Every <e/> you spend,\ngain <e/>.",
-        "upgraded": "Every <e/> you spend,\ngain <e/>."
+        "base": "Every 4<e/> you spend,\ngain <e/>.",
+        "upgraded": "Every 4<e/> you spend,\ngain <e/>."
       },
       "stats": [
         {
