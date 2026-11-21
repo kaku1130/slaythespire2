@@ -6,7 +6,8 @@ const files = {
   cards:['assets/cards/icons/nav-cards.webp','cover'],
   relic:['assets/relic/images/nav-relics.webp','contain'],
   potion:['assets/potion/images/nav-potions.webp','contain'],
-  ancient:['assets/ancient/images/icon/neow.webp','contain']
+  ancient:['assets/ancient/images/icon/neow.webp','contain'],
+  monster:['assets/monster/images/nav-monsters.webp','cover']
 };
 const columnCount=Object.keys(files).length;
 const navigationWidth=columnCount*62+(columnCount-1)*4;

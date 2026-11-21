@@ -39,7 +39,7 @@ html = html.replace(/<tr id="card-([^"]+)"[^>]*>[\s\S]*?<\/tr>/g, (original, id)
   row = row.replace(/(<td\b[^>]*data-field="([^"]+)"[^>]*>)([\s\S]*?)<\/td>/g, (cell, tag, field, content) => {
     const sortValues = {name:card.name, type:card.type, rarity:card.rarity};
     if (sortValues[field]) tag = attribute(tag, 'data-sort-value', sortValues[field]);
-    if (field === 'english') content = '<a class="name-en" href="' + esc(card.source) + '" target="_blank" rel="noopener noreferrer">' + esc(card.name) + '</a>';
+    if (field === 'english') content = '<a class="name-en" href="' + esc(require('./wiki-card-link.cjs')(card)) + '" target="_blank" rel="noopener noreferrer">' + esc(card.name) + '</a>';
     if (field === 'tier') content = '<span class="tier" data-tier="' + esc(card.tier || 'unranked') + '">' + esc(card.tier || '—') + '</span>';
     if (field === 'energy') {
       const cost = card.stats.find(s => s.label === 'Energy cost').value.split('→')[0];

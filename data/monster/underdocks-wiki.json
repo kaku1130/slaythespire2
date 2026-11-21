@@ -1,0 +1,401 @@
+{
+  "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Underdocks",
+  "checkedAt": "2026-11-21",
+  "description": "依各 Wiki 怪物頁整理中文摘要。傷害欄列基礎值及 A9+，生命值另列 A8+；版本差異依引用頁註記。",
+  "encounters": [
+    {
+      "id": "SkulkingColonyElite",
+      "type": "elite",
+      "title": "潛伏珊瑚群",
+      "imageId": "SKULKING_COLONY",
+      "page": "Skulking_Colony",
+      "entities": [
+        {
+          "id": "SKULKING_COLONY",
+          "hp": "75",
+          "ascHp": "80",
+          "powers": [
+            {
+              "name": "Hardened Shell",
+              "amount": "20",
+              "description": "It cannot lose more than X HP each turn.",
+              "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_HardenedShell.png"
+            }
+          ],
+          "moves": [
+            [
+              "Zoom",
+              "14 傷害；A9+：16。"
+            ],
+            [
+              "Inertia",
+              "9 傷害並獲得 2 力量；A9+：11 傷害、4 力量。"
+            ],
+            [
+              "Piercing Stabs",
+              "7 × 2 傷害；A9+：8 × 2。"
+            ]
+          ],
+          "sequence": "固定循環：Zoom → Zoom → Inertia → Piercing Stabs。"
+        }
+      ],
+      "notes": [
+        "硬殼額度在玩家及敵方回合開始時各重置；可先攻擊打滿 20，再由中毒等敵方回合傷害繼續扣血。反傷同樣能利用另一回合的額度。",
+        "災厄可直接擊殺，繞過硬殼。靴子可將剩餘額度 1–4 時的攻擊提高至 5；額度耗盡後仍為 0。"
+      ],
+      "useful": []
+    },
+    {
+      "id": "PhantasmalGardenersElite",
+      "type": "elite",
+      "title": "花園幽靈鰻",
+      "imageId": "PHANTASMAL_GARDENER",
+      "page": "Phantasmal_Gardener",
+      "summary": "4 隻共同出現，由左至右的起手分別為 Flail、Bite、Lash、Enlarge。下表為每隻的數值。",
+      "entities": [
+        {
+          "id": "PHANTASMAL_GARDENER",
+          "hp": "26–31",
+          "ascHp": "27–32",
+          "powers": [
+            {
+              "name": "Skittish",
+              "amount": "6（A8+：7）",
+              "description": "The first time it is hit each turn, it gains X Block.",
+              "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Skittish.png"
+            }
+          ],
+          "moves": [
+            [
+              "Bite",
+              "5 傷害。"
+            ],
+            [
+              "Lash",
+              "7 傷害。"
+            ],
+            [
+              "Flail",
+              "1 × 3 傷害。"
+            ],
+            [
+              "Enlarge",
+              "獲得 2 力量；A9+：3。"
+            ]
+          ],
+          "sequence": "循環 Bite → Lash → Flail → Enlarge；四隻從不同位置開始。"
+        }
+      ],
+      "notes": [
+        "雙重打擊的兩次傷害都先結算，才獲得驚惶格擋；重演則是分開出牌，第二次會遇到已獲得的格擋。"
+      ],
+      "useful": [
+        {
+          "cards": [
+            "Sow",
+            "Dagger Spray"
+          ],
+          "text": "群體傷害可同時處理多個目標。"
+        },
+        {
+          "cards": [
+            "Negative Pulse",
+            "Flame Barrier",
+            "Noxious Fumes",
+            "Haze"
+          ],
+          "text": "非攻擊牌傷害不會觸發驚惶。"
+        },
+        {
+          "cards": [
+            "Sunder"
+          ],
+          "text": "擊殺可回復能量；升級後足以直接擊倒，未升級可先削血。"
+        }
+      ]
+    },
+    {
+      "id": "TerrorEelElite",
+      "type": "elite",
+      "title": "恐鰻",
+      "imageId": "TERROR_EEL",
+      "page": "Terror_Eel",
+      "entities": [
+        {
+          "id": "TERROR_EEL",
+          "hp": "140",
+          "ascHp": "150",
+          "powers": [
+            {
+              "name": "Shriek",
+              "amount": "70（A8+：75）",
+              "description": "The first time this enemy's HP reaches X or below, it becomes Stunned.",
+              "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Shriek.png"
+            }
+          ],
+          "moves": [
+            [
+              "Crash",
+              "16 傷害；A9+：18。"
+            ],
+            [
+              "Thrash",
+              "3 × 3 傷害，獲得 6 活力；A9+：4 × 3。"
+            ],
+            [
+              "Stun",
+              "暈眩，不行動。"
+            ],
+            [
+              "Terror",
+              "施加 99 易傷。"
+            ]
+          ],
+          "sequence": "從 Crash 開始交替 Crash、Thrash。觸發血量門檻後先 Stun，再 Terror，然後恢復循環；活力會使後續 Crash 達 22 傷害（A9+：24）。"
+        }
+      ],
+      "notes": [
+        "99 易傷通常會持續至戰鬥結束，使受到的攻擊傷害增加 50%。"
+      ],
+      "useful": []
+    },
+    {
+      "id": "WaterfallGiantBoss",
+      "type": "boss",
+      "title": "瀑布巨獸",
+      "imageId": "WATERFALL_GIANT",
+      "page": "Waterfall_Giant",
+      "entities": [
+        {
+          "id": "WATERFALL_GIANT",
+          "hp": "240",
+          "ascHp": "250",
+          "powers": [
+            {
+              "name": "Steam Eruption",
+              "description": "When killed, deals X damage at the end of your next turn.",
+              "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_SteamEruption.png"
+            }
+          ],
+          "moves": [
+            [
+              "Pressurize",
+              "累積 15 蒸汽；A9+：20。"
+            ],
+            [
+              "Stomp",
+              "15 傷害、1 虛弱，蒸汽 +3；A9+：16 傷害。"
+            ],
+            [
+              "Ram",
+              "10 傷害，蒸汽 +3；A9+：11 傷害。"
+            ],
+            [
+              "Siphon",
+              "每名玩家使其回復 10 生命，蒸汽 +3；A8+：回復 15。"
+            ],
+            [
+              "Pressure Gun",
+              "20 傷害，每次使用再增加 5，蒸汽 +3；A9+：初始 23。"
+            ],
+            [
+              "Pressure Up",
+              "13 傷害，蒸汽 +3；A9+：14。"
+            ],
+            [
+              "About to Blow",
+              "無敵，清除原有狀態，準備爆炸。"
+            ],
+            [
+              "Explode",
+              "依儲存的蒸汽傷害爆炸後死亡。"
+            ]
+          ],
+          "sequence": "Pressurize 起手，再循環 Stomp → Ram → Siphon → Pressure Gun → Pressure Up。受到致命傷害後進入爆炸階段，玩家還有一回合準備。"
+        }
+      ],
+      "notes": [
+        "引用頁含 Beta V0.113.1 內容。爆炸階段顯示無限生命，內部實為 999,999,999。",
+        "致命攻擊附帶的後續減益仍可生效，例如中和。"
+      ],
+      "useful": [
+        {
+          "cards": [
+            "Blood Wall",
+            "Leg Sweep"
+          ],
+          "text": "保留足夠格擋應付最後爆炸。"
+        },
+        {
+          "cards": [
+            "Burning Pact",
+            "BEGONE!"
+          ],
+          "text": "移除打擊等牌，讓最後一回合更容易抽到格擋；持續加入憤怒可能稀釋牌庫。"
+        },
+        {
+          "cards": [
+            "Bodyguard",
+            "Afterlife"
+          ],
+          "text": "召喚奧斯提協助承擔最後傷害。"
+        },
+        {
+          "cards": [
+            "Well-Laid Plans",
+            "Convergence"
+          ],
+          "text": "提前保留需要的防禦牌。"
+        }
+      ]
+    },
+    {
+      "id": "SoulFyshBoss",
+      "type": "boss",
+      "title": "靈魂異魚",
+      "imageId": "SOUL_FYSH",
+      "page": "Soul_Fysh",
+      "entities": [
+        {
+          "id": "SOUL_FYSH",
+          "hp": "211",
+          "ascHp": "221",
+          "powers": [
+            {
+              "name": "Beckon",
+              "description": "At the end of your turn, if this is in your Hand,\nlose 6 HP.",
+              "icon": "https://spire-codex.com/static/images/cards/beckon.webp"
+            },
+            {
+              "name": "Vulnerable",
+              "description": "Receive 50% more damage from Attacks for X turns.",
+              "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Vulnerable.png"
+            },
+            {
+              "name": "Intangible",
+              "description": "Reduce all damage taken and HP loss to 1. Lasts for X turns.",
+              "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Intangible.png"
+            }
+          ],
+          "moves": [
+            [
+              "Beckon",
+              "抽牌堆及棄牌堆各加入 1 張呼喚。"
+            ],
+            [
+              "DeGas",
+              "16 傷害；A9+：18。"
+            ],
+            [
+              "Gaze",
+              "7 傷害，棄牌堆加入 1 張呼喚；A9+：8 傷害。"
+            ],
+            [
+              "Fade",
+              "獲得 2 無實體。"
+            ],
+            [
+              "Scream",
+              "13 傷害並施加 3 易傷；A9+：15 傷害。"
+            ]
+          ],
+          "sequence": "固定循環：Beckon → DeGas → Gaze → Fade → Scream。"
+        }
+      ],
+      "notes": [
+        "Fade 的第一層無實體在敵我回合交替時即消退，實際覆蓋一個玩家回合。"
+      ],
+      "useful": [
+        {
+          "cards": [
+            "Fiend Fire",
+            "BEGONE!"
+          ],
+          "text": "消耗或變化可永久清除呼喚。"
+        },
+        {
+          "cards": [
+            "Prepared",
+            "Hidden Daggers"
+          ],
+          "text": "棄掉呼喚，可避免當回合扣血並省下打出它的能量。"
+        },
+        {
+          "cards": [
+            "No Escape"
+          ],
+          "text": "災厄的擊殺判定可繞過無實體。"
+        }
+      ]
+    },
+    {
+      "id": "LagavulinMatriarchBoss",
+      "type": "boss",
+      "title": "樂加維林族母",
+      "imageId": "LAGAVULIN_MATRIARCH",
+      "page": "Lagavulin_Matriarch",
+      "entities": [
+        {
+          "id": "LAGAVULIN_MATRIARCH",
+          "hp": "222",
+          "ascHp": "233",
+          "powers": [
+            {
+              "name": "Plating",
+              "amount": "12",
+              "description": "At the end of your turn, gain X Block. Plating is reduced by 1 at the start of your turn.",
+              "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Plating.png"
+            },
+            {
+              "name": "Asleep",
+              "amount": "3",
+              "description": "Awakens upon losing HP or after X turns.",
+              "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Asleep.png"
+            }
+          ],
+          "moves": [
+            [
+              "Sleep",
+              "熟睡，不行動。"
+            ],
+            [
+              "Slash",
+              "19 傷害；A9+：21。"
+            ],
+            [
+              "Disembowel",
+              "9 × 2 傷害；A9+：10 × 2。"
+            ],
+            [
+              "Slash 2",
+              "12 傷害、12 格擋；A9+：14 傷害；A8+：14 格擋。"
+            ],
+            [
+              "Soul Siphon",
+              "玩家失去 2 力量及 2 敏捷，自身獲得 2 力量。"
+            ]
+          ],
+          "sequence": "熟睡 3 回合，或受到未格擋傷害時醒來；之後循環 Slash → Disembowel → Slash 2 → Soul Siphon。"
+        }
+      ],
+      "notes": [],
+      "useful": [
+        {
+          "cards": [
+            "Demon Form",
+            "Reaper Form"
+          ],
+          "text": "可趁熟睡的空檔建立能力。"
+        },
+        {
+          "cards": [
+            "Conflagration",
+            "Death's Door"
+          ],
+          "text": "多段攻擊或格擋牌較受力量、敏捷下降影響；相較之下，高基礎值的埋葬、巋然不動影響較小。"
+        }
+      ]
+    }
+  ],
+  "powersCheckedAt": "2026-11-21T15:10:28.514Z"
+}

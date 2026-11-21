@@ -1,0 +1,540 @@
+{
+  "checkedAt": "2026-11-21T15:10:28.514Z",
+  "pages": {
+    "Bygone_Effigy": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Bygone_Effigy",
+      "entities": [
+        {
+          "name": "Bygone Effigy",
+          "powers": "Slow"
+        }
+      ],
+      "powers": [
+        {
+          "name": "Slow",
+          "stackType": "Intensity",
+          "description": "Whenever you play a card, this enemy receives 10% more damage from Attacks this turn.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Slow.png"
+        }
+      ]
+    },
+    "Byrdonis": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Byrdonis",
+      "entities": [
+        {
+          "name": "Byrdonis",
+          "powers": "Territorial 1"
+        }
+      ],
+      "powers": [
+        {
+          "name": "Territorial",
+          "stackType": "Intensity",
+          "description": "At the end of its turn, gains X Strength.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Territorial.png"
+        }
+      ]
+    },
+    "Phrog_Parasite": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Phrog_Parasite",
+      "entities": [
+        {
+          "name": "Phrog Parasite",
+          "powers": "Infested"
+        },
+        {
+          "name": "Wriggler",
+          "powers": ""
+        }
+      ],
+      "powers": [
+        {
+          "name": "Infested",
+          "stackType": "Does not stack",
+          "description": "Upon dying, summons... something.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Infested.png"
+        }
+      ]
+    },
+    "Ceremonial_Beast": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Ceremonial_Beast",
+      "entities": [
+        {
+          "name": "Ceremonial Beast",
+          "powers": ""
+        }
+      ],
+      "powers": [
+        {
+          "name": "Plow",
+          "stackType": "Intensity",
+          "description": "The first time this enemy's HP reaches X or below, it becomes Stunned and loses all its Strength.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Plow.png"
+        },
+        {
+          "name": "Ringing",
+          "stackType": "Removed",
+          "description": "You can only play 1 card this turn.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Ringing.png"
+        }
+      ]
+    },
+    "The_Kin": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:The_Kin",
+      "entities": [
+        {
+          "name": "Kin Priest",
+          "powers": ""
+        },
+        {
+          "name": "Kin Follower",
+          "powers": "Minion"
+        }
+      ],
+      "powers": [
+        {
+          "name": "Minionⓘ",
+          "stackType": "Does not stack",
+          "description": "Minions abandon combat without their leader.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Minion.png"
+        }
+      ]
+    },
+    "Vantom": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Vantom",
+      "entities": [
+        {
+          "name": "Vantom",
+          "powers": "Slippery 9"
+        }
+      ],
+      "powers": [
+        {
+          "name": "Slippery",
+          "stackType": "Counter",
+          "description": "The next X times it loses HP, it only loses 1 HP instead.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Slippery.png"
+        }
+      ]
+    },
+    "Skulking_Colony": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Skulking_Colony",
+      "entities": [
+        {
+          "name": "Skulking Colony",
+          "powers": "Hardened Shell 20"
+        }
+      ],
+      "powers": [
+        {
+          "name": "Hardened Shell",
+          "stackType": "Intensity",
+          "description": "It cannot lose more than X HP each turn.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_HardenedShell.png"
+        }
+      ]
+    },
+    "Phantasmal_Gardener": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Phantasmal_Gardener",
+      "entities": [
+        {
+          "name": "Phantasmal Gardener",
+          "powers": "Skittish 6 (7 8)"
+        }
+      ],
+      "powers": [
+        {
+          "name": "Skittish",
+          "stackType": "Intensity",
+          "description": "The first time it is hit each turn, it gains X Block.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Skittish.png"
+        }
+      ]
+    },
+    "Terror_Eel": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Terror_Eel",
+      "entities": [
+        {
+          "name": "Terror Eel",
+          "powers": "Shriek 70 (75 8)"
+        }
+      ],
+      "powers": [
+        {
+          "name": "Shriek",
+          "stackType": "Intensity",
+          "description": "The first time this enemy's HP reaches X or below, it becomes Stunned.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Shriek.png"
+        }
+      ]
+    },
+    "Waterfall_Giant": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Waterfall_Giant",
+      "entities": [
+        {
+          "name": "Waterfall Giant",
+          "powers": ""
+        }
+      ],
+      "powers": [
+        {
+          "name": "Steam Eruption",
+          "stackType": "Intensity",
+          "description": "When killed, deals X damage at the end of your next turn.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_SteamEruption.png"
+        }
+      ]
+    },
+    "Soul_Fysh": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Soul_Fysh",
+      "entities": [
+        {
+          "name": "Soul Fysh",
+          "powers": ""
+        }
+      ],
+      "powers": [
+        {
+          "name": "Vulnerableⓘ",
+          "stackType": "Duration",
+          "description": "Receive 50% more damage from Attacks for X turns.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Vulnerable.png"
+        },
+        {
+          "name": "Intangibleⓘ",
+          "stackType": "Duration",
+          "description": "Reduce all damage taken and HP loss to 1. Lasts for X turns.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Intangible.png"
+        }
+      ]
+    },
+    "Lagavulin_Matriarch": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Lagavulin_Matriarch",
+      "entities": [
+        {
+          "name": "Lagavulin Matriarch",
+          "powers": "Plating 12 Asleep 3"
+        }
+      ],
+      "powers": [
+        {
+          "name": "Platingⓘ",
+          "stackType": "Intensity and Duration",
+          "description": "At the end of your turn, gain X Block. Plating is reduced by 1 at the start of your turn.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Plating.png"
+        },
+        {
+          "name": "Asleep",
+          "stackType": "Duration",
+          "description": "Awakens upon losing HP or after X turns.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Asleep.png"
+        }
+      ]
+    },
+    "Decimillipede": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Decimillipede",
+      "entities": [
+        {
+          "name": "Decimillipede",
+          "powers": "Reattach 25"
+        }
+      ],
+      "powers": [
+        {
+          "name": "Reattach",
+          "stackType": "Does not stack",
+          "description": "If other segments are still alive, revives in 2 turns with X HP.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Reattach.png"
+        }
+      ]
+    },
+    "Entomancer": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Entomancer",
+      "entities": [
+        {
+          "name": "Entomancer",
+          "powers": "Personal Hive 1"
+        }
+      ],
+      "powers": [
+        {
+          "name": "Personal Hive",
+          "stackType": "Intensity",
+          "description": "Whenever this enemy is hit by an Attack, add X Dazed into your Draw Pile.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_PersonalHive.png"
+        }
+      ]
+    },
+    "Infested_Prism": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Infested_Prism",
+      "entities": [
+        {
+          "name": "Infested Prism",
+          "powers": "Vital Spark 2(3 9)"
+        }
+      ],
+      "powers": [
+        {
+          "name": "Vital Spark",
+          "stackType": "Intensity",
+          "description": "All Skills are Tainted X.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_VitalSpark.png"
+        },
+        {
+          "name": "Tainted",
+          "stackType": "Intensity",
+          "description": "Take X additional damage from Attacks this turn.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Tainted.png"
+        }
+      ]
+    },
+    "The_Insatiable": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:The_Insatiable",
+      "entities": [
+        {
+          "name": "The Insatiable",
+          "powers": ""
+        }
+      ],
+      "powers": [
+        {
+          "name": "Sandpit",
+          "stackType": "Duration",
+          "description": "In X turns, you will be eaten and die.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Sandpit.png"
+        }
+      ]
+    },
+    "Knowledge_Demon": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Knowledge_Demon",
+      "entities": [
+        {
+          "name": "Knowledge Demon",
+          "powers": ""
+        }
+      ],
+      "powers": [
+        {
+          "name": "Disintegrationⓘ",
+          "stackType": "Intensity",
+          "description": "At the end of your turn, take X damage.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Disintegration.png"
+        },
+        {
+          "name": "Mind Rotⓘ",
+          "stackType": "Intensity",
+          "description": "Draw X fewer cards each turn.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_MindRot.png"
+        },
+        {
+          "name": "Slothⓘ",
+          "stackType": "Intensity",
+          "description": "You cannot play more than X cards each turn.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Sloth.png"
+        },
+        {
+          "name": "Waste Awayⓘ",
+          "stackType": "Intensity",
+          "description": "Gain X less per turn.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_WasteAway.png"
+        }
+      ]
+    },
+    "Kaiser_Crab": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Kaiser_Crab",
+      "entities": [
+        {
+          "name": "Crusher",
+          "powers": "Back Attack Crab Rage"
+        },
+        {
+          "name": "Rocket",
+          "powers": "Back Attack Crab Rage"
+        }
+      ],
+      "powers": [
+        {
+          "name": "Back Attack",
+          "stackType": "Does not stack",
+          "description": "Deals 50% more damage when it is attacking you from behind.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_BackAttack.png"
+        },
+        {
+          "name": "Crab Rage",
+          "stackType": "Does not stack",
+          "description": "When an ally dies, it gains 6 Strength and 99 Block.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_CrabRage.png"
+        },
+        {
+          "name": "Back Attackⓘ",
+          "stackType": "Does not stack",
+          "description": "Deals 50% more damage when it is attacking you from behind.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_BackAttack.png"
+        },
+        {
+          "name": "Crab Rageⓘ",
+          "stackType": "Does not stack",
+          "description": "When an ally dies, it gains 6 Strength and 99 Block.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_CrabRage.png"
+        }
+      ]
+    },
+    "Knight_Gang": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Knight_Gang",
+      "entities": [
+        {
+          "name": "Flail Knight",
+          "powers": ""
+        },
+        {
+          "name": "Spectral Knight",
+          "powers": ""
+        },
+        {
+          "name": "Magi Knight",
+          "powers": ""
+        }
+      ],
+      "powers": [
+        {
+          "name": "Hex",
+          "stackType": "Does not stack",
+          "description": "While Spectral Knight is alive, ALL your cards are Ethereal.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Hex.png"
+        },
+        {
+          "name": "Dampen",
+          "stackType": "Does not stack",
+          "description": "While Magi Knight is alive, ALL your cards are Downgraded.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Dampen.png"
+        }
+      ]
+    },
+    "Mecha_Knight": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Mecha_Knight",
+      "entities": [
+        {
+          "name": "Mecha Knight",
+          "powers": "Artifact 3"
+        }
+      ],
+      "powers": [
+        {
+          "name": "Artifactⓘ",
+          "stackType": "Counter",
+          "description": "Negates X debuffs.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Artifact.png"
+        }
+      ]
+    },
+    "Soul_Nexus": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Soul_Nexus",
+      "entities": [
+        {
+          "name": "Soul Nexus",
+          "powers": ""
+        }
+      ],
+      "powers": []
+    },
+    "Queen": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Queen",
+      "entities": [
+        {
+          "name": "Queen",
+          "powers": ""
+        },
+        {
+          "name": "Torch Head Amalgam",
+          "powers": "Minion"
+        }
+      ],
+      "powers": [
+        {
+          "name": "Chains of Binding",
+          "stackType": "Intensity",
+          "description": "The first X cards drawn each turn are Afflicted with Bound.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_ChainsOfBinding.png"
+        }
+      ]
+    },
+    "Test_Subject": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Test_Subject",
+      "entities": [
+        {
+          "name": "Test Subject",
+          "powers": "Adaptable, Enrage 2 (3 9)"
+        },
+        {
+          "name": "Test Subject (Phase 2)",
+          "powers": "Adaptable, Painful Stabs"
+        },
+        {
+          "name": "Test Subject (Phase 3)",
+          "powers": "Nemesis Intangible 1"
+        }
+      ],
+      "powers": [
+        {
+          "name": "Adaptable",
+          "stackType": "Does not stack",
+          "description": "When it would be defeated, it instead revives even stronger.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Adaptable.png"
+        },
+        {
+          "name": "Enrage",
+          "stackType": "Intensity",
+          "description": "Whenever you play a Skill, gains X Strength.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Enrage.png"
+        },
+        {
+          "name": "Adaptable",
+          "stackType": "Does not stack",
+          "description": "When it would be defeated, it instead revives even stronger.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Adaptable.png"
+        },
+        {
+          "name": "Painful Stabs",
+          "stackType": "Intensity",
+          "description": "Shuffle X Wounds into your Discard Pile each time you receive unblocked attack damage.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_PainfulStabs.png"
+        },
+        {
+          "name": "Nemesis",
+          "stackType": "Does not stack",
+          "description": "At the end of every other turn, gains Intangible 1.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Nemesis.png"
+        },
+        {
+          "name": "Intangibleⓘ",
+          "stackType": "Duration",
+          "description": "Reduce all damage taken and HP loss to 1. Lasts for X turns.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Intangible.png"
+        }
+      ]
+    },
+    "Aeonglass": {
+      "source": "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Aeonglass",
+      "entities": [
+        {
+          "name": "Aeonglass",
+          "powers": "Withering Presence Artifact 3"
+        }
+      ],
+      "powers": [
+        {
+          "name": "Withering Presence",
+          "stackType": "Does not stack",
+          "description": "Every 6 cards you play, add a Wither to your Hand.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_WitheringPresence.png"
+        },
+        {
+          "name": "Artifactⓘ",
+          "stackType": "Counter",
+          "description": "Negates X debuffs.",
+          "icon": "https://slaythespire.wiki.gg/images/StS2_Icon_Artifact.png"
+        }
+      ]
+    }
+  }
+}

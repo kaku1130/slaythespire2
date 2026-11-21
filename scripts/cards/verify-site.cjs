@@ -13,7 +13,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
    await page.goto(pathToFileURL(path.resolve(file)).href);
    if(file==='card.html') {
     await page.locator('#search').fill('"Tremble"');
-    assert.deepEqual(await page.locator('#card-TREMBLE .detail-keyword strong').allTextContents(),['Vulnerable','Exhaust']);
+    assert.equal(await page.locator('#card-TREMBLE .detail-name-en').getAttribute('href'),require('../../data/cards/wiki-links.json').urls.TREMBLE);
    }
    const missingLinks=await page.locator('a[href]').evaluateAll(nodes=>nodes.map(n=>n.href).filter(h=>h.startsWith('file:')));
    for(const url of missingLinks)assert.ok(fs.existsSync(fileURLToPath(url)),file+' missing link '+url);
