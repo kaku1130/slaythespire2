@@ -1,0 +1,1195 @@
+{
+  "source": "https://slaythespire2.net/zh-TW/relic",
+  "retrievedDate": "2026-11-21",
+  "version": "v0.111.1",
+  "names": [
+    {
+      "imagePath": "/images/relics/burning_blood.webp",
+      "name": "燃燒之血"
+    },
+    {
+      "imagePath": "/images/relics/red_skull.webp",
+      "name": "紅頭骨"
+    },
+    {
+      "imagePath": "/images/relics/paper_phrog.webp",
+      "name": "紙異蛙"
+    },
+    {
+      "imagePath": "/images/relics/self_forming_clay.webp",
+      "name": "自塑黏土"
+    },
+    {
+      "imagePath": "/images/relics/charons_ashes.webp",
+      "name": "卡戎之灰"
+    },
+    {
+      "imagePath": "/images/relics/demon_tongue.webp",
+      "name": "惡魔之舌"
+    },
+    {
+      "imagePath": "/images/relics/ruined_helmet.webp",
+      "name": "破損頭盔"
+    },
+    {
+      "imagePath": "/images/relics/brimstone.webp",
+      "name": "硫磺"
+    },
+    {
+      "imagePath": "/images/relics/ring_of_the_snake.webp",
+      "name": "蛇之戒指"
+    },
+    {
+      "imagePath": "/images/relics/snecko_skull.webp",
+      "name": "異蛇頭骨"
+    },
+    {
+      "imagePath": "/images/relics/tingsha.webp",
+      "name": "銅鈸"
+    },
+    {
+      "imagePath": "/images/relics/twisted_funnel.webp",
+      "name": "扭曲漏斗"
+    },
+    {
+      "imagePath": "/images/relics/helical_dart.webp",
+      "name": "螺旋鏢"
+    },
+    {
+      "imagePath": "/images/relics/paper_krane.webp",
+      "name": "紙鶴"
+    },
+    {
+      "imagePath": "/images/relics/tough_bandages.webp",
+      "name": "堅韌繃帶"
+    },
+    {
+      "imagePath": "/images/relics/ninja_scroll.webp",
+      "name": "忍術卷軸"
+    },
+    {
+      "imagePath": "/images/relics/cracked_core.webp",
+      "name": "破損核心"
+    },
+    {
+      "imagePath": "/images/relics/data_disk.webp",
+      "name": "資料磁碟"
+    },
+    {
+      "imagePath": "/images/relics/gold_plated_cables.webp",
+      "name": "鍍金纜線"
+    },
+    {
+      "imagePath": "/images/relics/symbiotic_virus.webp",
+      "name": "共生病毒"
+    },
+    {
+      "imagePath": "/images/relics/emotion_chip.webp",
+      "name": "情感晶片"
+    },
+    {
+      "imagePath": "/images/relics/metronome.webp",
+      "name": "節拍器"
+    },
+    {
+      "imagePath": "/images/relics/power_cell.webp",
+      "name": "能量電池"
+    },
+    {
+      "imagePath": "/images/relics/runic_capacitor.webp",
+      "name": "符文電容器"
+    },
+    {
+      "imagePath": "/images/relics/bound_phylactery.webp",
+      "name": "禁縛命匣"
+    },
+    {
+      "imagePath": "/images/relics/bone_flute.webp",
+      "name": "骨笛"
+    },
+    {
+      "imagePath": "/images/relics/book_repair_knife.webp",
+      "name": "修書刀"
+    },
+    {
+      "imagePath": "/images/relics/funerary_mask.webp",
+      "name": "葬禮面具"
+    },
+    {
+      "imagePath": "/images/relics/big_hat.webp",
+      "name": "大帽子"
+    },
+    {
+      "imagePath": "/images/relics/bookmark.webp",
+      "name": "書籤"
+    },
+    {
+      "imagePath": "/images/relics/ivory_tile.webp",
+      "name": "象牙麻將牌"
+    },
+    {
+      "imagePath": "/images/relics/undying_sigil.webp",
+      "name": "不死印記"
+    },
+    {
+      "imagePath": "/images/relics/divine_right.webp",
+      "name": "神授君權"
+    },
+    {
+      "imagePath": "/images/relics/fencing_manual.webp",
+      "name": "擊劍手冊"
+    },
+    {
+      "imagePath": "/images/relics/galactic_dust.webp",
+      "name": "銀河塵埃"
+    },
+    {
+      "imagePath": "/images/relics/regalite.webp",
+      "name": "皇室礦"
+    },
+    {
+      "imagePath": "/images/relics/lunar_pastry.webp",
+      "name": "月亮糕點"
+    },
+    {
+      "imagePath": "/images/relics/mini_regent.webp",
+      "name": "迷你儲君"
+    },
+    {
+      "imagePath": "/images/relics/orange_dough.webp",
+      "name": "橘色團塊"
+    },
+    {
+      "imagePath": "/images/relics/vitruvian_minion.webp",
+      "name": "維特魯威手下"
+    },
+    {
+      "imagePath": "/images/relics/amethyst_aubergine.webp",
+      "name": "紫水晶茄子"
+    },
+    {
+      "imagePath": "/images/relics/anchor.webp",
+      "name": "錨"
+    },
+    {
+      "imagePath": "/images/relics/bag_of_marbles.webp",
+      "name": "彈珠袋"
+    },
+    {
+      "imagePath": "/images/relics/bag_of_preparation.webp",
+      "name": "準備背包"
+    },
+    {
+      "imagePath": "/images/relics/blood_vial.webp",
+      "name": "血瓶"
+    },
+    {
+      "imagePath": "/images/relics/book_of_five_rings.webp",
+      "name": "五輪書"
+    },
+    {
+      "imagePath": "/images/relics/bronze_scales.webp",
+      "name": "青銅鱗片"
+    },
+    {
+      "imagePath": "/images/relics/centennial_puzzle.webp",
+      "name": "百年積木"
+    },
+    {
+      "imagePath": "/images/relics/festive_popper.webp",
+      "name": "節慶拉炮"
+    },
+    {
+      "imagePath": "/images/relics/gorget.webp",
+      "name": "護頸甲"
+    },
+    {
+      "imagePath": "/images/relics/happy_flower.webp",
+      "name": "開心小花"
+    },
+    {
+      "imagePath": "/images/relics/juzu_bracelet.webp",
+      "name": "佛珠手環"
+    },
+    {
+      "imagePath": "/images/relics/lantern.webp",
+      "name": "燈籠"
+    },
+    {
+      "imagePath": "/images/relics/meal_ticket.webp",
+      "name": "餐券"
+    },
+    {
+      "imagePath": "/images/relics/oddly_smooth_stone.webp",
+      "name": "異常光滑的石頭"
+    },
+    {
+      "imagePath": "/images/relics/pendulum.webp",
+      "name": "擺錘"
+    },
+    {
+      "imagePath": "/images/relics/potion_belt.webp",
+      "name": "藥水腰帶"
+    },
+    {
+      "imagePath": "/images/relics/red_mask.webp",
+      "name": "紅面具"
+    },
+    {
+      "imagePath": "/images/relics/regal_pillow.webp",
+      "name": "皇室枕頭"
+    },
+    {
+      "imagePath": "/images/relics/strawberry.webp",
+      "name": "草莓"
+    },
+    {
+      "imagePath": "/images/relics/strike_dummy.webp",
+      "name": "打擊木偶"
+    },
+    {
+      "imagePath": "/images/relics/vajra.webp",
+      "name": "金剛杵"
+    },
+    {
+      "imagePath": "/images/relics/venerable_tea_set.webp",
+      "name": "古老茶具組"
+    },
+    {
+      "imagePath": "/images/relics/war_paint.webp",
+      "name": "戰紋塗料"
+    },
+    {
+      "imagePath": "/images/relics/whetstone.webp",
+      "name": "磨刀石"
+    },
+    {
+      "imagePath": "/images/relics/akabeko.webp",
+      "name": "赤牛"
+    },
+    {
+      "imagePath": "/images/relics/bowler_hat.webp",
+      "name": "圓頂禮帽"
+    },
+    {
+      "imagePath": "/images/relics/candelabra.webp",
+      "name": "枝形燭臺"
+    },
+    {
+      "imagePath": "/images/relics/eternal_feather.webp",
+      "name": "永恆羽毛"
+    },
+    {
+      "imagePath": "/images/relics/gremlin_horn.webp",
+      "name": "地精之角"
+    },
+    {
+      "imagePath": "/images/relics/horn_cleat.webp",
+      "name": "羊角繫纜栓"
+    },
+    {
+      "imagePath": "/images/relics/joss_paper.webp",
+      "name": "金紙"
+    },
+    {
+      "imagePath": "/images/relics/kusarigama.webp",
+      "name": "鎖鎌"
+    },
+    {
+      "imagePath": "/images/relics/lasting_candy.webp",
+      "name": "持久糖果"
+    },
+    {
+      "imagePath": "/images/relics/letter_opener.webp",
+      "name": "開信刀"
+    },
+    {
+      "imagePath": "/images/relics/lucky_fysh.webp",
+      "name": "幸運異魚"
+    },
+    {
+      "imagePath": "/images/relics/mercury_hourglass.webp",
+      "name": "水銀沙漏"
+    },
+    {
+      "imagePath": "/images/relics/miniature_cannon.webp",
+      "name": "微型大砲"
+    },
+    {
+      "imagePath": "/images/relics/nunchaku.webp",
+      "name": "雙節棍"
+    },
+    {
+      "imagePath": "/images/relics/orichalcum.webp",
+      "name": "奧利哈鋼"
+    },
+    {
+      "imagePath": "/images/relics/ornamental_fan.webp",
+      "name": "精緻扇子"
+    },
+    {
+      "imagePath": "/images/relics/pantograph.webp",
+      "name": "縮放儀"
+    },
+    {
+      "imagePath": "/images/relics/parrying_shield.webp",
+      "name": "招架盾牌"
+    },
+    {
+      "imagePath": "/images/relics/pear.webp",
+      "name": "梨子"
+    },
+    {
+      "imagePath": "/images/relics/pen_nib.webp",
+      "name": "鋼筆尖"
+    },
+    {
+      "imagePath": "/images/relics/permafrost.webp",
+      "name": "永凍冰晶"
+    },
+    {
+      "imagePath": "/images/relics/petrified_toad.webp",
+      "name": "石化蟾蜍"
+    },
+    {
+      "imagePath": "/images/relics/planisphere.webp",
+      "name": "星座盤"
+    },
+    {
+      "imagePath": "/images/relics/reptile_trinket.webp",
+      "name": "爬蟲飾品"
+    },
+    {
+      "imagePath": "/images/relics/ripple_basin.webp",
+      "name": "波紋水盆"
+    },
+    {
+      "imagePath": "/images/relics/sparkling_rouge.webp",
+      "name": "閃亮口紅"
+    },
+    {
+      "imagePath": "/images/relics/stone_cracker.webp",
+      "name": "碎石器"
+    },
+    {
+      "imagePath": "/images/relics/tiny_mailbox.webp",
+      "name": "迷你郵箱"
+    },
+    {
+      "imagePath": "/images/relics/tuning_fork.webp",
+      "name": "音叉"
+    },
+    {
+      "imagePath": "/images/relics/vambrace.webp",
+      "name": "臂鎧"
+    },
+    {
+      "imagePath": "/images/relics/art_of_war.webp",
+      "name": "孫子兵法"
+    },
+    {
+      "imagePath": "/images/relics/beating_remnant.webp",
+      "name": "脈動殘片"
+    },
+    {
+      "imagePath": "/images/relics/bellows.webp",
+      "name": "風箱"
+    },
+    {
+      "imagePath": "/images/relics/captains_wheel.webp",
+      "name": "船長舵輪"
+    },
+    {
+      "imagePath": "/images/relics/chandelier.webp",
+      "name": "吊燈"
+    },
+    {
+      "imagePath": "/images/relics/cloak_clasp.webp",
+      "name": "斗篷扣"
+    },
+    {
+      "imagePath": "/images/relics/frozen_egg.webp",
+      "name": "冰凍之蛋"
+    },
+    {
+      "imagePath": "/images/relics/gambling_chip.webp",
+      "name": "賭博籌碼"
+    },
+    {
+      "imagePath": "/images/relics/game_piece.webp",
+      "name": "棋子"
+    },
+    {
+      "imagePath": "/images/relics/girya.webp",
+      "name": "壺鈴"
+    },
+    {
+      "imagePath": "/images/relics/ice_cream.webp",
+      "name": "冰淇淋"
+    },
+    {
+      "imagePath": "/images/relics/intimidating_helmet.webp",
+      "name": "威嚇頭盔"
+    },
+    {
+      "imagePath": "/images/relics/kunai.webp",
+      "name": "苦無"
+    },
+    {
+      "imagePath": "/images/relics/lizard_tail.webp",
+      "name": "蜥蜴尾巴"
+    },
+    {
+      "imagePath": "/images/relics/mango.webp",
+      "name": "芒果"
+    },
+    {
+      "imagePath": "/images/relics/meat_on_the_bone.webp",
+      "name": "帶骨肉"
+    },
+    {
+      "imagePath": "/images/relics/molten_egg.webp",
+      "name": "熔火之蛋"
+    },
+    {
+      "imagePath": "/images/relics/mummified_hand.webp",
+      "name": "木乃伊之手"
+    },
+    {
+      "imagePath": "/images/relics/old_coin.webp",
+      "name": "古錢幣"
+    },
+    {
+      "imagePath": "/images/relics/pocketwatch.webp",
+      "name": "懷錶"
+    },
+    {
+      "imagePath": "/images/relics/prayer_wheel.webp",
+      "name": "轉經輪"
+    },
+    {
+      "imagePath": "/images/relics/rainbow_ring.webp",
+      "name": "彩虹戒指"
+    },
+    {
+      "imagePath": "/images/relics/razor_tooth.webp",
+      "name": "剃刀牙"
+    },
+    {
+      "imagePath": "/images/relics/shovel.webp",
+      "name": "鏟子"
+    },
+    {
+      "imagePath": "/images/relics/shuriken.webp",
+      "name": "手裏劍"
+    },
+    {
+      "imagePath": "/images/relics/stone_calendar.webp",
+      "name": "石製日曆"
+    },
+    {
+      "imagePath": "/images/relics/sturdy_clamp.webp",
+      "name": "堅固夾具"
+    },
+    {
+      "imagePath": "/images/relics/the_courier.webp",
+      "name": "送貨員"
+    },
+    {
+      "imagePath": "/images/relics/toxic_egg.webp",
+      "name": "毒素之蛋"
+    },
+    {
+      "imagePath": "/images/relics/tungsten_rod.webp",
+      "name": "鎢合金棒"
+    },
+    {
+      "imagePath": "/images/relics/unceasing_top.webp",
+      "name": "不休陀螺"
+    },
+    {
+      "imagePath": "/images/relics/unsettling_lamp.webp",
+      "name": "不安油燈"
+    },
+    {
+      "imagePath": "/images/relics/vexing_puzzlebox.webp",
+      "name": "惱人謎盒"
+    },
+    {
+      "imagePath": "/images/relics/white_beast_statue.webp",
+      "name": "白獸雕像"
+    },
+    {
+      "imagePath": "/images/relics/white_star.webp",
+      "name": "白色星星"
+    },
+    {
+      "imagePath": "/images/relics/looming_fruit.webp",
+      "name": "織機之果"
+    },
+    {
+      "imagePath": "/images/relics/very_hot_cocoa.webp",
+      "name": "滾燙可可"
+    },
+    {
+      "imagePath": "/images/relics/belt_buckle.webp",
+      "name": "腰帶扣"
+    },
+    {
+      "imagePath": "/images/relics/bread.webp",
+      "name": "麵包"
+    },
+    {
+      "imagePath": "/images/relics/burning_sticks.webp",
+      "name": "燃燒木棍"
+    },
+    {
+      "imagePath": "/images/relics/cauldron.webp",
+      "name": "大鍋"
+    },
+    {
+      "imagePath": "/images/relics/chemical_x.webp",
+      "name": "化學物 X"
+    },
+    {
+      "imagePath": "/images/relics/dingy_rug.webp",
+      "name": "骯髒地毯"
+    },
+    {
+      "imagePath": "/images/relics/dollys_mirror.webp",
+      "name": "多利之鏡"
+    },
+    {
+      "imagePath": "/images/relics/dragon_fruit.webp",
+      "name": "火龍果"
+    },
+    {
+      "imagePath": "/images/relics/ghost_seed.webp",
+      "name": "幽靈種子"
+    },
+    {
+      "imagePath": "/images/relics/gnarled_hammer.webp",
+      "name": "多節戰鎚"
+    },
+    {
+      "imagePath": "/images/relics/kifuda.webp",
+      "name": "木札"
+    },
+    {
+      "imagePath": "/images/relics/lava_lamp.webp",
+      "name": "熔岩燈"
+    },
+    {
+      "imagePath": "/images/relics/lees_waffle.webp",
+      "name": "李家鬆餅"
+    },
+    {
+      "imagePath": "/images/relics/membership_card.webp",
+      "name": "會員卡"
+    },
+    {
+      "imagePath": "/images/relics/miniature_tent.webp",
+      "name": "微型帳篷"
+    },
+    {
+      "imagePath": "/images/relics/mystic_lighter.webp",
+      "name": "秘術打火機"
+    },
+    {
+      "imagePath": "/images/relics/orrery.webp",
+      "name": "星系儀"
+    },
+    {
+      "imagePath": "/images/relics/punch_dagger.webp",
+      "name": "拳刃"
+    },
+    {
+      "imagePath": "/images/relics/ringing_triangle.webp",
+      "name": "鳴響三角鐵"
+    },
+    {
+      "imagePath": "/images/relics/royal_stamp.webp",
+      "name": "王室印章"
+    },
+    {
+      "imagePath": "/images/relics/screaming_flagon.webp",
+      "name": "尖叫酒壺"
+    },
+    {
+      "imagePath": "/images/relics/sling_of_courage.webp",
+      "name": "勇氣投石索"
+    },
+    {
+      "imagePath": "/images/relics/the_abacus.webp",
+      "name": "算盤"
+    },
+    {
+      "imagePath": "/images/relics/toolbox.webp",
+      "name": "工具箱"
+    },
+    {
+      "imagePath": "/images/relics/wing_charm.webp",
+      "name": "羽翼護符"
+    },
+    {
+      "imagePath": "/images/relics/fresnel_lens.webp",
+      "name": "菲涅耳透鏡"
+    },
+    {
+      "imagePath": "/images/relics/black_blood.webp",
+      "name": "黑暗之血"
+    },
+    {
+      "imagePath": "/images/relics/divine_destiny.webp",
+      "name": "神授天命"
+    },
+    {
+      "imagePath": "/images/relics/infused_core.webp",
+      "name": "注能核心"
+    },
+    {
+      "imagePath": "/images/relics/phylactery_unbound.webp",
+      "name": "無界命匣"
+    },
+    {
+      "imagePath": "/images/relics/ring_of_the_drake.webp",
+      "name": "長蛇戒指"
+    },
+    {
+      "imagePath": "/images/relics/alchemical_coffer.webp",
+      "name": "鍊金寶匣"
+    },
+    {
+      "imagePath": "/images/relics/arcane_scroll.webp",
+      "name": "奧術卷軸"
+    },
+    {
+      "imagePath": "/images/relics/archaic_tooth.webp",
+      "name": "古老牙齒"
+    },
+    {
+      "imagePath": "/images/relics/astrolabe.webp",
+      "name": "星盤"
+    },
+    {
+      "imagePath": "/images/relics/beautiful_bracelet.webp",
+      "name": "精美手環"
+    },
+    {
+      "imagePath": "/images/relics/biiig_hug.webp",
+      "name": "大大大抱抱"
+    },
+    {
+      "imagePath": "/images/relics/black_star.webp",
+      "name": "黑星"
+    },
+    {
+      "imagePath": "/images/relics/blessed_antler.webp",
+      "name": "賜福鹿角"
+    },
+    {
+      "imagePath": "/images/relics/blood_soaked_rose.webp",
+      "name": "血染玫瑰"
+    },
+    {
+      "imagePath": "/images/relics/booming_conch.webp",
+      "name": "轟鳴海螺"
+    },
+    {
+      "imagePath": "/images/relics/brilliant_scarf.webp",
+      "name": "璀璨圍巾"
+    },
+    {
+      "imagePath": "/images/relics/calling_bell.webp",
+      "name": "召喚鈴鐺"
+    },
+    {
+      "imagePath": "/images/relics/choices_paradox.webp",
+      "name": "選擇悖論"
+    },
+    {
+      "imagePath": "/images/relics/claws.webp",
+      "name": "利爪"
+    },
+    {
+      "imagePath": "/images/relics/crossbow.webp",
+      "name": "十字弓"
+    },
+    {
+      "imagePath": "/images/relics/cursed_pearl.webp",
+      "name": "詛咒珍珠"
+    },
+    {
+      "imagePath": "/images/relics/delicate_frond.webp",
+      "name": "纖細葉片"
+    },
+    {
+      "imagePath": "/images/relics/diamond_diadem.webp",
+      "name": "鑽石冠冕"
+    },
+    {
+      "imagePath": "/images/relics/distinguished_cape.webp",
+      "name": "尊貴披風"
+    },
+    {
+      "imagePath": "/images/relics/dowsing_rod.webp",
+      "name": "探尋杖"
+    },
+    {
+      "imagePath": "/images/relics/driftwood.webp",
+      "name": "浮木"
+    },
+    {
+      "imagePath": "/images/relics/dusty_tome.webp",
+      "name": "塵封古籍"
+    },
+    {
+      "imagePath": "/images/relics/ectoplasm.webp",
+      "name": "靈質"
+    },
+    {
+      "imagePath": "/images/relics/electric_shrymp.webp",
+      "name": "放電異蝦"
+    },
+    {
+      "imagePath": "/images/relics/empty_cage.webp",
+      "name": "空鳥籠"
+    },
+    {
+      "imagePath": "/images/relics/fiddle.webp",
+      "name": "小提琴"
+    },
+    {
+      "imagePath": "/images/relics/fishing_rod.webp",
+      "name": "釣竿"
+    },
+    {
+      "imagePath": "/images/relics/fur_coat.webp",
+      "name": "毛皮大衣"
+    },
+    {
+      "imagePath": "/images/relics/glass_eye.webp",
+      "name": "玻璃眼"
+    },
+    {
+      "imagePath": "/images/relics/glitter.webp",
+      "name": "亮粉"
+    },
+    {
+      "imagePath": "/images/relics/golden_compass.webp",
+      "name": "黃金羅盤"
+    },
+    {
+      "imagePath": "/images/relics/golden_pearl.webp",
+      "name": "黃金珍珠"
+    },
+    {
+      "imagePath": "/images/relics/hefty_tablet.webp",
+      "name": "沉重石板"
+    },
+    {
+      "imagePath": "/images/relics/iron_club.webp",
+      "name": "鐵棒"
+    },
+    {
+      "imagePath": "/images/relics/jeweled_mask.webp",
+      "name": "珠寶面具"
+    },
+    {
+      "imagePath": "/images/relics/jewelry_box.webp",
+      "name": "珠寶盒"
+    },
+    {
+      "imagePath": "/images/relics/kaleidoscope.webp",
+      "name": "萬花筒"
+    },
+    {
+      "imagePath": "/images/relics/large_capsule.webp",
+      "name": "巨大扭蛋"
+    },
+    {
+      "imagePath": "/images/relics/lava_rock.webp",
+      "name": "熔岩石"
+    },
+    {
+      "imagePath": "/images/relics/lead_paperweight.webp",
+      "name": "鉛製紙鎮"
+    },
+    {
+      "imagePath": "/images/relics/leafy_poultice.webp",
+      "name": "葉片膏藥"
+    },
+    {
+      "imagePath": "/images/relics/lords_parasol.webp",
+      "name": "領主陽傘"
+    },
+    {
+      "imagePath": "/images/relics/lost_coffer.webp",
+      "name": "失落寶匣"
+    },
+    {
+      "imagePath": "/images/relics/massive_scroll.webp",
+      "name": "巨型卷軸"
+    },
+    {
+      "imagePath": "/images/relics/meat_cleaver.webp",
+      "name": "剁肉刀"
+    },
+    {
+      "imagePath": "/images/relics/music_box.webp",
+      "name": "音樂盒"
+    },
+    {
+      "imagePath": "/images/relics/neows_bones.webp",
+      "name": "涅奧之骨"
+    },
+    {
+      "imagePath": "/images/relics/neows_sacrifice.webp",
+      "name": "涅奧的犧牲"
+    },
+    {
+      "imagePath": "/images/relics/neows_talisman.webp",
+      "name": "涅奧的護符"
+    },
+    {
+      "imagePath": "/images/relics/neows_torment.webp",
+      "name": "涅奧的苦痛"
+    },
+    {
+      "imagePath": "/images/relics/new_leaf.webp",
+      "name": "新葉"
+    },
+    {
+      "imagePath": "/images/relics/nutritious_oyster.webp",
+      "name": "營養牡蠣"
+    },
+    {
+      "imagePath": "/images/relics/nutritious_soup.webp",
+      "name": "營養湯"
+    },
+    {
+      "imagePath": "/images/relics/paels_blood.webp",
+      "name": "佩爾之血"
+    },
+    {
+      "imagePath": "/images/relics/paels_claw.webp",
+      "name": "佩爾之爪"
+    },
+    {
+      "imagePath": "/images/relics/paels_eye.webp",
+      "name": "佩爾之眼"
+    },
+    {
+      "imagePath": "/images/relics/paels_flesh.webp",
+      "name": "佩爾之肉"
+    },
+    {
+      "imagePath": "/images/relics/paels_growth.webp",
+      "name": "佩爾的增生組織"
+    },
+    {
+      "imagePath": "/images/relics/paels_horn.webp",
+      "name": "佩爾之角"
+    },
+    {
+      "imagePath": "/images/relics/paels_legion.webp",
+      "name": "佩爾的士兵"
+    },
+    {
+      "imagePath": "/images/relics/paels_tears.webp",
+      "name": "佩爾之淚"
+    },
+    {
+      "imagePath": "/images/relics/paels_tooth.webp",
+      "name": "佩爾之牙"
+    },
+    {
+      "imagePath": "/images/relics/paels_wing.webp",
+      "name": "佩爾之翼"
+    },
+    {
+      "imagePath": "/images/relics/pandoras_box.webp",
+      "name": "潘朵拉魔盒"
+    },
+    {
+      "imagePath": "/images/relics/phial_holster.webp",
+      "name": "藥瓶套"
+    },
+    {
+      "imagePath": "/images/relics/philosophers_stone.webp",
+      "name": "賢者之石"
+    },
+    {
+      "imagePath": "/images/relics/pomander.webp",
+      "name": "香盒"
+    },
+    {
+      "imagePath": "/images/relics/precarious_shears.webp",
+      "name": "鬆動大剪"
+    },
+    {
+      "imagePath": "/images/relics/precise_scissors.webp",
+      "name": "精密剪刀"
+    },
+    {
+      "imagePath": "/images/relics/preserved_fog.webp",
+      "name": "封存活霧"
+    },
+    {
+      "imagePath": "/images/relics/prismatic_gem.webp",
+      "name": "稜彩寶石"
+    },
+    {
+      "imagePath": "/images/relics/pumpkin_candle.webp",
+      "name": "南瓜蠟燭"
+    },
+    {
+      "imagePath": "/images/relics/radiant_pearl.webp",
+      "name": "光輝珍珠"
+    },
+    {
+      "imagePath": "/images/relics/runic_pyramid.webp",
+      "name": "符文金字塔"
+    },
+    {
+      "imagePath": "/images/relics/sai.webp",
+      "name": "釵"
+    },
+    {
+      "imagePath": "/images/relics/sand_castle.webp",
+      "name": "沙堡"
+    },
+    {
+      "imagePath": "/images/relics/scroll_boxes.webp",
+      "name": "卷軸箱"
+    },
+    {
+      "imagePath": "/images/relics/seal_of_gold.webp",
+      "name": "黃金印記"
+    },
+    {
+      "imagePath": "/images/relics/sea_glass.webp",
+      "name": "海玻璃"
+    },
+    {
+      "imagePath": "/images/relics/sere_talon.webp",
+      "name": "枯萎之爪"
+    },
+    {
+      "imagePath": "/images/relics/signet_ring.webp",
+      "name": "印戒"
+    },
+    {
+      "imagePath": "/images/relics/silken_tress.webp",
+      "name": "絲綢髮束"
+    },
+    {
+      "imagePath": "/images/relics/silver_crucible.webp",
+      "name": "白銀坩堝"
+    },
+    {
+      "imagePath": "/images/relics/small_capsule.webp",
+      "name": "小型扭蛋"
+    },
+    {
+      "imagePath": "/images/relics/snecko_eye.webp",
+      "name": "異蛇之眼"
+    },
+    {
+      "imagePath": "/images/relics/sozu.webp",
+      "name": "添水"
+    },
+    {
+      "imagePath": "/images/relics/spiked_gauntlets.webp",
+      "name": "帶刺護手"
+    },
+    {
+      "imagePath": "/images/relics/stone_humidifier.webp",
+      "name": "石製加濕器"
+    },
+    {
+      "imagePath": "/images/relics/storybook.webp",
+      "name": "故事書"
+    },
+    {
+      "imagePath": "/images/relics/tanxs_whistle.webp",
+      "name": "坦克斯的哨子"
+    },
+    {
+      "imagePath": "/images/relics/throwing_axe.webp",
+      "name": "飛斧"
+    },
+    {
+      "imagePath": "/images/relics/toasty_mittens.webp",
+      "name": "暖烘烘手套"
+    },
+    {
+      "imagePath": "/images/relics/touch_of_orobas.webp",
+      "name": "歐洛巴斯之觸"
+    },
+    {
+      "imagePath": "/images/relics/toy_box.webp",
+      "name": "玩具箱"
+    },
+    {
+      "imagePath": "/images/relics/tri_boomerang.webp",
+      "name": "三刃迴力鏢"
+    },
+    {
+      "imagePath": "/images/relics/velvet_choker.webp",
+      "name": "天鵝絨頸圈"
+    },
+    {
+      "imagePath": "/images/relics/war_hammer.webp",
+      "name": "戰鎚"
+    },
+    {
+      "imagePath": "/images/relics/whispering_earring.webp",
+      "name": "低語耳環"
+    },
+    {
+      "imagePath": "/images/relics/winged_boots.webp",
+      "name": "有翼靴"
+    },
+    {
+      "imagePath": "/images/relics/yummy_cookie_defect.webp",
+      "name": "美味餅乾"
+    },
+    {
+      "imagePath": "/images/relics/big_mushroom.webp",
+      "name": "巨大蘑菇"
+    },
+    {
+      "imagePath": "/images/relics/bing_bong.webp",
+      "name": "賓邦"
+    },
+    {
+      "imagePath": "/images/relics/bone_tea.webp",
+      "name": "骨茶"
+    },
+    {
+      "imagePath": "/images/relics/byrdpip.webp",
+      "name": "異鳥雛鳥"
+    },
+    {
+      "imagePath": "/images/relics/chosen_cheese.webp",
+      "name": "天選起司"
+    },
+    {
+      "imagePath": "/images/relics/darkstone_periapt.webp",
+      "name": "黑石護符"
+    },
+    {
+      "imagePath": "/images/relics/daughter_of_the_wind.webp",
+      "name": "風之女兒"
+    },
+    {
+      "imagePath": "/images/relics/dream_catcher.webp",
+      "name": "捕夢網"
+    },
+    {
+      "imagePath": "/images/relics/ember_tea.webp",
+      "name": "餘燼茶"
+    },
+    {
+      "imagePath": "/images/relics/fake_anchor.webp",
+      "name": "錨？？？"
+    },
+    {
+      "imagePath": "/images/relics/fake_blood_vial.webp",
+      "name": "血瓶？？？"
+    },
+    {
+      "imagePath": "/images/relics/fake_happy_flower.webp",
+      "name": "開心小花？？？"
+    },
+    {
+      "imagePath": "/images/relics/fake_lees_waffle.webp",
+      "name": "李家鬆餅？？？"
+    },
+    {
+      "imagePath": "/images/relics/fake_mango.webp",
+      "name": "芒果？？？"
+    },
+    {
+      "imagePath": "/images/relics/fake_merchants_rug.webp",
+      "name": "商人的地毯？？？"
+    },
+    {
+      "imagePath": "/images/relics/fake_orichalcum.webp",
+      "name": "奧利哈鋼？？？"
+    },
+    {
+      "imagePath": "/images/relics/fake_snecko_eye.webp",
+      "name": "異蛇之眼？？？"
+    },
+    {
+      "imagePath": "/images/relics/fake_strike_dummy.webp",
+      "name": "打擊木偶？？？"
+    },
+    {
+      "imagePath": "/images/relics/fake_venerable_tea_set.webp",
+      "name": "古老茶具組？？？"
+    },
+    {
+      "imagePath": "/images/relics/forgotten_soul.webp",
+      "name": "被遺忘之魂"
+    },
+    {
+      "imagePath": "/images/relics/fragrant_mushroom.webp",
+      "name": "芳香蘑菇"
+    },
+    {
+      "imagePath": "/images/relics/hand_drill.webp",
+      "name": "手鑽"
+    },
+    {
+      "imagePath": "/images/relics/history_course.webp",
+      "name": "歷史課"
+    },
+    {
+      "imagePath": "/images/relics/lost_wisp.webp",
+      "name": "迷途幽火"
+    },
+    {
+      "imagePath": "/images/relics/maw_bank.webp",
+      "name": "巨口撲滿"
+    },
+    {
+      "imagePath": "/images/relics/mr_struggles.webp",
+      "name": "苦鬥先生"
+    },
+    {
+      "imagePath": "/images/relics/pollinous_core.webp",
+      "name": "花粉核心"
+    },
+    {
+      "imagePath": "/images/relics/royal_poison.webp",
+      "name": "王室毒藥"
+    },
+    {
+      "imagePath": "/images/relics/sword_of_jade.webp",
+      "name": "玉劍"
+    },
+    {
+      "imagePath": "/images/relics/sword_of_stone.webp",
+      "name": "石之劍"
+    },
+    {
+      "imagePath": "/images/relics/tea_of_discourtesy.webp",
+      "name": "無禮之茶"
+    },
+    {
+      "imagePath": "/images/relics/the_boot.webp",
+      "name": "發條靴"
+    },
+    {
+      "imagePath": "/images/relics/wongos_mystery_ticket.webp",
+      "name": "萬戈的神祕票券"
+    },
+    {
+      "imagePath": "/images/relics/wongo_customer_appreciation_badge.webp",
+      "name": "萬戈顧客感謝徽章"
+    }
+  ]
+}

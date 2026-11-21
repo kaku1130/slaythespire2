@@ -7,11 +7,8 @@ const source=JSON.parse(fs.readFileSync('data/builds/source.json','utf8'));
 const cards=JSON.parse(fs.readFileSync('data/cards/cards-source.json','utf8'));
 const chinese=new Map(JSON.parse(fs.readFileSync('data/cards/cards-zh-TW.json','utf8')).cards.map(c=>[c.id,c]));
 const byId=new Map(cards.map(c=>[c.id,c]));
-const cardDetails=new Map(JSON.parse(fs.readFileSync('data/cards/english-details.json','utf8')).cards.map(card=>[card.id,card]));
-const renderCardArticle=require('../cards/render-card-detail.cjs');
 const relicCatalog=new Map(JSON.parse(fs.readFileSync('data/relic/catalog.json','utf8')).items.map(relic=>[relic.className,relic]));
 const renderRelicCard=require('../relic/relic-card.cjs').render;
-const localBuildTargets=guide.builds.map(build=>'id="build-'+build.character+'-'+build.id+'"').join(' ');
 const cardTiers=new Map(JSON.parse(fs.readFileSync('data/cards/tiers-source.json','utf8')).rankings.map(card=>[card.id,card.tier]));
 
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -22,19 +19,15 @@ for(const [id,links] of Object.entries(source.byCard))for(const b of links){cons
 assert.equal(builds.size,25);
 function renderCardLink(c){return '<a class="card-text-link" href="card.html#card-'+esc(c.id)+'" data-rarity="'+c.rarity+'">'+esc(chinese.get(c.id).name)+'</a>';}
 function renderCardWithTier(c){const tier=cardTiers.get(c.id);return '<span class="build-card-entry" data-card-tier-id="'+esc(c.id)+'">'+renderCardLink(c)+'<span class="card-tier-badge" data-tier="'+(tier||'unranked')+'" aria-label="Tier '+(tier||'未評級')+'">'+(tier||'—')+'</span></span>';}
-function renderGuideCard(c,context){
- const detail=cardDetails.get(c.id);assert(detail,'Missing card details '+c.id);
- return '<div class="build-guide-card card-detail-row" data-card-id="'+esc(c.id)+'" data-rarity="'+esc(detail.rarity)+'">'+renderCardArticle(detail,{prefix:'build-card-'+context+'-'+c.id.toLowerCase(),localBuilds:localBuildTargets,showBuilds:false,showKeywords:false,metadataAboveEffects:true,tierBesideName:true})+'</div>';
-}
-function renderCards(list,context){const rarityOrder=['Basic','Common','Uncommon','Rare','Ancient','Event','Curse','Quest'];const rank=c=>{const index=rarityOrder.indexOf(c.rarity);return index<0?rarityOrder.length:index;};const tierRank=c=>{const index=['S','A','B','C','D'].indexOf(cardTiers.get(c.id));return index<0?5:index;};return [...list].sort((a,b)=>rank(a)-rank(b)||tierRank(a)-tierRank(b)||a.name.localeCompare(b.name,'en')).map(card=>renderGuideCard(card,context)).join('');}
+function renderCards(list){const rarityOrder=['Basic','Common','Uncommon','Rare','Ancient','Event','Curse','Quest'];const rank=c=>{const index=rarityOrder.indexOf(c.rarity);return index<0?rarityOrder.length:index;};const tierRank=c=>{const index=['S','A','B','C','D'].indexOf(cardTiers.get(c.id));return index<0?5:index;};return [...list].sort((a,b)=>rank(a)-rank(b)||tierRank(a)-tierRank(b)||a.name.localeCompare(b.name,'en')).map(renderCardLink).join('、');}
 
 function renderLinkedStrategy(text,g){
- const candidates=[...new Set([...g.core,...g.support])].flatMap(id=>{
+ const candidates=[...new Set([...g.core,...g.support,...cards.filter(card=>card.pool===g.characterPool).map(card=>card.id)])].flatMap(id=>{
   const card=byId.get(id),localized=chinese.get(id);
   return [...(localized.aliases||[]),localized.name].map(name=>({card,name,alias:name!==localized.name}));
  }).sort((a,b)=>b.name.length-a.name.length||Number(b.alias)-Number(a.alias));
  let output='',offset=0;
- while(offset<text.length){const match=candidates.find(candidate=>text.startsWith(candidate.name,offset));if(match){output+=renderCardLink(match.card);offset+=match.name.length;}else{output+=esc(text[offset]);offset++;}}
+ while(offset<text.length){const match=candidates.find(candidate=>text.startsWith(candidate.name,offset));if(match){const description=chinese.get(match.card.id).descBase.replace(/\s*\r?\n\s*/g,' ').replace(/。(\s*)$/,'$1');const effect=rich(description).replace(/<span class="guide-keyword">(.*?)<\/span>/g,'<strong class="guide-keyword">$1</strong>');output+=renderCardLink(match.card)+'<span class="build-inline-card-effect" data-card-id="'+esc(match.card.id)+'">('+effect+')</span>';offset+=match.name.length;}else{output+=esc(text[offset]);offset++;}}
  return output;
 }
 const relicIcons=new Map();
@@ -68,7 +61,7 @@ main{max-width:1400px}.build-intro{max-width:930px}.build-version{display:flex;f
 .character-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px}.character-nav a{padding:8px 13px;min-height:44px;border:1px solid var(--line);border-radius:6px;color:var(--accent,var(--muted));text-decoration:none}.character-nav a:hover{border-color:var(--accent,#37a8ec)}.character-nav a[aria-current=page]{background:#141b24;border-color:var(--accent,#37a8ec);color:var(--accent,#e3e8ee)}.local-guide-link{color:inherit;text-decoration:none}.local-guide-link:hover{text-decoration:underline}.guide-strategy{padding:18px 0 0}.guide-strategy h4{color:var(--ink);font-weight:600;margin-bottom:6px}.guide-strategy p{font-size:14px;line-height:1.85;margin:0 0 16px}.guide-keyword{color:#fbbf24}.version-note{margin:0 0 20px}.version-table-wrap{max-width:100%;overflow-x:auto}.version-table{width:100%;border-collapse:collapse;text-align:left;font-size:12px;min-width:420px}.version-table th,.version-table td{border-bottom:1px solid var(--line);padding:9px 10px;vertical-align:top}.version-table th{font-weight:500;color:var(--muted)}.version-table td{color:var(--ink)}.missing-note{padding:10px 14px;margin-bottom:20px;background:#b83b4b15;border-left:3px solid #b83b4b;font-size:13px}.relic-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.relic-list li{padding:12px}.relic-list strong{font-weight:500}.relic-effect{font-size:12px;line-height:1.7;margin-top:6px;color:var(--muted)}.detailed-cards li{border:1px solid var(--line);border-radius:6px;padding:10px;min-width:0}.detailed-cards a{padding:0;min-height:0;border:0}.guide-card-meta{font-size:11px;color:var(--muted);margin-top:8px}.guide-card-effect{margin-top:8px;font-size:12px;line-height:1.8;overflow-wrap:anywhere}.full-guide .build-details{border:0;margin-top:0}.character-guide-page .build-preview{display:none}.tier-index{display:grid;gap:8px;margin-bottom:28px}.tier-index-row{display:flex;align-items:center;gap:12px;padding:10px 14px;background:var(--paper);border:1px solid var(--line);border-radius:6px}.tier-index-row .build-tier{margin:0}.tier-index-links{display:flex;flex-wrap:wrap;gap:10px 20px}.tier-index-links a{font-size:14px}.character-back{display:inline-block;margin-bottom:16px;font-size:12px}.character-guide-page .build-panel{margin-bottom:12px}@media(max-width:760px){.relic-list{grid-template-columns:1fr}.character-nav{gap:6px}.character-nav a{font-size:12px;padding:8px 10px}.guide-strategy p{font-size:13px}.detailed-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.build-deck-groups{grid-template-columns:1fr}.version-note{padding:10px 8px}}@media(max-width:359px){.detailed-cards{grid-template-columns:1fr}}
 .tier-index{display:none}.character-guide-page .tier-index{display:grid}#all{scroll-margin-top:100px}
 .relic-list li{display:flex;align-items:flex-start;gap:12px}.relic-icon{width:40px;height:40px;object-fit:contain;flex-shrink:0}.relic-content{min-width:0}.build-card-list a{min-height:44px;display:flex;align-items:center}.build-card-list{align-content:start}@media(max-width:640px){.relic-icon{width:34px;height:34px}.relic-list li{gap:10px}}
-.build-deck-groups{display:block}.build-card-line{margin:10px 0;line-height:2;overflow-wrap:anywhere}.build-card-label{font-weight:600;color:var(--ink)}.card-text-link{color:#aab6c4;text-decoration:none}.card-text-link:hover{text-decoration:underline;color:#19affe}.card-text-link[data-rarity=Uncommon]{color:#74b3e6}.card-text-link[data-rarity=Rare]{color:#e3bf72}.card-text-link[data-rarity=Ancient]{color:#c49aef}.card-text-link:focus-visible{outline:2px solid #37a8ec;outline-offset:3px}
+.build-deck-groups{display:block}.build-card-line{margin:10px 0;line-height:2;overflow-wrap:anywhere}.build-card-label{font-weight:600;color:var(--ink)}.card-text-link{color:#aab6c4;text-decoration:none}.card-text-link:hover{text-decoration:underline;color:#19affe}.card-text-link[data-rarity=Uncommon]{color:#74b3e6}.card-text-link[data-rarity=Rare]{color:#efc851}.card-text-link[data-rarity=Ancient]{color:#c49aef}.card-text-link:focus-visible{outline:2px solid #37a8ec;outline-offset:3px}
 ${navigation.styles}
 
 .build-titlebar{position:sticky;top:var(--site-header-height,65px);z-index:90;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 0;margin:0 0 24px;background:#040609f5;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.build-titlebar h1{margin:0;font-size:clamp(20px,1.9vw,28px);line-height:1.4;flex-shrink:0}.build-titlebar .character-nav{margin:0;justify-content:flex-end}.build-titlebar .character-nav a{white-space:nowrap}.build-section,[id^=build-]{scroll-margin-top:calc(var(--site-header-height,65px) + var(--build-titlebar-height,80px) + 16px)}
@@ -282,6 +275,9 @@ ${fs.readFileSync('assets/cards/card1-detail.css','utf8')}
 ${require('./card-layout.cjs')}
 ${require('./relic-layout.cjs')}
 ${require('./desktop-layout.cjs')}
+html body main#main-content .build-panel-heading {display:flex;flex-direction:row;flex-wrap:nowrap;align-items:baseline;justify-content:flex-start;gap:14px}
+html body main#main-content .build-panel-heading > .build-tier {flex:0 0 auto;margin:0;font:inherit}
+html body main#main-content .build-panel-heading > span:not(.build-tier) {min-width:0;white-space:nowrap}
 </style></head><body class="character-guide-page">${navigation.renderHeader('builds')}<main id="main-content"><div class="character-sidebar" aria-label="角色選單">${characterNav()}</div><div class="tier-sidebar" aria-label="流派強度選單" hidden>${tierMenus}</div><div class="build-layout" hidden><div class="build-content" role="region" aria-label="流派內容" tabindex="0">${sections}</div></div><p id="build-empty" hidden>沒有符合條件的流派。</p></main><script>
 
 document.body.classList.toggle('is-iphone', /\\biPhone\\b/i.test(navigator.userAgent));

@@ -7,22 +7,23 @@ function compare(a,b){const group=x=>groups.findIndex(g=>g[0]===x.pool),rank=x=>
 
 const escapeHtml = text => text.replace(/[&<>]/g, char => ({'&':'&amp;', '<':'&lt;', '>':'&gt;'})[char]);
 
-function renderClassification(rarity, pool) {
-  return '<span data-relic-rarity="' + escapeHtml(rarity) + '">' + escapeHtml(rarity) + '</span>';
+const rarityLabels = {Common:'普通',Uncommon:'罕見',Rare:'稀有',Ancient:'先古之民',Shop:'商店',Event:'事件',Starter:'初始',None:'無'};
+function renderClassification(rarity, {localized = false} = {}) {
+  return '<span data-relic-rarity="' + escapeHtml(rarity) + '">' + escapeHtml(localized ? rarityLabels[rarity] || rarity : rarity) + '</span>';
 }
 
-function formatCard(article, item) {
+function formatCard(article, item, {localizedRarity = false} = {}) {
   return article.replace(/(<img\b[^>]*>)<div class="relic-title-row"><h2>(.*?) <span class="catalog-name-en" lang="en">(.*?)<\/span><\/h2><div class="tag">[^<]*(.*?)<\/div><\/div><p(?: lang="en")?>(.*?)<\/p>/s,
     (_, image, localizedName, englishName, ranking, localizedEffect) => {
       return '<div class="relic-card-text">' + image + '<h3><span class="relic-name-zh" lang="zh-Hant">' + localizedName
         + '</span><span class="relic-name-en" lang="en" title="' + englishName.replaceAll('"', '&quot;') + '">' + englishName
         + '</span></h3><p lang="en">' + localizedEffect + '</p>'
-        + '<div class="relic-rarity-row" lang="en">' + renderClassification(item.rarity) + '</div>'
+        + '<div class="relic-rarity-row" lang="' + (localizedRarity ? 'zh-Hant' : 'en') + '">' + renderClassification(item.rarity, {localized:localizedRarity}) + '</div>'
         + (ranking ? '<div class="tag relic-card-ranking">' + ranking + '</div>' : '') + '</div>';
     });
 }
 
-function render(content,items){const articles=new Map([...content.matchAll(/<article\b[^>]*id="([^"]+)"[\s\S]*?<\/article>/g)].map(m=>[m[1],m[0]]));return groups.map(([pool,label,color])=>{const members=items.filter(x=>x.pool===pool);return members.length?'<section class="relic-section" data-pool="'+pool+'" style="--pool-color:'+color+'"><h2 class="relic-section-title"><img class="relic-group-icon" src="assets/cards/icons/'+iconNames[pool]+'.webp" alt="" width="28" height="28">'+label+' <span class="relic-section-count">('+members.length+')</span></h2><div class="catalog">'+members.map(x=>formatCard(articles.get(x.id),x)).join('')+'</div></section>':'';}).join('');}
+function render(content,items){const articles=new Map([...content.matchAll(/<article\b[^>]*id="([^"]+)"[\s\S]*?<\/article>/g)].map(m=>[m[1],m[0]]));return groups.map(([pool,label,color])=>{const members=items.filter(x=>x.pool===pool);return members.length?'<section class="relic-section" data-pool="'+pool+'" style="--pool-color:'+color+'"><h2 class="relic-section-title"><img class="relic-group-icon" src="assets/cards/icons/'+iconNames[pool]+'.webp" alt="" width="28" height="28">'+label+' <span class="relic-section-count">('+members.length+')</span></h2><div class="catalog">'+members.map(x=>formatCard(articles.get(x.id).replace('class="entry relic"','class="entry relic catalog-relic-card" data-relic-id="'+x.id+'"'),x,{localizedRarity:false})).join('')+'</div></section>':'';}).join('');}
 const styles='.relic-section{margin:0 0 28px;padding:20px;border:1px solid var(--pool-color);border-radius:12px;background:color-mix(in srgb,var(--pool-color) 3%,var(--bg))}.relic-group-icon{width:28px;height:28px;object-fit:contain;flex-shrink:0}@media(max-width:640px){.relic-section{padding:12px}}.relic-section-title{display:flex;align-items:center;gap:10px;color:var(--pool-color);font-size:24px;margin:0 0 16px}.relic-section-count{font-size:16px;font-weight:400;color:var(--muted)}.relic-section .catalog{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.relic[data-rarity=Ancient]{--rarity-color:#c084fc}.relic[data-rarity=Shop]{--rarity-color:#b08968}.relic[data-rarity=Starter],.relic[data-rarity=None]{--rarity-color:#a1a1aa}@media(max-width:1023px){.relic-section .catalog{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:639px){.relic-section .catalog{grid-template-columns:1fr}}';
 module.exports={compare,render,styles,formatCard,renderClassification};
 

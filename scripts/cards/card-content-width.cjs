@@ -30,7 +30,7 @@ html body #card-scroll .detail-name-tier[data-tier=D] {--name-tier-color:rgb(120
 @media screen and (min-width:601px) and (min-height:501px), screen and (min-width:1001px), screen and (min-width:601px) and (hover:hover) and (pointer:fine) {
   html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
   /* Share section heights among cards in each visible row. */
-  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:not([hidden]) {grid-column:auto;grid-row:span 6;display:grid!important;grid-template-rows:subgrid;align-self:stretch}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:not([hidden]) {grid-column:auto;grid-row:span 5;display:grid!important;grid-template-rows:subgrid;align-self:stretch}
   html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-cell {display:grid!important;grid-row:1 / -1;grid-template-rows:subgrid}
   html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail {grid-row:1 / -1;grid-template-rows:subgrid;margin:0}
   html body[data-view=grid] main#main-content#main-content #card-scroll .detail-overview {grid-row:1 / -1;grid-template-rows:subgrid}

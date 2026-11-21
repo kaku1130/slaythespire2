@@ -1,0 +1,259 @@
+{
+  "source": "https://slaythespire2.net/zh-TW/potion",
+  "retrievedDate": "2026-11-21",
+  "version": "v0.111.1",
+  "names": [
+    {
+      "imagePath": "/images/potions/attack_potion.webp",
+      "name": "攻擊藥水"
+    },
+    {
+      "imagePath": "/images/potions/block_potion.webp",
+      "name": "格擋藥水"
+    },
+    {
+      "imagePath": "/images/potions/blood_potion.webp",
+      "name": "血液藥水"
+    },
+    {
+      "imagePath": "/images/potions/colorless_potion.webp",
+      "name": "無色藥水"
+    },
+    {
+      "imagePath": "/images/potions/dexterity_potion.webp",
+      "name": "敏捷藥水"
+    },
+    {
+      "imagePath": "/images/potions/energy_potion.webp",
+      "name": "能量藥水"
+    },
+    {
+      "imagePath": "/images/potions/explosive_ampoule.webp",
+      "name": "爆炸安瓿"
+    },
+    {
+      "imagePath": "/images/potions/fire_potion.webp",
+      "name": "火焰藥水"
+    },
+    {
+      "imagePath": "/images/potions/flex_potion.webp",
+      "name": "肌肉藥水"
+    },
+    {
+      "imagePath": "/images/potions/focus_potion.webp",
+      "name": "集中藥水"
+    },
+    {
+      "imagePath": "/images/potions/poison_potion.webp",
+      "name": "中毒藥水"
+    },
+    {
+      "imagePath": "/images/potions/potion_of_doom.webp",
+      "name": "惡兆藥水"
+    },
+    {
+      "imagePath": "/images/potions/power_potion.webp",
+      "name": "能力藥水"
+    },
+    {
+      "imagePath": "/images/potions/skill_potion.webp",
+      "name": "技能藥水"
+    },
+    {
+      "imagePath": "/images/potions/speed_potion.webp",
+      "name": "速度藥水"
+    },
+    {
+      "imagePath": "/images/potions/star_potion.webp",
+      "name": "輝星藥水"
+    },
+    {
+      "imagePath": "/images/potions/strength_potion.webp",
+      "name": "力量藥水"
+    },
+    {
+      "imagePath": "/images/potions/swift_potion.webp",
+      "name": "迅捷藥水"
+    },
+    {
+      "imagePath": "/images/potions/vulnerable_potion.webp",
+      "name": "易傷藥水"
+    },
+    {
+      "imagePath": "/images/potions/weak_potion.webp",
+      "name": "虛弱藥水"
+    },
+    {
+      "imagePath": "/images/potions/ashwater.webp",
+      "name": "灰燼水"
+    },
+    {
+      "imagePath": "/images/potions/blessing_of_the_forge.webp",
+      "name": "鑄爐祝福"
+    },
+    {
+      "imagePath": "/images/potions/bone_brew.webp",
+      "name": "骨釀"
+    },
+    {
+      "imagePath": "/images/potions/clarity.webp",
+      "name": "明晰萃取物"
+    },
+    {
+      "imagePath": "/images/potions/cunning_potion.webp",
+      "name": "狡猾藥水"
+    },
+    {
+      "imagePath": "/images/potions/cure_all.webp",
+      "name": "萬靈藥"
+    },
+    {
+      "imagePath": "/images/potions/duplicator.webp",
+      "name": "複製劑"
+    },
+    {
+      "imagePath": "/images/potions/fortifier.webp",
+      "name": "強固劑"
+    },
+    {
+      "imagePath": "/images/potions/fysh_oil.webp",
+      "name": "異魚油"
+    },
+    {
+      "imagePath": "/images/potions/gamblers_brew.webp",
+      "name": "賭徒特調"
+    },
+    {
+      "imagePath": "/images/potions/heart_of_iron.webp",
+      "name": "鋼鐵之心"
+    },
+    {
+      "imagePath": "/images/potions/kings_courage.webp",
+      "name": "王者之勇"
+    },
+    {
+      "imagePath": "/images/potions/liquid_bronze.webp",
+      "name": "液態青銅"
+    },
+    {
+      "imagePath": "/images/potions/potion_of_binding.webp",
+      "name": "禁縛藥水"
+    },
+    {
+      "imagePath": "/images/potions/potion_of_capacity.webp",
+      "name": "擴容藥水"
+    },
+    {
+      "imagePath": "/images/potions/powdered_demise.webp",
+      "name": "消亡粉末"
+    },
+    {
+      "imagePath": "/images/potions/radiant_tincture.webp",
+      "name": "光輝酊劑"
+    },
+    {
+      "imagePath": "/images/potions/regen_potion.webp",
+      "name": "再生藥水"
+    },
+    {
+      "imagePath": "/images/potions/stable_serum.webp",
+      "name": "穩定血清"
+    },
+    {
+      "imagePath": "/images/potions/touch_of_insanity.webp",
+      "name": "瘋狂之觸"
+    },
+    {
+      "imagePath": "/images/potions/beetle_juice.webp",
+      "name": "甲蟲汁"
+    },
+    {
+      "imagePath": "/images/potions/bottled_potential.webp",
+      "name": "瓶裝潛能"
+    },
+    {
+      "imagePath": "/images/potions/cosmic_concoction.webp",
+      "name": "宇宙調製劑"
+    },
+    {
+      "imagePath": "/images/potions/distilled_chaos.webp",
+      "name": "精煉混沌"
+    },
+    {
+      "imagePath": "/images/potions/droplet_of_precognition.webp",
+      "name": "預知露滴"
+    },
+    {
+      "imagePath": "/images/potions/entropic_brew.webp",
+      "name": "熵之釀"
+    },
+    {
+      "imagePath": "/images/potions/essence_of_darkness.webp",
+      "name": "黑暗精華"
+    },
+    {
+      "imagePath": "/images/potions/fairy_in_a_bottle.webp",
+      "name": "瓶中精靈"
+    },
+    {
+      "imagePath": "/images/potions/fruit_juice.webp",
+      "name": "果汁"
+    },
+    {
+      "imagePath": "/images/potions/ghost_in_a_jar.webp",
+      "name": "罐裝幽靈"
+    },
+    {
+      "imagePath": "/images/potions/gigantification_potion.webp",
+      "name": "超巨化藥水"
+    },
+    {
+      "imagePath": "/images/potions/liquid_memories.webp",
+      "name": "液態記憶"
+    },
+    {
+      "imagePath": "/images/potions/lucky_tonic.webp",
+      "name": "幸運補藥"
+    },
+    {
+      "imagePath": "/images/potions/mazaleths_gift.webp",
+      "name": "馬札勒斯的贈禮"
+    },
+    {
+      "imagePath": "/images/potions/orobic_acid.webp",
+      "name": "歐洛巴斯酸"
+    },
+    {
+      "imagePath": "/images/potions/pot_of_ghouls.webp",
+      "name": "屍鬼甕"
+    },
+    {
+      "imagePath": "/images/potions/shackling_potion.webp",
+      "name": "鐐銬藥水"
+    },
+    {
+      "imagePath": "/images/potions/ship_in_a_bottle.webp",
+      "name": "瓶中船"
+    },
+    {
+      "imagePath": "/images/potions/snecko_oil.webp",
+      "name": "異蛇油"
+    },
+    {
+      "imagePath": "/images/potions/soldiers_stew.webp",
+      "name": "士兵燉湯"
+    },
+    {
+      "imagePath": "/images/potions/ambergris.webp",
+      "name": "龍涎香"
+    },
+    {
+      "imagePath": "/images/potions/foul_potion.webp",
+      "name": "惡臭藥水"
+    },
+    {
+      "imagePath": "/images/potions/glowwater_potion.webp",
+      "name": "光輝水藥水"
+    }
+  ]
+}

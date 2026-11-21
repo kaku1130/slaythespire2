@@ -793,6 +793,14 @@ html body #main-content :is([data-stat-rarity=Uncommon],[data-relic-rarity=Uncom
 html body #main-content .potion-section[data-rarity=Uncommon]>.potion-section-title {color:#4f9bd9}
 html body #main-content :is(#card-filter-rarity button[value=Uncommon],[data-catalog-filter=rarity][value=Uncommon],button[data-rarity-filter=Uncommon],[data-filter-group=rarity][data-filter-value=Uncommon]) {--selection-color:#4f9bd9!important;--rarity-color:#4f9bd9!important}
 
+/* Rare matches the Block keyword on the reference True Grit page. */
+html body #main-content [data-rarity=Rare] {--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--detail-rarity-color:#efc851}
+html body #main-content .card-detail-row[data-rarity=Rare] .card-detail {--detail-rarity-color:#efc851}
+html body #main-content :is([data-stat-rarity=Rare],[data-label-rarity=Rare],[data-relic-rarity=Rare],.rarity[data-rarity=Rare],.card-text-link[data-rarity=Rare],.build-card-list a[data-rarity=Rare]) {color:#efc851!important}
+html body #main-content .potion-section[data-rarity=Rare] {--group-color:#efc851!important}
+html body #main-content .potion-section[data-rarity=Rare]>.potion-section-title {color:#efc851}
+html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Rare],[data-catalog-filter=rarity][value=Rare],button[data-rarity-filter=Rare],[data-filter-group=rarity][data-filter-value=Rare]) {--selection-color:#efc851!important;--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--rarity-text-color:#efc851!important;color:#efc851!important}
+
 /* Card tier filters use the same button presentation as Type filters. */
 html body #main-content #tools #card-filter-tier button {
   min-height:48px;padding:8px;border-radius:8px;
@@ -866,7 +874,7 @@ html body #card-scroll .detail-name-tier[data-tier=D] {--name-tier-color:rgb(120
 @media screen and (min-width:601px) and (min-height:501px), screen and (min-width:1001px), screen and (min-width:601px) and (hover:hover) and (pointer:fine) {
   html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
   /* Share section heights among cards in each visible row. */
-  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:not([hidden]) {grid-column:auto;grid-row:span 6;display:grid!important;grid-template-rows:subgrid;align-self:stretch}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:not([hidden]) {grid-column:auto;grid-row:span 5;display:grid!important;grid-template-rows:subgrid;align-self:stretch}
   html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-cell {display:grid!important;grid-row:1 / -1;grid-template-rows:subgrid}
   html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail {grid-row:1 / -1;grid-template-rows:subgrid;margin:0}
   html body[data-view=grid] main#main-content#main-content #card-scroll .detail-overview {grid-row:1 / -1;grid-template-rows:subgrid}
@@ -1375,6 +1383,14 @@ html body #main-content :is([data-stat-rarity=Uncommon],[data-relic-rarity=Uncom
 html body #main-content .potion-section[data-rarity=Uncommon]>.potion-section-title {color:#4f9bd9}
 html body #main-content :is(#card-filter-rarity button[value=Uncommon],[data-catalog-filter=rarity][value=Uncommon],button[data-rarity-filter=Uncommon],[data-filter-group=rarity][data-filter-value=Uncommon]) {--selection-color:#4f9bd9!important;--rarity-color:#4f9bd9!important}
 
+/* Rare matches the Block keyword on the reference True Grit page. */
+html body #main-content [data-rarity=Rare] {--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--detail-rarity-color:#efc851}
+html body #main-content .card-detail-row[data-rarity=Rare] .card-detail {--detail-rarity-color:#efc851}
+html body #main-content :is([data-stat-rarity=Rare],[data-label-rarity=Rare],[data-relic-rarity=Rare],.rarity[data-rarity=Rare],.card-text-link[data-rarity=Rare],.build-card-list a[data-rarity=Rare]) {color:#efc851!important}
+html body #main-content .potion-section[data-rarity=Rare] {--group-color:#efc851!important}
+html body #main-content .potion-section[data-rarity=Rare]>.potion-section-title {color:#efc851}
+html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Rare],[data-catalog-filter=rarity][value=Rare],button[data-rarity-filter=Rare],[data-filter-group=rarity][data-filter-value=Rare]) {--selection-color:#efc851!important;--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--rarity-text-color:#efc851!important;color:#efc851!important}
+
 /* Card tier filters use the same button presentation as Type filters. */
 html body #main-content #tools #card-filter-tier button {
   min-height:48px;padding:8px;border-radius:8px;
@@ -1448,7 +1464,7 @@ html body #card-scroll .detail-name-tier[data-tier=D] {--name-tier-color:rgb(120
 @media screen and (min-width:601px) and (min-height:501px), screen and (min-width:1001px), screen and (min-width:601px) and (hover:hover) and (pointer:fine) {
   html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
   /* Share section heights among cards in each visible row. */
-  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:not([hidden]) {grid-column:auto;grid-row:span 6;display:grid!important;grid-template-rows:subgrid;align-self:stretch}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:not([hidden]) {grid-column:auto;grid-row:span 5;display:grid!important;grid-template-rows:subgrid;align-self:stretch}
   html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-cell {display:grid!important;grid-row:1 / -1;grid-template-rows:subgrid}
   html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail {grid-row:1 / -1;grid-template-rows:subgrid;margin:0}
   html body[data-view=grid] main#main-content#main-content #card-scroll .detail-overview {grid-row:1 / -1;grid-template-rows:subgrid}

@@ -1,0 +1,597 @@
+{
+  "source": "https://slaythespire2.net/zh-TW/relic",
+  "retrievedDate": "2026-11-21",
+  "version": "v0.111.1",
+  "total": 298,
+  "matched": 297,
+  "changed": 116,
+  "changes": [
+    {
+      "id": "ALCHEMICAL_COFFER",
+      "before": "鍊金箱",
+      "after": "鍊金寶匣"
+    },
+    {
+      "id": "BAG_OF_PREPARATION",
+      "before": "準備揹包",
+      "after": "準備背包"
+    },
+    {
+      "id": "BEATING_REMNANT",
+      "before": "律動殘餘",
+      "after": "脈動殘片"
+    },
+    {
+      "id": "BEAUTIFUL_BRACELET",
+      "before": "華美手鐲",
+      "after": "精美手環"
+    },
+    {
+      "id": "BIG_MUSHROOM",
+      "before": "大蘑菇",
+      "after": "巨大蘑菇"
+    },
+    {
+      "id": "BIIIG_HUG",
+      "before": "大～抱抱",
+      "after": "大大大抱抱"
+    },
+    {
+      "id": "BLOOD_VIAL",
+      "before": "小血瓶",
+      "after": "血瓶"
+    },
+    {
+      "id": "BOOK_REPAIR_KNIFE",
+      "before": "修書小刀",
+      "after": "修書刀"
+    },
+    {
+      "id": "BOUND_PHYLACTERY",
+      "before": "縛魂命匣",
+      "after": "禁縛命匣"
+    },
+    {
+      "id": "BRILLIANT_SCARF",
+      "before": "豔麗圍巾",
+      "after": "璀璨圍巾"
+    },
+    {
+      "id": "BRONZE_SCALES",
+      "before": "銅質鱗片",
+      "after": "青銅鱗片"
+    },
+    {
+      "id": "BYRDPIP",
+      "before": "異鳥寶寶",
+      "after": "異鳥雛鳥"
+    },
+    {
+      "id": "CANDELABRA",
+      "before": "燭臺",
+      "after": "枝形燭臺"
+    },
+    {
+      "id": "CAPTAINS_WHEEL",
+      "before": "舵盤",
+      "after": "船長舵輪"
+    },
+    {
+      "id": "CHEMICAL_X",
+      "before": "化學物X",
+      "after": "化學物 X"
+    },
+    {
+      "id": "CHOSEN_CHEESE",
+      "before": "天選芝士",
+      "after": "天選起司"
+    },
+    {
+      "id": "DATA_DISK",
+      "before": "數據磁盤",
+      "after": "資料磁碟"
+    },
+    {
+      "id": "DAUGHTER_OF_THE_WIND",
+      "before": "風的女兒",
+      "after": "風之女兒"
+    },
+    {
+      "id": "DELICATE_FROND",
+      "before": "嬌嫩蕨草",
+      "after": "纖細葉片"
+    },
+    {
+      "id": "DIAMOND_DIADEM",
+      "before": "鑽石頭冠",
+      "after": "鑽石冠冕"
+    },
+    {
+      "id": "DISTINGUISHED_CAPE",
+      "before": "卓越斗篷",
+      "after": "尊貴披風"
+    },
+    {
+      "id": "DIVINE_DESTINY",
+      "before": "天命所歸",
+      "after": "神授天命"
+    },
+    {
+      "id": "DIVINE_RIGHT",
+      "before": "天賦君權",
+      "after": "神授君權"
+    },
+    {
+      "id": "DUSTY_TOME",
+      "before": "塵封魔典",
+      "after": "塵封古籍"
+    },
+    {
+      "id": "ECTOPLASM",
+      "before": "靈體外質",
+      "after": "靈質"
+    },
+    {
+      "id": "EMOTION_CHIP",
+      "before": "情感芯片",
+      "after": "情感晶片"
+    },
+    {
+      "id": "FAKE_ANCHOR",
+      "before": "錨???",
+      "after": "錨？？？"
+    },
+    {
+      "id": "FAKE_BLOOD_VIAL",
+      "before": "小血瓶？？？",
+      "after": "血瓶？？？"
+    },
+    {
+      "id": "FAKE_LEES_WAFFLE",
+      "before": "李家華夫餅？？？",
+      "after": "李家鬆餅？？？"
+    },
+    {
+      "id": "FAKE_VENERABLE_TEA_SET",
+      "before": "古茶具套裝？？？",
+      "after": "古老茶具組？？？"
+    },
+    {
+      "id": "FENCING_MANUAL",
+      "before": "擊劍指南",
+      "after": "擊劍手冊"
+    },
+    {
+      "id": "FESTIVE_POPPER",
+      "before": "節日拉炮",
+      "after": "節慶拉炮"
+    },
+    {
+      "id": "FISHING_ROD",
+      "before": "釣魚竿",
+      "after": "釣竿"
+    },
+    {
+      "id": "FORGOTTEN_SOUL",
+      "before": "遺忘之魂",
+      "after": "被遺忘之魂"
+    },
+    {
+      "id": "FROZEN_EGG",
+      "before": "凍結之蛋",
+      "after": "冰凍之蛋"
+    },
+    {
+      "id": "FUR_COAT",
+      "before": "皮草大衣",
+      "after": "毛皮大衣"
+    },
+    {
+      "id": "GALACTIC_DUST",
+      "before": "星系塵埃",
+      "after": "銀河塵埃"
+    },
+    {
+      "id": "GLASS_EYE",
+      "before": "玻璃眼珠",
+      "after": "玻璃眼"
+    },
+    {
+      "id": "GLITTER",
+      "before": "亮片",
+      "after": "亮粉"
+    },
+    {
+      "id": "GNARLED_HAMMER",
+      "before": "扭曲錘子",
+      "after": "多節戰鎚"
+    },
+    {
+      "id": "GOLDEN_PEARL",
+      "before": "金色珍珠",
+      "after": "黃金珍珠"
+    },
+    {
+      "id": "GORGET",
+      "before": "護喉甲",
+      "after": "護頸甲"
+    },
+    {
+      "id": "HELICAL_DART",
+      "before": "螺線飛鏢",
+      "after": "螺旋鏢"
+    },
+    {
+      "id": "HORN_CLEAT",
+      "before": "船夾板",
+      "after": "羊角繫纜栓"
+    },
+    {
+      "id": "INTIMIDATING_HELMET",
+      "before": "駭人頭盔",
+      "after": "威嚇頭盔"
+    },
+    {
+      "id": "JEWELED_MASK",
+      "before": "寶石面具",
+      "after": "珠寶面具"
+    },
+    {
+      "id": "JUZU_BRACELET",
+      "before": "佛珠手鍊",
+      "after": "佛珠手環"
+    },
+    {
+      "id": "KUSARIGAMA",
+      "before": "鎖鐮",
+      "after": "鎖鎌"
+    },
+    {
+      "id": "LASTING_CANDY",
+      "before": "吃不完的糖",
+      "after": "持久糖果"
+    },
+    {
+      "id": "LEAD_PAPERWEIGHT",
+      "before": "鉛製鎮紙",
+      "after": "鉛製紙鎮"
+    },
+    {
+      "id": "LEAFY_POULTICE",
+      "before": "樹葉藥膏",
+      "after": "葉片膏藥"
+    },
+    {
+      "id": "LEES_WAFFLE",
+      "before": "李家華夫餅",
+      "after": "李家鬆餅"
+    },
+    {
+      "id": "LOOMING_FRUIT",
+      "before": "布質果實",
+      "after": "織機之果"
+    },
+    {
+      "id": "LOST_COFFER",
+      "before": "失物盒",
+      "after": "失落寶匣"
+    },
+    {
+      "id": "LOST_WISP",
+      "before": "迷失鬼火",
+      "after": "迷途幽火"
+    },
+    {
+      "id": "LUCKY_FYSH",
+      "before": "招財異魚",
+      "after": "幸運異魚"
+    },
+    {
+      "id": "MASSIVE_SCROLL",
+      "before": "巨大卷軸",
+      "after": "巨型卷軸"
+    },
+    {
+      "id": "MAW_BANK",
+      "before": "巨口儲蓄罐",
+      "after": "巨口撲滿"
+    },
+    {
+      "id": "MEAT_CLEAVER",
+      "before": "切肉刀",
+      "after": "剁肉刀"
+    },
+    {
+      "id": "MINIATURE_CANNON",
+      "before": "微型大炮",
+      "after": "微型大砲"
+    },
+    {
+      "id": "MR_STRUGGLES",
+      "before": "抱抱先生",
+      "after": "苦鬥先生"
+    },
+    {
+      "id": "MUMMIFIED_HAND",
+      "before": "乾癟之手",
+      "after": "木乃伊之手"
+    },
+    {
+      "id": "MYSTIC_LIGHTER",
+      "before": "神秘打火機",
+      "after": "秘術打火機"
+    },
+    {
+      "id": "NEOWS_BONES",
+      "before": "涅奧骨骰",
+      "after": "涅奧之骨"
+    },
+    {
+      "id": "NUNCHAKU",
+      "before": "雙截棍",
+      "after": "雙節棍"
+    },
+    {
+      "id": "ODDLY_SMOOTH_STONE",
+      "before": "意外光滑的石頭",
+      "after": "異常光滑的石頭"
+    },
+    {
+      "id": "ORANGE_DOUGH",
+      "before": "橙色團塊",
+      "after": "橘色團塊"
+    },
+    {
+      "id": "ORNAMENTAL_FAN",
+      "before": "精緻摺扇",
+      "after": "精緻扇子"
+    },
+    {
+      "id": "PANDORAS_BOX",
+      "before": "潘多拉魔盒",
+      "after": "潘朵拉魔盒"
+    },
+    {
+      "id": "PAPER_PHROG",
+      "before": "紙蛙",
+      "after": "紙異蛙"
+    },
+    {
+      "id": "PARRYING_SHIELD",
+      "before": "招架盾",
+      "after": "招架盾牌"
+    },
+    {
+      "id": "PENDULUM",
+      "before": "擺動球",
+      "after": "擺錘"
+    },
+    {
+      "id": "PHIAL_HOLSTER",
+      "before": "藥瓶皮套",
+      "after": "藥瓶套"
+    },
+    {
+      "id": "PLANISPHERE",
+      "before": "活動星圖",
+      "after": "星座盤"
+    },
+    {
+      "id": "POMANDER",
+      "before": "橙型香盒",
+      "after": "香盒"
+    },
+    {
+      "id": "PRECARIOUS_SHEARS",
+      "before": "鬆動羊毛剪",
+      "after": "鬆動大剪"
+    },
+    {
+      "id": "PRECISE_SCISSORS",
+      "before": "精準剪刀",
+      "after": "精密剪刀"
+    },
+    {
+      "id": "PRESERVED_FOG",
+      "before": "醃製活霧",
+      "after": "封存活霧"
+    },
+    {
+      "id": "RADIANT_PEARL",
+      "before": "發光珍珠",
+      "after": "光輝珍珠"
+    },
+    {
+      "id": "REGAL_PILLOW",
+      "before": "皇家枕頭",
+      "after": "皇室枕頭"
+    },
+    {
+      "id": "REGALITE",
+      "before": "君王礦石",
+      "after": "皇室礦"
+    },
+    {
+      "id": "REPTILE_TRINKET",
+      "before": "爬行動物飾品",
+      "after": "爬蟲飾品"
+    },
+    {
+      "id": "RINGING_TRIANGLE",
+      "before": "三角鈴鼓",
+      "after": "鳴響三角鐵"
+    },
+    {
+      "id": "ROYAL_POISON",
+      "before": "王室猛毒",
+      "after": "王室毒藥"
+    },
+    {
+      "id": "RUINED_HELMET",
+      "before": "損毀頭盔",
+      "after": "破損頭盔"
+    },
+    {
+      "id": "SEAL_OF_GOLD",
+      "before": "黃金印",
+      "after": "黃金印記"
+    },
+    {
+      "id": "SELF_FORMING_CLAY",
+      "before": "自成型黏土",
+      "after": "自塑黏土"
+    },
+    {
+      "id": "SERE_TALON",
+      "before": "原初之爪",
+      "after": "枯萎之爪"
+    },
+    {
+      "id": "SHURIKEN",
+      "before": "手裡劍",
+      "after": "手裏劍"
+    },
+    {
+      "id": "SIGNET_RING",
+      "before": "圖章戒指",
+      "after": "印戒"
+    },
+    {
+      "id": "SILKEN_TRESS",
+      "before": "華美髮束",
+      "after": "絲綢髮束"
+    },
+    {
+      "id": "SILVER_CRUCIBLE",
+      "before": "白銀熔爐",
+      "after": "白銀坩堝"
+    },
+    {
+      "id": "SPIKED_GAUNTLETS",
+      "before": "帶刺手甲",
+      "after": "帶刺護手"
+    },
+    {
+      "id": "STONE_CALENDAR",
+      "before": "歷石",
+      "after": "石製日曆"
+    },
+    {
+      "id": "STONE_CRACKER",
+      "before": "碎石鑽",
+      "after": "碎石器"
+    },
+    {
+      "id": "STONE_HUMIDIFIER",
+      "before": "石爐加溼器",
+      "after": "石製加濕器"
+    },
+    {
+      "id": "STURDY_CLAMP",
+      "before": "堅固鉗子",
+      "after": "堅固夾具"
+    },
+    {
+      "id": "SWORD_OF_JADE",
+      "before": "玉之劍",
+      "after": "玉劍"
+    },
+    {
+      "id": "THROWING_AXE",
+      "before": "投斧",
+      "after": "飛斧"
+    },
+    {
+      "id": "TINY_MAILBOX",
+      "before": "小郵箱",
+      "after": "迷你郵箱"
+    },
+    {
+      "id": "TOASTY_MITTENS",
+      "before": "烘焙手套",
+      "after": "暖烘烘手套"
+    },
+    {
+      "id": "TOUGH_BANDAGES",
+      "before": "結實繃帶",
+      "after": "堅韌繃帶"
+    },
+    {
+      "id": "TOY_BOX",
+      "before": "玩具盒",
+      "after": "玩具箱"
+    },
+    {
+      "id": "TRI_BOOMERANG",
+      "before": "三刃迴旋鏢",
+      "after": "三刃迴力鏢"
+    },
+    {
+      "id": "TUNGSTEN_ROD",
+      "before": "鎢合金棍",
+      "after": "鎢合金棒"
+    },
+    {
+      "id": "UNDYING_SIGIL",
+      "before": "不死符文",
+      "after": "不死印記"
+    },
+    {
+      "id": "VAMBRACE",
+      "before": "臂甲",
+      "after": "臂鎧"
+    },
+    {
+      "id": "VENERABLE_TEA_SET",
+      "before": "古茶具套裝",
+      "after": "古老茶具組"
+    },
+    {
+      "id": "VERY_HOT_COCOA",
+      "before": "燙嘴可可",
+      "after": "滾燙可可"
+    },
+    {
+      "id": "VEXING_PUZZLEBOX",
+      "before": "煩人機關盒",
+      "after": "惱人謎盒"
+    },
+    {
+      "id": "VITRUVIAN_MINION",
+      "before": "維特魯威僕從",
+      "after": "維特魯威手下"
+    },
+    {
+      "id": "WAR_HAMMER",
+      "before": "戰錘",
+      "after": "戰鎚"
+    },
+    {
+      "id": "WHITE_STAR",
+      "before": "白星",
+      "after": "白色星星"
+    },
+    {
+      "id": "WINGED_BOOTS",
+      "before": "羽翼之靴",
+      "after": "有翼靴"
+    },
+    {
+      "id": "WONGO_CUSTOMER_APPRECIATION_BADGE",
+      "before": "旺購客戶感恩徽章",
+      "after": "萬戈顧客感謝徽章"
+    },
+    {
+      "id": "WONGOS_MYSTERY_TICKET",
+      "before": "旺購神秘券",
+      "after": "萬戈的神祕票券"
+    }
+  ],
+  "unmatched": [
+    {
+      "id": "CIRCLET",
+      "name": "頭環",
+      "reason": "Not listed on the reference page; existing name retained."
+    }
+  ]
+}

@@ -2136,11 +2136,17 @@ html body #card-scroll .card-detail-row > .card-detail-cell::before {display:non
 .card-detail .detail-overview {display:grid;align-content:start;gap:16px;min-width:0}
 .card-detail .detail-card-metadata {display:flex;align-items:center;justify-content:center;flex-wrap:nowrap;gap:14px;margin:0 -28px}
 .card-detail[data-card-layout=compact] {padding-bottom:8px}
-.card-detail .detail-character-metadata {display:flex;align-items:center;justify-content:space-between;flex-wrap:nowrap;gap:8px;margin:-8px 0 0;font:400 20px/1.6 Arial,"Microsoft JhengHei",sans-serif}
+.card-detail .detail-character-metadata {display:flex;align-items:center;justify-content:flex-start;flex-wrap:nowrap;gap:8px;margin:0;text-align:left;font:400 20px/1.6 Arial,"Microsoft JhengHei",sans-serif}
 html body .card-detail[data-card-layout=compact] .detail-character-metadata :is(.detail-meta-item,dd,.detail-inline-tier,.detail-plain-rarity) {font:inherit}
 .card-detail .detail-tier-footer {display:flex;justify-content:center;margin:0}
 .card-detail[data-card-layout=compact] > :is(.detail-overview,.detail-tier-footer) {box-sizing:border-box;width:100%;max-width:700px;justify-self:center}
-.card-detail .detail-type-metadata {display:flex;align-items:center;justify-content:center;margin:-8px 0}
+.card-detail .detail-type-metadata {display:grid;grid-template-columns:minmax(0,1fr) max-content minmax(0,1fr);align-items:center;gap:12px;margin:-8px 0;font:400 16px/1.6 Arial,"Microsoft JhengHei",sans-serif}
+.card-detail .detail-type-metadata > .detail-meta-item {min-width:0;white-space:nowrap;overflow-wrap:normal;font:inherit}
+html body .card-detail[data-card-layout=compact] .detail-type-metadata :is(dd,.detail-plain-rarity) {font:inherit;white-space:nowrap}
+.card-detail .detail-type-metadata > .detail-meta-item:first-child {justify-self:start}
+.card-detail .detail-type-metadata > .detail-meta-item:nth-child(2) {justify-self:center}
+.card-detail .detail-type-metadata > .detail-meta-item:last-child {justify-self:end;text-align:right}
+.card-detail .detail-type-metadata dd > img {flex-shrink:0;width:20px;height:20px}
 html body main#main-content .card-detail[data-card-layout=compact] .detail-overview > .detail-effects {margin-block:0}
 .card-detail .detail-meta-item {display:flex;align-items:center;flex:0 0 auto;white-space:nowrap;font-size:20px}
 .card-detail .detail-meta-item dt {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
@@ -2328,7 +2334,7 @@ html body main#main-content #tools #card-filter-rarity button {
   color:var(--rarity-text-color,#b9c2cc)!important;
 }
 html body main#main-content #tools #card-filter-rarity button[value=Uncommon] {--rarity-text-color:#88bcec}
-html body main#main-content #tools #card-filter-rarity button[value=Rare] {--rarity-text-color:#e3bf72}
+html body main#main-content #tools #card-filter-rarity button[value=Rare] {--rarity-text-color:#efc851}
 html body main#main-content #tools #card-filter-rarity button[value=Ancient] {--rarity-text-color:#c5a2e8}
 html body main#main-content #tools #card-filter-rarity button:is(:hover,:focus-visible,[aria-pressed=true]) {border-color:var(--rarity-text-color,#b9c2cc)!important}
 html body main#main-content #tools #card-filter-rarity button[aria-pressed=true] {background:color-mix(in srgb,var(--rarity-text-color,#b9c2cc) 22%,#0d131a)!important;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--rarity-text-color,#b9c2cc) 40%,transparent)!important}
@@ -2342,6 +2348,15 @@ html body main#main-content .card-results-footer .card-source {margin:8px 0 0;co
 html body main#main-content #tools #card-filter-character {display:grid;grid-template-columns:repeat(30,minmax(0,1fr))}
 html body main#main-content #tools #card-filter-character button {grid-column:span 6;width:100%}
 html body main#main-content #tools #card-filter-character button:is([value=Colorless],[value=Event],[value=Curse]) {grid-column:span 10}
+
+/* Power, Rare and tier A share the reference Block gold on the card page. */
+html body.cards-desktop main#main-content#main-content#main-content #tools :is(#card-filter-type button[value=Power],#card-filter-rarity button[value=Rare],#card-filter-tier button[value=A]) {
+ --selection-color:#efc851!important;--rarity-text-color:#efc851!important;--tier-text-color:#efc851!important;color:#efc851!important;
+}
+html body.cards-desktop main#main-content #card-scroll :is([data-type=Power],[data-stat-rarity=Rare],[data-label-rarity=Rare]) {color:#efc851!important}
+html body.cards-desktop main#main-content #card-scroll .detail-name-tier[data-tier=A] {--name-tier-color:#efc851;background:#efc851}
+html body.cards-desktop main#main-content #card-scroll .detail-inline-tier[data-tier=A] {color:#efc851}
+html body.cards-desktop main#main-content #card-scroll :is(.detail-tier,.detail-build-tier,.tier)[data-tier=A] {background:#efc851!important;border-color:#efc851!important}
 
 /* Category artwork replaces the navigation text labels. */
 html body>.site-header {box-sizing:border-box;width:100vw!important;max-width:none!important;margin-inline:0}
@@ -2608,6 +2623,14 @@ html body #main-content :is([data-stat-rarity=Uncommon],[data-relic-rarity=Uncom
 html body #main-content .potion-section[data-rarity=Uncommon]>.potion-section-title {color:#4f9bd9}
 html body #main-content :is(#card-filter-rarity button[value=Uncommon],[data-catalog-filter=rarity][value=Uncommon],button[data-rarity-filter=Uncommon],[data-filter-group=rarity][data-filter-value=Uncommon]) {--selection-color:#4f9bd9!important;--rarity-color:#4f9bd9!important}
 
+/* Rare matches the Block keyword on the reference True Grit page. */
+html body #main-content [data-rarity=Rare] {--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--detail-rarity-color:#efc851}
+html body #main-content .card-detail-row[data-rarity=Rare] .card-detail {--detail-rarity-color:#efc851}
+html body #main-content :is([data-stat-rarity=Rare],[data-label-rarity=Rare],[data-relic-rarity=Rare],.rarity[data-rarity=Rare],.card-text-link[data-rarity=Rare],.build-card-list a[data-rarity=Rare]) {color:#efc851!important}
+html body #main-content .potion-section[data-rarity=Rare] {--group-color:#efc851!important}
+html body #main-content .potion-section[data-rarity=Rare]>.potion-section-title {color:#efc851}
+html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Rare],[data-catalog-filter=rarity][value=Rare],button[data-rarity-filter=Rare],[data-filter-group=rarity][data-filter-value=Rare]) {--selection-color:#efc851!important;--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--rarity-text-color:#efc851!important;color:#efc851!important}
+
 /* Card tier filters use the same button presentation as Type filters. */
 html body #main-content #tools #card-filter-tier button {
   min-height:48px;padding:8px;border-radius:8px;
@@ -2681,7 +2704,7 @@ html body #card-scroll .detail-name-tier[data-tier=D] {--name-tier-color:rgb(120
 @media screen and (min-width:601px) and (min-height:501px), screen and (min-width:1001px), screen and (min-width:601px) and (hover:hover) and (pointer:fine) {
   html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
   /* Share section heights among cards in each visible row. */
-  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:not([hidden]) {grid-column:auto;grid-row:span 6;display:grid!important;grid-template-rows:subgrid;align-self:stretch}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:not([hidden]) {grid-column:auto;grid-row:span 5;display:grid!important;grid-template-rows:subgrid;align-self:stretch}
   html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-cell {display:grid!important;grid-row:1 / -1;grid-template-rows:subgrid}
   html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail {grid-row:1 / -1;grid-template-rows:subgrid;margin:0}
   html body[data-view=grid] main#main-content#main-content #card-scroll .detail-overview {grid-row:1 / -1;grid-template-rows:subgrid}
@@ -2818,7 +2841,7 @@ html body main#main-content#main-content :is(.relic-filters,.potion-filters) but
 html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=Uncommon] {--plain-rarity-color:#88bcec}
 
 html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity][value=Rare],
-html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=Rare] {--plain-rarity-color:#e3bf72}
+html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=Rare] {--plain-rarity-color:#efc851}
 
 html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity][value=Ancient],
 html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=Ancient] {--plain-rarity-color:#c5a2e8}
@@ -2831,3 +2854,18 @@ html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data
 
 html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity][value=None],
 html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=None] {--plain-rarity-color:#b9c2cc}
+
+/* Use a deeper blue consistently for Uncommon text. */
+html body #main-content [data-rarity=Uncommon] {--rarity-color:#4f9bd9!important}
+html body #main-content .card-detail-row[data-rarity=Uncommon] .card-detail {--detail-rarity-color:#4f9bd9}
+html body #main-content :is([data-stat-rarity=Uncommon],[data-relic-rarity=Uncommon],.rarity[data-rarity=Uncommon],.card-text-link[data-rarity=Uncommon],.build-card-list a[data-rarity=Uncommon]) {color:#4f9bd9!important}
+html body #main-content .potion-section[data-rarity=Uncommon]>.potion-section-title {color:#4f9bd9}
+html body #main-content :is(#card-filter-rarity button[value=Uncommon],[data-catalog-filter=rarity][value=Uncommon],button[data-rarity-filter=Uncommon],[data-filter-group=rarity][data-filter-value=Uncommon]) {--selection-color:#4f9bd9!important;--rarity-color:#4f9bd9!important}
+
+/* Rare matches the Block keyword on the reference True Grit page. */
+html body #main-content [data-rarity=Rare] {--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--detail-rarity-color:#efc851}
+html body #main-content .card-detail-row[data-rarity=Rare] .card-detail {--detail-rarity-color:#efc851}
+html body #main-content :is([data-stat-rarity=Rare],[data-label-rarity=Rare],[data-relic-rarity=Rare],.rarity[data-rarity=Rare],.card-text-link[data-rarity=Rare],.build-card-list a[data-rarity=Rare]) {color:#efc851!important}
+html body #main-content .potion-section[data-rarity=Rare] {--group-color:#efc851!important}
+html body #main-content .potion-section[data-rarity=Rare]>.potion-section-title {color:#efc851}
+html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Rare],[data-catalog-filter=rarity][value=Rare],button[data-rarity-filter=Rare],[data-filter-group=rarity][data-filter-value=Rare]) {--selection-color:#efc851!important;--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--rarity-text-color:#efc851!important;color:#efc851!important}

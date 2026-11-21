@@ -1,4 +1,7 @@
 /* Use the card catalog presentation inside ancient relic descriptions. */
+html body main#main-content :has(> .ancient-card-entry) {
+  justify-content:center;
+}
 html body main#main-content .ancient-card-entry {
   flex:0 1 470px;width:100%;max-width:100%;min-width:0;
 }

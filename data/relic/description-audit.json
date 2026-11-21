@@ -1,0 +1,24 @@
+{
+  "source": "https://slaythespire2.net/relic",
+  "retrievedDate": "2026-11-21",
+  "version": "v0.111.1",
+  "total": 298,
+  "matched": 297,
+  "changed": 1,
+  "keywordPolicy": "Existing colored keyword markup retained; only mismatched description text/resources corrected.",
+  "changes": [
+    {
+      "id": "VERY_HOT_COCOA",
+      "name": "滾燙可可",
+      "before": "Start each combat with an additional <e>4</e>.",
+      "after": "Start each combat with an additional 4<e/>."
+    }
+  ],
+  "unmatched": [
+    {
+      "id": "CIRCLET",
+      "name": "頭環",
+      "reason": "Not listed on the reference page; existing description retained."
+    }
+  ]
+}

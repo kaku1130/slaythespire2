@@ -54,3 +54,5 @@ ${textLabels} {
 ${textFilters}[value=${rarity}],
 html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=${rarity}] {--plain-rarity-color:${color}}
 `).join('');
+
+module.exports += require('./rarity-colors.cjs');

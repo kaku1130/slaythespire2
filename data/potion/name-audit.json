@@ -1,0 +1,156 @@
+{
+  "source": "https://slaythespire2.net/zh-TW/potion",
+  "retrievedDate": "2026-11-21",
+  "version": "v0.111.1",
+  "total": 63,
+  "matched": 63,
+  "changed": 29,
+  "changes": [
+    {
+      "id": "ASHWATER",
+      "before": "灰水",
+      "after": "灰燼水"
+    },
+    {
+      "id": "BLESSING_OF_THE_FORGE",
+      "before": "熔爐的祝福",
+      "after": "鑄爐祝福"
+    },
+    {
+      "id": "BLOOD_POTION",
+      "before": "鮮血藥水",
+      "after": "血液藥水"
+    },
+    {
+      "id": "BONE_BREW",
+      "before": "骨頭釀",
+      "after": "骨釀"
+    },
+    {
+      "id": "CLARITY",
+      "before": "明晰提取物",
+      "after": "明晰萃取物"
+    },
+    {
+      "id": "COSMIC_CONCOCTION",
+      "before": "宇宙藥劑",
+      "after": "宇宙調製劑"
+    },
+    {
+      "id": "CUNNING_POTION",
+      "before": "狡詐藥水",
+      "after": "狡猾藥水"
+    },
+    {
+      "id": "CURE_ALL",
+      "before": "痊癒藥水",
+      "after": "萬靈藥"
+    },
+    {
+      "id": "DROPLET_OF_PRECOGNITION",
+      "before": "預知之滴",
+      "after": "預知露滴"
+    },
+    {
+      "id": "DUPLICATOR",
+      "before": "複製藥水",
+      "after": "複製劑"
+    },
+    {
+      "id": "ENTROPIC_BREW",
+      "before": "混沌藥水",
+      "after": "熵之釀"
+    },
+    {
+      "id": "FORTIFIER",
+      "before": "固化藥水",
+      "after": "強固劑"
+    },
+    {
+      "id": "FOUL_POTION",
+      "before": "汙濁藥水",
+      "after": "惡臭藥水"
+    },
+    {
+      "id": "FYSH_OIL",
+      "before": "異魚之油",
+      "after": "異魚油"
+    },
+    {
+      "id": "GAMBLERS_BREW",
+      "before": "賭徒特釀",
+      "after": "賭徒特調"
+    },
+    {
+      "id": "GLOWWATER_POTION",
+      "before": "發光水",
+      "after": "光輝水藥水"
+    },
+    {
+      "id": "HEART_OF_IRON",
+      "before": "鐵心藥水",
+      "after": "鋼鐵之心"
+    },
+    {
+      "id": "KINGS_COURAGE",
+      "before": "王之勇氣",
+      "after": "王者之勇"
+    },
+    {
+      "id": "LIQUID_BRONZE",
+      "before": "流動銅液",
+      "after": "液態青銅"
+    },
+    {
+      "id": "LUCKY_TONIC",
+      "before": "幸運補劑",
+      "after": "幸運補藥"
+    },
+    {
+      "id": "MAZALETHS_GIFT",
+      "before": "馬薩雷斯的贈禮",
+      "after": "馬札勒斯的贈禮"
+    },
+    {
+      "id": "OROBIC_ACID",
+      "before": "歐洛巴斯之酸",
+      "after": "歐洛巴斯酸"
+    },
+    {
+      "id": "POISON_POTION",
+      "before": "毒藥水",
+      "after": "中毒藥水"
+    },
+    {
+      "id": "POTION_OF_BINDING",
+      "before": "縛魂藥水",
+      "after": "禁縛藥水"
+    },
+    {
+      "id": "POTION_OF_DOOM",
+      "before": "災厄藥水",
+      "after": "惡兆藥水"
+    },
+    {
+      "id": "RADIANT_TINCTURE",
+      "before": "明耀酊劑",
+      "after": "光輝酊劑"
+    },
+    {
+      "id": "SNECKO_OIL",
+      "before": "異蛇之油",
+      "after": "異蛇油"
+    },
+    {
+      "id": "STAR_POTION",
+      "before": "星星藥水",
+      "after": "輝星藥水"
+    },
+    {
+      "id": "TOUCH_OF_INSANITY",
+      "before": "癲狂之觸",
+      "after": "瘋狂之觸"
+    }
+  ],
+  "unmatched": []
+}

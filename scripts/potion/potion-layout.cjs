@@ -1,7 +1,7 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
-const groups=[['Common','Common','#aab6c4'],['Uncommon','Uncommon','#74b3e6'],['Rare','Rare','#e3bf72'],['Event','Event','#6ac1b4']];
+const groups=[['Common','普通','#aab6c4'],['Uncommon','罕見','#74b3e6'],['Rare','稀有','#e3bf72'],['Event','事件','#6ac1b4']];
 function formatCard(article, item) {
-  const rarity = groups.find(([value]) => value === item.rarity)?.[1] || '';
+  const rarity = item.rarity;
   return article.replace(/(<img\b[^>]*>)<div class="potion-title-row"><h2>(.*?) (<span class="catalog-name-en" lang="en">.*?<\/span>)<\/h2><div class="tag">.*?<\/div><\/div><p(?: lang="en")?>(.*?)<\/p>/s,
     (_, image, localizedName, englishName, description) => image + '<div class="potion-title-row"><h2><span class="potion-name-zh" lang="zh-Hant">' + localizedName + '</span>' + englishName + '</h2></div><p lang="en">' + description + '</p><span class="potion-rarity-row" lang="en">' + rarity + '</span>');
 }

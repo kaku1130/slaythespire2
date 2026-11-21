@@ -42,6 +42,7 @@ for(const f of ['card.html','build.html']){let h=fs.readFileSync(f,'utf8');h=h.r
 for(const kind of Object.keys(kinds).filter(kind=>!only||kind===only)){const name=file(kind);let html=fs.readFileSync(name,'utf8');if(!html.includes('src="assets/cards/search-controls.js"'))html=html.replace('</body>','<script src="assets/cards/search-controls.js"></script></body>');
 
  if(['relic','potion'].includes(kind)) html=html.replace('</body>','<link rel="stylesheet" href="assets/'+kind+'/'+kind+'-desktop.css"></body>');
+ if(kind==='relic') html=html.replace('</body>','<style>'+require('../relic/relic-card.cjs').styles+'</style></body>');
  require('../cards/desktop-page-css.cjs').writeDesktopPage(name,html);}
 }
 module.exports=buildCatalogs;
