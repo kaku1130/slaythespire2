@@ -32,13 +32,6 @@ function replaceRelics(html){
   const name=divAt(body,body.search(/<div\b/));
   const description=divAt(body,body.indexOf('<div',name.end));
   let remaining=body.slice(description.end).trim(),noteCursor=0;
-  // Replace expanded card entries with links in the relic description; keep other context.
-  while(true){
-   const card=/<div\b[^>]*class="[^"]*\bancient-card-entry\b[^"]*"[^>]*>/.exec(remaining);
-   if(!card)break;
-   const cardBlock=divAt(remaining,card.index);
-   remaining=remaining.slice(0,cardBlock.start)+remaining.slice(cardBlock.end);
-  }
   while(true){
    const note=/<div\b[^>]*style="[^"]*border-image:[^"]*"[^>]*>/.exec(remaining.slice(noteCursor));
    if(!note)break;
@@ -49,7 +42,7 @@ function replaceRelics(html){
   let previous;
   do{previous=remaining;remaining=remaining.replace(/<div\b[^>]*>\s*<\/div>/g,'').trim();}while(remaining!==previous);
   const extras=remaining?'<div class="ancient-relic-extras">'+remaining+'</div>':'';
-  const replacement=emphasizeCardNames(render(relic,{image,id:match[1],className:'ancient-relic-entry',extras}));
+  const replacement=emphasizeCardNames(render(relic,{image,id:match[1],className:'ancient-relic-entry',prefix:'../../',extras}));
   html=html.slice(0,block.start)+replacement+html.slice(block.end);cursor=block.start+replacement.length;
  }
  return html;

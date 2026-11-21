@@ -215,7 +215,6 @@ html body main#main-content .filters .catalog-search-tools>button.catalog-random
     for (const filter of main.querySelectorAll('[data-catalog-filter][aria-pressed="true"]')) {
       (selected[filter.dataset.catalogFilter] ??= new Set()).add(filter.value);
     }
-    if (kind === 'relic' && selected.rarity?.has('Common')) selected.rarity.add('Starter');
     const names = [...main.querySelectorAll('.entry.' + kind)]
       .filter(entry => Object.entries(selected).every(([key, values]) => values.has(entry.dataset[key])))
       .map(entry => entry.querySelector(kind === 'relic' ? '.relic-name-en' : '.catalog-name-en')?.textContent.trim()).filter(Boolean);
@@ -243,15 +242,26 @@ html body main#main-content .filters .catalog-search-tools>button.catalog-random
   button.setAttribute('aria-controls', panels.map(panel => panel.id).join(' '));
   button.innerHTML = '<span aria-hidden="true">&#9776;</span>';
   random.after(button);
+  const kind = controls.id === 'tools' ? 'card' : controls.classList.contains('relic-filters') ? 'relic' : 'potion';
+  const key = 'sts2_' + kind + '_menu_open';
+  let expanded = true;
+  try {
+    const cookie = location.protocol === 'file:' ? null : document.cookie.split(';').map(value => value.trim()).find(value => value.startsWith(key + '='));
+    const value = location.protocol === 'file:' ? localStorage.getItem(key) : cookie?.slice(key.length + 1);
+    if (value === 'false') expanded = false;
+  } catch {}
+  function setExpanded(value) {
+    button.setAttribute('aria-expanded', String(value));
+    controls.classList.toggle('filter-menu-open', value);
+    controls.classList.toggle('filter-menu-closed', !value);
+  }
+  setExpanded(expanded);
   button.addEventListener('click', () => {
-    const expanded = button.getAttribute('aria-expanded') !== 'true';
-    button.setAttribute('aria-expanded', String(expanded));
-    controls.classList.toggle('filter-menu-open', expanded);
-  });
-  document.addEventListener('click', event => {
-    if (button.getAttribute('aria-expanded') !== 'true') return;
-    if (button.contains(event.target) || panels.some(panel => panel.contains(event.target))) return;
-    button.setAttribute('aria-expanded', 'false');
-    controls.classList.remove('filter-menu-open');
+    const value = button.getAttribute('aria-expanded') !== 'true';
+    setExpanded(value);
+    try {
+      if (location.protocol === 'file:') localStorage.setItem(key, String(value));
+      else document.cookie = key + '=' + value + '; Max-Age=31536000; Path=/; SameSite=Lax' + (location.protocol === 'https:' ? '; Secure' : '');
+    } catch {}
   });
 })();

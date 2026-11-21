@@ -276,3 +276,21 @@ html body.cards-desktop main#main-content #card-scroll :is([data-type=Power],[da
 html body.cards-desktop main#main-content #card-scroll .detail-name-tier[data-tier=A] {--name-tier-color:#efc851;background:#efc851}
 html body.cards-desktop main#main-content #card-scroll .detail-inline-tier[data-tier=A] {color:#efc851}
 html body.cards-desktop main#main-content #card-scroll :is(.detail-tier,.detail-build-tier,.tier)[data-tier=A] {background:#efc851!important;border-color:#efc851!important}
+
+/* Shared card header and footer across card, build and ancient pages. */
+html body main#main-content .card-detail .detail-heading-row {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr) minmax(0,1fr);align-items:start;gap:8px;width:100%;min-width:0}
+html body main#main-content .card-detail .detail-heading-character {display:block;width:28px;height:28px;object-fit:contain;justify-self:start}
+html body main#main-content .card-detail .detail-heading-row>.detail-name-zh {min-width:0;width:100%;overflow-wrap:anywhere}
+html body main#main-content .card-detail .detail-heading-rarity {justify-self:end;max-width:100%;overflow-wrap:anywhere;text-align:right;font:600 16px/1.4 Arial,sans-serif;color:var(--detail-rarity-color)}
+html body main#main-content .card-detail .detail-bottom-tier {display:flex;justify-content:center;align-items:end;min-height:30px}
+html body main#main-content .card-detail .detail-bottom-tier>.detail-name-tier {display:inline-flex;align-items:center;justify-content:center;min-width:36px;min-height:30px;padding:0 6px;border-radius:4px;color:#fff;font:700 24px/1.25 Arial,sans-serif;text-decoration:none;background:var(--name-tier-color,#788491)}
+html body main#main-content .card-detail .detail-type-metadata:has(>.detail-meta-item:only-child) {display:flex;justify-content:center;text-align:center}
+html body main#main-content .card-detail .detail-type-metadata>.detail-meta-item:only-child {justify-self:center;justify-content:center;text-align:center}
+html body main#main-content .card-detail .detail-overview {grid-template-columns:minmax(0,1fr)}
+html body main#main-content .card-detail .detail-overview>header {min-width:0;width:100%}
+
+html body main#main-content .card-detail .detail-bottom-tier>.detail-name-tier[data-tier=S] {--name-tier-color:rgb(225, 112, 132)}
+html body main#main-content .card-detail .detail-bottom-tier>.detail-name-tier[data-tier=A] {--name-tier-color:rgb(227, 191, 114)}
+html body main#main-content .card-detail .detail-bottom-tier>.detail-name-tier[data-tier=B] {--name-tier-color:rgb(105, 176, 222)}
+html body main#main-content .card-detail .detail-bottom-tier>.detail-name-tier[data-tier=C] {--name-tier-color:rgb(105, 183, 139)}
+html body main#main-content .card-detail .detail-bottom-tier>.detail-name-tier[data-tier=D] {--name-tier-color:rgb(120, 132, 145)}

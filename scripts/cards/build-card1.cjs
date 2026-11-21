@@ -11,7 +11,7 @@ const plain = value => value.replace(/<\/?(?:article|section|div|p|header|h[1-6]
 }).replace(/\s+/g, ' ').trim();
 const renderArticle = require('./render-card-detail.cjs');
 function render(card) {
-  const article=renderArticle(card,{localBuilds,showBuilds:false,showKeywords:false,searchableEffects:true,rarityBeforeType:true,showEffectNotes:false,metadataAboveEffects:true,tierBesideName:true});
+  const article=renderArticle(card,{localBuilds,showBuilds:false,showKeywords:false,searchableEffects:true,rarityBeforeType:true,showEffectNotes:false,metadataAboveEffects:true,cornerMetadata:true});
   return '<td class="card-detail-cell" data-field="detail" role="cell" colspan="10">'+article+'</td>';
 }
 function attribute(tag, name, value) {

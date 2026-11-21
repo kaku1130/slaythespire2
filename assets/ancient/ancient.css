@@ -874,10 +874,10 @@ html body #card-scroll .detail-name-tier[data-tier=D] {--name-tier-color:rgb(120
 @media screen and (min-width:601px) and (min-height:501px), screen and (min-width:1001px), screen and (min-width:601px) and (hover:hover) and (pointer:fine) {
   html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
   /* Share section heights among cards in each visible row. */
-  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:not([hidden]) {grid-column:auto;grid-row:span 5;display:grid!important;grid-template-rows:subgrid;align-self:stretch}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:not([hidden]) {grid-column:auto;grid-row:span 6;display:grid!important;grid-template-rows:subgrid;align-self:stretch}
   html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-cell {display:grid!important;grid-row:1 / -1;grid-template-rows:subgrid}
   html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail {grid-row:1 / -1;grid-template-rows:subgrid;margin:0}
-  html body[data-view=grid] main#main-content#main-content #card-scroll .detail-overview {grid-row:1 / -1;grid-template-rows:subgrid}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .detail-overview {grid-row:1 / 6;grid-template-rows:subgrid}
   html body[data-view=grid] main#main-content#main-content #card-scroll .detail-overview>header {display:grid;grid-row:span 2;grid-template-rows:subgrid}
   html body[data-view=grid] main#main-content#main-content #card-scroll .detail-title {display:grid;grid-row:1 / -1;grid-template-rows:subgrid;justify-items:center;align-items:start;min-width:0}
   html body[data-view=grid] main#main-content#main-content #card-scroll .detail-name-line {align-items:start}
@@ -885,6 +885,12 @@ html body #card-scroll .detail-name-tier[data-tier=D] {--name-tier-color:rgb(120
 @media screen and (min-width:1025px) and (hover:hover) and (pointer:fine) {
   html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:repeat(4,minmax(0,1fr))}
 }
+html body #card-scroll .detail-heading-row {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr) minmax(0,1fr);align-items:start;gap:8px;width:100%;min-width:0}
+html body #card-scroll .detail-heading-character {display:block;width:28px;height:28px;object-fit:contain;justify-self:start}
+html body #card-scroll .detail-heading-row>.detail-name-zh {min-width:0;width:100%;overflow-wrap:anywhere}
+html body #card-scroll .detail-heading-rarity {justify-self:end;max-width:100%;overflow-wrap:anywhere;text-align:right;font:600 16px/1.4 Arial,sans-serif;color:var(--detail-rarity-color)}
+html body #card-scroll .detail-bottom-tier {display:flex;justify-content:center;align-items:end;min-height:30px}
+html body #card-scroll .detail-bottom-tier>.detail-name-tier {display:inline-flex;align-items:center;justify-content:center;min-width:36px;min-height:30px;padding:0 6px;border-radius:4px;color:#fff;font:700 24px/1.25 Arial,sans-serif;text-decoration:none;background:var(--name-tier-color,#788491)}
 /* Keyword notes share the centered artwork width on every device. */
 html body main#main-content#main-content .card-detail>.detail-keyword {
   box-sizing:border-box;width:100%;justify-self:stretch;margin-inline:0;
@@ -1464,10 +1470,10 @@ html body #card-scroll .detail-name-tier[data-tier=D] {--name-tier-color:rgb(120
 @media screen and (min-width:601px) and (min-height:501px), screen and (min-width:1001px), screen and (min-width:601px) and (hover:hover) and (pointer:fine) {
   html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
   /* Share section heights among cards in each visible row. */
-  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:not([hidden]) {grid-column:auto;grid-row:span 5;display:grid!important;grid-template-rows:subgrid;align-self:stretch}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:not([hidden]) {grid-column:auto;grid-row:span 6;display:grid!important;grid-template-rows:subgrid;align-self:stretch}
   html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-cell {display:grid!important;grid-row:1 / -1;grid-template-rows:subgrid}
   html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail {grid-row:1 / -1;grid-template-rows:subgrid;margin:0}
-  html body[data-view=grid] main#main-content#main-content #card-scroll .detail-overview {grid-row:1 / -1;grid-template-rows:subgrid}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .detail-overview {grid-row:1 / 6;grid-template-rows:subgrid}
   html body[data-view=grid] main#main-content#main-content #card-scroll .detail-overview>header {display:grid;grid-row:span 2;grid-template-rows:subgrid}
   html body[data-view=grid] main#main-content#main-content #card-scroll .detail-title {display:grid;grid-row:1 / -1;grid-template-rows:subgrid;justify-items:center;align-items:start;min-width:0}
   html body[data-view=grid] main#main-content#main-content #card-scroll .detail-name-line {align-items:start}
@@ -1475,6 +1481,12 @@ html body #card-scroll .detail-name-tier[data-tier=D] {--name-tier-color:rgb(120
 @media screen and (min-width:1025px) and (hover:hover) and (pointer:fine) {
   html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:repeat(4,minmax(0,1fr))}
 }
+html body #card-scroll .detail-heading-row {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr) minmax(0,1fr);align-items:start;gap:8px;width:100%;min-width:0}
+html body #card-scroll .detail-heading-character {display:block;width:28px;height:28px;object-fit:contain;justify-self:start}
+html body #card-scroll .detail-heading-row>.detail-name-zh {min-width:0;width:100%;overflow-wrap:anywhere}
+html body #card-scroll .detail-heading-rarity {justify-self:end;max-width:100%;overflow-wrap:anywhere;text-align:right;font:600 16px/1.4 Arial,sans-serif;color:var(--detail-rarity-color)}
+html body #card-scroll .detail-bottom-tier {display:flex;justify-content:center;align-items:end;min-height:30px}
+html body #card-scroll .detail-bottom-tier>.detail-name-tier {display:inline-flex;align-items:center;justify-content:center;min-width:36px;min-height:30px;padding:0 6px;border-radius:4px;color:#fff;font:700 24px/1.25 Arial,sans-serif;text-decoration:none;background:var(--name-tier-color,#788491)}
 /* Keyword notes share the centered artwork width on every device. */
 html body main#main-content#main-content .card-detail>.detail-keyword {
   box-sizing:border-box;width:100%;justify-self:stretch;margin-inline:0;

@@ -1,11 +1,11 @@
-const {formatCard}=require('./relic-layout.cjs');
+const {formatCatalogCard}=require('./relic-layout.cjs');
 const {description}=require('../potion/potion-controls.cjs');
 const colors=require('../cards/rarity-text-colors.cjs');
 const escape=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-function render(relic,{image,id='',className='',extras=''}={}){
+function render(relic,{image,id='',className='',extras='',prefix=''}={}){
  if(!image)throw Error('Missing relic image: '+relic.id);
  const article='<article class="entry relic catalog-relic-card '+escape(className)+'"'+(id?' id="'+escape(id)+'"':'')+' data-relic-id="'+escape(relic.id)+'" data-rarity="'+escape(relic.rarity)+'"><img src="'+escape(image)+'" alt="'+escape(relic.name)+'" width="72" height="72"><div class="relic-title-row"><h2>'+escape(relic.name)+' <span class="catalog-name-en" lang="en">'+escape(relic.nameEn)+'</span></h2><div class="tag"></div></div><p lang="en">'+description(relic).replaceAll('potion-keyword','relic-keyword')+'</p></article>';
- return formatCard(article,relic).replace('</article>',extras+'</article>');
+ return formatCatalogCard(article,relic,{prefix}).replace('</article>',extras+'</article>');
 }
 const card='html body main#main-content .catalog-relic-card[data-relic-id]';
 const styles=`
@@ -20,4 +20,12 @@ ${card} .relic-keyword {color:#efc851;font-weight:500}
 ${card} .relic-rarity-row {display:flex;justify-content:center;font:600 20px/1.4 Arial,"Microsoft JhengHei",sans-serif}
 html body main#main-content#main-content .catalog-relic-card .relic-rarity-row [data-relic-rarity] {padding:0;border:0!important;background:transparent!important;color:var(--plain-rarity-color)!important;font:inherit}
 `+Object.entries(colors).map(([rarity,color])=>`${card}[data-rarity=${rarity}] {--plain-rarity-color:${color}}`).join('\n');
-module.exports={render,styles};
+module.exports={render,styles:styles+`
+html body main#main-content .catalog-relic-card .relic-icon-row {display:grid;grid-template-columns:minmax(0,1fr) 72px minmax(0,1fr);gap:8px;align-items:start;min-width:0;width:100%}
+html body main#main-content .catalog-relic-card .relic-icon-row>img {grid-column:2;grid-row:1;display:block;width:72px;height:72px;object-fit:contain;margin:0}
+html body main#main-content .catalog-relic-card .relic-pool-corner {grid-column:1;grid-row:1;justify-self:start;display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:4px;min-width:0;max-width:100%;margin:0;color:var(--pool-color,#aab6c4);font:600 20px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+html body main#main-content .catalog-relic-card .relic-pool-corner>span {display:none}
+html body main#main-content#main-content .catalog-relic-card .relic-icon-row>.relic-rarity-row {grid-column:3;grid-row:1;justify-self:end;display:block;width:auto;max-width:100%;min-width:0;margin:0;text-align:right;font:600 16px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+html body main#main-content#main-content .catalog-relic-card .relic-icon-row>.relic-rarity-row>[data-relic-rarity] {display:block;max-width:100%;overflow-wrap:anywhere;text-align:right}
+html body main#main-content .catalog-relic-card .relic-pool-corner>img {display:block;width:28px;height:28px;object-fit:contain;margin:0;flex:none}
+`};

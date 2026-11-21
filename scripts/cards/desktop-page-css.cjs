@@ -6,6 +6,7 @@ function writeDesktopPage(page, html, {searchControls = true} = {}) {
   if (!html.includes('src="assets/cards/page-scroll.js"')) html = html.replace('</body>', '<script src="assets/cards/page-scroll.js"></script></body>');
   if (searchControls && !html.includes('src="assets/cards/search-controls.js"')) html = html.replace('</body>', '<script src="assets/cards/search-controls.js"></script></body>');
   const basename = path.basename(page, '.html');
+  if (['build','relic','potion'].includes(basename) && !html.includes('src="assets/cards/filter-memory.js"')) html = html.replace('</body>', '<script src="assets/cards/filter-memory.js"></script></body>');
   const name = ({card:'cards',build:'builds'})[basename] || basename;
   const stylesheet = path.posix.join('assets', name, name + '.css');
   const styleTags = /<style>([\s\S]*?)<\/style>|<link\b(?=[^>]*\brel="stylesheet")[^>]*\bhref="([^"]+)"[^>]*>/g;

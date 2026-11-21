@@ -8,9 +8,9 @@ html body main#main-content .search-clear .search-icon{font-size:20px;line-heigh
 html body main#main-content:is(.event-browser,.monster-browser,.encounter-browser) .chapter-filters>.search-control{order:-1;flex:0 0 auto}
 
 
-/* Keep filter menus collapsed until their menu button is opened. */
-html body main#main-content #tools:not(.filter-menu-open)>:is(.card-filter-rows,.card-action-row),
-html body main#main-content .filters:not(.filter-menu-open)>.catalog-filter-rows {display:none!important}
+/* Show filter menus by default; the button restores their remembered state. */
+html body main#main-content #tools.filter-menu-closed>:is(.card-filter-rows,.card-action-row),
+html body main#main-content .filters.filter-menu-closed>.catalog-filter-rows {display:none!important}
 html body main#main-content #tools .card-search,
 html body main#main-content .filters .catalog-search-tools:has(.filter-menu-toggle) {display:grid!important;grid-template-columns:minmax(0,1fr) 52px 52px!important;gap:8px;align-items:center;width:100%;min-width:0}
 html body main#main-content .filters:has(.filter-menu-toggle) {display:flex!important;flex-direction:column;align-items:stretch}

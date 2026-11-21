@@ -19,3 +19,11 @@ html body main#main-content .build-inline-card-effect .guide-keyword {
  font-weight:400;color:inherit;
 }
 `;
+
+module.exports += `
+html body main#main-content .build-content .build-guide-cards {display:grid;grid-template-columns:minmax(0,1fr);gap:24px;min-width:0}
+html body main#main-content .build-guide-card {min-width:0}
+html body main#main-content .build-guide-card>.card-detail {box-sizing:border-box;width:100%;max-width:none;min-width:0;margin:0}
+html body main#main-content .build-guide-card .detail-title {font-size:2rem;line-height:1.25}
+html body main#main-content .build-guide-card .detail-title :is(.detail-name-zh,.detail-name-en) {font:inherit}
+`;

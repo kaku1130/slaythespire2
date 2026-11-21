@@ -9,6 +9,8 @@ const chinese=new Map(JSON.parse(fs.readFileSync('data/cards/cards-zh-TW.json','
 const byId=new Map(cards.map(c=>[c.id,c]));
 const relicCatalog=new Map(JSON.parse(fs.readFileSync('data/relic/catalog.json','utf8')).items.map(relic=>[relic.className,relic]));
 const renderRelicCard=require('../relic/relic-card.cjs').render;
+const cardDetails=new Map(JSON.parse(fs.readFileSync('data/cards/english-details.json','utf8')).cards.map(card=>[card.id,card]));
+const renderCardArticle=require('../cards/render-card-detail.cjs');
 const cardTiers=new Map(JSON.parse(fs.readFileSync('data/cards/tiers-source.json','utf8')).rankings.map(card=>[card.id,card.tier]));
 
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -19,7 +21,7 @@ for(const [id,links] of Object.entries(source.byCard))for(const b of links){cons
 assert.equal(builds.size,25);
 function renderCardLink(c){return '<a class="card-text-link" href="card.html#card-'+esc(c.id)+'" data-rarity="'+c.rarity+'">'+esc(chinese.get(c.id).name)+'</a>';}
 function renderCardWithTier(c){const tier=cardTiers.get(c.id);return '<span class="build-card-entry" data-card-tier-id="'+esc(c.id)+'">'+renderCardLink(c)+'<span class="card-tier-badge" data-tier="'+(tier||'unranked')+'" aria-label="Tier '+(tier||'未評級')+'">'+(tier||'—')+'</span></span>';}
-function renderCards(list){const rarityOrder=['Basic','Common','Uncommon','Rare','Ancient','Event','Curse','Quest'];const rank=c=>{const index=rarityOrder.indexOf(c.rarity);return index<0?rarityOrder.length:index;};const tierRank=c=>{const index=['S','A','B','C','D'].indexOf(cardTiers.get(c.id));return index<0?5:index;};return [...list].sort((a,b)=>rank(a)-rank(b)||tierRank(a)-tierRank(b)||a.name.localeCompare(b.name,'en')).map(renderCardLink).join('、');}
+function renderCards(list,context){const rarityOrder=['Basic','Common','Uncommon','Rare','Ancient','Event','Curse','Quest'];const rank=c=>{const index=rarityOrder.indexOf(c.rarity);return index<0?rarityOrder.length:index;};const tierRank=c=>{const index=['S','A','B','C','D'].indexOf(cardTiers.get(c.id));return index<0?5:index;};return [...list].sort((a,b)=>rank(a)-rank(b)||tierRank(a)-tierRank(b)||a.name.localeCompare(b.name,'en')).map(card=>'<div class="build-guide-card card-detail-row" data-card-id="'+esc(card.id)+'" data-rarity="'+esc(card.rarity)+'">'+renderCardArticle(cardDetails.get(card.id),{prefix:'build-card-'+context+'-'+card.id.toLowerCase(),showBuilds:false,showKeywords:false,metadataAboveEffects:true,cornerMetadata:true})+'</div>').join('');}
 
 function renderLinkedStrategy(text,g){
  const candidates=[...new Set([...g.core,...g.support,...cards.filter(card=>card.pool===g.characterPool).map(card=>card.id)])].flatMap(id=>{

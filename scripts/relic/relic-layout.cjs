@@ -23,9 +23,26 @@ function formatCard(article, item, {localizedRarity = false} = {}) {
     });
 }
 
-function render(content,items){const articles=new Map([...content.matchAll(/<article\b[^>]*id="([^"]+)"[\s\S]*?<\/article>/g)].map(m=>[m[1],m[0]]));return groups.map(([pool,label,color])=>{const members=items.filter(x=>x.pool===pool);return members.length?'<section class="relic-section" data-pool="'+pool+'" style="--pool-color:'+color+'"><h2 class="relic-section-title"><img class="relic-group-icon" src="assets/cards/icons/'+iconNames[pool]+'.webp" alt="" width="28" height="28">'+label+' <span class="relic-section-count">('+members.length+')</span></h2><div class="catalog">'+members.map(x=>formatCard(articles.get(x.id).replace('class="entry relic"','class="entry relic catalog-relic-card" data-relic-id="'+x.id+'"'),x,{localizedRarity:false})).join('')+'</div></section>':'';}).join('');}
+function formatCatalogCard(article,item,options={}){
+  const pool=groups.find(group=>group[0]===item.pool);
+  const label=pool?.[1]||item.pool;
+  const icon=iconNames[item.pool]||'other';
+  const rarity='<span class="relic-rarity-row" lang="en">'+renderClassification(item.rarity)+'</span>';
+  return formatCard(article,item,options)
+    .replace(/<div class="relic-rarity-row"[^>]*>[\s\S]*?<\/div>/,'')
+    .replace(/(<img\b[^>]*>)/,'<div class="relic-icon-row" style="--pool-color:'+pool[2]+'"><span class="relic-pool-corner" lang="en" title="'+escapeHtml(label)+'" aria-label="'+escapeHtml(label)+'"><img src="'+(options.prefix||'')+'assets/cards/icons/'+icon+'.webp" alt="" width="20" height="20"><span>'+escapeHtml(label)+'</span></span>$1'+rarity+'</div>');
+}
+
+function render(content,items){
+ const articles=new Map([...content.matchAll(/<article\b[^>]*id="([^"]+)"[\s\S]*?<\/article>/g)].map(m=>[m[1],m[0]]));
+ const colors=require('../cards/rarity-text-colors.cjs');
+ return ['Starter','Common','Uncommon','Rare','Ancient','Shop','Event','None'].map(rarity=>{
+  const members=items.filter(x=>x.rarity===rarity),color=colors[rarity];
+  return members.length?'<section class="relic-section" data-rarity="'+rarity+'" style="--pool-color:'+color+'"><h2 class="relic-section-title" lang="en">'+rarity+' <span class="relic-section-count">('+members.length+')</span></h2><div class="catalog">'+members.map(x=>formatCatalogCard(articles.get(x.id).replace('class="entry relic"','class="entry relic catalog-relic-card" data-relic-id="'+x.id+'"'),x,{localizedRarity:false})).join('')+'</div></section>':'';
+ }).join('');
+}
 const styles='.relic-section{margin:0 0 28px;padding:20px;border:1px solid var(--pool-color);border-radius:12px;background:color-mix(in srgb,var(--pool-color) 3%,var(--bg))}.relic-group-icon{width:28px;height:28px;object-fit:contain;flex-shrink:0}@media(max-width:640px){.relic-section{padding:12px}}.relic-section-title{display:flex;align-items:center;gap:10px;color:var(--pool-color);font-size:24px;margin:0 0 16px}.relic-section-count{font-size:16px;font-weight:400;color:var(--muted)}.relic-section .catalog{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.relic[data-rarity=Ancient]{--rarity-color:#c084fc}.relic[data-rarity=Shop]{--rarity-color:#b08968}.relic[data-rarity=Starter],.relic[data-rarity=None]{--rarity-color:#a1a1aa}@media(max-width:1023px){.relic-section .catalog{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:639px){.relic-section .catalog{grid-template-columns:1fr}}';
-module.exports={compare,render,styles,formatCard,renderClassification};
+module.exports={compare,render,styles,formatCard,formatCatalogCard,renderClassification};
 
 module.exports.styles += `
 .relic-card-text h3 .relic-card-classification { display: inline; margin-inline-start: 6px; font-weight: 400; }
