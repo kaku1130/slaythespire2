@@ -3,6 +3,7 @@ const search = document.getElementById('search');
 const buttons = [...document.querySelectorAll('[data-catalog-filter]')];
 function filter() {
   const query = search.value.trim().toLowerCase();
+  const queries = [...new Set(query.split(/[\s、，,+]+/).filter(Boolean))];
   const selected = {};
   for (const button of buttons) {
     const key = button.dataset.catalogFilter;
@@ -16,7 +17,7 @@ function filter() {
     const exact = query.length >= 2 && query.startsWith('"') && query.endsWith('"');
     const matchesSearch = exact
       ? [...entry.querySelectorAll('.relic-name-en,.relic-name-zh,.catalog-name-en,.potion-name-zh')].some(node => node.textContent.trim().toLowerCase() === query.slice(1, -1))
-      : entry.textContent.toLowerCase().includes(query);
+      : !queries.length || queries.some(value => entry.textContent.toLowerCase().includes(value));
     entry.hidden = !matches || !matchesSearch;
     if (!entry.hidden) count++;
   }

@@ -24,10 +24,11 @@
     main.prepend(toolbar);
   }
   if (!search) return;
-  // Clear catalog selections before each page applies a new keyword search.
+  // Keep the card character scope while clearing the other catalog selections.
   search.addEventListener('input', () => {
     if (!search.value.trim()) return;
     for (const button of main.querySelectorAll('#card-filter-character button,#card-filter-type button,#card-filter-rarity button,#card-filter-tier button,button[data-catalog-filter]')) {
+      if (cardPage && button.closest('#card-filter-character')) continue;
       button.setAttribute('aria-pressed', 'false');
     }
     delete search.dataset.preferredPool;

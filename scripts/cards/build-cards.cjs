@@ -360,7 +360,9 @@ for (const group of multiFilters) {
   group.addEventListener('click', event => {
     const button = event.target.closest('button');
     if (!button) return;
-    button.setAttribute('aria-pressed', String(button.getAttribute('aria-pressed') !== 'true'));
+    const selected = button.getAttribute('aria-pressed') === 'true';
+    if (group === characterFilter) setFilterValues(group, selected ? [] : [button.value]);
+    else button.setAttribute('aria-pressed', String(!selected));
     filter();
   });
 }
@@ -371,6 +373,29 @@ const sections=[...document.querySelectorAll('section[data-pool]')];
 search.value='';
 function selectedCardFilters() {
   return {characters:selectedValues(characterFilter), rarities:selectedValues(rarityFilter), types:selectedValues(typeFilter), tiers:selectedValues(tierFilter)};
+}
+const cardFilterCookie='sts2_card_filters';
+function restoreCardFilters() {
+  setFilterValues(characterFilter, ['Ironclad']);
+  try {
+    const cookie=document.cookie.split(';').map(value=>value.trim()).find(value=>value.startsWith(cardFilterCookie+'='));
+    if(!cookie)return;
+    const saved=JSON.parse(decodeURIComponent(cookie.slice(cardFilterCookie.length+1)));
+    if(!saved||typeof saved!=='object')return;
+    for(const [key,group] of [['characters',characterFilter],['types',typeFilter],['rarities',rarityFilter],['tiers',tierFilter]]) {
+      if(!Array.isArray(saved[key]))continue;
+      const allowed=new Set([...group.querySelectorAll('button')].map(button=>button.value));
+      const values=saved[key].filter(value=>allowed.has(value));
+      setFilterValues(group,key==='characters'?values.slice(0,1):values);
+    }
+  } catch {}
+}
+function rememberCardFilters() {
+  try {
+    const value=encodeURIComponent(JSON.stringify(Object.fromEntries(Object.entries(selectedCardFilters()).map(([key,values])=>[key,[...values]]))));
+    if(document.cookie.split(';').some(cookie=>cookie.trim()===cardFilterCookie+'='+value))return;
+    document.cookie=cardFilterCookie+'='+value+'; Max-Age=31536000; Path=/; SameSite=Lax'+(location.protocol==='https:'?'; Secure':'');
+  } catch {}
 }
 function cardMatchesFilters(row, section, selected) {
   const {characters, rarities, types, tiers}=selected;
@@ -395,6 +420,7 @@ function filter() {
   document.getElementById('empty').hidden=count!==0;
   document.getElementById('card-filter-result').textContent='符合張數 / 總卡片數：'+count+' / ${cards.length}';
   document.getElementById('card-scroll').scrollTo({top:0,left:0,behavior:'instant'});
+  rememberCardFilters();
 }
 
 document.getElementById('aoe-toggle').addEventListener('click',()=>{
@@ -405,7 +431,7 @@ document.getElementById('aoe-toggle').addEventListener('click',()=>{
   search.dispatchEvent(new Event('input',{bubbles:true}));
 });
 function cardSearchQueries() {
-  return [...new Set(search.value.toLowerCase().split(/[、，,+]+/).map(value => value.trim().replace(/\\s+/g, ' ')).filter(Boolean))];
+  return [...new Set(search.value.toLowerCase().split(/[\\s、，,+]+/).filter(Boolean))];
 }
 function cardMatchesSearch(row, queries) {
   const query = search.value.trim().toLowerCase();
@@ -421,7 +447,7 @@ for(const button of tierChoices)button.addEventListener('click',()=>{
   button.setAttribute('aria-pressed',String(button.getAttribute('aria-pressed')!=='true'));
   filter();
 });
-setFilterValues(characterFilter, ['Ironclad']);
+restoreCardFilters();
 filter();
 
 
