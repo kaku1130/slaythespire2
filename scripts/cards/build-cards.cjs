@@ -19,7 +19,7 @@ function renderCardFilters(groups) {
   return '<div class="card-filter-rows" lang="en">' + groups.map(([label,key,values]) => {
     let buttons = values.map(value => {
       const selected = key === 'character' && value === 'Ironclad';
-      return '<button type="button" value="' + value + '" aria-pressed="' + selected + '">' + ((key !== 'rarity' && filterLabels[value]) || value || 'All') + '</button>';
+      return '<button type="button" value="' + value + '" aria-pressed="' + selected + '"' + (key === 'energy' && value === 'gain' ? ' aria-label="增加能量" title="增加能量"' : '') + '>' + (key === 'energy' && value === 'gain' ? '' : ((key !== 'rarity' && filterLabels[value]) || value || 'All')) + (key === 'energy' ? resourceIcons.energy : '') + (key === 'energy' && value === 'gain' ? '<span>Gain Energy</span>' : '') + '</button>';
     }).join('');
     if (key === 'character') buttons = require('./character-filter.cjs')(buttons, {
       iconPaths:{Colorless:'assets/cards/icons/colorless.webp', Event:'assets/cards/icons/event.webp', Curse:'assets/cards/icons/other.webp'},
@@ -337,7 +337,7 @@ html body main#main-content,html body .site-header>.site-header-inner{width:100%
 ${fs.readFileSync('assets/cards/compact-cards.css','utf8')}
 ${fs.readFileSync('assets/cards/search-control.css','utf8')}
 </style></head><body data-view="grid">${navigation.renderHeader('cards')}<main id="main-content">
-<div class="tools" id="tools"><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><div class="search-control"><input id="search" type="text" inputmode="search" role="searchbox" placeholder="搜尋關鍵字" autocomplete="off"><button type="button" class="search-clear" aria-label="清除搜尋關鍵字" title="清除搜尋關鍵字"><span class="search-icon" aria-hidden="true">🔍</span></button></div>${cardGrid.actionControls}</div>${renderCardFilters([['Character','character',["Ironclad","Silent","Defect","Regent","Necrobinder","Colorless","Event","Curse"]],['Type','type',["Attack","Skill","Power"]],['Rarity','rarity',["Common","Uncommon","Rare","Ancient"]]])}${renderCardActions()}<p id="card-filter-result" class="card-filter-result" role="status" aria-live="polite" aria-atomic="true">符合張數 / 總卡片數：0 / ${cards.length}</p></div>
+<div class="tools" id="tools"><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><div class="search-control"><input id="search" type="text" inputmode="search" role="searchbox" placeholder="搜尋關鍵字" autocomplete="off"><button type="button" class="search-clear" aria-label="清除搜尋關鍵字" title="清除搜尋關鍵字"><span class="search-icon" aria-hidden="true">🔍</span></button></div>${cardGrid.actionControls}</div>${renderCardFilters([['Character','character',["Ironclad","Silent","Defect","Regent","Necrobinder","Colorless","Event","Curse"]],['Type','type',["Attack","Skill","Power"]],['Rarity','rarity',["Common","Uncommon","Rare","Ancient"]]])}${renderCardActions()}${renderCardFilters([['Energy','energy',['0','1','2','3+','X','gain']]])}<p id="card-filter-result" class="card-filter-result" role="status" aria-live="polite" aria-atomic="true">符合張數 / 總卡片數：0 / ${cards.length}</p></div>
 <div id="card-scroll" class="card-scroll" role="region" aria-label="卡牌表格" tabindex="0">${sections}<p id="empty" hidden>找不到符合條件的卡片，請調整搜尋文字、分類或稀有度。</p>
 </div>
 </main>
@@ -347,7 +347,8 @@ const search=document.getElementById('search');
 const characterFilter=document.getElementById('card-filter-character');
 const typeFilter=document.getElementById('card-filter-type');
 const rarityFilter=document.getElementById('card-filter-rarity');
-const multiFilters = [characterFilter, rarityFilter, typeFilter];
+const energyFilter=document.getElementById('card-filter-energy');
+const multiFilters = [characterFilter, rarityFilter, typeFilter, energyFilter];
 function setFilterValues(group, values) {
   for (const button of group.querySelectorAll('button')) {
     button.setAttribute('aria-pressed', String(values.includes(button.value)));
@@ -372,7 +373,7 @@ const compactCardMedia=window.matchMedia('(max-width:1024px), (max-width:1366px)
 const sections=[...document.querySelectorAll('section[data-pool]')];
 search.value='';
 function selectedCardFilters() {
-  return {characters:selectedValues(characterFilter), rarities:selectedValues(rarityFilter), types:selectedValues(typeFilter), tiers:selectedValues(tierFilter)};
+  return {characters:selectedValues(characterFilter), rarities:selectedValues(rarityFilter), types:selectedValues(typeFilter), tiers:selectedValues(tierFilter), energies:selectedValues(energyFilter)};
 }
 const cardFilterCookie='sts2_card_filters';
 function restoreCardFilters() {
@@ -383,10 +384,11 @@ function restoreCardFilters() {
     if(!stored)return;
     const saved=JSON.parse(stored);
     if(!saved||typeof saved!=='object')return;
-    for(const [key,group] of [['characters',characterFilter],['types',typeFilter],['rarities',rarityFilter],['tiers',tierFilter]]) {
+    for(const [key,group] of [['characters',characterFilter],['types',typeFilter],['rarities',rarityFilter],['tiers',tierFilter],['energies',energyFilter]]) {
       if(!Array.isArray(saved[key]))continue;
       const allowed=new Set([...group.querySelectorAll('button')].map(button=>button.value));
-      const values=saved[key].filter(value=>allowed.has(value));
+      const restoredValues=key==='energies'?saved[key].map(value=>['3','4+'].includes(value)?'3+':value):saved[key];
+      const values=restoredValues.filter(value=>allowed.has(value));
       setFilterValues(group,key==='characters'?values.slice(0,1):values);
     }
   } catch {}
@@ -404,11 +406,16 @@ function rememberCardFilters() {
   } catch {}
 }
 function cardMatchesFilters(row, section, selected) {
-  const {characters, rarities, types, tiers}=selected;
+  const {characters, rarities, types, tiers, energies}=selected;
+  const baseEnergy=row.dataset.baseEnergy;
+  const energyGroup=Number(baseEnergy)>=3?'3+':baseEnergy;
+  const energyCosts=[...energies].filter(value=>value!=='gain');
   return (!characters.size||characters.has(section.dataset.filterCategory))
     && (!rarities.size||rarities.has(row.dataset.rarity)||(rarities.has('Common')&&row.dataset.rarity==='Basic'))
     && (!types.size||types.has(row.dataset.type))
-    && (!tiers.size||tiers.has(row.dataset.tier));
+    && (!tiers.size||tiers.has(row.dataset.tier))
+    && (!energyCosts.length||energyCosts.includes(energyGroup)||(energies.has('X')&&row.dataset.id==='STARDUST'))
+    && (!energies.has('gain')||row.dataset.energyGain==='true');
 }
 function filter() {
   const queries=cardSearchQueries(),selected=selectedCardFilters();let count=0;
@@ -493,7 +500,7 @@ compactView.addEventListener('change',updateSortFocus);updateSortFocus();
 function selectCardRow(row){for(const current of document.querySelectorAll('.card-scroll tbody tr.is-selected'))current.classList.remove('is-selected');row.classList.add('is-selected');}
 function scrollToCard(row){const area=document.getElementById('card-scroll'),head=row.closest('table').querySelector('thead'),pageScroll=getComputedStyle(area).overflowY==='visible';const headerHeight=pageScroll?document.querySelector('.site-header').getBoundingClientRect().height+(compactView.matches?0:head.getBoundingClientRect().height):compactView.matches?0:head.getBoundingClientRect().height;row.style.scrollMarginTop=(headerHeight+12)+'px';if(pageScroll){row.scrollIntoView({block:'start',behavior:'instant'});return;}const top=area.scrollTop+row.getBoundingClientRect().top-area.getBoundingClientRect().top-headerHeight-12;area.scrollTo({top:Math.max(0,top),behavior:'instant'});}
 document.getElementById('card-scroll').addEventListener('click',event=>{const row=event.target.closest('tbody tr[data-id]');if(row)selectCardRow(row);});
-function revealLinkedCard(){let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}if(!id.startsWith('card-'))return;const row=document.getElementById(id);if(!row)return;const section=row.closest('section[data-pool]');if(!section)return;setFilterValues(characterFilter,[section.dataset.filterCategory]);search.value='';setFilterValues(rarityFilter,[]);setFilterValues(typeFilter,[]);for(const choice of tierChoices)choice.setAttribute('aria-pressed','false');filter();selectCardRow(row);requestAnimationFrame(()=>scrollToCard(row));}
+function revealLinkedCard(){let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}if(!id.startsWith('card-'))return;const row=document.getElementById(id);if(!row)return;const section=row.closest('section[data-pool]');if(!section)return;setFilterValues(characterFilter,[section.dataset.filterCategory]);search.value='';setFilterValues(rarityFilter,[]);setFilterValues(typeFilter,[]);setFilterValues(energyFilter,[]);for(const choice of tierChoices)choice.setAttribute('aria-pressed','false');filter();selectCardRow(row);requestAnimationFrame(()=>scrollToCard(row));}
 window.addEventListener('hashchange',revealLinkedCard);revealLinkedCard();
 
 

@@ -47,13 +47,13 @@ module.exports += require('./rarity-colors.cjs');
 
 module.exports += `
 /* Card tier filters use the same button presentation as Type filters. */
-html body #main-content #tools #card-filter-tier button {
+html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button {
   min-height:48px;padding:8px;border-radius:8px;
   font:400 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;
   background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
   position:relative;
 }
-html body #main-content #tools #card-filter-tier button[value][aria-pressed=true] {
+html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button[value][aria-pressed=true] {
   border-color:var(--tier-text-color)!important;
   background:color-mix(in srgb,var(--tier-text-color) 22%,#0d131a)!important;
   box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tier-text-color) 40%,transparent)!important;
@@ -61,10 +61,22 @@ html body #main-content #tools #card-filter-tier button[value][aria-pressed=true
 html body #main-content #tools #card-filter-tier button[aria-pressed=true]::after {
   content:none;
 }
-html body #main-content #tools #card-filter-tier button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
+html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
 ` + Object.entries(colors).map(([tier,{background}]) => `
 html body #main-content #tools #card-filter-tier button[value=${tier}] {
   --tier-text-color:${background};color:var(--tier-text-color)!important;
   background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 `).join('');
+
+module.exports += `
+/* Energy filters share Tier button states and add an explicit selection check. */
+html body #main-content #tools #card-filter-energy button {
+ --tier-text-color:#e3bf72;color:var(--tier-text-color)!important;gap:8px;
+}
+html body #main-content #tools #card-filter-energy button[aria-pressed=true]::after {
+ content:"✓";position:absolute;right:4px;top:3px;
+ display:grid;place-items:center;width:18px;height:18px;
+ border-radius:50%;background:#fff;color:#040609;font:800 14px/1 Arial,sans-serif;
+}
+`;

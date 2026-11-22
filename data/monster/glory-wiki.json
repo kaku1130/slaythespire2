@@ -283,7 +283,7 @@
       "entities": [
         {
           "id": "TEST_SUBJECT",
-          "name": "實驗體・第一階段",
+          "name": "實驗體・Phase 1",
           "hp": "100",
           "ascHp": "111",
           "powers": [
@@ -313,7 +313,7 @@
         {
           "id": "TEST_SUBJECT",
           "phase": 2,
-          "name": "實驗體・第二階段",
+          "name": "實驗體・Phase 2",
           "hp": "200",
           "ascHp": "212",
           "powers": [
@@ -339,7 +339,7 @@
         {
           "id": "TEST_SUBJECT",
           "phase": 3,
-          "name": "實驗體・第三階段",
+          "name": "實驗體・Phase 3",
           "hp": "300",
           "ascHp": "313",
           "powers": [

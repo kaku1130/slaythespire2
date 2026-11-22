@@ -12,12 +12,12 @@ if(slug)main=require('../cards/detail-card-database.cjs').replaceCards(main);
 if(slug)main=relicLayout.replaceRelics(main);
 main=main.replaceAll('loading="lazy"','loading="eager"').replace(/<template\b[^>]*><\/template>/g,'').replace(/<!--\/?\$[^>]*-->/g,'');
 main=require('./tier-colors.cjs')(main);
-if(slug)main=require('./desktop-ancient.cjs').addTopRelicMenu(main);
+if(slug)main=require('./desktop-ancient.cjs').addTopRelicMenu(main,{active:slug,prefix,assets});
 if(!slug)main=main.replace(/<h1\b[\s\S]*?<\/h1>/,'').replace(/<p\b[^>]*>殺戮尖塔2 全部[\s\S]*?強度排行。<\/p>/,'');
 if(!slug)main=main.replace(/<div class="mt-auto flex items-center gap-1\.5 pt-3 text-sm font-semibold text-link">[^<]*最強遺物[\s\S]*?<\/div>/g,'');
 const header=nav.renderHeader('ancient').replace(/href="((?:ancient|build|card|event|monster|potion|relic)\.html)"/g,(_,u)=>'href="'+prefix+u+'"');
 const title=source.match(/<title>([\s\S]*?)<\/title>/)?.[1]||'先古之民';
-const css=nav.styles+'html{color-scheme:dark;scrollbar-width:auto;scrollbar-color:auto}body{background:#040609;color:#e3e8ee}main{min-width:0}main img{max-width:100%}main [class*="flex-wrap"]:has(>[aria-label="切換遊戲版本"]){display:none}'+nav.layoutStyles+(slug?cardStyles+relicLayout.styles:'');
+const css=nav.styles+'html{color-scheme:dark;scrollbar-width:auto;scrollbar-color:auto}body{background:#040609;color:#e3e8ee}main{min-width:0}main img{max-width:100%}main [class*="flex-wrap"]:has(>[aria-label="切換遊戲版本"]){display:none}'+nav.layoutStyles+(slug?cardStyles+relicLayout.styles+require('./desktop-ancient.cjs').styles:'');
 if(slug)main+=require('../cards/effect-tooltips.cjs').markup().replaceAll('"icon":"assets/','"icon":"'+prefix+'assets/')+'<script src="'+prefix+'assets/cards/compact-cards.js"></script><script defer src="'+prefix+'assets/ancient/text-scale.js"></script>';
 fs.writeFileSync(file,'<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><link rel="apple-touch-icon" sizes="180x180" href="'+prefix+'assets/cards/icons/site-logo.png"><link rel="icon" type="image/webp" href="'+prefix+'assets/cards/icons/site-logo.webp"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+title+'</title><link rel="stylesheet" href="'+prefix+'assets/event/styles/source.css"><style>'+css+'</style></head><body>'+header+'<main id="main-content">'+main+'</main><script src="'+prefix+'assets/cards/page-scroll.js"></script></body></html>');}
 // Keep existing pages and their custom content, updating only ancient navigation.

@@ -31,6 +31,9 @@ html = html.replace(/<tr id="card-([^"]+)"[^>]*>[\s\S]*?<\/tr>/g, (original, id)
   let row = original.replace(/^<tr[^>]*>/, tag => {
     tag = attribute(tag, 'class', 'card-detail-row');
     tag = attribute(tag, 'data-type', card.type);
+    const baseEnergy=plain((card.stats.find(stat=>stat.label==='Energy cost')?.value||'').split('→')[0]).match(/^(\d+|X)$/)?.[1]||'';
+    tag = attribute(tag, 'data-base-energy', baseEnergy);
+    tag = attribute(tag, 'data-energy-gain', String(require('./energy-gain.cjs')(card)));
     tag = attribute(tag, 'data-rarity', card.rarity);
     tag = attribute(tag, 'data-name', (card.name + ' ' + card.nameZh).toLowerCase());
     return attribute(tag, 'data-search', plain(detailCell).toLowerCase());

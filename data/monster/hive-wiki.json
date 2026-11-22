@@ -13,7 +13,7 @@
       "entities": [
         {
           "id": "DECIMILLIPEDE_SEGMENT_FRONT",
-          "name": "殘殺千足蟲・前段",
+          "name": "殘殺千足蟲・Front",
           "hp": "40–46",
           "ascHp": "46–52",
           "powers": [
@@ -46,7 +46,7 @@
         },
         {
           "id": "DECIMILLIPEDE_SEGMENT_MIDDLE",
-          "name": "殘殺千足蟲・中段",
+          "name": "殘殺千足蟲・Middle",
           "hp": "40–46",
           "ascHp": "46–52",
           "powers": [
@@ -79,7 +79,7 @@
         },
         {
           "id": "DECIMILLIPEDE_SEGMENT_BACK",
-          "name": "殘殺千足蟲・後段",
+          "name": "殘殺千足蟲・Rear",
           "hp": "40–46",
           "ascHp": "46–52",
           "powers": [
