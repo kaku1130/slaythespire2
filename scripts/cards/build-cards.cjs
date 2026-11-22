@@ -19,6 +19,7 @@ function renderCardFilters(groups) {
   return '<div class="card-filter-rows" lang="en">' + groups.map(([label,key,values]) => {
     let buttons = values.map(value => {
       const selected = key === 'character' && value === 'Ironclad';
+      if (key === 'energy' && value === 'cost-down') return '<button type="button" value="cost-down" aria-pressed="false" aria-label="升級後能量費用降低" title="升級後能量費用降低">Cost ↓</button>';
       return '<button type="button" value="' + value + '" aria-pressed="' + selected + '"' + (key === 'energy' && value === 'gain' ? ' aria-label="增加能量" title="增加能量"' : '') + '>' + (key === 'energy' && value === 'gain' ? '' : ((key !== 'rarity' && filterLabels[value]) || value || 'All')) + (key === 'energy' ? resourceIcons.energy : '') + (key === 'energy' && value === 'gain' ? '<span>Gain Energy</span>' : '') + '</button>';
     }).join('');
     if (key === 'character') buttons = require('./character-filter.cjs')(buttons, {
@@ -337,7 +338,7 @@ html body main#main-content,html body .site-header>.site-header-inner{width:100%
 ${fs.readFileSync('assets/cards/compact-cards.css','utf8')}
 ${fs.readFileSync('assets/cards/search-control.css','utf8')}
 </style></head><body data-view="grid">${navigation.renderHeader('cards')}<main id="main-content">
-<div class="tools" id="tools"><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><div class="search-control"><input id="search" type="text" inputmode="search" role="searchbox" placeholder="搜尋關鍵字" autocomplete="off"><button type="button" class="search-clear" aria-label="清除搜尋關鍵字" title="清除搜尋關鍵字"><span class="search-icon" aria-hidden="true">🔍</span></button></div>${cardGrid.actionControls}</div>${renderCardFilters([['Character','character',["Ironclad","Silent","Defect","Regent","Necrobinder","Colorless","Event","Curse"]],['Type','type',["Attack","Skill","Power"]],['Rarity','rarity',["Common","Uncommon","Rare","Ancient"]]])}${renderCardActions()}${renderCardFilters([['Energy','energy',['0','1','2','3+','X','gain']]])}<p id="card-filter-result" class="card-filter-result" role="status" aria-live="polite" aria-atomic="true">符合張數 / 總卡片數：0 / ${cards.length}</p></div>
+<div class="tools" id="tools"><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><div class="search-control"><input id="search" type="text" inputmode="search" role="searchbox" placeholder="搜尋關鍵字" autocomplete="off"><button type="button" class="search-clear" aria-label="清除搜尋關鍵字" title="清除搜尋關鍵字"><span class="search-icon" aria-hidden="true">🔍</span></button></div>${cardGrid.actionControls}</div>${renderCardFilters([['Character','character',["Ironclad","Silent","Defect","Regent","Necrobinder","Colorless","Event","Curse"]],['Type','type',["Attack","Skill","Power"]],['Rarity','rarity',["Common","Uncommon","Rare","Ancient"]]])}${renderCardActions()}${renderCardFilters([['Energy','energy',['0','1','2','3+','X','gain','cost-down']]])}<p id="card-filter-result" class="card-filter-result" role="status" aria-live="polite" aria-atomic="true">符合張數 / 總卡片數：0 / ${cards.length}</p></div>
 <div id="card-scroll" class="card-scroll" role="region" aria-label="卡牌表格" tabindex="0">${sections}<p id="empty" hidden>找不到符合條件的卡片，請調整搜尋文字、分類或稀有度。</p>
 </div>
 </main>
@@ -409,13 +410,14 @@ function cardMatchesFilters(row, section, selected) {
   const {characters, rarities, types, tiers, energies}=selected;
   const baseEnergy=row.dataset.baseEnergy;
   const energyGroup=Number(baseEnergy)>=3?'3+':baseEnergy;
-  const energyCosts=[...energies].filter(value=>value!=='gain');
+  const energyCosts=[...energies].filter(value=>!['gain','cost-down'].includes(value));
   return (!characters.size||characters.has(section.dataset.filterCategory))
     && (!rarities.size||rarities.has(row.dataset.rarity)||(rarities.has('Common')&&row.dataset.rarity==='Basic'))
     && (!types.size||types.has(row.dataset.type))
     && (!tiers.size||tiers.has(row.dataset.tier))
     && (!energyCosts.length||energyCosts.includes(energyGroup)||(energies.has('X')&&row.dataset.id==='STARDUST'))
-    && (!energies.has('gain')||row.dataset.energyGain==='true');
+    && (!energies.has('gain')||row.dataset.energyGain==='true')
+    && (!energies.has('cost-down')||row.dataset.costDown==='true');
 }
 function filter() {
   const queries=cardSearchQueries(),selected=selectedCardFilters();let count=0;

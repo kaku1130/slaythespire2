@@ -6,6 +6,10 @@ const cards=JSON.parse(fs.readFileSync('data/cards/english-details.json','utf8')
 const base=card=>(card.stats.find(stat=>stat.label==='Energy cost')?.value||'').split('→')[0].replace(/<[^>]*>/g,'').trim();
 const matches=(card,value)=>(value==='X'&&card.id==='STARDUST')||(value==='3+'?/^\d+$/.test(base(card))&&Number(base(card))>=3:base(card)===value);
 const ids=cards=>cards.map(card=>card.id).sort();
+const discounted=card=>{
+ const costs=(card.stats.find(stat=>stat.label==='Energy cost')?.value||'').replace(/<[^>]*>/g,'').split('→').map(value=>value.trim());
+ return card.effect.upgraded!==null&&costs.length===2&&costs.every(value=>/^\d+$/.test(value))&&Number(costs[1])<Number(costs[0]);
+};
 (async()=>{
  const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
  try{
@@ -22,7 +26,9 @@ const ids=cards=>cards.map(card=>card.id).sort();
    await page.goto(url);
    const group=page.locator('#card-filter-energy'),button=value=>group.locator('button').filter({hasText:new RegExp('^'+value.replace('+','\\+')+'$')});
    const gainButton=group.locator('button[value=gain]');
-   assert.deepEqual(await group.locator('button').allTextContents(),['0','1','2','3+','X','Gain Energy']);
+   const costDownButton=group.locator('button[value=cost-down]');
+   assert.deepEqual(await group.locator('button').allTextContents(),['0','1','2','3+','X','Gain Energy','Cost ↓']);
+   assert.equal(await costDownButton.getAttribute('aria-label'),'升級後能量費用降低');
    assert.equal(await gainButton.getAttribute('aria-label'),'增加能量');
    assert.equal(await group.locator('button>.energy-resource-icon').count(),6,'each option has an energy icon');
    assert(await group.locator('.energy-resource-icon').first().evaluate(icon=>getComputedStyle(icon).backgroundImage!=='none'),'energy artwork loaded');
@@ -30,6 +36,24 @@ const ids=cards=>cards.map(card=>card.id).sort();
    assert(energyBox.y>=tierBox.y+tierBox.height,'Energy below Tier');
    await page.locator('#card-filter-character button[value=Ironclad]').click();
    const visible=()=>page.locator('.card-detail-row:not([hidden])').evaluateAll(rows=>rows.map(row=>row.dataset.id).sort());
+   await costDownButton.click();
+   assert.deepEqual(await visible(),ids(cards.filter(discounted)),'upgrade cost reductions');
+   assert((await visible()).includes('DARK_EMBRACE'),'Dark Embrace 2 → 1');
+   assert(!(await visible()).includes('STRIKE_IRONCLAD'),'unchanged cost excluded');
+   const costDownBox=await costDownButton.boundingBox(),gainBox=await gainButton.boundingBox();
+   assert(costDownBox.x>=gainBox.x+gainBox.width&&costDownBox.y===gainBox.y,'Cost ↓ to the right of Gain Energy');
+   await button('2').click();
+   assert.deepEqual(await visible(),ids(cards.filter(card=>discounted(card)&&matches(card,'2'))),'base cost AND upgrade discount');
+   await gainButton.click();
+   assert.deepEqual(await visible(),ids(cards.filter(card=>discounted(card)&&matches(card,'2')&&require('./energy-gain.cjs')(card))),'all selected conditions apply');
+   await gainButton.click();
+   await page.reload();
+   assert.equal(await costDownButton.getAttribute('aria-pressed'),'true','upgrade discount restored');
+   assert.deepEqual(await visible(),ids(cards.filter(card=>discounted(card)&&matches(card,'2'))),'restored discount and cost');
+   await button('2').click();await gainButton.click();
+   assert((await visible()).includes('AUTOMATION'),'energy gain AND discount includes Automation');
+   assert(!(await visible()).includes('DARK_EMBRACE'),'energy gain AND discount excludes Dark Embrace');
+   await gainButton.click();await costDownButton.click();
    for(const value of ['0','1','2','3+','X']){
     await button(value).click();
     assert.deepEqual(await visible(),ids(cards.filter(card=>matches(card,value))),mode+' '+value+' costs');

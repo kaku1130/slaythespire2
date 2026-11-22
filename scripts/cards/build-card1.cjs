@@ -33,6 +33,8 @@ html = html.replace(/<tr id="card-([^"]+)"[^>]*>[\s\S]*?<\/tr>/g, (original, id)
     tag = attribute(tag, 'data-type', card.type);
     const baseEnergy=plain((card.stats.find(stat=>stat.label==='Energy cost')?.value||'').split('→')[0]).match(/^(\d+|X)$/)?.[1]||'';
     tag = attribute(tag, 'data-base-energy', baseEnergy);
+    const upgradedEnergy=plain((card.stats.find(stat=>stat.label==='Energy cost')?.value||'').split('→')[1]||'');
+    tag = attribute(tag, 'data-cost-down', String(card.effect.upgraded!==null && /^\d+$/.test(baseEnergy) && /^\d+$/.test(upgradedEnergy) && Number(upgradedEnergy)<Number(baseEnergy)));
     tag = attribute(tag, 'data-energy-gain', String(require('./energy-gain.cjs')(card)));
     tag = attribute(tag, 'data-rarity', card.rarity);
     tag = attribute(tag, 'data-name', (card.name + ' ' + card.nameZh).toLowerCase());
