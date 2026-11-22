@@ -30,7 +30,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
    }
    assert.equal(await chapter.locator('.wiki-monster-infobox').count(),await chapter.locator('.wiki-monster-entity').count());
    for(const table of await chapter.locator('.wiki-monster-infobox').all()){
-    assert.deepEqual(await table.locator('th').allTextContents(),['Type','Powers']);
+    assert.deepEqual(await table.locator('th').allTextContents(),['Type','Power']);
     const powers=table.locator('.wiki-power-list>li');
     assert.equal(await powers.count(),await table.locator('.wiki-power-name>img').count());
     for(const power of await powers.all())assert((await power.locator('p').innerText()).length>0,'Power description');

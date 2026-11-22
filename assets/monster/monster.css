@@ -252,8 +252,8 @@ html body .site-header .site-nav a {
 
 /* Category artwork replaces the navigation text labels. */
 html body>.site-header {box-sizing:border-box;width:100vw!important;max-width:none!important;margin-inline:0}
-html body .site-header .site-nav > a {min-width:60px;min-height:48px;padding:6px 12px!important}
-html body .site-header .site-nav a > .site-nav-visual {display:flex!important;align-items:center;justify-content:center}
+html body .site-header .site-nav > a {box-sizing:border-box;height:52px!important;min-height:52px!important;max-height:52px!important;min-width:60px;padding:6px 12px!important;align-self:center}
+html body .site-header .site-nav a > .site-nav-visual {display:flex!important;align-items:center;justify-content:center;flex:0 0 36px;width:36px;height:36px}
 html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max-width:none}
 html body .site-header .site-nav {margin-left:auto!important;justify-content:end}
 /* Match the compact button widths used by the relic page. */
@@ -938,8 +938,8 @@ html body main#main-content#main-content .site-attribution a {
 
 /* Category artwork replaces the navigation text labels. */
 html body>.site-header {box-sizing:border-box;width:100vw!important;max-width:none!important;margin-inline:0}
-html body .site-header .site-nav > a {min-width:60px;min-height:48px;padding:6px 12px!important}
-html body .site-header .site-nav a > .site-nav-visual {display:flex!important;align-items:center;justify-content:center}
+html body .site-header .site-nav > a {box-sizing:border-box;height:52px!important;min-height:52px!important;max-height:52px!important;min-width:60px;padding:6px 12px!important;align-self:center}
+html body .site-header .site-nav a > .site-nav-visual {display:flex!important;align-items:center;justify-content:center;flex:0 0 36px;width:36px;height:36px}
 html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max-width:none}
 html body .site-header .site-nav {margin-left:auto!important;justify-content:end}
 /* Match the compact button widths used by the relic page. */
@@ -1057,10 +1057,11 @@ html body main#main-content#main-content.monster-page {display:block!important;b
 .wiki-monster-detail .wiki-monster-entity>h3 {margin:0 0 12px;text-align:center;color:var(--monster-type-color)}
 .wiki-entity-header {display:flex;flex-direction:column;align-items:center;gap:16px;min-width:0}
 .wiki-entity-header>img {display:block;width:224px;max-width:100%;height:224px;object-fit:contain}
-.wiki-monster-detail table {width:100%;table-layout:fixed;border-collapse:collapse;font-size:17px;line-height:1.6}
+.wiki-monster-detail table {width:100%;table-layout:fixed;border-collapse:collapse;font-size:20px;line-height:1.6}
 .wiki-monster-detail :is(td,th) {padding:8px;border:1px solid #344454;text-align:left;vertical-align:top;overflow-wrap:anywhere}
 .wiki-monster-detail th {font-weight:600;background:#121d29}
-.wiki-monster-infobox th {width:76px;font-size:16px}
+.wiki-monster-detail .wiki-monster-infobox th {width:96px;font-size:20px;text-align:left;vertical-align:middle;white-space:nowrap}
+.monster-page .wiki-monster-infobox .monster-type-label {font-size:20px}
 .wiki-monster-detail .wiki-power-list {margin:0;padding:0;list-style:none}
 .wiki-monster-detail .wiki-power-list>li {margin:0}
 .wiki-power-list>li+li {margin-top:16px!important}
@@ -1549,8 +1550,8 @@ html body main#main-content#main-content .site-attribution a {
 
 /* Category artwork replaces the navigation text labels. */
 html body>.site-header {box-sizing:border-box;width:100vw!important;max-width:none!important;margin-inline:0}
-html body .site-header .site-nav > a {min-width:60px;min-height:48px;padding:6px 12px!important}
-html body .site-header .site-nav a > .site-nav-visual {display:flex!important;align-items:center;justify-content:center}
+html body .site-header .site-nav > a {box-sizing:border-box;height:52px!important;min-height:52px!important;max-height:52px!important;min-width:60px;padding:6px 12px!important;align-self:center}
+html body .site-header .site-nav a > .site-nav-visual {display:flex!important;align-items:center;justify-content:center;flex:0 0 36px;width:36px;height:36px}
 html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max-width:none}
 html body .site-header .site-nav {margin-left:auto!important;justify-content:end}
 /* Match the compact button widths used by the relic page. */

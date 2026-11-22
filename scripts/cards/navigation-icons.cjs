@@ -7,19 +7,19 @@ const files = {
   relic:['assets/relic/images/nav-relics.webp','contain'],
   potion:['assets/potion/images/nav-potions.webp','contain'],
   ancient:['assets/ancient/images/icon/neow.webp','contain'],
-  monster:['assets/monster/images/nav-monsters.webp','cover']
+  monster:['assets/monster/source/monsters/lagavulin_matriarch.webp','contain']
 };
 const columnCount=Object.keys(files).length;
 const navigationWidth=columnCount*62+(columnCount-1)*4;
 const icons = Object.fromEntries(Object.entries(files).map(([key,[file,fit]]) => {
   const src = 'data:image/webp;base64,' + fs.readFileSync(path.resolve(__dirname,'../..',file)).toString('base64');
-  return [key,'<span class="site-nav-visual" aria-hidden="true"><img class="site-nav-icon" src="' + src + '" alt="" width="36" height="36" style="width:36px;height:36px;object-fit:' + fit + ';border-radius:6px"></span>'];
+  return [key,'<span class="site-nav-visual" aria-hidden="true"><img class="site-nav-icon" src="' + src + '" alt="" width="36" height="36" style="width:36px;height:36px;object-fit:' + fit + ';border-radius:6px' + (key === 'monster' ? ';transform:scale(1.2)' : '') + '"></span>'];
 }));
 const styles = `
 /* Category artwork replaces the navigation text labels. */
 html body>.site-header {box-sizing:border-box;width:100vw!important;max-width:none!important;margin-inline:0}
-html body .site-header .site-nav > a {min-width:60px;min-height:48px;padding:6px 12px!important}
-html body .site-header .site-nav a > .site-nav-visual {display:flex!important;align-items:center;justify-content:center}
+html body .site-header .site-nav > a {box-sizing:border-box;height:52px!important;min-height:52px!important;max-height:52px!important;min-width:60px;padding:6px 12px!important;align-self:center}
+html body .site-header .site-nav a > .site-nav-visual {display:flex!important;align-items:center;justify-content:center;flex:0 0 36px;width:36px;height:36px}
 html body .site-header .site-nav .site-nav-icon {display:block;flex-shrink:0;max-width:none}
 html body .site-header .site-nav {margin-left:auto!important;justify-content:end}
 /* Match the compact button widths used by the relic page. */

@@ -9,7 +9,7 @@
       "title": "騎士團",
       "imageId": "FLAIL_KNIGHT",
       "page": "Knight_Gang",
-      "summary": "鏈枷騎士、幽魂騎士、魔導騎士三者共同出現。",
+      "summary": "The Flail Knight, Spectral Knight, and Magi Knight appear together.",
       "entities": [
         {
           "id": "FLAIL_KNIGHT",
@@ -193,7 +193,7 @@
       "title": "女王",
       "imageId": "QUEEN",
       "page": "Queen",
-      "summary": "女王與火炬頭融合體共同作戰；融合體倒下後，女王會切換成攻擊循環。",
+      "summary": "The Queen fights alongside the Torch Head Amalgam. After the Amalgam is defeated, the Queen switches to her attack cycle.",
       "entities": [
         {
           "id": "QUEEN",
@@ -279,7 +279,7 @@
       "title": "實驗體",
       "imageId": "TEST_SUBJECT",
       "page": "Test_Subject",
-      "summary": "共有三個階段，前兩次生命歸零會復活，生命提高且替換能力。",
+      "summary": "It has three phases. The first two times its HP reaches 0, it revives with more HP and different powers.",
       "entities": [
         {
           "id": "TEST_SUBJECT",

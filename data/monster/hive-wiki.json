@@ -9,7 +9,7 @@
       "title": "殘殺千足蟲",
       "imageId": "DECIMILLIPEDE_SEGMENT_FRONT",
       "page": "Decimillipede",
-      "summary": "前、中、後三個節段共同出現，每段生命及招式相同，但起手不同。全部同時倒下才能結束戰鬥。",
+      "summary": "The front, middle, and rear segments appear together. Each has the same HP and moves, but starts with a different move. All three must be down at the same time to end the battle.",
       "entities": [
         {
           "id": "DECIMILLIPEDE_SEGMENT_FRONT",
@@ -419,7 +419,7 @@
       "title": "帝王蟹",
       "imageId": "CRUSHER",
       "page": "Kaiser_Crab",
-      "summary": "碾碎者與火箭兩隻蟹鉗同時作戰。兩者皆存活時，玩家被包圍；指定單一目標會轉向該側，背面的攻擊增加 50% 傷害。",
+      "summary": "The two claws, Crusher and Rocket, fight together. While both are alive, the player is Surrounded. Targeting a single claw turns the player toward it, and attacks from behind deal 50% more damage.",
       "entities": [
         {
           "id": "CRUSHER",

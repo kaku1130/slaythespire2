@@ -51,7 +51,7 @@
       "title": "花園幽靈鰻",
       "imageId": "PHANTASMAL_GARDENER",
       "page": "Phantasmal_Gardener",
-      "summary": "4 隻共同出現，由左至右的起手分別為 Flail、Bite、Lash、Enlarge。下表為每隻的數值。",
+      "summary": "Four appear together. From left to right, their opening moves are Flail, Bite, Lash, and Enlarge. The table below shows the stats for each one.",
       "entities": [
         {
           "id": "PHANTASMAL_GARDENER",
