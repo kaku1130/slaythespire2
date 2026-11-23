@@ -1,5 +1,3 @@
-const fs=require('node:fs'),path=require('node:path');
-const github='data:image/svg+xml;base64,'+fs.readFileSync(path.resolve(__dirname,'../../assets/cards/icons/github.svg')).toString('base64');
 module.exports = `
 /* Keep navigation in one row when the full labels no longer fit. */
 @media screen and (max-width:1366px) {
@@ -14,10 +12,9 @@ module.exports = `
   html body .site-header .site-nav a {flex:1 1 0;min-width:0;min-height:44px;padding:4px!important;gap:0;font-size:24px}
 }
 
-/* Compact, right-aligned navigation with a GitHub brand icon. */
+/* Compact, right-aligned navigation. */
 html body .site-header .site-nav {flex:0 1 auto!important;width:auto!important;margin-left:auto;justify-content:flex-end}
 html body .site-header .site-nav a {flex:0 0 auto!important}
-html body .site-header .site-logo {content:url("${github}")}
 
 /* Show navigation labels whenever tablet-sized widths have enough room, regardless of input device. */
 @media screen and (min-width:700px) and (max-width:1366px) {

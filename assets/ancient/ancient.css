@@ -159,10 +159,9 @@ html body .site-header .site-nav a {
   html body .site-header .site-nav a {flex:1 1 0;min-width:0;min-height:44px;padding:4px!important;gap:0;font-size:24px}
 }
 
-/* Compact, right-aligned navigation with a GitHub brand icon. */
+/* Compact, right-aligned navigation. */
 html body .site-header .site-nav {flex:0 1 auto!important;width:auto!important;margin-left:auto;justify-content:flex-end}
 html body .site-header .site-nav a {flex:0 0 auto!important}
-html body .site-header .site-logo {content:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2UzZThlZSI+PHBhdGggZD0iTTEyIC4yOTdDNS4zNy4yOTcgMCA1LjY3IDAgMTIuMjk3YzAgNS4zMDMgMy40MzggOS44IDguMjA1IDExLjM4NS42LjExMy44Mi0uMjU4LjgyLS41NzcgMC0uMjg1LS4wMS0xLjA0LS4wMTUtMi4wNC0zLjMzOC43MjQtNC4wNDMtMS42MS00LjA0My0xLjYxLS41NDYtMS4zODctMS4zMzMtMS43NTYtMS4zMzMtMS43NTYtMS4wOS0uNzQ1LjA4My0uNzI5LjA4My0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNyAxLjgzOCAxLjIzNyAxLjA3IDEuODM1IDIuODA3IDEuMzA1IDMuNDkyLjk5OC4xMDgtLjc3Ni40MTgtMS4zMDUuNzYyLTEuNjA1LTIuNjY1LS4zMDUtNS40NjctMS4zMzQtNS40NjctNS45MzEgMC0xLjMxLjQ2OC0yLjM4MSAxLjIzNi0zLjIyMS0uMTI0LS4zMDMtLjUzNi0xLjUyNC4xMTctMy4xNzYgMCAwIDEuMDA4LS4zMjIgMy4zMDEgMS4yM2ExMS41MiAxMS41MiAwIDAgMSAzLjAwNC0uNDA0YzEuMDIuMDA1IDIuMDQ3LjEzOCAzLjAwNi40MDQgMi4yOTEtMS41NTIgMy4yOTctMS4yMyAzLjI5Ny0xLjIzLjY1NSAxLjY1Mi4yNDMgMi44NzMuMTE5IDMuMTc2Ljc3Ljg0IDEuMjM1IDEuOTExIDEuMjM1IDMuMjIxIDAgNC42MDktMi44MDcgNS42MjQtNS40NzkgNS45MjEuNDMuMzcyLjgyMyAxLjEwMi44MjMgMi4yMjIgMCAxLjYwNi0uMDE1IDIuODk4LS4wMTUgMy4yOTMgMCAuMzIyLjIxNi42OTQuODI1LjU3NkMyMC41NjUgMjIuMDkyIDI0IDE3LjU5NyAyNCAxMi4yOTdjMC02LjYyNy01LjM3My0xMi0xMi0xMiIvPjwvc3ZnPg0K")}
 
 /* Show navigation labels whenever tablet-sized widths have enough room, regardless of input device. */
 @media screen and (min-width:700px) and (max-width:1366px) {
@@ -276,6 +275,8 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
   html body .site-header .site-brand {display:none!important}
 }
 
+/* Preserve the full logo proportions across bundled page styles. */
+html body .site-header .site-logo {content:normal;width:96px;height:54px;object-fit:contain}
 /* Brand visibility is shared by every page, including bundled legacy styles. */
 @media screen and (min-width:601px) {
   html body .site-header .site-brand {display:flex!important}
@@ -400,10 +401,9 @@ html body main#main-content .filters,html body main#main-content .tools .primary
   html body .site-header .site-nav a {flex:1 1 0;min-width:0;min-height:44px;padding:4px!important;gap:0;font-size:24px}
 }
 
-/* Compact, right-aligned navigation with a GitHub brand icon. */
+/* Compact, right-aligned navigation. */
 html body .site-header .site-nav {flex:0 1 auto!important;width:auto!important;margin-left:auto;justify-content:flex-end}
 html body .site-header .site-nav a {flex:0 0 auto!important}
-html body .site-header .site-logo {content:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2UzZThlZSI+PHBhdGggZD0iTTEyIC4yOTdDNS4zNy4yOTcgMCA1LjY3IDAgMTIuMjk3YzAgNS4zMDMgMy40MzggOS44IDguMjA1IDExLjM4NS42LjExMy44Mi0uMjU4LjgyLS41NzcgMC0uMjg1LS4wMS0xLjA0LS4wMTUtMi4wNC0zLjMzOC43MjQtNC4wNDMtMS42MS00LjA0My0xLjYxLS41NDYtMS4zODctMS4zMzMtMS43NTYtMS4zMzMtMS43NTYtMS4wOS0uNzQ1LjA4My0uNzI5LjA4My0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNyAxLjgzOCAxLjIzNyAxLjA3IDEuODM1IDIuODA3IDEuMzA1IDMuNDkyLjk5OC4xMDgtLjc3Ni40MTgtMS4zMDUuNzYyLTEuNjA1LTIuNjY1LS4zMDUtNS40NjctMS4zMzQtNS40NjctNS45MzEgMC0xLjMxLjQ2OC0yLjM4MSAxLjIzNi0zLjIyMS0uMTI0LS4zMDMtLjUzNi0xLjUyNC4xMTctMy4xNzYgMCAwIDEuMDA4LS4zMjIgMy4zMDEgMS4yM2ExMS41MiAxMS41MiAwIDAgMSAzLjAwNC0uNDA0YzEuMDIuMDA1IDIuMDQ3LjEzOCAzLjAwNi40MDQgMi4yOTEtMS41NTIgMy4yOTctMS4yMyAzLjI5Ny0xLjIzLjY1NSAxLjY1Mi4yNDMgMi44NzMuMTE5IDMuMTc2Ljc3Ljg0IDEuMjM1IDEuOTExIDEuMjM1IDMuMjIxIDAgNC42MDktMi44MDcgNS42MjQtNS40NzkgNS45MjEuNDMuMzcyLjgyMyAxLjEwMi44MjMgMi4yMjIgMCAxLjYwNi0uMDE1IDIuODk4LS4wMTUgMy4yOTMgMCAuMzIyLjIxNi42OTQuODI1LjU3NkMyMC41NjUgMjIuMDkyIDI0IDE3LjU5NyAyNCAxMi4yOTdjMC02LjYyNy01LjM3My0xMi0xMi0xMiIvPjwvc3ZnPg0K")}
 
 /* Show navigation labels whenever tablet-sized widths have enough room, regardless of input device. */
 @media screen and (min-width:700px) and (max-width:1366px) {
@@ -972,6 +972,8 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
   html body .site-header .site-brand {display:none!important}
 }
 
+/* Preserve the full logo proportions across bundled page styles. */
+html body .site-header .site-logo {content:normal;width:96px;height:54px;object-fit:contain}
 /* Brand visibility is shared by every page, including bundled legacy styles. */
 @media screen and (min-width:601px) {
   html body .site-header .site-brand {display:flex!important}
@@ -1579,6 +1581,8 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
   html body .site-header .site-brand {display:none!important}
 }
 
+/* Preserve the full logo proportions across bundled page styles. */
+html body .site-header .site-logo {content:normal;width:96px;height:54px;object-fit:contain}
 /* Brand visibility is shared by every page, including bundled legacy styles. */
 @media screen and (min-width:601px) {
   html body .site-header .site-brand {display:flex!important}
