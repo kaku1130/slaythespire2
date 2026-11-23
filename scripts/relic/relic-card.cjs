@@ -15,7 +15,7 @@ ${card} .relic-card-text {display:grid;gap:12px;min-width:0}
 ${card} .relic-card-text > img {display:block;width:72px;height:72px;justify-self:center;margin:0;object-fit:contain}
 ${card} .relic-card-text h3 {display:flex;flex-direction:column;align-items:center;gap:4px;margin:0;font:700 27.5px/1.35 Arial,"Microsoft JhengHei",sans-serif}
 ${card} .relic-card-text h3 :is(.relic-name-zh,.relic-name-en) {font:inherit;color:var(--plain-rarity-color);overflow-wrap:anywhere}
-${card} .relic-card-text > p {margin:0;color:#fff;font:400 22.5px/1.6 Arial,"Microsoft JhengHei",sans-serif;white-space:pre-line}
+${card} .relic-card-text > p {width:80%;margin:0 auto;justify-self:center;color:#fff;font:400 22.5px/1.6 Arial,"Microsoft JhengHei",sans-serif;white-space:pre-line}
 ${card} .relic-keyword {color:#efc851;font-weight:500}
 ${card} .relic-rarity-row {display:flex;justify-content:center;font:600 20px/1.4 Arial,"Microsoft JhengHei",sans-serif}
 html body main#main-content#main-content .catalog-relic-card .relic-rarity-row [data-relic-rarity] {padding:0;border:0!important;background:transparent!important;color:var(--plain-rarity-color)!important;font:inherit}
