@@ -411,10 +411,13 @@ function cardMatchesFilters(row, section, selected) {
   const baseEnergy=row.dataset.baseEnergy;
   const energyGroup=Number(baseEnergy)>=3?'3+':baseEnergy;
   const energyCosts=[...energies].filter(value=>!['gain','cost-down'].includes(value));
+  const creatorTiers=[...row.querySelectorAll('.creator-tier-badge')].map(badge=>badge.dataset.tier);
+  const ratings=creatorTiers.length?creatorTiers:[row.dataset.tier];
+  const matchesTier=!tiers.size||ratings.some(tier=>tiers.has(tier)||(tiers.has('D')&&['E','F'].includes(tier)));
   return (!characters.size||characters.has(section.dataset.filterCategory))
     && (!rarities.size||rarities.has(row.dataset.rarity)||(rarities.has('Common')&&row.dataset.rarity==='Basic'))
     && (!types.size||types.has(row.dataset.type))
-    && (!tiers.size||tiers.has(row.dataset.tier))
+    && matchesTier
     && (!energyCosts.length||energyCosts.includes(energyGroup)||(energies.has('X')&&row.dataset.id==='STARDUST'))
     && (!energies.has('gain')||row.dataset.energyGain==='true')
     && (!energies.has('cost-down')||row.dataset.costDown==='true');

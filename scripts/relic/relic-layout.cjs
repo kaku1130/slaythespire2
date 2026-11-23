@@ -1,7 +1,7 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
 const fs=require('fs');
 const source=fs.readFileSync('data/relic/source/index.html','utf8').split('</main>')[0];
-const groups=[['Ironclad','Ironclad','#dc6c68'],['Silent','Silent','#70bf8b'],['Defect','Defect','#6faeee'],['Regent','Regent','#e3bf72'],['Necrobinder','Necrobinder','#b595dd'],['Shared','Shared','#aab6c4'],['Event','Event','#6ac1b4'],['Fallback','Other','#c8ab79']];
+const groups=[['Ironclad','Ironclad','#dc6c68'],['Silent','Silent','#70bf8b'],['Defect','Defect','#6faeee'],['Regent','Regent','#e3bf72'],['Necrobinder','Necrobinder','#b595dd'],['Shared','Colorless','#aab6c4'],['Event','Event','#6ac1b4'],['Fallback','Other','#c8ab79']];
 const iconNames={Ironclad:'ironclad',Silent:'silent',Defect:'defect',Necrobinder:'necrobinder',Regent:'regent',Shared:'colorless',Event:'event',Fallback:'other'};
 function compare(a,b){const group=x=>groups.findIndex(g=>g[0]===x.pool),rank=x=>{const i=source.indexOf('src="'+x.imagePath+'"');return i<0?Infinity:i;};return group(a)-group(b)||rank(a)-rank(b)||a.name.localeCompare(b.name,'zh-TW');}
 
@@ -16,8 +16,8 @@ function formatCard(article, item, {localizedRarity = false} = {}) {
   return article.replace(/(<img\b[^>]*>)<div class="relic-title-row"><h2>(.*?) <span class="catalog-name-en" lang="en">(.*?)<\/span><\/h2><div class="tag">[^<]*(.*?)<\/div><\/div><p(?: lang="en")?>(.*?)<\/p>/s,
     (_, image, localizedName, englishName, ranking, localizedEffect) => {
       return '<div class="relic-card-text">' + image + '<h3><span class="relic-name-zh" lang="zh-Hant">' + localizedName
-        + '</span><span class="relic-name-en" lang="en" title="' + englishName.replaceAll('"', '&quot;') + '">' + englishName
-        + '</span></h3><p lang="en">' + localizedEffect + '</p>'
+        + '</span><a class="relic-name-en" lang="en" title="' + englishName.replaceAll('"', '&quot;') + '" href="' + escapeHtml(item.sourceEn).replaceAll('"','&quot;') + '" target="_blank" rel="noopener noreferrer">' + englishName
+        + '</a></h3><p lang="en">' + localizedEffect + '</p>'
         + '<div class="relic-rarity-row" lang="' + (localizedRarity ? 'zh-Hant' : 'en') + '">' + renderClassification(item.rarity, {localized:localizedRarity}) + '</div>'
         + (ranking ? '<div class="tag relic-card-ranking">' + ranking + '</div>' : '') + '</div>';
     });
@@ -27,8 +27,10 @@ function formatCatalogCard(article,item,options={}){
   const pool=groups.find(group=>group[0]===item.pool);
   const label=pool?.[1]||item.pool;
   const icon=iconNames[item.pool]||'other';
-  const rarity='<span class="relic-rarity-row" lang="en">'+renderClassification(item.rarity)+'</span>';
-  return formatCard(article,item,options)
+  let formatted=formatCard(article,item,options),ancientIcons='';
+  if(item.rarity==='Ancient')formatted=formatted.replace(/<div class="tag relic-card-ranking">([\s\S]*?)<\/div>/,(_,ranking)=>{ancientIcons=ranking;return '';});
+  const rarity='<span class="relic-rarity-row" lang="en">'+ancientIcons+renderClassification(item.rarity)+'</span>';
+  return formatted
     .replace(/<div class="relic-rarity-row"[^>]*>[\s\S]*?<\/div>/,'')
     .replace(/(<img\b[^>]*>)/,'<div class="relic-icon-row" style="--pool-color:'+pool[2]+'"><span class="relic-pool-corner" lang="en" title="'+escapeHtml(label)+'" aria-label="'+escapeHtml(label)+'"><img src="'+(options.prefix||'')+'assets/cards/icons/'+icon+'.webp" alt="" width="20" height="20"><span>'+escapeHtml(label)+'</span></span>$1'+rarity+'</div>');
 }

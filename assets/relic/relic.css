@@ -1180,9 +1180,9 @@ html body .entry.relic .relic-ancient-ranking img {display:inline-block;width:32
 /* No divider beneath the search bar. */
 html body main#main-content>.mobile-search-row,html body main#main-content .catalog-search-tools {border-bottom:0;box-shadow:none}
 
-/* Shared and Event always occupy the second profession row. */
-html body main#main-content #relic-filter-pool > .relic-pool-extra {
-  display:flex;flex:1 0 100%;width:100%;min-width:0;gap:8px;
+/* Keep the six pool icons together on one row. */
+html body main#main-content #relic-filter-pool {
+  display:grid;grid-template-columns:repeat(6,minmax(0,1fr));width:100%;min-width:0;gap:8px;
 }
 
 /* Three wider choices above four equal-width choices. */
@@ -1261,6 +1261,9 @@ html body main#main-content#main-content .catalog-relic-card .relic-icon-row>.re
 html body main#main-content .catalog-relic-card .relic-pool-corner>img {display:block;width:28px;height:28px;object-fit:contain;margin:0;flex:none}
 html body main#main-content .catalog-relic-card[data-relic-id] {grid-template-columns:minmax(0,1fr);grid-template-rows:auto;grid-auto-rows:auto;align-items:start}
 html body main#main-content .catalog-relic-card .relic-card-text {grid-column:1;grid-row:1}
+html body main#main-content#main-content .catalog-relic-card .relic-icon-row>.relic-rarity-row:has(>.relic-ancient-ranking) {display:inline-flex;align-items:center;justify-content:flex-end;gap:4px;max-width:none;white-space:nowrap}
+html body main#main-content .catalog-relic-card .relic-rarity-row .relic-ancient-ranking {display:inline-flex;align-items:center;justify-content:center;flex:none;margin:0;padding:0}
+html body main#main-content .catalog-relic-card .relic-rarity-row .relic-ancient-ranking img {display:block;width:20px;height:20px;margin:0;flex:none;object-fit:contain}
 html body main#main-content .catalog-relic-card[data-relic-id] .relic-card-text > p {width:80%;margin:0 auto;justify-self:center}
 html body main#main-content .catalog-relic-card .relic-card-text h3 .relic-name-zh {display:block}
 html body main#main-content .catalog-relic-card .relic-card-text .tag {justify-content:center;margin:0}
@@ -1274,7 +1277,9 @@ html body main#main-content .catalog-relic-card[data-relic-id] .relic-card-text 
 html body main#main-content .catalog-relic-card[data-relic-id] .relic-card-text > img {display:block;width:72px;height:72px;justify-self:center;margin:0;object-fit:contain}
 html body main#main-content .catalog-relic-card[data-relic-id] .relic-card-text h3 {display:flex;flex-direction:column;align-items:center;gap:4px;margin:0;font:700 27.5px/1.35 Arial,"Microsoft JhengHei",sans-serif}
 html body main#main-content .catalog-relic-card[data-relic-id] .relic-card-text h3 :is(.relic-name-zh,.relic-name-en) {font:inherit;color:var(--plain-rarity-color);overflow-wrap:anywhere}
-html body main#main-content .catalog-relic-card[data-relic-id] .relic-card-text > p {margin:0;color:#fff;font:400 22.5px/1.6 Arial,"Microsoft JhengHei",sans-serif;white-space:pre-line}
+html body main#main-content .catalog-relic-card[data-relic-id] .relic-name-en {text-decoration:none}
+html body main#main-content .catalog-relic-card[data-relic-id] .relic-name-en:hover {text-decoration:underline}
+html body main#main-content .catalog-relic-card[data-relic-id] .relic-card-text > p {width:80%;margin:0 auto;justify-self:center;color:#fff6e2;font:400 22.5px/1.6 Arial,"Microsoft JhengHei",sans-serif;white-space:pre-line}
 html body main#main-content .catalog-relic-card[data-relic-id] .relic-keyword {color:#efc851;font-weight:500}
 html body main#main-content .catalog-relic-card[data-relic-id] .relic-rarity-row {display:flex;justify-content:center;font:600 20px/1.4 Arial,"Microsoft JhengHei",sans-serif}
 html body main#main-content#main-content .catalog-relic-card .relic-rarity-row [data-relic-rarity] {padding:0;border:0!important;background:transparent!important;color:var(--plain-rarity-color)!important;font:inherit}

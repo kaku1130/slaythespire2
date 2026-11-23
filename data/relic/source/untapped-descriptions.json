@@ -1,0 +1,7850 @@
+{
+  "source": "https://sts2.untapped.gg/en/relics",
+  "checkedAt": "2026-11-23T15:06:07.288Z",
+  "palette": {
+    "aqua": "#2aebbe",
+    "cream": "#fff6e2",
+    "gold": "#efc851",
+    "red": "#f55",
+    "green": "#7fff00",
+    "blue": "#87ceeb",
+    "darkblue": "#67aeeb",
+    "orange": "#ffa518",
+    "pink": "#ff78a0",
+    "purple": "violet"
+  },
+  "items": [
+    {
+      "id": "AMETHYST_AUBERGINE",
+      "name": "Amethyst Aubergine",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/amethyst-aubergine",
+      "parts": [
+        {
+          "text": "Enemies drop "
+        },
+        {
+          "text": "15",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional "
+        },
+        {
+          "text": "Gold",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "ANCHOR",
+      "name": "Anchor",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/anchor",
+      "parts": [
+        {
+          "text": "Start each combat with "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "AKABEKO",
+      "name": "Akabeko",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/akabeko",
+      "parts": [
+        {
+          "text": "At the start of each combat, gain "
+        },
+        {
+          "text": "8",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Vigor",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "ART_OF_WAR",
+      "name": "Art of War",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/art-of-war",
+      "parts": [
+        {
+          "text": "If you do not play any Attacks during your turn, gain an additional "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " next turn."
+        }
+      ]
+    },
+    {
+      "id": "BAG_OF_MARBLES",
+      "name": "Bag of Marbles",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/bag-of-marbles",
+      "parts": [
+        {
+          "text": "At the start of each combat, apply "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Vulnerable",
+          "color": "#efc851"
+        },
+        {
+          "text": " to ALL enemies."
+        }
+      ]
+    },
+    {
+      "id": "BAG_OF_PREPARATION",
+      "name": "Bag of Preparation",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/bag-of-preparation",
+      "parts": [
+        {
+          "text": "At the start of each combat, draw "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional cards."
+        }
+      ]
+    },
+    {
+      "id": "BEATING_REMNANT",
+      "name": "Beating Remnant",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/beating-remnant",
+      "parts": [
+        {
+          "text": "You cannot lose more than "
+        },
+        {
+          "text": "20",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " HP in a single turn."
+        }
+      ]
+    },
+    {
+      "id": "BELLOWS",
+      "name": "Bellows",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/bellows",
+      "parts": [
+        {
+          "text": "The first "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": " you draw each combat is "
+        },
+        {
+          "text": "Upgraded",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "BIG_HAT",
+      "name": "Big Hat",
+      "url": "https://sts2.untapped.gg/en/relics/necrobinder/big-hat",
+      "parts": [
+        {
+          "text": "At the start of each combat, add "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random "
+        },
+        {
+          "text": "Ethereal",
+          "color": "#efc851"
+        },
+        {
+          "text": " cards into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "BLACK_BLOOD",
+      "name": "Black Blood",
+      "url": "https://sts2.untapped.gg/en/relics/ironclad/black-blood",
+      "parts": [
+        {
+          "text": "At the end of combat, heal "
+        },
+        {
+          "text": "12",
+          "color": "#7fff00"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    {
+      "id": "BLOOD_VIAL",
+      "name": "Blood Vial",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/blood-vial",
+      "parts": [
+        {
+          "text": "At the start of each combat, heal "
+        },
+        {
+          "text": "2",
+          "color": "#7fff00"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    {
+      "id": "BONE_FLUTE",
+      "name": "Bone Flute",
+      "url": "https://sts2.untapped.gg/en/relics/necrobinder/bone-flute",
+      "parts": [
+        {
+          "text": "Whenever "
+        },
+        {
+          "text": "Osty",
+          "color": "#efc851"
+        },
+        {
+          "text": " attacks, gain "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "BOOK_OF_FIVE_RINGS",
+      "name": "Book of Five Rings",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/book-of-five-rings",
+      "parts": [
+        {
+          "text": "Every "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards you add to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": ", heal "
+        },
+        {
+          "text": "20",
+          "color": "#7fff00"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    {
+      "id": "BOOKMARK",
+      "name": "Bookmark",
+      "url": "https://sts2.untapped.gg/en/relics/necrobinder/bookmark",
+      "parts": [
+        {
+          "text": "At the end of each turn, lower the cost of a random "
+        },
+        {
+          "text": "Retained",
+          "color": "#efc851"
+        },
+        {
+          "text": " card by "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " until played."
+        }
+      ]
+    },
+    {
+      "id": "BOOK_REPAIR_KNIFE",
+      "name": "Book Repair Knife",
+      "url": "https://sts2.untapped.gg/en/relics/necrobinder/book-repair-knife",
+      "parts": [
+        {
+          "text": "Whenever a non-Minion enemy dies to "
+        },
+        {
+          "text": "Doom",
+          "color": "#efc851"
+        },
+        {
+          "text": ", heal "
+        },
+        {
+          "text": "3",
+          "color": "#7fff00"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    {
+      "id": "BOUND_PHYLACTERY",
+      "name": "Bound Phylactery",
+      "url": "https://sts2.untapped.gg/en/relics/necrobinder/bound-phylactery",
+      "parts": [
+        {
+          "text": "At the start of your turn, "
+        },
+        {
+          "text": "Summon",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "BOWLER_HAT",
+      "name": "Bowler Hat",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/bowler-hat",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "25%",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional "
+        },
+        {
+          "text": "Gold",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "BRIMSTONE",
+      "name": "Brimstone",
+      "url": "https://sts2.untapped.gg/en/relics/ironclad/brimstone",
+      "parts": [
+        {
+          "text": "At the start of your turn, gain "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": " and ALL enemies gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "BRONZE_SCALES",
+      "name": "Bronze Scales",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/bronze-scales",
+      "parts": [
+        {
+          "text": "Start each combat with "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Thorns",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "BURNING_BLOOD",
+      "name": "Burning Blood",
+      "url": "https://sts2.untapped.gg/en/relics/ironclad/burning-blood",
+      "parts": [
+        {
+          "text": "At the end of combat, heal "
+        },
+        {
+          "text": "6",
+          "color": "#7fff00"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    {
+      "id": "CANDELABRA",
+      "name": "Candelabra",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/candelabra",
+      "parts": [
+        {
+          "text": "At the start of your "
+        },
+        {
+          "text": "2nd",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turn, gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "CAPTAINS_WHEEL",
+      "name": "Captain's Wheel",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/captains-wheel",
+      "parts": [
+        {
+          "text": "At the start of your "
+        },
+        {
+          "text": "3rd",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turn, gain "
+        },
+        {
+          "text": "18",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "CHANDELIER",
+      "name": "Chandelier",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/chandelier",
+      "parts": [
+        {
+          "text": "At the start of your "
+        },
+        {
+          "text": "3rd",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turn, gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "CENTENNIAL_PUZZLE",
+      "name": "Centennial Puzzle",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/centennial-puzzle",
+      "parts": [
+        {
+          "text": "The first time you lose HP each combat, draw "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards."
+        }
+      ]
+    },
+    {
+      "id": "CHARONS_ASHES",
+      "name": "Charon's Ashes",
+      "url": "https://sts2.untapped.gg/en/relics/ironclad/charons-ashes",
+      "parts": [
+        {
+          "text": "Whenever you "
+        },
+        {
+          "text": "Exhaust",
+          "color": "#efc851"
+        },
+        {
+          "text": " a card, deal "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage to ALL enemies."
+        }
+      ]
+    },
+    {
+      "id": "CLOAK_CLASP",
+      "name": "Cloak Clasp",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/cloak-clasp",
+      "parts": [
+        {
+          "text": "At the end of your turn, gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": " for each card in your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "CRACKED_CORE",
+      "name": "Cracked Core",
+      "url": "https://sts2.untapped.gg/en/relics/defect/cracked-core",
+      "parts": [
+        {
+          "text": "At the start of each combat, "
+        },
+        {
+          "text": "Channel",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Lightning",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "DATA_DISK",
+      "name": "Data Disk",
+      "url": "https://sts2.untapped.gg/en/relics/defect/data-disk",
+      "parts": [
+        {
+          "text": "Start each combat with "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Focus",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "DEMON_TONGUE",
+      "name": "Demon Tongue",
+      "url": "https://sts2.untapped.gg/en/relics/ironclad/demon-tongue",
+      "parts": [
+        {
+          "text": "The first time you lose HP on your turn, heal HP equal to the amount lost."
+        }
+      ]
+    },
+    {
+      "id": "DIVINE_DESTINY",
+      "name": "Divine Destiny",
+      "url": "https://sts2.untapped.gg/en/relics/regent/divine-destiny",
+      "parts": [
+        {
+          "text": "At the start of each combat, gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "DIVINE_RIGHT",
+      "name": "Divine Right",
+      "url": "https://sts2.untapped.gg/en/relics/regent/divine-right",
+      "parts": [
+        {
+          "text": "At the start of each combat, gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "FAKE_ANCHOR",
+      "name": "Anchor???",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/anchor",
+      "parts": [
+        {
+          "text": "Start each combat with "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "EMOTION_CHIP",
+      "name": "Emotion Chip",
+      "url": "https://sts2.untapped.gg/en/relics/defect/emotion-chip",
+      "parts": [
+        {
+          "text": "If you lost HP during the previous turn, trigger the passive ability of all Orbs at the start of your turn."
+        }
+      ]
+    },
+    {
+      "id": "ETERNAL_FEATHER",
+      "name": "Eternal Feather",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/eternal-feather",
+      "parts": [
+        {
+          "text": "For every "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards in your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": ", heal "
+        },
+        {
+          "text": "3",
+          "color": "#7fff00"
+        },
+        {
+          "text": " HP whenever you enter a "
+        },
+        {
+          "text": "Rest Site",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "FAKE_BLOOD_VIAL",
+      "name": "Blood Vial???",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/blood-vial",
+      "parts": [
+        {
+          "text": "At the start of each combat, heal "
+        },
+        {
+          "text": "2",
+          "color": "#7fff00"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    {
+      "id": "FAKE_HAPPY_FLOWER",
+      "name": "Happy Flower???",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/happy-flower",
+      "parts": [
+        {
+          "text": "Every "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turns, gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "FAKE_MANGO",
+      "name": "Mango???",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/mango",
+      "parts": [
+        {
+          "text": "Upon pickup, raise your Max HP by "
+        },
+        {
+          "text": "14",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "FAKE_STRIKE_DUMMY",
+      "name": "Strike Dummy???",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/strike-dummy",
+      "parts": [
+        {
+          "text": "Cards containing “Strike” deal "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional damage."
+        }
+      ]
+    },
+    {
+      "id": "FAKE_VENERABLE_TEA_SET",
+      "name": "Venerable Tea Set???",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/venerable-tea-set",
+      "parts": [
+        {
+          "text": "Whenever you enter a "
+        },
+        {
+          "text": "Rest Site",
+          "color": "#efc851"
+        },
+        {
+          "text": ", start the next combat with an additional "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "FAKE_ORICHALCUM",
+      "name": "Orichalcum???",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/orichalcum",
+      "parts": [
+        {
+          "text": "If you end your turn without "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": ", gain "
+        },
+        {
+          "text": "6",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "FENCING_MANUAL",
+      "name": "Fencing Manual",
+      "url": "https://sts2.untapped.gg/en/relics/regent/fencing-manual",
+      "parts": [
+        {
+          "text": "At the start of each combat, "
+        },
+        {
+          "text": "Forge",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "FESTIVE_POPPER",
+      "name": "Festive Popper",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/festive-popper",
+      "parts": [
+        {
+          "text": "At the start of each combat, deal "
+        },
+        {
+          "text": "9",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage to ALL enemies."
+        }
+      ]
+    },
+    {
+      "id": "FROZEN_EGG",
+      "name": "Frozen Egg",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/frozen-egg",
+      "parts": [
+        {
+          "text": "Whenever you add a Power into your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " it."
+        }
+      ]
+    },
+    {
+      "id": "FUNERARY_MASK",
+      "name": "Funerary Mask",
+      "url": "https://sts2.untapped.gg/en/relics/necrobinder/funerary-mask",
+      "parts": [
+        {
+          "text": "At the start of each combat, add "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Souls",
+          "color": "#efc851"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Draw Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "GALACTIC_DUST",
+      "name": "Galactic Dust",
+      "url": "https://sts2.untapped.gg/en/relics/regent/galactic-dust",
+      "parts": [
+        {
+          "text": "For every "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " spent, gain "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "GAMBLING_CHIP",
+      "name": "Gambling Chip",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/gambling-chip",
+      "parts": [
+        {
+          "text": "At the start of each combat, discard any number of cards then draw that many."
+        }
+      ]
+    },
+    {
+      "id": "GAME_PIECE",
+      "name": "Game Piece",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/game-piece",
+      "parts": [
+        {
+          "text": "Whenever you play a Power, draw "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " card."
+        }
+      ]
+    },
+    {
+      "id": "GIRYA",
+      "name": "Girya",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/girya",
+      "parts": [
+        {
+          "text": "You can now gain "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": " at "
+        },
+        {
+          "text": "Rest Sites",
+          "color": "#efc851"
+        },
+        {
+          "text": ". ("
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " times max)"
+        }
+      ]
+    },
+    {
+      "id": "GOLD_PLATED_CABLES",
+      "name": "Gold-Plated Cables",
+      "url": "https://sts2.untapped.gg/en/relics/defect/gold-plated-cables",
+      "parts": [
+        {
+          "text": "Your rightmost Orb triggers its passive an additional time."
+        }
+      ]
+    },
+    {
+      "id": "GREMLIN_HORN",
+      "name": "Gremlin Horn",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/gremlin-horn",
+      "parts": [
+        {
+          "text": "Whenever an enemy dies, gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " and draw "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " card."
+        }
+      ]
+    },
+    {
+      "id": "GORGET",
+      "name": "Gorget",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/gorget",
+      "parts": [
+        {
+          "text": "At the start of each combat, gain "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Plating",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "HAPPY_FLOWER",
+      "name": "Happy Flower",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/happy-flower",
+      "parts": [
+        {
+          "text": "Every "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turns, gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "HELICAL_DART",
+      "name": "Helical Dart",
+      "url": "https://sts2.untapped.gg/en/relics/silent/helical-dart",
+      "parts": [
+        {
+          "text": "Whenever you play a "
+        },
+        {
+          "text": "Shiv",
+          "color": "#efc851"
+        },
+        {
+          "text": ", gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "color": "#efc851"
+        },
+        {
+          "text": " this turn."
+        }
+      ]
+    },
+    {
+      "id": "HORN_CLEAT",
+      "name": "Horn Cleat",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/horn-cleat",
+      "parts": [
+        {
+          "text": "At the start of your "
+        },
+        {
+          "text": "2nd",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turn, gain "
+        },
+        {
+          "text": "14",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "ICE_CREAM",
+      "name": "Ice Cream",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/ice-cream",
+      "parts": [
+        {
+          "text": "Energy is now conserved between turns."
+        }
+      ]
+    },
+    {
+      "id": "INFUSED_CORE",
+      "name": "Infused Core",
+      "url": "https://sts2.untapped.gg/en/relics/defect/infused-core",
+      "parts": [
+        {
+          "text": "At the start of each combat, "
+        },
+        {
+          "text": "Channel",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Lightning",
+          "color": "#efc851"
+        },
+        {
+          "text": ". "
+        },
+        {
+          "text": "Lightning",
+          "color": "#efc851"
+        },
+        {
+          "text": " deals "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional damage."
+        }
+      ]
+    },
+    {
+      "id": "INTIMIDATING_HELMET",
+      "name": "Intimidating Helmet",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/intimidating-helmet",
+      "parts": [
+        {
+          "text": "Whenever you play a card that costs "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " or more, gain "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "IVORY_TILE",
+      "name": "Ivory Tile",
+      "url": "https://sts2.untapped.gg/en/relics/necrobinder/ivory-tile",
+      "parts": [
+        {
+          "text": "Whenever you play a card that costs "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " or more, gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "JUZU_BRACELET",
+      "name": "Juzu Bracelet",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/juzu-bracelet",
+      "parts": [
+        {
+          "text": "Regular enemy combats are no longer encountered in "
+        },
+        {
+          "text": "?",
+          "color": "#efc851"
+        },
+        {
+          "text": " rooms."
+        }
+      ]
+    },
+    {
+      "id": "JOSS_PAPER",
+      "name": "Joss Paper",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/joss-paper",
+      "parts": [
+        {
+          "text": "Every "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " times you "
+        },
+        {
+          "text": "Exhaust",
+          "color": "#efc851"
+        },
+        {
+          "text": " a card, draw "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " card."
+        }
+      ]
+    },
+    {
+      "id": "KUNAI",
+      "name": "Kunai",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/kunai",
+      "parts": [
+        {
+          "text": "Every time you play "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Attacks in a single turn, gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "KUSARIGAMA",
+      "name": "Kusarigama",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/kusarigama",
+      "parts": [
+        {
+          "text": "Every time you play "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Attacks in a single turn, deal "
+        },
+        {
+          "text": "6",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage to a random enemy."
+        }
+      ]
+    },
+    {
+      "id": "LASTING_CANDY",
+      "name": "Lasting Candy",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/lasting-candy",
+      "parts": [
+        {
+          "text": "Every other combat, your card rewards gain an additional Power."
+        }
+      ]
+    },
+    {
+      "id": "LANTERN",
+      "name": "Lantern",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/lantern",
+      "parts": [
+        {
+          "text": "Start each combat with an additional "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "LETTER_OPENER",
+      "name": "Letter Opener",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/letter-opener",
+      "parts": [
+        {
+          "text": "Every time you play "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Skills in a single turn, deal "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage to ALL enemies."
+        }
+      ]
+    },
+    {
+      "id": "LIZARD_TAIL",
+      "name": "Lizard Tail",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/lizard-tail",
+      "parts": [
+        {
+          "text": "When your HP would be reduced to "
+        },
+        {
+          "text": "0",
+          "color": "#87ceeb"
+        },
+        {
+          "text": ", heal to "
+        },
+        {
+          "text": "50%",
+          "color": "#7fff00"
+        },
+        {
+          "text": " of your Max HP instead (works once)."
+        }
+      ]
+    },
+    {
+      "id": "LUNAR_PASTRY",
+      "name": "Lunar Pastry",
+      "url": "https://sts2.untapped.gg/en/relics/regent/lunar-pastry",
+      "parts": [
+        {
+          "text": "At the end of your turn, gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "LUCKY_FYSH",
+      "name": "Lucky Fysh",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/lucky-fysh",
+      "parts": [
+        {
+          "text": "Whenever you add a card to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": ", gain "
+        },
+        {
+          "text": "15",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Gold",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "MANGO",
+      "name": "Mango",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/mango",
+      "parts": [
+        {
+          "text": "Upon pickup, raise your Max HP by "
+        },
+        {
+          "text": "14",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "MEAL_TICKET",
+      "name": "Meal Ticket",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/meal-ticket",
+      "parts": [
+        {
+          "text": "Whenever you enter a shop room, heal "
+        },
+        {
+          "text": "15",
+          "color": "#7fff00"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    {
+      "id": "MEAT_ON_THE_BONE",
+      "name": "Meat on the Bone",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/meat-on-the-bone",
+      "parts": [
+        {
+          "text": "If your HP is at or below "
+        },
+        {
+          "text": "50%",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " at the end of combat, heal "
+        },
+        {
+          "text": "12",
+          "color": "#7fff00"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    {
+      "id": "MERCURY_HOURGLASS",
+      "name": "Mercury Hourglass",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/mercury-hourglass",
+      "parts": [
+        {
+          "text": "At the start of your turn, deal "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage to ALL enemies."
+        }
+      ]
+    },
+    {
+      "id": "METRONOME",
+      "name": "Metronome",
+      "url": "https://sts2.untapped.gg/en/relics/defect/metronome",
+      "parts": [
+        {
+          "text": "The first time you "
+        },
+        {
+          "text": "Channel",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "7",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Orbs",
+          "color": "#efc851"
+        },
+        {
+          "text": " each combat, deal "
+        },
+        {
+          "text": "30",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage to ALL enemies."
+        }
+      ]
+    },
+    {
+      "id": "MINI_REGENT",
+      "name": "Mini Regent",
+      "url": "https://sts2.untapped.gg/en/relics/regent/mini-regent",
+      "parts": [
+        {
+          "text": "The first time you spend "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " each turn, gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "MOLTEN_EGG",
+      "name": "Molten Egg",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/molten-egg",
+      "parts": [
+        {
+          "text": "Whenever you add an Attack card to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " it."
+        }
+      ]
+    },
+    {
+      "id": "MINIATURE_CANNON",
+      "name": "Miniature Cannon",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/miniature-cannon",
+      "parts": [
+        {
+          "text": "Upgraded",
+          "color": "#efc851"
+        },
+        {
+          "text": " Attacks deal "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional damage."
+        }
+      ]
+    },
+    {
+      "id": "MUMMIFIED_HAND",
+      "name": "Mummified Hand",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/mummified-hand",
+      "parts": [
+        {
+          "text": "Whenever you play a Power, a random card in your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": " is free to play that turn."
+        }
+      ]
+    },
+    {
+      "id": "NINJA_SCROLL",
+      "name": "Ninja Scroll",
+      "url": "https://sts2.untapped.gg/en/relics/silent/ninja-scroll",
+      "parts": [
+        {
+          "text": "At the start of each combat, add "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Shivs",
+          "color": "#efc851"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "NUNCHAKU",
+      "name": "Nunchaku",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/nunchaku",
+      "parts": [
+        {
+          "text": "Every time you play "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Attacks, gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "ODDLY_SMOOTH_STONE",
+      "name": "Oddly Smooth Stone",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/oddly-smooth-stone",
+      "parts": [
+        {
+          "text": "Start each combat with "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "ORICHALCUM",
+      "name": "Orichalcum",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/orichalcum",
+      "parts": [
+        {
+          "text": "If you end your turn without "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": ", gain "
+        },
+        {
+          "text": "6",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "ORANGE_DOUGH",
+      "name": "Orange Dough",
+      "url": "https://sts2.untapped.gg/en/relics/regent/orange-dough",
+      "parts": [
+        {
+          "text": "At the start of each combat, add "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random Colorless cards into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "ORNAMENTAL_FAN",
+      "name": "Ornamental Fan",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/ornamental-fan",
+      "parts": [
+        {
+          "text": "Every time you play "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Attacks in a single turn, gain "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "OLD_COIN",
+      "name": "Old Coin",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/old-coin",
+      "parts": [
+        {
+          "text": "Upon pickup, gain "
+        },
+        {
+          "text": "300",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Gold",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "PANTOGRAPH",
+      "name": "Pantograph",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/pantograph",
+      "parts": [
+        {
+          "text": "At the start of each "
+        },
+        {
+          "text": "Boss",
+          "color": "#efc851"
+        },
+        {
+          "text": " combat, heal "
+        },
+        {
+          "text": "25",
+          "color": "#7fff00"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    {
+      "id": "PARRYING_SHIELD",
+      "name": "Parrying Shield",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/parrying-shield",
+      "parts": [
+        {
+          "text": "If you end a turn with at least "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": ", deal "
+        },
+        {
+          "text": "6",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage to a random enemy."
+        }
+      ]
+    },
+    {
+      "id": "PAPER_PHROG",
+      "name": "Paper Phrog",
+      "url": "https://sts2.untapped.gg/en/relics/ironclad/paper-phrog",
+      "parts": [
+        {
+          "text": "Enemies with "
+        },
+        {
+          "text": "Vulnerable",
+          "color": "#efc851"
+        },
+        {
+          "text": " take "
+        },
+        {
+          "text": "75%",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " more damage rather than "
+        },
+        {
+          "text": "50%",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "PEAR",
+      "name": "Pear",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/pear",
+      "parts": [
+        {
+          "text": "Upon pickup, raise your Max HP by "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "PEN_NIB",
+      "name": "Pen Nib",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/pen-nib",
+      "parts": [
+        {
+          "text": "Every "
+        },
+        {
+          "text": "10th",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Attack you play deals double damage."
+        }
+      ]
+    },
+    {
+      "id": "PAPER_KRANE",
+      "name": "Paper Krane",
+      "url": "https://sts2.untapped.gg/en/relics/silent/paper-krane",
+      "parts": [
+        {
+          "text": "Enemies with "
+        },
+        {
+          "text": "Weak",
+          "color": "#efc851"
+        },
+        {
+          "text": " deal "
+        },
+        {
+          "text": "40%",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " less damage to you rather than "
+        },
+        {
+          "text": "25%",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "PETRIFIED_TOAD",
+      "name": "Petrified Toad",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/petrified-toad",
+      "parts": [
+        {
+          "text": "At the start of each combat, procure a "
+        },
+        {
+          "text": "Potion-Shaped Rock",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "PERMAFROST",
+      "name": "Permafrost",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/permafrost",
+      "parts": [
+        {
+          "text": "The first time you play a Power each combat, gain "
+        },
+        {
+          "text": "7",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "PLANISPHERE",
+      "name": "Planisphere",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/planisphere",
+      "parts": [
+        {
+          "text": "Whenever you enter a "
+        },
+        {
+          "text": "?",
+          "color": "#efc851"
+        },
+        {
+          "text": " room, heal "
+        },
+        {
+          "text": "5",
+          "color": "#7fff00"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    {
+      "id": "PENDULUM",
+      "name": "Pendulum",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/pendulum",
+      "parts": [
+        {
+          "text": "Every "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turns, draw "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " card."
+        }
+      ]
+    },
+    {
+      "id": "POCKETWATCH",
+      "name": "Pocketwatch",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/pocketwatch",
+      "parts": [
+        {
+          "text": "Whenever you play "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " or fewer cards during your turn, draw "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional cards at the start of your next turn."
+        }
+      ]
+    },
+    {
+      "id": "PHYLACTERY_UNBOUND",
+      "name": "Phylactery Unbound",
+      "url": "https://sts2.untapped.gg/en/relics/necrobinder/phylactery-unbound",
+      "parts": [
+        {
+          "text": "At the start of each combat, "
+        },
+        {
+          "text": "Summon",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": ". At the start of your turn, "
+        },
+        {
+          "text": "Summon",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "POWER_CELL",
+      "name": "Power Cell",
+      "url": "https://sts2.untapped.gg/en/relics/defect/power-cell",
+      "parts": [
+        {
+          "text": "At the start of each combat, add "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " zero-cost cards from your "
+        },
+        {
+          "text": "Draw Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "PRAYER_WHEEL",
+      "name": "Prayer Wheel",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/prayer-wheel",
+      "parts": [
+        {
+          "text": "Normal enemies drop an additional card reward."
+        }
+      ]
+    },
+    {
+      "id": "POTION_BELT",
+      "name": "Potion Belt",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/potion-belt",
+      "parts": [
+        {
+          "text": "Upon pickup, gain "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " potion slots."
+        }
+      ]
+    },
+    {
+      "id": "RAZOR_TOOTH",
+      "name": "Razor Tooth",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/razor-tooth",
+      "parts": [
+        {
+          "text": "Every time you play an Attack or Skill, "
+        },
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " it for the remainder of combat."
+        }
+      ]
+    },
+    {
+      "id": "RAINBOW_RING",
+      "name": "Rainbow Ring",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/rainbow-ring",
+      "parts": [
+        {
+          "text": "The first time you play an Attack, Skill, and Power each turn, gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "RED_MASK",
+      "name": "Red Mask",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/red-mask",
+      "parts": [
+        {
+          "text": "At the start of each combat, apply "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Weak",
+          "color": "#efc851"
+        },
+        {
+          "text": " to ALL enemies."
+        }
+      ]
+    },
+    {
+      "id": "REGALITE",
+      "name": "Regalite",
+      "url": "https://sts2.untapped.gg/en/relics/regent/regalite",
+      "parts": [
+        {
+          "text": "The first time you create a card each turn, gain "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "RED_SKULL",
+      "name": "Red Skull",
+      "url": "https://sts2.untapped.gg/en/relics/ironclad/red-skull",
+      "parts": [
+        {
+          "text": "While your HP is at or below "
+        },
+        {
+          "text": "50%",
+          "color": "#87ceeb"
+        },
+        {
+          "text": ", you have "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "REGAL_PILLOW",
+      "name": "Regal Pillow",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/regal-pillow",
+      "parts": [
+        {
+          "text": "Whenever you "
+        },
+        {
+          "text": "Rest",
+          "color": "#efc851"
+        },
+        {
+          "text": ", heal an additional "
+        },
+        {
+          "text": "15",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    {
+      "id": "RING_OF_THE_DRAKE",
+      "name": "Ring of the Drake",
+      "url": "https://sts2.untapped.gg/en/relics/silent/ring-of-the-drake",
+      "parts": [
+        {
+          "text": "At the start of your first "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turns, draw "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional cards."
+        }
+      ]
+    },
+    {
+      "id": "REPTILE_TRINKET",
+      "name": "Reptile Trinket",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/reptile-trinket",
+      "parts": [
+        {
+          "text": "Whenever you use a potion, gain "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": " this turn."
+        }
+      ]
+    },
+    {
+      "id": "RING_OF_THE_SNAKE",
+      "name": "Ring of the Snake",
+      "url": "https://sts2.untapped.gg/en/relics/silent/ring-of-the-snake",
+      "parts": [
+        {
+          "text": "At the start of each combat, draw "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional cards."
+        }
+      ]
+    },
+    {
+      "id": "RIPPLE_BASIN",
+      "name": "Ripple Basin",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/ripple-basin",
+      "parts": [
+        {
+          "text": "If you did not play any Attacks during your turn, gain "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "RUINED_HELMET",
+      "name": "Ruined Helmet",
+      "url": "https://sts2.untapped.gg/en/relics/ironclad/ruined-helmet",
+      "parts": [
+        {
+          "text": "The first time you gain "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": " each combat, double the amount gained."
+        }
+      ]
+    },
+    {
+      "id": "RUNIC_CAPACITOR",
+      "name": "Runic Capacitor",
+      "url": "https://sts2.untapped.gg/en/relics/defect/runic-capacitor",
+      "parts": [
+        {
+          "text": "Start each combat with "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional "
+        },
+        {
+          "text": "Orb Slots",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SHOVEL",
+      "name": "Shovel",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/shovel",
+      "parts": [
+        {
+          "text": "You can now dig at "
+        },
+        {
+          "text": "Rest Sites",
+          "color": "#efc851"
+        },
+        {
+          "text": " to obtain a random "
+        },
+        {
+          "text": "Relic",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SELF_FORMING_CLAY",
+      "name": "Self-Forming Clay",
+      "url": "https://sts2.untapped.gg/en/relics/ironclad/self-forming-clay",
+      "parts": [
+        {
+          "text": "Whenever you lose HP in combat, gain "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": " next turn."
+        }
+      ]
+    },
+    {
+      "id": "SHURIKEN",
+      "name": "Shuriken",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/shuriken",
+      "parts": [
+        {
+          "text": "Every time you play "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Attacks in a single turn, gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SNECKO_SKULL",
+      "name": "Snecko Skull",
+      "url": "https://sts2.untapped.gg/en/relics/silent/snecko-skull",
+      "parts": [
+        {
+          "text": "Whenever you apply "
+        },
+        {
+          "text": "Poison",
+          "color": "#efc851"
+        },
+        {
+          "text": ", apply an additional "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Poison",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "STONE_CALENDAR",
+      "name": "Stone Calendar",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/stone-calendar",
+      "parts": [
+        {
+          "text": "At the end of turn "
+        },
+        {
+          "text": "7",
+          "color": "#87ceeb"
+        },
+        {
+          "text": ", deal "
+        },
+        {
+          "text": "52",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage to ALL enemies."
+        }
+      ]
+    },
+    {
+      "id": "SPARKLING_ROUGE",
+      "name": "Sparkling Rouge",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/sparkling-rouge",
+      "parts": [
+        {
+          "text": "At the start of your "
+        },
+        {
+          "text": "3rd",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turn, gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "STONE_CRACKER",
+      "name": "Stone Cracker",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/stone-cracker",
+      "parts": [
+        {
+          "text": "At the start of each combat, "
+        },
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random cards in your "
+        },
+        {
+          "text": "Draw Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": " for the rest of combat."
+        }
+      ]
+    },
+    {
+      "id": "STRAWBERRY",
+      "name": "Strawberry",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/strawberry",
+      "parts": [
+        {
+          "text": "Upon pickup, raise your Max HP by "
+        },
+        {
+          "text": "7",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "STRIKE_DUMMY",
+      "name": "Strike Dummy",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/strike-dummy",
+      "parts": [
+        {
+          "text": "Cards containing “Strike” deal "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional damage."
+        }
+      ]
+    },
+    {
+      "id": "STURDY_CLAMP",
+      "name": "Sturdy Clamp",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/sturdy-clamp",
+      "parts": [
+        {
+          "text": "Up to "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": " persists across turns."
+        }
+      ]
+    },
+    {
+      "id": "SYMBIOTIC_VIRUS",
+      "name": "Symbiotic Virus",
+      "url": "https://sts2.untapped.gg/en/relics/defect/symbiotic-virus",
+      "parts": [
+        {
+          "text": "At the start of each combat, "
+        },
+        {
+          "text": "Channel",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dark",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "THE_COURIER",
+      "name": "The Courier",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/the-courier",
+      "parts": [
+        {
+          "text": "The merchant no longer runs out of cards, relics, or potions and his prices are reduced by "
+        },
+        {
+          "text": "20%",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "TINGSHA",
+      "name": "Tingsha",
+      "url": "https://sts2.untapped.gg/en/relics/silent/tingsha",
+      "parts": [
+        {
+          "text": "Whenever you discard a card during your turn, deal "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage to a random enemy for each card discarded."
+        }
+      ]
+    },
+    {
+      "id": "TINY_MAILBOX",
+      "name": "Tiny Mailbox",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/tiny-mailbox",
+      "parts": [
+        {
+          "text": "Whenever you "
+        },
+        {
+          "text": "Rest",
+          "color": "#efc851"
+        },
+        {
+          "text": ", procure "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random "
+        },
+        {
+          "text": "Potions",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "TOUGH_BANDAGES",
+      "name": "Tough Bandages",
+      "url": "https://sts2.untapped.gg/en/relics/silent/tough-bandages",
+      "parts": [
+        {
+          "text": "Whenever you discard a card during your turn, gain "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "TOXIC_EGG",
+      "name": "Toxic Egg",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/toxic-egg",
+      "parts": [
+        {
+          "text": "Whenever you add a Skill into your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " it."
+        }
+      ]
+    },
+    {
+      "id": "TUNGSTEN_ROD",
+      "name": "Tungsten Rod",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/tungsten-rod",
+      "parts": [
+        {
+          "text": "Whenever you would lose HP, lose "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " less."
+        }
+      ]
+    },
+    {
+      "id": "UNCEASING_TOP",
+      "name": "Unceasing Top",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/unceasing-top",
+      "parts": [
+        {
+          "text": "Whenever you have no cards in "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": " during your turn, draw a card."
+        }
+      ]
+    },
+    {
+      "id": "TWISTED_FUNNEL",
+      "name": "Twisted Funnel",
+      "url": "https://sts2.untapped.gg/en/relics/silent/twisted-funnel",
+      "parts": [
+        {
+          "text": "At the start of each combat, apply "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Poison",
+          "color": "#efc851"
+        },
+        {
+          "text": " to ALL enemies."
+        }
+      ]
+    },
+    {
+      "id": "UNSETTLING_LAMP",
+      "name": "Unsettling Lamp",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/unsettling-lamp",
+      "parts": [
+        {
+          "text": "Each combat, the first time you play a card that "
+        },
+        {
+          "text": "Debuffs",
+          "color": "#efc851"
+        },
+        {
+          "text": " an enemy, double its effect."
+        }
+      ]
+    },
+    {
+      "id": "TUNING_FORK",
+      "name": "Tuning Fork",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/tuning-fork",
+      "parts": [
+        {
+          "text": "Every time you play "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Skills, gain "
+        },
+        {
+          "text": "7",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "UNDYING_SIGIL",
+      "name": "Undying Sigil",
+      "url": "https://sts2.untapped.gg/en/relics/necrobinder/undying-sigil",
+      "parts": [
+        {
+          "text": "Enemies with at least as much "
+        },
+        {
+          "text": "Doom",
+          "color": "#efc851"
+        },
+        {
+          "text": " as HP deal "
+        },
+        {
+          "text": "50%",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " less damage."
+        }
+      ]
+    },
+    {
+      "id": "VAJRA",
+      "name": "Vajra",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/vajra",
+      "parts": [
+        {
+          "text": "Start each combat with "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "VENERABLE_TEA_SET",
+      "name": "Venerable Tea Set",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/venerable-tea-set",
+      "parts": [
+        {
+          "text": "Whenever you enter a "
+        },
+        {
+          "text": "Rest Site",
+          "color": "#efc851"
+        },
+        {
+          "text": ", start the next combat with an additional "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "VAMBRACE",
+      "name": "Vambrace",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/vambrace",
+      "parts": [
+        {
+          "text": "The first time you gain "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": " from a card each combat, double the amount gained."
+        }
+      ]
+    },
+    {
+      "id": "VITRUVIAN_MINION",
+      "name": "Vitruvian Minion",
+      "url": "https://sts2.untapped.gg/en/relics/regent/vitruvian-minion",
+      "parts": [
+        {
+          "text": "Cards containing “Minion” deal double damage and gain double "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "VEXING_PUZZLEBOX",
+      "name": "Vexing Puzzlebox",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/vexing-puzzlebox",
+      "parts": [
+        {
+          "text": "At the start of each combat, add a random card into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". It's free to play this turn."
+        }
+      ]
+    },
+    {
+      "id": "WAR_PAINT",
+      "name": "War Paint",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/war-paint",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random Skills."
+        }
+      ]
+    },
+    {
+      "id": "WHETSTONE",
+      "name": "Whetstone",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/whetstone",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random Attacks."
+        }
+      ]
+    },
+    {
+      "id": "WHITE_BEAST_STATUE",
+      "name": "White Beast Statue",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/white-beast-statue",
+      "parts": [
+        {
+          "text": "Potions",
+          "color": "#efc851"
+        },
+        {
+          "text": " always appear in combat rewards."
+        }
+      ]
+    },
+    {
+      "id": "WHITE_STAR",
+      "name": "White Star",
+      "url": "https://sts2.untapped.gg/en/relics/colorless/white-star",
+      "parts": [
+        {
+          "text": "Elites",
+          "color": "#efc851"
+        },
+        {
+          "text": " drop an additional "
+        },
+        {
+          "text": "Rare",
+          "color": "#efc851"
+        },
+        {
+          "text": " card reward."
+        }
+      ]
+    },
+    {
+      "id": "ARCHAIC_TOOTH",
+      "name": "Archaic Tooth",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/archaic-tooth",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Transform",
+          "color": "#efc851"
+        },
+        {
+          "text": " a starter card into an ancient version."
+        }
+      ]
+    },
+    {
+      "id": "ALCHEMICAL_COFFER",
+      "name": "Alchemical Coffer",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/alchemical-coffer",
+      "parts": [
+        {
+          "text": "Upon pickup, gain "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " potion slots filled with random "
+        },
+        {
+          "text": "Potions",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "BELT_BUCKLE",
+      "name": "Belt Buckle",
+      "url": "https://sts2.untapped.gg/en/relics/shop/belt-buckle",
+      "parts": [
+        {
+          "text": "While you have no "
+        },
+        {
+          "text": "Potions",
+          "color": "#efc851"
+        },
+        {
+          "text": ", you have "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional "
+        },
+        {
+          "text": "Dexterity",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "ARCANE_SCROLL",
+      "name": "Arcane Scroll",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/arcane-scroll",
+      "parts": [
+        {
+          "text": "Upon pickup, obtain a random "
+        },
+        {
+          "text": "Rare Card",
+          "color": "#efc851"
+        },
+        {
+          "text": " to add to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "BIG_MUSHROOM",
+      "name": "Big Mushroom",
+      "url": "https://sts2.untapped.gg/en/relics/event/big-mushroom",
+      "parts": [
+        {
+          "text": "Upon pickup, raise your Max HP by "
+        },
+        {
+          "text": "20",
+          "color": "#87ceeb"
+        },
+        {
+          "text": ". At the start of each combat, draw "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " fewer cards."
+        }
+      ]
+    },
+    {
+      "id": "ASTROLABE",
+      "name": "Astrolabe",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/astrolabe",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Transform",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards, then "
+        },
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " them."
+        }
+      ]
+    },
+    {
+      "id": "BEAUTIFUL_BRACELET",
+      "name": "Beautiful Bracelet",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/beautiful-bracelet",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Enchant",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random cards in your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": " with "
+        },
+        {
+          "text": "Swift",
+          "color": "violet"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "BIIIG_HUG",
+      "name": "Biiig Hug",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/biiig-hug",
+      "parts": [
+        {
+          "text": "Upon pickup, remove "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards from your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": ". Whenever you shuffle your "
+        },
+        {
+          "text": "Draw Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": ", add a "
+        },
+        {
+          "text": "Soot",
+          "color": "#efc851"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Draw Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "BLACK_STAR",
+      "name": "Black Star",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/black-star",
+      "parts": [
+        {
+          "text": "Elites",
+          "color": "#efc851"
+        },
+        {
+          "text": " drop an additional Relic when defeated."
+        }
+      ]
+    },
+    {
+      "id": "BLOOD_SOAKED_ROSE",
+      "name": "Blood-Soaked Rose",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/blood-soaked-rose",
+      "parts": [
+        {
+          "text": "Upon pickup, add "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Enthralled",
+          "color": "#f55"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": ". Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " at the start of each turn."
+        }
+      ]
+    },
+    {
+      "id": "BONE_TEA",
+      "name": "Bone Tea",
+      "url": "https://sts2.untapped.gg/en/relics/event/bone-tea",
+      "parts": [
+        {
+          "text": "At the start of the next combat, "
+        },
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " your starting hand."
+        }
+      ]
+    },
+    {
+      "id": "BING_BONG",
+      "name": "Bing Bong",
+      "url": "https://sts2.untapped.gg/en/relics/event/bing-bong",
+      "parts": [
+        {
+          "text": "Whenever you add a card to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": ", add one additional copy."
+        }
+      ]
+    },
+    {
+      "id": "BLESSED_ANTLER",
+      "name": "Blessed Antler",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/blessed-antler",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " at the start of each turn. At the start of each combat, shuffle "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dazed",
+          "color": "#efc851"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Draw Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "BOOMING_CONCH",
+      "name": "Booming Conch",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/booming-conch",
+      "parts": [
+        {
+          "text": "At the start of "
+        },
+        {
+          "text": "Elite",
+          "color": "#efc851"
+        },
+        {
+          "text": " combats, draw "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional cards and gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "BRILLIANT_SCARF",
+      "name": "Brilliant Scarf",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/brilliant-scarf",
+      "parts": [
+        {
+          "text": "The "
+        },
+        {
+          "text": "5th",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " card you play from your hand each turn is free."
+        }
+      ]
+    },
+    {
+      "id": "BYRDPIP",
+      "name": "Byrdpip",
+      "url": "https://sts2.untapped.gg/en/relics/event/byrdpip",
+      "parts": [
+        {
+          "text": "Upon pickup, gain the card "
+        },
+        {
+          "text": "Byrd Swoop",
+          "color": "#efc851"
+        },
+        {
+          "text": ". A "
+        },
+        {
+          "text": "Byrdpip",
+          "color": "#efc851"
+        },
+        {
+          "text": " will accompany you in battles."
+        }
+      ]
+    },
+    {
+      "id": "BURNING_STICKS",
+      "name": "Burning Sticks",
+      "url": "https://sts2.untapped.gg/en/relics/shop/burning-sticks",
+      "parts": [
+        {
+          "text": "The first time each combat you "
+        },
+        {
+          "text": "Exhaust",
+          "color": "#efc851"
+        },
+        {
+          "text": " a Skill, add a copy of it into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "BREAD",
+      "name": "Bread",
+      "url": "https://sts2.untapped.gg/en/relics/shop/bread",
+      "parts": [
+        {
+          "text": "At the start of your first turn, lose "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": ". At the start of all other turns, gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "CALLING_BELL",
+      "name": "Calling Bell",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/calling-bell",
+      "parts": [
+        {
+          "text": "Upon pickup, obtain a unique "
+        },
+        {
+          "text": "Curse",
+          "color": "#f55"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Relics",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "CAULDRON",
+      "name": "Cauldron",
+      "url": "https://sts2.untapped.gg/en/relics/shop/cauldron",
+      "parts": [
+        {
+          "text": "Upon pickup, brews "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random "
+        },
+        {
+          "text": "Potions",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "CHOICES_PARADOX",
+      "name": "Choices Paradox",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/choices-paradox",
+      "parts": [
+        {
+          "text": "At the start of each combat, add "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random cards into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". Add "
+        },
+        {
+          "text": "Retain",
+          "color": "#efc851"
+        },
+        {
+          "text": " to the chosen card."
+        }
+      ]
+    },
+    {
+      "id": "CROSSBOW",
+      "name": "Crossbow",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/crossbow",
+      "parts": [
+        {
+          "text": "At the start of your turn, add a random "
+        },
+        {
+          "text": "Attack",
+          "color": "#efc851"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". It's free to play this turn."
+        }
+      ]
+    },
+    {
+      "id": "CLAWS",
+      "name": "Claws",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/claws",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Transform",
+          "color": "#efc851"
+        },
+        {
+          "text": " up to "
+        },
+        {
+          "text": "6",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards into "
+        },
+        {
+          "text": "Maul",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "CURSED_PEARL",
+      "name": "Cursed Pearl",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/cursed-pearl",
+      "parts": [
+        {
+          "text": "Upon pickup, receive "
+        },
+        {
+          "text": "Greed",
+          "color": "#f55"
+        },
+        {
+          "text": ". Gain "
+        },
+        {
+          "text": "333",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Gold",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "DARKSTONE_PERIAPT",
+      "name": "Darkstone Periapt",
+      "url": "https://sts2.untapped.gg/en/relics/event/darkstone-periapt",
+      "parts": [
+        {
+          "text": "Whenever you obtain a "
+        },
+        {
+          "text": "Curse",
+          "color": "#f55"
+        },
+        {
+          "text": ", raise your Max HP by "
+        },
+        {
+          "text": "6",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "DAUGHTER_OF_THE_WIND",
+      "name": "Daughter of the Wind",
+      "url": "https://sts2.untapped.gg/en/relics/event/daughter-of-the-wind",
+      "parts": [
+        {
+          "text": "Whenever you play an Attack, gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "DELICATE_FROND",
+      "name": "Delicate Frond",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/delicate-frond",
+      "parts": [
+        {
+          "text": "At the start of each combat, fill all empty potion slots with random "
+        },
+        {
+          "text": "Potions",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "DINGY_RUG",
+      "name": "Dingy Rug",
+      "url": "https://sts2.untapped.gg/en/relics/shop/dingy-rug",
+      "parts": [
+        {
+          "text": "Card rewards can now contain Colorless cards."
+        }
+      ]
+    },
+    {
+      "id": "DISTINGUISHED_CAPE",
+      "name": "Distinguished Cape",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/distinguished-cape",
+      "parts": [
+        {
+          "text": "Upon pickup, add "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random "
+        },
+        {
+          "text": "Curses",
+          "color": "#f55"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Apparitions",
+          "color": "#efc851"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "CHEMICAL_X",
+      "name": "Chemical X",
+      "url": "https://sts2.untapped.gg/en/relics/shop/chemical-x",
+      "parts": [
+        {
+          "text": "The effects of your cost "
+        },
+        {
+          "text": "X",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards are increased by "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "DOLLYS_MIRROR",
+      "name": "Dolly's Mirror",
+      "url": "https://sts2.untapped.gg/en/relics/shop/dollys-mirror",
+      "parts": [
+        {
+          "text": "Upon pickup, obtain an additional copy of a card in your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "DIAMOND_DIADEM",
+      "name": "Diamond Diadem",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/diamond-diadem",
+      "parts": [
+        {
+          "text": "Start combat with "
+        },
+        {
+          "text": "20",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": ". Your "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": " is not removed at the start of your "
+        },
+        {
+          "text": "2nd",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turn."
+        }
+      ]
+    },
+    {
+      "id": "DRAGON_FRUIT",
+      "name": "Dragon Fruit",
+      "url": "https://sts2.untapped.gg/en/relics/shop/dragon-fruit",
+      "parts": [
+        {
+          "text": "Whenever you gain "
+        },
+        {
+          "text": "Gold",
+          "color": "#efc851"
+        },
+        {
+          "text": ", raise your Max HP by "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "DREAM_CATCHER",
+      "name": "Dream Catcher",
+      "url": "https://sts2.untapped.gg/en/relics/event/dream-catcher",
+      "parts": [
+        {
+          "text": "Whenever you "
+        },
+        {
+          "text": "Rest",
+          "color": "#efc851"
+        },
+        {
+          "text": ", you may add a card to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "ECTOPLASM",
+      "name": "Ectoplasm",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/ectoplasm",
+      "parts": [
+        {
+          "text": "You can no longer gain "
+        },
+        {
+          "text": "Gold",
+          "color": "#efc851"
+        },
+        {
+          "text": ". Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " at the start of each turn."
+        }
+      ]
+    },
+    {
+      "id": "DUSTY_TOME",
+      "name": "Dusty Tome",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/dusty-tome",
+      "parts": [
+        {
+          "text": "Upon pickup, obtain an "
+        },
+        {
+          "text": "Ancient Card",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "DRIFTWOOD",
+      "name": "Driftwood",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/driftwood",
+      "parts": [
+        {
+          "text": "You may reroll each card reward once."
+        }
+      ]
+    },
+    {
+      "id": "ELECTRIC_SHRYMP",
+      "name": "Electric Shrymp",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/electric-shrymp",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Enchant",
+          "color": "#efc851"
+        },
+        {
+          "text": " a Skill with "
+        },
+        {
+          "text": "Imbued",
+          "color": "violet"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "EMBER_TEA",
+      "name": "Ember Tea",
+      "url": "https://sts2.untapped.gg/en/relics/event/ember-tea",
+      "parts": [
+        {
+          "text": "At the start of the next "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " combats, gain "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "EMPTY_CAGE",
+      "name": "Empty Cage",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/empty-cage",
+      "parts": [
+        {
+          "text": "Upon pickup, remove "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards from your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "FIDDLE",
+      "name": "Fiddle",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/fiddle",
+      "parts": [
+        {
+          "text": "At the start of each turn, draw "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional cards. You may not draw cards during your turn."
+        }
+      ]
+    },
+    {
+      "id": "FORGOTTEN_SOUL",
+      "name": "Forgotten Soul",
+      "url": "https://sts2.untapped.gg/en/relics/event/forgotten-soul",
+      "parts": [
+        {
+          "text": "Whenever you "
+        },
+        {
+          "text": "Exhaust",
+          "color": "#efc851"
+        },
+        {
+          "text": " a card, deal "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage to a random enemy."
+        }
+      ]
+    },
+    {
+      "id": "FISHING_ROD",
+      "name": "Fishing Rod",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/fishing-rod",
+      "parts": [
+        {
+          "text": "Every "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " normal combats, "
+        },
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " a random card in your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "FRAGRANT_MUSHROOM",
+      "name": "Fragrant Mushroom",
+      "url": "https://sts2.untapped.gg/en/relics/event/fragrant-mushroom",
+      "parts": [
+        {
+          "text": "Upon pickup, lose "
+        },
+        {
+          "text": "15",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " HP and "
+        },
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random cards."
+        }
+      ]
+    },
+    {
+      "id": "FUR_COAT",
+      "name": "Fur Coat",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/fur-coat",
+      "parts": [
+        {
+          "text": "Upon pickup, mark "
+        },
+        {
+          "text": "8",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random combats. Enemies in those rooms have "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    {
+      "id": "FRESNEL_LENS",
+      "name": "Fresnel Lens",
+      "url": "https://sts2.untapped.gg/en/relics/event/fresnel-lens",
+      "parts": [
+        {
+          "text": "Whenever you add a card that gains "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "Enchant",
+          "color": "#efc851"
+        },
+        {
+          "text": " it with "
+        },
+        {
+          "text": "Nimble",
+          "color": "violet"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "GLASS_EYE",
+      "name": "Glass Eye",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/glass-eye",
+      "parts": [
+        {
+          "text": "Upon pickup, obtain "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Common",
+          "color": "#efc851"
+        },
+        {
+          "text": " cards, "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Uncommon",
+          "color": "#efc851"
+        },
+        {
+          "text": " cards, and "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Rare",
+          "color": "#efc851"
+        },
+        {
+          "text": " card."
+        }
+      ]
+    },
+    {
+      "id": "GLITTER",
+      "name": "Glitter",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/glitter",
+      "parts": [
+        {
+          "text": "Enchant",
+          "color": "#efc851"
+        },
+        {
+          "text": " all card rewards with "
+        },
+        {
+          "text": "Glam",
+          "color": "violet"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "GOLDEN_PEARL",
+      "name": "Golden Pearl",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/golden-pearl",
+      "parts": [
+        {
+          "text": "Upon pickup, gain "
+        },
+        {
+          "text": "150",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Gold",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "GNARLED_HAMMER",
+      "name": "Gnarled Hammer",
+      "url": "https://sts2.untapped.gg/en/relics/shop/gnarled-hammer",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Enchant",
+          "color": "#efc851"
+        },
+        {
+          "text": " up to "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Attacks with "
+        },
+        {
+          "text": "Sharp",
+          "color": "violet"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "GHOST_SEED",
+      "name": "Ghost Seed",
+      "url": "https://sts2.untapped.gg/en/relics/shop/ghost-seed",
+      "parts": [
+        {
+          "text": "Strikes",
+          "color": "#efc851"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "Defends",
+          "color": "#efc851"
+        },
+        {
+          "text": " gain "
+        },
+        {
+          "text": "Ethereal",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "GOLDEN_COMPASS",
+      "name": "Golden Compass",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/golden-compass",
+      "parts": [
+        {
+          "text": "Upon pickup, replace the "
+        },
+        {
+          "text": "Act",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Map with a single special path."
+        }
+      ]
+    },
+    {
+      "id": "HAND_DRILL",
+      "name": "Hand Drill",
+      "url": "https://sts2.untapped.gg/en/relics/event/hand-drill",
+      "parts": [
+        {
+          "text": "Whenever you break an enemy's "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": ", apply "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Vulnerable",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "HEFTY_TABLET",
+      "name": "Hefty Tablet",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/hefty-tablet",
+      "parts": [
+        {
+          "text": "Upon pickup, choose "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Rare cards to add to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": ", and add "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Injury",
+          "color": "#f55"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "JEWELED_MASK",
+      "name": "Jeweled Mask",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/jeweled-mask",
+      "parts": [
+        {
+          "text": "At the start of each combat, put a random Power from your "
+        },
+        {
+          "text": "Draw Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". It's free to play this combat."
+        }
+      ]
+    },
+    {
+      "id": "HISTORY_COURSE",
+      "name": "History Course",
+      "url": "https://sts2.untapped.gg/en/relics/event/history-course",
+      "parts": [
+        {
+          "text": "At the start of your turn, play a copy of your last played Attack."
+        }
+      ]
+    },
+    {
+      "id": "IRON_CLUB",
+      "name": "Iron Club",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/iron-club",
+      "parts": [
+        {
+          "text": "Every "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards you play, draw "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " card."
+        }
+      ]
+    },
+    {
+      "id": "JEWELRY_BOX",
+      "name": "Jewelry Box",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/jewelry-box",
+      "parts": [
+        {
+          "text": "Upon pickup, add "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Apotheosis",
+          "color": "#efc851"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "KALEIDOSCOPE",
+      "name": "Kaleidoscope",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/kaleidoscope",
+      "parts": [
+        {
+          "text": "Upon pickup, obtain "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " card rewards from other characters."
+        }
+      ]
+    },
+    {
+      "id": "KIFUDA",
+      "name": "Kifuda",
+      "url": "https://sts2.untapped.gg/en/relics/shop/kifuda",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Enchant",
+          "color": "#efc851"
+        },
+        {
+          "text": " up to "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards with "
+        },
+        {
+          "text": "Adroit",
+          "color": "violet"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "LARGE_CAPSULE",
+      "name": "Large Capsule",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/large-capsule",
+      "parts": [
+        {
+          "text": "Upon pickup, obtain "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random "
+        },
+        {
+          "text": "Relics",
+          "color": "#efc851"
+        },
+        {
+          "text": ". Add an additional "
+        },
+        {
+          "text": "Strike",
+          "color": "#efc851"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "Defend",
+          "color": "#efc851"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "LEAD_PAPERWEIGHT",
+      "name": "Lead Paperweight",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/lead-paperweight",
+      "parts": [
+        {
+          "text": "Upon pickup, choose "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Colorless cards to add to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "LAVA_ROCK",
+      "name": "Lava Rock",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/lava-rock",
+      "parts": [
+        {
+          "text": "The Act 1 Boss drops "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Relics",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "LEAFY_POULTICE",
+      "name": "Leafy Poultice",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/leafy-poultice",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Transform",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of your "
+        },
+        {
+          "text": "Strikes",
+          "color": "#efc851"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of your "
+        },
+        {
+          "text": "Defends",
+          "color": "#efc851"
+        },
+        {
+          "text": " and lose "
+        },
+        {
+          "text": "12",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Max HP."
+        }
+      ]
+    },
+    {
+      "id": "LOST_WISP",
+      "name": "Lost Wisp",
+      "url": "https://sts2.untapped.gg/en/relics/event/lost-wisp",
+      "parts": [
+        {
+          "text": "Whenever you play a Power, deal "
+        },
+        {
+          "text": "8",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage to ALL enemies."
+        }
+      ]
+    },
+    {
+      "id": "LOST_COFFER",
+      "name": "Lost Coffer",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/lost-coffer",
+      "parts": [
+        {
+          "text": "Upon pickup, gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " card reward and procure "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random potion."
+        }
+      ]
+    },
+    {
+      "id": "LORDS_PARASOL",
+      "name": "Lord's Parasol",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/lords-parasol",
+      "parts": [
+        {
+          "text": "When you encounter the "
+        },
+        {
+          "text": "Merchant",
+          "color": "#efc851"
+        },
+        {
+          "text": ", immediately obtain EVERYTHING he sells."
+        }
+      ]
+    },
+    {
+      "id": "LOOMING_FRUIT",
+      "name": "Looming Fruit",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/looming-fruit",
+      "parts": [
+        {
+          "text": "Upon pickup, raise your Max HP by "
+        },
+        {
+          "text": "31",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "MASSIVE_SCROLL",
+      "name": "Massive Scroll",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/massive-scroll",
+      "parts": [
+        {
+          "text": "Upon pickup, choose "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Multiplayer Cards",
+          "color": "#efc851"
+        },
+        {
+          "text": " to add to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "MEMBERSHIP_CARD",
+      "name": "Membership Card",
+      "url": "https://sts2.untapped.gg/en/relics/shop/membership-card",
+      "parts": [
+        {
+          "text": "50%",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " discount on all products!"
+        }
+      ]
+    },
+    {
+      "id": "MAW_BANK",
+      "name": "Maw Bank",
+      "url": "https://sts2.untapped.gg/en/relics/event/maw-bank",
+      "parts": [
+        {
+          "text": "Whenever you climb a floor, gain "
+        },
+        {
+          "text": "12",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Gold",
+          "color": "#efc851"
+        },
+        {
+          "text": ". No longer works when you spend any "
+        },
+        {
+          "text": "Gold",
+          "color": "#efc851"
+        },
+        {
+          "text": " at the shop."
+        }
+      ]
+    },
+    {
+      "id": "LEES_WAFFLE",
+      "name": "Lee's Waffle",
+      "url": "https://sts2.untapped.gg/en/relics/shop/lees-waffle",
+      "parts": [
+        {
+          "text": "Upon pickup, raise your Max HP by "
+        },
+        {
+          "text": "7",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " and heal all of your HP."
+        }
+      ]
+    },
+    {
+      "id": "LAVA_LAMP",
+      "name": "Lava Lamp",
+      "url": "https://sts2.untapped.gg/en/relics/shop/lava-lamp",
+      "parts": [
+        {
+          "text": "At the end of combat, "
+        },
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " all card rewards if you took no damage."
+        }
+      ]
+    },
+    {
+      "id": "MEAT_CLEAVER",
+      "name": "Meat Cleaver",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/meat-cleaver",
+      "parts": [
+        {
+          "text": "You may "
+        },
+        {
+          "text": "Cook",
+          "color": "#efc851"
+        },
+        {
+          "text": " at Rest Sites."
+        }
+      ]
+    },
+    {
+      "id": "MR_STRUGGLES",
+      "name": "Mr. Struggles",
+      "url": "https://sts2.untapped.gg/en/relics/event/mr-struggles",
+      "parts": [
+        {
+          "text": "At the start of your turn, deal damage equal to the turn number to ALL enemies."
+        }
+      ]
+    },
+    {
+      "id": "MUSIC_BOX",
+      "name": "Music Box",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/music-box",
+      "parts": [
+        {
+          "text": "Create an "
+        },
+        {
+          "text": "Ethereal",
+          "color": "#efc851"
+        },
+        {
+          "text": " copy of the first Attack you play each turn."
+        }
+      ]
+    },
+    {
+      "id": "NEOWS_BONES",
+      "name": "Neow's Bones",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/neows-bones",
+      "parts": [
+        {
+          "text": "Upon pickup, gain "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random "
+        },
+        {
+          "text": "Neow Relics",
+          "color": "#efc851"
+        },
+        {
+          "text": ". Add "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random "
+        },
+        {
+          "text": "Curse",
+          "color": "#f55"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "MINIATURE_TENT",
+      "name": "Miniature Tent",
+      "url": "https://sts2.untapped.gg/en/relics/shop/miniature-tent",
+      "parts": [
+        {
+          "text": "You may choose any number of options at "
+        },
+        {
+          "text": "Rest Sites",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "NEOWS_TALISMAN",
+      "name": "Neow's Talisman",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/neows-talisman",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of your "
+        },
+        {
+          "text": "Strikes",
+          "color": "#efc851"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of your "
+        },
+        {
+          "text": "Defends",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "NEOWS_TORMENT",
+      "name": "Neow's Torment",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/neows-torment",
+      "parts": [
+        {
+          "text": "Upon pickup, add "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Neow's Fury",
+          "color": "#efc851"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "NEW_LEAF",
+      "name": "New Leaf",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/new-leaf",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Transform",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " card."
+        }
+      ]
+    },
+    {
+      "id": "MYSTIC_LIGHTER",
+      "name": "Mystic Lighter",
+      "url": "https://sts2.untapped.gg/en/relics/shop/mystic-lighter",
+      "parts": [
+        {
+          "text": "Enchanted",
+          "color": "#efc851"
+        },
+        {
+          "text": " Attacks deal "
+        },
+        {
+          "text": "9",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional damage."
+        }
+      ]
+    },
+    {
+      "id": "NUTRITIOUS_OYSTER",
+      "name": "Nutritious Oyster",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/nutritious-oyster",
+      "parts": [
+        {
+          "text": "Upon pickup, raise your Max HP by "
+        },
+        {
+          "text": "11",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "NUTRITIOUS_SOUP",
+      "name": "Nutritious Soup",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/nutritious-soup",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Enchant",
+          "color": "#efc851"
+        },
+        {
+          "text": " all "
+        },
+        {
+          "text": "Strikes",
+          "color": "#efc851"
+        },
+        {
+          "text": " in your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": " with "
+        },
+        {
+          "text": "Tezcatara's Ember",
+          "color": "violet"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "ORRERY",
+      "name": "Orrery",
+      "url": "https://sts2.untapped.gg/en/relics/shop/orrery",
+      "parts": [
+        {
+          "text": "Upon pickup, gain "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " card rewards."
+        }
+      ]
+    },
+    {
+      "id": "PAELS_CLAW",
+      "name": "Pael's Claw",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/paels-claw",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Enchant",
+          "color": "#efc851"
+        },
+        {
+          "text": " all "
+        },
+        {
+          "text": "Defends",
+          "color": "#efc851"
+        },
+        {
+          "text": " with "
+        },
+        {
+          "text": "Goopy",
+          "color": "violet"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "PAELS_BLOOD",
+      "name": "Pael's Blood",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/paels-blood",
+      "parts": [
+        {
+          "text": "At the start of your turn, draw "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional card."
+        }
+      ]
+    },
+    {
+      "id": "PAELS_EYE",
+      "name": "Pael's Eye",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/paels-eye",
+      "parts": [
+        {
+          "text": "The first time each combat you end your turn without playing cards, "
+        },
+        {
+          "text": "Exhaust",
+          "color": "#efc851"
+        },
+        {
+          "text": " your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ", and take an extra turn."
+        }
+      ]
+    },
+    {
+      "id": "PAELS_FLESH",
+      "name": "Pael's Flesh",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/paels-flesh",
+      "parts": [
+        {
+          "text": "Gain an additional "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " at the start of your "
+        },
+        {
+          "text": "3rd",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turn, and every turn after that."
+        }
+      ]
+    },
+    {
+      "id": "PAELS_GROWTH",
+      "name": "Pael's Growth",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/paels-growth",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Enchant",
+          "color": "#efc851"
+        },
+        {
+          "text": " a card with "
+        },
+        {
+          "text": "Clone",
+          "color": "violet"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "PAELS_LEGION",
+      "name": "Pael's Legion",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/paels-legion",
+      "parts": [
+        {
+          "text": "Doubles "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": " gained from a card, then goes to sleep for "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turns."
+        }
+      ]
+    },
+    {
+      "id": "PAELS_HORN",
+      "name": "Pael's Horn",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/paels-horn",
+      "parts": [
+        {
+          "text": "Upon pickup, add "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Relax",
+          "color": "#efc851"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "PAELS_WING",
+      "name": "Pael's Wing",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/paels-wing",
+      "parts": [
+        {
+          "text": "You may sacrifice card rewards to Pael. Every "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " sacrifices, obtain a "
+        },
+        {
+          "text": "Relic",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "PANDORAS_BOX",
+      "name": "Pandora's Box",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/pandoras-box",
+      "parts": [
+        {
+          "text": "Transform",
+          "color": "#efc851"
+        },
+        {
+          "text": " ALL "
+        },
+        {
+          "text": "Strikes",
+          "color": "#efc851"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "Defends",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "PAELS_TEARS",
+      "name": "Pael's Tears",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/paels-tears",
+      "parts": [
+        {
+          "text": "If you end your turn with unspent "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": ", gain an additional "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " next turn."
+        }
+      ]
+    },
+    {
+      "id": "PAELS_TOOTH",
+      "name": "Pael's Tooth",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/paels-tooth",
+      "parts": [
+        {
+          "text": "Upon pickup, remove "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards from your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": ". After each combat, randomly add "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " back "
+        },
+        {
+          "text": "Upgraded",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "PHIAL_HOLSTER",
+      "name": "Phial Holster",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/phial-holster",
+      "parts": [
+        {
+          "text": "Upon pickup, gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " potion slot and procure "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random "
+        },
+        {
+          "text": "Potions",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "PHILOSOPHERS_STONE",
+      "name": "Philosopher's Stone",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/philosophers-stone",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " at the start of each turn. ALL enemies start combat with "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "POLLINOUS_CORE",
+      "name": "Pollinous Core",
+      "url": "https://sts2.untapped.gg/en/relics/event/pollinous-core",
+      "parts": [
+        {
+          "text": "Every "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turns, draw "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional cards."
+        }
+      ]
+    },
+    {
+      "id": "PRECISE_SCISSORS",
+      "name": "Precise Scissors",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/precise-scissors",
+      "parts": [
+        {
+          "text": "Upon pickup, remove "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " card from your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "POMANDER",
+      "name": "Pomander",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/pomander",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " a card."
+        }
+      ]
+    },
+    {
+      "id": "PRISMATIC_GEM",
+      "name": "Prismatic Gem",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/prismatic-gem",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " at the start of each turn. Card rewards now contain cards from other colors."
+        }
+      ]
+    },
+    {
+      "id": "PRECARIOUS_SHEARS",
+      "name": "Precarious Shears",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/precarious-shears",
+      "parts": [
+        {
+          "text": "Upon pickup, remove "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards from your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": " and lose "
+        },
+        {
+          "text": "16",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    {
+      "id": "PRESERVED_FOG",
+      "name": "Preserved Fog",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/preserved-fog",
+      "parts": [
+        {
+          "text": "Upon pickup, remove "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards from your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": ". Add "
+        },
+        {
+          "text": "Folly",
+          "color": "#f55"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "PUMPKIN_CANDLE",
+      "name": "Pumpkin Candle",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/pumpkin-candle",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " at the start of each turn. Extinguishes after "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " combats. Can be "
+        },
+        {
+          "text": "Kindled",
+          "color": "#efc851"
+        },
+        {
+          "text": " at "
+        },
+        {
+          "text": "Rest Sites",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "PUNCH_DAGGER",
+      "name": "Punch Dagger",
+      "url": "https://sts2.untapped.gg/en/relics/shop/punch-dagger",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Enchant",
+          "color": "#efc851"
+        },
+        {
+          "text": " an Attack with "
+        },
+        {
+          "text": "Momentum",
+          "color": "violet"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "RADIANT_PEARL",
+      "name": "Radiant Pearl",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/radiant-pearl",
+      "parts": [
+        {
+          "text": "At the start of each combat, add "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Luminesce",
+          "color": "#efc851"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "ROYAL_POISON",
+      "name": "Royal Poison",
+      "url": "https://sts2.untapped.gg/en/relics/event/royal-poison",
+      "parts": [
+        {
+          "text": "At the start of each combat, lose "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    {
+      "id": "RINGING_TRIANGLE",
+      "name": "Ringing Triangle",
+      "url": "https://sts2.untapped.gg/en/relics/shop/ringing-triangle",
+      "parts": [
+        {
+          "text": "Retain",
+          "color": "#efc851"
+        },
+        {
+          "text": " your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": " on the first turn of combat."
+        }
+      ]
+    },
+    {
+      "id": "SAI",
+      "name": "Sai",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/sai",
+      "parts": [
+        {
+          "text": "At the start of your turn, gain "
+        },
+        {
+          "text": "7",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SAND_CASTLE",
+      "name": "Sand Castle",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/sand-castle",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "6",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random cards."
+        }
+      ]
+    },
+    {
+      "id": "RUNIC_PYRAMID",
+      "name": "Runic Pyramid",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/runic-pyramid",
+      "parts": [
+        {
+          "text": "At the end of your turn, you no longer discard your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SCREAMING_FLAGON",
+      "name": "Screaming Flagon",
+      "url": "https://sts2.untapped.gg/en/relics/shop/screaming-flagon",
+      "parts": [
+        {
+          "text": "If you end your turn with no cards in your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ", deal "
+        },
+        {
+          "text": "20",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage to ALL enemies."
+        }
+      ]
+    },
+    {
+      "id": "SCROLL_BOXES",
+      "name": "Scroll Boxes",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/scroll-boxes",
+      "parts": [
+        {
+          "text": "Upon pickup, choose "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " packs of cards to add to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SEA_GLASS",
+      "name": "Sea Glass",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/sea-glass",
+      "parts": [
+        {
+          "text": "See "
+        },
+        {
+          "text": "15",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards from another character. Choose any number of them to add to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "ROYAL_STAMP",
+      "name": "Royal Stamp",
+      "url": "https://sts2.untapped.gg/en/relics/shop/royal-stamp",
+      "parts": [
+        {
+          "text": "Upon pickup, choose an Attack or Skill in your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "Enchant",
+          "color": "#efc851"
+        },
+        {
+          "text": " with "
+        },
+        {
+          "text": "Royally Approved",
+          "color": "violet"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SEAL_OF_GOLD",
+      "name": "Seal of Gold",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/seal-of-gold",
+      "parts": [
+        {
+          "text": "At the start of your turn, spend "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Gold",
+          "color": "#efc851"
+        },
+        {
+          "text": " to gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SIGNET_RING",
+      "name": "Signet Ring",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/signet-ring",
+      "parts": [
+        {
+          "text": "Upon pickup, gain "
+        },
+        {
+          "text": "888",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Gold",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SERE_TALON",
+      "name": "Sere Talon",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/sere-talon",
+      "parts": [
+        {
+          "text": "Upon pickup, lose "
+        },
+        {
+          "text": "9",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Max HP. Add "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Wishes",
+          "color": "violet"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SILVER_CRUCIBLE",
+      "name": "Silver Crucible",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/silver-crucible",
+      "parts": [
+        {
+          "text": "The first "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " card rewards you see are "
+        },
+        {
+          "text": "Upgraded",
+          "color": "#efc851"
+        },
+        {
+          "text": ". The first Treasure Chest you open is "
+        },
+        {
+          "text": "empty",
+          "color": "#f55"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SILKEN_TRESS",
+      "name": "Silken Tress",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/silken-tress",
+      "parts": [
+        {
+          "text": "Upon pickup, lose all "
+        },
+        {
+          "text": "Gold",
+          "color": "#efc851"
+        },
+        {
+          "text": ". "
+        },
+        {
+          "text": "Enchant",
+          "color": "#efc851"
+        },
+        {
+          "text": " all cards in your first card reward with "
+        },
+        {
+          "text": "Glam",
+          "color": "violet"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SMALL_CAPSULE",
+      "name": "Small Capsule",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/small-capsule",
+      "parts": [
+        {
+          "text": "Upon pickup, obtain a random "
+        },
+        {
+          "text": "Relic",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SLING_OF_COURAGE",
+      "name": "Sling of Courage",
+      "url": "https://sts2.untapped.gg/en/relics/shop/sling-of-courage",
+      "parts": [
+        {
+          "text": "Start each "
+        },
+        {
+          "text": "Elite",
+          "color": "#efc851"
+        },
+        {
+          "text": " combat with "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SNECKO_EYE",
+      "name": "Snecko Eye",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/snecko-eye",
+      "parts": [
+        {
+          "text": "At the start of your turn, draw "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional cards. Start each combat "
+        },
+        {
+          "text": "Confused",
+          "color": "#f55"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SOZU",
+      "name": "Sozu",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/sozu",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " at the start of each turn. You can no longer obtain "
+        },
+        {
+          "text": "Potions",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SPIKED_GAUNTLETS",
+      "name": "Spiked Gauntlets",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/spiked-gauntlets",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " at the start of each turn. Powers cost "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " more "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "STORYBOOK",
+      "name": "Storybook",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/storybook",
+      "parts": [
+        {
+          "text": "Upon pickup, add "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Brightest Flame",
+          "color": "#efc851"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SWORD_OF_JADE",
+      "name": "Sword of Jade",
+      "url": "https://sts2.untapped.gg/en/relics/event/sword-of-jade",
+      "parts": [
+        {
+          "text": "Start each combat with "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "STONE_HUMIDIFIER",
+      "name": "Stone Humidifier",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/stone-humidifier",
+      "parts": [
+        {
+          "text": "Whenever you "
+        },
+        {
+          "text": "Rest",
+          "color": "#efc851"
+        },
+        {
+          "text": " at a "
+        },
+        {
+          "text": "Rest Site",
+          "color": "#efc851"
+        },
+        {
+          "text": ", raise your Max HP by "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "TEA_OF_DISCOURTESY",
+      "name": "Tea of Discourtesy",
+      "url": "https://sts2.untapped.gg/en/relics/event/tea-of-discourtesy",
+      "parts": [
+        {
+          "text": "At the start of the next combat, shuffle "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dazed",
+          "color": "#efc851"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Draw Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "THE_BOOT",
+      "name": "The Boot",
+      "url": "https://sts2.untapped.gg/en/relics/event/the-boot",
+      "parts": [
+        {
+          "text": "Whenever you would deal "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " or less unblocked attack damage, increase it to "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "THROWING_AXE",
+      "name": "Throwing Axe",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/throwing-axe",
+      "parts": [
+        {
+          "text": "The first card you play each combat is played an extra time."
+        }
+      ]
+    },
+    {
+      "id": "THE_ABACUS",
+      "name": "The Abacus",
+      "url": "https://sts2.untapped.gg/en/relics/shop/the-abacus",
+      "parts": [
+        {
+          "text": "Whenever you shuffle your "
+        },
+        {
+          "text": "Draw Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": ", gain "
+        },
+        {
+          "text": "6",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SWORD_OF_STONE",
+      "name": "Sword of Stone",
+      "url": "https://sts2.untapped.gg/en/relics/event/sword-of-stone",
+      "parts": [
+        {
+          "text": "Transforms into a powerful "
+        },
+        {
+          "text": "Relic",
+          "color": "#efc851"
+        },
+        {
+          "text": " after defeating "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Elites",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "TANXS_WHISTLE",
+      "name": "Tanx's Whistle",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/tanxs-whistle",
+      "parts": [
+        {
+          "text": "Upon pickup, add "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Whistle",
+          "color": "#efc851"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "TOOLBOX",
+      "name": "Toolbox",
+      "url": "https://sts2.untapped.gg/en/relics/shop/toolbox",
+      "parts": [
+        {
+          "text": "At the start of each combat, choose "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random Colorless cards and add the chosen card into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "TOY_BOX",
+      "name": "Toy Box",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/toy-box",
+      "parts": [
+        {
+          "text": "Upon pickup, obtain "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Wax Relics",
+          "color": "#efc851"
+        },
+        {
+          "text": ". Every "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " combats, your left-most "
+        },
+        {
+          "text": "Wax Relic",
+          "color": "#efc851"
+        },
+        {
+          "text": " will melt away."
+        }
+      ]
+    },
+    {
+      "id": "TOASTY_MITTENS",
+      "name": "Toasty Mittens",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/toasty-mittens",
+      "parts": [
+        {
+          "text": "At the start of your turn, "
+        },
+        {
+          "text": "Exhaust",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " card from your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": " and gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "TOUCH_OF_OROBAS",
+      "name": "Touch of Orobas",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/touch-of-orobas",
+      "parts": [
+        {
+          "text": "Upon pickup, replace your starter "
+        },
+        {
+          "text": "Relic",
+          "color": "#efc851"
+        },
+        {
+          "text": " with an "
+        },
+        {
+          "text": "Ancient",
+          "color": "#efc851"
+        },
+        {
+          "text": " version."
+        }
+      ]
+    },
+    {
+      "id": "VELVET_CHOKER",
+      "name": "Velvet Choker",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/velvet-choker",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " at the start of each turn. You cannot play more than "
+        },
+        {
+          "text": "6",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards per turn."
+        }
+      ]
+    },
+    {
+      "id": "TRI_BOOMERANG",
+      "name": "Tri-Boomerang",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/tri-boomerang",
+      "parts": [
+        {
+          "text": "Choose "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Attacks in your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": ". "
+        },
+        {
+          "text": "Enchant",
+          "color": "#efc851"
+        },
+        {
+          "text": " them with "
+        },
+        {
+          "text": "Instinct",
+          "color": "violet"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "VERY_HOT_COCOA",
+      "name": "Very Hot Cocoa",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/very-hot-cocoa",
+      "parts": [
+        {
+          "text": "Start each combat with an additional "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "WAR_HAMMER",
+      "name": "War Hammer",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/war-hammer",
+      "parts": [
+        {
+          "text": "Whenever you kill an "
+        },
+        {
+          "text": "Elite",
+          "color": "#efc851"
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random cards."
+        }
+      ]
+    },
+    {
+      "id": "WHISPERING_EARRING",
+      "name": "Whispering Earring",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/whispering-earring",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " at the start of each turn. "
+        },
+        {
+          "text": "Vakuu plays your first turn for you.",
+          "color": "#f55"
+        }
+      ]
+    },
+    {
+      "id": "WINGED_BOOTS",
+      "name": "Winged Boots",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/winged-boots",
+      "parts": [
+        {
+          "text": "You may ignore paths when choosing the next rooms to travel to "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " times."
+        }
+      ]
+    },
+    {
+      "id": "WONGO_CUSTOMER_APPRECIATION_BADGE",
+      "name": "Wongo Customer Appreciation Badge",
+      "url": "https://sts2.untapped.gg/en/relics/event/wongo-customer-appreciation-badge",
+      "parts": [
+        {
+          "text": "Does nothing."
+        }
+      ]
+    },
+    {
+      "id": "WING_CHARM",
+      "name": "Wing Charm",
+      "url": "https://sts2.untapped.gg/en/relics/shop/wing-charm",
+      "parts": [
+        {
+          "text": "A random card in each card reward is "
+        },
+        {
+          "text": "Enchanted",
+          "color": "#efc851"
+        },
+        {
+          "text": " with "
+        },
+        {
+          "text": "Swift",
+          "color": "violet"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "WONGOS_MYSTERY_TICKET",
+      "name": "Wongo's Mystery Ticket",
+      "url": "https://sts2.untapped.gg/en/relics/event/wongos-mystery-ticket",
+      "parts": [
+        {
+          "text": "Receive "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random "
+        },
+        {
+          "text": "Relics",
+          "color": "#efc851"
+        },
+        {
+          "text": " after "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " combats."
+        }
+      ]
+    },
+    {
+      "id": "DOWSING_ROD",
+      "name": "Dowsing Rod",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/dowsing-rod",
+      "parts": [
+        {
+          "text": "Upon pickup, add "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dowsing",
+          "color": "#efc851"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "YUMMY_COOKIE",
+      "name": "Yummy Cookie",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/yummy-cookie",
+      "parts": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards."
+        }
+      ]
+    },
+    {
+      "id": "NEOWS_SACRIFICE",
+      "name": "Neow's Sacrifice",
+      "url": "https://sts2.untapped.gg/en/relics/ancient/neows-sacrifice",
+      "parts": [
+        {
+          "text": "Upon pickup, procure "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Ambergris",
+          "color": "#efc851"
+        },
+        {
+          "text": " and add "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Guilty",
+          "color": "#f55"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "FAKE_MERCHANTS_RUG",
+      "name": "The Merchant's Rug???",
+      "url": "https://sts2.untapped.gg/en/relics/event/fake-merchants-rug",
+      "parts": [
+        {
+          "text": "Poor imitation. Does nothing."
+        }
+      ]
+    },
+    {
+      "id": "FAKE_LEES_WAFFLE",
+      "name": "Lee's Waffle???",
+      "url": "https://sts2.untapped.gg/en/relics/event/fake-lees-waffle",
+      "parts": [
+        {
+          "text": "Upon pickup, heal "
+        },
+        {
+          "text": "10%",
+          "color": "#7fff00"
+        },
+        {
+          "text": " of your HP."
+        }
+      ]
+    },
+    {
+      "id": "FAKE_SNECKO_EYE",
+      "name": "Snecko Eye???",
+      "url": "https://sts2.untapped.gg/en/relics/event/fake-snecko-eye",
+      "parts": [
+        {
+          "text": "Start each combat "
+        },
+        {
+          "text": "Confused",
+          "color": "#f55"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "CHOSEN_CHEESE",
+      "name": "The Chosen Cheese",
+      "url": "https://sts2.untapped.gg/en/relics/event/chosen-cheese",
+      "parts": [
+        {
+          "text": "At the end of combat, gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Max HP."
+        }
+      ]
+    }
+  ],
+  "relicUrls": [
+    "https://sts2.untapped.gg/en/relics/colorless/akabeko",
+    "https://sts2.untapped.gg/en/relics/ancient/alchemical-coffer",
+    "https://sts2.untapped.gg/en/relics/colorless/amethyst-aubergine",
+    "https://sts2.untapped.gg/en/relics/colorless/anchor",
+    "https://sts2.untapped.gg/en/relics/ancient/arcane-scroll",
+    "https://sts2.untapped.gg/en/relics/ancient/archaic-tooth",
+    "https://sts2.untapped.gg/en/relics/colorless/art-of-war",
+    "https://sts2.untapped.gg/en/relics/ancient/astrolabe",
+    "https://sts2.untapped.gg/en/relics/colorless/bag-of-marbles",
+    "https://sts2.untapped.gg/en/relics/colorless/bag-of-preparation",
+    "https://sts2.untapped.gg/en/relics/colorless/beating-remnant",
+    "https://sts2.untapped.gg/en/relics/ancient/beautiful-bracelet",
+    "https://sts2.untapped.gg/en/relics/colorless/bellows",
+    "https://sts2.untapped.gg/en/relics/shop/belt-buckle",
+    "https://sts2.untapped.gg/en/relics/necrobinder/big-hat",
+    "https://sts2.untapped.gg/en/relics/event/big-mushroom",
+    "https://sts2.untapped.gg/en/relics/ancient/biiig-hug",
+    "https://sts2.untapped.gg/en/relics/event/bing-bong",
+    "https://sts2.untapped.gg/en/relics/ironclad/black-blood",
+    "https://sts2.untapped.gg/en/relics/ancient/black-star",
+    "https://sts2.untapped.gg/en/relics/ancient/blessed-antler",
+    "https://sts2.untapped.gg/en/relics/ancient/blood-soaked-rose",
+    "https://sts2.untapped.gg/en/relics/colorless/blood-vial",
+    "https://sts2.untapped.gg/en/relics/necrobinder/bone-flute",
+    "https://sts2.untapped.gg/en/relics/event/bone-tea",
+    "https://sts2.untapped.gg/en/relics/colorless/book-of-five-rings",
+    "https://sts2.untapped.gg/en/relics/necrobinder/book-repair-knife",
+    "https://sts2.untapped.gg/en/relics/necrobinder/bookmark",
+    "https://sts2.untapped.gg/en/relics/ancient/booming-conch",
+    "https://sts2.untapped.gg/en/relics/necrobinder/bound-phylactery",
+    "https://sts2.untapped.gg/en/relics/colorless/bowler-hat",
+    "https://sts2.untapped.gg/en/relics/shop/bread",
+    "https://sts2.untapped.gg/en/relics/ancient/brilliant-scarf",
+    "https://sts2.untapped.gg/en/relics/shop/brimstone",
+    "https://sts2.untapped.gg/en/relics/colorless/bronze-scales",
+    "https://sts2.untapped.gg/en/relics/ironclad/burning-blood",
+    "https://sts2.untapped.gg/en/relics/shop/burning-sticks",
+    "https://sts2.untapped.gg/en/relics/event/byrdpip",
+    "https://sts2.untapped.gg/en/relics/ancient/calling-bell",
+    "https://sts2.untapped.gg/en/relics/colorless/candelabra",
+    "https://sts2.untapped.gg/en/relics/colorless/captains-wheel",
+    "https://sts2.untapped.gg/en/relics/shop/cauldron",
+    "https://sts2.untapped.gg/en/relics/colorless/centennial-puzzle",
+    "https://sts2.untapped.gg/en/relics/colorless/chandelier",
+    "https://sts2.untapped.gg/en/relics/ironclad/charons-ashes",
+    "https://sts2.untapped.gg/en/relics/shop/chemical-x",
+    "https://sts2.untapped.gg/en/relics/ancient/choices-paradox",
+    "https://sts2.untapped.gg/en/relics/event/chosen-cheese",
+    "https://sts2.untapped.gg/en/relics/ancient/claws",
+    "https://sts2.untapped.gg/en/relics/colorless/cloak-clasp",
+    "https://sts2.untapped.gg/en/relics/defect/cracked-core",
+    "https://sts2.untapped.gg/en/relics/ancient/crossbow",
+    "https://sts2.untapped.gg/en/relics/ancient/cursed-pearl",
+    "https://sts2.untapped.gg/en/relics/event/darkstone-periapt",
+    "https://sts2.untapped.gg/en/relics/defect/data-disk",
+    "https://sts2.untapped.gg/en/relics/event/daughter-of-the-wind",
+    "https://sts2.untapped.gg/en/relics/ancient/delicate-frond",
+    "https://sts2.untapped.gg/en/relics/ironclad/demon-tongue",
+    "https://sts2.untapped.gg/en/relics/ancient/diamond-diadem",
+    "https://sts2.untapped.gg/en/relics/shop/dingy-rug",
+    "https://sts2.untapped.gg/en/relics/ancient/distinguished-cape",
+    "https://sts2.untapped.gg/en/relics/regent/divine-destiny",
+    "https://sts2.untapped.gg/en/relics/regent/divine-right",
+    "https://sts2.untapped.gg/en/relics/shop/dollys-mirror",
+    "https://sts2.untapped.gg/en/relics/ancient/dowsing-rod",
+    "https://sts2.untapped.gg/en/relics/shop/dragon-fruit",
+    "https://sts2.untapped.gg/en/relics/event/dream-catcher",
+    "https://sts2.untapped.gg/en/relics/ancient/driftwood",
+    "https://sts2.untapped.gg/en/relics/ancient/dusty-tome",
+    "https://sts2.untapped.gg/en/relics/ancient/ectoplasm",
+    "https://sts2.untapped.gg/en/relics/ancient/electric-shrymp",
+    "https://sts2.untapped.gg/en/relics/event/ember-tea",
+    "https://sts2.untapped.gg/en/relics/defect/emotion-chip",
+    "https://sts2.untapped.gg/en/relics/ancient/empty-cage",
+    "https://sts2.untapped.gg/en/relics/colorless/eternal-feather",
+    "https://sts2.untapped.gg/en/relics/event/fake-anchor",
+    "https://sts2.untapped.gg/en/relics/event/fake-blood-vial",
+    "https://sts2.untapped.gg/en/relics/event/fake-happy-flower",
+    "https://sts2.untapped.gg/en/relics/event/fake-lees-waffle",
+    "https://sts2.untapped.gg/en/relics/event/fake-mango",
+    "https://sts2.untapped.gg/en/relics/event/fake-merchants-rug",
+    "https://sts2.untapped.gg/en/relics/event/fake-orichalcum",
+    "https://sts2.untapped.gg/en/relics/event/fake-snecko-eye",
+    "https://sts2.untapped.gg/en/relics/event/fake-strike-dummy",
+    "https://sts2.untapped.gg/en/relics/event/fake-venerable-tea-set",
+    "https://sts2.untapped.gg/en/relics/regent/fencing-manual",
+    "https://sts2.untapped.gg/en/relics/colorless/festive-popper",
+    "https://sts2.untapped.gg/en/relics/ancient/fiddle",
+    "https://sts2.untapped.gg/en/relics/ancient/fishing-rod",
+    "https://sts2.untapped.gg/en/relics/event/forgotten-soul",
+    "https://sts2.untapped.gg/en/relics/event/fragrant-mushroom",
+    "https://sts2.untapped.gg/en/relics/event/fresnel-lens",
+    "https://sts2.untapped.gg/en/relics/colorless/frozen-egg",
+    "https://sts2.untapped.gg/en/relics/necrobinder/funerary-mask",
+    "https://sts2.untapped.gg/en/relics/ancient/fur-coat",
+    "https://sts2.untapped.gg/en/relics/regent/galactic-dust",
+    "https://sts2.untapped.gg/en/relics/colorless/gambling-chip",
+    "https://sts2.untapped.gg/en/relics/colorless/game-piece",
+    "https://sts2.untapped.gg/en/relics/shop/ghost-seed",
+    "https://sts2.untapped.gg/en/relics/colorless/girya",
+    "https://sts2.untapped.gg/en/relics/ancient/glass-eye",
+    "https://sts2.untapped.gg/en/relics/ancient/glitter",
+    "https://sts2.untapped.gg/en/relics/shop/gnarled-hammer",
+    "https://sts2.untapped.gg/en/relics/defect/gold-plated-cables",
+    "https://sts2.untapped.gg/en/relics/ancient/golden-compass",
+    "https://sts2.untapped.gg/en/relics/ancient/golden-pearl",
+    "https://sts2.untapped.gg/en/relics/colorless/gorget",
+    "https://sts2.untapped.gg/en/relics/colorless/gremlin-horn",
+    "https://sts2.untapped.gg/en/relics/event/hand-drill",
+    "https://sts2.untapped.gg/en/relics/colorless/happy-flower",
+    "https://sts2.untapped.gg/en/relics/ancient/hefty-tablet",
+    "https://sts2.untapped.gg/en/relics/silent/helical-dart",
+    "https://sts2.untapped.gg/en/relics/event/history-course",
+    "https://sts2.untapped.gg/en/relics/colorless/horn-cleat",
+    "https://sts2.untapped.gg/en/relics/colorless/ice-cream",
+    "https://sts2.untapped.gg/en/relics/defect/infused-core",
+    "https://sts2.untapped.gg/en/relics/colorless/intimidating-helmet",
+    "https://sts2.untapped.gg/en/relics/ancient/iron-club",
+    "https://sts2.untapped.gg/en/relics/necrobinder/ivory-tile",
+    "https://sts2.untapped.gg/en/relics/ancient/jeweled-mask",
+    "https://sts2.untapped.gg/en/relics/ancient/jewelry-box",
+    "https://sts2.untapped.gg/en/relics/colorless/joss-paper",
+    "https://sts2.untapped.gg/en/relics/colorless/juzu-bracelet",
+    "https://sts2.untapped.gg/en/relics/ancient/kaleidoscope",
+    "https://sts2.untapped.gg/en/relics/shop/kifuda",
+    "https://sts2.untapped.gg/en/relics/colorless/kunai",
+    "https://sts2.untapped.gg/en/relics/colorless/kusarigama",
+    "https://sts2.untapped.gg/en/relics/colorless/lantern",
+    "https://sts2.untapped.gg/en/relics/ancient/large-capsule",
+    "https://sts2.untapped.gg/en/relics/colorless/lasting-candy",
+    "https://sts2.untapped.gg/en/relics/shop/lava-lamp",
+    "https://sts2.untapped.gg/en/relics/ancient/lava-rock",
+    "https://sts2.untapped.gg/en/relics/ancient/lead-paperweight",
+    "https://sts2.untapped.gg/en/relics/ancient/leafy-poultice",
+    "https://sts2.untapped.gg/en/relics/shop/lees-waffle",
+    "https://sts2.untapped.gg/en/relics/colorless/letter-opener",
+    "https://sts2.untapped.gg/en/relics/colorless/lizard-tail",
+    "https://sts2.untapped.gg/en/relics/ancient/looming-fruit",
+    "https://sts2.untapped.gg/en/relics/ancient/lords-parasol",
+    "https://sts2.untapped.gg/en/relics/ancient/lost-coffer",
+    "https://sts2.untapped.gg/en/relics/event/lost-wisp",
+    "https://sts2.untapped.gg/en/relics/colorless/lucky-fysh",
+    "https://sts2.untapped.gg/en/relics/regent/lunar-pastry",
+    "https://sts2.untapped.gg/en/relics/colorless/mango",
+    "https://sts2.untapped.gg/en/relics/ancient/massive-scroll",
+    "https://sts2.untapped.gg/en/relics/event/maw-bank",
+    "https://sts2.untapped.gg/en/relics/colorless/meal-ticket",
+    "https://sts2.untapped.gg/en/relics/ancient/meat-cleaver",
+    "https://sts2.untapped.gg/en/relics/colorless/meat-on-the-bone",
+    "https://sts2.untapped.gg/en/relics/shop/membership-card",
+    "https://sts2.untapped.gg/en/relics/colorless/mercury-hourglass",
+    "https://sts2.untapped.gg/en/relics/defect/metronome",
+    "https://sts2.untapped.gg/en/relics/regent/mini-regent",
+    "https://sts2.untapped.gg/en/relics/colorless/miniature-cannon",
+    "https://sts2.untapped.gg/en/relics/shop/miniature-tent",
+    "https://sts2.untapped.gg/en/relics/colorless/molten-egg",
+    "https://sts2.untapped.gg/en/relics/event/mr-struggles",
+    "https://sts2.untapped.gg/en/relics/colorless/mummified-hand",
+    "https://sts2.untapped.gg/en/relics/ancient/music-box",
+    "https://sts2.untapped.gg/en/relics/shop/mystic-lighter",
+    "https://sts2.untapped.gg/en/relics/ancient/neows-bones",
+    "https://sts2.untapped.gg/en/relics/ancient/neows-sacrifice",
+    "https://sts2.untapped.gg/en/relics/ancient/neows-talisman",
+    "https://sts2.untapped.gg/en/relics/ancient/neows-torment",
+    "https://sts2.untapped.gg/en/relics/ancient/new-leaf",
+    "https://sts2.untapped.gg/en/relics/shop/ninja-scroll",
+    "https://sts2.untapped.gg/en/relics/colorless/nunchaku",
+    "https://sts2.untapped.gg/en/relics/ancient/nutritious-oyster",
+    "https://sts2.untapped.gg/en/relics/ancient/nutritious-soup",
+    "https://sts2.untapped.gg/en/relics/colorless/oddly-smooth-stone",
+    "https://sts2.untapped.gg/en/relics/colorless/old-coin",
+    "https://sts2.untapped.gg/en/relics/regent/orange-dough",
+    "https://sts2.untapped.gg/en/relics/colorless/orichalcum",
+    "https://sts2.untapped.gg/en/relics/colorless/ornamental-fan",
+    "https://sts2.untapped.gg/en/relics/shop/orrery",
+    "https://sts2.untapped.gg/en/relics/ancient/paels-blood",
+    "https://sts2.untapped.gg/en/relics/ancient/paels-claw",
+    "https://sts2.untapped.gg/en/relics/ancient/paels-eye",
+    "https://sts2.untapped.gg/en/relics/ancient/paels-flesh",
+    "https://sts2.untapped.gg/en/relics/ancient/paels-growth",
+    "https://sts2.untapped.gg/en/relics/ancient/paels-horn",
+    "https://sts2.untapped.gg/en/relics/ancient/paels-legion",
+    "https://sts2.untapped.gg/en/relics/ancient/paels-tears",
+    "https://sts2.untapped.gg/en/relics/ancient/paels-tooth",
+    "https://sts2.untapped.gg/en/relics/ancient/paels-wing",
+    "https://sts2.untapped.gg/en/relics/ancient/pandoras-box",
+    "https://sts2.untapped.gg/en/relics/colorless/pantograph",
+    "https://sts2.untapped.gg/en/relics/silent/paper-krane",
+    "https://sts2.untapped.gg/en/relics/ironclad/paper-phrog",
+    "https://sts2.untapped.gg/en/relics/colorless/parrying-shield",
+    "https://sts2.untapped.gg/en/relics/colorless/pear",
+    "https://sts2.untapped.gg/en/relics/colorless/pen-nib",
+    "https://sts2.untapped.gg/en/relics/colorless/pendulum",
+    "https://sts2.untapped.gg/en/relics/colorless/permafrost",
+    "https://sts2.untapped.gg/en/relics/colorless/petrified-toad",
+    "https://sts2.untapped.gg/en/relics/ancient/phial-holster",
+    "https://sts2.untapped.gg/en/relics/ancient/philosophers-stone",
+    "https://sts2.untapped.gg/en/relics/necrobinder/phylactery-unbound",
+    "https://sts2.untapped.gg/en/relics/colorless/planisphere",
+    "https://sts2.untapped.gg/en/relics/colorless/pocketwatch",
+    "https://sts2.untapped.gg/en/relics/event/pollinous-core",
+    "https://sts2.untapped.gg/en/relics/ancient/pomander",
+    "https://sts2.untapped.gg/en/relics/colorless/potion-belt",
+    "https://sts2.untapped.gg/en/relics/defect/power-cell",
+    "https://sts2.untapped.gg/en/relics/colorless/prayer-wheel",
+    "https://sts2.untapped.gg/en/relics/ancient/precarious-shears",
+    "https://sts2.untapped.gg/en/relics/ancient/precise-scissors",
+    "https://sts2.untapped.gg/en/relics/ancient/preserved-fog",
+    "https://sts2.untapped.gg/en/relics/ancient/prismatic-gem",
+    "https://sts2.untapped.gg/en/relics/ancient/pumpkin-candle",
+    "https://sts2.untapped.gg/en/relics/shop/punch-dagger",
+    "https://sts2.untapped.gg/en/relics/ancient/radiant-pearl",
+    "https://sts2.untapped.gg/en/relics/colorless/rainbow-ring",
+    "https://sts2.untapped.gg/en/relics/colorless/razor-tooth",
+    "https://sts2.untapped.gg/en/relics/colorless/red-mask",
+    "https://sts2.untapped.gg/en/relics/ironclad/red-skull",
+    "https://sts2.untapped.gg/en/relics/colorless/regal-pillow",
+    "https://sts2.untapped.gg/en/relics/regent/regalite",
+    "https://sts2.untapped.gg/en/relics/colorless/reptile-trinket",
+    "https://sts2.untapped.gg/en/relics/silent/ring-of-the-drake",
+    "https://sts2.untapped.gg/en/relics/silent/ring-of-the-snake",
+    "https://sts2.untapped.gg/en/relics/shop/ringing-triangle",
+    "https://sts2.untapped.gg/en/relics/colorless/ripple-basin",
+    "https://sts2.untapped.gg/en/relics/event/royal-poison",
+    "https://sts2.untapped.gg/en/relics/shop/royal-stamp",
+    "https://sts2.untapped.gg/en/relics/ironclad/ruined-helmet",
+    "https://sts2.untapped.gg/en/relics/shop/runic-capacitor",
+    "https://sts2.untapped.gg/en/relics/ancient/runic-pyramid",
+    "https://sts2.untapped.gg/en/relics/ancient/sai",
+    "https://sts2.untapped.gg/en/relics/ancient/sand-castle",
+    "https://sts2.untapped.gg/en/relics/shop/screaming-flagon",
+    "https://sts2.untapped.gg/en/relics/ancient/scroll-boxes",
+    "https://sts2.untapped.gg/en/relics/ancient/sea-glass",
+    "https://sts2.untapped.gg/en/relics/ancient/seal-of-gold",
+    "https://sts2.untapped.gg/en/relics/ironclad/self-forming-clay",
+    "https://sts2.untapped.gg/en/relics/ancient/sere-talon",
+    "https://sts2.untapped.gg/en/relics/colorless/shovel",
+    "https://sts2.untapped.gg/en/relics/colorless/shuriken",
+    "https://sts2.untapped.gg/en/relics/ancient/signet-ring",
+    "https://sts2.untapped.gg/en/relics/ancient/silken-tress",
+    "https://sts2.untapped.gg/en/relics/ancient/silver-crucible",
+    "https://sts2.untapped.gg/en/relics/shop/sling-of-courage",
+    "https://sts2.untapped.gg/en/relics/ancient/small-capsule",
+    "https://sts2.untapped.gg/en/relics/ancient/snecko-eye",
+    "https://sts2.untapped.gg/en/relics/silent/snecko-skull",
+    "https://sts2.untapped.gg/en/relics/ancient/sozu",
+    "https://sts2.untapped.gg/en/relics/colorless/sparkling-rouge",
+    "https://sts2.untapped.gg/en/relics/ancient/spiked-gauntlets",
+    "https://sts2.untapped.gg/en/relics/colorless/stone-calendar",
+    "https://sts2.untapped.gg/en/relics/colorless/stone-cracker",
+    "https://sts2.untapped.gg/en/relics/ancient/stone-humidifier",
+    "https://sts2.untapped.gg/en/relics/ancient/storybook",
+    "https://sts2.untapped.gg/en/relics/colorless/strawberry",
+    "https://sts2.untapped.gg/en/relics/colorless/strike-dummy",
+    "https://sts2.untapped.gg/en/relics/colorless/sturdy-clamp",
+    "https://sts2.untapped.gg/en/relics/event/sword-of-jade",
+    "https://sts2.untapped.gg/en/relics/event/sword-of-stone",
+    "https://sts2.untapped.gg/en/relics/defect/symbiotic-virus",
+    "https://sts2.untapped.gg/en/relics/ancient/tanxs-whistle",
+    "https://sts2.untapped.gg/en/relics/event/tea-of-discourtesy",
+    "https://sts2.untapped.gg/en/relics/shop/the-abacus",
+    "https://sts2.untapped.gg/en/relics/event/the-boot",
+    "https://sts2.untapped.gg/en/relics/colorless/the-courier",
+    "https://sts2.untapped.gg/en/relics/ancient/throwing-axe",
+    "https://sts2.untapped.gg/en/relics/silent/tingsha",
+    "https://sts2.untapped.gg/en/relics/colorless/tiny-mailbox",
+    "https://sts2.untapped.gg/en/relics/ancient/toasty-mittens",
+    "https://sts2.untapped.gg/en/relics/shop/toolbox",
+    "https://sts2.untapped.gg/en/relics/ancient/touch-of-orobas",
+    "https://sts2.untapped.gg/en/relics/silent/tough-bandages",
+    "https://sts2.untapped.gg/en/relics/colorless/toxic-egg",
+    "https://sts2.untapped.gg/en/relics/ancient/toy-box",
+    "https://sts2.untapped.gg/en/relics/ancient/tri-boomerang",
+    "https://sts2.untapped.gg/en/relics/colorless/tungsten-rod",
+    "https://sts2.untapped.gg/en/relics/colorless/tuning-fork",
+    "https://sts2.untapped.gg/en/relics/silent/twisted-funnel",
+    "https://sts2.untapped.gg/en/relics/colorless/unceasing-top",
+    "https://sts2.untapped.gg/en/relics/shop/undying-sigil",
+    "https://sts2.untapped.gg/en/relics/colorless/unsettling-lamp",
+    "https://sts2.untapped.gg/en/relics/colorless/vajra",
+    "https://sts2.untapped.gg/en/relics/colorless/vambrace",
+    "https://sts2.untapped.gg/en/relics/ancient/velvet-choker",
+    "https://sts2.untapped.gg/en/relics/colorless/venerable-tea-set",
+    "https://sts2.untapped.gg/en/relics/ancient/very-hot-cocoa",
+    "https://sts2.untapped.gg/en/relics/colorless/vexing-puzzlebox",
+    "https://sts2.untapped.gg/en/relics/shop/vitruvian-minion",
+    "https://sts2.untapped.gg/en/relics/ancient/war-hammer",
+    "https://sts2.untapped.gg/en/relics/colorless/war-paint",
+    "https://sts2.untapped.gg/en/relics/colorless/whetstone",
+    "https://sts2.untapped.gg/en/relics/ancient/whispering-earring",
+    "https://sts2.untapped.gg/en/relics/colorless/white-beast-statue",
+    "https://sts2.untapped.gg/en/relics/colorless/white-star",
+    "https://sts2.untapped.gg/en/relics/shop/wing-charm",
+    "https://sts2.untapped.gg/en/relics/ancient/winged-boots",
+    "https://sts2.untapped.gg/en/relics/event/wongo-customer-appreciation-badge",
+    "https://sts2.untapped.gg/en/relics/event/wongos-mystery-ticket",
+    "https://sts2.untapped.gg/en/relics/ancient/yummy-cookie",
+    "https://sts2.untapped.gg/en/relics/event/bath-robes",
+    "https://sts2.untapped.gg/en/relics/event/bath-towel",
+    "https://sts2.untapped.gg/en/relics/shop/bizarre-lamp",
+    "https://sts2.untapped.gg/en/relics/event/byrdine",
+    "https://sts2.untapped.gg/en/relics/fool/conductors-baton",
+    "https://sts2.untapped.gg/en/relics/fool/exercise-mat",
+    "https://sts2.untapped.gg/en/relics/fool/fertilizer",
+    "https://sts2.untapped.gg/en/relics/event/mighty-wings",
+    "https://sts2.untapped.gg/en/relics/event/obsidian-vice",
+    "https://sts2.untapped.gg/en/relics/fool/ocarina",
+    "https://sts2.untapped.gg/en/relics/fool/song-bow",
+    "https://sts2.untapped.gg/en/relics/fool/storyteller",
+    "https://sts2.untapped.gg/en/relics/event/thumbscrew",
+    "https://sts2.untapped.gg/en/relics/event/tormentous-collar",
+    "https://sts2.untapped.gg/en/relics/fool/twine",
+    "https://sts2.untapped.gg/en/relics/fool/whittling-knife",
+    "https://sts2.untapped.gg/en/relics/event/wuppy",
+    "https://sts2.untapped.gg/en/relics/ancient/neow",
+    "https://sts2.untapped.gg/en/relics/ancient/orobas",
+    "https://sts2.untapped.gg/en/relics/ancient/pael",
+    "https://sts2.untapped.gg/en/relics/ancient/tezcatara",
+    "https://sts2.untapped.gg/en/relics/ancient/nonupeipe",
+    "https://sts2.untapped.gg/en/relics/ancient/tanx",
+    "https://sts2.untapped.gg/en/relics/ancient/vakuu",
+    "https://sts2.untapped.gg/en/relics/ancient/darv"
+  ]
+}

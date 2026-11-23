@@ -23,12 +23,11 @@ for (const slug of JSON.parse(read('data/ancient/catalog.json')).slugs) {
   }
 }
 function render(id) {
-  return (rankings.get(id) || []).map(({tier, slug, anchor}) => {
+  return (rankings.get(id) || []).map(({slug, anchor}) => {
     const name = slug.charAt(0).toUpperCase() + slug.slice(1);
     return (
-    '<a class="relic-ancient-ranking" href="data/ancient/ancient-' + slug + '.html#' + esc(anchor) + '" title="' + esc(name + '最強遺物強度排行：' + tier) + '">' +
-    '<img src="assets/ancient/images/icon/' + slug + '.webp" alt="" width="32" height="32"><span lang="en">' + esc(name) + '</span>' +
-    '<span class="relic-tier-label" data-tier="' + esc(tier) + '">' + esc(tier) + '</span></a>'
+    '<a class="relic-ancient-ranking" href="data/ancient/ancient-' + slug + '.html#' + esc(anchor) + '" title="' + esc(name) + '" aria-label="' + esc('前往 '+name) + '">' +
+    '<img src="assets/ancient/images/icon/' + slug + '.webp" alt="" width="20" height="20"></a>'
     );
   }).join('');
 }

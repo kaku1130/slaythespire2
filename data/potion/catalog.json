@@ -10,13 +10,29 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "灰燼水",
-      "description": "[gold]Exhaust[/gold] any number of cards in your [gold]Hand[/gold].",
+      "description": "Exhaust any number of cards in your Hand.",
       "image": "ashwater",
       "imagePath": "/images/potions/ashwater.webp",
-      "descriptionClean": "消耗你手牌中任意數量的牌。",
-      "descI18n": "<g>消耗</g>你<g>手牌</g>中任意數量的牌。",
+      "descriptionClean": "Exhaust any number of cards in your Hand.",
       "nameEn": "Ashwater",
-      "descEn": "<g>Exhaust</g> any number of cards in your <g>Hand</g>."
+      "descEn": "Exhaust any number of cards in your Hand.",
+      "descEnParts": [
+        {
+          "text": "Exhaust",
+          "color": "#efc851"
+        },
+        {
+          "text": " any number of cards in your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/ashwater"
     },
     {
       "className": "AttackPotion",
@@ -25,13 +41,39 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "攻擊藥水",
-      "description": "Choose [blue]1[/blue] of [blue]3[/blue] random Attack cards to add into your [gold]Hand[/gold]. It's free to play this turn.",
+      "description": "Choose 1 of 3 random Attack cards to add into your Hand. It's free to play this turn.",
       "image": "attack_potion",
       "imagePath": "/images/potions/attack_potion.webp",
-      "descriptionClean": "從 3 張隨機攻擊牌中選擇 1 張加入你的手牌。本回合可免費打出。",
-      "descI18n": "從 3 張隨機攻擊牌中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。",
+      "descriptionClean": "Choose 1 of 3 random Attack cards to add into your Hand. It's free to play this turn.",
       "nameEn": "Attack Potion",
-      "descEn": "Choose 1 of 3 random Attack cards to add into your <g>Hand</g>. It's free to play this turn."
+      "descEn": "Choose 1 of 3 random Attack cards to add into your Hand. It's free to play this turn.",
+      "descEnParts": [
+        {
+          "text": "Choose "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random Attack cards to add into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". It's free to play this turn."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/attack-potion"
     },
     {
       "className": "BeetleJuice",
@@ -40,13 +82,32 @@
       "usage": "CombatOnly",
       "target": "AnyEnemy",
       "name": "甲蟲汁",
-      "description": "Enemy's attacks deal [blue]{DamageDecrease}%[/blue] less damage {Repeat:plural:next turn|for the next [blue]{}[/blue] turns}.",
+      "description": "Enemy's attacks deal 30% less damage for the next 4 turns.",
       "image": "beetle_juice",
       "imagePath": "/images/potions/beetle_juice.webp",
-      "descriptionClean": "敵人的攻擊在接下來 4 回合傷害減少 30%。",
-      "descI18n": "敵人的攻擊在接下來 4 回合傷害減少 30%。",
+      "descriptionClean": "Enemy's attacks deal 30% less damage for the next 4 turns.",
       "nameEn": "Beetle Juice",
-      "descEn": "Enemy's attacks deal 30% less damage for the next 4 turns."
+      "descEn": "Enemy's attacks deal 30% less damage for the next 4 turns.",
+      "descEnParts": [
+        {
+          "text": "Enemy's attacks deal "
+        },
+        {
+          "text": "30%",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " less damage for the next "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turns."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/beetle-juice"
     },
     {
       "className": "BlessingOfTheForge",
@@ -55,13 +116,29 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "鑄爐祝福",
-      "description": "[gold]Upgrade[/gold] all cards in your [gold]Hand[/gold] for the rest of combat.",
+      "description": "Upgrade all cards in your Hand for the rest of combat.",
       "image": "blessing_of_the_forge",
       "imagePath": "/images/potions/blessing_of_the_forge.webp",
-      "descriptionClean": "在本場戰鬥中升級你手牌中的所有卡牌。",
-      "descI18n": "在本場戰鬥中<g>升級</g>你<g>手牌</g>中的所有卡牌。",
+      "descriptionClean": "Upgrade all cards in your Hand for the rest of combat.",
       "nameEn": "Blessing of the Forge",
-      "descEn": "<g>Upgrade</g> all cards in your <g>Hand</g> for the rest of combat."
+      "descEn": "Upgrade all cards in your Hand for the rest of combat.",
+      "descEnParts": [
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " all cards in your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": " for the rest of combat."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/blessing-of-the-forge"
     },
     {
       "className": "BlockPotion",
@@ -70,13 +147,32 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "格擋藥水",
-      "description": "Gain [blue]{Block}[/blue] [gold]Block[/gold].",
+      "description": "Gain 12 Block.",
       "image": "block_potion",
       "imagePath": "/images/potions/block_potion.webp",
-      "descriptionClean": "獲得 12 點格擋。",
-      "descI18n": "獲得 12 點<g>格擋</g>。",
+      "descriptionClean": "Gain 12 Block.",
       "nameEn": "Block Potion",
-      "descEn": "Gain 12 <g>Block</g>."
+      "descEn": "Gain 12 Block.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "12",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/block-potion"
     },
     {
       "className": "BloodPotion",
@@ -85,13 +181,25 @@
       "usage": "AnyTime",
       "target": "AnyPlayer",
       "name": "血液藥水",
-      "description": "Heal for [green]{HealPercent}%[/green] of your Max HP.",
+      "description": "Heal for 20% of your Max HP.",
       "image": "blood_potion",
       "imagePath": "/images/potions/blood_potion.webp",
-      "descriptionClean": "恢復相當於最大生命 20% 的生命。",
-      "descI18n": "恢復相當於最大生命 20% 的生命。",
+      "descriptionClean": "Heal for 20% of your Max HP.",
       "nameEn": "Blood Potion",
-      "descEn": "Heal for 20% of your Max HP."
+      "descEn": "Heal for 20% of your Max HP.",
+      "descEnParts": [
+        {
+          "text": "Heal for "
+        },
+        {
+          "text": "20%",
+          "color": "#7fff00"
+        },
+        {
+          "text": " of your Max HP."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/blood-potion"
     },
     {
       "className": "BoneBrew",
@@ -100,13 +208,29 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "骨釀",
-      "description": "[gold]Summon[/gold] [blue]{Summon}[/blue].",
+      "description": "Summon 15.",
       "image": "bone_brew",
       "imagePath": "/images/potions/bone_brew.webp",
-      "descriptionClean": "召喚 15。",
-      "descI18n": "<g>召喚</g> 15。",
+      "descriptionClean": "Summon 15.",
       "nameEn": "Bone Brew",
-      "descEn": "<g>Summon</g> 15."
+      "descEn": "Summon 15.",
+      "descEnParts": [
+        {
+          "text": "Summon",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "15",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/bone-brew"
     },
     {
       "className": "BottledPotential",
@@ -115,13 +239,32 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "瓶裝潛能",
-      "description": "Shuffle ALL your cards into your [gold]Draw Pile[/gold]. Draw [blue]{Cards}[/blue] {Cards:plural:card|cards}.",
+      "description": "Shuffle ALL your cards into your Draw Pile. Draw 5 cards.",
       "image": "bottled_potential",
       "imagePath": "/images/potions/bottled_potential.webp",
-      "descriptionClean": "將你的所有牌洗入抽牌堆。抽 5 張牌。",
-      "descI18n": "將你的所有牌洗入<g>抽牌堆</g>。抽 5 張牌。",
+      "descriptionClean": "Shuffle ALL your cards into your Draw Pile. Draw 5 cards.",
       "nameEn": "Bottled Potential",
-      "descEn": "Shuffle ALL your cards into your <g>Draw Pile</g>. Draw 5 cards."
+      "descEn": "Shuffle ALL your cards into your Draw Pile. Draw 5 cards.",
+      "descEnParts": [
+        {
+          "text": "Shuffle ALL your cards into your "
+        },
+        {
+          "text": "Draw Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": ". Draw "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/bottled-potential"
     },
     {
       "className": "Clarity",
@@ -130,13 +273,39 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "明晰萃取物",
-      "description": "Draw [blue]{Cards}[/blue] {Cards:plural:card|cards}. At the start of your next {ClarityPower:plural:turn|[blue]{}[/blue] turns}, draw [blue]1[/blue] additional card.",
+      "description": "Draw 1 card. At the start of your next 3 turns, draw 1 additional card.",
       "image": "clarity",
       "imagePath": "/images/potions/clarity.webp",
-      "descriptionClean": "抽 1 張牌。你的下 3 回合開始時，額外抽 1 張牌。",
-      "descI18n": "抽 1 張牌。你的下 3 回合開始時，額外抽 1 張牌。",
+      "descriptionClean": "Draw 1 card. At the start of your next 3 turns, draw 1 additional card.",
       "nameEn": "Clarity Extract",
-      "descEn": "Draw 1 card. At the start of your next 3 turns, draw 1 additional card."
+      "descEn": "Draw 1 card. At the start of your next 3 turns, draw 1 additional card.",
+      "descEnParts": [
+        {
+          "text": "Draw "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " card. At the start of your next "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turns, draw "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional card."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/clarity"
     },
     {
       "className": "ColorlessPotion",
@@ -145,13 +314,39 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "無色藥水",
-      "description": "Choose [blue]1[/blue] of [blue]3[/blue] random Colorless cards to add into your [gold]Hand[/gold]. It's free to play this turn.",
+      "description": "Choose 1 of 3 random Colorless cards to add into your Hand. It's free to play this turn.",
       "image": "colorless_potion",
       "imagePath": "/images/potions/colorless_potion.webp",
-      "descriptionClean": "從 3 張隨機無色牌中選擇 1 張加入你的手牌。本回合可免費打出。",
-      "descI18n": "從 3 張隨機無色牌中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。",
+      "descriptionClean": "Choose 1 of 3 random Colorless cards to add into your Hand. It's free to play this turn.",
       "nameEn": "Colorless Potion",
-      "descEn": "Choose 1 of 3 random Colorless cards to add into your <g>Hand</g>. It's free to play this turn."
+      "descEn": "Choose 1 of 3 random Colorless cards to add into your Hand. It's free to play this turn.",
+      "descEnParts": [
+        {
+          "text": "Choose "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random Colorless cards to add into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". It's free to play this turn."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/colorless-potion"
     },
     {
       "className": "CosmicConcoction",
@@ -160,13 +355,39 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "宇宙調製劑",
-      "description": "Add [blue]{Cards}[/blue] [gold]Upgraded[/gold] Colorless {Cards:plural:card|cards} into your [gold]Hand[/gold].",
+      "description": "Add 3 Upgraded Colorless cards into your Hand.",
       "image": "cosmic_concoction",
       "imagePath": "/images/potions/cosmic_concoction.webp",
-      "descriptionClean": "將 3 張已升級的無色牌加入你的手牌。",
-      "descI18n": "將 3 張<g>已升級</g>的無色牌加入你的<g>手牌</g>。",
+      "descriptionClean": "Add 3 Upgraded Colorless cards into your Hand.",
       "nameEn": "Cosmic Concoction",
-      "descEn": "Add 3 <g>Upgraded</g> Colorless cards into your <g>Hand</g>."
+      "descEn": "Add 3 Upgraded Colorless cards into your Hand.",
+      "descEnParts": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Upgraded",
+          "color": "#efc851"
+        },
+        {
+          "text": " Colorless cards into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/cosmic-concoction"
     },
     {
       "className": "CunningPotion",
@@ -175,13 +396,39 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "狡猾藥水",
-      "description": "Add [blue]{Cards}[/blue] [gold]Upgraded {Cards:plural:Shiv|Shivs}[/gold] into your [gold]Hand[/gold].",
+      "description": "Add 3 Upgraded Shivs into your Hand.",
       "image": "cunning_potion",
       "imagePath": "/images/potions/cunning_potion.webp",
-      "descriptionClean": "將 3 張已升級的小刀加入你的手牌。",
-      "descI18n": "將 3 張<g>已升級的小刀</g>加入你的<g>手牌</g>。",
+      "descriptionClean": "Add 3 Upgraded Shivs into your Hand.",
       "nameEn": "Cunning Potion",
-      "descEn": "Add 3 <g>Upgraded Shivs</g> into your <g>Hand</g>."
+      "descEn": "Add 3 Upgraded Shivs into your Hand.",
+      "descEnParts": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Upgraded Shivs",
+          "color": "#efc851"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/cunning-potion"
     },
     {
       "className": "CureAll",
@@ -190,13 +437,31 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "萬靈藥",
-      "description": "Gain {Energy:energyIcons()}. Draw [blue]{Cards}[/blue] {Cards:plural:card|cards}.",
+      "description": "Gain <e/>. Draw 2 cards.",
       "image": "cure_all",
       "imagePath": "/images/potions/cure_all.webp",
-      "descriptionClean": "獲得 1。抽 2 張牌。",
-      "descI18n": "獲得 <e>1</e>。抽 2 張牌。",
+      "descriptionClean": "Gain . Draw 2 cards.",
       "nameEn": "Cure All",
-      "descEn": "Gain <e>1</e>. Draw 2 cards."
+      "descEn": "Gain <e/>. Draw 2 cards.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": ". Draw "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/cure-all"
     },
     {
       "className": "DexterityPotion",
@@ -205,13 +470,32 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "敏捷藥水",
-      "description": "Gain [blue]{DexterityPower}[/blue] [gold]Dexterity[/gold].",
+      "description": "Gain 2 Dexterity.",
       "image": "dexterity_potion",
       "imagePath": "/images/potions/dexterity_potion.webp",
-      "descriptionClean": "獲得 2 層敏捷。",
-      "descI18n": "獲得 2 層<g>敏捷</g>。",
+      "descriptionClean": "Gain 2 Dexterity.",
       "nameEn": "Dexterity Potion",
-      "descEn": "Gain 2 <g>Dexterity</g>."
+      "descEn": "Gain 2 Dexterity.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/dexterity-potion"
     },
     {
       "className": "DistilledChaos",
@@ -220,13 +504,32 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "精煉混沌",
-      "description": "Play the top [blue]{Repeat}[/blue] cards of your [gold]Draw Pile[/gold].",
+      "description": "Play the top 3 cards of your Draw Pile.",
       "image": "distilled_chaos",
       "imagePath": "/images/potions/distilled_chaos.webp",
-      "descriptionClean": "打出你抽牌堆頂部的 3 張牌。",
-      "descI18n": "打出你<g>抽牌堆</g>頂部的 3 張牌。",
+      "descriptionClean": "Play the top 3 cards of your Draw Pile.",
       "nameEn": "Distilled Chaos",
-      "descEn": "Play the top 3 cards of your <g>Draw Pile</g>."
+      "descEn": "Play the top 3 cards of your Draw Pile.",
+      "descEnParts": [
+        {
+          "text": "Play the top "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards of your "
+        },
+        {
+          "text": "Draw Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/distilled-chaos"
     },
     {
       "className": "DropletOfPrecognition",
@@ -235,13 +538,32 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "預知露滴",
-      "description": "Choose a card in your [gold]Draw Pile[/gold] and add it into your [gold]Hand[/gold].",
+      "description": "Choose a card in your Draw Pile and add it into your Hand.",
       "image": "droplet_of_precognition",
       "imagePath": "/images/potions/droplet_of_precognition.webp",
-      "descriptionClean": "從你的抽牌堆中選擇一張牌，將其加入你的手牌。",
-      "descI18n": "從你的<g>抽牌堆</g>中選擇一張牌，將其加入你的<g>手牌</g>。",
+      "descriptionClean": "Choose a card in your Draw Pile and add it into your Hand.",
       "nameEn": "Droplet of Precognition",
-      "descEn": "Choose a card in your <g>Draw Pile</g> and add it into your <g>Hand</g>."
+      "descEn": "Choose a card in your Draw Pile and add it into your Hand.",
+      "descEnParts": [
+        {
+          "text": "Choose a card in your "
+        },
+        {
+          "text": "Draw Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": " and add it into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/droplet-of-precognition"
     },
     {
       "className": "Duplicator",
@@ -253,10 +575,15 @@
       "description": "This turn, your next card is played an extra time.",
       "image": "duplicator",
       "imagePath": "/images/potions/duplicator.webp",
-      "descriptionClean": "本回合，你的下一張牌會額外打出一次。",
-      "descI18n": "本回合，你的下一張牌會額外打出一次。",
+      "descriptionClean": "This turn, your next card is played an extra time.",
       "nameEn": "Duplicator",
-      "descEn": "This turn, your next card is played an extra time."
+      "descEn": "This turn, your next card is played an extra time.",
+      "descEnParts": [
+        {
+          "text": "This turn, your next card is played an extra time."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/duplicator"
     },
     {
       "className": "EnergyPotion",
@@ -265,13 +592,27 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "能量藥水",
-      "description": "Gain {Energy:energyIcons()}.",
+      "description": "Gain <e/><e/>.",
       "image": "energy_potion",
       "imagePath": "/images/potions/energy_potion.webp",
-      "descriptionClean": "獲得 2。",
-      "descI18n": "獲得 <e>2</e>。",
+      "descriptionClean": "Gain .",
       "nameEn": "Energy Potion",
-      "descEn": "Gain <e>2</e>."
+      "descEn": "Gain <e/><e/>.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/energy-potion"
     },
     {
       "className": "EntropicBrew",
@@ -283,10 +624,15 @@
       "description": "Fill all your empty potion slots with random potions.",
       "image": "entropic_brew",
       "imagePath": "/images/potions/entropic_brew.webp",
-      "descriptionClean": "以隨機藥水填滿所有空的藥水欄位。",
-      "descI18n": "以隨機藥水填滿所有空的藥水欄位。",
+      "descriptionClean": "Fill all your empty potion slots with random potions.",
       "nameEn": "Entropic Brew",
-      "descEn": "Fill all your empty potion slots with random potions."
+      "descEn": "Fill all your empty potion slots with random potions.",
+      "descEnParts": [
+        {
+          "text": "Fill all your empty potion slots with random potions."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/entropic-brew"
     },
     {
       "className": "EssenceOfDarkness",
@@ -295,13 +641,36 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "黑暗精華",
-      "description": "[gold]Channel[/gold] a [gold]Dark[/gold] for each of your [gold]Orb Slots[/gold].",
+      "description": "Channel a Dark for each of your Orb Slots.",
       "image": "essence_of_darkness",
       "imagePath": "/images/potions/essence_of_darkness.webp",
-      "descriptionClean": "你每有一個充能球欄位，就凝聚 1 個黑暗。",
-      "descI18n": "你每有一個<g>充能球欄位</g>，就<g>凝聚</g> 1 個<g>黑暗</g>。",
+      "descriptionClean": "Channel a Dark for each of your Orb Slots.",
       "nameEn": "Essence of Darkness",
-      "descEn": "<g>Channel</g> a <g>Dark</g> for each of your <g>Orb Slots</g>."
+      "descEn": "Channel a Dark for each of your Orb Slots.",
+      "descEnParts": [
+        {
+          "text": "Channel",
+          "color": "#efc851"
+        },
+        {
+          "text": " a "
+        },
+        {
+          "text": "Dark",
+          "color": "#efc851"
+        },
+        {
+          "text": " for each of your "
+        },
+        {
+          "text": "Orb Slots",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/essence-of-darkness"
     },
     {
       "className": "ExplosiveAmpoule",
@@ -310,13 +679,25 @@
       "usage": "CombatOnly",
       "target": "AllEnemies",
       "name": "爆炸安瓿",
-      "description": "Deal [blue]{Damage}[/blue] damage to ALL enemies.",
+      "description": "Deal 10 damage to ALL enemies.",
       "image": "explosive_ampoule",
       "imagePath": "/images/potions/explosive_ampoule.webp",
-      "descriptionClean": "對所有敵人造成 10 點傷害。",
-      "descI18n": "對所有敵人造成 10 點傷害。",
+      "descriptionClean": "Deal 10 damage to ALL enemies.",
       "nameEn": "Explosive Ampoule",
-      "descEn": "Deal 10 damage to ALL enemies."
+      "descEn": "Deal 10 damage to ALL enemies.",
+      "descEnParts": [
+        {
+          "text": "Deal "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage to ALL enemies."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/explosive-ampoule"
     },
     {
       "className": "FairyInABottle",
@@ -325,13 +706,32 @@
       "usage": "Automatic",
       "target": "Self",
       "name": "瓶中精靈",
-      "description": "When your HP would be reduced to [blue]0[/blue], instead this potion is discarded and you heal to [blue]30%[/blue] of your Max HP.",
+      "description": "When your HP would be reduced to 0, instead this potion is discarded and you heal to 30% of your Max HP.",
       "image": "fairy_in_a_bottle",
       "imagePath": "/images/potions/fairy_in_a_bottle.webp",
-      "descriptionClean": "當你的生命即將降至 0 時，改為丟棄此藥水，並將生命恢復至最大生命的 30%。",
-      "descI18n": "當你的生命即將降至 0 時，改為丟棄此藥水，並將生命恢復至最大生命的 30%。",
+      "descriptionClean": "When your HP would be reduced to 0, instead this potion is discarded and you heal to 30% of your Max HP.",
       "nameEn": "Fairy in a Bottle",
-      "descEn": "When your HP would be reduced to 0, instead this potion is discarded and you heal to 30% of your Max HP."
+      "descEn": "When your HP would be reduced to 0, instead this potion is discarded and you heal to 30% of your Max HP.",
+      "descEnParts": [
+        {
+          "text": "When your HP would be reduced to "
+        },
+        {
+          "text": "0",
+          "color": "#87ceeb"
+        },
+        {
+          "text": ", instead this potion is discarded and you heal to "
+        },
+        {
+          "text": "30%",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of your Max HP."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/fairy-in-a-bottle"
     },
     {
       "className": "FirePotion",
@@ -340,13 +740,25 @@
       "usage": "CombatOnly",
       "target": "AnyEnemy",
       "name": "火焰藥水",
-      "description": "Deal [blue]{Damage}[/blue] damage.",
+      "description": "Deal 20 damage.",
       "image": "fire_potion",
       "imagePath": "/images/potions/fire_potion.webp",
-      "descriptionClean": "造成 20 點傷害。",
-      "descI18n": "造成 20 點傷害。",
+      "descriptionClean": "Deal 20 damage.",
       "nameEn": "Fire Potion",
-      "descEn": "Deal 20 damage."
+      "descEn": "Deal 20 damage.",
+      "descEnParts": [
+        {
+          "text": "Deal "
+        },
+        {
+          "text": "20",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/fire-potion"
     },
     {
       "className": "FlexPotion",
@@ -355,13 +767,46 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "肌肉藥水",
-      "description": "Gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold]. At the end of your turn, lose [blue]{StrengthPower}[/blue] [gold]Strength[/gold].",
+      "description": "Gain 5 Strength. At the end of your turn, lose 5 Strength.",
       "image": "flex_potion",
       "imagePath": "/images/potions/flex_potion.webp",
-      "descriptionClean": "獲得 5 層力量。在你的回合結束時，失去 5 層力量。",
-      "descI18n": "獲得 5 層<g>力量</g>。在你的回合結束時，失去 5 層<g>力量</g>。",
+      "descriptionClean": "Gain 5 Strength. At the end of your turn, lose 5 Strength.",
       "nameEn": "Flex Potion",
-      "descEn": "Gain 5 <g>Strength</g>. At the end of your turn, lose 5 <g>Strength</g>."
+      "descEn": "Gain 5 Strength. At the end of your turn, lose 5 Strength.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": ". At the end of your turn, lose "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/flex-potion"
     },
     {
       "className": "FocusPotion",
@@ -370,13 +815,32 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "集中藥水",
-      "description": "Gain [blue]{FocusPower}[/blue] [gold]Focus[/gold].",
+      "description": "Gain 2 Focus.",
       "image": "focus_potion",
       "imagePath": "/images/potions/focus_potion.webp",
-      "descriptionClean": "獲得 2 層集中。",
-      "descI18n": "獲得 2 層<g>集中</g>。",
+      "descriptionClean": "Gain 2 Focus.",
       "nameEn": "Focus Potion",
-      "descEn": "Gain 2 <g>Focus</g>."
+      "descEn": "Gain 2 Focus.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Focus",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/focus-potion"
     },
     {
       "className": "Fortifier",
@@ -385,13 +849,25 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "強固劑",
-      "description": "Triple your [gold]Block[/gold].",
+      "description": "Triple your Block.",
       "image": "fortifier",
       "imagePath": "/images/potions/fortifier.webp",
-      "descriptionClean": "使你的格擋變為三倍。",
-      "descI18n": "使你的<g>格擋</g>變為三倍。",
+      "descriptionClean": "Triple your Block.",
       "nameEn": "Fortifier",
-      "descEn": "Triple your <g>Block</g>."
+      "descEn": "Triple your Block.",
+      "descEnParts": [
+        {
+          "text": "Triple your "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/fortifier"
     },
     {
       "className": "FoulPotion",
@@ -399,13 +875,52 @@
       "rarity": "Event",
       "usage": "AnyTime",
       "name": "惡臭藥水",
-      "description": "Deal [blue]{Damage}[/blue] damage to ALL players and enemies.\nCan be thrown at the [gold]Merchant[/gold] for [blue]{Gold}[/blue] [gold]Gold[/gold] instead.",
+      "description": "Deal 12 damage to ALL players and enemies. Can be thrown at the Merchant for 100 Gold instead.",
       "image": "foul_potion",
       "imagePath": "/images/potions/foul_potion.webp",
-      "descriptionClean": "對所有玩家與敵人造成 12 點傷害。\n也可以將其丟向商人，換取 100 枚金幣。",
-      "descI18n": "對所有玩家與敵人造成 12 點傷害。\n也可以將其丟向<g>商人</g>，換取 100 枚<g>金幣</g>。",
+      "descriptionClean": "Deal 12 damage to ALL players and enemies. Can be thrown at the Merchant for 100 Gold instead.",
       "nameEn": "Foul Potion",
-      "descEn": "Deal 12 damage to ALL players and enemies.\nCan be thrown at the <g>Merchant</g> for 100 <g>Gold</g> instead."
+      "descEn": "Deal 12 damage to ALL players and enemies. Can be thrown at the Merchant for 100 Gold instead.",
+      "descEnParts": [
+        {
+          "text": "Deal "
+        },
+        {
+          "text": "12",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage to ALL players and enemies."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Can be thrown at the "
+        },
+        {
+          "text": "Merchant",
+          "color": "#efc851"
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "100",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Gold",
+          "color": "#efc851"
+        },
+        {
+          "text": " instead."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/foul-potion"
     },
     {
       "className": "FruitJuice",
@@ -414,13 +929,25 @@
       "usage": "AnyTime",
       "target": "AnyPlayer",
       "name": "果汁",
-      "description": "Gain [blue]{MaxHp}[/blue] Max HP.",
+      "description": "Gain 5 Max HP.",
       "image": "fruit_juice",
       "imagePath": "/images/potions/fruit_juice.webp",
-      "descriptionClean": "獲得 5 點最大生命。",
-      "descI18n": "獲得 5 點最大生命。",
+      "descriptionClean": "Gain 5 Max HP.",
       "nameEn": "Fruit Juice",
-      "descEn": "Gain 5 Max HP."
+      "descEn": "Gain 5 Max HP.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Max HP."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/fruit-juice"
     },
     {
       "className": "FyshOil",
@@ -429,13 +956,46 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "異魚油",
-      "description": "Gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold] and [blue]{DexterityPower}[/blue] [gold]Dexterity[/gold].",
+      "description": "Gain 1 Strength and 1 Dexterity.",
       "image": "fysh_oil",
       "imagePath": "/images/potions/fysh_oil.webp",
-      "descriptionClean": "獲得 1 層力量和 1 層敏捷。",
-      "descI18n": "獲得 1 層<g>力量</g>和 1 層<g>敏捷</g>。",
+      "descriptionClean": "Gain 1 Strength and 1 Dexterity.",
       "nameEn": "Fysh Oil",
-      "descEn": "Gain 1 <g>Strength</g> and 1 <g>Dexterity</g>."
+      "descEn": "Gain 1 Strength and 1 Dexterity.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/fysh-oil"
     },
     {
       "className": "GamblersBrew",
@@ -447,10 +1007,15 @@
       "description": "Discard any number of cards, then draw that many.",
       "image": "gamblers_brew",
       "imagePath": "/images/potions/gamblers_brew.webp",
-      "descriptionClean": "丟棄任意數量的牌，然後抽取等量的牌。",
-      "descI18n": "丟棄任意數量的牌，然後抽取等量的牌。",
+      "descriptionClean": "Discard any number of cards, then draw that many.",
       "nameEn": "Gambler's Brew",
-      "descEn": "Discard any number of cards, then draw that many."
+      "descEn": "Discard any number of cards, then draw that many.",
+      "descEnParts": [
+        {
+          "text": "Discard any number of cards, then draw that many."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/gamblers-brew"
     },
     {
       "className": "GhostInAJar",
@@ -459,13 +1024,32 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "罐裝幽靈",
-      "description": "Gain [blue]1[/blue] [gold]Intangible[/gold].",
+      "description": "Gain 1 Intangible.",
       "image": "ghost_in_a_jar",
       "imagePath": "/images/potions/ghost_in_a_jar.webp",
-      "descriptionClean": "獲得 1 層無形。",
-      "descI18n": "獲得 1 層<g>無形</g>。",
+      "descriptionClean": "Gain 1 Intangible.",
       "nameEn": "Ghost in a Jar",
-      "descEn": "Gain 1 <g>Intangible</g>."
+      "descEn": "Gain 1 Intangible.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Intangible",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/ghost-in-a-jar"
     },
     {
       "className": "GigantificationPotion",
@@ -477,10 +1061,15 @@
       "description": "The next Attack you play deals triple damage.",
       "image": "gigantification_potion",
       "imagePath": "/images/potions/gigantification_potion.webp",
-      "descriptionClean": "你打出的下一張攻擊牌會造成三倍傷害。",
-      "descI18n": "你打出的下一張攻擊牌會造成三倍傷害。",
+      "descriptionClean": "The next Attack you play deals triple damage.",
       "nameEn": "Gigantification Potion",
-      "descEn": "The next Attack you play deals triple damage."
+      "descEn": "The next Attack you play deals triple damage.",
+      "descEnParts": [
+        {
+          "text": "The next Attack you play deals triple damage."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/gigantification-potion"
     },
     {
       "className": "GlowwaterPotion",
@@ -489,13 +1078,36 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "光輝水藥水",
-      "description": "[gold]Exhaust[/gold] your [gold]Hand[/gold]. Draw [blue]{Cards}[/blue] cards.",
+      "description": "Exhaust your Hand. Draw 10 cards.",
       "image": "glowwater_potion",
       "imagePath": "/images/potions/glowwater_potion.webp",
-      "descriptionClean": "消耗你的手牌。抽 10 張牌。",
-      "descI18n": "<g>消耗</g>你的<g>手牌</g>。抽 10 張牌。",
+      "descriptionClean": "Exhaust your Hand. Draw 10 cards.",
       "nameEn": "Glowwater Potion",
-      "descEn": "<g>Exhaust</g> your <g>Hand</g>. Draw 10 cards."
+      "descEn": "Exhaust your Hand. Draw 10 cards.",
+      "descEnParts": [
+        {
+          "text": "Exhaust",
+          "color": "#efc851"
+        },
+        {
+          "text": " your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". Draw "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/glowwater-potion"
     },
     {
       "className": "HeartOfIron",
@@ -504,13 +1116,32 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "鋼鐵之心",
-      "description": "Gain [blue]{PlatingPower}[/blue] [gold]Plating[/gold].",
+      "description": "Gain 7 Plating.",
       "image": "heart_of_iron",
       "imagePath": "/images/potions/heart_of_iron.webp",
-      "descriptionClean": "獲得 7 層鍍甲。",
-      "descI18n": "獲得 7 層<g>鍍甲</g>。",
+      "descriptionClean": "Gain 7 Plating.",
       "nameEn": "Heart of Iron",
-      "descEn": "Gain 7 <g>Plating</g>."
+      "descEn": "Gain 7 Plating.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "7",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Plating",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/heart-of-iron"
     },
     {
       "className": "KingsCourage",
@@ -519,13 +1150,29 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "王者之勇",
-      "description": "[gold]Forge[/gold] [blue]{Forge}[/blue].",
+      "description": "Forge 15.",
       "image": "kings_courage",
       "imagePath": "/images/potions/kings_courage.webp",
-      "descriptionClean": "鑄造 15。",
-      "descI18n": "<g>鑄造</g> 15。",
+      "descriptionClean": "Forge 15.",
       "nameEn": "King's Courage",
-      "descEn": "<g>Forge</g> 15."
+      "descEn": "Forge 15.",
+      "descEnParts": [
+        {
+          "text": "Forge",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "15",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/kings-courage"
     },
     {
       "className": "LiquidBronze",
@@ -534,13 +1181,32 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "液態青銅",
-      "description": "Gain [blue]{ThornsPower}[/blue] [gold]Thorns[/gold].",
+      "description": "Gain 3 Thorns.",
       "image": "liquid_bronze",
       "imagePath": "/images/potions/liquid_bronze.webp",
-      "descriptionClean": "獲得 3 層荊棘。",
-      "descI18n": "獲得 3 層<g>荊棘</g>。",
+      "descriptionClean": "Gain 3 Thorns.",
       "nameEn": "Liquid Bronze",
-      "descEn": "Gain 3 <g>Thorns</g>."
+      "descEn": "Gain 3 Thorns.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Thorns",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/liquid-bronze"
     },
     {
       "className": "LiquidMemories",
@@ -549,13 +1215,32 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "液態記憶",
-      "description": "Put a card from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold]. It's free to play this turn.",
+      "description": "Put a card from your Discard Pile into your Hand. It's free to play this turn.",
       "image": "liquid_memories",
       "imagePath": "/images/potions/liquid_memories.webp",
-      "descriptionClean": "將你棄牌堆中的一張牌放入你的手牌。本回合可免費打出。",
-      "descI18n": "將你<g>棄牌堆</g>中的一張牌放入你的<g>手牌</g>。本回合可免費打出。",
+      "descriptionClean": "Put a card from your Discard Pile into your Hand. It's free to play this turn.",
       "nameEn": "Liquid Memories",
-      "descEn": "Put a card from your <g>Discard Pile</g> into your <g>Hand</g>. It's free to play this turn."
+      "descEn": "Put a card from your Discard Pile into your Hand. It's free to play this turn.",
+      "descEnParts": [
+        {
+          "text": "Put a card from your "
+        },
+        {
+          "text": "Discard Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". It's free to play this turn."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/liquid-memories"
     },
     {
       "className": "LuckyTonic",
@@ -564,13 +1249,32 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "幸運補藥",
-      "description": "Gain [blue]{BufferPower}[/blue] [gold]Buffer[/gold].",
+      "description": "Gain 1 Buffer.",
       "image": "lucky_tonic",
       "imagePath": "/images/potions/lucky_tonic.webp",
-      "descriptionClean": "獲得 1 層緩衝。",
-      "descI18n": "獲得 1 層<g>緩衝</g>。",
+      "descriptionClean": "Gain 1 Buffer.",
       "nameEn": "Lucky Tonic",
-      "descEn": "Gain 1 <g>Buffer</g>."
+      "descEn": "Gain 1 Buffer.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Buffer",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/lucky-tonic"
     },
     {
       "className": "MazalethsGift",
@@ -579,13 +1283,32 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "馬札勒斯的贈禮",
-      "description": "Gain [blue]{RitualPower}[/blue] [gold]Ritual[/gold].",
+      "description": "Gain 1 Ritual.",
       "image": "mazaleths_gift",
       "imagePath": "/images/potions/mazaleths_gift.webp",
-      "descriptionClean": "獲得 1 層儀式。",
-      "descI18n": "獲得 1 層<g>儀式</g>。",
+      "descriptionClean": "Gain 1 Ritual.",
       "nameEn": "Mazaleth's Gift",
-      "descEn": "Gain 1 <g>Ritual</g>."
+      "descEn": "Gain 1 Ritual.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Ritual",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/mazaleths-gift"
     },
     {
       "className": "OrobicAcid",
@@ -594,13 +1317,25 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "歐洛巴斯酸",
-      "description": "Add a random Attack, Skill, and Power into your [gold]Hand[/gold]. They're free to play this turn.",
+      "description": "Add a random Attack, Skill, and Power into your Hand. They're free to play this turn.",
       "image": "orobic_acid",
       "imagePath": "/images/potions/orobic_acid.webp",
-      "descriptionClean": "分別將一張隨機攻擊牌、技能牌與能力牌加入你的手牌。這些牌本回合可免費打出。",
-      "descI18n": "分別將一張隨機攻擊牌、技能牌與能力牌加入你的<g>手牌</g>。這些牌本回合可免費打出。",
+      "descriptionClean": "Add a random Attack, Skill, and Power into your Hand. They're free to play this turn.",
       "nameEn": "Orobic Acid",
-      "descEn": "Add a random Attack, Skill, and Power into your <g>Hand</g>. They're free to play this turn."
+      "descEn": "Add a random Attack, Skill, and Power into your Hand. They're free to play this turn.",
+      "descEnParts": [
+        {
+          "text": "Add a random Attack, Skill, and Power into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". They're free to play this turn."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/orobic-acid"
     },
     {
       "className": "PoisonPotion",
@@ -609,13 +1344,32 @@
       "usage": "CombatOnly",
       "target": "AnyEnemy",
       "name": "中毒藥水",
-      "description": "Apply [blue]{PoisonPower}[/blue] [gold]Poison[/gold].",
+      "description": "Apply 6 Poison.",
       "image": "poison_potion",
       "imagePath": "/images/potions/poison_potion.webp",
-      "descriptionClean": "施加 6 層中毒。",
-      "descI18n": "施加 6 層<g>中毒</g>。",
+      "descriptionClean": "Apply 6 Poison.",
       "nameEn": "Poison Potion",
-      "descEn": "Apply 6 <g>Poison</g>."
+      "descEn": "Apply 6 Poison.",
+      "descEnParts": [
+        {
+          "text": "Apply "
+        },
+        {
+          "text": "6",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Poison",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/poison-potion"
     },
     {
       "className": "PotOfGhouls",
@@ -624,13 +1378,39 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "屍鬼甕",
-      "description": "Add [blue]{Cards}[/blue] [gold]{Cards:plural:Soul|Souls}[/gold] into your [gold]Hand[/gold].",
+      "description": "Add 2 Souls into your Hand.",
       "image": "pot_of_ghouls",
       "imagePath": "/images/potions/pot_of_ghouls.webp",
-      "descriptionClean": "將 2 張靈魂加入你的手牌。",
-      "descI18n": "將 2 張<g>靈魂</g>加入你的<g>手牌</g>。",
+      "descriptionClean": "Add 2 Souls into your Hand.",
       "nameEn": "Pot of Ghouls",
-      "descEn": "Add 2 <g>Souls</g> into your <g>Hand</g>."
+      "descEn": "Add 2 Souls into your Hand.",
+      "descEnParts": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Souls",
+          "color": "#efc851"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/pot-of-ghouls"
     },
     {
       "className": "PotionOfBinding",
@@ -639,13 +1419,46 @@
       "usage": "CombatOnly",
       "target": "AllEnemies",
       "name": "禁縛藥水",
-      "description": "Apply [blue]{WeakPower:diff()}[/blue] [gold]Weak[/gold] and [blue]{VulnerablePower:diff()}[/blue] [gold]Vulnerable[/gold] to ALL enemies.",
+      "description": "Apply 1 Weak and 1 Vulnerable to ALL enemies.",
       "image": "potion_of_binding",
       "imagePath": "/images/potions/potion_of_binding.webp",
-      "descriptionClean": "對所有敵人施加 1 層虛弱和 1 層易傷。",
-      "descI18n": "對所有敵人施加 1 層<g>虛弱</g>和 1 層<g>易傷</g>。",
+      "descriptionClean": "Apply 1 Weak and 1 Vulnerable to ALL enemies.",
       "nameEn": "Potion of Binding",
-      "descEn": "Apply 1 <g>Weak</g> and 1 <g>Vulnerable</g> to ALL enemies."
+      "descEn": "Apply 1 Weak and 1 Vulnerable to ALL enemies.",
+      "descEnParts": [
+        {
+          "text": "Apply "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Weak",
+          "color": "#efc851"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Vulnerable",
+          "color": "#efc851"
+        },
+        {
+          "text": " to ALL enemies."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/potion-of-binding"
     },
     {
       "className": "PotionOfCapacity",
@@ -654,13 +1467,32 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "擴容藥水",
-      "description": "Gain [blue]{Repeat}[/blue] [gold]Orb {Repeat:plural:Slot|Slots}[/gold].",
+      "description": "Gain 2 Orb Slots.",
       "image": "potion_of_capacity",
       "imagePath": "/images/potions/potion_of_capacity.webp",
-      "descriptionClean": "獲得 2 個充能球欄位。",
-      "descI18n": "獲得 2 個<g>充能球欄位</g>。",
+      "descriptionClean": "Gain 2 Orb Slots.",
       "nameEn": "Potion of Capacity",
-      "descEn": "Gain 2 <g>Orb Slots</g>."
+      "descEn": "Gain 2 Orb Slots.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Orb Slots",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/potion-of-capacity"
     },
     {
       "className": "PotionOfDoom",
@@ -669,13 +1501,32 @@
       "usage": "CombatOnly",
       "target": "AnyEnemy",
       "name": "惡兆藥水",
-      "description": "Apply [blue]{DoomPower}[/blue] [gold]Doom[/gold].",
+      "description": "Apply 33 Doom.",
       "image": "potion_of_doom",
       "imagePath": "/images/potions/potion_of_doom.webp",
-      "descriptionClean": "施加 33 層惡兆。",
-      "descI18n": "施加 33 層<g>惡兆</g>。",
+      "descriptionClean": "Apply 33 Doom.",
       "nameEn": "Potion of Doom",
-      "descEn": "Apply 33 <g>Doom</g>."
+      "descEn": "Apply 33 Doom.",
+      "descEnParts": [
+        {
+          "text": "Apply "
+        },
+        {
+          "text": "33",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Doom",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/potion-of-doom"
     },
     {
       "className": "PowderedDemise",
@@ -684,13 +1535,25 @@
       "usage": "CombatOnly",
       "target": "AnyEnemy",
       "name": "消亡粉末",
-      "description": "Enemy loses [blue]{Demise}[/blue] HP at the end of each of its turns.",
+      "description": "Enemy loses 9 HP at the end of each of its turns.",
       "image": "powdered_demise",
       "imagePath": "/images/potions/powdered_demise.webp",
-      "descriptionClean": "敵人在其每個回合結束時失去 9 點生命。",
-      "descI18n": "敵人在其每個回合結束時失去 9 點生命。",
+      "descriptionClean": "Enemy loses 9 HP at the end of each of its turns.",
       "nameEn": "Powdered Demise",
-      "descEn": "Enemy loses 9 HP at the end of each of its turns."
+      "descEn": "Enemy loses 9 HP at the end of each of its turns.",
+      "descEnParts": [
+        {
+          "text": "Enemy loses "
+        },
+        {
+          "text": "9",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " HP at the end of each of its turns."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/powdered-demise"
     },
     {
       "className": "PowerPotion",
@@ -699,13 +1562,39 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "能力藥水",
-      "description": "Choose [blue]1[/blue] of [blue]3[/blue] random Power cards to add into your [gold]Hand[/gold]. It's free to play this turn.",
+      "description": "Choose 1 of 3 random Power cards to add into your Hand. It's free to play this turn.",
       "image": "power_potion",
       "imagePath": "/images/potions/power_potion.webp",
-      "descriptionClean": "從 3 張隨機能力牌中選擇 1 張加入你的手牌。本回合可免費打出。",
-      "descI18n": "從 3 張隨機能力牌中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。",
+      "descriptionClean": "Choose 1 of 3 random Power cards to add into your Hand. It's free to play this turn.",
       "nameEn": "Power Potion",
-      "descEn": "Choose 1 of 3 random Power cards to add into your <g>Hand</g>. It's free to play this turn."
+      "descEn": "Choose 1 of 3 random Power cards to add into your Hand. It's free to play this turn.",
+      "descEnParts": [
+        {
+          "text": "Choose "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random Power cards to add into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". It's free to play this turn."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/power-potion"
     },
     {
       "className": "RadiantTincture",
@@ -714,13 +1603,37 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "光輝酊劑",
-      "description": "Gain {Energy:energyIcons()}. Gain an additional {energyPrefix:energyIcons(1)} at the start of your next [blue]{RadiancePower}[/blue] {RadiancePower:plural:turn|turns}.",
+      "description": "Gain <e/>. Gain an additional <e/> at the start of your next 3 turns.",
       "image": "radiant_tincture",
       "imagePath": "/images/potions/radiant_tincture.webp",
-      "descriptionClean": "獲得 1。接下來 3 回合開始時，額外獲得 。",
-      "descI18n": "獲得 <e>1</e>。接下來 3 回合開始時，額外獲得 <e/>。",
+      "descriptionClean": "Gain . Gain an additional  at the start of your next 3 turns.",
       "nameEn": "Radiant Tincture",
-      "descEn": "Gain <e>1</e>. Gain an additional <e/> at the start of your next 3 turns."
+      "descEn": "Gain <e/>. Gain an additional <e/> at the start of your next 3 turns.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": ". Gain an additional "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " at the start of your next "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turns."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/radiant-tincture"
     },
     {
       "className": "RegenPotion",
@@ -729,13 +1642,32 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "再生藥水",
-      "description": "Gain [green]{RegenPower}[/green] [gold]Regen[/gold].",
+      "description": "Gain 5 Regen.",
       "image": "regen_potion",
       "imagePath": "/images/potions/regen_potion.webp",
-      "descriptionClean": "獲得 5 層再生。",
-      "descI18n": "獲得 5 層<g>再生</g>。",
+      "descriptionClean": "Gain 5 Regen.",
       "nameEn": "Regen Potion",
-      "descEn": "Gain 5 <g>Regen</g>."
+      "descEn": "Gain 5 Regen.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "5",
+          "color": "#7fff00"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Regen",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/regen-potion"
     },
     {
       "className": "ShacklingPotion",
@@ -744,13 +1676,32 @@
       "usage": "CombatOnly",
       "target": "AllEnemies",
       "name": "鐐銬藥水",
-      "description": "ALL enemies lose [blue]{StrengthPower}[/blue] [gold]Strength[/gold] this turn.",
+      "description": "ALL enemies lose 7 Strength this turn.",
       "image": "shackling_potion",
       "imagePath": "/images/potions/shackling_potion.webp",
-      "descriptionClean": "所有敵人本回合失去 7 層力量。",
-      "descI18n": "所有敵人本回合失去 7 層<g>力量</g>。",
+      "descriptionClean": "ALL enemies lose 7 Strength this turn.",
       "nameEn": "Shackling Potion",
-      "descEn": "ALL enemies lose 7 <g>Strength</g> this turn."
+      "descEn": "ALL enemies lose 7 Strength this turn.",
+      "descEnParts": [
+        {
+          "text": "ALL enemies lose "
+        },
+        {
+          "text": "7",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": " this turn."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/shackling-potion"
     },
     {
       "className": "ShipInABottle",
@@ -759,13 +1710,46 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "瓶中船",
-      "description": "Gain [blue]{Block:diff()}[/blue] [gold]Block[/gold]. Next turn, gain [blue]{Block:diff()}[/blue] [gold]Block[/gold].",
+      "description": "Gain 10 Block. Next turn, gain 10 Block.",
       "image": "ship_in_a_bottle",
       "imagePath": "/images/potions/ship_in_a_bottle.webp",
-      "descriptionClean": "獲得 10 點格擋。下回合，獲得 10 點格擋。",
-      "descI18n": "獲得 10 點<g>格擋</g>。下回合，獲得 10 點<g>格擋</g>。",
+      "descriptionClean": "Gain 10 Block. Next turn, gain 10 Block.",
       "nameEn": "Ship in a Bottle",
-      "descEn": "Gain 10 <g>Block</g>. Next turn, gain 10 <g>Block</g>."
+      "descEn": "Gain 10 Block. Next turn, gain 10 Block.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": ". Next turn, gain "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/ship-in-a-bottle"
     },
     {
       "className": "SkillPotion",
@@ -774,13 +1758,39 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "技能藥水",
-      "description": "Choose [blue]1[/blue] of [blue]3[/blue] random Skill cards to add into your [gold]Hand[/gold]. It's free to play this turn.",
+      "description": "Choose 1 of 3 random Skill cards to add into your Hand. It's free to play this turn.",
       "image": "skill_potion",
       "imagePath": "/images/potions/skill_potion.webp",
-      "descriptionClean": "從 3 張隨機技能牌中選擇 1 張加入你的手牌。本回合可免費打出。",
-      "descI18n": "從 3 張隨機技能牌中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。",
+      "descriptionClean": "Choose 1 of 3 random Skill cards to add into your Hand. It's free to play this turn.",
       "nameEn": "Skill Potion",
-      "descEn": "Choose 1 of 3 random Skill cards to add into your <g>Hand</g>. It's free to play this turn."
+      "descEn": "Choose 1 of 3 random Skill cards to add into your Hand. It's free to play this turn.",
+      "descEnParts": [
+        {
+          "text": "Choose "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random Skill cards to add into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". It's free to play this turn."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/skill-potion"
     },
     {
       "className": "SneckoOil",
@@ -789,13 +1799,32 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "異蛇油",
-      "description": "Draw [blue]{Cards}[/blue] cards. Randomize the cost of cards in your [gold]Hand[/gold] this turn.",
+      "description": "Draw 7 cards. Randomize the cost of cards in your Hand this turn.",
       "image": "snecko_oil",
       "imagePath": "/images/potions/snecko_oil.webp",
-      "descriptionClean": "抽 7 張牌。本回合隨機改變你手牌中卡牌的耗能。",
-      "descI18n": "抽 7 張牌。本回合隨機改變你<g>手牌</g>中卡牌的耗能。",
+      "descriptionClean": "Draw 7 cards. Randomize the cost of cards in your Hand this turn.",
       "nameEn": "Snecko Oil",
-      "descEn": "Draw 7 cards. Randomize the cost of cards in your <g>Hand</g> this turn."
+      "descEn": "Draw 7 cards. Randomize the cost of cards in your Hand this turn.",
+      "descEnParts": [
+        {
+          "text": "Draw "
+        },
+        {
+          "text": "7",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards. Randomize the cost of cards in your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": " this turn."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/snecko-oil"
     },
     {
       "className": "SoldiersStew",
@@ -804,13 +1833,39 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "士兵燉湯",
-      "description": "All cards containing [gold]Strike[/gold] gain [blue]1[/blue] [gold]Replay[/gold] this combat.",
+      "description": "All cards containing Strike gain 1 Replay this combat.",
       "image": "soldiers_stew",
       "imagePath": "/images/potions/soldiers_stew.webp",
-      "descriptionClean": "所有名稱中含有打擊的牌在本場戰鬥中獲得重演 1。",
-      "descI18n": "所有名稱中含有<g>打擊</g>的牌在本場戰鬥中獲得<g>重演</g> 1。",
+      "descriptionClean": "All cards containing Strike gain 1 Replay this combat.",
       "nameEn": "Soldier's Stew",
-      "descEn": "All cards containing <g>Strike</g> gain 1 <g>Replay</g> this combat."
+      "descEn": "All cards containing Strike gain 1 Replay this combat.",
+      "descEnParts": [
+        {
+          "text": "All cards containing "
+        },
+        {
+          "text": "Strike",
+          "color": "#efc851"
+        },
+        {
+          "text": " gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Replay",
+          "color": "#efc851"
+        },
+        {
+          "text": " this combat."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/soldiers-stew"
     },
     {
       "className": "SpeedPotion",
@@ -819,13 +1874,46 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "速度藥水",
-      "description": "Gain [blue]{DexterityPower}[/blue] [gold]Dexterity[/gold]. At the end of your turn, lose [blue]{DexterityPower}[/blue] [gold]Dexterity[/gold].",
+      "description": "Gain 5 Dexterity. At the end of your turn, lose 5 Dexterity.",
       "image": "speed_potion",
       "imagePath": "/images/potions/speed_potion.webp",
-      "descriptionClean": "獲得 5 層敏捷。在你的回合結束時，失去 5 層敏捷。",
-      "descI18n": "獲得 5 層<g>敏捷</g>。在你的回合結束時，失去 5 層<g>敏捷</g>。",
+      "descriptionClean": "Gain 5 Dexterity. At the end of your turn, lose 5 Dexterity.",
       "nameEn": "Speed Potion",
-      "descEn": "Gain 5 <g>Dexterity</g>. At the end of your turn, lose 5 <g>Dexterity</g>."
+      "descEn": "Gain 5 Dexterity. At the end of your turn, lose 5 Dexterity.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "color": "#efc851"
+        },
+        {
+          "text": ". At the end of your turn, lose "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/speed-potion"
     },
     {
       "className": "StableSerum",
@@ -834,13 +1922,36 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "穩定血清",
-      "description": "[gold]Retain[/gold] your [gold]Hand[/gold] for [blue]{Repeat}[/blue] {Repeat:plural:turn|turns}.",
+      "description": "Retain your Hand for 2 turns.",
       "image": "stable_serum",
       "imagePath": "/images/potions/stable_serum.webp",
-      "descriptionClean": "接下來 2 回合，保留你的手牌。",
-      "descI18n": "接下來 2 回合，<g>保留</g>你的<g>手牌</g>。",
+      "descriptionClean": "Retain your Hand for 2 turns.",
       "nameEn": "Stable Serum",
-      "descEn": "<g>Retain</g> your <g>Hand</g> for 2 turns."
+      "descEn": "Retain your Hand for 2 turns.",
+      "descEnParts": [
+        {
+          "text": "Retain",
+          "color": "#efc851"
+        },
+        {
+          "text": " your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turns."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/stable-serum"
     },
     {
       "className": "StarPotion",
@@ -849,13 +1960,30 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "輝星藥水",
-      "description": "Gain {Stars:starIcons()}.",
+      "description": "Gain <e/><e/><e/>.",
       "image": "star_potion",
       "imagePath": "/images/potions/star_potion.webp",
-      "descriptionClean": "獲得 3。",
-      "descI18n": "獲得 <s>3</s>。",
+      "descriptionClean": "Gain .",
       "nameEn": "Star Potion",
-      "descEn": "Gain <s>3</s>."
+      "descEn": "Gain <e/><e/><e/>.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/star-potion"
     },
     {
       "className": "StrengthPotion",
@@ -864,13 +1992,32 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "力量藥水",
-      "description": "Gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold].",
+      "description": "Gain 2 Strength.",
       "image": "strength_potion",
       "imagePath": "/images/potions/strength_potion.webp",
-      "descriptionClean": "獲得 2 層力量。",
-      "descI18n": "獲得 2 層<g>力量</g>。",
+      "descriptionClean": "Gain 2 Strength.",
       "nameEn": "Strength Potion",
-      "descEn": "Gain 2 <g>Strength</g>."
+      "descEn": "Gain 2 Strength.",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/strength-potion"
     },
     {
       "className": "SwiftPotion",
@@ -879,13 +2026,25 @@
       "usage": "CombatOnly",
       "target": "AnyPlayer",
       "name": "迅捷藥水",
-      "description": "Draw [blue]{Cards}[/blue] {Cards:plural:card|cards}.",
+      "description": "Draw 3 cards.",
       "image": "swift_potion",
       "imagePath": "/images/potions/swift_potion.webp",
-      "descriptionClean": "抽 3 張牌。",
-      "descI18n": "抽 3 張牌。",
+      "descriptionClean": "Draw 3 cards.",
       "nameEn": "Swift Potion",
-      "descEn": "Draw 3 cards."
+      "descEn": "Draw 3 cards.",
+      "descEnParts": [
+        {
+          "text": "Draw "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/swift-potion"
     },
     {
       "className": "TouchOfInsanity",
@@ -894,13 +2053,25 @@
       "usage": "CombatOnly",
       "target": "Self",
       "name": "瘋狂之觸",
-      "description": "Choose a card in your [gold]Hand[/gold]. It is free to play this combat.",
+      "description": "Choose a card in your Hand. It is free to play this combat.",
       "image": "touch_of_insanity",
       "imagePath": "/images/potions/touch_of_insanity.webp",
-      "descriptionClean": "選擇你手牌中的一張牌。該牌在本場戰鬥中可免費打出。",
-      "descI18n": "選擇你<g>手牌</g>中的一張牌。該牌在本場戰鬥中可免費打出。",
+      "descriptionClean": "Choose a card in your Hand. It is free to play this combat.",
       "nameEn": "Touch of Insanity",
-      "descEn": "Choose a card in your <g>Hand</g>. It is free to play this combat."
+      "descEn": "Choose a card in your Hand. It is free to play this combat.",
+      "descEnParts": [
+        {
+          "text": "Choose a card in your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". It is free to play this combat."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/touch-of-insanity"
     },
     {
       "className": "VulnerablePotion",
@@ -909,13 +2080,32 @@
       "usage": "CombatOnly",
       "target": "AnyEnemy",
       "name": "易傷藥水",
-      "description": "Apply [blue]{VulnerablePower}[/blue] [gold]Vulnerable[/gold].",
+      "description": "Apply 3 Vulnerable.",
       "image": "vulnerable_potion",
       "imagePath": "/images/potions/vulnerable_potion.webp",
-      "descriptionClean": "施加 3 層易傷。",
-      "descI18n": "施加 3 層<g>易傷</g>。",
+      "descriptionClean": "Apply 3 Vulnerable.",
       "nameEn": "Vulnerable Potion",
-      "descEn": "Apply 3 <g>Vulnerable</g>."
+      "descEn": "Apply 3 Vulnerable.",
+      "descEnParts": [
+        {
+          "text": "Apply "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Vulnerable",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/vulnerable-potion"
     },
     {
       "className": "WeakPotion",
@@ -924,13 +2114,32 @@
       "usage": "CombatOnly",
       "target": "AnyEnemy",
       "name": "虛弱藥水",
-      "description": "Apply [blue]{WeakPower}[/blue] [gold]Weak[/gold].",
+      "description": "Apply 3 Weak.",
       "image": "weak_potion",
       "imagePath": "/images/potions/weak_potion.webp",
-      "descriptionClean": "施加 3 層虛弱。",
-      "descI18n": "施加 3 層<g>虛弱</g>。",
+      "descriptionClean": "Apply 3 Weak.",
       "nameEn": "Weak Potion",
-      "descEn": "Apply 3 <g>Weak</g>."
+      "descEn": "Apply 3 Weak.",
+      "descEnParts": [
+        {
+          "text": "Apply "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Weak",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/weak-potion"
     },
     {
       "className": "Ambergris",
@@ -939,18 +2148,28 @@
       "usage": "AnyTime",
       "target": "AnyPlayer",
       "name": "龍涎香",
-      "description": "Heal for [green]{HealPercent}%[/green] of your Max HP. If used in combat, take an extra turn.",
+      "description": "Heal for 50% of your Max HP. If used in combat, take an extra turn.",
       "image": "ambergris",
       "imagePath": "/images/potions/ambergris.webp",
-      "descriptionClean": "恢復相當於最大生命 50% 的生命。若在戰鬥中使用，則額外進行一個回合。",
-      "descI18n": "恢復相當於最大生命 50% 的生命。若在戰鬥中使用，則額外進行一個回合。",
+      "descriptionClean": "Heal for 50% of your Max HP. If used in combat, take an extra turn.",
       "nameEn": "Ambergris",
-      "descEn": "Heal for 50% of your Max HP. If used in combat, take an extra turn."
+      "descEn": "Heal for 50% of your Max HP. If used in combat, take an extra turn.",
+      "descEnParts": [
+        {
+          "text": "Heal for "
+        },
+        {
+          "text": "50%",
+          "color": "#7fff00"
+        },
+        {
+          "text": " of your Max HP. If used in combat, take an extra turn."
+        }
+      ],
+      "sourceEn": "https://sts2.untapped.gg/en/potions/ambergris"
     }
   ],
   "englishNameSource": "https://slaythespire2.net/potion",
-  "englishSource": {
-    "url": "https://slaythespire2.net/potion",
-    "retrievedDate": "2026-11-19"
-  }
+  "englishSource": "https://sts2.untapped.gg/en/potions",
+  "descriptionSource": "https://sts2.untapped.gg/en/potions"
 }

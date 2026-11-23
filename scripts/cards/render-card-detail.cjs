@@ -28,6 +28,11 @@ function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds =
     const difference = compareEffects(card.effect.base, card.effect.upgraded, effect);
     upgradedContent = difference.upgraded;
   }
+  if(card.effectParts){
+    const renderParts=parts=>require('../event/untapped-effect.cjs')({descEnParts:parts}).replace(/\n/g,'<br>');
+    baseContent=renderParts(card.effectParts.base);
+    if(card.effectParts.upgraded!==null)upgradedContent=renderParts(card.effectParts.upgraded);
+  }
   baseContent = baseContent.replaceAll(icons.energy, icons.energyFor(card.character));
   upgradedContent = upgradedContent.replaceAll(icons.energy, icons.energyFor(card.character));
   if (searchableEffects) {
@@ -70,12 +75,12 @@ function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds =
   <div class="detail-overview">
   ${characterMetadata}
   ${metadataAboveEffects ? '' : art}
-  <header data-detail-row="2"><h2 class="detail-title" id="${prefix}-title">${cornerMetadata ? '<span class="detail-heading-row"><img class="detail-heading-character" src="' + esc(card.characterIcon) + '" alt="' + esc(card.character) + '" title="' + esc(card.character) + '">' : tierBesideName ? '<span class="detail-name-line">' : ''}<a class="detail-name-zh" lang="zh-Hant" href="${esc(chineseUrl.href)}" target="_blank" rel="noopener noreferrer">${esc(card.nameZh)}</a>${cornerMetadata ? '<span class="detail-heading-rarity" data-label-rarity="' + esc(card.rarity) + '">' + esc(card.rarity) + '</span></span>' : tierBesideName ? (tierList ? '<a class="detail-name-tier" data-tier="' + esc(card.tier) + '" aria-label="Tier ' + esc(card.tier) + '" href="' + esc(tierList) + '" target="_blank" rel="noopener noreferrer">' + esc(card.tier) + '</a>' : '') + '</span>' : ''}<a class="detail-name-en" href="${esc(require('./wiki-card-link.cjs')(card))}" target="_blank" rel="noopener noreferrer">${esc(card.name)}</a></h2></header>
+  <header data-detail-row="2"><h2 class="detail-title" id="${prefix}-title">${cornerMetadata ? '<span class="detail-heading-row"><img class="detail-heading-character" src="' + esc(card.characterIcon) + '" alt="' + esc(card.character) + '" title="' + esc(card.character) + '">' : tierBesideName ? '<span class="detail-name-line">' : ''}<a class="detail-name-zh" lang="zh-Hant" href="${esc(chineseUrl.href)}" target="_blank" rel="noopener noreferrer">${esc(card.nameZh)}</a>${cornerMetadata ? '<span class="detail-heading-rarity" data-label-rarity="' + esc(card.rarity) + '">' + esc(card.rarity) + '</span></span>' : tierBesideName ? (tierList ? '<a class="detail-name-tier" data-tier="' + esc(card.tier) + '" aria-label="Tier ' + esc(card.tier) + '" href="' + esc(tierList) + '" target="_blank" rel="noopener noreferrer">' + esc(card.tier) + '</a>' : '') + '</span>' : ''}<a class="detail-name-en" href="${esc(require('./card-source-link.cjs')(card))}" target="_blank" rel="noopener noreferrer">${esc(card.name)}</a></h2></header>
   ${metadataAboveEffects ? art : ''}
   ${typeMetadata}
   <section class="detail-section detail-effects" data-detail-row="5" aria-label="Card effects"><div class="detail-effect-columns"><div class="detail-effect-panel" role="group" aria-label="Base">${metadataAboveEffects ? '' : '<h4>Base</h4>'}${baseCostContent}<p class="detail-panel-description">${baseContent}</p></div><div class="detail-effect-panel" role="group" aria-label="Upgraded">${metadataAboveEffects ? '' : '<h4 class="detail-upgraded">Upgraded</h4>'}${upgradedCostContent}<p class="detail-panel-description">${upgradedContent}</p></div></div>${showEffectNotes ? require('./effect-tooltips.cjs').notes(card.id) : ''}${showKeywords && keywords ? '<aside class="detail-keyword">' + keywords + '</aside>' : ''}</section>
   </div>
-  ${cornerMetadata ? '<div class="detail-bottom-tier">' + (tierList ? '<a class="detail-name-tier" data-tier="' + esc(card.tier) + '" aria-label="Tier ' + esc(card.tier) + '" href="' + esc(tierList) + '" target="_blank" rel="noopener noreferrer">' + esc(card.tier) + '</a>' : '') + '</div>' : ''}
+  ${cornerMetadata ? '<div class="detail-bottom-tier">' + (showTierRating ? require('./creator-tier-labels.cjs')(card) : '') + '</div>' : ''}
   ${metadataAboveEffects ? '' : '<section class="detail-section detail-card-stats" data-detail-row="6" aria-label="Card stats"><dl class="detail-stats">' + stats + '</dl></section>'}
   ${tierList && !metadataAboveEffects ? '<section class="detail-section detail-card-rating" data-detail-row="8" aria-label="Tier rating"><a class="detail-rating" href="' + esc(tierList) + '" target="_blank" rel="noopener noreferrer"><span class="tier detail-rating-badge" data-tier="' + esc(card.tier) + '" aria-label="Tier ' + esc(card.tier) + '">' + esc(card.tier) + '</span><span class="detail-rating-description">' + esc(tierDescription) + '</span></a></section>' : ''}
   ${builds ? '<section class="detail-section detail-card-builds" data-detail-row="7" aria-label="Builds using this card"><div class="detail-build-list">' + builds + '</div></section>' : ''}

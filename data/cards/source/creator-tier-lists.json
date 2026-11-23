@@ -1,0 +1,1664 @@
+{
+  "checkedAt": "2026-11-23T15:58:59.086Z",
+  "lists": [
+    {
+      "character": "Ironclad",
+      "author": "Jorbs",
+      "id": "6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "url": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "name": "Jorbs Ironclad Tier List",
+      "version": "v0.107.1",
+      "tiers": [
+        {
+          "name": "S",
+          "color": "#408abf",
+          "cards": [
+            "TREMBLE",
+            "ASHEN_STRIKE",
+            "DOMINATE",
+            "INFERNO",
+            "OFFERING",
+            "FIEND_FIRE",
+            "FEED",
+            "CRIMSON_MANTLE",
+            "BREAK",
+            "COLOSSUS",
+            "FLAME_BARRIER",
+            "DISMANTLE",
+            "TAUNT",
+            "UNMOVABLE",
+            "POMMEL_STRIKE",
+            "BLOOD_WALL"
+          ]
+        },
+        {
+          "name": "A",
+          "color": "#6ba036",
+          "cards": [
+            "FLASH_OF_STEEL",
+            "BATTLE_TRANCE",
+            "BULLY",
+            "CINDER",
+            "FEEL_NO_PAIN",
+            "EVIL_EYE",
+            "VICIOUS",
+            "IMPERVIOUS",
+            "BRAND",
+            "FORGOTTEN_RITUAL",
+            "THRASH",
+            "SECOND_WIND",
+            "ARMAMENTS",
+            "DUAL_WIELD",
+            "TRUE_GRIT",
+            "DEMONIC_SHIELD"
+          ]
+        },
+        {
+          "name": "B",
+          "color": "#92a036",
+          "cards": [
+            "MOLTEN_FIST",
+            "BURNING_PACT",
+            "IRON_WAVE",
+            "UPPERCUT",
+            "MANGLE",
+            "BLOODLETTING",
+            "PERFECTED_STRIKE",
+            "SETUP_STRIKE",
+            "HEMOKINESIS",
+            "INFERNAL_BLADE",
+            "STONE_ARMOR",
+            "AGGRESSION",
+            "RAGE",
+            "CASCADE",
+            "ONE_TWO_PUNCH",
+            "PACTS_END",
+            "PRIMAL_FORCE",
+            "CRUELTY",
+            "CLASH",
+            "STOKE",
+            "EXPECT_A_FIGHT",
+            "CORRUPTION",
+            "ANGER",
+            "RUPTURE",
+            "ENTRENCH",
+            "HOWL_FROM_BEYOND"
+          ]
+        },
+        {
+          "name": "C",
+          "color": "#a9792c",
+          "cards": [
+            "BASH",
+            "STRIKE_IRONCLAD",
+            "FIGHT_ME",
+            "BLUDGEON",
+            "PYRE",
+            "WHIRLWIND",
+            "STOMP",
+            "UNRELENTING",
+            "SHRUG_IT_OFF",
+            "BARRICADE",
+            "BODY_SLAM",
+            "BREAKTHROUGH",
+            "THUNDERCLAP",
+            "TWIN_STRIKE",
+            "JUGGLING",
+            "SPITE",
+            "STAMPEDE",
+            "DEMON_FORM",
+            "NOT_YET",
+            "CONFLAGRATION",
+            "DARK_EMBRACE",
+            "HEADBUTT",
+            "INFLAME",
+            "SWORD_BOOMERANG",
+            "TEAR_ASUNDER",
+            "DRUM_OF_BATTLE",
+            "JUGGERNAUT",
+            "TANK"
+          ]
+        },
+        {
+          "name": "D",
+          "color": "#a04836",
+          "cards": [
+            "DEFEND_IRONCLAD",
+            "HAVOC",
+            "HELLRAISER",
+            "RAMPAGE",
+            "PILLAGE"
+          ]
+        },
+        {
+          "name": "F",
+          "color": "#a03636",
+          "cards": []
+        },
+        {
+          "name": "S",
+          "color": "#408abf",
+          "cards": []
+        },
+        {
+          "name": "A",
+          "color": "#6ba036",
+          "cards": []
+        },
+        {
+          "name": "B",
+          "color": "#92a036",
+          "cards": []
+        },
+        {
+          "name": "C",
+          "color": "#a9792c",
+          "cards": []
+        },
+        {
+          "name": "D",
+          "color": "#a04836",
+          "cards": []
+        },
+        {
+          "name": "F",
+          "color": "#a03636",
+          "cards": []
+        }
+      ]
+    },
+    {
+      "character": "Ironclad",
+      "author": "Baalorlord",
+      "id": "004de170-026a-4dd4-a280-3b904be0b5d6",
+      "url": "https://sts2.untapped.gg/en/tier-list/004de170-026a-4dd4-a280-3b904be0b5d6",
+      "name": "Baalorlord Ironclad Tier List",
+      "version": "v0.107.1",
+      "tiers": [
+        {
+          "name": "S",
+          "color": "#408abf",
+          "cards": [
+            "OFFERING",
+            "UNMOVABLE",
+            "BREAK",
+            "COLOSSUS",
+            "EVIL_EYE",
+            "DOMINATE",
+            "DARK_EMBRACE",
+            "VICIOUS",
+            "BLOODLETTING",
+            "FIEND_FIRE",
+            "STOKE",
+            "THRASH",
+            "PILLAGE",
+            "CRUELTY",
+            "POMMEL_STRIKE",
+            "IMPERVIOUS",
+            "RAGE",
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FISTICUFFS",
+            "PROLONG",
+            "PANIC_BUTTON",
+            "SHOCKWAVE",
+            "CALAMITY"
+          ]
+        },
+        {
+          "name": "A",
+          "color": "#6ba036",
+          "cards": [
+            "AGGRESSION",
+            "CRIMSON_MANTLE",
+            "CORRUPTION",
+            "JUGGERNAUT",
+            "NOT_YET",
+            "PACTS_END",
+            "PYRE",
+            "BATTLE_TRANCE",
+            "FEED",
+            "ONE_TWO_PUNCH",
+            "ANGER",
+            "STOMP",
+            "UPPERCUT",
+            "ASHEN_STRIKE",
+            "BULLY",
+            "CASCADE",
+            "FLAME_BARRIER",
+            "TAUNT",
+            "SHRUG_IT_OFF",
+            "FEEL_NO_PAIN",
+            "FIGHT_ME",
+            "BLUDGEON",
+            "EXPECT_A_FIGHT",
+            "BURNING_PACT",
+            "HEADBUTT",
+            "BODY_SLAM",
+            "HEMOKINESIS",
+            "WHIRLWIND",
+            "DEMONIC_SHIELD",
+            "THRUMMING_HATCHET",
+            "DISCOVERY",
+            "HAND_OF_GREED"
+          ]
+        },
+        {
+          "name": "B",
+          "color": "#92a036",
+          "cards": [
+            "BRAND",
+            "CONFLAGRATION",
+            "DISMANTLE",
+            "TEAR_ASUNDER",
+            "PRIMAL_FORCE",
+            "FORGOTTEN_RITUAL",
+            "SPITE",
+            "INFERNAL_BLADE",
+            "SECOND_WIND",
+            "RUPTURE",
+            "BREAKTHROUGH",
+            "ARMAMENTS",
+            "BLOOD_WALL",
+            "TRUE_GRIT",
+            "STONE_ARMOR",
+            "BARRICADE",
+            "STAMPEDE",
+            "JUGGLING",
+            "UNRELENTING",
+            "IRON_WAVE",
+            "TREMBLE",
+            "MOLTEN_FIST",
+            "PERFECTED_STRIKE",
+            "HOWL_FROM_BEYOND",
+            "THE_GAMBIT",
+            "DUAL_WIELD",
+            "ENTRENCH"
+          ]
+        },
+        {
+          "name": "C",
+          "color": "#a9792c",
+          "cards": [
+            "HELLRAISER",
+            "INFERNO",
+            "INFLAME",
+            "CINDER",
+            "TWIN_STRIKE",
+            "RAMPAGE",
+            "THUNDERCLAP",
+            "SETUP_STRIKE",
+            "SWORD_BOOMERANG",
+            "MANGLE",
+            "DRUM_OF_BATTLE",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "BASH",
+            "CLASH"
+          ]
+        },
+        {
+          "name": "D",
+          "color": "#a04836",
+          "cards": [
+            "HAVOC",
+            "TANK",
+            "DEMON_FORM"
+          ]
+        },
+        {
+          "name": "F",
+          "color": "#a03636",
+          "cards": []
+        },
+        {
+          "name": "Always Amazing",
+          "color": "#408abf",
+          "cards": []
+        },
+        {
+          "name": "Always Good",
+          "color": "#6ba036",
+          "cards": []
+        },
+        {
+          "name": "Needs Synergy",
+          "color": "#92a036",
+          "cards": []
+        },
+        {
+          "name": "Inconsistent",
+          "color": "#a9792c",
+          "cards": []
+        },
+        {
+          "name": "Almost Never",
+          "color": "#a03636",
+          "cards": []
+        }
+      ]
+    },
+    {
+      "character": "Silent",
+      "author": "Jorbs",
+      "id": "2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "url": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "name": "Jorbs Silent Tier List",
+      "version": "v0.107.1",
+      "tiers": [
+        {
+          "name": "S",
+          "color": "#408abf",
+          "cards": [
+            "ADRENALINE",
+            "NOXIOUS_FUMES",
+            "SNAKEBITE",
+            "FLECHETTES",
+            "MALAISE",
+            "SHADOWMELD",
+            "AFTERIMAGE",
+            "ACROBATICS",
+            "SUPPRESS",
+            "FOOTWORK",
+            "ESCAPE_PLAN",
+            "PREPARED",
+            "ECHOING_SLASH",
+            "MIRAGE",
+            "RICOCHET",
+            "UNTOUCHABLE",
+            "BULLET_TIME",
+            "ABRASIVE",
+            "THE_HUNT"
+          ]
+        },
+        {
+          "name": "A",
+          "color": "#6ba036",
+          "cards": [
+            "PIERCING_WAIL",
+            "BLUR",
+            "DODGE_AND_ROLL",
+            "BOUNCING_FLASK",
+            "CALCULATED_GAMBLE",
+            "NIGHTMARE",
+            "SPEEDSTER",
+            "SERPENT_FORM",
+            "FAN_OF_KNIVES",
+            "WELL_LAID_PLANS",
+            "TACTICIAN",
+            "SLEIGHT_OF_FLESH",
+            "BLADE_OF_INK",
+            "LEG_SWEEP",
+            "DASH",
+            "NEUTRALIZE",
+            "ASSASSINATE",
+            "BURST",
+            "CORROSIVE_WAVE",
+            "TOOLS_OF_THE_TRADE",
+            "CALTROPS",
+            "WRAITH_FORM",
+            "STRANGLE",
+            "PREDATOR",
+            "PRECISE_CUT",
+            "ACCELERANT",
+            "SURVIVOR",
+            "FLANKING",
+            "SNEAKY"
+          ]
+        },
+        {
+          "name": "B",
+          "color": "#92a036",
+          "cards": [
+            "DEFEND_SILENT",
+            "POISONED_STAB",
+            "BACKSTAB",
+            "PHANTOM_BLADES",
+            "HAZE",
+            "KNIFE_TRAP",
+            "HAND_TRICK",
+            "INFINITE_BLADES",
+            "REFLEX",
+            "BACKFLIP",
+            "BLADE_DANCE",
+            "DAGGER_SPRAY",
+            "CLOAK_AND_DAGGER",
+            "DAGGER_THROW",
+            "DEADLY_POISON",
+            "BUBBLE_BUBBLE",
+            "EXPERTISE",
+            "FINISHER",
+            "HIDDEN_DAGGERS",
+            "MEMENTO_MORI",
+            "TRACKING",
+            "POUNCE",
+            "PINPOINT",
+            "LEADING_STRIKE",
+            "OUTBREAK",
+            "DISTRACTION",
+            "OUTMANEUVER"
+          ]
+        },
+        {
+          "name": "C",
+          "color": "#a9792c",
+          "cards": [
+            "DEFLECT",
+            "ENVENOM",
+            "MASTER_PLANNER",
+            "SKEWER",
+            "FLICK_FLACK",
+            "FOLLOW_THROUGH",
+            "SUCKER_PUNCH",
+            "EXPOSE",
+            "STORM_OF_STEEL",
+            "ANTICIPATE",
+            "UP_MY_SLEEVE",
+            "ACCURACY",
+            "MURDER",
+            "SCARE"
+          ]
+        },
+        {
+          "name": "D",
+          "color": "#a04836",
+          "cards": [
+            "SLICE",
+            "GRAND_FINALE",
+            "SHADOW_STEP",
+            "STRIKE_SILENT"
+          ]
+        },
+        {
+          "name": "F",
+          "color": "#a03636",
+          "cards": []
+        },
+        {
+          "name": "S",
+          "color": "#408abf",
+          "cards": []
+        },
+        {
+          "name": "A",
+          "color": "#6ba036",
+          "cards": []
+        },
+        {
+          "name": "B",
+          "color": "#92a036",
+          "cards": []
+        },
+        {
+          "name": "C",
+          "color": "#a9792c",
+          "cards": []
+        },
+        {
+          "name": "D",
+          "color": "#a04836",
+          "cards": []
+        },
+        {
+          "name": "F",
+          "color": "#a03636",
+          "cards": []
+        }
+      ]
+    },
+    {
+      "character": "Silent",
+      "author": "Baalorlord",
+      "id": "6d61ea21-0552-4c49-8bb5-a5c15530fc00",
+      "url": "https://sts2.untapped.gg/en/tier-list/6d61ea21-0552-4c49-8bb5-a5c15530fc00",
+      "name": "Baalorlord Silent Tier List",
+      "version": "v0.107.1",
+      "tiers": [
+        {
+          "name": "S",
+          "color": "#408abf",
+          "cards": [
+            "ADRENALINE",
+            "CALCULATED_GAMBLE",
+            "CORROSIVE_WAVE",
+            "SHADOWMELD",
+            "ACROBATICS",
+            "PREPARED",
+            "BURST",
+            "TOOLS_OF_THE_TRADE",
+            "TACTICIAN",
+            "PIERCING_WAIL",
+            "HAND_TRICK",
+            "FLANKING",
+            "FASTEN",
+            "SECRET_TECHNIQUE",
+            "MASTER_OF_STRATEGY",
+            "PRODUCTION",
+            "SPLASH"
+          ]
+        },
+        {
+          "name": "A",
+          "color": "#6ba036",
+          "cards": [
+            "WELL_LAID_PLANS",
+            "TRACKING",
+            "SUPPRESS",
+            "WRAITH_FORM",
+            "AFTERIMAGE",
+            "ACCELERANT",
+            "MALAISE",
+            "UNTOUCHABLE",
+            "REFLEX",
+            "ABRASIVE",
+            "FOOTWORK",
+            "BLADE_OF_INK",
+            "BACKFLIP",
+            "LEG_SWEEP",
+            "BLUR",
+            "PINPOINT",
+            "FLECHETTES",
+            "BOUNCING_FLASK",
+            "NOXIOUS_FUMES",
+            "BUBBLE_BUBBLE",
+            "HIDDEN_DAGGERS",
+            "SPEEDSTER",
+            "OUTBREAK",
+            "ESCAPE_PLAN",
+            "NIGHTMARE",
+            "SHADOW_STEP",
+            "BULLET_TIME",
+            "SNEAKY",
+            "NEUTRALIZE",
+            "PANACHE",
+            "FINESSE",
+            "IMPATIENCE",
+            "CALTROPS"
+          ]
+        },
+        {
+          "name": "B",
+          "color": "#92a036",
+          "cards": [
+            "EXPOSE",
+            "MEMENTO_MORI",
+            "MURDER",
+            "THE_HUNT",
+            "KNIFE_TRAP",
+            "ACCURACY",
+            "PHANTOM_BLADES",
+            "FAN_OF_KNIVES",
+            "ANTICIPATE",
+            "ASSASSINATE",
+            "BACKSTAB",
+            "DASH",
+            "MASTER_PLANNER",
+            "STORM_OF_STEEL",
+            "POUNCE",
+            "HAZE",
+            "EXPERTISE",
+            "MIRAGE",
+            "DEFLECT",
+            "LEADING_STRIKE",
+            "DAGGER_THROW",
+            "SNAKEBITE",
+            "PREDATOR",
+            "SKEWER",
+            "STRANGLE",
+            "ECHOING_SLASH",
+            "FLICK_FLACK",
+            "FINISHER",
+            "SCARE",
+            "DODGE_AND_ROLL",
+            "SURVIVOR",
+            "DEFEND_SILENT",
+            "OUTMANEUVER"
+          ]
+        },
+        {
+          "name": "C",
+          "color": "#a9792c",
+          "cards": [
+            "DEADLY_POISON",
+            "ENVENOM",
+            "SERPENT_FORM",
+            "GRAND_FINALE",
+            "PRECISE_CUT",
+            "POISONED_STAB",
+            "CLOAK_AND_DAGGER",
+            "UP_MY_SLEEVE",
+            "FOLLOW_THROUGH",
+            "SUCKER_PUNCH",
+            "BLADE_DANCE",
+            "DAGGER_SPRAY",
+            "RICOCHET",
+            "INFINITE_BLADES",
+            "SLICE",
+            "DISTRACTION"
+          ]
+        },
+        {
+          "name": "D",
+          "color": "#a04836",
+          "cards": [
+            "STRIKE_SILENT"
+          ]
+        },
+        {
+          "name": "F",
+          "color": "#a03636",
+          "cards": []
+        },
+        {
+          "name": "Always Amazing",
+          "color": "#408abf",
+          "cards": []
+        },
+        {
+          "name": "Always Good",
+          "color": "#6ba036",
+          "cards": []
+        },
+        {
+          "name": "Needs Synergy",
+          "color": "#92a036",
+          "cards": []
+        },
+        {
+          "name": "Inconsistent",
+          "color": "#a9792c",
+          "cards": []
+        },
+        {
+          "name": "Almost Never",
+          "color": "#a03636",
+          "cards": []
+        }
+      ]
+    },
+    {
+      "character": "Regent",
+      "author": "Jorbs",
+      "id": "c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "url": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "name": "Jorbs Regent Tier List",
+      "version": "v0.107.1",
+      "tiers": [
+        {
+          "name": "S",
+          "color": "#408abf",
+          "cards": [
+            "HIDDEN_CACHE",
+            "CHARGE",
+            "REFLECT",
+            "ARSENAL",
+            "BIG_BANG",
+            "HEAVENLY_DRILL",
+            "MAKE_IT_SO",
+            "SEVEN_STARS",
+            "TYRANNY",
+            "METEOR_SHOWER",
+            "THE_SEALED_THRONE",
+            "GLITTERSTREAM"
+          ]
+        },
+        {
+          "name": "A",
+          "color": "#6ba036",
+          "cards": [
+            "BEGONE",
+            "COLLISION_COURSE",
+            "KNOW_THY_PLACE",
+            "PATTER",
+            "REFINE_BLADE",
+            "BLACK_HOLE",
+            "BULWARK",
+            "CONQUEROR",
+            "GAMMA_BLAST",
+            "KINGLY_KICK",
+            "KINGLY_PUNCH",
+            "PILLAR_OF_CREATION",
+            "RADIATE",
+            "ROYAL_GAMBLE",
+            "SHINING_STRIKE",
+            "SUPERMASSIVE",
+            "COMET",
+            "CRASH_LANDING",
+            "DYING_STAR",
+            "HEIRLOOM_HAMMER",
+            "I_AM_INVINCIBLE",
+            "SEEKING_EDGE",
+            "GATHER_LIGHT",
+            "WROUGHT_IN_WAR",
+            "CHILD_OF_THE_STARS",
+            "LARGESSE"
+          ]
+        },
+        {
+          "name": "B",
+          "color": "#92a036",
+          "cards": [
+            "VENERATE",
+            "ASTRAL_PULSE",
+            "CELESTIAL_MIGHT",
+            "COSMIC_INDIFFERENCE",
+            "CRUSH_UNDER",
+            "FALLING_STAR",
+            "GUIDING_STAR",
+            "MANIFEST_AUTHORITY",
+            "PALE_BLUE_DOT",
+            "PARRY",
+            "PARTICLE_WALL",
+            "RESONANCE",
+            "SPECTRUM_SHIFT",
+            "STARDUST",
+            "SUMMON_FORTH",
+            "BEAT_INTO_SHAPE",
+            "BOMBARDMENT",
+            "DECISIONS_DECISIONS",
+            "GENESIS",
+            "GUARDS",
+            "SWORD_SAGE",
+            "THE_SMITH",
+            "VOID_FORM",
+            "LUNAR_BLAST",
+            "HAMMER_TIME"
+          ]
+        },
+        {
+          "name": "C",
+          "color": "#a9792c",
+          "cards": [
+            "STRIKE_REGENT",
+            "CLOAK_OF_STARS",
+            "CRESCENT_SPEAR",
+            "GLOW",
+            "PHOTON_CUT",
+            "SOLAR_STRIKE",
+            "SPOILS_OF_BATTLE",
+            "ALIGNMENT",
+            "CONVERGENCE",
+            "GLIMMER",
+            "HEGEMONY",
+            "KNOCKOUT_BLOW",
+            "ORBIT",
+            "QUASAR",
+            "TERRAFORMING",
+            "BUNDLE_OF_JOY",
+            "NEUTRON_AEGIS"
+          ]
+        },
+        {
+          "name": "D",
+          "color": "#a04836",
+          "cards": [
+            "DEFEND_REGENT",
+            "DEVASTATE",
+            "FURNACE",
+            "MONOLOGUE",
+            "PROPHESIZE",
+            "FOREGONE_CONCLUSION",
+            "MONARCHS_GAZE",
+            "ROYALTIES"
+          ]
+        },
+        {
+          "name": "F",
+          "color": "#a03636",
+          "cards": []
+        },
+        {
+          "name": "S",
+          "color": "#408abf",
+          "cards": []
+        },
+        {
+          "name": "A",
+          "color": "#6ba036",
+          "cards": []
+        },
+        {
+          "name": "B",
+          "color": "#92a036",
+          "cards": []
+        },
+        {
+          "name": "C",
+          "color": "#a9792c",
+          "cards": []
+        },
+        {
+          "name": "D",
+          "color": "#a04836",
+          "cards": []
+        },
+        {
+          "name": "F",
+          "color": "#a03636",
+          "cards": []
+        }
+      ]
+    },
+    {
+      "character": "Regent",
+      "author": "Baalorlord",
+      "id": "0e6c1e23-bec6-4887-a9e0-dbf49ede974d",
+      "url": "https://sts2.untapped.gg/en/tier-list/0e6c1e23-bec6-4887-a9e0-dbf49ede974d",
+      "name": "Baalorlord Regent Tierlist",
+      "version": "v0.107.1",
+      "tiers": [
+        {
+          "name": "S",
+          "color": "#408abf",
+          "cards": [
+            "THE_SEALED_THRONE",
+            "REFLECT",
+            "VOID_FORM",
+            "BULWARK",
+            "GUARDS",
+            "BIG_BANG",
+            "TYRANNY",
+            "CHARGE",
+            "PARTICLE_WALL",
+            "BOMBARDMENT",
+            "ARSENAL",
+            "COMET",
+            "DECISIONS_DECISIONS",
+            "DISCOVERY",
+            "SPLASH",
+            "CALAMITY",
+            "ENTROPY"
+          ]
+        },
+        {
+          "name": "A",
+          "color": "#6ba036",
+          "cards": [
+            "METEOR_SHOWER",
+            "CRASH_LANDING",
+            "ASTRAL_PULSE",
+            "ROYAL_GAMBLE",
+            "HIDDEN_CACHE",
+            "GAMMA_BLAST",
+            "ORBIT",
+            "PALE_BLUE_DOT",
+            "THE_SMITH",
+            "KINGLY_KICK",
+            "KINGLY_PUNCH",
+            "SPECTRUM_SHIFT",
+            "PILLAR_OF_CREATION",
+            "CHILD_OF_THE_STARS",
+            "BEGONE",
+            "GLITTERSTREAM",
+            "QUASAR",
+            "MANIFEST_AUTHORITY",
+            "CONVERGENCE",
+            "GLOW",
+            "KNOW_THY_PLACE",
+            "SUPERMASSIVE",
+            "FOREGONE_CONCLUSION",
+            "HEAVENLY_DRILL",
+            "GUIDING_STAR",
+            "LARGESSE",
+            "JACK_OF_ALL_TRADES",
+            "PREP_TIME"
+          ]
+        },
+        {
+          "name": "B",
+          "color": "#92a036",
+          "cards": [
+            "BLACK_HOLE",
+            "ROYALTIES",
+            "SWORD_SAGE",
+            "HAMMER_TIME",
+            "DYING_STAR",
+            "I_AM_INVINCIBLE",
+            "MAKE_IT_SO",
+            "BUNDLE_OF_JOY",
+            "COLLISION_COURSE",
+            "SHINING_STRIKE",
+            "SUMMON_FORTH",
+            "PHOTON_CUT",
+            "GATHER_LIGHT",
+            "CLOAK_OF_STARS",
+            "PATTER",
+            "RADIATE",
+            "ALIGNMENT",
+            "STARDUST",
+            "REFINE_BLADE",
+            "CELESTIAL_MIGHT",
+            "CONQUEROR",
+            "FURNACE",
+            "PARRY",
+            "HEIRLOOM_HAMMER",
+            "MONARCHS_GAZE",
+            "CRUSH_UNDER",
+            "HEGEMONY",
+            "PROPHESIZE",
+            "TERRAFORMING",
+            "FALLING_STAR"
+          ]
+        },
+        {
+          "name": "C",
+          "color": "#a9792c",
+          "cards": [
+            "GENESIS",
+            "SEEKING_EDGE",
+            "COSMIC_INDIFFERENCE",
+            "KNOCKOUT_BLOW",
+            "WROUGHT_IN_WAR",
+            "SOLAR_STRIKE",
+            "GLIMMER",
+            "MONOLOGUE",
+            "SPOILS_OF_BATTLE",
+            "BEAT_INTO_SHAPE",
+            "CRESCENT_SPEAR",
+            "VENERATE",
+            "DEFEND_REGENT"
+          ]
+        },
+        {
+          "name": "D",
+          "color": "#a04836",
+          "cards": [
+            "NEUTRON_AEGIS",
+            "SEVEN_STARS",
+            "DEVASTATE",
+            "LUNAR_BLAST"
+          ]
+        },
+        {
+          "name": "F",
+          "color": "#a03636",
+          "cards": [
+            "STRIKE_REGENT",
+            "RESONANCE"
+          ]
+        },
+        {
+          "name": "Always Amazing",
+          "color": "#408abf",
+          "cards": []
+        },
+        {
+          "name": "Always Good",
+          "color": "#6ba036",
+          "cards": []
+        },
+        {
+          "name": "Needs Synergy",
+          "color": "#92a036",
+          "cards": []
+        },
+        {
+          "name": "Inconsistent",
+          "color": "#a9792c",
+          "cards": []
+        },
+        {
+          "name": "Almost Never",
+          "color": "#a03636",
+          "cards": []
+        }
+      ]
+    },
+    {
+      "character": "Necrobinder",
+      "author": "Jorbs",
+      "id": "3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "url": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "name": "Jorbs Necrobinder Tier List",
+      "version": "v0.107.1",
+      "tiers": [
+        {
+          "name": "S",
+          "color": "#408abf",
+          "cards": [
+            "BONE_SHARDS",
+            "BORROWED_TIME",
+            "DANSE_MACABRE",
+            "SLEIGHT_OF_FLESH",
+            "DEMESNE",
+            "END_OF_DAYS",
+            "ERADICATE",
+            "NEUROSURGE",
+            "TRANSFIGURE",
+            "GLIMPSE_BEYOND"
+          ]
+        },
+        {
+          "name": "A",
+          "color": "#6ba036",
+          "cards": [
+            "BLIGHT_STRIKE",
+            "DEFY",
+            "INVOKE",
+            "PULL_AGGRO",
+            "SCOURGE",
+            "SNAP",
+            "CAPTURE_SPIRIT",
+            "DEATHS_DOOR",
+            "DEATHBRINGER",
+            "DEBILITATE",
+            "DELAY",
+            "DIRGE",
+            "ENFEEBLING_TOUCH",
+            "FETCH",
+            "FRIENDSHIP",
+            "LETHALITY",
+            "NO_ESCAPE",
+            "PARSE",
+            "PULL_FROM_BELOW",
+            "PUTREFY",
+            "SEVERANCE",
+            "BANSHEES_CRY",
+            "DEVOUR_LIFE",
+            "MISERY",
+            "OBLIVION",
+            "SEANCE",
+            "SHARED_FATE",
+            "UNDEATH",
+            "PROTECTOR",
+            "LEGION_OF_BONE"
+          ]
+        },
+        {
+          "name": "B",
+          "color": "#92a036",
+          "cards": [
+            "DEFILE",
+            "FEAR",
+            "GRAVE_WARDEN",
+            "GRAVEBLAST",
+            "NEGATIVE_PULSE",
+            "UNLEASH",
+            "WISP",
+            "BURY",
+            "DREDGE",
+            "HAUNT",
+            "MELANCHOLY",
+            "PAGESTORM",
+            "VEILPIERCER",
+            "CALL_OF_THE_VOID",
+            "REANIMATE",
+            "REAPER_FORM",
+            "SPIRIT_OF_ASH",
+            "SQUEEZE"
+          ]
+        },
+        {
+          "name": "C",
+          "color": "#a9792c",
+          "cards": [
+            "BODYGUARD",
+            "DRAIN_POWER",
+            "FLATTEN",
+            "POKE",
+            "REAP",
+            "REAVE",
+            "SCULPTING_STRIKE",
+            "CLEANSE",
+            "COUNTDOWN",
+            "DEATH_MARCH",
+            "HIGH_FIVE",
+            "RIGHT_HAND_HAND",
+            "SPUR",
+            "HANG",
+            "SENTRY_MODE",
+            "SOUL_STORM",
+            "THE_SCYTHE",
+            "TIMES_UP",
+            "FORBIDDEN_GRIMOIRE"
+          ]
+        },
+        {
+          "name": "D",
+          "color": "#a04836",
+          "cards": [
+            "STRIKE_NECROBINDER",
+            "DEFEND_NECROBINDER",
+            "AFTERLIFE",
+            "SOW",
+            "CALCIFY",
+            "RATTLE",
+            "SHROUD",
+            "SIC_EM",
+            "EIDOLON",
+            "NECRO_MASTERY",
+            "SACRIFICE"
+          ]
+        },
+        {
+          "name": "F",
+          "color": "#a03636",
+          "cards": []
+        },
+        {
+          "name": "S",
+          "color": "#408abf",
+          "cards": []
+        },
+        {
+          "name": "A",
+          "color": "#6ba036",
+          "cards": []
+        },
+        {
+          "name": "B",
+          "color": "#92a036",
+          "cards": []
+        },
+        {
+          "name": "C",
+          "color": "#a9792c",
+          "cards": []
+        },
+        {
+          "name": "D",
+          "color": "#a04836",
+          "cards": []
+        },
+        {
+          "name": "F",
+          "color": "#a03636",
+          "cards": []
+        }
+      ]
+    },
+    {
+      "character": "Necrobinder",
+      "author": "Baalorlord",
+      "id": "43d0b41f-7d6d-4ce9-928e-c1310a413983",
+      "url": "https://sts2.untapped.gg/en/tier-list/43d0b41f-7d6d-4ce9-928e-c1310a413983",
+      "name": "Baalorlord Necrobinder Tier List",
+      "version": "v0.107.1",
+      "tiers": [
+        {
+          "name": "S",
+          "color": "#408abf",
+          "cards": [
+            "SLEIGHT_OF_FLESH",
+            "DEMESNE",
+            "NEUROSURGE",
+            "CALL_OF_THE_VOID",
+            "BANSHEES_CRY",
+            "DEATHS_DOOR",
+            "BORROWED_TIME",
+            "DELAY",
+            "END_OF_DAYS",
+            "OBLIVION",
+            "SQUEEZE",
+            "ERADICATE",
+            "SHARED_FATE",
+            "ENFEEBLING_TOUCH",
+            "FORBIDDEN_GRIMOIRE",
+            "PROTECTOR"
+          ]
+        },
+        {
+          "name": "A",
+          "color": "#6ba036",
+          "cards": [
+            "REANIMATE",
+            "TRANSFIGURE",
+            "DEATHBRINGER",
+            "FRIENDSHIP",
+            "LETHALITY",
+            "SPIRIT_OF_ASH",
+            "DEFY",
+            "DEBILITATE",
+            "PUTREFY",
+            "UNDEATH",
+            "DREDGE",
+            "BONE_SHARDS",
+            "DANSE_MACABRE",
+            "GRAVE_WARDEN",
+            "SPUR",
+            "MELANCHOLY",
+            "SNAP",
+            "FETCH",
+            "SEANCE",
+            "DIRGE",
+            "CAPTURE_SPIRIT",
+            "THE_SCYTHE",
+            "HANG",
+            "NECRO_MASTERY",
+            "COUNTDOWN",
+            "UNLEASH",
+            "BODYGUARD",
+            "GLIMPSE_BEYOND"
+          ]
+        },
+        {
+          "name": "B",
+          "color": "#92a036",
+          "cards": [
+            "EIDOLON",
+            "TIMES_UP",
+            "REAPER_FORM",
+            "NO_ESCAPE",
+            "NEGATIVE_PULSE",
+            "REAP",
+            "SHROUD",
+            "CALCIFY",
+            "CLEANSE",
+            "AFTERLIFE",
+            "RATTLE",
+            "HIGH_FIVE",
+            "DEATH_MARCH",
+            "POKE",
+            "FLATTEN",
+            "SIC_EM",
+            "SEVERANCE",
+            "DEFILE",
+            "REAVE",
+            "INVOKE",
+            "SOW",
+            "DRAIN_POWER",
+            "MISERY",
+            "SENTRY_MODE",
+            "PULL_AGGRO",
+            "PAGESTORM",
+            "LEGION_OF_BONE"
+          ]
+        },
+        {
+          "name": "C",
+          "color": "#a9792c",
+          "cards": [
+            "DEVOUR_LIFE",
+            "SOUL_STORM",
+            "HAUNT",
+            "SACRIFICE",
+            "PULL_FROM_BELOW",
+            "RIGHT_HAND_HAND",
+            "SCOURGE",
+            "SCULPTING_STRIKE",
+            "VEILPIERCER",
+            "FEAR",
+            "BLIGHT_STRIKE",
+            "WISP",
+            "PARSE",
+            "DEFEND_NECROBINDER"
+          ]
+        },
+        {
+          "name": "D",
+          "color": "#a04836",
+          "cards": [
+            "BURY",
+            "GRAVEBLAST"
+          ]
+        },
+        {
+          "name": "F",
+          "color": "#a03636",
+          "cards": [
+            "STRIKE_NECROBINDER"
+          ]
+        },
+        {
+          "name": "Always Amazing",
+          "color": "#408abf",
+          "cards": []
+        },
+        {
+          "name": "Always Good",
+          "color": "#6ba036",
+          "cards": []
+        },
+        {
+          "name": "Needs Synergy",
+          "color": "#92a036",
+          "cards": []
+        },
+        {
+          "name": "Inconsistent",
+          "color": "#a9792c",
+          "cards": []
+        },
+        {
+          "name": "Almost Never",
+          "color": "#a03636",
+          "cards": []
+        }
+      ]
+    },
+    {
+      "character": "Defect",
+      "author": "Jorbs",
+      "id": "5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "url": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "name": "Jorbs Defect Tier List",
+      "version": "v0.107.1",
+      "tiers": [
+        {
+          "name": "S",
+          "color": "#408abf",
+          "cards": [
+            "CLAW",
+            "FERAL",
+            "GLACIER",
+            "COOLHEADED",
+            "OVERCLOCK",
+            "ALL_FOR_ONE",
+            "BUFFER",
+            "MODDED",
+            "SUPERCRITICAL",
+            "BIASED_COGNITION",
+            "QUADCAST",
+            "HELIX_DRILL",
+            "GO_FOR_THE_EYES",
+            "BEAM_CELL",
+            "FTL",
+            "BOOST_AWAY",
+            "ROCKET_PUNCH",
+            "BOOT_SEQUENCE",
+            "HOLOGRAM",
+            "SKIM",
+            "ENERGY_SURGE",
+            "IGNITION"
+          ]
+        },
+        {
+          "name": "A",
+          "color": "#6ba036",
+          "cards": [
+            "BALL_LIGHTNING",
+            "COLD_SNAP",
+            "CHILL",
+            "GENETIC_ALGORITHM",
+            "ICE_LANCE",
+            "MACHINE_LEARNING",
+            "METEOR_STRIKE",
+            "REBOOT",
+            "TRASH_TO_TREASURE",
+            "DEFRAGMENT",
+            "COMPACT",
+            "TESLA_COIL",
+            "HELLO_WORLD",
+            "RIP_AND_TEAR"
+          ]
+        },
+        {
+          "name": "B",
+          "color": "#92a036",
+          "cards": [
+            "BARRAGE",
+            "FOCUSED_STRIKE",
+            "GUNK_UP",
+            "LEAP",
+            "LIGHTNING_ROD",
+            "TURBO",
+            "BULK_UP",
+            "CAPACITOR",
+            "FIGHT_THROUGH",
+            "ITERATION",
+            "SHADOW_SHIELD",
+            "SMOKESTACK",
+            "COOLANT",
+            "ECHO_FORM",
+            "MULTI_CAST",
+            "SHATTER",
+            "SIGNAL_BOOST",
+            "DUALCAST",
+            "LOOP",
+            "REBOUND",
+            "STACK"
+          ]
+        },
+        {
+          "name": "C",
+          "color": "#a9792c",
+          "cards": [
+            "CHARGE_BATTERY",
+            "COMPILE_DRIVER",
+            "HOTFIX",
+            "UPROAR",
+            "DARKNESS",
+            "DOUBLE_ENERGY",
+            "GLASSWORK",
+            "NULL",
+            "REFRACT",
+            "STORM",
+            "SUNDER",
+            "SYNCHRONIZE",
+            "TEMPEST",
+            "THUNDER",
+            "WHITE_NOISE",
+            "ADAPTIVE_STRIKE",
+            "CONSUMING_SHADOW",
+            "HYPERBEAM",
+            "RAINBOW",
+            "SPINNER",
+            "ZAP",
+            "FLAK_CANNON"
+          ]
+        },
+        {
+          "name": "D",
+          "color": "#a04836",
+          "cards": [
+            "MOMENTUM_STRIKE",
+            "SWEEPING_BEAM",
+            "CHAOS",
+            "FUSION",
+            "HAILSTORM",
+            "SCAVENGE",
+            "SCRAPE",
+            "SUBROUTINE",
+            "SYNTHESIS",
+            "CREATIVE_AI",
+            "VOLTAIC",
+            "DEFEND_DEFECT",
+            "STRIKE_DEFECT"
+          ]
+        },
+        {
+          "name": "F",
+          "color": "#a03636",
+          "cards": []
+        },
+        {
+          "name": "S",
+          "color": "#408abf",
+          "cards": []
+        },
+        {
+          "name": "A",
+          "color": "#6ba036",
+          "cards": []
+        },
+        {
+          "name": "B",
+          "color": "#92a036",
+          "cards": []
+        },
+        {
+          "name": "C",
+          "color": "#a9792c",
+          "cards": []
+        },
+        {
+          "name": "D",
+          "color": "#a04836",
+          "cards": []
+        },
+        {
+          "name": "F",
+          "color": "#a03636",
+          "cards": []
+        }
+      ]
+    },
+    {
+      "character": "Defect",
+      "author": "Baalorlord",
+      "id": "5a512e04-4583-4a16-9271-d46864c6cb4c",
+      "url": "https://sts2.untapped.gg/en/tier-list/5a512e04-4583-4a16-9271-d46864c6cb4c",
+      "name": "Baalorlord Defect Tier List",
+      "version": "v0.107.1",
+      "tiers": [
+        {
+          "name": "S",
+          "color": "#408abf",
+          "cards": [
+            "ECHO_FORM",
+            "HOLOGRAM",
+            "SUPERCRITICAL",
+            "CHILL",
+            "TURBO",
+            "GLACIER",
+            "DEFRAGMENT",
+            "MODDED",
+            "ALL_FOR_ONE",
+            "COMPILE_DRIVER",
+            "GO_FOR_THE_EYES",
+            "WHITE_NOISE",
+            "OVERCLOCK",
+            "QUADCAST",
+            "SKIM",
+            "JACKPOT",
+            "MASTER_OF_STRATEGY"
+          ]
+        },
+        {
+          "name": "A",
+          "color": "#6ba036",
+          "cards": [
+            "BIASED_COGNITION",
+            "VOLTAIC",
+            "BEAM_CELL",
+            "FERAL",
+            "SUBROUTINE",
+            "SPINNER",
+            "BUFFER",
+            "SHATTER",
+            "ICE_LANCE",
+            "NULL",
+            "SHADOW_SHIELD",
+            "GLASSWORK",
+            "BALL_LIGHTNING",
+            "COLD_SNAP",
+            "MACHINE_LEARNING",
+            "BULK_UP",
+            "SUNDER",
+            "DARKNESS",
+            "GENETIC_ALGORITHM",
+            "COOLANT",
+            "TESLA_COIL",
+            "BOOST_AWAY",
+            "BOOT_SEQUENCE",
+            "LIGHTNING_ROD",
+            "CHARGE_BATTERY",
+            "BARRAGE",
+            "REFRACT",
+            "GUNK_UP",
+            "FOCUSED_STRIKE",
+            "HOTFIX",
+            "SYNCHRONIZE",
+            "TRASH_TO_TREASURE",
+            "ROCKET_PUNCH",
+            "ENERGY_SURGE",
+            "AUTOMATION",
+            "EQUILIBRIUM"
+          ]
+        },
+        {
+          "name": "B",
+          "color": "#92a036",
+          "cards": [
+            "SIGNAL_BOOST",
+            "ITERATION",
+            "SMOKESTACK",
+            "METEOR_STRIKE",
+            "HYPERBEAM",
+            "CREATIVE_AI",
+            "MULTI_CAST",
+            "CAPACITOR",
+            "CLAW",
+            "ADAPTIVE_STRIKE",
+            "RAINBOW",
+            "FTL",
+            "THUNDER",
+            "COMPACT",
+            "FIGHT_THROUGH",
+            "COOLHEADED",
+            "SCRAPE",
+            "TEMPEST",
+            "STORM",
+            "FUSION",
+            "SCAVENGE",
+            "DOUBLE_ENERGY",
+            "FLAK_CANNON",
+            "ZAP",
+            "DUALCAST",
+            "IGNITION",
+            "REBOUND",
+            "STACK"
+          ]
+        },
+        {
+          "name": "C",
+          "color": "#a9792c",
+          "cards": [
+            "HAILSTORM",
+            "CONSUMING_SHADOW",
+            "HELLO_WORLD",
+            "RIP_AND_TEAR",
+            "SWEEPING_BEAM",
+            "LEAP",
+            "MOMENTUM_STRIKE",
+            "HELIX_DRILL",
+            "SYNTHESIS",
+            "DEFEND_DEFECT"
+          ]
+        },
+        {
+          "name": "D",
+          "color": "#a04836",
+          "cards": [
+            "LOOP",
+            "REBOOT",
+            "UPROAR",
+            "CHAOS"
+          ]
+        },
+        {
+          "name": "F",
+          "color": "#a03636",
+          "cards": [
+            "STRIKE_DEFECT"
+          ]
+        },
+        {
+          "name": "Always Amazing",
+          "color": "#408abf",
+          "cards": []
+        },
+        {
+          "name": "Always Good",
+          "color": "#6ba036",
+          "cards": []
+        },
+        {
+          "name": "Needs Synergy",
+          "color": "#92a036",
+          "cards": []
+        },
+        {
+          "name": "Inconsistent",
+          "color": "#a9792c",
+          "cards": []
+        },
+        {
+          "name": "Almost Never",
+          "color": "#a03636",
+          "cards": []
+        }
+      ]
+    }
+  ]
+}

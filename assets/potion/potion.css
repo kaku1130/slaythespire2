@@ -1021,7 +1021,9 @@ html body main#main-content .entry.potion .potion-icon-row>img {grid-column:2;di
 html body main#main-content .entry.potion > .potion-title-row {display:block;grid-column:1;grid-row:2;width:100%;min-width:0;margin:0}
 html body main#main-content .entry.potion .potion-title-row h2 {display:flex;flex-direction:column;align-items:center;gap:4px;margin:0;font:700 27.5px/1.35 Arial,"Microsoft JhengHei",sans-serif}
 html body main#main-content .entry.potion .potion-title-row h2 :is(.potion-name-zh,.catalog-name-en) {display:block;color:var(--plain-rarity-color);font:inherit;white-space:normal;overflow-wrap:anywhere}
-html body main#main-content .entry.potion > p {grid-column:1;grid-row:3;width:80%;margin:0 auto;color:#fff;font:400 22.5px/1.6 Arial,"Microsoft JhengHei",sans-serif;white-space:pre-line;text-align:center}
+html body main#main-content .entry.potion > p {grid-column:1;grid-row:3;width:80%;margin:0 auto;color:#fff6e2;font:400 22.5px/1.6 Arial,"Microsoft JhengHei",sans-serif;white-space:pre-line;text-align:center}
+html body main#main-content .entry.potion .catalog-name-en {text-decoration:none}
+html body main#main-content .entry.potion .catalog-name-en:hover {text-decoration:underline}
 html body main#main-content#main-content #catalog-scroll .entry.potion .potion-icon-row>.potion-rarity-row {grid-column:3;justify-self:end;display:block;min-width:0;max-width:100%;width:auto;margin:0;padding:0;text-align:right;overflow-wrap:anywhere;font:600 16px/1.4 Arial,"Microsoft JhengHei",sans-serif}
 
 

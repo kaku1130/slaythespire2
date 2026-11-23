@@ -2,7 +2,6 @@ process.chdir(require('node:path').resolve(__dirname, '../..'));
 const fs = require('node:fs');
 const assert = require('node:assert/strict');
 const source = JSON.parse(fs.readFileSync('data/cards/english-details.json', 'utf8'));
-const chineseEffects = JSON.parse(fs.readFileSync('data/cards/effects-zh-TW.json', 'utf8')).cards;
 const details = new Map(source.cards.map(card => [card.id, card]));
 const localBuilds = fs.readFileSync('build.html', 'utf8');
 const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -13,16 +12,7 @@ const plain = value => value.replace(/<\/?(?:article|section|div|p|header|h[1-6]
 const renderArticle = require('./render-card-detail.cjs');
 function render(card) {
   const options={localBuilds,showBuilds:false,showKeywords:false,searchableEffects:true,rarityBeforeType:true,showEffectNotes:false,metadataAboveEffects:true,cornerMetadata:true};
-  const localized=chineseEffects[card.id];assert.ok(localized,'Missing Chinese effects '+card.id);
-  const normalize=text=>text===null?null:text.replace(/<(e|s)>(\d+)<\/\1>/g,(_,resource,count)=>('<'+resource+'/>').repeat(Number(count)));
-  const chineseArticle=renderArticle({...card,effect:{base:normalize(localized.base),upgraded:normalize(localized.upgraded)}},options)
-    .replaceAll('Cannot be upgraded.','無法升級。')
-    .replaceAll('所有敵人','<button type="button" class="detail-effect-search" data-effect-search="所有敵人" aria-label="搜尋 所有敵人">所有敵人</button>');
-  const descriptions=[...chineseArticle.matchAll(/<p class="detail-panel-description">([\s\S]*?)<\/p>/g)].map(match=>match[1]);
-  assert.equal(descriptions.length,2,card.id+' Chinese Base/Upgraded panels');
-  let panel=0;
-  const article=renderArticle(card,options).replace(/<p class="detail-panel-description">([\s\S]*?)<\/p>/g,(_,english)=>
-    '<p class="detail-panel-description"><span data-effect-language="en" lang="en">'+english+'</span><span data-effect-language="zh" lang="zh-Hant" hidden>'+descriptions[panel++]+'</span></p>');
+  const article=renderArticle(card,options);
   return '<td class="card-detail-cell" data-field="detail" role="cell" colspan="10">'+article+'</td>';
 }
 function attribute(tag, name, value) {
@@ -55,7 +45,7 @@ html = html.replace(/<tr id="card-([^"]+)"[^>]*>[\s\S]*?<\/tr>/g, (original, id)
   row = row.replace(/(<td\b[^>]*data-field="([^"]+)"[^>]*>)([\s\S]*?)<\/td>/g, (cell, tag, field, content) => {
     const sortValues = {name:card.name, type:card.type, rarity:card.rarity};
     if (sortValues[field]) tag = attribute(tag, 'data-sort-value', sortValues[field]);
-    if (field === 'english') content = '<a class="name-en" href="' + esc(require('./wiki-card-link.cjs')(card)) + '" target="_blank" rel="noopener noreferrer">' + esc(card.name) + '</a>';
+    if (field === 'english') content = '<a class="name-en" href="' + esc(require('./card-source-link.cjs')(card)) + '" target="_blank" rel="noopener noreferrer">' + esc(card.name) + '</a>';
     if (field === 'tier') content = '<span class="tier" data-tier="' + esc(card.tier || 'unranked') + '">' + esc(card.tier || '—') + '</span>';
     if (field === 'energy') {
       const cost = card.stats.find(s => s.label === 'Energy cost').value.split('→')[0];
@@ -80,14 +70,14 @@ html = html.replace(/<footer class="site-attribution"[^>]*>[\s\S]*?<\/footer>/g,
   .replace(/<script>\(\(\)=>\{const main=document\.getElementById\('main-content'\);const footer=document\.querySelector\('\.site-attribution'\);[\s\S]*?<\/script>/g, '');
 const resultCount = html.match(/<p\b[^>]*id="card-filter-result"[^>]*>[\s\S]*?<\/p>/);
 assert.ok(resultCount, 'Missing card filter count');
-const sourceCredit = '<p class="card-source">資料來源：<a href="https://slaythespire2.net/zh-TW" target="_blank" rel="noopener noreferrer">Slay the Spire 2 Guide &amp; Wiki</a> · 遊戲內容與圖片屬各自權利人所有。</p>';
+const sourceCredit = '<p class="card-source">'+require('./source-credit.cjs')+'</p>';
 html = html.replace(resultCount[0], '').replace('</main>', '<footer class="card-results-footer">' + resultCount[0] + sourceCredit + '</footer></main>');
 html = html.replace('href="assets/cards/cards.css"', 'href="assets/cards/' + output + '.css"');
 html = html.replace(/<title>[\s\S]*?<\/title>/, '<title>' + (output === 'cards' ? 'Slay the Spire 2' : 'Card 1') + '｜' + count + ' 張卡牌詳細資料</title>');
 html = html.replace(/href="(?:card|card1)\.html#card-/g, 'href="' + (output === 'cards' ? 'card' : output) + '.html#card-');
 const hashScript = '<script>if(location.hash.startsWith("#card-"))requestAnimationFrame(()=>{const row=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(row){row.style.scrollMarginTop="12px";row.scrollIntoView({block:"start",behavior:"instant"});}});</script>';
 html = html.replaceAll(hashScript, '').replace('</body>', hashScript + '</body>');
-html = html.replace('</body>', '<script src="assets/cards/card-effect-language.js"></script></body>');
+html = html.replace(/<script src="assets\/cards\/card-effect-language\.js"><\/script>/g,'');
 const baseCss = fs.readFileSync('assets/cards/cards.css', 'utf8').split('/* Each card occupies one full row with seven detail sections. */')[0].trimEnd();
 fs.writeFileSync('assets/cards/' + output + '.css', baseCss + '\n' + fs.readFileSync('assets/cards/card1-detail.css', 'utf8') + require('./navigation-icons.cjs').styles + require('./desktop-content-width.cjs') + require('./filter-frames.cjs') + require('./page-scroll.cjs') + require('./tier-colors.cjs') + require('./tier-labels.cjs') + require('./card-content-width.cjs'));
 html = html.replace(/<!--card-effect-tooltips-->[\s\S]*?<!--\/card-effect-tooltips-->/g, '');

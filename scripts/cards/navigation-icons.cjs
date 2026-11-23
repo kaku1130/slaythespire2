@@ -7,13 +7,13 @@ const files = {
   relic:['assets/relic/images/nav-relics.webp','contain'],
   potion:['assets/potion/images/nav-potions.webp','contain'],
   ancient:['assets/ancient/images/icon/neow.webp','contain'],
-  monster:['assets/monster/source/monsters/lagavulin_matriarch.webp','contain']
+  monster:['assets/monster/images/the-insatiable.webp','contain']
 };
 const columnCount=Object.keys(files).length;
 const navigationWidth=columnCount*62+(columnCount-1)*4;
 const icons = Object.fromEntries(Object.entries(files).map(([key,[file,fit]]) => {
   const src = 'data:image/webp;base64,' + fs.readFileSync(path.resolve(__dirname,'../..',file)).toString('base64');
-  return [key,'<span class="site-nav-visual" aria-hidden="true"><img class="site-nav-icon" src="' + src + '" alt="" width="36" height="36" style="width:36px;height:36px;object-fit:' + fit + ';border-radius:6px' + (key === 'monster' ? ';transform:scale(1.2)' : '') + '"></span>'];
+  return [key,'<span class="site-nav-visual" aria-hidden="true"><img class="site-nav-icon" src="' + src + '" alt="" width="36" height="36" style="width:36px;height:36px;object-fit:' + fit + ';border-radius:6px' + (key === 'monster' ? ';object-position:center;transform:scale(1.2)' : '') + '"></span>'];
 }));
 const styles = `
 /* Category artwork replaces the navigation text labels. */

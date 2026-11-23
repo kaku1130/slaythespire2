@@ -24,9 +24,9 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
     const actual=await visibleIds();
     const intended=await page.locator('.entry.potion:not([hidden])').evaluateAll(nodes=>nodes.map(n=>n.id).sort());
     assert.deepEqual(actual,intended,mode+' actual display matches filter state: '+query);
-    if(query==='"Strength Potion"')assert.deepEqual(actual,['STRENGTH_POTION']);
+    if(query==='力量'||query==='"Strength Potion"')assert.deepEqual(actual,['STRENGTH_POTION']);
     if(['poison','中毒'].includes(query))assert.deepEqual(actual,['POISON_POTION']);
-    if(query==='力量'||query.toLowerCase()==='strength')assert.deepEqual(actual,['FLEX_POTION','FYSH_OIL','SHACKLING_POTION','STRENGTH_POTION']);
+    if(query.toLowerCase()==='strength')assert.deepEqual(actual,['FLEX_POTION','FYSH_OIL','SHACKLING_POTION','STRENGTH_POTION']);
     if(query==='不存在的藥水'){assert.deepEqual(actual,[]);assert(await page.locator('#empty').isVisible());}
    }
    for(const entry of entries){

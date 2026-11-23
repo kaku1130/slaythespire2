@@ -126,6 +126,7 @@ html body .card-detail[data-card-layout=compact] .detail-inline-tier {display:in
 .card-detail .detail-character img {width:22px;height:22px;object-fit:contain}
 .card-detail .detail-art {width:100%;max-width:700px;justify-self:center}
 .card-detail .detail-art img {display:block;width:100%;height:auto;aspect-ratio:700/532;border-radius:10px}
+.card-detail-row[data-rarity=Ancient] .card-detail .detail-art img {object-fit:contain;object-position:center}
 .card-detail .detail-keyword {display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
 .card-detail .detail-section > .detail-keyword {margin-top:16px}
 .card-detail .detail-keyword-item {box-sizing:border-box;width:100%;min-width:0;padding:16px;border:1px solid #303d4e;border-radius:9px;background:#222e33}
@@ -155,6 +156,8 @@ html body .card-detail[data-card-layout=compact] .detail-effect-columns > .detai
 html body .card-detail[data-card-layout=compact] .detail-effect-panel .detail-panel-cost {grid-row:1;align-self:start}
 html body .card-detail[data-card-layout=compact] .detail-effect-panel .detail-panel-description {grid-row:2;align-self:start;margin-top:9px}
 html body #card-scroll .card-detail .detail-effect-panel .detail-panel-description {width:80%;justify-self:center;margin-inline:auto;text-align:center}
+.card-detail .detail-effect-panel .detail-panel-description {color:#fff6e2}
+.card-detail .detail-effect-panel .detail-panel-description .detail-effect-search {color:inherit}
 html body .card-detail[data-card-layout=compact] .detail-effect-columns > .detail-effect-panel + .detail-effect-panel {border-left:1px solid #303d4e}
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .card-detail[data-card-layout=compact] .detail-effect-columns {grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-auto-rows:1fr}
@@ -287,7 +290,9 @@ html body main#main-content .card-detail .detail-heading-row {display:grid;grid-
 html body main#main-content .card-detail .detail-heading-character {display:block;width:28px;height:28px;object-fit:contain;justify-self:start}
 html body main#main-content .card-detail .detail-heading-row>.detail-name-zh {min-width:0;width:100%;overflow-wrap:anywhere}
 html body main#main-content .card-detail .detail-heading-rarity {justify-self:end;max-width:100%;overflow-wrap:anywhere;text-align:right;font:600 16px/1.4 Arial,sans-serif;color:var(--detail-rarity-color)}
-html body main#main-content .card-detail .detail-bottom-tier {display:flex;justify-content:center;align-items:end;min-height:30px}
+html body main#main-content .card-detail .detail-bottom-tier {display:flex;justify-content:center;align-items:center;gap:8px;min-height:30px;min-width:0}
+html body main#main-content .card-detail .detail-creator-rating {display:inline-flex;align-items:center;gap:6px;min-width:0;color:#e3e8ee;font:400 14px/1.4 Arial,"Microsoft JhengHei",sans-serif;text-decoration:none;white-space:nowrap}
+html body main#main-content .card-detail .creator-tier-badge {display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;flex-shrink:0;min-width:30px;min-height:30px;padding:0 6px;border-radius:4px;background:var(--creator-tier-color,#788491);color:#000;font:700 24px/1.25 Arial,sans-serif}
 html body main#main-content .card-detail .detail-bottom-tier>.detail-name-tier {display:inline-flex;align-items:center;justify-content:center;min-width:36px;min-height:30px;padding:0 6px;border-radius:4px;color:#000;font:700 24px/1.25 Arial,sans-serif;text-decoration:none;background:var(--name-tier-color,#788491)}
 html body main#main-content .card-detail .detail-type-metadata:has(>.detail-meta-item:only-child) {display:flex;justify-content:center;text-align:center}
 html body main#main-content .card-detail .detail-type-metadata>.detail-meta-item:only-child {justify-self:center;justify-content:center;text-align:center}

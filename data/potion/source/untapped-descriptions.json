@@ -1,0 +1,1554 @@
+{
+  "source": "https://sts2.untapped.gg/en/potions",
+  "checkedAt": "2026-11-23T15:32:12.458Z",
+  "palette": {
+    "aqua": "#2aebbe",
+    "cream": "#fff6e2",
+    "gold": "#efc851",
+    "red": "#f55",
+    "green": "#7fff00",
+    "blue": "#87ceeb",
+    "darkblue": "#67aeeb",
+    "orange": "#ffa518",
+    "pink": "#ff78a0",
+    "purple": "violet"
+  },
+  "items": [
+    {
+      "id": "AMBERGRIS",
+      "name": "Ambergris",
+      "url": "https://sts2.untapped.gg/en/potions/ambergris",
+      "parts": [
+        {
+          "text": "Heal for "
+        },
+        {
+          "text": "50%",
+          "color": "#7fff00"
+        },
+        {
+          "text": " of your Max HP. If used in combat, take an extra turn."
+        }
+      ]
+    },
+    {
+      "id": "ASHWATER",
+      "name": "Ashwater",
+      "url": "https://sts2.untapped.gg/en/potions/ashwater",
+      "parts": [
+        {
+          "text": "Exhaust",
+          "color": "#efc851"
+        },
+        {
+          "text": " any number of cards in your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "ATTACK_POTION",
+      "name": "Attack Potion",
+      "url": "https://sts2.untapped.gg/en/potions/attack-potion",
+      "parts": [
+        {
+          "text": "Choose "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random Attack cards to add into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". It's free to play this turn."
+        }
+      ]
+    },
+    {
+      "id": "BEETLE_JUICE",
+      "name": "Beetle Juice",
+      "url": "https://sts2.untapped.gg/en/potions/beetle-juice",
+      "parts": [
+        {
+          "text": "Enemy's attacks deal "
+        },
+        {
+          "text": "30%",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " less damage for the next "
+        },
+        {
+          "text": "4",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turns."
+        }
+      ]
+    },
+    {
+      "id": "BLESSING_OF_THE_FORGE",
+      "name": "Blessing of the Forge",
+      "url": "https://sts2.untapped.gg/en/potions/blessing-of-the-forge",
+      "parts": [
+        {
+          "text": "Upgrade",
+          "color": "#efc851"
+        },
+        {
+          "text": " all cards in your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": " for the rest of combat."
+        }
+      ]
+    },
+    {
+      "id": "BLOCK_POTION",
+      "name": "Block Potion",
+      "url": "https://sts2.untapped.gg/en/potions/block-potion",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "12",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "BLOOD_POTION",
+      "name": "Blood Potion",
+      "url": "https://sts2.untapped.gg/en/potions/blood-potion",
+      "parts": [
+        {
+          "text": "Heal for "
+        },
+        {
+          "text": "20%",
+          "color": "#7fff00"
+        },
+        {
+          "text": " of your Max HP."
+        }
+      ]
+    },
+    {
+      "id": "BONE_BREW",
+      "name": "Bone Brew",
+      "url": "https://sts2.untapped.gg/en/potions/bone-brew",
+      "parts": [
+        {
+          "text": "Summon",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "15",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "BOTTLED_POTENTIAL",
+      "name": "Bottled Potential",
+      "url": "https://sts2.untapped.gg/en/potions/bottled-potential",
+      "parts": [
+        {
+          "text": "Shuffle ALL your cards into your "
+        },
+        {
+          "text": "Draw Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": ". Draw "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards."
+        }
+      ]
+    },
+    {
+      "id": "CLARITY",
+      "name": "Clarity Extract",
+      "url": "https://sts2.untapped.gg/en/potions/clarity",
+      "parts": [
+        {
+          "text": "Draw "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " card. At the start of your next "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turns, draw "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional card."
+        }
+      ]
+    },
+    {
+      "id": "COLORLESS_POTION",
+      "name": "Colorless Potion",
+      "url": "https://sts2.untapped.gg/en/potions/colorless-potion",
+      "parts": [
+        {
+          "text": "Choose "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random Colorless cards to add into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". It's free to play this turn."
+        }
+      ]
+    },
+    {
+      "id": "COSMIC_CONCOCTION",
+      "name": "Cosmic Concoction",
+      "url": "https://sts2.untapped.gg/en/potions/cosmic-concoction",
+      "parts": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Upgraded",
+          "color": "#efc851"
+        },
+        {
+          "text": " Colorless cards into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "CUNNING_POTION",
+      "name": "Cunning Potion",
+      "url": "https://sts2.untapped.gg/en/potions/cunning-potion",
+      "parts": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Upgraded Shivs",
+          "color": "#efc851"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "CURE_ALL",
+      "name": "Cure All",
+      "url": "https://sts2.untapped.gg/en/potions/cure-all",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": ". Draw "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards."
+        }
+      ]
+    },
+    {
+      "id": "DEXTERITY_POTION",
+      "name": "Dexterity Potion",
+      "url": "https://sts2.untapped.gg/en/potions/dexterity-potion",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "DISTILLED_CHAOS",
+      "name": "Distilled Chaos",
+      "url": "https://sts2.untapped.gg/en/potions/distilled-chaos",
+      "parts": [
+        {
+          "text": "Play the top "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards of your "
+        },
+        {
+          "text": "Draw Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "DROPLET_OF_PRECOGNITION",
+      "name": "Droplet of Precognition",
+      "url": "https://sts2.untapped.gg/en/potions/droplet-of-precognition",
+      "parts": [
+        {
+          "text": "Choose a card in your "
+        },
+        {
+          "text": "Draw Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": " and add it into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "DUPLICATOR",
+      "name": "Duplicator",
+      "url": "https://sts2.untapped.gg/en/potions/duplicator",
+      "parts": [
+        {
+          "text": "This turn, your next card is played an extra time."
+        }
+      ]
+    },
+    {
+      "id": "ENERGY_POTION",
+      "name": "Energy Potion",
+      "url": "https://sts2.untapped.gg/en/potions/energy-potion",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "ENTROPIC_BREW",
+      "name": "Entropic Brew",
+      "url": "https://sts2.untapped.gg/en/potions/entropic-brew",
+      "parts": [
+        {
+          "text": "Fill all your empty potion slots with random potions."
+        }
+      ]
+    },
+    {
+      "id": "ESSENCE_OF_DARKNESS",
+      "name": "Essence of Darkness",
+      "url": "https://sts2.untapped.gg/en/potions/essence-of-darkness",
+      "parts": [
+        {
+          "text": "Channel",
+          "color": "#efc851"
+        },
+        {
+          "text": " a "
+        },
+        {
+          "text": "Dark",
+          "color": "#efc851"
+        },
+        {
+          "text": " for each of your "
+        },
+        {
+          "text": "Orb Slots",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "EXPLOSIVE_AMPOULE",
+      "name": "Explosive Ampoule",
+      "url": "https://sts2.untapped.gg/en/potions/explosive-ampoule",
+      "parts": [
+        {
+          "text": "Deal "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage to ALL enemies."
+        }
+      ]
+    },
+    {
+      "id": "FAIRY_IN_A_BOTTLE",
+      "name": "Fairy in a Bottle",
+      "url": "https://sts2.untapped.gg/en/potions/fairy-in-a-bottle",
+      "parts": [
+        {
+          "text": "When your HP would be reduced to "
+        },
+        {
+          "text": "0",
+          "color": "#87ceeb"
+        },
+        {
+          "text": ", instead this potion is discarded and you heal to "
+        },
+        {
+          "text": "30%",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of your Max HP."
+        }
+      ]
+    },
+    {
+      "id": "FIRE_POTION",
+      "name": "Fire Potion",
+      "url": "https://sts2.untapped.gg/en/potions/fire-potion",
+      "parts": [
+        {
+          "text": "Deal "
+        },
+        {
+          "text": "20",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage."
+        }
+      ]
+    },
+    {
+      "id": "FLEX_POTION",
+      "name": "Flex Potion",
+      "url": "https://sts2.untapped.gg/en/potions/flex-potion",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": ". At the end of your turn, lose "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "FOCUS_POTION",
+      "name": "Focus Potion",
+      "url": "https://sts2.untapped.gg/en/potions/focus-potion",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Focus",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "FORTIFIER",
+      "name": "Fortifier",
+      "url": "https://sts2.untapped.gg/en/potions/fortifier",
+      "parts": [
+        {
+          "text": "Triple your "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "FOUL_POTION",
+      "name": "Foul Potion",
+      "url": "https://sts2.untapped.gg/en/potions/foul-potion",
+      "parts": [
+        {
+          "text": "Deal "
+        },
+        {
+          "text": "12",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " damage to ALL players and enemies."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Can be thrown at the "
+        },
+        {
+          "text": "Merchant",
+          "color": "#efc851"
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "100",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Gold",
+          "color": "#efc851"
+        },
+        {
+          "text": " instead."
+        }
+      ]
+    },
+    {
+      "id": "FRUIT_JUICE",
+      "name": "Fruit Juice",
+      "url": "https://sts2.untapped.gg/en/potions/fruit-juice",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " Max HP."
+        }
+      ]
+    },
+    {
+      "id": "FYSH_OIL",
+      "name": "Fysh Oil",
+      "url": "https://sts2.untapped.gg/en/potions/fysh-oil",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "GAMBLERS_BREW",
+      "name": "Gambler's Brew",
+      "url": "https://sts2.untapped.gg/en/potions/gamblers-brew",
+      "parts": [
+        {
+          "text": "Discard any number of cards, then draw that many."
+        }
+      ]
+    },
+    {
+      "id": "GHOST_IN_A_JAR",
+      "name": "Ghost in a Jar",
+      "url": "https://sts2.untapped.gg/en/potions/ghost-in-a-jar",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Intangible",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "GIGANTIFICATION_POTION",
+      "name": "Gigantification Potion",
+      "url": "https://sts2.untapped.gg/en/potions/gigantification-potion",
+      "parts": [
+        {
+          "text": "The next Attack you play deals triple damage."
+        }
+      ]
+    },
+    {
+      "id": "GLOWWATER_POTION",
+      "name": "Glowwater Potion",
+      "url": "https://sts2.untapped.gg/en/potions/glowwater-potion",
+      "parts": [
+        {
+          "text": "Exhaust",
+          "color": "#efc851"
+        },
+        {
+          "text": " your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". Draw "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards."
+        }
+      ]
+    },
+    {
+      "id": "HEART_OF_IRON",
+      "name": "Heart of Iron",
+      "url": "https://sts2.untapped.gg/en/potions/heart-of-iron",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "7",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Plating",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "KINGS_COURAGE",
+      "name": "King's Courage",
+      "url": "https://sts2.untapped.gg/en/potions/kings-courage",
+      "parts": [
+        {
+          "text": "Forge",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "15",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "LIQUID_BRONZE",
+      "name": "Liquid Bronze",
+      "url": "https://sts2.untapped.gg/en/potions/liquid-bronze",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Thorns",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "LIQUID_MEMORIES",
+      "name": "Liquid Memories",
+      "url": "https://sts2.untapped.gg/en/potions/liquid-memories",
+      "parts": [
+        {
+          "text": "Put a card from your "
+        },
+        {
+          "text": "Discard Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". It's free to play this turn."
+        }
+      ]
+    },
+    {
+      "id": "LUCKY_TONIC",
+      "name": "Lucky Tonic",
+      "url": "https://sts2.untapped.gg/en/potions/lucky-tonic",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Buffer",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "MAZALETHS_GIFT",
+      "name": "Mazaleth's Gift",
+      "url": "https://sts2.untapped.gg/en/potions/mazaleths-gift",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Ritual",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "OROBIC_ACID",
+      "name": "Orobic Acid",
+      "url": "https://sts2.untapped.gg/en/potions/orobic-acid",
+      "parts": [
+        {
+          "text": "Add a random Attack, Skill, and Power into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". They're free to play this turn."
+        }
+      ]
+    },
+    {
+      "id": "POISON_POTION",
+      "name": "Poison Potion",
+      "url": "https://sts2.untapped.gg/en/potions/poison-potion",
+      "parts": [
+        {
+          "text": "Apply "
+        },
+        {
+          "text": "6",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Poison",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "POT_OF_GHOULS",
+      "name": "Pot of Ghouls",
+      "url": "https://sts2.untapped.gg/en/potions/pot-of-ghouls",
+      "parts": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Souls",
+          "color": "#efc851"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "POTION_OF_BINDING",
+      "name": "Potion of Binding",
+      "url": "https://sts2.untapped.gg/en/potions/potion-of-binding",
+      "parts": [
+        {
+          "text": "Apply "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Weak",
+          "color": "#efc851"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Vulnerable",
+          "color": "#efc851"
+        },
+        {
+          "text": " to ALL enemies."
+        }
+      ]
+    },
+    {
+      "id": "POTION_OF_CAPACITY",
+      "name": "Potion of Capacity",
+      "url": "https://sts2.untapped.gg/en/potions/potion-of-capacity",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Orb Slots",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "POTION_OF_DOOM",
+      "name": "Potion of Doom",
+      "url": "https://sts2.untapped.gg/en/potions/potion-of-doom",
+      "parts": [
+        {
+          "text": "Apply "
+        },
+        {
+          "text": "33",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Doom",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "POWDERED_DEMISE",
+      "name": "Powdered Demise",
+      "url": "https://sts2.untapped.gg/en/potions/powdered-demise",
+      "parts": [
+        {
+          "text": "Enemy loses "
+        },
+        {
+          "text": "9",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " HP at the end of each of its turns."
+        }
+      ]
+    },
+    {
+      "id": "POWER_POTION",
+      "name": "Power Potion",
+      "url": "https://sts2.untapped.gg/en/potions/power-potion",
+      "parts": [
+        {
+          "text": "Choose "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random Power cards to add into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". It's free to play this turn."
+        }
+      ]
+    },
+    {
+      "id": "RADIANT_TINCTURE",
+      "name": "Radiant Tincture",
+      "url": "https://sts2.untapped.gg/en/potions/radiant-tincture",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": ". Gain an additional "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": " at the start of your next "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turns."
+        }
+      ]
+    },
+    {
+      "id": "REGEN_POTION",
+      "name": "Regen Potion",
+      "url": "https://sts2.untapped.gg/en/potions/regen-potion",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "5",
+          "color": "#7fff00"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Regen",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SHACKLING_POTION",
+      "name": "Shackling Potion",
+      "url": "https://sts2.untapped.gg/en/potions/shackling-potion",
+      "parts": [
+        {
+          "text": "ALL enemies lose "
+        },
+        {
+          "text": "7",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": " this turn."
+        }
+      ]
+    },
+    {
+      "id": "SHIP_IN_A_BOTTLE",
+      "name": "Ship in a Bottle",
+      "url": "https://sts2.untapped.gg/en/potions/ship-in-a-bottle",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": ". Next turn, gain "
+        },
+        {
+          "text": "10",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SKILL_POTION",
+      "name": "Skill Potion",
+      "url": "https://sts2.untapped.gg/en/potions/skill-potion",
+      "parts": [
+        {
+          "text": "Choose "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " random Skill cards to add into your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". It's free to play this turn."
+        }
+      ]
+    },
+    {
+      "id": "SNECKO_OIL",
+      "name": "Snecko Oil",
+      "url": "https://sts2.untapped.gg/en/potions/snecko-oil",
+      "parts": [
+        {
+          "text": "Draw "
+        },
+        {
+          "text": "7",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards. Randomize the cost of cards in your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": " this turn."
+        }
+      ]
+    },
+    {
+      "id": "SOLDIERS_STEW",
+      "name": "Soldier's Stew",
+      "url": "https://sts2.untapped.gg/en/potions/soldiers-stew",
+      "parts": [
+        {
+          "text": "All cards containing "
+        },
+        {
+          "text": "Strike",
+          "color": "#efc851"
+        },
+        {
+          "text": " gain "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Replay",
+          "color": "#efc851"
+        },
+        {
+          "text": " this combat."
+        }
+      ]
+    },
+    {
+      "id": "SPEED_POTION",
+      "name": "Speed Potion",
+      "url": "https://sts2.untapped.gg/en/potions/speed-potion",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "color": "#efc851"
+        },
+        {
+          "text": ". At the end of your turn, lose "
+        },
+        {
+          "text": "5",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "STABLE_SERUM",
+      "name": "Stable Serum",
+      "url": "https://sts2.untapped.gg/en/potions/stable-serum",
+      "parts": [
+        {
+          "text": "Retain",
+          "color": "#efc851"
+        },
+        {
+          "text": " your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " turns."
+        }
+      ]
+    },
+    {
+      "id": "STAR_POTION",
+      "name": "Star Potion",
+      "url": "https://sts2.untapped.gg/en/potions/star-potion",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "STRENGTH_POTION",
+      "name": "Strength Potion",
+      "url": "https://sts2.untapped.gg/en/potions/strength-potion",
+      "parts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "SWIFT_POTION",
+      "name": "Swift Potion",
+      "url": "https://sts2.untapped.gg/en/potions/swift-potion",
+      "parts": [
+        {
+          "text": "Draw "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards."
+        }
+      ]
+    },
+    {
+      "id": "TOUCH_OF_INSANITY",
+      "name": "Touch of Insanity",
+      "url": "https://sts2.untapped.gg/en/potions/touch-of-insanity",
+      "parts": [
+        {
+          "text": "Choose a card in your "
+        },
+        {
+          "text": "Hand",
+          "color": "#efc851"
+        },
+        {
+          "text": ". It is free to play this combat."
+        }
+      ]
+    },
+    {
+      "id": "VULNERABLE_POTION",
+      "name": "Vulnerable Potion",
+      "url": "https://sts2.untapped.gg/en/potions/vulnerable-potion",
+      "parts": [
+        {
+          "text": "Apply "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Vulnerable",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "id": "WEAK_POTION",
+      "name": "Weak Potion",
+      "url": "https://sts2.untapped.gg/en/potions/weak-potion",
+      "parts": [
+        {
+          "text": "Apply "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Weak",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  ]
+}

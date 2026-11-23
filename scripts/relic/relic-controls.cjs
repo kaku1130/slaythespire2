@@ -1,8 +1,8 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
-const groups={pool:['Ironclad','Silent','Defect','Regent','Necrobinder','Shared','Event'],rarity:['Starter','Common','Uncommon','Rare','Ancient','Shop','Event']};
+const groups={pool:['Ironclad','Silent','Regent','Necrobinder','Defect','Shared'],rarity:['Starter','Common','Uncommon','Rare','Ancient','Shop','Event']};
 const poolColors={Ironclad:'#dc6c68',Silent:'#70bf8b',Defect:'#6faeee',Necrobinder:'#b595dd',Regent:'#e3bf72',Shared:'#aab6c4',Event:'#6ac1b4'};
 const rarityColors={Starter:'#9f9fa9',Common:'#d4d4d8',Uncommon:'#54a2ff',Rare:'#fac800',Ancient:'#c4b5fd',Shop:'#00d3bd',Event:'#f472b6'};
-const controls='<div class="catalog-filter-rows" lang="en">'+Object.entries(groups).map(([key,values])=>'<div class="catalog-filter-row"><span>'+(key==='pool'?'Character':'Rarity')+'</span><div class="catalog-filter-buttons" id="relic-filter-'+key+'" role="group" aria-label="'+(key==='pool'?'Pool':'Rarity')+'">'+values.map(value=>'<button type="button" data-catalog-filter="'+key+'" value="'+value+'" aria-pressed="false" style="--selection-color:'+(key==='pool'?poolColors:rarityColors)[value]+'">'+value+'</button>').join('')+'</div></div>').join('')+'</div>';
+const controls='<div class="catalog-filter-rows" lang="en">'+Object.entries(groups).map(([key,values])=>'<div class="catalog-filter-row"><span>'+(key==='pool'?'Character':'Rarity')+'</span><div class="catalog-filter-buttons" id="relic-filter-'+key+'" role="group" aria-label="'+(key==='pool'?'Pool':'Rarity')+'">'+values.map(value=>'<button type="button" data-catalog-filter="'+key+'" value="'+value+'" aria-pressed="false" style="--selection-color:'+(key==='pool'?poolColors:rarityColors)[value]+'">'+(value==='Shared'?'Colorless':value)+'</button>').join('')+'</div></div>').join('')+'</div>';
 const styles = `
 main#main-content>.relic-filters {
   --control-height: 40px;
@@ -105,6 +105,8 @@ const script = `const entries = [...document.querySelectorAll('.entry')];
 const search = document.getElementById('search');
 const buttons = [...document.querySelectorAll('[data-catalog-filter]')];
 function filter() {
+  const selectedPools=buttons.filter(button=>button.dataset.catalogFilter==='pool'&&button.getAttribute('aria-pressed')==='true');
+  for(const button of selectedPools.slice(1))button.setAttribute('aria-pressed','false');
   const query = search.value.trim().toLowerCase();
   const queries = [...new Set(query.split(/[\\s、，,+]+/).filter(Boolean))];
   const selected = {};
@@ -132,12 +134,13 @@ function filter() {
 }
 search.addEventListener('input', filter);
 for (const button of buttons) button.addEventListener('click', () => {
-  button.setAttribute('aria-pressed', String(button.getAttribute('aria-pressed') !== 'true'));
+  const selected=button.getAttribute('aria-pressed') !== 'true';
+  if(button.dataset.catalogFilter==='pool')for(const other of buttons.filter(item=>item.dataset.catalogFilter==='pool'))other.setAttribute('aria-pressed','false');
+  button.setAttribute('aria-pressed', String(selected));
   filter();
 });
 filter();`;
-const groupedControls = controls.replace(/(<button\b[^>]*data-catalog-filter="pool"[^>]*value="Shared"[\s\S]*?<\/button><button\b[^>]*data-catalog-filter="pool"[^>]*value="Event"[\s\S]*?<\/button>)/, '<div class="relic-pool-extra">$1</div>');
-module.exports = {controls:require('../cards/character-filter.cjs')(groupedControls), styles, script};
+module.exports = {controls:require('../cards/character-filter.cjs')(controls,{iconPaths:{Shared:'assets/cards/icons/colorless.webp'},labels:{Shared:'Colorless'}}), styles, script};
 
 module.exports.styles += `
 html body main#main-content .relic-filters > .catalog-filter-rows {

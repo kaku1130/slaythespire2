@@ -3,7 +3,7 @@ const groups=[['Common','普通','#aab6c4'],['Uncommon','罕見','#74b3e6'],['Ra
 function formatCard(article, item) {
   const rarity = item.rarity;
   return article.replace(/(<img\b[^>]*>)<div class="potion-title-row"><h2>(.*?) (<span class="catalog-name-en" lang="en">.*?<\/span>)<\/h2><div class="tag">.*?<\/div><\/div><p(?: lang="en")?>(.*?)<\/p>/s,
-    (_, image, localizedName, englishName, description) => '<div class="potion-icon-row">' + image + '<span class="potion-rarity-row" lang="en">' + rarity + '</span></div><div class="potion-title-row"><h2><span class="potion-name-zh" lang="zh-Hant">' + localizedName + '</span>' + englishName + '</h2></div><p lang="en">' + description + '</p>');
+    (_, image, localizedName, englishName, description) => '<div class="potion-icon-row">' + image + '<span class="potion-rarity-row" lang="en">' + rarity + '</span></div><div class="potion-title-row"><h2><span class="potion-name-zh" lang="zh-Hant">' + localizedName + '</span>' + englishName.replace('<span ','<a href="'+item.sourceEn+'" target="_blank" rel="noopener noreferrer" ').replace('</span>','</a>') + '</h2></div><p lang="en">' + description + '</p>');
 }
 
 function render(content,items){const articles=new Map([...content.matchAll(/<article\b[^>]*id="([^"]+)"[\s\S]*?<\/article>/g)].map(m=>[m[1],m[0]]));return groups.map(([rarity,label,color])=>{const members=items.filter(x=>x.rarity===rarity);return '<section class="potion-section" data-rarity="'+rarity+'" style="--group-color:'+color+'"><h2 class="potion-section-title" lang="en">'+rarity+' <span class="potion-section-count">('+members.length+')</span></h2><div class="catalog">'+members.map(x=>formatCard(articles.get(x.id),x)).join('')+'</div></section>';}).join('');}

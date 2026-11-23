@@ -1,756 +1,253 @@
 {
-  "sources": [
-    "https://slaythespire2.net/potion",
-    "https://slaythespire2.net/zh-TW/potion"
-  ],
-  "retrievedDate": "2026-11-23T05:21:13.104Z",
+  "source": "https://sts2.untapped.gg/en/potions",
+  "checkedAt": "2026-11-23T15:32:12.458Z",
   "total": 63,
   "matched": 63,
-  "changedItems": 62,
   "changes": [
     {
       "id": "ASHWATER",
-      "field": "descI18n",
-      "before": "<g>消耗</g>你<g>手牌</g>中的任意張牌。",
-      "after": "<g>消耗</g>你<g>手牌</g>中任意數量的牌。"
-    },
-    {
-      "id": "ASHWATER",
-      "field": "descriptionClean",
-      "before": "消耗你手牌中的任意張牌。",
-      "after": "消耗你手牌中任意數量的牌。"
+      "before": "<g>Exhaust</g> any number of cards in your <g>Hand</g>.",
+      "after": "Exhaust any number of cards in your Hand."
     },
     {
       "id": "ATTACK_POTION",
-      "field": "descI18n",
-      "before": "從3張隨機攻擊牌中選擇1張加入你的<g>手牌</g>。這張牌在本回合可以免費打出。",
-      "after": "從 3 張隨機攻擊牌中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。"
-    },
-    {
-      "id": "ATTACK_POTION",
-      "field": "descriptionClean",
-      "before": "從3張隨機攻擊牌中選擇1張加入你的手牌。這張牌在本回合可以免費打出。",
-      "after": "從 3 張隨機攻擊牌中選擇 1 張加入你的手牌。本回合可免費打出。"
-    },
-    {
-      "id": "BEETLE_JUICE",
-      "field": "descI18n",
-      "before": "敵人的攻擊在下4個回合中造成的傷害減少30%。",
-      "after": "敵人的攻擊在接下來 4 回合傷害減少 30%。"
-    },
-    {
-      "id": "BEETLE_JUICE",
-      "field": "descriptionClean",
-      "before": "敵人的攻擊在下4個回合中造成的傷害減少30%。",
-      "after": "敵人的攻擊在接下來 4 回合傷害減少 30%。"
+      "before": "Choose 1 of 3 random Attack cards to add into your <g>Hand</g>. It's free to play this turn.",
+      "after": "Choose 1 of 3 random Attack cards to add into your Hand. It's free to play this turn."
     },
     {
       "id": "BLESSING_OF_THE_FORGE",
-      "field": "descI18n",
-      "before": "在本場戰鬥中<g>升級</g>你<g>手牌</g>中的所有牌。",
-      "after": "在本場戰鬥中<g>升級</g>你<g>手牌</g>中的所有卡牌。"
-    },
-    {
-      "id": "BLESSING_OF_THE_FORGE",
-      "field": "descriptionClean",
-      "before": "在本場戰鬥中升級你手牌中的所有牌。",
-      "after": "在本場戰鬥中升級你手牌中的所有卡牌。"
+      "before": "<g>Upgrade</g> all cards in your <g>Hand</g> for the rest of combat.",
+      "after": "Upgrade all cards in your Hand for the rest of combat."
     },
     {
       "id": "BLOCK_POTION",
-      "field": "descI18n",
-      "before": "獲得12點<g>格擋</g>。",
-      "after": "獲得 12 點<g>格擋</g>。"
-    },
-    {
-      "id": "BLOCK_POTION",
-      "field": "descriptionClean",
-      "before": "獲得12點格擋。",
-      "after": "獲得 12 點格擋。"
-    },
-    {
-      "id": "BLOOD_POTION",
-      "field": "descI18n",
-      "before": "回覆你最大生命值的20%。",
-      "after": "恢復相當於最大生命 20% 的生命。"
-    },
-    {
-      "id": "BLOOD_POTION",
-      "field": "descriptionClean",
-      "before": "回覆你最大生命值的20%。",
-      "after": "恢復相當於最大生命 20% 的生命。"
+      "before": "Gain 12 <g>Block</g>.",
+      "after": "Gain 12 Block."
     },
     {
       "id": "BONE_BREW",
-      "field": "descI18n",
-      "before": "<g>召喚</g>15。",
-      "after": "<g>召喚</g> 15。"
-    },
-    {
-      "id": "BONE_BREW",
-      "field": "descriptionClean",
-      "before": "召喚15。",
-      "after": "召喚 15。"
+      "before": "<g>Summon</g> 15.",
+      "after": "Summon 15."
     },
     {
       "id": "BOTTLED_POTENTIAL",
-      "field": "descI18n",
-      "before": "將你的所有牌洗入你的<g>抽牌堆</g>。抽5張牌。",
-      "after": "將你的所有牌洗入<g>抽牌堆</g>。抽 5 張牌。"
-    },
-    {
-      "id": "BOTTLED_POTENTIAL",
-      "field": "descriptionClean",
-      "before": "將你的所有牌洗入你的抽牌堆。抽5張牌。",
-      "after": "將你的所有牌洗入抽牌堆。抽 5 張牌。"
-    },
-    {
-      "id": "CLARITY",
-      "field": "descI18n",
-      "before": "抽1張牌。在你的下3個回合開始時，額外抽1張牌。",
-      "after": "抽 1 張牌。你的下 3 回合開始時，額外抽 1 張牌。"
-    },
-    {
-      "id": "CLARITY",
-      "field": "descriptionClean",
-      "before": "抽1張牌。在你的下3個回合開始時，額外抽1張牌。",
-      "after": "抽 1 張牌。你的下 3 回合開始時，額外抽 1 張牌。"
+      "before": "Shuffle ALL your cards into your <g>Draw Pile</g>. Draw 5 cards.",
+      "after": "Shuffle ALL your cards into your Draw Pile. Draw 5 cards."
     },
     {
       "id": "COLORLESS_POTION",
-      "field": "descI18n",
-      "before": "從3張隨機無色牌中選擇1張加入你的<g>手牌</g>。這張牌在本回合可以免費打出。",
-      "after": "從 3 張隨機無色牌中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。"
-    },
-    {
-      "id": "COLORLESS_POTION",
-      "field": "descriptionClean",
-      "before": "從3張隨機無色牌中選擇1張加入你的手牌。這張牌在本回合可以免費打出。",
-      "after": "從 3 張隨機無色牌中選擇 1 張加入你的手牌。本回合可免費打出。"
+      "before": "Choose 1 of 3 random Colorless cards to add into your <g>Hand</g>. It's free to play this turn.",
+      "after": "Choose 1 of 3 random Colorless cards to add into your Hand. It's free to play this turn."
     },
     {
       "id": "COSMIC_CONCOCTION",
-      "field": "descI18n",
-      "before": "將3張<g>升級</g>的無色牌加入你的<g>手牌</g>。",
-      "after": "將 3 張<g>已升級</g>的無色牌加入你的<g>手牌</g>。"
-    },
-    {
-      "id": "COSMIC_CONCOCTION",
-      "field": "descriptionClean",
-      "before": "將3張升級的無色牌加入你的手牌。",
-      "after": "將 3 張已升級的無色牌加入你的手牌。"
+      "before": "Add 3 <g>Upgraded</g> Colorless cards into your <g>Hand</g>.",
+      "after": "Add 3 Upgraded Colorless cards into your Hand."
     },
     {
       "id": "CUNNING_POTION",
-      "field": "descI18n",
-      "before": "將3張<g>小刀+</g>加入你的<g>手牌</g>。",
-      "after": "將 3 張<g>已升級的小刀</g>加入你的<g>手牌</g>。"
-    },
-    {
-      "id": "CUNNING_POTION",
-      "field": "descriptionClean",
-      "before": "將3張小刀+加入你的手牌。",
-      "after": "將 3 張已升級的小刀加入你的手牌。"
+      "before": "Add 3 <g>Upgraded Shivs</g> into your <g>Hand</g>.",
+      "after": "Add 3 Upgraded Shivs into your Hand."
     },
     {
       "id": "CURE_ALL",
-      "field": "descI18n",
-      "before": "獲得<e>1</e>。抽2張牌。",
-      "after": "獲得 <e>1</e>。抽 2 張牌。"
-    },
-    {
-      "id": "CURE_ALL",
-      "field": "descriptionClean",
-      "before": "獲得1。抽2張牌。",
-      "after": "獲得 1。抽 2 張牌。"
+      "before": "Gain <e>1</e>. Draw 2 cards.",
+      "after": "Gain <e/>. Draw 2 cards."
     },
     {
       "id": "DEXTERITY_POTION",
-      "field": "descI18n",
-      "before": "獲得2點<g>敏捷</g>。",
-      "after": "獲得 2 層<g>敏捷</g>。"
-    },
-    {
-      "id": "DEXTERITY_POTION",
-      "field": "descriptionClean",
-      "before": "獲得2點敏捷。",
-      "after": "獲得 2 層敏捷。"
+      "before": "Gain 2 <g>Dexterity</g>.",
+      "after": "Gain 2 Dexterity."
     },
     {
       "id": "DISTILLED_CHAOS",
-      "field": "descI18n",
-      "before": "打出你<g>抽牌堆</g>頂部的3張牌。",
-      "after": "打出你<g>抽牌堆</g>頂部的 3 張牌。"
-    },
-    {
-      "id": "DISTILLED_CHAOS",
-      "field": "descriptionClean",
-      "before": "打出你抽牌堆頂部的3張牌。",
-      "after": "打出你抽牌堆頂部的 3 張牌。"
+      "before": "Play the top 3 cards of your <g>Draw Pile</g>.",
+      "after": "Play the top 3 cards of your Draw Pile."
     },
     {
       "id": "DROPLET_OF_PRECOGNITION",
-      "field": "descI18n",
-      "before": "選擇你<g>抽牌堆</g>中的一張牌加入你的<g>手牌</g>。",
-      "after": "從你的<g>抽牌堆</g>中選擇一張牌，將其加入你的<g>手牌</g>。"
-    },
-    {
-      "id": "DROPLET_OF_PRECOGNITION",
-      "field": "descriptionClean",
-      "before": "選擇你抽牌堆中的一張牌加入你的手牌。",
-      "after": "從你的抽牌堆中選擇一張牌，將其加入你的手牌。"
-    },
-    {
-      "id": "DUPLICATOR",
-      "field": "descI18n",
-      "before": "本回合，你打出的下一張牌會額外打出一次。",
-      "after": "本回合，你的下一張牌會額外打出一次。"
-    },
-    {
-      "id": "DUPLICATOR",
-      "field": "descriptionClean",
-      "before": "本回合，你打出的下一張牌會額外打出一次。",
-      "after": "本回合，你的下一張牌會額外打出一次。"
+      "before": "Choose a card in your <g>Draw Pile</g> and add it into your <g>Hand</g>.",
+      "after": "Choose a card in your Draw Pile and add it into your Hand."
     },
     {
       "id": "ENERGY_POTION",
-      "field": "descI18n",
-      "before": "獲得<e>2</e>。",
-      "after": "獲得 <e>2</e>。"
-    },
-    {
-      "id": "ENERGY_POTION",
-      "field": "descriptionClean",
-      "before": "獲得2。",
-      "after": "獲得 2。"
-    },
-    {
-      "id": "ENTROPIC_BREW",
-      "field": "descI18n",
-      "before": "在所有空藥水欄位中獲得隨機藥水。",
-      "after": "以隨機藥水填滿所有空的藥水欄位。"
-    },
-    {
-      "id": "ENTROPIC_BREW",
-      "field": "descriptionClean",
-      "before": "在所有空藥水欄位中獲得隨機藥水。",
-      "after": "以隨機藥水填滿所有空的藥水欄位。"
+      "before": "Gain <e>2</e>.",
+      "after": "Gain <e/><e/>."
     },
     {
       "id": "ESSENCE_OF_DARKNESS",
-      "field": "descI18n",
-      "before": "<g>生成</g>你<g>充能球欄位</g>數量個<g>黑暗</g>充能球。",
-      "after": "你每有一個<g>充能球欄位</g>，就<g>凝聚</g> 1 個<g>黑暗</g>。"
-    },
-    {
-      "id": "ESSENCE_OF_DARKNESS",
-      "field": "descriptionClean",
-      "before": "生成你充能球欄位數量個黑暗充能球。",
-      "after": "你每有一個充能球欄位，就凝聚 1 個黑暗。"
-    },
-    {
-      "id": "EXPLOSIVE_AMPOULE",
-      "field": "descI18n",
-      "before": "對所有敵人造成10點傷害。",
-      "after": "對所有敵人造成 10 點傷害。"
-    },
-    {
-      "id": "EXPLOSIVE_AMPOULE",
-      "field": "descriptionClean",
-      "before": "對所有敵人造成10點傷害。",
-      "after": "對所有敵人造成 10 點傷害。"
-    },
-    {
-      "id": "FAIRY_IN_A_BOTTLE",
-      "field": "descI18n",
-      "before": "當你的生命值將被減少至0或以下時，改為丟棄這瓶藥水，然後將你回覆到你最大生命值的30%。",
-      "after": "當你的生命即將降至 0 時，改為丟棄此藥水，並將生命恢復至最大生命的 30%。"
-    },
-    {
-      "id": "FAIRY_IN_A_BOTTLE",
-      "field": "descriptionClean",
-      "before": "當你的生命值將被減少至0或以下時，改為丟棄這瓶藥水，然後將你回覆到你最大生命值的30%。",
-      "after": "當你的生命即將降至 0 時，改為丟棄此藥水，並將生命恢復至最大生命的 30%。"
-    },
-    {
-      "id": "FIRE_POTION",
-      "field": "descI18n",
-      "before": "造成20點傷害。",
-      "after": "造成 20 點傷害。"
-    },
-    {
-      "id": "FIRE_POTION",
-      "field": "descriptionClean",
-      "before": "造成20點傷害。",
-      "after": "造成 20 點傷害。"
+      "before": "<g>Channel</g> a <g>Dark</g> for each of your <g>Orb Slots</g>.",
+      "after": "Channel a Dark for each of your Orb Slots."
     },
     {
       "id": "FLEX_POTION",
-      "field": "descI18n",
-      "before": "獲得5點<g>力量</g>。在你的這個回合結束時，失去5點<g>力量</g>。",
-      "after": "獲得 5 層<g>力量</g>。在你的回合結束時，失去 5 層<g>力量</g>。"
-    },
-    {
-      "id": "FLEX_POTION",
-      "field": "descriptionClean",
-      "before": "獲得5點力量。在你的這個回合結束時，失去5點力量。",
-      "after": "獲得 5 層力量。在你的回合結束時，失去 5 層力量。"
+      "before": "Gain 5 <g>Strength</g>. At the end of your turn, lose 5 <g>Strength</g>.",
+      "after": "Gain 5 Strength. At the end of your turn, lose 5 Strength."
     },
     {
       "id": "FOCUS_POTION",
-      "field": "descI18n",
-      "before": "獲得2點<g>集中</g>。",
-      "after": "獲得 2 層<g>集中</g>。"
-    },
-    {
-      "id": "FOCUS_POTION",
-      "field": "descriptionClean",
-      "before": "獲得2點集中。",
-      "after": "獲得 2 層集中。"
+      "before": "Gain 2 <g>Focus</g>.",
+      "after": "Gain 2 Focus."
     },
     {
       "id": "FORTIFIER",
-      "field": "descI18n",
-      "before": "將你的<g>格擋</g>變為三倍。",
-      "after": "使你的<g>格擋</g>變為三倍。"
-    },
-    {
-      "id": "FORTIFIER",
-      "field": "descriptionClean",
-      "before": "將你的格擋變為三倍。",
-      "after": "使你的格擋變為三倍。"
+      "before": "Triple your <g>Block</g>.",
+      "after": "Triple your Block."
     },
     {
       "id": "FOUL_POTION",
-      "field": "descI18n",
-      "before": "對所有玩家和敵人造成12點傷害。\n也可以投擲給<g>商人</g>換取100<g>金幣</g>。",
-      "after": "對所有玩家與敵人造成 12 點傷害。\n也可以將其丟向<g>商人</g>，換取 100 枚<g>金幣</g>。"
-    },
-    {
-      "id": "FOUL_POTION",
-      "field": "descriptionClean",
-      "before": "對所有玩家和敵人造成12點傷害。\n也可以投擲給商人換取100金幣。",
-      "after": "對所有玩家與敵人造成 12 點傷害。\n也可以將其丟向商人，換取 100 枚金幣。"
-    },
-    {
-      "id": "FRUIT_JUICE",
-      "field": "descI18n",
-      "before": "獲得5點最大生命值。",
-      "after": "獲得 5 點最大生命。"
-    },
-    {
-      "id": "FRUIT_JUICE",
-      "field": "descriptionClean",
-      "before": "獲得5點最大生命值。",
-      "after": "獲得 5 點最大生命。"
+      "before": "Deal 12 damage to ALL players and enemies.\nCan be thrown at the <g>Merchant</g> for 100 <g>Gold</g> instead.",
+      "after": "Deal 12 damage to ALL players and enemies. Can be thrown at the Merchant for 100 Gold instead."
     },
     {
       "id": "FYSH_OIL",
-      "field": "descI18n",
-      "before": "獲得1點<g>力量</g>和1點<g>敏捷</g>。",
-      "after": "獲得 1 層<g>力量</g>和 1 層<g>敏捷</g>。"
-    },
-    {
-      "id": "FYSH_OIL",
-      "field": "descriptionClean",
-      "before": "獲得1點力量和1點敏捷。",
-      "after": "獲得 1 層力量和 1 層敏捷。"
-    },
-    {
-      "id": "GAMBLERS_BREW",
-      "field": "descI18n",
-      "before": "丟棄任意張牌，然後抽相同數量的牌。",
-      "after": "丟棄任意數量的牌，然後抽取等量的牌。"
-    },
-    {
-      "id": "GAMBLERS_BREW",
-      "field": "descriptionClean",
-      "before": "丟棄任意張牌，然後抽相同數量的牌。",
-      "after": "丟棄任意數量的牌，然後抽取等量的牌。"
+      "before": "Gain 1 <g>Strength</g> and 1 <g>Dexterity</g>.",
+      "after": "Gain 1 Strength and 1 Dexterity."
     },
     {
       "id": "GHOST_IN_A_JAR",
-      "field": "descI18n",
-      "before": "獲得1層<g>無實體</g>。",
-      "after": "獲得 1 層<g>無形</g>。"
-    },
-    {
-      "id": "GHOST_IN_A_JAR",
-      "field": "descriptionClean",
-      "before": "獲得1層無實體。",
-      "after": "獲得 1 層無形。"
-    },
-    {
-      "id": "GIGANTIFICATION_POTION",
-      "field": "descI18n",
-      "before": "你打出的下一張攻擊牌將會造成三倍傷害。",
-      "after": "你打出的下一張攻擊牌會造成三倍傷害。"
-    },
-    {
-      "id": "GIGANTIFICATION_POTION",
-      "field": "descriptionClean",
-      "before": "你打出的下一張攻擊牌將會造成三倍傷害。",
-      "after": "你打出的下一張攻擊牌會造成三倍傷害。"
+      "before": "Gain 1 <g>Intangible</g>.",
+      "after": "Gain 1 Intangible."
     },
     {
       "id": "GLOWWATER_POTION",
-      "field": "descI18n",
-      "before": "<g>消耗</g>你的<g>手牌</g>。抽10張牌。",
-      "after": "<g>消耗</g>你的<g>手牌</g>。抽 10 張牌。"
-    },
-    {
-      "id": "GLOWWATER_POTION",
-      "field": "descriptionClean",
-      "before": "消耗你的手牌。抽10張牌。",
-      "after": "消耗你的手牌。抽 10 張牌。"
+      "before": "<g>Exhaust</g> your <g>Hand</g>. Draw 10 cards.",
+      "after": "Exhaust your Hand. Draw 10 cards."
     },
     {
       "id": "HEART_OF_IRON",
-      "field": "descI18n",
-      "before": "獲得7層<g>覆甲</g>。",
-      "after": "獲得 7 層<g>鍍甲</g>。"
-    },
-    {
-      "id": "HEART_OF_IRON",
-      "field": "descriptionClean",
-      "before": "獲得7層覆甲。",
-      "after": "獲得 7 層鍍甲。"
+      "before": "Gain 7 <g>Plating</g>.",
+      "after": "Gain 7 Plating."
     },
     {
       "id": "KINGS_COURAGE",
-      "field": "descI18n",
-      "before": "<g>鑄造</g>15。",
-      "after": "<g>鑄造</g> 15。"
-    },
-    {
-      "id": "KINGS_COURAGE",
-      "field": "descriptionClean",
-      "before": "鑄造15。",
-      "after": "鑄造 15。"
+      "before": "<g>Forge</g> 15.",
+      "after": "Forge 15."
     },
     {
       "id": "LIQUID_BRONZE",
-      "field": "descI18n",
-      "before": "獲得3點<g>荊棘</g>。",
-      "after": "獲得 3 層<g>荊棘</g>。"
-    },
-    {
-      "id": "LIQUID_BRONZE",
-      "field": "descriptionClean",
-      "before": "獲得3點荊棘。",
-      "after": "獲得 3 層荊棘。"
+      "before": "Gain 3 <g>Thorns</g>.",
+      "after": "Gain 3 Thorns."
     },
     {
       "id": "LIQUID_MEMORIES",
-      "field": "descI18n",
-      "before": "將你<g>棄牌堆</g>中的一張牌放入你的<g>手牌</g>。這張牌在本回合可以免費打出。",
-      "after": "將你<g>棄牌堆</g>中的一張牌放入你的<g>手牌</g>。本回合可免費打出。"
-    },
-    {
-      "id": "LIQUID_MEMORIES",
-      "field": "descriptionClean",
-      "before": "將你棄牌堆中的一張牌放入你的手牌。這張牌在本回合可以免費打出。",
-      "after": "將你棄牌堆中的一張牌放入你的手牌。本回合可免費打出。"
+      "before": "Put a card from your <g>Discard Pile</g> into your <g>Hand</g>. It's free to play this turn.",
+      "after": "Put a card from your Discard Pile into your Hand. It's free to play this turn."
     },
     {
       "id": "LUCKY_TONIC",
-      "field": "descI18n",
-      "before": "獲得1層<g>緩衝</g>。",
-      "after": "獲得 1 層<g>緩衝</g>。"
-    },
-    {
-      "id": "LUCKY_TONIC",
-      "field": "descriptionClean",
-      "before": "獲得1層緩衝。",
-      "after": "獲得 1 層緩衝。"
+      "before": "Gain 1 <g>Buffer</g>.",
+      "after": "Gain 1 Buffer."
     },
     {
       "id": "MAZALETHS_GIFT",
-      "field": "descI18n",
-      "before": "獲得1層<g>儀式</g>。",
-      "after": "獲得 1 層<g>儀式</g>。"
-    },
-    {
-      "id": "MAZALETHS_GIFT",
-      "field": "descriptionClean",
-      "before": "獲得1層儀式。",
-      "after": "獲得 1 層儀式。"
+      "before": "Gain 1 <g>Ritual</g>.",
+      "after": "Gain 1 Ritual."
     },
     {
       "id": "OROBIC_ACID",
-      "field": "descI18n",
-      "before": "往你的<g>手牌</g>中加入一張隨機攻擊牌、一張隨機技能牌和一張隨機能力牌。這些牌在本回合免費。",
-      "after": "分別將一張隨機攻擊牌、技能牌與能力牌加入你的<g>手牌</g>。這些牌本回合可免費打出。"
-    },
-    {
-      "id": "OROBIC_ACID",
-      "field": "descriptionClean",
-      "before": "往你的手牌中加入一張隨機攻擊牌、一張隨機技能牌和一張隨機能力牌。這些牌在本回合免費。",
-      "after": "分別將一張隨機攻擊牌、技能牌與能力牌加入你的手牌。這些牌本回合可免費打出。"
+      "before": "Add a random Attack, Skill, and Power into your <g>Hand</g>. They're free to play this turn.",
+      "after": "Add a random Attack, Skill, and Power into your Hand. They're free to play this turn."
     },
     {
       "id": "POISON_POTION",
-      "field": "descI18n",
-      "before": "給予6層<g>中毒</g>。",
-      "after": "施加 6 層<g>中毒</g>。"
-    },
-    {
-      "id": "POISON_POTION",
-      "field": "descriptionClean",
-      "before": "給予6層中毒。",
-      "after": "施加 6 層中毒。"
+      "before": "Apply 6 <g>Poison</g>.",
+      "after": "Apply 6 Poison."
     },
     {
       "id": "POT_OF_GHOULS",
-      "field": "descI18n",
-      "before": "將2張<g>靈魂</g>加入你的<g>手牌</g>。",
-      "after": "將 2 張<g>靈魂</g>加入你的<g>手牌</g>。"
-    },
-    {
-      "id": "POT_OF_GHOULS",
-      "field": "descriptionClean",
-      "before": "將2張靈魂加入你的手牌。",
-      "after": "將 2 張靈魂加入你的手牌。"
+      "before": "Add 2 <g>Souls</g> into your <g>Hand</g>.",
+      "after": "Add 2 Souls into your Hand."
     },
     {
       "id": "POTION_OF_BINDING",
-      "field": "descI18n",
-      "before": "給予所有敵人1層<g>虛弱</g>和1層<g>易傷</g>。",
-      "after": "對所有敵人施加 1 層<g>虛弱</g>和 1 層<g>易傷</g>。"
-    },
-    {
-      "id": "POTION_OF_BINDING",
-      "field": "descriptionClean",
-      "before": "給予所有敵人1層虛弱和1層易傷。",
-      "after": "對所有敵人施加 1 層虛弱和 1 層易傷。"
+      "before": "Apply 1 <g>Weak</g> and 1 <g>Vulnerable</g> to ALL enemies.",
+      "after": "Apply 1 Weak and 1 Vulnerable to ALL enemies."
     },
     {
       "id": "POTION_OF_CAPACITY",
-      "field": "descI18n",
-      "before": "獲得2個<g>充能球欄位</g>。",
-      "after": "獲得 2 個<g>充能球欄位</g>。"
-    },
-    {
-      "id": "POTION_OF_CAPACITY",
-      "field": "descriptionClean",
-      "before": "獲得2個充能球欄位。",
-      "after": "獲得 2 個充能球欄位。"
+      "before": "Gain 2 <g>Orb Slots</g>.",
+      "after": "Gain 2 Orb Slots."
     },
     {
       "id": "POTION_OF_DOOM",
-      "field": "descI18n",
-      "before": "給予33層<g>災厄</g>。",
-      "after": "施加 33 層<g>惡兆</g>。"
-    },
-    {
-      "id": "POTION_OF_DOOM",
-      "field": "descriptionClean",
-      "before": "給予33層災厄。",
-      "after": "施加 33 層惡兆。"
-    },
-    {
-      "id": "POWDERED_DEMISE",
-      "field": "descI18n",
-      "before": "敵人在自身的每個回合結束時，失去9點生命。",
-      "after": "敵人在其每個回合結束時失去 9 點生命。"
-    },
-    {
-      "id": "POWDERED_DEMISE",
-      "field": "descriptionClean",
-      "before": "敵人在自身的每個回合結束時，失去9點生命。",
-      "after": "敵人在其每個回合結束時失去 9 點生命。"
+      "before": "Apply 33 <g>Doom</g>.",
+      "after": "Apply 33 Doom."
     },
     {
       "id": "POWER_POTION",
-      "field": "descI18n",
-      "before": "從3張隨機能力牌中選擇1張加入你的<g>手牌</g>。這張牌在本回合可以免費打出。",
-      "after": "從 3 張隨機能力牌中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。"
-    },
-    {
-      "id": "POWER_POTION",
-      "field": "descriptionClean",
-      "before": "從3張隨機能力牌中選擇1張加入你的手牌。這張牌在本回合可以免費打出。",
-      "after": "從 3 張隨機能力牌中選擇 1 張加入你的手牌。本回合可免費打出。"
+      "before": "Choose 1 of 3 random Power cards to add into your <g>Hand</g>. It's free to play this turn.",
+      "after": "Choose 1 of 3 random Power cards to add into your Hand. It's free to play this turn."
     },
     {
       "id": "RADIANT_TINCTURE",
-      "field": "descI18n",
-      "before": "獲得<e>1</e>。在你的下3個回合開始時，額外獲得<e/>。",
-      "after": "獲得 <e>1</e>。接下來 3 回合開始時，額外獲得 <e/>。"
-    },
-    {
-      "id": "RADIANT_TINCTURE",
-      "field": "descriptionClean",
-      "before": "獲得1。在你的下3個回合開始時，額外獲得。",
-      "after": "獲得 1。接下來 3 回合開始時，額外獲得 。"
+      "before": "Gain <e>1</e>. Gain an additional <e/> at the start of your next 3 turns.",
+      "after": "Gain <e/>. Gain an additional <e/> at the start of your next 3 turns."
     },
     {
       "id": "REGEN_POTION",
-      "field": "descI18n",
-      "before": "獲得5層<g>再生</g>。",
-      "after": "獲得 5 層<g>再生</g>。"
-    },
-    {
-      "id": "REGEN_POTION",
-      "field": "descriptionClean",
-      "before": "獲得5層再生。",
-      "after": "獲得 5 層再生。"
+      "before": "Gain 5 <g>Regen</g>.",
+      "after": "Gain 5 Regen."
     },
     {
       "id": "SHACKLING_POTION",
-      "field": "descI18n",
-      "before": "所有敵人在這個回合失去7點<g>力量</g>。",
-      "after": "所有敵人本回合失去 7 層<g>力量</g>。"
-    },
-    {
-      "id": "SHACKLING_POTION",
-      "field": "descriptionClean",
-      "before": "所有敵人在這個回合失去7點力量。",
-      "after": "所有敵人本回合失去 7 層力量。"
+      "before": "ALL enemies lose 7 <g>Strength</g> this turn.",
+      "after": "ALL enemies lose 7 Strength this turn."
     },
     {
       "id": "SHIP_IN_A_BOTTLE",
-      "field": "descI18n",
-      "before": "獲得10點<g>格擋</g>。在下個回合開始時獲得10點<g>格擋</g>。",
-      "after": "獲得 10 點<g>格擋</g>。下回合，獲得 10 點<g>格擋</g>。"
-    },
-    {
-      "id": "SHIP_IN_A_BOTTLE",
-      "field": "descriptionClean",
-      "before": "獲得10點格擋。在下個回合開始時獲得10點格擋。",
-      "after": "獲得 10 點格擋。下回合，獲得 10 點格擋。"
+      "before": "Gain 10 <g>Block</g>. Next turn, gain 10 <g>Block</g>.",
+      "after": "Gain 10 Block. Next turn, gain 10 Block."
     },
     {
       "id": "SKILL_POTION",
-      "field": "descI18n",
-      "before": "從3張隨機技能牌中選擇1張加入你的<g>手牌</g>。這張牌在本回合可以免費打出。",
-      "after": "從 3 張隨機技能牌中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。"
-    },
-    {
-      "id": "SKILL_POTION",
-      "field": "descriptionClean",
-      "before": "從3張隨機技能牌中選擇1張加入你的手牌。這張牌在本回合可以免費打出。",
-      "after": "從 3 張隨機技能牌中選擇 1 張加入你的手牌。本回合可免費打出。"
+      "before": "Choose 1 of 3 random Skill cards to add into your <g>Hand</g>. It's free to play this turn.",
+      "after": "Choose 1 of 3 random Skill cards to add into your Hand. It's free to play this turn."
     },
     {
       "id": "SNECKO_OIL",
-      "field": "descI18n",
-      "before": "抽7張牌。在本回合隨機化你<g>手牌</g>中所有牌的耗能。",
-      "after": "抽 7 張牌。本回合隨機改變你<g>手牌</g>中卡牌的耗能。"
-    },
-    {
-      "id": "SNECKO_OIL",
-      "field": "descriptionClean",
-      "before": "抽7張牌。在本回合隨機化你手牌中所有牌的耗能。",
-      "after": "抽 7 張牌。本回合隨機改變你手牌中卡牌的耗能。"
+      "before": "Draw 7 cards. Randomize the cost of cards in your <g>Hand</g> this turn.",
+      "after": "Draw 7 cards. Randomize the cost of cards in your Hand this turn."
     },
     {
       "id": "SOLDIERS_STEW",
-      "field": "descI18n",
-      "before": "在本場戰鬥中，所有名字中有“<g>打擊</g>”的牌獲得<g>重放</g>：1。",
-      "after": "所有名稱中含有<g>打擊</g>的牌在本場戰鬥中獲得<g>重演</g> 1。"
-    },
-    {
-      "id": "SOLDIERS_STEW",
-      "field": "descriptionClean",
-      "before": "在本場戰鬥中，所有名字中有“打擊”的牌獲得重放：1。",
-      "after": "所有名稱中含有打擊的牌在本場戰鬥中獲得重演 1。"
+      "before": "All cards containing <g>Strike</g> gain 1 <g>Replay</g> this combat.",
+      "after": "All cards containing Strike gain 1 Replay this combat."
     },
     {
       "id": "SPEED_POTION",
-      "field": "descI18n",
-      "before": "獲得5點<g>敏捷</g>。在你的這個回合結束時，失去5點<g>敏捷</g>。",
-      "after": "獲得 5 層<g>敏捷</g>。在你的回合結束時，失去 5 層<g>敏捷</g>。"
-    },
-    {
-      "id": "SPEED_POTION",
-      "field": "descriptionClean",
-      "before": "獲得5點敏捷。在你的這個回合結束時，失去5點敏捷。",
-      "after": "獲得 5 層敏捷。在你的回合結束時，失去 5 層敏捷。"
+      "before": "Gain 5 <g>Dexterity</g>. At the end of your turn, lose 5 <g>Dexterity</g>.",
+      "after": "Gain 5 Dexterity. At the end of your turn, lose 5 Dexterity."
     },
     {
       "id": "STABLE_SERUM",
-      "field": "descI18n",
-      "before": "<g>保留</g>你的<g>手牌</g>2回合。",
-      "after": "接下來 2 回合，<g>保留</g>你的<g>手牌</g>。"
-    },
-    {
-      "id": "STABLE_SERUM",
-      "field": "descriptionClean",
-      "before": "保留你的手牌2回合。",
-      "after": "接下來 2 回合，保留你的手牌。"
+      "before": "<g>Retain</g> your <g>Hand</g> for 2 turns.",
+      "after": "Retain your Hand for 2 turns."
     },
     {
       "id": "STAR_POTION",
-      "field": "descI18n",
-      "before": "獲得<s>3</s>。",
-      "after": "獲得 <s>3</s>。"
-    },
-    {
-      "id": "STAR_POTION",
-      "field": "descriptionClean",
-      "before": "獲得3。",
-      "after": "獲得 3。"
+      "before": "Gain <s>3</s>.",
+      "after": "Gain <e/><e/><e/>."
     },
     {
       "id": "STRENGTH_POTION",
-      "field": "descI18n",
-      "before": "獲得2點<g>力量</g>。",
-      "after": "獲得 2 層<g>力量</g>。"
-    },
-    {
-      "id": "STRENGTH_POTION",
-      "field": "descriptionClean",
-      "before": "獲得2點力量。",
-      "after": "獲得 2 層力量。"
-    },
-    {
-      "id": "SWIFT_POTION",
-      "field": "descI18n",
-      "before": "抽3張牌。",
-      "after": "抽 3 張牌。"
-    },
-    {
-      "id": "SWIFT_POTION",
-      "field": "descriptionClean",
-      "before": "抽3張牌。",
-      "after": "抽 3 張牌。"
+      "before": "Gain 2 <g>Strength</g>.",
+      "after": "Gain 2 Strength."
     },
     {
       "id": "TOUCH_OF_INSANITY",
-      "field": "descI18n",
-      "before": "選擇你<g>手牌</g>中的一張牌，使其在本場戰鬥可以免費打出。",
-      "after": "選擇你<g>手牌</g>中的一張牌。該牌在本場戰鬥中可免費打出。"
-    },
-    {
-      "id": "TOUCH_OF_INSANITY",
-      "field": "descriptionClean",
-      "before": "選擇你手牌中的一張牌，使其在本場戰鬥可以免費打出。",
-      "after": "選擇你手牌中的一張牌。該牌在本場戰鬥中可免費打出。"
+      "before": "Choose a card in your <g>Hand</g>. It is free to play this combat.",
+      "after": "Choose a card in your Hand. It is free to play this combat."
     },
     {
       "id": "VULNERABLE_POTION",
-      "field": "descI18n",
-      "before": "給予3層<g>易傷</g>。",
-      "after": "施加 3 層<g>易傷</g>。"
-    },
-    {
-      "id": "VULNERABLE_POTION",
-      "field": "descriptionClean",
-      "before": "給予3層易傷。",
-      "after": "施加 3 層易傷。"
+      "before": "Apply 3 <g>Vulnerable</g>.",
+      "after": "Apply 3 Vulnerable."
     },
     {
       "id": "WEAK_POTION",
-      "field": "descI18n",
-      "before": "給予3層<g>虛弱</g>。",
-      "after": "施加 3 層<g>虛弱</g>。"
-    },
-    {
-      "id": "WEAK_POTION",
-      "field": "descriptionClean",
-      "before": "給予3層虛弱。",
-      "after": "施加 3 層虛弱。"
+      "before": "Apply 3 <g>Weak</g>.",
+      "after": "Apply 3 Weak."
     }
   ],
   "unmatched": []
