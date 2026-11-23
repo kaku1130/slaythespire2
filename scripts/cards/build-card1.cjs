@@ -80,7 +80,7 @@ html = html.replace(/<footer class="site-attribution"[^>]*>[\s\S]*?<\/footer>/g,
   .replace(/<script>\(\(\)=>\{const main=document\.getElementById\('main-content'\);const footer=document\.querySelector\('\.site-attribution'\);[\s\S]*?<\/script>/g, '');
 const resultCount = html.match(/<p\b[^>]*id="card-filter-result"[^>]*>[\s\S]*?<\/p>/);
 assert.ok(resultCount, 'Missing card filter count');
-const sourceCredit = '<p class="card-source">資料來源：<a href="https://slaythespire2.net/" target="_blank" rel="noopener noreferrer">Slay the Spire 2 Guide &amp; Wiki</a> · 遊戲內容與圖片屬各自權利人所有。</p>';
+const sourceCredit = '<p class="card-source">資料來源：<a href="https://slaythespire2.net/zh-TW" target="_blank" rel="noopener noreferrer">Slay the Spire 2 Guide &amp; Wiki</a> · 遊戲內容與圖片屬各自權利人所有。</p>';
 html = html.replace(resultCount[0], '').replace('</main>', '<footer class="card-results-footer">' + resultCount[0] + sourceCredit + '</footer></main>');
 html = html.replace('href="assets/cards/cards.css"', 'href="assets/cards/' + output + '.css"');
 html = html.replace(/<title>[\s\S]*?<\/title>/, '<title>' + (output === 'cards' ? 'Slay the Spire 2' : 'Card 1') + '｜' + count + ' 張卡牌詳細資料</title>');
