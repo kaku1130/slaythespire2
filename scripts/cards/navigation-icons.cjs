@@ -44,7 +44,7 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 `;
 const brandStyles = `
 /* Use the image source even when bundled legacy styles replace the logo. */
-html body .site-header .site-logo {content:normal}
+html body .site-header .site-logo {content:normal;width:112px;height:63px;object-fit:contain}
 /* Brand visibility is shared by every page, including bundled legacy styles. */
 @media screen and (min-width:601px) {
   html body .site-header .site-brand {display:flex!important}

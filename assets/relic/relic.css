@@ -19,7 +19,7 @@
 /* Compact, right-aligned navigation with a GitHub brand icon. */
 html body .site-header .site-nav {flex:0 1 auto!important;width:auto!important;margin-left:auto;justify-content:flex-end}
 html body .site-header .site-nav a {flex:0 0 auto!important}
-html body .site-header .site-logo {content:normal}
+html body .site-header .site-logo {content:normal;width:112px;height:63px;object-fit:contain}
 
 /* Show navigation labels whenever tablet-sized widths have enough room, regardless of input device. */
 @media screen and (min-width:700px) and (max-width:1366px) {
@@ -510,7 +510,7 @@ html body main#main-content .filters,html body main#main-content .tools .primary
 /* Compact, right-aligned navigation with a GitHub brand icon. */
 html body .site-header .site-nav {flex:0 1 auto!important;width:auto!important;margin-left:auto;justify-content:flex-end}
 html body .site-header .site-nav a {flex:0 0 auto!important}
-html body .site-header .site-logo {content:normal}
+html body .site-header .site-logo {content:normal;width:112px;height:63px;object-fit:contain}
 
 /* Show navigation labels whenever tablet-sized widths have enough room, regardless of input device. */
 @media screen and (min-width:700px) and (max-width:1366px) {
@@ -1979,5 +1979,5 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
   }
 }
 
-/* Shared brand image matches the ancient navigation icon. */
-html body .site-header .site-logo {content:normal}
+/* Preserve the header logo proportions. */
+html body .site-header .site-logo {content:normal;width:112px;height:63px;object-fit:contain}

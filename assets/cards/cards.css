@@ -63,7 +63,7 @@ main{width:100%;padding:clamp(16px,2vw,32px);padding-bottom:48px}.field{min-widt
 /* Compact, right-aligned navigation with a GitHub brand icon. */
 html body .site-header .site-nav {flex:0 1 auto!important;width:auto!important;margin-left:auto;justify-content:flex-end}
 html body .site-header .site-nav a {flex:0 0 auto!important}
-html body .site-header .site-logo {content:normal}
+html body .site-header .site-logo {content:normal;width:112px;height:63px;object-fit:contain}
 
 /* Show navigation labels whenever tablet-sized widths have enough room, regardless of input device. */
 @media screen and (min-width:700px) and (max-width:1366px) {
@@ -427,7 +427,7 @@ html body main#main-content .filters,html body main#main-content .tools .primary
 /* Compact, right-aligned navigation with a GitHub brand icon. */
 html body .site-header .site-nav {flex:0 1 auto!important;width:auto!important;margin-left:auto;justify-content:flex-end}
 html body .site-header .site-nav a {flex:0 0 auto!important}
-html body .site-header .site-logo {content:normal}
+html body .site-header .site-logo {content:normal;width:112px;height:63px;object-fit:contain}
 
 /* Show navigation labels whenever tablet-sized widths have enough room, regardless of input device. */
 @media screen and (min-width:700px) and (max-width:1366px) {
@@ -2983,5 +2983,5 @@ html body #main-content .potion-section[data-rarity=Rare] {--group-color:#efc851
 html body #main-content .potion-section[data-rarity=Rare]>.potion-section-title {color:#efc851}
 html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Rare],[data-catalog-filter=rarity][value=Rare],button[data-rarity-filter=Rare],[data-filter-group=rarity][data-filter-value=Rare]) {--selection-color:#efc851!important;--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--rarity-text-color:#efc851!important;color:#efc851!important}
 
-/* Shared brand image matches the ancient navigation icon. */
-html body .site-header .site-logo {content:normal}
+/* Preserve the header logo proportions. */
+html body .site-header .site-logo {content:normal;width:112px;height:63px;object-fit:contain}
