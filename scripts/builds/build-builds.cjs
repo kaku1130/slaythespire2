@@ -40,12 +40,17 @@ function renderGuideRelic(reference){
 }
 
 const iconName={Ironclad:'ironclad',Silent:'silent',Defect:'defect',Regent:'regent',Necrobinder:'necrobinder'};
+function renderVersionDifferences(g){
+ assert.ok(Array.isArray(g.versionNotes),'Missing source version notes: '+g.character+'-'+g.id);
+ const items=g.versionNotes.map(note=>'<li>'+esc(note)+'</li>');
+ return '<div class="build-version-differences"><h4>版本差異</h4>'+(items.length?'<ul>'+items.join('')+'</ul>':'<p>原站未列出版本差異。</p>')+'</div>';
+}
 function renderGuide(g,full=false){
  const key=g.character+'-'+g.id,b=builds.get(key);assert(b);assert.equal(g.name,b.name);assert.equal(g.tier,b.tier);
  assert.deepEqual(b.core.map(c=>c.id).sort(),[...g.core].sort());assert.deepEqual(b.support.map(c=>c.id).sort(),[...g.support].sort());b.core=g.core.map(id=>byId.get(id));b.support=g.support.map(id=>byId.get(id));
  const search=[g.name,g.summary,g.id,g.playstyle,...b.core.flatMap(c=>[c.name,chinese.get(c.id).name]),...b.support.flatMap(c=>[c.name,chinese.get(c.id).name]),...g.relics.map(r=>r.name)].join(' ').toLowerCase();
 
- return '<article class="build-panel'+(full?' full-guide':'')+'" id="build-'+key+'" data-search="'+esc(search)+'"'+(guide.builds.find(first=>first.characterPool===g.characterPool).id!==g.id?' hidden':'')+'><h3 class="build-panel-heading"><span class="build-tier" data-tier="'+esc(g.tier)+'" aria-label="'+esc(g.tier)+' 級">'+esc(g.tier)+'</span><span>'+esc(g.name)+'</span></h3><div class="build-details"><div class="build-overview"><div class="build-explanation"><div class="guide-strategy"><h4>玩法思路</h4><p>'+renderLinkedStrategy(g.playstyle,g)+'</p></div><div class="guide-rationale"><h4>為什麼是 '+g.tier+' 級</h4><p>'+renderLinkedStrategy(g.rationale,g)+'</p></div></div><div class="build-tradeoffs"><div><h4>優點</h4><p>'+esc(g.strength)+'</p></div><div><h4>缺點</h4><p>'+esc(g.weakness)+'</p></div></div>'+'</div><div class="build-resources"><div class="build-deck-groups"><div class="build-card-group"><h4>核心卡片</h4><div class="build-guide-cards">'+renderCards(b.core,key+'-core')+'</div></div><div class="build-card-group"><h4>輔助卡片</h4><div class="build-guide-cards">'+renderCards(b.support,key+'-support')+'</div></div></div><div class="relic-group"><h4>關鍵遺物</h4>'+(g.relics.length?'<ul class="relic-list">'+g.relics.map(renderGuideRelic).join('')+'</ul>':'<p class="no-relics">原站未列出指定遺物。</p>')+'</div></div></div></article>';
+ return '<article class="build-panel'+(full?' full-guide':'')+'" id="build-'+key+'" data-search="'+esc(search)+'"'+(guide.builds.find(first=>first.characterPool===g.characterPool).id!==g.id?' hidden':'')+'><h3 class="build-panel-heading"><span class="build-tier" data-tier="'+esc(g.tier)+'" aria-label="'+esc(g.tier)+' 級">'+esc(g.tier)+'</span><span>'+esc(g.name)+'</span></h3><div class="build-details"><div class="build-overview"><div class="build-explanation"><div class="guide-strategy"><h4>玩法思路</h4><p>'+renderLinkedStrategy(g.playstyle,g)+'</p></div><div class="guide-rationale"><h4>為什麼是 '+g.tier+' 級</h4><p>'+renderLinkedStrategy(g.rationale,g)+'</p></div></div><div class="build-tradeoffs"><div><h4>優點</h4><p>'+esc(g.strength)+'</p></div><div><h4>缺點</h4><p>'+esc(g.weakness)+'</p></div>'+renderVersionDifferences(g)+'</div>'+'</div><div class="build-resources"><div class="build-deck-groups"><div class="build-card-group"><h4>核心卡片</h4><div class="build-guide-cards">'+renderCards(b.core,key+'-core')+'</div></div><div class="build-card-group"><h4>輔助卡片</h4><div class="build-guide-cards">'+renderCards(b.support,key+'-support')+'</div></div></div><div class="relic-group"><h4>關鍵遺物</h4>'+(g.relics.length?'<ul class="relic-list">'+g.relics.map(renderGuideRelic).join('')+'</ul>':'<p class="no-relics">原站未列出指定遺物。</p>')+'</div></div></div></article>';
 }
 function characterFile(pool){return '#character-'+iconName[pool];}
 function characterNav(active='Ironclad'){return '<nav class="character-nav" aria-label="流派角色">'+pools.map(([pool,label,color])=>{const icon='data:image/webp;base64,'+fs.readFileSync('assets/cards/icons/'+iconName[pool]+'.webp').toString('base64');return '<a href="'+characterFile(pool)+'" data-character="'+pool+'" aria-label="'+label+'" title="'+label+'" style="--accent:'+color+'"'+(active===pool?' aria-current="page"':'')+'><img class="sidebar-character-icon" src="'+icon+'" alt="" width="32" height="32"></a>';}).join('')+'</nav>';}
@@ -136,6 +141,9 @@ main#main-content .build-explanation>div{min-width:0;padding:0}
 main#main-content .build-details h4{margin:0 0 8px;color:var(--accent);font-size:24px;font-weight:600;line-height:1.4}
 main#main-content .build-details p{margin:0;line-height:1.8}
 main#main-content .build-details .relic-group{margin:0}
+main#main-content .build-version-differences{padding:16px 18px;border-left:3px solid var(--accent);border-radius:6px;background:color-mix(in srgb,var(--accent) 12%,transparent)}
+main#main-content .build-version-differences ul{margin:0;padding-left:1.3em;line-height:1.8;overflow-wrap:anywhere}
+main#main-content .build-version-differences li+li{margin-top:8px}
 main#main-content .build-resources .relic-list{grid-template-columns:minmax(0,1fr)}
 main#main-content .build-content .build-details{position:relative}
 main#main-content .build-details::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;background:var(--line);pointer-events:none}

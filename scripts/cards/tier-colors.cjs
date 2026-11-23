@@ -3,7 +3,7 @@ module.exports = `
 /* Tier A matches the Crimson Mantle name color throughout labels and filters. */
 :root {--card-tier-A:${gold};--catalog-tier-A:${gold}}
 html body :is(.tier,.build-tier,.card-tier-badge,.relic-tier-label,.font-extrabold)[data-tier=A] {
-  --tier-color:${gold}!important;background:${gold}!important;color:#fff!important;border-color:${gold}!important;
+  --tier-color:${gold}!important;background:${gold}!important;color:#000!important;border-color:${gold}!important;
 }
 html body :is([data-tier-filter=A],#card-filter-tier button[value=A]) {
   --tier-color:${gold}!important;--selection-color:${gold}!important;

@@ -2,6 +2,7 @@ process.chdir(require('node:path').resolve(__dirname, '../..'));
 const fs = require('node:fs');
 const assert = require('node:assert/strict');
 const source = JSON.parse(fs.readFileSync('data/cards/english-details.json', 'utf8'));
+const chineseEffects = JSON.parse(fs.readFileSync('data/cards/effects-zh-TW.json', 'utf8')).cards;
 const details = new Map(source.cards.map(card => [card.id, card]));
 const localBuilds = fs.readFileSync('build.html', 'utf8');
 const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -11,7 +12,17 @@ const plain = value => value.replace(/<\/?(?:article|section|div|p|header|h[1-6]
 }).replace(/\s+/g, ' ').trim();
 const renderArticle = require('./render-card-detail.cjs');
 function render(card) {
-  const article=renderArticle(card,{localBuilds,showBuilds:false,showKeywords:false,searchableEffects:true,rarityBeforeType:true,showEffectNotes:false,metadataAboveEffects:true,cornerMetadata:true});
+  const options={localBuilds,showBuilds:false,showKeywords:false,searchableEffects:true,rarityBeforeType:true,showEffectNotes:false,metadataAboveEffects:true,cornerMetadata:true};
+  const localized=chineseEffects[card.id];assert.ok(localized,'Missing Chinese effects '+card.id);
+  const normalize=text=>text===null?null:text.replace(/<(e|s)>(\d+)<\/\1>/g,(_,resource,count)=>('<'+resource+'/>').repeat(Number(count)));
+  const chineseArticle=renderArticle({...card,effect:{base:normalize(localized.base),upgraded:normalize(localized.upgraded)}},options)
+    .replaceAll('Cannot be upgraded.','無法升級。')
+    .replaceAll('所有敵人','<button type="button" class="detail-effect-search" data-effect-search="所有敵人" aria-label="搜尋 所有敵人">所有敵人</button>');
+  const descriptions=[...chineseArticle.matchAll(/<p class="detail-panel-description">([\s\S]*?)<\/p>/g)].map(match=>match[1]);
+  assert.equal(descriptions.length,2,card.id+' Chinese Base/Upgraded panels');
+  let panel=0;
+  const article=renderArticle(card,options).replace(/<p class="detail-panel-description">([\s\S]*?)<\/p>/g,(_,english)=>
+    '<p class="detail-panel-description"><span data-effect-language="en" lang="en">'+english+'</span><span data-effect-language="zh" lang="zh-Hant" hidden>'+descriptions[panel++]+'</span></p>');
   return '<td class="card-detail-cell" data-field="detail" role="cell" colspan="10">'+article+'</td>';
 }
 function attribute(tag, name, value) {
@@ -76,6 +87,7 @@ html = html.replace(/<title>[\s\S]*?<\/title>/, '<title>' + (output === 'cards' 
 html = html.replace(/href="(?:card|card1)\.html#card-/g, 'href="' + (output === 'cards' ? 'card' : output) + '.html#card-');
 const hashScript = '<script>if(location.hash.startsWith("#card-"))requestAnimationFrame(()=>{const row=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(row){row.style.scrollMarginTop="12px";row.scrollIntoView({block:"start",behavior:"instant"});}});</script>';
 html = html.replaceAll(hashScript, '').replace('</body>', hashScript + '</body>');
+html = html.replace('</body>', '<script src="assets/cards/card-effect-language.js"></script></body>');
 const baseCss = fs.readFileSync('assets/cards/cards.css', 'utf8').split('/* Each card occupies one full row with seven detail sections. */')[0].trimEnd();
 fs.writeFileSync('assets/cards/' + output + '.css', baseCss + '\n' + fs.readFileSync('assets/cards/card1-detail.css', 'utf8') + require('./navigation-icons.cjs').styles + require('./desktop-content-width.cjs') + require('./filter-frames.cjs') + require('./page-scroll.cjs') + require('./tier-colors.cjs') + require('./tier-labels.cjs') + require('./card-content-width.cjs'));
 html = html.replace(/<!--card-effect-tooltips-->[\s\S]*?<!--\/card-effect-tooltips-->/g, '');

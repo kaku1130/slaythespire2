@@ -1,24 +1,3547 @@
 {
-  "source": "https://slaythespire2.net/relic",
-  "retrievedDate": "2026-11-21",
-  "version": "v0.111.1",
+  "sources": [
+    "https://slaythespire2.net/relic",
+    "https://slaythespire2.net/zh-TW/relic"
+  ],
+  "retrievedDate": "2026-11-23T05:21:12.373Z",
   "total": 298,
-  "matched": 297,
-  "changed": 1,
-  "keywordPolicy": "Existing colored keyword markup retained; only mismatched description text/resources corrected.",
+  "matched": 298,
+  "changedItems": 294,
   "changes": [
     {
-      "id": "VERY_HOT_COCOA",
-      "name": "滾燙可可",
-      "before": "Start each combat with an additional <e>4</e>.",
-      "after": "Start each combat with an additional 4<e/>."
-    }
-  ],
-  "unmatched": [
+      "id": "AKABEKO",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，獲得8點<g>活力</g>。",
+      "after": "每場戰鬥開始時，獲得 8 層<g>活力</g>。"
+    },
+    {
+      "id": "AKABEKO",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，獲得8點活力。",
+      "after": "每場戰鬥開始時，獲得 8 層活力。"
+    },
+    {
+      "id": "ALCHEMICAL_COFFER",
+      "field": "descI18n",
+      "before": "拾起時，獲得4個放有隨機藥水的藥水欄位。",
+      "after": "拾取時，獲得 4 個藥水欄位，並以隨機<g>藥水</g>填滿。"
+    },
+    {
+      "id": "ALCHEMICAL_COFFER",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得4個放有隨機藥水的藥水欄位。",
+      "after": "拾取時，獲得 4 個藥水欄位，並以隨機藥水填滿。"
+    },
+    {
+      "id": "AMETHYST_AUBERGINE",
+      "field": "descI18n",
+      "before": "敵人額外掉落15<g>金幣</g>。",
+      "after": "敵人額外掉落 15 枚<g>金幣</g>。"
+    },
+    {
+      "id": "AMETHYST_AUBERGINE",
+      "field": "descriptionClean",
+      "before": "敵人額外掉落15金幣。",
+      "after": "敵人額外掉落 15 枚金幣。"
+    },
+    {
+      "id": "ANCHOR",
+      "field": "descI18n",
+      "before": "每場戰鬥開始時獲得10點<g>格擋</g>。",
+      "after": "每場戰鬥開始時，獲得 10 點<g>格擋</g>。"
+    },
+    {
+      "id": "ANCHOR",
+      "field": "descriptionClean",
+      "before": "每場戰鬥開始時獲得10點格擋。",
+      "after": "每場戰鬥開始時，獲得 10 點格擋。"
+    },
+    {
+      "id": "ARCANE_SCROLL",
+      "field": "descI18n",
+      "before": "拾起時，將一張隨機<g>稀有牌</g>加入你的<g>牌組</g>。",
+      "after": "拾取時，獲得一張隨機<g>稀有牌</g>並加入你的<g>牌組</g>。"
+    },
+    {
+      "id": "ARCANE_SCROLL",
+      "field": "descriptionClean",
+      "before": "拾起時，將一張隨機稀有牌加入你的牌組。",
+      "after": "拾取時，獲得一張隨機稀有牌並加入你的牌組。"
+    },
+    {
+      "id": "ARCHAIC_TOOTH",
+      "field": "descI18n",
+      "before": "拾起時，將一張初始卡牌<g>變化</g>為先古版本。",
+      "after": "拾取時，<g>轉化</g>一張起始牌，使其成為遠古版本。"
+    },
+    {
+      "id": "ARCHAIC_TOOTH",
+      "field": "descriptionClean",
+      "before": "拾起時，將一張初始卡牌變化為先古版本。",
+      "after": "拾取時，轉化一張起始牌，使其成為遠古版本。"
+    },
+    {
+      "id": "ART_OF_WAR",
+      "field": "descI18n",
+      "before": "如果你在本回閤中沒有打出過攻擊牌，則在下一回合額外獲得1點<e>1</e>。",
+      "after": "若你的回合中未打出任何攻擊牌，下回合額外獲得 <e>1</e>。"
+    },
+    {
+      "id": "ART_OF_WAR",
+      "field": "descriptionClean",
+      "before": "如果你在本回閤中沒有打出過攻擊牌，則在下一回合額外獲得1點1。",
+      "after": "若你的回合中未打出任何攻擊牌，下回合額外獲得 1。"
+    },
+    {
+      "id": "ASTROLABE",
+      "field": "descI18n",
+      "before": "拾起時，選擇3張牌進行<g>變化</g>，然後將這些牌<g>升級</g>。",
+      "after": "拾取時，<g>轉化</g> 3 張牌，然後將其<g>升級</g>。"
+    },
+    {
+      "id": "ASTROLABE",
+      "field": "descriptionClean",
+      "before": "拾起時，選擇3張牌進行變化，然後將這些牌升級。",
+      "after": "拾取時，轉化 3 張牌，然後將其升級。"
+    },
+    {
+      "id": "BAG_OF_MARBLES",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，給予所有敵人1層<g>易傷</g>。",
+      "after": "每場戰鬥開始時，對所有敵人施加 1 層<g>易傷</g>。"
+    },
+    {
+      "id": "BAG_OF_MARBLES",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，給予所有敵人1層易傷。",
+      "after": "每場戰鬥開始時，對所有敵人施加 1 層易傷。"
+    },
+    {
+      "id": "BAG_OF_PREPARATION",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，額外抽2張牌。",
+      "after": "每場戰鬥開始時，額外抽 2 張牌。"
+    },
+    {
+      "id": "BAG_OF_PREPARATION",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，額外抽2張牌。",
+      "after": "每場戰鬥開始時，額外抽 2 張牌。"
+    },
+    {
+      "id": "BEATING_REMNANT",
+      "field": "descI18n",
+      "before": "你在一回合內失去的生命值不會超過20點。",
+      "after": "你每回合最多只能失去 20 點生命。"
+    },
+    {
+      "id": "BEATING_REMNANT",
+      "field": "descriptionClean",
+      "before": "你在一回合內失去的生命值不會超過20點。",
+      "after": "你每回合最多只能失去 20 點生命。"
+    },
+    {
+      "id": "BEAUTIFUL_BRACELET",
+      "field": "descI18n",
+      "before": "拾起時，從你的<g>牌組</g>中選擇3張牌，<g>附魔</g>：迅捷3。",
+      "after": "拾取時，為你的<g>牌組</g>中隨機 4 張牌<g>附魔</g>上迅捷 2。"
+    },
+    {
+      "id": "BEAUTIFUL_BRACELET",
+      "field": "descriptionClean",
+      "before": "拾起時，從你的牌組中選擇3張牌，附魔：迅捷3。",
+      "after": "拾取時，為你的牌組中隨機 4 張牌附魔上迅捷 2。"
+    },
+    {
+      "id": "BELLOWS",
+      "field": "descI18n",
+      "before": "你在每場戰鬥開始時的<g>手牌</g>，將被<g>升級</g>。",
+      "after": "每場戰鬥第一次抽到的<g>手牌</g>全都會<g>升級</g>。"
+    },
+    {
+      "id": "BELLOWS",
+      "field": "descriptionClean",
+      "before": "你在每場戰鬥開始時的手牌，將被升級。",
+      "after": "每場戰鬥第一次抽到的手牌全都會升級。"
+    },
+    {
+      "id": "BELT_BUCKLE",
+      "field": "descI18n",
+      "before": "當你沒有藥水時，你額外擁有2點<g>敏捷</g>。",
+      "after": "沒有<g>藥水</g>時，你額外擁有 2 層<g>敏捷</g>。"
+    },
+    {
+      "id": "BELT_BUCKLE",
+      "field": "descriptionClean",
+      "before": "當你沒有藥水時，你額外擁有2點敏捷。",
+      "after": "沒有藥水時，你額外擁有 2 層敏捷。"
+    },
+    {
+      "id": "BIG_HAT",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，將2張隨機<g>虛無</g>牌加入你的<g>手牌</g>。",
+      "after": "每場戰鬥開始時，將 2 張隨機<g>虛無</g>牌加入你的<g>手牌</g>。"
+    },
+    {
+      "id": "BIG_HAT",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，將2張隨機虛無牌加入你的手牌。",
+      "after": "每場戰鬥開始時，將 2 張隨機虛無牌加入你的手牌。"
+    },
+    {
+      "id": "BIG_MUSHROOM",
+      "field": "descI18n",
+      "before": "拾起時，將你的最大生命值提升20。在每場戰鬥開始時，少抽2張牌。",
+      "after": "拾取時，使你的最大生命提高 20 點。每場戰鬥開始時，少抽 2 張牌。"
+    },
+    {
+      "id": "BIG_MUSHROOM",
+      "field": "descriptionClean",
+      "before": "拾起時，將你的最大生命值提升20。在每場戰鬥開始時，少抽2張牌。",
+      "after": "拾取時，使你的最大生命提高 20 點。每場戰鬥開始時，少抽 2 張牌。"
+    },
+    {
+      "id": "BIIIG_HUG",
+      "field": "descI18n",
+      "before": "拾起時，從你的<g>牌組</g>中移除4張牌。每當你的<g>抽牌堆</g>打亂洗牌時，將一張<g>煤灰</g>加入你的<g>抽牌堆</g>。",
+      "after": "拾取時，從你的<g>牌組</g>中移除 4 張牌。每當你的<g>抽牌堆</g>洗牌時，將一張<g>煙灰</g>加入你的<g>抽牌堆</g>。"
+    },
+    {
+      "id": "BIIIG_HUG",
+      "field": "descriptionClean",
+      "before": "拾起時，從你的牌組中移除4張牌。每當你的抽牌堆打亂洗牌時，將一張煤灰加入你的抽牌堆。",
+      "after": "拾取時，從你的牌組中移除 4 張牌。每當你的抽牌堆洗牌時，將一張煙灰加入你的抽牌堆。"
+    },
+    {
+      "id": "BING_BONG",
+      "field": "descI18n",
+      "before": "每當你往<g>牌組</g>中增添卡牌時，都將額外添加一張相同的牌。",
+      "after": "每當你將一張牌加入你的<g>牌組</g>時，再加入一張相同的牌。"
+    },
+    {
+      "id": "BING_BONG",
+      "field": "descriptionClean",
+      "before": "每當你往牌組中增添卡牌時，都將額外添加一張相同的牌。",
+      "after": "每當你將一張牌加入你的牌組時，再加入一張相同的牌。"
+    },
+    {
+      "id": "BLACK_BLOOD",
+      "field": "descI18n",
+      "before": "在戰鬥結束時，回覆12點生命。",
+      "after": "戰鬥結束時，恢復 12 點生命。"
+    },
+    {
+      "id": "BLACK_BLOOD",
+      "field": "descriptionClean",
+      "before": "在戰鬥結束時，回覆12點生命。",
+      "after": "戰鬥結束時，恢復 12 點生命。"
+    },
+    {
+      "id": "BLACK_STAR",
+      "field": "descI18n",
+      "before": "<g>精英</g>敵人在被打敗時多掉落一件遺物。",
+      "after": "擊敗<g>菁英</g>時，會額外掉落一件遺物。"
+    },
+    {
+      "id": "BLACK_STAR",
+      "field": "descriptionClean",
+      "before": "精英敵人在被打敗時多掉落一件遺物。",
+      "after": "擊敗菁英時，會額外掉落一件遺物。"
+    },
+    {
+      "id": "BLESSED_ANTLER",
+      "field": "descI18n",
+      "before": "在每回合開始時獲得<e>1</e>。在戰鬥開始時，將3張<g>暈眩</g>放入你的<g>抽牌堆</g>。",
+      "after": "每回合開始時，獲得 <e>1</e>。每場戰鬥開始時，將 3 張<g>暈眩</g>牌洗入你的<g>抽牌堆</g>。"
+    },
+    {
+      "id": "BLESSED_ANTLER",
+      "field": "descriptionClean",
+      "before": "在每回合開始時獲得1。在戰鬥開始時，將3張暈眩放入你的抽牌堆。",
+      "after": "每回合開始時，獲得 1。每場戰鬥開始時，將 3 張暈眩牌洗入你的抽牌堆。"
+    },
+    {
+      "id": "BLOOD_SOAKED_ROSE",
+      "field": "descI18n",
+      "before": "拾起時，將1張執迷加入你的<g>牌組</g>。在回合開始時獲得<e>1</e>。",
+      "after": "拾取時，將 1 張執迷加入你的<g>牌組</g>。每回合開始時，獲得 <e>1</e>。"
+    },
+    {
+      "id": "BLOOD_SOAKED_ROSE",
+      "field": "descriptionClean",
+      "before": "拾起時，將1張執迷加入你的牌組。在回合開始時獲得1。",
+      "after": "拾取時，將 1 張執迷加入你的牌組。每回合開始時，獲得 1。"
+    },
+    {
+      "id": "BLOOD_VIAL",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，回覆2點生命。",
+      "after": "每場戰鬥開始時，恢復 2 點生命。"
+    },
+    {
+      "id": "BLOOD_VIAL",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，回覆2點生命。",
+      "after": "每場戰鬥開始時，恢復 2 點生命。"
+    },
+    {
+      "id": "BONE_FLUTE",
+      "field": "descI18n",
+      "before": "每當<g>奧斯提</g>攻擊時，獲得2點<g>格擋</g>。",
+      "after": "每當<g>奧斯提</g>攻擊時，獲得 2 點<g>格擋</g>。"
+    },
+    {
+      "id": "BONE_FLUTE",
+      "field": "descriptionClean",
+      "before": "每當奧斯提攻擊時，獲得2點格擋。",
+      "after": "每當奧斯提攻擊時，獲得 2 點格擋。"
+    },
+    {
+      "id": "BONE_TEA",
+      "field": "descI18n",
+      "before": "在你接下來的1場戰鬥開始時，<g>升級</g>你的初始手牌。",
+      "after": "接下來 1 場戰鬥開始時，<g>升級</g>你的起始手牌。"
+    },
+    {
+      "id": "BONE_TEA",
+      "field": "descriptionClean",
+      "before": "在你接下來的1場戰鬥開始時，升級你的初始手牌。",
+      "after": "接下來 1 場戰鬥開始時，升級你的起始手牌。"
+    },
+    {
+      "id": "BOOK_OF_FIVE_RINGS",
+      "field": "descI18n",
+      "before": "你每將5張牌加入你的<g>牌組</g>時，回覆20點生命。",
+      "after": "你每將 5 張牌加入你的<g>牌組</g>，就恢復 20 點生命。"
+    },
+    {
+      "id": "BOOK_OF_FIVE_RINGS",
+      "field": "descriptionClean",
+      "before": "你每將5張牌加入你的牌組時，回覆20點生命。",
+      "after": "你每將 5 張牌加入你的牌組，就恢復 20 點生命。"
+    },
+    {
+      "id": "BOOK_REPAIR_KNIFE",
+      "field": "descI18n",
+      "before": "每當有一名不是“爪牙”的敵人死於<g>災厄</g>時，回覆3點生命。",
+      "after": "每當一名非手下敵人因<g>惡兆</g>死亡時，恢復 3 點生命。"
+    },
+    {
+      "id": "BOOK_REPAIR_KNIFE",
+      "field": "descriptionClean",
+      "before": "每當有一名不是“爪牙”的敵人死於災厄時，回覆3點生命。",
+      "after": "每當一名非手下敵人因惡兆死亡時，恢復 3 點生命。"
+    },
+    {
+      "id": "BOOKMARK",
+      "field": "descI18n",
+      "before": "每回合結束時，隨機一張被<g>保留</g>的牌在被打出前的耗能減少1。",
+      "after": "回合結束時，使一張隨機<g>保留</g>牌的耗能降低 1 點，直到被打出為止。"
+    },
+    {
+      "id": "BOOKMARK",
+      "field": "descriptionClean",
+      "before": "每回合結束時，隨機一張被保留的牌在被打出前的耗能減少1。",
+      "after": "回合結束時，使一張隨機保留牌的耗能降低 1 點，直到被打出為止。"
+    },
+    {
+      "id": "BOOMING_CONCH",
+      "field": "descI18n",
+      "before": "在<g>精英</g>戰的戰鬥開始時，額外抽2張牌並獲得<e>1</e>。",
+      "after": "<g>菁英</g>戰鬥開始時，額外抽 2 張牌並獲得 <e>1</e>。"
+    },
+    {
+      "id": "BOOMING_CONCH",
+      "field": "descriptionClean",
+      "before": "在精英戰的戰鬥開始時，額外抽2張牌並獲得1。",
+      "after": "菁英戰鬥開始時，額外抽 2 張牌並獲得 1。"
+    },
+    {
+      "id": "BOUND_PHYLACTERY",
+      "field": "descI18n",
+      "before": "在你的回合開始時，<g>召喚</g>1",
+      "after": "在你的回合開始時，<g>召喚</g> 1。"
+    },
+    {
+      "id": "BOUND_PHYLACTERY",
+      "field": "descriptionClean",
+      "before": "在你的回合開始時，召喚1",
+      "after": "在你的回合開始時，召喚 1。"
+    },
+    {
+      "id": "BOWLER_HAT",
+      "field": "descI18n",
+      "before": "額外獲得%的<g>金幣</g>。",
+      "after": "獲得的<g>金幣</g>增加 %。"
+    },
+    {
+      "id": "BOWLER_HAT",
+      "field": "descriptionClean",
+      "before": "額外獲得%的金幣。",
+      "after": "獲得的金幣增加 %。"
+    },
+    {
+      "id": "BREAD",
+      "field": "descI18n",
+      "before": "在你的第一個回合開始時，失去<e>2</e>。在其餘的回合開始時，獲得<e>1</e>。",
+      "after": "你的第一個回合開始時，失去 <e>2</e>。此後每個回合開始時，獲得 <e>1</e>。"
+    },
+    {
+      "id": "BREAD",
+      "field": "descriptionClean",
+      "before": "在你的第一個回合開始時，失去2。在其餘的回合開始時，獲得1。",
+      "after": "你的第一個回合開始時，失去 2。此後每個回合開始時，獲得 1。"
+    },
+    {
+      "id": "BRILLIANT_SCARF",
+      "field": "descI18n",
+      "before": "你每回合從你的手牌打出的第5張牌可以被免費打出。",
+      "after": "你每回合從手牌打出的第 5 張牌可免費打出。"
+    },
+    {
+      "id": "BRILLIANT_SCARF",
+      "field": "descriptionClean",
+      "before": "你每回合從你的手牌打出的第5張牌可以被免費打出。",
+      "after": "你每回合從手牌打出的第 5 張牌可免費打出。"
+    },
+    {
+      "id": "BRIMSTONE",
+      "field": "descI18n",
+      "before": "在你的每個回合開始時，你獲得2點<g>力量</g>，所有敵人獲得1點<g>力量</g>。",
+      "after": "在你的回合開始時，獲得 2 層<g>力量</g>，且所有敵人獲得 1 層<g>力量</g>。"
+    },
+    {
+      "id": "BRIMSTONE",
+      "field": "descriptionClean",
+      "before": "在你的每個回合開始時，你獲得2點力量，所有敵人獲得1點力量。",
+      "after": "在你的回合開始時，獲得 2 層力量，且所有敵人獲得 1 層力量。"
+    },
+    {
+      "id": "BRONZE_SCALES",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，獲得3點<g>荊棘</g>。",
+      "after": "每場戰鬥開始時，獲得 3 層<g>荊棘</g>。"
+    },
+    {
+      "id": "BRONZE_SCALES",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，獲得3點荊棘。",
+      "after": "每場戰鬥開始時，獲得 3 層荊棘。"
+    },
+    {
+      "id": "BURNING_BLOOD",
+      "field": "descI18n",
+      "before": "在戰鬥結束時，回覆6點生命。",
+      "after": "戰鬥結束時，恢復 6 點生命。"
+    },
+    {
+      "id": "BURNING_BLOOD",
+      "field": "descriptionClean",
+      "before": "在戰鬥結束時，回覆6點生命。",
+      "after": "戰鬥結束時，恢復 6 點生命。"
+    },
+    {
+      "id": "BURNING_STICKS",
+      "field": "descI18n",
+      "before": "每場戰鬥中你第一次<g>消耗</g>技能牌時，將那張牌的複製品加入你的<g>手牌</g>",
+      "after": "每場戰鬥中你第一次<g>消耗</g>技能牌時，將該牌的一張複製品加入你的<g>手牌</g>。"
+    },
+    {
+      "id": "BURNING_STICKS",
+      "field": "descriptionClean",
+      "before": "每場戰鬥中你第一次消耗技能牌時，將那張牌的複製品加入你的手牌",
+      "after": "每場戰鬥中你第一次消耗技能牌時，將該牌的一張複製品加入你的手牌。"
+    },
+    {
+      "id": "BYRDPIP",
+      "field": "descI18n",
+      "before": "拾起時，獲得一張<g>異鳥撲擊</g>。一隻<g>幼年異鳥</g>會在戰鬥中陪伴你。",
+      "after": "拾取時，獲得<g>異鳥俯衝</g>卡牌。一隻<g>異鳥雛鳥</g>會陪你戰鬥。"
+    },
+    {
+      "id": "BYRDPIP",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得一張異鳥撲擊。一隻幼年異鳥會在戰鬥中陪伴你。",
+      "after": "拾取時，獲得異鳥俯衝卡牌。一隻異鳥雛鳥會陪你戰鬥。"
+    },
+    {
+      "id": "CALLING_BELL",
+      "field": "descI18n",
+      "before": "拾起時，獲得一個獨特的詛咒和3件<g>遺物</g>。",
+      "after": "拾取時，獲得一張獨特的詛咒和 3 件<g>遺物</g>。"
+    },
+    {
+      "id": "CALLING_BELL",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得一個獨特的詛咒和3件遺物。",
+      "after": "拾取時，獲得一張獨特的詛咒和 3 件遺物。"
+    },
+    {
+      "id": "CANDELABRA",
+      "field": "descI18n",
+      "before": "在你的第2回合開始時，獲得<e>2</e>。",
+      "after": "你的第 2 個回合開始時，獲得 <e>2</e>。"
+    },
+    {
+      "id": "CANDELABRA",
+      "field": "descriptionClean",
+      "before": "在你的第2回合開始時，獲得2。",
+      "after": "你的第 2 個回合開始時，獲得 2。"
+    },
+    {
+      "id": "CAPTAINS_WHEEL",
+      "field": "descI18n",
+      "before": "在你的第三回合開始時，獲得18點<g>格擋</g>。",
+      "after": "你的第 3 個回合開始時，獲得 18 點<g>格擋</g>。"
+    },
+    {
+      "id": "CAPTAINS_WHEEL",
+      "field": "descriptionClean",
+      "before": "在你的第三回合開始時，獲得18點格擋。",
+      "after": "你的第 3 個回合開始時，獲得 18 點格擋。"
+    },
+    {
+      "id": "CAULDRON",
+      "field": "descI18n",
+      "before": "拾起時，製作5瓶隨機藥水。",
+      "after": "拾取時，釀製 5 瓶隨機<g>藥水</g>。"
+    },
+    {
+      "id": "CAULDRON",
+      "field": "descriptionClean",
+      "before": "拾起時，製作5瓶隨機藥水。",
+      "after": "拾取時，釀製 5 瓶隨機藥水。"
+    },
+    {
+      "id": "CENTENNIAL_PUZZLE",
+      "field": "descI18n",
+      "before": "你在每場戰鬥中第一次損失生命值時，抽3張牌。",
+      "after": "每場戰鬥中你第一次失去生命時，抽 3 張牌。"
+    },
+    {
+      "id": "CENTENNIAL_PUZZLE",
+      "field": "descriptionClean",
+      "before": "你在每場戰鬥中第一次損失生命值時，抽3張牌。",
+      "after": "每場戰鬥中你第一次失去生命時，抽 3 張牌。"
+    },
+    {
+      "id": "CHANDELIER",
+      "field": "descI18n",
+      "before": "在你的第三回合開始時，獲得<e>3</e>。",
+      "after": "你的第 3 個回合開始時，獲得 <e>3</e>。"
+    },
+    {
+      "id": "CHANDELIER",
+      "field": "descriptionClean",
+      "before": "在你的第三回合開始時，獲得3。",
+      "after": "你的第 3 個回合開始時，獲得 3。"
+    },
+    {
+      "id": "CHARONS_ASHES",
+      "field": "descI18n",
+      "before": "每當你<g>消耗</g>一張牌，對所有敵人造成3點傷害。",
+      "after": "每當你<g>消耗</g>一張牌時，對所有敵人造成 3 點傷害。"
+    },
+    {
+      "id": "CHARONS_ASHES",
+      "field": "descriptionClean",
+      "before": "每當你消耗一張牌，對所有敵人造成3點傷害。",
+      "after": "每當你消耗一張牌時，對所有敵人造成 3 點傷害。"
+    },
+    {
+      "id": "CHEMICAL_X",
+      "field": "descI18n",
+      "before": "耗能為X的牌的效果數值增加2點。",
+      "after": "你的耗能為 X 的卡牌效果提高 2。"
+    },
+    {
+      "id": "CHEMICAL_X",
+      "field": "descriptionClean",
+      "before": "耗能為X的牌的效果數值增加2點。",
+      "after": "你的耗能為 X 的卡牌效果提高 2。"
+    },
+    {
+      "id": "CHOICES_PARADOX",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，從5張隨機牌中選擇1張放入你的<g>手牌</g>。被選中的牌獲得<g>保留</g>。",
+      "after": "每場戰鬥開始時，從 5 張隨機卡牌中選擇 1 張加入你的<g>手牌</g>，並為所選牌附加<g>保留</g>。"
+    },
+    {
+      "id": "CHOICES_PARADOX",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，從5張隨機牌中選擇1張放入你的手牌。被選中的牌獲得保留。",
+      "after": "每場戰鬥開始時，從 5 張隨機卡牌中選擇 1 張加入你的手牌，並為所選牌附加保留。"
+    },
+    {
+      "id": "CHOSEN_CHEESE",
+      "field": "descI18n",
+      "before": "在戰鬥結束時，獲得1點最大生命值。",
+      "after": "戰鬥結束時，獲得 1 點最大生命。"
+    },
+    {
+      "id": "CHOSEN_CHEESE",
+      "field": "descriptionClean",
+      "before": "在戰鬥結束時，獲得1點最大生命值。",
+      "after": "戰鬥結束時，獲得 1 點最大生命。"
+    },
     {
       "id": "CIRCLET",
-      "name": "頭環",
-      "reason": "Not listed on the reference page; existing description retained."
+      "field": "descI18n",
+      "before": "這是一個頭環。",
+      "after": "就是個頭環。"
+    },
+    {
+      "id": "CIRCLET",
+      "field": "descriptionClean",
+      "before": "這是一個頭環。",
+      "after": "就是個頭環。"
+    },
+    {
+      "id": "CLAWS",
+      "field": "descI18n",
+      "before": "拾起時，將至多6張牌<g>變化</g>為<g>撕咬</g>。",
+      "after": "拾取時，將最多 6 張牌<g>轉化</g>為<g>猛襲</g>。"
+    },
+    {
+      "id": "CLAWS",
+      "field": "descriptionClean",
+      "before": "拾起時，將至多6張牌變化為撕咬。",
+      "after": "拾取時，將最多 6 張牌轉化為猛襲。"
+    },
+    {
+      "id": "CLOAK_CLASP",
+      "field": "descI18n",
+      "before": "在你的回合結束時，每有一張<g>手牌</g>，就獲得1點<g>格擋</g>",
+      "after": "你的回合結束時，<g>手牌</g>中每有一張牌，就獲得 1 點<g>格擋</g>。"
+    },
+    {
+      "id": "CLOAK_CLASP",
+      "field": "descriptionClean",
+      "before": "在你的回合結束時，每有一張手牌，就獲得1點格擋",
+      "after": "你的回合結束時，手牌中每有一張牌，就獲得 1 點格擋。"
+    },
+    {
+      "id": "CRACKED_CORE",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，<g>生成</g>1個<g>閃電</g>充能球。",
+      "after": "每場戰鬥開始時，<g>凝聚</g> 1 個<g>閃電</g>。"
+    },
+    {
+      "id": "CRACKED_CORE",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，生成1個閃電充能球。",
+      "after": "每場戰鬥開始時，凝聚 1 個閃電。"
+    },
+    {
+      "id": "CROSSBOW",
+      "field": "descI18n",
+      "before": "在你的回合開始時，將一張隨機<g>攻擊牌</g>加入你的<g>手牌</g>。這張牌在本回合可以免費打出。",
+      "after": "在你的回合開始時，將一張隨機<g>攻擊牌</g>加入你的<g>手牌</g>。本回合可免費打出。"
+    },
+    {
+      "id": "CROSSBOW",
+      "field": "descriptionClean",
+      "before": "在你的回合開始時，將一張隨機攻擊牌加入你的手牌。這張牌在本回合可以免費打出。",
+      "after": "在你的回合開始時，將一張隨機攻擊牌加入你的手牌。本回合可免費打出。"
+    },
+    {
+      "id": "CURSED_PEARL",
+      "field": "descI18n",
+      "before": "拾起時，獲得一張貪婪，獲得333<g>金幣</g>。",
+      "after": "拾取時，獲得貪婪。獲得 333 枚<g>金幣</g>。"
+    },
+    {
+      "id": "CURSED_PEARL",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得一張貪婪，獲得333金幣。",
+      "after": "拾取時，獲得貪婪。獲得 333 枚金幣。"
+    },
+    {
+      "id": "DARKSTONE_PERIAPT",
+      "field": "descI18n",
+      "before": "每當你獲得一張詛咒，就將你的最大生命值提升6。",
+      "after": "每當你獲得一張詛咒時，使你的最大生命提高 6 點。"
+    },
+    {
+      "id": "DARKSTONE_PERIAPT",
+      "field": "descriptionClean",
+      "before": "每當你獲得一張詛咒，就將你的最大生命值提升6。",
+      "after": "每當你獲得一張詛咒時，使你的最大生命提高 6 點。"
+    },
+    {
+      "id": "DATA_DISK",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，獲得1點<g>集中</g>。",
+      "after": "每場戰鬥開始時，獲得 1 層<g>集中</g>。"
+    },
+    {
+      "id": "DATA_DISK",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，獲得1點集中。",
+      "after": "每場戰鬥開始時，獲得 1 層集中。"
+    },
+    {
+      "id": "DAUGHTER_OF_THE_WIND",
+      "field": "descI18n",
+      "before": "每當你打出一張攻擊牌時，獲得1點<g>格擋</g>。",
+      "after": "每當你打出一張攻擊牌時，獲得 1 點<g>格擋</g>。"
+    },
+    {
+      "id": "DAUGHTER_OF_THE_WIND",
+      "field": "descriptionClean",
+      "before": "每當你打出一張攻擊牌時，獲得1點格擋。",
+      "after": "每當你打出一張攻擊牌時，獲得 1 點格擋。"
+    },
+    {
+      "id": "DELICATE_FROND",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，用隨機藥水將你的空藥水欄位填滿。",
+      "after": "每場戰鬥開始時，以隨機<g>藥水</g>填滿所有空的藥水欄位。"
+    },
+    {
+      "id": "DELICATE_FROND",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，用隨機藥水將你的空藥水欄位填滿。",
+      "after": "每場戰鬥開始時，以隨機藥水填滿所有空的藥水欄位。"
+    },
+    {
+      "id": "DEMON_TONGUE",
+      "field": "descI18n",
+      "before": "每回合第一次在回合內失去生命值時，回覆等量的生命值。",
+      "after": "你每回合第一次失去生命時，恢復與該次損失等量的生命。"
+    },
+    {
+      "id": "DEMON_TONGUE",
+      "field": "descriptionClean",
+      "before": "每回合第一次在回合內失去生命值時，回覆等量的生命值。",
+      "after": "你每回合第一次失去生命時，恢復與該次損失等量的生命。"
+    },
+    {
+      "id": "DIAMOND_DIADEM",
+      "field": "descI18n",
+      "before": "如果你在本回合打出的牌少於等於2張，則受到敵人的傷害減半。",
+      "after": "每場戰鬥開始時，擁有 20 點<g>格擋</g>。你的第 2 回合開始時不會移除你的<g>格擋</g>。"
+    },
+    {
+      "id": "DIAMOND_DIADEM",
+      "field": "descriptionClean",
+      "before": "如果你在本回合打出的牌少於等於2張，則受到敵人的傷害減半。",
+      "after": "每場戰鬥開始時，擁有 20 點格擋。你的第 2 回合開始時不會移除你的格擋。"
+    },
+    {
+      "id": "DINGY_RUG",
+      "field": "descI18n",
+      "before": "卡牌獎勵現在會包括無色牌。",
+      "after": "卡牌獎勵現在可能包含無色牌。"
+    },
+    {
+      "id": "DINGY_RUG",
+      "field": "descriptionClean",
+      "before": "卡牌獎勵現在會包括無色牌。",
+      "after": "卡牌獎勵現在可能包含無色牌。"
+    },
+    {
+      "id": "DISTINGUISHED_CAPE",
+      "field": "descI18n",
+      "before": "拾起時，失去9點最大生命值。將3張<g>靈體</g>加入你的<g>牌組</g>。",
+      "after": "拾取時，將 2 張隨機詛咒與 3 張<g>靈體</g>加入你的<g>牌組</g>。"
+    },
+    {
+      "id": "DISTINGUISHED_CAPE",
+      "field": "descriptionClean",
+      "before": "拾起時，失去9點最大生命值。將3張靈體加入你的牌組。",
+      "after": "拾取時，將 2 張隨機詛咒與 3 張靈體加入你的牌組。"
+    },
+    {
+      "id": "DIVINE_DESTINY",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，獲得<s>7</s>。",
+      "after": "每場戰鬥開始時，獲得 <s>7</s>。"
+    },
+    {
+      "id": "DIVINE_DESTINY",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，獲得7點輝星。",
+      "after": "每場戰鬥開始時，獲得 7。"
+    },
+    {
+      "id": "DIVINE_RIGHT",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，獲得<s>3</s>。",
+      "after": "每場戰鬥開始時，獲得 <s>3</s>。"
+    },
+    {
+      "id": "DIVINE_RIGHT",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，獲得3。",
+      "after": "每場戰鬥開始時，獲得 3。"
+    },
+    {
+      "id": "DOLLYS_MIRROR",
+      "field": "descI18n",
+      "before": "拾起時，從你的<g>牌組</g>中選擇一張牌進行復制。",
+      "after": "拾取時，獲得你<g>牌組</g>中一張牌的複製品。"
+    },
+    {
+      "id": "DOLLYS_MIRROR",
+      "field": "descriptionClean",
+      "before": "拾起時，從你的牌組中選擇一張牌進行復制。",
+      "after": "拾取時，獲得你牌組中一張牌的複製品。"
+    },
+    {
+      "id": "DRAGON_FRUIT",
+      "field": "descI18n",
+      "before": "每當你獲得<g>金幣</g>時，提升1點你的最大生命值。",
+      "after": "每當你獲得<g>金幣</g>時，使你的最大生命提高 1 點。"
+    },
+    {
+      "id": "DRAGON_FRUIT",
+      "field": "descriptionClean",
+      "before": "每當你獲得金幣時，提升1點你的最大生命值。",
+      "after": "每當你獲得金幣時，使你的最大生命提高 1 點。"
+    },
+    {
+      "id": "DREAM_CATCHER",
+      "field": "descI18n",
+      "before": "每當你<g>休息</g>時，可以添加一張牌到你的<g>牌組</g>。",
+      "after": "每當你<g>休息</g>時，可以將一張牌加入你的<g>牌組</g>。"
+    },
+    {
+      "id": "DREAM_CATCHER",
+      "field": "descriptionClean",
+      "before": "每當你休息時，可以添加一張牌到你的牌組。",
+      "after": "每當你休息時，可以將一張牌加入你的牌組。"
+    },
+    {
+      "id": "DRIFTWOOD",
+      "field": "descI18n",
+      "before": "你可以在每一個卡牌獎勵中重擲一次。",
+      "after": "每份卡牌獎勵可重骰一次。"
+    },
+    {
+      "id": "DRIFTWOOD",
+      "field": "descriptionClean",
+      "before": "你可以在每一個卡牌獎勵中重擲一次。",
+      "after": "每份卡牌獎勵可重骰一次。"
+    },
+    {
+      "id": "DUSTY_TOME",
+      "field": "descI18n",
+      "before": "拾起時，獲得一張<g>先古牌</g>。",
+      "after": "拾取時，獲得一張<g>遠古牌</g>。"
+    },
+    {
+      "id": "DUSTY_TOME",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得一張先古牌。",
+      "after": "拾取時，獲得一張遠古牌。"
+    },
+    {
+      "id": "ECTOPLASM",
+      "field": "descI18n",
+      "before": "你不能再獲得任何<g>金幣</g>。在回合開始時獲得<e>1</e>",
+      "after": "你無法再獲得<g>金幣</g>。每回合開始時，獲得 <e>1</e>。"
+    },
+    {
+      "id": "ECTOPLASM",
+      "field": "descriptionClean",
+      "before": "你不能再獲得任何金幣。在回合開始時獲得1",
+      "after": "你無法再獲得金幣。每回合開始時，獲得 1。"
+    },
+    {
+      "id": "ELECTRIC_SHRYMP",
+      "field": "descI18n",
+      "before": "拾起時，選擇一張技能牌為它<g>附魔</g>：注能。",
+      "after": "拾取時，為一張技能牌<g>附魔</g>上灌注。"
+    },
+    {
+      "id": "ELECTRIC_SHRYMP",
+      "field": "descriptionClean",
+      "before": "拾起時，選擇一張技能牌為它附魔：注能。",
+      "after": "拾取時，為一張技能牌附魔上灌注。"
+    },
+    {
+      "id": "EMBER_TEA",
+      "field": "descI18n",
+      "before": "在接下來的5場戰鬥開始時，獲得2點<g>力量</g>。",
+      "after": "接下來 5 場戰鬥開始時，獲得 2 層<g>力量</g>。"
+    },
+    {
+      "id": "EMBER_TEA",
+      "field": "descriptionClean",
+      "before": "在接下來的5場戰鬥開始時，獲得2點力量。",
+      "after": "接下來 5 場戰鬥開始時，獲得 2 層力量。"
+    },
+    {
+      "id": "EMOTION_CHIP",
+      "field": "descI18n",
+      "before": "在每回合開始時，如果你在之前回合受到過傷害，則觸發所有充能球的被動效果。",
+      "after": "若你在上一回合失去過生命，則在你的回合開始時觸發所有充能球的被動能力。"
+    },
+    {
+      "id": "EMOTION_CHIP",
+      "field": "descriptionClean",
+      "before": "在每回合開始時，如果你在之前回合受到過傷害，則觸發所有充能球的被動效果。",
+      "after": "若你在上一回合失去過生命，則在你的回合開始時觸發所有充能球的被動能力。"
+    },
+    {
+      "id": "EMPTY_CAGE",
+      "field": "descI18n",
+      "before": "拾起時，選擇移除<g>牌組</g>中的2張牌。",
+      "after": "拾取時，從你的<g>牌組</g>中移除 2 張牌。"
+    },
+    {
+      "id": "EMPTY_CAGE",
+      "field": "descriptionClean",
+      "before": "拾起時，選擇移除牌組中的2張牌。",
+      "after": "拾取時，從你的牌組中移除 2 張牌。"
+    },
+    {
+      "id": "ETERNAL_FEATHER",
+      "field": "descI18n",
+      "before": "你的<g>牌組</g>中每有5張牌，當你進入<g>休息處</g>時就會回覆3點生命。",
+      "after": "你的<g>牌組</g>中每有 5 張牌，進入<g>休息處</g>時就恢復 3 點生命。"
+    },
+    {
+      "id": "ETERNAL_FEATHER",
+      "field": "descriptionClean",
+      "before": "你的牌組中每有5張牌，當你進入休息處時就會回覆3點生命。",
+      "after": "你的牌組中每有 5 張牌，進入休息處時就恢復 3 點生命。"
+    },
+    {
+      "id": "FAKE_ANCHOR",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，獲得4點<g>格擋</g>。",
+      "after": "每場戰鬥開始時，獲得 4 點<g>格擋</g>。"
+    },
+    {
+      "id": "FAKE_ANCHOR",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，獲得4點格擋。",
+      "after": "每場戰鬥開始時，獲得 4 點格擋。"
+    },
+    {
+      "id": "FAKE_BLOOD_VIAL",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，回覆1點生命。",
+      "after": "每場戰鬥開始時，恢復 1 點生命。"
+    },
+    {
+      "id": "FAKE_BLOOD_VIAL",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，回覆1點生命。",
+      "after": "每場戰鬥開始時，恢復 1 點生命。"
+    },
+    {
+      "id": "FAKE_HAPPY_FLOWER",
+      "field": "descI18n",
+      "before": "每5個回合，獲得<e>1</e>。",
+      "after": "每經過 5 回合，就獲得 <e>1</e>。"
+    },
+    {
+      "id": "FAKE_HAPPY_FLOWER",
+      "field": "descriptionClean",
+      "before": "每5個回合，獲得1。",
+      "after": "每經過 5 回合，就獲得 1。"
+    },
+    {
+      "id": "FAKE_LEES_WAFFLE",
+      "field": "descI18n",
+      "before": "拾起時，回覆你10%的生命值。",
+      "after": "拾取時，恢復 10% 的生命。"
+    },
+    {
+      "id": "FAKE_LEES_WAFFLE",
+      "field": "descriptionClean",
+      "before": "拾起時，回覆你10%的生命值。",
+      "after": "拾取時，恢復 10% 的生命。"
+    },
+    {
+      "id": "FAKE_MANGO",
+      "field": "descI18n",
+      "before": "拾起時，將你的最大生命值提升3。",
+      "after": "拾取時，使你的最大生命提高 3 點。"
+    },
+    {
+      "id": "FAKE_MANGO",
+      "field": "descriptionClean",
+      "before": "拾起時，將你的最大生命值提升3。",
+      "after": "拾取時，使你的最大生命提高 3 點。"
+    },
+    {
+      "id": "FAKE_MERCHANTS_RUG",
+      "field": "descI18n",
+      "before": "低劣的仿製品。沒有任何作用。",
+      "after": "拙劣的仿製品。毫無作用。"
+    },
+    {
+      "id": "FAKE_MERCHANTS_RUG",
+      "field": "descriptionClean",
+      "before": "低劣的仿製品。沒有任何作用。",
+      "after": "拙劣的仿製品。毫無作用。"
+    },
+    {
+      "id": "FAKE_ORICHALCUM",
+      "field": "descI18n",
+      "before": "如果你在回合結束時沒有任何<g>格擋</g>，獲得3點<g>格擋</g>。",
+      "after": "若你結束回合時沒有<g>格擋</g>，就獲得 3 點<g>格擋</g>。"
+    },
+    {
+      "id": "FAKE_ORICHALCUM",
+      "field": "descriptionClean",
+      "before": "如果你在回合結束時沒有任何格擋，獲得3點格擋。",
+      "after": "若你結束回合時沒有格擋，就獲得 3 點格擋。"
+    },
+    {
+      "id": "FAKE_SNECKO_EYE",
+      "field": "descI18n",
+      "before": "每場戰鬥開始時獲得混亂效果。",
+      "after": "每場戰鬥開始時處於混亂狀態。"
+    },
+    {
+      "id": "FAKE_SNECKO_EYE",
+      "field": "descriptionClean",
+      "before": "每場戰鬥開始時獲得混亂效果。",
+      "after": "每場戰鬥開始時處於混亂狀態。"
+    },
+    {
+      "id": "FAKE_STRIKE_DUMMY",
+      "field": "descI18n",
+      "before": "名字中有“打擊”的卡牌造成1點額外傷害。",
+      "after": "名稱中含有「打擊」的卡牌額外造成 1 點傷害。"
+    },
+    {
+      "id": "FAKE_STRIKE_DUMMY",
+      "field": "descriptionClean",
+      "before": "名字中有“打擊”的卡牌造成1點額外傷害。",
+      "after": "名稱中含有「打擊」的卡牌額外造成 1 點傷害。"
+    },
+    {
+      "id": "FAKE_VENERABLE_TEA_SET",
+      "field": "descI18n",
+      "before": "到達<g>休息處</g>後的下一場戰鬥開始時額外獲得<e>1</e>。",
+      "after": "每當你進入<g>休息處</g>時，下一場戰鬥開始時額外獲得 <e>1</e>。"
+    },
+    {
+      "id": "FAKE_VENERABLE_TEA_SET",
+      "field": "descriptionClean",
+      "before": "到達休息處後的下一場戰鬥開始時額外獲得1。",
+      "after": "每當你進入休息處時，下一場戰鬥開始時額外獲得 1。"
+    },
+    {
+      "id": "FENCING_MANUAL",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，<g>鑄造</g>10。",
+      "after": "每場戰鬥開始時，<g>鑄造</g> 10。"
+    },
+    {
+      "id": "FENCING_MANUAL",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，鑄造10。",
+      "after": "每場戰鬥開始時，鑄造 10。"
+    },
+    {
+      "id": "FESTIVE_POPPER",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，對所有敵人造成9點傷害。",
+      "after": "每場戰鬥開始時，對所有敵人造成 9 點傷害。"
+    },
+    {
+      "id": "FESTIVE_POPPER",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，對所有敵人造成9點傷害。",
+      "after": "每場戰鬥開始時，對所有敵人造成 9 點傷害。"
+    },
+    {
+      "id": "FIDDLE",
+      "field": "descI18n",
+      "before": "在每個回合開始時，額外抽2張牌。你在回合進行中不再能抽任何牌。",
+      "after": "每回合開始時，額外抽 2 張牌。你的回合期間無法抽牌。"
+    },
+    {
+      "id": "FIDDLE",
+      "field": "descriptionClean",
+      "before": "在每個回合開始時，額外抽2張牌。你在回合進行中不再能抽任何牌。",
+      "after": "每回合開始時，額外抽 2 張牌。你的回合期間無法抽牌。"
+    },
+    {
+      "id": "FISHING_ROD",
+      "field": "descI18n",
+      "before": "每3場普通戰鬥，隨機<g>升級</g>你<g>牌組</g>中的一張牌。",
+      "after": "每經過 3 場普通戰鬥，就<g>升級</g>你<g>牌組</g>中的一張隨機卡牌。"
+    },
+    {
+      "id": "FISHING_ROD",
+      "field": "descriptionClean",
+      "before": "每3場普通戰鬥，隨機升級你牌組中的一張牌。",
+      "after": "每經過 3 場普通戰鬥，就升級你牌組中的一張隨機卡牌。"
+    },
+    {
+      "id": "FORGOTTEN_SOUL",
+      "field": "descI18n",
+      "before": "每當你<g>消耗</g>一張牌，隨機對一名敵人造成1點傷害。",
+      "after": "每當你<g>消耗</g>一張牌時，對一名隨機敵人造成 1 點傷害。"
+    },
+    {
+      "id": "FORGOTTEN_SOUL",
+      "field": "descriptionClean",
+      "before": "每當你消耗一張牌，隨機對一名敵人造成1點傷害。",
+      "after": "每當你消耗一張牌時，對一名隨機敵人造成 1 點傷害。"
+    },
+    {
+      "id": "FRAGRANT_MUSHROOM",
+      "field": "descI18n",
+      "before": "拾起時，失去15點生命，然後隨機<g>升級</g>2張牌。",
+      "after": "拾取時，失去 15 點生命，並<g>升級</g> 2 張隨機卡牌。"
+    },
+    {
+      "id": "FRAGRANT_MUSHROOM",
+      "field": "descriptionClean",
+      "before": "拾起時，失去15點生命，然後隨機升級2張牌。",
+      "after": "拾取時，失去 15 點生命，並升級 2 張隨機卡牌。"
+    },
+    {
+      "id": "FRESNEL_LENS",
+      "field": "descI18n",
+      "before": "每當你將一張帶有<g>格擋</g>的牌加入你的<g>牌組</g>時，為那張牌<g>附魔</g>：靈巧2",
+      "after": "每當你將一張可獲得<g>格擋</g>的牌加入你的<g>牌組</g>時，為其<g>附魔</g>上靈巧 2。"
+    },
+    {
+      "id": "FRESNEL_LENS",
+      "field": "descriptionClean",
+      "before": "每當你將一張帶有格擋的牌加入你的牌組時，為那張牌附魔：靈巧2",
+      "after": "每當你將一張可獲得格擋的牌加入你的牌組時，為其附魔上靈巧 2。"
+    },
+    {
+      "id": "FROZEN_EGG",
+      "field": "descI18n",
+      "before": "每當你獲得能力牌時，將其<g>升級</g>。",
+      "after": "每當你將一張能力牌加入你的<g>牌組</g>時，將其<g>升級</g>。"
+    },
+    {
+      "id": "FROZEN_EGG",
+      "field": "descriptionClean",
+      "before": "每當你獲得能力牌時，將其升級。",
+      "after": "每當你將一張能力牌加入你的牌組時，將其升級。"
+    },
+    {
+      "id": "FUNERARY_MASK",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，將3張<g>靈魂</g>加入你的<g>抽牌堆</g>。",
+      "after": "每場戰鬥開始時，將 3 張<g>靈魂</g>加入你的<g>抽牌堆</g>。"
+    },
+    {
+      "id": "FUNERARY_MASK",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，將3張靈魂加入你的抽牌堆。",
+      "after": "每場戰鬥開始時，將 3 張靈魂加入你的抽牌堆。"
+    },
+    {
+      "id": "FUR_COAT",
+      "field": "descI18n",
+      "before": "拾起時，隨機標記7處戰鬥。這些戰鬥中的敵人將只有1點生命。",
+      "after": "拾取時，標記 8 場隨機戰鬥。這些房間中的敵人只有 1 點生命。"
+    },
+    {
+      "id": "FUR_COAT",
+      "field": "descriptionClean",
+      "before": "拾起時，隨機標記7處戰鬥。這些戰鬥中的敵人將只有1點生命。",
+      "after": "拾取時，標記 8 場隨機戰鬥。這些房間中的敵人只有 1 點生命。"
+    },
+    {
+      "id": "GALACTIC_DUST",
+      "field": "descI18n",
+      "before": "每消耗10點<s>1</s>，就獲得10<g>格擋</g>。",
+      "after": "每花費 10 個 <s>1</s>，就獲得 10 點<g>格擋</g>。"
+    },
+    {
+      "id": "GALACTIC_DUST",
+      "field": "descriptionClean",
+      "before": "每消耗10點1，就獲得10格擋。",
+      "after": "每花費 10 個 1，就獲得 10 點格擋。"
+    },
+    {
+      "id": "GAMBLING_CHIP",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，丟棄任意張牌，然後抽相同數量張牌。",
+      "after": "每場戰鬥開始時，可以丟棄任意數量的牌，然後抽取等量的牌。"
+    },
+    {
+      "id": "GAMBLING_CHIP",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，丟棄任意張牌，然後抽相同數量張牌。",
+      "after": "每場戰鬥開始時，可以丟棄任意數量的牌，然後抽取等量的牌。"
+    },
+    {
+      "id": "GAME_PIECE",
+      "field": "descI18n",
+      "before": "每當你打出能力牌時，抽1張牌。",
+      "after": "每當你打出一張能力牌時，抽 1 張牌。"
+    },
+    {
+      "id": "GAME_PIECE",
+      "field": "descriptionClean",
+      "before": "每當你打出能力牌時，抽1張牌。",
+      "after": "每當你打出一張能力牌時，抽 1 張牌。"
+    },
+    {
+      "id": "GHOST_SEED",
+      "field": "descI18n",
+      "before": "<g>打擊</g>和<g>防禦</g>獲得<g>虛無</g>。",
+      "after": "<g>打擊</g>與<g>防禦</g>獲得<g>虛無</g>。"
+    },
+    {
+      "id": "GHOST_SEED",
+      "field": "descriptionClean",
+      "before": "打擊和防禦獲得虛無。",
+      "after": "打擊與防禦獲得虛無。"
+    },
+    {
+      "id": "GIRYA",
+      "field": "descI18n",
+      "before": "你現在能在<g>休息處</g>獲得<g>力量</g>。（最多3次）",
+      "after": "你現在可以在<g>休息處</g>獲得<g>力量</g>。（最多 3 次）"
+    },
+    {
+      "id": "GIRYA",
+      "field": "descriptionClean",
+      "before": "你現在能在休息處獲得力量。（最多3次）",
+      "after": "你現在可以在休息處獲得力量。（最多 3 次）"
+    },
+    {
+      "id": "GLASS_EYE",
+      "field": "descI18n",
+      "before": "拾起時，獲得2組<g>普通</g>、2組<g>罕見</g>、和1組<g>稀有</g>卡牌獎勵。",
+      "after": "拾取時，獲得 2 張<g>普通</g>牌、2 張<g>罕見</g>牌與 1 張<g>稀有</g>牌。"
+    },
+    {
+      "id": "GLASS_EYE",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得2組普通、2組罕見、和1組稀有卡牌獎勵。",
+      "after": "拾取時，獲得 2 張普通牌、2 張罕見牌與 1 張稀有牌。"
+    },
+    {
+      "id": "GLITTER",
+      "field": "descI18n",
+      "before": "為之後的所有卡牌獎勵<g>附魔</g>：華彩。",
+      "after": "為所有卡牌獎勵中的卡牌<g>附魔</g>上華彩。"
+    },
+    {
+      "id": "GLITTER",
+      "field": "descriptionClean",
+      "before": "為之後的所有卡牌獎勵附魔：華彩。",
+      "after": "為所有卡牌獎勵中的卡牌附魔上華彩。"
+    },
+    {
+      "id": "GNARLED_HAMMER",
+      "field": "descI18n",
+      "before": "拾起時，從你的<g>牌組</g>中選擇至多3張攻擊牌，<g>附魔</g>：鋒利3。",
+      "after": "拾取時，為最多 3 張攻擊牌<g>附魔</g>上鋒利 3。"
+    },
+    {
+      "id": "GNARLED_HAMMER",
+      "field": "descriptionClean",
+      "before": "拾起時，從你的牌組中選擇至多3張攻擊牌，附魔：鋒利3。",
+      "after": "拾取時，為最多 3 張攻擊牌附魔上鋒利 3。"
+    },
+    {
+      "id": "GOLD_PLATED_CABLES",
+      "field": "descI18n",
+      "before": "你最右側的充能球會額外觸發一次被動效果。",
+      "after": "你最右側充能球的被動能力會額外觸發一次。"
+    },
+    {
+      "id": "GOLD_PLATED_CABLES",
+      "field": "descriptionClean",
+      "before": "你最右側的充能球會額外觸發一次被動效果。",
+      "after": "你最右側充能球的被動能力會額外觸發一次。"
+    },
+    {
+      "id": "GOLDEN_COMPASS",
+      "field": "descI18n",
+      "before": "拾起時，將第2<g>階段</g>的地圖替換為一條特殊的直道。",
+      "after": "拾取時，將<g>第</g> 2 <g>幕</g>地圖替換為一條特殊路徑。"
+    },
+    {
+      "id": "GOLDEN_COMPASS",
+      "field": "descriptionClean",
+      "before": "拾起時，將第2階段的地圖替換為一條特殊的直道。",
+      "after": "拾取時，將第 2 幕地圖替換為一條特殊路徑。"
+    },
+    {
+      "id": "GOLDEN_PEARL",
+      "field": "descI18n",
+      "before": "拾起時，獲得150<g>金幣</g>。",
+      "after": "拾取時，獲得 150 枚<g>金幣</g>。"
+    },
+    {
+      "id": "GOLDEN_PEARL",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得150金幣。",
+      "after": "拾取時，獲得 150 枚金幣。"
+    },
+    {
+      "id": "GORGET",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，獲得4層<g>覆甲</g>。",
+      "after": "每場戰鬥開始時，獲得 4 層<g>鍍甲</g>。"
+    },
+    {
+      "id": "GORGET",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，獲得4層覆甲。",
+      "after": "每場戰鬥開始時，獲得 4 層鍍甲。"
+    },
+    {
+      "id": "GREMLIN_HORN",
+      "field": "descI18n",
+      "before": "每當有一名敵人死亡時，獲得<e>1</e>並抽1張牌。",
+      "after": "每當一名敵人死亡時，獲得 <e>1</e> 並抽 1 張牌。"
+    },
+    {
+      "id": "GREMLIN_HORN",
+      "field": "descriptionClean",
+      "before": "每當有一名敵人死亡時，獲得1並抽1張牌。",
+      "after": "每當一名敵人死亡時，獲得 1 並抽 1 張牌。"
+    },
+    {
+      "id": "HAND_DRILL",
+      "field": "descI18n",
+      "before": "每當你突破敵人的<g>格擋</g>時，給予其2層<g>易傷</g>。",
+      "after": "每當你破除敵人的<g>格擋</g>時，施加 2 層<g>易傷</g>。"
+    },
+    {
+      "id": "HAND_DRILL",
+      "field": "descriptionClean",
+      "before": "每當你突破敵人的格擋時，給予其2層易傷。",
+      "after": "每當你破除敵人的格擋時，施加 2 層易傷。"
+    },
+    {
+      "id": "HAPPY_FLOWER",
+      "field": "descI18n",
+      "before": "每3個回合，獲得<e>1</e>。",
+      "after": "每經過 3 回合，就獲得 <e>1</e>。"
+    },
+    {
+      "id": "HAPPY_FLOWER",
+      "field": "descriptionClean",
+      "before": "每3個回合，獲得1。",
+      "after": "每經過 3 回合，就獲得 1。"
+    },
+    {
+      "id": "HEFTY_TABLET",
+      "field": "descI18n",
+      "before": "拾起時，從3張稀有牌中選擇1張加入你的<g>牌組</g>，同時將1張受傷加入你的<g>牌組</g>。",
+      "after": "拾取時，從 3 張稀有牌中選擇 1 張加入你的<g>牌組</g>，並將 1 張受傷加入你的<g>牌組</g>。"
+    },
+    {
+      "id": "HEFTY_TABLET",
+      "field": "descriptionClean",
+      "before": "拾起時，從3張稀有牌中選擇1張加入你的牌組，同時將1張受傷加入你的牌組。",
+      "after": "拾取時，從 3 張稀有牌中選擇 1 張加入你的牌組，並將 1 張受傷加入你的牌組。"
+    },
+    {
+      "id": "HELICAL_DART",
+      "field": "descI18n",
+      "before": "你每打出一張<g>小刀</g>，就在本回合獲得1點<g>敏捷</g>。",
+      "after": "每當你打出一張<g>小刀</g>時，本回合獲得 1 層<g>敏捷</g>。"
+    },
+    {
+      "id": "HELICAL_DART",
+      "field": "descriptionClean",
+      "before": "你每打出一張小刀，就在本回合獲得1點敏捷。",
+      "after": "每當你打出一張小刀時，本回合獲得 1 層敏捷。"
+    },
+    {
+      "id": "HISTORY_COURSE",
+      "field": "descI18n",
+      "before": "在你的回合開始時，打出一張你上一回合最後打出的攻擊牌或技能牌的複製品。",
+      "after": "你的回合開始時，打出一張你上個打出攻擊牌的複製品。"
+    },
+    {
+      "id": "HISTORY_COURSE",
+      "field": "descriptionClean",
+      "before": "在你的回合開始時，打出一張你上一回合最後打出的攻擊牌或技能牌的複製品。",
+      "after": "你的回合開始時，打出一張你上個打出攻擊牌的複製品。"
+    },
+    {
+      "id": "HORN_CLEAT",
+      "field": "descI18n",
+      "before": "在你的第二回合開始時，獲得14點<g>格擋</g>。",
+      "after": "你的第 2 個回合開始時，獲得 14 點<g>格擋</g>。"
+    },
+    {
+      "id": "HORN_CLEAT",
+      "field": "descriptionClean",
+      "before": "在你的第二回合開始時，獲得14點格擋。",
+      "after": "你的第 2 個回合開始時，獲得 14 點格擋。"
+    },
+    {
+      "id": "ICE_CREAM",
+      "field": "descI18n",
+      "before": "多餘的能量可以留到下一回合。",
+      "after": "能量現在會保留至下回合。"
+    },
+    {
+      "id": "ICE_CREAM",
+      "field": "descriptionClean",
+      "before": "多餘的能量可以留到下一回合。",
+      "after": "能量現在會保留至下回合。"
+    },
+    {
+      "id": "INFUSED_CORE",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，<g>生成</g>3個<g>閃電</g>充能球。<g>閃電</g>充能球額外造成1點傷害。",
+      "after": "每場戰鬥開始時，<g>凝聚</g> 3 個<g>閃電</g>。<g>閃電</g>額外造成 1 點傷害。"
+    },
+    {
+      "id": "INFUSED_CORE",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，生成3個閃電充能球。閃電充能球額外造成1點傷害。",
+      "after": "每場戰鬥開始時，凝聚 3 個閃電。閃電額外造成 1 點傷害。"
+    },
+    {
+      "id": "INTIMIDATING_HELMET",
+      "field": "descI18n",
+      "before": "每當你打出一張耗能大於等於<e>2</e>的牌，獲得4點<g>格擋</g>。",
+      "after": "每當你打出一張耗能不少於 <e>2</e> 的牌時，獲得 4 點<g>格擋</g>。"
+    },
+    {
+      "id": "INTIMIDATING_HELMET",
+      "field": "descriptionClean",
+      "before": "每當你打出一張耗能大於等於2的牌，獲得4點格擋。",
+      "after": "每當你打出一張耗能不少於 2 的牌時，獲得 4 點格擋。"
+    },
+    {
+      "id": "IRON_CLUB",
+      "field": "descI18n",
+      "before": "你每打出4張牌，就抽1張牌。",
+      "after": "你每打出 4 張牌，就抽 1 張牌。"
+    },
+    {
+      "id": "IRON_CLUB",
+      "field": "descriptionClean",
+      "before": "你每打出4張牌，就抽1張牌。",
+      "after": "你每打出 4 張牌，就抽 1 張牌。"
+    },
+    {
+      "id": "IVORY_TILE",
+      "field": "descI18n",
+      "before": "每當你打出一張耗能大於等於<e>3</e>的牌時，獲得<e>1</e>。",
+      "after": "每當你打出一張耗能不少於 <e>3</e> 的牌時，獲得 <e>1</e>。"
+    },
+    {
+      "id": "IVORY_TILE",
+      "field": "descriptionClean",
+      "before": "每當你打出一張耗能大於等於3的牌時，獲得1。",
+      "after": "每當你打出一張耗能不少於 3 的牌時，獲得 1。"
+    },
+    {
+      "id": "JEWELED_MASK",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，將一張隨機能力牌從你的<g>抽牌堆</g>放入你的<g>手牌</g>，這張牌在本場戰鬥可以免費打出。",
+      "after": "每場戰鬥開始時，將你<g>抽牌堆</g>中的一張隨機能力牌放入你的<g>手牌</g>。本場戰鬥可免費打出。"
+    },
+    {
+      "id": "JEWELED_MASK",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，將一張隨機能力牌從你的抽牌堆放入你的手牌，這張牌在本場戰鬥可以免費打出。",
+      "after": "每場戰鬥開始時，將你抽牌堆中的一張隨機能力牌放入你的手牌。本場戰鬥可免費打出。"
+    },
+    {
+      "id": "JEWELRY_BOX",
+      "field": "descI18n",
+      "before": "拾起時，將1張<g>神化</g>加入你的<g>牌組</g>。",
+      "after": "拾取時，將 1 張<g>神化</g>加入你的<g>牌組</g>。"
+    },
+    {
+      "id": "JEWELRY_BOX",
+      "field": "descriptionClean",
+      "before": "拾起時，將1張神化加入你的牌組。",
+      "after": "拾取時，將 1 張神化加入你的牌組。"
+    },
+    {
+      "id": "JOSS_PAPER",
+      "field": "descI18n",
+      "before": "你每<g>消耗</g>5張牌，就抽1張牌。",
+      "after": "每當你<g>消耗</g>卡牌達 5 次時，抽 1 張牌。"
+    },
+    {
+      "id": "JOSS_PAPER",
+      "field": "descriptionClean",
+      "before": "你每消耗5張牌，就抽1張牌。",
+      "after": "每當你消耗卡牌達 5 次時，抽 1 張牌。"
+    },
+    {
+      "id": "JUZU_BRACELET",
+      "field": "descI18n",
+      "before": "你在<g>?</g>房間中不會再遭遇常規戰鬥。",
+      "after": "<g>？</g>房間中不會再遇到普通敵人戰鬥。"
+    },
+    {
+      "id": "JUZU_BRACELET",
+      "field": "descriptionClean",
+      "before": "你在?房間中不會再遭遇常規戰鬥。",
+      "after": "？房間中不會再遇到普通敵人戰鬥。"
+    },
+    {
+      "id": "KALEIDOSCOPE",
+      "field": "descI18n",
+      "before": "拾起時，獲得2次來自其他角色的卡牌獎勵。",
+      "after": "拾取時，獲得其他角色的 2 份卡牌獎勵。"
+    },
+    {
+      "id": "KALEIDOSCOPE",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得2次來自其他角色的卡牌獎勵。",
+      "after": "拾取時，獲得其他角色的 2 份卡牌獎勵。"
+    },
+    {
+      "id": "KIFUDA",
+      "field": "descI18n",
+      "before": "拾起時，從你的<g>牌組</g>中選擇至多3張牌，<g>附魔</g>：伶俐。",
+      "after": "拾取時，為最多 3 張牌<g>附魔</g>上俐落。"
+    },
+    {
+      "id": "KIFUDA",
+      "field": "descriptionClean",
+      "before": "拾起時，從你的牌組中選擇至多3張牌，附魔：伶俐。",
+      "after": "拾取時，為最多 3 張牌附魔上俐落。"
+    },
+    {
+      "id": "KUNAI",
+      "field": "descI18n",
+      "before": "你每在同一回合內打出3張攻擊牌，就獲得1點<g>敏捷</g>。",
+      "after": "每當你在單一回合中打出 3 張攻擊牌時，獲得 1 層<g>敏捷</g>。"
+    },
+    {
+      "id": "KUNAI",
+      "field": "descriptionClean",
+      "before": "你每在同一回合內打出3張攻擊牌，就獲得1點敏捷。",
+      "after": "每當你在單一回合中打出 3 張攻擊牌時，獲得 1 層敏捷。"
+    },
+    {
+      "id": "KUSARIGAMA",
+      "field": "descI18n",
+      "before": "你每在同一回合內打出3張攻擊牌，就隨機對一名敵人造成6點傷害。",
+      "after": "每當你在單一回合中打出 3 張攻擊牌時，對一名隨機敵人造成 6 點傷害。"
+    },
+    {
+      "id": "KUSARIGAMA",
+      "field": "descriptionClean",
+      "before": "你每在同一回合內打出3張攻擊牌，就隨機對一名敵人造成6點傷害。",
+      "after": "每當你在單一回合中打出 3 張攻擊牌時，對一名隨機敵人造成 6 點傷害。"
+    },
+    {
+      "id": "LANTERN",
+      "field": "descI18n",
+      "before": "在每場戰鬥的第一回合獲得<e>1</e>。",
+      "after": "每場戰鬥開始時，額外獲得 <e>1</e>。"
+    },
+    {
+      "id": "LANTERN",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥的第一回合獲得1。",
+      "after": "每場戰鬥開始時，額外獲得 1。"
+    },
+    {
+      "id": "LARGE_CAPSULE",
+      "field": "descI18n",
+      "before": "拾起時，獲得2件隨機<g>遺物</g>。額外將一對<g>打擊</g>和<g>防禦</g>，加入你的<g>牌組</g>。",
+      "after": "拾取時，獲得 2 件隨機<g>遺物</g>。將一張額外的<g>打擊</g>與<g>防禦</g>加入你的<g>牌組</g>。"
+    },
+    {
+      "id": "LARGE_CAPSULE",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得2件隨機遺物。額外將一對打擊和防禦，加入你的牌組。",
+      "after": "拾取時，獲得 2 件隨機遺物。將一張額外的打擊與防禦加入你的牌組。"
+    },
+    {
+      "id": "LASTING_CANDY",
+      "field": "descI18n",
+      "before": "每兩場戰鬥，你的卡牌獎勵就會額外包含一張能力牌。",
+      "after": "每隔一場戰鬥，你的卡牌獎勵就會多一張能力牌。"
+    },
+    {
+      "id": "LASTING_CANDY",
+      "field": "descriptionClean",
+      "before": "每兩場戰鬥，你的卡牌獎勵就會額外包含一張能力牌。",
+      "after": "每隔一場戰鬥，你的卡牌獎勵就會多一張能力牌。"
+    },
+    {
+      "id": "LAVA_LAMP",
+      "field": "descI18n",
+      "before": "在戰鬥結束時，如果你沒有受到傷害，則<g>升級</g>你的所有卡牌獎勵。",
+      "after": "戰鬥結束時，若你未受到傷害，<g>升級</g>所有卡牌獎勵。"
+    },
+    {
+      "id": "LAVA_LAMP",
+      "field": "descriptionClean",
+      "before": "在戰鬥結束時，如果你沒有受到傷害，則升級你的所有卡牌獎勵。",
+      "after": "戰鬥結束時，若你未受到傷害，升級所有卡牌獎勵。"
+    },
+    {
+      "id": "LAVA_ROCK",
+      "field": "descI18n",
+      "before": "第一階段的Boss敵人額外掉落2件<g>遺物</g>。",
+      "after": "第 1 幕頭目會掉落 2 件<g>遺物</g>。"
+    },
+    {
+      "id": "LAVA_ROCK",
+      "field": "descriptionClean",
+      "before": "第一階段的Boss敵人額外掉落2件遺物。",
+      "after": "第 1 幕頭目會掉落 2 件遺物。"
+    },
+    {
+      "id": "LEAD_PAPERWEIGHT",
+      "field": "descI18n",
+      "before": "拾起時，從2張無色牌中選擇1張加入你的<g>牌組</g>。",
+      "after": "拾取時，從 2 張無色牌中選擇 1 張加入你的<g>牌組</g>。"
+    },
+    {
+      "id": "LEAD_PAPERWEIGHT",
+      "field": "descriptionClean",
+      "before": "拾起時，從2張無色牌中選擇1張加入你的牌組。",
+      "after": "拾取時，從 2 張無色牌中選擇 1 張加入你的牌組。"
+    },
+    {
+      "id": "LEAFY_POULTICE",
+      "field": "descI18n",
+      "before": "拾起時，<g>變化</g>你的1張<g>打擊</g>和1張<g>防禦</g>，然後失去12點最大生命。",
+      "after": "拾取時，<g>轉化</g>你的 1 張<g>打擊</g>和 1 張<g>防禦</g>，並失去 12 點最大生命。"
+    },
+    {
+      "id": "LEAFY_POULTICE",
+      "field": "descriptionClean",
+      "before": "拾起時，變化你的1張打擊和1張防禦，然後失去12點最大生命。",
+      "after": "拾取時，轉化你的 1 張打擊和 1 張防禦，並失去 12 點最大生命。"
+    },
+    {
+      "id": "LEES_WAFFLE",
+      "field": "descI18n",
+      "before": "拾起時，將你的最大生命值提升7點，並回復所有生命。",
+      "after": "拾取時，使你的最大生命提高 7 點並完全恢復生命。"
+    },
+    {
+      "id": "LEES_WAFFLE",
+      "field": "descriptionClean",
+      "before": "拾起時，將你的最大生命值提升7點，並回復所有生命。",
+      "after": "拾取時，使你的最大生命提高 7 點並完全恢復生命。"
+    },
+    {
+      "id": "LETTER_OPENER",
+      "field": "descI18n",
+      "before": "你每在同一回合內打出3張技能牌，就對所有敵人造成5點傷害。",
+      "after": "每當你在單一回合中打出 3 張技能牌時，對所有敵人造成 5 點傷害。"
+    },
+    {
+      "id": "LETTER_OPENER",
+      "field": "descriptionClean",
+      "before": "你每在同一回合內打出3張技能牌，就對所有敵人造成5點傷害。",
+      "after": "每當你在單一回合中打出 3 張技能牌時，對所有敵人造成 5 點傷害。"
+    },
+    {
+      "id": "LIZARD_TAIL",
+      "field": "descI18n",
+      "before": "當你的生命值將要降低至0或以下時，回覆到最大生命值的50%（僅能起效一次）。",
+      "after": "當你的生命即將降至 0 時，改為將生命恢復至最大生命的 50%（僅能生效一次）。"
+    },
+    {
+      "id": "LIZARD_TAIL",
+      "field": "descriptionClean",
+      "before": "當你的生命值將要降低至0或以下時，回覆到最大生命值的50%（僅能起效一次）。",
+      "after": "當你的生命即將降至 0 時，改為將生命恢復至最大生命的 50%（僅能生效一次）。"
+    },
+    {
+      "id": "LOOMING_FRUIT",
+      "field": "descI18n",
+      "before": "拾起時，將你的最大生命值提升31。",
+      "after": "拾取時，使你的最大生命提高 31 點。"
+    },
+    {
+      "id": "LOOMING_FRUIT",
+      "field": "descriptionClean",
+      "before": "拾起時，將你的最大生命值提升31。",
+      "after": "拾取時，使你的最大生命提高 31 點。"
+    },
+    {
+      "id": "LORDS_PARASOL",
+      "field": "descI18n",
+      "before": "當你遇見<g>商人</g>時，立刻獲得他所出售的所有物品。",
+      "after": "遇到<g>商人</g>時，立即取得他出售的所有物品。"
+    },
+    {
+      "id": "LORDS_PARASOL",
+      "field": "descriptionClean",
+      "before": "當你遇見商人時，立刻獲得他所出售的所有物品。",
+      "after": "遇到商人時，立即取得他出售的所有物品。"
+    },
+    {
+      "id": "LOST_COFFER",
+      "field": "descI18n",
+      "before": "拾起時，獲得1次卡牌獎勵和1瓶隨機藥水。",
+      "after": "拾取時，獲得 1 份卡牌獎勵並取得 1 瓶隨機藥水。"
+    },
+    {
+      "id": "LOST_COFFER",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得1次卡牌獎勵和1瓶隨機藥水。",
+      "after": "拾取時，獲得 1 份卡牌獎勵並取得 1 瓶隨機藥水。"
+    },
+    {
+      "id": "LOST_WISP",
+      "field": "descI18n",
+      "before": "你每打出一張能力牌，就對所有敵人造成8點傷害。",
+      "after": "每當你打出一張能力牌時，對所有敵人造成 8 點傷害。"
+    },
+    {
+      "id": "LOST_WISP",
+      "field": "descriptionClean",
+      "before": "你每打出一張能力牌，就對所有敵人造成8點傷害。",
+      "after": "每當你打出一張能力牌時，對所有敵人造成 8 點傷害。"
+    },
+    {
+      "id": "LUCKY_FYSH",
+      "field": "descI18n",
+      "before": "每當你將一張卡牌加入你的<g>牌組</g>時，獲得15<g>金幣</g>。",
+      "after": "每當你將一張牌加入你的<g>牌組</g>時，獲得 15 枚<g>金幣</g>。"
+    },
+    {
+      "id": "LUCKY_FYSH",
+      "field": "descriptionClean",
+      "before": "每當你將一張卡牌加入你的牌組時，獲得15金幣。",
+      "after": "每當你將一張牌加入你的牌組時，獲得 15 枚金幣。"
+    },
+    {
+      "id": "LUNAR_PASTRY",
+      "field": "descI18n",
+      "before": "在你的回合結束時，獲得<s>1</s>。",
+      "after": "在你的回合結束時，獲得 <s>1</s>。"
+    },
+    {
+      "id": "LUNAR_PASTRY",
+      "field": "descriptionClean",
+      "before": "在你的回合結束時，獲得1。",
+      "after": "在你的回合結束時，獲得 1。"
+    },
+    {
+      "id": "MANGO",
+      "field": "descI18n",
+      "before": "拾起時，將你的最大生命值提升14。",
+      "after": "拾取時，使你的最大生命提高 14 點。"
+    },
+    {
+      "id": "MANGO",
+      "field": "descriptionClean",
+      "before": "拾起時，將你的最大生命值提升14。",
+      "after": "拾取時，使你的最大生命提高 14 點。"
+    },
+    {
+      "id": "MASSIVE_SCROLL",
+      "field": "descI18n",
+      "before": "拾起時，從3張<g>多人遊戲牌</g>中選擇1張加入你的<g>牌組</g>。",
+      "after": "拾取時，從 3 張<g>多人遊戲卡牌</g>中選擇 1 張加入你的<g>牌組</g>。"
+    },
+    {
+      "id": "MASSIVE_SCROLL",
+      "field": "descriptionClean",
+      "before": "拾起時，從3張多人遊戲牌中選擇1張加入你的牌組。",
+      "after": "拾取時，從 3 張多人遊戲卡牌中選擇 1 張加入你的牌組。"
+    },
+    {
+      "id": "MAW_BANK",
+      "field": "descI18n",
+      "before": "每攀爬一層樓層，就獲得12<g>金幣</g>。一旦在商店中花費<g>金幣</g>就會使其失效。",
+      "after": "每當你爬上一層樓，就獲得 12 枚<g>金幣</g>。你在商店花費任何<g>金幣</g>後，此效果就不再生效。"
+    },
+    {
+      "id": "MAW_BANK",
+      "field": "descriptionClean",
+      "before": "每攀爬一層樓層，就獲得12金幣。一旦在商店中花費金幣就會使其失效。",
+      "after": "每當你爬上一層樓，就獲得 12 枚金幣。你在商店花費任何金幣後，此效果就不再生效。"
+    },
+    {
+      "id": "MEAL_TICKET",
+      "field": "descI18n",
+      "before": "每當你進入商店房間時，回覆15點生命。",
+      "after": "每當你進入商店房間時，恢復 15 點生命。"
+    },
+    {
+      "id": "MEAL_TICKET",
+      "field": "descriptionClean",
+      "before": "每當你進入商店房間時，回覆15點生命。",
+      "after": "每當你進入商店房間時，恢復 15 點生命。"
+    },
+    {
+      "id": "MEAT_CLEAVER",
+      "field": "descI18n",
+      "before": "你可以在休息處進行<g>烹飪</g>。",
+      "after": "你可以在休息處<g>烹飪</g>。"
+    },
+    {
+      "id": "MEAT_CLEAVER",
+      "field": "descriptionClean",
+      "before": "你可以在休息處進行烹飪。",
+      "after": "你可以在休息處烹飪。"
+    },
+    {
+      "id": "MEAT_ON_THE_BONE",
+      "field": "descI18n",
+      "before": "如果你在戰鬥結束時生命值等於或低於50%，回覆12點生命。",
+      "after": "若戰鬥結束時你的生命不高於 50%，就恢復 12 點生命。"
+    },
+    {
+      "id": "MEAT_ON_THE_BONE",
+      "field": "descriptionClean",
+      "before": "如果你在戰鬥結束時生命值等於或低於50%，回覆12點生命。",
+      "after": "若戰鬥結束時你的生命不高於 50%，就恢復 12 點生命。"
+    },
+    {
+      "id": "MEMBERSHIP_CARD",
+      "field": "descI18n",
+      "before": "所有商品打折50%！",
+      "after": "所有商品價格降低 50%！"
+    },
+    {
+      "id": "MEMBERSHIP_CARD",
+      "field": "descriptionClean",
+      "before": "所有商品打折50%！",
+      "after": "所有商品價格降低 50%！"
+    },
+    {
+      "id": "MERCURY_HOURGLASS",
+      "field": "descI18n",
+      "before": "在你的回合開始時，對所有敵人造成3點傷害。",
+      "after": "在你的回合開始時，對所有敵人造成 3 點傷害。"
+    },
+    {
+      "id": "MERCURY_HOURGLASS",
+      "field": "descriptionClean",
+      "before": "在你的回合開始時，對所有敵人造成3點傷害。",
+      "after": "在你的回合開始時，對所有敵人造成 3 點傷害。"
+    },
+    {
+      "id": "METRONOME",
+      "field": "descI18n",
+      "before": "每場戰鬥中你首次<g>生成</g>7個<g>充能球</g>時，對所有敵人造成30點傷害。",
+      "after": "每場戰鬥中你第一次<g>凝聚</g> 7 個<g>充能球</g>時，對所有敵人造成 30 點傷害。"
+    },
+    {
+      "id": "METRONOME",
+      "field": "descriptionClean",
+      "before": "每場戰鬥中你首次生成7個充能球時，對所有敵人造成30點傷害。",
+      "after": "每場戰鬥中你第一次凝聚 7 個充能球時，對所有敵人造成 30 點傷害。"
+    },
+    {
+      "id": "MINI_REGENT",
+      "field": "descI18n",
+      "before": "每回合你第一次花費<s>1</s>時，獲得1點<g>力量</g>。",
+      "after": "你每回合第一次花費 <s>1</s> 時，獲得 1 層<g>力量</g>。"
+    },
+    {
+      "id": "MINI_REGENT",
+      "field": "descriptionClean",
+      "before": "每回合你第一次花費1時，獲得1點力量。",
+      "after": "你每回合第一次花費 1 時，獲得 1 層力量。"
+    },
+    {
+      "id": "MINIATURE_CANNON",
+      "field": "descI18n",
+      "before": "<g>升級</g>的攻擊牌額外造成3點傷害。",
+      "after": "<g>已升級</g>的攻擊牌額外造成 3 點傷害。"
+    },
+    {
+      "id": "MINIATURE_CANNON",
+      "field": "descriptionClean",
+      "before": "升級的攻擊牌額外造成3點傷害。",
+      "after": "已升級的攻擊牌額外造成 3 點傷害。"
+    },
+    {
+      "id": "MOLTEN_EGG",
+      "field": "descI18n",
+      "before": "每當你獲得<g>攻擊牌</g>時，將其<g>升級</g>。",
+      "after": "每當你將一張攻擊牌加入你的<g>牌組</g>時，將其<g>升級</g>。"
+    },
+    {
+      "id": "MOLTEN_EGG",
+      "field": "descriptionClean",
+      "before": "每當你獲得攻擊牌時，將其升級。",
+      "after": "每當你將一張攻擊牌加入你的牌組時，將其升級。"
+    },
+    {
+      "id": "MR_STRUGGLES",
+      "field": "descI18n",
+      "before": "在你的回合開始時，對所有敵人造成等量於當前回合數的傷害。",
+      "after": "在你的回合開始時，對所有敵人造成與回合數等量的傷害。"
+    },
+    {
+      "id": "MR_STRUGGLES",
+      "field": "descriptionClean",
+      "before": "在你的回合開始時，對所有敵人造成等量於當前回合數的傷害。",
+      "after": "在你的回合開始時，對所有敵人造成與回合數等量的傷害。"
+    },
+    {
+      "id": "MUMMIFIED_HAND",
+      "field": "descI18n",
+      "before": "你每打出一張能力牌，<g>手牌</g>中就有一張隨機牌在這個回合可以免費打出。",
+      "after": "每當你打出一張能力牌時，你<g>手牌</g>中的一張隨機卡牌可在本回合免費打出。"
+    },
+    {
+      "id": "MUMMIFIED_HAND",
+      "field": "descriptionClean",
+      "before": "你每打出一張能力牌，手牌中就有一張隨機牌在這個回合可以免費打出。",
+      "after": "每當你打出一張能力牌時，你手牌中的一張隨機卡牌可在本回合免費打出。"
+    },
+    {
+      "id": "MUSIC_BOX",
+      "field": "descI18n",
+      "before": "將你每回合打出的第一張攻擊牌的一張<g>虛無</g>複製品加入你的手牌。",
+      "after": "為每回合你打出的第一張攻擊牌創造一張具有<g>虛無</g>的複製品。"
+    },
+    {
+      "id": "MUSIC_BOX",
+      "field": "descriptionClean",
+      "before": "將你每回合打出的第一張攻擊牌的一張虛無複製品加入你的手牌。",
+      "after": "為每回合你打出的第一張攻擊牌創造一張具有虛無的複製品。"
+    },
+    {
+      "id": "MYSTIC_LIGHTER",
+      "field": "descI18n",
+      "before": "有<g>附魔</g>的攻擊牌額外造成9點傷害。",
+      "after": "<g>已附魔</g>的攻擊牌額外造成 9 點傷害。"
+    },
+    {
+      "id": "MYSTIC_LIGHTER",
+      "field": "descriptionClean",
+      "before": "有附魔的攻擊牌額外造成9點傷害。",
+      "after": "已附魔的攻擊牌額外造成 9 點傷害。"
+    },
+    {
+      "id": "NEOWS_BONES",
+      "field": "descI18n",
+      "before": "拾起時，獲得2件隨機<g>涅奧遺物</g>。將1張隨機詛咒加入你的<g>牌組</g>。",
+      "after": "拾取時，獲得 2 件隨機<g>涅奧遺物</g>。將 1 張隨機詛咒加入你的<g>牌組</g>。"
+    },
+    {
+      "id": "NEOWS_BONES",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得2件隨機涅奧遺物。將1張隨機詛咒加入你的牌組。",
+      "after": "拾取時，獲得 2 件隨機涅奧遺物。將 1 張隨機詛咒加入你的牌組。"
+    },
+    {
+      "id": "NEOWS_TALISMAN",
+      "field": "descI18n",
+      "before": "拾起時，<g>升級</g>你的1張<g>打擊</g>和1張<g>防禦</g>。",
+      "after": "拾取時，<g>升級</g>你的 1 張<g>打擊</g>和 1 張<g>防禦</g>。"
+    },
+    {
+      "id": "NEOWS_TALISMAN",
+      "field": "descriptionClean",
+      "before": "拾起時，升級你的1張打擊和1張防禦。",
+      "after": "拾取時，升級你的 1 張打擊和 1 張防禦。"
+    },
+    {
+      "id": "NEOWS_TORMENT",
+      "field": "descI18n",
+      "before": "拾起時，將1張<g>涅奧之怒</g>加入你的<g>牌組</g>。",
+      "after": "拾取時，將 1 張<g>涅奧之怒</g>加入你的<g>牌組</g>。"
+    },
+    {
+      "id": "NEOWS_TORMENT",
+      "field": "descriptionClean",
+      "before": "拾起時，將1張涅奧之怒加入你的牌組。",
+      "after": "拾取時，將 1 張涅奧之怒加入你的牌組。"
+    },
+    {
+      "id": "NEW_LEAF",
+      "field": "descI18n",
+      "before": "拾起時，<g>變化</g>1張牌。",
+      "after": "拾取時，<g>轉化</g> 1 張牌。"
+    },
+    {
+      "id": "NEW_LEAF",
+      "field": "descriptionClean",
+      "before": "拾起時，變化1張牌。",
+      "after": "拾取時，轉化 1 張牌。"
+    },
+    {
+      "id": "NINJA_SCROLL",
+      "field": "descI18n",
+      "before": "每場戰鬥開始時，將3張<g>小刀</g>加入你的<g>手牌</g>。",
+      "after": "每場戰鬥開始時，將 3 張<g>小刀</g>加入你的<g>手牌</g>。"
+    },
+    {
+      "id": "NINJA_SCROLL",
+      "field": "descriptionClean",
+      "before": "每場戰鬥開始時，將3張小刀加入你的手牌。",
+      "after": "每場戰鬥開始時，將 3 張小刀加入你的手牌。"
+    },
+    {
+      "id": "NUNCHAKU",
+      "field": "descI18n",
+      "before": "你每打出10張攻擊牌，獲得<e>1</e>。",
+      "after": "你每打出 10 張攻擊牌，就獲得 <e>1</e>。"
+    },
+    {
+      "id": "NUNCHAKU",
+      "field": "descriptionClean",
+      "before": "你每打出10張攻擊牌，獲得1。",
+      "after": "你每打出 10 張攻擊牌，就獲得 1。"
+    },
+    {
+      "id": "NUTRITIOUS_OYSTER",
+      "field": "descI18n",
+      "before": "拾起時，將你的最大生命值提升11。",
+      "after": "拾取時，使你的最大生命提高 11 點。"
+    },
+    {
+      "id": "NUTRITIOUS_OYSTER",
+      "field": "descriptionClean",
+      "before": "拾起時，將你的最大生命值提升11。",
+      "after": "拾取時，使你的最大生命提高 11 點。"
+    },
+    {
+      "id": "NUTRITIOUS_SOUP",
+      "field": "descI18n",
+      "before": "拾起時，為你<g>牌組</g>中的所有“<g>打擊</g>”<g>附魔</g>：特茲卡塔拉的餘燼",
+      "after": "拾取時，為你<g>牌組</g>中的所有<g>打擊</g>進行<g>附魔</g>上特茲卡塔拉的餘燼。"
+    },
+    {
+      "id": "NUTRITIOUS_SOUP",
+      "field": "descriptionClean",
+      "before": "拾起時，為你牌組中的所有“打擊”附魔：特茲卡塔拉的餘燼",
+      "after": "拾取時，為你牌組中的所有打擊進行附魔上特茲卡塔拉的餘燼。"
+    },
+    {
+      "id": "ODDLY_SMOOTH_STONE",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，獲得1點<g>敏捷</g>。",
+      "after": "每場戰鬥開始時，獲得 1 層<g>敏捷</g>。"
+    },
+    {
+      "id": "ODDLY_SMOOTH_STONE",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，獲得1點敏捷。",
+      "after": "每場戰鬥開始時，獲得 1 層敏捷。"
+    },
+    {
+      "id": "OLD_COIN",
+      "field": "descI18n",
+      "before": "拾起時，獲得300<g>金幣</g>。",
+      "after": "拾取時，獲得 300 枚<g>金幣</g>。"
+    },
+    {
+      "id": "OLD_COIN",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得300金幣。",
+      "after": "拾取時，獲得 300 枚金幣。"
+    },
+    {
+      "id": "ORANGE_DOUGH",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，將2張隨機無色牌加入你的<g>手牌</g>。",
+      "after": "每場戰鬥開始時，將 2 張隨機無色牌加入你的<g>手牌</g>。"
+    },
+    {
+      "id": "ORANGE_DOUGH",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，將2張隨機無色牌加入你的手牌。",
+      "after": "每場戰鬥開始時，將 2 張隨機無色牌加入你的手牌。"
+    },
+    {
+      "id": "ORICHALCUM",
+      "field": "descI18n",
+      "before": "如果你在回合結束時沒有任何<g>格擋</g>，獲得6點<g>格擋</g>。",
+      "after": "若你結束回合時沒有<g>格擋</g>，就獲得 6 點<g>格擋</g>。"
+    },
+    {
+      "id": "ORICHALCUM",
+      "field": "descriptionClean",
+      "before": "如果你在回合結束時沒有任何格擋，獲得6點格擋。",
+      "after": "若你結束回合時沒有格擋，就獲得 6 點格擋。"
+    },
+    {
+      "id": "ORNAMENTAL_FAN",
+      "field": "descI18n",
+      "before": "你每在同一回合內打出3張攻擊牌，就獲得4點<g>格擋</g>。",
+      "after": "每當你在單一回合中打出 3 張攻擊牌時，獲得 4 點<g>格擋</g>。"
+    },
+    {
+      "id": "ORNAMENTAL_FAN",
+      "field": "descriptionClean",
+      "before": "你每在同一回合內打出3張攻擊牌，就獲得4點格擋。",
+      "after": "每當你在單一回合中打出 3 張攻擊牌時，獲得 4 點格擋。"
+    },
+    {
+      "id": "ORRERY",
+      "field": "descI18n",
+      "before": "拾起時，獲得5次卡牌獎勵",
+      "after": "拾取時，獲得 5 份卡牌獎勵。"
+    },
+    {
+      "id": "ORRERY",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得5次卡牌獎勵",
+      "after": "拾取時，獲得 5 份卡牌獎勵。"
+    },
+    {
+      "id": "PAELS_BLOOD",
+      "field": "descI18n",
+      "before": "在你的回合開始時，額外抽1張牌",
+      "after": "在你的回合開始時，額外抽 1 張牌。"
+    },
+    {
+      "id": "PAELS_BLOOD",
+      "field": "descriptionClean",
+      "before": "在你的回合開始時，額外抽1張牌",
+      "after": "在你的回合開始時，額外抽 1 張牌。"
+    },
+    {
+      "id": "PAELS_CLAW",
+      "field": "descI18n",
+      "before": "拾起時，為所有的“<g>防禦</g>”<g>附魔</g>：黏糊。",
+      "after": "拾取時，為所有<g>防禦</g>進行<g>附魔</g>上黏糊。"
+    },
+    {
+      "id": "PAELS_CLAW",
+      "field": "descriptionClean",
+      "before": "拾起時，為所有的“防禦”附魔：黏糊。",
+      "after": "拾取時，為所有防禦進行附魔上黏糊。"
+    },
+    {
+      "id": "PAELS_EYE",
+      "field": "descI18n",
+      "before": "你在每場戰鬥中第一次沒有打出任何牌就結束回合時，<g>消耗</g>所有<g>手牌</g>然後進行一個額外回合。",
+      "after": "每場戰鬥中你第一次未打出任何牌就結束回合時，<g>消耗</g>你的<g>手牌</g>，並額外進行一個回合。"
+    },
+    {
+      "id": "PAELS_EYE",
+      "field": "descriptionClean",
+      "before": "你在每場戰鬥中第一次沒有打出任何牌就結束回合時，消耗所有手牌然後進行一個額外回合。",
+      "after": "每場戰鬥中你第一次未打出任何牌就結束回合時，消耗你的手牌，並額外進行一個回合。"
+    },
+    {
+      "id": "PAELS_FLESH",
+      "field": "descI18n",
+      "before": "從你的第3回合開始，在回合開始時額外獲得<e>1</e>。",
+      "after": "你的第 3 個回合及此後每個回合開始時，額外獲得 <e>1</e>。"
+    },
+    {
+      "id": "PAELS_FLESH",
+      "field": "descriptionClean",
+      "before": "從你的第3回合開始，在回合開始時額外獲得1。",
+      "after": "你的第 3 個回合及此後每個回合開始時，額外獲得 1。"
+    },
+    {
+      "id": "PAELS_GROWTH",
+      "field": "descI18n",
+      "before": "拾起時，從<g>牌組</g>中選擇一張牌，為其<g>附魔</g>：克隆。",
+      "after": "拾取時，為一張牌<g>附魔</g>上再製。"
+    },
+    {
+      "id": "PAELS_GROWTH",
+      "field": "descriptionClean",
+      "before": "拾起時，從牌組中選擇一張牌，為其附魔：克隆。",
+      "after": "拾取時，為一張牌附魔上再製。"
+    },
+    {
+      "id": "PAELS_HORN",
+      "field": "descI18n",
+      "before": "拾起時，將2張<g>放鬆</g>加入你的<g>牌組</g>。",
+      "after": "拾取時，將 2 張<g>放鬆</g>加入你的<g>牌組</g>。"
+    },
+    {
+      "id": "PAELS_HORN",
+      "field": "descriptionClean",
+      "before": "拾起時，將2張放鬆加入你的牌組。",
+      "after": "拾取時，將 2 張放鬆加入你的牌組。"
+    },
+    {
+      "id": "PAELS_LEGION",
+      "field": "descI18n",
+      "before": "將你從一張卡牌中獲得的<g>格擋</g>翻倍，然後此遺物會休眠2回合。",
+      "after": "使一張牌提供的<g>格擋</g>加倍，然後沉睡 2 回合。"
+    },
+    {
+      "id": "PAELS_LEGION",
+      "field": "descriptionClean",
+      "before": "將你從一張卡牌中獲得的格擋翻倍，然後此遺物會休眠2回合。",
+      "after": "使一張牌提供的格擋加倍，然後沉睡 2 回合。"
+    },
+    {
+      "id": "PAELS_TEARS",
+      "field": "descI18n",
+      "before": "如果你在擁有未花費的<e/>情況下結束回合，則下個回合額外獲得<e>2</e>。",
+      "after": "若你結束回合時仍有未花費的 <e/>，下回合額外獲得 <e>2</e>。"
+    },
+    {
+      "id": "PAELS_TEARS",
+      "field": "descriptionClean",
+      "before": "如果你在擁有未花費的情況下結束回合，則下個回合額外獲得2。",
+      "after": "若你結束回合時仍有未花費的 ，下回合額外獲得 2。"
+    },
+    {
+      "id": "PAELS_TOOTH",
+      "field": "descI18n",
+      "before": "拾起時，從你的<g>牌組</g>中選擇5張牌移除。在每場戰鬥結束時，將其中隨機1張牌<g>升級</g>然後返還。",
+      "after": "拾取時，從你的<g>牌組</g>中移除 5 張牌。每場戰鬥後，隨機加回其中 1 張，並將其<g>升級</g>。"
+    },
+    {
+      "id": "PAELS_TOOTH",
+      "field": "descriptionClean",
+      "before": "拾起時，從你的牌組中選擇5張牌移除。在每場戰鬥結束時，將其中隨機1張牌升級然後返還。",
+      "after": "拾取時，從你的牌組中移除 5 張牌。每場戰鬥後，隨機加回其中 1 張，並將其升級。"
+    },
+    {
+      "id": "PAELS_WING",
+      "field": "descI18n",
+      "before": "你可以將你的卡牌獎勵獻祭給佩爾。每獻祭2次，就能獲得一件<g>遺物</g>。",
+      "after": "你可以將卡牌獎勵獻給佩爾。每犧牲 2 次，就獲得一件<g>遺物</g>。"
+    },
+    {
+      "id": "PAELS_WING",
+      "field": "descriptionClean",
+      "before": "你可以將你的卡牌獎勵獻祭給佩爾。每獻祭2次，就能獲得一件遺物。",
+      "after": "你可以將卡牌獎勵獻給佩爾。每犧牲 2 次，就獲得一件遺物。"
+    },
+    {
+      "id": "PANDORAS_BOX",
+      "field": "descI18n",
+      "before": "<g>變化</g>所有“<g>打擊</g>”和“<g>防禦</g>”。",
+      "after": "<g>轉化</g>所有<g>打擊</g>與<g>防禦</g>。"
+    },
+    {
+      "id": "PANDORAS_BOX",
+      "field": "descriptionClean",
+      "before": "變化所有“打擊”和“防禦”。",
+      "after": "轉化所有打擊與防禦。"
+    },
+    {
+      "id": "PANTOGRAPH",
+      "field": "descI18n",
+      "before": "在<g>Boss</g>戰開始時，回覆25點生命值。",
+      "after": "每場<g>頭目</g>戰鬥開始時，恢復 25 點生命。"
+    },
+    {
+      "id": "PANTOGRAPH",
+      "field": "descriptionClean",
+      "before": "在Boss戰開始時，回覆25點生命值。",
+      "after": "每場頭目戰鬥開始時，恢復 25 點生命。"
+    },
+    {
+      "id": "PAPER_KRANE",
+      "field": "descI18n",
+      "before": "有<g>虛弱</g>狀態的敵人造成的傷害降低40%而非25%。",
+      "after": "處於<g>虛弱</g>狀態的敵人對你造成的傷害減少 40%，而非 25%。"
+    },
+    {
+      "id": "PAPER_KRANE",
+      "field": "descriptionClean",
+      "before": "有虛弱狀態的敵人造成的傷害降低40%而非25%。",
+      "after": "處於虛弱狀態的敵人對你造成的傷害減少 40%，而非 25%。"
+    },
+    {
+      "id": "PAPER_PHROG",
+      "field": "descI18n",
+      "before": "有<g>易傷</g>狀態的敵人受到的傷害增加75%而非50%。",
+      "after": "處於<g>易傷</g>狀態的敵人受到的傷害增加 75%，而非 50%。"
+    },
+    {
+      "id": "PAPER_PHROG",
+      "field": "descriptionClean",
+      "before": "有易傷狀態的敵人受到的傷害增加75%而非50%。",
+      "after": "處於易傷狀態的敵人受到的傷害增加 75%，而非 50%。"
+    },
+    {
+      "id": "PARRYING_SHIELD",
+      "field": "descI18n",
+      "before": "如果你在回合結束時擁有至少10點<g>格擋</g>，則對隨機敵人造成6點傷害。",
+      "after": "若你結束回合時至少有 10 點<g>格擋</g>，對一名隨機敵人造成 6 點傷害。"
+    },
+    {
+      "id": "PARRYING_SHIELD",
+      "field": "descriptionClean",
+      "before": "如果你在回合結束時擁有至少10點格擋，則對隨機敵人造成6點傷害。",
+      "after": "若你結束回合時至少有 10 點格擋，對一名隨機敵人造成 6 點傷害。"
+    },
+    {
+      "id": "PEAR",
+      "field": "descI18n",
+      "before": "拾起時，將你的最大生命值提升10。",
+      "after": "拾取時，使你的最大生命提高 10 點。"
+    },
+    {
+      "id": "PEAR",
+      "field": "descriptionClean",
+      "before": "拾起時，將你的最大生命值提升10。",
+      "after": "拾取時，使你的最大生命提高 10 點。"
+    },
+    {
+      "id": "PEN_NIB",
+      "field": "descI18n",
+      "before": "你每打出的第10張攻擊牌將會造成雙倍傷害。",
+      "after": "每逢你打出第 10 張攻擊牌，該牌就造成雙倍傷害。"
+    },
+    {
+      "id": "PEN_NIB",
+      "field": "descriptionClean",
+      "before": "你每打出的第10張攻擊牌將會造成雙倍傷害。",
+      "after": "每逢你打出第 10 張攻擊牌，該牌就造成雙倍傷害。"
+    },
+    {
+      "id": "PENDULUM",
+      "field": "descI18n",
+      "before": "每3個回合，抽1張牌",
+      "after": "每經過 3 回合，就抽 1 張牌。"
+    },
+    {
+      "id": "PENDULUM",
+      "field": "descriptionClean",
+      "before": "每3個回合，抽1張牌",
+      "after": "每經過 3 回合，就抽 1 張牌。"
+    },
+    {
+      "id": "PERMAFROST",
+      "field": "descI18n",
+      "before": "當你在戰鬥中第一次打出能力牌時，獲得7點<g>格擋</g>。",
+      "after": "每場戰鬥中你第一次打出能力牌時，獲得 7 點<g>格擋</g>。"
+    },
+    {
+      "id": "PERMAFROST",
+      "field": "descriptionClean",
+      "before": "當你在戰鬥中第一次打出能力牌時，獲得7點格擋。",
+      "after": "每場戰鬥中你第一次打出能力牌時，獲得 7 點格擋。"
+    },
+    {
+      "id": "PETRIFIED_TOAD",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，獲得一瓶<g>藥水形狀的石頭</g>",
+      "after": "每場戰鬥開始時，取得一顆<g>藥水形狀的石頭</g>。"
+    },
+    {
+      "id": "PETRIFIED_TOAD",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，獲得一瓶藥水形狀的石頭",
+      "after": "每場戰鬥開始時，取得一顆藥水形狀的石頭。"
+    },
+    {
+      "id": "PHIAL_HOLSTER",
+      "field": "descI18n",
+      "before": "拾起時，獲得1個藥水欄位並獲得2瓶隨機藥水。",
+      "after": "拾取時，獲得 1 個藥水欄位，並取得 2 瓶隨機<g>藥水</g>。"
+    },
+    {
+      "id": "PHIAL_HOLSTER",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得1個藥水欄位並獲得2瓶隨機藥水。",
+      "after": "拾取時，獲得 1 個藥水欄位，並取得 2 瓶隨機藥水。"
+    },
+    {
+      "id": "PHILOSOPHERS_STONE",
+      "field": "descI18n",
+      "before": "在每回合開始時獲得<e>1</e>。所有敵人初始獲得1點<g>力量</g>。",
+      "after": "每回合開始時，獲得 <e>1</e>。所有敵人在戰鬥開始時擁有 1 層<g>力量</g>。"
+    },
+    {
+      "id": "PHILOSOPHERS_STONE",
+      "field": "descriptionClean",
+      "before": "在每回合開始時獲得1。所有敵人初始獲得1點力量。",
+      "after": "每回合開始時，獲得 1。所有敵人在戰鬥開始時擁有 1 層力量。"
+    },
+    {
+      "id": "PHYLACTERY_UNBOUND",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，<g>召喚</g>5。在你的回合開始時，<g>召喚</g>2。",
+      "after": "每場戰鬥開始時，<g>召喚</g> 5。在你的回合開始時，<g>召喚</g> 2。"
+    },
+    {
+      "id": "PHYLACTERY_UNBOUND",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，召喚5。在你的回合開始時，召喚2。",
+      "after": "每場戰鬥開始時，召喚 5。在你的回合開始時，召喚 2。"
+    },
+    {
+      "id": "PLANISPHERE",
+      "field": "descI18n",
+      "before": "每當你進入<g>？</g>房間的時候，回覆5點生命。",
+      "after": "每當你進入<g>？</g>房間時，恢復 5 點生命。"
+    },
+    {
+      "id": "PLANISPHERE",
+      "field": "descriptionClean",
+      "before": "每當你進入？房間的時候，回覆5點生命。",
+      "after": "每當你進入？房間時，恢復 5 點生命。"
+    },
+    {
+      "id": "POCKETWATCH",
+      "field": "descI18n",
+      "before": "當你在本回合打出的牌少於等於3張時，則在你的下個回合開始時額外抽3張牌。",
+      "after": "若你在一回合中打出的牌不超過 3 張，在你的下回合開始時額外抽 3 張牌。"
+    },
+    {
+      "id": "POCKETWATCH",
+      "field": "descriptionClean",
+      "before": "當你在本回合打出的牌少於等於3張時，則在你的下個回合開始時額外抽3張牌。",
+      "after": "若你在一回合中打出的牌不超過 3 張，在你的下回合開始時額外抽 3 張牌。"
+    },
+    {
+      "id": "POLLINOUS_CORE",
+      "field": "descI18n",
+      "before": "每4個回合，額外抽2張牌。",
+      "after": "每經過 4 回合，就額外抽 2 張牌。"
+    },
+    {
+      "id": "POLLINOUS_CORE",
+      "field": "descriptionClean",
+      "before": "每4個回合，額外抽2張牌。",
+      "after": "每經過 4 回合，就額外抽 2 張牌。"
+    },
+    {
+      "id": "POMANDER",
+      "field": "descI18n",
+      "before": "拾起時，<g>升級</g>一張牌。",
+      "after": "拾取時，<g>升級</g>一張牌。"
+    },
+    {
+      "id": "POMANDER",
+      "field": "descriptionClean",
+      "before": "拾起時，升級一張牌。",
+      "after": "拾取時，升級一張牌。"
+    },
+    {
+      "id": "POTION_BELT",
+      "field": "descI18n",
+      "before": "拾起時，獲得2個藥水欄位。",
+      "after": "拾取時，獲得 2 個藥水欄位。"
+    },
+    {
+      "id": "POTION_BELT",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得2個藥水欄位。",
+      "after": "拾取時，獲得 2 個藥水欄位。"
+    },
+    {
+      "id": "POWER_CELL",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，將2張耗能為0的卡牌從你的<g>抽牌堆</g>放入你的<g>手牌</g>。",
+      "after": "每場戰鬥開始時，將你<g>抽牌堆</g>中的 2 張零耗能牌加入你的<g>手牌</g>。"
+    },
+    {
+      "id": "POWER_CELL",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，將2張耗能為0的卡牌從你的抽牌堆放入你的手牌。",
+      "after": "每場戰鬥開始時，將你抽牌堆中的 2 張零耗能牌加入你的手牌。"
+    },
+    {
+      "id": "PRAYER_WHEEL",
+      "field": "descI18n",
+      "before": "普通敵人額外掉落一次卡牌獎勵。",
+      "after": "普通敵人會額外掉落一份卡牌獎勵。"
+    },
+    {
+      "id": "PRAYER_WHEEL",
+      "field": "descriptionClean",
+      "before": "普通敵人額外掉落一次卡牌獎勵。",
+      "after": "普通敵人會額外掉落一份卡牌獎勵。"
+    },
+    {
+      "id": "PRECARIOUS_SHEARS",
+      "field": "descI18n",
+      "before": "拾起時，從你的<g>牌組</g>中移除2張牌並失去16點生命。",
+      "after": "拾取時，從你的<g>牌組</g>中移除 2 張牌，並失去 16 點生命。"
+    },
+    {
+      "id": "PRECARIOUS_SHEARS",
+      "field": "descriptionClean",
+      "before": "拾起時，從你的牌組中移除2張牌並失去16點生命。",
+      "after": "拾取時，從你的牌組中移除 2 張牌，並失去 16 點生命。"
+    },
+    {
+      "id": "PRECISE_SCISSORS",
+      "field": "descI18n",
+      "before": "拾起時，從你的<g>牌組</g>中移除1張牌。",
+      "after": "拾取時，從你的<g>牌組</g>中移除 1 張牌。"
+    },
+    {
+      "id": "PRECISE_SCISSORS",
+      "field": "descriptionClean",
+      "before": "拾起時，從你的牌組中移除1張牌。",
+      "after": "拾取時，從你的牌組中移除 1 張牌。"
+    },
+    {
+      "id": "PRESERVED_FOG",
+      "field": "descI18n",
+      "before": "拾起時，從你的<g>牌組</g>中移除3張牌。將一張愚行加入你的<g>牌組</g>。",
+      "after": "拾取時，從你的<g>牌組</g>中移除 3 張牌。將愚行加入你的<g>牌組</g>。"
+    },
+    {
+      "id": "PRESERVED_FOG",
+      "field": "descriptionClean",
+      "before": "拾起時，從你的牌組中移除3張牌。將一張愚行加入你的牌組。",
+      "after": "拾取時，從你的牌組中移除 3 張牌。將愚行加入你的牌組。"
+    },
+    {
+      "id": "PRISMATIC_GEM",
+      "field": "descI18n",
+      "before": "在每個回合開始時獲得<e>1</e>。卡牌獎勵現在會包含其他顏色的卡牌。",
+      "after": "每回合開始時，獲得 <e>1</e>。卡牌獎勵現在會包含其他顏色的卡牌。"
+    },
+    {
+      "id": "PRISMATIC_GEM",
+      "field": "descriptionClean",
+      "before": "在每個回合開始時獲得1。卡牌獎勵現在會包含其他顏色的卡牌。",
+      "after": "每回合開始時，獲得 1。卡牌獎勵現在會包含其他顏色的卡牌。"
+    },
+    {
+      "id": "PUMPKIN_CANDLE",
+      "field": "descI18n",
+      "before": "在每個回合開始時獲得<e>1</e>。這件遺物會在5場戰鬥後熄滅。可以在<g>休息處</g>為其<g>添火</g>。",
+      "after": "每回合開始時，獲得 <e>1</e>。經過 5 場戰鬥後熄滅。可在<g>休息處</g>進行<g>重新點燃</g>。"
+    },
+    {
+      "id": "PUMPKIN_CANDLE",
+      "field": "descriptionClean",
+      "before": "在每個回合開始時獲得1。這件遺物會在5場戰鬥後熄滅。可以在休息處為其添火。",
+      "after": "每回合開始時，獲得 1。經過 5 場戰鬥後熄滅。可在休息處進行重新點燃。"
+    },
+    {
+      "id": "PUNCH_DAGGER",
+      "field": "descI18n",
+      "before": "拾起時，選擇一張攻擊牌為它<g>附魔</g>：動量5。",
+      "after": "拾取時，為一張攻擊牌<g>附魔</g>上動量 5。"
+    },
+    {
+      "id": "PUNCH_DAGGER",
+      "field": "descriptionClean",
+      "before": "拾起時，選擇一張攻擊牌為它附魔：動量5。",
+      "after": "拾取時，為一張攻擊牌附魔上動量 5。"
+    },
+    {
+      "id": "RADIANT_PEARL",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，將1張<g>冷光</g>加入你的<g>手牌</g>。",
+      "after": "每場戰鬥開始時，將 1 張<g>幽光</g>加入你的<g>手牌</g>。"
+    },
+    {
+      "id": "RADIANT_PEARL",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，將1張冷光加入你的手牌。",
+      "after": "每場戰鬥開始時，將 1 張幽光加入你的手牌。"
+    },
+    {
+      "id": "RAINBOW_RING",
+      "field": "descI18n",
+      "before": "每回合，你第一次打出攻擊牌、技能牌和能力牌各一張時，獲得1點<g>力量</g>和1點<g>敏捷</g>。",
+      "after": "你每回合第一次打出攻擊牌、技能牌與能力牌各一張時，獲得 1 層<g>力量</g>和 1 層<g>敏捷</g>。"
+    },
+    {
+      "id": "RAINBOW_RING",
+      "field": "descriptionClean",
+      "before": "每回合，你第一次打出攻擊牌、技能牌和能力牌各一張時，獲得1點力量和1點敏捷。",
+      "after": "你每回合第一次打出攻擊牌、技能牌與能力牌各一張時，獲得 1 層力量和 1 層敏捷。"
+    },
+    {
+      "id": "RAZOR_TOOTH",
+      "field": "descI18n",
+      "before": "你打出攻擊牌和技能牌時，將其在本場戰鬥內<g>升級</g>。",
+      "after": "每當你打出一張攻擊牌或技能牌時，在本場戰鬥中將其<g>升級</g>。"
+    },
+    {
+      "id": "RAZOR_TOOTH",
+      "field": "descriptionClean",
+      "before": "你打出攻擊牌和技能牌時，將其在本場戰鬥內升級。",
+      "after": "每當你打出一張攻擊牌或技能牌時，在本場戰鬥中將其升級。"
+    },
+    {
+      "id": "RED_MASK",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，給於所有敵人1層<g>虛弱</g>。",
+      "after": "每場戰鬥開始時，對所有敵人施加 1 層<g>虛弱</g>。"
+    },
+    {
+      "id": "RED_MASK",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，給於所有敵人1層虛弱。",
+      "after": "每場戰鬥開始時，對所有敵人施加 1 層虛弱。"
+    },
+    {
+      "id": "RED_SKULL",
+      "field": "descI18n",
+      "before": "當你的生命值低於或等於50%時，你額外獲得3點<g>力量</g>",
+      "after": "當你的生命不高於 50% 時，你額外擁有 3 層<g>力量</g>。"
+    },
+    {
+      "id": "RED_SKULL",
+      "field": "descriptionClean",
+      "before": "當你的生命值低於或等於50%時，你額外獲得3點力量",
+      "after": "當你的生命不高於 50% 時，你額外擁有 3 層力量。"
+    },
+    {
+      "id": "REGAL_PILLOW",
+      "field": "descI18n",
+      "before": "在<g>休息</g>時，額外回覆15點生命。",
+      "after": "每當你<g>休息</g>時，額外恢復 15 點生命。"
+    },
+    {
+      "id": "REGAL_PILLOW",
+      "field": "descriptionClean",
+      "before": "在休息時，額外回覆15點生命。",
+      "after": "每當你休息時，額外恢復 15 點生命。"
+    },
+    {
+      "id": "REGALITE",
+      "field": "descI18n",
+      "before": "每回合第一次創造卡牌時，獲得4點<g>格擋</g>。",
+      "after": "你每回合第一次創造一張牌時，獲得 4 點<g>格擋</g>。"
+    },
+    {
+      "id": "REGALITE",
+      "field": "descriptionClean",
+      "before": "每回合第一次創造卡牌時，獲得4點格擋。",
+      "after": "你每回合第一次創造一張牌時，獲得 4 點格擋。"
+    },
+    {
+      "id": "REPTILE_TRINKET",
+      "field": "descI18n",
+      "before": "當你使用藥水時，在本回合獲得3<g>力量</g>。",
+      "after": "每當你使用一瓶藥水時，本回合獲得 3 層<g>力量</g>。"
+    },
+    {
+      "id": "REPTILE_TRINKET",
+      "field": "descriptionClean",
+      "before": "當你使用藥水時，在本回合獲得3力量。",
+      "after": "每當你使用一瓶藥水時，本回合獲得 3 層力量。"
+    },
+    {
+      "id": "RING_OF_THE_DRAKE",
+      "field": "descI18n",
+      "before": "在戰鬥開始時的前3個回合，你額外抽2張牌。",
+      "after": "你的前 3 個回合開始時，額外抽 2 張牌。"
+    },
+    {
+      "id": "RING_OF_THE_DRAKE",
+      "field": "descriptionClean",
+      "before": "在戰鬥開始時的前3個回合，你額外抽2張牌。",
+      "after": "你的前 3 個回合開始時，額外抽 2 張牌。"
+    },
+    {
+      "id": "RING_OF_THE_SNAKE",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，額外抽2張牌。",
+      "after": "每場戰鬥開始時，額外抽 2 張牌。"
+    },
+    {
+      "id": "RING_OF_THE_SNAKE",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，額外抽2張牌。",
+      "after": "每場戰鬥開始時，額外抽 2 張牌。"
+    },
+    {
+      "id": "RINGING_TRIANGLE",
+      "field": "descI18n",
+      "before": "在每場戰鬥的第一回合<g>保留</g>你的<g>手牌</g>。",
+      "after": "戰鬥的第一個回合會<g>保留</g>你的<g>手牌</g>。"
+    },
+    {
+      "id": "RINGING_TRIANGLE",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥的第一回合保留你的手牌。",
+      "after": "戰鬥的第一個回合會保留你的手牌。"
+    },
+    {
+      "id": "RIPPLE_BASIN",
+      "field": "descI18n",
+      "before": "如果你在本回閤中沒有打出過攻擊牌，則獲得4點<g>格擋</g>。",
+      "after": "若你的回合中未打出任何攻擊牌，就獲得 4 點<g>格擋</g>。"
+    },
+    {
+      "id": "RIPPLE_BASIN",
+      "field": "descriptionClean",
+      "before": "如果你在本回閤中沒有打出過攻擊牌，則獲得4點格擋。",
+      "after": "若你的回合中未打出任何攻擊牌，就獲得 4 點格擋。"
+    },
+    {
+      "id": "ROYAL_POISON",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，失去4點生命。",
+      "after": "每場戰鬥開始時，失去 4 點生命。"
+    },
+    {
+      "id": "ROYAL_POISON",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，失去4點生命。",
+      "after": "每場戰鬥開始時，失去 4 點生命。"
+    },
+    {
+      "id": "ROYAL_STAMP",
+      "field": "descI18n",
+      "before": "拾起時，從<g>牌組</g>中選擇一張攻擊牌或技能牌，為它<g>附魔</g>：王室認證。",
+      "after": "拾取時，從你的<g>牌組</g>中選擇一張攻擊牌或技能牌，為其<g>附魔</g>上王室認證。"
+    },
+    {
+      "id": "ROYAL_STAMP",
+      "field": "descriptionClean",
+      "before": "拾起時，從牌組中選擇一張攻擊牌或技能牌，為它附魔：王室認證。",
+      "after": "拾取時，從你的牌組中選擇一張攻擊牌或技能牌，為其附魔上王室認證。"
+    },
+    {
+      "id": "RUINED_HELMET",
+      "field": "descI18n",
+      "before": "你在每場戰鬥中第一次獲得的<g>力量</g>值翻倍。",
+      "after": "每場戰鬥中你第一次獲得<g>力量</g>時，使該次獲得量加倍。"
+    },
+    {
+      "id": "RUINED_HELMET",
+      "field": "descriptionClean",
+      "before": "你在每場戰鬥中第一次獲得的力量值翻倍。",
+      "after": "每場戰鬥中你第一次獲得力量時，使該次獲得量加倍。"
+    },
+    {
+      "id": "RUNIC_CAPACITOR",
+      "field": "descI18n",
+      "before": "每場戰鬥開始時，獲得3個額外<g>充能球欄位</g>。",
+      "after": "每場戰鬥開始時，額外擁有 3 個<g>充能球欄位</g>。"
+    },
+    {
+      "id": "RUNIC_CAPACITOR",
+      "field": "descriptionClean",
+      "before": "每場戰鬥開始時，獲得3個額外充能球欄位。",
+      "after": "每場戰鬥開始時，額外擁有 3 個充能球欄位。"
+    },
+    {
+      "id": "RUNIC_PYRAMID",
+      "field": "descI18n",
+      "before": "你在回合結束時不再自動丟棄所有<g>手牌</g>。",
+      "after": "在你的回合結束時，你不再丟棄<g>手牌</g>。"
+    },
+    {
+      "id": "RUNIC_PYRAMID",
+      "field": "descriptionClean",
+      "before": "你在回合結束時不再自動丟棄所有手牌。",
+      "after": "在你的回合結束時，你不再丟棄手牌。"
+    },
+    {
+      "id": "SAI",
+      "field": "descI18n",
+      "before": "在你的回合開始時，獲得7點<g>格擋</g>。",
+      "after": "在你的回合開始時，獲得 7 點<g>格擋</g>。"
+    },
+    {
+      "id": "SAI",
+      "field": "descriptionClean",
+      "before": "在你的回合開始時，獲得7點格擋。",
+      "after": "在你的回合開始時，獲得 7 點格擋。"
+    },
+    {
+      "id": "SAND_CASTLE",
+      "field": "descI18n",
+      "before": "拾起時，隨機<g>升級</g>6張牌。",
+      "after": "拾取時，<g>升級</g> 6 張隨機卡牌。"
+    },
+    {
+      "id": "SAND_CASTLE",
+      "field": "descriptionClean",
+      "before": "拾起時，隨機升級6張牌。",
+      "after": "拾取時，升級 6 張隨機卡牌。"
+    },
+    {
+      "id": "SCREAMING_FLAGON",
+      "field": "descI18n",
+      "before": "如果你在回合結束時沒有任何<g>手牌</g>，則對所有敵人造成20點傷害。",
+      "after": "若你結束回合時<g>手牌</g>中沒有牌，對所有敵人造成 20 點傷害。"
+    },
+    {
+      "id": "SCREAMING_FLAGON",
+      "field": "descriptionClean",
+      "before": "如果你在回合結束時沒有任何手牌，則對所有敵人造成20點傷害。",
+      "after": "若你結束回合時手牌中沒有牌，對所有敵人造成 20 點傷害。"
+    },
+    {
+      "id": "SCROLL_BOXES",
+      "field": "descI18n",
+      "before": "拾起時，從2個卡牌包中選擇1包加入你的<g>牌組</g>。",
+      "after": "拾取時，從 2 組卡牌中選擇 1 組加入你的<g>牌組</g>。"
+    },
+    {
+      "id": "SCROLL_BOXES",
+      "field": "descriptionClean",
+      "before": "拾起時，從2個卡牌包中選擇1包加入你的牌組。",
+      "after": "拾取時，從 2 組卡牌中選擇 1 組加入你的牌組。"
+    },
+    {
+      "id": "SEA_GLASS",
+      "field": "descI18n",
+      "before": "查看15張來自其他角色的牌。從中選擇任意數量的卡牌加入你的<g>牌組</g>。",
+      "after": "查看來自其他角色的 15 張牌。選擇任意數量加入你的<g>牌組</g>。"
+    },
+    {
+      "id": "SEA_GLASS",
+      "field": "descriptionClean",
+      "before": "查看15張來自其他角色的牌。從中選擇任意數量的卡牌加入你的牌組。",
+      "after": "查看來自其他角色的 15 張牌。選擇任意數量加入你的牌組。"
+    },
+    {
+      "id": "SEAL_OF_GOLD",
+      "field": "descI18n",
+      "before": "在你的回合開始時，花費5<g>金幣</g>來獲得<e>1</e>。",
+      "after": "在你的回合開始時，花費 3 枚<g>金幣</g>，獲得 <e>1</e>。"
+    },
+    {
+      "id": "SEAL_OF_GOLD",
+      "field": "descriptionClean",
+      "before": "在你的回合開始時，花費5金幣來獲得1。",
+      "after": "在你的回合開始時，花費 3 枚金幣，獲得 1。"
+    },
+    {
+      "id": "SELF_FORMING_CLAY",
+      "field": "descI18n",
+      "before": "每當你在戰鬥中失去生命，就在下回合獲得3點<g>格擋</g>。",
+      "after": "每當你在戰鬥中失去生命，下回合就獲得 3 點<g>格擋</g>。"
+    },
+    {
+      "id": "SELF_FORMING_CLAY",
+      "field": "descriptionClean",
+      "before": "每當你在戰鬥中失去生命，就在下回合獲得3點格擋。",
+      "after": "每當你在戰鬥中失去生命，下回合就獲得 3 點格擋。"
+    },
+    {
+      "id": "SERE_TALON",
+      "field": "descI18n",
+      "before": "拾起時，將2張隨機詛咒牌和3張許願加入你的<g>牌組</g>。",
+      "after": "拾取時，失去 9 點最大生命。將 3 張祈願加入你的<g>牌組</g>。"
+    },
+    {
+      "id": "SERE_TALON",
+      "field": "descriptionClean",
+      "before": "拾起時，將2張隨機詛咒牌和3張許願加入你的牌組。",
+      "after": "拾取時，失去 9 點最大生命。將 3 張祈願加入你的牌組。"
+    },
+    {
+      "id": "SHOVEL",
+      "field": "descI18n",
+      "before": "現在你可以在<g>休息處</g>挖掘<g>遺物</g>。",
+      "after": "你現在可以在<g>休息處</g>挖掘，以獲得一件隨機<g>遺物</g>。"
+    },
+    {
+      "id": "SHOVEL",
+      "field": "descriptionClean",
+      "before": "現在你可以在休息處挖掘遺物。",
+      "after": "你現在可以在休息處挖掘，以獲得一件隨機遺物。"
+    },
+    {
+      "id": "SHURIKEN",
+      "field": "descI18n",
+      "before": "你每在同一回合內打出3張攻擊牌，獲得1點<g>力量</g>。",
+      "after": "每當你在單一回合中打出 3 張攻擊牌時，獲得 1 層<g>力量</g>。"
+    },
+    {
+      "id": "SHURIKEN",
+      "field": "descriptionClean",
+      "before": "你每在同一回合內打出3張攻擊牌，獲得1點力量。",
+      "after": "每當你在單一回合中打出 3 張攻擊牌時，獲得 1 層力量。"
+    },
+    {
+      "id": "SIGNET_RING",
+      "field": "descI18n",
+      "before": "拾起時，獲得999<g>金幣</g>。",
+      "after": "拾取時，獲得 888 枚<g>金幣</g>。"
+    },
+    {
+      "id": "SIGNET_RING",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得999金幣。",
+      "after": "拾取時，獲得 888 枚金幣。"
+    },
+    {
+      "id": "SILKEN_TRESS",
+      "field": "descI18n",
+      "before": "拾起時，失去所有<g>金幣</g>。為第一次卡牌獎勵中的所有牌<g>附魔</g>：華彩。",
+      "after": "拾取時，失去所有<g>金幣</g>。為你首次卡牌獎勵中的所有卡牌<g>附魔</g>上華彩。"
+    },
+    {
+      "id": "SILKEN_TRESS",
+      "field": "descriptionClean",
+      "before": "拾起時，失去所有金幣。為第一次卡牌獎勵中的所有牌附魔：華彩。",
+      "after": "拾取時，失去所有金幣。為你首次卡牌獎勵中的所有卡牌附魔上華彩。"
+    },
+    {
+      "id": "SILVER_CRUCIBLE",
+      "field": "descI18n",
+      "before": "你遇到的前3次卡牌獎勵將是被<g>升級</g>過的。你打開的第一個寶箱將是空的",
+      "after": "你看到的前 3 份卡牌獎勵中的卡牌皆為<g>已升級</g>版本。你開啟的第一個財寶箱是空的。"
+    },
+    {
+      "id": "SILVER_CRUCIBLE",
+      "field": "descriptionClean",
+      "before": "你遇到的前3次卡牌獎勵將是被升級過的。你打開的第一個寶箱將是空的",
+      "after": "你看到的前 3 份卡牌獎勵中的卡牌皆為已升級版本。你開啟的第一個財寶箱是空的。"
+    },
+    {
+      "id": "SLING_OF_COURAGE",
+      "field": "descI18n",
+      "before": "在與<g>精英</g>敵人戰鬥時，獲得2點<g>力量</g>。",
+      "after": "每場<g>菁英</g>戰鬥開始時，獲得 2 層<g>力量</g>。"
+    },
+    {
+      "id": "SLING_OF_COURAGE",
+      "field": "descriptionClean",
+      "before": "在與精英敵人戰鬥時，獲得2點力量。",
+      "after": "每場菁英戰鬥開始時，獲得 2 層力量。"
+    },
+    {
+      "id": "SMALL_CAPSULE",
+      "field": "descI18n",
+      "before": "拾起時，獲得一件隨機<g>遺物</g>。",
+      "after": "拾取時，獲得一件隨機<g>遺物</g>。"
+    },
+    {
+      "id": "SMALL_CAPSULE",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得一件隨機遺物。",
+      "after": "拾取時，獲得一件隨機遺物。"
+    },
+    {
+      "id": "SNECKO_EYE",
+      "field": "descI18n",
+      "before": "每回合多抽2張牌。每場戰鬥開始時獲得混亂效果。",
+      "after": "在你的回合開始時，額外抽 2 張牌。每場戰鬥開始時處於混亂狀態。"
+    },
+    {
+      "id": "SNECKO_EYE",
+      "field": "descriptionClean",
+      "before": "每回合多抽2張牌。每場戰鬥開始時獲得混亂效果。",
+      "after": "在你的回合開始時，額外抽 2 張牌。每場戰鬥開始時處於混亂狀態。"
+    },
+    {
+      "id": "SNECKO_SKULL",
+      "field": "descI18n",
+      "before": "每當你給予敵人<g>中毒</g>時，所給予的<g>中毒</g>層數增加1層。",
+      "after": "每當你施加<g>中毒</g>時，額外施加 1 層<g>中毒</g>。"
+    },
+    {
+      "id": "SNECKO_SKULL",
+      "field": "descriptionClean",
+      "before": "每當你給予敵人中毒時，所給予的中毒層數增加1層。",
+      "after": "每當你施加中毒時，額外施加 1 層中毒。"
+    },
+    {
+      "id": "SOZU",
+      "field": "descI18n",
+      "before": "你無法再獲得藥水。在每回合開始時獲得<e>1</e>。",
+      "after": "每回合開始時，獲得 <e>1</e>。你無法再取得<g>藥水</g>。"
+    },
+    {
+      "id": "SOZU",
+      "field": "descriptionClean",
+      "before": "你無法再獲得藥水。在每回合開始時獲得1。",
+      "after": "每回合開始時，獲得 1。你無法再取得藥水。"
+    },
+    {
+      "id": "SPARKLING_ROUGE",
+      "field": "descI18n",
+      "before": "在你的第3回合開始時，獲得1點<g>力量</g>和1點<g>敏捷</g>。",
+      "after": "在你的第 3 個回合開始時，獲得 1 層<g>力量</g>和 1 層<g>敏捷</g>。"
+    },
+    {
+      "id": "SPARKLING_ROUGE",
+      "field": "descriptionClean",
+      "before": "在你的第3回合開始時，獲得1點力量和1點敏捷。",
+      "after": "在你的第 3 個回合開始時，獲得 1 層力量和 1 層敏捷。"
+    },
+    {
+      "id": "SPIKED_GAUNTLETS",
+      "field": "descI18n",
+      "before": "在每回合開始時獲得<e>1</e>。能力牌的耗能增加1<e/>。",
+      "after": "每回合開始時，獲得 <e>1</e>。能力牌的耗能增加 1 <e/>。"
+    },
+    {
+      "id": "SPIKED_GAUNTLETS",
+      "field": "descriptionClean",
+      "before": "在每回合開始時獲得1。能力牌的耗能增加1。",
+      "after": "每回合開始時，獲得 1。能力牌的耗能增加 1 。"
+    },
+    {
+      "id": "STONE_CALENDAR",
+      "field": "descI18n",
+      "before": "在第7回合結束時，對所有敵人造成52點傷害。",
+      "after": "在第 7 個回合結束時，對所有敵人造成 52 點傷害。"
+    },
+    {
+      "id": "STONE_CALENDAR",
+      "field": "descriptionClean",
+      "before": "在第7回合結束時，對所有敵人造成52點傷害。",
+      "after": "在第 7 個回合結束時，對所有敵人造成 52 點傷害。"
+    },
+    {
+      "id": "STONE_CRACKER",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，在本場戰鬥中隨機<g>升級</g>你<g>抽牌堆</g>中的2張牌。",
+      "after": "每場戰鬥開始時，<g>升級</g>你<g>抽牌堆</g>中的 2 張隨機卡牌，持續至本場戰鬥結束。"
+    },
+    {
+      "id": "STONE_CRACKER",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，在本場戰鬥中隨機升級你抽牌堆中的2張牌。",
+      "after": "每場戰鬥開始時，升級你抽牌堆中的 2 張隨機卡牌，持續至本場戰鬥結束。"
+    },
+    {
+      "id": "STONE_HUMIDIFIER",
+      "field": "descI18n",
+      "before": "每當你在<g>休息處</g><g>休息</g>時，將你的最大生命值提升5點。",
+      "after": "每當你在<g>休息處</g>進行<g>休息</g>時，使你的最大生命提高 5 點。"
+    },
+    {
+      "id": "STONE_HUMIDIFIER",
+      "field": "descriptionClean",
+      "before": "每當你在休息處休息時，將你的最大生命值提升5點。",
+      "after": "每當你在休息處進行休息時，使你的最大生命提高 5 點。"
+    },
+    {
+      "id": "STORYBOOK",
+      "field": "descI18n",
+      "before": "拾起時，將1張<g>至亮之焰</g>添加到你的<g>牌組</g>中。",
+      "after": "拾取時，將 1 張<g>至明烈焰</g>加入你的<g>牌組</g>。"
+    },
+    {
+      "id": "STORYBOOK",
+      "field": "descriptionClean",
+      "before": "拾起時，將1張至亮之焰添加到你的牌組中。",
+      "after": "拾取時，將 1 張至明烈焰加入你的牌組。"
+    },
+    {
+      "id": "STRAWBERRY",
+      "field": "descI18n",
+      "before": "拾起時，將你的最大生命值提升7。",
+      "after": "拾取時，使你的最大生命提高 7 點。"
+    },
+    {
+      "id": "STRAWBERRY",
+      "field": "descriptionClean",
+      "before": "拾起時，將你的最大生命值提升7。",
+      "after": "拾取時，使你的最大生命提高 7 點。"
+    },
+    {
+      "id": "STRIKE_DUMMY",
+      "field": "descI18n",
+      "before": "名字中有“打擊”的卡牌造成3點額外傷害。",
+      "after": "名稱中含有「打擊」的卡牌額外造成 3 點傷害。"
+    },
+    {
+      "id": "STRIKE_DUMMY",
+      "field": "descriptionClean",
+      "before": "名字中有“打擊”的卡牌造成3點額外傷害。",
+      "after": "名稱中含有「打擊」的卡牌額外造成 3 點傷害。"
+    },
+    {
+      "id": "STURDY_CLAMP",
+      "field": "descI18n",
+      "before": "可以跨回合保留最多10點<g>格擋</g>。",
+      "after": "最多 10 點<g>格擋</g>會保留至下回合。"
+    },
+    {
+      "id": "STURDY_CLAMP",
+      "field": "descriptionClean",
+      "before": "可以跨回合保留最多10點格擋。",
+      "after": "最多 10 點格擋會保留至下回合。"
+    },
+    {
+      "id": "SWORD_OF_JADE",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，獲得3點<g>力量</g>。",
+      "after": "每場戰鬥開始時，獲得 3 層<g>力量</g>。"
+    },
+    {
+      "id": "SWORD_OF_JADE",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，獲得3點力量。",
+      "after": "每場戰鬥開始時，獲得 3 層力量。"
+    },
+    {
+      "id": "SWORD_OF_STONE",
+      "field": "descI18n",
+      "before": "在擊敗5名<g>精英</g>敵人之後將變化為一件強力<g>遺物</g>。",
+      "after": "擊敗 5 名<g>菁英</g>後，轉化為一件強大的<g>遺物</g>。"
+    },
+    {
+      "id": "SWORD_OF_STONE",
+      "field": "descriptionClean",
+      "before": "在擊敗5名精英敵人之後將變化為一件強力遺物。",
+      "after": "擊敗 5 名菁英後，轉化為一件強大的遺物。"
+    },
+    {
+      "id": "SYMBIOTIC_VIRUS",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，<g>生成</g>1個<g>黑暗</g>充能球。",
+      "after": "每場戰鬥開始時，<g>凝聚</g> 1 個<g>黑暗</g>充能球。"
+    },
+    {
+      "id": "SYMBIOTIC_VIRUS",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，生成1個黑暗充能球。",
+      "after": "每場戰鬥開始時，凝聚 1 個黑暗充能球。"
+    },
+    {
+      "id": "TANXS_WHISTLE",
+      "field": "descI18n",
+      "before": "拾起時，將1張<g>吹哨</g>加入你的<g>牌組</g>。",
+      "after": "拾取時，將 1 張<g>吹哨</g>加入你的<g>牌組</g>。"
+    },
+    {
+      "id": "TANXS_WHISTLE",
+      "field": "descriptionClean",
+      "before": "拾起時，將1張吹哨加入你的牌組。",
+      "after": "拾取時，將 1 張吹哨加入你的牌組。"
+    },
+    {
+      "id": "TEA_OF_DISCOURTESY",
+      "field": "descI18n",
+      "before": "在下一場戰鬥開始時，將2張<g>暈眩</g>放入你的<g>抽牌堆</g>。",
+      "after": "下一場戰鬥開始時，將 2 張<g>暈眩</g>牌洗入你的<g>抽牌堆</g>。"
+    },
+    {
+      "id": "TEA_OF_DISCOURTESY",
+      "field": "descriptionClean",
+      "before": "在下一場戰鬥開始時，將2張暈眩放入你的抽牌堆。",
+      "after": "下一場戰鬥開始時，將 2 張暈眩牌洗入你的抽牌堆。"
+    },
+    {
+      "id": "THE_ABACUS",
+      "field": "descI18n",
+      "before": "你每次將<g>抽牌堆</g>洗牌時，獲得6點<g>格擋</g>。",
+      "after": "每當你的<g>抽牌堆</g>洗牌時，獲得 6 點<g>格擋</g>。"
+    },
+    {
+      "id": "THE_ABACUS",
+      "field": "descriptionClean",
+      "before": "你每次將抽牌堆洗牌時，獲得6點格擋。",
+      "after": "每當你的抽牌堆洗牌時，獲得 6 點格擋。"
+    },
+    {
+      "id": "THE_BOOT",
+      "field": "descI18n",
+      "before": "每當你造成小於等於4點未被格擋的攻擊傷害時，將傷害提升為5。",
+      "after": "每當你的攻擊造成不高於 4 點的未被格擋傷害時，將其提高至 5 點。"
+    },
+    {
+      "id": "THE_BOOT",
+      "field": "descriptionClean",
+      "before": "每當你造成小於等於4點未被格擋的攻擊傷害時，將傷害提升為5。",
+      "after": "每當你的攻擊造成不高於 4 點的未被格擋傷害時，將其提高至 5 點。"
+    },
+    {
+      "id": "THE_COURIER",
+      "field": "descI18n",
+      "before": "商人的卡牌、遺物和藥水不再會賣光，並且所有商品打折20%。",
+      "after": "商人不會售罄卡牌、遺物或藥水，且所有商品價格降低 20%。"
+    },
+    {
+      "id": "THE_COURIER",
+      "field": "descriptionClean",
+      "before": "商人的卡牌、遺物和藥水不再會賣光，並且所有商品打折20%。",
+      "after": "商人不會售罄卡牌、遺物或藥水，且所有商品價格降低 20%。"
+    },
+    {
+      "id": "THROWING_AXE",
+      "field": "descI18n",
+      "before": "你在每場戰鬥中打出的第一張牌會多打出一次。",
+      "after": "每場戰鬥中你打出的第一張牌會額外打出一次。"
+    },
+    {
+      "id": "THROWING_AXE",
+      "field": "descriptionClean",
+      "before": "你在每場戰鬥中打出的第一張牌會多打出一次。",
+      "after": "每場戰鬥中你打出的第一張牌會額外打出一次。"
+    },
+    {
+      "id": "TINGSHA",
+      "field": "descI18n",
+      "before": "你每在你的回合丟棄一張牌，就對一名隨機敵人造成3點傷害。",
+      "after": "你在自己的回合中每丟棄一張牌，就對一名隨機敵人造成 3 點傷害。"
+    },
+    {
+      "id": "TINGSHA",
+      "field": "descriptionClean",
+      "before": "你每在你的回合丟棄一張牌，就對一名隨機敵人造成3點傷害。",
+      "after": "你在自己的回合中每丟棄一張牌，就對一名隨機敵人造成 3 點傷害。"
+    },
+    {
+      "id": "TINY_MAILBOX",
+      "field": "descI18n",
+      "before": "每當你<g>休息</g>時，獲得2瓶隨機藥水。",
+      "after": "每當你<g>休息</g>時，取得 2 瓶隨機<g>藥水</g>。"
+    },
+    {
+      "id": "TINY_MAILBOX",
+      "field": "descriptionClean",
+      "before": "每當你休息時，獲得2瓶隨機藥水。",
+      "after": "每當你休息時，取得 2 瓶隨機藥水。"
+    },
+    {
+      "id": "TOASTY_MITTENS",
+      "field": "descI18n",
+      "before": "在你的回合開始時，<g>消耗</g>你<g>抽牌堆</g>頂部的牌並獲得1點<g>力量</g>。",
+      "after": "在你的回合開始時，從你的<g>手牌</g>中<g>消耗</g> 1 張牌，並獲得 1 層<g>力量</g>。"
+    },
+    {
+      "id": "TOASTY_MITTENS",
+      "field": "descriptionClean",
+      "before": "在你的回合開始時，消耗你抽牌堆頂部的牌並獲得1點力量。",
+      "after": "在你的回合開始時，從你的手牌中消耗 1 張牌，並獲得 1 層力量。"
+    },
+    {
+      "id": "TOOLBOX",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，從3張隨機無色牌中選擇1張加入你的<g>手牌</g>。",
+      "after": "每場戰鬥開始時，從 3 張隨機無色牌中選擇 1 張加入你的<g>手牌</g>。"
+    },
+    {
+      "id": "TOOLBOX",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，從3張隨機無色牌中選擇1張加入你的手牌。",
+      "after": "每場戰鬥開始時，從 3 張隨機無色牌中選擇 1 張加入你的手牌。"
+    },
+    {
+      "id": "TOUCH_OF_OROBAS",
+      "field": "descI18n",
+      "before": "拾起時，將你的初始<g>遺物</g>替換為<g>先古</g>版本。",
+      "after": "拾取時，將你的起始<g>遺物</g>替換為<g>遠古</g>版本。"
+    },
+    {
+      "id": "TOUCH_OF_OROBAS",
+      "field": "descriptionClean",
+      "before": "拾起時，將你的初始遺物替換為先古版本。",
+      "after": "拾取時，將你的起始遺物替換為遠古版本。"
+    },
+    {
+      "id": "TOUGH_BANDAGES",
+      "field": "descI18n",
+      "before": "你每在你的回合丟棄一張牌，就獲得3點<g>格擋</g>。",
+      "after": "每當你在自己的回合中丟棄一張牌時，獲得 3 點<g>格擋</g>。"
+    },
+    {
+      "id": "TOUGH_BANDAGES",
+      "field": "descriptionClean",
+      "before": "你每在你的回合丟棄一張牌，就獲得3點格擋。",
+      "after": "每當你在自己的回合中丟棄一張牌時，獲得 3 點格擋。"
+    },
+    {
+      "id": "TOXIC_EGG",
+      "field": "descI18n",
+      "before": "每當你獲得<g>技能牌</g>時，將其<g>升級</g>。",
+      "after": "每當你將一張技能牌加入你的<g>牌組</g>時，將其<g>升級</g>。"
+    },
+    {
+      "id": "TOXIC_EGG",
+      "field": "descriptionClean",
+      "before": "每當你獲得技能牌時，將其升級。",
+      "after": "每當你將一張技能牌加入你的牌組時，將其升級。"
+    },
+    {
+      "id": "TOY_BOX",
+      "field": "descI18n",
+      "before": "拾起時，獲得4件<g>蠟制遺物</g>。每經過3場戰鬥，你最左側的<g>蠟制遺物</g>將會融化。",
+      "after": "拾取時，獲得 5 件<g>蠟製遺物</g>。每經過 3 場戰鬥，最左側的<g>蠟製遺物</g>就會融化。"
+    },
+    {
+      "id": "TOY_BOX",
+      "field": "descriptionClean",
+      "before": "拾起時，獲得4件蠟制遺物。每經過3場戰鬥，你最左側的蠟制遺物將會融化。",
+      "after": "拾取時，獲得 5 件蠟製遺物。每經過 3 場戰鬥，最左側的蠟製遺物就會融化。"
+    },
+    {
+      "id": "TRI_BOOMERANG",
+      "field": "descI18n",
+      "before": "從你的<g>牌組</g>中選擇3張攻擊牌。為這些牌<g>附魔</g>：本能。",
+      "after": "從你的<g>牌組</g>中選擇 3 張攻擊牌，為其<g>附魔</g>上本能。"
+    },
+    {
+      "id": "TRI_BOOMERANG",
+      "field": "descriptionClean",
+      "before": "從你的牌組中選擇3張攻擊牌。為這些牌附魔：本能。",
+      "after": "從你的牌組中選擇 3 張攻擊牌，為其附魔上本能。"
+    },
+    {
+      "id": "TUNGSTEN_ROD",
+      "field": "descI18n",
+      "before": "你每次失去生命時，減少失去的生命值1點。",
+      "after": "每當你即將失去生命時，少失去 1 點生命。"
+    },
+    {
+      "id": "TUNGSTEN_ROD",
+      "field": "descriptionClean",
+      "before": "你每次失去生命時，減少失去的生命值1點。",
+      "after": "每當你即將失去生命時，少失去 1 點生命。"
+    },
+    {
+      "id": "TUNING_FORK",
+      "field": "descI18n",
+      "before": "你每打出10張技能牌，獲得7點<g>格擋</g>。",
+      "after": "每打出 10 張技能牌，就獲得 7 點<g>格擋</g>。"
+    },
+    {
+      "id": "TUNING_FORK",
+      "field": "descriptionClean",
+      "before": "你每打出10張技能牌，獲得7點格擋。",
+      "after": "每打出 10 張技能牌，就獲得 7 點格擋。"
+    },
+    {
+      "id": "TWISTED_FUNNEL",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，給予所有敵人4層<g>中毒</g>。",
+      "after": "每場戰鬥開始時，對所有敵人施加 4 層<g>中毒</g>。"
+    },
+    {
+      "id": "TWISTED_FUNNEL",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，給予所有敵人4層中毒。",
+      "after": "每場戰鬥開始時，對所有敵人施加 4 層中毒。"
+    },
+    {
+      "id": "UNCEASING_TOP",
+      "field": "descI18n",
+      "before": "在你的回合，當你沒有<g>手牌</g>時，抽一張牌。",
+      "after": "每當你在自己的回合中<g>手牌</g>為空時，抽一張牌。"
+    },
+    {
+      "id": "UNCEASING_TOP",
+      "field": "descriptionClean",
+      "before": "在你的回合，當你沒有手牌時，抽一張牌。",
+      "after": "每當你在自己的回合中手牌為空時，抽一張牌。"
+    },
+    {
+      "id": "UNDYING_SIGIL",
+      "field": "descI18n",
+      "before": "當敵人的<g>災厄</g>層數大於等於其生命值時，它造成的傷害降低50%。",
+      "after": "若敵人的<g>惡兆</g>層數不低於其生命，該敵人造成的傷害減少 50%。"
+    },
+    {
+      "id": "UNDYING_SIGIL",
+      "field": "descriptionClean",
+      "before": "當敵人的災厄層數大於等於其生命值時，它造成的傷害降低50%。",
+      "after": "若敵人的惡兆層數不低於其生命，該敵人造成的傷害減少 50%。"
+    },
+    {
+      "id": "UNSETTLING_LAMP",
+      "field": "descI18n",
+      "before": "你在每場戰鬥中第一次打出能給予敵人<g>負面狀態</g>的牌時，將其效果翻倍。",
+      "after": "每場戰鬥中，你第一次打出會對敵人施加<g>弱化效果</g>的牌時，使其效果加倍。"
+    },
+    {
+      "id": "UNSETTLING_LAMP",
+      "field": "descriptionClean",
+      "before": "你在每場戰鬥中第一次打出能給予敵人負面狀態的牌時，將其效果翻倍。",
+      "after": "每場戰鬥中，你第一次打出會對敵人施加弱化效果的牌時，使其效果加倍。"
+    },
+    {
+      "id": "VAJRA",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，獲得1點<g>力量</g>。",
+      "after": "每場戰鬥開始時，獲得 1 層<g>力量</g>。"
+    },
+    {
+      "id": "VAJRA",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，獲得1點力量。",
+      "after": "每場戰鬥開始時，獲得 1 層力量。"
+    },
+    {
+      "id": "VAMBRACE",
+      "field": "descI18n",
+      "before": "每場戰鬥中，你第一次從卡牌中獲得的<g>格擋</g>值翻倍。",
+      "after": "每場戰鬥中，你第一次透過卡牌獲得<g>格擋</g>時，獲得量加倍。"
+    },
+    {
+      "id": "VAMBRACE",
+      "field": "descriptionClean",
+      "before": "每場戰鬥中，你第一次從卡牌中獲得的格擋值翻倍。",
+      "after": "每場戰鬥中，你第一次透過卡牌獲得格擋時，獲得量加倍。"
+    },
+    {
+      "id": "VELVET_CHOKER",
+      "field": "descI18n",
+      "before": "在每回合開始時獲得<e>1</e>。你每回合不能打出超過6張牌。",
+      "after": "每回合開始時，獲得 <e>1</e>。你每回合最多只能打出 6 張牌。"
+    },
+    {
+      "id": "VELVET_CHOKER",
+      "field": "descriptionClean",
+      "before": "在每回合開始時獲得1。你每回合不能打出超過6張牌。",
+      "after": "每回合開始時，獲得 1。你每回合最多只能打出 6 張牌。"
+    },
+    {
+      "id": "VENERABLE_TEA_SET",
+      "field": "descI18n",
+      "before": "到達<g>休息處</g>後的下一場戰鬥開始時額外獲得<e>2</e>。",
+      "after": "每當你進入<g>休息處</g>時，下一場戰鬥開始時額外獲得 <e>2</e>。"
+    },
+    {
+      "id": "VENERABLE_TEA_SET",
+      "field": "descriptionClean",
+      "before": "到達休息處後的下一場戰鬥開始時額外獲得2。",
+      "after": "每當你進入休息處時，下一場戰鬥開始時額外獲得 2。"
+    },
+    {
+      "id": "VERY_HOT_COCOA",
+      "field": "descEn",
+      "before": "Start each combat with an additional 4<e/>.",
+      "after": "Start each combat with an additional <e>4</e>."
+    },
+    {
+      "id": "VERY_HOT_COCOA",
+      "field": "descI18n",
+      "before": "在每場戰鬥的第一回合額外獲得<e>4</e>。",
+      "after": "每場戰鬥開始時，額外獲得 <e>4</e>。"
+    },
+    {
+      "id": "VERY_HOT_COCOA",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥的第一回合額外獲得4。",
+      "after": "每場戰鬥開始時，額外獲得 4。"
+    },
+    {
+      "id": "VEXING_PUZZLEBOX",
+      "field": "descI18n",
+      "before": "在每場戰鬥開始時，將一張隨機卡牌加入你的<g>手牌</g>。這張牌在本回合可以免費打出。",
+      "after": "每場戰鬥開始時，將一張隨機卡牌加入你的<g>手牌</g>。該牌本回合可免費打出。"
+    },
+    {
+      "id": "VEXING_PUZZLEBOX",
+      "field": "descriptionClean",
+      "before": "在每場戰鬥開始時，將一張隨機卡牌加入你的手牌。這張牌在本回合可以免費打出。",
+      "after": "每場戰鬥開始時，將一張隨機卡牌加入你的手牌。該牌本回合可免費打出。"
+    },
+    {
+      "id": "VITRUVIAN_MINION",
+      "field": "descI18n",
+      "before": "名字中有“僕從”的卡牌造成雙倍的傷害與<g>格擋</g>。",
+      "after": "名稱中含有「手下」的卡牌造成雙倍傷害，並獲得雙倍<g>格擋</g>。"
+    },
+    {
+      "id": "VITRUVIAN_MINION",
+      "field": "descriptionClean",
+      "before": "名字中有“僕從”的卡牌造成雙倍的傷害與格擋。",
+      "after": "名稱中含有「手下」的卡牌造成雙倍傷害，並獲得雙倍格擋。"
+    },
+    {
+      "id": "WAR_HAMMER",
+      "field": "descI18n",
+      "before": "每當你擊敗一名<g>精英</g>敵人的時候，隨機<g>升級</g>4張牌。",
+      "after": "每當你擊殺一名<g>菁英</g>時，<g>升級</g> 4 張隨機卡牌。"
+    },
+    {
+      "id": "WAR_HAMMER",
+      "field": "descriptionClean",
+      "before": "每當你擊敗一名精英敵人的時候，隨機升級4張牌。",
+      "after": "每當你擊殺一名菁英時，升級 4 張隨機卡牌。"
+    },
+    {
+      "id": "WAR_PAINT",
+      "field": "descI18n",
+      "before": "拾起時，隨機<g>升級</g>2張技能牌。",
+      "after": "拾取時，<g>升級</g> 2 張隨機技能牌。"
+    },
+    {
+      "id": "WAR_PAINT",
+      "field": "descriptionClean",
+      "before": "拾起時，隨機升級2張技能牌。",
+      "after": "拾取時，升級 2 張隨機技能牌。"
+    },
+    {
+      "id": "WHETSTONE",
+      "field": "descI18n",
+      "before": "拾起時，隨機<g>升級</g>2張攻擊牌。",
+      "after": "拾取時，<g>升級</g> 2 張隨機攻擊牌。"
+    },
+    {
+      "id": "WHETSTONE",
+      "field": "descriptionClean",
+      "before": "拾起時，隨機升級2張攻擊牌。",
+      "after": "拾取時，升級 2 張隨機攻擊牌。"
+    },
+    {
+      "id": "WHISPERING_EARRING",
+      "field": "descI18n",
+      "before": "在每個回合開始時，獲得<e>1</e>。瓦庫將接管你的第一回合。",
+      "after": "每回合開始時，獲得 <e>1</e>。瓦庫會替你進行第一個回合。"
+    },
+    {
+      "id": "WHISPERING_EARRING",
+      "field": "descriptionClean",
+      "before": "在每個回合開始時，獲得1。瓦庫將接管你的第一回合。",
+      "after": "每回合開始時，獲得 1。瓦庫會替你進行第一個回合。"
+    },
+    {
+      "id": "WHITE_BEAST_STATUE",
+      "field": "descI18n",
+      "before": "戰鬥結束後必定掉落藥水。",
+      "after": "戰鬥獎勵中總會出現<g>藥水</g>。"
+    },
+    {
+      "id": "WHITE_BEAST_STATUE",
+      "field": "descriptionClean",
+      "before": "戰鬥結束後必定掉落藥水。",
+      "after": "戰鬥獎勵中總會出現藥水。"
+    },
+    {
+      "id": "WHITE_STAR",
+      "field": "descI18n",
+      "before": "<g>精英</g>敵人額外掉落一次<g>稀有</g>卡牌獎勵。",
+      "after": "<g>菁英</g>會額外掉落一份<g>稀有</g>卡牌獎勵。"
+    },
+    {
+      "id": "WHITE_STAR",
+      "field": "descriptionClean",
+      "before": "精英敵人額外掉落一次稀有卡牌獎勵。",
+      "after": "菁英會額外掉落一份稀有卡牌獎勵。"
+    },
+    {
+      "id": "WING_CHARM",
+      "field": "descI18n",
+      "before": "每次卡牌獎勵中，都會有隨機一張牌被<g>附魔</g>：迅捷1。",
+      "after": "每份卡牌獎勵中，會為一張隨機卡牌<g>附魔</g>上迅捷 1。"
+    },
+    {
+      "id": "WING_CHARM",
+      "field": "descriptionClean",
+      "before": "每次卡牌獎勵中，都會有隨機一張牌被附魔：迅捷1。",
+      "after": "每份卡牌獎勵中，會為一張隨機卡牌附魔上迅捷 1。"
+    },
+    {
+      "id": "WINGED_BOOTS",
+      "field": "descI18n",
+      "before": "你在選擇下一層的房間時有3次機會可以無視當前的路線。",
+      "after": "選擇接下來要前往的房間時，你可以無視地圖路徑 3 次。"
+    },
+    {
+      "id": "WINGED_BOOTS",
+      "field": "descriptionClean",
+      "before": "你在選擇下一層的房間時有3次機會可以無視當前的路線。",
+      "after": "選擇接下來要前往的房間時，你可以無視地圖路徑 3 次。"
+    },
+    {
+      "id": "WONGOS_MYSTERY_TICKET",
+      "field": "descI18n",
+      "before": "在5場戰鬥後，獲得隨機3件<g>遺物</g>。",
+      "after": "經過 5 場戰鬥後，獲得 3 件隨機<g>遺物</g>。"
+    },
+    {
+      "id": "WONGOS_MYSTERY_TICKET",
+      "field": "descriptionClean",
+      "before": "在5場戰鬥後，獲得隨機3件遺物。",
+      "after": "經過 5 場戰鬥後，獲得 3 件隨機遺物。"
+    },
+    {
+      "id": "YUMMY_COOKIE",
+      "field": "descI18n",
+      "before": "拾起時，<g>升級</g>4張牌。",
+      "after": "拾取時，<g>升級</g> 4 張牌。"
+    },
+    {
+      "id": "YUMMY_COOKIE",
+      "field": "descriptionClean",
+      "before": "拾起時，升級4張牌。",
+      "after": "拾取時，升級 4 張牌。"
     }
-  ]
+  ],
+  "unmatched": []
 }

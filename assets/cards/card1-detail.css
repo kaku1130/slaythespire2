@@ -77,6 +77,10 @@ html body .card-detail[data-card-layout=compact] .detail-inline-tier {display:in
 .card-detail .detail-meta-item dd[data-type=Attack] {color:#ff777a}
 .card-detail .detail-meta-item dd[data-type=Skill] {color:lab(78.503% -64.9265 39.7492)}
 .card-detail .detail-meta-item dd[data-type=Power] {color:lab(83.2664% 8.65132 106.895)}
+.card-detail .detail-type-label {display:inline-flex;align-items:center;justify-content:center;padding:2px 9px;border-radius:5px;background:#cbd5e1;color:#000;font-weight:600;line-height:1.4;white-space:nowrap}
+.card-detail .detail-type-label[data-type=Attack] {background:#ed9094}
+.card-detail .detail-type-label[data-type=Skill] {background:#8bd6a6}
+.card-detail .detail-type-label[data-type=Power] {background:#e3bf72}
 .card-detail .detail-panel-stars {display:inline-flex;align-items:center;gap:3px;margin-left:12px}
 .card-detail .detail-resource-note {margin-top:16px;padding:16px;border:1px solid #303d4e;border-radius:9px;background:#222e33}
 .card-detail .detail-effect-notes .detail-resource-note h3 {display:inline;margin:0;color:#f1cd7f;font-size:16px}
@@ -272,7 +276,7 @@ html body main#main-content #tools #card-filter-character button:is([value=Color
 html body.cards-desktop main#main-content#main-content#main-content #tools :is(#card-filter-type button[value=Power],#card-filter-rarity button[value=Rare],#card-filter-tier button[value=A]) {
  --selection-color:#efc851!important;--rarity-text-color:#efc851!important;--tier-text-color:#efc851!important;color:#efc851!important;
 }
-html body.cards-desktop main#main-content #card-scroll :is([data-type=Power],[data-stat-rarity=Rare],[data-label-rarity=Rare]) {color:#efc851!important}
+html body.cards-desktop main#main-content #card-scroll :is([data-type=Power]:not(.detail-type-label),[data-stat-rarity=Rare],[data-label-rarity=Rare]) {color:#efc851!important}
 html body.cards-desktop main#main-content #card-scroll .detail-name-tier[data-tier=A] {--name-tier-color:#efc851;background:#efc851}
 html body.cards-desktop main#main-content #card-scroll .detail-inline-tier[data-tier=A] {color:#efc851}
 html body.cards-desktop main#main-content #card-scroll :is(.detail-tier,.detail-build-tier,.tier)[data-tier=A] {background:#efc851!important;border-color:#efc851!important}
@@ -283,7 +287,7 @@ html body main#main-content .card-detail .detail-heading-character {display:bloc
 html body main#main-content .card-detail .detail-heading-row>.detail-name-zh {min-width:0;width:100%;overflow-wrap:anywhere}
 html body main#main-content .card-detail .detail-heading-rarity {justify-self:end;max-width:100%;overflow-wrap:anywhere;text-align:right;font:600 16px/1.4 Arial,sans-serif;color:var(--detail-rarity-color)}
 html body main#main-content .card-detail .detail-bottom-tier {display:flex;justify-content:center;align-items:end;min-height:30px}
-html body main#main-content .card-detail .detail-bottom-tier>.detail-name-tier {display:inline-flex;align-items:center;justify-content:center;min-width:36px;min-height:30px;padding:0 6px;border-radius:4px;color:#fff;font:700 24px/1.25 Arial,sans-serif;text-decoration:none;background:var(--name-tier-color,#788491)}
+html body main#main-content .card-detail .detail-bottom-tier>.detail-name-tier {display:inline-flex;align-items:center;justify-content:center;min-width:36px;min-height:30px;padding:0 6px;border-radius:4px;color:#000;font:700 24px/1.25 Arial,sans-serif;text-decoration:none;background:var(--name-tier-color,#788491)}
 html body main#main-content .card-detail .detail-type-metadata:has(>.detail-meta-item:only-child) {display:flex;justify-content:center;text-align:center}
 html body main#main-content .card-detail .detail-type-metadata>.detail-meta-item:only-child {justify-self:center;justify-content:center;text-align:center}
 html body main#main-content .card-detail .detail-overview {grid-template-columns:minmax(0,1fr)}

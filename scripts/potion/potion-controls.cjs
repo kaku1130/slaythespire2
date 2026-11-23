@@ -40,7 +40,10 @@ for (const button of buttons) button.addEventListener('click', () => {
   filter();
 });
 filter();`;
-module.exports={controls,description,styles,script,compare:(a,b)=>order.indexOf(a.rarity)-order.indexOf(b.rarity)||a.name.localeCompare(b.name,'zh-TW')||a.id.localeCompare(b.id)};
+function bilingualDescription(x){
+  return '<span data-effect-language="en" lang="en">'+description(x)+'</span><span data-effect-language="zh" lang="zh-Hant" hidden>'+description({...x,descEn:x.descI18n||x.descriptionClean||x.descEn})+'</span>';
+}
+module.exports={controls,description,bilingualDescription,styles,script,compare:(a,b)=>order.indexOf(a.rarity)-order.indexOf(b.rarity)||a.name.localeCompare(b.name,'zh-TW')||a.id.localeCompare(b.id)};
 
 module.exports.styles += `
 html body main#main-content .potion-filters > .potion-rarity-dropdown {

@@ -2,7 +2,7 @@
   "source": "https://slaythespire2.net/card",
   "retrievedDate": "2026-11-20",
   "version": "v0.111.1",
-  "checkedAt": "2026-11-20T05:16:59.986Z",
+  "checkedAt": "2026-11-23T05:24:28.660Z",
   "total": 569,
   "cards": [
     {
@@ -2077,8 +2077,8 @@
       "character": "Regent",
       "tier": "S",
       "effect": {
-        "base": "Draw 1 card.\nGain <e/>.\nGain 1<s/>.\n<g>Forge</g> 5.\n<g>Exhaust</g>.",
-        "upgraded": "<g>Innate</g>.\nDraw 1 card.\nGain <e/>.\nGain 1<s/>.\n<g>Forge</g> 5.\n<g>Exhaust</g>."
+        "base": "Draw 1 card.\nGain <e/>.\nGain <s/>.\n<g>Forge</g> 5.\n<g>Exhaust</g>.",
+        "upgraded": "<g>Innate</g>.\nDraw 1 card.\nGain <e/>.\nGain <s/>.\n<g>Forge</g> 5.\n<g>Exhaust</g>."
       },
       "stats": [
         {
@@ -2148,8 +2148,8 @@
       "character": "Regent",
       "tier": "B",
       "effect": {
-        "base": "Whenever you spend or gain 1<s/>, deal 3 damage to ALL enemies.",
-        "upgraded": "Whenever you spend or gain 1<s/>, deal 4 damage to ALL enemies."
+        "base": "Whenever you spend or gain <s/>, deal 3 damage to ALL enemies.",
+        "upgraded": "Whenever you spend or gain <s/>, deal 4 damage to ALL enemies."
       },
       "stats": [
         {
@@ -4545,8 +4545,8 @@
       "character": "Regent",
       "tier": "S",
       "effect": {
-        "base": "Whenever you spend 1<s/>, gain 2 <g>Block</g> for each 1<s/> spent.",
-        "upgraded": "Whenever you spend 1<s/>, gain 3 <g>Block</g> for each 1<s/> spent."
+        "base": "Whenever you spend <s/>, gain 2 <g>Block</g> for each <s/> spent.",
+        "upgraded": "Whenever you spend <s/>, gain 3 <g>Block</g> for each <s/> spent."
       },
       "stats": [
         {
@@ -5524,8 +5524,8 @@
       "character": "Regent",
       "tier": "S",
       "effect": {
-        "base": "Next turn,\ngain <e/> and 1<s/>.\n<g>Retain</g> your <g>Hand</g> this turn.",
-        "upgraded": "Next turn,\ngain <e/> and 2<s/>.\n<g>Retain</g> your <g>Hand</g> this turn."
+        "base": "Next turn,\ngain <e/> and <s/>.\n<g>Retain</g> your <g>Hand</g> this turn.",
+        "upgraded": "Next turn,\ngain <e/> and <s/><s/>.\n<g>Retain</g> your <g>Hand</g> this turn."
       },
       "stats": [
         {
@@ -6023,8 +6023,8 @@
       "character": "Regent",
       "tier": "D",
       "effect": {
-        "base": "Deal 8 damage.\nDeals 2 additional damage for ALL your cards that have a 1<s/> cost.",
-        "upgraded": "Deal 8 damage.\nDeals 3 additional damage for ALL your cards that have a 1<s/> cost."
+        "base": "Deal 8 damage.\nDeals 2 additional damage for ALL your cards that have a <s/> cost.",
+        "upgraded": "Deal 8 damage.\nDeals 3 additional damage for ALL your cards that have a <s/> cost."
       },
       "stats": [
         {
@@ -11228,8 +11228,8 @@
       "character": "Regent",
       "tier": "A",
       "effect": {
-        "base": "Gain 8 <g>Block</g>.\nGain 1<s/>.",
-        "upgraded": "Gain 11 <g>Block</g>.\nGain 1<s/>."
+        "base": "Gain 8 <g>Block</g>.\nGain <s/>.",
+        "upgraded": "Gain 11 <g>Block</g>.\nGain <s/>."
       },
       "stats": [
         {
@@ -11280,8 +11280,8 @@
       "character": "Regent",
       "tier": "C",
       "effect": {
-        "base": "At the start of your turn, gain 2<s/>.",
-        "upgraded": "At the start of your turn, gain 3<s/>."
+        "base": "At the start of your turn, gain <s/><s/>.",
+        "upgraded": "At the start of your turn, gain <s/><s/><s/>."
       },
       "stats": [
         {
@@ -11611,8 +11611,8 @@
       "character": "Regent",
       "tier": "S",
       "effect": {
-        "base": "Gain 1<s/>.\nDraw 1 card.\nNext turn, draw 1 card.",
-        "upgraded": "Gain 2<s/>.\nDraw 1 card.\nNext turn, draw 1 card."
+        "base": "Gain <s/>.\nDraw 1 card.\nNext turn, draw 1 card.",
+        "upgraded": "Gain <s/><s/>.\nDraw 1 card.\nNext turn, draw 1 card."
       },
       "stats": [
         {
@@ -12963,8 +12963,8 @@
       "character": "Regent",
       "tier": "A",
       "effect": {
-        "base": "Gain 1<s/>.\nNext turn, gain 3<s/>.",
-        "upgraded": "Gain 1<s/>.\nNext turn, gain 4<s/>."
+        "base": "Gain <s/>.\nNext turn, gain <s/><s/><s/>.",
+        "upgraded": "Gain <s/>.\nNext turn, gain <s/><s/><s/><s/>."
       },
       "stats": [
         {
@@ -14494,8 +14494,8 @@
       "character": "Regent",
       "tier": "C",
       "effect": {
-        "base": "Deal 30 damage.\nIf this kills an enemy, gain 5<s/>.",
-        "upgraded": "Deal 38 damage.\nIf this kills an enemy, gain 5<s/>."
+        "base": "Deal 30 damage.\nIf this kills an enemy, gain <s/><s/><s/><s/><s/>.",
+        "upgraded": "Deal 38 damage.\nIf this kills an enemy, gain <s/><s/><s/><s/><s/>."
       },
       "stats": [
         {
@@ -17260,8 +17260,8 @@
       "character": "Regent",
       "tier": "A",
       "effect": {
-        "base": "Every 4<e/> you spend,\ngain <e/>.",
-        "upgraded": "Every 4<e/> you spend,\ngain <e/>."
+        "base": "Every <e/> you spend,\ngain <e/>.",
+        "upgraded": "Every <e/> you spend,\ngain <e/>."
       },
       "stats": [
         {
@@ -19399,8 +19399,8 @@
       "character": "Regent",
       "tier": "A",
       "effect": {
-        "base": "Deal 3 damage to ALL enemies for each 1<s/> gained this turn.",
-        "upgraded": "Deal 4 damage to ALL enemies for each 1<s/> gained this turn."
+        "base": "Deal 3 damage to ALL enemies for each <s/> gained this turn.",
+        "upgraded": "Deal 4 damage to ALL enemies for each <s/> gained this turn."
       },
       "stats": [
         {
@@ -20676,8 +20676,8 @@
       "character": "Regent",
       "tier": "S",
       "effect": {
-        "base": "Gain 9 1<s/>.\n<g>Exhaust</g>.",
-        "upgraded": "<g>Retain</g>.\nGain 9 1<s/>.\n<g>Exhaust</g>."
+        "base": "Gain 9 <s/>.\n<g>Exhaust</g>.",
+        "upgraded": "<g>Retain</g>.\nGain 9 <s/>.\n<g>Exhaust</g>."
       },
       "stats": [
         {
@@ -22022,8 +22022,8 @@
       "character": "Regent",
       "tier": "B",
       "effect": {
-        "base": "Deal 8 damage.\nGain 2<s/>.\nPut this card on top of your <g>Draw Pile</g>.",
-        "upgraded": "Deal 11 damage.\nGain 2<s/>.\nPut this card on top of your <g>Draw Pile</g>."
+        "base": "Deal 8 damage.\nGain <s/><s/>.\nPut this card on top of your <g>Draw Pile</g>.",
+        "upgraded": "Deal 11 damage.\nGain <s/><s/>.\nPut this card on top of your <g>Draw Pile</g>."
       },
       "stats": [
         {
@@ -22755,8 +22755,8 @@
       "character": "Regent",
       "tier": "C",
       "effect": {
-        "base": "Deal 9 damage.\nGain 1<s/>.",
-        "upgraded": "Deal 10 damage.\nGain 2<s/>."
+        "base": "Deal 9 damage.\nGain <s/>.",
+        "upgraded": "Deal 10 damage.\nGain <s/><s/>."
       },
       "stats": [
         {
@@ -25459,8 +25459,8 @@
       "character": "Regent",
       "tier": "S",
       "effect": {
-        "base": "Whenever you play a card, gain 1<s/>.",
-        "upgraded": "Whenever you play a card, gain 1<s/>."
+        "base": "Whenever you play a card, gain <s/>.",
+        "upgraded": "Whenever you play a card, gain <s/>."
       },
       "stats": [
         {
@@ -26963,8 +26963,8 @@
       "character": "Regent",
       "tier": null,
       "effect": {
-        "base": "Gain 2<s/>.",
-        "upgraded": "Gain 3<s/>."
+        "base": "Gain <s/><s/>.",
+        "upgraded": "Gain <s/><s/><s/>."
       },
       "stats": [
         {

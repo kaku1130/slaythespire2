@@ -94,7 +94,13 @@
           "name": "午夜"
         }
       ],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "失傳儀式：正式版（v0.107.1）要本回合已經消耗過牌才會給能量；Beta（v0.111.0）拿掉了這個條件，一律給能量。",
+        "契約終結對所有敵人造成的傷害：正式版（v0.107.1）17 點，Beta（v0.111.0）18 點。",
+        "彼岸嚎叫：正式版（v0.107.1）16 點傷害（升級 +5），Beta（v0.111.0）18 點（升級 +6）。",
+        "Beta（v0.111.0）新增午夜：稀有攻擊牌，耗能 12、造成 60 點傷害，但本場戰鬥中任何玩家每消耗一張牌，耗能就少 1。正式版（v0.107.1）沒有這張牌。"
+      ]
     },
     {
       "character": "ironclad",
@@ -193,7 +199,13 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "惡魔形態每回合給的力量：正式版（v0.107.1）2 點，Beta（v0.111.0）3 點，對這套打首領的成長是大幅加強。",
+        "預備打擊給的暫時力量：正式版（v0.107.1）2 點，Beta（v0.111.0）3 點。",
+        "主宰在正式版（v0.107.1）是罕見，Beta（v0.111.0）改成稀有，比較不容易出現。",
+        "整裝待戰兩版完全不同。正式版（v0.107.1）：耗能 2，手牌中每有一張攻擊牌就給能量。Beta（v0.111.0）：耗能 3，獲得 15 點格擋，每有 1 點力量再多 5 點，成為這套不錯的防禦牌。"
+      ]
     },
     {
       "character": "ironclad",
@@ -278,7 +290,11 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "緋紅披風每回合的格擋：正式版（v0.107.1）8 點（升級 +2），Beta（v0.111.0）7 點（升級 +3）。未升級時變弱，升級後一樣。",
+        "巨像的格擋：正式版（v0.107.1）5 點，Beta（v0.111.0）4 點。"
+      ]
     },
     {
       "character": "ironclad",
@@ -350,7 +366,13 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "殘酷在正式版（v0.107.1）是稀有，Beta（v0.111.0）改成罕見，比較容易拿到。",
+        "嘲諷在正式版（v0.107.1）是罕見、7 點格擋；Beta（v0.111.0）改成普通、6 點格擋。",
+        "主宰在正式版（v0.107.1）是罕見，Beta（v0.111.0）改成稀有，比較不容易出現。",
+        "巨像的格擋：正式版（v0.107.1）5 點，Beta（v0.111.0）4 點。"
+      ]
     },
     {
       "character": "ironclad",
@@ -422,7 +444,10 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "放血在正式版（v0.107.1）是普通，Beta（v0.111.0）改成罕見，稍微難拿一點。"
+      ]
     },
     {
       "character": "silent",
@@ -521,7 +546,15 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "毒疫爆發被重做了。正式版（v0.107.1）是 1 費能力：每施加 3 次中毒，對所有敵人造成 11 點傷害。Beta（v0.111.0）改成 3 費稀有技能：對所有敵人施加 9 層中毒並立刻觸發，從長期引擎變成爆發收尾。",
+        "正式版（v0.107.1）的迷霧是 3 費、對所有敵人施加 4 層中毒，並帶有奇巧。Beta（v0.111.0）降為 2 費、額外對所有敵人施加 1 層虛弱，但失去奇巧。",
+        "海市蜃樓兩版的效果相同，但升級不同：正式版（v0.107.1）升級後費用降為 0；Beta（v0.111.0）升級改為移除消耗，每次洗牌後都能再用。",
+        "正式版（v0.107.1）的計畫妥當是 1 費罕見能力，每回合可保留 1 張牌（升級後 2 張）。Beta（v0.111.0）改成 2 費稀有，回合結束時完全不再丟棄手牌（升級後降為 1 費）。",
+        "正式版（v0.107.1）的專業知識是抽牌直到手牌有 6 張。Beta（v0.111.0）改為抽 2 張，且這些牌本回合獲得保留，更適合把中毒的佈局留到下回合。",
+        "催化劑在正式版（v0.107.1）是稀有，在 Beta（v0.111.0）是罕見，所以 Beta 裡比較常在卡牌獎勵中出現。"
+      ]
     },
     {
       "character": "silent",
@@ -602,7 +635,11 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "翻身撐擊在正式版（v0.107.1）對所有敵人造成 6 點傷害，Beta（v0.111.0）提高為 7 點。",
+        "正式版（v0.107.1）的迷霧帶有奇巧，丟棄它就能免費對所有敵人施加中毒。Beta（v0.111.0）已拿掉奇巧，不再是棄牌收益牌。"
+      ]
     },
     {
       "character": "silent",
@@ -675,7 +712,8 @@
       "rationale": "小刀是 0 費，刀刃之舞和斗篷與匕首讓它擁有靜默獵手各牌組中最強的第一幕火力，計算攻擊次數的遺物還能再往上疊。但後期幾乎全看精準：沒有它，每刀傷害太低，打不穿格擋和第三幕首領，所以是 A 不是 S；和奇巧棄牌流同級，只是用較低的上限換來更好上手的開局。",
       "versions": [],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": []
     },
     {
       "character": "silent",
@@ -721,7 +759,8 @@
       "rationale": "面對重擊型敵人是最安全的牌組，但它沒有自己的輸出引擎：靈動步法和餘像只負責讓你活著，幽魂形態每回合還要扣敏捷。戰鬥一拖長就會被磨掉，這些牌比較適合當中毒流或小刀流的防禦半邊，單獨成套不夠力，所以排在 B。",
       "versions": [],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": []
     },
     {
       "character": "silent",
@@ -754,7 +793,8 @@
       "rationale": "速行者每抽一張牌就打所有敵人，抽牌夠多時不必花牌攻擊也有穩定輸出。但它靠的是速行者、稀有的群蛇形態這類高費能力，不一定拿得到；速行者又只算自己回合內的抽牌，成形比它借用大量牌的奇巧棄牌流更晚、也更不穩，所以排在 B。",
       "versions": [],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": []
     },
     {
       "character": "defect",
@@ -836,7 +876,11 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "正式版（v0.107.1）的同步每種不同的充能球給 2 點集中，且帶有消耗。Beta（v0.111.0）改為每種充能球 1 點（升級後 2 點），但不再消耗，變成較小但可重複使用的增益。",
+        "正式版（v0.107.1）的超能光束會永久失去 3 點集中，和這個流派衝突。Beta（v0.111.0）改為只在本回合失去集中（傷害從 28 降為 24），因此可以當作全體收尾牌使用。"
+      ]
     },
     {
       "character": "defect",
@@ -898,7 +942,10 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "動量打擊在正式版（v0.107.1）造成 10 點傷害（升級後 13），Beta（v0.111.0）為 11 點（升級後 15）。"
+      ]
     },
     {
       "character": "defect",
@@ -962,7 +1009,10 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "雷霆每次激發閃電時，正式版（v0.107.1）造成 6 點傷害（升級後 8），Beta（v0.111.0）提高為 8 點（升級後 11）。"
+      ]
     },
     {
       "character": "defect",
@@ -1029,7 +1079,12 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "Beta（v0.111.0）的粉碎新增消耗，每場戰鬥只能全體激發一次；正式版（v0.107.1）可以重複使用。",
+        "歸零施加的虛弱在正式版（v0.107.1）為 2 層（升級後 3），Beta（v0.111.0）只有 1 層（升級後 2）。",
+        "大激發前用同步拉高的集中在 Beta（v0.111.0）減半：每種充能球從 2 點變為 1 點。"
+      ]
     },
     {
       "character": "defect",
@@ -1077,7 +1132,11 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "正式版（v0.107.1）中，每產生一張狀態牌就會讓火箭飛拳在打出前費用變為 0。Beta（v0.111.0）改為每張狀態牌只讓費用降低 1。",
+        "正式版（v0.107.1）升級化腐朽為神奇會獲得固有；Beta（v0.111.0）的升級改為費用降低 1。"
+      ]
     },
     {
       "character": "regent",
@@ -1140,7 +1199,8 @@
       "rationale": "輝星是儲君獨有的資源，這套牌組靠每局都會看到的普通牌就能組起來：輝光、隱秘藏品、收集光輝都只要 1 點能量，還附帶抽牌或格擋；而彗星（33 點傷害外加虛弱與易傷）這類消耗手段完全不花能量。它不依賴任何一張特定稀有牌，單體首領和多敵人戰鬥都應付得來，所以排在儲君所有其他流派之上。",
       "versions": [],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": []
     },
     {
       "character": "regent",
@@ -1181,7 +1241,10 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "星位連珠在正式版（v0.107.1）要花 3 點輝星，Beta（v0.111.0）降為 2 點，Beta 上的循環明顯更容易維持。"
+      ]
     },
     {
       "character": "regent",
@@ -1241,7 +1304,11 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "淬鍊刀刃的鑄造量在正式版（v0.107.1）為 9，Beta（v0.111.0）為 8。",
+        "征戰所得的鑄造量在正式版（v0.107.1）為 5，Beta（v0.111.0）為 6。"
+      ]
     },
     {
       "character": "regent",
@@ -1271,7 +1338,8 @@
       "rationale": "虛空形態一旦打出，之後每回合前兩張牌免費，是儲君最強的效果之一，而且不需要龐大的輝星收入。但它要花 3 點能量還會直接結束回合，面對前期壓力很吃虧；未升級時又是虛無，抽到的那回合付不起就整場戰鬥都沒了。回報很大，卻綁在一張稀有牌和一個空過的回合上，因此和鑄造流同列 B。",
       "versions": [],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": []
     },
     {
       "character": "regent",
@@ -1309,7 +1377,10 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "創造之柱每生成一張牌獲得的格擋，正式版（v0.107.1）為 3，Beta（v0.111.0）降為 2（升級後為 4 與 3）。"
+      ]
     },
     {
       "character": "necrobinder",
@@ -1369,7 +1440,12 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "正式版（v0.107.1）的作祟每打出一張靈魂讓隨機敵人失去 6 點生命；Beta（v0.111.0）提高到 7 點。",
+        "正式版（v0.107.1）的靈魂風暴在消耗堆中每有一張靈魂額外造成 2 點傷害（升級 +1）；Beta（v0.111.0）翻倍為 4 點（升級 +2）。",
+        "剝奪在正式版（v0.107.1）造成 9 點傷害（升級 +2），Beta（v0.111.0）為 10 點（升級 +3）。"
+      ]
     },
     {
       "character": "necrobinder",
@@ -1437,7 +1513,11 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "暗幕每次施加惡兆時，正式版（v0.107.1）獲得 2 點格擋，Beta（v0.111.0）獲得 3 點。",
+        "正式版（v0.107.1）的大限已至帶有消耗；Beta（v0.111.0）不再消耗，可以重複打出當收尾。"
+      ]
     },
     {
       "character": "necrobinder",
@@ -1494,7 +1574,10 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "犧牲在正式版（v0.107.1）獲得奧斯提最大生命值 2 倍的格擋，Beta（v0.111.0）改為 3 倍，緊急保命的效果強很多。"
+      ]
     },
     {
       "character": "necrobinder",
@@ -1534,7 +1617,10 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "靈影在兩個版本是完全不同的牌。正式版（v0.107.1）：消耗所有手牌，若因此消耗 9 張牌則獲得無實體。Beta（v0.111.0）：打出消耗堆中所有虛無牌，本身消耗——只有 Beta 版才是這個流派的收益牌。"
+      ]
     },
     {
       "character": "necrobinder",
@@ -1572,8 +1658,12 @@
         }
       ],
       "missing": [],
-      "textOrigin": "user-provided"
+      "textOrigin": "user-provided",
+      "versionNotes": [
+        "巨鐮每次打出永久增加的傷害，正式版（v0.107.1）為 4（升級 +1），Beta（v0.111.0）為 5（升級 +2）。"
+      ]
     }
   ],
-  "textMode": "25 個流派均採用使用者提供的完整文字"
+  "textMode": "25 個流派均採用使用者提供的完整文字",
+  "versionNotesRetrievedDate": "2026-11-23"
 }

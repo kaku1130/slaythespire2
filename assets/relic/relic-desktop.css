@@ -111,6 +111,7 @@ html body main#main-content#main-content .catalog-relic-card .relic-icon-row>.re
 html body main#main-content .catalog-relic-card .relic-pool-corner>img {display:block;width:28px;height:28px;object-fit:contain;margin:0;flex:none}
 html body main#main-content .catalog-relic-card[data-relic-id] {grid-template-columns:minmax(0,1fr);grid-template-rows:auto;grid-auto-rows:auto;align-items:start}
 html body main#main-content .catalog-relic-card .relic-card-text {grid-column:1;grid-row:1}
+html body main#main-content .catalog-relic-card[data-relic-id] .relic-card-text > p {width:80%;margin:0 auto;justify-self:center}
 html body main#main-content .catalog-relic-card .relic-card-text h3 .relic-name-zh {display:block}
 html body main#main-content .catalog-relic-card .relic-card-text .tag {justify-content:center;margin:0}
 html body main#main-content .catalog-relic-card .relic-card-ranking,

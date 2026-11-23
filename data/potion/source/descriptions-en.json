@@ -1,322 +1,447 @@
 {
   "source": "https://slaythespire2.net/potion",
-  "retrievedDate": "2026-11-21",
-  "version": "v0.111.1",
+  "retrievedDate": "2026-11-23T05:21:12.780Z",
   "items": [
     {
-      "imagePath": "/images/potions/attack_potion.webp",
-      "name": "Attack Potion",
-      "description": "Choose 1 of 3 random Attack cards to add into your <g>Hand</g>. It's free to play this turn."
-    },
-    {
-      "imagePath": "/images/potions/block_potion.webp",
-      "name": "Block Potion",
-      "description": "Gain 12 <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/potions/blood_potion.webp",
-      "name": "Blood Potion",
-      "description": "Heal for 20% of your Max HP."
-    },
-    {
-      "imagePath": "/images/potions/colorless_potion.webp",
-      "name": "Colorless Potion",
-      "description": "Choose 1 of 3 random Colorless cards to add into your <g>Hand</g>. It's free to play this turn."
-    },
-    {
-      "imagePath": "/images/potions/dexterity_potion.webp",
-      "name": "Dexterity Potion",
-      "description": "Gain 2 <g>Dexterity</g>."
-    },
-    {
-      "imagePath": "/images/potions/energy_potion.webp",
-      "name": "Energy Potion",
-      "description": "Gain <e/><e/>."
-    },
-    {
-      "imagePath": "/images/potions/explosive_ampoule.webp",
-      "name": "Explosive Ampoule",
-      "description": "Deal 10 damage to ALL enemies."
-    },
-    {
-      "imagePath": "/images/potions/fire_potion.webp",
-      "name": "Fire Potion",
-      "description": "Deal 20 damage."
-    },
-    {
-      "imagePath": "/images/potions/flex_potion.webp",
-      "name": "Flex Potion",
-      "description": "Gain 5 <g>Strength</g>. At the end of your turn, lose 5 <g>Strength</g>."
-    },
-    {
-      "imagePath": "/images/potions/focus_potion.webp",
-      "name": "Focus Potion",
-      "description": "Gain 2 <g>Focus</g>."
-    },
-    {
-      "imagePath": "/images/potions/poison_potion.webp",
-      "name": "Poison Potion",
-      "description": "Apply 6 <g>Poison</g>."
-    },
-    {
-      "imagePath": "/images/potions/potion_of_doom.webp",
-      "name": "Potion of Doom",
-      "description": "Apply 33 <g>Doom</g>."
-    },
-    {
-      "imagePath": "/images/potions/power_potion.webp",
-      "name": "Power Potion",
-      "description": "Choose 1 of 3 random Power cards to add into your <g>Hand</g>. It's free to play this turn."
-    },
-    {
-      "imagePath": "/images/potions/skill_potion.webp",
-      "name": "Skill Potion",
-      "description": "Choose 1 of 3 random Skill cards to add into your <g>Hand</g>. It's free to play this turn."
-    },
-    {
-      "imagePath": "/images/potions/speed_potion.webp",
-      "name": "Speed Potion",
-      "description": "Gain 5 <g>Dexterity</g>. At the end of your turn, lose 5 <g>Dexterity</g>."
-    },
-    {
-      "imagePath": "/images/potions/star_potion.webp",
-      "name": "Star Potion",
-      "description": "Gain <s/><s/><s/>."
-    },
-    {
-      "imagePath": "/images/potions/strength_potion.webp",
-      "name": "Strength Potion",
-      "description": "Gain 2 <g>Strength</g>."
-    },
-    {
-      "imagePath": "/images/potions/swift_potion.webp",
-      "name": "Swift Potion",
-      "description": "Draw 3 cards."
-    },
-    {
-      "imagePath": "/images/potions/vulnerable_potion.webp",
-      "name": "Vulnerable Potion",
-      "description": "Apply 3 <g>Vulnerable</g>."
-    },
-    {
-      "imagePath": "/images/potions/weak_potion.webp",
-      "name": "Weak Potion",
-      "description": "Apply 3 <g>Weak</g>."
-    },
-    {
-      "imagePath": "/images/potions/ashwater.webp",
-      "name": "Ashwater",
-      "description": "<g>Exhaust</g> any number of cards in your <g>Hand</g>."
-    },
-    {
-      "imagePath": "/images/potions/blessing_of_the_forge.webp",
-      "name": "Blessing of the Forge",
-      "description": "<g>Upgrade</g> all cards in your <g>Hand</g> for the rest of combat."
-    },
-    {
-      "imagePath": "/images/potions/bone_brew.webp",
-      "name": "Bone Brew",
-      "description": "<g>Summon</g> 15."
-    },
-    {
-      "imagePath": "/images/potions/clarity.webp",
-      "name": "Clarity Extract",
-      "description": "Draw 1 card. At the start of your next 3 turns, draw 1 additional card."
-    },
-    {
-      "imagePath": "/images/potions/cunning_potion.webp",
-      "name": "Cunning Potion",
-      "description": "Add 3 <g>Upgraded Shivs</g> into your <g>Hand</g>."
-    },
-    {
-      "imagePath": "/images/potions/cure_all.webp",
-      "name": "Cure All",
-      "description": "Gain <e/>. Draw 2 cards."
-    },
-    {
-      "imagePath": "/images/potions/duplicator.webp",
-      "name": "Duplicator",
-      "description": "This turn, your next card is played an extra time."
-    },
-    {
-      "imagePath": "/images/potions/fortifier.webp",
-      "name": "Fortifier",
-      "description": "Triple your <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/potions/fysh_oil.webp",
-      "name": "Fysh Oil",
-      "description": "Gain 1 <g>Strength</g> and 1 <g>Dexterity</g>."
-    },
-    {
-      "imagePath": "/images/potions/gamblers_brew.webp",
-      "name": "Gambler's Brew",
-      "description": "Discard any number of cards, then draw that many."
-    },
-    {
-      "imagePath": "/images/potions/heart_of_iron.webp",
-      "name": "Heart of Iron",
-      "description": "Gain 7 <g>Plating</g>."
-    },
-    {
-      "imagePath": "/images/potions/kings_courage.webp",
-      "name": "King's Courage",
-      "description": "<g>Forge</g> 15."
-    },
-    {
-      "imagePath": "/images/potions/liquid_bronze.webp",
-      "name": "Liquid Bronze",
-      "description": "Gain 3 <g>Thorns</g>."
-    },
-    {
-      "imagePath": "/images/potions/potion_of_binding.webp",
-      "name": "Potion of Binding",
-      "description": "Apply 1 <g>Weak</g> and 1 <g>Vulnerable</g> to ALL enemies."
-    },
-    {
-      "imagePath": "/images/potions/potion_of_capacity.webp",
-      "name": "Potion of Capacity",
-      "description": "Gain 2 <g>Orb Slots</g>."
-    },
-    {
-      "imagePath": "/images/potions/powdered_demise.webp",
-      "name": "Powdered Demise",
-      "description": "Enemy loses 9 HP at the end of each of its turns."
-    },
-    {
-      "imagePath": "/images/potions/radiant_tincture.webp",
-      "name": "Radiant Tincture",
-      "description": "Gain <e/>. Gain an additional <e/> at the start of your next 3 turns."
-    },
-    {
-      "imagePath": "/images/potions/regen_potion.webp",
-      "name": "Regen Potion",
-      "description": "Gain 5 <g>Regen</g>."
-    },
-    {
-      "imagePath": "/images/potions/stable_serum.webp",
-      "name": "Stable Serum",
-      "description": "<g>Retain</g> your <g>Hand</g> for 2 turns."
-    },
-    {
-      "imagePath": "/images/potions/touch_of_insanity.webp",
-      "name": "Touch of Insanity",
-      "description": "Choose a card in your <g>Hand</g>. It is free to play this combat."
-    },
-    {
-      "imagePath": "/images/potions/beetle_juice.webp",
-      "name": "Beetle Juice",
-      "description": "Enemy's attacks deal 30% less damage for the next 4 turns."
-    },
-    {
-      "imagePath": "/images/potions/bottled_potential.webp",
-      "name": "Bottled Potential",
-      "description": "Shuffle ALL your cards into your <g>Draw Pile</g>. Draw 5 cards."
-    },
-    {
-      "imagePath": "/images/potions/cosmic_concoction.webp",
-      "name": "Cosmic Concoction",
-      "description": "Add 3 <g>Upgraded</g> Colorless cards into your <g>Hand</g>."
-    },
-    {
-      "imagePath": "/images/potions/distilled_chaos.webp",
-      "name": "Distilled Chaos",
-      "description": "Play the top 3 cards of your <g>Draw Pile</g>."
-    },
-    {
-      "imagePath": "/images/potions/droplet_of_precognition.webp",
-      "name": "Droplet of Precognition",
-      "description": "Choose a card in your <g>Draw Pile</g> and add it into your <g>Hand</g>."
-    },
-    {
-      "imagePath": "/images/potions/entropic_brew.webp",
-      "name": "Entropic Brew",
-      "description": "Fill all your empty potion slots with random potions."
-    },
-    {
-      "imagePath": "/images/potions/essence_of_darkness.webp",
-      "name": "Essence of Darkness",
-      "description": "<g>Channel</g> a <g>Dark</g> for each of your <g>Orb Slots</g>."
-    },
-    {
-      "imagePath": "/images/potions/fairy_in_a_bottle.webp",
-      "name": "Fairy in a Bottle",
-      "description": "When your HP would be reduced to 0, instead this potion is discarded and you heal to 30% of your Max HP."
-    },
-    {
-      "imagePath": "/images/potions/fruit_juice.webp",
-      "name": "Fruit Juice",
-      "description": "Gain 5 Max HP."
-    },
-    {
-      "imagePath": "/images/potions/ghost_in_a_jar.webp",
-      "name": "Ghost in a Jar",
-      "description": "Gain 1 <g>Intangible</g>."
-    },
-    {
-      "imagePath": "/images/potions/gigantification_potion.webp",
-      "name": "Gigantification Potion",
-      "description": "The next Attack you play deals triple damage."
-    },
-    {
-      "imagePath": "/images/potions/liquid_memories.webp",
-      "name": "Liquid Memories",
-      "description": "Put a card from your <g>Discard Pile</g> into your <g>Hand</g>. It's free to play this turn."
-    },
-    {
-      "imagePath": "/images/potions/lucky_tonic.webp",
-      "name": "Lucky Tonic",
-      "description": "Gain 1 <g>Buffer</g>."
-    },
-    {
-      "imagePath": "/images/potions/mazaleths_gift.webp",
-      "name": "Mazaleth's Gift",
-      "description": "Gain 1 <g>Ritual</g>."
-    },
-    {
-      "imagePath": "/images/potions/orobic_acid.webp",
-      "name": "Orobic Acid",
-      "description": "Add a random Attack, Skill, and Power into your <g>Hand</g>. They're free to play this turn."
-    },
-    {
-      "imagePath": "/images/potions/pot_of_ghouls.webp",
-      "name": "Pot of Ghouls",
-      "description": "Add 2 <g>Souls</g> into your <g>Hand</g>."
-    },
-    {
-      "imagePath": "/images/potions/shackling_potion.webp",
-      "name": "Shackling Potion",
-      "description": "ALL enemies lose 7 <g>Strength</g> this turn."
-    },
-    {
-      "imagePath": "/images/potions/ship_in_a_bottle.webp",
-      "name": "Ship in a Bottle",
-      "description": "Gain 10 <g>Block</g>. Next turn, gain 10 <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/potions/snecko_oil.webp",
-      "name": "Snecko Oil",
-      "description": "Draw 7 cards. Randomize the cost of cards in your <g>Hand</g> this turn."
-    },
-    {
-      "imagePath": "/images/potions/soldiers_stew.webp",
-      "name": "Soldier's Stew",
-      "description": "All cards containing <g>Strike</g> gain 1 <g>Replay</g> this combat."
-    },
-    {
+      "id": "AMBERGRIS",
       "imagePath": "/images/potions/ambergris.webp",
       "name": "Ambergris",
-      "description": "Heal for 50% of your Max HP. If used in combat, take an extra turn."
+      "description": "Heal for 50% of your Max HP. If used in combat, take an extra turn.",
+      "descriptionClean": "Heal for 50% of your Max HP. If used in combat, take an extra turn."
     },
     {
+      "id": "ASHWATER",
+      "imagePath": "/images/potions/ashwater.webp",
+      "name": "Ashwater",
+      "description": "<g>Exhaust</g> any number of cards in your <g>Hand</g>.",
+      "descriptionClean": "Exhaust any number of cards in your Hand."
+    },
+    {
+      "id": "ATTACK_POTION",
+      "imagePath": "/images/potions/attack_potion.webp",
+      "name": "Attack Potion",
+      "description": "Choose 1 of 3 random Attack cards to add into your <g>Hand</g>. It's free to play this turn.",
+      "descriptionClean": "Choose 1 of 3 random Attack cards to add into your Hand. It's free to play this turn."
+    },
+    {
+      "id": "BEETLE_JUICE",
+      "imagePath": "/images/potions/beetle_juice.webp",
+      "name": "Beetle Juice",
+      "description": "Enemy's attacks deal 30% less damage for the next 4 turns.",
+      "descriptionClean": "Enemy's attacks deal 30% less damage for the next 4 turns."
+    },
+    {
+      "id": "BLESSING_OF_THE_FORGE",
+      "imagePath": "/images/potions/blessing_of_the_forge.webp",
+      "name": "Blessing of the Forge",
+      "description": "<g>Upgrade</g> all cards in your <g>Hand</g> for the rest of combat.",
+      "descriptionClean": "Upgrade all cards in your Hand for the rest of combat."
+    },
+    {
+      "id": "BLOCK_POTION",
+      "imagePath": "/images/potions/block_potion.webp",
+      "name": "Block Potion",
+      "description": "Gain 12 <g>Block</g>.",
+      "descriptionClean": "Gain 12 Block."
+    },
+    {
+      "id": "BLOOD_POTION",
+      "imagePath": "/images/potions/blood_potion.webp",
+      "name": "Blood Potion",
+      "description": "Heal for 20% of your Max HP.",
+      "descriptionClean": "Heal for 20% of your Max HP."
+    },
+    {
+      "id": "BONE_BREW",
+      "imagePath": "/images/potions/bone_brew.webp",
+      "name": "Bone Brew",
+      "description": "<g>Summon</g> 15.",
+      "descriptionClean": "Summon 15."
+    },
+    {
+      "id": "BOTTLED_POTENTIAL",
+      "imagePath": "/images/potions/bottled_potential.webp",
+      "name": "Bottled Potential",
+      "description": "Shuffle ALL your cards into your <g>Draw Pile</g>. Draw 5 cards.",
+      "descriptionClean": "Shuffle ALL your cards into your Draw Pile. Draw 5 cards."
+    },
+    {
+      "id": "CLARITY",
+      "imagePath": "/images/potions/clarity.webp",
+      "name": "Clarity Extract",
+      "description": "Draw 1 card. At the start of your next 3 turns, draw 1 additional card.",
+      "descriptionClean": "Draw 1 card. At the start of your next 3 turns, draw 1 additional card."
+    },
+    {
+      "id": "COLORLESS_POTION",
+      "imagePath": "/images/potions/colorless_potion.webp",
+      "name": "Colorless Potion",
+      "description": "Choose 1 of 3 random Colorless cards to add into your <g>Hand</g>. It's free to play this turn.",
+      "descriptionClean": "Choose 1 of 3 random Colorless cards to add into your Hand. It's free to play this turn."
+    },
+    {
+      "id": "COSMIC_CONCOCTION",
+      "imagePath": "/images/potions/cosmic_concoction.webp",
+      "name": "Cosmic Concoction",
+      "description": "Add 3 <g>Upgraded</g> Colorless cards into your <g>Hand</g>.",
+      "descriptionClean": "Add 3 Upgraded Colorless cards into your Hand."
+    },
+    {
+      "id": "CUNNING_POTION",
+      "imagePath": "/images/potions/cunning_potion.webp",
+      "name": "Cunning Potion",
+      "description": "Add 3 <g>Upgraded Shivs</g> into your <g>Hand</g>.",
+      "descriptionClean": "Add 3 Upgraded Shivs into your Hand."
+    },
+    {
+      "id": "CURE_ALL",
+      "imagePath": "/images/potions/cure_all.webp",
+      "name": "Cure All",
+      "description": "Gain <e>1</e>. Draw 2 cards.",
+      "descriptionClean": "Gain 1. Draw 2 cards."
+    },
+    {
+      "id": "DEXTERITY_POTION",
+      "imagePath": "/images/potions/dexterity_potion.webp",
+      "name": "Dexterity Potion",
+      "description": "Gain 2 <g>Dexterity</g>.",
+      "descriptionClean": "Gain 2 Dexterity."
+    },
+    {
+      "id": "DISTILLED_CHAOS",
+      "imagePath": "/images/potions/distilled_chaos.webp",
+      "name": "Distilled Chaos",
+      "description": "Play the top 3 cards of your <g>Draw Pile</g>.",
+      "descriptionClean": "Play the top 3 cards of your Draw Pile."
+    },
+    {
+      "id": "DROPLET_OF_PRECOGNITION",
+      "imagePath": "/images/potions/droplet_of_precognition.webp",
+      "name": "Droplet of Precognition",
+      "description": "Choose a card in your <g>Draw Pile</g> and add it into your <g>Hand</g>.",
+      "descriptionClean": "Choose a card in your Draw Pile and add it into your Hand."
+    },
+    {
+      "id": "DUPLICATOR",
+      "imagePath": "/images/potions/duplicator.webp",
+      "name": "Duplicator",
+      "description": "This turn, your next card is played an extra time.",
+      "descriptionClean": "This turn, your next card is played an extra time."
+    },
+    {
+      "id": "ENERGY_POTION",
+      "imagePath": "/images/potions/energy_potion.webp",
+      "name": "Energy Potion",
+      "description": "Gain <e>2</e>.",
+      "descriptionClean": "Gain 2."
+    },
+    {
+      "id": "ENTROPIC_BREW",
+      "imagePath": "/images/potions/entropic_brew.webp",
+      "name": "Entropic Brew",
+      "description": "Fill all your empty potion slots with random potions.",
+      "descriptionClean": "Fill all your empty potion slots with random potions."
+    },
+    {
+      "id": "ESSENCE_OF_DARKNESS",
+      "imagePath": "/images/potions/essence_of_darkness.webp",
+      "name": "Essence of Darkness",
+      "description": "<g>Channel</g> a <g>Dark</g> for each of your <g>Orb Slots</g>.",
+      "descriptionClean": "Channel a Dark for each of your Orb Slots."
+    },
+    {
+      "id": "EXPLOSIVE_AMPOULE",
+      "imagePath": "/images/potions/explosive_ampoule.webp",
+      "name": "Explosive Ampoule",
+      "description": "Deal 10 damage to ALL enemies.",
+      "descriptionClean": "Deal 10 damage to ALL enemies."
+    },
+    {
+      "id": "FAIRY_IN_A_BOTTLE",
+      "imagePath": "/images/potions/fairy_in_a_bottle.webp",
+      "name": "Fairy in a Bottle",
+      "description": "When your HP would be reduced to 0, instead this potion is discarded and you heal to 30% of your Max HP.",
+      "descriptionClean": "When your HP would be reduced to 0, instead this potion is discarded and you heal to 30% of your Max HP."
+    },
+    {
+      "id": "FIRE_POTION",
+      "imagePath": "/images/potions/fire_potion.webp",
+      "name": "Fire Potion",
+      "description": "Deal 20 damage.",
+      "descriptionClean": "Deal 20 damage."
+    },
+    {
+      "id": "FLEX_POTION",
+      "imagePath": "/images/potions/flex_potion.webp",
+      "name": "Flex Potion",
+      "description": "Gain 5 <g>Strength</g>. At the end of your turn, lose 5 <g>Strength</g>.",
+      "descriptionClean": "Gain 5 Strength. At the end of your turn, lose 5 Strength."
+    },
+    {
+      "id": "FOCUS_POTION",
+      "imagePath": "/images/potions/focus_potion.webp",
+      "name": "Focus Potion",
+      "description": "Gain 2 <g>Focus</g>.",
+      "descriptionClean": "Gain 2 Focus."
+    },
+    {
+      "id": "FORTIFIER",
+      "imagePath": "/images/potions/fortifier.webp",
+      "name": "Fortifier",
+      "description": "Triple your <g>Block</g>.",
+      "descriptionClean": "Triple your Block."
+    },
+    {
+      "id": "FOUL_POTION",
       "imagePath": "/images/potions/foul_potion.webp",
       "name": "Foul Potion",
-      "description": "Deal 12 damage to ALL players and enemies.\nCan be thrown at the <g>Merchant</g> for 100 <g>Gold</g> instead."
+      "description": "Deal 12 damage to ALL players and enemies.\nCan be thrown at the <g>Merchant</g> for 100 <g>Gold</g> instead.",
+      "descriptionClean": "Deal 12 damage to ALL players and enemies.\nCan be thrown at the Merchant for 100 Gold instead."
     },
     {
+      "id": "FRUIT_JUICE",
+      "imagePath": "/images/potions/fruit_juice.webp",
+      "name": "Fruit Juice",
+      "description": "Gain 5 Max HP.",
+      "descriptionClean": "Gain 5 Max HP."
+    },
+    {
+      "id": "FYSH_OIL",
+      "imagePath": "/images/potions/fysh_oil.webp",
+      "name": "Fysh Oil",
+      "description": "Gain 1 <g>Strength</g> and 1 <g>Dexterity</g>.",
+      "descriptionClean": "Gain 1 Strength and 1 Dexterity."
+    },
+    {
+      "id": "GAMBLERS_BREW",
+      "imagePath": "/images/potions/gamblers_brew.webp",
+      "name": "Gambler's Brew",
+      "description": "Discard any number of cards, then draw that many.",
+      "descriptionClean": "Discard any number of cards, then draw that many."
+    },
+    {
+      "id": "GHOST_IN_A_JAR",
+      "imagePath": "/images/potions/ghost_in_a_jar.webp",
+      "name": "Ghost in a Jar",
+      "description": "Gain 1 <g>Intangible</g>.",
+      "descriptionClean": "Gain 1 Intangible."
+    },
+    {
+      "id": "GIGANTIFICATION_POTION",
+      "imagePath": "/images/potions/gigantification_potion.webp",
+      "name": "Gigantification Potion",
+      "description": "The next Attack you play deals triple damage.",
+      "descriptionClean": "The next Attack you play deals triple damage."
+    },
+    {
+      "id": "GLOWWATER_POTION",
       "imagePath": "/images/potions/glowwater_potion.webp",
       "name": "Glowwater Potion",
-      "description": "<g>Exhaust</g> your <g>Hand</g>. Draw 10 cards."
+      "description": "<g>Exhaust</g> your <g>Hand</g>. Draw 10 cards.",
+      "descriptionClean": "Exhaust your Hand. Draw 10 cards."
+    },
+    {
+      "id": "HEART_OF_IRON",
+      "imagePath": "/images/potions/heart_of_iron.webp",
+      "name": "Heart of Iron",
+      "description": "Gain 7 <g>Plating</g>.",
+      "descriptionClean": "Gain 7 Plating."
+    },
+    {
+      "id": "KINGS_COURAGE",
+      "imagePath": "/images/potions/kings_courage.webp",
+      "name": "King's Courage",
+      "description": "<g>Forge</g> 15.",
+      "descriptionClean": "Forge 15."
+    },
+    {
+      "id": "LIQUID_BRONZE",
+      "imagePath": "/images/potions/liquid_bronze.webp",
+      "name": "Liquid Bronze",
+      "description": "Gain 3 <g>Thorns</g>.",
+      "descriptionClean": "Gain 3 Thorns."
+    },
+    {
+      "id": "LIQUID_MEMORIES",
+      "imagePath": "/images/potions/liquid_memories.webp",
+      "name": "Liquid Memories",
+      "description": "Put a card from your <g>Discard Pile</g> into your <g>Hand</g>. It's free to play this turn.",
+      "descriptionClean": "Put a card from your Discard Pile into your Hand. It's free to play this turn."
+    },
+    {
+      "id": "LUCKY_TONIC",
+      "imagePath": "/images/potions/lucky_tonic.webp",
+      "name": "Lucky Tonic",
+      "description": "Gain 1 <g>Buffer</g>.",
+      "descriptionClean": "Gain 1 Buffer."
+    },
+    {
+      "id": "MAZALETHS_GIFT",
+      "imagePath": "/images/potions/mazaleths_gift.webp",
+      "name": "Mazaleth's Gift",
+      "description": "Gain 1 <g>Ritual</g>.",
+      "descriptionClean": "Gain 1 Ritual."
+    },
+    {
+      "id": "OROBIC_ACID",
+      "imagePath": "/images/potions/orobic_acid.webp",
+      "name": "Orobic Acid",
+      "description": "Add a random Attack, Skill, and Power into your <g>Hand</g>. They're free to play this turn.",
+      "descriptionClean": "Add a random Attack, Skill, and Power into your Hand. They're free to play this turn."
+    },
+    {
+      "id": "POISON_POTION",
+      "imagePath": "/images/potions/poison_potion.webp",
+      "name": "Poison Potion",
+      "description": "Apply 6 <g>Poison</g>.",
+      "descriptionClean": "Apply 6 Poison."
+    },
+    {
+      "id": "POT_OF_GHOULS",
+      "imagePath": "/images/potions/pot_of_ghouls.webp",
+      "name": "Pot of Ghouls",
+      "description": "Add 2 <g>Souls</g> into your <g>Hand</g>.",
+      "descriptionClean": "Add 2 Souls into your Hand."
+    },
+    {
+      "id": "POTION_OF_BINDING",
+      "imagePath": "/images/potions/potion_of_binding.webp",
+      "name": "Potion of Binding",
+      "description": "Apply 1 <g>Weak</g> and 1 <g>Vulnerable</g> to ALL enemies.",
+      "descriptionClean": "Apply 1 Weak and 1 Vulnerable to ALL enemies."
+    },
+    {
+      "id": "POTION_OF_CAPACITY",
+      "imagePath": "/images/potions/potion_of_capacity.webp",
+      "name": "Potion of Capacity",
+      "description": "Gain 2 <g>Orb Slots</g>.",
+      "descriptionClean": "Gain 2 Orb Slots."
+    },
+    {
+      "id": "POTION_OF_DOOM",
+      "imagePath": "/images/potions/potion_of_doom.webp",
+      "name": "Potion of Doom",
+      "description": "Apply 33 <g>Doom</g>.",
+      "descriptionClean": "Apply 33 Doom."
+    },
+    {
+      "id": "POWDERED_DEMISE",
+      "imagePath": "/images/potions/powdered_demise.webp",
+      "name": "Powdered Demise",
+      "description": "Enemy loses 9 HP at the end of each of its turns.",
+      "descriptionClean": "Enemy loses 9 HP at the end of each of its turns."
+    },
+    {
+      "id": "POWER_POTION",
+      "imagePath": "/images/potions/power_potion.webp",
+      "name": "Power Potion",
+      "description": "Choose 1 of 3 random Power cards to add into your <g>Hand</g>. It's free to play this turn.",
+      "descriptionClean": "Choose 1 of 3 random Power cards to add into your Hand. It's free to play this turn."
+    },
+    {
+      "id": "RADIANT_TINCTURE",
+      "imagePath": "/images/potions/radiant_tincture.webp",
+      "name": "Radiant Tincture",
+      "description": "Gain <e>1</e>. Gain an additional <e/> at the start of your next 3 turns.",
+      "descriptionClean": "Gain 1. Gain an additional  at the start of your next 3 turns."
+    },
+    {
+      "id": "REGEN_POTION",
+      "imagePath": "/images/potions/regen_potion.webp",
+      "name": "Regen Potion",
+      "description": "Gain 5 <g>Regen</g>.",
+      "descriptionClean": "Gain 5 Regen."
+    },
+    {
+      "id": "SHACKLING_POTION",
+      "imagePath": "/images/potions/shackling_potion.webp",
+      "name": "Shackling Potion",
+      "description": "ALL enemies lose 7 <g>Strength</g> this turn.",
+      "descriptionClean": "ALL enemies lose 7 Strength this turn."
+    },
+    {
+      "id": "SHIP_IN_A_BOTTLE",
+      "imagePath": "/images/potions/ship_in_a_bottle.webp",
+      "name": "Ship in a Bottle",
+      "description": "Gain 10 <g>Block</g>. Next turn, gain 10 <g>Block</g>.",
+      "descriptionClean": "Gain 10 Block. Next turn, gain 10 Block."
+    },
+    {
+      "id": "SKILL_POTION",
+      "imagePath": "/images/potions/skill_potion.webp",
+      "name": "Skill Potion",
+      "description": "Choose 1 of 3 random Skill cards to add into your <g>Hand</g>. It's free to play this turn.",
+      "descriptionClean": "Choose 1 of 3 random Skill cards to add into your Hand. It's free to play this turn."
+    },
+    {
+      "id": "SNECKO_OIL",
+      "imagePath": "/images/potions/snecko_oil.webp",
+      "name": "Snecko Oil",
+      "description": "Draw 7 cards. Randomize the cost of cards in your <g>Hand</g> this turn.",
+      "descriptionClean": "Draw 7 cards. Randomize the cost of cards in your Hand this turn."
+    },
+    {
+      "id": "SOLDIERS_STEW",
+      "imagePath": "/images/potions/soldiers_stew.webp",
+      "name": "Soldier's Stew",
+      "description": "All cards containing <g>Strike</g> gain 1 <g>Replay</g> this combat.",
+      "descriptionClean": "All cards containing Strike gain 1 Replay this combat."
+    },
+    {
+      "id": "SPEED_POTION",
+      "imagePath": "/images/potions/speed_potion.webp",
+      "name": "Speed Potion",
+      "description": "Gain 5 <g>Dexterity</g>. At the end of your turn, lose 5 <g>Dexterity</g>.",
+      "descriptionClean": "Gain 5 Dexterity. At the end of your turn, lose 5 Dexterity."
+    },
+    {
+      "id": "STABLE_SERUM",
+      "imagePath": "/images/potions/stable_serum.webp",
+      "name": "Stable Serum",
+      "description": "<g>Retain</g> your <g>Hand</g> for 2 turns.",
+      "descriptionClean": "Retain your Hand for 2 turns."
+    },
+    {
+      "id": "STAR_POTION",
+      "imagePath": "/images/potions/star_potion.webp",
+      "name": "Star Potion",
+      "description": "Gain <s>3</s>.",
+      "descriptionClean": "Gain 3."
+    },
+    {
+      "id": "STRENGTH_POTION",
+      "imagePath": "/images/potions/strength_potion.webp",
+      "name": "Strength Potion",
+      "description": "Gain 2 <g>Strength</g>.",
+      "descriptionClean": "Gain 2 Strength."
+    },
+    {
+      "id": "SWIFT_POTION",
+      "imagePath": "/images/potions/swift_potion.webp",
+      "name": "Swift Potion",
+      "description": "Draw 3 cards.",
+      "descriptionClean": "Draw 3 cards."
+    },
+    {
+      "id": "TOUCH_OF_INSANITY",
+      "imagePath": "/images/potions/touch_of_insanity.webp",
+      "name": "Touch of Insanity",
+      "description": "Choose a card in your <g>Hand</g>. It is free to play this combat.",
+      "descriptionClean": "Choose a card in your Hand. It is free to play this combat."
+    },
+    {
+      "id": "VULNERABLE_POTION",
+      "imagePath": "/images/potions/vulnerable_potion.webp",
+      "name": "Vulnerable Potion",
+      "description": "Apply 3 <g>Vulnerable</g>.",
+      "descriptionClean": "Apply 3 Vulnerable."
+    },
+    {
+      "id": "WEAK_POTION",
+      "imagePath": "/images/potions/weak_potion.webp",
+      "name": "Weak Potion",
+      "description": "Apply 3 <g>Weak</g>.",
+      "descriptionClean": "Apply 3 Weak."
     }
   ]
 }

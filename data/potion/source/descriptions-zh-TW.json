@@ -1,0 +1,447 @@
+{
+  "source": "https://slaythespire2.net/zh-TW/potion",
+  "retrievedDate": "2026-11-23T05:21:13.101Z",
+  "items": [
+    {
+      "id": "AMBERGRIS",
+      "imagePath": "/images/potions/ambergris.webp",
+      "name": "龍涎香",
+      "description": "恢復相當於最大生命 50% 的生命。若在戰鬥中使用，則額外進行一個回合。",
+      "descriptionClean": "恢復相當於最大生命 50% 的生命。若在戰鬥中使用，則額外進行一個回合。"
+    },
+    {
+      "id": "ASHWATER",
+      "imagePath": "/images/potions/ashwater.webp",
+      "name": "灰燼水",
+      "description": "<g>消耗</g>你<g>手牌</g>中任意數量的牌。",
+      "descriptionClean": "消耗你手牌中任意數量的牌。"
+    },
+    {
+      "id": "ATTACK_POTION",
+      "imagePath": "/images/potions/attack_potion.webp",
+      "name": "攻擊藥水",
+      "description": "從 3 張隨機攻擊牌中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。",
+      "descriptionClean": "從 3 張隨機攻擊牌中選擇 1 張加入你的手牌。本回合可免費打出。"
+    },
+    {
+      "id": "BEETLE_JUICE",
+      "imagePath": "/images/potions/beetle_juice.webp",
+      "name": "甲蟲汁",
+      "description": "敵人的攻擊在接下來 4 回合傷害減少 30%。",
+      "descriptionClean": "敵人的攻擊在接下來 4 回合傷害減少 30%。"
+    },
+    {
+      "id": "BLESSING_OF_THE_FORGE",
+      "imagePath": "/images/potions/blessing_of_the_forge.webp",
+      "name": "鑄爐祝福",
+      "description": "在本場戰鬥中<g>升級</g>你<g>手牌</g>中的所有卡牌。",
+      "descriptionClean": "在本場戰鬥中升級你手牌中的所有卡牌。"
+    },
+    {
+      "id": "BLOCK_POTION",
+      "imagePath": "/images/potions/block_potion.webp",
+      "name": "格擋藥水",
+      "description": "獲得 12 點<g>格擋</g>。",
+      "descriptionClean": "獲得 12 點格擋。"
+    },
+    {
+      "id": "BLOOD_POTION",
+      "imagePath": "/images/potions/blood_potion.webp",
+      "name": "血液藥水",
+      "description": "恢復相當於最大生命 20% 的生命。",
+      "descriptionClean": "恢復相當於最大生命 20% 的生命。"
+    },
+    {
+      "id": "BONE_BREW",
+      "imagePath": "/images/potions/bone_brew.webp",
+      "name": "骨釀",
+      "description": "<g>召喚</g> 15。",
+      "descriptionClean": "召喚 15。"
+    },
+    {
+      "id": "BOTTLED_POTENTIAL",
+      "imagePath": "/images/potions/bottled_potential.webp",
+      "name": "瓶裝潛能",
+      "description": "將你的所有牌洗入<g>抽牌堆</g>。抽 5 張牌。",
+      "descriptionClean": "將你的所有牌洗入抽牌堆。抽 5 張牌。"
+    },
+    {
+      "id": "CLARITY",
+      "imagePath": "/images/potions/clarity.webp",
+      "name": "明晰萃取物",
+      "description": "抽 1 張牌。你的下 3 回合開始時，額外抽 1 張牌。",
+      "descriptionClean": "抽 1 張牌。你的下 3 回合開始時，額外抽 1 張牌。"
+    },
+    {
+      "id": "COLORLESS_POTION",
+      "imagePath": "/images/potions/colorless_potion.webp",
+      "name": "無色藥水",
+      "description": "從 3 張隨機無色牌中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。",
+      "descriptionClean": "從 3 張隨機無色牌中選擇 1 張加入你的手牌。本回合可免費打出。"
+    },
+    {
+      "id": "COSMIC_CONCOCTION",
+      "imagePath": "/images/potions/cosmic_concoction.webp",
+      "name": "宇宙調製劑",
+      "description": "將 3 張<g>已升級</g>的無色牌加入你的<g>手牌</g>。",
+      "descriptionClean": "將 3 張已升級的無色牌加入你的手牌。"
+    },
+    {
+      "id": "CUNNING_POTION",
+      "imagePath": "/images/potions/cunning_potion.webp",
+      "name": "狡猾藥水",
+      "description": "將 3 張<g>已升級的小刀</g>加入你的<g>手牌</g>。",
+      "descriptionClean": "將 3 張已升級的小刀加入你的手牌。"
+    },
+    {
+      "id": "CURE_ALL",
+      "imagePath": "/images/potions/cure_all.webp",
+      "name": "萬靈藥",
+      "description": "獲得 <e>1</e>。抽 2 張牌。",
+      "descriptionClean": "獲得 1。抽 2 張牌。"
+    },
+    {
+      "id": "DEXTERITY_POTION",
+      "imagePath": "/images/potions/dexterity_potion.webp",
+      "name": "敏捷藥水",
+      "description": "獲得 2 層<g>敏捷</g>。",
+      "descriptionClean": "獲得 2 層敏捷。"
+    },
+    {
+      "id": "DISTILLED_CHAOS",
+      "imagePath": "/images/potions/distilled_chaos.webp",
+      "name": "精煉混沌",
+      "description": "打出你<g>抽牌堆</g>頂部的 3 張牌。",
+      "descriptionClean": "打出你抽牌堆頂部的 3 張牌。"
+    },
+    {
+      "id": "DROPLET_OF_PRECOGNITION",
+      "imagePath": "/images/potions/droplet_of_precognition.webp",
+      "name": "預知露滴",
+      "description": "從你的<g>抽牌堆</g>中選擇一張牌，將其加入你的<g>手牌</g>。",
+      "descriptionClean": "從你的抽牌堆中選擇一張牌，將其加入你的手牌。"
+    },
+    {
+      "id": "DUPLICATOR",
+      "imagePath": "/images/potions/duplicator.webp",
+      "name": "複製劑",
+      "description": "本回合，你的下一張牌會額外打出一次。",
+      "descriptionClean": "本回合，你的下一張牌會額外打出一次。"
+    },
+    {
+      "id": "ENERGY_POTION",
+      "imagePath": "/images/potions/energy_potion.webp",
+      "name": "能量藥水",
+      "description": "獲得 <e>2</e>。",
+      "descriptionClean": "獲得 2。"
+    },
+    {
+      "id": "ENTROPIC_BREW",
+      "imagePath": "/images/potions/entropic_brew.webp",
+      "name": "熵之釀",
+      "description": "以隨機藥水填滿所有空的藥水欄位。",
+      "descriptionClean": "以隨機藥水填滿所有空的藥水欄位。"
+    },
+    {
+      "id": "ESSENCE_OF_DARKNESS",
+      "imagePath": "/images/potions/essence_of_darkness.webp",
+      "name": "黑暗精華",
+      "description": "你每有一個<g>充能球欄位</g>，就<g>凝聚</g> 1 個<g>黑暗</g>。",
+      "descriptionClean": "你每有一個充能球欄位，就凝聚 1 個黑暗。"
+    },
+    {
+      "id": "EXPLOSIVE_AMPOULE",
+      "imagePath": "/images/potions/explosive_ampoule.webp",
+      "name": "爆炸安瓿",
+      "description": "對所有敵人造成 10 點傷害。",
+      "descriptionClean": "對所有敵人造成 10 點傷害。"
+    },
+    {
+      "id": "FAIRY_IN_A_BOTTLE",
+      "imagePath": "/images/potions/fairy_in_a_bottle.webp",
+      "name": "瓶中精靈",
+      "description": "當你的生命即將降至 0 時，改為丟棄此藥水，並將生命恢復至最大生命的 30%。",
+      "descriptionClean": "當你的生命即將降至 0 時，改為丟棄此藥水，並將生命恢復至最大生命的 30%。"
+    },
+    {
+      "id": "FIRE_POTION",
+      "imagePath": "/images/potions/fire_potion.webp",
+      "name": "火焰藥水",
+      "description": "造成 20 點傷害。",
+      "descriptionClean": "造成 20 點傷害。"
+    },
+    {
+      "id": "FLEX_POTION",
+      "imagePath": "/images/potions/flex_potion.webp",
+      "name": "肌肉藥水",
+      "description": "獲得 5 層<g>力量</g>。在你的回合結束時，失去 5 層<g>力量</g>。",
+      "descriptionClean": "獲得 5 層力量。在你的回合結束時，失去 5 層力量。"
+    },
+    {
+      "id": "FOCUS_POTION",
+      "imagePath": "/images/potions/focus_potion.webp",
+      "name": "集中藥水",
+      "description": "獲得 2 層<g>集中</g>。",
+      "descriptionClean": "獲得 2 層集中。"
+    },
+    {
+      "id": "FORTIFIER",
+      "imagePath": "/images/potions/fortifier.webp",
+      "name": "強固劑",
+      "description": "使你的<g>格擋</g>變為三倍。",
+      "descriptionClean": "使你的格擋變為三倍。"
+    },
+    {
+      "id": "FOUL_POTION",
+      "imagePath": "/images/potions/foul_potion.webp",
+      "name": "惡臭藥水",
+      "description": "對所有玩家與敵人造成 12 點傷害。\n也可以將其丟向<g>商人</g>，換取 100 枚<g>金幣</g>。",
+      "descriptionClean": "對所有玩家與敵人造成 12 點傷害。\n也可以將其丟向商人，換取 100 枚金幣。"
+    },
+    {
+      "id": "FRUIT_JUICE",
+      "imagePath": "/images/potions/fruit_juice.webp",
+      "name": "果汁",
+      "description": "獲得 5 點最大生命。",
+      "descriptionClean": "獲得 5 點最大生命。"
+    },
+    {
+      "id": "FYSH_OIL",
+      "imagePath": "/images/potions/fysh_oil.webp",
+      "name": "異魚油",
+      "description": "獲得 1 層<g>力量</g>和 1 層<g>敏捷</g>。",
+      "descriptionClean": "獲得 1 層力量和 1 層敏捷。"
+    },
+    {
+      "id": "GAMBLERS_BREW",
+      "imagePath": "/images/potions/gamblers_brew.webp",
+      "name": "賭徒特調",
+      "description": "丟棄任意數量的牌，然後抽取等量的牌。",
+      "descriptionClean": "丟棄任意數量的牌，然後抽取等量的牌。"
+    },
+    {
+      "id": "GHOST_IN_A_JAR",
+      "imagePath": "/images/potions/ghost_in_a_jar.webp",
+      "name": "罐裝幽靈",
+      "description": "獲得 1 層<g>無形</g>。",
+      "descriptionClean": "獲得 1 層無形。"
+    },
+    {
+      "id": "GIGANTIFICATION_POTION",
+      "imagePath": "/images/potions/gigantification_potion.webp",
+      "name": "超巨化藥水",
+      "description": "你打出的下一張攻擊牌會造成三倍傷害。",
+      "descriptionClean": "你打出的下一張攻擊牌會造成三倍傷害。"
+    },
+    {
+      "id": "GLOWWATER_POTION",
+      "imagePath": "/images/potions/glowwater_potion.webp",
+      "name": "光輝水藥水",
+      "description": "<g>消耗</g>你的<g>手牌</g>。抽 10 張牌。",
+      "descriptionClean": "消耗你的手牌。抽 10 張牌。"
+    },
+    {
+      "id": "HEART_OF_IRON",
+      "imagePath": "/images/potions/heart_of_iron.webp",
+      "name": "鋼鐵之心",
+      "description": "獲得 7 層<g>鍍甲</g>。",
+      "descriptionClean": "獲得 7 層鍍甲。"
+    },
+    {
+      "id": "KINGS_COURAGE",
+      "imagePath": "/images/potions/kings_courage.webp",
+      "name": "王者之勇",
+      "description": "<g>鑄造</g> 15。",
+      "descriptionClean": "鑄造 15。"
+    },
+    {
+      "id": "LIQUID_BRONZE",
+      "imagePath": "/images/potions/liquid_bronze.webp",
+      "name": "液態青銅",
+      "description": "獲得 3 層<g>荊棘</g>。",
+      "descriptionClean": "獲得 3 層荊棘。"
+    },
+    {
+      "id": "LIQUID_MEMORIES",
+      "imagePath": "/images/potions/liquid_memories.webp",
+      "name": "液態記憶",
+      "description": "將你<g>棄牌堆</g>中的一張牌放入你的<g>手牌</g>。本回合可免費打出。",
+      "descriptionClean": "將你棄牌堆中的一張牌放入你的手牌。本回合可免費打出。"
+    },
+    {
+      "id": "LUCKY_TONIC",
+      "imagePath": "/images/potions/lucky_tonic.webp",
+      "name": "幸運補藥",
+      "description": "獲得 1 層<g>緩衝</g>。",
+      "descriptionClean": "獲得 1 層緩衝。"
+    },
+    {
+      "id": "MAZALETHS_GIFT",
+      "imagePath": "/images/potions/mazaleths_gift.webp",
+      "name": "馬札勒斯的贈禮",
+      "description": "獲得 1 層<g>儀式</g>。",
+      "descriptionClean": "獲得 1 層儀式。"
+    },
+    {
+      "id": "OROBIC_ACID",
+      "imagePath": "/images/potions/orobic_acid.webp",
+      "name": "歐洛巴斯酸",
+      "description": "分別將一張隨機攻擊牌、技能牌與能力牌加入你的<g>手牌</g>。這些牌本回合可免費打出。",
+      "descriptionClean": "分別將一張隨機攻擊牌、技能牌與能力牌加入你的手牌。這些牌本回合可免費打出。"
+    },
+    {
+      "id": "POISON_POTION",
+      "imagePath": "/images/potions/poison_potion.webp",
+      "name": "中毒藥水",
+      "description": "施加 6 層<g>中毒</g>。",
+      "descriptionClean": "施加 6 層中毒。"
+    },
+    {
+      "id": "POT_OF_GHOULS",
+      "imagePath": "/images/potions/pot_of_ghouls.webp",
+      "name": "屍鬼甕",
+      "description": "將 2 張<g>靈魂</g>加入你的<g>手牌</g>。",
+      "descriptionClean": "將 2 張靈魂加入你的手牌。"
+    },
+    {
+      "id": "POTION_OF_BINDING",
+      "imagePath": "/images/potions/potion_of_binding.webp",
+      "name": "禁縛藥水",
+      "description": "對所有敵人施加 1 層<g>虛弱</g>和 1 層<g>易傷</g>。",
+      "descriptionClean": "對所有敵人施加 1 層虛弱和 1 層易傷。"
+    },
+    {
+      "id": "POTION_OF_CAPACITY",
+      "imagePath": "/images/potions/potion_of_capacity.webp",
+      "name": "擴容藥水",
+      "description": "獲得 2 個<g>充能球欄位</g>。",
+      "descriptionClean": "獲得 2 個充能球欄位。"
+    },
+    {
+      "id": "POTION_OF_DOOM",
+      "imagePath": "/images/potions/potion_of_doom.webp",
+      "name": "惡兆藥水",
+      "description": "施加 33 層<g>惡兆</g>。",
+      "descriptionClean": "施加 33 層惡兆。"
+    },
+    {
+      "id": "POWDERED_DEMISE",
+      "imagePath": "/images/potions/powdered_demise.webp",
+      "name": "消亡粉末",
+      "description": "敵人在其每個回合結束時失去 9 點生命。",
+      "descriptionClean": "敵人在其每個回合結束時失去 9 點生命。"
+    },
+    {
+      "id": "POWER_POTION",
+      "imagePath": "/images/potions/power_potion.webp",
+      "name": "能力藥水",
+      "description": "從 3 張隨機能力牌中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。",
+      "descriptionClean": "從 3 張隨機能力牌中選擇 1 張加入你的手牌。本回合可免費打出。"
+    },
+    {
+      "id": "RADIANT_TINCTURE",
+      "imagePath": "/images/potions/radiant_tincture.webp",
+      "name": "光輝酊劑",
+      "description": "獲得 <e>1</e>。接下來 3 回合開始時，額外獲得 <e/>。",
+      "descriptionClean": "獲得 1。接下來 3 回合開始時，額外獲得 。"
+    },
+    {
+      "id": "REGEN_POTION",
+      "imagePath": "/images/potions/regen_potion.webp",
+      "name": "再生藥水",
+      "description": "獲得 5 層<g>再生</g>。",
+      "descriptionClean": "獲得 5 層再生。"
+    },
+    {
+      "id": "SHACKLING_POTION",
+      "imagePath": "/images/potions/shackling_potion.webp",
+      "name": "鐐銬藥水",
+      "description": "所有敵人本回合失去 7 層<g>力量</g>。",
+      "descriptionClean": "所有敵人本回合失去 7 層力量。"
+    },
+    {
+      "id": "SHIP_IN_A_BOTTLE",
+      "imagePath": "/images/potions/ship_in_a_bottle.webp",
+      "name": "瓶中船",
+      "description": "獲得 10 點<g>格擋</g>。下回合，獲得 10 點<g>格擋</g>。",
+      "descriptionClean": "獲得 10 點格擋。下回合，獲得 10 點格擋。"
+    },
+    {
+      "id": "SKILL_POTION",
+      "imagePath": "/images/potions/skill_potion.webp",
+      "name": "技能藥水",
+      "description": "從 3 張隨機技能牌中選擇 1 張加入你的<g>手牌</g>。本回合可免費打出。",
+      "descriptionClean": "從 3 張隨機技能牌中選擇 1 張加入你的手牌。本回合可免費打出。"
+    },
+    {
+      "id": "SNECKO_OIL",
+      "imagePath": "/images/potions/snecko_oil.webp",
+      "name": "異蛇油",
+      "description": "抽 7 張牌。本回合隨機改變你<g>手牌</g>中卡牌的耗能。",
+      "descriptionClean": "抽 7 張牌。本回合隨機改變你手牌中卡牌的耗能。"
+    },
+    {
+      "id": "SOLDIERS_STEW",
+      "imagePath": "/images/potions/soldiers_stew.webp",
+      "name": "士兵燉湯",
+      "description": "所有名稱中含有<g>打擊</g>的牌在本場戰鬥中獲得<g>重演</g> 1。",
+      "descriptionClean": "所有名稱中含有打擊的牌在本場戰鬥中獲得重演 1。"
+    },
+    {
+      "id": "SPEED_POTION",
+      "imagePath": "/images/potions/speed_potion.webp",
+      "name": "速度藥水",
+      "description": "獲得 5 層<g>敏捷</g>。在你的回合結束時，失去 5 層<g>敏捷</g>。",
+      "descriptionClean": "獲得 5 層敏捷。在你的回合結束時，失去 5 層敏捷。"
+    },
+    {
+      "id": "STABLE_SERUM",
+      "imagePath": "/images/potions/stable_serum.webp",
+      "name": "穩定血清",
+      "description": "接下來 2 回合，<g>保留</g>你的<g>手牌</g>。",
+      "descriptionClean": "接下來 2 回合，保留你的手牌。"
+    },
+    {
+      "id": "STAR_POTION",
+      "imagePath": "/images/potions/star_potion.webp",
+      "name": "輝星藥水",
+      "description": "獲得 <s>3</s>。",
+      "descriptionClean": "獲得 3。"
+    },
+    {
+      "id": "STRENGTH_POTION",
+      "imagePath": "/images/potions/strength_potion.webp",
+      "name": "力量藥水",
+      "description": "獲得 2 層<g>力量</g>。",
+      "descriptionClean": "獲得 2 層力量。"
+    },
+    {
+      "id": "SWIFT_POTION",
+      "imagePath": "/images/potions/swift_potion.webp",
+      "name": "迅捷藥水",
+      "description": "抽 3 張牌。",
+      "descriptionClean": "抽 3 張牌。"
+    },
+    {
+      "id": "TOUCH_OF_INSANITY",
+      "imagePath": "/images/potions/touch_of_insanity.webp",
+      "name": "瘋狂之觸",
+      "description": "選擇你<g>手牌</g>中的一張牌。該牌在本場戰鬥中可免費打出。",
+      "descriptionClean": "選擇你手牌中的一張牌。該牌在本場戰鬥中可免費打出。"
+    },
+    {
+      "id": "VULNERABLE_POTION",
+      "imagePath": "/images/potions/vulnerable_potion.webp",
+      "name": "易傷藥水",
+      "description": "施加 3 層<g>易傷</g>。",
+      "descriptionClean": "施加 3 層易傷。"
+    },
+    {
+      "id": "WEAK_POTION",
+      "imagePath": "/images/potions/weak_potion.webp",
+      "name": "虛弱藥水",
+      "description": "施加 3 層<g>虛弱</g>。",
+      "descriptionClean": "施加 3 層虛弱。"
+    }
+  ]
+}

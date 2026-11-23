@@ -560,7 +560,7 @@ html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-ra
 /* Tier A matches the Crimson Mantle name color throughout labels and filters. */
 :root {--card-tier-A:rgb(227, 191, 114);--catalog-tier-A:rgb(227, 191, 114)}
 html body :is(.tier,.build-tier,.card-tier-badge,.relic-tier-label,.font-extrabold)[data-tier=A] {
-  --tier-color:rgb(227, 191, 114)!important;background:rgb(227, 191, 114)!important;color:#fff!important;border-color:rgb(227, 191, 114)!important;
+  --tier-color:rgb(227, 191, 114)!important;background:rgb(227, 191, 114)!important;color:#000!important;border-color:rgb(227, 191, 114)!important;
 }
 html body :is([data-tier-filter=A],#card-filter-tier button[value=A]) {
   --tier-color:rgb(227, 191, 114)!important;--selection-color:rgb(227, 191, 114)!important;
@@ -578,27 +578,27 @@ html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,body.cha
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=S][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(225, 112, 132)!important;border:1px solid rgb(225, 112, 132)!important;
+  color:#000!important;background:rgb(225, 112, 132)!important;border:1px solid rgb(225, 112, 132)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
+  color:#000!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=B][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(105, 176, 222)!important;border:1px solid rgb(105, 176, 222)!important;
+  color:#000!important;background:rgb(105, 176, 222)!important;border:1px solid rgb(105, 176, 222)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=C][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(105, 183, 139)!important;border:1px solid rgb(105, 183, 139)!important;
+  color:#000!important;background:rgb(105, 183, 139)!important;border:1px solid rgb(105, 183, 139)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=D][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(120, 132, 145)!important;border:1px solid rgb(120, 132, 145)!important;
+  color:#000!important;background:rgb(120, 132, 145)!important;border:1px solid rgb(120, 132, 145)!important;
 }
 
-/* Tier A labels use white lettering on their existing background. */
-html body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#fff!important}
+/* Tier A labels use black lettering on their existing background. */
+html body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#000!important}
 
 html body .card-detail .detail-inline-tier[data-tier=S] {--inline-tier-color:rgb(225, 112, 132)}
 html body .card-detail .detail-inline-tier[data-tier=A] {--inline-tier-color:rgb(227, 191, 114)}
@@ -633,9 +633,9 @@ html body #main-content .card-detail .detail-meta>.detail-rarity[data-rarity=Rar
 
 html body #main-content .card-detail .detail-meta>.detail-rarity[data-rarity=Ancient] {color:lab(72.7183% 31.8672 97.9407)}
 
-html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=S][data-tier] {color:#fff!important;background:var(--card-tier-S)!important}
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=S][data-tier] {color:#000!important;background:var(--card-tier-S)!important}
 
-html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=A][data-tier] {color:#fff!important;background:var(--card-tier-A)!important}
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=A][data-tier] {color:#000!important;background:var(--card-tier-A)!important}
 
 html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=B][data-tier] {color:#000!important;background:var(--card-tier-B)!important}
 
@@ -659,13 +659,13 @@ html body #main-content .potion-section[data-rarity=Rare]>.potion-section-title 
 html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Rare],[data-catalog-filter=rarity][value=Rare],button[data-rarity-filter=Rare],[data-filter-group=rarity][data-filter-value=Rare]) {--selection-color:#efc851!important;--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--rarity-text-color:#efc851!important;color:#efc851!important}
 
 /* Card tier filters use the same button presentation as Type filters. */
-html body #main-content #tools #card-filter-tier button {
+html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button {
   min-height:48px;padding:8px;border-radius:8px;
   font:400 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;
   background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
   position:relative;
 }
-html body #main-content #tools #card-filter-tier button[value][aria-pressed=true] {
+html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button[value][aria-pressed=true] {
   border-color:var(--tier-text-color)!important;
   background:color-mix(in srgb,var(--tier-text-color) 22%,#0d131a)!important;
   box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tier-text-color) 40%,transparent)!important;
@@ -673,7 +673,7 @@ html body #main-content #tools #card-filter-tier button[value][aria-pressed=true
 html body #main-content #tools #card-filter-tier button[aria-pressed=true]::after {
   content:none;
 }
-html body #main-content #tools #card-filter-tier button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
+html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
 
 html body #main-content #tools #card-filter-tier button[value=S] {
   --tier-text-color:rgb(225, 112, 132);color:var(--tier-text-color)!important;
@@ -698,6 +698,16 @@ html body #main-content #tools #card-filter-tier button[value=C] {
 html body #main-content #tools #card-filter-tier button[value=D] {
   --tier-text-color:rgb(120, 132, 145);color:var(--tier-text-color)!important;
   background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
+}
+
+/* Energy filters share Tier button states and add an explicit selection check. */
+html body #main-content #tools #card-filter-energy button {
+ --tier-text-color:#e3bf72;color:var(--tier-text-color)!important;gap:8px;
+}
+html body #main-content #tools #card-filter-energy button[aria-pressed=true]::after {
+ content:"✓";position:absolute;right:4px;top:3px;
+ display:grid;place-items:center;width:18px;height:18px;
+ border-radius:50%;background:#fff;color:#040609;font:800 14px/1 Arial,sans-serif;
 }
 
 /* Set the card page width once; every nested content wrapper fills it. */
@@ -912,6 +922,10 @@ html body .card-detail[data-card-layout=compact] .detail-inline-tier {display:in
 .card-detail .detail-meta-item dd[data-type=Attack] {color:#ff777a}
 .card-detail .detail-meta-item dd[data-type=Skill] {color:lab(78.503% -64.9265 39.7492)}
 .card-detail .detail-meta-item dd[data-type=Power] {color:lab(83.2664% 8.65132 106.895)}
+.card-detail .detail-type-label {display:inline-flex;align-items:center;justify-content:center;padding:2px 9px;border-radius:5px;background:#cbd5e1;color:#000;font-weight:600;line-height:1.4;white-space:nowrap}
+.card-detail .detail-type-label[data-type=Attack] {background:#ed9094}
+.card-detail .detail-type-label[data-type=Skill] {background:#8bd6a6}
+.card-detail .detail-type-label[data-type=Power] {background:#e3bf72}
 .card-detail .detail-panel-stars {display:inline-flex;align-items:center;gap:3px;margin-left:12px}
 .card-detail .detail-resource-note {margin-top:16px;padding:16px;border:1px solid #303d4e;border-radius:9px;background:#222e33}
 .card-detail .detail-effect-notes .detail-resource-note h3 {display:inline;margin:0;color:#f1cd7f;font-size:16px}
@@ -1107,7 +1121,7 @@ html body main#main-content #tools #card-filter-character button:is([value=Color
 html body.cards-desktop main#main-content#main-content#main-content #tools :is(#card-filter-type button[value=Power],#card-filter-rarity button[value=Rare],#card-filter-tier button[value=A]) {
  --selection-color:#efc851!important;--rarity-text-color:#efc851!important;--tier-text-color:#efc851!important;color:#efc851!important;
 }
-html body.cards-desktop main#main-content .ancient-card-entry :is([data-type=Power],[data-stat-rarity=Rare],[data-label-rarity=Rare]) {color:#efc851!important}
+html body.cards-desktop main#main-content .ancient-card-entry :is([data-type=Power]:not(.detail-type-label),[data-stat-rarity=Rare],[data-label-rarity=Rare]) {color:#efc851!important}
 html body.cards-desktop main#main-content .ancient-card-entry .detail-name-tier[data-tier=A] {--name-tier-color:#efc851;background:#efc851}
 html body.cards-desktop main#main-content .ancient-card-entry .detail-inline-tier[data-tier=A] {color:#efc851}
 html body.cards-desktop main#main-content .ancient-card-entry :is(.detail-tier,.detail-build-tier,.tier)[data-tier=A] {background:#efc851!important;border-color:#efc851!important}
@@ -1118,7 +1132,7 @@ html body main#main-content .card-detail .detail-heading-character {display:bloc
 html body main#main-content .card-detail .detail-heading-row>.detail-name-zh {min-width:0;width:100%;overflow-wrap:anywhere}
 html body main#main-content .card-detail .detail-heading-rarity {justify-self:end;max-width:100%;overflow-wrap:anywhere;text-align:right;font:600 16px/1.4 Arial,sans-serif;color:var(--detail-rarity-color)}
 html body main#main-content .card-detail .detail-bottom-tier {display:flex;justify-content:center;align-items:end;min-height:30px}
-html body main#main-content .card-detail .detail-bottom-tier>.detail-name-tier {display:inline-flex;align-items:center;justify-content:center;min-width:36px;min-height:30px;padding:0 6px;border-radius:4px;color:#fff;font:700 24px/1.25 Arial,sans-serif;text-decoration:none;background:var(--name-tier-color,#788491)}
+html body main#main-content .card-detail .detail-bottom-tier>.detail-name-tier {display:inline-flex;align-items:center;justify-content:center;min-width:36px;min-height:30px;padding:0 6px;border-radius:4px;color:#000;font:700 24px/1.25 Arial,sans-serif;text-decoration:none;background:var(--name-tier-color,#788491)}
 html body main#main-content .card-detail .detail-type-metadata:has(>.detail-meta-item:only-child) {display:flex;justify-content:center;text-align:center}
 html body main#main-content .card-detail .detail-type-metadata>.detail-meta-item:only-child {justify-self:center;justify-content:center;text-align:center}
 html body main#main-content .card-detail .detail-overview {grid-template-columns:minmax(0,1fr)}
@@ -1139,27 +1153,27 @@ html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,body.cha
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=S][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(225, 112, 132)!important;border:1px solid rgb(225, 112, 132)!important;
+  color:#000!important;background:rgb(225, 112, 132)!important;border:1px solid rgb(225, 112, 132)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
+  color:#000!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=B][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(105, 176, 222)!important;border:1px solid rgb(105, 176, 222)!important;
+  color:#000!important;background:rgb(105, 176, 222)!important;border:1px solid rgb(105, 176, 222)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=C][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(105, 183, 139)!important;border:1px solid rgb(105, 183, 139)!important;
+  color:#000!important;background:rgb(105, 183, 139)!important;border:1px solid rgb(105, 183, 139)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=D][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(120, 132, 145)!important;border:1px solid rgb(120, 132, 145)!important;
+  color:#000!important;background:rgb(120, 132, 145)!important;border:1px solid rgb(120, 132, 145)!important;
 }
 
-/* Tier A labels use white lettering on their existing background. */
-html body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#fff!important}
+/* Tier A labels use black lettering on their existing background. */
+html body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#000!important}
 
 html body .card-detail .detail-inline-tier[data-tier=S] {--inline-tier-color:rgb(225, 112, 132)}
 html body .card-detail .detail-inline-tier[data-tier=A] {--inline-tier-color:rgb(227, 191, 114)}
@@ -1194,9 +1208,9 @@ html body #main-content .card-detail .detail-meta>.detail-rarity[data-rarity=Rar
 
 html body #main-content .card-detail .detail-meta>.detail-rarity[data-rarity=Ancient] {color:lab(72.7183% 31.8672 97.9407)}
 
-html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=S][data-tier] {color:#fff!important;background:var(--card-tier-S)!important}
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=S][data-tier] {color:#000!important;background:var(--card-tier-S)!important}
 
-html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=A][data-tier] {color:#fff!important;background:var(--card-tier-A)!important}
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=A][data-tier] {color:#000!important;background:var(--card-tier-A)!important}
 
 html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=B][data-tier] {color:#000!important;background:var(--card-tier-B)!important}
 
@@ -1220,13 +1234,13 @@ html body #main-content .potion-section[data-rarity=Rare]>.potion-section-title 
 html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Rare],[data-catalog-filter=rarity][value=Rare],button[data-rarity-filter=Rare],[data-filter-group=rarity][data-filter-value=Rare]) {--selection-color:#efc851!important;--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--rarity-text-color:#efc851!important;color:#efc851!important}
 
 /* Card tier filters use the same button presentation as Type filters. */
-html body #main-content #tools #card-filter-tier button {
+html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button {
   min-height:48px;padding:8px;border-radius:8px;
   font:400 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;
   background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
   position:relative;
 }
-html body #main-content #tools #card-filter-tier button[value][aria-pressed=true] {
+html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button[value][aria-pressed=true] {
   border-color:var(--tier-text-color)!important;
   background:color-mix(in srgb,var(--tier-text-color) 22%,#0d131a)!important;
   box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tier-text-color) 40%,transparent)!important;
@@ -1234,7 +1248,7 @@ html body #main-content #tools #card-filter-tier button[value][aria-pressed=true
 html body #main-content #tools #card-filter-tier button[aria-pressed=true]::after {
   content:none;
 }
-html body #main-content #tools #card-filter-tier button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
+html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
 
 html body #main-content #tools #card-filter-tier button[value=S] {
   --tier-text-color:rgb(225, 112, 132);color:var(--tier-text-color)!important;
@@ -1259,6 +1273,16 @@ html body #main-content #tools #card-filter-tier button[value=C] {
 html body #main-content #tools #card-filter-tier button[value=D] {
   --tier-text-color:rgb(120, 132, 145);color:var(--tier-text-color)!important;
   background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
+}
+
+/* Energy filters share Tier button states and add an explicit selection check. */
+html body #main-content #tools #card-filter-energy button {
+ --tier-text-color:#e3bf72;color:var(--tier-text-color)!important;gap:8px;
+}
+html body #main-content #tools #card-filter-energy button[aria-pressed=true]::after {
+ content:"✓";position:absolute;right:4px;top:3px;
+ display:grid;place-items:center;width:18px;height:18px;
+ border-radius:50%;background:#fff;color:#040609;font:800 14px/1 Arial,sans-serif;
 }
 
 /* Rarity uses the same filled label in filters and entry details. */
@@ -1472,7 +1496,7 @@ html body main#main-content .ancient-top-menu-grid .ancient-menu-name {display:f
 
   <header data-detail-row="2"><h2 class="detail-title" id="ancient-card-13888-curse_of_the_bell-title"><span class="detail-heading-row"><img class="detail-heading-character" src="../../assets/cards/icons/other.webp" alt="Curse" title="Curse"><a class="detail-name-zh" lang="zh-Hant" href="https://slaythespire2.net/zh-TW/card/curse-of-the-bell" target="_blank" rel="noopener noreferrer">鈴鐺詛咒</a><span class="detail-heading-rarity" data-label-rarity="Curse">Curse</span></span><a class="detail-name-en" href="https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2:Curse_of_the_Bell" target="_blank" rel="noopener noreferrer">Curse of the Bell</a></h2></header>
   <figure class="detail-art" data-detail-row="1"><img src="../../assets/cards/source/cards/curse/curse_of_the_bell.webp" width="700" height="532" alt="Curse of the Bell illustration" loading="eager" decoding="async"></figure>
-  <dl class="detail-type-metadata" aria-label="Character, type and rarity"><div class="detail-meta-item"><dt>Type</dt><dd data-type="Curse">Curse</dd></div></dl>
+  <dl class="detail-type-metadata" aria-label="Character, type and rarity"><div class="detail-meta-item"><dt>Type</dt><dd data-type="Curse"><span class="detail-type-label" data-type="Curse">Curse</span></dd></div></dl>
   <section class="detail-section detail-effects" data-detail-row="5" aria-label="Card effects"><div class="detail-effect-columns"><div class="detail-effect-panel" role="group" aria-label="Base"><p class="detail-panel-cost" aria-label="Base energy cost">No cost (unplayable)</p><p class="detail-panel-description"><em>Unplayable</em>.<br><em>Eternal</em>.</p></div><div class="detail-effect-panel" role="group" aria-label="Upgraded"><p class="detail-panel-description"><span class="detail-empty">Cannot be upgraded.</span></p></div></div></section>
   </div>
   
@@ -1489,27 +1513,27 @@ html body :is(.card-detail .detail-tier,.card-detail .detail-build-tier,body.cha
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=S][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(225, 112, 132)!important;border:1px solid rgb(225, 112, 132)!important;
+  color:#000!important;background:rgb(225, 112, 132)!important;border:1px solid rgb(225, 112, 132)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
+  color:#000!important;background:rgb(227, 191, 114)!important;border:1px solid rgb(227, 191, 114)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=B][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(105, 176, 222)!important;border:1px solid rgb(105, 176, 222)!important;
+  color:#000!important;background:rgb(105, 176, 222)!important;border:1px solid rgb(105, 176, 222)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=C][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(105, 183, 139)!important;border:1px solid rgb(105, 183, 139)!important;
+  color:#000!important;background:rgb(105, 183, 139)!important;border:1px solid rgb(105, 183, 139)!important;
 }
 
 html body #main-content :is(.card-detail .detail-tier,.card-detail .detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=D][data-tier] {
-  color:rgb(255, 255, 255)!important;background:rgb(120, 132, 145)!important;border:1px solid rgb(120, 132, 145)!important;
+  color:#000!important;background:rgb(120, 132, 145)!important;border:1px solid rgb(120, 132, 145)!important;
 }
 
-/* Tier A labels use white lettering on their existing background. */
-html body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#fff!important}
+/* Tier A labels use black lettering on their existing background. */
+html body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#000!important}
 
 html body .card-detail .detail-inline-tier[data-tier=S] {--inline-tier-color:rgb(225, 112, 132)}
 html body .card-detail .detail-inline-tier[data-tier=A] {--inline-tier-color:rgb(227, 191, 114)}
@@ -1544,9 +1568,9 @@ html body #main-content .card-detail .detail-meta>.detail-rarity[data-rarity=Rar
 
 html body #main-content .card-detail .detail-meta>.detail-rarity[data-rarity=Ancient] {color:lab(72.7183% 31.8672 97.9407)}
 
-html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=S][data-tier] {color:#fff!important;background:var(--card-tier-S)!important}
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=S][data-tier] {color:#000!important;background:var(--card-tier-S)!important}
 
-html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=A][data-tier] {color:#fff!important;background:var(--card-tier-A)!important}
+html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=A][data-tier] {color:#000!important;background:var(--card-tier-A)!important}
 
 html body #main-content .card-detail .detail-meta>.detail-tier[data-tier=B][data-tier] {color:#000!important;background:var(--card-tier-B)!important}
 
@@ -1570,13 +1594,13 @@ html body #main-content .potion-section[data-rarity=Rare]>.potion-section-title 
 html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Rare],[data-catalog-filter=rarity][value=Rare],button[data-rarity-filter=Rare],[data-filter-group=rarity][data-filter-value=Rare]) {--selection-color:#efc851!important;--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--rarity-text-color:#efc851!important;color:#efc851!important}
 
 /* Card tier filters use the same button presentation as Type filters. */
-html body #main-content #tools #card-filter-tier button {
+html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button {
   min-height:48px;padding:8px;border-radius:8px;
   font:400 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;
   background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
   position:relative;
 }
-html body #main-content #tools #card-filter-tier button[value][aria-pressed=true] {
+html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button[value][aria-pressed=true] {
   border-color:var(--tier-text-color)!important;
   background:color-mix(in srgb,var(--tier-text-color) 22%,#0d131a)!important;
   box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tier-text-color) 40%,transparent)!important;
@@ -1584,7 +1608,7 @@ html body #main-content #tools #card-filter-tier button[value][aria-pressed=true
 html body #main-content #tools #card-filter-tier button[aria-pressed=true]::after {
   content:none;
 }
-html body #main-content #tools #card-filter-tier button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
+html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
 
 html body #main-content #tools #card-filter-tier button[value=S] {
   --tier-text-color:rgb(225, 112, 132);color:var(--tier-text-color)!important;
@@ -1609,5 +1633,15 @@ html body #main-content #tools #card-filter-tier button[value=C] {
 html body #main-content #tools #card-filter-tier button[value=D] {
   --tier-text-color:rgb(120, 132, 145);color:var(--tier-text-color)!important;
   background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
+}
+
+/* Energy filters share Tier button states and add an explicit selection check. */
+html body #main-content #tools #card-filter-energy button {
+ --tier-text-color:#e3bf72;color:var(--tier-text-color)!important;gap:8px;
+}
+html body #main-content #tools #card-filter-energy button[aria-pressed=true]::after {
+ content:"✓";position:absolute;right:4px;top:3px;
+ display:grid;place-items:center;width:18px;height:18px;
+ border-radius:50%;background:#fff;color:#040609;font:800 14px/1 Arial,sans-serif;
 }
 </style><!--card-effect-tooltips--><dialog id="card-effect-dialog" aria-labelledby="card-effect-dialog-title" lang="en"><header class="effect-dialog-header"><h2 id="card-effect-dialog-title"></h2><form method="dialog"><button class="effect-dialog-close" type="submit" aria-label="關閉效果說明">×</button></form></header><div id="card-effect-dialog-content"></div></dialog><script type="application/json" id="card-effect-tooltips-data">{}</script><!--/card-effect-tooltips--><script src="../../assets/cards/compact-cards.js"></script><script defer src="../../assets/ancient/text-scale.js"></script></main><script src="../../assets/cards/page-scroll.js"></script></body></html>

@@ -9,11 +9,11 @@ ${selector}[data-tier] {
 }
 ` + Object.entries(colors).map(([tier,{color,background}]) => `
 ${colorSelector}[data-tier=${tier}][data-tier] {
-  color:${color}!important;background:${background}!important;border:1px solid ${background}!important;
+  color:#000!important;background:${background}!important;border:1px solid ${background}!important;
 }
 `).join('');
 
-module.exports += "\n/* Tier A labels use white lettering on their existing background. */\nhtml body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#fff!important}\n";
+module.exports += "\n/* Tier A labels use black lettering on their existing background. */\nhtml body #main-content :is(.detail-tier,.detail-build-tier,.build-tier,.card-tier-badge,.tier,.relic-tier-label,.font-extrabold)[data-tier=A][data-tier] {color:#000!important}\n";
 // Metadata follows the badges on the English card detail pages.
 const metadata = 'html body #main-content .card-detail .detail-meta';
 module.exports += Object.entries(colors).map(([tier,{background}]) => '\nhtml body .card-detail .detail-inline-tier[data-tier='+tier+'] {--inline-tier-color:'+background+'}').join('');
@@ -32,7 +32,7 @@ ${metadata}>.detail-tier[data-tier][data-tier] {
 `;
 const typeColors={Attack:'lab(63.7053% 60.745 31.3109)',Skill:'lab(78.503% -64.9265 39.7492)',Power:'lab(83.2664% 8.65132 106.895)'};
 const rarityColors={Basic:'lab(84.9837% .601262 -2.17986)',Common:'lab(84.9837% .601262 -2.17986)',Uncommon:'lab(65.0361% -1.42065 -56.9802)',Rare:typeColors.Power,Ancient:'lab(72.7183% 31.8672 97.9407)'};
-const tierColors=Object.fromEntries(['S','A','B','C','D'].map(tier=>[tier,[['S','A'].includes(tier)?'#fff':'#000','var(--card-tier-'+tier+')']]));
+const tierColors=Object.fromEntries(['S','A','B','C','D'].map(tier=>[tier,['#000','var(--card-tier-'+tier+')']]));
 for(const [type,color] of Object.entries(typeColors))module.exports += `
 ${metadata}>.detail-type[data-type=${type}] {color:${color}}
 `;

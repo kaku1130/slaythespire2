@@ -1,1492 +1,2092 @@
 {
   "source": "https://slaythespire2.net/relic",
-  "retrievedDate": "2026-11-21",
-  "version": "v0.111.1",
+  "retrievedDate": "2026-11-23T05:21:11.902Z",
   "items": [
     {
-      "imagePath": "/images/relics/burning_blood.webp",
-      "name": "Burning Blood",
-      "description": "At the end of combat, heal 6 HP."
-    },
-    {
-      "imagePath": "/images/relics/red_skull.webp",
-      "name": "Red Skull",
-      "description": "While your HP is at or below 50%, you have 3 additional <g>Strength</g>."
-    },
-    {
-      "imagePath": "/images/relics/paper_phrog.webp",
-      "name": "Paper Phrog",
-      "description": "Enemies with <g>Vulnerable</g> take 75% more damage rather than 50%."
-    },
-    {
-      "imagePath": "/images/relics/self_forming_clay.webp",
-      "name": "Self-Forming Clay",
-      "description": "Whenever you lose HP in combat, gain 3 <g>Block</g> next turn."
-    },
-    {
-      "imagePath": "/images/relics/charons_ashes.webp",
-      "name": "Charon's Ashes",
-      "description": "Whenever you <g>Exhaust</g> a card, deal 3 damage to ALL enemies."
-    },
-    {
-      "imagePath": "/images/relics/demon_tongue.webp",
-      "name": "Demon Tongue",
-      "description": "The first time you lose HP on your turn, heal HP equal to the amount lost."
-    },
-    {
-      "imagePath": "/images/relics/ruined_helmet.webp",
-      "name": "Ruined Helmet",
-      "description": "The first time you gain <g>Strength</g> each combat, double the amount gained."
-    },
-    {
-      "imagePath": "/images/relics/brimstone.webp",
-      "name": "Brimstone",
-      "description": "At the start of your turn, gain 2 <g>Strength</g> and ALL enemies gain 1 <g>Strength</g>."
-    },
-    {
-      "imagePath": "/images/relics/ring_of_the_snake.webp",
-      "name": "Ring of the Snake",
-      "description": "At the start of each combat, draw 2 additional cards."
-    },
-    {
-      "imagePath": "/images/relics/snecko_skull.webp",
-      "name": "Snecko Skull",
-      "description": "Whenever you apply <g>Poison</g>, apply an additional 1 <g>Poison</g>."
-    },
-    {
-      "imagePath": "/images/relics/tingsha.webp",
-      "name": "Tingsha",
-      "description": "Whenever you discard a card during your turn, deal 3 damage to a random enemy for each card discarded."
-    },
-    {
-      "imagePath": "/images/relics/twisted_funnel.webp",
-      "name": "Twisted Funnel",
-      "description": "At the start of each combat, apply 4 <g>Poison</g> to ALL enemies."
-    },
-    {
-      "imagePath": "/images/relics/helical_dart.webp",
-      "name": "Helical Dart",
-      "description": "Whenever you play a <g>Shiv</g>, gain 1 <g>Dexterity</g> this turn."
-    },
-    {
-      "imagePath": "/images/relics/paper_krane.webp",
-      "name": "Paper Krane",
-      "description": "Enemies with <g>Weak</g> deal 40% less damage to you rather than 25%."
-    },
-    {
-      "imagePath": "/images/relics/tough_bandages.webp",
-      "name": "Tough Bandages",
-      "description": "Whenever you discard a card during your turn, gain 3 <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/relics/ninja_scroll.webp",
-      "name": "Ninja Scroll",
-      "description": "At the start of each combat, add 3 <g>Shivs</g> into your <g>Hand</g>."
-    },
-    {
-      "imagePath": "/images/relics/cracked_core.webp",
-      "name": "Cracked Core",
-      "description": "At the start of each combat, <g>Channel</g> 1 <g>Lightning</g>."
-    },
-    {
-      "imagePath": "/images/relics/data_disk.webp",
-      "name": "Data Disk",
-      "description": "Start each combat with 1 <g>Focus</g>."
-    },
-    {
-      "imagePath": "/images/relics/gold_plated_cables.webp",
-      "name": "Gold-Plated Cables",
-      "description": "Your rightmost Orb triggers its passive an additional time."
-    },
-    {
-      "imagePath": "/images/relics/symbiotic_virus.webp",
-      "name": "Symbiotic Virus",
-      "description": "At the start of each combat, <g>Channel</g> 1 <g>Dark</g>."
-    },
-    {
-      "imagePath": "/images/relics/emotion_chip.webp",
-      "name": "Emotion Chip",
-      "description": "If you lost HP during the previous turn, trigger the passive ability of all Orbs at the start of your turn."
-    },
-    {
-      "imagePath": "/images/relics/metronome.webp",
-      "name": "Metronome",
-      "description": "The first time you <g>Channel</g> 7 <g>Orbs</g> each combat, deal 30 damage to ALL enemies."
-    },
-    {
-      "imagePath": "/images/relics/power_cell.webp",
-      "name": "Power Cell",
-      "description": "At the start of each combat, add 2 zero-cost cards from your <g>Draw Pile</g> into your <g>Hand</g>."
-    },
-    {
-      "imagePath": "/images/relics/runic_capacitor.webp",
-      "name": "Runic Capacitor",
-      "description": "Start each combat with 3 additional <g>Orb Slots</g>."
-    },
-    {
-      "imagePath": "/images/relics/bound_phylactery.webp",
-      "name": "Bound Phylactery",
-      "description": "At the start of your turn, <g>Summon</g> 1."
-    },
-    {
-      "imagePath": "/images/relics/bone_flute.webp",
-      "name": "Bone Flute",
-      "description": "Whenever <g>Osty</g> attacks, gain 2 <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/relics/book_repair_knife.webp",
-      "name": "Book Repair Knife",
-      "description": "Whenever a non-Minion enemy dies to <g>Doom</g>, heal 3 HP."
-    },
-    {
-      "imagePath": "/images/relics/funerary_mask.webp",
-      "name": "Funerary Mask",
-      "description": "At the start of each combat, add 3 <g>Souls</g> into your <g>Draw Pile</g>."
-    },
-    {
-      "imagePath": "/images/relics/big_hat.webp",
-      "name": "Big Hat",
-      "description": "At the start of each combat, add 2 random <g>Ethereal</g> cards into your <g>Hand</g>."
-    },
-    {
-      "imagePath": "/images/relics/bookmark.webp",
-      "name": "Bookmark",
-      "description": "At the end of each turn, lower the cost of a random <g>Retained</g> card by 1 until played."
-    },
-    {
-      "imagePath": "/images/relics/ivory_tile.webp",
-      "name": "Ivory Tile",
-      "description": "Whenever you play a card that costs <e/><e/><e/> or more, gain <e/>."
-    },
-    {
-      "imagePath": "/images/relics/undying_sigil.webp",
-      "name": "Undying Sigil",
-      "description": "Enemies with at least as much <g>Doom</g> as HP deal 50% less damage."
-    },
-    {
-      "imagePath": "/images/relics/divine_right.webp",
-      "name": "Divine Right",
-      "description": "At the start of each combat, gain <s/><s/><s/>."
-    },
-    {
-      "imagePath": "/images/relics/fencing_manual.webp",
-      "name": "Fencing Manual",
-      "description": "At the start of each combat, <g>Forge</g> 10."
-    },
-    {
-      "imagePath": "/images/relics/galactic_dust.webp",
-      "name": "Galactic Dust",
-      "description": "For every 10 <s/> spent, gain 10 <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/relics/regalite.webp",
-      "name": "Regalite",
-      "description": "The first time you create a card each turn, gain 4 <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/relics/lunar_pastry.webp",
-      "name": "Lunar Pastry",
-      "description": "At the end of your turn, gain <s/>."
-    },
-    {
-      "imagePath": "/images/relics/mini_regent.webp",
-      "name": "Mini Regent",
-      "description": "The first time you spend <s/> each turn, gain 1 <g>Strength</g>."
-    },
-    {
-      "imagePath": "/images/relics/orange_dough.webp",
-      "name": "Orange Dough",
-      "description": "At the start of each combat, add 2 random Colorless cards into your <g>Hand</g>."
-    },
-    {
-      "imagePath": "/images/relics/vitruvian_minion.webp",
-      "name": "Vitruvian Minion",
-      "description": "Cards containing “Minion” deal double damage and gain double <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/relics/amethyst_aubergine.webp",
-      "name": "Amethyst Aubergine",
-      "description": "Enemies drop 15 additional <g>Gold</g>."
-    },
-    {
-      "imagePath": "/images/relics/anchor.webp",
-      "name": "Anchor",
-      "description": "Start each combat with 10 <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/relics/bag_of_marbles.webp",
-      "name": "Bag of Marbles",
-      "description": "At the start of each combat, apply 1 <g>Vulnerable</g> to ALL enemies."
-    },
-    {
-      "imagePath": "/images/relics/bag_of_preparation.webp",
-      "name": "Bag of Preparation",
-      "description": "At the start of each combat, draw 2 additional cards."
-    },
-    {
-      "imagePath": "/images/relics/blood_vial.webp",
-      "name": "Blood Vial",
-      "description": "At the start of each combat, heal 2 HP."
-    },
-    {
-      "imagePath": "/images/relics/book_of_five_rings.webp",
-      "name": "Book of Five Rings",
-      "description": "Every 5 cards you add to your <g>Deck</g>, heal 20 HP."
-    },
-    {
-      "imagePath": "/images/relics/bronze_scales.webp",
-      "name": "Bronze Scales",
-      "description": "Start each combat with 3 <g>Thorns</g>."
-    },
-    {
-      "imagePath": "/images/relics/centennial_puzzle.webp",
-      "name": "Centennial Puzzle",
-      "description": "The first time you lose HP each combat, draw 3 cards."
-    },
-    {
-      "imagePath": "/images/relics/festive_popper.webp",
-      "name": "Festive Popper",
-      "description": "At the start of each combat, deal 9 damage to ALL enemies."
-    },
-    {
-      "imagePath": "/images/relics/gorget.webp",
-      "name": "Gorget",
-      "description": "At the start of each combat, gain 4 <g>Plating</g>."
-    },
-    {
-      "imagePath": "/images/relics/happy_flower.webp",
-      "name": "Happy Flower",
-      "description": "Every 3 turns, gain <e/>."
-    },
-    {
-      "imagePath": "/images/relics/juzu_bracelet.webp",
-      "name": "Juzu Bracelet",
-      "description": "Regular enemy combats are no longer encountered in <g>?</g> rooms."
-    },
-    {
-      "imagePath": "/images/relics/lantern.webp",
-      "name": "Lantern",
-      "description": "Start each combat with an additional <e/>."
-    },
-    {
-      "imagePath": "/images/relics/meal_ticket.webp",
-      "name": "Meal Ticket",
-      "description": "Whenever you enter a shop room, heal 15 HP."
-    },
-    {
-      "imagePath": "/images/relics/oddly_smooth_stone.webp",
-      "name": "Oddly Smooth Stone",
-      "description": "Start each combat with 1 <g>Dexterity</g>."
-    },
-    {
-      "imagePath": "/images/relics/pendulum.webp",
-      "name": "Pendulum",
-      "description": "Every 3 turns, draw 1 card."
-    },
-    {
-      "imagePath": "/images/relics/potion_belt.webp",
-      "name": "Potion Belt",
-      "description": "Upon pickup, gain 2 potion slots."
-    },
-    {
-      "imagePath": "/images/relics/red_mask.webp",
-      "name": "Red Mask",
-      "description": "At the start of each combat, apply 1 <g>Weak</g> to ALL enemies."
-    },
-    {
-      "imagePath": "/images/relics/regal_pillow.webp",
-      "name": "Regal Pillow",
-      "description": "Whenever you <g>Rest</g>, heal an additional 15 HP."
-    },
-    {
-      "imagePath": "/images/relics/strawberry.webp",
-      "name": "Strawberry",
-      "description": "Upon pickup, raise your Max HP by 7."
-    },
-    {
-      "imagePath": "/images/relics/strike_dummy.webp",
-      "name": "Strike Dummy",
-      "description": "Cards containing “Strike” deal 3 additional damage."
-    },
-    {
-      "imagePath": "/images/relics/vajra.webp",
-      "name": "Vajra",
-      "description": "Start each combat with 1 <g>Strength</g>."
-    },
-    {
-      "imagePath": "/images/relics/venerable_tea_set.webp",
-      "name": "Venerable Tea Set",
-      "description": "Whenever you enter a <g>Rest Site</g>, start the next combat with an additional <e/><e/>."
-    },
-    {
-      "imagePath": "/images/relics/war_paint.webp",
-      "name": "War Paint",
-      "description": "Upon pickup, <g>Upgrade</g> 2 random Skills."
-    },
-    {
-      "imagePath": "/images/relics/whetstone.webp",
-      "name": "Whetstone",
-      "description": "Upon pickup, <g>Upgrade</g> 2 random Attacks."
-    },
-    {
+      "id": "AKABEKO",
       "imagePath": "/images/relics/akabeko.webp",
       "name": "Akabeko",
-      "description": "At the start of each combat, gain 8 <g>Vigor</g>."
+      "description": "At the start of each combat, gain 8 <g>Vigor</g>.",
+      "descriptionClean": "At the start of each combat, gain 8 Vigor."
     },
     {
-      "imagePath": "/images/relics/bowler_hat.webp",
-      "name": "Bowler Hat",
-      "description": "Gain % additional <g>Gold</g>."
-    },
-    {
-      "imagePath": "/images/relics/candelabra.webp",
-      "name": "Candelabra",
-      "description": "At the start of your 2nd turn, gain <e/><e/>."
-    },
-    {
-      "imagePath": "/images/relics/eternal_feather.webp",
-      "name": "Eternal Feather",
-      "description": "For every 5 cards in your <g>Deck</g>, heal 3 HP whenever you enter a <g>Rest Site</g>."
-    },
-    {
-      "imagePath": "/images/relics/gremlin_horn.webp",
-      "name": "Gremlin Horn",
-      "description": "Whenever an enemy dies, gain <e/> and draw 1 card."
-    },
-    {
-      "imagePath": "/images/relics/horn_cleat.webp",
-      "name": "Horn Cleat",
-      "description": "At the start of your 2nd turn, gain 14 <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/relics/joss_paper.webp",
-      "name": "Joss Paper",
-      "description": "Every 5 times you <g>Exhaust</g> a card, draw 1 card."
-    },
-    {
-      "imagePath": "/images/relics/kusarigama.webp",
-      "name": "Kusarigama",
-      "description": "Every time you play 3 Attacks in a single turn, deal 6 damage to a random enemy."
-    },
-    {
-      "imagePath": "/images/relics/lasting_candy.webp",
-      "name": "Lasting Candy",
-      "description": "Every other combat, your card rewards gain an additional Power."
-    },
-    {
-      "imagePath": "/images/relics/letter_opener.webp",
-      "name": "Letter Opener",
-      "description": "Every time you play 3 Skills in a single turn, deal 5 damage to ALL enemies."
-    },
-    {
-      "imagePath": "/images/relics/lucky_fysh.webp",
-      "name": "Lucky Fysh",
-      "description": "Whenever you add a card to your <g>Deck</g>, gain 15 <g>Gold</g>."
-    },
-    {
-      "imagePath": "/images/relics/mercury_hourglass.webp",
-      "name": "Mercury Hourglass",
-      "description": "At the start of your turn, deal 3 damage to ALL enemies."
-    },
-    {
-      "imagePath": "/images/relics/miniature_cannon.webp",
-      "name": "Miniature Cannon",
-      "description": "<g>Upgraded</g> Attacks deal 3 additional damage."
-    },
-    {
-      "imagePath": "/images/relics/nunchaku.webp",
-      "name": "Nunchaku",
-      "description": "Every time you play 10 Attacks, gain <e/>."
-    },
-    {
-      "imagePath": "/images/relics/orichalcum.webp",
-      "name": "Orichalcum",
-      "description": "If you end your turn without <g>Block</g>, gain 6 <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/relics/ornamental_fan.webp",
-      "name": "Ornamental Fan",
-      "description": "Every time you play 3 Attacks in a single turn, gain 4 <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/relics/pantograph.webp",
-      "name": "Pantograph",
-      "description": "At the start of each <g>Boss</g> combat, heal 25 HP."
-    },
-    {
-      "imagePath": "/images/relics/parrying_shield.webp",
-      "name": "Parrying Shield",
-      "description": "If you end a turn with at least 10 <g>Block</g>, deal 6 damage to a random enemy."
-    },
-    {
-      "imagePath": "/images/relics/pear.webp",
-      "name": "Pear",
-      "description": "Upon pickup, raise your Max HP by 10."
-    },
-    {
-      "imagePath": "/images/relics/pen_nib.webp",
-      "name": "Pen Nib",
-      "description": "Every 10th Attack you play deals double damage."
-    },
-    {
-      "imagePath": "/images/relics/permafrost.webp",
-      "name": "Permafrost",
-      "description": "The first time you play a Power each combat, gain 7 <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/relics/petrified_toad.webp",
-      "name": "Petrified Toad",
-      "description": "At the start of each combat, procure a <g>Potion-Shaped Rock</g>."
-    },
-    {
-      "imagePath": "/images/relics/planisphere.webp",
-      "name": "Planisphere",
-      "description": "Whenever you enter a <g>?</g> room, heal 5 HP."
-    },
-    {
-      "imagePath": "/images/relics/reptile_trinket.webp",
-      "name": "Reptile Trinket",
-      "description": "Whenever you use a potion, gain 3 <g>Strength</g> this turn."
-    },
-    {
-      "imagePath": "/images/relics/ripple_basin.webp",
-      "name": "Ripple Basin",
-      "description": "If you did not play any Attacks during your turn, gain 4 <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/relics/sparkling_rouge.webp",
-      "name": "Sparkling Rouge",
-      "description": "At the start of your 3rd turn, gain 1 <g>Strength</g> and 1 <g>Dexterity</g>."
-    },
-    {
-      "imagePath": "/images/relics/stone_cracker.webp",
-      "name": "Stone Cracker",
-      "description": "At the start of each combat, <g>Upgrade</g> 2 random cards in your <g>Draw Pile</g> for the rest of combat."
-    },
-    {
-      "imagePath": "/images/relics/tiny_mailbox.webp",
-      "name": "Tiny Mailbox",
-      "description": "Whenever you <g>Rest</g>, procure 2 random <g>Potions</g>."
-    },
-    {
-      "imagePath": "/images/relics/tuning_fork.webp",
-      "name": "Tuning Fork",
-      "description": "Every time you play 10 Skills, gain 7 <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/relics/vambrace.webp",
-      "name": "Vambrace",
-      "description": "The first time you gain <g>Block</g> from a card each combat, double the amount gained."
-    },
-    {
-      "imagePath": "/images/relics/art_of_war.webp",
-      "name": "Art of War",
-      "description": "If you do not play any Attacks during your turn, gain an additional <e/> next turn."
-    },
-    {
-      "imagePath": "/images/relics/beating_remnant.webp",
-      "name": "Beating Remnant",
-      "description": "You cannot lose more than 20 HP in a single turn."
-    },
-    {
-      "imagePath": "/images/relics/bellows.webp",
-      "name": "Bellows",
-      "description": "The first <g>Hand</g> you draw each combat is <g>Upgraded</g>."
-    },
-    {
-      "imagePath": "/images/relics/captains_wheel.webp",
-      "name": "Captain's Wheel",
-      "description": "At the start of your 3rd turn, gain 18 <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/relics/chandelier.webp",
-      "name": "Chandelier",
-      "description": "At the start of your 3rd turn, gain <e/><e/><e/>."
-    },
-    {
-      "imagePath": "/images/relics/cloak_clasp.webp",
-      "name": "Cloak Clasp",
-      "description": "At the end of your turn, gain 1 <g>Block</g> for each card in your <g>Hand</g>."
-    },
-    {
-      "imagePath": "/images/relics/frozen_egg.webp",
-      "name": "Frozen Egg",
-      "description": "Whenever you add a Power into your <g>Deck</g>, <g>Upgrade</g> it."
-    },
-    {
-      "imagePath": "/images/relics/gambling_chip.webp",
-      "name": "Gambling Chip",
-      "description": "At the start of each combat, discard any number of cards then draw that many."
-    },
-    {
-      "imagePath": "/images/relics/game_piece.webp",
-      "name": "Game Piece",
-      "description": "Whenever you play a Power, draw 1 card."
-    },
-    {
-      "imagePath": "/images/relics/girya.webp",
-      "name": "Girya",
-      "description": "You can now gain <g>Strength</g> at <g>Rest Sites</g>. (3 times max)"
-    },
-    {
-      "imagePath": "/images/relics/ice_cream.webp",
-      "name": "Ice Cream",
-      "description": "Energy is now conserved between turns."
-    },
-    {
-      "imagePath": "/images/relics/intimidating_helmet.webp",
-      "name": "Intimidating Helmet",
-      "description": "Whenever you play a card that costs <e/><e/> or more, gain 4 <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/relics/kunai.webp",
-      "name": "Kunai",
-      "description": "Every time you play 3 Attacks in a single turn, gain 1 <g>Dexterity</g>."
-    },
-    {
-      "imagePath": "/images/relics/lizard_tail.webp",
-      "name": "Lizard Tail",
-      "description": "When your HP would be reduced to 0, heal to 50% of your Max HP instead (works once)."
-    },
-    {
-      "imagePath": "/images/relics/mango.webp",
-      "name": "Mango",
-      "description": "Upon pickup, raise your Max HP by 14."
-    },
-    {
-      "imagePath": "/images/relics/meat_on_the_bone.webp",
-      "name": "Meat on the Bone",
-      "description": "If your HP is at or below 50% at the end of combat, heal 12 HP."
-    },
-    {
-      "imagePath": "/images/relics/molten_egg.webp",
-      "name": "Molten Egg",
-      "description": "Whenever you add an Attack card to your <g>Deck</g>, <g>Upgrade</g> it."
-    },
-    {
-      "imagePath": "/images/relics/mummified_hand.webp",
-      "name": "Mummified Hand",
-      "description": "Whenever you play a Power, a random card in your <g>Hand</g> is free to play that turn."
-    },
-    {
-      "imagePath": "/images/relics/old_coin.webp",
-      "name": "Old Coin",
-      "description": "Upon pickup, gain 300 <g>Gold</g>."
-    },
-    {
-      "imagePath": "/images/relics/pocketwatch.webp",
-      "name": "Pocketwatch",
-      "description": "Whenever you play 3 or fewer cards during your turn, draw 3 additional cards at the start of your next turn."
-    },
-    {
-      "imagePath": "/images/relics/prayer_wheel.webp",
-      "name": "Prayer Wheel",
-      "description": "Normal enemies drop an additional card reward."
-    },
-    {
-      "imagePath": "/images/relics/rainbow_ring.webp",
-      "name": "Rainbow Ring",
-      "description": "The first time you play an Attack, Skill, and Power each turn, gain 1 <g>Strength</g> and 1 <g>Dexterity</g>."
-    },
-    {
-      "imagePath": "/images/relics/razor_tooth.webp",
-      "name": "Razor Tooth",
-      "description": "Every time you play an Attack or Skill, <g>Upgrade</g> it for the remainder of combat."
-    },
-    {
-      "imagePath": "/images/relics/shovel.webp",
-      "name": "Shovel",
-      "description": "You can now dig at <g>Rest Sites</g> to obtain a random <g>Relic</g>."
-    },
-    {
-      "imagePath": "/images/relics/shuriken.webp",
-      "name": "Shuriken",
-      "description": "Every time you play 3 Attacks in a single turn, gain 1 <g>Strength</g>."
-    },
-    {
-      "imagePath": "/images/relics/stone_calendar.webp",
-      "name": "Stone Calendar",
-      "description": "At the end of turn 7, deal 52 damage to ALL enemies."
-    },
-    {
-      "imagePath": "/images/relics/sturdy_clamp.webp",
-      "name": "Sturdy Clamp",
-      "description": "Up to 10 <g>Block</g> persists across turns."
-    },
-    {
-      "imagePath": "/images/relics/the_courier.webp",
-      "name": "The Courier",
-      "description": "The merchant no longer runs out of cards, relics, or potions and his prices are reduced by 20%."
-    },
-    {
-      "imagePath": "/images/relics/toxic_egg.webp",
-      "name": "Toxic Egg",
-      "description": "Whenever you add a Skill into your <g>Deck</g>, <g>Upgrade</g> it."
-    },
-    {
-      "imagePath": "/images/relics/tungsten_rod.webp",
-      "name": "Tungsten Rod",
-      "description": "Whenever you would lose HP, lose 1 less."
-    },
-    {
-      "imagePath": "/images/relics/unceasing_top.webp",
-      "name": "Unceasing Top",
-      "description": "Whenever you have no cards in <g>Hand</g> during your turn, draw a card."
-    },
-    {
-      "imagePath": "/images/relics/unsettling_lamp.webp",
-      "name": "Unsettling Lamp",
-      "description": "Each combat, the first time you play a card that <g>Debuffs</g> an enemy, double its effect."
-    },
-    {
-      "imagePath": "/images/relics/vexing_puzzlebox.webp",
-      "name": "Vexing Puzzlebox",
-      "description": "At the start of each combat, add a random card into your <g>Hand</g>. It's free to play this turn."
-    },
-    {
-      "imagePath": "/images/relics/white_beast_statue.webp",
-      "name": "White Beast Statue",
-      "description": "<g>Potions</g> always appear in combat rewards."
-    },
-    {
-      "imagePath": "/images/relics/white_star.webp",
-      "name": "White Star",
-      "description": "<g>Elites</g> drop an additional <g>Rare</g> card reward."
-    },
-    {
-      "imagePath": "/images/relics/looming_fruit.webp",
-      "name": "Looming Fruit",
-      "description": "Upon pickup, raise your Max HP by 31."
-    },
-    {
-      "imagePath": "/images/relics/very_hot_cocoa.webp",
-      "name": "Very Hot Cocoa",
-      "description": "Start each combat with an additional 4<e/>."
-    },
-    {
-      "imagePath": "/images/relics/belt_buckle.webp",
-      "name": "Belt Buckle",
-      "description": "While you have no <g>Potions</g>, you have 2 additional <g>Dexterity</g>."
-    },
-    {
-      "imagePath": "/images/relics/bread.webp",
-      "name": "Bread",
-      "description": "At the start of your first turn, lose <e/><e/>. At the start of all other turns, gain <e/>."
-    },
-    {
-      "imagePath": "/images/relics/burning_sticks.webp",
-      "name": "Burning Sticks",
-      "description": "The first time each combat you <g>Exhaust</g> a Skill, add a copy of it into your <g>Hand</g>."
-    },
-    {
-      "imagePath": "/images/relics/cauldron.webp",
-      "name": "Cauldron",
-      "description": "Upon pickup, brews 5 random <g>Potions</g>."
-    },
-    {
-      "imagePath": "/images/relics/chemical_x.webp",
-      "name": "Chemical X",
-      "description": "The effects of your cost X cards are increased by 2."
-    },
-    {
-      "imagePath": "/images/relics/dingy_rug.webp",
-      "name": "Dingy Rug",
-      "description": "Card rewards can now contain Colorless cards."
-    },
-    {
-      "imagePath": "/images/relics/dollys_mirror.webp",
-      "name": "Dolly's Mirror",
-      "description": "Upon pickup, obtain an additional copy of a card in your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/dragon_fruit.webp",
-      "name": "Dragon Fruit",
-      "description": "Whenever you gain <g>Gold</g>, raise your Max HP by 1."
-    },
-    {
-      "imagePath": "/images/relics/ghost_seed.webp",
-      "name": "Ghost Seed",
-      "description": "<g>Strikes</g> and <g>Defends</g> gain <g>Ethereal</g>."
-    },
-    {
-      "imagePath": "/images/relics/gnarled_hammer.webp",
-      "name": "Gnarled Hammer",
-      "description": "Upon pickup, <g>Enchant</g> up to 3 Attacks with Sharp 3."
-    },
-    {
-      "imagePath": "/images/relics/kifuda.webp",
-      "name": "Kifuda",
-      "description": "Upon pickup, <g>Enchant</g> up to 3 cards with Adroit."
-    },
-    {
-      "imagePath": "/images/relics/lava_lamp.webp",
-      "name": "Lava Lamp",
-      "description": "At the end of combat, <g>Upgrade</g> all card rewards if you took no damage."
-    },
-    {
-      "imagePath": "/images/relics/lees_waffle.webp",
-      "name": "Lee's Waffle",
-      "description": "Upon pickup, raise your Max HP by 7 and heal all of your HP."
-    },
-    {
-      "imagePath": "/images/relics/membership_card.webp",
-      "name": "Membership Card",
-      "description": "50% discount on all products!"
-    },
-    {
-      "imagePath": "/images/relics/miniature_tent.webp",
-      "name": "Miniature Tent",
-      "description": "You may choose any number of options at <g>Rest Sites</g>."
-    },
-    {
-      "imagePath": "/images/relics/mystic_lighter.webp",
-      "name": "Mystic Lighter",
-      "description": "<g>Enchanted</g> Attacks deal 9 additional damage."
-    },
-    {
-      "imagePath": "/images/relics/orrery.webp",
-      "name": "Orrery",
-      "description": "Upon pickup, gain 5 card rewards."
-    },
-    {
-      "imagePath": "/images/relics/punch_dagger.webp",
-      "name": "Punch Dagger",
-      "description": "Upon pickup, <g>Enchant</g> an Attack with Momentum 5."
-    },
-    {
-      "imagePath": "/images/relics/ringing_triangle.webp",
-      "name": "Ringing Triangle",
-      "description": "<g>Retain</g> your <g>Hand</g> on the first turn of combat."
-    },
-    {
-      "imagePath": "/images/relics/royal_stamp.webp",
-      "name": "Royal Stamp",
-      "description": "Upon pickup, choose an Attack or Skill in your <g>Deck</g> to <g>Enchant</g> with Royally Approved."
-    },
-    {
-      "imagePath": "/images/relics/screaming_flagon.webp",
-      "name": "Screaming Flagon",
-      "description": "If you end your turn with no cards in your <g>Hand</g>, deal 20 damage to ALL enemies."
-    },
-    {
-      "imagePath": "/images/relics/sling_of_courage.webp",
-      "name": "Sling of Courage",
-      "description": "Start each <g>Elite</g> combat with 2 <g>Strength</g>."
-    },
-    {
-      "imagePath": "/images/relics/the_abacus.webp",
-      "name": "The Abacus",
-      "description": "Whenever you shuffle your <g>Draw Pile</g>, gain 6 <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/relics/toolbox.webp",
-      "name": "Toolbox",
-      "description": "At the start of each combat, choose 1 of 3 random Colorless cards and add the chosen card into your <g>Hand</g>."
-    },
-    {
-      "imagePath": "/images/relics/wing_charm.webp",
-      "name": "Wing Charm",
-      "description": "A random card in each card reward is <g>Enchanted</g> with Swift 1."
-    },
-    {
-      "imagePath": "/images/relics/fresnel_lens.webp",
-      "name": "Fresnel Lens",
-      "description": "Whenever you add a card that gains <g>Block</g> to your <g>Deck</g>, <g>Enchant</g> it with Nimble 2."
-    },
-    {
-      "imagePath": "/images/relics/black_blood.webp",
-      "name": "Black Blood",
-      "description": "At the end of combat, heal 12 HP."
-    },
-    {
-      "imagePath": "/images/relics/divine_destiny.webp",
-      "name": "Divine Destiny",
-      "description": "At the start of each combat, gain <s/><s/><s/><s/><s/><s/><s/>."
-    },
-    {
-      "imagePath": "/images/relics/infused_core.webp",
-      "name": "Infused Core",
-      "description": "At the start of each combat, <g>Channel</g> 3 <g>Lightning</g>. <g>Lightning</g> deals 1 additional damage."
-    },
-    {
-      "imagePath": "/images/relics/phylactery_unbound.webp",
-      "name": "Phylactery Unbound",
-      "description": "At the start of each combat, <g>Summon</g> 5. At the start of your turn, <g>Summon</g> 2."
-    },
-    {
-      "imagePath": "/images/relics/ring_of_the_drake.webp",
-      "name": "Ring of the Drake",
-      "description": "At the start of your first 3 turns, draw 2 additional cards."
-    },
-    {
+      "id": "ALCHEMICAL_COFFER",
       "imagePath": "/images/relics/alchemical_coffer.webp",
       "name": "Alchemical Coffer",
-      "description": "Upon pickup, gain 4 potion slots filled with random <g>Potions</g>."
+      "description": "Upon pickup, gain 4 potion slots filled with random <g>Potions</g>.",
+      "descriptionClean": "Upon pickup, gain 4 potion slots filled with random Potions."
     },
     {
+      "id": "AMETHYST_AUBERGINE",
+      "imagePath": "/images/relics/amethyst_aubergine.webp",
+      "name": "Amethyst Aubergine",
+      "description": "Enemies drop 15 additional <g>Gold</g>.",
+      "descriptionClean": "Enemies drop 15 additional Gold."
+    },
+    {
+      "id": "ANCHOR",
+      "imagePath": "/images/relics/anchor.webp",
+      "name": "Anchor",
+      "description": "Start each combat with 10 <g>Block</g>.",
+      "descriptionClean": "Start each combat with 10 Block."
+    },
+    {
+      "id": "ARCANE_SCROLL",
       "imagePath": "/images/relics/arcane_scroll.webp",
       "name": "Arcane Scroll",
-      "description": "Upon pickup, obtain a random <g>Rare Card</g> to add to your <g>Deck</g>."
+      "description": "Upon pickup, obtain a random <g>Rare Card</g> to add to your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, obtain a random Rare Card to add to your Deck."
     },
     {
+      "id": "ARCHAIC_TOOTH",
       "imagePath": "/images/relics/archaic_tooth.webp",
       "name": "Archaic Tooth",
-      "description": "Upon pickup, <g>Transform</g> a starter card into an ancient version."
+      "description": "Upon pickup, <g>Transform</g> a starter card into an ancient version.",
+      "descriptionClean": "Upon pickup, Transform a starter card into an ancient version."
     },
     {
+      "id": "ART_OF_WAR",
+      "imagePath": "/images/relics/art_of_war.webp",
+      "name": "Art of War",
+      "description": "If you do not play any Attacks during your turn, gain an additional <e>1</e> next turn.",
+      "descriptionClean": "If you do not play any Attacks during your turn, gain an additional 1 next turn."
+    },
+    {
+      "id": "ASTROLABE",
       "imagePath": "/images/relics/astrolabe.webp",
       "name": "Astrolabe",
-      "description": "Upon pickup, <g>Transform</g> 3 cards, then <g>Upgrade</g> them."
+      "description": "Upon pickup, <g>Transform</g> 3 cards, then <g>Upgrade</g> them.",
+      "descriptionClean": "Upon pickup, Transform 3 cards, then Upgrade them."
     },
     {
+      "id": "BAG_OF_MARBLES",
+      "imagePath": "/images/relics/bag_of_marbles.webp",
+      "name": "Bag of Marbles",
+      "description": "At the start of each combat, apply 1 <g>Vulnerable</g> to ALL enemies.",
+      "descriptionClean": "At the start of each combat, apply 1 Vulnerable to ALL enemies."
+    },
+    {
+      "id": "BAG_OF_PREPARATION",
+      "imagePath": "/images/relics/bag_of_preparation.webp",
+      "name": "Bag of Preparation",
+      "description": "At the start of each combat, draw 2 additional cards.",
+      "descriptionClean": "At the start of each combat, draw 2 additional cards."
+    },
+    {
+      "id": "BEATING_REMNANT",
+      "imagePath": "/images/relics/beating_remnant.webp",
+      "name": "Beating Remnant",
+      "description": "You cannot lose more than 20 HP in a single turn.",
+      "descriptionClean": "You cannot lose more than 20 HP in a single turn."
+    },
+    {
+      "id": "BEAUTIFUL_BRACELET",
       "imagePath": "/images/relics/beautiful_bracelet.webp",
       "name": "Beautiful Bracelet",
-      "description": "Upon pickup, <g>Enchant</g> 4 random cards in your <g>Deck</g> with Swift 2."
+      "description": "Upon pickup, <g>Enchant</g> 4 random cards in your <g>Deck</g> with Swift 2.",
+      "descriptionClean": "Upon pickup, Enchant 4 random cards in your Deck with Swift 2."
     },
     {
-      "imagePath": "/images/relics/biiig_hug.webp",
-      "name": "Biiig Hug",
-      "description": "Upon pickup, remove 4 cards from your <g>Deck</g>. Whenever you shuffle your <g>Draw Pile</g>, add a <g>Soot</g> into your <g>Draw Pile</g>."
+      "id": "BELLOWS",
+      "imagePath": "/images/relics/bellows.webp",
+      "name": "Bellows",
+      "description": "The first <g>Hand</g> you draw each combat is <g>Upgraded</g>.",
+      "descriptionClean": "The first Hand you draw each combat is Upgraded."
     },
     {
-      "imagePath": "/images/relics/black_star.webp",
-      "name": "Black Star",
-      "description": "<g>Elites</g> drop an additional Relic when defeated."
+      "id": "BELT_BUCKLE",
+      "imagePath": "/images/relics/belt_buckle.webp",
+      "name": "Belt Buckle",
+      "description": "While you have no <g>Potions</g>, you have 2 additional <g>Dexterity</g>.",
+      "descriptionClean": "While you have no Potions, you have 2 additional Dexterity."
     },
     {
-      "imagePath": "/images/relics/blessed_antler.webp",
-      "name": "Blessed Antler",
-      "description": "Gain <e/> at the start of each turn. At the start of each combat, shuffle 3 <g>Dazed</g> into your <g>Draw Pile</g>."
+      "id": "BIG_HAT",
+      "imagePath": "/images/relics/big_hat.webp",
+      "name": "Big Hat",
+      "description": "At the start of each combat, add 2 random <g>Ethereal</g> cards into your <g>Hand</g>.",
+      "descriptionClean": "At the start of each combat, add 2 random Ethereal cards into your Hand."
     },
     {
-      "imagePath": "/images/relics/blood_soaked_rose.webp",
-      "name": "Blood-Soaked Rose",
-      "description": "Upon pickup, add 1 Enthralled to your <g>Deck</g>. Gain <e/> at the start of each turn."
-    },
-    {
-      "imagePath": "/images/relics/booming_conch.webp",
-      "name": "Booming Conch",
-      "description": "At the start of <g>Elite</g> combats, draw 2 additional cards and gain <e/>."
-    },
-    {
-      "imagePath": "/images/relics/brilliant_scarf.webp",
-      "name": "Brilliant Scarf",
-      "description": "The 5th card you play from your hand each turn is free."
-    },
-    {
-      "imagePath": "/images/relics/calling_bell.webp",
-      "name": "Calling Bell",
-      "description": "Upon pickup, obtain a unique Curse and 3 <g>Relics</g>."
-    },
-    {
-      "imagePath": "/images/relics/choices_paradox.webp",
-      "name": "Choices Paradox",
-      "description": "At the start of each combat, add 1 of 5 random cards into your <g>Hand</g>. Add <g>Retain</g> to the chosen card."
-    },
-    {
-      "imagePath": "/images/relics/claws.webp",
-      "name": "Claws",
-      "description": "Upon pickup, <g>Transform</g> up to 6 cards into <g>Maul</g>."
-    },
-    {
-      "imagePath": "/images/relics/crossbow.webp",
-      "name": "Crossbow",
-      "description": "At the start of your turn, add a random <g>Attack</g> into your <g>Hand</g>. It's free to play this turn."
-    },
-    {
-      "imagePath": "/images/relics/cursed_pearl.webp",
-      "name": "Cursed Pearl",
-      "description": "Upon pickup, receive Greed. Gain 333 <g>Gold</g>."
-    },
-    {
-      "imagePath": "/images/relics/delicate_frond.webp",
-      "name": "Delicate Frond",
-      "description": "At the start of each combat, fill all empty potion slots with random <g>Potions</g>."
-    },
-    {
-      "imagePath": "/images/relics/diamond_diadem.webp",
-      "name": "Diamond Diadem",
-      "description": "Start combat with 20 <g>Block</g>. Your <g>Block</g> is not removed at the start of your 2nd turn."
-    },
-    {
-      "imagePath": "/images/relics/distinguished_cape.webp",
-      "name": "Distinguished Cape",
-      "description": "Upon pickup, add 2 random Curses and 3 <g>Apparitions</g> to your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/dowsing_rod.webp",
-      "name": "Dowsing Rod",
-      "description": "Upon pickup, add 1 <g>Dowsing</g> to your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/driftwood.webp",
-      "name": "Driftwood",
-      "description": "You may reroll each card reward once."
-    },
-    {
-      "imagePath": "/images/relics/dusty_tome.webp",
-      "name": "Dusty Tome",
-      "description": "Upon pickup, obtain an <g>Ancient Card</g>."
-    },
-    {
-      "imagePath": "/images/relics/ectoplasm.webp",
-      "name": "Ectoplasm",
-      "description": "You can no longer gain <g>Gold</g>. Gain <e/> at the start of each turn."
-    },
-    {
-      "imagePath": "/images/relics/electric_shrymp.webp",
-      "name": "Electric Shrymp",
-      "description": "Upon pickup, <g>Enchant</g> a Skill with Imbued."
-    },
-    {
-      "imagePath": "/images/relics/empty_cage.webp",
-      "name": "Empty Cage",
-      "description": "Upon pickup, remove 2 cards from your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/fiddle.webp",
-      "name": "Fiddle",
-      "description": "At the start of each turn, draw 2 additional cards. You may not draw cards during your turn."
-    },
-    {
-      "imagePath": "/images/relics/fishing_rod.webp",
-      "name": "Fishing Rod",
-      "description": "Every 3 normal combats, <g>Upgrade</g> a random card in your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/fur_coat.webp",
-      "name": "Fur Coat",
-      "description": "Upon pickup, mark 8 random combats. Enemies in those rooms have 1 HP."
-    },
-    {
-      "imagePath": "/images/relics/glass_eye.webp",
-      "name": "Glass Eye",
-      "description": "Upon pickup, obtain 2 <g>Common</g> cards, 2 <g>Uncommon</g> cards, and 1 <g>Rare</g> card."
-    },
-    {
-      "imagePath": "/images/relics/glitter.webp",
-      "name": "Glitter",
-      "description": "<g>Enchant</g> all card rewards with Glam."
-    },
-    {
-      "imagePath": "/images/relics/golden_compass.webp",
-      "name": "Golden Compass",
-      "description": "Upon pickup, replace the <g>Act</g> 2 Map with a single special path."
-    },
-    {
-      "imagePath": "/images/relics/golden_pearl.webp",
-      "name": "Golden Pearl",
-      "description": "Upon pickup, gain 150 <g>Gold</g>."
-    },
-    {
-      "imagePath": "/images/relics/hefty_tablet.webp",
-      "name": "Hefty Tablet",
-      "description": "Upon pickup, choose 1 of 3 Rare cards to add to your <g>Deck</g>, and add 1 Injury to your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/iron_club.webp",
-      "name": "Iron Club",
-      "description": "Every 4 cards you play, draw 1 card."
-    },
-    {
-      "imagePath": "/images/relics/jeweled_mask.webp",
-      "name": "Jeweled Mask",
-      "description": "At the start of each combat, put a random Power from your <g>Draw Pile</g> into your <g>Hand</g>. It's free to play this combat."
-    },
-    {
-      "imagePath": "/images/relics/jewelry_box.webp",
-      "name": "Jewelry Box",
-      "description": "Upon pickup, add 1 <g>Apotheosis</g> to your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/kaleidoscope.webp",
-      "name": "Kaleidoscope",
-      "description": "Upon pickup, obtain 2 card rewards from other characters."
-    },
-    {
-      "imagePath": "/images/relics/large_capsule.webp",
-      "name": "Large Capsule",
-      "description": "Upon pickup, obtain 2 random <g>Relics</g>. Add an additional <g>Strike</g> and <g>Defend</g> to your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/lava_rock.webp",
-      "name": "Lava Rock",
-      "description": "The Act 1 Boss drops 2 <g>Relics</g>."
-    },
-    {
-      "imagePath": "/images/relics/lead_paperweight.webp",
-      "name": "Lead Paperweight",
-      "description": "Upon pickup, choose 1 of 2 Colorless cards to add to your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/leafy_poultice.webp",
-      "name": "Leafy Poultice",
-      "description": "Upon pickup, <g>Transform</g> 1 of your <g>Strikes</g> and 1 of your <g>Defends</g> and lose 12 Max HP."
-    },
-    {
-      "imagePath": "/images/relics/lords_parasol.webp",
-      "name": "Lord's Parasol",
-      "description": "When you encounter the <g>Merchant</g>, immediately obtain EVERYTHING he sells."
-    },
-    {
-      "imagePath": "/images/relics/lost_coffer.webp",
-      "name": "Lost Coffer",
-      "description": "Upon pickup, gain 1 card reward and procure 1 random potion."
-    },
-    {
-      "imagePath": "/images/relics/massive_scroll.webp",
-      "name": "Massive Scroll",
-      "description": "Upon pickup, choose 1 of 3 <g>Multiplayer Cards</g> to add to your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/meat_cleaver.webp",
-      "name": "Meat Cleaver",
-      "description": "You may <g>Cook</g> at Rest Sites."
-    },
-    {
-      "imagePath": "/images/relics/music_box.webp",
-      "name": "Music Box",
-      "description": "Create an <g>Ethereal</g> copy of the first Attack you play each turn."
-    },
-    {
-      "imagePath": "/images/relics/neows_bones.webp",
-      "name": "Neow's Bones",
-      "description": "Upon pickup, gain 2 random <g>Neow Relics</g>. Add 1 random Curse to your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/neows_sacrifice.webp",
-      "name": "Neow's Sacrifice",
-      "description": "Upon pickup, procure 1 <g>Ambergris</g> and add 1 Guilty to your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/neows_talisman.webp",
-      "name": "Neow's Talisman",
-      "description": "Upon pickup, <g>Upgrade</g> 1 of your <g>Strikes</g> and 1 of your <g>Defends</g>."
-    },
-    {
-      "imagePath": "/images/relics/neows_torment.webp",
-      "name": "Neow's Torment",
-      "description": "Upon pickup, add 1 <g>Neow's Fury</g> to your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/new_leaf.webp",
-      "name": "New Leaf",
-      "description": "Upon pickup, <g>Transform</g> 1 card."
-    },
-    {
-      "imagePath": "/images/relics/nutritious_oyster.webp",
-      "name": "Nutritious Oyster",
-      "description": "Upon pickup, raise your Max HP by 11."
-    },
-    {
-      "imagePath": "/images/relics/nutritious_soup.webp",
-      "name": "Nutritious Soup",
-      "description": "Upon pickup, <g>Enchant</g> all <g>Strikes</g> in your <g>Deck</g> with Tezcatara's Ember."
-    },
-    {
-      "imagePath": "/images/relics/paels_blood.webp",
-      "name": "Pael's Blood",
-      "description": "At the start of your turn, draw 1 additional card."
-    },
-    {
-      "imagePath": "/images/relics/paels_claw.webp",
-      "name": "Pael's Claw",
-      "description": "Upon pickup, <g>Enchant</g> all <g>Defends</g> with Goopy."
-    },
-    {
-      "imagePath": "/images/relics/paels_eye.webp",
-      "name": "Pael's Eye",
-      "description": "The first time each combat you end your turn without playing cards, <g>Exhaust</g> your <g>Hand</g>, and take an extra turn."
-    },
-    {
-      "imagePath": "/images/relics/paels_flesh.webp",
-      "name": "Pael's Flesh",
-      "description": "Gain an additional <e/> at the start of your 3rd turn, and every turn after that."
-    },
-    {
-      "imagePath": "/images/relics/paels_growth.webp",
-      "name": "Pael's Growth",
-      "description": "Upon pickup, <g>Enchant</g> a card with Clone."
-    },
-    {
-      "imagePath": "/images/relics/paels_horn.webp",
-      "name": "Pael's Horn",
-      "description": "Upon pickup, add 2 <g>Relax</g> to your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/paels_legion.webp",
-      "name": "Pael's Legion",
-      "description": "Doubles <g>Block</g> gained from a card, then goes to sleep for 2 turns."
-    },
-    {
-      "imagePath": "/images/relics/paels_tears.webp",
-      "name": "Pael's Tears",
-      "description": "If you end your turn with unspent <e/>, gain an additional <e/><e/> next turn."
-    },
-    {
-      "imagePath": "/images/relics/paels_tooth.webp",
-      "name": "Pael's Tooth",
-      "description": "Upon pickup, remove 5 cards from your <g>Deck</g>. After each combat, randomly add 1 back <g>Upgraded</g>."
-    },
-    {
-      "imagePath": "/images/relics/paels_wing.webp",
-      "name": "Pael's Wing",
-      "description": "You may sacrifice card rewards to Pael. Every 2 sacrifices, obtain a <g>Relic</g>."
-    },
-    {
-      "imagePath": "/images/relics/pandoras_box.webp",
-      "name": "Pandora's Box",
-      "description": "<g>Transform</g> ALL <g>Strikes</g> and <g>Defends</g>."
-    },
-    {
-      "imagePath": "/images/relics/phial_holster.webp",
-      "name": "Phial Holster",
-      "description": "Upon pickup, gain 1 potion slot and procure 2 random <g>Potions</g>."
-    },
-    {
-      "imagePath": "/images/relics/philosophers_stone.webp",
-      "name": "Philosopher's Stone",
-      "description": "Gain <e/> at the start of each turn. ALL enemies start combat with 1 <g>Strength</g>."
-    },
-    {
-      "imagePath": "/images/relics/pomander.webp",
-      "name": "Pomander",
-      "description": "Upon pickup, <g>Upgrade</g> a card."
-    },
-    {
-      "imagePath": "/images/relics/precarious_shears.webp",
-      "name": "Precarious Shears",
-      "description": "Upon pickup, remove 2 cards from your <g>Deck</g> and lose 16 HP."
-    },
-    {
-      "imagePath": "/images/relics/precise_scissors.webp",
-      "name": "Precise Scissors",
-      "description": "Upon pickup, remove 1 card from your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/preserved_fog.webp",
-      "name": "Preserved Fog",
-      "description": "Upon pickup, remove 3 cards from your <g>Deck</g>. Add Folly to your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/prismatic_gem.webp",
-      "name": "Prismatic Gem",
-      "description": "Gain <e/> at the start of each turn. Card rewards now contain cards from other colors."
-    },
-    {
-      "imagePath": "/images/relics/pumpkin_candle.webp",
-      "name": "Pumpkin Candle",
-      "description": "Gain <e/> at the start of each turn. Extinguishes after 5 combats. Can be <g>Kindled</g> at <g>Rest Sites</g>."
-    },
-    {
-      "imagePath": "/images/relics/radiant_pearl.webp",
-      "name": "Radiant Pearl",
-      "description": "At the start of each combat, add 1 <g>Luminesce</g> into your <g>Hand</g>."
-    },
-    {
-      "imagePath": "/images/relics/runic_pyramid.webp",
-      "name": "Runic Pyramid",
-      "description": "At the end of your turn, you no longer discard your <g>Hand</g>."
-    },
-    {
-      "imagePath": "/images/relics/sai.webp",
-      "name": "Sai",
-      "description": "At the start of your turn, gain 7 <g>Block</g>."
-    },
-    {
-      "imagePath": "/images/relics/sand_castle.webp",
-      "name": "Sand Castle",
-      "description": "Upon pickup, <g>Upgrade</g> 6 random cards."
-    },
-    {
-      "imagePath": "/images/relics/scroll_boxes.webp",
-      "name": "Scroll Boxes",
-      "description": "Upon pickup, choose 1 of 2 packs of cards to add to your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/seal_of_gold.webp",
-      "name": "Seal of Gold",
-      "description": "At the start of your turn, spend 3 <g>Gold</g> to gain <e/>."
-    },
-    {
-      "imagePath": "/images/relics/sea_glass.webp",
-      "name": "Sea Glass",
-      "description": "See 15 cards from another character. Choose any number of them to add to your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/sere_talon.webp",
-      "name": "Sere Talon",
-      "description": "Upon pickup, lose 9 Max HP. Add 3 Wishes to your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/signet_ring.webp",
-      "name": "Signet Ring",
-      "description": "Upon pickup, gain 888 <g>Gold</g>."
-    },
-    {
-      "imagePath": "/images/relics/silken_tress.webp",
-      "name": "Silken Tress",
-      "description": "Upon pickup, lose all <g>Gold</g>. <g>Enchant</g> all cards in your first card reward with Glam."
-    },
-    {
-      "imagePath": "/images/relics/silver_crucible.webp",
-      "name": "Silver Crucible",
-      "description": "The first 3 card rewards you see are <g>Upgraded</g>. The first Treasure Chest you open is empty."
-    },
-    {
-      "imagePath": "/images/relics/small_capsule.webp",
-      "name": "Small Capsule",
-      "description": "Upon pickup, obtain a random <g>Relic</g>."
-    },
-    {
-      "imagePath": "/images/relics/snecko_eye.webp",
-      "name": "Snecko Eye",
-      "description": "At the start of your turn, draw 2 additional cards. Start each combat Confused."
-    },
-    {
-      "imagePath": "/images/relics/sozu.webp",
-      "name": "Sozu",
-      "description": "Gain <e/> at the start of each turn. You can no longer obtain <g>Potions</g>."
-    },
-    {
-      "imagePath": "/images/relics/spiked_gauntlets.webp",
-      "name": "Spiked Gauntlets",
-      "description": "Gain <e/> at the start of each turn. Powers cost 1 more <e/>."
-    },
-    {
-      "imagePath": "/images/relics/stone_humidifier.webp",
-      "name": "Stone Humidifier",
-      "description": "Whenever you <g>Rest</g> at a <g>Rest Site</g>, raise your Max HP by 5."
-    },
-    {
-      "imagePath": "/images/relics/storybook.webp",
-      "name": "Storybook",
-      "description": "Upon pickup, add 1 <g>Brightest Flame</g> to your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/tanxs_whistle.webp",
-      "name": "Tanx's Whistle",
-      "description": "Upon pickup, add 1 <g>Whistle</g> to your <g>Deck</g>."
-    },
-    {
-      "imagePath": "/images/relics/throwing_axe.webp",
-      "name": "Throwing Axe",
-      "description": "The first card you play each combat is played an extra time."
-    },
-    {
-      "imagePath": "/images/relics/toasty_mittens.webp",
-      "name": "Toasty Mittens",
-      "description": "At the start of your turn, <g>Exhaust</g> 1 card from your <g>Hand</g> and gain 1 <g>Strength</g>."
-    },
-    {
-      "imagePath": "/images/relics/touch_of_orobas.webp",
-      "name": "Touch of Orobas",
-      "description": "Upon pickup, replace your starter <g>Relic</g> with an <g>Ancient</g> version."
-    },
-    {
-      "imagePath": "/images/relics/toy_box.webp",
-      "name": "Toy Box",
-      "description": "Upon pickup, obtain 5 <g>Wax Relics</g>. Every 3 combats, your left-most <g>Wax Relic</g> will melt away."
-    },
-    {
-      "imagePath": "/images/relics/tri_boomerang.webp",
-      "name": "Tri-Boomerang",
-      "description": "Choose 3 Attacks in your <g>Deck</g>. <g>Enchant</g> them with Instinct."
-    },
-    {
-      "imagePath": "/images/relics/velvet_choker.webp",
-      "name": "Velvet Choker",
-      "description": "Gain <e/> at the start of each turn. You cannot play more than 6 cards per turn."
-    },
-    {
-      "imagePath": "/images/relics/war_hammer.webp",
-      "name": "War Hammer",
-      "description": "Whenever you kill an <g>Elite</g>, <g>Upgrade</g> 4 random cards."
-    },
-    {
-      "imagePath": "/images/relics/whispering_earring.webp",
-      "name": "Whispering Earring",
-      "description": "Gain <e/> at the start of each turn. Vakuu plays your first turn for you."
-    },
-    {
-      "imagePath": "/images/relics/winged_boots.webp",
-      "name": "Winged Boots",
-      "description": "You may ignore paths when choosing the next rooms to travel to 3 times."
-    },
-    {
-      "imagePath": "/images/relics/yummy_cookie_defect.webp",
-      "name": "Yummy Cookie",
-      "description": "Upon pickup, <g>Upgrade</g> 4 cards."
-    },
-    {
+      "id": "BIG_MUSHROOM",
       "imagePath": "/images/relics/big_mushroom.webp",
       "name": "Big Mushroom",
-      "description": "Upon pickup, raise your Max HP by 20. At the start of each combat, draw 2 fewer cards."
+      "description": "Upon pickup, raise your Max HP by 20. At the start of each combat, draw 2 fewer cards.",
+      "descriptionClean": "Upon pickup, raise your Max HP by 20. At the start of each combat, draw 2 fewer cards."
     },
     {
+      "id": "BIIIG_HUG",
+      "imagePath": "/images/relics/biiig_hug.webp",
+      "name": "Biiig Hug",
+      "description": "Upon pickup, remove 4 cards from your <g>Deck</g>. Whenever you shuffle your <g>Draw Pile</g>, add a <g>Soot</g> into your <g>Draw Pile</g>.",
+      "descriptionClean": "Upon pickup, remove 4 cards from your Deck. Whenever you shuffle your Draw Pile, add a Soot into your Draw Pile."
+    },
+    {
+      "id": "BING_BONG",
       "imagePath": "/images/relics/bing_bong.webp",
       "name": "Bing Bong",
-      "description": "Whenever you add a card to your <g>Deck</g>, add one additional copy."
+      "description": "Whenever you add a card to your <g>Deck</g>, add one additional copy.",
+      "descriptionClean": "Whenever you add a card to your Deck, add one additional copy."
     },
     {
+      "id": "BLACK_BLOOD",
+      "imagePath": "/images/relics/black_blood.webp",
+      "name": "Black Blood",
+      "description": "At the end of combat, heal 12 HP.",
+      "descriptionClean": "At the end of combat, heal 12 HP."
+    },
+    {
+      "id": "BLACK_STAR",
+      "imagePath": "/images/relics/black_star.webp",
+      "name": "Black Star",
+      "description": "<g>Elites</g> drop an additional Relic when defeated.",
+      "descriptionClean": "Elites drop an additional Relic when defeated."
+    },
+    {
+      "id": "BLESSED_ANTLER",
+      "imagePath": "/images/relics/blessed_antler.webp",
+      "name": "Blessed Antler",
+      "description": "Gain <e>1</e> at the start of each turn. At the start of each combat, shuffle 3 <g>Dazed</g> into your <g>Draw Pile</g>.",
+      "descriptionClean": "Gain 1 at the start of each turn. At the start of each combat, shuffle 3 Dazed into your Draw Pile."
+    },
+    {
+      "id": "BLOOD_SOAKED_ROSE",
+      "imagePath": "/images/relics/blood_soaked_rose.webp",
+      "name": "Blood-Soaked Rose",
+      "description": "Upon pickup, add 1 Enthralled to your <g>Deck</g>. Gain <e>1</e> at the start of each turn.",
+      "descriptionClean": "Upon pickup, add 1 Enthralled to your Deck. Gain 1 at the start of each turn."
+    },
+    {
+      "id": "BLOOD_VIAL",
+      "imagePath": "/images/relics/blood_vial.webp",
+      "name": "Blood Vial",
+      "description": "At the start of each combat, heal 2 HP.",
+      "descriptionClean": "At the start of each combat, heal 2 HP."
+    },
+    {
+      "id": "BONE_FLUTE",
+      "imagePath": "/images/relics/bone_flute.webp",
+      "name": "Bone Flute",
+      "description": "Whenever <g>Osty</g> attacks, gain 2 <g>Block</g>.",
+      "descriptionClean": "Whenever Osty attacks, gain 2 Block."
+    },
+    {
+      "id": "BONE_TEA",
       "imagePath": "/images/relics/bone_tea.webp",
       "name": "Bone Tea",
-      "description": "At the start of the next combat, <g>Upgrade</g> your starting hand."
+      "description": "At the start of the next combat, <g>Upgrade</g> your starting hand.",
+      "descriptionClean": "At the start of the next combat, Upgrade your starting hand."
     },
     {
+      "id": "BOOK_OF_FIVE_RINGS",
+      "imagePath": "/images/relics/book_of_five_rings.webp",
+      "name": "Book of Five Rings",
+      "description": "Every 5 cards you add to your <g>Deck</g>, heal 20 HP.",
+      "descriptionClean": "Every 5 cards you add to your Deck, heal 20 HP."
+    },
+    {
+      "id": "BOOK_REPAIR_KNIFE",
+      "imagePath": "/images/relics/book_repair_knife.webp",
+      "name": "Book Repair Knife",
+      "description": "Whenever a non-Minion enemy dies to <g>Doom</g>, heal 3 HP.",
+      "descriptionClean": "Whenever a non-Minion enemy dies to Doom, heal 3 HP."
+    },
+    {
+      "id": "BOOKMARK",
+      "imagePath": "/images/relics/bookmark.webp",
+      "name": "Bookmark",
+      "description": "At the end of each turn, lower the cost of a random <g>Retained</g> card by 1 until played.",
+      "descriptionClean": "At the end of each turn, lower the cost of a random Retained card by 1 until played."
+    },
+    {
+      "id": "BOOMING_CONCH",
+      "imagePath": "/images/relics/booming_conch.webp",
+      "name": "Booming Conch",
+      "description": "At the start of <g>Elite</g> combats, draw 2 additional cards and gain <e>1</e>.",
+      "descriptionClean": "At the start of Elite combats, draw 2 additional cards and gain 1."
+    },
+    {
+      "id": "BOUND_PHYLACTERY",
+      "imagePath": "/images/relics/bound_phylactery.webp",
+      "name": "Bound Phylactery",
+      "description": "At the start of your turn, <g>Summon</g> 1.",
+      "descriptionClean": "At the start of your turn, Summon 1."
+    },
+    {
+      "id": "BOWLER_HAT",
+      "imagePath": "/images/relics/bowler_hat.webp",
+      "name": "Bowler Hat",
+      "description": "Gain % additional <g>Gold</g>.",
+      "descriptionClean": "Gain % additional Gold."
+    },
+    {
+      "id": "BREAD",
+      "imagePath": "/images/relics/bread.webp",
+      "name": "Bread",
+      "description": "At the start of your first turn, lose <e>2</e>. At the start of all other turns, gain <e>1</e>.",
+      "descriptionClean": "At the start of your first turn, lose 2. At the start of all other turns, gain 1."
+    },
+    {
+      "id": "BRILLIANT_SCARF",
+      "imagePath": "/images/relics/brilliant_scarf.webp",
+      "name": "Brilliant Scarf",
+      "description": "The 5th card you play from your hand each turn is free.",
+      "descriptionClean": "The 5th card you play from your hand each turn is free."
+    },
+    {
+      "id": "BRIMSTONE",
+      "imagePath": "/images/relics/brimstone.webp",
+      "name": "Brimstone",
+      "description": "At the start of your turn, gain 2 <g>Strength</g> and ALL enemies gain 1 <g>Strength</g>.",
+      "descriptionClean": "At the start of your turn, gain 2 Strength and ALL enemies gain 1 Strength."
+    },
+    {
+      "id": "BRONZE_SCALES",
+      "imagePath": "/images/relics/bronze_scales.webp",
+      "name": "Bronze Scales",
+      "description": "Start each combat with 3 <g>Thorns</g>.",
+      "descriptionClean": "Start each combat with 3 Thorns."
+    },
+    {
+      "id": "BURNING_BLOOD",
+      "imagePath": "/images/relics/burning_blood.webp",
+      "name": "Burning Blood",
+      "description": "At the end of combat, heal 6 HP.",
+      "descriptionClean": "At the end of combat, heal 6 HP."
+    },
+    {
+      "id": "BURNING_STICKS",
+      "imagePath": "/images/relics/burning_sticks.webp",
+      "name": "Burning Sticks",
+      "description": "The first time each combat you <g>Exhaust</g> a Skill, add a copy of it into your <g>Hand</g>.",
+      "descriptionClean": "The first time each combat you Exhaust a Skill, add a copy of it into your Hand."
+    },
+    {
+      "id": "BYRDPIP",
       "imagePath": "/images/relics/byrdpip.webp",
       "name": "Byrdpip",
-      "description": "Upon pickup, gain the card <g>Byrd Swoop</g>. A <g>Byrdpip</g> will accompany you in battles."
+      "description": "Upon pickup, gain the card <g>Byrd Swoop</g>. A <g>Byrdpip</g> will accompany you in battles.",
+      "descriptionClean": "Upon pickup, gain the card Byrd Swoop. A Byrdpip will accompany you in battles."
     },
     {
+      "id": "CALLING_BELL",
+      "imagePath": "/images/relics/calling_bell.webp",
+      "name": "Calling Bell",
+      "description": "Upon pickup, obtain a unique Curse and 3 <g>Relics</g>.",
+      "descriptionClean": "Upon pickup, obtain a unique Curse and 3 Relics."
+    },
+    {
+      "id": "CANDELABRA",
+      "imagePath": "/images/relics/candelabra.webp",
+      "name": "Candelabra",
+      "description": "At the start of your 2nd turn, gain <e>2</e>.",
+      "descriptionClean": "At the start of your 2nd turn, gain 2."
+    },
+    {
+      "id": "CAPTAINS_WHEEL",
+      "imagePath": "/images/relics/captains_wheel.webp",
+      "name": "Captain's Wheel",
+      "description": "At the start of your 3rd turn, gain 18 <g>Block</g>.",
+      "descriptionClean": "At the start of your 3rd turn, gain 18 Block."
+    },
+    {
+      "id": "CAULDRON",
+      "imagePath": "/images/relics/cauldron.webp",
+      "name": "Cauldron",
+      "description": "Upon pickup, brews 5 random <g>Potions</g>.",
+      "descriptionClean": "Upon pickup, brews 5 random Potions."
+    },
+    {
+      "id": "CENTENNIAL_PUZZLE",
+      "imagePath": "/images/relics/centennial_puzzle.webp",
+      "name": "Centennial Puzzle",
+      "description": "The first time you lose HP each combat, draw 3 cards.",
+      "descriptionClean": "The first time you lose HP each combat, draw 3 cards."
+    },
+    {
+      "id": "CHANDELIER",
+      "imagePath": "/images/relics/chandelier.webp",
+      "name": "Chandelier",
+      "description": "At the start of your 3rd turn, gain <e>3</e>.",
+      "descriptionClean": "At the start of your 3rd turn, gain 3."
+    },
+    {
+      "id": "CHARONS_ASHES",
+      "imagePath": "/images/relics/charons_ashes.webp",
+      "name": "Charon's Ashes",
+      "description": "Whenever you <g>Exhaust</g> a card, deal 3 damage to ALL enemies.",
+      "descriptionClean": "Whenever you Exhaust a card, deal 3 damage to ALL enemies."
+    },
+    {
+      "id": "CHEMICAL_X",
+      "imagePath": "/images/relics/chemical_x.webp",
+      "name": "Chemical X",
+      "description": "The effects of your cost X cards are increased by 2.",
+      "descriptionClean": "The effects of your cost X cards are increased by 2."
+    },
+    {
+      "id": "CHOICES_PARADOX",
+      "imagePath": "/images/relics/choices_paradox.webp",
+      "name": "Choices Paradox",
+      "description": "At the start of each combat, add 1 of 5 random cards into your <g>Hand</g>. Add <g>Retain</g> to the chosen card.",
+      "descriptionClean": "At the start of each combat, add 1 of 5 random cards into your Hand. Add Retain to the chosen card."
+    },
+    {
+      "id": "CHOSEN_CHEESE",
       "imagePath": "/images/relics/chosen_cheese.webp",
       "name": "The Chosen Cheese",
-      "description": "At the end of combat, gain 1 Max HP."
+      "description": "At the end of combat, gain 1 Max HP.",
+      "descriptionClean": "At the end of combat, gain 1 Max HP."
     },
     {
+      "id": "CIRCLET",
+      "imagePath": "/images/relics/circlet.webp",
+      "name": "Circlet",
+      "description": "It's a circlet.",
+      "descriptionClean": "It's a circlet."
+    },
+    {
+      "id": "CLAWS",
+      "imagePath": "/images/relics/claws.webp",
+      "name": "Claws",
+      "description": "Upon pickup, <g>Transform</g> up to 6 cards into <g>Maul</g>.",
+      "descriptionClean": "Upon pickup, Transform up to 6 cards into Maul."
+    },
+    {
+      "id": "CLOAK_CLASP",
+      "imagePath": "/images/relics/cloak_clasp.webp",
+      "name": "Cloak Clasp",
+      "description": "At the end of your turn, gain 1 <g>Block</g> for each card in your <g>Hand</g>.",
+      "descriptionClean": "At the end of your turn, gain 1 Block for each card in your Hand."
+    },
+    {
+      "id": "CRACKED_CORE",
+      "imagePath": "/images/relics/cracked_core.webp",
+      "name": "Cracked Core",
+      "description": "At the start of each combat, <g>Channel</g> 1 <g>Lightning</g>.",
+      "descriptionClean": "At the start of each combat, Channel 1 Lightning."
+    },
+    {
+      "id": "CROSSBOW",
+      "imagePath": "/images/relics/crossbow.webp",
+      "name": "Crossbow",
+      "description": "At the start of your turn, add a random <g>Attack</g> into your <g>Hand</g>. It's free to play this turn.",
+      "descriptionClean": "At the start of your turn, add a random Attack into your Hand. It's free to play this turn."
+    },
+    {
+      "id": "CURSED_PEARL",
+      "imagePath": "/images/relics/cursed_pearl.webp",
+      "name": "Cursed Pearl",
+      "description": "Upon pickup, receive Greed. Gain 333 <g>Gold</g>.",
+      "descriptionClean": "Upon pickup, receive Greed. Gain 333 Gold."
+    },
+    {
+      "id": "DARKSTONE_PERIAPT",
       "imagePath": "/images/relics/darkstone_periapt.webp",
       "name": "Darkstone Periapt",
-      "description": "Whenever you obtain a Curse, raise your Max HP by 6."
+      "description": "Whenever you obtain a Curse, raise your Max HP by 6.",
+      "descriptionClean": "Whenever you obtain a Curse, raise your Max HP by 6."
     },
     {
+      "id": "DATA_DISK",
+      "imagePath": "/images/relics/data_disk.webp",
+      "name": "Data Disk",
+      "description": "Start each combat with 1 <g>Focus</g>.",
+      "descriptionClean": "Start each combat with 1 Focus."
+    },
+    {
+      "id": "DAUGHTER_OF_THE_WIND",
       "imagePath": "/images/relics/daughter_of_the_wind.webp",
       "name": "Daughter of the Wind",
-      "description": "Whenever you play an Attack, gain 1 <g>Block</g>."
+      "description": "Whenever you play an Attack, gain 1 <g>Block</g>.",
+      "descriptionClean": "Whenever you play an Attack, gain 1 Block."
     },
     {
+      "id": "DELICATE_FROND",
+      "imagePath": "/images/relics/delicate_frond.webp",
+      "name": "Delicate Frond",
+      "description": "At the start of each combat, fill all empty potion slots with random <g>Potions</g>.",
+      "descriptionClean": "At the start of each combat, fill all empty potion slots with random Potions."
+    },
+    {
+      "id": "DEMON_TONGUE",
+      "imagePath": "/images/relics/demon_tongue.webp",
+      "name": "Demon Tongue",
+      "description": "The first time you lose HP on your turn, heal HP equal to the amount lost.",
+      "descriptionClean": "The first time you lose HP on your turn, heal HP equal to the amount lost."
+    },
+    {
+      "id": "DIAMOND_DIADEM",
+      "imagePath": "/images/relics/diamond_diadem.webp",
+      "name": "Diamond Diadem",
+      "description": "Start combat with 20 <g>Block</g>. Your <g>Block</g> is not removed at the start of your 2nd turn.",
+      "descriptionClean": "Start combat with 20 Block. Your Block is not removed at the start of your 2nd turn."
+    },
+    {
+      "id": "DINGY_RUG",
+      "imagePath": "/images/relics/dingy_rug.webp",
+      "name": "Dingy Rug",
+      "description": "Card rewards can now contain Colorless cards.",
+      "descriptionClean": "Card rewards can now contain Colorless cards."
+    },
+    {
+      "id": "DISTINGUISHED_CAPE",
+      "imagePath": "/images/relics/distinguished_cape.webp",
+      "name": "Distinguished Cape",
+      "description": "Upon pickup, add 2 random Curses and 3 <g>Apparitions</g> to your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, add 2 random Curses and 3 Apparitions to your Deck."
+    },
+    {
+      "id": "DIVINE_DESTINY",
+      "imagePath": "/images/relics/divine_destiny.webp",
+      "name": "Divine Destiny",
+      "description": "At the start of each combat, gain <s>7</s>.",
+      "descriptionClean": "At the start of each combat, gain 7."
+    },
+    {
+      "id": "DIVINE_RIGHT",
+      "imagePath": "/images/relics/divine_right.webp",
+      "name": "Divine Right",
+      "description": "At the start of each combat, gain <s>3</s>.",
+      "descriptionClean": "At the start of each combat, gain 3."
+    },
+    {
+      "id": "DOLLYS_MIRROR",
+      "imagePath": "/images/relics/dollys_mirror.webp",
+      "name": "Dolly's Mirror",
+      "description": "Upon pickup, obtain an additional copy of a card in your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, obtain an additional copy of a card in your Deck."
+    },
+    {
+      "id": "DOWSING_ROD",
+      "imagePath": "/images/relics/dowsing_rod.webp",
+      "name": "Dowsing Rod",
+      "description": "Upon pickup, add 1 <g>Dowsing</g> to your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, add 1 Dowsing to your Deck."
+    },
+    {
+      "id": "DRAGON_FRUIT",
+      "imagePath": "/images/relics/dragon_fruit.webp",
+      "name": "Dragon Fruit",
+      "description": "Whenever you gain <g>Gold</g>, raise your Max HP by 1.",
+      "descriptionClean": "Whenever you gain Gold, raise your Max HP by 1."
+    },
+    {
+      "id": "DREAM_CATCHER",
       "imagePath": "/images/relics/dream_catcher.webp",
       "name": "Dream Catcher",
-      "description": "Whenever you <g>Rest</g>, you may add a card to your <g>Deck</g>."
+      "description": "Whenever you <g>Rest</g>, you may add a card to your <g>Deck</g>.",
+      "descriptionClean": "Whenever you Rest, you may add a card to your Deck."
     },
     {
+      "id": "DRIFTWOOD",
+      "imagePath": "/images/relics/driftwood.webp",
+      "name": "Driftwood",
+      "description": "You may reroll each card reward once.",
+      "descriptionClean": "You may reroll each card reward once."
+    },
+    {
+      "id": "DUSTY_TOME",
+      "imagePath": "/images/relics/dusty_tome.webp",
+      "name": "Dusty Tome",
+      "description": "Upon pickup, obtain an <g>Ancient Card</g>.",
+      "descriptionClean": "Upon pickup, obtain an Ancient Card."
+    },
+    {
+      "id": "ECTOPLASM",
+      "imagePath": "/images/relics/ectoplasm.webp",
+      "name": "Ectoplasm",
+      "description": "You can no longer gain <g>Gold</g>. Gain <e>1</e> at the start of each turn.",
+      "descriptionClean": "You can no longer gain Gold. Gain 1 at the start of each turn."
+    },
+    {
+      "id": "ELECTRIC_SHRYMP",
+      "imagePath": "/images/relics/electric_shrymp.webp",
+      "name": "Electric Shrymp",
+      "description": "Upon pickup, <g>Enchant</g> a Skill with Imbued.",
+      "descriptionClean": "Upon pickup, Enchant a Skill with Imbued."
+    },
+    {
+      "id": "EMBER_TEA",
       "imagePath": "/images/relics/ember_tea.webp",
       "name": "Ember Tea",
-      "description": "At the start of the next 5 combats, gain 2 <g>Strength</g>."
+      "description": "At the start of the next 5 combats, gain 2 <g>Strength</g>.",
+      "descriptionClean": "At the start of the next 5 combats, gain 2 Strength."
     },
     {
+      "id": "EMOTION_CHIP",
+      "imagePath": "/images/relics/emotion_chip.webp",
+      "name": "Emotion Chip",
+      "description": "If you lost HP during the previous turn, trigger the passive ability of all Orbs at the start of your turn.",
+      "descriptionClean": "If you lost HP during the previous turn, trigger the passive ability of all Orbs at the start of your turn."
+    },
+    {
+      "id": "EMPTY_CAGE",
+      "imagePath": "/images/relics/empty_cage.webp",
+      "name": "Empty Cage",
+      "description": "Upon pickup, remove 2 cards from your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, remove 2 cards from your Deck."
+    },
+    {
+      "id": "ETERNAL_FEATHER",
+      "imagePath": "/images/relics/eternal_feather.webp",
+      "name": "Eternal Feather",
+      "description": "For every 5 cards in your <g>Deck</g>, heal 3 HP whenever you enter a <g>Rest Site</g>.",
+      "descriptionClean": "For every 5 cards in your Deck, heal 3 HP whenever you enter a Rest Site."
+    },
+    {
+      "id": "FAKE_ANCHOR",
       "imagePath": "/images/relics/fake_anchor.webp",
       "name": "Anchor???",
-      "description": "Start each combat with 4 <g>Block</g>."
+      "description": "Start each combat with 4 <g>Block</g>.",
+      "descriptionClean": "Start each combat with 4 Block."
     },
     {
+      "id": "FAKE_BLOOD_VIAL",
       "imagePath": "/images/relics/fake_blood_vial.webp",
       "name": "Blood Vial???",
-      "description": "At the start of each combat, heal 1 HP."
+      "description": "At the start of each combat, heal 1 HP.",
+      "descriptionClean": "At the start of each combat, heal 1 HP."
     },
     {
+      "id": "FAKE_HAPPY_FLOWER",
       "imagePath": "/images/relics/fake_happy_flower.webp",
       "name": "Happy Flower???",
-      "description": "Every 5 turns, gain <e/>."
+      "description": "Every 5 turns, gain <e>1</e>.",
+      "descriptionClean": "Every 5 turns, gain 1."
     },
     {
+      "id": "FAKE_LEES_WAFFLE",
       "imagePath": "/images/relics/fake_lees_waffle.webp",
       "name": "Lee's Waffle???",
-      "description": "Upon pickup, heal 10% of your HP."
+      "description": "Upon pickup, heal 10% of your HP.",
+      "descriptionClean": "Upon pickup, heal 10% of your HP."
     },
     {
+      "id": "FAKE_MANGO",
       "imagePath": "/images/relics/fake_mango.webp",
       "name": "Mango???",
-      "description": "Upon pickup, raise your Max HP by 3."
+      "description": "Upon pickup, raise your Max HP by 3.",
+      "descriptionClean": "Upon pickup, raise your Max HP by 3."
     },
     {
+      "id": "FAKE_MERCHANTS_RUG",
       "imagePath": "/images/relics/fake_merchants_rug.webp",
       "name": "The Merchant's Rug???",
-      "description": "Poor imitation. Does nothing."
+      "description": "Poor imitation. Does nothing.",
+      "descriptionClean": "Poor imitation. Does nothing."
     },
     {
+      "id": "FAKE_ORICHALCUM",
       "imagePath": "/images/relics/fake_orichalcum.webp",
       "name": "Orichalcum???",
-      "description": "If you end your turn without <g>Block</g>, gain 3 <g>Block</g>."
+      "description": "If you end your turn without <g>Block</g>, gain 3 <g>Block</g>.",
+      "descriptionClean": "If you end your turn without Block, gain 3 Block."
     },
     {
+      "id": "FAKE_SNECKO_EYE",
       "imagePath": "/images/relics/fake_snecko_eye.webp",
       "name": "Snecko Eye???",
-      "description": "Start each combat Confused."
+      "description": "Start each combat Confused.",
+      "descriptionClean": "Start each combat Confused."
     },
     {
+      "id": "FAKE_STRIKE_DUMMY",
       "imagePath": "/images/relics/fake_strike_dummy.webp",
       "name": "Strike Dummy???",
-      "description": "Cards containing “Strike” deal 1 additional damage."
+      "description": "Cards containing “Strike” deal 1 additional damage.",
+      "descriptionClean": "Cards containing “Strike” deal 1 additional damage."
     },
     {
+      "id": "FAKE_VENERABLE_TEA_SET",
       "imagePath": "/images/relics/fake_venerable_tea_set.webp",
       "name": "Venerable Tea Set???",
-      "description": "Whenever you enter a <g>Rest Site</g>, start the next combat with an additional <e/>."
+      "description": "Whenever you enter a <g>Rest Site</g>, start the next combat with an additional <e>1</e>.",
+      "descriptionClean": "Whenever you enter a Rest Site, start the next combat with an additional 1."
     },
     {
+      "id": "FENCING_MANUAL",
+      "imagePath": "/images/relics/fencing_manual.webp",
+      "name": "Fencing Manual",
+      "description": "At the start of each combat, <g>Forge</g> 10.",
+      "descriptionClean": "At the start of each combat, Forge 10."
+    },
+    {
+      "id": "FESTIVE_POPPER",
+      "imagePath": "/images/relics/festive_popper.webp",
+      "name": "Festive Popper",
+      "description": "At the start of each combat, deal 9 damage to ALL enemies.",
+      "descriptionClean": "At the start of each combat, deal 9 damage to ALL enemies."
+    },
+    {
+      "id": "FIDDLE",
+      "imagePath": "/images/relics/fiddle.webp",
+      "name": "Fiddle",
+      "description": "At the start of each turn, draw 2 additional cards. You may not draw cards during your turn.",
+      "descriptionClean": "At the start of each turn, draw 2 additional cards. You may not draw cards during your turn."
+    },
+    {
+      "id": "FISHING_ROD",
+      "imagePath": "/images/relics/fishing_rod.webp",
+      "name": "Fishing Rod",
+      "description": "Every 3 normal combats, <g>Upgrade</g> a random card in your <g>Deck</g>.",
+      "descriptionClean": "Every 3 normal combats, Upgrade a random card in your Deck."
+    },
+    {
+      "id": "FORGOTTEN_SOUL",
       "imagePath": "/images/relics/forgotten_soul.webp",
       "name": "Forgotten Soul",
-      "description": "Whenever you <g>Exhaust</g> a card, deal 1 damage to a random enemy."
+      "description": "Whenever you <g>Exhaust</g> a card, deal 1 damage to a random enemy.",
+      "descriptionClean": "Whenever you Exhaust a card, deal 1 damage to a random enemy."
     },
     {
+      "id": "FRAGRANT_MUSHROOM",
       "imagePath": "/images/relics/fragrant_mushroom.webp",
       "name": "Fragrant Mushroom",
-      "description": "Upon pickup, lose 15 HP and <g>Upgrade</g> 2 random cards."
+      "description": "Upon pickup, lose 15 HP and <g>Upgrade</g> 2 random cards.",
+      "descriptionClean": "Upon pickup, lose 15 HP and Upgrade 2 random cards."
     },
     {
+      "id": "FRESNEL_LENS",
+      "imagePath": "/images/relics/fresnel_lens.webp",
+      "name": "Fresnel Lens",
+      "description": "Whenever you add a card that gains <g>Block</g> to your <g>Deck</g>, <g>Enchant</g> it with Nimble 2.",
+      "descriptionClean": "Whenever you add a card that gains Block to your Deck, Enchant it with Nimble 2."
+    },
+    {
+      "id": "FROZEN_EGG",
+      "imagePath": "/images/relics/frozen_egg.webp",
+      "name": "Frozen Egg",
+      "description": "Whenever you add a Power into your <g>Deck</g>, <g>Upgrade</g> it.",
+      "descriptionClean": "Whenever you add a Power into your Deck, Upgrade it."
+    },
+    {
+      "id": "FUNERARY_MASK",
+      "imagePath": "/images/relics/funerary_mask.webp",
+      "name": "Funerary Mask",
+      "description": "At the start of each combat, add 3 <g>Souls</g> into your <g>Draw Pile</g>.",
+      "descriptionClean": "At the start of each combat, add 3 Souls into your Draw Pile."
+    },
+    {
+      "id": "FUR_COAT",
+      "imagePath": "/images/relics/fur_coat.webp",
+      "name": "Fur Coat",
+      "description": "Upon pickup, mark 8 random combats. Enemies in those rooms have 1 HP.",
+      "descriptionClean": "Upon pickup, mark 8 random combats. Enemies in those rooms have 1 HP."
+    },
+    {
+      "id": "GALACTIC_DUST",
+      "imagePath": "/images/relics/galactic_dust.webp",
+      "name": "Galactic Dust",
+      "description": "For every 10 <s>1</s> spent, gain 10 <g>Block</g>.",
+      "descriptionClean": "For every 10 1 spent, gain 10 Block."
+    },
+    {
+      "id": "GAMBLING_CHIP",
+      "imagePath": "/images/relics/gambling_chip.webp",
+      "name": "Gambling Chip",
+      "description": "At the start of each combat, discard any number of cards then draw that many.",
+      "descriptionClean": "At the start of each combat, discard any number of cards then draw that many."
+    },
+    {
+      "id": "GAME_PIECE",
+      "imagePath": "/images/relics/game_piece.webp",
+      "name": "Game Piece",
+      "description": "Whenever you play a Power, draw 1 card.",
+      "descriptionClean": "Whenever you play a Power, draw 1 card."
+    },
+    {
+      "id": "GHOST_SEED",
+      "imagePath": "/images/relics/ghost_seed.webp",
+      "name": "Ghost Seed",
+      "description": "<g>Strikes</g> and <g>Defends</g> gain <g>Ethereal</g>.",
+      "descriptionClean": "Strikes and Defends gain Ethereal."
+    },
+    {
+      "id": "GIRYA",
+      "imagePath": "/images/relics/girya.webp",
+      "name": "Girya",
+      "description": "You can now gain <g>Strength</g> at <g>Rest Sites</g>. (3 times max)",
+      "descriptionClean": "You can now gain Strength at Rest Sites. (3 times max)"
+    },
+    {
+      "id": "GLASS_EYE",
+      "imagePath": "/images/relics/glass_eye.webp",
+      "name": "Glass Eye",
+      "description": "Upon pickup, obtain 2 <g>Common</g> cards, 2 <g>Uncommon</g> cards, and 1 <g>Rare</g> card.",
+      "descriptionClean": "Upon pickup, obtain 2 Common cards, 2 Uncommon cards, and 1 Rare card."
+    },
+    {
+      "id": "GLITTER",
+      "imagePath": "/images/relics/glitter.webp",
+      "name": "Glitter",
+      "description": "<g>Enchant</g> all card rewards with Glam.",
+      "descriptionClean": "Enchant all card rewards with Glam."
+    },
+    {
+      "id": "GNARLED_HAMMER",
+      "imagePath": "/images/relics/gnarled_hammer.webp",
+      "name": "Gnarled Hammer",
+      "description": "Upon pickup, <g>Enchant</g> up to 3 Attacks with Sharp 3.",
+      "descriptionClean": "Upon pickup, Enchant up to 3 Attacks with Sharp 3."
+    },
+    {
+      "id": "GOLD_PLATED_CABLES",
+      "imagePath": "/images/relics/gold_plated_cables.webp",
+      "name": "Gold-Plated Cables",
+      "description": "Your rightmost Orb triggers its passive an additional time.",
+      "descriptionClean": "Your rightmost Orb triggers its passive an additional time."
+    },
+    {
+      "id": "GOLDEN_COMPASS",
+      "imagePath": "/images/relics/golden_compass.webp",
+      "name": "Golden Compass",
+      "description": "Upon pickup, replace the <g>Act</g> 2 Map with a single special path.",
+      "descriptionClean": "Upon pickup, replace the Act 2 Map with a single special path."
+    },
+    {
+      "id": "GOLDEN_PEARL",
+      "imagePath": "/images/relics/golden_pearl.webp",
+      "name": "Golden Pearl",
+      "description": "Upon pickup, gain 150 <g>Gold</g>.",
+      "descriptionClean": "Upon pickup, gain 150 Gold."
+    },
+    {
+      "id": "GORGET",
+      "imagePath": "/images/relics/gorget.webp",
+      "name": "Gorget",
+      "description": "At the start of each combat, gain 4 <g>Plating</g>.",
+      "descriptionClean": "At the start of each combat, gain 4 Plating."
+    },
+    {
+      "id": "GREMLIN_HORN",
+      "imagePath": "/images/relics/gremlin_horn.webp",
+      "name": "Gremlin Horn",
+      "description": "Whenever an enemy dies, gain <e>1</e> and draw 1 card.",
+      "descriptionClean": "Whenever an enemy dies, gain 1 and draw 1 card."
+    },
+    {
+      "id": "HAND_DRILL",
       "imagePath": "/images/relics/hand_drill.webp",
       "name": "Hand Drill",
-      "description": "Whenever you break an enemy's <g>Block</g>, apply 2 <g>Vulnerable</g>."
+      "description": "Whenever you break an enemy's <g>Block</g>, apply 2 <g>Vulnerable</g>.",
+      "descriptionClean": "Whenever you break an enemy's Block, apply 2 Vulnerable."
     },
     {
+      "id": "HAPPY_FLOWER",
+      "imagePath": "/images/relics/happy_flower.webp",
+      "name": "Happy Flower",
+      "description": "Every 3 turns, gain <e>1</e>.",
+      "descriptionClean": "Every 3 turns, gain 1."
+    },
+    {
+      "id": "HEFTY_TABLET",
+      "imagePath": "/images/relics/hefty_tablet.webp",
+      "name": "Hefty Tablet",
+      "description": "Upon pickup, choose 1 of 3 Rare cards to add to your <g>Deck</g>, and add 1 Injury to your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, choose 1 of 3 Rare cards to add to your Deck, and add 1 Injury to your Deck."
+    },
+    {
+      "id": "HELICAL_DART",
+      "imagePath": "/images/relics/helical_dart.webp",
+      "name": "Helical Dart",
+      "description": "Whenever you play a <g>Shiv</g>, gain 1 <g>Dexterity</g> this turn.",
+      "descriptionClean": "Whenever you play a Shiv, gain 1 Dexterity this turn."
+    },
+    {
+      "id": "HISTORY_COURSE",
       "imagePath": "/images/relics/history_course.webp",
       "name": "History Course",
-      "description": "At the start of your turn, play a copy of your last played Attack."
+      "description": "At the start of your turn, play a copy of your last played Attack.",
+      "descriptionClean": "At the start of your turn, play a copy of your last played Attack."
     },
     {
+      "id": "HORN_CLEAT",
+      "imagePath": "/images/relics/horn_cleat.webp",
+      "name": "Horn Cleat",
+      "description": "At the start of your 2nd turn, gain 14 <g>Block</g>.",
+      "descriptionClean": "At the start of your 2nd turn, gain 14 Block."
+    },
+    {
+      "id": "ICE_CREAM",
+      "imagePath": "/images/relics/ice_cream.webp",
+      "name": "Ice Cream",
+      "description": "Energy is now conserved between turns.",
+      "descriptionClean": "Energy is now conserved between turns."
+    },
+    {
+      "id": "INFUSED_CORE",
+      "imagePath": "/images/relics/infused_core.webp",
+      "name": "Infused Core",
+      "description": "At the start of each combat, <g>Channel</g> 3 <g>Lightning</g>. <g>Lightning</g> deals 1 additional damage.",
+      "descriptionClean": "At the start of each combat, Channel 3 Lightning. Lightning deals 1 additional damage."
+    },
+    {
+      "id": "INTIMIDATING_HELMET",
+      "imagePath": "/images/relics/intimidating_helmet.webp",
+      "name": "Intimidating Helmet",
+      "description": "Whenever you play a card that costs <e>2</e> or more, gain 4 <g>Block</g>.",
+      "descriptionClean": "Whenever you play a card that costs 2 or more, gain 4 Block."
+    },
+    {
+      "id": "IRON_CLUB",
+      "imagePath": "/images/relics/iron_club.webp",
+      "name": "Iron Club",
+      "description": "Every 4 cards you play, draw 1 card.",
+      "descriptionClean": "Every 4 cards you play, draw 1 card."
+    },
+    {
+      "id": "IVORY_TILE",
+      "imagePath": "/images/relics/ivory_tile.webp",
+      "name": "Ivory Tile",
+      "description": "Whenever you play a card that costs <e>3</e> or more, gain <e>1</e>.",
+      "descriptionClean": "Whenever you play a card that costs 3 or more, gain 1."
+    },
+    {
+      "id": "JEWELED_MASK",
+      "imagePath": "/images/relics/jeweled_mask.webp",
+      "name": "Jeweled Mask",
+      "description": "At the start of each combat, put a random Power from your <g>Draw Pile</g> into your <g>Hand</g>. It's free to play this combat.",
+      "descriptionClean": "At the start of each combat, put a random Power from your Draw Pile into your Hand. It's free to play this combat."
+    },
+    {
+      "id": "JEWELRY_BOX",
+      "imagePath": "/images/relics/jewelry_box.webp",
+      "name": "Jewelry Box",
+      "description": "Upon pickup, add 1 <g>Apotheosis</g> to your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, add 1 Apotheosis to your Deck."
+    },
+    {
+      "id": "JOSS_PAPER",
+      "imagePath": "/images/relics/joss_paper.webp",
+      "name": "Joss Paper",
+      "description": "Every 5 times you <g>Exhaust</g> a card, draw 1 card.",
+      "descriptionClean": "Every 5 times you Exhaust a card, draw 1 card."
+    },
+    {
+      "id": "JUZU_BRACELET",
+      "imagePath": "/images/relics/juzu_bracelet.webp",
+      "name": "Juzu Bracelet",
+      "description": "Regular enemy combats are no longer encountered in <g>?</g> rooms.",
+      "descriptionClean": "Regular enemy combats are no longer encountered in ? rooms."
+    },
+    {
+      "id": "KALEIDOSCOPE",
+      "imagePath": "/images/relics/kaleidoscope.webp",
+      "name": "Kaleidoscope",
+      "description": "Upon pickup, obtain 2 card rewards from other characters.",
+      "descriptionClean": "Upon pickup, obtain 2 card rewards from other characters."
+    },
+    {
+      "id": "KIFUDA",
+      "imagePath": "/images/relics/kifuda.webp",
+      "name": "Kifuda",
+      "description": "Upon pickup, <g>Enchant</g> up to 3 cards with Adroit.",
+      "descriptionClean": "Upon pickup, Enchant up to 3 cards with Adroit."
+    },
+    {
+      "id": "KUNAI",
+      "imagePath": "/images/relics/kunai.webp",
+      "name": "Kunai",
+      "description": "Every time you play 3 Attacks in a single turn, gain 1 <g>Dexterity</g>.",
+      "descriptionClean": "Every time you play 3 Attacks in a single turn, gain 1 Dexterity."
+    },
+    {
+      "id": "KUSARIGAMA",
+      "imagePath": "/images/relics/kusarigama.webp",
+      "name": "Kusarigama",
+      "description": "Every time you play 3 Attacks in a single turn, deal 6 damage to a random enemy.",
+      "descriptionClean": "Every time you play 3 Attacks in a single turn, deal 6 damage to a random enemy."
+    },
+    {
+      "id": "LANTERN",
+      "imagePath": "/images/relics/lantern.webp",
+      "name": "Lantern",
+      "description": "Start each combat with an additional <e>1</e>.",
+      "descriptionClean": "Start each combat with an additional 1."
+    },
+    {
+      "id": "LARGE_CAPSULE",
+      "imagePath": "/images/relics/large_capsule.webp",
+      "name": "Large Capsule",
+      "description": "Upon pickup, obtain 2 random <g>Relics</g>. Add an additional <g>Strike</g> and <g>Defend</g> to your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, obtain 2 random Relics. Add an additional Strike and Defend to your Deck."
+    },
+    {
+      "id": "LASTING_CANDY",
+      "imagePath": "/images/relics/lasting_candy.webp",
+      "name": "Lasting Candy",
+      "description": "Every other combat, your card rewards gain an additional Power.",
+      "descriptionClean": "Every other combat, your card rewards gain an additional Power."
+    },
+    {
+      "id": "LAVA_LAMP",
+      "imagePath": "/images/relics/lava_lamp.webp",
+      "name": "Lava Lamp",
+      "description": "At the end of combat, <g>Upgrade</g> all card rewards if you took no damage.",
+      "descriptionClean": "At the end of combat, Upgrade all card rewards if you took no damage."
+    },
+    {
+      "id": "LAVA_ROCK",
+      "imagePath": "/images/relics/lava_rock.webp",
+      "name": "Lava Rock",
+      "description": "The Act 1 Boss drops 2 <g>Relics</g>.",
+      "descriptionClean": "The Act 1 Boss drops 2 Relics."
+    },
+    {
+      "id": "LEAD_PAPERWEIGHT",
+      "imagePath": "/images/relics/lead_paperweight.webp",
+      "name": "Lead Paperweight",
+      "description": "Upon pickup, choose 1 of 2 Colorless cards to add to your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, choose 1 of 2 Colorless cards to add to your Deck."
+    },
+    {
+      "id": "LEAFY_POULTICE",
+      "imagePath": "/images/relics/leafy_poultice.webp",
+      "name": "Leafy Poultice",
+      "description": "Upon pickup, <g>Transform</g> 1 of your <g>Strikes</g> and 1 of your <g>Defends</g> and lose 12 Max HP.",
+      "descriptionClean": "Upon pickup, Transform 1 of your Strikes and 1 of your Defends and lose 12 Max HP."
+    },
+    {
+      "id": "LEES_WAFFLE",
+      "imagePath": "/images/relics/lees_waffle.webp",
+      "name": "Lee's Waffle",
+      "description": "Upon pickup, raise your Max HP by 7 and heal all of your HP.",
+      "descriptionClean": "Upon pickup, raise your Max HP by 7 and heal all of your HP."
+    },
+    {
+      "id": "LETTER_OPENER",
+      "imagePath": "/images/relics/letter_opener.webp",
+      "name": "Letter Opener",
+      "description": "Every time you play 3 Skills in a single turn, deal 5 damage to ALL enemies.",
+      "descriptionClean": "Every time you play 3 Skills in a single turn, deal 5 damage to ALL enemies."
+    },
+    {
+      "id": "LIZARD_TAIL",
+      "imagePath": "/images/relics/lizard_tail.webp",
+      "name": "Lizard Tail",
+      "description": "When your HP would be reduced to 0, heal to 50% of your Max HP instead (works once).",
+      "descriptionClean": "When your HP would be reduced to 0, heal to 50% of your Max HP instead (works once)."
+    },
+    {
+      "id": "LOOMING_FRUIT",
+      "imagePath": "/images/relics/looming_fruit.webp",
+      "name": "Looming Fruit",
+      "description": "Upon pickup, raise your Max HP by 31.",
+      "descriptionClean": "Upon pickup, raise your Max HP by 31."
+    },
+    {
+      "id": "LORDS_PARASOL",
+      "imagePath": "/images/relics/lords_parasol.webp",
+      "name": "Lord's Parasol",
+      "description": "When you encounter the <g>Merchant</g>, immediately obtain EVERYTHING he sells.",
+      "descriptionClean": "When you encounter the Merchant, immediately obtain EVERYTHING he sells."
+    },
+    {
+      "id": "LOST_COFFER",
+      "imagePath": "/images/relics/lost_coffer.webp",
+      "name": "Lost Coffer",
+      "description": "Upon pickup, gain 1 card reward and procure 1 random potion.",
+      "descriptionClean": "Upon pickup, gain 1 card reward and procure 1 random potion."
+    },
+    {
+      "id": "LOST_WISP",
       "imagePath": "/images/relics/lost_wisp.webp",
       "name": "Lost Wisp",
-      "description": "Whenever you play a Power, deal 8 damage to ALL enemies."
+      "description": "Whenever you play a Power, deal 8 damage to ALL enemies.",
+      "descriptionClean": "Whenever you play a Power, deal 8 damage to ALL enemies."
     },
     {
+      "id": "LUCKY_FYSH",
+      "imagePath": "/images/relics/lucky_fysh.webp",
+      "name": "Lucky Fysh",
+      "description": "Whenever you add a card to your <g>Deck</g>, gain 15 <g>Gold</g>.",
+      "descriptionClean": "Whenever you add a card to your Deck, gain 15 Gold."
+    },
+    {
+      "id": "LUNAR_PASTRY",
+      "imagePath": "/images/relics/lunar_pastry.webp",
+      "name": "Lunar Pastry",
+      "description": "At the end of your turn, gain <s>1</s>.",
+      "descriptionClean": "At the end of your turn, gain 1."
+    },
+    {
+      "id": "MANGO",
+      "imagePath": "/images/relics/mango.webp",
+      "name": "Mango",
+      "description": "Upon pickup, raise your Max HP by 14.",
+      "descriptionClean": "Upon pickup, raise your Max HP by 14."
+    },
+    {
+      "id": "MASSIVE_SCROLL",
+      "imagePath": "/images/relics/massive_scroll.webp",
+      "name": "Massive Scroll",
+      "description": "Upon pickup, choose 1 of 3 <g>Multiplayer Cards</g> to add to your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, choose 1 of 3 Multiplayer Cards to add to your Deck."
+    },
+    {
+      "id": "MAW_BANK",
       "imagePath": "/images/relics/maw_bank.webp",
       "name": "Maw Bank",
-      "description": "Whenever you climb a floor, gain 12 <g>Gold</g>. No longer works when you spend any <g>Gold</g> at the shop."
+      "description": "Whenever you climb a floor, gain 12 <g>Gold</g>. No longer works when you spend any <g>Gold</g> at the shop.",
+      "descriptionClean": "Whenever you climb a floor, gain 12 Gold. No longer works when you spend any Gold at the shop."
     },
     {
+      "id": "MEAL_TICKET",
+      "imagePath": "/images/relics/meal_ticket.webp",
+      "name": "Meal Ticket",
+      "description": "Whenever you enter a shop room, heal 15 HP.",
+      "descriptionClean": "Whenever you enter a shop room, heal 15 HP."
+    },
+    {
+      "id": "MEAT_CLEAVER",
+      "imagePath": "/images/relics/meat_cleaver.webp",
+      "name": "Meat Cleaver",
+      "description": "You may <g>Cook</g> at Rest Sites.",
+      "descriptionClean": "You may Cook at Rest Sites."
+    },
+    {
+      "id": "MEAT_ON_THE_BONE",
+      "imagePath": "/images/relics/meat_on_the_bone.webp",
+      "name": "Meat on the Bone",
+      "description": "If your HP is at or below 50% at the end of combat, heal 12 HP.",
+      "descriptionClean": "If your HP is at or below 50% at the end of combat, heal 12 HP."
+    },
+    {
+      "id": "MEMBERSHIP_CARD",
+      "imagePath": "/images/relics/membership_card.webp",
+      "name": "Membership Card",
+      "description": "50% discount on all products!",
+      "descriptionClean": "50% discount on all products!"
+    },
+    {
+      "id": "MERCURY_HOURGLASS",
+      "imagePath": "/images/relics/mercury_hourglass.webp",
+      "name": "Mercury Hourglass",
+      "description": "At the start of your turn, deal 3 damage to ALL enemies.",
+      "descriptionClean": "At the start of your turn, deal 3 damage to ALL enemies."
+    },
+    {
+      "id": "METRONOME",
+      "imagePath": "/images/relics/metronome.webp",
+      "name": "Metronome",
+      "description": "The first time you <g>Channel</g> 7 <g>Orbs</g> each combat, deal 30 damage to ALL enemies.",
+      "descriptionClean": "The first time you Channel 7 Orbs each combat, deal 30 damage to ALL enemies."
+    },
+    {
+      "id": "MINI_REGENT",
+      "imagePath": "/images/relics/mini_regent.webp",
+      "name": "Mini Regent",
+      "description": "The first time you spend <s>1</s> each turn, gain 1 <g>Strength</g>.",
+      "descriptionClean": "The first time you spend 1 each turn, gain 1 Strength."
+    },
+    {
+      "id": "MINIATURE_CANNON",
+      "imagePath": "/images/relics/miniature_cannon.webp",
+      "name": "Miniature Cannon",
+      "description": "<g>Upgraded</g> Attacks deal 3 additional damage.",
+      "descriptionClean": "Upgraded Attacks deal 3 additional damage."
+    },
+    {
+      "id": "MINIATURE_TENT",
+      "imagePath": "/images/relics/miniature_tent.webp",
+      "name": "Miniature Tent",
+      "description": "You may choose any number of options at <g>Rest Sites</g>.",
+      "descriptionClean": "You may choose any number of options at Rest Sites."
+    },
+    {
+      "id": "MOLTEN_EGG",
+      "imagePath": "/images/relics/molten_egg.webp",
+      "name": "Molten Egg",
+      "description": "Whenever you add an Attack card to your <g>Deck</g>, <g>Upgrade</g> it.",
+      "descriptionClean": "Whenever you add an Attack card to your Deck, Upgrade it."
+    },
+    {
+      "id": "MR_STRUGGLES",
       "imagePath": "/images/relics/mr_struggles.webp",
       "name": "Mr. Struggles",
-      "description": "At the start of your turn, deal damage equal to the turn number to ALL enemies."
+      "description": "At the start of your turn, deal damage equal to the turn number to ALL enemies.",
+      "descriptionClean": "At the start of your turn, deal damage equal to the turn number to ALL enemies."
     },
     {
+      "id": "MUMMIFIED_HAND",
+      "imagePath": "/images/relics/mummified_hand.webp",
+      "name": "Mummified Hand",
+      "description": "Whenever you play a Power, a random card in your <g>Hand</g> is free to play that turn.",
+      "descriptionClean": "Whenever you play a Power, a random card in your Hand is free to play that turn."
+    },
+    {
+      "id": "MUSIC_BOX",
+      "imagePath": "/images/relics/music_box.webp",
+      "name": "Music Box",
+      "description": "Create an <g>Ethereal</g> copy of the first Attack you play each turn.",
+      "descriptionClean": "Create an Ethereal copy of the first Attack you play each turn."
+    },
+    {
+      "id": "MYSTIC_LIGHTER",
+      "imagePath": "/images/relics/mystic_lighter.webp",
+      "name": "Mystic Lighter",
+      "description": "<g>Enchanted</g> Attacks deal 9 additional damage.",
+      "descriptionClean": "Enchanted Attacks deal 9 additional damage."
+    },
+    {
+      "id": "NEOWS_BONES",
+      "imagePath": "/images/relics/neows_bones.webp",
+      "name": "Neow's Bones",
+      "description": "Upon pickup, gain 2 random <g>Neow Relics</g>. Add 1 random Curse to your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, gain 2 random Neow Relics. Add 1 random Curse to your Deck."
+    },
+    {
+      "id": "NEOWS_SACRIFICE",
+      "imagePath": "/images/relics/neows_sacrifice.webp",
+      "name": "Neow's Sacrifice",
+      "description": "Upon pickup, procure 1 <g>Ambergris</g> and add 1 Guilty to your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, procure 1 Ambergris and add 1 Guilty to your Deck."
+    },
+    {
+      "id": "NEOWS_TALISMAN",
+      "imagePath": "/images/relics/neows_talisman.webp",
+      "name": "Neow's Talisman",
+      "description": "Upon pickup, <g>Upgrade</g> 1 of your <g>Strikes</g> and 1 of your <g>Defends</g>.",
+      "descriptionClean": "Upon pickup, Upgrade 1 of your Strikes and 1 of your Defends."
+    },
+    {
+      "id": "NEOWS_TORMENT",
+      "imagePath": "/images/relics/neows_torment.webp",
+      "name": "Neow's Torment",
+      "description": "Upon pickup, add 1 <g>Neow's Fury</g> to your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, add 1 Neow's Fury to your Deck."
+    },
+    {
+      "id": "NEW_LEAF",
+      "imagePath": "/images/relics/new_leaf.webp",
+      "name": "New Leaf",
+      "description": "Upon pickup, <g>Transform</g> 1 card.",
+      "descriptionClean": "Upon pickup, Transform 1 card."
+    },
+    {
+      "id": "NINJA_SCROLL",
+      "imagePath": "/images/relics/ninja_scroll.webp",
+      "name": "Ninja Scroll",
+      "description": "At the start of each combat, add 3 <g>Shivs</g> into your <g>Hand</g>.",
+      "descriptionClean": "At the start of each combat, add 3 Shivs into your Hand."
+    },
+    {
+      "id": "NUNCHAKU",
+      "imagePath": "/images/relics/nunchaku.webp",
+      "name": "Nunchaku",
+      "description": "Every time you play 10 Attacks, gain <e>1</e>.",
+      "descriptionClean": "Every time you play 10 Attacks, gain 1."
+    },
+    {
+      "id": "NUTRITIOUS_OYSTER",
+      "imagePath": "/images/relics/nutritious_oyster.webp",
+      "name": "Nutritious Oyster",
+      "description": "Upon pickup, raise your Max HP by 11.",
+      "descriptionClean": "Upon pickup, raise your Max HP by 11."
+    },
+    {
+      "id": "NUTRITIOUS_SOUP",
+      "imagePath": "/images/relics/nutritious_soup.webp",
+      "name": "Nutritious Soup",
+      "description": "Upon pickup, <g>Enchant</g> all <g>Strikes</g> in your <g>Deck</g> with Tezcatara's Ember.",
+      "descriptionClean": "Upon pickup, Enchant all Strikes in your Deck with Tezcatara's Ember."
+    },
+    {
+      "id": "ODDLY_SMOOTH_STONE",
+      "imagePath": "/images/relics/oddly_smooth_stone.webp",
+      "name": "Oddly Smooth Stone",
+      "description": "Start each combat with 1 <g>Dexterity</g>.",
+      "descriptionClean": "Start each combat with 1 Dexterity."
+    },
+    {
+      "id": "OLD_COIN",
+      "imagePath": "/images/relics/old_coin.webp",
+      "name": "Old Coin",
+      "description": "Upon pickup, gain 300 <g>Gold</g>.",
+      "descriptionClean": "Upon pickup, gain 300 Gold."
+    },
+    {
+      "id": "ORANGE_DOUGH",
+      "imagePath": "/images/relics/orange_dough.webp",
+      "name": "Orange Dough",
+      "description": "At the start of each combat, add 2 random Colorless cards into your <g>Hand</g>.",
+      "descriptionClean": "At the start of each combat, add 2 random Colorless cards into your Hand."
+    },
+    {
+      "id": "ORICHALCUM",
+      "imagePath": "/images/relics/orichalcum.webp",
+      "name": "Orichalcum",
+      "description": "If you end your turn without <g>Block</g>, gain 6 <g>Block</g>.",
+      "descriptionClean": "If you end your turn without Block, gain 6 Block."
+    },
+    {
+      "id": "ORNAMENTAL_FAN",
+      "imagePath": "/images/relics/ornamental_fan.webp",
+      "name": "Ornamental Fan",
+      "description": "Every time you play 3 Attacks in a single turn, gain 4 <g>Block</g>.",
+      "descriptionClean": "Every time you play 3 Attacks in a single turn, gain 4 Block."
+    },
+    {
+      "id": "ORRERY",
+      "imagePath": "/images/relics/orrery.webp",
+      "name": "Orrery",
+      "description": "Upon pickup, gain 5 card rewards.",
+      "descriptionClean": "Upon pickup, gain 5 card rewards."
+    },
+    {
+      "id": "PAELS_BLOOD",
+      "imagePath": "/images/relics/paels_blood.webp",
+      "name": "Pael's Blood",
+      "description": "At the start of your turn, draw 1 additional card.",
+      "descriptionClean": "At the start of your turn, draw 1 additional card."
+    },
+    {
+      "id": "PAELS_CLAW",
+      "imagePath": "/images/relics/paels_claw.webp",
+      "name": "Pael's Claw",
+      "description": "Upon pickup, <g>Enchant</g> all <g>Defends</g> with Goopy.",
+      "descriptionClean": "Upon pickup, Enchant all Defends with Goopy."
+    },
+    {
+      "id": "PAELS_EYE",
+      "imagePath": "/images/relics/paels_eye.webp",
+      "name": "Pael's Eye",
+      "description": "The first time each combat you end your turn without playing cards, <g>Exhaust</g> your <g>Hand</g>, and take an extra turn.",
+      "descriptionClean": "The first time each combat you end your turn without playing cards, Exhaust your Hand, and take an extra turn."
+    },
+    {
+      "id": "PAELS_FLESH",
+      "imagePath": "/images/relics/paels_flesh.webp",
+      "name": "Pael's Flesh",
+      "description": "Gain an additional <e>1</e> at the start of your 3rd turn, and every turn after that.",
+      "descriptionClean": "Gain an additional 1 at the start of your 3rd turn, and every turn after that."
+    },
+    {
+      "id": "PAELS_GROWTH",
+      "imagePath": "/images/relics/paels_growth.webp",
+      "name": "Pael's Growth",
+      "description": "Upon pickup, <g>Enchant</g> a card with Clone.",
+      "descriptionClean": "Upon pickup, Enchant a card with Clone."
+    },
+    {
+      "id": "PAELS_HORN",
+      "imagePath": "/images/relics/paels_horn.webp",
+      "name": "Pael's Horn",
+      "description": "Upon pickup, add 2 <g>Relax</g> to your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, add 2 Relax to your Deck."
+    },
+    {
+      "id": "PAELS_LEGION",
+      "imagePath": "/images/relics/paels_legion.webp",
+      "name": "Pael's Legion",
+      "description": "Doubles <g>Block</g> gained from a card, then goes to sleep for 2 turns.",
+      "descriptionClean": "Doubles Block gained from a card, then goes to sleep for 2 turns."
+    },
+    {
+      "id": "PAELS_TEARS",
+      "imagePath": "/images/relics/paels_tears.webp",
+      "name": "Pael's Tears",
+      "description": "If you end your turn with unspent <e/>, gain an additional <e>2</e> next turn.",
+      "descriptionClean": "If you end your turn with unspent , gain an additional 2 next turn."
+    },
+    {
+      "id": "PAELS_TOOTH",
+      "imagePath": "/images/relics/paels_tooth.webp",
+      "name": "Pael's Tooth",
+      "description": "Upon pickup, remove 5 cards from your <g>Deck</g>. After each combat, randomly add 1 back <g>Upgraded</g>.",
+      "descriptionClean": "Upon pickup, remove 5 cards from your Deck. After each combat, randomly add 1 back Upgraded."
+    },
+    {
+      "id": "PAELS_WING",
+      "imagePath": "/images/relics/paels_wing.webp",
+      "name": "Pael's Wing",
+      "description": "You may sacrifice card rewards to Pael. Every 2 sacrifices, obtain a <g>Relic</g>.",
+      "descriptionClean": "You may sacrifice card rewards to Pael. Every 2 sacrifices, obtain a Relic."
+    },
+    {
+      "id": "PANDORAS_BOX",
+      "imagePath": "/images/relics/pandoras_box.webp",
+      "name": "Pandora's Box",
+      "description": "<g>Transform</g> ALL <g>Strikes</g> and <g>Defends</g>.",
+      "descriptionClean": "Transform ALL Strikes and Defends."
+    },
+    {
+      "id": "PANTOGRAPH",
+      "imagePath": "/images/relics/pantograph.webp",
+      "name": "Pantograph",
+      "description": "At the start of each <g>Boss</g> combat, heal 25 HP.",
+      "descriptionClean": "At the start of each Boss combat, heal 25 HP."
+    },
+    {
+      "id": "PAPER_KRANE",
+      "imagePath": "/images/relics/paper_krane.webp",
+      "name": "Paper Krane",
+      "description": "Enemies with <g>Weak</g> deal 40% less damage to you rather than 25%.",
+      "descriptionClean": "Enemies with Weak deal 40% less damage to you rather than 25%."
+    },
+    {
+      "id": "PAPER_PHROG",
+      "imagePath": "/images/relics/paper_phrog.webp",
+      "name": "Paper Phrog",
+      "description": "Enemies with <g>Vulnerable</g> take 75% more damage rather than 50%.",
+      "descriptionClean": "Enemies with Vulnerable take 75% more damage rather than 50%."
+    },
+    {
+      "id": "PARRYING_SHIELD",
+      "imagePath": "/images/relics/parrying_shield.webp",
+      "name": "Parrying Shield",
+      "description": "If you end a turn with at least 10 <g>Block</g>, deal 6 damage to a random enemy.",
+      "descriptionClean": "If you end a turn with at least 10 Block, deal 6 damage to a random enemy."
+    },
+    {
+      "id": "PEAR",
+      "imagePath": "/images/relics/pear.webp",
+      "name": "Pear",
+      "description": "Upon pickup, raise your Max HP by 10.",
+      "descriptionClean": "Upon pickup, raise your Max HP by 10."
+    },
+    {
+      "id": "PEN_NIB",
+      "imagePath": "/images/relics/pen_nib.webp",
+      "name": "Pen Nib",
+      "description": "Every 10th Attack you play deals double damage.",
+      "descriptionClean": "Every 10th Attack you play deals double damage."
+    },
+    {
+      "id": "PENDULUM",
+      "imagePath": "/images/relics/pendulum.webp",
+      "name": "Pendulum",
+      "description": "Every 3 turns, draw 1 card.",
+      "descriptionClean": "Every 3 turns, draw 1 card."
+    },
+    {
+      "id": "PERMAFROST",
+      "imagePath": "/images/relics/permafrost.webp",
+      "name": "Permafrost",
+      "description": "The first time you play a Power each combat, gain 7 <g>Block</g>.",
+      "descriptionClean": "The first time you play a Power each combat, gain 7 Block."
+    },
+    {
+      "id": "PETRIFIED_TOAD",
+      "imagePath": "/images/relics/petrified_toad.webp",
+      "name": "Petrified Toad",
+      "description": "At the start of each combat, procure a <g>Potion-Shaped Rock</g>.",
+      "descriptionClean": "At the start of each combat, procure a Potion-Shaped Rock."
+    },
+    {
+      "id": "PHIAL_HOLSTER",
+      "imagePath": "/images/relics/phial_holster.webp",
+      "name": "Phial Holster",
+      "description": "Upon pickup, gain 1 potion slot and procure 2 random <g>Potions</g>.",
+      "descriptionClean": "Upon pickup, gain 1 potion slot and procure 2 random Potions."
+    },
+    {
+      "id": "PHILOSOPHERS_STONE",
+      "imagePath": "/images/relics/philosophers_stone.webp",
+      "name": "Philosopher's Stone",
+      "description": "Gain <e>1</e> at the start of each turn. ALL enemies start combat with 1 <g>Strength</g>.",
+      "descriptionClean": "Gain 1 at the start of each turn. ALL enemies start combat with 1 Strength."
+    },
+    {
+      "id": "PHYLACTERY_UNBOUND",
+      "imagePath": "/images/relics/phylactery_unbound.webp",
+      "name": "Phylactery Unbound",
+      "description": "At the start of each combat, <g>Summon</g> 5. At the start of your turn, <g>Summon</g> 2.",
+      "descriptionClean": "At the start of each combat, Summon 5. At the start of your turn, Summon 2."
+    },
+    {
+      "id": "PLANISPHERE",
+      "imagePath": "/images/relics/planisphere.webp",
+      "name": "Planisphere",
+      "description": "Whenever you enter a <g>?</g> room, heal 5 HP.",
+      "descriptionClean": "Whenever you enter a ? room, heal 5 HP."
+    },
+    {
+      "id": "POCKETWATCH",
+      "imagePath": "/images/relics/pocketwatch.webp",
+      "name": "Pocketwatch",
+      "description": "Whenever you play 3 or fewer cards during your turn, draw 3 additional cards at the start of your next turn.",
+      "descriptionClean": "Whenever you play 3 or fewer cards during your turn, draw 3 additional cards at the start of your next turn."
+    },
+    {
+      "id": "POLLINOUS_CORE",
       "imagePath": "/images/relics/pollinous_core.webp",
       "name": "Pollinous Core",
-      "description": "Every 4 turns, draw 2 additional cards."
+      "description": "Every 4 turns, draw 2 additional cards.",
+      "descriptionClean": "Every 4 turns, draw 2 additional cards."
     },
     {
+      "id": "POMANDER",
+      "imagePath": "/images/relics/pomander.webp",
+      "name": "Pomander",
+      "description": "Upon pickup, <g>Upgrade</g> a card.",
+      "descriptionClean": "Upon pickup, Upgrade a card."
+    },
+    {
+      "id": "POTION_BELT",
+      "imagePath": "/images/relics/potion_belt.webp",
+      "name": "Potion Belt",
+      "description": "Upon pickup, gain 2 potion slots.",
+      "descriptionClean": "Upon pickup, gain 2 potion slots."
+    },
+    {
+      "id": "POWER_CELL",
+      "imagePath": "/images/relics/power_cell.webp",
+      "name": "Power Cell",
+      "description": "At the start of each combat, add 2 zero-cost cards from your <g>Draw Pile</g> into your <g>Hand</g>.",
+      "descriptionClean": "At the start of each combat, add 2 zero-cost cards from your Draw Pile into your Hand."
+    },
+    {
+      "id": "PRAYER_WHEEL",
+      "imagePath": "/images/relics/prayer_wheel.webp",
+      "name": "Prayer Wheel",
+      "description": "Normal enemies drop an additional card reward.",
+      "descriptionClean": "Normal enemies drop an additional card reward."
+    },
+    {
+      "id": "PRECARIOUS_SHEARS",
+      "imagePath": "/images/relics/precarious_shears.webp",
+      "name": "Precarious Shears",
+      "description": "Upon pickup, remove 2 cards from your <g>Deck</g> and lose 16 HP.",
+      "descriptionClean": "Upon pickup, remove 2 cards from your Deck and lose 16 HP."
+    },
+    {
+      "id": "PRECISE_SCISSORS",
+      "imagePath": "/images/relics/precise_scissors.webp",
+      "name": "Precise Scissors",
+      "description": "Upon pickup, remove 1 card from your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, remove 1 card from your Deck."
+    },
+    {
+      "id": "PRESERVED_FOG",
+      "imagePath": "/images/relics/preserved_fog.webp",
+      "name": "Preserved Fog",
+      "description": "Upon pickup, remove 3 cards from your <g>Deck</g>. Add Folly to your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, remove 3 cards from your Deck. Add Folly to your Deck."
+    },
+    {
+      "id": "PRISMATIC_GEM",
+      "imagePath": "/images/relics/prismatic_gem.webp",
+      "name": "Prismatic Gem",
+      "description": "Gain <e>1</e> at the start of each turn. Card rewards now contain cards from other colors.",
+      "descriptionClean": "Gain 1 at the start of each turn. Card rewards now contain cards from other colors."
+    },
+    {
+      "id": "PUMPKIN_CANDLE",
+      "imagePath": "/images/relics/pumpkin_candle.webp",
+      "name": "Pumpkin Candle",
+      "description": "Gain <e>1</e> at the start of each turn. Extinguishes after 5 combats. Can be <g>Kindled</g> at <g>Rest Sites</g>.",
+      "descriptionClean": "Gain 1 at the start of each turn. Extinguishes after 5 combats. Can be Kindled at Rest Sites."
+    },
+    {
+      "id": "PUNCH_DAGGER",
+      "imagePath": "/images/relics/punch_dagger.webp",
+      "name": "Punch Dagger",
+      "description": "Upon pickup, <g>Enchant</g> an Attack with Momentum 5.",
+      "descriptionClean": "Upon pickup, Enchant an Attack with Momentum 5."
+    },
+    {
+      "id": "RADIANT_PEARL",
+      "imagePath": "/images/relics/radiant_pearl.webp",
+      "name": "Radiant Pearl",
+      "description": "At the start of each combat, add 1 <g>Luminesce</g> into your <g>Hand</g>.",
+      "descriptionClean": "At the start of each combat, add 1 Luminesce into your Hand."
+    },
+    {
+      "id": "RAINBOW_RING",
+      "imagePath": "/images/relics/rainbow_ring.webp",
+      "name": "Rainbow Ring",
+      "description": "The first time you play an Attack, Skill, and Power each turn, gain 1 <g>Strength</g> and 1 <g>Dexterity</g>.",
+      "descriptionClean": "The first time you play an Attack, Skill, and Power each turn, gain 1 Strength and 1 Dexterity."
+    },
+    {
+      "id": "RAZOR_TOOTH",
+      "imagePath": "/images/relics/razor_tooth.webp",
+      "name": "Razor Tooth",
+      "description": "Every time you play an Attack or Skill, <g>Upgrade</g> it for the remainder of combat.",
+      "descriptionClean": "Every time you play an Attack or Skill, Upgrade it for the remainder of combat."
+    },
+    {
+      "id": "RED_MASK",
+      "imagePath": "/images/relics/red_mask.webp",
+      "name": "Red Mask",
+      "description": "At the start of each combat, apply 1 <g>Weak</g> to ALL enemies.",
+      "descriptionClean": "At the start of each combat, apply 1 Weak to ALL enemies."
+    },
+    {
+      "id": "RED_SKULL",
+      "imagePath": "/images/relics/red_skull.webp",
+      "name": "Red Skull",
+      "description": "While your HP is at or below 50%, you have 3 additional <g>Strength</g>.",
+      "descriptionClean": "While your HP is at or below 50%, you have 3 additional Strength."
+    },
+    {
+      "id": "REGAL_PILLOW",
+      "imagePath": "/images/relics/regal_pillow.webp",
+      "name": "Regal Pillow",
+      "description": "Whenever you <g>Rest</g>, heal an additional 15 HP.",
+      "descriptionClean": "Whenever you Rest, heal an additional 15 HP."
+    },
+    {
+      "id": "REGALITE",
+      "imagePath": "/images/relics/regalite.webp",
+      "name": "Regalite",
+      "description": "The first time you create a card each turn, gain 4 <g>Block</g>.",
+      "descriptionClean": "The first time you create a card each turn, gain 4 Block."
+    },
+    {
+      "id": "REPTILE_TRINKET",
+      "imagePath": "/images/relics/reptile_trinket.webp",
+      "name": "Reptile Trinket",
+      "description": "Whenever you use a potion, gain 3 <g>Strength</g> this turn.",
+      "descriptionClean": "Whenever you use a potion, gain 3 Strength this turn."
+    },
+    {
+      "id": "RING_OF_THE_DRAKE",
+      "imagePath": "/images/relics/ring_of_the_drake.webp",
+      "name": "Ring of the Drake",
+      "description": "At the start of your first 3 turns, draw 2 additional cards.",
+      "descriptionClean": "At the start of your first 3 turns, draw 2 additional cards."
+    },
+    {
+      "id": "RING_OF_THE_SNAKE",
+      "imagePath": "/images/relics/ring_of_the_snake.webp",
+      "name": "Ring of the Snake",
+      "description": "At the start of each combat, draw 2 additional cards.",
+      "descriptionClean": "At the start of each combat, draw 2 additional cards."
+    },
+    {
+      "id": "RINGING_TRIANGLE",
+      "imagePath": "/images/relics/ringing_triangle.webp",
+      "name": "Ringing Triangle",
+      "description": "<g>Retain</g> your <g>Hand</g> on the first turn of combat.",
+      "descriptionClean": "Retain your Hand on the first turn of combat."
+    },
+    {
+      "id": "RIPPLE_BASIN",
+      "imagePath": "/images/relics/ripple_basin.webp",
+      "name": "Ripple Basin",
+      "description": "If you did not play any Attacks during your turn, gain 4 <g>Block</g>.",
+      "descriptionClean": "If you did not play any Attacks during your turn, gain 4 Block."
+    },
+    {
+      "id": "ROYAL_POISON",
       "imagePath": "/images/relics/royal_poison.webp",
       "name": "Royal Poison",
-      "description": "At the start of each combat, lose 4 HP."
+      "description": "At the start of each combat, lose 4 HP.",
+      "descriptionClean": "At the start of each combat, lose 4 HP."
     },
     {
+      "id": "ROYAL_STAMP",
+      "imagePath": "/images/relics/royal_stamp.webp",
+      "name": "Royal Stamp",
+      "description": "Upon pickup, choose an Attack or Skill in your <g>Deck</g> to <g>Enchant</g> with Royally Approved.",
+      "descriptionClean": "Upon pickup, choose an Attack or Skill in your Deck to Enchant with Royally Approved."
+    },
+    {
+      "id": "RUINED_HELMET",
+      "imagePath": "/images/relics/ruined_helmet.webp",
+      "name": "Ruined Helmet",
+      "description": "The first time you gain <g>Strength</g> each combat, double the amount gained.",
+      "descriptionClean": "The first time you gain Strength each combat, double the amount gained."
+    },
+    {
+      "id": "RUNIC_CAPACITOR",
+      "imagePath": "/images/relics/runic_capacitor.webp",
+      "name": "Runic Capacitor",
+      "description": "Start each combat with 3 additional <g>Orb Slots</g>.",
+      "descriptionClean": "Start each combat with 3 additional Orb Slots."
+    },
+    {
+      "id": "RUNIC_PYRAMID",
+      "imagePath": "/images/relics/runic_pyramid.webp",
+      "name": "Runic Pyramid",
+      "description": "At the end of your turn, you no longer discard your <g>Hand</g>.",
+      "descriptionClean": "At the end of your turn, you no longer discard your Hand."
+    },
+    {
+      "id": "SAI",
+      "imagePath": "/images/relics/sai.webp",
+      "name": "Sai",
+      "description": "At the start of your turn, gain 7 <g>Block</g>.",
+      "descriptionClean": "At the start of your turn, gain 7 Block."
+    },
+    {
+      "id": "SAND_CASTLE",
+      "imagePath": "/images/relics/sand_castle.webp",
+      "name": "Sand Castle",
+      "description": "Upon pickup, <g>Upgrade</g> 6 random cards.",
+      "descriptionClean": "Upon pickup, Upgrade 6 random cards."
+    },
+    {
+      "id": "SCREAMING_FLAGON",
+      "imagePath": "/images/relics/screaming_flagon.webp",
+      "name": "Screaming Flagon",
+      "description": "If you end your turn with no cards in your <g>Hand</g>, deal 20 damage to ALL enemies.",
+      "descriptionClean": "If you end your turn with no cards in your Hand, deal 20 damage to ALL enemies."
+    },
+    {
+      "id": "SCROLL_BOXES",
+      "imagePath": "/images/relics/scroll_boxes.webp",
+      "name": "Scroll Boxes",
+      "description": "Upon pickup, choose 1 of 2 packs of cards to add to your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, choose 1 of 2 packs of cards to add to your Deck."
+    },
+    {
+      "id": "SEA_GLASS",
+      "imagePath": "/images/relics/sea_glass.webp",
+      "name": "Sea Glass",
+      "description": "See 15 cards from another character. Choose any number of them to add to your <g>Deck</g>.",
+      "descriptionClean": "See 15 cards from another character. Choose any number of them to add to your Deck."
+    },
+    {
+      "id": "SEAL_OF_GOLD",
+      "imagePath": "/images/relics/seal_of_gold.webp",
+      "name": "Seal of Gold",
+      "description": "At the start of your turn, spend 3 <g>Gold</g> to gain <e>1</e>.",
+      "descriptionClean": "At the start of your turn, spend 3 Gold to gain 1."
+    },
+    {
+      "id": "SELF_FORMING_CLAY",
+      "imagePath": "/images/relics/self_forming_clay.webp",
+      "name": "Self-Forming Clay",
+      "description": "Whenever you lose HP in combat, gain 3 <g>Block</g> next turn.",
+      "descriptionClean": "Whenever you lose HP in combat, gain 3 Block next turn."
+    },
+    {
+      "id": "SERE_TALON",
+      "imagePath": "/images/relics/sere_talon.webp",
+      "name": "Sere Talon",
+      "description": "Upon pickup, lose 9 Max HP. Add 3 Wishes to your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, lose 9 Max HP. Add 3 Wishes to your Deck."
+    },
+    {
+      "id": "SHOVEL",
+      "imagePath": "/images/relics/shovel.webp",
+      "name": "Shovel",
+      "description": "You can now dig at <g>Rest Sites</g> to obtain a random <g>Relic</g>.",
+      "descriptionClean": "You can now dig at Rest Sites to obtain a random Relic."
+    },
+    {
+      "id": "SHURIKEN",
+      "imagePath": "/images/relics/shuriken.webp",
+      "name": "Shuriken",
+      "description": "Every time you play 3 Attacks in a single turn, gain 1 <g>Strength</g>.",
+      "descriptionClean": "Every time you play 3 Attacks in a single turn, gain 1 Strength."
+    },
+    {
+      "id": "SIGNET_RING",
+      "imagePath": "/images/relics/signet_ring.webp",
+      "name": "Signet Ring",
+      "description": "Upon pickup, gain 888 <g>Gold</g>.",
+      "descriptionClean": "Upon pickup, gain 888 Gold."
+    },
+    {
+      "id": "SILKEN_TRESS",
+      "imagePath": "/images/relics/silken_tress.webp",
+      "name": "Silken Tress",
+      "description": "Upon pickup, lose all <g>Gold</g>. <g>Enchant</g> all cards in your first card reward with Glam.",
+      "descriptionClean": "Upon pickup, lose all Gold. Enchant all cards in your first card reward with Glam."
+    },
+    {
+      "id": "SILVER_CRUCIBLE",
+      "imagePath": "/images/relics/silver_crucible.webp",
+      "name": "Silver Crucible",
+      "description": "The first 3 card rewards you see are <g>Upgraded</g>. The first Treasure Chest you open is empty.",
+      "descriptionClean": "The first 3 card rewards you see are Upgraded. The first Treasure Chest you open is empty."
+    },
+    {
+      "id": "SLING_OF_COURAGE",
+      "imagePath": "/images/relics/sling_of_courage.webp",
+      "name": "Sling of Courage",
+      "description": "Start each <g>Elite</g> combat with 2 <g>Strength</g>.",
+      "descriptionClean": "Start each Elite combat with 2 Strength."
+    },
+    {
+      "id": "SMALL_CAPSULE",
+      "imagePath": "/images/relics/small_capsule.webp",
+      "name": "Small Capsule",
+      "description": "Upon pickup, obtain a random <g>Relic</g>.",
+      "descriptionClean": "Upon pickup, obtain a random Relic."
+    },
+    {
+      "id": "SNECKO_EYE",
+      "imagePath": "/images/relics/snecko_eye.webp",
+      "name": "Snecko Eye",
+      "description": "At the start of your turn, draw 2 additional cards. Start each combat Confused.",
+      "descriptionClean": "At the start of your turn, draw 2 additional cards. Start each combat Confused."
+    },
+    {
+      "id": "SNECKO_SKULL",
+      "imagePath": "/images/relics/snecko_skull.webp",
+      "name": "Snecko Skull",
+      "description": "Whenever you apply <g>Poison</g>, apply an additional 1 <g>Poison</g>.",
+      "descriptionClean": "Whenever you apply Poison, apply an additional 1 Poison."
+    },
+    {
+      "id": "SOZU",
+      "imagePath": "/images/relics/sozu.webp",
+      "name": "Sozu",
+      "description": "Gain <e>1</e> at the start of each turn. You can no longer obtain <g>Potions</g>.",
+      "descriptionClean": "Gain 1 at the start of each turn. You can no longer obtain Potions."
+    },
+    {
+      "id": "SPARKLING_ROUGE",
+      "imagePath": "/images/relics/sparkling_rouge.webp",
+      "name": "Sparkling Rouge",
+      "description": "At the start of your 3rd turn, gain 1 <g>Strength</g> and 1 <g>Dexterity</g>.",
+      "descriptionClean": "At the start of your 3rd turn, gain 1 Strength and 1 Dexterity."
+    },
+    {
+      "id": "SPIKED_GAUNTLETS",
+      "imagePath": "/images/relics/spiked_gauntlets.webp",
+      "name": "Spiked Gauntlets",
+      "description": "Gain <e>1</e> at the start of each turn. Powers cost 1 more <e/>.",
+      "descriptionClean": "Gain 1 at the start of each turn. Powers cost 1 more ."
+    },
+    {
+      "id": "STONE_CALENDAR",
+      "imagePath": "/images/relics/stone_calendar.webp",
+      "name": "Stone Calendar",
+      "description": "At the end of turn 7, deal 52 damage to ALL enemies.",
+      "descriptionClean": "At the end of turn 7, deal 52 damage to ALL enemies."
+    },
+    {
+      "id": "STONE_CRACKER",
+      "imagePath": "/images/relics/stone_cracker.webp",
+      "name": "Stone Cracker",
+      "description": "At the start of each combat, <g>Upgrade</g> 2 random cards in your <g>Draw Pile</g> for the rest of combat.",
+      "descriptionClean": "At the start of each combat, Upgrade 2 random cards in your Draw Pile for the rest of combat."
+    },
+    {
+      "id": "STONE_HUMIDIFIER",
+      "imagePath": "/images/relics/stone_humidifier.webp",
+      "name": "Stone Humidifier",
+      "description": "Whenever you <g>Rest</g> at a <g>Rest Site</g>, raise your Max HP by 5.",
+      "descriptionClean": "Whenever you Rest at a Rest Site, raise your Max HP by 5."
+    },
+    {
+      "id": "STORYBOOK",
+      "imagePath": "/images/relics/storybook.webp",
+      "name": "Storybook",
+      "description": "Upon pickup, add 1 <g>Brightest Flame</g> to your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, add 1 Brightest Flame to your Deck."
+    },
+    {
+      "id": "STRAWBERRY",
+      "imagePath": "/images/relics/strawberry.webp",
+      "name": "Strawberry",
+      "description": "Upon pickup, raise your Max HP by 7.",
+      "descriptionClean": "Upon pickup, raise your Max HP by 7."
+    },
+    {
+      "id": "STRIKE_DUMMY",
+      "imagePath": "/images/relics/strike_dummy.webp",
+      "name": "Strike Dummy",
+      "description": "Cards containing “Strike” deal 3 additional damage.",
+      "descriptionClean": "Cards containing “Strike” deal 3 additional damage."
+    },
+    {
+      "id": "STURDY_CLAMP",
+      "imagePath": "/images/relics/sturdy_clamp.webp",
+      "name": "Sturdy Clamp",
+      "description": "Up to 10 <g>Block</g> persists across turns.",
+      "descriptionClean": "Up to 10 Block persists across turns."
+    },
+    {
+      "id": "SWORD_OF_JADE",
       "imagePath": "/images/relics/sword_of_jade.webp",
       "name": "Sword of Jade",
-      "description": "Start each combat with 3 <g>Strength</g>."
+      "description": "Start each combat with 3 <g>Strength</g>.",
+      "descriptionClean": "Start each combat with 3 Strength."
     },
     {
+      "id": "SWORD_OF_STONE",
       "imagePath": "/images/relics/sword_of_stone.webp",
       "name": "Sword of Stone",
-      "description": "Transforms into a powerful <g>Relic</g> after defeating 5 <g>Elites</g>."
+      "description": "Transforms into a powerful <g>Relic</g> after defeating 5 <g>Elites</g>.",
+      "descriptionClean": "Transforms into a powerful Relic after defeating 5 Elites."
     },
     {
+      "id": "SYMBIOTIC_VIRUS",
+      "imagePath": "/images/relics/symbiotic_virus.webp",
+      "name": "Symbiotic Virus",
+      "description": "At the start of each combat, <g>Channel</g> 1 <g>Dark</g>.",
+      "descriptionClean": "At the start of each combat, Channel 1 Dark."
+    },
+    {
+      "id": "TANXS_WHISTLE",
+      "imagePath": "/images/relics/tanxs_whistle.webp",
+      "name": "Tanx's Whistle",
+      "description": "Upon pickup, add 1 <g>Whistle</g> to your <g>Deck</g>.",
+      "descriptionClean": "Upon pickup, add 1 Whistle to your Deck."
+    },
+    {
+      "id": "TEA_OF_DISCOURTESY",
       "imagePath": "/images/relics/tea_of_discourtesy.webp",
       "name": "Tea of Discourtesy",
-      "description": "At the start of the next combat, shuffle 2 <g>Dazed</g> into your <g>Draw Pile</g>."
+      "description": "At the start of the next combat, shuffle 2 <g>Dazed</g> into your <g>Draw Pile</g>.",
+      "descriptionClean": "At the start of the next combat, shuffle 2 Dazed into your Draw Pile."
     },
     {
+      "id": "THE_ABACUS",
+      "imagePath": "/images/relics/the_abacus.webp",
+      "name": "The Abacus",
+      "description": "Whenever you shuffle your <g>Draw Pile</g>, gain 6 <g>Block</g>.",
+      "descriptionClean": "Whenever you shuffle your Draw Pile, gain 6 Block."
+    },
+    {
+      "id": "THE_BOOT",
       "imagePath": "/images/relics/the_boot.webp",
       "name": "The Boot",
-      "description": "Whenever you would deal 4 or less unblocked attack damage, increase it to 5."
+      "description": "Whenever you would deal 4 or less unblocked attack damage, increase it to 5.",
+      "descriptionClean": "Whenever you would deal 4 or less unblocked attack damage, increase it to 5."
     },
     {
-      "imagePath": "/images/relics/wongos_mystery_ticket.webp",
-      "name": "Wongo's Mystery Ticket",
-      "description": "Receive 3 random <g>Relics</g> after 5 combats."
+      "id": "THE_COURIER",
+      "imagePath": "/images/relics/the_courier.webp",
+      "name": "The Courier",
+      "description": "The merchant no longer runs out of cards, relics, or potions and his prices are reduced by 20%.",
+      "descriptionClean": "The merchant no longer runs out of cards, relics, or potions and his prices are reduced by 20%."
     },
     {
+      "id": "THROWING_AXE",
+      "imagePath": "/images/relics/throwing_axe.webp",
+      "name": "Throwing Axe",
+      "description": "The first card you play each combat is played an extra time.",
+      "descriptionClean": "The first card you play each combat is played an extra time."
+    },
+    {
+      "id": "TINGSHA",
+      "imagePath": "/images/relics/tingsha.webp",
+      "name": "Tingsha",
+      "description": "Whenever you discard a card during your turn, deal 3 damage to a random enemy for each card discarded.",
+      "descriptionClean": "Whenever you discard a card during your turn, deal 3 damage to a random enemy for each card discarded."
+    },
+    {
+      "id": "TINY_MAILBOX",
+      "imagePath": "/images/relics/tiny_mailbox.webp",
+      "name": "Tiny Mailbox",
+      "description": "Whenever you <g>Rest</g>, procure 2 random <g>Potions</g>.",
+      "descriptionClean": "Whenever you Rest, procure 2 random Potions."
+    },
+    {
+      "id": "TOASTY_MITTENS",
+      "imagePath": "/images/relics/toasty_mittens.webp",
+      "name": "Toasty Mittens",
+      "description": "At the start of your turn, <g>Exhaust</g> 1 card from your <g>Hand</g> and gain 1 <g>Strength</g>.",
+      "descriptionClean": "At the start of your turn, Exhaust 1 card from your Hand and gain 1 Strength."
+    },
+    {
+      "id": "TOOLBOX",
+      "imagePath": "/images/relics/toolbox.webp",
+      "name": "Toolbox",
+      "description": "At the start of each combat, choose 1 of 3 random Colorless cards and add the chosen card into your <g>Hand</g>.",
+      "descriptionClean": "At the start of each combat, choose 1 of 3 random Colorless cards and add the chosen card into your Hand."
+    },
+    {
+      "id": "TOUCH_OF_OROBAS",
+      "imagePath": "/images/relics/touch_of_orobas.webp",
+      "name": "Touch of Orobas",
+      "description": "Upon pickup, replace your starter <g>Relic</g> with an <g>Ancient</g> version.",
+      "descriptionClean": "Upon pickup, replace your starter Relic with an Ancient version."
+    },
+    {
+      "id": "TOUGH_BANDAGES",
+      "imagePath": "/images/relics/tough_bandages.webp",
+      "name": "Tough Bandages",
+      "description": "Whenever you discard a card during your turn, gain 3 <g>Block</g>.",
+      "descriptionClean": "Whenever you discard a card during your turn, gain 3 Block."
+    },
+    {
+      "id": "TOXIC_EGG",
+      "imagePath": "/images/relics/toxic_egg.webp",
+      "name": "Toxic Egg",
+      "description": "Whenever you add a Skill into your <g>Deck</g>, <g>Upgrade</g> it.",
+      "descriptionClean": "Whenever you add a Skill into your Deck, Upgrade it."
+    },
+    {
+      "id": "TOY_BOX",
+      "imagePath": "/images/relics/toy_box.webp",
+      "name": "Toy Box",
+      "description": "Upon pickup, obtain 5 <g>Wax Relics</g>. Every 3 combats, your left-most <g>Wax Relic</g> will melt away.",
+      "descriptionClean": "Upon pickup, obtain 5 Wax Relics. Every 3 combats, your left-most Wax Relic will melt away."
+    },
+    {
+      "id": "TRI_BOOMERANG",
+      "imagePath": "/images/relics/tri_boomerang.webp",
+      "name": "Tri-Boomerang",
+      "description": "Choose 3 Attacks in your <g>Deck</g>. <g>Enchant</g> them with Instinct.",
+      "descriptionClean": "Choose 3 Attacks in your Deck. Enchant them with Instinct."
+    },
+    {
+      "id": "TUNGSTEN_ROD",
+      "imagePath": "/images/relics/tungsten_rod.webp",
+      "name": "Tungsten Rod",
+      "description": "Whenever you would lose HP, lose 1 less.",
+      "descriptionClean": "Whenever you would lose HP, lose 1 less."
+    },
+    {
+      "id": "TUNING_FORK",
+      "imagePath": "/images/relics/tuning_fork.webp",
+      "name": "Tuning Fork",
+      "description": "Every time you play 10 Skills, gain 7 <g>Block</g>.",
+      "descriptionClean": "Every time you play 10 Skills, gain 7 Block."
+    },
+    {
+      "id": "TWISTED_FUNNEL",
+      "imagePath": "/images/relics/twisted_funnel.webp",
+      "name": "Twisted Funnel",
+      "description": "At the start of each combat, apply 4 <g>Poison</g> to ALL enemies.",
+      "descriptionClean": "At the start of each combat, apply 4 Poison to ALL enemies."
+    },
+    {
+      "id": "UNCEASING_TOP",
+      "imagePath": "/images/relics/unceasing_top.webp",
+      "name": "Unceasing Top",
+      "description": "Whenever you have no cards in <g>Hand</g> during your turn, draw a card.",
+      "descriptionClean": "Whenever you have no cards in Hand during your turn, draw a card."
+    },
+    {
+      "id": "UNDYING_SIGIL",
+      "imagePath": "/images/relics/undying_sigil.webp",
+      "name": "Undying Sigil",
+      "description": "Enemies with at least as much <g>Doom</g> as HP deal 50% less damage.",
+      "descriptionClean": "Enemies with at least as much Doom as HP deal 50% less damage."
+    },
+    {
+      "id": "UNSETTLING_LAMP",
+      "imagePath": "/images/relics/unsettling_lamp.webp",
+      "name": "Unsettling Lamp",
+      "description": "Each combat, the first time you play a card that <g>Debuffs</g> an enemy, double its effect.",
+      "descriptionClean": "Each combat, the first time you play a card that Debuffs an enemy, double its effect."
+    },
+    {
+      "id": "VAJRA",
+      "imagePath": "/images/relics/vajra.webp",
+      "name": "Vajra",
+      "description": "Start each combat with 1 <g>Strength</g>.",
+      "descriptionClean": "Start each combat with 1 Strength."
+    },
+    {
+      "id": "VAMBRACE",
+      "imagePath": "/images/relics/vambrace.webp",
+      "name": "Vambrace",
+      "description": "The first time you gain <g>Block</g> from a card each combat, double the amount gained.",
+      "descriptionClean": "The first time you gain Block from a card each combat, double the amount gained."
+    },
+    {
+      "id": "VELVET_CHOKER",
+      "imagePath": "/images/relics/velvet_choker.webp",
+      "name": "Velvet Choker",
+      "description": "Gain <e>1</e> at the start of each turn. You cannot play more than 6 cards per turn.",
+      "descriptionClean": "Gain 1 at the start of each turn. You cannot play more than 6 cards per turn."
+    },
+    {
+      "id": "VENERABLE_TEA_SET",
+      "imagePath": "/images/relics/venerable_tea_set.webp",
+      "name": "Venerable Tea Set",
+      "description": "Whenever you enter a <g>Rest Site</g>, start the next combat with an additional <e>2</e>.",
+      "descriptionClean": "Whenever you enter a Rest Site, start the next combat with an additional 2."
+    },
+    {
+      "id": "VERY_HOT_COCOA",
+      "imagePath": "/images/relics/very_hot_cocoa.webp",
+      "name": "Very Hot Cocoa",
+      "description": "Start each combat with an additional <e>4</e>.",
+      "descriptionClean": "Start each combat with an additional 4."
+    },
+    {
+      "id": "VEXING_PUZZLEBOX",
+      "imagePath": "/images/relics/vexing_puzzlebox.webp",
+      "name": "Vexing Puzzlebox",
+      "description": "At the start of each combat, add a random card into your <g>Hand</g>. It's free to play this turn.",
+      "descriptionClean": "At the start of each combat, add a random card into your Hand. It's free to play this turn."
+    },
+    {
+      "id": "VITRUVIAN_MINION",
+      "imagePath": "/images/relics/vitruvian_minion.webp",
+      "name": "Vitruvian Minion",
+      "description": "Cards containing “Minion” deal double damage and gain double <g>Block</g>.",
+      "descriptionClean": "Cards containing “Minion” deal double damage and gain double Block."
+    },
+    {
+      "id": "WAR_HAMMER",
+      "imagePath": "/images/relics/war_hammer.webp",
+      "name": "War Hammer",
+      "description": "Whenever you kill an <g>Elite</g>, <g>Upgrade</g> 4 random cards.",
+      "descriptionClean": "Whenever you kill an Elite, Upgrade 4 random cards."
+    },
+    {
+      "id": "WAR_PAINT",
+      "imagePath": "/images/relics/war_paint.webp",
+      "name": "War Paint",
+      "description": "Upon pickup, <g>Upgrade</g> 2 random Skills.",
+      "descriptionClean": "Upon pickup, Upgrade 2 random Skills."
+    },
+    {
+      "id": "WHETSTONE",
+      "imagePath": "/images/relics/whetstone.webp",
+      "name": "Whetstone",
+      "description": "Upon pickup, <g>Upgrade</g> 2 random Attacks.",
+      "descriptionClean": "Upon pickup, Upgrade 2 random Attacks."
+    },
+    {
+      "id": "WHISPERING_EARRING",
+      "imagePath": "/images/relics/whispering_earring.webp",
+      "name": "Whispering Earring",
+      "description": "Gain <e>1</e> at the start of each turn. Vakuu plays your first turn for you.",
+      "descriptionClean": "Gain 1 at the start of each turn. Vakuu plays your first turn for you."
+    },
+    {
+      "id": "WHITE_BEAST_STATUE",
+      "imagePath": "/images/relics/white_beast_statue.webp",
+      "name": "White Beast Statue",
+      "description": "<g>Potions</g> always appear in combat rewards.",
+      "descriptionClean": "Potions always appear in combat rewards."
+    },
+    {
+      "id": "WHITE_STAR",
+      "imagePath": "/images/relics/white_star.webp",
+      "name": "White Star",
+      "description": "<g>Elites</g> drop an additional <g>Rare</g> card reward.",
+      "descriptionClean": "Elites drop an additional Rare card reward."
+    },
+    {
+      "id": "WING_CHARM",
+      "imagePath": "/images/relics/wing_charm.webp",
+      "name": "Wing Charm",
+      "description": "A random card in each card reward is <g>Enchanted</g> with Swift 1.",
+      "descriptionClean": "A random card in each card reward is Enchanted with Swift 1."
+    },
+    {
+      "id": "WINGED_BOOTS",
+      "imagePath": "/images/relics/winged_boots.webp",
+      "name": "Winged Boots",
+      "description": "You may ignore paths when choosing the next rooms to travel to 3 times.",
+      "descriptionClean": "You may ignore paths when choosing the next rooms to travel to 3 times."
+    },
+    {
+      "id": "WONGO_CUSTOMER_APPRECIATION_BADGE",
       "imagePath": "/images/relics/wongo_customer_appreciation_badge.webp",
       "name": "Wongo Customer Appreciation Badge",
-      "description": "Does nothing."
+      "description": "Does nothing.",
+      "descriptionClean": "Does nothing."
+    },
+    {
+      "id": "WONGOS_MYSTERY_TICKET",
+      "imagePath": "/images/relics/wongos_mystery_ticket.webp",
+      "name": "Wongo's Mystery Ticket",
+      "description": "Receive 3 random <g>Relics</g> after 5 combats.",
+      "descriptionClean": "Receive 3 random Relics after 5 combats."
+    },
+    {
+      "id": "YUMMY_COOKIE",
+      "imagePath": "/images/relics/yummy_cookie_defect.webp",
+      "name": "Yummy Cookie",
+      "description": "Upon pickup, <g>Upgrade</g> 4 cards.",
+      "descriptionClean": "Upon pickup, Upgrade 4 cards."
     }
   ]
 }

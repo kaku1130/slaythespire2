@@ -1,0 +1,251 @@
+{
+  "sources": [
+    "https://slaythespire2.net/card",
+    "https://slaythespire2.net/zh-TW/card"
+  ],
+  "checkedAt": "2026-11-23T05:24:28.660Z",
+  "total": 569,
+  "matched": 569,
+  "changedCards": 17,
+  "changes": [
+    {
+      "id": "BIG_BANG",
+      "language": "en",
+      "field": "base",
+      "before": "Draw 1 card.\nGain <e/>.\nGain 1<s/>.\n<g>Forge</g> 5.\n<g>Exhaust</g>.",
+      "after": "Draw 1 card.\nGain <e/>.\nGain <s/>.\n<g>Forge</g> 5.\n<g>Exhaust</g>."
+    },
+    {
+      "id": "BIG_BANG",
+      "language": "en",
+      "field": "upgraded",
+      "before": "<g>Innate</g>.\nDraw 1 card.\nGain <e/>.\nGain 1<s/>.\n<g>Forge</g> 5.\n<g>Exhaust</g>.",
+      "after": "<g>Innate</g>.\nDraw 1 card.\nGain <e/>.\nGain <s/>.\n<g>Forge</g> 5.\n<g>Exhaust</g>."
+    },
+    {
+      "id": "BLACK_HOLE",
+      "language": "en",
+      "field": "base",
+      "before": "Whenever you spend or gain 1<s/>, deal 3 damage to ALL enemies.",
+      "after": "Whenever you spend or gain <s/>, deal 3 damage to ALL enemies."
+    },
+    {
+      "id": "BLACK_HOLE",
+      "language": "en",
+      "field": "upgraded",
+      "before": "Whenever you spend or gain 1<s/>, deal 4 damage to ALL enemies.",
+      "after": "Whenever you spend or gain <s/>, deal 4 damage to ALL enemies."
+    },
+    {
+      "id": "CHILD_OF_THE_STARS",
+      "language": "en",
+      "field": "base",
+      "before": "Whenever you spend 1<s/>, gain 2 <g>Block</g> for each 1<s/> spent.",
+      "after": "Whenever you spend <s/>, gain 2 <g>Block</g> for each <s/> spent."
+    },
+    {
+      "id": "CHILD_OF_THE_STARS",
+      "language": "en",
+      "field": "upgraded",
+      "before": "Whenever you spend 1<s/>, gain 3 <g>Block</g> for each 1<s/> spent.",
+      "after": "Whenever you spend <s/>, gain 3 <g>Block</g> for each <s/> spent."
+    },
+    {
+      "id": "CONVERGENCE",
+      "language": "en",
+      "field": "base",
+      "before": "Next turn,\ngain <e/> and 1<s/>.\n<g>Retain</g> your <g>Hand</g> this turn.",
+      "after": "Next turn,\ngain <e/> and <s/>.\n<g>Retain</g> your <g>Hand</g> this turn."
+    },
+    {
+      "id": "CONVERGENCE",
+      "language": "en",
+      "field": "upgraded",
+      "before": "Next turn,\ngain <e/> and 2<s/>.\n<g>Retain</g> your <g>Hand</g> this turn.",
+      "after": "Next turn,\ngain <e/> and <s/><s/>.\n<g>Retain</g> your <g>Hand</g> this turn."
+    },
+    {
+      "id": "CRESCENT_SPEAR",
+      "language": "en",
+      "field": "base",
+      "before": "Deal 8 damage.\nDeals 2 additional damage for ALL your cards that have a 1<s/> cost.",
+      "after": "Deal 8 damage.\nDeals 2 additional damage for ALL your cards that have a <s/> cost."
+    },
+    {
+      "id": "CRESCENT_SPEAR",
+      "language": "en",
+      "field": "upgraded",
+      "before": "Deal 8 damage.\nDeals 3 additional damage for ALL your cards that have a 1<s/> cost.",
+      "after": "Deal 8 damage.\nDeals 3 additional damage for ALL your cards that have a <s/> cost."
+    },
+    {
+      "id": "GATHER_LIGHT",
+      "language": "en",
+      "field": "base",
+      "before": "Gain 8 <g>Block</g>.\nGain 1<s/>.",
+      "after": "Gain 8 <g>Block</g>.\nGain <s/>."
+    },
+    {
+      "id": "GATHER_LIGHT",
+      "language": "en",
+      "field": "upgraded",
+      "before": "Gain 11 <g>Block</g>.\nGain 1<s/>.",
+      "after": "Gain 11 <g>Block</g>.\nGain <s/>."
+    },
+    {
+      "id": "GENESIS",
+      "language": "en",
+      "field": "base",
+      "before": "At the start of your turn, gain 2<s/>.",
+      "after": "At the start of your turn, gain <s/><s/>."
+    },
+    {
+      "id": "GENESIS",
+      "language": "en",
+      "field": "upgraded",
+      "before": "At the start of your turn, gain 3<s/>.",
+      "after": "At the start of your turn, gain <s/><s/><s/>."
+    },
+    {
+      "id": "GLOW",
+      "language": "en",
+      "field": "base",
+      "before": "Gain 1<s/>.\nDraw 1 card.\nNext turn, draw 1 card.",
+      "after": "Gain <s/>.\nDraw 1 card.\nNext turn, draw 1 card."
+    },
+    {
+      "id": "GLOW",
+      "language": "en",
+      "field": "upgraded",
+      "before": "Gain 2<s/>.\nDraw 1 card.\nNext turn, draw 1 card.",
+      "after": "Gain <s/><s/>.\nDraw 1 card.\nNext turn, draw 1 card."
+    },
+    {
+      "id": "HIDDEN_CACHE",
+      "language": "en",
+      "field": "base",
+      "before": "Gain 1<s/>.\nNext turn, gain 3<s/>.",
+      "after": "Gain <s/>.\nNext turn, gain <s/><s/><s/>."
+    },
+    {
+      "id": "HIDDEN_CACHE",
+      "language": "en",
+      "field": "upgraded",
+      "before": "Gain 1<s/>.\nNext turn, gain 4<s/>.",
+      "after": "Gain <s/>.\nNext turn, gain <s/><s/><s/><s/>."
+    },
+    {
+      "id": "KNOCKOUT_BLOW",
+      "language": "en",
+      "field": "base",
+      "before": "Deal 30 damage.\nIf this kills an enemy, gain 5<s/>.",
+      "after": "Deal 30 damage.\nIf this kills an enemy, gain <s/><s/><s/><s/><s/>."
+    },
+    {
+      "id": "KNOCKOUT_BLOW",
+      "language": "en",
+      "field": "upgraded",
+      "before": "Deal 38 damage.\nIf this kills an enemy, gain 5<s/>.",
+      "after": "Deal 38 damage.\nIf this kills an enemy, gain <s/><s/><s/><s/><s/>."
+    },
+    {
+      "id": "ORBIT",
+      "language": "en",
+      "field": "base",
+      "before": "Every 4<e/> you spend,\ngain <e/>.",
+      "after": "Every <e/> you spend,\ngain <e/>."
+    },
+    {
+      "id": "ORBIT",
+      "language": "en",
+      "field": "upgraded",
+      "before": "Every 4<e/> you spend,\ngain <e/>.",
+      "after": "Every <e/> you spend,\ngain <e/>."
+    },
+    {
+      "id": "RADIATE",
+      "language": "en",
+      "field": "base",
+      "before": "Deal 3 damage to ALL enemies for each 1<s/> gained this turn.",
+      "after": "Deal 3 damage to ALL enemies for each <s/> gained this turn."
+    },
+    {
+      "id": "RADIATE",
+      "language": "en",
+      "field": "upgraded",
+      "before": "Deal 4 damage to ALL enemies for each 1<s/> gained this turn.",
+      "after": "Deal 4 damage to ALL enemies for each <s/> gained this turn."
+    },
+    {
+      "id": "ROYAL_GAMBLE",
+      "language": "en",
+      "field": "base",
+      "before": "Gain 9 1<s/>.\n<g>Exhaust</g>.",
+      "after": "Gain 9 <s/>.\n<g>Exhaust</g>."
+    },
+    {
+      "id": "ROYAL_GAMBLE",
+      "language": "en",
+      "field": "upgraded",
+      "before": "<g>Retain</g>.\nGain 9 1<s/>.\n<g>Exhaust</g>.",
+      "after": "<g>Retain</g>.\nGain 9 <s/>.\n<g>Exhaust</g>."
+    },
+    {
+      "id": "SHINING_STRIKE",
+      "language": "en",
+      "field": "base",
+      "before": "Deal 8 damage.\nGain 2<s/>.\nPut this card on top of your <g>Draw Pile</g>.",
+      "after": "Deal 8 damage.\nGain <s/><s/>.\nPut this card on top of your <g>Draw Pile</g>."
+    },
+    {
+      "id": "SHINING_STRIKE",
+      "language": "en",
+      "field": "upgraded",
+      "before": "Deal 11 damage.\nGain 2<s/>.\nPut this card on top of your <g>Draw Pile</g>.",
+      "after": "Deal 11 damage.\nGain <s/><s/>.\nPut this card on top of your <g>Draw Pile</g>."
+    },
+    {
+      "id": "SOLAR_STRIKE",
+      "language": "en",
+      "field": "base",
+      "before": "Deal 9 damage.\nGain 1<s/>.",
+      "after": "Deal 9 damage.\nGain <s/>."
+    },
+    {
+      "id": "SOLAR_STRIKE",
+      "language": "en",
+      "field": "upgraded",
+      "before": "Deal 10 damage.\nGain 2<s/>.",
+      "after": "Deal 10 damage.\nGain <s/><s/>."
+    },
+    {
+      "id": "THE_SEALED_THRONE",
+      "language": "en",
+      "field": "base",
+      "before": "Whenever you play a card, gain 1<s/>.",
+      "after": "Whenever you play a card, gain <s/>."
+    },
+    {
+      "id": "THE_SEALED_THRONE",
+      "language": "en",
+      "field": "upgraded",
+      "before": "Whenever you play a card, gain 1<s/>.",
+      "after": "Whenever you play a card, gain <s/>."
+    },
+    {
+      "id": "VENERATE",
+      "language": "en",
+      "field": "base",
+      "before": "Gain 2<s/>.",
+      "after": "Gain <s/><s/>."
+    },
+    {
+      "id": "VENERATE",
+      "language": "en",
+      "field": "upgraded",
+      "before": "Gain 3<s/>.",
+      "after": "Gain <s/><s/><s/>."
+    }
+  ],
+  "unmatched": []
+}

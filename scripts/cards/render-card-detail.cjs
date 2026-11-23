@@ -47,7 +47,7 @@ function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds =
     if (typeIndex !== -1 && rarityIndex !== -1) [statRows[typeIndex], statRows[rarityIndex]] = [statRows[rarityIndex], statRows[typeIndex]];
   }
   const renderStat = ({label, value}) => {
-    const rendered = label === 'Character' ? '<img src="' + card.characterIcon + '" alt="' + (metadataAboveEffects ? esc(value) : '') + '"' + (metadataAboveEffects ? ' title="' + esc(value) + '"' : '') + '>' + (metadataAboveEffects ? '' : esc(value)) : label === 'Rarity' ? '<span class="' + (metadataAboveEffects ? 'detail-plain-rarity' : 'rarity-label') + '" data-label-rarity="' + esc(value) + '">' + esc(value) + '</span>' : effect(value).replaceAll(icons.energy, label === 'Energy cost' ? icons.energyFor(card.character) : icons.energy).replace(/→/g, '<span class="detail-cost-arrow" aria-label="upgrades to">→</span>');
+    const rendered = label === 'Character' ? '<img src="' + card.characterIcon + '" alt="' + (metadataAboveEffects ? esc(value) : '') + '"' + (metadataAboveEffects ? ' title="' + esc(value) + '"' : '') + '>' + (metadataAboveEffects ? '' : esc(value)) : label === 'Rarity' ? '<span class="' + (metadataAboveEffects ? 'detail-plain-rarity' : 'rarity-label') + '" data-label-rarity="' + esc(value) + '">' + esc(value) + '</span>' : label === 'Type' ? '<span class="detail-type-label" data-type="' + esc(value) + '">' + esc(value) + '</span>' : effect(value).replaceAll(icons.energy, label === 'Energy cost' ? icons.energyFor(card.character) : icons.energy).replace(/→/g, '<span class="detail-cost-arrow" aria-label="upgrades to">→</span>');
     return '<div class="' + (metadataAboveEffects ? 'detail-meta-item' : 'detail-stat') + '"><dt>' + esc(label) + '</dt><dd' + (label === 'Type' ? ' data-type="' + esc(value) + '"' : label === 'Rarity' ? ' data-stat-rarity="' + esc(value) + '"' : label === 'Character' ? ' data-stat-character="' + esc(value) + '"' : '') + '>' + rendered + '</dd></div>';
   };
   const stats = statRows.filter(stat => !metadataAboveEffects || !['Character','Type'].includes(stat.label)).map(renderStat).join('');
@@ -61,7 +61,7 @@ function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds =
     return '<a class="detail-build" href="' + esc(buildLink(card, build, localBuilds)) + '"><span class="detail-build-tier" data-tier="' + esc(build.tier) + '">' + esc(build.tier) + '</span><span><span class="detail-build-name">' + esc(build.name) + '</span><span class="detail-build-meta">' + esc(build.character) + ' · ' + esc(build.role) + '</span></span></a>';
   }).join('') : '';
   const tierList = showTierRating && card.tier && ['Ironclad', 'Silent', 'Defect', 'Necrobinder', 'Regent'].includes(card.character)
-    ? new URL('/card-tier-list/' + card.character.toLowerCase(), card.source).href : null;
+    ? new URL('/zh-TW/card-tier-list/' + card.character.toLowerCase(), card.source).href : null;
   const tierDescription = 'Ranked ' + card.tier + ' tier in our ' + card.character + ' card tier list.';
   const tierBadge = tierList ? '<a class="detail-inline-tier" data-tier="' + esc(card.tier) + '" aria-label="Tier ' + esc(card.tier) + '" href="' + esc(tierList) + '" target="_blank" rel="noopener noreferrer">Tier ' + esc(card.tier) + '</a>' : '';
   const characterMetadata = metadataAboveEffects && tierBadge && !tierBesideName && !cornerMetadata ? '<dl class="detail-character-metadata" aria-label="Tier"><div class="detail-meta-item detail-tier-item"><dt>Tier</dt><dd>' + tierBadge + '</dd></div></dl>' : '';
