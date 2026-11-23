@@ -16,9 +16,10 @@
   html body .site-header .site-nav a {flex:1 1 0;min-width:0;min-height:44px;padding:4px!important;gap:0;font-size:24px}
 }
 
-/* Compact, right-aligned navigation. */
+/* Compact, right-aligned navigation with a GitHub brand icon. */
 html body .site-header .site-nav {flex:0 1 auto!important;width:auto!important;margin-left:auto;justify-content:flex-end}
 html body .site-header .site-nav a {flex:0 0 auto!important}
+html body .site-header .site-logo {content:normal}
 
 /* Show navigation labels whenever tablet-sized widths have enough room, regardless of input device. */
 @media screen and (min-width:700px) and (max-width:1366px) {
@@ -132,8 +133,6 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
   html body .site-header .site-brand {display:none!important}
 }
 
-/* Preserve the full logo proportions across bundled page styles. */
-html body .site-header .site-logo {content:normal;width:96px;height:54px;object-fit:contain}
 /* Brand visibility is shared by every page, including bundled legacy styles. */
 @media screen and (min-width:601px) {
   html body .site-header .site-brand {display:flex!important}
@@ -332,9 +331,10 @@ html body main#main-content .filters,html body main#main-content .tools .primary
   html body .site-header .site-nav a {flex:1 1 0;min-width:0;min-height:44px;padding:4px!important;gap:0;font-size:24px}
 }
 
-/* Compact, right-aligned navigation. */
+/* Compact, right-aligned navigation with a GitHub brand icon. */
 html body .site-header .site-nav {flex:0 1 auto!important;width:auto!important;margin-left:auto;justify-content:flex-end}
 html body .site-header .site-nav a {flex:0 0 auto!important}
+html body .site-header .site-logo {content:normal}
 
 /* Show navigation labels whenever tablet-sized widths have enough room, regardless of input device. */
 @media screen and (min-width:700px) and (max-width:1366px) {
@@ -903,8 +903,6 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
   html body .site-header .site-brand {display:none!important}
 }
 
-/* Preserve the full logo proportions across bundled page styles. */
-html body .site-header .site-logo {content:normal;width:96px;height:54px;object-fit:contain}
 /* Brand visibility is shared by every page, including bundled legacy styles. */
 @media screen and (min-width:601px) {
   html body .site-header .site-brand {display:flex!important}
@@ -1667,8 +1665,6 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
   html body .site-header .site-brand {display:none!important}
 }
 
-/* Preserve the full logo proportions across bundled page styles. */
-html body .site-header .site-logo {content:normal;width:96px;height:54px;object-fit:contain}
 /* Brand visibility is shared by every page, including bundled legacy styles. */
 @media screen and (min-width:601px) {
   html body .site-header .site-brand {display:flex!important}
@@ -1709,3 +1705,6 @@ html body .site-header .site-logo {content:normal;width:96px;height:54px;object-
     position:static!important;top:auto;
   }
 }
+
+/* Shared brand image matches the ancient navigation icon. */
+html body .site-header .site-logo {content:normal}

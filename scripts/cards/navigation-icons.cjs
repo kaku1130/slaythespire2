@@ -43,8 +43,8 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 }
 `;
 const brandStyles = `
-/* Preserve the full logo proportions across bundled page styles. */
-html body .site-header .site-logo {content:normal;width:96px;height:54px;object-fit:contain}
+/* Use the image source even when bundled legacy styles replace the logo. */
+html body .site-header .site-logo {content:normal}
 /* Brand visibility is shared by every page, including bundled legacy styles. */
 @media screen and (min-width:601px) {
   html body .site-header .site-brand {display:flex!important}
