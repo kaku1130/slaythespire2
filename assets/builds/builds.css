@@ -1218,6 +1218,7 @@ html body .card-detail[data-card-layout=compact] .detail-effect-columns {grid-te
 html body .card-detail[data-card-layout=compact] .detail-effect-columns > .detail-effect-panel {display:grid;grid-row:span 2;grid-template-rows:subgrid;min-width:0;overflow-wrap:anywhere;border:0;border-radius:0;background:transparent}
 html body .card-detail[data-card-layout=compact] .detail-effect-panel .detail-panel-cost {grid-row:1;align-self:start}
 html body .card-detail[data-card-layout=compact] .detail-effect-panel .detail-panel-description {grid-row:2;align-self:start;margin-top:9px}
+html body #card-scroll .card-detail .detail-effect-panel .detail-panel-description {width:80%;justify-self:center;margin-inline:auto;text-align:center}
 html body .card-detail[data-card-layout=compact] .detail-effect-columns > .detail-effect-panel + .detail-effect-panel {border-left:1px solid #303d4e}
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .card-detail[data-card-layout=compact] .detail-effect-columns {grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-auto-rows:1fr}
