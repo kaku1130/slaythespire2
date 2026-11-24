@@ -14,7 +14,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
     await route.fulfill({status:200,contentType,body:fs.readFileSync(file)});
    });
    page.on('pageerror',error=>errors.push(error.message));
-   const url=mode==='file'?pathToFileURL(path.resolve('card.html')).href:'http://cards.test/card.html';await page.goto(url);
+   const url=mode==='file'?pathToFileURL(path.resolve('Cards.html')).href:'http://cards.test/Cards.html';await page.goto(url);
    assert.equal(await page.locator('.card-language-toggle,[data-effect-language]').count(),0);
    const rendered=await page.locator('.card-detail-row').evaluateAll(rows=>rows.map(row=>({id:row.dataset.id,name:row.querySelector('.detail-name-zh').textContent,href:row.querySelector('.detail-name-en').href,panels:[...row.querySelectorAll('.detail-panel-description')].map(node=>{
     const clone=node.cloneNode(true);for(const br of clone.querySelectorAll('br'))br.replaceWith('\n');
@@ -40,7 +40,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
    assert.deepEqual(errors,[]);console.log('PASS '+mode+': 568 exact source effects/colors; 569 Chinese names/links, generic Mad Science, English-only display and search.');await context.close();
   }
   const credit=require('./source-credit.cjs');
-  for(const file of ['card.html','build.html','relic.html','potion.html','ancient.html'])assert(fs.readFileSync(file,'utf8').includes(credit),file+' exact requested footer');
+  for(const file of ['Cards.html','Characters.html','Relics.html','Potions.html','Ancients.html'])assert(fs.readFileSync(file,'utf8').includes(credit),file+' exact requested footer');
   console.log('PASS: requested source footer on all six pages.');
  }finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});

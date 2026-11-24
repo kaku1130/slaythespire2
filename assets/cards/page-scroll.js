@@ -18,3 +18,18 @@ html body>.site-page-scroll main#main-content#main-content#main-content :is(.spl
   main.before(scroller);
   scroller.append(main);
 })();
+
+// Native details keeps the navigation usable without JavaScript; add dismissal shortcuts.
+document.addEventListener('click',event=>{
+  for(const menu of document.querySelectorAll('.game-info-dropdown[open]')){
+    if(!menu.contains(event.target)||event.target.closest('.game-info-menu a'))menu.open=false;
+  }
+});
+document.addEventListener('keydown',event=>{
+  if(event.key!=='Escape')return;
+  for(const menu of document.querySelectorAll('.game-info-dropdown[open]')){
+    menu.open=false;
+    menu.querySelector('summary').focus();
+    event.preventDefault();
+  }
+});

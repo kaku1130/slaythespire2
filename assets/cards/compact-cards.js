@@ -9,6 +9,20 @@
   update();
 
   document.addEventListener('click', event => {
+    const button = event.target.closest('[data-card-version]');
+    if (!button || button.disabled) return;
+    const card = button.closest('[data-catalog-layout]');
+    if (!card) return;
+    const upgraded = button.getAttribute('aria-pressed') !== 'true';
+    const version = upgraded ? 'upgraded' : 'base';
+    button.setAttribute('aria-pressed', String(upgraded));
+    card.dataset.effectVersion = version;
+    for (const panel of card.querySelectorAll('.detail-effect-panel')) {
+      panel.hidden = panel.getAttribute('aria-label').toLowerCase() !== version;
+    }
+  });
+
+  document.addEventListener('click', event => {
     const button = event.target.closest('[data-effect-search]');
     const search = document.getElementById('search');
     if (!button || !search) return;

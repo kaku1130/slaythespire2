@@ -2,11 +2,11 @@
 
 本機靜態頁面：
 
-- [先古之民](ancient.html)
-- [流派](build.html)
-- [卡牌](card.html)
-- [藥水](potion.html)
-- [遺物](relic.html)
+- [先古之民](Ancients.html)
+- [角色](Characters.html)
+- [卡牌](Cards.html)
+- [藥水](Potions.html)
+- [遺物](Relics.html)
 
 使用 Node.js 重新產生頁面：
 
@@ -18,6 +18,12 @@ node scripts/potion/build-potion.cjs
 node scripts/relic/build-relic.cjs
 ```
 
-卡牌產生程式也會同步產生流派頁面。assets、data、scripts 保留這五頁及其重建依賴；cards、event 目錄含共用工具，monster 目錄僅保留導覽圖示與先古之民使用的共用圖示資料。
+卡牌產生程式也會同步產生角色頁面。assets、data、scripts 保留這五頁及其重建依賴；cards、event 目錄含共用工具，monster 目錄僅保留導覽圖示與先古之民使用的共用圖示資料。
 
 本機瀏覽器完整性檢查：`node scripts/cards/verify-site.cjs`（使用 Codex 環境提供的 Playwright 與本機 Chrome）。
+
+角色頁資料來源：[Untapped Characters](https://sts2.untapped.gg/en/characters)。`data/builds/source/` 保存來源快照，`data/builds/characters.json` 與 `assets/builds/images/` 保存離線內容及圖片。角色頁沿用 `Characters.html` 與既有重建入口；重建不需連線。更新來源時執行 `python scripts/builds/sync-characters.py --refresh`，再執行 `node scripts/builds/build-builds.cjs`。
+
+角色頁離線檢查：`node scripts/builds/verify-characters.cjs`（斷網測試角色切換、詳細內容、卡牌、圖片及全站角色導覽）。
+
+卡牌 Tier 區塊顯示既有 Jorbs 評級與離線評語。更新評語：`node scripts/cards/sync-creator-comments.cjs`；使用已下載來源重建：加上 `--cached`。再執行 `node scripts/cards/build-card1.cjs --promote` 更新卡牌頁。

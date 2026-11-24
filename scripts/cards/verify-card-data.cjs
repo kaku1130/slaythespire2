@@ -22,7 +22,7 @@ async function main(){
  try{
   for(const width of [1440,1920]){
    const page=await browser.newPage({viewport:{width,height:1100}}),errors=[];page.on('pageerror',error=>errors.push(error.message));
-   await page.goto(pathToFileURL(path.resolve('card.html')).href);
+   await page.goto(pathToFileURL(path.resolve('Cards.html')).href);
    const rendered=await page.locator('.card-detail-row').evaluateAll(rows=>rows.map(row=>{
     const text=element=>{const copy=element.cloneNode(true);for(const br of copy.querySelectorAll('br'))br.replaceWith('\n');return copy.textContent.replace(/\s+/g,' ').trim();};
    const panels=row.querySelectorAll('.detail-panel-description');

@@ -2,12 +2,11 @@ const fs = require('node:fs');
 const path = require('node:path');
 // Match the category tiles at the top of https://slaythespire2.net/.
 const files = {
-  builds:['assets/cards/source/cards/necrobinder/soul_storm.webp','cover'],
+  builds:['assets/cards/icons/ironclad.webp','contain'],
   cards:['assets/cards/icons/nav-cards.webp','cover'],
   relic:['assets/relic/images/nav-relics.webp','contain'],
   potion:['assets/potion/images/nav-potions.webp','contain'],
-  ancient:['assets/ancient/images/icon/neow.webp','contain'],
-  monster:['assets/monster/images/the-insatiable.webp','contain']
+  ancient:['assets/ancient/images/icon/neow.webp','contain']
 };
 const columnCount=Object.keys(files).length;
 const navigationWidth=columnCount*62+(columnCount-1)*4;
@@ -61,3 +60,23 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
 }
 `;
 module.exports = {icons,styles:styles+brandStyles};
+
+module.exports.styles += `
+/* Scale desktop navigation artwork and buttons together by 25%. */
+@media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
+  html body .site-header .site-nav {
+    grid-template-columns:repeat(${columnCount},77.5px)!important;
+    grid-auto-columns:77.5px!important;
+    flex:0 1 ${columnCount*77.5+(columnCount-1)*5}px!important;width:${columnCount*77.5+(columnCount-1)*5}px!important;gap:5px;
+  }
+  html body .site-header .site-nav > a {
+    flex:0 0 77.5px!important;width:77.5px!important;min-width:77.5px!important;max-width:77.5px!important;
+    height:65px!important;min-height:65px!important;max-height:65px!important;
+    padding:7.5px 15px!important;border-radius:7.5px;
+  }
+  html body .site-header .site-nav a > .site-nav-visual {flex:0 0 45px;width:45px;height:45px}
+  html body .site-header .site-nav .site-nav-icon {width:45px!important;height:45px!important;border-radius:7.5px!important}
+}
+`;
+
+module.exports.styles += require('./game-info-menu.cjs').styles;

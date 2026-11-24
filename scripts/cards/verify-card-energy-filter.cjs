@@ -22,7 +22,7 @@ const discounted=card=>{
     await route.fulfill({status:200,contentType:type,body:fs.readFileSync(requested)});
    });
    const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
-   const url=mode==='file'?pathToFileURL(path.resolve('card.html')).href:'http://cards.test/card.html';
+   const url=mode==='file'?pathToFileURL(path.resolve('Cards.html')).href:'http://cards.test/Cards.html';
    await page.goto(url);
    const group=page.locator('#card-filter-energy'),button=value=>group.locator('button').filter({hasText:new RegExp('^'+value.replace('+','\\+')+'$')});
    const gainButton=group.locator('button[value=gain]');

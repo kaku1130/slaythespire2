@@ -37181,7 +37181,7 @@
       "tier": null,
       "effect": {
         "base": "Osty deals 10 damage. Deals additional damage equal to Osty's Max HP.",
-        "upgraded": "Cost changes from 1 to 0Osty deals 15 damage. Deals additional damage equal to Osty's Max HP."
+        "upgraded": "Osty deals 15 damage. Deals additional damage equal to Osty's Max HP."
       },
       "stats": [
         {
@@ -37247,18 +37247,6 @@
           }
         ],
         "upgraded": [
-          {
-            "text": "Cost changes from "
-          },
-          {
-            "text": "1"
-          },
-          {
-            "text": " to "
-          },
-          {
-            "text": "0"
-          },
           {
             "text": "Osty",
             "color": "#efc851"

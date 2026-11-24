@@ -1,0 +1,77 @@
+:root{color-scheme:dark;--character-line:#29333f;--character-muted:#aab6c4}
+html{background:#040609;scroll-behavior:auto}
+body.characters-page{margin:0;background:#040609;color:#e3e8ee;font:16px/1.7 Arial,"Microsoft JhengHei",sans-serif}
+.characters-page *{box-sizing:border-box}
+.characters-page [hidden]{display:none!important}
+.characters-page a{color:#8bcaf0;text-underline-offset:4px}
+.characters-page a:focus-visible{outline:2px solid #37a8ec;outline-offset:4px}
+.characters-page main#main-content{min-height:calc(100vh - 82px);padding-bottom:32px}
+.characters-heading{padding:0 0 12px;max-width:1480px;margin:auto}
+.characters-heading h1{font-size:36px;line-height:1.2;margin:0}
+.character-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:1480px;margin:auto}
+.character-tile{position:relative;display:block;min-height:285px;border:1px solid #34404c;border-radius:10px;overflow:hidden;text-decoration:none;background:#0f161e;isolation:isolate}
+.character-tile>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 25%;transition:transform .2s}
+.character-tile::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#04060900 5%,#04060977 45%,#040609f5 100%)}
+.character-tile>img{z-index:-2}
+.character-tile:hover{border-color:var(--character-accent)}
+.character-tile:hover>img{transform:scale(1.035)}
+.character-tile-content{position:absolute;inset:auto 0 0;padding:22px;color:#fff}
+.character-tile-name{display:block;color:var(--character-accent);font-size:30px;font-weight:700;line-height:1.2}
+.character-tile-zh{display:block;color:var(--character-accent);font-size:15px;margin:4px 0 9px}
+.character-tags{display:flex;flex-wrap:wrap;gap:7px;font-size:18px}
+.character-tags>:is(span,a){padding:3px 8px;border-radius:4px;border:1px solid #ffffff30;background:#0406099e;color:var(--character-accent);white-space:nowrap}
+.character-toolbar{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:1480px;margin:16px auto}
+.character-back{font-size:22.5px;text-decoration:none;white-space:nowrap}
+.character-panel{max-width:1480px;margin:auto}
+.character-hero{height:275px;position:relative;isolation:isolate;overflow:hidden;border:1px solid #34404c;border-radius:9px;margin-bottom:28px;background:#0d141c}
+.character-hero>img{position:absolute;z-index:-2;width:100%;height:100%;inset:0;object-fit:cover;object-position:center 30%}
+.character-hero::after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,#040609e8,#04060988 45%,#04060922)}
+.character-hero>div{position:absolute;bottom:28px;left:32px}
+.character-hero p{margin:0;color:var(--character-accent);font-size:25.5px}
+.character-hero h1{color:var(--character-accent);font-size:72px;line-height:1.2;margin:4px 0 16px}
+.character-reading-layout{display:block}
+.character-prose{min-width:0;max-width:1100px;font-size:25.5px;line-height:1.85;color:#cbd5df}
+.character-prose h2{font-size:39px;line-height:1.4;color:#f0f3f7;margin:34px 0 14px;scroll-margin-top:110px}
+.character-prose h3{font-size:31.5px;line-height:1.5;color:#e3e8ee;margin:28px 0 12px;scroll-margin-top:110px}
+.character-prose h4{font-size:27px;color:#e3e8ee;margin:22px 0 10px}
+.character-prose p{margin:0 0 16px}
+.character-prose ul,.character-prose ol{padding-left:24px}
+.character-prose li{margin:8px 0}
+.character-prose hr{border:0;border-top:1px solid var(--character-line);margin:16px 0}
+.character-prose hr+:is(h2,h3,h4){margin-top:16px}
+.character-prose .guide-image{display:block;max-width:100%;max-height:280px;width:auto;height:auto;margin:20px auto;object-fit:contain}
+.character-prose .inline-resource{display:inline-block;max-width:39px;max-height:39px;width:auto;height:auto;vertical-align:middle;margin-right:4px}
+.character-card-group{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:14px;margin:20px 0 28px}
+.guide-card{margin:0;background:#0c131b;border:1px solid #2a3543;border-radius:8px;overflow:hidden;color:#cbd5df;min-width:0;font-size:21px;line-height:1.65}
+.guide-card-art{display:block;background:#111922;height:148px;overflow:hidden}
+.guide-card-art img{display:block;width:100%;height:100%;object-fit:cover}
+.guide-card figcaption{padding:14px}
+.guide-card-zh,.guide-card-name,.guide-card-meta{display:block}
+.guide-card-zh{font-weight:700;font-size:25.5px}
+.guide-card-name{font-size:22.5px;font-weight:600;text-decoration:none}
+.guide-card-meta{font-size:18px;color:#91a0b2;text-transform:capitalize;margin:4px 0 10px}
+.guide-card figcaption p{font-size:21px;margin:0}
+.guide-card .effect-resource{display:inline-block;width:27px;height:27px;vertical-align:middle}
+.character-source{border-top:1px solid var(--character-line);padding-top:20px;margin-top:32px!important;font-size:19.5px;color:var(--character-muted)}
+.fool-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.fool-card-art{width:100%;height:155px;object-fit:cover;display:block}
+.fool-card>div{padding:16px}
+.fool-card h2{font-size:30px;line-height:1.3;margin:0 0 8px}
+.fool-card p{margin:0 0 8px;font-size:21px}
+.beta-description{color:var(--character-muted);margin-bottom:24px!important}
+@media print{.character-toolbar{display:none}.character-reading-layout{display:block}}
+
+/* Card names share the rarity palette used by the card catalog. */
+.character-prose .guide-card :is(.guide-card-zh,.guide-card-name),.character-prose .fool-card h2{color:var(--rarity-color,var(--card-name-color,#b9c2cc))}
+
+.character-tags>.character-build-link{text-decoration:none;cursor:pointer}
+.character-tags>.character-build-link:hover{border-color:var(--character-accent);background:color-mix(in srgb,var(--character-accent) 20%,#040609);text-decoration:underline}
+
+.character-tile-link{position:absolute;inset:0;z-index:1;border-radius:inherit}
+.character-tile .character-build-link{position:relative;z-index:2}
+
+@media screen and (max-width:600px) {
+ .character-grid,.fool-cards{grid-template-columns:minmax(0,1fr)}
+ .character-hero>div{left:20px;right:20px;bottom:20px}
+ .character-hero h1{font-size:clamp(32px,8vw,48px);overflow-wrap:anywhere}
+}

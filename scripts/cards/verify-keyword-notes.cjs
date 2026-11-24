@@ -7,7 +7,7 @@ const {chromium} = require(path.join(process.env.USERPROFILE, '.cache/codex-runt
   try {
     for (const width of [1440, 1920]) {
       const page = await browser.newPage({viewport:{width, height:1100}});
-      await page.goto(pathToFileURL(path.resolve('card.html')).href);
+      await page.goto(pathToFileURL(path.resolve('Cards.html')).href);
       const notes = page.locator('#card-TREMBLE .detail-keyword');
       await notes.scrollIntoViewIfNeeded();
       await notes.locator('img').evaluateAll(images => Promise.all(images.map(img => img.decode())));

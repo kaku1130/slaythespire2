@@ -5,7 +5,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
 (async()=>{
  const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
  try {
-  for(const width of [1440,1920])for(const file of ['card.html','relic.html','potion.html']){
+  for(const width of [1440,1920])for(const file of ['Cards.html','Relics.html','Potions.html']){
    const page=await browser.newPage({viewport:{width,height:1000}});
    await page.goto(pathToFileURL(path.resolve(file)).href);
    const groups=page.locator('#card-filter-rarity,.catalog-filter-buttons[aria-label=Rarity]');
@@ -13,7 +13,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
     const sizes=await groups.first().locator('button').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().width));
     assert.ok(new Set(sizes.map(Math.round)).size>1,file+' button widths follow content');
    }
-   if(file!=='potion.html')for(const name of ['Ironclad','Silent','Defect','Necrobinder','Regent']){
+   if(file!=='Potions.html')for(const name of ['Ironclad','Silent','Defect','Necrobinder','Regent']){
     const button=page.locator('#card-filter-character button,[data-catalog-filter=pool]').filter({has:page.locator('img')}).and(page.getByRole('button',{name,exact:true}));
     assert.equal(await button.count(),1);
     assert.equal(await button.textContent(),'');
@@ -26,7 +26,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
    console.log('PASS '+file+' '+width+'px: content widths, character icons and filtering, Tier A orange');
    await page.close();
   }
-  for(const file of ['build.html','ancient.html']){
+  for(const file of ['Characters.html','Ancients.html']){
    const page=await browser.newPage();await page.goto(pathToFileURL(path.resolve(file)).href);
    const tiers=page.locator('[data-tier=A]');
    const colors=await tiers.evaluateAll(nodes=>nodes.map(n=>({class:n.className,color:getComputedStyle(n).backgroundColor})));

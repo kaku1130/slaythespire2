@@ -16,7 +16,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
     await route.fulfill({status:200,contentType,body:fs.readFileSync(file)});
    });
    page.on('pageerror',error=>errors.push(error.message));
-   await page.goto(mode==='file'?pathToFileURL(path.resolve('relic.html')).href:'http://relics.test/relic.html');
+   await page.goto(mode==='file'?pathToFileURL(path.resolve('Relics.html')).href:'http://relics.test/Relics.html');
    assert.equal(await page.locator('.card-language-toggle,[data-effect-language]').count(),0);
    for(const item of items)assert.equal(await page.locator('#'+item.id+' a.relic-name-en').getAttribute('href'),item.sourceEn,item.id+' source link');
    assert.equal(await page.locator('#BURNING_BLOOD a.relic-name-en').getAttribute('href'),'https://sts2.untapped.gg/en/relics/ironclad/burning-blood');

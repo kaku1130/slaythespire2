@@ -161,10 +161,10 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(6,62px)!important;
+    grid-template-columns:repeat(5,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 392px!important;
-    width:392px!important;
+    flex:0 1 326px!important;
+    width:326px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
@@ -184,7 +184,7 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
@@ -980,10 +980,10 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(6,62px)!important;
+    grid-template-columns:repeat(5,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 392px!important;
-    width:392px!important;
+    flex:0 1 326px!important;
+    width:326px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
@@ -1003,7 +1003,7 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
@@ -2092,10 +2092,10 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(6,62px)!important;
+    grid-template-columns:repeat(5,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 392px!important;
-    width:392px!important;
+    flex:0 1 326px!important;
+    width:326px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
@@ -2115,7 +2115,7 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
@@ -2253,7 +2253,7 @@ html body .card-detail[data-card-layout=compact] .detail-inline-tier {display:in
   line-height:1.25;
   letter-spacing:-.02em;
 }
-.card-detail .detail-title a {max-width:100%;color:var(--detail-rarity-color);text-decoration:none}
+.card-detail .detail-title :is(a,.detail-name-zh) {max-width:100%;color:var(--detail-rarity-color);text-decoration:none}
 .card-detail .detail-title a:hover {text-decoration:underline;text-underline-offset:5px}
 .card-detail .detail-title .detail-name-zh {font:inherit;letter-spacing:.01em}
 .card-detail .detail-meta {display:flex;flex-wrap:wrap;align-items:center;gap:8px}
@@ -2465,10 +2465,10 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(6,62px)!important;
+    grid-template-columns:repeat(5,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 392px!important;
-    width:392px!important;
+    flex:0 1 326px!important;
+    width:326px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
@@ -2481,6 +2481,8 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
   html body .site-header .site-brand {display:none!important}
 }
 
+/* Use the image source even when bundled legacy styles replace the logo. */
+html body .site-header .site-logo {content:normal;width:112px;height:63px;object-fit:contain}
 /* Brand visibility is shared by every page, including bundled legacy styles. */
 @media screen and (min-width:601px) {
   html body .site-header .site-brand {display:flex!important}
@@ -2488,12 +2490,67 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
   html body .site-header .site-nav {display:flex!important;flex:0 0 auto!important;width:max-content!important;max-width:100%;margin-left:auto!important;justify-content:flex-end!important;gap:4px}
   html body .site-header .site-nav > a {box-sizing:border-box;flex:0 0 52px!important;width:52px!important;min-width:52px!important;max-width:52px!important;padding:6px 8px!important}
+}
+
+/* Scale desktop navigation artwork and buttons together by 25%. */
+@media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
+  html body .site-header .site-nav {
+    grid-template-columns:repeat(5,77.5px)!important;
+    grid-auto-columns:77.5px!important;
+    flex:0 1 407.5px!important;width:407.5px!important;gap:5px;
+  }
+  html body .site-header .site-nav > a {
+    flex:0 0 77.5px!important;width:77.5px!important;min-width:77.5px!important;max-width:77.5px!important;
+    height:65px!important;min-height:65px!important;max-height:65px!important;
+    padding:7.5px 15px!important;border-radius:7.5px;
+  }
+  html body .site-header .site-nav a > .site-nav-visual {flex:0 0 45px;width:45px;height:45px}
+  html body .site-header .site-nav .site-nav-icon {width:45px!important;height:45px!important;border-radius:7.5px!important}
+}
+
+/* Keep the final navigation menu outside the icon strip's clipping area. */
+html body .site-header .site-nav {overflow:visible!important}
+html body .site-header .game-info-dropdown {position:relative;align-self:center;width:132px;height:65px;font-family:Arial,"Microsoft JhengHei",sans-serif}
+html body .site-header .game-info-dropdown>summary {
+ display:flex;align-items:center;justify-content:center;gap:12px;box-sizing:border-box;
+ width:100%;height:100%;padding:0 14px;list-style:none;cursor:pointer;
+ border:1px solid #354454;border-radius:7.5px;background:#0d141c;color:#cbd5df;
+ font:600 15px/1.4 Arial,"Microsoft JhengHei",sans-serif;white-space:nowrap;
+}
+html body .site-header .game-info-dropdown>summary::-webkit-details-marker {display:none}
+html body .site-header .game-info-dropdown>summary:hover,
+html body .site-header .game-info-dropdown[open]>summary {color:#e3e8ee;border-color:#238cc2;background:#163047}
+html body .site-header .game-info-dropdown>summary:focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
+html body .site-header .game-info-chevron {display:block;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+html body .site-header .game-info-dropdown[open] .game-info-chevron {transform:translateY(2px) rotate(225deg)}
+html body .site-header .game-info-menu {
+ position:absolute;right:0;top:calc(100% + 8px);z-index:110;box-sizing:border-box;
+ width:220px;padding:6px;border:1px solid #354454;border-radius:8px;
+ background:#0d141c;box-shadow:0 12px 32px #0008;
+}
+html body .site-header .game-info-menu>a {
+ display:block!important;box-sizing:border-box;width:100%!important;min-width:0!important;max-width:none!important;
+ height:auto!important;min-height:0!important;max-height:none!important;padding:12px 14px!important;
+ margin:0;border:0;border-radius:5px;color:#cbd5df!important;text-align:left;text-decoration:none;
+ font:500 14px/1.4 Arial,"Microsoft JhengHei",sans-serif!important;
+}
+html body .site-header .game-info-menu>a:hover {color:#fff!important;background:#1b2b3a}
+@media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
+ html body .site-header .site-nav {grid-template-columns:repeat(5,77.5px) 132px!important;flex:0 1 544.5px!important;width:544.5px!important}
+}
+@media screen and (max-width:600px) {
+ html body .site-header .site-nav {display:flex!important;flex:1 1 auto!important;width:100%!important;min-width:0;gap:4px}
+ html body .site-header .site-nav>a {flex:1 1 0!important;width:auto!important;min-width:0!important;max-width:52px!important;padding:4px 0!important}
+ html body .site-header .site-nav a>.site-nav-visual {flex:0 0 32px;width:32px;height:32px}
+ html body .site-header .site-nav .site-nav-icon {width:32px!important;height:32px!important}
+ html body .site-header .game-info-dropdown {flex:0 0 108px;width:108px;height:52px}
+ html body .site-header .game-info-dropdown>summary {font-size:13px;padding:0 8px;gap:8px}
 }
 
 /* Desktop pages share one centered half-width content area below the header. */
@@ -2853,6 +2910,45 @@ html body[data-view=grid] main#main-content#main-content #card-scroll .grid-pool
 html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-child(1 of :not([hidden])) .card-detail {margin-top:0}
 html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-last-child(1 of :not([hidden])) .card-detail {margin-bottom:0}
 
+/* Catalog cards: art, names, metadata, active effect, version controls, tier. */
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:has([data-catalog-layout]) {grid-row:span 4}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview {grid-row:1 / 5;justify-items:center;text-align:center}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-art {grid-row:1;justify-self:center}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview>header {grid-row:2;display:block}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 12px;width:100%;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata {grid-row:3;display:grid;grid-template-columns:minmax(0,1fr) max-content minmax(0,1fr);align-items:center;gap:12px;margin:0;width:100%;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item:first-child {justify-self:start;text-align:left}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item:nth-child(2) {justify-self:center;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item:last-child {justify-self:end;text-align:right}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] dd[data-stat-character]>img {width:28px;height:28px}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effects {grid-row:4;display:flex;flex-direction:column;gap:8px;align-self:start;width:100%;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-columns {display:block;position:relative}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel {display:block;border:0}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel[hidden] {display:none!important}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel p {text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-panel-description {width:80%;justify-self:center;margin-inline:auto;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-version-controls {position:absolute;top:16px;right:8px;z-index:1;display:flex;justify-content:flex-end;gap:8px}
+html body main#main-content #card-scroll .detail-version-controls button {padding:4px 6px;border:1px solid #354454;border-radius:6px;background:#0d141c;color:#aab6c4;font:400 16px/1.4 Arial,"Microsoft JhengHei",sans-serif;cursor:pointer}
+html body main#main-content #card-scroll .detail-version-controls button[aria-pressed=true] {color:#7fff00;border-color:#7fff00;background:#17351a}
+html body main#main-content #card-scroll .detail-version-controls button:focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
+html body main#main-content #card-scroll .detail-version-controls button:disabled {opacity:.45;cursor:default}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-bottom-tier {grid-row:auto;justify-content:center;align-items:center;width:100%}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title>a {flex:0 1 auto;min-width:0;max-width:100%;overflow-wrap:anywhere}
+@media screen and (max-width:600px) {
+ html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:column;flex-wrap:nowrap}
+}
+/* Offline creator rating and commentary stay directly below the upgrade toggle. */
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-tier-section {width:100%;min-width:0;margin-top:8px;padding:16px;border:1px solid #303d4e;border-radius:9px;background:#101923;text-align:left}
+html body main#main-content #card-scroll .detail-tier-heading {display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:0 auto}
+html body main#main-content #card-scroll .detail-tier-comment {margin:0;color:#e3e8ee;font:400 20px/1.6 Arial,"Microsoft JhengHei",sans-serif;overflow-wrap:anywhere}
+html body main#main-content #card-scroll details.detail-tier-toggle>.detail-tier-heading {width:max-content;max-width:100%;margin-inline:auto;list-style:none;cursor:pointer}
+html body main#main-content #card-scroll details.detail-tier-toggle>.detail-tier-heading::-webkit-details-marker {display:none}
+html body main#main-content #card-scroll details.detail-tier-toggle>.detail-tier-heading:focus-visible {outline:2px solid #37a8ec;outline-offset:4px;border-radius:4px}
+html body main#main-content #card-scroll .detail-tier-source {display:inline-block;margin-top:12px;color:#8bcaf0;font:400 16px/1.5 Arial,sans-serif;text-decoration:none}
+html body main#main-content #card-scroll .detail-tier-source:hover {text-decoration:underline;text-underline-offset:4px}
+html body main#main-content #card-scroll .detail-tier-toggle {width:100%;min-width:0}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .creator-tier-badge {font-size:16px}
+
 /* Rarity uses the same filled label in filters and entry details. */
 html body main#main-content :is(.rarity-label,[data-relic-rarity],.potion-rarity-row) {
  display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;
@@ -2982,6 +3078,3 @@ html body #main-content :is([data-stat-rarity=Rare],[data-label-rarity=Rare],[da
 html body #main-content .potion-section[data-rarity=Rare] {--group-color:#efc851!important}
 html body #main-content .potion-section[data-rarity=Rare]>.potion-section-title {color:#efc851}
 html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Rare],[data-catalog-filter=rarity][value=Rare],button[data-rarity-filter=Rare],[data-filter-group=rarity][data-filter-value=Rare]) {--selection-color:#efc851!important;--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--rarity-text-color:#efc851!important;color:#efc851!important}
-
-/* Preserve the header logo proportions. */
-html body .site-header .site-logo {content:normal;width:112px;height:63px;object-fit:contain}

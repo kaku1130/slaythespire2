@@ -5,7 +5,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
 (async()=>{
  const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
  try {
-  for(const file of ['card.html','card1.html'].filter(file=>require('node:fs').existsSync(file)))for(const width of [1920,1440,390]) {
+  for(const file of ['Cards.html','card1.html'].filter(file=>require('node:fs').existsSync(file)))for(const width of [1920,1440,390]) {
    const page=await browser.newPage({viewport:{width,height:1000}});
    await page.goto(pathToFileURL(path.resolve(file)).href);
    await page.locator('#card-filter-character button[value=Ironclad]').click();

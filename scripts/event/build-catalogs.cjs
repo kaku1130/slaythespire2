@@ -15,9 +15,9 @@ const data=Object.fromEntries(Object.keys(kinds).map(k=>[k,JSON.parse(fs.readFil
 const assets=require('../cards/data-assets.cjs').load();
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const labels={Common:'普通',Uncommon:'罕見',Rare:'稀有',Event:'事件',Ancient:'先古之民',Shop:'商店',Starter:'初始',Ironclad:'鐵甲戰士',Silent:'靜默獵手',Defect:'故障機器人',Necrobinder:'亡靈契約師',Regent:'儲君',Shared:'共享',act1a:'第一章・密林',act1b:'第一章・暗港',act2:'第二章・巢穴',act3:'第三章・榮耀',boss:'Boss',elite:'菁英',normal:'一般',weak:'弱怪',summon:'召喚物'};
-const file=k=>k+'.html';
+const file=k=>({potion:'Potions.html',relic:'Relics.html'})[k];
 const cards=JSON.parse(fs.readFileSync('data/cards/cards-source.json'));
-const routes=new Map(cards.map(c=>['/zh-TW/card/'+c.slug,'card.html#card-'+c.id]));
+const routes=new Map(cards.map(c=>['/zh-TW/card/'+c.slug,'Cards.html#card-'+c.id]));
 for(const [k,{items}] of Object.entries(data)){routes.set('/zh-TW/'+k,file(k));for(const x of items)if(x.slug)routes.set('/zh-TW/'+k+'/'+x.slug,'data/'+k+'/'+k+'-'+x.slug+'.html');else routes.set('/zh-TW/'+k+'/'+x.id.toLowerCase().replaceAll('_','-'),file(k)+'#'+x.id);}
 function href(url,prefix=''){const plain=url.replace('https://slaythespire2.net','');if(routes.has(plain))return prefix+routes.get(plain);if(plain.startsWith('/'))return 'https://slaythespire2.net'+plain;return url;}
 function header(k,prefix=''){return nav.renderHeader(k).replace(/href="([^"]+)"/g,(_,u)=>'href="'+(!u.startsWith('https://')&&nav.items.some(item=>item[2]===u)?prefix+u:href(u,prefix))+'"');}
@@ -37,7 +37,7 @@ for(const [k,{items,version}] of Object.entries(data).filter(([kind])=>!only||ki
  console.log('Built '+k+': '+items.length);
 }
 // Update navigation without rebuilding unrelated card/game content.
-for(const f of ['card.html','build.html']){let h=fs.readFileSync(f,'utf8');h=h.replace(/<header class="site-header">[\s\S]*?<\/header>/,nav.renderHeader(f==='card.html'?'cards':'builds').replace(/^<a class="skip-link"[^]*?<\/a>/,''));fs.writeFileSync(f,nav.openPageLinksInNewTab(h));}
+for(const f of ['Cards.html','Characters.html']){let h=fs.readFileSync(f,'utf8');h=h.replace(/<header class="site-header">[\s\S]*?<\/header>/,nav.renderHeader(f==='Cards.html'?'cards':'builds').replace(/^<a class="skip-link"[^]*?<\/a>/,''));fs.writeFileSync(f,nav.openPageLinksInNewTab(h));}
 
 for(const kind of Object.keys(kinds).filter(kind=>!only||kind===only)){const name=file(kind);let html=fs.readFileSync(name,'utf8');if(!html.includes('src="assets/cards/search-controls.js"'))html=html.replace('</body>','<script src="assets/cards/search-controls.js"></script></body>');
 

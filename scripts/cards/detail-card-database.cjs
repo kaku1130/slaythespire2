@@ -17,7 +17,7 @@ function replaceCards(html,prefix='../../'){
   const detail=details.get(card.id);
   if(!detail)throw Error('Missing ancient card detail '+card.id);
   const article=render(detail,{prefix:'ancient-card-'+start+'-'+card.id.toLowerCase(),showBuilds:false,showKeywords:false,metadataAboveEffects:true,cornerMetadata:true})
-    .replace(/(src|href)="(assets\/|build\.html|card\.html)/g,'$1="'+prefix+'$2');
+    .replace(/(src|href)="(assets\/|Characters\.html|Cards\.html)/g,'$1="'+prefix+'$2');
   const replacement='<div class="ancient-card-entry card-detail-row" data-card-id="'+card.id+'" data-rarity="'+esc(detail.rarity)+'">'+article+'</div>';
   html=html.slice(0,start)+replacement+html.slice(end);cursor=start+replacement.length;
  }

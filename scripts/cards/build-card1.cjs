@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const assert = require('node:assert/strict');
 const source = JSON.parse(fs.readFileSync('data/cards/english-details.json', 'utf8'));
 const details = new Map(source.cards.map(card => [card.id, card]));
-const localBuilds = fs.readFileSync('build.html', 'utf8');
+const localBuilds = fs.readFileSync('Characters.html', 'utf8');
 const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const plain = value => value.replace(/<\/?(?:article|section|div|p|header|h[1-6]|dl|dt|dd|aside|td|br)\b[^>]*>/gi, ' ').replace(/<[^>]+>/g, '').replace(/&(#x[0-9a-f]+|#\d+|amp|lt|gt|quot|apos);/gi, (entity, key) => {
   if(key[0]==='#')return String.fromCodePoint(key[1].toLowerCase()==='x'?parseInt(key.slice(2),16):Number(key.slice(1)));
@@ -11,7 +11,7 @@ const plain = value => value.replace(/<\/?(?:article|section|div|p|header|h[1-6]
 }).replace(/\s+/g, ' ').trim();
 const renderArticle = require('./render-card-detail.cjs');
 function render(card) {
-  const options={localBuilds,showBuilds:false,showKeywords:false,searchableEffects:true,rarityBeforeType:true,showEffectNotes:false,metadataAboveEffects:true,cornerMetadata:true};
+  const options={localBuilds,showBuilds:false,showKeywords:false,searchableEffects:true,rarityBeforeType:true,showEffectNotes:false,metadataAboveEffects:true,cornerMetadata:true,catalogLayout:true};
   const article=renderArticle(card,options);
   return '<td class="card-detail-cell" data-field="detail" role="cell" colspan="10">'+article+'</td>';
 }
@@ -22,7 +22,7 @@ function attribute(tag, name, value) {
 function buildCardDetails({output = 'card1'} = {}) {
 assert.ok(['cards', 'card1'].includes(output));
 let count = 0;
-let html = fs.readFileSync('card.html', 'utf8');
+let html = fs.readFileSync('Cards.html', 'utf8');
 html = html.replace(/<tr id="card-([^"]+)"[^>]*>[\s\S]*?<\/tr>/g, (original, id) => {
   original = original.replace(/<td class="card-detail-cell"[\s\S]*?<\/article><\/td>/g, '');
   const card = details.get(id);
@@ -74,16 +74,16 @@ const sourceCredit = '<p class="card-source">'+require('./source-credit.cjs')+'<
 html = html.replace(resultCount[0], '').replace('</main>', '<footer class="card-results-footer">' + resultCount[0] + sourceCredit + '</footer></main>');
 html = html.replace('href="assets/cards/cards.css"', 'href="assets/cards/' + output + '.css"');
 html = html.replace(/<title>[\s\S]*?<\/title>/, '<title>' + (output === 'cards' ? 'Slay the Spire 2' : 'Card 1') + '｜' + count + ' 張卡牌詳細資料</title>');
-html = html.replace(/href="(?:card|card1)\.html#card-/g, 'href="' + (output === 'cards' ? 'card' : output) + '.html#card-');
+html = html.replace(/href="(?:Cards|card1)\.html#card-/g, 'href="' + (output === 'cards' ? 'Cards' : output) + '.html#card-');
 const hashScript = '<script>if(location.hash.startsWith("#card-"))requestAnimationFrame(()=>{const row=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(row){row.style.scrollMarginTop="12px";row.scrollIntoView({block:"start",behavior:"instant"});}});</script>';
 html = html.replaceAll(hashScript, '').replace('</body>', hashScript + '</body>');
 html = html.replace(/<script src="assets\/cards\/card-effect-language\.js"><\/script>/g,'');
 const baseCss = fs.readFileSync('assets/cards/cards.css', 'utf8').split('/* Each card occupies one full row with seven detail sections. */')[0].trimEnd();
 fs.writeFileSync('assets/cards/' + output + '.css', baseCss + '\n' + fs.readFileSync('assets/cards/card1-detail.css', 'utf8') + require('./navigation-icons.cjs').styles + require('./desktop-content-width.cjs') + require('./filter-frames.cjs') + require('./page-scroll.cjs') + require('./tier-colors.cjs') + require('./tier-labels.cjs') + require('./card-content-width.cjs'));
 html = html.replace(/<!--card-effect-tooltips-->[\s\S]*?<!--\/card-effect-tooltips-->/g, '');
-fs.writeFileSync((output === 'cards' ? 'card' : output) + '.html', html);
+fs.writeFileSync((output === 'cards' ? 'Cards' : output) + '.html', html);
 fs.appendFileSync('assets/cards/' + output + '.css', require('./rarity-labels.cjs'));
-console.log('Created ' + (output === 'cards' ? 'card' : output) + '.html: ' + count + ' cards with English detail sections.');
+console.log('Created ' + (output === 'cards' ? 'Cards' : output) + '.html: ' + count + ' cards with English detail sections.');
 }
 module.exports = buildCardDetails;
 if (require.main === module) buildCardDetails({output:process.argv.includes('--promote') ? 'cards' : 'card1'});

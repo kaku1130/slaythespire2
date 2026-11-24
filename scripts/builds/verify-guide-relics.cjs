@@ -22,9 +22,9 @@ async function main(){
  try{
   const page=await browser.newPage({viewport:{width:1440,height:1400}}),errors=[];
   page.on('pageerror',error=>errors.push(error.message));
-  await page.goto(pathToFileURL(path.resolve('relic.html')).href);
+  await page.goto(pathToFileURL(path.resolve('Relics.html')).href);
   const reference=new Map((await snapshot(page.locator('.entry.relic'))).map(relic=>[relic.id,relic]));
-  await page.goto(pathToFileURL(path.resolve('build.html')).href);
+  await page.goto(pathToFileURL(path.resolve('Characters.html')).href);
   let total=0;
   for(const build of guide.builds){
    const id='build-'+build.character+'-'+build.id;

@@ -71,4 +71,43 @@ html body[data-view=grid] main#main-content#main-content #card-scroll .grid-pool
 }
 html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-child(1 of :not([hidden])) .card-detail {margin-top:0}
 html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-last-child(1 of :not([hidden])) .card-detail {margin-bottom:0}
+
+/* Catalog cards: art, names, metadata, active effect, version controls, tier. */
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:has([data-catalog-layout]) {grid-row:span 4}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview {grid-row:1 / 5;justify-items:center;text-align:center}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-art {grid-row:1;justify-self:center}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview>header {grid-row:2;display:block}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 12px;width:100%;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata {grid-row:3;display:grid;grid-template-columns:minmax(0,1fr) max-content minmax(0,1fr);align-items:center;gap:12px;margin:0;width:100%;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item:first-child {justify-self:start;text-align:left}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item:nth-child(2) {justify-self:center;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item:last-child {justify-self:end;text-align:right}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] dd[data-stat-character]>img {width:28px;height:28px}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effects {grid-row:4;display:flex;flex-direction:column;gap:8px;align-self:start;width:100%;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-columns {display:block;position:relative}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel {display:block;border:0}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel[hidden] {display:none!important}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel p {text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-panel-description {width:80%;justify-self:center;margin-inline:auto;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-version-controls {position:absolute;top:16px;right:8px;z-index:1;display:flex;justify-content:flex-end;gap:8px}
+html body main#main-content #card-scroll .detail-version-controls button {padding:4px 6px;border:1px solid #354454;border-radius:6px;background:#0d141c;color:#aab6c4;font:400 16px/1.4 Arial,"Microsoft JhengHei",sans-serif;cursor:pointer}
+html body main#main-content #card-scroll .detail-version-controls button[aria-pressed=true] {color:#7fff00;border-color:#7fff00;background:#17351a}
+html body main#main-content #card-scroll .detail-version-controls button:focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
+html body main#main-content #card-scroll .detail-version-controls button:disabled {opacity:.45;cursor:default}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-bottom-tier {grid-row:auto;justify-content:center;align-items:center;width:100%}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title>a {flex:0 1 auto;min-width:0;max-width:100%;overflow-wrap:anywhere}
+@media screen and (max-width:600px) {
+ html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:column;flex-wrap:nowrap}
+}
+/* Offline creator rating and commentary stay directly below the upgrade toggle. */
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-tier-section {width:100%;min-width:0;margin-top:8px;padding:16px;border:1px solid #303d4e;border-radius:9px;background:#101923;text-align:left}
+html body main#main-content #card-scroll .detail-tier-heading {display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:0 auto}
+html body main#main-content #card-scroll .detail-tier-comment {margin:0;color:#e3e8ee;font:400 20px/1.6 Arial,"Microsoft JhengHei",sans-serif;overflow-wrap:anywhere}
+html body main#main-content #card-scroll details.detail-tier-toggle>.detail-tier-heading {width:max-content;max-width:100%;margin-inline:auto;list-style:none;cursor:pointer}
+html body main#main-content #card-scroll details.detail-tier-toggle>.detail-tier-heading::-webkit-details-marker {display:none}
+html body main#main-content #card-scroll details.detail-tier-toggle>.detail-tier-heading:focus-visible {outline:2px solid #37a8ec;outline-offset:4px;border-radius:4px}
+html body main#main-content #card-scroll .detail-tier-source {display:inline-block;margin-top:12px;color:#8bcaf0;font:400 16px/1.5 Arial,sans-serif;text-decoration:none}
+html body main#main-content #card-scroll .detail-tier-source:hover {text-decoration:underline;text-underline-offset:4px}
+html body main#main-content #card-scroll .detail-tier-toggle {width:100%;min-width:0}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .creator-tier-badge {font-size:16px}
 `;

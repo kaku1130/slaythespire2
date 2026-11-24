@@ -16,10 +16,10 @@
   html body .site-header .site-nav a {flex:1 1 0;min-width:0;min-height:44px;padding:4px!important;gap:0;font-size:24px}
 }
 
-/* Compact, right-aligned navigation with a GitHub brand icon. */
+/* Compact, right-aligned navigation. */
 html body .site-header .site-nav {flex:0 1 auto!important;width:auto!important;margin-left:auto;justify-content:flex-end}
 html body .site-header .site-nav a {flex:0 0 auto!important}
-html body .site-header .site-logo {content:normal;width:112px;height:63px;object-fit:contain}
+html body .site-header .site-logo {content:normal}
 
 /* Show navigation labels whenever tablet-sized widths have enough room, regardless of input device. */
 @media screen and (min-width:700px) and (max-width:1366px) {
@@ -117,10 +117,10 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(6,62px)!important;
+    grid-template-columns:repeat(5,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 392px!important;
-    width:392px!important;
+    flex:0 1 326px!important;
+    width:326px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
@@ -133,6 +133,8 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
   html body .site-header .site-brand {display:none!important}
 }
 
+/* Use the image source even when bundled legacy styles replace the logo. */
+html body .site-header .site-logo {content:normal;width:112px;height:63px;object-fit:contain}
 /* Brand visibility is shared by every page, including bundled legacy styles. */
 @media screen and (min-width:601px) {
   html body .site-header .site-brand {display:flex!important}
@@ -140,12 +142,67 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
   html body .site-header .site-nav {display:flex!important;flex:0 0 auto!important;width:max-content!important;max-width:100%;margin-left:auto!important;justify-content:flex-end!important;gap:4px}
   html body .site-header .site-nav > a {box-sizing:border-box;flex:0 0 52px!important;width:52px!important;min-width:52px!important;max-width:52px!important;padding:6px 8px!important}
+}
+
+/* Scale desktop navigation artwork and buttons together by 25%. */
+@media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
+  html body .site-header .site-nav {
+    grid-template-columns:repeat(5,77.5px)!important;
+    grid-auto-columns:77.5px!important;
+    flex:0 1 407.5px!important;width:407.5px!important;gap:5px;
+  }
+  html body .site-header .site-nav > a {
+    flex:0 0 77.5px!important;width:77.5px!important;min-width:77.5px!important;max-width:77.5px!important;
+    height:65px!important;min-height:65px!important;max-height:65px!important;
+    padding:7.5px 15px!important;border-radius:7.5px;
+  }
+  html body .site-header .site-nav a > .site-nav-visual {flex:0 0 45px;width:45px;height:45px}
+  html body .site-header .site-nav .site-nav-icon {width:45px!important;height:45px!important;border-radius:7.5px!important}
+}
+
+/* Keep the final navigation menu outside the icon strip's clipping area. */
+html body .site-header .site-nav {overflow:visible!important}
+html body .site-header .game-info-dropdown {position:relative;align-self:center;width:132px;height:65px;font-family:Arial,"Microsoft JhengHei",sans-serif}
+html body .site-header .game-info-dropdown>summary {
+ display:flex;align-items:center;justify-content:center;gap:12px;box-sizing:border-box;
+ width:100%;height:100%;padding:0 14px;list-style:none;cursor:pointer;
+ border:1px solid #354454;border-radius:7.5px;background:#0d141c;color:#cbd5df;
+ font:600 15px/1.4 Arial,"Microsoft JhengHei",sans-serif;white-space:nowrap;
+}
+html body .site-header .game-info-dropdown>summary::-webkit-details-marker {display:none}
+html body .site-header .game-info-dropdown>summary:hover,
+html body .site-header .game-info-dropdown[open]>summary {color:#e3e8ee;border-color:#238cc2;background:#163047}
+html body .site-header .game-info-dropdown>summary:focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
+html body .site-header .game-info-chevron {display:block;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+html body .site-header .game-info-dropdown[open] .game-info-chevron {transform:translateY(2px) rotate(225deg)}
+html body .site-header .game-info-menu {
+ position:absolute;right:0;top:calc(100% + 8px);z-index:110;box-sizing:border-box;
+ width:220px;padding:6px;border:1px solid #354454;border-radius:8px;
+ background:#0d141c;box-shadow:0 12px 32px #0008;
+}
+html body .site-header .game-info-menu>a {
+ display:block!important;box-sizing:border-box;width:100%!important;min-width:0!important;max-width:none!important;
+ height:auto!important;min-height:0!important;max-height:none!important;padding:12px 14px!important;
+ margin:0;border:0;border-radius:5px;color:#cbd5df!important;text-align:left;text-decoration:none;
+ font:500 14px/1.4 Arial,"Microsoft JhengHei",sans-serif!important;
+}
+html body .site-header .game-info-menu>a:hover {color:#fff!important;background:#1b2b3a}
+@media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
+ html body .site-header .site-nav {grid-template-columns:repeat(5,77.5px) 132px!important;flex:0 1 544.5px!important;width:544.5px!important}
+}
+@media screen and (max-width:600px) {
+ html body .site-header .site-nav {display:flex!important;flex:1 1 auto!important;width:100%!important;min-width:0;gap:4px}
+ html body .site-header .site-nav>a {flex:1 1 0!important;width:auto!important;min-width:0!important;max-width:52px!important;padding:4px 0!important}
+ html body .site-header .site-nav a>.site-nav-visual {flex:0 0 32px;width:32px;height:32px}
+ html body .site-header .site-nav .site-nav-icon {width:32px!important;height:32px!important}
+ html body .site-header .game-info-dropdown {flex:0 0 108px;width:108px;height:52px}
+ html body .site-header .game-info-dropdown>summary {font-size:13px;padding:0 8px;gap:8px}
 }
 :root{--star-resource-image:url("data:image/webp;base64,UklGRrQCAABXRUJQVlA4WAoAAAAQAAAAFwAAFwAAQUxQSLgAAAABgGPb2rHn+WPbttHbtp1MwUZps3JSp8oMWKm0Stu84fs+Q4iICSDRwADi1Vjf0ODR23+04DE/RwhPGtDBojIHbLpxZD0BaGXwPwKAh1gp/xX8uRMgEXGIf48SRYxaTiB4Oxuu9cu0bH7vE5LH9fpEhk2XkJ80IyIyLF0V26n3UKG/rbpfBcYcSTj/9K/jApLNe/31VkjyA79GidF7D9j35aBeYIBYk4EUHvPbNzse5YUTYx6q7iZRVlA4INYBAABwDQCdASoYABgAPikSh0KhoQoCAAwBQlsAJ0yhILPoH4q/gBzhm6/eP9gHWq/1XVAPQr8nX9a/gt/W6uO0qBPNeic6ar6KWYJ5V/wH2NfYB/Gv5T/bfyq/pf//5VX9Zg7YsQFwKSAW+kg3Vfjym4+51kYygAD+//kg/UNb/kWt3YEZRXXa7CmBq3+fLNoUovv/Rhc56OAA52JZHC0egHD35yjBvWxe/2nnot/8ZxVE6rUtWbfyqhiP3fjaUYTyZ1IpHzmdOTAdeklmwZN5Dfhy//mV+tLf3C/v7rvj24kVpZXz8raPtQmiWzUeP/IJBb2zrdfZx9Uckmv+UdN+HCwZCSfstNWOO6uf+eCGJ/+iV/4ba/bASuicwA3Xyzg/67Q8flH1erjXUt1Bep4L4H3/sdSfx0kM1WAQWKJflWv7uv8aF0gBvf/p8PArZwRHupmZHPz+UWG/8mv+/y46BYewP/+1uv9vfT/dW9t1JkvxP0ASM/92hT8m/dbWQHbEkf0vyS8f9h5GdSTE2qd1PMff8sZkfqInOaA5XckK0R6ndLcsX/89/+opNWEBx0rR8u+G1dxs2I5P0wr/IlfoT73/bnBqf0HhhrpKN3/1G1VzByacYWtoAA==")}.star-resource-icon{display:inline-block;width:1.15em;height:1.15em;vertical-align:-.2em;background-image:var(--star-resource-image);background-size:contain;background-position:center;background-repeat:no-repeat;margin:0;flex-shrink:0}:root{--energy-resource-image:url("data:image/webp;base64,UklGRiICAABXRUJQVlA4WAoAAAAQAAAAFwAAFwAAQUxQSL0AAAABgLpt2/FX/P3D7Lb94pptG9FIdrYqu71V20v71WWj2fY+f897bBExAfiD5kXBTJzy1+5PuiMsCNqAjh1O+rxZalDjNf/MqTxutlDQjnPqvxMUQp4J3JhGRjPIUa+cZVwuSVyVTD1HN1oBcNxm8JECIPWRATdqCVgbWXTqATQxuAsCAJ972qhGYjJN+oyGbNoPZVkn53BAyYVi5amq33k7Jbh2nCh8rObZQ7WhZOub4057onUg22bNt7jgHwMAVlA4ID4BAABQBwCdASoYABgAPm0okUWkIiGb+qwAQAbEtgbYAhyrDwD+m8OftsY2tmDeXiIpDADVdeueON4h8HH2PD6eJoOpfHAAAP72kotV4jHYo+IEtd4Q+KgcEfBw6OxQbTfQKrXnhI48oxoz4XQqt65YCZVKDSjartJycor3gG2IgME43IMlDH/jI0TvE+DDy51/ATe2dws/+7ff5fe51AIW8eqsEc9rUPdCp5vtm4dYTnOhIfkS5dinjT2rUD8tm+wTpJ02GyiwZHwiAQ/dVjSpJcCTxTZqofwHx3ilrlQHNGwKLwMdZyp5viuoiNkSNXCmEUJ0MmkrWD/NASLPVXYDDuuUv6yhyWRpUx6AG/WVC1977qz31St0enZ4ex73/kSsIsW/7zDoXtEk7rntqP3KR5N8p8GD4/wFDaDHdzsAAAA=")}.energy-resource-icon{display:inline-block;width:1.05em;height:1.05em;vertical-align:-.15em;background-image:var(--energy-resource-image);background-size:contain;background-position:center;background-repeat:no-repeat;margin:0;flex-shrink:0}.relic-filters .relic-rarities{order:0}.relic-filters #search{order:1;flex:0 1 420px;margin-left:auto}.relic-title-row{justify-content:center}@media(max-width:640px){.relic-filters #search{flex:1 1 100%;margin-left:0}}.relic-title-row{display:flex;align-items:baseline;gap:12px;margin:12px 0}.relic-title-row h2{margin:0;min-width:0}.relic-title-row .tag{flex-shrink:0;white-space:nowrap}.relic-keyword{color:#efc851;font-weight:500}.relic-rarities{display:flex;align-items:center;flex-wrap:wrap;gap:8px}.relic-rarities button{font:inherit;cursor:pointer;padding:10px 16px;border:1px solid var(--line);border-radius:7px;background:var(--paper);color:var(--rarity-color)}[data-rarity-filter=Common],.relic[data-rarity=Common]{--rarity-color:#aab6c4}[data-rarity-filter=Uncommon],.relic[data-rarity=Uncommon]{--rarity-color:#74b3e6}[data-rarity-filter=Rare],.relic[data-rarity=Rare]{--rarity-color:#e3bf72}[data-rarity-filter=Event],.relic[data-rarity=Event]{--rarity-color:#6ac1b4}.relic .tag{color:var(--rarity-color)}.relic-rarities button:hover{border-color:currentColor}.relic-rarities button[aria-pressed=true]{border-color:currentColor;box-shadow:0 0 0 1px currentColor;background:color-mix(in srgb,var(--rarity-color) 12%,var(--paper))}.catalog:has(>.relic){grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}@media(max-width:1023px){.catalog:has(>.relic){grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:639px){.catalog:has(>.relic){grid-template-columns:1fr}}.entry.relic{display:grid;grid-template-columns:72px minmax(0,1fr);grid-template-rows:auto 1fr;column-gap:16px;row-gap:8px;align-items:start;padding:18px}.entry.relic[hidden]{display:none}.entry.relic>img{grid-column:1;grid-row:1 / 3;width:72px;height:72px;object-fit:contain}.entry.relic>.relic-title-row{grid-column:2;grid-row:1;align-self:start;justify-content:flex-start;margin:0;gap:10px}.entry.relic>p{grid-column:2;grid-row:2;margin:0}.relic-title-row h2{font-size:21px;line-height:1.45}@media(max-width:640px){.entry.relic{grid-template-columns:56px minmax(0,1fr);column-gap:12px;padding:14px}.entry.relic>img{width:56px;height:56px}.relic-title-row h2{font-size:20px}.entry.relic>.relic-title-row{gap:8px}}
 html body main#main-content .relic-filters > .relic-rarity-dropdown {
@@ -507,10 +564,10 @@ html body main#main-content .filters,html body main#main-content .tools .primary
   html body .site-header .site-nav a {flex:1 1 0;min-width:0;min-height:44px;padding:4px!important;gap:0;font-size:24px}
 }
 
-/* Compact, right-aligned navigation with a GitHub brand icon. */
+/* Compact, right-aligned navigation. */
 html body .site-header .site-nav {flex:0 1 auto!important;width:auto!important;margin-left:auto;justify-content:flex-end}
 html body .site-header .site-nav a {flex:0 0 auto!important}
-html body .site-header .site-logo {content:normal;width:112px;height:63px;object-fit:contain}
+html body .site-header .site-logo {content:normal}
 
 /* Show navigation labels whenever tablet-sized widths have enough room, regardless of input device. */
 @media screen and (min-width:700px) and (max-width:1366px) {
@@ -1033,6 +1090,45 @@ html body[data-view=grid] main#main-content#main-content #card-scroll .grid-pool
 html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-child(1 of :not([hidden])) .card-detail {margin-top:0}
 html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-last-child(1 of :not([hidden])) .card-detail {margin-bottom:0}
 
+/* Catalog cards: art, names, metadata, active effect, version controls, tier. */
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:has([data-catalog-layout]) {grid-row:span 4}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview {grid-row:1 / 5;justify-items:center;text-align:center}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-art {grid-row:1;justify-self:center}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview>header {grid-row:2;display:block}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 12px;width:100%;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata {grid-row:3;display:grid;grid-template-columns:minmax(0,1fr) max-content minmax(0,1fr);align-items:center;gap:12px;margin:0;width:100%;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item:first-child {justify-self:start;text-align:left}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item:nth-child(2) {justify-self:center;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item:last-child {justify-self:end;text-align:right}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] dd[data-stat-character]>img {width:28px;height:28px}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effects {grid-row:4;display:flex;flex-direction:column;gap:8px;align-self:start;width:100%;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-columns {display:block;position:relative}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel {display:block;border:0}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel[hidden] {display:none!important}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel p {text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-panel-description {width:80%;justify-self:center;margin-inline:auto;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-version-controls {position:absolute;top:16px;right:8px;z-index:1;display:flex;justify-content:flex-end;gap:8px}
+html body main#main-content #card-scroll .detail-version-controls button {padding:4px 6px;border:1px solid #354454;border-radius:6px;background:#0d141c;color:#aab6c4;font:400 16px/1.4 Arial,"Microsoft JhengHei",sans-serif;cursor:pointer}
+html body main#main-content #card-scroll .detail-version-controls button[aria-pressed=true] {color:#7fff00;border-color:#7fff00;background:#17351a}
+html body main#main-content #card-scroll .detail-version-controls button:focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
+html body main#main-content #card-scroll .detail-version-controls button:disabled {opacity:.45;cursor:default}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-bottom-tier {grid-row:auto;justify-content:center;align-items:center;width:100%}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title>a {flex:0 1 auto;min-width:0;max-width:100%;overflow-wrap:anywhere}
+@media screen and (max-width:600px) {
+ html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:column;flex-wrap:nowrap}
+}
+/* Offline creator rating and commentary stay directly below the upgrade toggle. */
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-tier-section {width:100%;min-width:0;margin-top:8px;padding:16px;border:1px solid #303d4e;border-radius:9px;background:#101923;text-align:left}
+html body main#main-content #card-scroll .detail-tier-heading {display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:0 auto}
+html body main#main-content #card-scroll .detail-tier-comment {margin:0;color:#e3e8ee;font:400 20px/1.6 Arial,"Microsoft JhengHei",sans-serif;overflow-wrap:anywhere}
+html body main#main-content #card-scroll details.detail-tier-toggle>.detail-tier-heading {width:max-content;max-width:100%;margin-inline:auto;list-style:none;cursor:pointer}
+html body main#main-content #card-scroll details.detail-tier-toggle>.detail-tier-heading::-webkit-details-marker {display:none}
+html body main#main-content #card-scroll details.detail-tier-toggle>.detail-tier-heading:focus-visible {outline:2px solid #37a8ec;outline-offset:4px;border-radius:4px}
+html body main#main-content #card-scroll .detail-tier-source {display:inline-block;margin-top:12px;color:#8bcaf0;font:400 16px/1.5 Arial,sans-serif;text-decoration:none}
+html body main#main-content #card-scroll .detail-tier-source:hover {text-decoration:underline;text-underline-offset:4px}
+html body main#main-content #card-scroll .detail-tier-toggle {width:100%;min-width:0}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .creator-tier-badge {font-size:16px}
+
 /* Size each catalog or guide once against the viewport, never its nested panels. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu])) {
   box-sizing:border-box;width:100%!important;max-width:none!important;
@@ -1063,10 +1159,10 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(6,62px)!important;
+    grid-template-columns:repeat(5,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 392px!important;
-    width:392px!important;
+    flex:0 1 326px!important;
+    width:326px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
@@ -1079,6 +1175,8 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
   html body .site-header .site-brand {display:none!important}
 }
 
+/* Use the image source even when bundled legacy styles replace the logo. */
+html body .site-header .site-logo {content:normal;width:112px;height:63px;object-fit:contain}
 /* Brand visibility is shared by every page, including bundled legacy styles. */
 @media screen and (min-width:601px) {
   html body .site-header .site-brand {display:flex!important}
@@ -1086,12 +1184,67 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
   html body .site-header .site-nav {display:flex!important;flex:0 0 auto!important;width:max-content!important;max-width:100%;margin-left:auto!important;justify-content:flex-end!important;gap:4px}
   html body .site-header .site-nav > a {box-sizing:border-box;flex:0 0 52px!important;width:52px!important;min-width:52px!important;max-width:52px!important;padding:6px 8px!important}
+}
+
+/* Scale desktop navigation artwork and buttons together by 25%. */
+@media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
+  html body .site-header .site-nav {
+    grid-template-columns:repeat(5,77.5px)!important;
+    grid-auto-columns:77.5px!important;
+    flex:0 1 407.5px!important;width:407.5px!important;gap:5px;
+  }
+  html body .site-header .site-nav > a {
+    flex:0 0 77.5px!important;width:77.5px!important;min-width:77.5px!important;max-width:77.5px!important;
+    height:65px!important;min-height:65px!important;max-height:65px!important;
+    padding:7.5px 15px!important;border-radius:7.5px;
+  }
+  html body .site-header .site-nav a > .site-nav-visual {flex:0 0 45px;width:45px;height:45px}
+  html body .site-header .site-nav .site-nav-icon {width:45px!important;height:45px!important;border-radius:7.5px!important}
+}
+
+/* Keep the final navigation menu outside the icon strip's clipping area. */
+html body .site-header .site-nav {overflow:visible!important}
+html body .site-header .game-info-dropdown {position:relative;align-self:center;width:132px;height:65px;font-family:Arial,"Microsoft JhengHei",sans-serif}
+html body .site-header .game-info-dropdown>summary {
+ display:flex;align-items:center;justify-content:center;gap:12px;box-sizing:border-box;
+ width:100%;height:100%;padding:0 14px;list-style:none;cursor:pointer;
+ border:1px solid #354454;border-radius:7.5px;background:#0d141c;color:#cbd5df;
+ font:600 15px/1.4 Arial,"Microsoft JhengHei",sans-serif;white-space:nowrap;
+}
+html body .site-header .game-info-dropdown>summary::-webkit-details-marker {display:none}
+html body .site-header .game-info-dropdown>summary:hover,
+html body .site-header .game-info-dropdown[open]>summary {color:#e3e8ee;border-color:#238cc2;background:#163047}
+html body .site-header .game-info-dropdown>summary:focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
+html body .site-header .game-info-chevron {display:block;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+html body .site-header .game-info-dropdown[open] .game-info-chevron {transform:translateY(2px) rotate(225deg)}
+html body .site-header .game-info-menu {
+ position:absolute;right:0;top:calc(100% + 8px);z-index:110;box-sizing:border-box;
+ width:220px;padding:6px;border:1px solid #354454;border-radius:8px;
+ background:#0d141c;box-shadow:0 12px 32px #0008;
+}
+html body .site-header .game-info-menu>a {
+ display:block!important;box-sizing:border-box;width:100%!important;min-width:0!important;max-width:none!important;
+ height:auto!important;min-height:0!important;max-height:none!important;padding:12px 14px!important;
+ margin:0;border:0;border-radius:5px;color:#cbd5df!important;text-align:left;text-decoration:none;
+ font:500 14px/1.4 Arial,"Microsoft JhengHei",sans-serif!important;
+}
+html body .site-header .game-info-menu>a:hover {color:#fff!important;background:#1b2b3a}
+@media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
+ html body .site-header .site-nav {grid-template-columns:repeat(5,77.5px) 132px!important;flex:0 1 544.5px!important;width:544.5px!important}
+}
+@media screen and (max-width:600px) {
+ html body .site-header .site-nav {display:flex!important;flex:1 1 auto!important;width:100%!important;min-width:0;gap:4px}
+ html body .site-header .site-nav>a {flex:1 1 0!important;width:auto!important;min-width:0!important;max-width:52px!important;padding:4px 0!important}
+ html body .site-header .site-nav a>.site-nav-visual {flex:0 0 32px;width:32px;height:32px}
+ html body .site-header .site-nav .site-nav-icon {width:32px!important;height:32px!important}
+ html body .site-header .game-info-dropdown {flex:0 0 108px;width:108px;height:52px}
+ html body .site-header .game-info-dropdown>summary {font-size:13px;padding:0 8px;gap:8px}
 }
 
 main#main-content :is(.relic-section,.potion-section) .catalog{grid-template-columns:minmax(0,1fr)}
@@ -1891,6 +2044,45 @@ html body[data-view=grid] main#main-content#main-content #card-scroll .grid-pool
 html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-child(1 of :not([hidden])) .card-detail {margin-top:0}
 html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-last-child(1 of :not([hidden])) .card-detail {margin-bottom:0}
 
+/* Catalog cards: art, names, metadata, active effect, version controls, tier. */
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:has([data-catalog-layout]) {grid-row:span 4}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview {grid-row:1 / 5;justify-items:center;text-align:center}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-art {grid-row:1;justify-self:center}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview>header {grid-row:2;display:block}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 12px;width:100%;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata {grid-row:3;display:grid;grid-template-columns:minmax(0,1fr) max-content minmax(0,1fr);align-items:center;gap:12px;margin:0;width:100%;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item:first-child {justify-self:start;text-align:left}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item:nth-child(2) {justify-self:center;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item:last-child {justify-self:end;text-align:right}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] dd[data-stat-character]>img {width:28px;height:28px}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effects {grid-row:4;display:flex;flex-direction:column;gap:8px;align-self:start;width:100%;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-columns {display:block;position:relative}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel {display:block;border:0}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel[hidden] {display:none!important}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel p {text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-panel-description {width:80%;justify-self:center;margin-inline:auto;text-align:center}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-version-controls {position:absolute;top:16px;right:8px;z-index:1;display:flex;justify-content:flex-end;gap:8px}
+html body main#main-content #card-scroll .detail-version-controls button {padding:4px 6px;border:1px solid #354454;border-radius:6px;background:#0d141c;color:#aab6c4;font:400 16px/1.4 Arial,"Microsoft JhengHei",sans-serif;cursor:pointer}
+html body main#main-content #card-scroll .detail-version-controls button[aria-pressed=true] {color:#7fff00;border-color:#7fff00;background:#17351a}
+html body main#main-content #card-scroll .detail-version-controls button:focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
+html body main#main-content #card-scroll .detail-version-controls button:disabled {opacity:.45;cursor:default}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-bottom-tier {grid-row:auto;justify-content:center;align-items:center;width:100%}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title>a {flex:0 1 auto;min-width:0;max-width:100%;overflow-wrap:anywhere}
+@media screen and (max-width:600px) {
+ html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:column;flex-wrap:nowrap}
+}
+/* Offline creator rating and commentary stay directly below the upgrade toggle. */
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-tier-section {width:100%;min-width:0;margin-top:8px;padding:16px;border:1px solid #303d4e;border-radius:9px;background:#101923;text-align:left}
+html body main#main-content #card-scroll .detail-tier-heading {display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:0 auto}
+html body main#main-content #card-scroll .detail-tier-comment {margin:0;color:#e3e8ee;font:400 20px/1.6 Arial,"Microsoft JhengHei",sans-serif;overflow-wrap:anywhere}
+html body main#main-content #card-scroll details.detail-tier-toggle>.detail-tier-heading {width:max-content;max-width:100%;margin-inline:auto;list-style:none;cursor:pointer}
+html body main#main-content #card-scroll details.detail-tier-toggle>.detail-tier-heading::-webkit-details-marker {display:none}
+html body main#main-content #card-scroll details.detail-tier-toggle>.detail-tier-heading:focus-visible {outline:2px solid #37a8ec;outline-offset:4px;border-radius:4px}
+html body main#main-content #card-scroll .detail-tier-source {display:inline-block;margin-top:12px;color:#8bcaf0;font:400 16px/1.5 Arial,sans-serif;text-decoration:none}
+html body main#main-content #card-scroll .detail-tier-source:hover {text-decoration:underline;text-underline-offset:4px}
+html body main#main-content #card-scroll .detail-tier-toggle {width:100%;min-width:0}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .creator-tier-badge {font-size:16px}
+
 /* Size each catalog or guide once against the viewport, never its nested panels. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu])) {
   box-sizing:border-box;width:100%!important;max-width:none!important;
@@ -1922,10 +2114,10 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(6,62px)!important;
+    grid-template-columns:repeat(5,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 392px!important;
-    width:392px!important;
+    flex:0 1 326px!important;
+    width:326px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
@@ -1938,6 +2130,8 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
   html body .site-header .site-brand {display:none!important}
 }
 
+/* Use the image source even when bundled legacy styles replace the logo. */
+html body .site-header .site-logo {content:normal;width:112px;height:63px;object-fit:contain}
 /* Brand visibility is shared by every page, including bundled legacy styles. */
 @media screen and (min-width:601px) {
   html body .site-header .site-brand {display:flex!important}
@@ -1945,12 +2139,67 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
   html body .site-header .site-nav {display:flex!important;flex:0 0 auto!important;width:max-content!important;max-width:100%;margin-left:auto!important;justify-content:flex-end!important;gap:4px}
   html body .site-header .site-nav > a {box-sizing:border-box;flex:0 0 52px!important;width:52px!important;min-width:52px!important;max-width:52px!important;padding:6px 8px!important}
+}
+
+/* Scale desktop navigation artwork and buttons together by 25%. */
+@media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
+  html body .site-header .site-nav {
+    grid-template-columns:repeat(5,77.5px)!important;
+    grid-auto-columns:77.5px!important;
+    flex:0 1 407.5px!important;width:407.5px!important;gap:5px;
+  }
+  html body .site-header .site-nav > a {
+    flex:0 0 77.5px!important;width:77.5px!important;min-width:77.5px!important;max-width:77.5px!important;
+    height:65px!important;min-height:65px!important;max-height:65px!important;
+    padding:7.5px 15px!important;border-radius:7.5px;
+  }
+  html body .site-header .site-nav a > .site-nav-visual {flex:0 0 45px;width:45px;height:45px}
+  html body .site-header .site-nav .site-nav-icon {width:45px!important;height:45px!important;border-radius:7.5px!important}
+}
+
+/* Keep the final navigation menu outside the icon strip's clipping area. */
+html body .site-header .site-nav {overflow:visible!important}
+html body .site-header .game-info-dropdown {position:relative;align-self:center;width:132px;height:65px;font-family:Arial,"Microsoft JhengHei",sans-serif}
+html body .site-header .game-info-dropdown>summary {
+ display:flex;align-items:center;justify-content:center;gap:12px;box-sizing:border-box;
+ width:100%;height:100%;padding:0 14px;list-style:none;cursor:pointer;
+ border:1px solid #354454;border-radius:7.5px;background:#0d141c;color:#cbd5df;
+ font:600 15px/1.4 Arial,"Microsoft JhengHei",sans-serif;white-space:nowrap;
+}
+html body .site-header .game-info-dropdown>summary::-webkit-details-marker {display:none}
+html body .site-header .game-info-dropdown>summary:hover,
+html body .site-header .game-info-dropdown[open]>summary {color:#e3e8ee;border-color:#238cc2;background:#163047}
+html body .site-header .game-info-dropdown>summary:focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
+html body .site-header .game-info-chevron {display:block;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+html body .site-header .game-info-dropdown[open] .game-info-chevron {transform:translateY(2px) rotate(225deg)}
+html body .site-header .game-info-menu {
+ position:absolute;right:0;top:calc(100% + 8px);z-index:110;box-sizing:border-box;
+ width:220px;padding:6px;border:1px solid #354454;border-radius:8px;
+ background:#0d141c;box-shadow:0 12px 32px #0008;
+}
+html body .site-header .game-info-menu>a {
+ display:block!important;box-sizing:border-box;width:100%!important;min-width:0!important;max-width:none!important;
+ height:auto!important;min-height:0!important;max-height:none!important;padding:12px 14px!important;
+ margin:0;border:0;border-radius:5px;color:#cbd5df!important;text-align:left;text-decoration:none;
+ font:500 14px/1.4 Arial,"Microsoft JhengHei",sans-serif!important;
+}
+html body .site-header .game-info-menu>a:hover {color:#fff!important;background:#1b2b3a}
+@media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
+ html body .site-header .site-nav {grid-template-columns:repeat(5,77.5px) 132px!important;flex:0 1 544.5px!important;width:544.5px!important}
+}
+@media screen and (max-width:600px) {
+ html body .site-header .site-nav {display:flex!important;flex:1 1 auto!important;width:100%!important;min-width:0;gap:4px}
+ html body .site-header .site-nav>a {flex:1 1 0!important;width:auto!important;min-width:0!important;max-width:52px!important;padding:4px 0!important}
+ html body .site-header .site-nav a>.site-nav-visual {flex:0 0 32px;width:32px;height:32px}
+ html body .site-header .site-nav .site-nav-icon {width:32px!important;height:32px!important}
+ html body .site-header .game-info-dropdown {flex:0 0 108px;width:108px;height:52px}
+ html body .site-header .game-info-dropdown>summary {font-size:13px;padding:0 8px;gap:8px}
 }
 
 /* Catalogs scroll with the document; only the navigation stays at the top. */
@@ -1978,6 +2227,3 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
     position:static!important;top:auto;
   }
 }
-
-/* Preserve the header logo proportions. */
-html body .site-header .site-logo {content:normal;width:112px;height:63px;object-fit:contain}

@@ -15,7 +15,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
     await route.fulfill({status:200,contentType,body:fs.readFileSync(file)});
    });
    page.on('pageerror',error=>errors.push(error.message));
-   const url=mode==='file'?pathToFileURL(path.resolve('card.html')).href:'http://cards.test/card.html';await page.goto(url);
+   const url=mode==='file'?pathToFileURL(path.resolve('Cards.html')).href:'http://cards.test/Cards.html';await page.goto(url);
    assert.equal(await page.locator('.detail-creator-name').count(),0);
    const rows=await page.locator('.card-detail-row').evaluateAll(nodes=>nodes.map(n=>({id:n.dataset.id,ratings:[...n.querySelectorAll('.detail-bottom-tier .detail-creator-rating')].map(a=>({author:a.dataset.author,href:a.href,tier:a.querySelector('.creator-tier-badge').textContent,color:getComputedStyle(a.querySelector('.creator-tier-badge')).color}))})));
    let ranked=0,unranked=0;

@@ -1,0 +1,2223 @@
+{
+  "author": "Jorbs",
+  "checkedAt": "2026-11-24T01:40:29.798Z",
+  "sources": {
+    "Ironclad": {
+      "url": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "name": "Jorbs Ironclad Tier List",
+      "version": "v0.107.1"
+    },
+    "Silent": {
+      "url": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "name": "Jorbs Silent Tier List",
+      "version": "v0.107.1"
+    },
+    "Regent": {
+      "url": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "name": "Jorbs Regent Tier List",
+      "version": "v0.107.1"
+    },
+    "Necrobinder": {
+      "url": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "name": "Jorbs Necrobinder Tier List",
+      "version": "v0.107.1"
+    },
+    "Defect": {
+      "url": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "name": "Jorbs Defect Tier List",
+      "version": "v0.107.1"
+    }
+  },
+  "comments": {
+    "TREMBLE": {
+      "text": "Tremble is like a Bash+ that costs less, deals more damage (because you can play a good 1-Cost Attack as well), and has exhaust synergies as well as Vulnerable synergies. \n\nDon't take TOO many of these, but the vast majority of Ironclad decks are happy to have one or two. They enable good damage early on and then open up Vulnerable synergies very easily for the rest of the game.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "ASHEN_STRIKE": {
+      "text": "Ashen Strike can go off in HUGE ways when paired with Ironclad's best exhaust enablers, like Fiend Fire, Second Wind, or Stoke. If your deck supports it well, it can be hitting for 50+ very early on in fights. Worth picking up as a decent attack in any situation, and frequently gets huge.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "DOMINATE": {
+      "text": "Dominate hits three of Ironclad's synergy packages in a big way: Vulnerable, Strength, and Exhaust. Cards like this result in Ironclad's best decks often picking from multiple different synergy spaces, as there's good overlap between them.\n\nDominate can be a little slow in some of the game's shorter fights, but it's a card which gets very strong very quickly if anything else goes right to support it in the run.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "INFERNO": {
+      "text": "Note that Inferno works whenever you lose HP on your turn, not just when the card itself causes you to lose HP. That means it works well with cards like Blood Wall, Hemokinesis, or Offering. A single Inferno and some supporting cards (paired with the understanding you'll have to Rest at Campfires regularly) can provide a huge amount of damage, often enough to cruise through the first half of the game.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "OFFERING": {
+      "text": "Thinking about Offering like it's letting you play an entire extra turn gets you about halfway to understanding its Strength, but keep in mind also that Ironclad has cards which care about filling your hand, like Armaments+, Fiend Fire, and Second Wind, for which being able to draw 5 with an Offering+ is tremendously strong. Getting your Rare Powers into play without taking a ton of damage is also often a big deal.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "FIEND_FIRE": {
+      "text": "Lots of damage, very quickly, and chances to benefit from exhaust synergies like Feel No Pain. Goes especially well with ways to fill up your hand like Battle Trance or Offering. It's also an excellent target for some game-winning enchants, like 8 Vigor or +50% damage.\n\nTaking it most of the time is the right idea, but do be careful in decks which are dependent on particular cards and will regret playing it when they draw it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "FEED": {
+      "text": "A very powerful effect for any build that can handle taking Hallway Fights. Worth noting that Feed will heal you for 3/4 when it gives you the 3/4 Max HP as well, so this card provides a little Healing as you go up the Spire. Campfires also heal you for a percentage of your Max HP, so the more times you've fed on an enemy, the more health you can get from them.\n\nOn occasion you can even copy Feed to play it on more than one enemy in the same fight.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "CRIMSON_MANTLE": {
+      "text": "Ironclad needs some ways to stay alive while playing tons of Attacks, and Crimson Mantle is one of the good ones. Synergizes with self-damage cards and relics, and makes a good chunk of Block per turn for not much upfront investment.\n\nIt's definitely worth noting that this won't make you any Block on the turn you play it. It's a little slow to get rolling.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "BREAK": {
+      "text": "Great card, worth playing for 1 on most turns you draw it, and also happens to \"Break\" (hehe) some of the other cards which care about Vulnerable synergies, like Dominate and Bully.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "COLOSSUS": {
+      "text": "1-Cost cards which only deal damage or gain block have to be pretty good to get excited about. If you take too many of them your deck can start to feel watered down, slow, and inconsistent. That said, this one is very very good. Make sure you read it carefully: it cares about the ENEMIES being Vulnerable, not YOU being Vulnerable. Against a Vulnerable enemy attacking you for 40, this effectively Blocks for 25 for 1 Energy.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "FLAME_BARRIER": {
+      "text": "Flame Barrier isn't a card which scales well with most of Ironclad's card pool, but its output is immense. There are enemies who attack you 8 times in the same turn in this game, and a Flame Barrier+ will deal 48 damage to them if you can line it up appropriately.\n\nIronclad never really wins with a \"Flame Barrier\" deck; there just aren't enough other effects to support this card for it to sensibly win by itself. But I've definitely taken it over other strong cards because its output is so high.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "DISMANTLE": {
+      "text": "This card hits SO HARD. Getting Vulnerable onto enemies reliably is one of the first things Ironclad decks want to do, whether by upgrading Bash or by taking a little assistance like Tremble. Once that is done, Dismantle is hitting harder than some cards which cost 2. Very premium early pickup.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "TAUNT": {
+      "text": "Taunt is SO MUCH BETTER than it might look at first glance.\n\nOne factor is that Ironclad really likes having a 7/8 Block card early on in the game. He just needs a bit more Block. He also happens to need a bit more Vulnerable to keep enemies Vulnerable consistently! So it's a perfect add to the Starter Deck.\n\nLater on, it scales very well with Vulnerable Synergies, which love a card which keeps them alive while everything is coming together.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "UNMOVABLE": {
+      "text": "Single-handedly makes most decks able to Block almost every attack in the game. Getting Unmovable into play can pretty easily save you 10+ health per turn for the rest of the fight.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "POMMEL_STRIKE": {
+      "text": "Ironclad has a lot of very strong 1-Cost or even 0-Cost cards, and a lot of powerful energy gain, so solving early-game damage requirements with a card which replaces itself or even is Draw-positive when upgraded easily transitions into powerful lategame.\n\nThere are some meme interactions with Hellraiser and Perfected Strike here, too, but the main strength of Pommel Strike is simply that it helps your deck deal more damage early without weighing it down later.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "BLOOD_WALL": {
+      "text": "A deceptively complex card to get the most out of. Ironclad's Starter deck struggles to spend all of its energy on block on turns where it needs to block, and this is a way to change that very early into the run with just one common pickup.\n\nHas excellent synergy with self-damage cards and relics, and makes Body Slam much more appealing even very early in the run. The Power card \"Unmovable\" also wants Ironclad to have singular cards which make lots of Block, which this does great with.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "BATTLE_TRANCE": {
+      "text": "Card Draw is extremely powerful. Getting to play the best cards for the situation you're in every turn makes you take far less damage in fights. Battle Trance is worth taking very highly for at least the first half of most runs.\n\nKeep an eye out for the interactions with cards like Fiend Fire or an upgraded Armaments in particular.\n\nIn my experience, my best decks do eventually stop wanting Battle Trance. In Act 2 the downside becomes a large enough consideration to consider skipping it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "BULLY": {
+      "text": "Great damage for 0 Energy. The strength of Bully is simply that it deals a lot more damage than you might be expecting. Put 5 Vulnerable on an enemy with a Bash + a potion and this is already dealing 21 damage!",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "CINDER": {
+      "text": "18 Damage for 2 is pretty good.\n\nComparing Cinder to something like Twin Strike, it seems like it deals less damage per energy, but keep in mind that Cinder guarantees you can spend 2 Energy this turn on that damage. In a way, higher-cost cards are a bit like drawing two 1-Cost cards at once, which is valuable, especially early on in the game when your deck is still at its most inconsistent.\n\nExhausting a card at random /tends/ to be mostly upside.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "FEEL_NO_PAIN": {
+      "text": "A class-defining card. Ironclad has many many ways to exhaust cards, and can often even be exhausting 5+ cards per turn. A Feel No Pain or two can be enough block to get you through the entire run sometimes. Has great synergy with strategies which ramp up to a win while exhausting cards, for example anything using Thrash or Ashen Strike. Or really, most of the other Ironclad cards. Feel No Pain is very good.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "EVIL_EYE": {
+      "text": "The main downside of Evil Eye is that Ironclad decks can fairly easily be so strong that they don't need a good Block card. This is a good Block card, and it's likely that you'll want to be exhausting cards often enough for it to be blocking for 16 for 1 at minimum, but Ironclad decks can easily be so strong that that isn't even enough.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "VICIOUS": {
+      "text": "A very breakable power which does nothing on its own. Combine this with something like Thunderclap and some cards which gain energy and you end up infinite in no time, but it's not an awesome card to have in your deck against tough fights in Act 1 before that's all come together.\n\nI've tended to find Vicious to be a little slow and unnecessary on a character with such tremendous scaling options, but it's nice to have as an option for runs which need more Card Draw.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "IMPERVIOUS": {
+      "text": "Impervious is a good card. It'll block almost any attack in the game for you by itself. Rather than tell you obvious things about why it's good, I'm going to mention why you might want to be wary of it.\n\nThe danger of making a deck too focused on defensive cards is that a lot of the enemies will get stronger turn by turn. If you aren't keeping pace with that, or ending the fight quickly enough, they can get out of control.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "BRAND": {
+      "text": "A funny thing about Brand is that two of the lines of text look at first glance like they're downsides, but they're actually upsides! Ironclad likes being able to lose 1 HP on his turn, and likes being able to Exhaust his cards.\n\nAll together, this is a card most decks are happy to have, and some decks get enough value out of it to absolutely love it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "FORGOTTEN_RITUAL": {
+      "text": "Ironclad is usually happy to take some Forgotten Rituals for Acts 2 and 3, although it's a card which might not do very well yet in Act 1.\n\nLater on, being able to put together massive turns to get strong Powers into play or quickly kill enemies is a big deal, and Forgotten Ritual is excellent at that.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "THRASH": {
+      "text": "Scales very well with a bit of Strength, because it'll look at how much damage the cards it's exhausting deal including the buff they get from Strength.\n\nThrash is a powerful card for longer fights, as it'll both reduce your deck and scale itself at the same time. It's hard to break it in short fights but there are enough long fights in the game to consider taking it just to ensure those go well for you.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "SECOND_WIND": {
+      "text": "Tons of output in the right circumstances, but doesn't fit very well into Ironclad's better synergy packages, and Taunt, Colossus, and even Evil Eye can make Block as 1-Cost Uncommons in less awkward ways.\n\nSecond Wind is at its best if you have good Card Draw and a Feel No Pain, and particularly strong against enemies which put statuses into your deck.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "ARMAMENTS": {
+      "text": "Can be used unupgraded to upgrade the best card in your hand, just giving you a little bit of extra output for the turn. You can think about it like a Defend+ or an Iron Wave almost, when it's being used like this.\n\nOr you can upgrade it and pair it with card draw to upgrade massive swathes of your deck at once. If you pair it with cards which generate energy, or which discount their cost when upgraded, this can give you massive increases in output immediately.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "TRUE_GRIT": {
+      "text": "Decent enough Block per Energy, and Exhausting cards is upside. Enables Howl From Beyond, protects you from statuses, whittles the chaff from your deck over longer fights... There are lots of reasons to love having a True Grit, especially if you can upgrade it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "DEMONIC_SHIELD": {
+      "text": "Tons of Block for 0 Energy! Especially good if you're in charge of creating Block this run.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "MOLTEN_FIST": {
+      "text": "Molten Fist is a tricky card. It's \"just\" an Attack Common, and you should probably treat it that way, but in theory it can provide massive output if you're able to play it on an enemy with lots of Vulnerable on it already.\n\nMy experience has been that decks which apply lots of Vulnerable can benefit from cards which /aren't/ just damage Commons though. Like, rather than playing Molten Fist, I'd like to just have a Dominate or Bully that I play already.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "BURNING_PACT": {
+      "text": "Understanding the strength of Burning Pact is instructive, I think: If you draw through your deck quickly, exhausting all of the bad cards from it, you can end up with only your good cards left. That might mean a combo of cards which go infinite, or a few cards which are upgraded and strong for the fight you're in, or some cards which massively increase your Strength... something like that.\n\nBurning Pact is one of the simpler cards for that job. It does both halves; it draws through your deck faster, and exhausts a card while it's doing so.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "IRON_WAVE": {
+      "text": "Iron Wave makes your deck measurably better right at the start of the game. It probably makes your deck measurably worse the rest of the time. There are a few things this card can scale with, but they're mostly outshone by the synergy packages the character has.\n\nAll that said: this is an okay common on floor 1 compared to the other cards in your deck, and it might make it into your deck for that reason.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "UPPERCUT": {
+      "text": "The only way for Ironclad's base card pool to apply weak. This is a very solid card to add to your deck, as it'll up your damage output against enemies, and weak scales well throughout the entire game. The more damage enemies attack for, the more it reduces that damage.\n\nThat said, I've found that it isn't /great/ in many situations, so I don't mind skipping it, either. It really wants an upgrade, which may be hard to provide.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "MANGLE": {
+      "text": "Ironclad has some trouble blocking sometimes, and there are enough enemies who attack multiple times per turn that this is a valuable way to stall against those. Especially good in decks which make excess energy, which Ironclad can often do, and a nice payoff option for Stampede, although Stampede is not one of Ironclad's best build-arounds.\n\nI usually take Mangle if my deck has mediocre turns such that I think paying 3 for it could reasonably be better than anything else I have available.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "BLOODLETTING": {
+      "text": "Ironclad has access to some impressively breakable energy gain, with Bloodletting at Common being one example.\n\nThe tricky thing about energy gain is working out how to have enough cards to play with the excess energy. Adding more energy gain to your deck should usually go hand-in-hand with adding more card draw, for that reason. Cards like True Grit or Burning Pact can let you eventually exhaust your non-energy/card draw cards from your deck in longer fights, at which point a deck of almost entirely energy or card draw will potentially end up playing cards indefinitely.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "PERFECTED_STRIKE": {
+      "text": "Cloning this card can absolutely get you a win at max difficulty, if you want a fun little challenge. My recommendation is to think of it mostly as a strong damage common for getting through Act 1, and not go overboard on trying to make Strike synergies work. It's often worth taking just as a card which deals 18 damage for 2.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "SETUP_STRIKE": {
+      "text": "Deals passable damage for 1. You don't /want/ to be relying on Setup Strike for your damage, but at the start of the run you only have a few card rewards before you need some sort of solution worked out, and Setup Strike may be the best option you see in that time.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "HEMOKINESIS": {
+      "text": "Hemokinesis's main deal is that it has a big number. It deals 15 damage for one energy!  Add vulnerable and it's hitting even harder.\n\nIt's a solid card to pick up for early fights, but I feel it is outshone a little by some other options, and while it activates life loss synergies, I haven't found those to be among Ironclad's strongest.\n\nOkay card. Puts in its day of work. Gets you through some elite fights. But at some point it'll likely be outshone.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "INFERNAL_BLADE": {
+      "text": "Ironclad has enough expensive attacks and reasons to care about a card exhausting that Infernal Blade can be worth picking up as a way to deal some damage in Act 1.\n\nSomething to consider with cards which have variance in how well they perform: If your deck is already strong enough to win with reliable options, taking cards with variance risks it misfiring and losing. On the other hand, if you're struggling to survive the act, the variance can give you a potential way to come back.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "STONE_ARMOR": {
+      "text": "Because of the ability to find Gorget (a Common Relic giving 4 Plating), more copies of Stone Armor, and Eternal Armor (Rare: 9(12) Plating), it's often more accurate to ignore the decay on Plating when calculating what this card does than to assume it ticks down. It's not unusual to put together runs with 20+ Plating, trivializing Block in all fights. Also keep an eye out for the opportunity to clone this, as it can win the run easily if you do.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "AGGRESSION": {
+      "text": "Ironclad thrives off of ways to draw more cards and play more cards every turn. Drawing upgraded Attacks can overpower the enemies quite quickly, while you block with your health pool and some defensive relics or powers.\n\nAggression fits into this quite nicely. In longer fights it'll keep you drawing Attacks you need to kill enemies.\n\nKeep in mind that Ironclad also has Exhaust, so you can try to remove worse Attacks to keep drawing the best ones instead.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "RAGE": {
+      "text": "Rage, especially upgraded, will make some decent block for you in decks which are aiming toward Attack-heavy play.\n\nNote that Dexterity doesn't increase the block made by Rage, and that Panic Button doesn't prevent Rage from making block the next turn!\n\nI /want/ every Ironclad run I play to benefit a lot from Rage, because it's such an easy way to win. Kill the enemy while creating enough Block to take no damage! Realistically though, it's only at its best in decks with lots of Attacks.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "CASCADE": {
+      "text": "Ironclad has some ways to make massive amounts of energy, like Bloodletting+, Expect a Fight, Forgotten Ritual, and Offering. Sometimes Relics might provide a lot as well. Cascade is an awesome way to spend that energy.\n\nOne way that Cascade is interesting to me is that it rewards you for putting high-impact cards in your deck, while punishing you for putting cards like Anger into it. Keep this in mind when considering whether your deck currently wants the card.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "ONE_TWO_PUNCH": {
+      "text": "Tricky card to maximize. Will sometimes do good work in a deck with an Offering and a Whirlwind (the X-value of the Whirlwind gets copied for the second play). Could also combo with some big attacks and Stampede. Don't feel bad if you're struggling to make this work consistently though; it's a bit of an inconsistent card due to its reliance on the Attack it's drawn with and your ability to play both in the same turn.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "PACTS_END": {
+      "text": "Some relics in the game make it very easy to get 3 cards into your Exhaust pile straight away. Ironclad also has a lot of cards like Offering or Stoke which turn this on immediately. The pay-off is well worth it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "PRIMAL_FORCE": {
+      "text": "Mostly a meme, but sometimes the increased damage you get out of Giant Rocks can be enough to get you through an elite or boss fight you'd otherwise be incapable of dealing with. Can be especially good to find from a Skill potion in an awkward spot like that, so keep an eye out for hands with several bad attacks in them when you have a Skill potion you want to use for a tough fight.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "CRUELTY": {
+      "text": "Multiplicative scaling is very strong. Enjoying killing enemies? Would you like to kill them even more? Cruelty may be the card for you. Solid upgrade as well. Cruelty tends to make it into decks built around Vulnerable synergies which haven't quite found enough Damage or Block to survive Boss fights yet, in which case it does a good job of speeding you up, but it's quite awkward to draw in faster fights, and unnecessary in your best decks.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "STOKE": {
+      "text": "Strong card, especially when upgraded. Does run a bit of a failure risk, so you don't /want/ to have to rely on it, but it'll almost always do the job if it's what you end up relying on. Random cards in this game are quite good, and the Exhaust synergies also matter sometimes.\n\nKeep in mind that it doesn't Exhaust itself; you can play it multiple times in the same fight.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "EXPECT_A_FIGHT": {
+      "text": "Tons of Energy in the right situation, which I do find comes up with some regularity, but a nothing-card the rest of the time. Don't over index on speculative Energy gain early in the run, but be ready to Expect a Fight if you're offered this card in a run with decent card draw and Attack Card density.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "CORRUPTION": {
+      "text": "Because of its rarity, Corruption doesn't feel very strong in this game. If you could get it more consistently, you could play your early game toward it, taking cards like Shrug It Off and Dark Embrace which played very well with it. But because it's so unusual to find, I'm usually not taking many of those cards, and have other plans for how to play the Energy Cost on the cards I need by the time it's offered to me.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "ANGER": {
+      "text": "Anger's best interaction is with Enchants. If you can throw an Enchant on one, all of a sudden you're making copies with the Enchant as well, and that can get out of control quickly.\n\nAlso does well with Card Draw, Strength, and some Relics or Cards which care about playing multiple Attacks in a turn.\n\n/Usually/ this can just be evaluated as a 0-Cost deal 6, which is ~okay. Occasionally it does much more than that, but don't expect that to happen very often.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "RUPTURE": {
+      "text": "One of the best ways to break Strength gain on Ironclad. Ironclad has tons of ways to lose Health via his own card pool. Getting 10+ Strength from this in a fight is quite doable, and will kill enemies for you very quickly.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "HOWL_FROM_BEYOND": {
+      "text": "Good damage output, but quite awkward to make it work. If you can get this exhausted and haven't worked out your damage yet it's often worth taking.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "BASH": {
+      "text": "Applying Vulnerable is great, but Ironclad has much better ways to achieve that. Bash is sometimes worth upgrading in Act 1, but by the time you're offered something like Tremble you often stop caring about playing it in most fights.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "STRIKE_IRONCLAD": {
+      "text": "Ironclad Strikes can actually do quite well. They scale off Strength, synergize with some potions and other cards, and in general line up with his need to end fights quickly unless he can find a reliable way to Block.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "FIGHT_ME": {
+      "text": "I've found the Strength-scaling elements of Ironclad's card pool underwhelming so far. When cards like Ashen Strike exist, I'm not sure that there's enough payoff for paying two energy for something like Fight Me!\n\nThat said, if you get it going it can definitely provide a lot of damage. Thrash scales particularly well with Strength, for example, and there are commons like Sword Boomerang and Anger which also do alright with it.\n\nThe downside isn't particularly real, don't be afraid of it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "BLUDGEON": {
+      "text": "Bludgeon is an okay card without support. Dealing 32 or 42 damage for 3 energy is okay on turns where you're not being attacked. Not great, but okay.\n\nWhere Bludgeon gets out of control is when it's combined with support, like Stampede or Thrash. There are some other cute things to do with it with f.x. Headbutt + Havoc as well. I don't think Bludgeon is strong enough that you /need/ to take it in many runs, but keep in mind that there are some impressive ways to maximize it if you ever need to.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "PYRE": {
+      "text": "Pyre is a good way to get some extra output, and is especially valuable on lower ascensions. On higher ascensions, as you get better at combining synergies in the character's card pool, you'll likely get to a point where you don't feel like you need to lean on this so much. It is quite slow.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "WHIRLWIND": {
+      "text": "Whirlwind is very breakable with certain relics and enchantments. Put Vigor 8 on this and draw it off Offering and most fights in the game will already be won or close to it. I think it's more worth picking up in Act 1 if you're going to some events, for the chance of it becoming very strong very quickly, but you'll definitely also have runs where you never find a way to make it much better, in which case it's not a great card.\n\nOften worth upgrading if it's worth taking at all.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "STOMP": {
+      "text": "Most decks I play can't get much value out of Stomp. If you've already played three attacks this turn, do you really need to play this one as well? It would probably be better to put better attacks into your deck, such that playing three of them in a turn killed the enemies already.\n\nKeep an eye out for spots where it's genuinely good though. A Flash of Steel, Pommel Strike, and Anger early + a Battle Trance could make this a very appealing card.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "UNRELENTING": {
+      "text": "A decent card for Act 1 which can end up having some very fun synergies later with big late-game Attacks like Mangle.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "SHRUG_IT_OFF": {
+      "text": "Ironclad has many Uncommon Block cards which are much better than this, and both Blood Wall and Armaments are a bit more appealing at Common. Block is not in such short supply in this game that there's much reason to be taking a character's 3rd or 4th best Block Common in runs.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "BARRICADE": {
+      "text": "Can definitely be a worthwhile pickup in a deck which can burst out a ton of Block at once, but can't consistently create Block every turn; think about cards like Second Wind + Feel No Pain, where you might run out of Skills to exhaust later on in the fight, or something like Gambit which makes far more Block than needed for one turn, but then does nothing until it's drawn again.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "BODY_SLAM": {
+      "text": "It might be hard to justify taking Body Slam on early floors, but if you can it will both provide good tempo turns with big block cards or relics, or become a massive damage dealer late game once you've assembled a block-gaining engine.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "BREAKTHROUGH": {
+      "text": "It's often worth taking some solid Attack Commons like Breakthrough at the beginning of the run. By the time you're in lategame you'll probably not love drawing them instead of your awesome Rares, but they're in charge of getting you that far.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "THUNDERCLAP": {
+      "text": "You want your deck to be better than a deck that needs to take Thunderclap. It is possible that your deck isn't better than a deck that needs to take Thunderclap, though.\n\nThunderclap also gets to enjoy some pretty impressive output when paired with Vicious in multi-enemy fights, which is something to look out for for sure.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "TWIN_STRIKE": {
+      "text": "Working Class card. 10 damage for 1, scales twice with Strength or Strike Dummy. If you need it, it's probably because you need a bit of damage to beat an Act 1 enemy, and maybe you have a potion which works well with it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "JUGGLING": {
+      "text": "A very awkward way to sometimes do some extra damage. Keep an eye out for runs where you're able to play three Attacks per turn and have the third be a 0-Cost card, but don't assume that that's going to happen often.\n\nWeirdly, this is a pretty strong card on Defect, if it's ever offered to you in a Defect run.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "SPITE": {
+      "text": "Much better upgraded. Unupgraded, this struggles to be exciting even if you're activating its extra mode, but with the upgrade 15 for 0 starts getting pretty appealing, and there's some extra Strength scaling to be excited about as well.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "STAMPEDE": {
+      "text": "I've been very impressed with Stampede. Especially paired with some of Ironclad's 3-cost attacks like Bludgeon and Mangle, it outputs a ton of damage very quickly. I haven't found it to do as well later on, where it can even be a bit awkward with something like Fiend Fire, but I'm often happy to add one to my deck in Act 1 and might even upgrade it to get it into play more consistently.\n\nNote of caution: This may turn you in the Crab boss fight, which could result in your taking extra damage.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "DEMON_FORM": {
+      "text": "Demon Form is a ~power~ful way to scale your deck up over the course of a fight, but I wouldn't say it's the strongest option in Ironclad's card pool by any stretch of the imagination. Something like scaling up a Thrash gets you extra damage much more quickly than this does.\n\nStill might be worth picking up for a deck struggling to find damage for long fights, but it's not among the best options for solving that problem.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "NOT_YET": {
+      "text": "Ironclad has enough healing from his Starter Relic and Campfire Rests that taking a card which is otherwise nearly blank in fights isn't very appealing, especially since many times you are offered Not Yet will be in Boss Rewards where it's up against two other Rares.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "CONFLAGRATION": {
+      "text": "Decent area of effect damage. Not amazing, but grabbing a damage card for multi-enemy fights is often a good idea.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "DARK_EMBRACE": {
+      "text": "Dark Embrace is a bit slow for this game. Ironclad has access to lots of cards which immediately \"win\" the fight, either by killing the enemies or by setting up Unmovable amounts of Block, for example, and so instead of having to spend 2 Energy on Dark Embrace you'd prefer to just draw one of those as quickly as possible.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "HEADBUTT": {
+      "text": "Headbutt's issue is that so many of Ironclad's best cards are Powers or Exhaust cards, so you can't put them back on top of your deck after playing them. Further, putting a /different/ card on top of your deck can make it take longer to find them.\n\nIf I take a Headbutt, it's probably because I got a very good non-Exhaust Uncommon early, like Flame Barrier or Battle Trance, and don't have enough damage in my deck yet.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "INFLAME": {
+      "text": "Comparing Inflame to Ironclad's best Damage Uncommons, like Dominate and Ashen Strike, makes it clear that it's a second-rate option. You may still want to take one to get through a boss fight, but don't go out of your way to try to make this card work.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "SWORD_BOOMERANG": {
+      "text": "Sword Boomerang is a passable reason to care about Strength gain in Act 1 in some runs. Oddly, even though it's a common, it ends up scaling very well with Strength compared to most Ironclad cards even in Act 3, so it can be nice to keep it around and even upgrade it if Strength is what you're going for.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "TEAR_ASUNDER": {
+      "text": "Tear Asunder takes quite a while to get going and is usually outdamaged by other cards in the card pool, even in a deck which it should be good in. I mostly get value out of it by finding it off an Attack Potion in a longer fight I'm struggling with.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "DRUM_OF_BATTLE": {
+      "text": "Both halves of Drum of Battle can be worth investing in.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "JUGGERNAUT": {
+      "text": "Juggernaut has fun synergies with ways to make small amounts of block lots of times, like Feel No Pain or Plating. If you get the Gorget relic, which gives you 4 Plating, it makes Juggernaut a massively more appealing pick up, for example.\n\nLater on in the game, the way for this to deal tons of damage is mostly by combining it with lots of exhaust and Feel No Pain. Cards like Ashen Strike might do the same thing a bit better, but maybe you haven't been offered those.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "TANK": {
+      "text": "Will probably result in you dying very quickly. Doubles incoming damage, not just the amount of health you lose.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "DEFEND_IRONCLAD": {
+      "text": "Hard for Ironclad to get much value out of Defend. Second Wind can work sometimes, but they usually fall behind other Block cards he gets offered very quickly.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "HAVOC": {
+      "text": "One of Ironclad's trickiest cards, both to evaluate and to use correctly.\n\nIn the simplest situation, you might play a Headbutt to put a strong card you'd like to play on top of your deck, and then play a Havoc+ for 0 in order to play that card for \"free\".\n\nHavoc is often much more complicated than that, though. A 0-cost (when upgraded) way to cause an exhaust trigger which draws cards with Dark Embrace can end up in situations very complex situations.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "HELLRAISER": {
+      "text": "I think Hellraiser is occasionally a \"good\" pickup if you have a few Pommel Strikes in your deck, and those aren't awful to take early on in the run, so I could see it happening. If you can exhaust your deck down to a couple of Pommel Strikes with Hellraiser in play they loop for a long time until hopefully all of the enemies are dead. Probably not usually worth picking up, though.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "RAMPAGE": {
+      "text": "Rampage is a humble card which poses the question: what if there was an Ironclad card with no actual synergies in the card pool which could do sort of okay. Winning fights with Rampage feels honorable and fair, and leaves one with a sense of pride and accomplishment. It can occasionally be a sensible pickup for getting through the Act 1 boss fight with a deck with no other scaling options, but usually you can skip it. Does have mild synergies with some cards like Headbutt and Thrash.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "PILLAGE": {
+      "text": "Ironclad has too many non-Attack cards for this to be more appealing than Pommel Strike, which deals 3 more Damage and is a Common. It's possible to have a very weird run with very few non-Attacks where it shines, but I've only found that to come up once in 100 runs or so.",
+      "source": "https://sts2.untapped.gg/en/tier-list/6b3390b7-bcbc-4ebc-ae78-ae9a400c66dc",
+      "version": "v0.107.1"
+    },
+    "ADRENALINE": {
+      "text": "Adrenaline is an obscene card. Think of it sort of like it's letting you take an entire extra half a turn.\n\nIt's also a card which is hard to replace with other options in the card pool. You can find other ways to scale damage, or scale up your defense, but the ways to accelerate your deck's card draw and energy generation are much more limited, and the ones that do exist require you to stitch together multiple cards in a combo (for example: Acrobatics + Tactician).",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "NOXIOUS_FUMES": {
+      "text": "The raw math on Noxious Fumes looks a lot worse than the card ends up being. 5 damage over 3 turns? Not great. But when you consider that it makes your deck deal ramping unbounded amounts of damage if you're able to block for long enough it starts to seem a lot more exciting. That's a good enough strategy for winning most runs at max difficulty in this game.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "SNAKEBITE": {
+      "text": "It's very easy to underestimate how much damage Snakebite does because there's no other card which reliably applies this much Poison to a single target in the game. Every other way to apply 7+ Poison is conditional or slower. I expect one upgraded copy to deal about 100 damage to an Act 1 Boss, played twice in the fight.\n\nIt ALSO has retain!\n\nObscene card. Comparable damage to Noxious Fumes, often slightly faster. Also obscene w/ Bullet Time, Pounce, Flechettes...",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "FLECHETTES": {
+      "text": "This is excellent damage if you pair it with some card draw and remove your Strikes. Not usually the best damage possible, but that is often what you're doing and so it can be a very good add, especially for the middle of the game.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "MALAISE": {
+      "text": "Malaise is a great Boss fight card which is also great in a few Hallway and Elite fights. It shines the most in a deck which has a way to cheat energy like Ice Cream but which needs a little help generating enough Defense for extended fights.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "SHADOWMELD": {
+      "text": "Just obscene Block output. Very good upgrade, as Silent sometimes struggles to get more than 3 Energy per turn. Keep in mind that it works with ALL Block gain, like potions, After Image, etc.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "AFTERIMAGE": {
+      "text": "The worst Afterimage is ever going to be is \"okay\". On my second run of Slay the Spire 2 I got 130 of them from a cloning event and completely broke the game. Stuff like that is the potential upside. Goes extremely well with Shivs, or with card draw builds built around Sly, but is also surprisingly okay with slower Poison builds, since even a little bit of extra block is worth a lot for those.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "ACROBATICS": {
+      "text": "One of the best cards in the game.\n\nThe Sly mechanic means that this card is often effectively generating energy by letting you play a card for free. Card Draw + Energy Gain on the same card is something you usually won't see on anything less than a Rare.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "SUPPRESS": {
+      "text": "Definitely not my favorite Ancient bonus. The big hurdle for it is that so many enemies have friends or Artifact charges, and in those fights it doesn't manage to shut them down. Also, what's the point of applying lots of weak to the enemy you're dealing all your damage to in a fight with multiple enemies; you're going to kill that enemy first presumably, and then the Weak will be wasted. That said, it still creates an absurd amount of output for 0 energy.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "FOOTWORK": {
+      "text": "One of Silent's defining cards. Grab a Footwork or two and her Block generation can get out of control quite quickly. A great card to pair with scaling damage (like Noxious Fumes, or really any other sort of Poison) since it'll make it much easier to stay alive until the damage takes down the enemies.\n\nI typically assume I've won if I take a Footwork. So far I've won at Ascension 10 43/44 of the times I've clicked on the card in a Card Reward screen.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "ESCAPE_PLAN": {
+      "text": "An easy card to include in almost any deck. Escape Plan is unlikely to do a ton, but it's very low cost to include it in your deck if it's offered in a card reward with nothing else you want to take. Sometimes it'll end up being a very good card in a run with the right synergies\n\nHave some slight caution: Escape Plan isn't entirely free. There are enemies in the game who punish you for playing Skills, reduce how many cards you can play in a turn, and other effects like that.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "PREPARED": {
+      "text": "Prepared is net-neutral on cards drawn; it costs a card to draw it, and only draws one additional card itself. However, it's still worth taking because of cards and relics which benefit from you playing a card (like Letter Opener or Afterimage) and because of Sly synergy cards (like Reflex and Tactician).\n\nIn decks with resources which synergize with it, Prepared is often a heavy priority pick, even over some good Rares, and can be well-worth upgrading.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "ECHOING_SLASH": {
+      "text": "Trivializes some fights which are otherwise tricky to deal with, like Decimillipede in Act 2. You never really play an \"Echoing Slash Deck\", but you often play some sort of deck which is bad at things which Echoing Slash would help a lot with, and in those situations you should be heavily considering picking up this card if it's offered.\n\nn.b. It keeps going indefinitely. If the repeat kills another enemy, you'll get a third.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "MIRAGE": {
+      "text": "This is an awesome way to make a ton of Block in a deck which applies lots of Poison. Exhaust is too bad; it'd be great to get to play this every turn, but with Well Laid Plans and/or card draw you will often be able to line this up with the biggest attacks. Think of it like taking a copy of Apparition+ in the right deck.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "RICOCHET": {
+      "text": "12 damage for 0 energy is well worth it, and it's even worth paying 2 for this sometimes if you fail to discard it. Strength scaling, or benefitting from Vigor from an Akabeko, are a couple of extra reasons you might especially want this card in your deck.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "UNTOUCHABLE": {
+      "text": "Untouchable is the default \"0\"-cost Block card for Silent. Discard it and it blocks, simple. Most decks are going to be happy to have a copy, although they might not want to take one until Act 2 or 3 as Silent's starter deck is heavily weighted toward defense already and needs a little help defeating elites.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "BULLET_TIME": {
+      "text": "One of Silent's successful lategame strategies is to use Bullet Time to put a lot of powerful high-cost cards into play all at once. Pair it with Well Laid Plans and Nightmare and watch it go. It's also a solid card for medium-strength turns; upgrade it to 2 cost and play an Acrobatics to fill your hand up and it'll create some great output for you.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "ABRASIVE": {
+      "text": "This is a \"Scaling\" Power which you can get into play easily with a card like Prepared or Acrobatics. Having enough Scaling to outpace the bosses, without having so much that you fall behind in the faster fights, is a key balance to strike to win at Slay the Spire.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "THE_HUNT": {
+      "text": "In runs where The Hunt gets going early, you'll be offered almost twice as many cards as usual. That means that having a good idea of how to win off of an increased number of card rewards (rather than off of Relics or Potions for example) is important. A couple of ideas: take extra scaling Powers like Footwork and Afterimage and become invincible, or take lots of card draw and energy and get to a point where you're playing dozens of cards per turn. And keep in mind that you don't have to take as many mediocre cards; you can wait a little longer for the stronger ones.\n\nAlso, keep in mind that killing a Boss with this gives an extra Rare card reward, not just the regular card reward.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "PIERCING_WAIL": {
+      "text": "In the running for best common in the game; it blocks 30+ for 1 on a lot of turns.\n\nMay lose some value in the strongest decks, where synergistic cards can outperform it, and isn't at its best in Act 1, where you need to find strong ways to deal damage quickly and it doesn't line up incredibly with many of the Boss Fights.\n\nStill very very good though!",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "BLUR": {
+      "text": "Blur can become a solid card off the back of a little uncontrolled Block generation. Something like Anchor which always makes you Block on turn 1, or Horn Cleat for turn 2. Since those relics don't necessarily end up generating Block on a turn you're actually being attacked, having them makes it more exciting to put Blur into your deck, since it has a huge upside of carrying the Block to a relevant turn.\n\nLater in the game, Blur fits into decks which generate lots of consistent block as well.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "DODGE_AND_ROLL": {
+      "text": "A valuable card if you have some Dexterity and want to stall fights longterm, but doesn't fit very well into other strategies. Dodge and Roll occupies a bit of an odd place in the game as a Common which you'll actually sometimes be more excited to take in Act 3 than you were in Act 1, just because it has the ability to benefit twice from Dexterity in a deck with a lot of Dexterity, or to set up Block for a turn which is dangerous in a deck which gets to choose when it plays its cards.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "BOUNCING_FLASK": {
+      "text": "There are some fights in the game where Bouncing Flask is VERY good. Single-enemy fights which carry on for quite a few turns. It can also be good with other cards and relics which synergize with poison.\n\nThat said, any multi-enemy fight is likely to find Bouncing Flask struggling for useful effect. It's important to keep that in mind if you take a Bouncing Flask early, and to make sure to have cards or potions which can address the fights that it's weak in.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "CALCULATED_GAMBLE": {
+      "text": "Calculated Gamble has a lot of synergy with Sly cards, but don't underestimate how valuable it is just to find your best cards as quickly as possible. Silent is capable of Turn 1 plays like Acrobatics -> Adrenaline -> Calculated Gamble -> Play all the best cards in your deck.\n\nThat said, don't take this in Act 1 over solid cards which improve your output. Before it takes off, it's an unimpressive card, and there's a downside to speeding through your deck; you draw statuses enemies added earlier.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "NIGHTMARE": {
+      "text": "Nightmare is very flexible for a 3-cost card. In some fights it can target your best scaling power, to overwhelm the enemies over a longer fight, or even a card draw resource in order to massively improve your deck's ability to cycle quickly, while in shorter fights it might target Adrenaline or even a Backstab just to get lots of output from it as quickly as possible. Good with a way to cheat energy so you can play it more easily, like Bullet Time.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "SPEEDSTER": {
+      "text": "An upgraded Speedster can trivialize some otherwise threatening fights in a deck with a few copies of cards like Acrobatics, Calculated Gamble, Adrenaline, and Prepared. If you're not in a fight it's good in, you have a 7-Card starting hand, so you don't need to play it.\n\nIt's a much much worse card unupgraded, because the cards it works best with often exhaust the first time they're played.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "SERPENT_FORM": {
+      "text": "Silent has all sorts of decks which are good at playing lots of cards, but struggle to have those cards actually do very much. Playing Acrobatics discarding Reflex to draw Prepared, which you play to discard Tactician, and then playing another Acrobatics doesn't actually do anything unless you have some powers or relics which are activating because of it, and Serpent Form is a way to make sure sequences like that quickly kill your enemies.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "FAN_OF_KNIVES": {
+      "text": "16 Area-of-Effect damage for 2 is an okay but not incredible cost efficiency. It'll sometimes be worthwhile on its own without needing to have Shiv synergies. If you DO have Shiv synergies, this card is typically going to be worth picking up, but it's okay to take another card over it; it's not necessary for winning the run.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "WELL_LAID_PLANS": {
+      "text": "Well-Laid Plans perfectly supports Silent's desire to put together clever combos of cards, or hold onto defense against big attacks while scaling up poison damage in longer fights. Great with tons of individual cards, too, like Piercing Wail for example. You absolutely do not /need/ to have a Well-Laid Plans to win runs, but it's a simple way to help put together combos in decks which really want to draw (f.x.) Bullet Time + Big Card, or something like that.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "TACTICIAN": {
+      "text": "Making it so Acrobatics not only draws you cards and discards a Sly card, but also gains you energy so you can keep playing more copies of it, is very powerful. Also a useful card for putting together big turns with cards like Malaise sometimes.\n\nAwkward to take in Act 1, where consistent damage and block are so important, but it's a card I hope will be strong by the time I reach Act 3. Very good upgrade; doubling the effect of the card is a lot.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "BLADE_OF_INK": {
+      "text": "Blade of Ink is good enough value to make it into most decks without even considering its potential synergies. And it has a LOT of potential synergies; anything that cares about Weak, Shivs, or even Enchanted Attacks is excited to be paired with this card.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "LEG_SWEEP": {
+      "text": "Leg Sweep is a substantial block card which unfortunately demands a large chunk of energy. Because it costs two, you could think of it as scaling less well with Dexterity than a card like Defend, which gets the same amount of extra block from Dexterity for half the energy cost.\n\nLeg Sweep tends to go into decks which are struggling to establish a good Block engine in order to get them to a place where they're surviving Act 2 and 3. Its numbers are good enough to serve that purpose in many runs.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "DASH": {
+      "text": "Dash isn't a lategame card usually, but it does SO WELL against many Act 1 and Act 2 fights that I'm very happy to add one to my deck early on, and the enemy numbers in Act 3 are low enough (plus the ways to discount expensive cards plentiful enough) that it can sometimes even do well in lategame. Great to upgrade if you're taking it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "NEUTRALIZE": {
+      "text": "Good old Neutralize. Neutralize does okay in Act 1 and sometimes remains relevant because of its weak application later in the game. Its upgrade is fine, but often overshadowed by other cards you can find.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "ASSASSINATE": {
+      "text": "Because you're typically stuck on 3 energy per turn, the 0-cost Innate cards (Backstab and Assassinate) are quite appealing as a way to do something with Silent's 7-card starting hand.\n\nBeing able to deal ~30 or so damage very quickly in a fight will help a lot in many of the Act 1 and Act 2 fights, where it'll let you kill one of the enemies, reducing the incoming damage from the enemies to something you can safely defend against.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "BURST": {
+      "text": "Burst is an extremely powerful mid and lategame tool. Pair it with your best skills like Adrenaline and Malaise to completely trivialize fights. It can be a bit tricky to put into your deck early on, especially if your earlygame damage is based around attacks, which makes it harder to guarantee you'll have good Skills in hand to copy with it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "CORROSIVE_WAVE": {
+      "text": "A strong way for a deck built around card draw to deal a lot of damage, potentially quite quickly. Think about the combination with cards like Acrobatics and Calculated Gamble. Difficult to take right at the start of a run before you have those cards, but a very relevant payoff in decks which have taken them.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "TOOLS_OF_THE_TRADE": {
+      "text": "Tools of the Trade is quite slow. It costs one card to draw it to begin with, so it doesn't actually end up having drawn you net-positive cards until two turns after it's put in play.\n\nThat said, being able to choose from one more card every turn is quite powerful, and it also triggers Sly cards or discards nasty Statuses and Curses for you. Quite worth taking, but it's also worth considering how you're going to stay alive long enough for it to have a chance to pay off for you.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "WRAITH_FORM": {
+      "text": "Decks with Nightmare (or even Duplication potion) and decent damage output can use this to remain essentially invincible for the entirety of the longest fights in the game.\n\nEven without Nightmare, you can hold it until the enemy has started to scale up a bit, and then play it to take no damage for the last three turns of the fight.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "STRANGLE": {
+      "text": "Solid damage for Act 1, and scales off both Sly strategies (which play a lot of cards) and Shiv strategies (which play a lot of Shivs). Getting enough damage to kill Act 1 elites quickly is a priority at the start of every run, and this is a good way to do that.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "PREDATOR": {
+      "text": "Predator excels at letting Silent's Starter Deck spend 3 energy on attacks in a turn, which is an important thing to be able to do in many of the Act 1 Elite fights. She only starts with 5 energy worth of Attacks in 13 cards, but Predator ups that to 7 energy worth in 14, and also makes it so you draw an extra two cards the next turn.\n\nVery solid Act 1 card, and even in Act 3 there are sometimes turns you're very excited to play it to set up for next turn.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "PRECISE_CUT": {
+      "text": "The damage on this is easily high enough for me to be excited about having one for Act 1. Later in the game I'm often playing decks which always have cards in hand, so it's less useful there.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "ACCELERANT": {
+      "text": "Accelerant massively increases damage output from your Poison. 10 Poison goes from dealing 10 damage per turn to 27 with one Accelerant+.\n\nThe thing to watch out for with this card is making sure you aren't taking it for runs where it isn't helpful. A lot of the time, a Silent deck capable of putting Poison on the enemy is benefitting more from Defensive cards to stay alive while that Poison ticks, than from offensive cards to try to kill with the Poison more quickly.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "SURVIVOR": {
+      "text": "A valuable and class-defining Starter card. Survivor makes all your Sly cards a lot more pickable, and gives you the ability to survive longer in easy fights while poison cards ramp up damage on enemies.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "FLANKING": {
+      "text": "Great way to multiply damage from an ally's big combo turn.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "SNEAKY": {
+      "text": "Fun and strong way to gain enough Block to survive in 3+ Player runs.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "DEFEND_SILENT": {
+      "text": "Silent Defend might be the best Defend in the game, because of her easy access to Dexterity to buff its output. That said, it's still only a starter card.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "POISONED_STAB": {
+      "text": "Poisoned Stab is a solid and noncommittal damage card. You can put it in your deck and it'll help you out in some early fights, but it doesn't mean you have to go only for Poison damage in the run or anything like that. You can also skip it. It's just an \"okay\" card in a lot of different ways, and that makes it useful sometimes but not tragic to miss out on.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "BACKSTAB": {
+      "text": "Because you're typically stuck on 3 energy per turn, the 0-cost Innate cards (Backstab and Assassinate) are quite appealing as a way to do something with Silent's 7-card starting hand.\n\nBeing able to deal ~30 or so damage very quickly in a fight will help a lot in many of the Act 1 and Act 2 fights, where it'll let you kill one of the enemies, reducing the incoming damage from the enemies to something you can safely defend against.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "PHANTOM_BLADES": {
+      "text": "Quite a lot of damage to add to a Blade Dance in Act 1; instead of playing every Shiv in one turn you can play one per turn and deal 39 with them instead of 12. Phantom Blades is a little limited in terms of lategame scaling, but can help you survive long enough to find more exciting cards. It's fine to take this card and then move away from Shivs as a damage source as the run moves on.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "HAZE": {
+      "text": "An issue with Poison is that it reduces after dealing damage every turn, so unless you can apply a decent amount of it, it'll quickly fall off entirely. Four isn't very much, so you'll want to make sure that Haze is getting support from other Poison cards in your deck, but if you're building a deck with enough Sly support to care about the card at all there might not be much room for that. It's a bit of an awkward card only useful in a fairly narrow situation.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "KNIFE_TRAP": {
+      "text": "Massive payoff card for Shiv synergies. You don't need many Shivs in your deck at all for this to already be worth taking, and once you get a higher density of them it can become game-breaking very quickly.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "HAND_TRICK": {
+      "text": "With enough Sly enablers this card becomes quite potent, but without them it can end up being a mediocre card stuck in your hand. Keep an eye on the balance of your Sly deck, and if you feel like you have enough Discard outlets with little enough payoff pick one up.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "INFINITE_BLADES": {
+      "text": "Infinite Blades is very slow damage, but especially at lower Ascensions, Slay the Spire 2 doesn't ask you to be extremely quick very often. If you need a bit more scaling in your deck for boss fights, or have some relics or other cards which synergize with a Shiv every turn, pick one of these up. I think fine to take in Act 1 without any support as well, just to have for later.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "REFLEX": {
+      "text": "Reflex is usually one of the last pieces that makes it into a VERY broken Sly deck. It's a mediocre card unless you're so good at drawing cards that using your Sly enablers to draw even more Sly enablers instead of doing anything else starts to be worth it for you. Cards like Speedster might make this the best way for you to deal damage, for example.\n\nUnfortunately, you both need to be able to consistently discard Reflex AND need drawing extra cards on your turn to be quite valuable before it's worth putting this card into your deck.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "BACKFLIP": {
+      "text": "Somewhat of a class-defining common. If you're in a run where Backflip is worth playing (i.e. because you have a bit of Dexterity or extra energy) you're often able to win by focusing on playing Backflips and other block cards it draws for you, while winning with a little bit of scaling damage from cards like Infinite Blades or Noxious Fumes.\n\nJust be careful not to go too far down the block path and find yourself unable to deal good damage, and always keep your eyes peeled for anything even stronger than this that you can be doing; it's just a common, after all.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "BLADE_DANCE": {
+      "text": "Blade Dance deals a flexible 12 damage for 1 energy, scales well with Strength, and activates relics or cards which want you to play multiple cards in the same turn. Keep in mind: because it exhausts, you won't be able to count on playing it multiple times in longer fights, but you'll also be able to get rid of it from your deck in fights where that's favorable for you.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "DAGGER_SPRAY": {
+      "text": "An okay damage common. Hitting twice means this scales better than most cards with things like Flex Potion or Strength, and no-nonsense area of effect damage is important to have in your deck in a lot of earlygame situations.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "CLOAK_AND_DAGGER": {
+      "text": "A solid \"both-ways\" sort of card which can become stronger later in the game because of how well it combines with so many different potential pickups. That said, the numbers on it are not very impressive by themselves.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "DAGGER_THROW": {
+      "text": "Dagger Throw's \"Discard 1\" line is actually a significant upside on it. It lets you play any Sly cards you have in your hand for free, which is a big deal! It's a solid card to add to your deck early on, just to deal a little extra damage to early fights, and then later it can enable you to discard some important Sly cards to play them.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "DEADLY_POISON": {
+      "text": "If you're interested in building a deck which uses Poison for damage, Deadly Poison can be a good Act 1 pickup. It usually won't make the cut later on, and if you're not attached to the Poison idea, there are probably better other Act 1 choices for damage that you can find.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "BUBBLE_BUBBLE": {
+      "text": "Bubble Bubble is a card which can fit into functional strategies to add a bit more explosive power to them. In order to take it, you already want to have a decent density of Poison cards in your deck. If it's working, it's a ton of damage, though.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "EXPERTISE": {
+      "text": "Expertise is at its best when combined with Discard cards. Discard some stuff from your hand, hopefully get something out of that, then refill. Early on in the run you typically don't have enough energy or discard to justify it, but it occasionally comes together later on.\n\nAlso worth noting: Expertise is one of the best ways to support Grand Finale, if you ever end up in a run where you're trying to make that work.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "FINISHER": {
+      "text": "Silent's starter deck actually already has enough Attacks between Strike and Neutralize that this is a decent card on Floor 1. Add some Blade Dances and other Attack spam options to make it especially strong, perhaps paired with Vulnerable and/or Pen Nib, or just use it to get through Act 1 while transitioning to other more reliable ways of dealing damage.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "HIDDEN_DAGGERS": {
+      "text": "Watch out for ways to make this work with Discard synergies. Also keep in mind that discarding cards before generating Shivs can be good because the game has a max handsize. This is a \"situational\" card, but the situations where it’s good come up fairly often..",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "MEMENTO_MORI": {
+      "text": "Great way to deal a ton of damage in a deck with Calculated Gambles, Acrobatics, and copies of Prepared, if you need one of those. Memento Mori suffers a little bit from being at its best in decks which are already quite good, but the number on the card is aggressive enough that it can pull its weight in a weaker deck while you try to get everything assembled as well.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "TRACKING": {
+      "text": "Anything that says \"double\" on it in a game like Slay the Spire 2 is worth paying a lot of attention to. Decks which are dealing good attack damage already, perhaps with some Strength and some Shivs or something like that, will get a massive boost out of putting Tracking into play, and it isn't that hard for Silent to maintain Weak on an enemy. On the other hand, a deck which relies on Poison doesn't get much from a card like this at all, and I find Poison cards to be much simpler to win with.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "POUNCE": {
+      "text": "Pounce is a very middling card. Damage cards are most valuable early in the game, but expensive skills tend to be most relevant later in the game, so it does an okay job of playing a role in your deck throughout the entire run, but isn't likely to be an exceptional card at any point.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "PINPOINT": {
+      "text": "Pinpoint is a powerful damage card for decks which want to build toward Sly synergies. Cards like Prepared, Acrobatics, and Escape Plan can quickly discount it for the turn, and the 17 damage payoff is enough to care about for most of the game.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "LEADING_STRIKE": {
+      "text": "11 damage for 1, plus a little Shiv synergy, is good enough for Act 1 already. Later on, Leading Strike can do very well in runs with cards like Afterimage or relics like Kunai and Shuriken.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "OUTBREAK": {
+      "text": "Great synergy with repetitive Poison applicators, like Noxious Fumes or Envenom. Outbreak can help you win some of the peskier multi-enemy fights in the game, and is a nice way to make Bouncing Flask a little more useful in a fight like that. Keep in mind that Noxious Fumes applies Poison three times per turn in a fight with three enemies in it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "DEFLECT": {
+      "text": "Deflect goes into the sorts of decks which are excited to play Backflips and block with cards which scale well with Dexterity. It's definitely not a card that every deck wants to take, as its output can be quite low, and a lot of the time it's \"good\" it's still just a worse version of Untouchable anyway.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "ENVENOM": {
+      "text": "Envenom is a weird card. If you're hitting lots of times with attacks, why do you need to apply Poison? If you're applying lots of Poison, why do you need to hit lots of times with attacks? When it makes it into my decks, it's usually because I have a deck built around Shivs for damage which hasn't found a sensible way to scale up damage to win boss fights yet. In a deck like that, I might take an Envenom shortly before the boss fight.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "MASTER_PLANNER": {
+      "text": "A capstone piece for Sly synergies, but they don't usually need a capstone piece. Most of the time if you can draw and discard lots of cards you'll win already without needing a slow 2-Cost power.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "SKEWER": {
+      "text": "There are a couple of ways in which Skewer can be an exciting card:\n\n1) You can take it to make your Act 1 deck more capable of turning energy into damage, in order to win elite fights before you're overwhelmed.\n\n2) You can take it to take advantage of relics which synergize with it. Chemical X and Akabeko are perhaps the best examples.\n\nThat said, even in these situations, which are somewhat unusual, it's still only okay. Don't feel bad about skipping this card.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "FLICK_FLACK": {
+      "text": "Sly means that a card gets played automatically if you discard it, so this is a cool option to pick up with something like a Dagger Throw to get going in early game. Nice that you can play it (even if it's not for a huge number) even if you don't draw it with a way to discard it. That said, ironically the existence of a mechanic like Sly means there's extra downside to polluting your deck with low-output cards, and this is one of those.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "SUCKER_PUNCH": {
+      "text": "Mediocre damage common, the Weak isn't nothing but you'll often apply Weak with other cards which are better than this one anyway.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "EXPOSE": {
+      "text": "A very flexible card which will do a little something for a lot of different decks. Vulnerable is great for decks trying to play attacks, while Artifact removal is useful for decks trying to apply Poison or even just trying to block by reducing enemy strength.\n\nWhile it always does a little something, it never does MUCH, so make sure you're not watering your deck down with too many low-impact cards when you take a card like this.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "STORM_OF_STEEL": {
+      "text": "Storm of Steel is a bit of a meme card. There are Common and Uncommon Shiv generating cards which make more Shivs than this without requiring you to discard your hand.\n\nIt can become appealing if discarding your hand becomes an upside somehow. The main ways that might happen are Sly synergy cards and the Tough Bandages relic.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "ANTICIPATE": {
+      "text": "The challenge with a card like Anticipate is being able to know that you'll have enough cards that benefit from Dexterity in your hand for it to have value. Without any guarantee that you'll be able to pair it with block cards, it isn't an incredible option, but later in the game it might be enough to get a run lacking scaling over the finish line against the Boss fights.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "UP_MY_SLEEVE": {
+      "text": "Some okay Shiv generation, but the first time a card is played is usually the most relevant by far, and paying two for this in the early turns of fights feels quite painful.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "ACCURACY": {
+      "text": "Accuracy is a highly specific but also highly powerful card. If your deck supports playing enough Shivs, it's very worth having. However, managing to support enough Shivs might block you from pursuing other options down the line.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "MURDER": {
+      "text": "There are easier ways to deal damage if you're drawing lots of cards, but Murder can fit into a deck with Pen Nib and no great way to finish boss fights, as an example. A heuristic I lean on a bit for Silent decks which draw lots of cards is that I'm hoping for them to have essentially \"won\" the fight by the time they're finished drawing their draw pile for the first time, by putting powers into play, debuffing enemies, applying Poison, etc., and this card doesn't come online until after that.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "SLICE": {
+      "text": "The problem with Slice is that it has no way to excel. Other cards might be breakable with Sly synergies, Shiv synergies, Poison synergies... this card is just a Strike that costs 0. Arguably, it's even worse than that, because the game has some Strike synergies. Almost always skipping this unless my deck desperately needs a damage card for a fight in the immediate future.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "GRAND_FINALE": {
+      "text": "One of the most fun cards in the game, worth trying to put together just for that.\n\nIt's also a bit playable. A 17-card deck gets to play it 5/17ths of the time, ignoring card draw, which averages around 15 area of effect damage for zero. That isn't perhaps the most useful way to analyze it, but it's good to keep in mind that the payoff is quite large here, and cards like Expertise and Well Laid Plans, or potions like Gambler's Brew and Swift Potion can sometimes make it fairly reliable as well.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "SHADOW_STEP": {
+      "text": "I've found this to be too awkward to make work. The scenario where I could see it being good would involve big attack cards + solid benefits for Discarding your hand, but I haven't run into a run like that yet.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "STRIKE_SILENT": {
+      "text": "Rapidly outdone by Silent's many damage commons.",
+      "source": "https://sts2.untapped.gg/en/tier-list/2cd72d4b-eeb4-42ab-89ca-4ac682137672",
+      "version": "v0.107.1"
+    },
+    "HIDDEN_CACHE": {
+      "text": "Regent's best Star generation card, and it's Common, so you can find it reliably!\n\nImportant to realize: this card makes more or equal Stars per card than every other card in Regent's card pool other than one Ancient Bonus and one Rare Power which doesn't outdo it until three turns after it's put in play. If you want Stars, Hidden Cache is the default sensible way to get them.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "CHARGE": {
+      "text": "Even if you're just using CHARGE!! to transform your worst cards into 0-Cost 13 damage cards, that's already eventually giving you 26 damage for 1 Energy. At its best it can also be used to target Curses or Statuses, or to exhaust your Deck toward some sort of combo.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "REFLECT": {
+      "text": "Playing Reflect every turn sort of just wins the game on its own. There is some complexity in budgeting Star use, and it can be tricky to work out whether to take it if you already have other Star cards (or whether to skip those in the hopes you'll find a Reflect!). For the most part, though, this card is very very good and taking it and making sure you can play it is a good idea.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "ARSENAL": {
+      "text": "Trivializes damage scaling in any deck with card generation. Upgrade it to make it innate.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "BIG_BANG": {
+      "text": "Essentially no downside, substantial upside.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "HEAVENLY_DRILL": {
+      "text": "There are SO MANY ways to make this card one-shot most of the enemies in the game. Enchants, Energy generation, Vigor, Vulnerable, Strength...",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "MAKE_IT_SO": {
+      "text": "Keep in mind that this is placed in your Hand from anywhere, so if you can play 3 Skills on turn 1 you usually won't have to draw it. Scales great with Strength gain and useful just for its output, or to proc Relics. My Stats have me playing this card 5 times per time I draw it so far, so it has sort of been a 30 Damage card for 0 Energy for me.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "SEVEN_STARS": {
+      "text": "Seven Stars is the sort of card that has so much output that it can be worth putting in your deck as a curse on the off chance you'll be able to use a potion to play it, or will be able to find enough Star generation to get it going later in the run. Note that on top of naively dealing 49 area of effect damage it also scales extremely well with Strength and Vigor.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "TYRANNY": {
+      "text": "Great upgrade, drawing an extra card every turn while thinning bad cards from your deck is great, and has an excellent interaction with Bombardment as well.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "METEOR_SHOWER": {
+      "text": "A LOT of output for 2 Stars.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "THE_SEALED_THRONE": {
+      "text": "Only exciting if you care about Stars when you're offered it in Act 3, and a little bit slow to get rolling in a fight, but very very exciting as fights progress assuming your deck can take advantage of it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "GLITTERSTREAM": {
+      "text": "Tons of Block, and worth upgrading! On cards which generate a lot of Block it's quite valuable to spread the output over two turns, as it reduces the chance that you'll overblock and waste the defense you're generating.\n\nGlitterstream scales very well with a lot of Relics, you should keep an eye on its value throughout runs, as it's your highest output Block Common. Sometimes you'll want to be taking it for the entirety of the run.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "BEGONE": {
+      "text": "Good synergies with Card Generation, plus a decent card in its own right. It's nice to trim chaff or bad Curses/Statuses out of your deck in longer fights.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "COLLISION_COURSE": {
+      "text": "Great damage for 0, and when your deck has 0-Cost cards that deal 11 (or 15!) you often don't need to worry about drawing a Debris later in the fight because the enemies will be dead before it comes back around.\n\nAlso synergizes with Card Generation, which can achieve a lot in Regent's card pool.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "KNOW_THY_PLACE": {
+      "text": "Know Thy Place is an exceptional card in any deck with excess card draw which hasn't reached a point where it keeps enemies permanently Weak and Vulnerable yet. It's one of the unusual Commons which can actually be a lot better in Act 3 than in Act 1. Doesn't fit into every deck, but great in situations where it's needed.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "PATTER": {
+      "text": "Patter has relevant synergies with multihit cards like Stardust, but it also just has large enough numbers that it's worth taking. Later in the run it's unlikely to be an incredible card unless the Vigor becomes very valuable, but early on every deck is happy to have it because it does so much for 1 Energy.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "REFINE_BLADE": {
+      "text": "It's slightly convoluted, but at absolute worst this is 19 damage for net 2 Energy (assuming you can wait until next turn), and that isn't bad for a Common. Refine Blade's true value shines when you're able to buff the Sovereign Blade further, or play it multiple times, at which point it can start to take over fights. Decent pick up early, and unlikely to become completely useless even if your run doesn't end up centering on the Blade.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "BLACK_HOLE": {
+      "text": "Black Hole is a great way for many of Regent's more \"fair\" decks to deal damage in a more unfair way. Adding area of effect damage to miscellaneous Commons and Uncommons can be a nice way to bridge the gap in Strength requirement between Act 1 and Act 2.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "BULWARK": {
+      "text": "Tons of value on one card. Hard for Bulwark to be truly bad in any run, but it will sometimes fail to be enough if it's what you're relying on for a Block card (12 for 2 isn't enough for Act 3), especially if the Blade isn't very useful for your deck.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "CONQUEROR": {
+      "text": "It's not hard at all to put together a 30 Damage Sovereign Blade, at which point Conqueror is dealing 36 Damage for 1. One of the cards I look out for to make a Sovereign Blade a reliable enough source of damage for the Act 1 Boss fight, and can get silly later in the run.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "GAMMA_BLAST": {
+      "text": "A very relevant upgrade compared to the Falling Star Starter card, deals good damage and keeps uptime for Weak and Vulnerable going. Usually worth having one if it's offered to you early enough in the run to matter.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "KINGLY_KICK": {
+      "text": "Enough damage to be worth going a little out of your way to support. Regent has some ways to cheat this down to 0-Cost quite quickly, and then recur it frequently, but it's also just an okay card to play for 3 in some situations, or to pair with a Liquid Memories potion.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "KINGLY_PUNCH": {
+      "text": "12 Damage for One is already a decent card, especially in Act 1, and Kingly Punch has relevant upside which can carry you through the Act 1 Boss Fight or potentially even a little further.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "PILLAR_OF_CREATION": {
+      "text": "Most Regent Decks have enough Card Generation that Pillar of Creation will be worth playing. One of the easy lategame Block solutions available to the character.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "RADIATE": {
+      "text": "One of Regent's strongest scaling options. Some cards can make 9+ Stars on their own, and Radiate scales incredibly well with Vigor and Strength. Keep in mind that your Starter Relic counts as you having gained 3 Stars on turn 1, so this hits for 9 for 0 on turn 1 if you draw it then.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "ROYAL_GAMBLE": {
+      "text": "Great enabler and payoff card for many other cards which care about Star generation. Good upgrade to make sure you can match it with whatever you're comboing it with, whether that's a Power which turns Star Spending into Block, an Attack which hits for every Star you've generated, or something else.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "SHINING_STRIKE": {
+      "text": "Not the best damage per Energy, nor the best Star generation per Energy, but the ability to recur it in the fights where it's good makes Shining Strike quite valuable.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "SUPERMASSIVE": {
+      "text": "Huge damage payoff card in any deck with good card generation. Worth picking up in Act 1 with the expectation that it will get very strong, but okay to pivot away from it if you don't find the right pieces to support it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "COMET": {
+      "text": "Lots of output, but 5 Star Cost is quite limiting; it's hard to fit it into your deck unless you have good Star generation, and even then you may not be able to play it the first time you draw it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "CRASH_LANDING": {
+      "text": "Great damage for its cost, and some decks can take advantage of the Debris generation and make it an upside instead of a downside, at which point this card is obscene.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "DYING_STAR": {
+      "text": "Blocking for a ton while dealing some damage is worth 3 Stars.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "HEIRLOOM_HAMMER": {
+      "text": "20 Damage for 2 is already okay (at least early in the run) without the rest of the text on this card. Sometimes you'll also be able to use it to copy a broken Colorless card. Keep in mind that the Sovereign Blade is a Colorless card, as is Luminesce (+2 Energy w/ Retain from the Act 2 Ancient Reward Pool)!",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "I_AM_INVINCIBLE": {
+      "text": "An easy way to bring Block output high enough for Act 3, just needs a little support from copies of Glimmer or Cosmic Indifference.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "SEEKING_EDGE": {
+      "text": "One of the strong ways to start caring about your Sovereign Blade, there are enough challenging area of effect fights in the game which are well addressed by hitting all the enemies for 30+ for this card to be quite appealing.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "GATHER_LIGHT": {
+      "text": "Fairly low-impact card, but both elements of the low-impact are quite valuable! Any okay card to bridge from early to lategame, but not one you're hoping to center your endgame strategy around.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "WROUGHT_IN_WAR": {
+      "text": "Tons of Damage to pack into one Common, plus the Sovereign Blade has retain so you don't have to play it until a turn where it's safe to do so.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "CHILD_OF_THE_STARS": {
+      "text": "Great way to add Block Output in any run which is regularly spending Stars, but not guaranteed to ever be good if you don't have such a deck put together yet.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "LARGESSE": {
+      "text": "Colorless cards are very strong, and 0 is a very low number!",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "VENERATE": {
+      "text": "Passable Star generation, you're definitely hoping to stop having to play it later in the run, but it'll get you through Act 1 in a pinch, and can even be upgraded if no better Star Generation has been found.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "ASTRAL_PULSE": {
+      "text": "An excellent way to turn Stars into damage early in the game, but often falls off extremely hard. Don't be afraid to stop playing it if you're offered better Star cards you'd prefer to use after taking it and don't have enough Star Generation to support them all.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "CELESTIAL_MIGHT": {
+      "text": "Solid damage for its cost, especially in Act 1, and scales impressively with Vigor.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "COSMIC_INDIFFERENCE": {
+      "text": "Enabler for some decent cards in Regent's pool which care about being put on top of your deck or being drawn multiple times per fight. Also shines in decks built around recurring or properly deploying specific cards on specific turns.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "CRUSH_UNDER": {
+      "text": "Performs quite well in several of the games tougher fights, including two of the Act 2 Elites. Well-worth upgrading if you're intending to prioritize playing it. That said, it doesn't fit sensibly into lategame synergies, so be careful not to water your deck down too much with cards like it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "FALLING_STAR": {
+      "text": "Decent way to enable yourself to spend Stars early in the run, but falls off heavily as the run goes on.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "GUIDING_STAR": {
+      "text": "Regent's best Common for card draw. You will not always have the Stars and Energy available to justify taking these, but any time that you do they can become an important part of your deck.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "MANIFEST_AUTHORITY": {
+      "text": "Passable but under-statted Block card which does decently in a deck which wants to generate cards.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "PALE_BLUE_DOT": {
+      "text": "Great extra card draw, especially upgraded, but very slow.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "PARRY": {
+      "text": "Good way to get enough Block in a deck which can regularly play its Sovereign Blade, but unpickable outside of that situation. Even decks which scale their Blade up in order to play it once don't like this card very much.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "PARTICLE_WALL": {
+      "text": "A card that gets worse the better you get. Being able to dump all of your Stars into Block is valuable, but with more experience you'll more frequently be able to do that without needing a card like Particle Wall, which doesn't actually translate Stars to Block at a particularly good ratio.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "RESONANCE": {
+      "text": "Recurring Resonance is enough to outscale many of the Boss and Elite fights in the game, if you give it a little support. It also gains you Strength to end those fights with some sort of multihit card. You may not want to play it in fights it isn't good for, letting you save the Stars for other situations.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "SPECTRUM_SHIFT": {
+      "text": "Good option for scaling the deck up enough in longer fights, but quite slow for shorter ones.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "STARDUST": {
+      "text": "Massive payoff option for Star generation and Vigor stacks, but keep in mind that there are other ways to turn Stars into damage more efficiently than this unless you're able to do a good job of stacking Vigor for it or able to Enchant it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "SUMMON_FORTH": {
+      "text": "Solid support card for recurring your Sovereign Blade.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "BEAT_INTO_SHAPE": {
+      "text": "Quite awkward to take advantage of, as decks centered on Sovereign Blade tend to be more about big hits with their Blade than many small hits with other Attacks. Great output with a little support though.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "BOMBARDMENT": {
+      "text": "Quite good if you can Exhaust it without having to pay 3, quite awkward if you can't, pick accordingly!",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "DECISIONS_DECISIONS": {
+      "text": "Lives or dies by whether it can be paired with a good enough Skill to play three times, and whether you can generate 6 Stars to play it to begin with. Often worth having as a high-output option if you can make it work.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "GENESIS": {
+      "text": "Not the best way Regent has to generate Stars, but can do in a pinch.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "GUARDS": {
+      "text": "Becomes great very quickly if paired with good card draw and/or payoffs for card generation, but in a median Regent run GUARDS!!! is just okay.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "SWORD_SAGE": {
+      "text": "Good card, but you need to already have a decent amount of Forging going for this to be better than just playing another Forge card to double the size of your Blade, and if you are looking to deal double damage with your Blade to close out a fight, Conqueror is available for 1 Energy at Uncommon.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "THE_SMITH": {
+      "text": "4 Star Cost makes it quite tricky for this card to be played unless you're generating good Stars, but Sovereign Blade doesn't have many favorable interactions with Star generation, so it ends up being an awkward card to fit into a deck.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "VOID_FORM": {
+      "text": "If you can put Void Form into play, it's likely it can win you the run, but working out how to put it into play without dying is challenging. Best in a poor deck with a Regal Pillow, or something like that, as a way to quickly inject a massive amount of power into the deck for Boss Fights without dying from chip damage in Hallway Fights as a consequence.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "LUNAR_BLAST": {
+      "text": "Lunar Blast is an immensely powerful card, but it's sort of on the wrong character. Regent doesn't have too many ways to spam tons of skills in the same turn. Can do a lot with a little Vigor, but don't expect it to be much more than a chunk of damage for 0 Energy.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "HAMMER_TIME": {
+      "text": "Only useful if you're Forging, and allies don't necessarily want a Blade clogging their hand.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "STRIKE_REGENT": {
+      "text": "Because Regent has access to Vulnerable his Strikes can end up doing okay for him, but his Starter Deck is skewed a little too heavily toward damage, so you'll typically want to be removing one or two of these before you remove any Defends.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "CLOAK_OF_STARS": {
+      "text": "Because Regent has to fit extra types of cards into his deck (Star generators and Star spenders, plus all the cards other characters care about) low-impact cards like Cloak of Stars start to feel like they're watering his decks down heavily. Still a decent price to pay for 7 Block, though.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "CRESCENT_SPEAR": {
+      "text": "Passable damage common, but takes up a lot of space in the deck and demands extra support. It tends to be stronger to have a few Star-spending cards which generate great output from your Stars than the throw tons of them into your deck, which results in Stars being spent on unupgraded cards with less output.\n\n~Free win with Clone, which is cool, just make sure you have a potion/relic for the rare fights which counter it, like the Insects who only take 9 per hit!",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "GLOW": {
+      "text": "Goes into decks with extra Energy and need for Star generation, but not a great pickup in Act 1 usually due to its low output, and not necessarily appealing later in the run either.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "PHOTON_CUT": {
+      "text": "Somewhat more exciting when paired with Kingly cards which care about being drawn multiple times, or if you can find an upgraded one, but for the most part this is outshone by Regent's other commons.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "SOLAR_STRIKE": {
+      "text": "So-so Common. A bit of output, but nothing exceptional.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "SPOILS_OF_BATTLE": {
+      "text": "Regent's best Common card draw which doesn't require Stars, so Spoils will pull some weight in high-energy runs sometimes, but not a good card in Act 1 by default.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "ALIGNMENT": {
+      "text": "Alignment doesn't usually have much purpose in Regent's card pool unless you're using it for an infinite or massive X-cost card. You typically have to spend energy to generate Stars, if you're just using them to create energy again you start getting Rube Goldberg-y and failing to actually output anything that wins fights.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "CONVERGENCE": {
+      "text": "Retaining your Hand is occasionally strong in runs which want to line certain cards up with each other, but Convergence has very limited output other than that Retain, so don't try to force it into a deck which doesn't benefit from it much.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "GLIMMER": {
+      "text": "Passable card draw, but only exceptional when paired with a deck which benefits from putting a card on top of its Draw Pile. Otherwise, there are Common draw options which outperform this.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "HEGEMONY": {
+      "text": "Regent doesn't have a ton of ways to benefit from a turn with extra Energy, and Hegemony is a lot of Energy to spend on not much Output.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "KNOCKOUT_BLOW": {
+      "text": "Lots of things have to go right for this to be meaningfully better than a card which deals 30 Damage for 3 Energy, but 30 Damage for 3 Energy is enough to make it into the deck every now and then.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "ORBIT": {
+      "text": "Decent Energy generation over time, if your deck needs that.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "QUASAR": {
+      "text": "Colorless Cards are quite powerful, but 2 Star cost and the fact you'll still have to pay the Energy to play the Colorless card makes Quasar a bit of a tough sell for me.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "TERRAFORMING": {
+      "text": "Good Support card, at its best when paired with very specifically Stardust or Radiate.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "BUNDLE_OF_JOY": {
+      "text": "Solid if you have cards which reward you for generating cards, but otherwise quite slow and unreliable.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "NEUTRON_AEGIS": {
+      "text": "8+ Plating is great, but 5 Stars is a huge amount to pay. I'd find this card stronger if it costs 3 Energy, at which point it could go into any deck severely lacking Block, but here it really only fits into a deck severely lacking Block which ALSO generates a good number of Stars.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "DEFEND_REGENT": {
+      "text": "Regent does need to play Defends at the start of the run to avoid dying, but can quickly replace them with better Block options.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "DEVASTATE": {
+      "text": "Great to generate off of an Attack potion, but 4 Stars is a very awkward cost for early in the game, and Devastate doesn't really deal much more damage than some of Regent's more straightforward Commons, while failing to scale impressively with any of his main synergy spaces.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "FURNACE": {
+      "text": "Passable damage for a Boss fight if your deck is lacking a way to scale up, but otherwise very slow.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "MONOLOGUE": {
+      "text": "There are ways to make Monologue particularly strong, but it's hard to find any that are more impressive than making Vigor instead.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "PROPHESIZE": {
+      "text": "Extremely difficult to find spots where you have so much Energy that you want to spend 2 to draw 6 cards, but if you ever do, Prophesize is available.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "FOREGONE_CONCLUSION": {
+      "text": "Very slow, and no guarantee it can actually get you the cards you need, as it can't search your Discard Pile.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "MONARCHS_GAZE": {
+      "text": "An expensive card, although it has a strong effect. Best off a Power Potion in a Boss Fight, but occasionally can make it into your deck if you lack Block and have ways to hit enemies multiple times per turn.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "ROYALTIES": {
+      "text": "If you successfully survive 5 fights drawing and playing Royalties you'll probably have made enough Gold using it to successfully remove it from your deck.",
+      "source": "https://sts2.untapped.gg/en/tier-list/c47dbfda-4983-4107-8c9c-c33d5ae32b23",
+      "version": "v0.107.1"
+    },
+    "BONE_SHARDS": {
+      "text": "Extremely high numbers for a 1-Cost card, and in the toughest fights in the game you'll often be piloting a deck where Osty only has 1 or 2 Hitpoints when you sacrifice him anyway.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "BORROWED_TIME": {
+      "text": "In a hand of 1-Cost cards Borrowed Time already lets you play one extra card this turn, but it's at its best with X-Cost cards (which don't have their cost effected by it at all!) or higher cost cards and their synergies (it makes all 1-Costs 2-Costs instead, for cards which care about that!).\n\nTons of energy, good upgrade, and doesn't have exhaust, so can be used multiple times in some fights.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "DANSE_MACABRE": {
+      "text": "Massive payoff card for one of Necrobinder's best synergy spaces. Especially powerful when paired with Borrowed Time, another of Necrobinder's best cards. Increasing your Block output per turn is one of the simpler shortcuts toward winning a run of Slay the Spire 2.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "SLEIGHT_OF_FLESH": {
+      "text": "Around 20-25% of Necrobinder's cards apply debuffs, and 9(13) damage is a lot of damage to attach to them. Keep in mind that Doom counts as a debuff!",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "DEMESNE": {
+      "text": "Extremely powerful effect, well-worth spending 2 or 3 energy on for longer fights, and fine to treat as an Ethereal Curse in shorter ones. Typically a card you'll take later in a run to shore up your Boss Matchups.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "END_OF_DAYS": {
+      "text": "Stand-out card for several of the fastest fights in the game. Not particularly impressive in longer fights, but can still be passable in them.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "ERADICATE": {
+      "text": "Prime enchant target, excellent payoff for many of Necrobinder's stronger scaling support cards (especially Lethality, Borrowed Time, and Transfigure). There are a surprisingly large number of different things in the game which can make this card one-shot the final boss.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "NEUROSURGE": {
+      "text": "Necrobinder's best card. Keep in mind that there are even ways to make applying Doom every turn an upside!",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "TRANSFIGURE": {
+      "text": "Especially good with X cards, which won't actually have their energy cost modified and will play for the same amount twice. Flexible way to increase the output of the cards in your hand right now, which can double as a way to combo with specific cards in your deck in longer fights to win against tougher enemies.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "GLIMPSE_BEYOND": {
+      "text": "Extremely strong card draw option for multiplayer.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "BLIGHT_STRIKE": {
+      "text": "Excellent damage for 1 energy, and scales well with both Doom and Debuff synergy later in the run. Worth picking to win the tougher Act 1 fights, and often retains some value as the run progresses.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "DEFY": {
+      "text": "Lots of block for a 1-Cost Common, and some other cards can reward you for having Ethereal cards in your deck, so it's nice to take one or two which are above par early on in the game in case you see them.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "INVOKE": {
+      "text": "In decks with good card draw or high Energy costs, one or more Invokes can feel great to play. Necrobinder can build some very high energy decks, so having one Invoke to play per turn can sometimes feel extremely strong.\n\nI don't hate taking one of these in Act 1, but tend to wait until I have something appealing to actually spend the energy on.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "PULL_AGGRO": {
+      "text": "Being able to spend two Energy on Block semi-efficiently is a nice thing to get out of a Common, and Necrobinder also has some synergies with higher cost cards which this taps into later in the run. Often happy to take one in Act 1 and will sometimes take more later.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "SCOURGE": {
+      "text": "Excellent damage for Act 1, and card draw is a powerful thing to have in your deck for later in the game. Decent upgrade.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "SNAP": {
+      "text": "Retain is an extremely powerful keyword, and keep in mind that Snap applies it to a card until the end of a fight, not just this turn.\n\nAlmost always happy to have one of these in my deck, and it's nice that it deals a little damage for fights as well.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "CAPTURE_SPIRIT": {
+      "text": "All told, an unupgraded Capture Spirit draws you a net +2 cards over the course of however long it takes you to draw and play the Souls it creates, which is fine. It's best in decks with high velocity, so they can benefit from the Souls faster, extra energy to take advantage of the extra cards, or Soul synergies. It'll often be good by the end of the run!",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "DEATHS_DOOR": {
+      "text": "18 Block for 1 Energy, scaling three times with any Dexterity you have, is extremely powerful. Death's Door is one of the main reasons to be excited about dealing damage via Doom.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "DEATHBRINGER": {
+      "text": "Slow, but extremely high numbers, and good for both damage and defense. A lot of decks are happy to have this card.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "DEBILITATE": {
+      "text": "Doubling the effect of Weak on threatening enemies is extremely powerful, without even considering that this card deals decent damage for 1, works with Vulnerable as well, and counts as applying a debuff of its own.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "DELAY": {
+      "text": "Nice to be able to sink energy into defense on a turn, and Delay also sets you up for a big turn next turn. Good upgrade, increasing the energy gain to two, as well.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "DIRGE": {
+      "text": "Only a passable card in an unsupported situation, but when paired with energy gain or other synergies Dirge can create a massive payoff. Usually okay with taking one in Act 1, but most excited to add it in a deck which already has strong support for it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "ENFEEBLING_TOUCH": {
+      "text": "Good ethereal synergy piece, and excellent defensive card for many of the most threatening turns in the game.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "FETCH": {
+      "text": "There's very little downside to taking a Fetch, and there are occasionally extra upsides to having an extra attack to play on a turn beyond just the 3 damage.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "FRIENDSHIP": {
+      "text": "Necrobinder can often deal damage without caring about Strength, and gaining an extra energy per turn for the rest of the fight unlocks a lot of potential later in the run. Don't overdo it with multiple copies in a deck which doesn't even need the extra energy though, as it's a little slow.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "LETHALITY": {
+      "text": "Excellent damage increase for any deck playing high damage Attacks. If that's what your deck is doing, it's somewhat difficult to ever have too many copies of Lethality.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "NO_ESCAPE": {
+      "text": "Bigtime payoff card for decks relying on Doom for longer fights, but don't overestimate it in a run where you don't have Doom damage already. Also keep in mind that you need to apply a substantial amount of Doom before this is doing much better than a damage Common.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "PARSE": {
+      "text": "Ethereal synergies and card draw. Nothing special in Act 1 because you don't have much to draw with it yet, and don't have extra energy to spend yet, but as the run goes on Parse typically gets better and better.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "PULL_FROM_BELOW": {
+      "text": "Massive payoff card for longer fights in decks with a few Ethereal cards. Strong enough to consider speculating on even if you've only gotten one or two Ethereal cards so far.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "PUTREFY": {
+      "text": "2 Weak and 2 Vulnerable is well worth 1 energy in almost any deck!",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "SEVERANCE": {
+      "text": "Decent damage paired with a bunch of card draw and Soul synergies. Keep in mind that you don't HAVE to play Souls the turn you draw them; if you've already spent 2 Energy on this and don't have much left to use this turn, maybe discard the Soul you generated to draw later.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "BANSHEES_CRY": {
+      "text": "Obviously not a great card unless you have Ethereal cards in your deck, but if you do this is worth grabbing. It's particularly strong against multiple enemies, but even in single enemy fights, dealing 33 or more damage for 1 or 0 is very worthwhile.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "DEVOUR_LIFE": {
+      "text": "Pushes decks with lots of souls over the top, allowing them to easily survive any enemy in the game.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "MISERY": {
+      "text": "Misery has a limited upper bound because it doesn't do much in fights with single enemies in them, but it can often do some very impressive things in multi-enemy fights. Watch out for fights where enemies have their own debuffs which you can spread to the other enemies in the fight.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "OBLIVION": {
+      "text": "Even without synergies, Oblivion is a passable card. It shines when paired with payoffs for applying Debuffs or Doom, or with ways to spam lots of cards in a turn (like Souls).",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "SEANCE": {
+      "text": "Solid Soul and Ethereal Synergy piece. Seance is one of Necrobinder's best cards for changing her deck composition during a fight, especially if you can get an upgraded copy of it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "SHARED_FATE": {
+      "text": "Permanent Strength reduction is very powerful. That said, 2 isn't a huge number, and some decks do feel the downside of the -2 Strength on Self downside.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "UNDEATH": {
+      "text": "Can be tricky to use; don't flood your deck with copies of this to a point where it can't draw damage anymore. My favorite run with Undeath applied Retain to it, which meant I could hold a bunch of them in my hand to use whenever the other cards I drew weren't enough to Block that turn.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "PROTECTOR": {
+      "text": "A bit better than Unleash, but not one of the better Ancient options for Necrobinder.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "LEGION_OF_BONE": {
+      "text": "Solid Defensive card.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "DEFILE": {
+      "text": "Good damage for 1 energy, and relevant synergy with Ethereal cards. Often worth taking during the \"add some more damage to the deck\" phase of Act 1.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "FEAR": {
+      "text": "One of Necrobinder's decent damage commons. Works later with Debuff, Ethereal, and \"big Attack\" synergy spaces, which means it has lots of ways to retain value later in the run if you take it early on.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "GRAVE_WARDEN": {
+      "text": "Decent Block amount + entry into the Soul synergy space. Not a bad card to pick up early, it's unusual for a deck to hate having one, even if all it's using Souls for is drawing a couple of cards.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "GRAVEBLAST": {
+      "text": "If your deck revolves heavily around a card you'd like to play multiple times, or a combination of cards you want to play together, Graveblast is a strong enabler.\n\nNote that the upgrade both increases damage AND removes Exhaust.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "NEGATIVE_PULSE": {
+      "text": "Negative Pulse can get very strong in the right sort of run; it does very well with other cards which reward you for applying Debuffs or specifically Doom. However, early on in the game it can be quite awkward, as it doesn't block for enough to be a strong Block card and its damage lines up poorly against quite a few enemy mechanics in the first two Acts of the game.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "UNLEASH": {
+      "text": "Can be substantial damage in fights where you manage to get Osty's health high and keep it high. Pay attention for turns where you could play a Summon card to increase Osty's health before you play this to deal extra damage.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "WISP": {
+      "text": "If your deck could beneficially spend extra energy per turn, grab a Wisp! Keep in mind that Necrobinder has several other options for energy gain though, so don't overdo it on Wisps if you can afford to wait a bit and find better options.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "BURY": {
+      "text": "Enough damage that it's worth going out of your way to try to be able to play it, but it's hard to get around the fact that you only have 3 Energy per turn in Act 1 and this costs more than that. Still potentially worth trying to make work with some energy gain though!",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "DREDGE": {
+      "text": "Excellent for setting up ideal turns in longer fights. Good upgrade. A bit slow to take right at the start of the run.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "HAUNT": {
+      "text": "Reliable way to increase damage in a deck which plays lots of Souls, but a more convenient way to achieve that might be to just play the good damage cards you already took earlier in the run when you draw them with the Souls you're playing.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "MELANCHOLY": {
+      "text": "Keep in mind that Osty's deaths count for Melancholy, so if you're clever about having Osty die while taking little damage yourself you can have Melancholy costing 0 fairly quickly in fights. As such, it can be a good Block card in a deck which needs extra help in longer fights.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "PAGESTORM": {
+      "text": "A good support card for decks built around Ethereal cards, especially if you can find an upgraded one.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "VEILPIERCER": {
+      "text": "Passable damage, but most exciting for the ability to discount Ethereal cards. Has a specifically noteworthy synergy with Sculpting Strike, which can make a 3+ Cost card Ethereal to discount it to 0.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "CALL_OF_THE_VOID": {
+      "text": "Decent enabler for Ethereal synergies, as well as just giving you an extra card to choose from per turn. However, Call of the Void is very slow, unreliable, and doesn't actually increase the output of your deck very much by itself unless it's supporting something else.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "REANIMATE": {
+      "text": "A good chunk of defense which will persist between turns, but 3 Energy is an inefficient price, so it's okay to pass on this if you're short on Energy and don't have a way to cheat it into play.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "REAPER_FORM": {
+      "text": "Extremely powerful if you can get it into play and have big Attacks, but not worth speculating on if your deck doesn't have the ability to support it. Probably the best way to get value from Reaper Form is to generate it off a Power Potion (18% chance), in which case it'll cost 0 without you needing to do any work.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "SPIRIT_OF_ASH": {
+      "text": "Nice Support card for decks with a good number of Ethereal cards. If I'm getting at least 4 Block per turn out of this I'm already happy about having it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "SQUEEZE": {
+      "text": "Cloning this is a hilarious way to win. Very high damage attack even in some decks which aren't focusing on Osty attacks but have a couple of them incidentally.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "BODYGUARD": {
+      "text": "Bodyguard is often comparable to a Defend, but has a lot of small interactions with Osty to look out for. For example, you can sacrifice Osty with another card, then play Bodyguard to resummon him to play more Osty attacks on the same turn.\n\nAlso keep in mind that you can effectively use this to store up \"Block\" for later turns.\n\nWhich damage is blocked by Osty and which isn't is a bit complex and finnicky. For example: Osty won't block burns from hurting you at end of turn.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "DRAIN_POWER": {
+      "text": "10 Damage for 1 isn't awful, but the upgrading in Discard effect is very slow to reap benefits and will even be entirely irrelevant in some runs.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "FLATTEN": {
+      "text": "Damage Commons desperately need to be reliable. Drawing this on a turn where you can't discount it when you could have taken a reliably 1-Cost card which dealt as much damage as it can lose your entire runs.\n\nThat said, if it's the best you're offered, you do have to take some Damage Commons usually.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "POKE": {
+      "text": "Not an awful way to deal damage early on, but will increasingly feel like you've added a low-impact nothing card to your deck as the run progresses.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "REAP": {
+      "text": "Not incredible damage per energy ratio, but putting it only a 3-Cost card with Retain ensures that you can hit enemies decently well on turns where they don't attack you, and Necrobinder has some synergies with high-cost Cards and high-damage Attacks.\n\nSometimes okay to grab for Act 1 damage.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "REAVE": {
+      "text": "Inoffensive early game damage card which opens up some Soul Synergy potential later in the run. Not my favorite Act 1 Damage Common because it deals relatively little damage compared to others, but I'll take it sometimes.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "SCULPTING_STRIKE": {
+      "text": "Sculpting Strike offers you the ability to modify your deck over the course of a longer combat. You can make cards Ethereal and not play them, letting them exhaust, or play them and benefit from Ethereal Synergies. Unfortunately, it deals relatively little damage, and its synergistic effects are extremely slow to actually deploy in a fight.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "CLEANSE": {
+      "text": "In theory Cleanse can be used to remove chaff from your deck over time in order to end up with a powerful combo of cards toward the end of the fight, but in practice many fights are too threatening for this to be appealing to most decks.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "COUNTDOWN": {
+      "text": "Passable damage per turn, especially for Boss Fights, but perhaps most useful because it guarantees that you're applying Doom every turn, which is valuable for Death's Door, one of the characters best Block cards.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "DEATH_MARCH": {
+      "text": "Cards which give you payoff specifically for drawing extra cards in a turn are usually not very impressive because drawing extra cards in a turn is already strong by itself, and Death March doesn't have good output by itself without that sort of support.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "HIGH_FIVE": {
+      "text": "High Five is a bit too expensive for its effect. It's hard to spend two energy in a turn on damage sometimes, and it asks you to then spend even more energy than that to take advantage of the Vulnerable you've applied.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "RIGHT_HAND_HAND": {
+      "text": "A little extra damage for any deck with 2-Cost cards, but difficult to get much more out of than that.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "SPUR": {
+      "text": "Passable Block card, and nice to have retain on defensive cards sometimes! I don't take it unless it's common for me to have Osty survive incoming damage in fights though.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "HANG": {
+      "text": "Usually a bit slow, but if your deck can recur this somehow, or gets more than one of them, it scales extremely quickly.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "SENTRY_MODE": {
+      "text": "Slow but effective Ethereal scaling option. I don't take this unless I really want some extra Ethereal cards for some reason, but sometimes I do!",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "SOUL_STORM": {
+      "text": "Okay damage option for a deck with lots of Souls, but not usually the best one, and not impressive unless you already have Souls working.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "THE_SCYTHE": {
+      "text": "Can be pickable up until the end of Act 1, but it will make you weaker for a while while you try to scale it up. Keep in mind that there are ways to enhance a big attack's output with support cards, and Necrobinder has a few quite good ones.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "TIMES_UP": {
+      "text": "Retain on Upgrade is a great improvement to the card, if you're able to get it upgraded. Time's Up is an okay way to halve the length of longer fights if most of your damage comes from Doom, but will often be awkward or worse in other parts of the run.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "FORBIDDEN_GRIMOIRE": {
+      "text": "Many Necrobinder decks benefit from their commons throughout the entire run, and some fights reward you for having a decently-sized deck, so Forbidden Grimoire can have limited upside, especially if you're already removing your Strikes at Stores and Events.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "STRIKE_NECROBINDER": {
+      "text": "Necrobinder's Strikes are already quite bad just in her Starter Deck, as Unleash rewards blocking every turn with extra damage. Later she has a couple of appealing cards which reduce her Strength, making them even worse.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "DEFEND_NECROBINDER": {
+      "text": "Necrobinder isn't excited to play Defend later in the game, but they'll do in a pinch.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "AFTERLIFE": {
+      "text": "Summoning can work to store up HP for later turns, but the most threatening fights in the game tend to attack you every turn, in which case this is just an unimpressive Defend which doesn't scale with Dexterity.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "SOW": {
+      "text": "I haven't found Area of Effect damage to be important enough to take mediocre AoE Damage Cards over single-target alternatives, and Sow is a very poor card in any fight without multiple enemies in it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "CALCIFY": {
+      "text": "Even in a deck with several Osty Attacks I'd rather have 1. A different deck but also 2. Another good Osty Attack than this.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "RATTLE": {
+      "text": "Barely better than an Attack Common in situations where you DO draw it with another Osty Attack, and terrible in situations where you don't.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "SHROUD": {
+      "text": "Doom tends to be applied in large amounts, so the amount of Block you're getting per Doom applied from this card is quite low. Every now and then you're in a run where you're applying lots of small amounts of Doom repeatedly, either to enemies or sometimes yourself, and Shroud can make a lot of Block for you.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "SIC_EM": {
+      "text": "Often worse than a Strike. If you end up with several copies of Fetch in your deck this can do quite well, but in most decks it's not pickable.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "EIDOLON": {
+      "text": "1) It costs 2 energy for this card to do nothing, an awful lots of the time. 2) I am honor-bound to negatively review any card which gives the player Intangible, as it is dishonorable to not let the enemy hit you.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "NECRO_MASTERY": {
+      "text": "Awkward and slow way to deal some area of effect damage. Not usually worth trying to make work.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "SACRIFICE": {
+      "text": "Very awkward Block card. Notably, this essentially can't be used to Block well in fights where you're being attacked for more than you're able to defend for without it. It's at its best in fights where you're only attacked every other turn, or something like that, but in general I don't think you need to bother trying to work out how to get good value out of it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/3ae661e6-6190-4a45-b00e-63e8400fff94",
+      "version": "v0.107.1"
+    },
+    "CLAW": {
+      "text": "The formula for winning with Claw is quite simple: Block with Relics or good Block cards while drawing through your deck for lots of Claws. All For One or Feral often win the run easily from there, but Claws can win even without them. Remember that a deck with 3+ Claws often would prefer card draw or block over another copy of Claw.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "FERAL": {
+      "text": "Extremely powerful engine/payoff card for decks with 0-Cost Attacks. Doesn't have to be paired with Claw, although that is the most obvious way to make it strong. I like it with FTL quite a lot to draw extra cards and deal a little extra damage, for example. The interaction with Potions or Relics which generate 0-Cost Attacks can be quite nice as well, as you'll get the chance to play them again, although they're usually only discounted the first time they're played.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "GLACIER": {
+      "text": "This is usually the best possible way for Defect to make enough Block to survive the game.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "COOLHEADED": {
+      "text": "Perfect support card for almost all of Defect's offensive strategies. Draw toward your damage while creating a very good amount of Block per Energy spent. A Frost Orb will often make 10+ Block after being channeled.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "OVERCLOCK": {
+      "text": "Putting Burns in your Discard Pile doesn't have much drawback until much later in the fight, and Statuses can even potentially have upside for Defect, so this card is extremely strong and often worth upgrading.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "ALL_FOR_ONE": {
+      "text": "Defect has a lot of strong 0-Cost cards and All for One is the best way to take them from good to great.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "BUFFER": {
+      "text": "Buffer is a very high priority upgrade. Once upgraded, it often lets you spend a lot of Energy on Scaling or Damaging enemies. Especially good in Boss Fights and many single-enemy Elite Fights.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "MODDED": {
+      "text": "Gaining Orb Slots for little-to-no cost is great! Usually hoping to play this twice in longer fights.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "SUPERCRITICAL": {
+      "text": "Four Energy is a LOT of Energy. Pair this with Card Draw and put together an awesome turn, essentially no matter what you're doing, or combine it with some big Energy combo like Multi-Cast + Dark Orb to instantly end a fight. It's possible to not want this yet in Act 1, but it'll often be very exciting later on in the run.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "BIASED_COGNITION": {
+      "text": "Biased Cognition requires a little bit of user skill. If you're building decks which kill slower than they could, the punishment from losing one Focus per turn can start to stack up. That said, the better you get, the better it gets, and one of the ways to get better is to start picking it! When used well It's probably the best card in Defect's entire card pool.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "QUADCAST": {
+      "text": "Great output for 1 Energy. Tons of Block with a Frost Orb, tons of damage with a damage Orb. Hard to go wrong here.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "HELIX_DRILL": {
+      "text": "Excellent damage for 0-Cost, and scales with all sorts of different ways to truly break it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "GO_FOR_THE_EYES": {
+      "text": "Defect's best way to apply Weak, and fits into its best synergy package (0-Cost cards).",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "BEAM_CELL": {
+      "text": "I'm happy to have a Beam Cell in an attack-damage based run, ideally upgraded, and I find that most of my runs aim to Block with Frost Orbs while dealing damage with Attacks, so it's usually a card I'm very happy to be taking at least one of.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "FTL": {
+      "text": "The default is to pick FTL when you see it, but do watch out for occasional downsides. It's not at its best in decks with lots of other card draw, as you may not draw it until it has stopped working for the turn. Both the Queen and Doormaker have elements to their Boss Fight at the end of Act 3 which make it less valuable in those fights, too.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "BOOST_AWAY": {
+      "text": "6 Block for 0 is fine on Defect, but Boost Away is most exciting because it offers potential synergies with Statuses or All For One. I typically take one of these if it's offered in Act 1, and may add more if they turn out to be particularly good this run.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "ROCKET_PUNCH": {
+      "text": "Run-winning as long as you have a couple of cards which generate statuses. Extremely good upgrade, extremely good in multiples, and extremely good with Feral and All For One.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "BOOT_SEQUENCE": {
+      "text": "Boot Sequence saves a LOT of health in decks lacking good Relics to help with Turn 1, but can feel like a dead card if you do have a strong Turn 1 already. It's made a bit better by Hologram, which can let you get it back on later turns if it isn't used on Turn 1.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "HOLOGRAM": {
+      "text": "Hologram keeps getting better and better as the run goes on, as the card it gets back is stronger and stronger. Don't overdo it with too many copies early, but most Defect decks are happy to have a couple of these, and some happily take even more.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "SKIM": {
+      "text": "The stronger your deck gets, the stronger Skim gets. It draws your broken combos faster, but isn't very useful if you don't have any of those.\n\nI'm usually hoping to start being excited about taking Skims sometime in Act 2, but am not always prioritizing picking it in Act 1.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "ENERGY_SURGE": {
+      "text": "Broken Energy gain.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "IGNITION": {
+      "text": "Broken Energy Gain.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "BALL_LIGHTNING": {
+      "text": "Defect's best pure damage common for Act 1. Lots of damage, very little in the way of requirements for support. Can become awkward later, as Lightning Orbs don't synergize with many of Defect's stronger strategies.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "COLD_SNAP": {
+      "text": "Strong \"both ways\" common for Act 1, but you don't WANT to be relying on it for Frost Orb generation later in the run, as there are stronger options. That said, if it's the best you're offered, you may have to try to make do with it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "CHILL": {
+      "text": "A very nice way to make Frost Orbs, and the Upgrade to remove Exhaust can make sense in decks with ways to play it multiple times.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "GENETIC_ALGORITHM": {
+      "text": "Genetic Algorithm rapidly reaches a point where it's fully Blocking on almost every turn it's played on, and can be worth Duplicating or removing Exhaust from if you get the chance to do either of those things. Unfortunately it's unlikely to be found early in the run, and finding it later than the first half of Act 2 makes it quite unappealing.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "ICE_LANCE": {
+      "text": "Probably the third best way to make Frost Orbs available to the character. Decent pick up, and there are a variety of ways to increase its output using enchantments, potions, or other cards, which can make it especially good.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "MACHINE_LEARNING": {
+      "text": "One of Defect's issues is that all of its strategies require drawing combinations of cards. Orbs need generators + focus, Status synergies need the generators + payoffs + drawing through the Statuses, and 0-Cost stuff needs to draw lots of 0-Cost stuff. Machine Learning tends to help out most Defect decks quite a lot, and can be a nice upgrade for decks with safe Turn 1's.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "METEOR_STRIKE": {
+      "text": "You need to be a little clever to get a Meteor Strike played, but once you have the extra output from 3 Plasma Orbs will often win you the fight easily. Note that Plasma Orbs Evoke for 2 each, so if you can play this and Evoke the Orbs immediately it's actually Energy positive already!\n\nThis is a degenerate combo card which you'll find more success with the more you practice with it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "REBOOT": {
+      "text": "Reboot has obvious upside: draw a bunch of extra cards.\n\nBe aware of its downside: reshuffling your deck might make it harder to find your best Powers, or might fill your new draw pile with Statuses earlier than necessary.\n\nThat said, it's still usually worth taking this card.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "TRASH_TO_TREASURE": {
+      "text": "Tons of output for any deck which generates its own statuses. Channeling multiple random Orbs per turn adds up very quickly. I don't personally think this is worth speculating on if you don't have the appropriate support cards in your deck yet, though.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "DEFRAGMENT": {
+      "text": "Important Upgrade. When evaluating Defragment, keep in mind that it increases how much Orbs Evoke for as well as their Passive Output. For example, playing Glacier with 3 Frost Orbs already channeled results in a Defragment+ generating an additional 10 Block that turn.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "COMPACT": {
+      "text": "Can be worth picking up for some runs where you are weak to a status-generating Boss or Elite fight, but Compact struggles a little with the fact that Statuses usually go to your Discard pile, and once you're through your Draw pile the first time the fight is often essentially over already.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "TESLA_COIL": {
+      "text": "Excellent 0-Cost damage, but requires you to have Lightning Orbs, so less easy to use than other 0-Cost options.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "BARRAGE": {
+      "text": "Solid damage. My most successful Defect decks tend to use Frost orbs quite a lot, which means they could use a way to turn full orb slots into actually ending the fight, and Barrage is a good way to achieve that.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "FOCUSED_STRIKE": {
+      "text": "Okay damage, but there are better damage commons, and Focused Strike suffers from being at its best in decks which are already good anyway. If you can channel a bunch of orbs and still need a damage common it can make sense, but if your deck is already doing that why do you need more damage commons?",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "GUNK_UP": {
+      "text": "12 Targeted Damage for 1 is a decent but not incredible equation. The Slime added to Discard can work with some Status Synergies, but I haven't found them to be the strongest thing to do on the character.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "LEAP": {
+      "text": "Perfectly passable Block common. You don't want to have to rely on Leaps to survive, but if you don't have better options yet and need a Block card this one is fine.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "LIGHTNING_ROD": {
+      "text": "Lightning Rod is a confusing card; it deals damage very slowly and Blocks a bit to keep you alive while that damage comes into play, but the Lightning Orbs it creates are unreliable and push better Orbs out of your bar. It's okay to take one early just because of its high potential for output, but don't overcommit to them.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "TURBO": {
+      "text": "Great enabler for strategies which care about lots of energy, but Defect is probably the best character at winning while spending extremely little energy, so don't assume that you'll want it by default in any run.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "BULK_UP": {
+      "text": "Never underestimate the value of +Dexterity in longer fights in this game. That said, Defect often Blocks using Orbs, which are actually hurt by this card, and many of its ways to deal damage are also ambivalent about extra Strength, so this card is only useful situationally in runs where you haven't found better solutions to scaling.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "CAPACITOR": {
+      "text": "Orb Scaling is quite awkward in Slay the Spire 2; it's hard to find Focus to enhance them. It can sometimes do well enough, and Capacitor will be a key component of runs where it does, but this is the sort of card I don't take unless I'm somewhat down that path already.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "FIGHT_THROUGH": {
+      "text": "Great Block Output per Energy, but Two Wounds is painful enough to feel like a real drawback even on Defect with your potential status synergies. Nice pickup in a large deck with Block requirements, or if you have enough Status payoffs.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "ITERATION": {
+      "text": "Great payoff card for Status Synergies, but also often good just against enemies who put some Statuses in your deck on their own. It tends to make its way into my deck if the Act Boss gives statuses and I'm worried about not having enough card draw for the fight, for example.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "SHADOW_SHIELD": {
+      "text": "Don't overestimate this card; the Dark Orb represents very slow damage, and you don't want to have to wait a long time to close out many of the fights in the game. It Blocks for a good amount and that's a valuable thing to have access to, but this is just a solid Block card, not an auto-pick.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "SMOKESTACK": {
+      "text": "Smokestack provides enough payoff to be worth picking in a deck with Status generation, but not enough to take it in a deck which doesn't have any of that yet in the hopes it will become good later.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "COOLANT": {
+      "text": "Solid Passive Block generation. Best in decks with a Capacitor and varied Orb types, but okay to play just for 4 Block per Turn if that's all you're getting out of it. More valuable for longer fights, so don't take it if you're struggling against the fast fights.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "ECHO_FORM": {
+      "text": "Echo Form has an extremely powerful effect, but it's very hard to put it into play. It's best in decks which need a super Power to win the Boss Gauntlet and can survive essentially having a blank card in them for the shorter fights.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "MULTI_CAST": {
+      "text": "Multi-Cast is the de facto payoff card for decks which can make tons of Energy somehow. It can be paired best with a Plasma Orb to double your Energy, or a Dark Orb to kill many enemies outright. Evoking a Frost Orb multiple times can do fine to survive a turn as well.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "SHATTER": {
+      "text": "Defect's best Area of Effect damage card, and a nice enabler for strategies using Dark Orbs which don't have much ability to evoke them quickly. I'm probably not taking this card in Act 2 or 3, but it's good enough to make it into my deck in Act 1, and sometimes has use later on as well.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "SIGNAL_BOOST": {
+      "text": "Heavily dependent on the quality of your Powers. If you have an awesome Rare Power to play an additional time with this it'll likely do great, but if you don't it's not worth speculating on.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "DUALCAST": {
+      "text": "Decent Output which improves as the run goes on and your Orb variety increases (and maybe you find some Focus!).\n\nIt's often worth Dualcasting a Lightning Orb instead of playing a Strike in early fights, look out for that and don't be afraid to do a little math to work out which option deals better damage for the situation you're in.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "LOOP": {
+      "text": "Loop has low but consistent output. It's unfortunate that it doesn't combo well with temporary Focus, but it does enough with a Frost Orb (or perhaps Dark Orb if you're in a run using those) to be worth picking up, and it's an especially valuable upgrade, so I'm more likely to take it if I have a campfire coming up and no cards I really want to upgrade yet.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "CHARGE_BATTERY": {
+      "text": "Passable block common, but Defect's card pool has a lot of zero-costs, so energy isn't all that important in a lot of its runs. Skipping by default unless there's a compelling reason to care about generating some extra energy.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "COMPILE_DRIVER": {
+      "text": "Energy generation is fairly low, as are the payoffs for channeling different types of Orbs, so Compile Driver doesn't feel like it has much of a place in this game.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "HOTFIX": {
+      "text": "Does almost nothing unless you're already in a commanding position in the fight. Cards which help you when you're weak are a lot more exciting than cards which give you even more payoff once you already have a bunch of orbs set up.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "UPROAR": {
+      "text": "There is absolutely a strategy which wants this card. You need to remove Strikes heavily and pick up some high-impact attacks while avoiding the low-impact 0-cost ones.\n\nUnfortunately that doesn't match up well with Defect's overall card pool, so I wouldn't typically pick this up in Act 1, and once I'm in Act 2 I usually have too many low-cost attacks to justify it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "DARKNESS": {
+      "text": "Can be good for Boss-fight damage or some Elites, but waiting multiple turns for your damage and then still needing to line it up with a Dualcast or Multicast to get really good value out of it is very awkward. I'm hoping not to have to use Dark Orbs in my runs, but if I do it'd be because my deck's damage was too low going into a long fight.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "DOUBLE_ENERGY": {
+      "text": "This is an extremely breakable card, but isn't easy to pick in Act 1. It pairs surprisingly well with Unceasing Top, which is unfortunately a singular Relic you're unlikely to see. Failing that, it fits nicely into some decks with excess card draw or particularly high energy costs.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "GLASSWORK": {
+      "text": "Decent output, 5 Block and somewhere in the range of 4-12 area of effect damage usually. Unfortunately it's a bit too slow and its values are a bit too low to keep up with most of the game's tougher fights, so I'm usually skipping it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "NULL": {
+      "text": "Null is a very inoffensive card which unfortunately doesn't do very much. Like, it does three things which aren't very good at the same time. Paying attention to factors which could make any of its parts better than usual, like excess energy, desperate need for Weak, or desperate need for Scaling damage, could give you reasons to take it, but by default I'm skipping this.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "REFRACT": {
+      "text": "There are some fights that Refract does INCREDIBLY well in, but they don't tend to be the toughest fights in the game, and spending 3 Energy on a card which only deals damage will almost certainly result in your taking a substantial hit in return. I don't hate taking one, but my better decks don't.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "STORM": {
+      "text": "Unfortunately, Defect's powers have very split identities in this game, so it's hard to make a deck which focuses around taking lots of them. Storm is more likely to fit into a deck which gets a lot of Focus somehow, and something like Biased Cognition or Echo Form to massively increase its output. In runs like that, it can potentially serve as enough damage to win lategame.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "SUNDER": {
+      "text": "Not typically a very strong card, but having a 3-Cost Attack can have some value sometimes. It gives you something to pair with a Potion or Relic which increases Attack Damage, for example, or something to Enchant with Slither, which can randomize its cost when drawn.\n\nI take one of these in Act 1 sometimes, and am not upset if I transform into one.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "SYNCHRONIZE": {
+      "text": "Big payoff card for Orb strategies, but needs a lot of other things to fall into place before it's worth taking. I'd want at least a Capacitor and three different Orb Slots before I was interested in it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "TEMPEST": {
+      "text": "Tempest is a relevant payoff for some Energy-generation strategies Defect has available. It's possible sometimes to set things up so you're playing Double Energy multiple times, or storing Energy with Ice Cream. In runs like that, Tempest can provide enough damage for lategame. Most of the time I wouldn't recommend taking it, though.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "THUNDER": {
+      "text": "Can be okay damage scaling for longer fights in Act 1 or 2, but doesn't really scale with much in a way to make it exciting in Act 3.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "WHITE_NOISE": {
+      "text": "It's fine to take a White Noise any time your deck could use a little more scaling for longer fights, but don't expect it to be a great card unless you have some other Cards or Relics which make Powers particularly good for you.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "ADAPTIVE_STRIKE": {
+      "text": "0-Cost 18 Damage Attacks are great, but the upfront cost on this card is too high for it to be appealing for anything other than very long fights, and even in those it's reliant on you drawing it before your first reshuffle or else you likely die before it deals any relevant damage.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "CONSUMING_SHADOW": {
+      "text": "Consuming Shadow often puts you in a \"stuck\" state with Orbs where your middle Orbs are Dark Orbs which have scaled lots of damage, but you're always wanting to channel another Orb every turn, and that one gets Evoked by Consuming Shadow, leading to them never making it to the right or left of your Orb Slots to be Evoked. Make sure you have a solution to that if you're taking this card, which is a passable damage card as long as you do!",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "HYPERBEAM": {
+      "text": "Okay damage, and can be worth picking up for specific multi-enemy fights if they are troubling for your deck, but losing Focus is a huge downside given that Defect's main unique mechanic is Orbs which are likely to be made entirely useless by such a debuff.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "RAINBOW": {
+      "text": "Rainbow is flexible enough that there are lots of reasons it might be good, but its raw numbers aren't such that it's guaranteed to always be good. Anything which benefits from varied orbs makes it better. Any specific reasons to care about the orbs it channels make it better. The fact that it exhausts might be useful if you're hoping to play a smaller deck built around a few specific cards later in the run. Lots to think about for a fairly straight-forward card.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "SPINNER": {
+      "text": "Deals decent damage for longer fights, but monopolizes your Orb Slots with negatively-scaling damage Orbs. I've found this useful in quite a few runs, but make sure you have some good Block cards to stay alive long enough for it to do anything if you take it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "ZAP": {
+      "text": "Decent damage card for Act 1, but there isn't much value to channeling a Lightning Orb other than that unfortunately.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "FLAK_CANNON": {
+      "text": "The number on Flak Cannon feels substantially too low to be exciting. It's a very bad card unless your deck creates a huge number of statuses or you're fighting an enemy which does. Fortunately for Flak Cannon, one of the Act 3 Bosses fits that bill, so it'll be worth picking up in situations where you're weak to that fight, but otherwise I'd recommend passing on it.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "MOMENTUM_STRIKE": {
+      "text": "Unusual for me to want this. Defect has several better 0-Cost cards which start out costing 0 already without needing any energy investment.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "SWEEPING_BEAM": {
+      "text": "Very rare that I want this. Area of Effect damage isn't much more valuable than Single-Target damage, and the number here is quite low.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "CHAOS": {
+      "text": "Could be okay if you were in a run with some Focus, Compile Drivers, and Orb Slots, but that's a lot of things which are unlikely to happen in a row.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "FUSION": {
+      "text": "Fusion's main use case is in a deck which wants to do some fancy Double Energy or Multi-Cast combos and needs a Plasma Orb to set them up. The rest of the time this is a very slow Energy gain card on a character that doesn't need one.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "HAILSTORM": {
+      "text": "Fun to set up Frost Orbs and watch the enemies die to your Hailstorm, but this card is a bit too conditional, slow, and has no real payoff potential; it doesn't scale to be stronger with anything else you can do really.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "SCAVENGE": {
+      "text": "Can be used to protect against bad Statuses, to set up for slow infinites, or to set up for big turns, but mostly this card is just slow and doesn't do very much.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "SCRAPE": {
+      "text": "The issue with Scrape is that even decks which care heavily about 0-Cost cards have some very important 1+ Cost cards they need to draw and play. It can fit into a deck with multiple 0-Costs and do okay, but even in the perfect situation for it it's still overshadowed by other options.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "SUBROUTINE": {
+      "text": "It's unusual to build a Defect deck which wants to take tons of powers, and the ones worth taking are usually worth paying their Energy cost for anyway. Subroutine fits into some runs with (very specifically) Game Piece, which makes Powers draw a card when played, but it's unusual for me to want it anywhere else.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "SYNTHESIS": {
+      "text": "Very little reason to take this unless you have an important 3-Cost Power and don't mind having an extra Attack card in your deck.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "CREATIVE_AI": {
+      "text": "VERY slow scaling, can be an okay option for a Boss fight, but honestly it's a little slow even for those. You usually need strong Power Synergies for this to be an appealing card, and even then it isn't all that good.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "VOLTAIC": {
+      "text": "If you can play this 4 times it's very easy to kill any enemy in the game with it. That said, it's very difficult to play a 3-Cost card which only deals damage more than one time in a fight. Fits into some more defensive decks as a scaling option for Boss Fights, or some very aggressive decks which already make a lot of Lightning, but doesn't have a place in most decks Defect can build.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "DEFEND_DEFECT": {
+      "text": "Blocking is important, but Defect doesn't have anything in particular which is likely to make its Defends stronger over the course of the run.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    },
+    "STRIKE_DEFECT": {
+      "text": "Defect's Starter Deck has 6 cards which deal damage and 4 Defends, leading to taking a lot of damage on turns where it can't Block enough early in the run. Removing Strikes early is a good way to address this quickly.",
+      "source": "https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3",
+      "version": "v0.107.1"
+    }
+  }
+}

@@ -7,13 +7,13 @@ function buildLink(card, build, localBuilds) {
   const match = build.url.match(/^\/build\/([^#]+)#build-(.+)$/);
   if (match) {
     const hash = 'build-' + match[1] + '-' + match[2];
-    if (localBuilds.includes('id="' + hash + '"')) return 'build.html#' + hash;
+    if (localBuilds.includes('id="' + hash + '"')) return 'Characters.html#' + hash;
   }
   return new URL(build.url, card.source).href;
 }
-function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds = '', showBuilds = true, showKeywords = true, showTierRating = true, searchableEffects = false, rarityBeforeType = false, showEffectTooltips = false, showEffectNotes = false, metadataAboveEffects = false, tierBesideName = false, cornerMetadata = false} = {}) {
-  const chineseUrl = new URL(card.sourceZh || card.source);
-  if (!card.sourceZh) chineseUrl.pathname = '/zh-TW' + chineseUrl.pathname;
+function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds = '', showBuilds = true, showKeywords = true, showTierRating = true, searchableEffects = false, rarityBeforeType = false, showEffectTooltips = false, showEffectNotes = false, metadataAboveEffects = false, tierBesideName = false, cornerMetadata = false, catalogLayout = false} = {}) {
+  const costSummary = /^Cost changes from\s+(?:\d+|X)\s+to\s+(?:\d+|X)\.?\s*/i;
+  const fullUpgradedEffect = (card.effect.upgraded || '').replace(costSummary, '') || card.effect.base;
   const energyCost = card.stats.find(stat => stat.label === 'Energy cost')?.value;
   const [baseCost, upgradedCost = baseCost] = (energyCost || '').split(/\s*→\s*/);
   const renderCost = (value, changed = false) => effect(value).replaceAll(icons.energy, icons.energyFor(card.character)).replace(/^(\d+|X)/, changed ? '<strong class="detail-effect-change">$1</strong>' : '<strong>$1</strong>');
@@ -25,13 +25,23 @@ function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds =
   if (card.effect.upgraded === null) {
     upgradedContent = '<span class="detail-empty">Cannot be upgraded.</span>';
   } else {
-    const difference = compareEffects(card.effect.base, card.effect.upgraded, effect);
+    const difference = compareEffects(card.effect.base, fullUpgradedEffect, effect);
     upgradedContent = difference.upgraded;
   }
   if(card.effectParts){
     const renderParts=parts=>require('../event/untapped-effect.cjs')({descEnParts:parts}).replace(/\n/g,'<br>');
     baseContent=renderParts(card.effectParts.base);
-    if(card.effectParts.upgraded!==null)upgradedContent=renderParts(card.effectParts.upgraded);
+    if(card.effectParts.upgraded!==null){
+      const parts=card.effectParts.upgraded;
+      let skip=parts.map(part=>part.text||'').join('').match(costSummary)?.[0].length||0;
+      const fullParts=parts.flatMap(part=>{
+        if(!skip)return [part];
+        const text=part.text||'';
+        if(text.length<=skip){skip-=text.length;return [];}
+        const remaining={...part,text:text.slice(skip)};skip=0;return [remaining];
+      });
+      upgradedContent=fullParts.length?renderParts(fullParts):baseContent;
+    }
   }
   baseContent = baseContent.replaceAll(icons.energy, icons.energyFor(card.character));
   upgradedContent = upgradedContent.replaceAll(icons.energy, icons.energyFor(card.character));
@@ -71,11 +81,24 @@ function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds =
   const tierBadge = tierList ? '<a class="detail-inline-tier" data-tier="' + esc(card.tier) + '" aria-label="Tier ' + esc(card.tier) + '" href="' + esc(tierList) + '" target="_blank" rel="noopener noreferrer">Tier ' + esc(card.tier) + '</a>' : '';
   const characterMetadata = metadataAboveEffects && tierBadge && !tierBesideName && !cornerMetadata ? '<dl class="detail-character-metadata" aria-label="Tier"><div class="detail-meta-item detail-tier-item"><dt>Tier</dt><dd>' + tierBadge + '</dd></div></dl>' : '';
   const art = '<figure class="detail-art" data-detail-row="1"><img src="' + esc(card.image) + '" width="700" height="532" alt="' + esc(card.name) + ' illustration" loading="lazy" decoding="async"></figure>';
+  if(catalogLayout){
+    const metadata='<dl class="detail-type-metadata" aria-label="Pool, type and rarity">'+renderStat({label:'Character',value:card.character})+renderStat({label:'Type',value:card.type})+renderStat({label:'Rarity',value:card.rarity})+'</dl>';
+    const baseId=prefix+'-base',upgradedId=prefix+'-upgraded';
+    return `<article class="card-detail" data-card-layout="compact" data-catalog-layout="true" data-effect-version="base" aria-labelledby="${prefix}-title" lang="en" data-source="${esc(card.source)}" data-character="${esc(card.character)}">
+  <div class="detail-overview">
+    ${art}
+    <header><h2 class="detail-title" id="${prefix}-title"><a class="detail-name-zh" lang="zh-Hant" href="${esc(require('./card-source-link.cjs')(card))}" target="_blank" rel="noopener noreferrer">${esc(card.nameZh)}</a><a class="detail-name-en" href="${esc(require('./card-source-link.cjs')(card))}" target="_blank" rel="noopener noreferrer">${esc(card.name)}</a></h2></header>
+    ${metadata}
+    <section class="detail-section detail-effects" aria-label="Card effects"><div class="detail-effect-columns"><div class="detail-version-controls" role="group" aria-label="Card version"><button type="button" data-card-version="upgraded" aria-pressed="false" aria-controls="${baseId} ${upgradedId}"${card.effect.upgraded===null?' disabled title="Cannot be upgraded"':''}><strong>Upgraded</strong></button></div><div class="detail-effect-panel" id="${baseId}" role="group" aria-label="Base">${baseCostContent||'<p class="detail-panel-cost" aria-hidden="true">&nbsp;</p>'}<p class="detail-panel-description">${baseContent}</p></div><div class="detail-effect-panel" id="${upgradedId}" role="group" aria-label="Upgraded" hidden>${upgradedCostContent||'<p class="detail-panel-cost" aria-hidden="true">&nbsp;</p>'}<p class="detail-panel-description">${upgradedContent}</p></div></div>
+    <div class="detail-bottom-tier">${showTierRating?require('./creator-tier-section.cjs')(card):''}</div></section>
+  </div>
+</article>`;
+  }
   return `<article class="card-detail"${metadataAboveEffects ? ' data-card-layout="compact"' : ''} aria-labelledby="${prefix}-title" lang="en" data-source="${esc(card.source)}" data-character="${esc(card.character)}">
   <div class="detail-overview">
   ${characterMetadata}
   ${metadataAboveEffects ? '' : art}
-  <header data-detail-row="2"><h2 class="detail-title" id="${prefix}-title">${cornerMetadata ? '<span class="detail-heading-row"><img class="detail-heading-character" src="' + esc(card.characterIcon) + '" alt="' + esc(card.character) + '" title="' + esc(card.character) + '">' : tierBesideName ? '<span class="detail-name-line">' : ''}<a class="detail-name-zh" lang="zh-Hant" href="${esc(chineseUrl.href)}" target="_blank" rel="noopener noreferrer">${esc(card.nameZh)}</a>${cornerMetadata ? '<span class="detail-heading-rarity" data-label-rarity="' + esc(card.rarity) + '">' + esc(card.rarity) + '</span></span>' : tierBesideName ? (tierList ? '<a class="detail-name-tier" data-tier="' + esc(card.tier) + '" aria-label="Tier ' + esc(card.tier) + '" href="' + esc(tierList) + '" target="_blank" rel="noopener noreferrer">' + esc(card.tier) + '</a>' : '') + '</span>' : ''}<a class="detail-name-en" href="${esc(require('./card-source-link.cjs')(card))}" target="_blank" rel="noopener noreferrer">${esc(card.name)}</a></h2></header>
+  <header data-detail-row="2"><h2 class="detail-title" id="${prefix}-title">${cornerMetadata ? '<span class="detail-heading-row"><img class="detail-heading-character" src="' + esc(card.characterIcon) + '" alt="' + esc(card.character) + '" title="' + esc(card.character) + '">' : tierBesideName ? '<span class="detail-name-line">' : ''}<span class="detail-name-zh" lang="zh-Hant">${esc(card.nameZh)}</span>${cornerMetadata ? '<span class="detail-heading-rarity" data-label-rarity="' + esc(card.rarity) + '">' + esc(card.rarity) + '</span></span>' : tierBesideName ? (tierList ? '<a class="detail-name-tier" data-tier="' + esc(card.tier) + '" aria-label="Tier ' + esc(card.tier) + '" href="' + esc(tierList) + '" target="_blank" rel="noopener noreferrer">' + esc(card.tier) + '</a>' : '') + '</span>' : ''}<a class="detail-name-en" href="${esc(require('./card-source-link.cjs')(card))}" target="_blank" rel="noopener noreferrer">${esc(card.name)}</a></h2></header>
   ${metadataAboveEffects ? art : ''}
   ${typeMetadata}
   <section class="detail-section detail-effects" data-detail-row="5" aria-label="Card effects"><div class="detail-effect-columns"><div class="detail-effect-panel" role="group" aria-label="Base">${metadataAboveEffects ? '' : '<h4>Base</h4>'}${baseCostContent}<p class="detail-panel-description">${baseContent}</p></div><div class="detail-effect-panel" role="group" aria-label="Upgraded">${metadataAboveEffects ? '' : '<h4 class="detail-upgraded">Upgraded</h4>'}${upgradedCostContent}<p class="detail-panel-description">${upgradedContent}</p></div></div>${showEffectNotes ? require('./effect-tooltips.cjs').notes(card.id) : ''}${showKeywords && keywords ? '<aside class="detail-keyword">' + keywords + '</aside>' : ''}</section>

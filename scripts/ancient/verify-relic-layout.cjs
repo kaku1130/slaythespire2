@@ -21,7 +21,7 @@ async function main(){
  try{
   const page=await browser.newPage({viewport:{width:1440,height:1400}}),errors=[];
   page.on('pageerror',error=>errors.push(error.message));
-  await page.goto(pathToFileURL(path.resolve('relic.html')).href);
+  await page.goto(pathToFileURL(path.resolve('Relics.html')).href);
   const reference=new Map((await snapshot(page.locator('.entry.relic'))).map(relic=>[relic.id,relic]));
   let total=0,cardCount=0;
   for(const slug of slugs){
@@ -39,7 +39,7 @@ async function main(){
    cardCount+=await page.locator('.ancient-relic-extras .card-detail').count();total+=rows.length;
   }
   assert.equal(cardCount,16,'embedded reward cards preserved');
-  await page.goto(pathToFileURL(path.resolve('ancient.html')).href);
+  await page.goto(pathToFileURL(path.resolve('Ancients.html')).href);
   const frame=page.frameLocator('.split-detail iframe');
   await frame.locator('.ancient-relic-entry').first().waitFor();
   const embedded=await snapshot(frame.locator('.ancient-relic-entry'));
