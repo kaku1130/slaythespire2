@@ -1,8 +1,6 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
-// Desktop layout for relic and potion catalogs; iPhone has its own page.
+// Shared relic and potion catalog layout.
 module.exports={controls:'',script:'',styles:`
-main#main-content :is(.relic-section,.potion-section) .catalog{grid-template-columns:minmax(0,1fr)}
-@media (width > 1024px) and (hover: hover) and (pointer: fine), (width > 1366px) { main#main-content :is(.relic-section,.potion-section) .catalog { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 main#main-content:has(>.relic-filters,>.potion-filters)>.catalog-scroll{width:100%;align-self:center;padding-inline:0;scrollbar-gutter:auto}
 html body main#main-content>:is(.relic-filters,.potion-filters){width:100%;align-self:center;justify-content:center;margin-inline:auto;overflow-x:hidden}
 html body main#main-content .filters :is(.relic-filter-group,.potion-rarities){flex:0 0 100%;width:100%;justify-content:center}
@@ -34,3 +32,5 @@ html body main#main-content>.filters.relic-filters>.relic-filter-group:has([data
 `;
 
 module.exports.styles+="\n/* English names stay beside Chinese names and wrap within each title. */\nmain#main-content :is(.relic-title-row,.potion-title-row) .catalog-name-en{font-size:.8em;font-weight:400;color:var(--muted);overflow-wrap:anywhere}\n";
+
+module.exports.styles+=require('../cards/catalog-grid.cjs');

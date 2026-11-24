@@ -105,7 +105,7 @@ html body main#main-content .catalog-relic-card[data-relic-id][hidden] {display:
 html body main#main-content .catalog-relic-card .relic-icon-row {display:grid;grid-template-columns:minmax(0,1fr) 72px minmax(0,1fr);gap:8px;align-items:start;min-width:0;width:100%}
 html body main#main-content .catalog-relic-card .relic-icon-row>img {grid-column:2;grid-row:1;display:block;width:72px;height:72px;object-fit:contain;margin:0}
 html body main#main-content .catalog-relic-card .relic-pool-corner {grid-column:1;grid-row:1;justify-self:start;display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:4px;min-width:0;max-width:100%;margin:0;color:var(--pool-color,#aab6c4);font:600 20px/1.4 Arial,"Microsoft JhengHei",sans-serif}
-html body main#main-content .catalog-relic-card .relic-pool-corner>span {display:none}
+html body main#main-content .catalog-relic-card .relic-pool-corner>span {display:block;min-width:0;overflow-wrap:anywhere}
 html body main#main-content#main-content .catalog-relic-card .relic-icon-row>.relic-rarity-row {grid-column:3;grid-row:1;justify-self:end;display:block;width:auto;max-width:100%;min-width:0;margin:0;text-align:right;font:600 16px/1.4 Arial,"Microsoft JhengHei",sans-serif}
 html body main#main-content#main-content .catalog-relic-card .relic-icon-row>.relic-rarity-row>[data-relic-rarity] {display:block;max-width:100%;overflow-wrap:anywhere;text-align:right}
 html body main#main-content .catalog-relic-card .relic-pool-corner>img {display:block;width:28px;height:28px;object-fit:contain;margin:0;flex:none}

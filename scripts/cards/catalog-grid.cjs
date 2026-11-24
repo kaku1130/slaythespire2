@@ -1,0 +1,13 @@
+const grids='html body[data-view=grid] main#main-content#main-content #card-scroll tbody, html body main#main-content#main-content :is(.relic-section,.potion-section) .catalog';
+module.exports=`
+/* Phones and iPad mini use one column in either orientation. */
+${grids} {grid-template-columns:minmax(0,1fr)}
+/* The larger iPads have a short viewport side of at least 810 CSS pixels. */
+@media screen and (min-width:810px) and (min-height:810px) {
+ ${grids} {grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine) {
+ html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:repeat(4,minmax(0,1fr))}
+ html body main#main-content#main-content :is(.relic-section,.potion-section) .catalog {grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+`;

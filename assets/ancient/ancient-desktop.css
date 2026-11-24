@@ -1,12 +1,6 @@
 /* Match the relic page dark native scrollbar. */
 html{color-scheme:dark;scrollbar-width:auto;scrollbar-color:auto}
 
-@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine), screen and (min-width:1441px) {
-  html body main#main-content#main-content#main-content.ancient-browser {
-    width:25vw!important;max-width:none!important;margin-inline:auto!important;
-  }
-}
-
 /* Ancient details participate in the page's single scrolling flow. */
 html:has(main.ancient-browser),html body:has(main.ancient-browser) {
   position:static!important;display:block;height:auto!important;min-height:100%;overflow:visible!important;
