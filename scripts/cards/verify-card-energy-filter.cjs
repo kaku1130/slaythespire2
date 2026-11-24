@@ -58,7 +58,7 @@ const discounted=card=>{
     await button(value).click();
     assert.deepEqual(await visible(),ids(cards.filter(card=>matches(card,value))),mode+' '+value+' costs');
     assert.equal(await button(value).getAttribute('aria-pressed'),'true');
-    assert((await button(value).evaluate(node=>getComputedStyle(node,'::after').content)).includes('✓'),'selected energy shows check');
+    assert.equal(await button(value).evaluate(node=>getComputedStyle(node,'::after').content),'none','selected energy has no checkmark');
     await button(value).click();
    }
    await page.locator('#card-filter-character button[value=Regent]').click();
@@ -72,7 +72,7 @@ const discounted=card=>{
    const gains=await visible();
    for(const id of ['BLOODLETTING','ADRENALINE','OFFERING','CHARGE_BATTERY','SUNDER','AUTOMATION','DOUBLE_ENERGY','FUSION','IGNITION','METEOR_STRIKE'])assert(gains.includes(id),'includes energy gain '+id);
    for(const id of ['STRIKE_IRONCLAD','CORRUPTION','ALL_FOR_ONE','BANSHEES_CRY','ADAPTIVE_STRIKE','TRANSFIGURE','MOMENTUM_STRIKE','SYNTHESIS','DANSE_MACABRE'])assert(!gains.includes(id),'excludes costs/discounts '+id);
-   assert((await gainButton.evaluate(node=>getComputedStyle(node,'::after').content)).includes('✓'));
+   assert.equal(await gainButton.evaluate(node=>getComputedStyle(node,'::after').content),'none');
    await button('0').click();
    assert.deepEqual(await visible(),ids(cards.filter(card=>gains.includes(card.id)&&matches(card,'0'))),'0 cost AND energy gain');
    assert((await visible()).includes('BLOODLETTING'));

@@ -872,14 +872,12 @@ html body #main-content #tools #card-filter-tier button[value=D] {
   background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
-/* Energy filters share Tier button states and add an explicit selection check. */
+/* Energy filters share Tier button states without selection checkmarks. */
 html body #main-content #tools #card-filter-energy button {
  --tier-text-color:#e3bf72;color:var(--tier-text-color)!important;gap:8px;
 }
 html body #main-content #tools #card-filter-energy button[aria-pressed=true]::after {
- content:"✓";position:absolute;right:4px;top:3px;
- display:grid;place-items:center;width:18px;height:18px;
- border-radius:50%;background:#fff;color:#040609;font:800 14px/1 Arial,sans-serif;
+ content:none;
 }
 
 /* Set the card page width once; every nested content wrapper fills it. */
@@ -1981,14 +1979,12 @@ html body #main-content #tools #card-filter-tier button[value=D] {
   background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
-/* Energy filters share Tier button states and add an explicit selection check. */
+/* Energy filters share Tier button states without selection checkmarks. */
 html body #main-content #tools #card-filter-energy button {
  --tier-text-color:#e3bf72;color:var(--tier-text-color)!important;gap:8px;
 }
 html body #main-content #tools #card-filter-energy button[aria-pressed=true]::after {
- content:"✓";position:absolute;right:4px;top:3px;
- display:grid;place-items:center;width:18px;height:18px;
- border-radius:50%;background:#fff;color:#040609;font:800 14px/1 Arial,sans-serif;
+ content:none;
 }
 
 /* Set the card page width once; every nested content wrapper fills it. */
@@ -2549,6 +2545,33 @@ html body .site-header .game-info-menu>a:hover {color:#fff!important;background:
  html body .site-header .game-info-dropdown>summary {font-size:13px;padding:0 8px;gap:8px}
 }
 
+/* Compact tablets keep identical navigation sizing regardless of input detection. */
+@media screen and (min-width:601px) and (max-width:1180px) {
+ html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 438px!important;width:438px!important;gap:4px}
+ html body .site-header .site-nav>a {flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important;height:52px!important;min-height:52px!important;max-height:52px!important;padding:6px 12px!important;border-radius:6px}
+ html body .site-header .site-nav a>.site-nav-visual {flex:0 0 36px;width:36px;height:36px}
+ html body .site-header .site-nav .site-nav-icon {width:36px!important;height:36px!important;border-radius:6px!important}
+ html body .site-header .game-info-dropdown {flex:0 0 108px;width:108px;height:52px}
+ html body .site-header .game-info-dropdown>summary {font-size:14px;padding:0 8px;gap:8px;border-radius:6px}
+}
+
+/* Prevent Safari text autosizing from changing the header after navigation. */
+html body .site-header {-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html body .site-header .site-nav>a,html body .site-header .game-info-dropdown>summary {transition:none;animation:none}
+
+/* Navigation fills the space beside the logo with a consistent separation. */
+html body .site-header>.site-header-inner {flex-wrap:nowrap!important;column-gap:24px!important}
+html body .site-header .site-brand {flex:0 0 auto}
+html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
+html body .site-header .site-nav>a {width:100%!important;min-width:0!important;max-width:none!important;flex:1 1 0!important;padding-inline:0!important}
+html body .site-header .game-info-dropdown {width:100%;min-width:0;max-width:none;justify-self:stretch}
+
+/* Share navigation artwork sizing with card pool icons. */
+html {--site-nav-icon-size:36px}
+@media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {html {--site-nav-icon-size:45px}}
+@media screen and (max-width:600px) {html {--site-nav-icon-size:32px}}
+@media screen and (min-width:601px) and (max-width:1180px) {html {--site-nav-icon-size:36px}}
+
 /* Match the character page content frame without changing the navigation. */
 html body:not([data-detail-kind]) main#main-content#main-content#main-content {
   box-sizing:border-box;
@@ -2828,14 +2851,12 @@ html body #main-content #tools #card-filter-tier button[value=D] {
   background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
 }
 
-/* Energy filters share Tier button states and add an explicit selection check. */
+/* Energy filters share Tier button states without selection checkmarks. */
 html body #main-content #tools #card-filter-energy button {
  --tier-text-color:#e3bf72;color:var(--tier-text-color)!important;gap:8px;
 }
 html body #main-content #tools #card-filter-energy button[aria-pressed=true]::after {
- content:"✓";position:absolute;right:4px;top:3px;
- display:grid;place-items:center;width:18px;height:18px;
- border-radius:50%;background:#fff;color:#040609;font:800 14px/1 Arial,sans-serif;
+ content:none;
 }
 
 /* Nested content fills the shared page frame. */
@@ -2957,16 +2978,21 @@ html body[data-view=grid] main#main-content#main-content #card-scroll tbody, htm
  html body[data-view=grid] main#main-content#main-content #card-scroll tbody, html body main#main-content#main-content :is(.relic-section,.potion-section) .catalog {grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 
-/* Catalog names use h1 sizing; metadata uses h4 sizing. */
+/* Landscape iPad Pro fallback, independent of viewport height and device media. */
+@media screen and (orientation:landscape) and (min-width:1180px) and (max-width:1440px) and (any-pointer:coarse), screen and (orientation:landscape) and (min-width:1180px) and (max-width:1440px) and (hover:none) {
+ html body[data-view=grid] main#main-content#main-content #card-scroll tbody, html body main#main-content#main-content :is(.relic-section,.potion-section) .catalog {grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+/* Catalog names use h2 sizing; metadata uses h4 sizing. */
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title,
-html body main#main-content#main-content#main-content .catalog-relic-card .relic-card-text>h1,
-html body main#main-content#main-content#main-content .entry.potion .potion-title-row>h1 {
+html body main#main-content#main-content#main-content .catalog-relic-card .relic-card-text>h2,
+html body main#main-content#main-content#main-content .entry.potion .potion-title-row>h2 {
  display:flex;flex-direction:column;align-items:center;gap:4px;margin:0;
- font:700 32px/1.3 Arial,"Microsoft JhengHei",sans-serif!important;
+ font:700 28px/1.3 Arial,"Microsoft JhengHei",sans-serif!important;
  text-align:center;min-width:0;width:100%;
 }
-html body main#main-content#main-content#main-content .catalog-relic-card .relic-card-text>h1 :is(.relic-name-zh,.relic-name-en),
-html body main#main-content#main-content#main-content .entry.potion .potion-title-row>h1 :is(.potion-name-zh,.catalog-name-en) {
+html body main#main-content#main-content#main-content .catalog-relic-card .relic-card-text>h2 :is(.relic-name-zh,.relic-name-en),
+html body main#main-content#main-content#main-content .entry.potion .potion-title-row>h2 :is(.potion-name-zh,.catalog-name-en) {
  display:block;font:inherit;color:var(--plain-rarity-color);white-space:normal;overflow-wrap:anywhere;
 }
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata,
@@ -2975,7 +3001,10 @@ html body main#main-content#main-content#main-content .catalog-relic-card :is(.r
 html body main#main-content#main-content#main-content .entry.potion .potion-rarity-row {
  font-size:18px!important;line-height:1.4;
 }
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] dd[data-stat-character]>img,
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] dd[data-stat-character]>img {
+ width:var(--site-nav-icon-size,36px);height:var(--site-nav-icon-size,36px);
+}
+
 html body main#main-content#main-content#main-content .catalog-relic-card .relic-pool-corner>img {
  width:18px;height:18px;
 }
@@ -2988,6 +3017,12 @@ html body main#main-content#main-content#main-content :is(.catalog-relic-card .r
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-panel-description,
 html body main#main-content#main-content#main-content .catalog-relic-card .relic-card-text>p,
 html body main#main-content#main-content#main-content .entry.potion>p {font-size:22px;line-height:1.6}
+
+/* Hide item pool and rarity on phones in either orientation. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-width:1000px) and (max-height:500px) and (pointer:coarse) {
+ html body main#main-content#main-content#main-content .catalog-relic-card :is(.relic-pool-corner,.relic-rarity-row),
+ html body main#main-content#main-content#main-content .entry.potion .potion-rarity-row {display:none!important}
+}
 
 /* Rarity uses the same filled label in filters and entry details. */
 html body main#main-content :is(.rarity-label,[data-relic-rarity],.potion-rarity-row) {

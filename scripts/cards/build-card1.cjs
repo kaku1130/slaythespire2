@@ -72,7 +72,7 @@ const resultCount = html.match(/<p\b[^>]*id="card-filter-result"[^>]*>[\s\S]*?<\
 assert.ok(resultCount, 'Missing card filter count');
 const sourceCredit = '<p class="card-source">'+require('./source-credit.cjs')+'</p>';
 html = html.replace(resultCount[0], '').replace('</main>', '<footer class="card-results-footer">' + resultCount[0] + sourceCredit + '</footer></main>');
-html = html.replace('href="assets/cards/cards.css"', 'href="assets/cards/' + output + '.css"');
+html = html.replace(/href="assets\/cards\/cards\.css(?:\?[^" ]*)?"/, 'href="assets/cards/' + output + '.css"');
 html = html.replace(/<title>[\s\S]*?<\/title>/, '<title>' + (output === 'cards' ? 'Slay the Spire 2' : 'Card 1') + '｜' + count + ' 張卡牌詳細資料</title>');
 html = html.replace(/href="(?:Cards|card1)\.html#card-/g, 'href="' + (output === 'cards' ? 'Cards' : output) + '.html#card-');
 const hashScript = '<script>if(location.hash.startsWith("#card-"))requestAnimationFrame(()=>{const row=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(row){row.style.scrollMarginTop="12px";row.scrollIntoView({block:"start",behavior:"instant"});}});</script>';
@@ -83,6 +83,7 @@ fs.writeFileSync('assets/cards/' + output + '.css', baseCss + '\n' + fs.readFile
 html = html.replace(/<!--card-effect-tooltips-->[\s\S]*?<!--\/card-effect-tooltips-->/g, '');
 fs.writeFileSync((output === 'cards' ? 'Cards' : output) + '.html', html);
 fs.appendFileSync('assets/cards/' + output + '.css', require('./rarity-labels.cjs'));
+require('./version-stylesheet.cjs')((output === 'cards' ? 'Cards' : output) + '.html','assets/cards/' + output + '.css');
 console.log('Created ' + (output === 'cards' ? 'Cards' : output) + '.html: ' + count + ' cards with English detail sections.');
 }
 module.exports = buildCardDetails;

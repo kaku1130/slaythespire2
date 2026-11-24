@@ -31,9 +31,11 @@ function writeDesktopPage(page, html, {searchControls = true, attribution = true
   fs.writeFileSync(stylesheet, styles.join('\n\n') + '\n' + require('./page-frame.cjs') + '\n' + require('./navigation-icons.cjs').styles + require('./page-scroll.cjs'));
   if (!attribution) {
     fs.writeFileSync(page, updated);
+    require('./version-stylesheet.cjs')(page,stylesheet);
     return;
   }
   fs.writeFileSync(page, updated.replace('</body>', "<footer class=\"site-attribution\" style=\"flex:0 0 auto;margin:32px 0 0;padding:6px 16px;line-height:1.4;text-align:center;font-size:12px;color:var(--muted,#aab6c4)\">" + require('./source-credit.cjs') + "</footer><script>(()=>{const main=document.getElementById('main-content');const footer=document.querySelector('.site-attribution');const content=main.querySelector(':scope > .split-body, :scope > .card-scroll, :scope > .catalog-scroll, :scope > .build-layout .build-content')||main;content.append(footer);})();</script>" + '</body>'));
+  require('./version-stylesheet.cjs')(page,stylesheet);
 }
 
 module.exports = {writeDesktopPage};

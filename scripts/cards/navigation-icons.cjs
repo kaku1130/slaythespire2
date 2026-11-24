@@ -80,3 +80,38 @@ module.exports.styles += `
 `;
 
 module.exports.styles += require('./game-info-menu.cjs').styles;
+
+module.exports.styles+=`
+/* Compact tablets keep identical navigation sizing regardless of input detection. */
+@media screen and (min-width:601px) and (max-width:1180px) {
+ html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 438px!important;width:438px!important;gap:4px}
+ html body .site-header .site-nav>a {flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important;height:52px!important;min-height:52px!important;max-height:52px!important;padding:6px 12px!important;border-radius:6px}
+ html body .site-header .site-nav a>.site-nav-visual {flex:0 0 36px;width:36px;height:36px}
+ html body .site-header .site-nav .site-nav-icon {width:36px!important;height:36px!important;border-radius:6px!important}
+ html body .site-header .game-info-dropdown {flex:0 0 108px;width:108px;height:52px}
+ html body .site-header .game-info-dropdown>summary {font-size:14px;padding:0 8px;gap:8px;border-radius:6px}
+}
+`;
+
+module.exports.styles+=`
+/* Prevent Safari text autosizing from changing the header after navigation. */
+html body .site-header {-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html body .site-header .site-nav>a,html body .site-header .game-info-dropdown>summary {transition:none;animation:none}
+`;
+
+module.exports.styles+=`
+/* Navigation fills the space beside the logo with a consistent separation. */
+html body .site-header>.site-header-inner {flex-wrap:nowrap!important;column-gap:24px!important}
+html body .site-header .site-brand {flex:0 0 auto}
+html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
+html body .site-header .site-nav>a {width:100%!important;min-width:0!important;max-width:none!important;flex:1 1 0!important;padding-inline:0!important}
+html body .site-header .game-info-dropdown {width:100%;min-width:0;max-width:none;justify-self:stretch}
+`;
+
+module.exports.styles+=`
+/* Share navigation artwork sizing with card pool icons. */
+html {--site-nav-icon-size:36px}
+@media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {html {--site-nav-icon-size:45px}}
+@media screen and (max-width:600px) {html {--site-nav-icon-size:32px}}
+@media screen and (min-width:601px) and (max-width:1180px) {html {--site-nav-icon-size:36px}}
+`;

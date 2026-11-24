@@ -15,9 +15,9 @@ function renderClassification(rarity, {localized = false} = {}) {
 function formatCard(article, item, {localizedRarity = false} = {}) {
   return article.replace(/(<img\b[^>]*>)<div class="relic-title-row"><h2>(.*?) <span class="catalog-name-en" lang="en">(.*?)<\/span><\/h2><div class="tag">[^<]*(.*?)<\/div><\/div><p(?: lang="en")?>(.*?)<\/p>/s,
     (_, image, localizedName, englishName, ranking, localizedEffect) => {
-      return '<div class="relic-card-text">' + image + '<h1><span class="relic-name-zh" lang="zh-Hant">' + localizedName
+      return '<div class="relic-card-text">' + image + '<h2><span class="relic-name-zh" lang="zh-Hant">' + localizedName
         + '</span><a class="relic-name-en" lang="en" title="' + englishName.replaceAll('"', '&quot;') + '" href="' + escapeHtml(item.sourceEn).replaceAll('"','&quot;') + '" target="_blank" rel="noopener noreferrer">' + englishName
-        + '</a></h1><p lang="en">' + localizedEffect + '</p>'
+        + '</a></h2><p lang="en">' + localizedEffect + '</p>'
         + '<div class="relic-rarity-row" lang="' + (localizedRarity ? 'zh-Hant' : 'en') + '">' + renderClassification(item.rarity, {localized:localizedRarity}) + '</div>'
         + (ranking ? '<div class="tag relic-card-ranking">' + ranking + '</div>' : '') + '</div>';
     });
@@ -30,9 +30,10 @@ function formatCatalogCard(article,item,options={}){
   let formatted=formatCard(article,item,options),ancientIcons='';
   if(item.rarity==='Ancient')formatted=formatted.replace(/<div class="tag relic-card-ranking">([\s\S]*?)<\/div>/,(_,ranking)=>{ancientIcons=ranking;return '';});
   const rarity='<span class="relic-rarity-row" lang="en">'+ancientIcons+renderClassification(item.rarity)+'</span>';
+  const poolMarkup='<span class="relic-pool-corner" lang="en" title="'+escapeHtml(label)+'" aria-label="'+escapeHtml(label)+'"><img src="'+(options.prefix||'')+'assets/cards/icons/'+icon+'.webp" alt="" width="20" height="20"><span>'+escapeHtml(label)+'</span></span>';
   return formatted
     .replace(/<div class="relic-rarity-row"[^>]*>[\s\S]*?<\/div>/,'')
-    .replace(/(<img\b[^>]*>)/,'<div class="relic-icon-row" style="--pool-color:'+pool[2]+'"><span class="relic-pool-corner" lang="en" title="'+escapeHtml(label)+'" aria-label="'+escapeHtml(label)+'"><img src="'+(options.prefix||'')+'assets/cards/icons/'+icon+'.webp" alt="" width="20" height="20"><span>'+escapeHtml(label)+'</span></span>$1'+rarity+'</div>');
+    .replace(/(<img\b[^>]*>)/,'<div class="relic-icon-row" style="--pool-color:'+pool[2]+'">'+poolMarkup+'$1'+rarity+'</div>');
 }
 
 function render(content,items){

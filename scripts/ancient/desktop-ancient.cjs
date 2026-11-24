@@ -18,12 +18,20 @@ function addTopRelicMenu(html,{active,prefix='../../',assets}={}) {
   return /<main\b/.test(html)?html.replace(/(<main\b[^>]*>)/,'$1'+menu):menu+html;
 }
 const styles=`
-html body main#main-content .ancient-top-menu {margin:0 0 24px}
-html body main#main-content .ancient-top-menu-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(2,128px);gap:8px;width:100%}
-html body main#main-content .ancient-top-menu-grid>:is(a,span) {display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;box-sizing:border-box;width:100%;min-width:0;height:128px;padding:8px;border:1px solid #344454;border-radius:8px;background:#0b1119;color:#e3e8ee;text-decoration:none}
+html body main#main-content .ancient-top-menu {--ancient-menu-icon-size:48px;margin:0 0 24px}
+html body main#main-content .ancient-top-menu-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(calc(var(--ancient-menu-icon-size) + 18px),1fr));align-items:stretch;gap:8px;width:100%}
+html body main#main-content .ancient-top-menu-grid>:is(a,span) {display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;box-sizing:border-box;width:100%;min-width:0;height:auto;padding:8px;border:1px solid #344454;border-radius:8px;background:#0b1119;color:#e3e8ee;text-decoration:none}
 html body main#main-content .ancient-top-menu-grid>a:is(:hover,:focus-visible) {border-color:#238cc2;background:#163047}
 html body main#main-content .ancient-top-menu-grid>[aria-disabled=true] {filter:grayscale(1);opacity:.5;border-color:#293340;background:#10151b;color:#8a949e;cursor:default}
-html body main#main-content .ancient-top-menu-grid>:is(a,span)>img {position:static;display:block;width:48px;height:48px;max-width:100%;object-fit:contain}
-html body main#main-content .ancient-top-menu-grid .ancient-menu-name {display:flex;align-items:center;justify-content:center;width:100%;min-width:0;min-height:2.8em;font:600 14px/1.4 Arial,"Microsoft JhengHei",sans-serif;text-align:center;white-space:normal;overflow-wrap:anywhere}
+html body main#main-content .ancient-top-menu-grid>:is(a,span)>img {position:static;display:block;width:var(--ancient-menu-icon-size);height:var(--ancient-menu-icon-size);max-width:100%;object-fit:contain}
+html body main#main-content .ancient-top-menu-grid .ancient-menu-name {display:none;align-items:center;justify-content:center;width:100%;min-width:0;min-height:2.8em;font:600 14px/1.4 Arial,"Microsoft JhengHei",sans-serif;text-align:center;white-space:normal;overflow-wrap:anywhere}
+
+/* Only desktop screens with a mouse display menu text, including inside the detail frame. */
+@media screen and (min-device-width:1025px) and (hover:hover) and (pointer:fine) {
+ html body main#main-content .ancient-top-menu-grid .ancient-menu-name {display:flex}
+}
+@media screen and (any-pointer:coarse) {
+ html body main#main-content .ancient-top-menu-grid .ancient-menu-name {display:none}
+}
 `;
 module.exports = {removeDialogue,addTopRelicMenu,styles};

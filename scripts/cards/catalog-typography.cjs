@@ -1,15 +1,15 @@
 const main='html body main#main-content#main-content#main-content';
 module.exports=`
-/* Catalog names use h1 sizing; metadata uses h4 sizing. */
+/* Catalog names use h2 sizing; metadata uses h4 sizing. */
 ${main} #card-scroll .card-detail[data-catalog-layout] .detail-title,
-${main} .catalog-relic-card .relic-card-text>h1,
-${main} .entry.potion .potion-title-row>h1 {
+${main} .catalog-relic-card .relic-card-text>h2,
+${main} .entry.potion .potion-title-row>h2 {
  display:flex;flex-direction:column;align-items:center;gap:4px;margin:0;
- font:700 32px/1.3 Arial,"Microsoft JhengHei",sans-serif!important;
+ font:700 28px/1.3 Arial,"Microsoft JhengHei",sans-serif!important;
  text-align:center;min-width:0;width:100%;
 }
-${main} .catalog-relic-card .relic-card-text>h1 :is(.relic-name-zh,.relic-name-en),
-${main} .entry.potion .potion-title-row>h1 :is(.potion-name-zh,.catalog-name-en) {
+${main} .catalog-relic-card .relic-card-text>h2 :is(.relic-name-zh,.relic-name-en),
+${main} .entry.potion .potion-title-row>h2 :is(.potion-name-zh,.catalog-name-en) {
  display:block;font:inherit;color:var(--plain-rarity-color);white-space:normal;overflow-wrap:anywhere;
 }
 ${main} #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata,
@@ -18,7 +18,10 @@ ${main} .catalog-relic-card :is(.relic-rarity-row,[data-relic-rarity],.relic-poo
 ${main} .entry.potion .potion-rarity-row {
  font-size:18px!important;line-height:1.4;
 }
-${main} #card-scroll .card-detail[data-catalog-layout] dd[data-stat-character]>img,
+${main} #card-scroll .card-detail[data-catalog-layout] dd[data-stat-character]>img {
+ width:var(--site-nav-icon-size,36px);height:var(--site-nav-icon-size,36px);
+}
+
 ${main} .catalog-relic-card .relic-pool-corner>img {
  width:18px;height:18px;
 }
@@ -31,4 +34,12 @@ ${main} :is(.catalog-relic-card .relic-icon-row,.entry.potion .potion-icon-row) 
 ${main} #card-scroll .card-detail[data-catalog-layout] .detail-panel-description,
 ${main} .catalog-relic-card .relic-card-text>p,
 ${main} .entry.potion>p {font-size:22px;line-height:1.6}
+`;
+
+module.exports+=`
+/* Hide item pool and rarity on phones in either orientation. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-width:1000px) and (max-height:500px) and (pointer:coarse) {
+ html body main#main-content#main-content#main-content .catalog-relic-card :is(.relic-pool-corner,.relic-rarity-row),
+ html body main#main-content#main-content#main-content .entry.potion .potion-rarity-row {display:none!important}
+}
 `;

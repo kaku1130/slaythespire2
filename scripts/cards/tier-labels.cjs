@@ -70,13 +70,11 @@ html body #main-content #tools #card-filter-tier button[value=${tier}] {
 `).join('');
 
 module.exports += `
-/* Energy filters share Tier button states and add an explicit selection check. */
+/* Energy filters share Tier button states without selection checkmarks. */
 html body #main-content #tools #card-filter-energy button {
  --tier-text-color:#e3bf72;color:var(--tier-text-color)!important;gap:8px;
 }
 html body #main-content #tools #card-filter-energy button[aria-pressed=true]::after {
- content:"✓";position:absolute;right:4px;top:3px;
- display:grid;place-items:center;width:18px;height:18px;
- border-radius:50%;background:#fff;color:#040609;font:800 14px/1 Arial,sans-serif;
+ content:none;
 }
 `;

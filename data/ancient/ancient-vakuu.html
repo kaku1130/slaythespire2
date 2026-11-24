@@ -204,6 +204,33 @@ html body .site-header .game-info-menu>a:hover {color:#fff!important;background:
  html body .site-header .game-info-dropdown {flex:0 0 108px;width:108px;height:52px}
  html body .site-header .game-info-dropdown>summary {font-size:13px;padding:0 8px;gap:8px}
 }
+
+/* Compact tablets keep identical navigation sizing regardless of input detection. */
+@media screen and (min-width:601px) and (max-width:1180px) {
+ html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 438px!important;width:438px!important;gap:4px}
+ html body .site-header .site-nav>a {flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important;height:52px!important;min-height:52px!important;max-height:52px!important;padding:6px 12px!important;border-radius:6px}
+ html body .site-header .site-nav a>.site-nav-visual {flex:0 0 36px;width:36px;height:36px}
+ html body .site-header .site-nav .site-nav-icon {width:36px!important;height:36px!important;border-radius:6px!important}
+ html body .site-header .game-info-dropdown {flex:0 0 108px;width:108px;height:52px}
+ html body .site-header .game-info-dropdown>summary {font-size:14px;padding:0 8px;gap:8px;border-radius:6px}
+}
+
+/* Prevent Safari text autosizing from changing the header after navigation. */
+html body .site-header {-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html body .site-header .site-nav>a,html body .site-header .game-info-dropdown>summary {transition:none;animation:none}
+
+/* Navigation fills the space beside the logo with a consistent separation. */
+html body .site-header>.site-header-inner {flex-wrap:nowrap!important;column-gap:24px!important}
+html body .site-header .site-brand {flex:0 0 auto}
+html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
+html body .site-header .site-nav>a {width:100%!important;min-width:0!important;max-width:none!important;flex:1 1 0!important;padding-inline:0!important}
+html body .site-header .game-info-dropdown {width:100%;min-width:0;max-width:none;justify-self:stretch}
+
+/* Share navigation artwork sizing with card pool icons. */
+html {--site-nav-icon-size:36px}
+@media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {html {--site-nav-icon-size:45px}}
+@media screen and (max-width:600px) {html {--site-nav-icon-size:32px}}
+@media screen and (min-width:601px) and (max-width:1180px) {html {--site-nav-icon-size:36px}}
 html{color-scheme:dark;scrollbar-width:auto;scrollbar-color:auto}body{background:#040609;color:#e3e8ee}main{min-width:0}main img{max-width:100%}main [class*="flex-wrap"]:has(>[aria-label="切換遊戲版本"]){display:none}/* Shared page frame: content and navigation use the same edges. */
 :root{--site-width:90%;--site-page-gap:20px}
 main#main-content,.site-header>.site-header-inner{box-sizing:border-box;width:var(--site-width);max-width:none;margin-inline:auto;padding-inline:0}
@@ -986,6 +1013,33 @@ html body .site-header .game-info-menu>a:hover {color:#fff!important;background:
  html body .site-header .game-info-dropdown {flex:0 0 108px;width:108px;height:52px}
  html body .site-header .game-info-dropdown>summary {font-size:13px;padding:0 8px;gap:8px}
 }
+
+/* Compact tablets keep identical navigation sizing regardless of input detection. */
+@media screen and (min-width:601px) and (max-width:1180px) {
+ html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 438px!important;width:438px!important;gap:4px}
+ html body .site-header .site-nav>a {flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important;height:52px!important;min-height:52px!important;max-height:52px!important;padding:6px 12px!important;border-radius:6px}
+ html body .site-header .site-nav a>.site-nav-visual {flex:0 0 36px;width:36px;height:36px}
+ html body .site-header .site-nav .site-nav-icon {width:36px!important;height:36px!important;border-radius:6px!important}
+ html body .site-header .game-info-dropdown {flex:0 0 108px;width:108px;height:52px}
+ html body .site-header .game-info-dropdown>summary {font-size:14px;padding:0 8px;gap:8px;border-radius:6px}
+}
+
+/* Prevent Safari text autosizing from changing the header after navigation. */
+html body .site-header {-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html body .site-header .site-nav>a,html body .site-header .game-info-dropdown>summary {transition:none;animation:none}
+
+/* Navigation fills the space beside the logo with a consistent separation. */
+html body .site-header>.site-header-inner {flex-wrap:nowrap!important;column-gap:24px!important}
+html body .site-header .site-brand {flex:0 0 auto}
+html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
+html body .site-header .site-nav>a {width:100%!important;min-width:0!important;max-width:none!important;flex:1 1 0!important;padding-inline:0!important}
+html body .site-header .game-info-dropdown {width:100%;min-width:0;max-width:none;justify-self:stretch}
+
+/* Share navigation artwork sizing with card pool icons. */
+html {--site-nav-icon-size:36px}
+@media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {html {--site-nav-icon-size:45px}}
+@media screen and (max-width:600px) {html {--site-nav-icon-size:32px}}
+@media screen and (min-width:601px) and (max-width:1180px) {html {--site-nav-icon-size:36px}}
 :root{--star-resource-image:url("data:image/webp;base64,UklGRrQCAABXRUJQVlA4WAoAAAAQAAAAFwAAFwAAQUxQSLgAAAABgGPb2rHn+WPbttHbtp1MwUZps3JSp8oMWKm0Stu84fs+Q4iICSDRwADi1Vjf0ODR23+04DE/RwhPGtDBojIHbLpxZD0BaGXwPwKAh1gp/xX8uRMgEXGIf48SRYxaTiB4Oxuu9cu0bH7vE5LH9fpEhk2XkJ80IyIyLF0V26n3UKG/rbpfBcYcSTj/9K/jApLNe/31VkjyA79GidF7D9j35aBeYIBYk4EUHvPbNzse5YUTYx6q7iZRVlA4INYBAABwDQCdASoYABgAPikSh0KhoQoCAAwBQlsAJ0yhILPoH4q/gBzhm6/eP9gHWq/1XVAPQr8nX9a/gt/W6uO0qBPNeic6ar6KWYJ5V/wH2NfYB/Gv5T/bfyq/pf//5VX9Zg7YsQFwKSAW+kg3Vfjym4+51kYygAD+//kg/UNb/kWt3YEZRXXa7CmBq3+fLNoUovv/Rhc56OAA52JZHC0egHD35yjBvWxe/2nnot/8ZxVE6rUtWbfyqhiP3fjaUYTyZ1IpHzmdOTAdeklmwZN5Dfhy//mV+tLf3C/v7rvj24kVpZXz8raPtQmiWzUeP/IJBb2zrdfZx9Uckmv+UdN+HCwZCSfstNWOO6uf+eCGJ/+iV/4ba/bASuicwA3Xyzg/67Q8flH1erjXUt1Bep4L4H3/sdSfx0kM1WAQWKJflWv7uv8aF0gBvf/p8PArZwRHupmZHPz+UWG/8mv+/y46BYewP/+1uv9vfT/dW9t1JkvxP0ASM/92hT8m/dbWQHbEkf0vyS8f9h5GdSTE2qd1PMff8sZkfqInOaA5XckK0R6ndLcsX/89/+opNWEBx0rR8u+G1dxs2I5P0wr/IlfoT73/bnBqf0HhhrpKN3/1G1VzByacYWtoAA==")}.star-resource-icon{display:inline-block;width:1.15em;height:1.15em;vertical-align:-.2em;background-image:var(--star-resource-image);background-size:contain;background-position:center;background-repeat:no-repeat;margin:0;flex-shrink:0}:root{--energy-resource-image:url("data:image/webp;base64,UklGRiICAABXRUJQVlA4WAoAAAAQAAAAFwAAFwAAQUxQSL0AAAABgLpt2/FX/P3D7Lb94pptG9FIdrYqu71V20v71WWj2fY+f897bBExAfiD5kXBTJzy1+5PuiMsCNqAjh1O+rxZalDjNf/MqTxutlDQjnPqvxMUQp4J3JhGRjPIUa+cZVwuSVyVTD1HN1oBcNxm8JECIPWRATdqCVgbWXTqATQxuAsCAJ972qhGYjJN+oyGbNoPZVkn53BAyYVi5amq33k7Jbh2nCh8rObZQ7WhZOub4057onUg22bNt7jgHwMAVlA4ID4BAABQBwCdASoYABgAPm0okUWkIiGb+qwAQAbEtgbYAhyrDwD+m8OftsY2tmDeXiIpDADVdeueON4h8HH2PD6eJoOpfHAAAP72kotV4jHYo+IEtd4Q+KgcEfBw6OxQbTfQKrXnhI48oxoz4XQqt65YCZVKDSjartJycor3gG2IgME43IMlDH/jI0TvE+DDy51/ATe2dws/+7ff5fe51AIW8eqsEc9rUPdCp5vtm4dYTnOhIfkS5dinjT2rUD8tm+wTpJ02GyiwZHwiAQ/dVjSpJcCTxTZqofwHx3ilrlQHNGwKLwMdZyp5viuoiNkSNXCmEUJ0MmkrWD/NASLPVXYDDuuUv6yhyWRpUx6AG/WVC1977qz31St0enZ4ex73/kSsIsW/7zDoXtEk7rntqP3KR5N8p8GD4/wFDaDHdzsAAAA=")}.energy-resource-icon{display:inline-block;width:1.05em;height:1.05em;vertical-align:-.15em;background-image:var(--energy-resource-image);background-size:contain;background-position:center;background-repeat:no-repeat;margin:0;flex-shrink:0}/* Each card occupies one full row with seven detail sections. */
 html body .ancient-card-entry .card-detail-row {
   grid-column:1 / -1;
@@ -1634,13 +1688,21 @@ html body main#main-content .ancient-relic-card-name[data-rarity=Quest] {color:#
 
 html body main#main-content .ancient-relic-extras {min-width:0;text-align:left}
 
-html body main#main-content .ancient-top-menu {margin:0 0 24px}
-html body main#main-content .ancient-top-menu-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(2,128px);gap:8px;width:100%}
-html body main#main-content .ancient-top-menu-grid>:is(a,span) {display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;box-sizing:border-box;width:100%;min-width:0;height:128px;padding:8px;border:1px solid #344454;border-radius:8px;background:#0b1119;color:#e3e8ee;text-decoration:none}
+html body main#main-content .ancient-top-menu {--ancient-menu-icon-size:48px;margin:0 0 24px}
+html body main#main-content .ancient-top-menu-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(calc(var(--ancient-menu-icon-size) + 18px),1fr));align-items:stretch;gap:8px;width:100%}
+html body main#main-content .ancient-top-menu-grid>:is(a,span) {display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;box-sizing:border-box;width:100%;min-width:0;height:auto;padding:8px;border:1px solid #344454;border-radius:8px;background:#0b1119;color:#e3e8ee;text-decoration:none}
 html body main#main-content .ancient-top-menu-grid>a:is(:hover,:focus-visible) {border-color:#238cc2;background:#163047}
 html body main#main-content .ancient-top-menu-grid>[aria-disabled=true] {filter:grayscale(1);opacity:.5;border-color:#293340;background:#10151b;color:#8a949e;cursor:default}
-html body main#main-content .ancient-top-menu-grid>:is(a,span)>img {position:static;display:block;width:48px;height:48px;max-width:100%;object-fit:contain}
-html body main#main-content .ancient-top-menu-grid .ancient-menu-name {display:flex;align-items:center;justify-content:center;width:100%;min-width:0;min-height:2.8em;font:600 14px/1.4 Arial,"Microsoft JhengHei",sans-serif;text-align:center;white-space:normal;overflow-wrap:anywhere}
+html body main#main-content .ancient-top-menu-grid>:is(a,span)>img {position:static;display:block;width:var(--ancient-menu-icon-size);height:var(--ancient-menu-icon-size);max-width:100%;object-fit:contain}
+html body main#main-content .ancient-top-menu-grid .ancient-menu-name {display:none;align-items:center;justify-content:center;width:100%;min-width:0;min-height:2.8em;font:600 14px/1.4 Arial,"Microsoft JhengHei",sans-serif;text-align:center;white-space:normal;overflow-wrap:anywhere}
+
+/* Only desktop screens with a mouse display menu text, including inside the detail frame. */
+@media screen and (min-device-width:1025px) and (hover:hover) and (pointer:fine) {
+ html body main#main-content .ancient-top-menu-grid .ancient-menu-name {display:flex}
+}
+@media screen and (any-pointer:coarse) {
+ html body main#main-content .ancient-top-menu-grid .ancient-menu-name {display:none}
+}
 
 /* Match the character page content frame without changing the navigation. */
 html body:not([data-detail-kind]) main#main-content#main-content#main-content {
