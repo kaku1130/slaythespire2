@@ -8,6 +8,43 @@
   desktop.addEventListener('change', update);
   update();
 
+  const tierDialog=document.createElement('dialog');
+  tierDialog.id='card-tier-dialog';
+  tierDialog.setAttribute('aria-labelledby','card-tier-dialog-title');
+  tierDialog.innerHTML='<header class="tier-dialog-header"><h2 id="card-tier-dialog-title"></h2><form method="dialog"><button type="submit" class="tier-dialog-close" aria-label="關閉 Tier 說明">×</button></form></header><div class="tier-dialog-content"></div>';
+  document.body.append(tierDialog);
+  let tierTrigger;
+  document.addEventListener('click', event => {
+    const button=event.target.closest('[data-card-tier]');
+    if(!button)return;
+    const section=document.getElementById(button.dataset.cardTier);
+    if(!section)return;
+    tierTrigger=button;
+    const card=button.closest('[data-catalog-layout]');
+    const zh=card.querySelector('.detail-name-zh').textContent;
+    const en=card.querySelector('.detail-name-en').textContent;
+    const tier=button.querySelector('.creator-tier-badge').textContent;
+    tierDialog.querySelector('h2').textContent=zh+' / '+en+' · Tier '+tier;
+    const content=section.cloneNode(true);
+    content.removeAttribute('id');
+    content.hidden=false;
+    tierDialog.querySelector('.tier-dialog-content').replaceChildren(content);
+    button.setAttribute('aria-expanded','true');
+    tierDialog.showModal();
+  });
+  tierDialog.addEventListener('click',event=>{
+    if(event.target!==tierDialog)return;
+    const bounds=tierDialog.getBoundingClientRect();
+    if(event.clientX<bounds.left||event.clientX>bounds.right||event.clientY<bounds.top||event.clientY>bounds.bottom)tierDialog.close();
+  });
+  tierDialog.addEventListener('close',()=>{
+    tierDialog.querySelector('.tier-dialog-content').replaceChildren();
+    if(tierTrigger?.isConnected){
+      tierTrigger.setAttribute('aria-expanded','false');
+      tierTrigger.focus({preventScroll:true});
+    }
+  });
+
   document.addEventListener('click', event => {
     const button = event.target.closest('[data-card-version]');
     if (!button || button.disabled) return;

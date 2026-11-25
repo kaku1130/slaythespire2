@@ -2,6 +2,8 @@
 
 本機靜態頁面：
 
+- [單一網址入口](index.html)：保留固定導覽列，在同一網址切換下方五個頁面；原有 HTML 仍可獨立開啟。
+
 - [先古之民](Ancients.html)
 - [角色](Characters.html)
 - [卡牌](Cards.html)
@@ -17,6 +19,9 @@ node scripts/ancient/build-ancients.cjs
 node scripts/potion/build-potion.cjs
 node scripts/relic/build-relic.cjs
 ```
+
+原有頁面更新後，執行 `node scripts/cards/build-index.cjs` 同步單一入口的內容。
+單一入口可直接開啟本機檔案，也可放在靜態網站；驗證指令為 `node scripts/cards/verify-index.cjs`。
 
 卡牌產生程式也會同步產生角色頁面。assets、data、scripts 保留這五頁及其重建依賴；cards、event 目錄含共用工具，monster 目錄僅保留導覽圖示與先古之民使用的共用圖示資料。
 

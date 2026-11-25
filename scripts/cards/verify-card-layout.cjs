@@ -35,13 +35,13 @@ const {characters}=require('../../data/cards/creator-tiers.json');
   })));
   for(const rating of renderedRatings){
    const card=cards.find(card=>card.id===rating.id),list=characters[card.character]?.Jorbs;
-   if(list){const tier=list.ratings[card.id];assert.equal(rating.label,tier?tier+'-Tier':'Unranked',card.id);}
+   if(list){const tier=list.ratings[card.id];assert.equal(rating.label,tier||'—',card.id);}
    if(comments[card.id]){
     assert.equal(rating.comment,comments[card.id].text.replace(/\r?\n/g,''),card.id+' Jorbs commentary');
     assert.equal(rating.source,list.url);assert.equal(rating.sourceName,list.name);
    }
   }
-  assert.equal(await page.locator('details.detail-tier-toggle[open]').count(),0,'Commentary defaults closed');
+  assert.equal(await page.locator('.detail-tier-section:not([hidden])').count(),0,'Commentary defaults closed');
   for(const width of [1440,1024]){
    await page.setViewportSize({width,height:1100});
    await page.locator('#search').fill('Bash');
@@ -108,19 +108,20 @@ const {characters}=require('../../data/cards/creator-tiers.json');
   await page.setViewportSize({width:1440,height:2200});
   await page.locator('#search').fill('Offering');
   const offering=page.locator('#card-OFFERING');
-  assert.equal(await offering.locator('.creator-tier-badge').textContent(),'S-Tier');
+  assert.equal(await offering.locator('.creator-tier-badge').textContent(),'S');
   assert.equal(await offering.locator('.detail-tier-comment').textContent(),comments.OFFERING.text);
   assert.equal(await offering.locator('.detail-tier-section').isVisible(),false);
-  assert.equal(await offering.locator('.creator-tier-badge').isVisible(),true);
-  assert.equal(await offering.locator('.detail-tier-section .creator-tier-badge').count(),0);
-  assert.equal(await offering.locator('.detail-tier-comment').isVisible(),false);
+  const tierDialog=page.locator('#card-tier-dialog');
   await offering.locator('.creator-tier-badge').click();
-  assert.equal(await offering.locator('.detail-tier-comment').isVisible(),true);
-  assert.equal(await offering.locator('.detail-tier-source').textContent(),'Jorbs Ironclad Tier List');
-  await offering.locator('summary.detail-tier-heading').press('Enter');
-  assert.equal(await offering.locator('.detail-tier-comment').isVisible(),false);
-  await offering.locator('summary.detail-tier-heading').press('Enter');
-  assert.equal(await offering.locator('.detail-tier-source').isVisible(),true);
+  assert.equal(await tierDialog.isVisible(),true);
+  assert.equal(await tierDialog.locator('.detail-tier-comment').textContent(),comments.OFFERING.text);
+  assert.equal(await tierDialog.locator('.detail-tier-source').textContent(),'Jorbs Ironclad Tier List');
+  await page.keyboard.press('Escape');
+  assert.equal(await tierDialog.isVisible(),false);
+  await offering.locator('.detail-tier-trigger').press('Enter');
+  assert.equal(await tierDialog.isVisible(),true);
+  await tierDialog.locator('.tier-dialog-close').click();
+  assert.equal(await tierDialog.isVisible(),false);
 
   await offering.locator('.detail-art img').evaluate(node=>node.decode());
   await offering.locator('.card-detail').screenshot({path:'assets/cards/previews/offering-tier-comment.png'});

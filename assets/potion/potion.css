@@ -1036,6 +1036,27 @@ html body main#main-content#main-content#main-content .entry.potion>p {font-size
  html body main#main-content#main-content#main-content .entry.potion .potion-rarity-row {display:none!important}
 }
 
+/* Symmetric side columns keep Chinese titles centered independently of Tier. */
+html body main#main-content#main-content#main-content #card-scroll .detail-title-row {display:grid;grid-template-columns:36px minmax(0,1fr) 36px;align-items:center;gap:4px;width:100%;min-width:0;font:inherit}
+html body main#main-content#main-content#main-content #card-scroll .detail-title-row>.detail-name-zh {grid-column:2;min-width:0;width:100%;text-align:center;overflow-wrap:anywhere}
+html body main#main-content#main-content#main-content #card-scroll .detail-tier-trigger {grid-column:3;justify-self:end;display:inline-flex;align-items:center;justify-content:center;margin:0;padding:0;border:0;border-radius:4px;background:transparent;color:inherit;cursor:pointer;line-height:1}
+html body main#main-content#main-content#main-content #card-scroll .detail-tier-trigger:focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
+html body main#main-content#main-content#main-content #card-scroll .detail-tier-section[hidden] {display:none!important}
+
+/* Match Tier badge sizing to the Chinese card title. */
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row .creator-tier-badge {font-size:28px!important}
+#card-tier-dialog {box-sizing:border-box;width:min(560px,calc(100% - 32px));max-height:calc(100dvh - 48px);margin:auto;padding:20px 24px;border:1px solid #405063;border-radius:12px;background:#101923;color:#e3e8ee;font:16px/1.6 Arial,"Microsoft JhengHei",sans-serif;box-shadow:0 20px 70px #0008;overflow:auto}
+#card-tier-dialog::backdrop {background:#000a}
+#card-tier-dialog .tier-dialog-header {display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:16px}
+#card-tier-dialog h2 {margin:0;min-width:0;color:#f1cd7f;font:700 22px/1.4 Arial,"Microsoft JhengHei",sans-serif;overflow-wrap:anywhere}
+#card-tier-dialog form {flex:none;margin:0}
+#card-tier-dialog .tier-dialog-close {display:grid;place-items:center;width:32px;height:32px;padding:0;border:0;border-radius:6px;background:transparent;color:#cbd5df;font:26px/1 Arial,sans-serif;cursor:pointer}
+#card-tier-dialog .tier-dialog-close:hover {background:#233244;color:#fff}
+#card-tier-dialog :is(button,a):focus-visible {outline:2px solid #74b3e6;outline-offset:3px}
+#card-tier-dialog .detail-tier-section {padding:0;margin:0;border:0;background:transparent}
+#card-tier-dialog .detail-tier-comment {margin:0;color:#e3e8ee;font:400 20px/1.6 Arial,"Microsoft JhengHei",sans-serif;overflow-wrap:anywhere}
+#card-tier-dialog .detail-tier-source {display:inline-block;margin-top:12px;color:#8bcaf0;font:400 16px/1.5 Arial,sans-serif}
+
 /* Nested catalog panels fill the shared page frame. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu])) :is(.relic-section,.potion-section,.catalog,.split-detail,.split-detail iframe,.build-content,.build-section,.build-panel) {
@@ -1987,6 +2008,27 @@ html body main#main-content#main-content#main-content .entry.potion>p {font-size
  html body main#main-content#main-content#main-content .catalog-relic-card :is(.relic-pool-corner,.relic-rarity-row),
  html body main#main-content#main-content#main-content .entry.potion .potion-rarity-row {display:none!important}
 }
+
+/* Symmetric side columns keep Chinese titles centered independently of Tier. */
+html body main#main-content#main-content#main-content #card-scroll .detail-title-row {display:grid;grid-template-columns:36px minmax(0,1fr) 36px;align-items:center;gap:4px;width:100%;min-width:0;font:inherit}
+html body main#main-content#main-content#main-content #card-scroll .detail-title-row>.detail-name-zh {grid-column:2;min-width:0;width:100%;text-align:center;overflow-wrap:anywhere}
+html body main#main-content#main-content#main-content #card-scroll .detail-tier-trigger {grid-column:3;justify-self:end;display:inline-flex;align-items:center;justify-content:center;margin:0;padding:0;border:0;border-radius:4px;background:transparent;color:inherit;cursor:pointer;line-height:1}
+html body main#main-content#main-content#main-content #card-scroll .detail-tier-trigger:focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
+html body main#main-content#main-content#main-content #card-scroll .detail-tier-section[hidden] {display:none!important}
+
+/* Match Tier badge sizing to the Chinese card title. */
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row .creator-tier-badge {font-size:28px!important}
+#card-tier-dialog {box-sizing:border-box;width:min(560px,calc(100% - 32px));max-height:calc(100dvh - 48px);margin:auto;padding:20px 24px;border:1px solid #405063;border-radius:12px;background:#101923;color:#e3e8ee;font:16px/1.6 Arial,"Microsoft JhengHei",sans-serif;box-shadow:0 20px 70px #0008;overflow:auto}
+#card-tier-dialog::backdrop {background:#000a}
+#card-tier-dialog .tier-dialog-header {display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:16px}
+#card-tier-dialog h2 {margin:0;min-width:0;color:#f1cd7f;font:700 22px/1.4 Arial,"Microsoft JhengHei",sans-serif;overflow-wrap:anywhere}
+#card-tier-dialog form {flex:none;margin:0}
+#card-tier-dialog .tier-dialog-close {display:grid;place-items:center;width:32px;height:32px;padding:0;border:0;border-radius:6px;background:transparent;color:#cbd5df;font:26px/1 Arial,sans-serif;cursor:pointer}
+#card-tier-dialog .tier-dialog-close:hover {background:#233244;color:#fff}
+#card-tier-dialog :is(button,a):focus-visible {outline:2px solid #74b3e6;outline-offset:3px}
+#card-tier-dialog .detail-tier-section {padding:0;margin:0;border:0;background:transparent}
+#card-tier-dialog .detail-tier-comment {margin:0;color:#e3e8ee;font:400 20px/1.6 Arial,"Microsoft JhengHei",sans-serif;overflow-wrap:anywhere}
+#card-tier-dialog .detail-tier-source {display:inline-block;margin-top:12px;color:#8bcaf0;font:400 16px/1.5 Arial,sans-serif}
 
 /* Nested catalog panels fill the shared page frame. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),

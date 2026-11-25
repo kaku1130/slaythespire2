@@ -82,15 +82,16 @@ function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds =
   const characterMetadata = metadataAboveEffects && tierBadge && !tierBesideName && !cornerMetadata ? '<dl class="detail-character-metadata" aria-label="Tier"><div class="detail-meta-item detail-tier-item"><dt>Tier</dt><dd>' + tierBadge + '</dd></div></dl>' : '';
   const art = '<figure class="detail-art" data-detail-row="1"><img src="' + esc(card.image) + '" width="700" height="532" alt="' + esc(card.name) + ' illustration" loading="lazy" decoding="async"></figure>';
   if(catalogLayout){
+    const tierContent=showTierRating?require('./creator-tier-section.cjs')(card,{prefix}):{label:'',content:''};
     const metadata='<dl class="detail-type-metadata" aria-label="Pool, type and rarity">'+renderStat({label:'Character',value:card.character})+renderStat({label:'Type',value:card.type})+renderStat({label:'Rarity',value:card.rarity})+'</dl>';
     const baseId=prefix+'-base',upgradedId=prefix+'-upgraded';
     return `<article class="card-detail" data-card-layout="compact" data-catalog-layout="true" data-effect-version="base" aria-labelledby="${prefix}-title" lang="en" data-source="${esc(card.source)}" data-character="${esc(card.character)}">
   <div class="detail-overview">
     ${art}
-    <header><h2 class="detail-title" id="${prefix}-title"><a class="detail-name-zh" lang="zh-Hant" href="${esc(require('./card-source-link.cjs')(card))}" target="_blank" rel="noopener noreferrer">${esc(card.nameZh)}</a><a class="detail-name-en" href="${esc(require('./card-source-link.cjs')(card))}" target="_blank" rel="noopener noreferrer">${esc(card.name)}</a></h2></header>
+    <header><h2 class="detail-title" id="${prefix}-title"><span class="detail-title-row"><a class="detail-name-zh" lang="zh-Hant" href="${esc(require('./card-source-link.cjs')(card))}" target="_blank" rel="noopener noreferrer">${esc(card.nameZh)}</a>${tierContent.label}</span><a class="detail-name-en" href="${esc(require('./card-source-link.cjs')(card))}" target="_blank" rel="noopener noreferrer">${esc(card.name)}</a></h2></header>
     ${metadata}
     <section class="detail-section detail-effects" aria-label="Card effects"><div class="detail-effect-columns"><div class="detail-version-controls" role="group" aria-label="Card version"><button type="button" data-card-version="upgraded" aria-label="Upgraded" aria-pressed="false" aria-controls="${baseId} ${upgradedId}"${card.effect.upgraded===null?' disabled title="Cannot be upgraded"':''}><strong aria-hidden="true">&#x2795;&#xfe0e;</strong></button></div><div class="detail-effect-panel" id="${baseId}" role="group" aria-label="Base">${baseCostContent||'<p class="detail-panel-cost" aria-hidden="true">&nbsp;</p>'}<p class="detail-panel-description">${baseContent}</p></div><div class="detail-effect-panel" id="${upgradedId}" role="group" aria-label="Upgraded" hidden>${upgradedCostContent||'<p class="detail-panel-cost" aria-hidden="true">&nbsp;</p>'}<p class="detail-panel-description">${upgradedContent}</p></div></div>
-    <div class="detail-bottom-tier">${showTierRating?require('./creator-tier-section.cjs')(card):''}</div></section>
+    ${tierContent.content}</section>
   </div>
 </article>`;
   }
