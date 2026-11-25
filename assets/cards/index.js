@@ -112,6 +112,11 @@
     const key=routeFor(new URL(link.href));
     if(!key)return;
     event.preventDefault();
+    if(key===selected){
+      const frame=frames.get(key)?.frame;
+      if(frame?.contentWindow.scrollSitePageToTop)frame.contentWindow.scrollSitePageToTop();
+      return;
+    }
     const hash=frames.has(key)?frames.get(key).frame.contentWindow.location.hash:'';
     show({key,hash},true);
   });

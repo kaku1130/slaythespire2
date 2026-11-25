@@ -19,6 +19,26 @@ html body>.site-page-scroll main#main-content#main-content#main-content :is(.spl
   scroller.append(main);
 })();
 
+// Reset the active page's scroll areas without reloading or clearing its state.
+window.scrollSitePageToTop=()=>{
+  window.scrollTo({top:0,left:0,behavior:'instant'});
+  for(const area of document.querySelectorAll('.site-page-scroll,main#main-content,.card-scroll,.catalog-scroll,.split-body,.split-detail,.build-content')){
+    area.scrollTo({top:0,left:0,behavior:'instant'});
+  }
+  for(const frame of document.querySelectorAll('iframe')){
+    try{
+      if(frame.contentWindow.scrollSitePageToTop)frame.contentWindow.scrollSitePageToTop();
+      else frame.contentWindow.scrollTo({top:0,left:0,behavior:'instant'});
+    }catch{}
+  }
+};
+document.addEventListener('click',event=>{
+  const link=event.target.closest('.site-nav>a[aria-current="page"]');
+  if(!link||event.defaultPrevented||event.button!==0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+  event.preventDefault();
+  window.scrollSitePageToTop();
+});
+
 // Native details keeps the navigation usable without JavaScript; add dismissal shortcuts.
 document.addEventListener('click',event=>{
   for(const menu of document.querySelectorAll('.game-info-dropdown[open]')){

@@ -8,41 +8,50 @@
   desktop.addEventListener('change', update);
   update();
 
-  const tierDialog=document.createElement('dialog');
-  tierDialog.id='card-tier-dialog';
-  tierDialog.setAttribute('aria-labelledby','card-tier-dialog-title');
-  tierDialog.innerHTML='<header class="tier-dialog-header"><h2 id="card-tier-dialog-title"></h2><form method="dialog"><button type="submit" class="tier-dialog-close" aria-label="關閉 Tier 說明">×</button></form></header><div class="tier-dialog-content"></div>';
-  document.body.append(tierDialog);
-  let tierTrigger;
-  document.addEventListener('click', event => {
+  function closeTier(section,restoreFocus=true){
+    section.hidden=true;
+    const image=section.closest('[data-catalog-layout]').querySelector('.detail-art>img');
+    for(const name of ['tabindex','role','aria-label','data-tier-close'])image.removeAttribute(name);
+    const trigger=document.querySelector('[data-card-tier="'+section.id+'"]');
+    if(trigger){trigger.setAttribute('aria-expanded','false');if(restoreFocus)trigger.focus({preventScroll:true});}
+  }
+  function positionTier(section){
+    const card=section.closest('[data-catalog-layout]');
+    const image=card.querySelector('.detail-art>img');
+    const top=image.getBoundingClientRect().bottom-card.getBoundingClientRect().top-card.clientTop;
+    section.style.setProperty('--tier-popup-top',Math.max(0,top)+'px');
+  }
+  document.addEventListener('click',event=>{
+    const image=event.target.closest('.detail-art>img[data-tier-close]');
+    if(image){closeTier(image.closest('[data-catalog-layout]').querySelector('.detail-tier-section'));return;}
     const button=event.target.closest('[data-card-tier]');
     if(!button)return;
     const section=document.getElementById(button.dataset.cardTier);
     if(!section)return;
-    tierTrigger=button;
-    const card=button.closest('[data-catalog-layout]');
-    const zh=card.querySelector('.detail-name-zh').textContent;
-    const en=card.querySelector('.detail-name-en').textContent;
-    const tier=button.querySelector('.creator-tier-badge').textContent;
-    tierDialog.querySelector('h2').textContent=zh+' / '+en+' · Tier '+tier;
-    const content=section.cloneNode(true);
-    content.removeAttribute('id');
-    content.hidden=false;
-    tierDialog.querySelector('.tier-dialog-content').replaceChildren(content);
+    const opening=section.hidden;
+    for(const other of document.querySelectorAll('.detail-tier-section:not([hidden])'))closeTier(other,false);
+    if(!opening)return;
+    positionTier(section);
+    section.hidden=false;
     button.setAttribute('aria-expanded','true');
-    tierDialog.showModal();
+    const artwork=section.closest('[data-catalog-layout]').querySelector('.detail-art>img');
+    artwork.tabIndex=0;
+    artwork.setAttribute('role','button');
+    artwork.setAttribute('aria-label','關閉 Tier 說明');
+    artwork.setAttribute('data-tier-close','');
+    section.querySelector('a').focus({preventScroll:true});
   });
-  tierDialog.addEventListener('click',event=>{
-    if(event.target!==tierDialog)return;
-    const bounds=tierDialog.getBoundingClientRect();
-    if(event.clientX<bounds.left||event.clientX>bounds.right||event.clientY<bounds.top||event.clientY>bounds.bottom)tierDialog.close();
-  });
-  tierDialog.addEventListener('close',()=>{
-    tierDialog.querySelector('.tier-dialog-content').replaceChildren();
-    if(tierTrigger?.isConnected){
-      tierTrigger.setAttribute('aria-expanded','false');
-      tierTrigger.focus({preventScroll:true});
+  document.addEventListener('keydown',event=>{
+    if((event.key==='Enter'||event.key===' ')&&event.target.matches('.detail-art>img[data-tier-close]')){
+      event.preventDefault();
+      event.target.click();
+      return;
     }
+    if(event.key!=='Escape')return;
+    for(const section of document.querySelectorAll('.detail-tier-section:not([hidden])'))closeTier(section);
+  });
+  window.addEventListener('resize',()=>{
+    for(const section of document.querySelectorAll('.detail-tier-section:not([hidden])'))positionTier(section);
   });
 
   document.addEventListener('click', event => {

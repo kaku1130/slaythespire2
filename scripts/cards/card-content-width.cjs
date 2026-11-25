@@ -119,15 +119,26 @@ html body main#main-content#main-content#main-content #card-scroll .detail-tier-
 module.exports+=`
 /* Match Tier badge sizing to the Chinese card title. */
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row .creator-tier-badge {font-size:28px!important}
-#card-tier-dialog {box-sizing:border-box;width:min(560px,calc(100% - 32px));max-height:calc(100dvh - 48px);margin:auto;padding:20px 24px;border:1px solid #405063;border-radius:12px;background:#101923;color:#e3e8ee;font:16px/1.6 Arial,"Microsoft JhengHei",sans-serif;box-shadow:0 20px 70px #0008;overflow:auto}
-#card-tier-dialog::backdrop {background:#000a}
-#card-tier-dialog .tier-dialog-header {display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:16px}
-#card-tier-dialog h2 {margin:0;min-width:0;color:#f1cd7f;font:700 22px/1.4 Arial,"Microsoft JhengHei",sans-serif;overflow-wrap:anywhere}
-#card-tier-dialog form {flex:none;margin:0}
-#card-tier-dialog .tier-dialog-close {display:grid;place-items:center;width:32px;height:32px;padding:0;border:0;border-radius:6px;background:transparent;color:#cbd5df;font:26px/1 Arial,sans-serif;cursor:pointer}
-#card-tier-dialog .tier-dialog-close:hover {background:#233244;color:#fff}
-#card-tier-dialog :is(button,a):focus-visible {outline:2px solid #74b3e6;outline-offset:3px}
-#card-tier-dialog .detail-tier-section {padding:0;margin:0;border:0;background:transparent}
-#card-tier-dialog .detail-tier-comment {margin:0;color:#e3e8ee;font:400 20px/1.6 Arial,"Microsoft JhengHei",sans-serif;overflow-wrap:anywhere}
-#card-tier-dialog .detail-tier-source {display:inline-block;margin-top:12px;color:#8bcaf0;font:400 16px/1.5 Arial,sans-serif}
+`;
+
+module.exports+=`
+/* Tier commentary overlays its own card without participating in layout. */
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] {position:relative;isolation:isolate}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout]>.detail-tier-section {position:absolute;z-index:10;inset:var(--tier-popup-top,12px) 12px auto;box-sizing:border-box;width:auto!important;max-width:none;max-height:calc(100% - var(--tier-popup-top,12px) - 12px);overflow:auto;margin:0;padding:16px;border:1px solid #405063;border-radius:10px;background:#101923;box-shadow:0 8px 24px #0005;text-align:left}
+html body main#main-content#main-content#main-content #card-scroll .tier-popup-header {display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 12px}
+html body main#main-content#main-content#main-content #card-scroll .tier-popup-header h3 {display:flex;flex:1 1 auto;flex-wrap:wrap;align-items:center;gap:8px;min-width:0;margin:0;overflow-wrap:anywhere;color:#f1cd7f;font:700 24px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout]>.detail-tier-section .detail-tier-comment {margin:0;color:#e3e8ee;font:400 24px/1.6 Arial,"Microsoft JhengHei",sans-serif;overflow-wrap:anywhere}
+`;
+
+module.exports+=`
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .tier-popup-header .creator-tier-badge {font-size:24px!important}
+`;
+
+module.exports+=`
+html body main#main-content#main-content#main-content #card-scroll .detail-art>img[data-tier-close] {cursor:pointer}
+html body main#main-content#main-content#main-content #card-scroll :is(.detail-art>img[data-tier-close],.detail-tier-source):focus-visible {outline:2px solid #74b3e6;outline-offset:3px}
+`;
+
+module.exports+=`
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout]>.detail-tier-section .detail-tier-source {display:inline-block;margin-top:12px;color:#8bcaf0;font:400 20px/1.5 Arial,sans-serif;overflow-wrap:anywhere}
 `;

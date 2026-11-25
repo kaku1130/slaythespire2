@@ -33,8 +33,8 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
    }
    assert.equal(await current().locator('#search').inputValue(),'Offering');
    await current().locator('#card-OFFERING .detail-tier-trigger').click();
-   assert.equal(await current().locator('#card-tier-dialog').isVisible(),true);
-   await current().locator('.tier-dialog-close').click();
+   assert.equal(await current().locator('#card-OFFERING .detail-tier-section').isVisible(),true);
+   await current().locator('#card-OFFERING .detail-art>img').click();
    await page.locator('.site-nav>a[aria-label="Characters"]').click();
    await current().locator('.character-tile[data-character=ironclad] .character-tile-link').click();
    await current().locator('#character-ironclad').waitFor({state:'visible'});

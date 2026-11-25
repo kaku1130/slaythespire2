@@ -3,7 +3,7 @@ function removeDialogue(html) {
   return html.replace(/<section\b[^>]*>\s*<h2\b[^>]*>\s*對話\s*<\/h2>[\s\S]*?<\/section>/g, '');
 }
 
-const menuEntries=[['neow','涅奧'],['darv','達弗'],['orobas','歐洛巴斯'],['pael','佩爾'],['tezcatara','特茲卡塔拉'],['nonupeipe','諾奴佩普'],['tanx','坦克斯'],['vakuu','瓦庫']];
+const menuEntries=[["neow","涅奧"],["orobas","歐洛巴斯"],["pael","佩爾"],["tezcatara","特茲卡塔拉"],["nonupeipe","諾奴佩普"],["tanx","坦克斯"],["vakuu","瓦庫"],["darv","達弗"]];
 function addTopRelicMenu(html,{active,prefix='../../',assets}={}) {
   const old=html.match(/<section\b[^>]*>\s*<h2\b[^>]*>其他(?:先古|遠古)之民的最強遺物<\/h2>[\s\S]*?<\/section>/)?.[0];
   if(!old)throw Error('Missing ancient relic menu');
@@ -26,12 +26,6 @@ html body main#main-content .ancient-top-menu-grid>[aria-disabled=true] {filter:
 html body main#main-content .ancient-top-menu-grid>:is(a,span)>img {position:static;display:block;width:var(--ancient-menu-icon-size);height:var(--ancient-menu-icon-size);max-width:100%;object-fit:contain}
 html body main#main-content .ancient-top-menu-grid .ancient-menu-name {display:none;align-items:center;justify-content:center;width:100%;min-width:0;min-height:2.8em;font:600 14px/1.4 Arial,"Microsoft JhengHei",sans-serif;text-align:center;white-space:normal;overflow-wrap:anywhere}
 
-/* Only desktop screens with a mouse display menu text, including inside the detail frame. */
-@media screen and (min-device-width:1025px) and (hover:hover) and (pointer:fine) {
- html body main#main-content .ancient-top-menu-grid .ancient-menu-name {display:flex}
-}
-@media screen and (any-pointer:coarse) {
- html body main#main-content .ancient-top-menu-grid .ancient-menu-name {display:none}
-}
+/* Menu names stay accessible through aria-label; visible menus show icons only. */
 `;
 module.exports = {removeDialogue,addTopRelicMenu,styles};

@@ -91,8 +91,9 @@ function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds =
     <header><h2 class="detail-title" id="${prefix}-title"><span class="detail-title-row"><a class="detail-name-zh" lang="zh-Hant" href="${esc(require('./card-source-link.cjs')(card))}" target="_blank" rel="noopener noreferrer">${esc(card.nameZh)}</a>${tierContent.label}</span><a class="detail-name-en" href="${esc(require('./card-source-link.cjs')(card))}" target="_blank" rel="noopener noreferrer">${esc(card.name)}</a></h2></header>
     ${metadata}
     <section class="detail-section detail-effects" aria-label="Card effects"><div class="detail-effect-columns"><div class="detail-version-controls" role="group" aria-label="Card version"><button type="button" data-card-version="upgraded" aria-label="Upgraded" aria-pressed="false" aria-controls="${baseId} ${upgradedId}"${card.effect.upgraded===null?' disabled title="Cannot be upgraded"':''}><strong aria-hidden="true">&#x2795;&#xfe0e;</strong></button></div><div class="detail-effect-panel" id="${baseId}" role="group" aria-label="Base">${baseCostContent||'<p class="detail-panel-cost" aria-hidden="true">&nbsp;</p>'}<p class="detail-panel-description">${baseContent}</p></div><div class="detail-effect-panel" id="${upgradedId}" role="group" aria-label="Upgraded" hidden>${upgradedCostContent||'<p class="detail-panel-cost" aria-hidden="true">&nbsp;</p>'}<p class="detail-panel-description">${upgradedContent}</p></div></div>
-    ${tierContent.content}</section>
+    </section>
   </div>
+  ${tierContent.content}
 </article>`;
   }
   return `<article class="card-detail"${metadataAboveEffects ? ' data-card-layout="compact"' : ''} aria-labelledby="${prefix}-title" lang="en" data-source="${esc(card.source)}" data-character="${esc(card.character)}">
