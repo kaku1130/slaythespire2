@@ -987,6 +987,8 @@ html body main#main-content#main-content#main-content #card-scroll :is(.detail-a
 
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout]>.detail-tier-section .detail-tier-source {display:inline-block;margin-top:12px;color:#8bcaf0;font:400 20px/1.5 Arial,sans-serif;overflow-wrap:anywhere}
 
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout]>.detail-tier-section .detail-tier-translation {margin:16px 0 0;padding-top:16px;border-top:1px solid #405063;color:#e3e8ee;font:400 24px/1.6 Arial,"Microsoft JhengHei",sans-serif;overflow-wrap:anywhere}
+
 /* Nested catalog panels fill the shared page frame. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu])) :is(.relic-section,.potion-section,.catalog,.split-detail,.split-detail iframe,.build-content,.build-section,.build-panel) {

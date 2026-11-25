@@ -142,3 +142,7 @@ html body main#main-content#main-content#main-content #card-scroll :is(.detail-a
 module.exports+=`
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout]>.detail-tier-section .detail-tier-source {display:inline-block;margin-top:12px;color:#8bcaf0;font:400 20px/1.5 Arial,sans-serif;overflow-wrap:anywhere}
 `;
+
+module.exports+=`
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout]>.detail-tier-section .detail-tier-translation {margin:16px 0 0;padding-top:16px;border-top:1px solid #405063;color:#e3e8ee;font:400 24px/1.6 Arial,"Microsoft JhengHei",sans-serif;overflow-wrap:anywhere}
+`;

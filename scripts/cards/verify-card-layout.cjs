@@ -4,6 +4,7 @@ const {pathToFileURL}=require('node:url');
 const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright'));
 const cards=JSON.parse(fs.readFileSync('data/cards/english-details.json','utf8')).cards;
 const {comments}=require('../../data/cards/creator-comments.json');
+const {comments:translations}=require('../../data/cards/creator-comments-zh-TW.json');
 const {characters}=require('../../data/cards/creator-tiers.json');
 (async()=>{
  const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
@@ -122,6 +123,9 @@ const {characters}=require('../../data/cards/creator-tiers.json');
   assert.deepEqual(await offering.locator('.card-detail').boundingBox(),cardBoundsBeforeTier,'Tier overlay must not move or resize the card');
   assert.equal(await tierDialog.locator('.detail-tier-comment').textContent(),comments.OFFERING.text);
   assert.equal(await tierDialog.locator('.detail-tier-source').textContent(),'Jorbs Ironclad Tier List');
+  assert.equal(await tierDialog.locator('.detail-tier-translation').textContent(),translations.OFFERING.text.replace(/\r?\n/g,''));
+  assert.deepEqual(await tierDialog.evaluate(node=>[...node.children].map(child=>child.className)),['tier-popup-header','detail-tier-comment','detail-tier-translation','detail-tier-source']);
+
   await page.keyboard.press('Escape');
   assert.equal(await tierDialog.isVisible(),false);
   await offering.locator('.detail-tier-trigger').press('Enter');
@@ -131,6 +135,12 @@ const {characters}=require('../../data/cards/creator-tiers.json');
 
   await offering.locator('.detail-art img').evaluate(node=>node.decode());
   await offering.locator('.card-detail').screenshot({path:'assets/cards/previews/offering-tier-comment.png'});
+  await page.evaluate(()=>location.hash='card-ZAP');
+  const zap=page.locator('#card-ZAP');await zap.waitFor({state:'visible'});
+  await zap.locator('.detail-tier-trigger').click();
+  assert.equal(await zap.locator('.detail-tier-source').textContent(),'Jorbs Defect Tier List');
+  assert.equal(await zap.locator('.detail-tier-source').getAttribute('href'),'https://sts2.untapped.gg/en/tier-list/5f8d3e04-1f50-4b56-b51a-d8650b000ce3');
+  assert.equal(await zap.locator('.detail-tier-translation').textContent(),translations.ZAP.text.replace(/\r?\n/g,''));
   assert.deepEqual(errors,[]);
   console.log('PASS: 569 card layouts, single-button upgrade toggling and green state, upgrade availability, cost changes, content order and desktop alignment.');
  }finally{await browser.close();}

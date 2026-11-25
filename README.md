@@ -32,3 +32,5 @@ node scripts/relic/build-relic.cjs
 角色頁離線檢查：`node scripts/builds/verify-characters.cjs`（斷網測試角色切換、詳細內容、卡牌、圖片及全站角色導覽）。
 
 卡牌 Tier 區塊顯示既有 Jorbs 評級與離線評語。更新評語：`node scripts/cards/sync-creator-comments.cjs`；使用已下載來源重建：加上 `--cached`。再執行 `node scripts/cards/build-card1.cjs --promote` 更新卡牌頁。
+
+Jorbs 評語的繁體中文機器翻譯保存在 `data/cards/creator-comments-zh-TW.json`，英文更新後執行 `python scripts/cards/sync-comment-translations.py`，再重建卡牌頁與單一入口。翻譯快取使用英文內容雜湊檢查更新；瀏覽網頁時不連線翻譯服務。
