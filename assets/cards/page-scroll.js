@@ -1,5 +1,5 @@
 (() => {
-  if (window.parent !== window) return;
+  if (window.parent !== window || document.body.classList.contains('characters-page')) return;
   const main = document.getElementById('main-content');
   if (!main || main.closest('.site-page-scroll')) return;
   const style = document.createElement('style');

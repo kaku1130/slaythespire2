@@ -75,3 +75,11 @@ body.characters-page{margin:0;background:#040609;color:#e3e8ee;font:16px/1.7 Ari
  .character-hero>div{left:20px;right:20px;bottom:20px}
  .character-hero h1{font-size:clamp(32px,8vw,48px);overflow-wrap:anywhere}
 }
+
+/* Let the character document scroll across the full viewport, including in index frames. */
+@media screen {
+ html:has(body.characters-page){height:auto!important;min-height:100%;overflow-x:clip!important;overflow-y:auto!important}
+ html body.characters-page{position:static!important;inset:auto!important;display:block!important;height:auto!important;min-height:100vh;overflow:visible!important}
+ html body.characters-page main#main-content#main-content#main-content{display:block!important;flex:none!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important}
+ html body.characters-page>.site-header{position:sticky!important;top:0}
+}
