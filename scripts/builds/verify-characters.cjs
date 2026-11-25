@@ -12,6 +12,13 @@ const data=JSON.parse(fs.readFileSync('data/builds/characters.json','utf8'));
   page.on('request',request=>{if(/^https?:/.test(request.url()))requests.push(request.url());});
   await page.goto(pathToFileURL(path.resolve('characters.html')).href);
   assert.equal(await page.locator('.character-tile').count(),6);
+  const missingTranslations=await page.locator('.character-prose a[href]').evaluateAll(nodes=>nodes.filter(node=>{
+   const href=node.getAttribute('href'),text=node.textContent.trim();
+   return /(?:cards\.html#|\/(?:cards|relics|potions)\/)/.test(href)&&text&&!text.startsWith('Untapped.gg')&&!node.closest('.guide-card')&&!node.querySelector('img.guide-image')&&!node.querySelector('.guide-resource-name');
+  }).map(node=>node.textContent));
+  assert.deepEqual(missingTranslations,[],'Linked resource names include Chinese translations');
+  assert.ok((await page.locator('#character-ironclad .guide-resource-name').allTextContents()).some(text=>text.startsWith("Pael's Legion(")));
+
   assert.equal(await page.locator('.character-nav,.character-toc').count(),0);
   assert.equal(await page.locator('.site-nav a[href="characters.html"]').getAttribute('aria-label'),'Characters');
   assert.equal(await page.locator('.site-nav a[href="characters.html"] img').getAttribute('src'),'data:image/webp;base64,'+fs.readFileSync('assets/cards/icons/ironclad.webp').toString('base64'));

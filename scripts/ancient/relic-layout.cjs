@@ -10,7 +10,7 @@ const cardNames=[...new Map([...cardDetails.values()].map(card=>[card.name,card]
 const escapedNames=new Map(cardNames.map(card=>[escape(card.name),card]));
 const cardNamePattern=new RegExp('\\b('+[...escapedNames.keys()].map(name=>name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')\\b','g');
 function emphasizeCardNames(article){
- return article.replace(/<p lang="en">([\s\S]*?)<\/p>/,(_,description)=>'<p lang="en">'+description.split(/(<[^>]*>)/g).map(part=>part.startsWith('<')?part:part.replace(cardNamePattern,name=>{const card=escapedNames.get(name);return '<a class="ancient-relic-card-name" data-card-id="'+card.id+'" data-rarity="'+card.rarity+'" href="'+escape(card.source)+'" target="_blank" rel="noopener noreferrer" lang="en">'+name+'</a>';})).join('')+'</p>');
+ return article.replace(/<p lang="en">([\s\S]*?)<\/p>/,(_,description)=>'<p lang="en">'+description.split(/(<[^>]*>)/g).map(part=>part.startsWith('<')?part:part.replace(cardNamePattern,name=>{const card=escapedNames.get(name);return '<a class="ancient-relic-card-name" data-card-id="'+card.id+'" data-rarity="'+card.rarity+'" href="'+escape(require('../cards/card-source-link.cjs')(card))+'" target="_blank" rel="noopener noreferrer" lang="en">'+name+'</a>';})).join('')+'</p>');
 }
 function divAt(html,start){
  const opening=html.slice(start).match(/^<div\b[^>]*>/);assert.ok(opening,'Expected relic div');

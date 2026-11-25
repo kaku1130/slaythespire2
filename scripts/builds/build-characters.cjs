@@ -6,7 +6,8 @@ const cards=new Map(JSON.parse(fs.readFileSync('data/cards/english-details.json'
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const names={ironclad:'鐵甲戰士',silent:'靜默獵手',regent:'儲君',necrobinder:'縛亡者',defect:'故障機器人',fool:'Fool'};
 const rarityColors=require('../cards/rarity-text-colors.cjs');
-const proseNames=new Map([...cards.values()].map(card=>[card.name,{nameZh:card.nameZh,rarity:card.rarity}]));
+const specialCards=JSON.parse(fs.readFileSync('data/cards/special-cards.json','utf8')).cards.map(item=>item.detail);
+const proseNames=new Map([...cards.values(),...specialCards].map(card=>[card.name,{nameZh:card.nameZh,rarity:card.rarity}]));
 for(const category of ['relic','potion']){
  for(const item of JSON.parse(fs.readFileSync('data/'+category+'/catalog.json','utf8')).items){
   proseNames.set(item.nameEn,{nameZh:item.name,rarity:item.rarity});
@@ -14,11 +15,11 @@ for(const category of ['relic','potion']){
 }
 for(const character of data.characters)proseNames.set(character.name,{nameZh:names[character.id],character:true});
 const translatedNames=[...proseNames].filter(([en,item])=>en&&item.nameZh&&en!==item.nameZh);
-const proseNamePattern=new RegExp('\\b('+translatedNames.map(([en])=>esc(en).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).sort((a,b)=>b.length-a.length).join('|')+')(s)?\\b(?![（\\(])','g');
+const proseNamePattern=new RegExp('\\b('+translatedNames.map(([en])=>esc(en).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).sort((a,b)=>b.length-a.length).join('|')+')(s)?(?![A-Za-z0-9_])(?![（\\(])','g');
 const escapedProseNames=new Map(translatedNames.map(([en,item])=>[esc(en),item]));
 function annotateNames(html){
  // Only annotate visible text; leave URLs, image paths and attributes intact.
- return html.split(/(<[^>]*>)/g).map(part=>part.startsWith('<')?part:part.replace(proseNamePattern,(_,name,plural='')=>{
+ return html.split(/(<[^>]*>)/g).map(part=>part.startsWith('<')?part:part.replace(/&(?:#x0*27|#0*39|apos);|[’‘]/gi,'&#39;').replace(proseNamePattern,(_,name,plural='')=>{
   const item=escapedProseNames.get(name);
   if(item.character)return name+plural;
   const rarity=item.rarity.charAt(0).toUpperCase()+item.rarity.slice(1).toLowerCase();

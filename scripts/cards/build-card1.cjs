@@ -81,7 +81,7 @@ html = html.replace(/<script src="assets\/cards\/card-effect-language\.js"><\/sc
 const baseCss = fs.readFileSync('assets/cards/cards.css', 'utf8').split('/* Each card occupies one full row with seven detail sections. */')[0].trimEnd();
 fs.writeFileSync('assets/cards/' + output + '.css', baseCss + '\n' + fs.readFileSync('assets/cards/card1-detail.css', 'utf8') + require('./navigation-icons.cjs').styles + require('./desktop-content-width.cjs') + require('./filter-frames.cjs') + require('./page-scroll.cjs') + require('./tier-colors.cjs') + require('./tier-labels.cjs') + require('./card-content-width.cjs'));
 html = html.replace(/<!--card-effect-tooltips-->[\s\S]*?<!--\/card-effect-tooltips-->/g, '');
-fs.writeFileSync((output === 'cards' ? 'cards' : output) + '.html', html);
+fs.writeFileSync((output === 'cards' ? 'cards' : output) + '.html', require('./content-links.cjs').normalize(html));
 fs.appendFileSync('assets/cards/' + output + '.css', require('./rarity-labels.cjs'));
 require('./version-stylesheet.cjs')((output === 'cards' ? 'cards' : output) + '.html','assets/cards/' + output + '.css');
 console.log('Created ' + (output === 'cards' ? 'cards' : output) + '.html: ' + count + ' cards with English detail sections.');

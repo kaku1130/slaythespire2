@@ -83,3 +83,6 @@ body.characters-page{margin:0;background:#040609;color:#e3e8ee;font:16px/1.7 Ari
  html body.characters-page main#main-content#main-content#main-content{display:block!important;flex:none!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important}
  html body.characters-page>.site-header{position:sticky!important;top:0}
 }
+
+/* Keep inline card-name links free of underlines, including on hover. */
+.character-prose a:has(.guide-resource-name),.character-prose a[href*="/cards/"],.character-prose a[href*="cards.html#card-"]{text-decoration:none}

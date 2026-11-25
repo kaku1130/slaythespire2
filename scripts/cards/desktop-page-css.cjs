@@ -3,6 +3,7 @@ const path = require('node:path');
 
 // Bundle each desktop index's styles in cascade order.
 function writeDesktopPage(page, html, {searchControls = true, attribution = true} = {}) {
+  html=require('./content-links.cjs').normalize(html);
   if (!/src="assets\/cards\/page-scroll\.js(?:\?[^" ]*)?"/.test(html)) html = html.replace('</body>', '<script src="assets/cards/page-scroll.js?v=2"></script></body>');
   if (searchControls && !html.includes('src="assets/cards/search-controls.js"')) html = html.replace('</body>', '<script src="assets/cards/search-controls.js"></script></body>');
   const basename = path.basename(page, '.html');

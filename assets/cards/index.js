@@ -112,6 +112,12 @@
     const key=routeFor(new URL(link.href));
     if(!key)return;
     event.preventDefault();
+    if(key==='builds'){
+      show({key,hash:'#characters'},true);
+      const win=frames.get(key)?.frame.contentWindow;
+      if(win?.scrollSitePageToTop)win.scrollSitePageToTop();
+      return;
+    }
     if(key===selected){
       const frame=frames.get(key)?.frame;
       if(frame?.contentWindow.scrollSitePageToTop)frame.contentWindow.scrollSitePageToTop();

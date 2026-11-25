@@ -20,5 +20,14 @@
   if(target&&target!==panel&&panel)requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));
  }
  window.addEventListener('hashchange',applyRoute);
+ document.addEventListener('click',event=>{
+  const link=event.target.closest('.site-nav>a[href]');
+  if(!link||event.button!==0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+  if(new URL(link.href).pathname!==new URL(document.baseURI).pathname)return;
+  event.preventDefault();
+  location.hash='characters';
+  applyRoute();
+  (document.querySelector('.site-page-scroll')||window).scrollTo({top:0,behavior:'instant'});
+ },true);
  applyRoute();
 })();

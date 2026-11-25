@@ -997,6 +997,14 @@ html body #main-content .potion-section[data-rarity=Rare] {--group-color:#efc851
 html body #main-content .potion-section[data-rarity=Rare]>.potion-section-title {color:#efc851}
 html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Rare],[data-catalog-filter=rarity][value=Rare],button[data-rarity-filter=Rare],[data-filter-group=rarity][data-filter-value=Rare]) {--selection-color:#efc851!important;--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--rarity-text-color:#efc851!important;color:#efc851!important}
 
+/* Common has its own light green, distinct from Basic and Starter. */
+html body #main-content [data-rarity=Common] {--rarity-color:#a8dca4!important;--plain-rarity-color:#a8dca4!important;--detail-rarity-color:#a8dca4;--card-name-color:#a8dca4}
+html body #main-content .card-detail-row[data-rarity=Common] .card-detail {--detail-rarity-color:#a8dca4}
+html body #main-content :is([data-stat-rarity=Common],[data-label-rarity=Common],[data-relic-rarity=Common],.rarity[data-rarity=Common],.guide-resource-name[data-rarity=Common],.card-text-link[data-rarity=Common]) {color:#a8dca4!important}
+html body #main-content .potion-section[data-rarity=Common] {--group-color:#a8dca4!important}
+html body #main-content .potion-section[data-rarity=Common]>.potion-section-title {color:#a8dca4}
+html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Common],[data-catalog-filter=rarity][value=Common],button[data-rarity-filter=Common],[data-filter-group=rarity][data-filter-value=Common]) {--selection-color:#a8dca4!important;--rarity-color:#a8dca4!important;--plain-rarity-color:#a8dca4!important;--rarity-text-color:#a8dca4!important;color:#a8dca4!important}
+
 /* Card tier filters use the same button presentation as Type filters. */
 html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button {
   min-height:48px;padding:8px;border-radius:8px;
@@ -1585,7 +1593,7 @@ html body main#main-content .catalog-relic-card[data-relic-id] .relic-keyword {c
 html body main#main-content .catalog-relic-card[data-relic-id] .relic-rarity-row {display:flex;justify-content:center;font:600 20px/1.4 Arial,"Microsoft JhengHei",sans-serif}
 html body main#main-content#main-content .catalog-relic-card .relic-rarity-row [data-relic-rarity] {padding:0;border:0!important;background:transparent!important;color:var(--plain-rarity-color)!important;font:inherit}
 html body main#main-content .catalog-relic-card[data-relic-id][data-rarity=Starter] {--plain-rarity-color:#b9c2cc}
-html body main#main-content .catalog-relic-card[data-relic-id][data-rarity=Common] {--plain-rarity-color:#b9c2cc}
+html body main#main-content .catalog-relic-card[data-relic-id][data-rarity=Common] {--plain-rarity-color:#a8dca4}
 html body main#main-content .catalog-relic-card[data-relic-id][data-rarity=Uncommon] {--plain-rarity-color:#88bcec}
 html body main#main-content .catalog-relic-card[data-relic-id][data-rarity=Rare] {--plain-rarity-color:#efc851}
 html body main#main-content .catalog-relic-card[data-relic-id][data-rarity=Ancient] {--plain-rarity-color:#c5a2e8}
@@ -1696,7 +1704,7 @@ html body main#main-content#main-content :is(.relic-filters,.potion-filters) but
 html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=Starter] {--plain-rarity-color:#b9c2cc}
 
 html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity][value=Common],
-html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=Common] {--plain-rarity-color:#b9c2cc}
+html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=Common] {--plain-rarity-color:#a8dca4}
 
 html body main#main-content#main-content :is(.relic-filters,.potion-filters) button[data-catalog-filter=rarity][value=Uncommon],
 html body main#main-content #catalog-scroll :is(.entry.relic,.entry.potion)[data-rarity=Uncommon] {--plain-rarity-color:#88bcec}
@@ -1730,6 +1738,14 @@ html body #main-content :is([data-stat-rarity=Rare],[data-label-rarity=Rare],[da
 html body #main-content .potion-section[data-rarity=Rare] {--group-color:#efc851!important}
 html body #main-content .potion-section[data-rarity=Rare]>.potion-section-title {color:#efc851}
 html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Rare],[data-catalog-filter=rarity][value=Rare],button[data-rarity-filter=Rare],[data-filter-group=rarity][data-filter-value=Rare]) {--selection-color:#efc851!important;--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--rarity-text-color:#efc851!important;color:#efc851!important}
+
+/* Common has its own light green, distinct from Basic and Starter. */
+html body #main-content [data-rarity=Common] {--rarity-color:#a8dca4!important;--plain-rarity-color:#a8dca4!important;--detail-rarity-color:#a8dca4;--card-name-color:#a8dca4}
+html body #main-content .card-detail-row[data-rarity=Common] .card-detail {--detail-rarity-color:#a8dca4}
+html body #main-content :is([data-stat-rarity=Common],[data-label-rarity=Common],[data-relic-rarity=Common],.rarity[data-rarity=Common],.guide-resource-name[data-rarity=Common],.card-text-link[data-rarity=Common]) {color:#a8dca4!important}
+html body #main-content .potion-section[data-rarity=Common] {--group-color:#a8dca4!important}
+html body #main-content .potion-section[data-rarity=Common]>.potion-section-title {color:#a8dca4}
+html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Common],[data-catalog-filter=rarity][value=Common],button[data-rarity-filter=Common],[data-filter-group=rarity][data-filter-value=Common]) {--selection-color:#a8dca4!important;--rarity-color:#a8dca4!important;--plain-rarity-color:#a8dca4!important;--rarity-text-color:#a8dca4!important;color:#a8dca4!important}
 
 
 /* All pages share a full-width frame with the same edge spacing. */
@@ -2071,6 +2087,14 @@ html body #main-content :is([data-stat-rarity=Rare],[data-label-rarity=Rare],[da
 html body #main-content .potion-section[data-rarity=Rare] {--group-color:#efc851!important}
 html body #main-content .potion-section[data-rarity=Rare]>.potion-section-title {color:#efc851}
 html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Rare],[data-catalog-filter=rarity][value=Rare],button[data-rarity-filter=Rare],[data-filter-group=rarity][data-filter-value=Rare]) {--selection-color:#efc851!important;--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--rarity-text-color:#efc851!important;color:#efc851!important}
+
+/* Common has its own light green, distinct from Basic and Starter. */
+html body #main-content [data-rarity=Common] {--rarity-color:#a8dca4!important;--plain-rarity-color:#a8dca4!important;--detail-rarity-color:#a8dca4;--card-name-color:#a8dca4}
+html body #main-content .card-detail-row[data-rarity=Common] .card-detail {--detail-rarity-color:#a8dca4}
+html body #main-content :is([data-stat-rarity=Common],[data-label-rarity=Common],[data-relic-rarity=Common],.rarity[data-rarity=Common],.guide-resource-name[data-rarity=Common],.card-text-link[data-rarity=Common]) {color:#a8dca4!important}
+html body #main-content .potion-section[data-rarity=Common] {--group-color:#a8dca4!important}
+html body #main-content .potion-section[data-rarity=Common]>.potion-section-title {color:#a8dca4}
+html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Common],[data-catalog-filter=rarity][value=Common],button[data-rarity-filter=Common],[data-filter-group=rarity][data-filter-value=Common]) {--selection-color:#a8dca4!important;--rarity-color:#a8dca4!important;--plain-rarity-color:#a8dca4!important;--rarity-text-color:#a8dca4!important;color:#a8dca4!important}
 
 /* Card tier filters use the same button presentation as Type filters. */
 html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button {
