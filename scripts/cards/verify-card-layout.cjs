@@ -11,7 +11,7 @@ const {characters}=require('../../data/cards/creator-tiers.json');
  try{
   const page=await browser.newPage({offline:true,viewport:{width:1440,height:1100}}),errors=[];
   page.on('pageerror',error=>errors.push(error.message));
-  await page.goto(pathToFileURL(path.resolve('Cards.html')).href);
+  await page.goto(pathToFileURL(path.resolve('cards.html')).href);
   assert.equal(await page.locator('[data-catalog-layout]').count(),cards.length);
   assert.equal(await page.locator('[data-card-version=base]').count(),0);
   assert.equal(await page.locator('[data-card-version=upgraded]').count(),cards.length);

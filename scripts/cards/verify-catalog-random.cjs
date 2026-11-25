@@ -8,7 +8,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
     for(const width of [1440,390]) {
       const page=await browser.newPage({viewport:{width,height:844},isMobile:width<600,hasTouch:width<600});
       for(const kind of ['card','relic','potion']) {
-        await page.goto(pathToFileURL(path.resolve(({relic:'Relics',potion:'Potions'})[kind]+'.html')).href);
+        await page.goto(pathToFileURL(path.resolve(({relic:'relics',potion:'potions'})[kind]+'.html')).href);
         const isCard=['card','card1'].includes(kind);
         const button=page.locator(isCard?'#aoe-toggle':'.catalog-random');
         assert.equal(await button.count(),1);assert.equal(await button.textContent(),'🎲');

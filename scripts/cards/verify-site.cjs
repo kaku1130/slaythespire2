@@ -5,13 +5,13 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
 (async()=>{
  const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
  try {
-  const pages=['Ancients.html','Characters.html','Cards.html','Potions.html','Relics.html',...fs.readdirSync('data/ancient').filter(f=>/^ancient-.*\.html$/.test(f)).map(f=>'data/ancient/'+f)];
+  const pages=['ancients.html','characters.html','cards.html','potions.html','relics.html',...fs.readdirSync('data/ancient').filter(f=>/^ancient-.*\.html$/.test(f)).map(f=>'data/ancient/'+f)];
   for(const file of pages) {
    const page=await browser.newPage({offline:true,viewport:{width:1440,height:1000}}),errors=[],failed=[];
    page.on('pageerror',e=>errors.push(e.message));
    page.on('requestfailed',request=>{if(request.url().startsWith('file:') && request.failure()?.errorText!=='net::ERR_ABORTED')failed.push(request.url()+' '+request.failure()?.errorText);});
    await page.goto(pathToFileURL(path.resolve(file)).href);
-   if(file==='Cards.html') {
+   if(file==='cards.html') {
     await page.locator('#search').fill('"Tremble"');
     assert.equal(await page.locator('#card-TREMBLE .detail-name-en').getAttribute('href'),require('../../data/cards/english-details.json').cards.find(card=>card.id==='TREMBLE').sourceEn);
    }

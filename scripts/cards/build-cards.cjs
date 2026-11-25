@@ -80,7 +80,7 @@ function renderEnergy(c){
   if(c.starCost!==undefined)result+='<span class="star-cost" title="Additional star cost">'+esc(costLabel(c.starCost))+resourceIcons.star+'</span>';
   return result;
 }
-const localBuildUrl=b=>'Characters.html#build-'+b.character+'-'+b.buildId;
+const localBuildUrl=b=>'characters.html#build-'+b.character+'-'+b.buildId;
 function renderBuilds(c){const builds=buildsByCard[c.id]||[];if(!builds.length)return '<span class="not-available">—</span>';return '<div class="build-inline-list">'+builds.map(b=>'<div class="build-association"><a data-build-pool="'+esc(b.characterPool)+'" style="--build-color:'+poolColors[b.characterPool]+'" href="'+esc(localBuildUrl(b))+'">'+esc(b.name)+'</a><span class="build-role-label">'+(b.role==='core'?'核心卡片':'輔助卡片')+'</span></div>').join('')+'</div>';}
 
 const columns=[['english','ID'],['name','Name'],['effect','Effect'],['upgraded','Upgraded'],['tier','Tier'],['builds','Builds'],['type','Type'],['energy','Cost'],['rarity','Rarity'],['pool','Category']];
@@ -512,7 +512,7 @@ window.addEventListener('hashchange',revealLinkedCard);revealLinkedCard();
 
 
 </script></body></html>`;
-require('./desktop-page-css.cjs').writeDesktopPage('Cards.html',navigation.openPageLinksInNewTab(html).replace('</body>','<script src="assets/cards/search-controls.js"></script><script src="assets/cards/compact-cards.js?v=10"></script></body>'));
+require('./desktop-page-css.cjs').writeDesktopPage('cards.html',navigation.openPageLinksInNewTab(html).replace('</body>','<script src="assets/cards/search-controls.js"></script><script src="assets/cards/compact-cards.js?v=10"></script></body>'));
 const manifest={source:'https://slaythespire2.net/card',chineseSource:chineseSource.source,retrievedDate:chineseSource.retrievedDate,version:chineseSource.version,balanceUpdate:chineseSource.balanceUpdate,tierSource:tierSource.source,tierRetrievedDate:tierSource.retrievedDate,total:cards.length,categories:Object.fromEntries(categories.map((p,i)=>[p,expected[i]])),cards:groups.flatMap(pool=>cards.filter(c=>group(c)===pool).sort((a,b)=>compareCards({...a,tier:tiers.get(a.id)},{...b,tier:tiers.get(b.id)})).map(c=>({id:c.id,name:c.name,nameZh:chineseCards.get(c.id).name,...(chineseCards.get(c.id).aliases?{aliases:chineseCards.get(c.id).aliases}:{}),...(chineseCards.get(c.id).notes?{notes:chineseCards.get(c.id).notes}:{}),...(c.availability?{availability:c.availability}:{}),...(c.canGenerateInCombat!==undefined?{canGenerateInCombat:c.canGenerateInCombat}:{}),category:category(c),originalPool:c.pool,type:c.type,rarity:c.rarity,rarityZh:rarityLabels[c.rarity],tier:tiers.get(c.id)||null,effect:{base:chineseCards.get(c.id).descBase,upgraded:canUpgrade(c)?chineseCards.get(c.id).descUpgraded:null},energy:c.energy??null,starCost:c.starCost??null,upgrade:c.upgrade??null,builds:(buildsByCard[c.id]||[]).map(b=>({...b,sourceUrl:b.url,url:localBuildUrl(b)})),url:c.sourceZh||'https://slaythespire2.net/zh-TW/card/'+c.slug})))};
 fs.writeFileSync('data/cards/cards.json',JSON.stringify(manifest,null,2));
 assert.equal((html.match(/<tr id="card-[^"]+" role="row" data-name=/g)||[]).length,cards.length);

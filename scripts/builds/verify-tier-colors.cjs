@@ -6,11 +6,11 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
   const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
   try {
     const page=await browser.newPage();
-    await page.goto(pathToFileURL(path.resolve('Cards.html')).href);
+    await page.goto(pathToFileURL(path.resolve('cards.html')).href);
     const referenceTypes={Attack:'lab(63.7053% 60.745 31.3109)',Skill:'lab(78.503% -64.9265 39.7492)',Power:'lab(83.2664% 8.65132 106.895)'};
     const referenceRarities={Common:'lab(84.9837% .601262 -2.17986)',Uncommon:'lab(65.0361% -1.42065 -56.9802)',Rare:referenceTypes.Power,Ancient:'lab(72.7183% 31.8672 97.9407)'};
     const referenceTiers=Object.fromEntries(['S','A','B','C','D'].map(tier=>[tier,[['S','A'].includes(tier)?'#fff':'#000','var(--card-tier-'+tier+')']]));
-    for(const width of [1440,390])for(const file of ['Cards.html','card1.html'].filter(file=>require('node:fs').existsSync(file))) {
+    for(const width of [1440,390])for(const file of ['cards.html','card1.html'].filter(file=>require('node:fs').existsSync(file))) {
       await page.setViewportSize({width,height:1000});await page.goto(pathToFileURL(path.resolve(file)).href);
       for(const [kind,values] of Object.entries({type:referenceTypes,rarity:referenceRarities,tier:referenceTiers}))for(const [value,colors] of Object.entries(values)) {
         const actual=await page.locator('.detail-meta>.detail-'+kind+'[data-'+kind+'='+value+']').first().evaluate((node,args)=>{
@@ -25,7 +25,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
       console.log('PASS '+file+' '+width+'px: reference rarity/type styles and menu-matched tier colors');
     }
     const ancient=require('../../data/ancient/tier-palette.json');
-    await page.goto(pathToFileURL(path.resolve('Characters.html')).href);
+    await page.goto(pathToFileURL(path.resolve('characters.html')).href);
     // Check every level even if the current build list has no D-ranked guide.
     await page.evaluate(()=>{for(const tier of ['S','A','B','C','D']){const n=document.createElement('span');n.className='build-tier';n.dataset.tier=tier;document.querySelector('main').append(n);}});
     const badges=await page.locator('.build-tier[data-tier],.card-tier-badge[data-tier]').evaluateAll(nodes=>nodes.filter(n=>n.dataset.tier!=='unranked').map(n=>({tier:n.dataset.tier,color:getComputedStyle(n).color,background:getComputedStyle(n).backgroundColor,border:getComputedStyle(n).borderTopColor})));

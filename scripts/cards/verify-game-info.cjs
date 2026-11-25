@@ -8,7 +8,7 @@ const {items}=require('./game-info-menu.cjs');
  try{
   const page=await browser.newPage({offline:true,viewport:{width:1440,height:1000}}),errors=[];
   page.on('pageerror',error=>errors.push(error.message));
-  const pages=['Ancients.html','Characters.html','Cards.html','Potions.html','Relics.html',...fs.readdirSync('data/ancient').filter(name=>/^ancient-.*\.html$/.test(name)).map(name=>'data/ancient/'+name)];
+  const pages=['ancients.html','characters.html','cards.html','potions.html','relics.html',...fs.readdirSync('data/ancient').filter(name=>/^ancient-.*\.html$/.test(name)).map(name=>'data/ancient/'+name)];
   for(const file of pages){
    await page.goto(pathToFileURL(path.resolve(file)).href);
    const menu=page.locator('.site-header .game-info-dropdown'),summary=menu.locator('summary');
@@ -30,13 +30,13 @@ const {items}=require('./game-info-menu.cjs');
    assert.equal(await summary.evaluate(node=>document.activeElement===node),true,file+' focus restored');
    await summary.click();await page.mouse.click(4,120);
    assert.equal(await menu.evaluate(node=>node.open),false,file+' outside click closes');
-   if(file==='Cards.html'){
+   if(file==='cards.html'){
     await summary.click();
     await page.screenshot({path:'assets/cards/previews/game-info-1440.png'});
     await summary.press('Escape');
    }
   }
-  await page.goto(pathToFileURL(path.resolve('Characters.html')).href);
+  await page.goto(pathToFileURL(path.resolve('characters.html')).href);
   await page.setViewportSize({width:1024,height:900});
   assert.equal(await page.locator('.site-header-inner').evaluate(node=>node.scrollWidth<=node.clientWidth),true,'desktop header overflow');
   await page.locator('.game-info-dropdown summary').click();

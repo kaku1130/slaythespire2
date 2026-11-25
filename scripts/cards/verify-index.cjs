@@ -38,7 +38,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
    await page.locator('.site-nav>a[aria-label="Characters"]').click();
    await current().locator('.character-tile[data-character=ironclad] .character-tile-link').click();
    await current().locator('#character-ironclad').waitFor({state:'visible'});
-   await current().locator('#character-ironclad a[href="Cards.html#card-ANGER"]').first().click();
+   await current().locator('#character-ironclad a[href="cards.html#card-ANGER"]').first().click();
    await current().locator('#card-ANGER').waitFor({state:'visible'});
    assert.equal(page.url(),url);
    await page.evaluate(()=>history.back());

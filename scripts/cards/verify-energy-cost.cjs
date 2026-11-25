@@ -11,7 +11,7 @@ async function main() {
     const page = await browser.newPage({viewport:{width:1440,height:1100}});
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
-    await page.goto(pathToFileURL(path.resolve('Cards.html')).href);
+    await page.goto(pathToFileURL(path.resolve('cards.html')).href);
     const rows = await page.locator('.card-detail-row').evaluateAll(rows => rows.map(row => {
       const panels = [...row.querySelectorAll('.detail-panel-cost')].map(panel => {const copy=panel.cloneNode(true);copy.querySelector('.detail-panel-stars')?.remove();return copy;});
       return {id:row.dataset.id,values:panels.map(panel=>panel.textContent.replace(/\s/g,'')),icons:panels.map(panel=>[...panel.querySelectorAll('img')].map(img=>img.getAttribute('src')))};

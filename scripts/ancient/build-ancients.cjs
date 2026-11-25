@@ -1,7 +1,7 @@
 process.chdir(require('path').resolve(__dirname,'../..'));
 const fs=require('fs'),path=require('path'),nav=require('../cards/site-navigation.cjs');
 const data=JSON.parse(fs.readFileSync('data/ancient/catalog.json')),assets=require('../cards/data-assets.cjs').load();
-const list='Ancients.html';
+const list='ancients.html';
 const relicLayout=require('./relic-layout.cjs');
 const cardStyles=require('../cards/resource-icons.cjs').styles+fs.readFileSync('assets/cards/card1-detail.css','utf8').replaceAll('#card-scroll','.ancient-card-entry')+require('../cards/tier-labels.cjs')+require('../cards/rarity-labels.cjs')+fs.readFileSync('assets/ancient/ancient-cards.css','utf8');
 function local(url,prefix){if(url==='/zh-TW/ancient'||url==='https://slaythespire2.net/zh-TW/ancient')return prefix+list;const match=url.match(/^(?:https:\/\/slaythespire2.net)?\/zh-TW\/ancient\/([^/#?]+)$/);if(match&&data.slugs.includes(match[1]))return prefix+'data/ancient/ancient-'+match[1]+'.html';if(url.startsWith('/'))return 'https://slaythespire2.net'+url;return url;}
@@ -15,7 +15,7 @@ main=require('./tier-colors.cjs')(main);
 if(slug)main=require('./desktop-ancient.cjs').addTopRelicMenu(main,{active:slug,prefix,assets});
 if(!slug)main=main.replace(/<h1\b[\s\S]*?<\/h1>/,'').replace(/<p\b[^>]*>殺戮尖塔2 全部[\s\S]*?強度排行。<\/p>/,'');
 if(!slug)main=main.replace(/<div class="mt-auto flex items-center gap-1\.5 pt-3 text-sm font-semibold text-link">[^<]*最強遺物[\s\S]*?<\/div>/g,'');
-const header=nav.renderHeader('ancient').replace(/href="((?:Ancients|Characters|Cards|event|monster|Potions|Relics)\.html)"/g,(_,u)=>'href="'+prefix+u+'"');
+const header=nav.renderHeader('ancient').replace(/href="((?:ancients|characters|cards|event|monster|potions|relics)\.html)"/g,(_,u)=>'href="'+prefix+u+'"');
 const title=source.match(/<title>([\s\S]*?)<\/title>/)?.[1]||'先古之民';
 const css=nav.styles+'html{color-scheme:dark;scrollbar-width:auto;scrollbar-color:auto}body{background:#040609;color:#e3e8ee}main{min-width:0}main img{max-width:100%}main [class*="flex-wrap"]:has(>[aria-label="切換遊戲版本"]){display:none}'+nav.layoutStyles+(slug?cardStyles+relicLayout.styles+require('./desktop-ancient.cjs').styles+require('../cards/desktop-content-width.cjs'):'');
 if(slug)main+=require('../cards/effect-tooltips.cjs').markup().replaceAll('"icon":"assets/','"icon":"'+prefix+'assets/')+'<script src="'+prefix+'assets/cards/compact-cards.js"></script><script defer src="'+prefix+'assets/ancient/text-scale.js"></script>';

@@ -6,14 +6,14 @@ const guide=JSON.parse(fs.readFileSync('data/builds/guide.json','utf8'));
 const details=new Map(JSON.parse(fs.readFileSync('data/cards/english-details.json','utf8')).cards.map(card=>[card.id,card]));
 (async()=>{const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});try {
  if(process.argv.includes('--preview')) {
-  const page=await browser.newPage({viewport:{width:1440,height:1000}});await page.goto(pathToFileURL(path.resolve('Characters.html')).href);
+  const page=await browser.newPage({viewport:{width:1440,height:1000}});await page.goto(pathToFileURL(path.resolve('characters.html')).href);
   await page.evaluate(()=>document.querySelector('.tier-index-item').click());
   const image=path.join(require('node:os').tmpdir(),'slaythespire2-build-card-preview.png');
   await page.locator('.build-guide-card:visible').first().evaluate(node=>node.scrollIntoView({block:'start'}));await page.locator('.build-guide-card:visible').first().locator('img').evaluateAll(async nodes=>{for(const n of nodes)n.loading='eager';await Promise.all(nodes.map(n=>n.decode()));});await page.screenshot({path:image});console.log(image);return;
  }
  for(const width of [1440,1920]) {
   const page=await browser.newPage({viewport:{width,height:1000}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
-  await page.goto(pathToFileURL(path.resolve('Characters.html')).href);
+  await page.goto(pathToFileURL(path.resolve('characters.html')).href);
   const duplicates=await page.locator('[id]').evaluateAll(nodes=>nodes.map(n=>n.id).filter((id,index,ids)=>ids.indexOf(id)!==index));assert.deepEqual(duplicates,[],'unique card headings');
   assert.equal(await page.locator('.build-pair-images').count(),0,'old card pairs removed');
   for(const build of guide.builds) {

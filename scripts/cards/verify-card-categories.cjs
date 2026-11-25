@@ -9,7 +9,7 @@ async function main(){
   for(const width of [390,1440,1920]){
    const page=await browser.newPage({viewport:{width,height:1100},isMobile:width===390,hasTouch:width===390});
    const errors=[];page.on('pageerror',error=>errors.push(error.message));
-   await page.goto(pathToFileURL(path.resolve('Cards.html')).href);
+   await page.goto(pathToFileURL(path.resolve('cards.html')).href);
    const character=value=>page.locator('#card-filter-character button[value="'+value+'"]');
    const type=value=>page.locator('#card-filter-type button[value="'+value+'"]');
    const shown=()=>page.locator('.card-detail-row:visible').evaluateAll(rows=>rows.map(row=>row.dataset.id).sort());
@@ -34,7 +34,7 @@ async function main(){
    await type('Attack').click();const attacks=source.filter(card=>curses.includes(card.id)&&card.type==='Attack').map(card=>card.id).sort();assert.deepEqual(await shown(),attacks);
    await type('Attack').click();await character('Event').click();assert.deepEqual(await shown(),[...curses,...events].sort());
    await character('Event').click();await page.locator('#search').fill('Dowsing');assert.ok(await page.locator('#card-DOWSING').isVisible());
-   await page.goto(pathToFileURL(path.resolve('Cards.html')).href+'#card-BYRDONIS_EGG');assert.ok(await page.locator('#card-BYRDONIS_EGG').isVisible());assert.equal(await character('Curse').getAttribute('aria-pressed'),'true');
+   await page.goto(pathToFileURL(path.resolve('cards.html')).href+'#card-BYRDONIS_EGG');assert.ok(await page.locator('#card-BYRDONIS_EGG').isVisible());assert.equal(await character('Curse').getAttribute('aria-pressed'),'true');
    assert.equal(await page.locator('.card-detail-row').count(),source.length);
    assert.equal(await page.locator('[id]').evaluateAll(nodes=>nodes.map(node=>node.id).filter((id,index,ids)=>ids.indexOf(id)!==index).length),0);
    const assets=await page.locator('.card-detail img').evaluateAll(images=>[...new Set(images.map(image=>image.getAttribute('src')))]);for(const image of assets)assert.ok(fs.existsSync(image),image);

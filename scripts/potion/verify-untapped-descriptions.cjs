@@ -15,7 +15,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
     await route.fulfill({status:200,contentType,body:fs.readFileSync(file)});
    });
    page.on('pageerror',error=>errors.push(error.message));
-   await page.goto(mode==='file'?pathToFileURL(path.resolve('Potions.html')).href:'http://potions.test/Potions.html');
+   await page.goto(mode==='file'?pathToFileURL(path.resolve('potions.html')).href:'http://potions.test/potions.html');
    assert.equal(await page.locator('.card-language-toggle,[data-effect-language]').count(),0);
    const rendered=await page.locator('.entry.potion').evaluateAll(nodes=>nodes.map(n=>{
     const effect=n.querySelector(':scope > p'),clone=effect.cloneNode(true);

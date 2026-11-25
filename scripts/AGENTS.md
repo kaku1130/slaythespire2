@@ -8,7 +8,7 @@
 
 # 頁面檔名
 
-桌機版根目錄檔名固定為 `Ancients.html`、`Characters.html`、`Cards.html`、`Potions.html`、`Relics.html`。產生程式與連結使用上述短檔名。
+桌機版根目錄檔名固定為 `ancients.html`、`characters.html`、`cards.html`、`potions.html`、`relics.html`。產生程式與連結使用上述短檔名。
 
 # 資料分類
 

@@ -6,8 +6,8 @@ function writeDesktopPage(page, html, {searchControls = true, attribution = true
   if (!/src="assets\/cards\/page-scroll\.js(?:\?[^" ]*)?"/.test(html)) html = html.replace('</body>', '<script src="assets/cards/page-scroll.js?v=2"></script></body>');
   if (searchControls && !html.includes('src="assets/cards/search-controls.js"')) html = html.replace('</body>', '<script src="assets/cards/search-controls.js"></script></body>');
   const basename = path.basename(page, '.html');
-  if (['Characters','Relics','Potions'].includes(basename) && !html.includes('src="assets/cards/filter-memory.js"')) html = html.replace('</body>', '<script src="assets/cards/filter-memory.js"></script></body>');
-  const name = ({Cards:'cards',Characters:'builds',Relics:'relic',Potions:'potion',Ancients:'ancient'})[basename] || basename;
+  if (['characters','relics','potions'].includes(basename) && !html.includes('src="assets/cards/filter-memory.js"')) html = html.replace('</body>', '<script src="assets/cards/filter-memory.js"></script></body>');
+  const name = ({cards:'cards',characters:'builds',relics:'relic',potions:'potion',ancients:'ancient'})[basename] || basename;
   const stylesheet = path.posix.join('assets', name, name + '.css');
   const styleTags = /<style>([\s\S]*?)<\/style>|<link\b(?=[^>]*\brel="stylesheet")[^>]*\bhref="([^"]+)"[^>]*>/g;
   const styles = [];
@@ -27,7 +27,7 @@ function writeDesktopPage(page, html, {searchControls = true, attribution = true
     return styles.length === 1 ? '<link rel="stylesheet" href="' + stylesheet + '">' : '';
   }).replace(/<!--page-script-(\d+)-->/g, (_, index) => scripts[Number(index)]);
   if (!styles.length) throw new Error('Missing stylesheet for ' + page);
-  if (['Cards','Characters','Relics','Potions'].includes(basename)) styles.push(require('./rarity-labels.cjs'));
+  if (['cards','characters','relics','potions'].includes(basename)) styles.push(require('./rarity-labels.cjs'));
   fs.writeFileSync(stylesheet, styles.join('\n\n') + '\n' + require('./page-frame.cjs') + '\n' + require('./navigation-icons.cjs').styles + require('./page-scroll.cjs'));
   if (!attribution) {
     fs.writeFileSync(page, updated);

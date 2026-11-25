@@ -5,7 +5,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
 (async()=>{
   const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
   try {
-    for(const width of [1440,390])for(const file of ['Cards.html','card1.html'].filter(file=>require('node:fs').existsSync(file))) {
+    for(const width of [1440,390])for(const file of ['cards.html','card1.html'].filter(file=>require('node:fs').existsSync(file))) {
       const page=await browser.newPage({viewport:{width,height:844},isMobile:width<600,hasTouch:width<600});
       const errors=[];page.on('pageerror',e=>errors.push(e.message));
       await page.goto(pathToFileURL(path.resolve(file)).href);

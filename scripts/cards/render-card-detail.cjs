@@ -7,7 +7,7 @@ function buildLink(card, build, localBuilds) {
   const match = build.url.match(/^\/build\/([^#]+)#build-(.+)$/);
   if (match) {
     const hash = 'build-' + match[1] + '-' + match[2];
-    if (localBuilds.includes('id="' + hash + '"')) return 'Characters.html#' + hash;
+    if (localBuilds.includes('id="' + hash + '"')) return 'characters.html#' + hash;
   }
   return new URL(build.url, card.source).href;
 }

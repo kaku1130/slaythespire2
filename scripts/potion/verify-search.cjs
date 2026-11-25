@@ -14,7 +14,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
     await route.fulfill({status:200,contentType,body:fs.readFileSync(file)});
    });
    const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
-   await page.goto(mode==='file'?pathToFileURL(path.resolve('Potions.html')).href:'http://potions.test/Potions.html');
+   await page.goto(mode==='file'?pathToFileURL(path.resolve('potions.html')).href:'http://potions.test/potions.html');
    const search=page.locator('#search');
    const visibleIds=()=>page.locator('.entry.potion:visible').evaluateAll(nodes=>nodes.map(n=>n.id).sort());
    const entries=await page.locator('.entry.potion').evaluateAll(nodes=>nodes.map(n=>({id:n.id,en:n.querySelector('.catalog-name-en').textContent,rarity:n.dataset.rarity})));

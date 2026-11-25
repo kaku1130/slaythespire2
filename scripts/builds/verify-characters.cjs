@@ -10,11 +10,11 @@ const data=JSON.parse(fs.readFileSync('data/builds/characters.json','utf8'));
   const page=await context.newPage(),errors=[],requests=[];
   page.on('pageerror',error=>errors.push(error.message));
   page.on('request',request=>{if(/^https?:/.test(request.url()))requests.push(request.url());});
-  await page.goto(pathToFileURL(path.resolve('Characters.html')).href);
+  await page.goto(pathToFileURL(path.resolve('characters.html')).href);
   assert.equal(await page.locator('.character-tile').count(),6);
   assert.equal(await page.locator('.character-nav,.character-toc').count(),0);
-  assert.equal(await page.locator('.site-nav a[href="Characters.html"]').getAttribute('aria-label'),'Characters');
-  assert.equal(await page.locator('.site-nav a[href="Characters.html"] img').getAttribute('src'),'data:image/webp;base64,'+fs.readFileSync('assets/cards/icons/ironclad.webp').toString('base64'));
+  assert.equal(await page.locator('.site-nav a[href="characters.html"]').getAttribute('aria-label'),'Characters');
+  assert.equal(await page.locator('.site-nav a[href="characters.html"] img').getAttribute('src'),'data:image/webp;base64,'+fs.readFileSync('assets/cards/icons/ironclad.webp').toString('base64'));
   await page.locator('img').evaluateAll(async nodes=>{
    for(const node of nodes)node.loading='eager';
    await Promise.all(nodes.map(node=>node.decode()));
@@ -68,7 +68,7 @@ const data=JSON.parse(fs.readFileSync('data/builds/characters.json','utf8'));
    await page.locator('.character-back').click();
    await page.waitForFunction(()=>!document.getElementById('character-index').hidden);
   }
-  await page.goto(pathToFileURL(path.resolve('Characters.html')).href+'#character-defect');
+  await page.goto(pathToFileURL(path.resolve('characters.html')).href+'#character-defect');
   assert.equal(await page.locator('#character-defect').isVisible(),true);
   for(const width of [1024,1920]){
    await page.setViewportSize({width,height:1000});
@@ -76,7 +76,7 @@ const data=JSON.parse(fs.readFileSync('data/builds/characters.json','utf8'));
   }
   for(const width of [390,320]){
    await page.setViewportSize({width,height:1000});
-   await page.goto(pathToFileURL(path.resolve('Characters.html')).href);
+   await page.goto(pathToFileURL(path.resolve('characters.html')).href);
    const columns=await page.locator('.character-grid').evaluate(node=>getComputedStyle(node).gridTemplateColumns.split(' ').length);
    assert.equal(columns,1,'Phone character overview is one column');
    assert.equal(await page.locator('.site-header-inner').evaluate(node=>node.scrollWidth<=node.clientWidth),true,'Phone navigation fits '+width);
@@ -90,7 +90,7 @@ const data=JSON.parse(fs.readFileSync('data/builds/characters.json','utf8'));
    assert.ok(menuBox.x>=0&&menuBox.x+menuBox.width<=width,'Phone Game Info fits');
   }
   await page.setViewportSize({width:1440,height:1000});
-  const pages=['Ancients.html','Cards.html','Potions.html','Relics.html',...fs.readdirSync('data/ancient').filter(file=>/^ancient-.*\.html$/.test(file)).map(file=>'data/ancient/'+file)];
+  const pages=['ancients.html','cards.html','potions.html','relics.html',...fs.readdirSync('data/ancient').filter(file=>/^ancient-.*\.html$/.test(file)).map(file=>'data/ancient/'+file)];
   for(const file of pages){
    await page.goto(pathToFileURL(path.resolve(file)).href);
    const entry=page.locator('.site-nav a[aria-label="Characters"]');

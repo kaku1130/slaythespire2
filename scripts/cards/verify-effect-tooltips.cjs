@@ -8,7 +8,7 @@ async function main(){
   for(const width of [390,1440,1920]){
    const page=await browser.newPage({viewport:{width,height:1100},isMobile:width===390,hasTouch:width===390});
    const errors=[];page.on('pageerror',error=>errors.push(error.message));
-   await page.goto(pathToFileURL(path.resolve('Cards.html')).href);
+   await page.goto(pathToFileURL(path.resolve('cards.html')).href);
    const dialog=page.locator('#card-effect-dialog');
    assert.equal(await dialog.count(),1);assert.equal(await page.locator('button button').count(),0);
    const vulnerable=page.locator('#card-BASH .detail-effect-panel').first().locator('[data-effect-tooltip]').filter({hasText:'Vulnerable'});
