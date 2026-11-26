@@ -1,26 +1,26 @@
 /* Search icons are present and styled in the initial HTML. */
 html body main#main-content .search-control{position:relative;display:block;min-width:0;width:100%;flex:1 1 240px}
-html body main#main-content .search-control input#search{display:block;width:100%;max-width:none;margin:0;padding-left:46px!important;box-sizing:border-box}
+html body main#main-content .search-control input#search{display:block;width:100%;max-width:none;margin:0;padding-left:50px!important;box-sizing:border-box}
 html body main#main-content .search-control input#search::-webkit-search-cancel-button{display:none;-webkit-appearance:none}
-html body main#main-content .search-control>button.search-clear{position:absolute;left:4px;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;width:36px;height:36px;min-width:36px;min-height:36px;margin:0;padding:7px;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none!important;color:#aab6c4!important;cursor:pointer}
+html body main#main-content .search-control>button.search-clear{position:absolute;left:4px;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;width:36px;height:36px;min-width:36px;min-height:36px;margin:0;padding:4px;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none!important;color:#aab6c4!important;cursor:pointer}
 html body main#main-content .search-control>button.search-clear:hover{color:#37a8ec!important;background:#163047!important}
-html body main#main-content .search-clear .search-icon{font-size:20px;line-height:1;pointer-events:none}
+html body main#main-content .search-clear .search-icon{font-size:28px;line-height:1;pointer-events:none}
 html body main#main-content:is(.event-browser,.monster-browser,.encounter-browser) .chapter-filters>.search-control{order:-1;flex:0 0 auto}
 
 
 /* Show filter menus by default; the button restores their remembered state. */
-html body main#main-content #tools.filter-menu-closed>:is(.card-filter-rows,.card-action-row),
+html body main#main-content #tools.filter-menu-closed>.card-filter-rows,
 html body main#main-content .filters.filter-menu-closed>.catalog-filter-rows {display:none!important}
 html body main#main-content #tools .card-search,
-html body main#main-content .filters .catalog-search-tools:has(.filter-menu-toggle) {display:grid!important;grid-template-columns:minmax(0,1fr) 52px 52px!important;gap:8px;align-items:center;width:100%;min-width:0}
+html body main#main-content .filters .catalog-search-tools:has(.filter-menu-toggle) {display:grid!important;grid-template-columns:minmax(0,1fr) var(--catalog-control-height,48px)!important;gap:8px;align-items:center;width:100%;min-width:0}
 html body main#main-content .filters:has(.filter-menu-toggle) {display:flex!important;flex-direction:column;align-items:stretch}
 html body main#main-content .filters .catalog-search-tools:has(.filter-menu-toggle) {order:-1;margin:0}
-html body main#main-content :is(#tools,.filters) button.filter-menu-toggle {display:inline-flex!important;align-items:center;justify-content:center;gap:6px;box-sizing:border-box;width:52px;min-width:52px;height:48px;min-height:48px;margin:0;padding:8px;border:1px solid #6faeee;border-radius:7px;background:#0d131a;color:#e3e8ee!important;font:16px/1.4 Arial,"Microsoft JhengHei",sans-serif;cursor:pointer}
+html body main#main-content :is(#tools,.filters) button.filter-menu-toggle {display:inline-flex!important;align-items:center;justify-content:center;gap:6px;box-sizing:border-box;width:var(--catalog-control-height,48px);min-width:var(--catalog-control-height,48px);height:48px;min-height:48px;margin:0;padding:8px;border:1px solid #6faeee;border-radius:7px;background:#0d131a;color:#e3e8ee!important;font:16px/1.4 Arial,"Microsoft JhengHei",sans-serif;cursor:pointer}
 html body main#main-content :is(#tools,.filters) button.filter-menu-toggle:is(:hover,:focus-visible,[aria-expanded=true]) {border-color:#37a8ec;background:#163047}
-html body main#main-content button.filter-menu-toggle>span {display:block;font:22px/1 Arial,sans-serif;flex:none}
+html body main#main-content button.filter-menu-toggle>span {display:block;font:28px/1 Arial,sans-serif;flex:none}
 
 /* Card effect language sits immediately before the filter menu button. */
-html body main#main-content :is(#tools .card-search,.filters .catalog-search-tools):has(.card-language-toggle) {grid-template-columns:minmax(0,1fr) 52px 52px 52px!important}
+html body main#main-content :is(#tools .card-search,.filters .catalog-search-tools):has(.card-language-toggle) {grid-template-columns:minmax(0,1fr) 52px var(--catalog-control-height,48px)!important}
 html body main#main-content :is(#tools,.filters) button.card-language-toggle {display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;width:52px;min-width:52px;height:48px;min-height:48px;margin:0;padding:8px;border:1px solid #6faeee;border-radius:7px;background:#0d131a;color:#e3e8ee;font:600 18px/1.4 Arial,"Microsoft JhengHei",sans-serif;cursor:pointer}
 html body main#main-content :is(#tools,.filters) button.card-language-toggle:is(:hover,:focus-visible) {border-color:#37a8ec;background:#163047}
 html body main#main-content :is(#card-scroll,#catalog-scroll) [data-effect-language][hidden] {display:none!important}
@@ -33,3 +33,6 @@ html body main#main-content .filter-menu-panel[hidden] {display:none!important}
 /* Relic and potion filters remain visible below their search fields. */
 html body main#main-content :is(.relic-filters,.potion-filters) {display:flex!important;flex-direction:column;align-items:stretch;gap:8px}
 html body main#main-content :is(.relic-filters,.potion-filters)>.catalog-search-tools {order:-1;width:100%;margin:0}
+
+/* Search text scales with the shared 48px search field. */
+html body main#main-content#main-content#main-content .search-control input#search {font-size:20px!important;line-height:1.4!important}

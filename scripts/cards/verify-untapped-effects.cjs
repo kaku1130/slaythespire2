@@ -40,7 +40,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
    assert.deepEqual(errors,[]);console.log('PASS '+mode+': 568 exact source effects/colors; 569 Chinese names/links, generic Mad Science, English-only display and search.');await context.close();
   }
   const credit=require('./source-credit.cjs');
-  for(const file of ['cards.html','characters.html','relics.html','potions.html','ancients.html'])assert(fs.readFileSync(file,'utf8').includes(credit),file+' exact requested footer');
+  for(const file of ['cards.html','characters.html','relics.html','potions.html'])assert(fs.readFileSync(file,'utf8').includes(credit),file+' exact requested footer');
   console.log('PASS: requested source footer on all six pages.');
  }finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});

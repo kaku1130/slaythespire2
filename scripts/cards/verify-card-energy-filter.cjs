@@ -32,8 +32,8 @@ const discounted=card=>{
    assert.equal(await gainButton.getAttribute('aria-label'),'增加能量');
    assert.equal(await group.locator('button>.energy-resource-icon').count(),6,'each option has an energy icon');
    assert(await group.locator('.energy-resource-icon').first().evaluate(icon=>getComputedStyle(icon).backgroundImage!=='none'),'energy artwork loaded');
-   const energyBox=await group.boundingBox(),tierBox=await page.locator('#card-filter-tier').boundingBox();
-   assert(energyBox.y>=tierBox.y+tierBox.height,'Energy below Tier');
+   const energyBox=await group.boundingBox(),rarityBox=await page.locator('#card-filter-rarity').boundingBox();
+   assert(energyBox.y>=rarityBox.y+rarityBox.height,'Energy below Rarity');
    await page.locator('#card-filter-character button[value=Ironclad]').click();
    const visible=()=>page.locator('.card-detail-row:not([hidden])').evaluateAll(rows=>rows.map(row=>row.dataset.id).sort());
    await costDownButton.click();
@@ -108,12 +108,8 @@ const discounted=card=>{
    assert((await visible()).includes('AUTOMATION'));
    const menu=page.locator('.filter-menu-toggle');await menu.click();assert(!await group.isVisible());await menu.click();assert(await group.isVisible());
    await button('X').click();
-   const eligible=await page.locator('.card-detail-row:not([hidden]) .detail-name-en').allTextContents();
-   assert(eligible.length>0);
-   await page.evaluate(()=>Math.random=()=>0);await page.locator('#aoe-toggle').click();
-   assert.equal(await page.locator('#search').inputValue(),'"'+eligible[0]+'"','random respects Energy');
    assert.deepEqual(errors,[]);
-   console.log('PASS '+mode+': all energy groups, base costs, multi-select/AND, persistence, search/reset, deep links, menu toggle and random card.');
+   console.log('PASS '+mode+': all energy groups, base costs, multi-select/AND, persistence, search/reset, deep links, menu toggle and filtering.');
    if(mode==='file'){
     await page.locator('#search').fill('');
     await gainButton.click();

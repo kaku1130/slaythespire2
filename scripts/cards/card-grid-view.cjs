@@ -32,5 +32,4 @@ body[data-view=grid] .card-scroll tr.is-selected{border-color:var(--accent);outl
 @media(hover:hover){body[data-view=grid] .card-scroll tbody tr:hover{border-color:var(--accent);outline:1px solid var(--accent);outline-offset:-1px;background:color-mix(in srgb,var(--accent) 6%,var(--paper))}body[data-view=grid] .card-image-button:hover{transform:scale(1.025)}}
 @media(prefers-reduced-motion:reduce){body[data-view=grid] .card-scroll :is(tr,.card-image-button){transition:none}}
 `;
-const actionControls="<button type=\"button\" id=\"aoe-toggle\" aria-label=\"隨機卡牌\" title=\"隨機卡牌\">🎲</button>";
-module.exports={styles,actionControls};
+module.exports={styles};

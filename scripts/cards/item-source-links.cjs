@@ -12,7 +12,6 @@ function render(item,kind,prefix=''){
  return '<div class="catalog-source-links"><a class="catalog-untapped-link" href="'+esc(item.sourceEn)+'" target="_blank" rel="noopener noreferrer" title="'+esc(name)+' · Untapped.gg">untapped.gg</a><a class="catalog-spirebird-link" href="'+esc(bird)+'" target="_blank" rel="noopener noreferrer" title="'+esc(name)+' · Spirebird">spirebird.com</a></div>';
 }
 const styles=`
-html body main#main-content#main-content .catalog-relic-card.catalog-relic-card:has(>.ancient-relic-extras){grid-template-rows:auto minmax(0,1fr) auto}
 html body main#main-content#main-content .entry:has(>.catalog-source-links){padding-bottom:12px}
 html body main#main-content#main-content .catalog-relic-card:has(>.catalog-source-links){grid-template-rows:minmax(0,1fr) auto}
 html body main#main-content#main-content .potion:has(>.catalog-source-links){grid-template-rows:auto auto minmax(0,1fr) auto}

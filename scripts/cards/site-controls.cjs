@@ -18,7 +18,6 @@ main#main-content .tools .primary-filter-row{margin:0 0 var(--group-gap)}
 main#main-content .tools .secondary-filter-row{margin:0}
 main#main-content .tools :is(.chips,.rarity-buttons,.filter-cluster,.presentation-controls,.image-size-controls){gap:var(--control-gap);padding:0}
 main#main-content .tools .inline-search{flex:1 1 320px;max-width:420px;margin-left:auto}
-main#main-content .tools .type-buttons #aoe-toggle{margin-left:0}
 main#main-content :is(.catalog,.relic-section .catalog,.potion-section .catalog){gap:var(--group-gap)}
 main#main-content :is(.relic-section,.potion-section){margin:0 0 var(--section-gap);padding:var(--panel-padding)}
 main#main-content :is(.relic-section-title,.potion-section-title){margin:0 0 var(--group-gap)}

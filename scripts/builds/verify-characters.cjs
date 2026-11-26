@@ -97,7 +97,7 @@ const data=JSON.parse(fs.readFileSync('data/builds/characters.json','utf8'));
    assert.ok(menuBox.x>=0&&menuBox.x+menuBox.width<=width,'Phone Game Info fits');
   }
   await page.setViewportSize({width:1440,height:1000});
-  const pages=['ancients.html','cards.html','potions.html','relics.html',...fs.readdirSync('data/ancient').filter(file=>/^ancient-.*\.html$/.test(file)).map(file=>'data/ancient/'+file)];
+  const pages=['cards.html','potions.html','relics.html'];
   for(const file of pages){
    await page.goto(pathToFileURL(path.resolve(file)).href);
    const entry=page.locator('.site-nav a[aria-label="Characters"]');

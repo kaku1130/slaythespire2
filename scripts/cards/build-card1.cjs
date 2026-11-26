@@ -78,7 +78,7 @@ html = html.replace(/href="(?:cards|card1)\.html#card-/g, 'href="' + (output ===
 const hashScript = '<script>if(location.hash.startsWith("#card-"))requestAnimationFrame(()=>{const row=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(row){row.style.scrollMarginTop="12px";row.scrollIntoView({block:"start",behavior:"instant"});}});</script>';
 html = html.replaceAll(hashScript, '').replace('</body>', hashScript + '</body>');
 html = html.replace(/<script src="assets\/cards\/card-effect-language\.js"><\/script>/g,'');
-const baseCss = fs.readFileSync('assets/cards/cards.css', 'utf8').split('/* Each card occupies one full row with seven detail sections. */')[0].replaceAll('#tools > .card-action-row','#tools .card-action-row').replaceAll('#tools > .card-filter-rows','#tools .card-filter-rows').trimEnd();
+const baseCss = fs.readFileSync('assets/cards/cards.css', 'utf8').split('/* Each card occupies one full row with seven detail sections. */')[0].replaceAll('#tools > .card-filter-rows','#tools .card-filter-rows').trimEnd();
 fs.writeFileSync('assets/cards/' + output + '.css', baseCss + '\n' + fs.readFileSync('assets/cards/card1-detail.css', 'utf8') + require('./navigation-icons.cjs').styles + require('./desktop-content-width.cjs') + require('./filter-frames.cjs') + require('./page-scroll.cjs') + require('./tier-colors.cjs') + require('./tier-labels.cjs') + require('./card-content-width.cjs'));
 html = html.replace(/<!--card-effect-tooltips-->[\s\S]*?<!--\/card-effect-tooltips-->/g, '');
 fs.writeFileSync((output === 'cards' ? 'cards' : output) + '.html', require('./content-links.cjs').normalize(html));

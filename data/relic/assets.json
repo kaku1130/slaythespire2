@@ -296,5 +296,13 @@
   "/images/relics/wongo_customer_appreciation_badge.webp": "assets/relic/images/wongo_customer_appreciation_badge.webp",
   "/images/relics/yummy_cookie_defect.webp": "assets/relic/images/yummy_cookie_defect.webp",
   "/images/relics/dowsing_rod.webp": "assets/relic/images/dowsing_rod.webp",
-  "/images/relics/neows_sacrifice.webp": "assets/relic/images/neows_sacrifice.webp"
+  "/images/relics/neows_sacrifice.webp": "assets/relic/images/neows_sacrifice.webp",
+  "/images/ancients/icon/neow.webp": "assets/relic/icons/ancients/neow.webp",
+  "/images/ancients/icon/orobas.webp": "assets/relic/icons/ancients/orobas.webp",
+  "/images/ancients/icon/pael.webp": "assets/relic/icons/ancients/pael.webp",
+  "/images/ancients/icon/tezcatara.webp": "assets/relic/icons/ancients/tezcatara.webp",
+  "/images/ancients/icon/nonupeipe.webp": "assets/relic/icons/ancients/nonupeipe.webp",
+  "/images/ancients/icon/tanx.webp": "assets/relic/icons/ancients/tanx.webp",
+  "/images/ancients/icon/vakuu.webp": "assets/relic/icons/ancients/vakuu.webp",
+  "/images/ancients/icon/darv.webp": "assets/relic/icons/ancients/darv.webp"
 }

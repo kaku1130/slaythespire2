@@ -17,4 +17,4 @@ fs.writeFileSync('assets/cards/index.css',css);
 const version=file=>createHash('sha256').update(fs.readFileSync(file)).digest('hex').slice(0,12);
 const asset=file=>file+'?v='+version(file);
 fs.writeFileSync('index.html','<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="assets/cards/icons/site-favicon.ico?v=4"><title>Slay the Spire II</title><link rel="stylesheet" href="'+asset('assets/cards/index.css')+'"><script defer src="'+asset('assets/cards/index-pages.js')+'"></script><script defer src="'+asset('assets/cards/index.js')+'"></script></head><body class="index-page">'+navigation.renderHeader('cards')+'<main id="main-content"><p class="index-loading" role="status">載入中…</p></main></body></html>');
-console.log('Built index.html: six original pages, one persistent navigation and URL.');
+console.log('Built index.html: '+navigation.items.length+' original pages, one persistent navigation and URL.');

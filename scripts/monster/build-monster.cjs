@@ -2,6 +2,7 @@ process.chdir(require('node:path').resolve(__dirname, '../..'));
 const fs = require('node:fs'), assert = require('node:assert/strict');
 const nav = require('../cards/site-navigation.cjs');
 const catalog = JSON.parse(fs.readFileSync('data/monster/catalog.json', 'utf8'));
+const localized = require('../../data/monster/names-zh-TW.json');
 const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
 const order = ['Boss', 'Elite', 'Hard', 'Easy'];
 const visibleItems = catalog.items.filter(item => order.includes(item.type));
@@ -12,13 +13,15 @@ const sections = catalog.regions.map(region => {
     const groupItems = items.filter(item => item.type === type);
     if (!groupItems.length) return '';
     const cards = groupItems.map(item => {
+      const nameZh=localized.names[item.id];
+      assert.ok(nameZh,'Missing Chinese monster name: '+item.id);
       for (const member of item.members) assert.ok(fs.existsSync(member.image), member.image);
-      return '<a class="monster-card" id="monster-' + esc(item.id) + '" data-region="' + region + '" data-type="' + category + '" data-search="' + esc([item.name, category, ...item.members.map(member => member.name)].join(' ').toLowerCase()) + '" href="' + esc(item.url) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc(item.name + ' on Untapped.gg') + '">' +
-        '<div class="monster-card-head"><h3>' + esc(item.name) + '</h3><span class="monster-kind">' + category + '</span></div>' +
+      return '<a class="monster-card" id="monster-' + esc(item.id) + '" data-region="' + region + '" data-type="' + category + '" data-search="' + esc([nameZh, item.name, category, ...item.members.map(member => member.name)].join(' ').toLowerCase()) + '" href="' + esc(item.url) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc(nameZh + ' · ' + item.name + ' on Untapped.gg') + '">' +
+        '<div class="monster-card-head"><h4><span class="monster-name-zh" lang="zh-Hant">'+esc(nameZh)+'</span><span class="monster-name-en" lang="en">' + esc(item.name) + '</span></h4></div>' +
         '<div class="monster-lineup" style="--members:' + item.members.length + '">' + item.members.map(member => '<figure class="monster-member"><img src="' + esc(member.image) + '" alt="' + esc(member.name) + '" width="180" height="148" loading="lazy"></figure>').join('') + '</div>' +
         '</a>';
     }).join('');
-    return '<div class="monster-category" data-type="' + category + '" role="group" aria-label="' + category + '"><div class="monster-grid">' + cards + '</div></div>';
+    return '<div class="monster-category" data-type="' + category + '" role="group" aria-label="' + category + '"><h3 class="monster-category-title" lang="en">'+category+'</h3><div class="monster-grid">' + cards + '</div></div>';
   }).join('');
   return '<section class="monster-region" data-region="' + region + '" aria-labelledby="region-' + region + '"><h2 id="region-' + region + '">' + region + ' <span class="monster-region-count">(' + items.length + ')</span></h2>' + groups + '</section>';
 }).join('');

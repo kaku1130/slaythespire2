@@ -1,5 +1,5 @@
 const {characters}=require('../../data/cards/creator-tiers.json');
-const palette=require('../../data/ancient/tier-palette.json');
+const palette=require('../../data/cards/tier-palette.json');
 const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 module.exports=(card,{tierSuffix=false,linked=true}={})=>{
  const lists=characters[card.character];if(!lists)return '';

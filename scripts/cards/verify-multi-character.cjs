@@ -36,8 +36,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
       const before=await chosen();
       await page.locator('#search').fill('no-such-card-xyz');assert.deepEqual(await chosen(),before);assert.ok(await page.locator('#empty').isVisible());
       await page.locator('.search-clear').click();assert.deepEqual(await chosen(),before);
-      for(const value of [0,.5,.999]){await page.evaluate(v=>Math.random=()=>v,value);await page.locator('#aoe-toggle').click();assert.ok((await chosen()).length>=1);const shown=await page.locator('.card-detail-row:not([hidden])').count();assert.ok(shown>0);}
-      assert.deepEqual(errors,[]);await page.close();console.log('PASS '+file+' '+width+'px: multiple characters, Ironclad default, bilingual/name search sync, random search and empty state');
+      assert.deepEqual(errors,[]);await page.close();console.log('PASS '+file+' '+width+'px: multiple characters, Ironclad default, bilingual/name search sync, empty state');
     }
   } finally {await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});

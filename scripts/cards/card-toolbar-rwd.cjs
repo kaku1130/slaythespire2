@@ -20,17 +20,17 @@ module.exports=`
 @media screen{html{height:auto;min-height:100%;overflow-x:clip;overflow-y:auto}body{display:block;min-height:100dvh;height:auto;overflow:visible}.site-header{position:sticky;top:0}main#main-content{display:block;min-height:0;height:auto;overflow:visible}.card-scroll{height:auto;min-height:0;overflow:visible;scrollbar-gutter:auto}.card-scroll section{max-width:100%}.tools{position:static;top:auto}}
 @media screen and (min-width:1800px){.card-scroll thead{top:var(--site-header-height,72px)}}
 
-/* Separate filter groups and share card Tier colors with their controls. */
+/* Separate filter groups. */
 .tools .secondary-filter-row{column-gap:28px;row-gap:18px}
-.tools .tier-buttons button{background:var(--tier-color,transparent);color:#fff;border-color:var(--tier-color,var(--line))}.tools .tier-buttons button[data-tier-filter=unranked]{color:var(--muted)}.tools .tier-buttons button[aria-pressed=true]{background:var(--tier-color,transparent);color:#fff;border-color:var(--ink);box-shadow:0 0 0 1px var(--ink)}.tools .tier-buttons button[data-tier-filter=unranked][aria-pressed=true]{color:var(--muted)}
 
-.tools .secondary-filter-row .presentation-controls{margin-left:auto;justify-content:flex-end}.tools .presentation-controls .image-size-controls{order:-1;margin:0 8px 0 0}.tools .tier-buttons button,.tools .tier-buttons button[aria-pressed=true]{background:var(--paper);color:var(--tier-color);border-color:var(--tier-color)}.tools .tier-buttons button[aria-pressed=true]{box-shadow:0 0 0 1px currentColor}.tools .aoe-toggle{display:inline-flex;align-items:center;gap:8px;margin:0;flex:0 0 auto;min-height:44px;font-size:18px;cursor:pointer;white-space:nowrap}.tools .aoe-toggle input{width:18px;height:18px;min-height:0;margin:0;padding:0;accent-color:var(--focus)}
 
-.tools .tier-buttons button[aria-pressed=true]{background:var(--tier-color);color:#fff;border-color:var(--tier-color);box-shadow:0 0 0 2px color-mix(in srgb,var(--tier-color) 60%,white),0 0 12px color-mix(in srgb,var(--tier-color) 45%,transparent);font-weight:700}
+.tools .secondary-filter-row .presentation-controls{margin-left:auto;justify-content:flex-end}.tools .presentation-controls .image-size-controls{order:-1;margin:0 8px 0 0}
 
-.tools .type-buttons #aoe-toggle{margin-left:12px}
 
-.tools .type-buttons #aoe-toggle{display:inline-flex;align-items:center;justify-content:center;gap:7px}.aoe-icon{width:20px;height:20px;flex:0 0 auto}
+
+
+
+
 
 .tools{border-bottom:0}
 `;

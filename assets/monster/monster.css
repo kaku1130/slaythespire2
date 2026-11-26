@@ -117,10 +117,10 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(6,62px)!important;
+    grid-template-columns:repeat(5,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 392px!important;
-    width:392px!important;
+    flex:0 1 326px!important;
+    width:326px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
@@ -142,7 +142,7 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
@@ -153,9 +153,9 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
 /* Scale desktop navigation artwork and buttons together by 25%. */
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
-    grid-template-columns:repeat(6,77.5px)!important;
+    grid-template-columns:repeat(5,77.5px)!important;
     grid-auto-columns:77.5px!important;
-    flex:0 1 490px!important;width:490px!important;gap:5px;
+    flex:0 1 407.5px!important;width:407.5px!important;gap:5px;
   }
   html body .site-header .site-nav > a {
     flex:0 0 77.5px!important;width:77.5px!important;min-width:77.5px!important;max-width:77.5px!important;
@@ -207,7 +207,7 @@ html body .site-header .game-info-menu>a:hover {color:#fff!important;background:
 
 /* Compact tablets keep identical navigation sizing regardless of input detection. */
 @media screen and (min-width:601px) and (max-width:1180px) {
- html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 504px!important;width:504px!important;gap:4px}
+ html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 504px!important;width:504px!important;gap:4px}
  html body .site-header .site-nav>a {flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important;height:52px!important;min-height:52px!important;max-height:52px!important;padding:6px 12px!important;border-radius:6px}
  html body .site-header .site-nav a>.site-nav-visual {flex:0 0 36px;width:36px;height:36px}
  html body .site-header .site-nav .site-nav-icon {width:36px!important;height:36px!important;border-radius:6px!important}
@@ -222,7 +222,7 @@ html body .site-header .site-nav>a,html body .site-header .game-info-dropdown>su
 /* Navigation fills the space beside the logo with a consistent separation. */
 html body .site-header>.site-header-inner {flex-wrap:nowrap!important;column-gap:24px!important}
 html body .site-header .site-brand {flex:0 0 auto}
-html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
+html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
 html body .site-header .site-nav>a {width:100%!important;min-width:0!important;max-width:none!important;flex:1 1 0!important;padding-inline:0!important}
 html body .site-header .game-info-dropdown {width:100%;min-width:0;max-width:none;justify-self:stretch}
 
@@ -266,7 +266,6 @@ main#main-content .tools .primary-filter-row{margin:0 0 var(--group-gap)}
 main#main-content .tools .secondary-filter-row{margin:0}
 main#main-content .tools :is(.chips,.rarity-buttons,.filter-cluster,.presentation-controls,.image-size-controls){gap:var(--control-gap);padding:0}
 main#main-content .tools .inline-search{flex:1 1 320px;max-width:420px;margin-left:auto}
-main#main-content .tools .type-buttons #aoe-toggle{margin-left:0}
 main#main-content :is(.catalog,.relic-section .catalog,.potion-section .catalog){gap:var(--group-gap)}
 main#main-content :is(.relic-section,.potion-section){margin:0 0 var(--section-gap);padding:var(--panel-padding)}
 main#main-content :is(.relic-section-title,.potion-section-title){margin:0 0 var(--group-gap)}
@@ -299,10 +298,10 @@ html body main#main-content :is(.tools button,.filters button,.character-sidebar
 html body main#main-content :is(.tools button,.filters button)[aria-pressed=true]{border-color:currentColor!important}
 html body main#main-content .catalog-columns button[aria-pressed=true]{background:color-mix(in srgb,var(--focus,#37a8ec) 22%,#0d131a);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--focus,#37a8ec) 40%,transparent)}
 
-/* Match the ancient menu's subtle outlines across page controls. */
-html body main#main-content#main-content#main-content#main-content :is(#tools .card-filter-buttons button,#tools .card-tier-choices button,#tools #aoe-toggle,#tools .filter-menu-toggle,.catalog-filter-buttons button,.catalog-search-tools>.catalog-random,.monster-filters button,.character-nav a,.tier-index-item,.character-tile-link,.ancient-top-menu-grid>a) {border:1px solid #344454!important;border-radius:8px!important}
-html body main#main-content#main-content#main-content#main-content :is(#tools .card-filter-buttons button,#tools .card-tier-choices button,#tools #aoe-toggle,#tools .filter-menu-toggle,.catalog-filter-buttons button,.catalog-search-tools>.catalog-random,.monster-filters button,.character-nav a,.tier-index-item,.character-tile-link,.ancient-top-menu-grid>a):is(:hover,:focus-visible,[aria-pressed=true],[aria-expanded=true],[aria-current=page]) {border-color:var(--button-accent,#238cc2)!important}
-html body main#main-content#main-content#main-content#main-content :is(#tools .card-filter-buttons button,#tools .card-tier-choices button,#tools #aoe-toggle,#tools .filter-menu-toggle,.catalog-filter-buttons button,.catalog-search-tools>.catalog-random,.monster-filters button,.character-nav a,.tier-index-item,.character-tile-link,.ancient-top-menu-grid>a):focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
+/* Use subtle outlines across page controls. */
+html body main#main-content#main-content#main-content#main-content :is(#tools .card-filter-buttons button,#tools .filter-menu-toggle,.catalog-filter-buttons button,.monster-filters button,.character-nav a,.tier-index-item,.character-tile-link) {border:1px solid #344454!important;border-radius:8px!important}
+html body main#main-content#main-content#main-content#main-content :is(#tools .card-filter-buttons button,#tools .filter-menu-toggle,.catalog-filter-buttons button,.monster-filters button,.character-nav a,.tier-index-item,.character-tile-link):is(:hover,:focus-visible,[aria-pressed=true],[aria-expanded=true],[aria-current=page]) {border-color:var(--button-accent,#238cc2)!important}
+html body main#main-content#main-content#main-content#main-content :is(#tools .card-filter-buttons button,#tools .filter-menu-toggle,.catalog-filter-buttons button,.monster-filters button,.character-nav a,.tier-index-item,.character-tile-link):focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
 html body .site-header .site-nav>a,html body .site-header .game-info-dropdown>summary {border:1px solid #344454!important;border-radius:8px!important}
 html body .site-header .site-nav>a:is(:hover,:focus-visible,[aria-current=page]),
 html body .site-header .game-info-dropdown>summary:is(:hover,:focus-visible),
@@ -430,7 +429,7 @@ html body main#main-content {padding-block:20px 24px}
 
 /* Let menus and details fill the shared page frame at tablet widths. */
 @media screen and (min-width:600px) and (max-width:1366px) {
-  html body main#main-content:is(.event-browser[data-event-step],.monster-browser[data-monster-step],.ancient-browser) .split-body,
+  html body main#main-content:is(.event-browser[data-event-step],.monster-browser[data-monster-step]) .split-body,
   html body main#main-content>:is(.character-sidebar,.tier-sidebar,.relic-filters,.potion-filters),
   html body main#main-content>.build-layout .build-content,
   html body main#main-content:has(>.relic-filters,>.potion-filters)>.catalog-scroll {
@@ -478,12 +477,9 @@ html body main#main-content:has(>#card-scroll)>#tools {margin-block:0!important}
 html body main#main-content>.mobile-search-row {margin-block:0 8px!important;padding-block:0!important}
 html body main#main-content .split-list {row-gap:8px!important}
 html body main#main-content .split-list>.filters {margin-block:0!important}
-html body main#main-content [data-ancient-top-menu] {margin-bottom:8px}
-html body main#main-content [data-ancient-top-menu]>div {margin-top:8px}
 
 /* Use consistent colored frames for filter groups on every device. */
 html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools .card-action-row,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   box-sizing:border-box;
   min-width:0;
@@ -500,7 +496,6 @@ html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-
   --filter-frame-color:#e3bf72;
 }
 html body main#main-content #tools .card-filter-row:has(#card-filter-type) {--filter-frame-color:#6faeee}
-html body main#main-content #tools .card-action-row {--filter-frame-color:#70bf8b}
 @media screen and (max-width:599px), screen and (pointer:coarse) and (max-width:1000px) and (max-height:500px) {
   html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
     grid-template-columns:minmax(0,1fr);
@@ -512,16 +507,13 @@ html body main#main-content #tools .card-action-row {--filter-frame-color:#70bf8
 
 /* Filter buttons fill their frames without visible group headings. */
 html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools .card-action-row,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   grid-template-columns:minmax(0,1fr);
 }
 html body main#main-content #tools .card-filter-row > span,
-html body main#main-content #tools .card-tier-label,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row > span {
   display:none;
 }
-html body main#main-content #tools .card-tier-choices {grid-column:1}
 
 /* Fill each filter frame while keeping content-based button proportions. */
 html body main#main-content #tools .card-filter-buttons,
@@ -531,13 +523,7 @@ html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-
   width:100%;
   min-width:0;
 }
-html body main#main-content #tools .card-tier-choices {
-  display:flex;
-  flex-wrap:wrap;
-  width:100%;
-  min-width:0;
-}
-html body main#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button,
+html body main#main-content #tools .card-filter-buttons button,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-buttons button {
   box-sizing:border-box;
   width:auto;
@@ -554,20 +540,13 @@ html body main#main-content :is(#tools,.relic-filters,.potion-filters) .filter-c
 }
 
 /* Card filter groups share a blue outer frame. */
-html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools .card-action-row {
+html body main#main-content #tools .card-filter-row {
   border-color:#6faeee;
 }
 
 /* Relic and potion filter groups use the same blue outer frame. */
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   border-color:#6faeee;
-}
-
-/* Random-search buttons share the blue filter-frame border. */
-html body main#main-content #tools #aoe-toggle,
-html body main#main-content .filters .catalog-search-tools>button.catalog-random {
-  border-color:#6faeee!important;
 }
 
 /* Equal spacing above and below the header divider. */
@@ -578,7 +557,7 @@ html body main#main-content {padding-top:8px!important}
 * { scrollbar-width: thin; }
 
 /* Filter dropdowns on the catalog pages. */
-html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) > select {
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .encounter-filters > label) > select {
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -594,11 +573,11 @@ html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-ra
   font: 16px/1.4 system-ui, sans-serif;
   text-overflow: ellipsis;
 }
-html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) > select:focus-visible {
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .encounter-filters > label) > select:focus-visible {
   outline: 2px solid var(--focus, #37a8ec);
   outline-offset: -2px;
 }
-html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) {
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .encounter-filters > label) {
   color: #fff;
   align-items: center;
   margin-block: 0;
@@ -630,22 +609,21 @@ html body:not([data-detail-kind]) main#main-content#main-content#main-content {
 
 /* Catalogs scroll with the document; only the navigation stays at the top. */
 @media screen {
-  html:has(main#main-content.ancient-browser,main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
+  html:has(main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
     height:auto!important;min-height:100%;overflow-x:clip!important;overflow-y:auto!important;
   }
-  body:has(main#main-content.ancient-browser,main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
+  body:has(main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
     position:static!important;inset:auto!important;display:block!important;width:100%;
     height:auto!important;min-height:100dvh;overflow:visible!important;
   }
-  body:has(main#main-content.ancient-browser,main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters)>.site-header {
+  body:has(main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters)>.site-header {
     position:sticky!important;top:0!important;z-index:100;
   }
-  html body main#main-content#main-content:is(.ancient-browser,:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters)) {
+  html body main#main-content#main-content:is(:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters)) {
     display:block!important;flex:none!important;height:auto!important;min-height:0;
     max-height:none!important;overflow:visible!important;
   }
-  html body main#main-content#main-content:is(.ancient-browser,:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters))>:is(.tools,.filters,.card-scroll,.catalog-scroll,.split-body,.mobile-search-row),
-  html body main#main-content#main-content.ancient-browser .split-detail {
+  html body main#main-content#main-content:is(:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters))>:is(.tools,.filters,.card-scroll,.catalog-scroll,.split-body,.mobile-search-row) {
     position:static!important;flex:none!important;height:auto!important;
     min-height:0;max-height:none!important;overflow:visible!important;scrollbar-gutter:auto;
   }
@@ -658,9 +636,6 @@ html body:not([data-detail-kind]) main#main-content#main-content#main-content {
 :root {--card-tier-A:rgb(227, 191, 114);--catalog-tier-A:rgb(227, 191, 114)}
 html body :is(.tier,.build-tier,.card-tier-badge,.relic-tier-label,.font-extrabold)[data-tier=A] {
   --tier-color:rgb(227, 191, 114)!important;background:rgb(227, 191, 114)!important;color:#000!important;border-color:rgb(227, 191, 114)!important;
-}
-html body :is([data-tier-filter=A],#card-filter-tier button[value=A]) {
-  --tier-color:rgb(227, 191, 114)!important;--selection-color:rgb(227, 191, 114)!important;
 }
 html body .card-detail :is(.detail-tier,.detail-build-tier)[data-tier=A] {
   color:rgb(227, 191, 114);background:color-mix(in srgb,rgb(227, 191, 114) 16%,#0b1119);border-color:rgb(227, 191, 114);
@@ -745,7 +720,7 @@ html body #main-content [data-rarity=Uncommon] {--rarity-color:#4f9bd9!important
 html body #main-content .card-detail-row[data-rarity=Uncommon] .card-detail {--detail-rarity-color:#4f9bd9}
 html body #main-content :is([data-stat-rarity=Uncommon],[data-relic-rarity=Uncommon],.rarity[data-rarity=Uncommon],.card-text-link[data-rarity=Uncommon],.build-card-list a[data-rarity=Uncommon]) {color:#4f9bd9!important}
 html body #main-content .potion-section[data-rarity=Uncommon]>.potion-section-title {color:#4f9bd9}
-html body #main-content :is(#card-filter-rarity button[value=Uncommon],[data-catalog-filter=rarity][value=Uncommon],button[data-rarity-filter=Uncommon],[data-filter-group=rarity][data-filter-value=Uncommon]) {--selection-color:#4f9bd9!important;--rarity-color:#4f9bd9!important}
+html body #main-content :is(#card-filter-rarity button[value=Uncommon],[data-catalog-filter=rarity][value=Uncommon],button[data-rarity-filter=Uncommon]) {--selection-color:#4f9bd9!important;--rarity-color:#4f9bd9!important}
 
 /* Rare matches the Block keyword on the reference True Grit page. */
 html body #main-content [data-rarity=Rare] {--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--detail-rarity-color:#efc851}
@@ -753,7 +728,7 @@ html body #main-content .card-detail-row[data-rarity=Rare] .card-detail {--detai
 html body #main-content :is([data-stat-rarity=Rare],[data-label-rarity=Rare],[data-relic-rarity=Rare],.rarity[data-rarity=Rare],.card-text-link[data-rarity=Rare],.build-card-list a[data-rarity=Rare]) {color:#efc851!important}
 html body #main-content .potion-section[data-rarity=Rare] {--group-color:#efc851!important}
 html body #main-content .potion-section[data-rarity=Rare]>.potion-section-title {color:#efc851}
-html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Rare],[data-catalog-filter=rarity][value=Rare],button[data-rarity-filter=Rare],[data-filter-group=rarity][data-filter-value=Rare]) {--selection-color:#efc851!important;--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--rarity-text-color:#efc851!important;color:#efc851!important}
+html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Rare],[data-catalog-filter=rarity][value=Rare],button[data-rarity-filter=Rare]) {--selection-color:#efc851!important;--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--rarity-text-color:#efc851!important;color:#efc851!important}
 
 /* Common has its own light green, distinct from Basic and Starter. */
 html body #main-content [data-rarity=Common] {--rarity-color:#a8dca4!important;--plain-rarity-color:#a8dca4!important;--detail-rarity-color:#a8dca4;--card-name-color:#a8dca4}
@@ -761,51 +736,23 @@ html body #main-content .card-detail-row[data-rarity=Common] .card-detail {--det
 html body #main-content :is([data-stat-rarity=Common],[data-label-rarity=Common],[data-relic-rarity=Common],.rarity[data-rarity=Common],.guide-resource-name[data-rarity=Common],.card-text-link[data-rarity=Common]) {color:#a8dca4!important}
 html body #main-content .potion-section[data-rarity=Common] {--group-color:#a8dca4!important}
 html body #main-content .potion-section[data-rarity=Common]>.potion-section-title {color:#a8dca4}
-html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Common],[data-catalog-filter=rarity][value=Common],button[data-rarity-filter=Common],[data-filter-group=rarity][data-filter-value=Common]) {--selection-color:#a8dca4!important;--rarity-color:#a8dca4!important;--plain-rarity-color:#a8dca4!important;--rarity-text-color:#a8dca4!important;color:#a8dca4!important}
+html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Common],[data-catalog-filter=rarity][value=Common],button[data-rarity-filter=Common]) {--selection-color:#a8dca4!important;--rarity-color:#a8dca4!important;--plain-rarity-color:#a8dca4!important;--rarity-text-color:#a8dca4!important;color:#a8dca4!important}
 
-/* Card tier filters use the same button presentation as Type filters. */
-html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button {
+/* Energy filters use the same button presentation as Type filters. */
+html body #main-content #tools #card-filter-energy button {
   min-height:48px;padding:8px;border-radius:8px;
   font:400 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;
   background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
   position:relative;
 }
-html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button[value][aria-pressed=true] {
+html body #main-content #tools #card-filter-energy button[value][aria-pressed=true] {
   border-color:var(--tier-text-color)!important;
   background:color-mix(in srgb,var(--tier-text-color) 22%,#0d131a)!important;
   box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tier-text-color) 40%,transparent)!important;
 }
-html body #main-content #tools #card-filter-tier button[aria-pressed=true]::after {
-  content:none;
-}
-html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
+html body #main-content #tools #card-filter-energy button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
 
-html body #main-content #tools #card-filter-tier button[value=S] {
-  --tier-text-color:rgb(225, 112, 132);color:var(--tier-text-color)!important;
-  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
-}
-
-html body #main-content #tools #card-filter-tier button[value=A] {
-  --tier-text-color:rgb(227, 191, 114);color:var(--tier-text-color)!important;
-  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
-}
-
-html body #main-content #tools #card-filter-tier button[value=B] {
-  --tier-text-color:rgb(105, 176, 222);color:var(--tier-text-color)!important;
-  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
-}
-
-html body #main-content #tools #card-filter-tier button[value=C] {
-  --tier-text-color:rgb(105, 183, 139);color:var(--tier-text-color)!important;
-  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
-}
-
-html body #main-content #tools #card-filter-tier button[value=D] {
-  --tier-text-color:rgb(120, 132, 145);color:var(--tier-text-color)!important;
-  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
-}
-
-/* Energy filters share Tier button states without selection checkmarks. */
+/* Energy filter colors and states without selection checkmarks. */
 html body #main-content #tools #card-filter-energy button {
  --tier-text-color:#e3bf72;color:var(--tier-text-color)!important;gap:8px;
 }
@@ -1017,7 +964,7 @@ html body main#main-content #card-scroll .detail-untapped-link:focus-visible {ou
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] {padding-bottom:12px}
 
 /* Selection fill follows aria-pressed, including touch browsers that retain hover. */
-html body main#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button[aria-pressed=false] {
+html body main#main-content#main-content #tools .card-filter-buttons button[aria-pressed=false] {
   background:var(--control-bg,#0d131a)!important;
   box-shadow:none!important;
 }
@@ -1043,15 +990,15 @@ html body[data-view=grid] main#main-content#main-content#main-content #card-scro
   html body main#main-content#main-content #card-scroll .detail-type-metadata :is(dd[data-stat-rarity],.detail-plain-rarity) {white-space:normal;overflow-wrap:anywhere;justify-content:flex-end}
 }
 /* Subtle outlines distinguish available options and selected filters. */
-html body main#main-content#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button,
+html body main#main-content#main-content#main-content #tools .card-filter-buttons button,
 html body main#main-content#main-content#main-content #tools .filter-menu-toggle {
   border:2px solid #465365!important;
 }
-html body main#main-content#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button:is(:hover,[aria-pressed=true]),
+html body main#main-content#main-content#main-content #tools .card-filter-buttons button:is(:hover,[aria-pressed=true]),
 html body main#main-content#main-content#main-content #tools .filter-menu-toggle:is(:hover,[aria-expanded=true]) {
   border-color:var(--selection-color,#d9e5f2)!important;
 }
-html body main#main-content#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button:focus-visible,
+html body main#main-content#main-content#main-content #tools .card-filter-buttons button:focus-visible,
 html body main#main-content#main-content#main-content #tools .filter-menu-toggle:focus-visible {
   outline:2px solid #fff;outline-offset:3px;
 }
@@ -1076,6 +1023,25 @@ html body main#main-content#main-content .site-attribution a {
   color:#6b7280!important;
 }
 
+:root {--catalog-control-height:48px;--catalog-button-height:48px;--catalog-icon-button-height:50px}
+html body main#main-content#main-content#main-content .search-control,
+html body main#main-content#main-content#main-content .search-control input#search,
+html body main#main-content#main-content#main-content .shared-page-search input#search,
+html body main#main-content#main-content#main-content :is(.filter-menu-toggle,.card-language-toggle) {
+ box-sizing:border-box;height:var(--catalog-control-height)!important;
+ min-height:var(--catalog-control-height)!important;max-height:var(--catalog-control-height)!important;
+}
+html body main#main-content#main-content#main-content .relic-ancient-buttons>button,
+html body main#main-content#main-content#main-content .monster-filters>button {
+ box-sizing:border-box;height:var(--catalog-button-height)!important;
+ min-height:var(--catalog-button-height)!important;max-height:var(--catalog-button-height)!important;
+}
+html body main#main-content#main-content#main-content #relic-filter-pool>button,
+html body main#main-content#main-content#main-content .relic-ancient-menu>button {
+ box-sizing:border-box;height:var(--catalog-icon-button-height)!important;
+ min-height:var(--catalog-icon-button-height)!important;max-height:var(--catalog-icon-button-height)!important;
+}
+
 /* Category artwork replaces the navigation text labels. */
 html body>.site-header {box-sizing:border-box;width:100vw!important;max-width:none!important;margin-inline:0}
 html body .site-header .site-nav > a {box-sizing:border-box;height:52px!important;min-height:52px!important;max-height:52px!important;min-width:60px;padding:6px 12px!important;align-self:center}
@@ -1086,10 +1052,10 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(6,62px)!important;
+    grid-template-columns:repeat(5,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 392px!important;
-    width:392px!important;
+    flex:0 1 326px!important;
+    width:326px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
@@ -1111,7 +1077,7 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
@@ -1122,9 +1088,9 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
 /* Scale desktop navigation artwork and buttons together by 25%. */
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
-    grid-template-columns:repeat(6,77.5px)!important;
+    grid-template-columns:repeat(5,77.5px)!important;
     grid-auto-columns:77.5px!important;
-    flex:0 1 490px!important;width:490px!important;gap:5px;
+    flex:0 1 407.5px!important;width:407.5px!important;gap:5px;
   }
   html body .site-header .site-nav > a {
     flex:0 0 77.5px!important;width:77.5px!important;min-width:77.5px!important;max-width:77.5px!important;
@@ -1176,7 +1142,7 @@ html body .site-header .game-info-menu>a:hover {color:#fff!important;background:
 
 /* Compact tablets keep identical navigation sizing regardless of input detection. */
 @media screen and (min-width:601px) and (max-width:1180px) {
- html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 504px!important;width:504px!important;gap:4px}
+ html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 504px!important;width:504px!important;gap:4px}
  html body .site-header .site-nav>a {flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important;height:52px!important;min-height:52px!important;max-height:52px!important;padding:6px 12px!important;border-radius:6px}
  html body .site-header .site-nav a>.site-nav-visual {flex:0 0 36px;width:36px;height:36px}
  html body .site-header .site-nav .site-nav-icon {width:36px!important;height:36px!important;border-radius:6px!important}
@@ -1191,7 +1157,7 @@ html body .site-header .site-nav>a,html body .site-header .game-info-dropdown>su
 /* Navigation fills the space beside the logo with a consistent separation. */
 html body .site-header>.site-header-inner {flex-wrap:nowrap!important;column-gap:24px!important}
 html body .site-header .site-brand {flex:0 0 auto}
-html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
+html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
 html body .site-header .site-nav>a {width:100%!important;min-width:0!important;max-width:none!important;flex:1 1 0!important;padding-inline:0!important}
 html body .site-header .game-info-dropdown {width:100%;min-width:0;max-width:none;justify-self:stretch}
 
@@ -1202,27 +1168,27 @@ html {--site-nav-icon-size:36px}
 @media screen and (min-width:601px) and (max-width:1180px) {html {--site-nav-icon-size:36px}}
 /* Search icons are present and styled in the initial HTML. */
 html body main#main-content .search-control{position:relative;display:block;min-width:0;width:100%;flex:1 1 240px}
-html body main#main-content .search-control input#search{display:block;width:100%;max-width:none;margin:0;padding-left:46px!important;box-sizing:border-box}
+html body main#main-content .search-control input#search{display:block;width:100%;max-width:none;margin:0;padding-left:50px!important;box-sizing:border-box}
 html body main#main-content .search-control input#search::-webkit-search-cancel-button{display:none;-webkit-appearance:none}
-html body main#main-content .search-control>button.search-clear{position:absolute;left:4px;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;width:36px;height:36px;min-width:36px;min-height:36px;margin:0;padding:7px;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none!important;color:#aab6c4!important;cursor:pointer}
+html body main#main-content .search-control>button.search-clear{position:absolute;left:4px;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;width:36px;height:36px;min-width:36px;min-height:36px;margin:0;padding:4px;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none!important;color:#aab6c4!important;cursor:pointer}
 html body main#main-content .search-control>button.search-clear:hover{color:#37a8ec!important;background:#163047!important}
-html body main#main-content .search-clear .search-icon{font-size:20px;line-height:1;pointer-events:none}
+html body main#main-content .search-clear .search-icon{font-size:28px;line-height:1;pointer-events:none}
 html body main#main-content:is(.event-browser,.monster-browser,.encounter-browser) .chapter-filters>.search-control{order:-1;flex:0 0 auto}
 
 
 /* Show filter menus by default; the button restores their remembered state. */
-html body main#main-content #tools.filter-menu-closed>:is(.card-filter-rows,.card-action-row),
+html body main#main-content #tools.filter-menu-closed>.card-filter-rows,
 html body main#main-content .filters.filter-menu-closed>.catalog-filter-rows {display:none!important}
 html body main#main-content #tools .card-search,
-html body main#main-content .filters .catalog-search-tools:has(.filter-menu-toggle) {display:grid!important;grid-template-columns:minmax(0,1fr) 52px 52px!important;gap:8px;align-items:center;width:100%;min-width:0}
+html body main#main-content .filters .catalog-search-tools:has(.filter-menu-toggle) {display:grid!important;grid-template-columns:minmax(0,1fr) var(--catalog-control-height,48px)!important;gap:8px;align-items:center;width:100%;min-width:0}
 html body main#main-content .filters:has(.filter-menu-toggle) {display:flex!important;flex-direction:column;align-items:stretch}
 html body main#main-content .filters .catalog-search-tools:has(.filter-menu-toggle) {order:-1;margin:0}
-html body main#main-content :is(#tools,.filters) button.filter-menu-toggle {display:inline-flex!important;align-items:center;justify-content:center;gap:6px;box-sizing:border-box;width:52px;min-width:52px;height:48px;min-height:48px;margin:0;padding:8px;border:1px solid #6faeee;border-radius:7px;background:#0d131a;color:#e3e8ee!important;font:16px/1.4 Arial,"Microsoft JhengHei",sans-serif;cursor:pointer}
+html body main#main-content :is(#tools,.filters) button.filter-menu-toggle {display:inline-flex!important;align-items:center;justify-content:center;gap:6px;box-sizing:border-box;width:var(--catalog-control-height,48px);min-width:var(--catalog-control-height,48px);height:48px;min-height:48px;margin:0;padding:8px;border:1px solid #6faeee;border-radius:7px;background:#0d131a;color:#e3e8ee!important;font:16px/1.4 Arial,"Microsoft JhengHei",sans-serif;cursor:pointer}
 html body main#main-content :is(#tools,.filters) button.filter-menu-toggle:is(:hover,:focus-visible,[aria-expanded=true]) {border-color:#37a8ec;background:#163047}
-html body main#main-content button.filter-menu-toggle>span {display:block;font:22px/1 Arial,sans-serif;flex:none}
+html body main#main-content button.filter-menu-toggle>span {display:block;font:28px/1 Arial,sans-serif;flex:none}
 
 /* Card effect language sits immediately before the filter menu button. */
-html body main#main-content :is(#tools .card-search,.filters .catalog-search-tools):has(.card-language-toggle) {grid-template-columns:minmax(0,1fr) 52px 52px 52px!important}
+html body main#main-content :is(#tools .card-search,.filters .catalog-search-tools):has(.card-language-toggle) {grid-template-columns:minmax(0,1fr) 52px var(--catalog-control-height,48px)!important}
 html body main#main-content :is(#tools,.filters) button.card-language-toggle {display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;width:52px;min-width:52px;height:48px;min-height:48px;margin:0;padding:8px;border:1px solid #6faeee;border-radius:7px;background:#0d131a;color:#e3e8ee;font:600 18px/1.4 Arial,"Microsoft JhengHei",sans-serif;cursor:pointer}
 html body main#main-content :is(#tools,.filters) button.card-language-toggle:is(:hover,:focus-visible) {border-color:#37a8ec;background:#163047}
 html body main#main-content :is(#card-scroll,#catalog-scroll) [data-effect-language][hidden] {display:none!important}
@@ -1235,6 +1201,9 @@ html body main#main-content .filter-menu-panel[hidden] {display:none!important}
 /* Relic and potion filters remain visible below their search fields. */
 html body main#main-content :is(.relic-filters,.potion-filters) {display:flex!important;flex-direction:column;align-items:stretch;gap:8px}
 html body main#main-content :is(.relic-filters,.potion-filters)>.catalog-search-tools {order:-1;width:100%;margin:0}
+
+/* Search text scales with the shared 48px search field. */
+html body main#main-content#main-content#main-content .search-control input#search {font-size:20px!important;line-height:1.4!important}
 :root {color-scheme:dark;--bg:#040609;--paper:#0b1119;--ink:#e3e8ee;--muted:#aab6c4;--line:#354454}
 * {box-sizing:border-box}
 body {margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Arial,"Microsoft JhengHei",sans-serif}
@@ -1246,8 +1215,15 @@ html body:not([data-detail-kind]) main#main-content#main-content#main-content.mo
 .monster-tools {display:flex;flex-direction:column;gap:12px;margin-bottom:24px}
 .monster-search-tools {display:grid;grid-template-columns:minmax(0,1fr);align-items:center}
 .monster-filters {display:flex;flex-wrap:wrap;gap:8px;width:100%;min-width:0;padding:8px;border:1px solid #6faeee;border-radius:10px}
-.monster-filters button {display:inline-flex;align-items:center;justify-content:center;flex:1 1 auto;min-width:0;min-height:48px;padding:8px 14px;border:1px solid #344454;border-radius:8px;background:#0b1119;color:var(--ink);font:400 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;cursor:pointer}
+.monster-filters button {display:inline-flex;align-items:center;justify-content:center;flex:1 1 auto;min-width:0;min-height:48px;padding:8px 14px;border:1px solid #344454;border-radius:8px;background:#0b1119;color:var(--ink);font:700 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;cursor:pointer}
 .monster-filters button {--button-accent:var(--region-color);color:var(--region-color)}
+@media screen and (max-width:1024px), screen and (max-width:1440px) and (hover:none), screen and (max-width:1440px) and (pointer:coarse) {
+ html body:not([data-detail-kind]) main#main-content#main-content#main-content.monster-catalog {width:100%!important}
+ .monster-filters {display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media screen and (max-width:600px) {
+ .monster-filters {grid-template-columns:minmax(0,1fr)}
+}
 .monster-filters button:is(:hover,[aria-pressed=true]) {border-color:var(--region-color);background:color-mix(in srgb,var(--region-color) 18%,#0b1119);color:var(--region-color)}
 .monster-filters button:focus-visible,.monster-tools :is(input,button):focus-visible,.monster-card:focus-visible {outline:2px solid #74b3e6;outline-offset:3px}
 .monster-region {margin-bottom:32px}
@@ -1268,12 +1244,11 @@ html body:not([data-detail-kind]) main#main-content#main-content#main-content.mo
 .monster-category[data-type=Elite] {--category-color:#e1bb6c}
 .monster-category[data-type=Hard] {--category-color:#74b3e6}
 .monster-category[data-type=Weak] {--category-color:#80bd99}
-.monster-category .monster-kind {color:var(--category-color);border-color:color-mix(in srgb,var(--category-color) 45%,#25313e);background:color-mix(in srgb,var(--category-color) 12%,#0b1119)}
+.monster-category-title {margin:0 0 12px;color:var(--category-color);font:700 20px/1.4 Arial,"Microsoft JhengHei",sans-serif}
 .monster-card {display:flex;flex-direction:column;gap:12px;min-width:0;padding:12px;border:1px solid #354454;border-radius:12px;background:var(--paper);color:var(--ink);text-decoration:none;transition:border-color .15s,background .15s}
 .monster-card:hover {border-color:var(--category-color);background:#101b25}
-.monster-card-head {display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
-.monster-card h3 {margin:0;min-width:0;font-size:18px;line-height:1.4;overflow-wrap:anywhere;color:var(--category-color)}
-.monster-kind {flex:none;padding:3px 7px;border:1px solid #465365;border-radius:5px;font-size:18px;line-height:1.4;color:var(--category-color);background:#1b2633}
+.monster-card-head {display:flex;align-items:center;justify-content:center;text-align:center}
+.monster-card h4 {display:flex;flex-direction:column;align-items:center;gap:4px;margin:0;min-width:0;max-width:100%;font-size:18px;line-height:1.4;overflow-wrap:anywhere;color:var(--category-color)}
 .monster-lineup {display:grid;grid-template-columns:repeat(var(--members),minmax(0,1fr));align-items:stretch;gap:6px;flex:1;min-width:0;padding:8px 0}
 .monster-member {display:flex;flex-direction:column;align-items:center;min-width:0;margin:0;gap:8px}
 .monster-member img {display:block;object-fit:contain;width:100%;height:148px;min-width:0}
@@ -1304,7 +1279,7 @@ html body main#main-content {padding-block:20px 24px}
 
 /* Let menus and details fill the shared page frame at tablet widths. */
 @media screen and (min-width:600px) and (max-width:1366px) {
-  html body main#main-content:is(.event-browser[data-event-step],.monster-browser[data-monster-step],.ancient-browser) .split-body,
+  html body main#main-content:is(.event-browser[data-event-step],.monster-browser[data-monster-step]) .split-body,
   html body main#main-content>:is(.character-sidebar,.tier-sidebar,.relic-filters,.potion-filters),
   html body main#main-content>.build-layout .build-content,
   html body main#main-content:has(>.relic-filters,>.potion-filters)>.catalog-scroll {
@@ -1352,12 +1327,9 @@ html body main#main-content:has(>#card-scroll)>#tools {margin-block:0!important}
 html body main#main-content>.mobile-search-row {margin-block:0 8px!important;padding-block:0!important}
 html body main#main-content .split-list {row-gap:8px!important}
 html body main#main-content .split-list>.filters {margin-block:0!important}
-html body main#main-content [data-ancient-top-menu] {margin-bottom:8px}
-html body main#main-content [data-ancient-top-menu]>div {margin-top:8px}
 
 /* Use consistent colored frames for filter groups on every device. */
 html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools .card-action-row,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   box-sizing:border-box;
   min-width:0;
@@ -1374,7 +1346,6 @@ html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-
   --filter-frame-color:#e3bf72;
 }
 html body main#main-content #tools .card-filter-row:has(#card-filter-type) {--filter-frame-color:#6faeee}
-html body main#main-content #tools .card-action-row {--filter-frame-color:#70bf8b}
 @media screen and (max-width:599px), screen and (pointer:coarse) and (max-width:1000px) and (max-height:500px) {
   html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
     grid-template-columns:minmax(0,1fr);
@@ -1386,16 +1357,13 @@ html body main#main-content #tools .card-action-row {--filter-frame-color:#70bf8
 
 /* Filter buttons fill their frames without visible group headings. */
 html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools .card-action-row,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   grid-template-columns:minmax(0,1fr);
 }
 html body main#main-content #tools .card-filter-row > span,
-html body main#main-content #tools .card-tier-label,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row > span {
   display:none;
 }
-html body main#main-content #tools .card-tier-choices {grid-column:1}
 
 /* Fill each filter frame while keeping content-based button proportions. */
 html body main#main-content #tools .card-filter-buttons,
@@ -1405,13 +1373,7 @@ html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-
   width:100%;
   min-width:0;
 }
-html body main#main-content #tools .card-tier-choices {
-  display:flex;
-  flex-wrap:wrap;
-  width:100%;
-  min-width:0;
-}
-html body main#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button,
+html body main#main-content #tools .card-filter-buttons button,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-buttons button {
   box-sizing:border-box;
   width:auto;
@@ -1428,20 +1390,13 @@ html body main#main-content :is(#tools,.relic-filters,.potion-filters) .filter-c
 }
 
 /* Card filter groups share a blue outer frame. */
-html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools .card-action-row {
+html body main#main-content #tools .card-filter-row {
   border-color:#6faeee;
 }
 
 /* Relic and potion filter groups use the same blue outer frame. */
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   border-color:#6faeee;
-}
-
-/* Random-search buttons share the blue filter-frame border. */
-html body main#main-content #tools #aoe-toggle,
-html body main#main-content .filters .catalog-search-tools>button.catalog-random {
-  border-color:#6faeee!important;
 }
 
 /* Equal spacing above and below the header divider. */
@@ -1452,7 +1407,7 @@ html body main#main-content {padding-top:8px!important}
 * { scrollbar-width: thin; }
 
 /* Filter dropdowns on the catalog pages. */
-html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) > select {
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .encounter-filters > label) > select {
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -1468,11 +1423,11 @@ html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-ra
   font: 16px/1.4 system-ui, sans-serif;
   text-overflow: ellipsis;
 }
-html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) > select:focus-visible {
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .encounter-filters > label) > select:focus-visible {
   outline: 2px solid var(--focus, #37a8ec);
   outline-offset: -2px;
 }
-html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) {
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .encounter-filters > label) {
   color: #fff;
   align-items: center;
   margin-block: 0;
@@ -1504,22 +1459,21 @@ html body:not([data-detail-kind]) main#main-content#main-content#main-content {
 
 /* Catalogs scroll with the document; only the navigation stays at the top. */
 @media screen {
-  html:has(main#main-content.ancient-browser,main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
+  html:has(main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
     height:auto!important;min-height:100%;overflow-x:clip!important;overflow-y:auto!important;
   }
-  body:has(main#main-content.ancient-browser,main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
+  body:has(main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
     position:static!important;inset:auto!important;display:block!important;width:100%;
     height:auto!important;min-height:100dvh;overflow:visible!important;
   }
-  body:has(main#main-content.ancient-browser,main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters)>.site-header {
+  body:has(main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters)>.site-header {
     position:sticky!important;top:0!important;z-index:100;
   }
-  html body main#main-content#main-content:is(.ancient-browser,:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters)) {
+  html body main#main-content#main-content:is(:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters)) {
     display:block!important;flex:none!important;height:auto!important;min-height:0;
     max-height:none!important;overflow:visible!important;
   }
-  html body main#main-content#main-content:is(.ancient-browser,:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters))>:is(.tools,.filters,.card-scroll,.catalog-scroll,.split-body,.mobile-search-row),
-  html body main#main-content#main-content.ancient-browser .split-detail {
+  html body main#main-content#main-content:is(:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters))>:is(.tools,.filters,.card-scroll,.catalog-scroll,.split-body,.mobile-search-row) {
     position:static!important;flex:none!important;height:auto!important;
     min-height:0;max-height:none!important;overflow:visible!important;scrollbar-gutter:auto;
   }
@@ -1532,9 +1486,6 @@ html body:not([data-detail-kind]) main#main-content#main-content#main-content {
 :root {--card-tier-A:rgb(227, 191, 114);--catalog-tier-A:rgb(227, 191, 114)}
 html body :is(.tier,.build-tier,.card-tier-badge,.relic-tier-label,.font-extrabold)[data-tier=A] {
   --tier-color:rgb(227, 191, 114)!important;background:rgb(227, 191, 114)!important;color:#000!important;border-color:rgb(227, 191, 114)!important;
-}
-html body :is([data-tier-filter=A],#card-filter-tier button[value=A]) {
-  --tier-color:rgb(227, 191, 114)!important;--selection-color:rgb(227, 191, 114)!important;
 }
 html body .card-detail :is(.detail-tier,.detail-build-tier)[data-tier=A] {
   color:rgb(227, 191, 114);background:color-mix(in srgb,rgb(227, 191, 114) 16%,#0b1119);border-color:rgb(227, 191, 114);
@@ -1619,7 +1570,7 @@ html body #main-content [data-rarity=Uncommon] {--rarity-color:#4f9bd9!important
 html body #main-content .card-detail-row[data-rarity=Uncommon] .card-detail {--detail-rarity-color:#4f9bd9}
 html body #main-content :is([data-stat-rarity=Uncommon],[data-relic-rarity=Uncommon],.rarity[data-rarity=Uncommon],.card-text-link[data-rarity=Uncommon],.build-card-list a[data-rarity=Uncommon]) {color:#4f9bd9!important}
 html body #main-content .potion-section[data-rarity=Uncommon]>.potion-section-title {color:#4f9bd9}
-html body #main-content :is(#card-filter-rarity button[value=Uncommon],[data-catalog-filter=rarity][value=Uncommon],button[data-rarity-filter=Uncommon],[data-filter-group=rarity][data-filter-value=Uncommon]) {--selection-color:#4f9bd9!important;--rarity-color:#4f9bd9!important}
+html body #main-content :is(#card-filter-rarity button[value=Uncommon],[data-catalog-filter=rarity][value=Uncommon],button[data-rarity-filter=Uncommon]) {--selection-color:#4f9bd9!important;--rarity-color:#4f9bd9!important}
 
 /* Rare matches the Block keyword on the reference True Grit page. */
 html body #main-content [data-rarity=Rare] {--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--detail-rarity-color:#efc851}
@@ -1627,7 +1578,7 @@ html body #main-content .card-detail-row[data-rarity=Rare] .card-detail {--detai
 html body #main-content :is([data-stat-rarity=Rare],[data-label-rarity=Rare],[data-relic-rarity=Rare],.rarity[data-rarity=Rare],.card-text-link[data-rarity=Rare],.build-card-list a[data-rarity=Rare]) {color:#efc851!important}
 html body #main-content .potion-section[data-rarity=Rare] {--group-color:#efc851!important}
 html body #main-content .potion-section[data-rarity=Rare]>.potion-section-title {color:#efc851}
-html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Rare],[data-catalog-filter=rarity][value=Rare],button[data-rarity-filter=Rare],[data-filter-group=rarity][data-filter-value=Rare]) {--selection-color:#efc851!important;--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--rarity-text-color:#efc851!important;color:#efc851!important}
+html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Rare],[data-catalog-filter=rarity][value=Rare],button[data-rarity-filter=Rare]) {--selection-color:#efc851!important;--rarity-color:#efc851!important;--plain-rarity-color:#efc851!important;--rarity-text-color:#efc851!important;color:#efc851!important}
 
 /* Common has its own light green, distinct from Basic and Starter. */
 html body #main-content [data-rarity=Common] {--rarity-color:#a8dca4!important;--plain-rarity-color:#a8dca4!important;--detail-rarity-color:#a8dca4;--card-name-color:#a8dca4}
@@ -1635,51 +1586,23 @@ html body #main-content .card-detail-row[data-rarity=Common] .card-detail {--det
 html body #main-content :is([data-stat-rarity=Common],[data-label-rarity=Common],[data-relic-rarity=Common],.rarity[data-rarity=Common],.guide-resource-name[data-rarity=Common],.card-text-link[data-rarity=Common]) {color:#a8dca4!important}
 html body #main-content .potion-section[data-rarity=Common] {--group-color:#a8dca4!important}
 html body #main-content .potion-section[data-rarity=Common]>.potion-section-title {color:#a8dca4}
-html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Common],[data-catalog-filter=rarity][value=Common],button[data-rarity-filter=Common],[data-filter-group=rarity][data-filter-value=Common]) {--selection-color:#a8dca4!important;--rarity-color:#a8dca4!important;--plain-rarity-color:#a8dca4!important;--rarity-text-color:#a8dca4!important;color:#a8dca4!important}
+html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Common],[data-catalog-filter=rarity][value=Common],button[data-rarity-filter=Common]) {--selection-color:#a8dca4!important;--rarity-color:#a8dca4!important;--plain-rarity-color:#a8dca4!important;--rarity-text-color:#a8dca4!important;color:#a8dca4!important}
 
-/* Card tier filters use the same button presentation as Type filters. */
-html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button {
+/* Energy filters use the same button presentation as Type filters. */
+html body #main-content #tools #card-filter-energy button {
   min-height:48px;padding:8px;border-radius:8px;
   font:400 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;
   background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
   position:relative;
 }
-html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button[value][aria-pressed=true] {
+html body #main-content #tools #card-filter-energy button[value][aria-pressed=true] {
   border-color:var(--tier-text-color)!important;
   background:color-mix(in srgb,var(--tier-text-color) 22%,#0d131a)!important;
   box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tier-text-color) 40%,transparent)!important;
 }
-html body #main-content #tools #card-filter-tier button[aria-pressed=true]::after {
-  content:none;
-}
-html body #main-content #tools :is(#card-filter-tier,#card-filter-energy) button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
+html body #main-content #tools #card-filter-energy button:is(:hover,:focus-visible) {border-color:var(--tier-text-color)!important}
 
-html body #main-content #tools #card-filter-tier button[value=S] {
-  --tier-text-color:rgb(225, 112, 132);color:var(--tier-text-color)!important;
-  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
-}
-
-html body #main-content #tools #card-filter-tier button[value=A] {
-  --tier-text-color:rgb(227, 191, 114);color:var(--tier-text-color)!important;
-  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
-}
-
-html body #main-content #tools #card-filter-tier button[value=B] {
-  --tier-text-color:rgb(105, 176, 222);color:var(--tier-text-color)!important;
-  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
-}
-
-html body #main-content #tools #card-filter-tier button[value=C] {
-  --tier-text-color:rgb(105, 183, 139);color:var(--tier-text-color)!important;
-  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
-}
-
-html body #main-content #tools #card-filter-tier button[value=D] {
-  --tier-text-color:rgb(120, 132, 145);color:var(--tier-text-color)!important;
-  background:var(--control-bg,#0d131a)!important;border:1px solid var(--line)!important;
-}
-
-/* Energy filters share Tier button states without selection checkmarks. */
+/* Energy filter colors and states without selection checkmarks. */
 html body #main-content #tools #card-filter-energy button {
  --tier-text-color:#e3bf72;color:var(--tier-text-color)!important;gap:8px;
 }
@@ -1891,7 +1814,7 @@ html body main#main-content #card-scroll .detail-untapped-link:focus-visible {ou
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] {padding-bottom:12px}
 
 /* Selection fill follows aria-pressed, including touch browsers that retain hover. */
-html body main#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button[aria-pressed=false] {
+html body main#main-content#main-content #tools .card-filter-buttons button[aria-pressed=false] {
   background:var(--control-bg,#0d131a)!important;
   box-shadow:none!important;
 }
@@ -1917,15 +1840,15 @@ html body[data-view=grid] main#main-content#main-content#main-content #card-scro
   html body main#main-content#main-content #card-scroll .detail-type-metadata :is(dd[data-stat-rarity],.detail-plain-rarity) {white-space:normal;overflow-wrap:anywhere;justify-content:flex-end}
 }
 /* Subtle outlines distinguish available options and selected filters. */
-html body main#main-content#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button,
+html body main#main-content#main-content#main-content #tools .card-filter-buttons button,
 html body main#main-content#main-content#main-content #tools .filter-menu-toggle {
   border:2px solid #465365!important;
 }
-html body main#main-content#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button:is(:hover,[aria-pressed=true]),
+html body main#main-content#main-content#main-content #tools .card-filter-buttons button:is(:hover,[aria-pressed=true]),
 html body main#main-content#main-content#main-content #tools .filter-menu-toggle:is(:hover,[aria-expanded=true]) {
   border-color:var(--selection-color,#d9e5f2)!important;
 }
-html body main#main-content#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button:focus-visible,
+html body main#main-content#main-content#main-content #tools .card-filter-buttons button:focus-visible,
 html body main#main-content#main-content#main-content #tools .filter-menu-toggle:focus-visible {
   outline:2px solid #fff;outline-offset:3px;
 }
@@ -1950,6 +1873,25 @@ html body main#main-content#main-content .site-attribution a {
   color:#6b7280!important;
 }
 
+:root {--catalog-control-height:48px;--catalog-button-height:48px;--catalog-icon-button-height:50px}
+html body main#main-content#main-content#main-content .search-control,
+html body main#main-content#main-content#main-content .search-control input#search,
+html body main#main-content#main-content#main-content .shared-page-search input#search,
+html body main#main-content#main-content#main-content :is(.filter-menu-toggle,.card-language-toggle) {
+ box-sizing:border-box;height:var(--catalog-control-height)!important;
+ min-height:var(--catalog-control-height)!important;max-height:var(--catalog-control-height)!important;
+}
+html body main#main-content#main-content#main-content .relic-ancient-buttons>button,
+html body main#main-content#main-content#main-content .monster-filters>button {
+ box-sizing:border-box;height:var(--catalog-button-height)!important;
+ min-height:var(--catalog-button-height)!important;max-height:var(--catalog-button-height)!important;
+}
+html body main#main-content#main-content#main-content #relic-filter-pool>button,
+html body main#main-content#main-content#main-content .relic-ancient-menu>button {
+ box-sizing:border-box;height:var(--catalog-icon-button-height)!important;
+ min-height:var(--catalog-icon-button-height)!important;max-height:var(--catalog-icon-button-height)!important;
+}
+
 
 /* Category artwork replaces the navigation text labels. */
 html body>.site-header {box-sizing:border-box;width:100vw!important;max-width:none!important;margin-inline:0}
@@ -1961,10 +1903,10 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(6,62px)!important;
+    grid-template-columns:repeat(5,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 392px!important;
-    width:392px!important;
+    flex:0 1 326px!important;
+    width:326px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
@@ -1986,7 +1928,7 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
@@ -1997,9 +1939,9 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
 /* Scale desktop navigation artwork and buttons together by 25%. */
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
-    grid-template-columns:repeat(6,77.5px)!important;
+    grid-template-columns:repeat(5,77.5px)!important;
     grid-auto-columns:77.5px!important;
-    flex:0 1 490px!important;width:490px!important;gap:5px;
+    flex:0 1 407.5px!important;width:407.5px!important;gap:5px;
   }
   html body .site-header .site-nav > a {
     flex:0 0 77.5px!important;width:77.5px!important;min-width:77.5px!important;max-width:77.5px!important;
@@ -2051,7 +1993,7 @@ html body .site-header .game-info-menu>a:hover {color:#fff!important;background:
 
 /* Compact tablets keep identical navigation sizing regardless of input detection. */
 @media screen and (min-width:601px) and (max-width:1180px) {
- html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 504px!important;width:504px!important;gap:4px}
+ html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 504px!important;width:504px!important;gap:4px}
  html body .site-header .site-nav>a {flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important;height:52px!important;min-height:52px!important;max-height:52px!important;padding:6px 12px!important;border-radius:6px}
  html body .site-header .site-nav a>.site-nav-visual {flex:0 0 36px;width:36px;height:36px}
  html body .site-header .site-nav .site-nav-icon {width:36px!important;height:36px!important;border-radius:6px!important}
@@ -2066,7 +2008,7 @@ html body .site-header .site-nav>a,html body .site-header .game-info-dropdown>su
 /* Navigation fills the space beside the logo with a consistent separation. */
 html body .site-header>.site-header-inner {flex-wrap:nowrap!important;column-gap:24px!important}
 html body .site-header .site-brand {flex:0 0 auto}
-html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
+html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
 html body .site-header .site-nav>a {width:100%!important;min-width:0!important;max-width:none!important;flex:1 1 0!important;padding-inline:0!important}
 html body .site-header .game-info-dropdown {width:100%;min-width:0;max-width:none;justify-self:stretch}
 
@@ -2078,26 +2020,31 @@ html {--site-nav-icon-size:36px}
 
 /* Catalogs scroll with the document; only the navigation stays at the top. */
 @media screen {
-  html:has(main#main-content.ancient-browser,main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
+  html:has(main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
     height:auto!important;min-height:100%;overflow-x:clip!important;overflow-y:auto!important;
   }
-  body:has(main#main-content.ancient-browser,main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
+  body:has(main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
     position:static!important;inset:auto!important;display:block!important;width:100%;
     height:auto!important;min-height:100dvh;overflow:visible!important;
   }
-  body:has(main#main-content.ancient-browser,main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters)>.site-header {
+  body:has(main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters)>.site-header {
     position:sticky!important;top:0!important;z-index:100;
   }
-  html body main#main-content#main-content:is(.ancient-browser,:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters)) {
+  html body main#main-content#main-content:is(:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters)) {
     display:block!important;flex:none!important;height:auto!important;min-height:0;
     max-height:none!important;overflow:visible!important;
   }
-  html body main#main-content#main-content:is(.ancient-browser,:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters))>:is(.tools,.filters,.card-scroll,.catalog-scroll,.split-body,.mobile-search-row),
-  html body main#main-content#main-content.ancient-browser .split-detail {
+  html body main#main-content#main-content:is(:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters))>:is(.tools,.filters,.card-scroll,.catalog-scroll,.split-body,.mobile-search-row) {
     position:static!important;flex:none!important;height:auto!important;
     min-height:0;max-height:none!important;overflow:visible!important;scrollbar-gutter:auto;
   }
   html body main#main-content#main-content:is(:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters)) :is(.grid-pool-heading,.relic-section-title,.potion-section-title) {
     position:static!important;top:auto;
   }
+}
+
+/* Phones show only the five category icons, with no empty menu column. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body .site-header .game-info-dropdown {display:none!important}
+ html body .site-header .site-nav {grid-template-columns:repeat(5,minmax(0,1fr))!important}
 }

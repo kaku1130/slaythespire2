@@ -10,7 +10,7 @@ const {normalize,cardUrl}=require('./content-links.cjs');
   await context.route('https://sts2.untapped.gg/**',route=>route.fulfill({contentType:'text/html',body:'<!doctype html><title>Link target verification</title>'}));
   const page=await context.newPage(),errors=[];
   page.on('pageerror',error=>errors.push(error.message));
-  const pages=['characters.html','cards.html','relics.html','potions.html','ancients.html',...fs.readdirSync('data/ancient').filter(name=>/^ancient-.*\.html$/.test(name)).map(name=>'data/ancient/'+name)];
+  const pages=['characters.html','cards.html','relics.html','potions.html'];
   let count=0;
   for(const file of pages){
    await page.goto(pathToFileURL(path.resolve(file)).href);

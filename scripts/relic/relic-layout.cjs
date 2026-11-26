@@ -3,6 +3,8 @@ const fs=require('fs');
 const source=fs.readFileSync('data/relic/source/index.html','utf8').split('</main>')[0];
 const groups=[['Ironclad','Ironclad','#dc6c68'],['Silent','Silent','#70bf8b'],['Defect','Defect','#6faeee'],['Regent','Regent','#e3bf72'],['Necrobinder','Necrobinder','#b595dd'],['Shared','Colorless','#aab6c4'],['Event','Event','#6ac1b4'],['Fallback','Other','#c8ab79']];
 const iconNames={Ironclad:'ironclad',Silent:'silent',Defect:'defect',Necrobinder:'necrobinder',Regent:'regent',Shared:'colorless',Event:'event',Fallback:'other'};
+const ancientOrder=new Map(Object.values(require('./ancient-order.cjs')).flat().map((id,index)=>[id,index]));
+const ancientOwners=new Map(Object.entries(require('./ancient-order.cjs')).flatMap(([slug,ids])=>ids.map(id=>[id,slug])));
 function compare(a,b){const group=x=>groups.findIndex(g=>g[0]===x.pool),rank=x=>{const i=source.indexOf('src="'+x.imagePath+'"');return i<0?Infinity:i;};return group(a)-group(b)||rank(a)-rank(b)||a.name.localeCompare(b.name,'zh-TW');}
 
 const escapeHtml = text => text.replace(/[&<>]/g, char => ({'&':'&amp;', '<':'&lt;', '>':'&gt;'})[char]);
@@ -32,6 +34,7 @@ function formatCatalogCard(article,item,options={}){
   const rarity='<span class="relic-rarity-row" lang="en">'+ancientIcons+renderClassification(item.rarity)+'</span>';
   const poolMarkup='<span class="relic-pool-corner" lang="en" title="'+escapeHtml(label)+'" aria-label="'+escapeHtml(label)+'"><img src="'+(options.prefix||'')+'assets/cards/icons/'+icon+'.webp" alt="" width="20" height="20"><span>'+escapeHtml(label)+'</span></span>';
   return formatted
+    .replace('<article ','<article data-ancient="'+(ancientOwners.get(item.id)||'')+'" ')
     .replace(/<div class="relic-rarity-row"[^>]*>[\s\S]*?<\/div>/,'')
     .replace(/(<img\b[^>]*>)/,'<div class="relic-icon-row" style="--pool-color:'+pool[2]+'">'+poolMarkup+'$1'+rarity+'</div>');
 }
@@ -41,6 +44,7 @@ function render(content,items){
  const colors=require('../cards/rarity-text-colors.cjs');
  return ['Starter','Common','Uncommon','Rare','Ancient','Shop','Event','None'].map(rarity=>{
   const members=items.filter(x=>x.rarity===rarity),color=colors[rarity];
+  if(rarity==='Ancient')members.sort((a,b)=>(ancientOrder.get(a.id)??Infinity)-(ancientOrder.get(b.id)??Infinity));
   return members.length?'<section class="relic-section" data-rarity="'+rarity+'" style="--pool-color:'+color+'"><h2 class="relic-section-title" lang="en">'+rarity+' <span class="relic-section-count">('+members.length+')</span></h2><div class="catalog">'+members.map(x=>formatCatalogCard(articles.get(x.id).replace('class="entry relic"','class="entry relic catalog-relic-card" data-relic-id="'+x.id+'"'),x,{localizedRarity:false})).join('')+'</div></section>':'';
  }).join('');
 }

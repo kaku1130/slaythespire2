@@ -6,8 +6,7 @@ const files = {
   cards:['assets/cards/icons/nav-cards.webp','cover'],
   relic:['assets/relic/images/nav-relics.webp','contain'],
   potion:['assets/potion/images/nav-potions.webp','contain'],
-  monster:['assets/monster/images/the-insatiable.webp','contain'],
-  ancient:['assets/ancient/images/icon/neow.webp','contain']
+  monster:['assets/monster/images/the-insatiable.webp','contain']
 };
 const columnCount=Object.keys(files).length;
 const navigationWidth=columnCount*62+(columnCount-1)*4;
@@ -115,4 +114,12 @@ html {--site-nav-icon-size:36px}
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {html {--site-nav-icon-size:45px}}
 @media screen and (max-width:600px) {html {--site-nav-icon-size:32px}}
 @media screen and (min-width:601px) and (max-width:1180px) {html {--site-nav-icon-size:36px}}
+`;
+
+module.exports.styles+=`
+/* Phones show only the five category icons, with no empty menu column. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body .site-header .game-info-dropdown {display:none!important}
+ html body .site-header .site-nav {grid-template-columns:repeat(${columnCount},minmax(0,1fr))!important}
+}
 `;

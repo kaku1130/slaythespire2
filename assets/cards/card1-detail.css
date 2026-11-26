@@ -277,7 +277,7 @@ html body main#main-content #tools #card-filter-character button {grid-column:sp
 html body main#main-content #tools #card-filter-character button:is([value=Colorless],[value=Event],[value=Curse]) {grid-column:span 10}
 
 /* Power, Rare and tier A share the reference Block gold on the card page. */
-html body.cards-desktop main#main-content#main-content#main-content #tools :is(#card-filter-type button[value=Power],#card-filter-rarity button[value=Rare],#card-filter-tier button[value=A]) {
+html body.cards-desktop main#main-content#main-content#main-content #tools :is(#card-filter-type button[value=Power],#card-filter-rarity button[value=Rare]) {
  --selection-color:#efc851!important;--rarity-text-color:#efc851!important;--tier-text-color:#efc851!important;color:#efc851!important;
 }
 html body.cards-desktop main#main-content #card-scroll :is([data-type=Power]:not(.detail-type-label),[data-stat-rarity=Rare],[data-label-rarity=Rare]) {color:#efc851!important}

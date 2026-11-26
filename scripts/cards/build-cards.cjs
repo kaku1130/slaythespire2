@@ -29,11 +29,6 @@ function renderCardFilters(groups) {
     return '<div class="card-filter-row"><span>' + label + '</span><div class="card-filter-buttons" id="card-filter-' + key + '" role="group" aria-label="' + label + '">' + buttons + '</div></div>';
   }).join('') + '</div>';
 }
-function renderCardActions() {
-  const tiers = ['S', 'A', 'B', 'C', 'D'];
-  const buttons = tiers.map(tier => '<button type="button" value="' + tier + '" aria-pressed="false">' + tier + '</button>').join('');
-  return '<div class="card-action-row"><span class="card-tier-label">Tier</span><div class="card-tier-choices" id="card-filter-tier" role="group" aria-label="Tier">' + buttons + '</div>' + '</div>';
-}
 const expected = categories.map(pool=>cards.filter(card=>category(card)===pool).length);
 assert.equal(new Set(cards.map(c => c.id)).size, cards.length);
 assert.equal(expected.reduce((sum,count)=>sum+count,0), cards.length);
@@ -116,7 +111,7 @@ footer{font-size:12px;color:var(--muted);border-top:1px solid var(--line);paddin
 @media print{:root{color-scheme:light;--ink:#17212b;--muted:#53606c;--line:#cdd3da;--paper:white;--bg:white}body{background:white}main{max-width:none;padding:0}.tools{display:none}.table-wrap{overflow:visible;border-radius:0}table{min-width:0;font-size:10px}td,th{padding:5px 8px}th{background:#eef0f2}thead{display:table-header-group}tr{break-inside:avoid}h2{color:var(--ink);break-after:avoid}a{color:var(--ink);text-decoration:none}.type,.rarity{color:var(--ink)!important;font-size:10px}.name a{color:var(--ink)!important}section{margin-bottom:20px}footer{margin-top:20px}}
 .sort-button{display:flex;align-items:center;gap:8px;width:100%;padding:0;border:0;background:none;color:inherit;text-align:left;cursor:pointer;font:inherit;white-space:nowrap}.sort-button:hover{color:var(--ink)}.sort-icon{opacity:.45;font-size:12px}th[aria-sort=ascending],th[aria-sort=descending]{color:var(--ink)}th[aria-sort=ascending] .sort-icon,th[aria-sort=descending] .sort-icon{opacity:1;color:var(--accent)}
 .pool-icon{width:20px;height:20px;flex-shrink:0;object-fit:contain}.all-icon{width:18px;height:18px;flex-shrink:0}
-span.tier{display:inline-flex;align-items:center;justify-content:center;min-width:28px;padding:1px 7px;border:1px solid transparent;border-radius:4px;font-size:12px;font-weight:700;line-height:1.6;color:#fff}:root{--card-tier-S:#d05a68}.tier[data-tier=S],[data-tier-filter=S]{--tier-color:var(--card-tier-S)}:root{--card-tier-A:#cc773d}.tier[data-tier=A],[data-tier-filter=A]{--tier-color:var(--card-tier-A)}:root{--card-tier-B:#4e8dcc}.tier[data-tier=B],[data-tier-filter=B]{--tier-color:var(--card-tier-B)}:root{--card-tier-C:#4e9c68}.tier[data-tier=C],[data-tier-filter=C]{--tier-color:var(--card-tier-C)}:root{--card-tier-D:#828e9d}.tier[data-tier=D],[data-tier-filter=D]{--tier-color:var(--card-tier-D)}span.tier[data-tier]:not([data-tier=unranked]){background:var(--tier-color);color:#10151d}.tier[data-tier=unranked]{background:transparent;color:var(--muted)}
+span.tier{display:inline-flex;align-items:center;justify-content:center;min-width:28px;padding:1px 7px;border:1px solid transparent;border-radius:4px;font-size:12px;font-weight:700;line-height:1.6;color:#fff}:root{--card-tier-S:#d05a68}.tier[data-tier=S]{--tier-color:var(--card-tier-S)}:root{--card-tier-A:#cc773d}.tier[data-tier=A]{--tier-color:var(--card-tier-A)}:root{--card-tier-B:#4e8dcc}.tier[data-tier=B]{--tier-color:var(--card-tier-B)}:root{--card-tier-C:#4e9c68}.tier[data-tier=C]{--tier-color:var(--card-tier-C)}:root{--card-tier-D:#828e9d}.tier[data-tier=D]{--tier-color:var(--card-tier-D)}span.tier[data-tier]:not([data-tier=unranked]){background:var(--tier-color);color:#10151d}.tier[data-tier=unranked]{background:transparent;color:var(--muted)}
 .effect{min-width:265px;max-width:340px;font-size:13px;line-height:1.65}.effect-keyword{color:#fbbf24;font-weight:500}.effect-resource,.effect-star,.star-cost{color:#facc15;white-space:nowrap}.not-available{color:var(--muted)}.energy{min-width:105px;font-variant-numeric:tabular-nums}.cost-change{color:#7dd3a0;font-size:12px;white-space:nowrap}.star-cost{display:block;font-size:12px}.builds{min-width:180px;max-width:240px}.build-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}.build-list a{font-size:13px;text-decoration:none}.build-list a:hover{text-decoration:underline}.build-role{display:block;font-size:11px;color:var(--muted)}.effect-heading{text-align:center}td{vertical-align:top}th{vertical-align:middle}.table-wrap{scrollbar-color:#354454 var(--paper)}@media print{.table-wrap{overflow-x:auto}table{min-width:1500px}.effect{font-size:10px;min-width:200px}.effect-keyword,.effect-resource,.effect-star,.star-cost{color:inherit}}
 
 /* Responsive layout: full table on wide screens, readable cards below 1800px. */
@@ -295,24 +290,7 @@ ${navigation.layoutStyles}
 
   main#main-content #tools .card-search { width: 100%; min-width: 0; margin-bottom: 0; }
 
-  main#main-content #tools #aoe-toggle {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    min-height: var(--control-height);
-    padding: 8px 14px;
-    font: 400 var(--control-font)/1.4 Arial, "Microsoft JhengHei", sans-serif;
-    color: var(--muted);
-    background: var(--control-bg);
-    border: 1px solid var(--control-border);
-    border-radius: var(--control-radius);
-    cursor: pointer;
-  }
 
-  main#main-content #tools #aoe-toggle:is(:hover,:focus-visible,[aria-pressed=true]) {
-    color: var(--focus);
-    border-color: var(--focus);
-  }
 
   main#main-content #tools .card-search #search {
     box-sizing: border-box;
@@ -338,7 +316,7 @@ html body main#main-content,html body .site-header>.site-header-inner{width:100%
 ${fs.readFileSync('assets/cards/compact-cards.css','utf8')}
 ${fs.readFileSync('assets/cards/search-control.css','utf8')}
 </style></head><body data-view="grid">${navigation.renderHeader('cards')}<main id="main-content">
-<div class="tools" id="tools"><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><div class="search-control"><input id="search" type="text" inputmode="search" role="searchbox" placeholder="搜尋關鍵字" autocomplete="off"><button type="button" class="search-clear" aria-label="清除搜尋關鍵字" title="清除搜尋關鍵字"><span class="search-icon" aria-hidden="true">🔍</span></button></div>${cardGrid.actionControls}</div>${renderCardFilters([['Character','character',["Ironclad","Silent","Regent","Necrobinder","Defect","Colorless","Event","Curse"]],['Type','type',["Attack","Skill","Power"]],['Rarity','rarity',["Common","Uncommon","Rare","Ancient"]]])}${renderCardActions()}${renderCardFilters([['Energy','energy',['0','1','2','3+','X','gain','cost-down']]])}<p id="card-filter-result" class="card-filter-result" role="status" aria-live="polite" aria-atomic="true">符合張數 / 總卡片數：0 / ${cards.length}</p></div>
+<div class="tools" id="tools"><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><div class="search-control"><input id="search" type="text" inputmode="search" role="searchbox" placeholder="搜尋關鍵字" autocomplete="off"><button type="button" class="search-clear" aria-label="清除搜尋關鍵字" title="清除搜尋關鍵字"><span class="search-icon" aria-hidden="true">🔍</span></button></div></div>${renderCardFilters([['Character','character',["Ironclad","Silent","Regent","Necrobinder","Defect","Colorless","Event","Curse"]],['Type','type',["Attack","Skill","Power"]],['Rarity','rarity',["Common","Uncommon","Rare","Ancient"]]])}${renderCardFilters([['Energy','energy',['0','1','2','3+','X','gain','cost-down']]])}<p id="card-filter-result" class="card-filter-result" role="status" aria-live="polite" aria-atomic="true">符合張數 / 總卡片數：0 / ${cards.length}</p></div>
 <div id="card-scroll" class="card-scroll" role="region" aria-label="卡牌表格" tabindex="0">${sections}<p id="empty" hidden>找不到符合條件的卡片，請調整搜尋文字、分類或稀有度。</p>
 </div>
 </main>
@@ -368,13 +346,11 @@ for (const group of multiFilters) {
     filter();
   });
 }
-const tierFilter=document.getElementById('card-filter-tier');
-const tierChoices=[...tierFilter.querySelectorAll('button')];
 const compactCardMedia=window.matchMedia('(max-width:1024px), (max-width:1366px) and (hover:none) and (pointer:coarse)');
 const sections=[...document.querySelectorAll('section[data-pool]')];
 search.value='';
 function selectedCardFilters() {
-  return {characters:selectedValues(characterFilter), rarities:selectedValues(rarityFilter), types:selectedValues(typeFilter), tiers:selectedValues(tierFilter), energies:selectedValues(energyFilter)};
+  return {characters:selectedValues(characterFilter), rarities:selectedValues(rarityFilter), types:selectedValues(typeFilter), energies:selectedValues(energyFilter)};
 }
 const cardFilterCookie='sts2_card_filters';
 function restoreCardFilters() {
@@ -385,7 +361,7 @@ function restoreCardFilters() {
     if(!stored)return;
     const saved=JSON.parse(stored);
     if(!saved||typeof saved!=='object')return;
-    for(const [key,group] of [['characters',characterFilter],['types',typeFilter],['rarities',rarityFilter],['tiers',tierFilter],['energies',energyFilter]]) {
+    for(const [key,group] of [['characters',characterFilter],['types',typeFilter],['rarities',rarityFilter],['energies',energyFilter]]) {
       if(!Array.isArray(saved[key]))continue;
       const allowed=new Set([...group.querySelectorAll('button')].map(button=>button.value));
       const restoredValues=key==='energies'?saved[key].map(value=>['3','4+'].includes(value)?'3+':value):saved[key];
@@ -407,17 +383,13 @@ function rememberCardFilters() {
   } catch {}
 }
 function cardMatchesFilters(row, section, selected) {
-  const {characters, rarities, types, tiers, energies}=selected;
+  const {characters, rarities, types, energies}=selected;
   const baseEnergy=row.dataset.baseEnergy;
   const energyGroup=Number(baseEnergy)>=3?'3+':baseEnergy;
   const energyCosts=[...energies].filter(value=>!['gain','cost-down'].includes(value));
-  const creatorTiers=[...row.querySelectorAll('.creator-tier-badge')].map(badge=>badge.dataset.tier);
-  const ratings=creatorTiers.length?creatorTiers:[row.dataset.tier];
-  const matchesTier=!tiers.size||ratings.some(tier=>tiers.has(tier)||(tiers.has('D')&&['E','F'].includes(tier)));
   return (!characters.size||characters.has(section.dataset.filterCategory))
     && (!rarities.size||rarities.has(row.dataset.rarity)||(rarities.has('Common')&&row.dataset.rarity==='Basic'))
     && (!types.size||types.has(row.dataset.type))
-    && matchesTier
     && (!energyCosts.length||energyCosts.includes(energyGroup)||(energies.has('X')&&row.dataset.id==='STARDUST'))
     && (!energies.has('gain')||row.dataset.energyGain==='true')
     && (!energies.has('cost-down')||row.dataset.costDown==='true');
@@ -441,13 +413,6 @@ function filter() {
   rememberCardFilters();
 }
 
-document.getElementById('aoe-toggle').addEventListener('click',()=>{
-  const selected=selectedCardFilters();
-  const names=sections.flatMap(section=>[...section.querySelectorAll('tbody tr')].filter(row=>cardMatchesFilters(row,section,selected)).map(row=>row.querySelector('.detail-name-en').textContent.trim())).filter(Boolean);
-  if(!names.length)return;
-  search.value='"'+names[Math.floor(Math.random()*names.length)]+'"';
-  search.dispatchEvent(new Event('input',{bubbles:true}));
-});
 function cardSearchQueries() {
   return [...new Set(search.value.toLowerCase().split(/[\\s、，,+]+/).filter(Boolean))];
 }
@@ -459,12 +424,11 @@ function cardMatchesSearch(row, queries) {
   }
   return queries.some(value => row.dataset.search.includes(value));
 }
-search.addEventListener('input',filter);
-
-for(const button of tierChoices)button.addEventListener('click',()=>{
-  button.setAttribute('aria-pressed',String(button.getAttribute('aria-pressed')!=='true'));
+search.addEventListener('input',()=>{
+  if(search.value.trim())for(const group of multiFilters)setFilterValues(group,[]);
   filter();
 });
+
 restoreCardFilters();
 filter();
 
@@ -505,7 +469,7 @@ compactView.addEventListener('change',updateSortFocus);updateSortFocus();
 function selectCardRow(row){for(const current of document.querySelectorAll('.card-scroll tbody tr.is-selected'))current.classList.remove('is-selected');row.classList.add('is-selected');}
 function scrollToCard(row){const area=document.getElementById('card-scroll'),head=row.closest('table').querySelector('thead'),pageScroll=getComputedStyle(area).overflowY==='visible';const headerHeight=pageScroll?document.querySelector('.site-header').getBoundingClientRect().height+(compactView.matches?0:head.getBoundingClientRect().height):compactView.matches?0:head.getBoundingClientRect().height;row.style.scrollMarginTop=(headerHeight+12)+'px';if(pageScroll){row.scrollIntoView({block:'start',behavior:'instant'});return;}const top=area.scrollTop+row.getBoundingClientRect().top-area.getBoundingClientRect().top-headerHeight-12;area.scrollTo({top:Math.max(0,top),behavior:'instant'});}
 document.getElementById('card-scroll').addEventListener('click',event=>{const row=event.target.closest('tbody tr[data-id]');if(row)selectCardRow(row);});
-function revealLinkedCard(){let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}if(!id.startsWith('card-'))return;const row=document.getElementById(id);if(!row)return;const section=row.closest('section[data-pool]');if(!section)return;setFilterValues(characterFilter,[section.dataset.filterCategory]);search.value='';setFilterValues(rarityFilter,[]);setFilterValues(typeFilter,[]);setFilterValues(energyFilter,[]);for(const choice of tierChoices)choice.setAttribute('aria-pressed','false');filter();selectCardRow(row);requestAnimationFrame(()=>scrollToCard(row));}
+function revealLinkedCard(){let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}if(!id.startsWith('card-'))return;const row=document.getElementById(id);if(!row)return;const section=row.closest('section[data-pool]');if(!section)return;setFilterValues(characterFilter,[section.dataset.filterCategory]);search.value='';setFilterValues(rarityFilter,[]);setFilterValues(typeFilter,[]);setFilterValues(energyFilter,[]);filter();selectCardRow(row);requestAnimationFrame(()=>scrollToCard(row));}
 window.addEventListener('hashchange',revealLinkedCard);revealLinkedCard();
 
 

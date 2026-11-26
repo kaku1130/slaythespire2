@@ -166,7 +166,7 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 `;
 module.exports+=`
 /* Selection fill follows aria-pressed, including touch browsers that retain hover. */
-html body main#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button[aria-pressed=false] {
+html body main#main-content#main-content #tools .card-filter-buttons button[aria-pressed=false] {
   background:var(--control-bg,#0d131a)!important;
   box-shadow:none!important;
 }
@@ -197,15 +197,15 @@ html body[data-view=grid] main#main-content#main-content#main-content #card-scro
   html body main#main-content#main-content #card-scroll .detail-type-metadata :is(dd[data-stat-rarity],.detail-plain-rarity) {white-space:normal;overflow-wrap:anywhere;justify-content:flex-end}
 }
 /* Subtle outlines distinguish available options and selected filters. */
-html body main#main-content#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button,
+html body main#main-content#main-content#main-content #tools .card-filter-buttons button,
 html body main#main-content#main-content#main-content #tools .filter-menu-toggle {
   border:2px solid #465365!important;
 }
-html body main#main-content#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button:is(:hover,[aria-pressed=true]),
+html body main#main-content#main-content#main-content #tools .card-filter-buttons button:is(:hover,[aria-pressed=true]),
 html body main#main-content#main-content#main-content #tools .filter-menu-toggle:is(:hover,[aria-expanded=true]) {
   border-color:var(--selection-color,#d9e5f2)!important;
 }
-html body main#main-content#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button:focus-visible,
+html body main#main-content#main-content#main-content #tools .card-filter-buttons button:focus-visible,
 html body main#main-content#main-content#main-content #tools .filter-menu-toggle:focus-visible {
   outline:2px solid #fff;outline-offset:3px;
 }

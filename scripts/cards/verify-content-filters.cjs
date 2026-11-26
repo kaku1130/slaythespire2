@@ -31,7 +31,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
    console.log('PASS '+file+' '+width+'px: content widths, character icons and filtering, Tier A orange');
    await page.close();
   }
-  for(const file of ['characters.html','ancients.html']){
+  for(const file of ['characters.html']){
    const page=await browser.newPage();await page.goto(pathToFileURL(path.resolve(file)).href);
    const tiers=page.locator('[data-tier=A]');
    const colors=await tiers.evaluateAll(nodes=>nodes.map(n=>({class:n.className,color:getComputedStyle(n).backgroundColor})));

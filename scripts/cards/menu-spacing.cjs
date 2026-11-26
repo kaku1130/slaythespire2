@@ -15,6 +15,4 @@ html body main#main-content:has(>#card-scroll)>#tools {margin-block:0!important}
 html body main#main-content>.mobile-search-row {margin-block:0 8px!important;padding-block:0!important}
 html body main#main-content .split-list {row-gap:8px!important}
 html body main#main-content .split-list>.filters {margin-block:0!important}
-html body main#main-content [data-ancient-top-menu] {margin-bottom:8px}
-html body main#main-content [data-ancient-top-menu]>div {margin-top:8px}
 `;

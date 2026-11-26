@@ -34,10 +34,8 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
     assert.deepEqual(await visibleIds(),[entry.id],'exact-name search shows only '+entry.id);
    }
    await page.locator('.search-clear').click();assert.equal((await visibleIds()).length,63);
-   await page.locator('[data-catalog-filter=rarity][value=Rare]').click();
-   assert.deepEqual(await visibleIds(),entries.filter(e=>e.rarity==='Rare').map(e=>e.id).sort(),'rarity filter visibly hides other potions');
    await search.fill('poison');assert.deepEqual(await visibleIds(),['POISON_POTION']);
-   assert.equal(await page.locator('[data-catalog-filter][aria-pressed=true]').count(),0,'search clears rarity');
+   assert.equal(await page.locator('[data-catalog-filter][aria-pressed=true]').count(),0,'no rarity controls remain');
    await page.locator('.search-clear').click();assert.equal((await visibleIds()).length,63);
    for(const width of [1280,1920]){
     await page.setViewportSize({width,height:1000});await search.fill('"Strength Potion"');
@@ -46,7 +44,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
    await page.setViewportSize({width:1440,height:1000});
    if(mode==='file')await page.screenshot({path:'assets/potion/previews/search-fixed-1440.png'});
    assert.deepEqual(errors,[]);
-   console.log('PASS '+mode+': Chinese/English and all 63 exact-name searches show only matching potions; rarity, reset, empty results and desktop widths verified.');
+   console.log('PASS '+mode+': Chinese/English and all 63 exact-name searches show only matching potions; reset, empty results and desktop widths verified.');
    await context.close();
   }
  }finally{await browser.close();}

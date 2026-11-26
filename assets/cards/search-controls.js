@@ -24,14 +24,12 @@
     main.prepend(toolbar);
   }
   if (!search) return;
-  // Keep the card character scope while clearing the other catalog selections.
+  // Keyword search covers every category, so clear all catalog selections.
   search.addEventListener('input', () => {
     if (!search.value.trim()) return;
-    for (const button of main.querySelectorAll('#card-filter-character button,#card-filter-type button,#card-filter-rarity button,#card-filter-tier button,#card-filter-energy button,button[data-catalog-filter]')) {
-      if (cardPage && button.closest('#card-filter-character')) continue;
+    for (const button of main.querySelectorAll('#card-filter-character button,#card-filter-type button,#card-filter-rarity button,#card-filter-energy button,button[data-catalog-filter]')) {
       button.setAttribute('aria-pressed', 'false');
     }
-    delete search.dataset.preferredPool;
   }, true);
   const style = document.createElement('style');
   style.textContent = `
@@ -114,8 +112,6 @@ mark.shared-search-match{background:#184e35;color:#a8f0bf;border-radius:2px}
         const selected = selection?.rangeCount && !selection.isCollapsed && selection.getRangeAt(0).intersectsNode(target) ? selection.toString() : '';
         const text = selected.replace(/\s+/g,' ').trim() || target.textContent.replace(/\s+/g,' ').trim();
         if (!text) return;
-        const card = target.closest('tr[data-id]');
-        if (card) search.dataset.preferredPool = card.closest('section[data-pool]')?.dataset.pool || '';
         search.value = text;
         search.dispatchEvent(new Event('input', {bubbles:true}));
         search.focus({preventScroll:true});
@@ -164,11 +160,11 @@ mark.shared-search-match{background:#184e35;color:#a8f0bf;border-radius:2px}
   const style = document.createElement('style');
   style.textContent = `
 html body main#main-content .search-control{position:relative;display:block;min-width:0;width:100%;flex:1 1 240px}
-html body main#main-content .search-control input#search{display:block;width:100%;max-width:none;margin:0;padding-left:46px!important;box-sizing:border-box}
+html body main#main-content .search-control input#search{display:block;width:100%;max-width:none;margin:0;padding-left:50px!important;box-sizing:border-box}
 html body main#main-content .search-control input#search::-webkit-search-cancel-button{display:none;-webkit-appearance:none}
-html body main#main-content .search-control>button.search-clear{position:absolute;left:4px;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;width:36px;height:36px;min-width:36px;min-height:36px;margin:0;padding:7px;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none!important;color:#aab6c4!important;cursor:pointer}
+html body main#main-content .search-control>button.search-clear{position:absolute;left:4px;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;width:36px;height:36px;min-width:36px;min-height:36px;margin:0;padding:4px;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none!important;color:#aab6c4!important;cursor:pointer}
 html body main#main-content .search-control>button.search-clear:hover{color:#37a8ec!important;background:#163047!important}
-html body main#main-content .search-clear .search-icon{font-size:20px;line-height:1;pointer-events:none}
+html body main#main-content .search-clear .search-icon{font-size:28px;line-height:1;pointer-events:none}
 html body main#main-content:is(.event-browser,.monster-browser,.encounter-browser) .chapter-filters>.search-control{order:-1;flex:0 0 auto}
 `;
   if (!existingField) document.head.append(style);
@@ -191,44 +187,10 @@ html body main#main-content:is(.event-browser,.monster-browser,.encounter-browse
 
 (() => {
   const main = document.getElementById('main-content');
-  const search = document.getElementById('search');
-  const toolbar = search?.closest('.catalog-search-tools');
-  const kind = main?.querySelector('.relic-filters') ? 'relic' : main?.querySelector('.potion-filters') ? 'potion' : null;
-  if (!kind || !toolbar || toolbar.querySelector('.catalog-random')) return;
-  const style = document.createElement('style');
-  style.textContent = `
-html body main#main-content .filters .catalog-search-tools:has(.catalog-random) {display:grid;grid-template-columns:minmax(0,1fr) 52px;gap:8px;align-items:center}
-html body main#main-content .catalog-search-tools:has(.catalog-random)>.search-control {width:100%;min-width:0}
-html body main#main-content .filters .catalog-search-tools>button.catalog-random {box-sizing:border-box;display:flex;align-items:center;justify-content:center;width:52px;min-width:52px;height:48px;min-height:48px;margin:0;padding:8px;border:1px solid #6faeee;border-radius:7px;background:#0d131a;color:#e3e8ee;font:22px/1 Arial,sans-serif;cursor:pointer}
-html body main#main-content .filters .catalog-search-tools>button.catalog-random:is(:hover,:focus-visible) {border-color:#37a8ec;background:#163047;outline-offset:2px}
-`;
-  document.head.append(style);
-  const button = document.createElement('button');
-  button.type = 'button';
-  button.className = 'catalog-random';
-  button.textContent = '🎲';
-  button.title = kind === 'relic' ? '隨機遺物' : '隨機藥水';
-  button.setAttribute('aria-label', button.title);
-  toolbar.append(button);
-  button.addEventListener('click', () => {
-    const selected = {};
-    for (const filter of main.querySelectorAll('[data-catalog-filter][aria-pressed="true"]')) {
-      (selected[filter.dataset.catalogFilter] ??= new Set()).add(filter.value);
-    }
-    const names = [...main.querySelectorAll('.entry.' + kind)]
-      .filter(entry => Object.entries(selected).every(([key, values]) => values.has(entry.dataset[key])))
-      .map(entry => entry.querySelector(kind === 'relic' ? '.relic-name-en' : '.catalog-name-en')?.textContent.trim()).filter(Boolean);
-    if (!names.length) return;
-    search.value = '"' + names[Math.floor(Math.random() * names.length)] + '"';
-    search.dispatchEvent(new Event('input', {bubbles:true}));
-  });
-})();
-(() => {
-  const main = document.getElementById('main-content');
   const controls = main?.querySelector('#tools');
-  const random = controls?.querySelector('#aoe-toggle,.catalog-random');
-  if (!random || controls.querySelector('.filter-menu-toggle')) return;
-  const panels = [...controls.children].filter(element => element.matches('.card-filter-rows,.card-action-row,.catalog-filter-rows'));
+  const toolbar = controls?.querySelector('.card-search');
+  if (!toolbar || controls.querySelector('.filter-menu-toggle')) return;
+  const panels = [...controls.children].filter(element => element.matches('.card-filter-rows,.catalog-filter-rows'));
   if (!panels.length) return;
   const button = document.createElement('button');
   button.type = 'button';
@@ -246,7 +208,7 @@ html body main#main-content .filters .catalog-search-tools>button.catalog-random
   panels.forEach(panel => popup.append(panel));
   button.setAttribute('aria-controls', popup.id);
   button.innerHTML = '<span aria-hidden="true">&#9776;</span>';
-  random.after(button);
+  toolbar.append(button);
   function setExpanded(value) {
     button.setAttribute('aria-expanded', String(value));
     popup.hidden = !value;

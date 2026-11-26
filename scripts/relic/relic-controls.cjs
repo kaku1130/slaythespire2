@@ -1,42 +1,14 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
-const groups={pool:['Ironclad','Silent','Regent','Necrobinder','Defect','Shared'],rarity:['Starter','Common','Uncommon','Rare','Ancient','Shop','Event']};
-const poolColors={Ironclad:'#dc6c68',Silent:'#70bf8b',Defect:'#6faeee',Necrobinder:'#b595dd',Regent:'#e3bf72',Shared:'#aab6c4',Event:'#6ac1b4'};
-const rarityColors={Starter:'#9f9fa9',Common:'#d4d4d8',Uncommon:'#54a2ff',Rare:'#fac800',Ancient:'#c4b5fd',Shop:'#00d3bd',Event:'#f472b6'};
-const controls='<div class="catalog-filter-rows" lang="en">'+Object.entries(groups).map(([key,values])=>'<div class="catalog-filter-row"><span>'+(key==='pool'?'Character':'Rarity')+'</span><div class="catalog-filter-buttons" id="relic-filter-'+key+'" role="group" aria-label="'+(key==='pool'?'Pool':'Rarity')+'">'+values.map(value=>'<button type="button" data-catalog-filter="'+key+'" value="'+value+'" aria-pressed="false" style="--selection-color:'+(key==='pool'?poolColors:rarityColors)[value]+'">'+(value==='Shared'?'Colorless':value)+'</button>').join('')+'</div></div>').join('')+'</div>';
+const pools=['Ironclad','Silent','Regent','Necrobinder','Defect','Shared'];
+const poolColors={Ironclad:'#dc6c68',Silent:'#70bf8b',Defect:'#6faeee',Regent:'#e3bf72',Necrobinder:'#b595dd',Shared:'#aab6c4'};
+const ancientMenu=require('./ancient-relics.cjs').renderFilterMenu();
+const poolButtons=pools.map(value=>'<button type="button" data-catalog-filter="pool" value="'+value+'" aria-pressed="false" style="--selection-color:'+poolColors[value]+';--button-accent:'+poolColors[value]+'">'+(value==='Shared'?'Colorless':value)+'</button>').join('');
+const controls='<div class="catalog-filter-rows" lang="en"><div class="catalog-filter-row"><div class="catalog-filter-buttons" id="relic-filter-pool" role="group" aria-label="Pool">'+poolButtons+'</div></div><div class="catalog-filter-row relic-ancient-block" role="group" aria-label="遠古之民遺物"><div class="catalog-filter-buttons relic-ancient-buttons">'+ancientMenu+'<button type="button" data-catalog-filter="rarity" value="Ancient" aria-pressed="false">Ancient</button></div></div></div>';
 const styles = `
 main#main-content>.relic-filters {
   --control-height: 40px;
   --control-font: 14px;
   --control-radius: 8px;
-}
-.relic-dropdown-row {
-  display: grid;
-  grid-column: 1 / -1;
-  grid-row: 2;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
-  width: 100%;
-  min-width: 0;
-}
-.relic-dropdown {
-  display: grid;
-  grid-template-columns: max-content minmax(0, 1fr);
-  align-items: center;
-  gap: 8px;
-  min-width: 0;
-  color: #fff;
-  font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif;
-}
-@media screen and (max-width: 599px), screen and (pointer: coarse) and (max-width: 1400px) {
-  .relic-dropdown-row {
-    grid-template-columns: minmax(0, 1fr);
-    max-width: none;
-    gap: 8px;
-  }
-  .relic-dropdown { grid-template-columns: 5rem minmax(0, 1fr); }
-}
-@media screen and (pointer: coarse) and (min-width: 744px) and (max-width: 1400px) and (min-height: 501px) {
-  .relic-dropdown-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 .relic-section .entry.relic {
   border-radius: 12px;
@@ -52,59 +24,18 @@ main#main-content>.relic-filters {
 .relic-card-text h3 {margin: 4px 0; font-size: 17px; line-height: 1.35}
 .relic-card-text p {margin: 0; color: var(--muted); line-height: 1.5}
 .relic-card-ranking {margin-top: 4px}
-[data-relic-pool="Ironclad"],
-.relic-dropdown select[data-relic-filter="pool"] option[value="Ironclad"],
-main#main-content .relic-filters select[data-relic-filter="pool"]:has(option[value="Ironclad"]:checked) {color: #dc6c68}
-[data-relic-pool="Silent"],
-.relic-dropdown select[data-relic-filter="pool"] option[value="Silent"],
-main#main-content .relic-filters select[data-relic-filter="pool"]:has(option[value="Silent"]:checked) {color: #70bf8b}
-[data-relic-pool="Defect"],
-.relic-dropdown select[data-relic-filter="pool"] option[value="Defect"],
-main#main-content .relic-filters select[data-relic-filter="pool"]:has(option[value="Defect"]:checked) {color: #6faeee}
-[data-relic-pool="Necrobinder"],
-.relic-dropdown select[data-relic-filter="pool"] option[value="Necrobinder"],
-main#main-content .relic-filters select[data-relic-filter="pool"]:has(option[value="Necrobinder"]:checked) {color: #b595dd}
-[data-relic-pool="Regent"],
-.relic-dropdown select[data-relic-filter="pool"] option[value="Regent"],
-main#main-content .relic-filters select[data-relic-filter="pool"]:has(option[value="Regent"]:checked) {color: #e3bf72}
-[data-relic-pool="Shared"],
-.relic-dropdown select[data-relic-filter="pool"] option[value="Shared"],
-main#main-content .relic-filters select[data-relic-filter="pool"]:has(option[value="Shared"]:checked) {color: #aab6c4}
-[data-relic-pool="Event"],
-.relic-dropdown select[data-relic-filter="pool"] option[value="Event"],
-main#main-content .relic-filters select[data-relic-filter="pool"]:has(option[value="Event"]:checked) {color: #6ac1b4}
-[data-relic-pool="Fallback"],
-.relic-dropdown select[data-relic-filter="pool"] option[value="Fallback"],
-main#main-content .relic-filters select[data-relic-filter="pool"]:has(option[value="Fallback"]:checked) {color: #c8ab79}
-[data-relic-rarity="Starter"],
-.relic-dropdown select[data-relic-filter="rarity"] option[value="Starter"],
-main#main-content .relic-filters select[data-relic-filter="rarity"]:has(option[value="Starter"]:checked) {color: #a1a1aa}
-[data-relic-rarity="Common"],
-.relic-dropdown select[data-relic-filter="rarity"] option[value="Common"],
-main#main-content .relic-filters select[data-relic-filter="rarity"]:has(option[value="Common"]:checked) {color: #cbd5e1}
-[data-relic-rarity="Uncommon"],
-.relic-dropdown select[data-relic-filter="rarity"] option[value="Uncommon"],
-main#main-content .relic-filters select[data-relic-filter="rarity"]:has(option[value="Uncommon"]:checked) {color: #74b3e6}
-[data-relic-rarity="Rare"],
-.relic-dropdown select[data-relic-filter="rarity"] option[value="Rare"],
-main#main-content .relic-filters select[data-relic-filter="rarity"]:has(option[value="Rare"]:checked) {color: #e3bf72}
-[data-relic-rarity="Ancient"],
-.relic-dropdown select[data-relic-filter="rarity"] option[value="Ancient"],
-main#main-content .relic-filters select[data-relic-filter="rarity"]:has(option[value="Ancient"]:checked) {color: #c084fc}
-[data-relic-rarity="Shop"],
-.relic-dropdown select[data-relic-filter="rarity"] option[value="Shop"],
-main#main-content .relic-filters select[data-relic-filter="rarity"]:has(option[value="Shop"]:checked) {color: #fb923c}
-[data-relic-rarity="Event"],
-.relic-dropdown select[data-relic-filter="rarity"] option[value="Event"],
-main#main-content .relic-filters select[data-relic-filter="rarity"]:has(option[value="Event"]:checked) {color: #6ac1b4}
-[data-relic-rarity="None"],
-.relic-dropdown select[data-relic-filter="rarity"] option[value="None"],
-main#main-content .relic-filters select[data-relic-filter="rarity"]:has(option[value="None"]:checked) {color: #a1a1aa}
 `;
 const script = `const entries = [...document.querySelectorAll('.entry')];
 const search = document.getElementById('search');
 const buttons = [...document.querySelectorAll('[data-catalog-filter]')];
 function filter() {
+  const ancient=buttons.find(button=>button.dataset.catalogFilter==='ancient'&&button.getAttribute('aria-pressed')==='true');
+  if(ancient)for(const button of buttons){
+    const key=button.dataset.catalogFilter;
+    if(key==='ancient')button.setAttribute('aria-pressed',String(button===ancient));
+    if(key==='rarity')button.setAttribute('aria-pressed',String(button.value==='Ancient'));
+    if(key==='pool')button.setAttribute('aria-pressed','false');
+  }
   const selectedPools=buttons.filter(button=>button.dataset.catalogFilter==='pool'&&button.getAttribute('aria-pressed')==='true');
   for(const button of selectedPools.slice(1))button.setAttribute('aria-pressed','false');
   const query = search.value.trim().toLowerCase();
@@ -132,12 +63,20 @@ function filter() {
   }
   document.getElementById('empty').hidden = count > 0;
 }
-search.addEventListener('input', filter);
-for (const button of buttons) button.addEventListener('click', () => {
-  const selected=button.getAttribute('aria-pressed') !== 'true';
-  if(button.dataset.catalogFilter==='pool')for(const other of buttons.filter(item=>item.dataset.catalogFilter==='pool'))other.setAttribute('aria-pressed','false');
-  button.setAttribute('aria-pressed', String(selected));
+search.addEventListener('input',()=>{
+  if(search.value.trim())for(const button of buttons)button.setAttribute('aria-pressed','false');
   filter();
+});
+for (const button of buttons) button.addEventListener('click', () => {
+  if(button.dataset.catalogFilter==='ancient'||(button.dataset.catalogFilter==='rarity'&&button.value==='Ancient')){
+    for(const other of buttons)other.setAttribute('aria-pressed',String(other===button||(button.dataset.catalogFilter==='ancient'&&other.dataset.catalogFilter==='rarity'&&other.value==='Ancient')));
+  }else{
+    const selected=button.getAttribute('aria-pressed') !== 'true';
+    for(const other of buttons)other.setAttribute('aria-pressed','false');
+    button.setAttribute('aria-pressed', String(selected));
+  }
+  search.value='';
+  search.dispatchEvent(new Event('input',{bubbles:true}));
 });
 filter();`;
 module.exports = {controls:require('../cards/character-filter.cjs')(controls,{iconPaths:{Shared:'assets/cards/icons/colorless.webp'},labels:{Shared:'Colorless'}}), styles, script};
@@ -145,14 +84,11 @@ module.exports = {controls:require('../cards/character-filter.cjs')(controls,{ic
 module.exports.styles += `
 html body main#main-content .relic-filters > .catalog-filter-rows {
   display: grid;
-  grid-column: 1 / -1;
-  grid-row: 2;
   gap: 8px;
   width: 100%;
   min-width: 0;
 }
-.catalog-filter-row { display: grid; grid-template-columns: 60px minmax(0, 1fr); align-items: center; gap: 8px; min-width: 0; }
-.catalog-filter-row > span { color: #fff; font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif; }
+.catalog-filter-row { display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; gap: 8px; min-width: 0; }
 .catalog-filter-buttons { display: flex; flex-wrap: wrap; gap: 8px; min-width: 0; }
 html body main#main-content .filters .catalog-filter-buttons button {
   flex: 1 1 auto;
@@ -172,23 +108,18 @@ html body main#main-content .filters .catalog-filter-buttons button:is(:hover, :
 }
 `;
 
-module.exports.styles += `
-html body main#main-content .relic-filters .catalog-filter-row {
-  grid-template-columns: 80px minmax(0, 1fr);
-  column-gap: 16px;
-}
-`;
+// These colors still style relic entries, independently of filter buttons.
+const entryColors={Ancient:'#c4b5fd',Shop:'#00d3bd',Event:'#f472b6'};
+module.exports.styles += Object.entries(entryColors).map(([rarity,color]) => '\nhtml body #main-content .entry.relic[data-rarity='+rarity+'] {--rarity-color:'+color+'}\nhtml body #main-content .entry.relic[data-rarity='+rarity+'] [data-relic-rarity] {color:'+color+'}').join('');
 
 module.exports.styles += `
-.relic[data-rarity="Rare"] { --rarity-color: #e3bf72; }
-html body main#main-content .relic-filters button[data-catalog-filter="rarity"][value="Rare"] { --selection-color: #e3bf72 !important; }
-[data-relic-rarity="Rare"] { color: #e3bf72; }
-
-.relic[data-rarity="Shop"] { --rarity-color: #b08968; }
-html body main#main-content .relic-filters button[data-catalog-filter="rarity"][value="Shop"] { --selection-color: #b08968 !important; }
-[data-relic-rarity="Shop"] { color: #b08968; }
+html body main#main-content#main-content .relic-ancient-block {--plain-rarity-color:#c5a2e8;--selection-color:#c5a2e8;--button-accent:#c5a2e8;border-color:#c5a2e8}
+html body main#main-content#main-content .relic-ancient-buttons {display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+html body main#main-content .relic-ancient-menu {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;width:100%;min-width:0}
+html body main#main-content .relic-ancient-menu>button {display:flex;align-items:center;justify-content:center;min-width:0;padding:8px 4px;border:1px solid #344454;border-radius:8px;background:#0b1119;cursor:pointer}
+html body main#main-content#main-content#main-content .relic-ancient-block button:is(:hover,:focus-visible,[aria-pressed=true]) {border-color:#c5a2e8!important}
+html body main#main-content#main-content#main-content .relic-ancient-block button[aria-pressed=true] {background:color-mix(in srgb,#c5a2e8 22%,#0d131a)!important;box-shadow:inset 0 0 0 1px color-mix(in srgb,#c5a2e8 40%,transparent)!important}
+html body main#main-content .relic-ancient-menu>button>img {display:block;width:32px;max-width:100%;height:32px;object-fit:contain}
+html body main#main-content#main-content#main-content#main-content#main-content #relic-filter-pool>button {border-color:var(--selection-color)!important}
+html body main#main-content#main-content #relic-filter-pool .filter-character-icon {width:32px;height:32px}
 `;
-
-module.exports.styles += Object.entries(rarityColors).map(([rarity,color]) => '\nhtml body #main-content #relic-filter-rarity button[data-catalog-filter=rarity][value='+rarity+'] {--selection-color:'+color+'!important;--rarity-color:'+color+'!important}').join('');
-
-module.exports.styles += ['Ancient','Shop','Event'].map(rarity => '\nhtml body #main-content .entry.relic[data-rarity='+rarity+'] {--rarity-color:'+rarityColors[rarity]+'}\nhtml body #main-content .entry.relic[data-rarity='+rarity+'] [data-relic-rarity] {color:'+rarityColors[rarity]+'}').join('');

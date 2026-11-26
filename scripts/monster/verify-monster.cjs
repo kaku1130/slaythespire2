@@ -3,6 +3,7 @@ const fs = require('node:fs'), path = require('node:path'), assert = require('no
 const {pathToFileURL} = require('node:url');
 const {chromium} = require(path.join(process.env.USERPROFILE, '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright'));
 const catalog = JSON.parse(fs.readFileSync('data/monster/catalog.json', 'utf8'));
+const namesZh=require('../../data/monster/names-zh-TW.json').names;
 catalog.items = catalog.items.filter(item => item.type !== 'Event');
 
 (async () => {
@@ -36,14 +37,13 @@ catalog.items = catalog.items.filter(item => item.type !== 'Event');
       assert.equal(await root.getByRole('button', {name:'All',exact:true}).count(), 0);
       assert.equal(await root.locator('.monster-heading,#monster-result,.monster-card-footer').count(), 0);
       assert.equal(await root.locator('.monster-types').count(), 0, 'type buttons removed');
-      assert.equal(await root.locator('.monster-category>h3,.monster-member figcaption,.monster-hp').count(),0,'category headings, image captions and HP removed');
+      assert.equal(await root.locator('.monster-kind,.monster-member figcaption,.monster-hp').count(),0,'card labels, image captions and HP removed');
+      assert.equal(await root.locator('.monster-category>.monster-category-title').count(),16,'four category headings per region');
       const cardStyles = await root.locator('.monster-card').evaluateAll(cards=>cards.map(card=>({
-        name:getComputedStyle(card.querySelector('h3')).color,
-        category:getComputedStyle(card.closest('.monster-category')).borderLeftColor,
-        nameSize:getComputedStyle(card.querySelector('h3')).fontSize,
-        labelSize:getComputedStyle(card.querySelector('.monster-kind')).fontSize
+        name:getComputedStyle(card.querySelector('h4')).color,
+        category:getComputedStyle(card.closest('.monster-category')).borderLeftColor
       })));
-      for(const style of cardStyles){assert.equal(style.name,style.category);assert.equal(style.labelSize,style.nameSize);}
+      for(const style of cardStyles)assert.equal(style.name,style.category);
       assert.equal(await root.locator('.filter-menu-toggle').count(),0,'no hamburger menu');
       for (const region of catalog.regions) assert.equal(await root.getByRole('button',{name:region,exact:true}).isVisible(),true,'area filters directly visible');
       assert.equal(await root.locator('.search-control #search').count(), 1, 'shared search markup');
@@ -51,14 +51,16 @@ catalog.items = catalog.items.filter(item => item.type !== 'Event');
         const box=control.getBoundingClientRect(),input=control.querySelector('input').getBoundingClientRect(),icon=control.querySelector('button').getBoundingClientRect();
         return {height:box.height,iconOffset:Math.abs((icon.top+icon.bottom-input.top-input.bottom)/2)};
       });
-      assert.equal(searchLayout.height,48,'search control does not stretch vertically');
+      assert.equal(searchLayout.height,48,'search control matches card button height');
       assert.ok(searchLayout.iconOffset<1,'search icon aligns with the input');
-      const links = await root.locator('.monster-card').evaluateAll(cards => cards.map(card => ({id:card.id.slice(8), url:card.href, target:card.target, names:[...card.querySelectorAll('img')].map(img=>img.alt)})));
+      const links = await root.locator('.monster-card').evaluateAll(cards => cards.map(card => ({id:card.id.slice(8), url:card.href, target:card.target, zh:card.querySelector('.monster-name-zh').textContent,en:card.querySelector('.monster-name-en').textContent,names:[...card.querySelectorAll('img')].map(img=>img.alt)})));
       for (const card of links) {
         const expected = catalog.items.find(item => item.id === card.id);
         assert.ok(expected, card.id);
         assert.equal(card.url, expected.url);
         assert.equal(card.target, '_blank');
+        assert.equal(card.zh,namesZh[card.id],'Chinese encounter name');
+        assert.equal(card.en,expected.name,'English encounter name retained');
         assert.deepEqual(card.names, expected.members.map(member => member.name));
       }
       await root.locator('.monster-member img').evaluateAll(async images => {
@@ -72,12 +74,18 @@ catalog.items = catalog.items.filter(item => item.type !== 'Event');
         assert.equal(await button.getAttribute('aria-pressed'), 'true');
         assert.equal(await button.evaluate(node=>getComputedStyle(node).color),await root.locator('.monster-region:visible h2').evaluate(node=>getComputedStyle(node).color),'area button matches region heading color');
         assert.equal(await root.locator('.monster-region:visible').count(), 1);
+        assert.deepEqual(await root.locator('.monster-card:visible').evaluateAll(cards=>cards.flatMap(card=>{
+          const zh=card.querySelector('.monster-name-zh').getBoundingClientRect(),en=card.querySelector('.monster-name-en').getBoundingClientRect(),art=card.querySelector('.monster-lineup').getBoundingClientRect(),bounds=card.getBoundingClientRect();
+          const center=(bounds.left+bounds.right)/2;
+          return zh.bottom<=en.top+1&&art.top>=en.bottom-1&&[zh,en].every(rect=>Math.abs((rect.left+rect.right)/2-center)<1)?[]:[card.id];
+        })),[],'bilingual titles centered above artwork');
         const groups = await root.locator('.monster-region:visible .monster-category').evaluateAll(nodes=>nodes.map(node=>({
-          type:node.dataset.type, label:node.getAttribute('aria-label'), count:node.querySelectorAll('.monster-card').length,
+          type:node.dataset.type, label:node.getAttribute('aria-label'), heading:node.querySelector('.monster-category-title').textContent, count:node.querySelectorAll('.monster-card').length,
           types:[...new Set([...node.querySelectorAll('.monster-card')].map(card=>card.dataset.type))], color:getComputedStyle(node).borderLeftColor
         })));
         for (const group of groups) {
           assert.equal(group.label,group.type);
+          assert.equal(group.heading,group.type,'category heading matches its cards');
           assert.deepEqual(group.types,[group.type],'each category has its own div');
           assert.equal(group.count,catalog.items.filter(item=>item.region===region&&(item.type==='Easy'?'Weak':item.type)===group.type).length);
         }
@@ -94,6 +102,8 @@ catalog.items = catalog.items.filter(item => item.type !== 'Event');
       assert.equal(await visible(), 0, 'Event encounters are absent from search');
       await root.getByRole('button',{name:'清除搜尋',exact:true}).click();
       await root.getByRole('button',{name:'Overgrowth',exact:true}).click();
+      await search.fill('儀式獸');
+      assert.equal(await visible(),1,'Chinese encounter names are searchable');
       await search.fill('Kin Priest');
       assert.equal(await visible(), 1, 'lineup member names are searchable');
       assert.equal(await root.locator('.monster-category:visible').count(),1,'search hides empty category divs');
@@ -102,7 +112,7 @@ catalog.items = catalog.items.filter(item => item.type !== 'Event');
       assert.equal(await root.locator('#monster-empty').isVisible(), true);
       await root.getByRole('button',{name:'清除搜尋',exact:true}).click();
       assert.equal(await visible(), 22);
-      for (const [width, expectedColumns] of [[1024,1],[1100,1],[1280,1],[1440,1],[1920,3]]) {
+      for (const [width, expectedColumns] of [[390,1],[900,1],[1024,3],[1100,1],[1280,1],[1440,1],[1920,3]]) {
         await page.setViewportSize({width, height:1100});
         const problems = await root.locator('.monster-grid').evaluateAll((grids,expectedColumns) => grids.filter(grid=>grid.getClientRects().length).flatMap(grid => {
           const columns = getComputedStyle(grid).gridTemplateColumns.split(' ').length;

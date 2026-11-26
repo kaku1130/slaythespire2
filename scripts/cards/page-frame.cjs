@@ -13,7 +13,7 @@ html body main#main-content {padding-block:20px 24px}
 
 /* Let menus and details fill the shared page frame at tablet widths. */
 @media screen and (min-width:600px) and (max-width:1366px) {
-  html body main#main-content:is(.event-browser[data-event-step],.monster-browser[data-monster-step],.ancient-browser) .split-body,
+  html body main#main-content:is(.event-browser[data-event-step],.monster-browser[data-monster-step]) .split-body,
   html body main#main-content>:is(.character-sidebar,.tier-sidebar,.relic-filters,.potion-filters),
   html body main#main-content>.build-layout .build-content,
   html body main#main-content:has(>.relic-filters,>.potion-filters)>.catalog-scroll {
@@ -56,7 +56,7 @@ module.exports += "\n/* Thin scrollbars for the page and nested scroll areas. */
 
 module.exports += `
 /* Filter dropdowns on the catalog pages. */
-html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) > select {
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .encounter-filters > label) > select {
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -72,11 +72,11 @@ html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-ra
   font: 16px/1.4 system-ui, sans-serif;
   text-overflow: ellipsis;
 }
-html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) > select:focus-visible {
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .encounter-filters > label) > select:focus-visible {
   outline: 2px solid var(--focus, #37a8ec);
   outline-offset: -2px;
 }
-html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .relic-dropdown, .encounter-filters > label) {
+html body main#main-content :is(.tools, .filters) :is(.card-dropdown, .potion-rarity-dropdown, .encounter-filters > label) {
   color: #fff;
   align-items: center;
   margin-block: 0;
@@ -100,3 +100,5 @@ html body main#main-content#main-content .site-attribution a {
   color:#6b7280!important;
 }
 `;
+
+module.exports+=require('./control-heights.cjs');

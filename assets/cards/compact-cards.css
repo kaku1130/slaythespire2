@@ -125,7 +125,7 @@ html body main#main-content #tools > .card-dropdowns {
 html body main#main-content #tools label[for="card-filter-character"] { color: #fff; font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif; }
 html body main#main-content #tools label[for="card-filter-rarity"] { color: #fff; font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif; }
 html body main#main-content #tools label[for="card-filter-type"] { color: #fff; font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif; }
-html body main#main-content #tools label[for="card-filter-tier"] { color: #fff; font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif; }
+
 html body main#main-content #tools .card-dropdown #card-filter-character option[value="Ironclad"],
 html body main#main-content #tools .card-dropdown #card-filter-character:has(option[value="Ironclad"]:checked) { color: #dc6c68; }
 html body main#main-content #tools .card-dropdown #card-filter-character option[value="Silent"],
@@ -162,49 +162,27 @@ html body main#main-content #tools .card-dropdown #card-filter-type option[value
 html body main#main-content #tools .card-dropdown #card-filter-type:has(option[value="Event"]:checked) { color: #6ac1b4; }
 html body main#main-content #tools .card-dropdown #card-filter-type option[value="Quest"],
 html body main#main-content #tools .card-dropdown #card-filter-type:has(option[value="Quest"]:checked) { color: #c8ab79; }
-html body main#main-content #tools .card-dropdown #card-filter-tier option[value="S"],
-html body main#main-content #tools .card-dropdown #card-filter-tier:has(option[value="S"]:checked) { color: #dc6c68; }
-html body main#main-content #tools .card-dropdown #card-filter-tier option[value="A"],
-html body main#main-content #tools .card-dropdown #card-filter-tier:has(option[value="A"]:checked) { color: #e3bf72; }
-html body main#main-content #tools .card-dropdown #card-filter-tier option[value="B"],
-html body main#main-content #tools .card-dropdown #card-filter-tier:has(option[value="B"]:checked) { color: #70bf8b; }
-html body main#main-content #tools .card-dropdown #card-filter-tier option[value="C"],
-html body main#main-content #tools .card-dropdown #card-filter-tier:has(option[value="C"]:checked) { color: #6faeee; }
-html body main#main-content #tools .card-dropdown #card-filter-tier option[value="D"],
-html body main#main-content #tools .card-dropdown #card-filter-tier:has(option[value="D"]:checked) { color: #aab6c4; }
+
+
+
+
+
 
 main#main-content .mobile-sort label {
   color: #fff;
   font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif;
 }
 
-html body main#main-content #tools .card-action-row {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: var(--control-gap, 6px);
-  width: 100%;
-}
-.card-tier-choices { display: grid; grid-column: span 5; grid-template-columns: subgrid; }
-html body main#main-content #tools .card-action-row button {
-  min-width: 0;
-  min-height: var(--control-height);
-  padding-inline: 8px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--control-bg);
-  font: 400 var(--control-font)/1.4 Arial, "Microsoft JhengHei", sans-serif;
-  cursor: pointer;
-}
-html body main#main-content #tools .card-action-row button:is(:hover, :focus-visible, [aria-pressed=true]) {
-  border-color: var(--control-color);
-  background: var(--paper);
-}
-.card-tier-choices button[value=S] { --selection-color: var(--card-tier-S); }
-.card-tier-choices button[value=A] { --selection-color: var(--card-tier-A); }
-.card-tier-choices button[value=B] { --selection-color: var(--card-tier-B); }
-.card-tier-choices button[value=C] { --selection-color: var(--card-tier-C); }
-.card-tier-choices button[value=D] { --selection-color: var(--card-tier-D); }
-.card-action-row #aoe-toggle { --selection-color: #b595dd; }
+
+
+
+
+
+
+
+
+
+
 
 html body main#main-content #tools .card-filter-rows {
   display: grid;
@@ -254,32 +232,14 @@ html body main#main-content #tools #card-filter-type button[value="Quest"] { --s
 html body main#main-content #tools .card-search {
   grid-template-columns: minmax(0, 1fr) max-content;
 }
-html body main#main-content #tools .card-search > #aoe-toggle {
-  grid-area: 1 / 2;
-  --selection-color: #b595dd;
-  min-height: var(--control-height);
-  margin: 0;
-  padding-inline: 12px;
-}
-html body main#main-content #tools .card-action-row {
-  grid-template-columns: 76px minmax(0, 1fr);
-  align-items: center;
-  gap: 8px;
-}
-.card-tier-label {
-  color: #fff;
-  font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif;
-}
-html body main#main-content #tools .card-tier-choices {
-  grid-column: 2;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: var(--control-gap, 6px);
-}
+
+
+
+
 
 /* Give each mobile filter group its own frame without visible headings. */
 @media screen and (max-width: 599px), screen and (pointer: coarse) and (max-width: 1400px) {
-  html body main#main-content #tools .card-filter-row,
-  html body main#main-content #tools .card-action-row {
+  html body main#main-content #tools .card-filter-row{
     box-sizing: border-box;
     grid-template-columns: minmax(0, 1fr);
     padding: 8px;
@@ -289,14 +249,11 @@ html body main#main-content #tools .card-tier-choices {
   html body main#main-content #tools .card-filter-row:has(#card-filter-character) { --filter-frame-color: #b595dd; }
   html body main#main-content #tools .card-filter-row:has(#card-filter-rarity) { --filter-frame-color: #e3bf72; }
   html body main#main-content #tools .card-filter-row:has(#card-filter-type) { --filter-frame-color: #6faeee; }
-  html body main#main-content #tools .card-action-row { --filter-frame-color: #70bf8b; }
-  html body main#main-content #tools .card-filter-row > span,
-  html body main#main-content #tools .card-tier-label {
+  
+  html body main#main-content #tools .card-filter-row > span{
     display: none;
   }
-  html body main#main-content #tools .card-tier-choices {
-    grid-column: 1;
-  }
+  
 }
 
 /* Equal spacing above and below card profession headings. */

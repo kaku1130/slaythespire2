@@ -24,7 +24,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
       }
       console.log('PASS '+file+' '+width+'px: reference rarity/type styles and menu-matched tier colors');
     }
-    const ancient=require('../../data/ancient/tier-palette.json');
+    const ancient=require('../../data/cards/tier-palette.json');
     await page.goto(pathToFileURL(path.resolve('characters.html')).href);
     // Check every level even if the current build list has no D-ranked guide.
     await page.evaluate(()=>{for(const tier of ['S','A','B','C','D']){const n=document.createElement('span');n.className='build-tier';n.dataset.tier=tier;document.querySelector('main').append(n);}});

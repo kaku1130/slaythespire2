@@ -5,7 +5,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
 (async()=>{
  const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
  try {
-  const pages=['ancients.html','characters.html','cards.html','potions.html','relics.html','monsters.html',...fs.readdirSync('data/ancient').filter(f=>/^ancient-.*\.html$/.test(f)).map(f=>'data/ancient/'+f)];
+  const pages=['characters.html','cards.html','potions.html','relics.html','monsters.html'];
   for(const file of pages) {
    const page=await browser.newPage({offline:true,viewport:{width:1440,height:1000}}),errors=[],failed=[];
    page.on('pageerror',e=>errors.push(e.message));
