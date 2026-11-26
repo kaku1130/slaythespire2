@@ -79,7 +79,7 @@
       entry.hash=hash;
       entry.frame.hidden=false;
       loading.hidden=entry.ready;
-      if(entry.ready){applyHash(entry,hash);document.title=entry.frame.contentDocument.title;}
+      if(entry.ready){entry.frame.contentWindow.closeFilterMenu?.();applyHash(entry,hash);document.title=entry.frame.contentDocument.title;}
       return;
     }
     loading.hidden=false;
@@ -91,6 +91,7 @@
     frames.set(key,entry);
     frame.addEventListener('load',()=>{
       entry.ready=true;
+      frame.contentWindow.closeFilterMenu?.();
       bindDocument(frame,key,true);
       frame.style.visibility='';
       if(selected===key){loading.hidden=true;applyHash(entry,entry.hash);}
@@ -120,6 +121,7 @@
     }
     if(key===selected){
       const frame=frames.get(key)?.frame;
+      frame?.contentWindow.closeFilterMenu?.();
       if(frame?.contentWindow.scrollSitePageToTop)frame.contentWindow.scrollSitePageToTop();
       return;
     }

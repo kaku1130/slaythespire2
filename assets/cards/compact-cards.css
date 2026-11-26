@@ -178,7 +178,7 @@ main#main-content .mobile-sort label {
   font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif;
 }
 
-html body main#main-content #tools > .card-action-row {
+html body main#main-content #tools .card-action-row {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: var(--control-gap, 6px);
@@ -206,7 +206,7 @@ html body main#main-content #tools .card-action-row button:is(:hover, :focus-vis
 .card-tier-choices button[value=D] { --selection-color: var(--card-tier-D); }
 .card-action-row #aoe-toggle { --selection-color: #b595dd; }
 
-html body main#main-content #tools > .card-filter-rows {
+html body main#main-content #tools .card-filter-rows {
   display: grid;
   gap: 8px;
   width: 100%;
@@ -261,7 +261,7 @@ html body main#main-content #tools .card-search > #aoe-toggle {
   margin: 0;
   padding-inline: 12px;
 }
-html body main#main-content #tools > .card-action-row {
+html body main#main-content #tools .card-action-row {
   grid-template-columns: 76px minmax(0, 1fr);
   align-items: center;
   gap: 8px;
@@ -279,7 +279,7 @@ html body main#main-content #tools .card-tier-choices {
 /* Give each mobile filter group its own frame without visible headings. */
 @media screen and (max-width: 599px), screen and (pointer: coarse) and (max-width: 1400px) {
   html body main#main-content #tools .card-filter-row,
-  html body main#main-content #tools > .card-action-row {
+  html body main#main-content #tools .card-action-row {
     box-sizing: border-box;
     grid-template-columns: minmax(0, 1fr);
     padding: 8px;
@@ -289,7 +289,7 @@ html body main#main-content #tools .card-tier-choices {
   html body main#main-content #tools .card-filter-row:has(#card-filter-character) { --filter-frame-color: #b595dd; }
   html body main#main-content #tools .card-filter-row:has(#card-filter-rarity) { --filter-frame-color: #e3bf72; }
   html body main#main-content #tools .card-filter-row:has(#card-filter-type) { --filter-frame-color: #6faeee; }
-  html body main#main-content #tools > .card-action-row { --filter-frame-color: #70bf8b; }
+  html body main#main-content #tools .card-action-row { --filter-frame-color: #70bf8b; }
   html body main#main-content #tools .card-filter-row > span,
   html body main#main-content #tools .card-tier-label {
     display: none;

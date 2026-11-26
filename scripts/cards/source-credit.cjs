@@ -1,1 +1,1 @@
-module.exports='資料來源：<a href="https://slaythespire2.net/zh-TW" target="_blank" rel="noopener noreferrer">Slay the Spire 2 Guide &amp; Wiki</a> · <a href="https://sts2.untapped.gg/en" target="_blank" rel="noopener noreferrer">https://sts2.untapped.gg/en</a>遊戲內容與圖片屬各自權利人所有。';
+module.exports="資料來源：<a href=\"https://sts2.untapped.gg\" target=\"_blank\" rel=\"noopener noreferrer\">https://sts2.untapped.gg</a> · <a href=\"https://spirebird.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://spirebird.com</a>遊戲內容與圖片屬各自權利人所有。";

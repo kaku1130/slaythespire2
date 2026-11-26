@@ -19,7 +19,7 @@ ${main} .entry.potion .potion-rarity-row {
  font-size:18px!important;line-height:1.4;
 }
 ${main} #card-scroll .card-detail[data-catalog-layout] dd[data-stat-character]>img {
- width:var(--site-nav-icon-size,36px);height:var(--site-nav-icon-size,36px);
+ width:28px;height:28px;
 }
 
 ${main} .catalog-relic-card .relic-pool-corner>img {

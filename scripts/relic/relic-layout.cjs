@@ -16,8 +16,8 @@ function formatCard(article, item, {localizedRarity = false} = {}) {
   return article.replace(/(<img\b[^>]*>)<div class="relic-title-row"><h2>(.*?) <span class="catalog-name-en" lang="en">(.*?)<\/span><\/h2><div class="tag">[^<]*(.*?)<\/div><\/div><p(?: lang="en")?>(.*?)<\/p>/s,
     (_, image, localizedName, englishName, ranking, localizedEffect) => {
       return '<div class="relic-card-text">' + image + '<h2><span class="relic-name-zh" lang="zh-Hant">' + localizedName
-        + '</span><a class="relic-name-en" lang="en" title="' + englishName.replaceAll('"', '&quot;') + '" href="' + escapeHtml(item.sourceEn).replaceAll('"','&quot;') + '" target="_blank" rel="noopener noreferrer">' + englishName
-        + '</a></h2><p lang="en">' + localizedEffect + '</p>'
+        + '</span><span class="relic-name-en" lang="en">' + englishName
+        + '</span></h2><p lang="en">' + localizedEffect + '</p>'
         + '<div class="relic-rarity-row" lang="' + (localizedRarity ? 'zh-Hant' : 'en') + '">' + renderClassification(item.rarity, {localized:localizedRarity}) + '</div>'
         + (ranking ? '<div class="tag relic-card-ranking">' + ranking + '</div>' : '') + '</div>';
     });
@@ -27,7 +27,7 @@ function formatCatalogCard(article,item,options={}){
   const pool=groups.find(group=>group[0]===item.pool);
   const label=pool?.[1]||item.pool;
   const icon=iconNames[item.pool]||'other';
-  let formatted=formatCard(article,item,options),ancientIcons='';
+  let formatted=formatCard(article,item,options).replace('</article>',require('../cards/item-source-links.cjs').render(item,'relic',options.prefix||'')+'</article>'),ancientIcons='';
   if(item.rarity==='Ancient')formatted=formatted.replace(/<div class="tag relic-card-ranking">([\s\S]*?)<\/div>/,(_,ranking)=>{ancientIcons=ranking;return '';});
   const rarity='<span class="relic-rarity-row" lang="en">'+ancientIcons+renderClassification(item.rarity)+'</span>';
   const poolMarkup='<span class="relic-pool-corner" lang="en" title="'+escapeHtml(label)+'" aria-label="'+escapeHtml(label)+'"><img src="'+(options.prefix||'')+'assets/cards/icons/'+icon+'.webp" alt="" width="20" height="20"><span>'+escapeHtml(label)+'</span></span>';
@@ -90,3 +90,5 @@ module.exports.styles += `
 }
 .relic-card-classification [data-relic-rarity] { display: none; }
 `;
+
+module.exports.styles+=require('../cards/item-source-links.cjs').styles;

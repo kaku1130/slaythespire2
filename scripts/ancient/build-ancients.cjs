@@ -27,4 +27,4 @@ console.log('Built ancient index and '+data.slugs.length+' detail pages.');
 
 require('../event/catalog-detail-pane.cjs').build('ancient');
 const desktopHtml = fs.readFileSync(list, 'utf8').replace('</body>', '<link rel="stylesheet" href="assets/ancient/ancient-desktop.css"></body>');
-require('../cards/desktop-page-css.cjs').writeDesktopPage(list, desktopHtml, {searchControls:false});
+require('../cards/desktop-page-css.cjs').writeDesktopPage(list, desktopHtml, {searchControls:false,attribution:'資料來源：<a href="https://slaythespire2.net/zh-TW" target="_blank" rel="noopener noreferrer">https://slaythespire2.net/zh-TW</a>遊戲內容與圖片屬各自權利人所有。'});

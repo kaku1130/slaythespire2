@@ -239,29 +239,24 @@ html body main#main-content .filters .catalog-search-tools>button.catalog-random
   panels.forEach((panel, index) => {
     panel.id ||= 'filter-menu-panel-' + index;
   });
-  button.setAttribute('aria-controls', panels.map(panel => panel.id).join(' '));
+  const popup = document.createElement('div');
+  popup.className = 'filter-menu-panel';
+  popup.id = 'filter-menu-panel';
+  controls.append(popup);
+  panels.forEach(panel => popup.append(panel));
+  button.setAttribute('aria-controls', popup.id);
   button.innerHTML = '<span aria-hidden="true">&#9776;</span>';
   random.after(button);
-  const kind = controls.id === 'tools' ? 'card' : controls.classList.contains('relic-filters') ? 'relic' : 'potion';
-  const key = 'sts2_' + kind + '_menu_open';
-  let expanded = true;
-  try {
-    const cookie = location.protocol === 'file:' ? null : document.cookie.split(';').map(value => value.trim()).find(value => value.startsWith(key + '='));
-    const value = location.protocol === 'file:' ? localStorage.getItem(key) : cookie?.slice(key.length + 1);
-    if (value === 'false') expanded = false;
-  } catch {}
   function setExpanded(value) {
     button.setAttribute('aria-expanded', String(value));
+    popup.hidden = !value;
     controls.classList.toggle('filter-menu-open', value);
     controls.classList.toggle('filter-menu-closed', !value);
   }
-  setExpanded(expanded);
+  window.closeFilterMenu = () => setExpanded(false);
+  setExpanded(false);
+  window.addEventListener('pageshow', window.closeFilterMenu);
   button.addEventListener('click', () => {
-    const value = button.getAttribute('aria-expanded') !== 'true';
-    setExpanded(value);
-    try {
-      if (location.protocol === 'file:') localStorage.setItem(key, String(value));
-      else document.cookie = key + '=' + value + '; Max-Age=31536000; Path=/; SameSite=Lax' + (location.protocol === 'https:' ? '; Secure' : '');
-    } catch {}
+    setExpanded(button.getAttribute('aria-expanded') !== 'true');
   });
 })();

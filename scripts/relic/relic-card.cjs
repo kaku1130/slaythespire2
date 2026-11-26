@@ -9,10 +9,10 @@ function description(relic){
 function render(relic,{image,id='',className='',extras='',prefix=''}={}){
  if(!image)throw Error('Missing relic image: '+relic.id);
  const article='<article class="entry relic catalog-relic-card '+escape(className)+'"'+(id?' id="'+escape(id)+'"':'')+' data-relic-id="'+escape(relic.id)+'" data-rarity="'+escape(relic.rarity)+'"><img src="'+escape(image)+'" alt="'+escape(relic.name)+'" width="72" height="72"><div class="relic-title-row"><h2>'+escape(relic.name)+' <span class="catalog-name-en" lang="en">'+escape(relic.nameEn)+'</span></h2><div class="tag"></div></div><p lang="en">'+description(relic).replaceAll('potion-keyword','relic-keyword')+'</p></article>';
- return formatCatalogCard(article,relic,{prefix}).replace('</article>',extras+'</article>');
+ return formatCatalogCard(article,relic,{prefix}).replace('<div class="catalog-source-links">',extras+'<div class="catalog-source-links">');
 }
 const card='html body main#main-content .catalog-relic-card[data-relic-id]';
-const styles=`
+const styles=require('../cards/item-source-links.cjs').styles+`
 /* Reuse the relic catalog presentation in build and ancient pages. */
 ${card} {display:grid;gap:12px;box-sizing:border-box;width:100%;min-width:0;padding:18px;border:1px solid var(--line,#293340);border-radius:10px;background:var(--paper,#0d131a);text-align:center}
 ${card} .relic-card-text {display:grid;gap:12px;min-width:0}

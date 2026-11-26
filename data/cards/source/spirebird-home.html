@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<script src="/reset-rules.js?v=b229944ea046"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Spirebird is a community stats, replay, and analysis project for Slay the Spire 2.">
+<meta name="robots" content="index,follow">
+<title>Spirebird · Slay the Spire 2 stats and analysis</title>
+<link rel="canonical" href="https://spirebird.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Spirebird">
+<meta property="og:title" content="Spirebird · Slay the Spire 2 stats and analysis">
+<meta property="og:description" content="Community stats, replays, profiles, and analysis tools for Slay the Spire 2.">
+<meta property="og:url" content="https://spirebird.com/">
+<meta property="og:image" content="https://spirebird.com/SpireBirdTextWebLogo.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Spirebird · Slay the Spire 2 stats and analysis">
+<meta name="twitter:description" content="Community stats, replays, profiles, and analysis tools for Slay the Spire 2.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"Spirebird",
+  "url":"https://spirebird.com/",
+  "description":"Community stats, replays, profiles, and analysis tools for Slay the Spire 2.",
+  "about":{"@type":"VideoGame","name":"Slay the Spire 2"},
+  "publisher":{"@type":"Organization","name":"Spirebird"}
+}
+</script>
+<style>
+  :root { --navy:#16243a; --accent:#14538a; --ink:#1a2330; --ink-2:#54616f; --ink-3:#8a96a6; --line:#e2e6ec; --line-2:#cfd6de; --surface:#f5f7fa; --page:#fff; --warm:#f1e5bf; }
+  html[data-theme="dark"] { --navy:#0b1320; --accent:#6fb4ee; --ink:#dce3ec; --ink-2:#9aa7b6; --ink-3:#69768a; --line:#232e3c; --line-2:#33414f; --surface:#161f2b; --page:#0e1622; --warm:#f6e7b5; }
+  * { box-sizing:border-box; }
+  body { margin:0; color:var(--ink); background:var(--page); font-family:"Archivo",system-ui,sans-serif; font-size:15px; line-height:1.65; }
+  a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+  .topbar { background:var(--navy); color:#cdd7e4; border-bottom:1px solid var(--line); }
+  .topbar .inner { display:flex; align-items:center; gap:22px; min-height:46px; padding:0 18px; flex-wrap:wrap; }
+  .topbar .logo { font-family:"Zilla Slab",serif; font-weight:700; font-size:17px; color:#fff; letter-spacing:.01em; }
+  .topbar .logo:hover { color:#fff; text-decoration:none; }
+  .topbar nav { display:flex; gap:18px; font-size:13px; font-weight:500; align-items:center; flex-wrap:wrap; }
+  .topbar nav a { color:#aebacb; } .topbar nav a:hover, .topbar nav a.on { color:#fff; text-decoration:none; }
+  .topbar nav .navsep { width:1px; height:15px; background:#36506f; margin:0 -6px; }
+  .autharea { margin-left:auto; display:flex; align-items:center; gap:10px; }
+  .twpill, .twgear, .themebtn { display:inline-flex; align-items:center; gap:5px; background:#0f1b2d; border:1px solid #2c4264; color:#cdd7e4; border-radius:5px; padding:6px 11px; font:inherit; font-size:13px; cursor:pointer; }
+  .twpill.sub { border-color:#9146ff; color:#fff; background:#6441a5; } .twpill.login { border-color:#9146ff; color:#cbb8ff; }
+  .twlogout { background:none; border:0; color:#8aa0bd; font:inherit; font-size:12px; cursor:pointer; padding:2px 4px; }
+  .twlogout:hover { color:#cdd7e4; text-decoration:underline; } .twgear:hover, .themebtn:hover { color:#fff; border-color:#3d597f; }
+  .page { width:min(940px, calc(100% - 40px)); margin:0 auto; padding:55px 0 82px; }
+  .hero { padding:0 0 28px; margin-bottom:28px; border-bottom:1px solid var(--line); }
+  h1, h2 { font-family:"Zilla Slab",Georgia,serif; line-height:1.1; color:var(--ink); }
+  h1 { font-size:clamp(34px, 5vw, 50px); margin:0 0 14px; letter-spacing:-.02em; }
+  h2 { font-size:28px; margin:47px 0 14px; }
+  p { max-width:820px; margin:0 0 18px; }
+  .lede { color:var(--ink-2); font-size:17px; max-width:760px; }
+  .eyebrow { color:var(--warm); text-transform:uppercase; letter-spacing:.12em; font-weight:700; font-size:11px; margin-bottom:7px; }
+  .now { margin:18px 0 0; padding-left:24px; }
+  .now li { margin:0 0 12px; padding-left:3px; }
+  .now a { color:var(--accent); }
+  .now a:hover { color:var(--accent); }
+  .feature-list { margin:18px 0; padding-left:24px; }
+  .feature-list li { margin:0 0 12px; padding-left:3px; }
+  .split { display:block; }
+  .callout { margin-top:28px; padding:18px 20px; border-left:3px solid var(--accent); background:var(--surface); color:var(--ink-2); }
+  .signoff { margin-top:42px; padding-top:26px; border-top:1px solid var(--line); color:var(--ink-2); }
+  @media (max-width:720px) { .topbar .inner { gap:12px; padding:7px 13px; } .topbar nav { gap:12px; } .autharea { margin-left:0; } .page { width:min(100% - 28px, 940px); padding-top:34px; } }
+</style>
+<script src="/contribute.js?v=3bdc0d57492c" defer></script>
+</head>
+<body>
+<div class="topbar"><div class="inner">
+  <a class="logo" href="/" data-tt="Spirebird" data-desc="A jorbs Community Stats Project for Slay the Spire 2">Spirebird</a>
+  <nav id="snav"></nav>
+  <span class="autharea" id="authArea"></span>
+  <button class="themebtn" id="themebtn" type="button">Dark</button>
+</div></div>
+
+<main class="page">
+  <section class="hero">
+    <h1>Hi, welcome to Spirebird!</h1>
+  </section>
+
+  <p>I had about 9,000 hours in Slay the Spire 1, and was very excited to start playing Slay the Spire 2, when Megacrit announced that Early Access would be delayed six months. I had to find something to do for six months, so I tried building a neural network that would play Slay the Spire 1. Not an LLM, think more like a chess engine. It was very bad at Slay the Spire 1, somewhat because I had very little idea what I was doing, and somewhat because Slay the Spire is not a particularly easy game to approach with an engine.</p>
+  <p>There were always a bunch of things I would’ve loved to mod or build for myself in Slay the Spire 1, but it felt like the game was nearing the end of its lifecycle, so I figured it’d be more useful to start brainstorming all the features I’d love and then build them for Slay the Spire 2.</p>
+  <p>When Slay the Spire 2 came out I started with personal stat parsing and collection in a spreadsheet, and then built from there. The project has grown a lot. Feel free to click around. I make content for Slay the Spire for my career, so I’m able to convince myself that this is going to pay off in <a href="https://twitch.tv/jorbs" target="_blank" rel="noopener">Twitch subs</a> or <a href="https://www.patreon.com/jorbs/about" target="_blank" rel="noopener">Patreon support</a> or whatever and otherwise make it all free.</p>
+
+  <p>Here’s some examples of my favorite stuff you can do on the site. A lot of these are particular filters and/or sorts of data, feel free to try your own:</p>
+
+  <h2>Right Now:</h2>
+  <ul class="now">
+    <li><a href="/archive.html#cards&sort=eloBT">See how highly players Spirebird thinks win &gt;50% of their a10 runs prioritize drafting different cards.</a></li>
+    <li><a href="/archive.html#cards&q=common-%5Bun%5D-%5B%2B%5D&cols=rating,war,win,winact,counts&sort=pickWar">See which commons result in more wins than expected when picked.</a> Commons are overall pretty bad, so there are only three as-of writing, can you guess which?</li>
+    <li><a href="/archive.html#cards&cols=rating,war,skill,counts&sort=pSkill">See which cards are picked more often by players who win more often, and which are picked less.</a></li>
+    <li><a href="/archive.html#relics&sort=winRate">See the highest win rate Neow bonuses.</a></li>
+    <li><a href="relic.html?id=SHOVEL">See how many times people Dig with Shovel per run that they get it in, and how often they win for each value.</a></li>
+    <li><a href="/bespoke.html">See how much health Happy Flower saves on average when it procs on different turns of a fight, and other relic-specific stats like that.</a></li>
+    <li><a href="enemy.html?id=DECIMILLIPEDE">See which cards save the most damage against Decimillipede.</a></li>
+    <li><a href="/archive.html#encounters&sort=deathPct">See the most lethal encounters in the game.</a></li>
+    <li>See which events are best in <a href="/archive.html#events&r=overgrowth&sort=war">Overgrowth</a> vs. <a href="/archive.html#events&r=underdocks&sort=war">Underdocks</a>.</li>
+    <li><a href="/archive.html#shops&sort=gold">See which shop options we’ve spent the most gold on and which generate the most wins above expectation per gold spent.</a></li>
+    <li><a href="/archive.html#potions&sort=usePct&dir=asc">See which potions are used the least after being picked up</a> (either because they were discarded or because the run ended before they were used).</li>
+    <li><a href="/archive.html#seeds">Find the “most difficult” (based on Spirebird’s expectation of player win rates) seed that’s been uploaded to Spirebird that hasn’t been beaten yet.</a></li>
+    <li><a href="/archive.html#winstreaks">See which cards have the highest winstreaks in the game.</a> Winstreaks are cool, but I don’t want to have to arbitrate run legitimacy, so I’m not currently tracking them for players.</li>
+    <li><a href="/archive.html#charts&ch=encDmgGrid">See a grid of tables showing the distributions of damage players take from all the different fights in the game.</a></li>
+    <li><a href="/archive.html#charts&ch=floorTypeWinrate">See Win% by Floor Type.</a> Shows whether decks which go to events or fights in Act 2 tend to win more, for example.</li>
+    <li><a href="/archive.html#charts&ch=dmgPerFloor">See the % of HP lost per fight broken down by floor, character, and encounter type.</a> Shows the difference between taking on an elite on floor 6 vs floor 11, for example.</li>
+    <li><a href="/archive.html#charts&ch=scatterGrid">See a grid of graphs showing how cards with different pick rates map to other stats, like whether they also have higher win rates, or whether they reduce the number of turns per fight.</a></li>
+    <li><a href="/archive.html#charts&ch=tableScatter&tbl=cards&tx=picked&ty=wins">Click into one of those to see f.x. Win rate of cards plotted against their pick rate.</a> Mouse over the cards in that table to see which cards win more often than their pick rate might predict, and which win less.</li>
+    <li><a href="/archive.html#charts&ch=deckClusters&cv=all">See a cluster chart which connects different cards and relics to each other, and to nodes for won runs and lost runs, based on how often they occur together in Spirebird’s data.</a></li>
+    <li><a href="/replays.html?user=jorbs">See replays of runs I’ve played on stream, which you can click through and see some annotations I’ve left on.</a></li>
+    <li><a href="/sandbox.html">See a sandbox rendition of one of the decision-points in a run - maybe click “open in sandbox” on a position from one of my replays that seems interesting - and try generating a brute-force solution of it to minimize average HP loss, or for a custom value equation you can set considering different HP values and potion use.</a></li>
+    <li><a href="/replays.html?user=Spirebird0.111.0">See replays of runs my neural network has played, annotated with its opinion of its chance to win and its prioritization of different choices.</a> As-of September 1st, 2026, these are included primarily for humor value.</li>
+  </ul>
+
+  <div class="split">
+    <section>
+      <h2>After Uploading Your Runs:</h2>
+      <p>If you <a href="/archive.html?prefs=1">make an account and upload your runs</a>, you’ll unlock this data analysis on your own runs; just set the population generating the statistic to “my runs” instead of the site population.</p>
+      <p>And of course your own data will be included in the site’s data pools, assuming you opt in during account creation!</p>
+      <p>You’ll also be able to do things like:</p>
+      <ul class="feature-list">
+        <li><a href="/archive.html#charts&ch=winrateOverTime">See Spirebird’s estimation of your Ascension 10 win rate on the different characters over time.</a></li>
+        <li><a href="/archive.html#cards">See the differences between your own drafting priorities of cards and those of players with &gt;50% estimated win rate on the character.</a></li>
+        <li><a href="/archive.html#runs">See a list of your runs.</a></li>
+        <li><a href="/archive.html#mastery">See which cards you’ve won Ascension 10 with.</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>After Downloading the Mod:</h2>
+      <p>If you download the <a href="/archive.html#mod">In-Game Mod</a> and run it while playing the game, you’ll be able to do things like:</p>
+      <ul class="feature-list">
+        <li>See stats from Spirebird.com when you hover over different cards, relics, and event options while playing. (If you want; it’s configurable).</li>
+        <li>Record and upload fully detailed records of what you did in the run, so that you can see and annotate <a href="/replays.html?mine=1">replays of your own runs</a>, or link them to a friend.</li>
+        <li>Press CTRL+C while in-game to copy the position you’re in into your clipboard, then paste it into the site’s <a href="/sandbox.html">sandbox</a> to try to analyze the best move.</li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="signoff">
+    <p>Hope you enjoy the site! Feedback is welcome on <a href="https://discord.gg/jorbs" target="_blank" rel="noopener">my Discord</a>. Please recognize that I’m a solo-dev with middling coding experience and grandiose ideas, so sometimes a feature will be a bit messy or broken for a while and I won’t circle back to it for a couple of months because I want to build something completely different.</p>
+    <p>And I hope you are enjoying Slay the Spire 2!</p>
+    <p>jorbs</p>
+  </section>
+</main>
+
+<script src="nav.js?v=d1156576e984"></script>
+<script>
+  SpirebirdNav.render('home', 'snav');
+  SpirebirdNav.mountAuth('authArea');
+  (function () {
+    var key = 'sb-theme', button = document.getElementById('themebtn');
+    function setTheme(theme, persist) {
+      document.documentElement.setAttribute('data-theme', theme);
+      button.textContent = theme === 'dark' ? '☀ Light' : '☾ Dark';
+      if (persist) try { localStorage.setItem(key, theme); } catch (e) {}
+    }
+    button.addEventListener('click', function () { setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark', true); });
+    var saved = null; try { saved = localStorage.getItem(key); } catch (e) {}
+    setTheme(saved || 'dark', false);
+  })();
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"3508b1ffa35e450d992421e9ec2614d3","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

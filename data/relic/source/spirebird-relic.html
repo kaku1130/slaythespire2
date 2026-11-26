@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<script src="/reset-rules.js?v=b229944ea046"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spirebird · Relic</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy:#16243a; --navy-2:#1d3050; --accent:#14538a; --accent-solid:#14538a;
+    --accent-hi:#1c6fb8; --accent-dp:#0c3a66; --ink:#1a2330; --ink-2:#54616f; --ink-3:#8a96a6;
+    --line:#e2e6ec; --line-2:#cfd6de; --surface:#f5f7fa; --surface-2:#eef2f6; --hi:#dcebfb;
+    --row-alt:#fafbfd; --row-hover:#eef4fb; --win:#1f8a4c; --loss:#c0392b; --page:#ffffff;
+  }
+  html[data-theme="dark"] {
+    --navy:#0b1320; --navy-2:#16243a; --accent:#6fb4ee; --accent-solid:#27689f;
+    --accent-hi:#8fc4f2; --accent-dp:#a7d1f5; --ink:#dce3ec; --ink-2:#9aa7b6; --ink-3:#69768a;
+    --line:#232e3c; --line-2:#33414f; --surface:#161f2b; --surface-2:#1b2532; --hi:#1e3a59;
+    --row-alt:#131c28; --row-hover:#1c2a3a; --win:#46c47e; --loss:#e0614f; --page:#0e1622;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--page); color:var(--ink); font-family:"Archivo",system-ui,sans-serif; font-size:14px; }
+  a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+
+  .topbar { background: var(--navy); color:#cdd7e4; border-bottom:1px solid var(--line); }
+  .topbar .inner { display:flex; align-items:center; gap:22px; padding:0 18px; height:46px; flex-wrap:wrap; }
+  .topbar .logo { font-family:"Zilla Slab",serif; font-weight:700; font-size:17px; color:#fff; letter-spacing:.01em; }
+  .topbar .logo:hover { text-decoration:none; color:#fff; }
+  .topbar nav { display:flex; gap:18px; font-size:13px; font-weight:500; align-items:center; flex-wrap:wrap; }
+  .topbar nav a { color:#aebacb; }
+  .topbar nav a:hover, .topbar nav a.on { color:#fff; text-decoration:none; }
+  .topbar nav .navsep { width:1px; height:15px; background:#36506f; margin:0 -6px; }
+  .autharea { margin-left:auto; display:flex; align-items:center; gap:10px; }
+  .twpill { display:inline-flex; align-items:center; gap:5px; background:#0f1b2d; border:1px solid #2c4264; color:#cdd7e4; border-radius:5px; padding:6px 11px; font-family:inherit; font-size:13px; cursor:pointer; }
+  .twpill.sub { border-color:#9146ff; color:#fff; background:#6441a5; }
+  .twpill.login { border-color:#9146ff; color:#cbb8ff; }
+  .twlogout { background:none; border:none; color:#8aa0bd; font-size:12px; cursor:pointer; padding:2px 4px; }
+  .twlogout:hover { color:#cdd7e4; text-decoration:underline; }
+  .twgear { display:inline-flex; align-items:center; gap:5px; background:none; border:1px solid #2c4264; color:#cdd7e4; border-radius:5px; padding:6px 10px; font-family:inherit; font-size:13px; cursor:pointer; }
+  .twgear:hover { border-color:#3a5578; color:#fff; }
+  .coltip { position:fixed; z-index:50; max-width:280px; display:none; pointer-events:none; background:var(--surface-2); border:1px solid var(--line-2); border-radius:7px; padding:8px 10px; box-shadow:0 6px 20px rgba(0,0,0,.28); }
+  .coltip .t { font-family:"Archivo"; font-weight:700; font-size:12px; color:var(--ink); margin-bottom:3px; }
+  .coltip .d { font-size:12px; line-height:1.45; color:var(--ink-2); }
+  .topbar .logo[data-desc] { cursor:pointer; }
+  .themebtn { margin-left:auto; background:#0f1b2d; border:1px solid #2c4264; color:#cdd7e4; border-radius:5px; padding:6px 11px; font-family:inherit; font-size:12.5px; font-weight:500; cursor:pointer; }
+  .themebtn:hover { color:#fff; border-color:#3d597f; }
+
+  .wrap { max-width:1080px; margin:0 auto; padding:22px 20px 60px; }
+
+  h1.cardname { font-family:"Zilla Slab",serif; font-weight:700; font-size:32px; margin:0 0 2px; color:var(--ink); letter-spacing:.005em; text-align:center; }
+  /* Relic-profile header: prev/next links + title. Mobile-first — narrow stacks the
+     two links on a row above the title; at >=640px the title moves inline so the
+     prev link sits beside it (next pushed to the far right). */
+  .profhead { display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 14px; margin:0 0 6px; }
+  .profhead .cardname { margin:0; order:3; flex-basis:100%; }   /* narrow: title drops to its own line */
+  .profhead .pnav { color:var(--accent); white-space:nowrap; font-size:13px; font-weight:600; }
+  .profhead .pnav.next { margin-left:auto; }                    /* push next-link to the right */
+  @media (min-width:640px) {
+    /* wide: 3-col grid with equal 1fr flanks so the title sits dead-center regardless of link widths */
+    .profhead { display:grid; grid-template-columns:1fr auto 1fr; }
+    .profhead .pnav.prev { justify-self:start; }
+    .profhead .pnav.next { justify-self:end; margin-left:0; }
+    .profhead .cardname { order:0; justify-self:center; }      /* wide: arrows flank the centered title */
+  }
+
+  .topgrid { display:flex; gap:26px; align-items:flex-start; flex-wrap:wrap; margin-top:14px; }
+  .imgs { display:flex; gap:14px; }
+  /* relics are square icons (not 47/64 card portraits) */
+  .relicfig img { width:150px; height:150px; object-fit:contain; image-rendering:auto; filter:drop-shadow(0 6px 16px rgba(0,0,0,.45)); border-radius:10px; display:block; background:var(--surface); }
+  .relicfig.missing { width:150px; height:150px; display:flex; align-items:center; justify-content:center; border:1px dashed var(--line-2); border-radius:10px; color:var(--ink-3); font-size:12px; }
+  .bio { flex:1; min-width:260px; }
+  .facts { margin:2px 0 16px; }
+  .facts .fact { font-size:13px; line-height:1.6; color:var(--ink-2); }
+  .facts .fact b { color:var(--ink); font-weight:700; }
+  .rules { font-size:14px; line-height:1.55; color:var(--ink); margin:0 0 12px; max-width:560px; }
+  .rules .bb-num { color:var(--accent-hi); font-weight:700; }
+  .rules .bb-green { color:var(--win); font-weight:700; }
+  .rules .bb-kw { color:#b8860b; font-weight:600; }
+  html[data-theme="dark"] .rules .bb-kw { color:#e8c45a; }
+  .rules .bb-ench { color:#8a5cc8; font-weight:600; }
+  html[data-theme="dark"] .rules .bb-ench { color:#b48ce8; }
+  .rules .bb-red { color:var(--loss); font-weight:600; }
+  .rules .bb-star { color:#e8c45a; }
+  .rules .bb-icon { height:1.05em; width:auto; vertical-align:-.16em; margin:0 1px; }
+  .rules .nrg { display:inline-block; width:.78em; height:.78em; border-radius:50%; background:#b9c2cd; border:1px solid rgba(0,0,0,.3); vertical-align:-.04em; margin:0 .5px; }
+  html[data-theme="dark"] .rules .nrg { background:#aab6c4; border-color:rgba(0,0,0,.5); }
+  .rules .nrg-necro { background:#a472d6; }
+  .flavor { font-size:13px; line-height:1.5; color:var(--ink-3); font-style:italic; margin:0 0 14px; max-width:560px; }
+  .streakwrap { display:flex; gap:12px; flex-wrap:wrap; align-content:flex-start; margin-top:4px; }
+  .streakbox { min-width:170px; background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:11px 14px; }
+  .streakbox .lbl { font-size:10px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3); margin-bottom:4px; }
+  .streakbox .big { font-family:"Zilla Slab",serif; font-weight:700; font-size:32px; line-height:1; color:var(--win); }
+  .streakbox .big.zero { color:var(--ink-3); }
+  .streakbox .span { margin-top:6px; font-size:12px; color:var(--ink-2); }
+  .streakbox .bcyc { margin-top:6px; display:flex; align-items:center; gap:6px; }
+  .streakbox .bcyc .bcyclbl { font-size:11px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--ink-2); min-width:64px; text-align:center; }
+  .streakbox .bcycbtn { background:none; border:1px solid var(--line); border-radius:5px; color:var(--ink-2); font-size:14px; line-height:1; padding:1px 7px 3px; cursor:pointer; }
+  .streakbox .bcycbtn:hover { color:var(--ink-1); border-color:var(--ink-3); }
+  .bchartwrap { display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:14px; margin-top:14px; }
+  .bchart { background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:12px 14px; }
+  .bchart-head { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:4px; }
+  .bchart-title { font-size:10px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3); }
+  .bchart .bcyc { display:flex; align-items:center; gap:6px; }
+  .bchart .bcyclbl { font-size:11px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--ink-2); min-width:60px; text-align:center; }
+  .bchart .bcycbtn { background:none; border:1px solid var(--line); border-radius:5px; color:var(--ink-2); font-size:14px; line-height:1; padding:1px 7px 3px; cursor:pointer; }
+  .bchart .bcycbtn:hover { color:var(--ink-1); border-color:var(--ink-3); }
+  .bchart-host { min-height:60px; }
+  .bchart-empty { padding:28px 4px; color:var(--ink-3); font-size:13px; text-align:center; }
+  .streakbox .ctx { margin-top:3px; font-size:11px; color:var(--ink-3); }
+  .streakmuted { color:var(--ink-3); font-size:13px; align-self:center; }
+  .facts .rar-Uncommon { color:#3f86c8; font-weight:700; } .facts .rar-Rare { color:#a8801f; font-weight:700; }
+  .facts .rar-Ancient { color:#8a5cc8; font-weight:700; } .facts .rar-Shop { color:#1f8a4c; font-weight:700; }
+  html[data-theme="dark"] .facts .rar-Uncommon { color:#5aa6e8; } html[data-theme="dark"] .facts .rar-Rare { color:#e8c45a; }
+  html[data-theme="dark"] .facts .rar-Ancient { color:#b48ce8; } html[data-theme="dark"] .facts .rar-Shop { color:#46c47e; }
+
+  /* SUMMARY career strip */
+  .summary { display:flex; align-items:stretch; border:1px solid var(--line-2); border-radius:7px; overflow:hidden; margin-bottom:16px; width:fit-content; max-width:100%; }
+  .summary .lead, .summary .col { padding:5px 14px; text-align:right; }
+  .summary .lead { text-align:left; border-right:1px solid var(--line-2); background:var(--surface); display:flex; flex-direction:column; justify-content:center; }
+  .summary .lead-top { font-size:11px; font-weight:800; letter-spacing:.07em; text-transform:uppercase; color:var(--ink); }
+  .summary .lead-bot { font-size:11.5px; color:var(--ink-3); margin-top:2px; white-space:nowrap; }
+  .summary .col + .col { border-left:1px solid var(--line); }
+  .summary .col .h { font-size:10px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--ink-3); }
+  .summary .col .v { font-size:16px; font-weight:700; color:var(--ink); margin-top:2px; font-variant-numeric:tabular-nums; }
+
+  .section { margin-top:34px; }
+  .section > h2 { font-family:"Zilla Slab",serif; font-weight:700; font-size:20px; color:var(--accent-dp); margin:0 0 12px; border-bottom:1px solid var(--line-2); padding-bottom:5px; letter-spacing:.005em; }
+
+  .controls { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin-bottom:12px; }
+  .controls label { font-size:11px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--ink-3); margin-right:6px; }
+  .controls select { font-family:inherit; font-size:13px; font-weight:600; color:var(--ink); background:var(--surface-2); border:1px solid var(--line-2); border-radius:6px; padding:5px 9px; cursor:pointer; }
+  .controls #patchList{font-variant-numeric:tabular-nums}
+  .controls #patchList a.patchlink{text-decoration:none}
+  .controls #patchList a.patchlink:hover{text-decoration:underline}
+  .controls #patchList b.patchcur{font-weight:700}
+  .relicfig.missing.era { flex-direction:column; gap:8px; padding:12px; text-align:center; }
+  .relicfig .eranote { font-size:12px; font-style:italic; color:var(--ink-2); max-width:220px; }
+
+  table.stats { border-collapse:collapse; width:100%; max-width:700px; border:1px solid var(--line); margin-bottom:8px; }
+  table.stats th, table.stats td { padding:4px 12px; border-bottom:1px solid var(--line); text-align:right; font-variant-numeric:tabular-nums; font-size:12.5px; }
+  table.stats thead th { font-size:10px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-2); background:var(--surface); border-bottom:2px solid var(--accent-solid); }
+  table.stats td.name, table.stats th.name { text-align:left; color:var(--ink); font-weight:600; border-right:1px solid var(--line); }
+  table.stats td.val { font-weight:700; color:var(--ink); }
+  table.stats td.rank { font-size:11.5px; font-weight:700; }
+  table.stats td.rank .of { font-weight:500; color:var(--ink-3); font-size:10.5px; }
+  table.stats tbody tr:hover td { background:var(--row-hover); }
+  table.stats td.name[title], .summary .col[title], .summary .lead[title] { cursor:help; }
+  table.stats td.name[title] { text-decoration:underline dotted var(--line-2); text-underline-offset:3px; text-decoration-thickness:1px; }
+  table.stats .grp td { background:var(--surface-2); font-size:10px; font-weight:800; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3); text-align:left; border-bottom:1px solid var(--line-2); }
+  /* by-character table reuses table.stats but every column is numeric/centered-right */
+  table.stats td.ch { text-align:left; color:var(--ink); font-weight:600; border-right:1px solid var(--line); }
+
+  .muted { color:var(--ink-3); }
+  .err { color:var(--loss); font-weight:600; padding:30px 0; }
+
+  /* index / browse */
+  .idxhead { display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; margin-bottom:12px; }
+  .idxhead h1 { font-family:"Zilla Slab",serif; font-weight:700; font-size:30px; margin:0; color:var(--ink); }
+  .idxsearch { font-family:inherit; font-size:14px; color:var(--ink); background:var(--surface-2); border:1px solid var(--line-2); border-radius:7px; padding:8px 12px; width:280px; }
+  .filterbar { margin-bottom:16px; }
+  .filterbar .count { color:var(--ink-3); font-size:12px; margin-left:auto; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(110px,1fr)); gap:14px; }
+  .tile { display:block; text-align:center; padding:8px; border:1px solid var(--line); border-radius:10px; background:var(--surface); }
+  .tile:hover { background:var(--row-hover); text-decoration:none; border-color:var(--line-2); }
+  .tile .thumb { display:block; aspect-ratio:1/1; background:var(--surface-2); border-radius:6px; overflow:hidden; }
+  .tile .thumb img { width:100%; height:100%; object-fit:contain; display:block; }
+  .tile .thumb.noimg, .tile .ph { display:flex; align-items:center; justify-content:center; height:100%; color:var(--ink-3); font-size:11px; }
+  .tile .nm { margin-top:6px; font-size:12px; font-weight:600; color:var(--ink); }
+  .tile { position:relative; }
+  .tile .ancbadge { position:absolute; top:6px; left:6px; display:inline-flex; align-items:center; gap:4px; font-size:9.5px; font-weight:700; color:var(--ink-2); background:var(--surface-2); border:1px solid var(--line); border-radius:999px; padding:2px 6px 2px 5px; pointer-events:none; }
+  .tile .ancbadge .dot { width:7px; height:7px; border-radius:50%; flex:none; }
+
+  .chart-wrap { background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:14px 14px 6px; max-width:640px; }
+  .chart-wrap svg { width:100%; height:auto; display:block; }
+  .pairs { display:flex; gap:26px; flex-wrap:wrap; }
+  .paircol { flex:1; min-width:320px; }
+  .paircol h3 { font-family:"Archivo"; font-weight:700; font-size:13px; color:var(--ink); margin:0 0 8px; }
+  table.pair { border-collapse:collapse; width:100%; }
+  table.pair td { padding:6px 8px; border-bottom:1px solid var(--line); font-variant-numeric:tabular-nums; font-size:12.5px; }
+  table.pair td.nm { text-align:left; font-weight:600; }
+  table.pair td.flow { text-align:right; color:var(--ink-2); white-space:nowrap; }
+  table.pair td.lift { text-align:right; font-weight:700; color:var(--win); white-space:nowrap; }
+  table.pair td.n { text-align:right; color:var(--ink-3); font-size:11px; }
+
+  /* comments */
+  .cform { display:flex; gap:8px; margin-bottom:14px; }
+  .cform textarea { flex:1; font-family:inherit; font-size:13.5px; color:var(--ink); background:var(--surface-2); border:1px solid var(--line-2); border-radius:8px; padding:8px 10px; resize:vertical; }
+  .cform button { font-family:inherit; font-size:13px; font-weight:600; color:#fff; background:var(--accent-solid); border:1px solid var(--accent-solid); border-radius:7px; padding:0 16px; cursor:pointer; }
+  .cform button:disabled { opacity:.55; cursor:default; }
+  .cmuted { color:var(--ink-3); font-size:13px; margin-bottom:12px; }
+  .clist { display:flex; flex-direction:column; gap:12px; }
+  .crow { border:1px solid var(--line); border-radius:10px; padding:11px 14px; background:var(--surface); }
+  .cmeta { display:flex; align-items:center; gap:10px; font-size:12px; }
+  .cby { font-weight:700; color:var(--ink); }
+  .cdate { color:var(--ink-3); }
+  .cdel { margin-left:auto; font-size:11px; color:var(--ink-3); background:none; border:none; cursor:pointer; }
+  .cdel:hover { color:var(--loss); text-decoration:underline; }
+  .ctext { margin:6px 0 9px; font-size:14px; color:var(--ink); white-space:pre-wrap; word-break:break-word; }
+  .cvotes { display:flex; gap:22px; }
+  .vaxis { display:inline-flex; align-items:center; gap:6px; }
+  .vlbl { font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--ink-3); }
+  .vbtn { font-family:inherit; font-size:12px; cursor:pointer; color:var(--ink-2); background:var(--surface-2); border:1px solid var(--line-2); border-radius:5px; padding:1px 7px; }
+  .vbtn:hover { color:var(--ink); border-color:var(--ink-3); }
+  .vbtn.on { color:#fff; background:var(--accent-solid); border-color:var(--accent-solid); }
+  .vnet { min-width:20px; text-align:center; font-weight:700; font-variant-numeric:tabular-nums; color:var(--ink); }
+  .pair td.n[data-desc] { cursor: help; }
+</style>
+  <script src="engine.js?v=303951a9f112" defer></script>
+  <script src="stat-descs.js"></script>
+  <script src="dist-chart.js?v=b6fbe0998972"></script>
+  <script src="card-hover.js" defer></script>
+<script src="nav.js?v=d1156576e984"></script>
+<script src="/contribute.js?v=3bdc0d57492c" defer></script>
+</head>
+<body>
+<div class="topbar"><div class="inner">
+  <a class="logo" href="/" data-tt="Spirebird" data-desc="A jorbs Community Stats Project for Slay the Spire 2">Spirebird</a>
+  <nav id="snav"></nav>
+  <script>SpirebirdNav.render('relic','snav');</script>
+  <span class="autharea" id="authArea"></span>
+  <button class="themebtn" id="themeBtn" aria-label="Toggle dark mode"></button>
+</div></div>
+<div class="coltip" id="coltip"></div>
+<div class="wrap"><div id="content"><p class="muted">Loading…</p></div></div>
+
+<script>
+(function () {
+  // ---------- theme ----------
+  var THEME_KEY = 'sb-theme';
+  function applyTheme(t) { document.documentElement.dataset.theme = t; var b = document.getElementById('themeBtn'); if (b) b.textContent = t === 'dark' ? '\u2600 Light' : '\u263E Dark'; }
+  (function () { var t; try { t = localStorage.getItem(THEME_KEY); } catch (e) {} applyTheme(t || 'dark'); })();
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var t = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    applyTheme(t); try { localStorage.setItem(THEME_KEY, t); } catch (e) {}
+  });
+
+  function loginUrl() { return '/auth/twitch/login?return=' + encodeURIComponent(location.pathname + location.search); }
+
+  // Top-bar account controls: nav.js's SpirebirdNav.mountAuth, auto-mounted into
+  // #authArea. loginUrl() stays — the comments panel below still needs it, which
+  // is the one place on this page where a Twitch subscription is the gate.
+
+  // ---------- header tooltip (logo + column descriptions) ----------
+  (function titleTip() {
+    var tip = null, cur = null;
+    function el() { return tip || (tip = document.getElementById('coltip')); }
+    function hide() { cur = null; var t = el(); if (t) t.style.display = 'none'; }
+    function place(th) {
+      var t = el(); if (!t) return;
+      t.innerHTML = '<div class="t">' + esc(th.dataset.tt || '') + '</div><div class="d">' + esc(th.dataset.desc || '') + '</div>';
+      t.style.display = 'block';
+      var r = th.getBoundingClientRect();
+      t.style.left = Math.min(r.left, window.innerWidth - t.offsetWidth - 12) + 'px';
+      t.style.top = (r.bottom + 7) + 'px';
+    }
+    document.addEventListener('mouseover', function (e) {
+      var th = e.target.closest && e.target.closest('[data-desc]');
+      if (th && th !== cur) { cur = th; place(th); } else if (!th && cur) { hide(); }
+    });
+    document.addEventListener('mouseout', function (e) { if (cur && e.target.closest && e.target.closest('[data-desc]') === cur && !e.relatedTarget) hide(); });
+    window.addEventListener('scroll', hide, true);
+  })();
+
+  // ---------- helpers ----------
+  function qs(name) { return new URLSearchParams(location.search).get(name); }
+  function relicId() { var id = qs('id') || (location.hash || '').replace(/^#/, ''); return (id || '').toUpperCase().trim(); }
+  function fmtDate(ts) { if (!ts) return '?'; var d = new Date(ts * 1000); return (d.getMonth() + 1) + '/' + d.getDate() + '/' + d.getFullYear(); }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]; }); }
+  function prettyName(s) { return s == null ? '' : String(s).replace(/_/g, ' ').toLowerCase().replace(/\b\w/g, function (m) { return m.toUpperCase(); }); }
+  function getJSON(url) { url = SpirebirdResetRules.apiUrl(url); return fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status + ' ' + url); return r.json(); }); }
+  function isDark() { return document.documentElement.dataset.theme === 'dark'; }
+  function rankHeat(p) {
+    var cf = window.sbCF && window.sbCF.cellTriples(isDark());   // colorblind palette; null = default ramp
+    var lo = cf ? cf.lo : (isDark() ? [70, 40, 38] : [240, 196, 188]), mid = cf ? cf.mid : (isDark() ? [60, 70, 55] : [236, 232, 196]), hi = cf ? cf.hi : (isDark() ? [40, 90, 60] : [200, 232, 200]);
+    function lerp(a, b, f) { return [Math.round(a[0] + (b[0] - a[0]) * f), Math.round(a[1] + (b[1] - a[1]) * f), Math.round(a[2] + (b[2] - a[2]) * f)]; }
+    var c = p < 0.5 ? lerp(lo, mid, p / 0.5) : lerp(mid, hi, (p - 0.5) / 0.5);
+    return 'rgb(' + c[0] + ',' + c[1] + ',' + c[2] + ')';
+  }
+  function cssVar(n) { return getComputedStyle(document.documentElement).getPropertyValue(n).trim() || '#888'; }
+  function f2(v) { return v.toFixed(2); }
+  function pct1(v) { return (v * 100).toFixed(1) + '%'; }
+  function sgn1(v) { return (v >= 0 ? '+' : '\u2212') + Math.abs(v).toFixed(1); }
+  function sgn2(v) { return (v >= 0 ? '+' : '\u2212') + Math.abs(v).toFixed(2); }
+  // Relic wording for keys whose shared description is written for CARDS.
+  var RELIC_DESCS = {
+    pickRate: 'Share of the times this relic was OFFERED that it was taken. Ancient/Neow relics only \u2014 their node logs every option it put on the table, so they are the one non-starter relic family with a real denominator. Starter relics read as the share of runs played on their character.',
+    offered: 'Times this relic was offered: options seen at ancient/Neow nodes, or cohort runs for a starter. The denominator behind Pick%.',
+  };
+  function desc(k) { return RELIC_DESCS[k] || (window.STAT_DESCS && window.STAT_DESCS[k]) || ''; }
+
+  // ---------- stat config (relic rows from engine.js: war, warPerPick, vsBaseline, winRate, dmg/turn perFight; per-character C_*) ----------
+  var STATS = [
+    { grp: 'Value' },
+    { k: 'war', label: 'WAR', fmt: f2, lowerBetter: false },
+    { k: 'warPerPick', label: 'WAR / pick', fmt: sgn2, lowerBetter: false },
+    { k: 'vsBaseline', label: 'vs Baseline (pts)', fmt: sgn1, lowerBetter: false },
+    { k: 'expWins', label: 'Expected wins', fmt: f2, lowerBetter: false, noRank: true },
+    { grp: 'Rates' },
+    { k: 'winRate', label: 'Win %', fmt: pct1, lowerBetter: false },
+    // Ancient/Neow (and starter) relics only; blank elsewhere, and its rank counts
+    // only the rows that have one, so "#3 / 79" reads against its own family.
+    { k: 'pickRate', label: 'Pick %', fmt: pct1, lowerBetter: false },
+    { k: 'wSkill', label: '\u0394wSkill', fmt: sgn2, lowerBetter: false },
+    { k: 'iSkill', label: '\u0394iSkill', fmt: sgn2, lowerBetter: false },
+    { k: 'iSkillNorm', label: '\u0394iSkillN', fmt: sgn2, lowerBetter: false },
+    { grp: 'Combat' },
+    { k: 'dmgPerFight', label: 'Damage / fight', fmt: f2, lowerBetter: true },
+    { k: 'turnPerFight', label: 'Turns / fight', fmt: f2, lowerBetter: true },
+  ];
+  var COUNTS = [{ k: 'picked', label: 'Picked' }, { k: 'offered', label: 'Offered' }, { k: 'wins', label: 'Wins' }];
+  var STAT_BY_K = {}; STATS.forEach(function (s) { if (s.k) STAT_BY_K[s.k] = s; });
+
+  var CHARS = ['IRONCLAD', 'SILENT', 'REGENT', 'NECROBINDER', 'DEFECT', 'FOOL'];
+  var CHAR_LABEL = { IRONCLAD: 'Ironclad', SILENT: 'Silent', DEFECT: 'Defect', REGENT: 'Regent', NECROBINDER: 'Necrobinder', FOOL: 'Fool' };
+  var CHAR_COLORS = { IRONCLAD: '#e0584d', SILENT: '#54bf6a', DEFECT: '#46a4e0', REGENT: '#e0a23a', NECROBINDER: '#a472d6', FOOL: '#c79725' };
+  // pool field in relic_data.json is capitalized ("Ironclad"); map to the keyed color
+  function poolColor(pool) { return CHAR_COLORS[(pool || '').toUpperCase()] || null; }
+  // relic rules text is Godot BBCode. Full tag set across all 297 relics:
+  //   [blue] values · [green] heal values · [gold] game terms/keywords · [purple] enchants ·
+  //   [red] status names · [img]res://...{star|colorless_energy|necrobinder_energy}_icon.png[/img]
+  // We escape first (text is plain; brackets survive), then map tags to themed spans/glyphs.
+  function renderBB(s) {
+    if (!s) return '';
+    s = esc(s);
+    s = s.replace(/\[img\][^\[]*?\/([A-Za-z0-9_]+\.png)\[\/img\]/g, function (_, base) {
+      return build ? '<img class="bb-icon" src="/img/relics/' + build + '/icons/' + base + '" alt="" onerror="this.style.display=\'none\'">' : '';
+    });
+    s = s.replace(/\[img\][^\[]*\[\/img\]/g, '');              // any icon not matched -> drop
+    // colors
+    s = s.replace(/\[blue\]([\s\S]*?)\[\/blue\]/g, '<span class="bb-num">$1</span>');
+    s = s.replace(/\[green\]([\s\S]*?)\[\/green\]/g, '<span class="bb-green">$1</span>');
+    s = s.replace(/\[gold\]([\s\S]*?)\[\/gold\]/g, '<span class="bb-kw">$1</span>');
+    s = s.replace(/\[purple\]([\s\S]*?)\[\/purple\]/g, '<span class="bb-ench">$1</span>');
+    s = s.replace(/\[red\]([\s\S]*?)\[\/red\]/g, '<span class="bb-red">$1</span>');
+    s = s.replace(/\[\/?[^\]]*\]/g, '');                        // strip any stragglers
+    return s;
+  }
+
+  // Cohort labels mirror card.html (canonical labels still ship in the index summary).
+  var COHORT_LABELS = { all: 'All runs', a10: 'All A10 runs', midA10: 'A10 \u00B7 est. >50% win', strongA10: 'A10 \u00B7 est. >75% win', a10Sub50: 'A10 \u00B7 est. \u226450% win', a10Sub75: 'A10 \u00B7 est. \u226475% win', nonstandard: 'Daily / Custom' };
+  var COHORT_DIFF_ONLY = { a10Sub50: 1, a10Sub75: 1 };
+  function cohortSummary(k) { return (index && index.cohorts && index.cohorts[k] && index.cohorts[k].summary) || null; }
+  function cohortLabel(k) { var s = cohortSummary(k); return (s && s.cohortLabel) || COHORT_LABELS[k] || k; }
+  function cohortIsDiffOnly(k) { var s = cohortSummary(k); if (s && typeof s.diffOnly === 'boolean') return s.diffOnly; return !!COHORT_DIFF_ONLY[k]; }
+  function visibleCohortKeys() { return (index && index.cohorts) ? Object.keys(index.cohorts).filter(function (k) { return !cohortIsDiffOnly(k); }) : ['all']; }
+
+  // ---------- state ----------
+  var ID = relicId();
+  var relicMeta = null, allRelics = [], build = null, index = null, displayName = null, commentMe = null;
+  var tabCache = {};
+  var curCohort = 'all';
+  var curPatch = null;   // selected design-window label; null until rows arrive (defaults to newest)
+  // Bespoke stat boxes carry their own mini cohort cycler (‹ all ›), independent of
+  // the page's Cohort dropdown. State per stat key, persisted across re-renders.
+  var BESPOKE_CYCLE = [['all', 'all'], ['a10', 'a10'], ['midA10', 'a10 >50%']];
+  var bespokeCohort = {};   // key -> index into BESPOKE_CYCLE (default 0 = all)
+  var pairs = null, trends = null, streaks = null, curChartStat = 'winRate';
+  var CHART_STATS = [{ k: 'winRate', label: 'Win rate', fmt: pct1, pct: true }, { k: 'occRate', label: 'Occurrence rate', fmt: pct1, pct: true }];
+  var CHART_BY_K = {}; CHART_STATS.forEach(function (s) { CHART_BY_K[s.k] = s; });
+
+  // Version-label ordering. Labels are dotted build ids ("0.103.0"); compare
+  // numerically per component so "0.99.1" sorts before "0.100.0" (lexical would
+  // not). Same pair of helpers card.html defines.
+  function semverArr(v) { return String(v || '').split('.').map(function (n) { return parseInt(n, 10) || 0; }); }
+  function semverCmp(a, b) { var A = semverArr(a), B = semverArr(b); for (var i = 0; i < 3; i++) { if ((A[i] || 0) !== (B[i] || 0)) return (A[i] || 0) - (B[i] || 0); } return 0; }
+
+  // ---------- ranking (universe = one row per relic in the cohort) ----------
+  // Relic rows are split per design window (engine relicAggV), so the universe keeps
+  // each relic's NEWEST window (matching the archive's default view) — except the
+  // profiled relic, which contributes its row for the SELECTED version so the ranks
+  // track the page's version selection.
+  function universe(rows) {
+    var m = {};
+    for (var i = 0; i < rows.length; i++) {
+      var r = rows[i]; if (!r || !r.relicId) continue;
+      var prev = m[r.relicId];
+      if (!prev || semverCmp(String(r.version || '0'), String(prev.version || '0')) > 0) m[r.relicId] = r;
+    }
+    var mine = rowFor(rows);
+    if (mine) m[ID] = mine;
+    return m;
+  }
+  function rankOf(uni, row, field, lowerBetter) {
+    if (!row || typeof row[field] !== 'number' || !isFinite(row[field])) return null;
+    var v = row[field], better = 0, count = 0, ks = Object.keys(uni);
+    for (var i = 0; i < ks.length; i++) {
+      var x = uni[ks[i]][field];
+      if (typeof x === 'number' && isFinite(x)) { count++; if (lowerBetter ? x < v : x > v) better++; }
+    }
+    if (!count) return null;
+    return { rank: better + 1, of: count };
+  }
+  // The profiled relic's row for the selected version. Darv-act ("@aN") and wax
+  // composites are separate rows sharing the relicId; the base variant is preferred,
+  // matching what the page has always shown.
+  function rowFor(rows) {
+    var alt = null;
+    for (var i = 0; i < rows.length; i++) {
+      var r = rows[i];
+      if (r.relicId !== ID) continue;
+      if (curPatch && r.version && r.version !== curPatch) continue;
+      if (!r.actTag && !r.wax) return r;
+      if (!alt) alt = r;
+    }
+    return alt;
+  }
+  // Distinct design-window labels this relic has rows for, oldest first (left).
+  function dataPatchesForRelic(rows) {
+    var set = {};
+    for (var i = 0; i < rows.length; i++) { var r = rows[i]; if (r.relicId === ID && r.version) set[r.version] = 1; }
+    return set;
+  }
+  // Data windows UNION the registry's windows for this id — see card.html for why:
+  // a relic changed by a patch keeps its own window even with zero runs in it.
+  // Registry keys for relics are the full RELIC.* id.
+  // Two different labels can denote the SAME window: a stored row carries whatever
+  // build was current when the snapshot was computed, while the registry names that
+  // window after the last patch that changed the id. Collapse on the rendered window
+  // so the current design gets exactly one chip, preferring a label that has rows
+  // behind it so selecting the chip finds its data.
+  function collapseToWindows(labels, dataSet, regId) {
+    var E = window.CardEloEngine, byWindow = {};
+    labels.forEach(function (v) {
+      if (!v) return;
+      var k = v, w = null;
+      if (E && E.versionWindow) { try { w = E.versionWindow(regId, v); } catch (e) {} }
+      if (w) k = w.start + '|' + (w.end === null ? '*' : w.end);
+      if (!byWindow[k] || (dataSet[v] && !dataSet[byWindow[k]])) byWindow[k] = v;
+    });
+    return Object.keys(byWindow).map(function (k) { return byWindow[k]; }).sort(semverCmp);
+  }
+  function patchesForRelic(rows) {
+    var dataSet = dataPatchesForRelic(rows);
+    var labels = Object.keys(dataSet);
+    var E = window.CardEloEngine;
+    if (E && E.versionLabelsFor) {
+      try { E.versionLabelsFor('RELIC.' + ID).forEach(function (v) { labels.push(v); }); } catch (e) {}
+    }
+    return collapseToWindows(labels, dataSet, 'RELIC.' + ID);
+  }
+  function defaultPatch(rows, patches) {
+    var have = dataPatchesForRelic(rows);
+    for (var i = patches.length - 1; i >= 0; i--) if (have[patches[i]]) return patches[i];
+    return patches[patches.length - 1];
+  }
+  // Display a version label as the inclusive build window it covers, via the engine's
+  // patch registry ("X*" = current design since X; ranges = past designs).
+  function patchDisplay(v) {
+    var E = window.CardEloEngine;
+    if (E && E.versionWindow) {
+      try {
+        var w = E.versionWindow('RELIC.' + ID, v);
+        if (w) return w.end === null ? (w.start + '*') : (w.start + ' – ' + w.end);
+      } catch (e) {}
+    }
+    return v;
+  }
+  // Exported art dirs (img/relics/builds.json, maintained by the exporter); loaded
+  // async, re-render picks it up. Era selection = newest exported dir inside the
+  // selected window (minors [start, next)), mirroring card.html.
+  var artBuilds = null;
+  fetch('/img/relics/builds.json', { cache: 'force-cache' })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) { if (Array.isArray(d) && d.length) { artBuilds = d; if (ID && relicMeta) render(); } })
+    .catch(function () {});
+  // -> {kind:'current'} | {kind:'era', build} | {kind:'missing', oldText}
+  function eraBuildForPatch(v) {
+    var s = null, n = null, oldText = null;
+    var E = window.CardEloEngine;
+    if (E && E.versionWindow) {
+      try {
+        var w = E.versionWindow('RELIC.' + ID, v);
+        if (w) {
+          if (w.end === null) return { kind: 'current' };
+          s = w.start; n = w.next; oldText = w.oldText || null;
+        }
+      } catch (e) {}
+    }
+    if (s == null) s = v;
+    var sm = /^v?\d+\.(\d+)/.exec(String(s || '')); sm = sm ? parseInt(sm[1], 10) : null;
+    var nm = /^v?\d+\.(\d+)/.exec(String(n || '')); nm = nm ? parseInt(nm[1], 10) : null;
+    if (sm == null) return { kind: 'current' };
+    if (artBuilds && artBuilds.length) {
+      var best = null;
+      artBuilds.forEach(function (b) {
+        var m = parseInt(String(b).replace(/^v/, ''), 10);
+        if (isNaN(m)) return;
+        if (m >= sm && (nm == null || m < nm) && (best == null || m > best)) best = m;
+      });
+      return best != null ? { kind: 'era', build: 'v' + best } : { kind: 'missing', oldText: oldText };
+    }
+    return { kind: 'era', build: 'v' + sm };   // no manifest yet: legacy exact-start guess
+  }
+
+  // ---------- load ----------
+  getJSON('/relic_data.json').catch(function () { return null; }).then(function (rd) {
+    if (rd) {
+      build = rd.sourceBuild || null;
+      allRelics = (rd.relics || []).slice();
+      relicMeta = null;
+      for (var i = 0; i < allRelics.length; i++) if ((allRelics[i].id || '').toUpperCase() === ID) { relicMeta = allRelics[i]; break; }
+    }
+    if (!ID) { render(); return; }
+    Promise.all([
+      getJSON('/stats/community/index').catch(function () { return null; }),
+      getJSON('/stats/relic-pairs').catch(function () { return null; }),
+      getJSON('/stats/relic-trends').catch(function () { return null; }),
+      getJSON('/stats/relic-streaks').catch(function () { return null; }),
+    ]).then(function (res) {
+      index = res[0]; pairs = res[1]; trends = res[2]; streaks = res[3];
+      curCohort = (index && index.currentCohort) || 'all';
+      loadCohort(curCohort).then(render);
+    });
+  }).catch(function (e) {
+    document.getElementById('content').innerHTML = '<p class="err">Couldn\u2019t load relic data: ' + esc(e.message) + '</p>';
+  });
+
+  function loadCohort(cohortId) {
+    if (tabCache[cohortId]) return Promise.resolve(tabCache[cohortId]);
+    return getJSON('/stats/community/tab?facet=solo&cohort=' + encodeURIComponent(cohortId) + '&tab=relics')
+      .then(function (rows) { tabCache[cohortId] = Array.isArray(rows) ? rows : []; return tabCache[cohortId]; })
+      .catch(function () { tabCache[cohortId] = []; return tabCache[cohortId]; });
+  }
+
+  // ---------- render ----------
+  function render() {
+    var el = document.getElementById('content');
+    if (!ID) { renderIndex(el); return; }
+    displayName = prettyName(ID);
+    var rows = tabCache[curCohort] || [];
+    var patches = patchesForRelic(rows);
+    if (patches.length && patches.indexOf(curPatch) < 0) curPatch = defaultPatch(rows, patches);   // newest window WITH data
+    el.innerHTML = headerBlock(rowFor(rows)) + cohortSection(rows, patches) + chartSection() + pairsSection() +
+      '<div class="section"><h2>Comments</h2><div id="commentsBody" class="cmuted">Loading\u2026</div></div>';
+
+    wireBespokeBoxes();
+    var cs = document.getElementById('cohortSel');
+    if (cs) cs.addEventListener('change', function () { curCohort = this.value; loadCohort(curCohort).then(render); });
+    var pl = document.getElementById('patchList');
+    if (pl) pl.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest ? e.target.closest('a.patchlink') : null;
+      if (!a) return;
+      e.preventDefault();
+      curPatch = a.getAttribute('data-patch');
+      render();
+    });
+    var ch = document.getElementById('chartStatSel');
+    if (ch) ch.addEventListener('change', function () { curChartStat = this.value; render(); });
+    loadComments();
+  }
+
+  // ---------- over-time chart (per-build occurrence / win rate) ----------
+  function seriesFromTrends(statKey) {
+    if (!trends || !trends.trends || !trends.builds) return [];
+    var t = trends.trends[ID]; if (!t) return [];
+    var out = [];
+    trends.builds.forEach(function (b) {
+      var d = t[b];
+      if (d && typeof d[statKey] === 'number' && isFinite(d[statKey])) out.push({ version: String(b).replace(/^v/i, ''), value: d[statKey] });
+    });
+    return out;
+  }
+  function chartSection() {
+    var statOpts = '';
+    CHART_STATS.forEach(function (s) { statOpts += '<option value="' + s.k + '"' + (s.k === curChartStat ? ' selected' : '') + '>' + esc(s.label) + '</option>'; });
+    var controls = '<div class="controls"><span><label>Stat</label><select id="chartStatSel">' + statOpts + '</select></span></div>';
+    var head = '<div class="section"><h2>Over time</h2>' + controls;
+    if (!trends) return head + '<p class="muted">Per-patch trend data isn\u2019t published yet.</p></div>';
+    var st = CHART_BY_K[curChartStat] || CHART_STATS[0];
+    var series = seriesFromTrends(curChartStat);
+    if (series.length < 1) return head + '<p class="muted">No per-patch data for this relic yet.</p></div>';
+    return head + '<div class="chart-wrap">' + lineChart(series, st) + '</div></div>';
+  }
+  function lineChart(series, st) {
+    var W = 600, H = 230, padL = 58, padR = 18, padT = 14, padB = 46;
+    var ys = series.map(function (d) { return d.value; });
+    var rawMin = Math.min.apply(null, ys), rawMax = Math.max.apply(null, ys);
+    var ymin = rawMin, ymax = rawMax;
+    if (ymin === ymax) { ymin -= Math.abs(ymin) * 0.1 || 1; ymax += Math.abs(ymax) * 0.1 || 1; }
+    var pad = (ymax - ymin) * 0.12; ymin -= pad; ymax += pad;
+    // percentage metrics are fractions in [0,1]; don't let padding push past 0% / 100%.
+    if (st && st.pct) { if (rawMin >= 0) ymin = Math.max(0, ymin); if (rawMax <= 1) ymax = Math.min(1, ymax); }
+    var n = series.length;
+    var X = function (i) { return padL + (n === 1 ? (W - padL - padR) / 2 : (i / (n - 1)) * (W - padL - padR)); };
+    var Y = function (v) { return padT + (1 - (v - ymin) / (ymax - ymin)) * (H - padT - padB); };
+    var accent = cssVar('--accent'), ink2 = cssVar('--ink-2'), ink3 = cssVar('--ink-3'), line = cssVar('--line');
+    var svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg" font-family="Archivo">';
+    for (var g = 0; g <= 3; g++) {
+      var vv = ymin + (g / 3) * (ymax - ymin), yy = Y(vv);
+      svg += '<line x1="' + padL + '" y1="' + yy.toFixed(1) + '" x2="' + (W - padR) + '" y2="' + yy.toFixed(1) + '" stroke="' + line + '" stroke-width="1"/>';
+      svg += '<text x="' + (padL - 8) + '" y="' + (yy + 3.5).toFixed(1) + '" text-anchor="end" font-size="10" fill="' + ink3 + '">' + esc(st.fmt(vv)) + '</text>';
+    }
+    if (n > 1) {
+      var pts = series.map(function (d, i) { return X(i).toFixed(1) + ',' + Y(d.value).toFixed(1); }).join(' ');
+      svg += '<polyline points="' + pts + '" fill="none" stroke="' + accent + '" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>';
+    }
+    var step = Math.max(1, Math.ceil(n / 8));
+    series.forEach(function (d, i) {
+      var cx = X(i), cy = Y(d.value);
+      svg += '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="3.6" fill="' + accent + '"/>';
+      if (i % step === 0 || i === n - 1) {
+        svg += '<text x="' + cx.toFixed(1) + '" y="' + (cy - 9).toFixed(1) + '" text-anchor="middle" font-size="10" font-weight="700" fill="' + ink2 + '">' + esc(st.fmt(d.value)) + '</text>';
+        svg += '<text x="' + cx.toFixed(1) + '" y="' + (H - padB + 16) + '" text-anchor="middle" font-size="9.5" fill="' + ink3 + '">' + esc(d.version) + '</text>';
+      }
+    });
+    svg += '</svg>';
+    return svg;
+  }
+
+  // ---------- synergies (which CARDS are picked / win more when you hold this relic) ----------
+  function pairsSection() {
+    var head = '<div class="section"><h2>A10 Synergies</h2>';
+    if (!pairs) return head + '<p class="muted">Synergy data isn\u2019t published yet.</p></div>';
+    var pe = pairs.pairs && pairs.pairs[ID];
+    if (!pe) return head + '<p class="muted">Not enough runs include this relic to compute synergies (min ' + (pairs.minIncl || 15) + ').</p></div>';
+    function tbl(rows) {
+      if (!rows || !rows.length) return '<p class="muted">\u2014</p>';
+      var h = '<table class="pair"><tbody>';
+      rows.forEach(function (r) {
+        h += '<tr><td class="nm"><a href="card.html?id=' + encodeURIComponent(r.id) + '" data-card-id="' + esc(r.id) + '">' + esc(prettyName(r.id)) + '</a></td>' +
+          '<td class="flow">' + (r.base * 100).toFixed(0) + '% \u2192 ' + (r.cond * 100).toFixed(0) + '%</td>' +
+          '<td class="lift">+' + (r.lift * 100).toFixed(0) + 'pp</td>' +
+          '<td class="n"' + (r.tot ? ' data-tt="n=' + r.co + '/' + r.tot + '" data-desc="' + esc('times seen with ' + (displayName || prettyName(ID)) + ' / times seen total') + '"' : '') + '>n=' + r.co + (r.tot ? '/' + r.tot : '') + '</td></tr>';
+      });
+      return h + '</tbody></table>';
+    }
+    var nm = esc(displayName);
+    return head + '<div class="pairs">' +
+      '<div class="paircol"><h3>Cards picked more often with ' + nm + '</h3>' + tbl(pe.pick) + '</div>' +
+      '<div class="paircol"><h3>Cards that win more often with ' + nm + '</h3>' + tbl(pe.win) + '</div>' +
+      '</div></div>';
+  }
+
+  // ---------- alphabetical prev/next navigation across the relic catalog ----------
+  function navNeighbors() {
+    if (!allRelics || !allRelics.length || !ID) return null;
+    var list = allRelics.slice().filter(function (r) { return !r.deprecated; }).sort(function (a, b) { return prettyName(a.id).localeCompare(prettyName(b.id)); });
+    var i = -1; for (var k = 0; k < list.length; k++) { if (String(list[k].id).toUpperCase() === ID) { i = k; break; } }
+    if (i < 0) return null;
+    var n = list.length;
+    return { prev: list[(i - 1 + n) % n], next: list[(i + 1) % n] };
+  }
+  function profHeadHTML() {
+    var nb = navNeighbors();
+    var link = function (c, side) {
+      if (!c) return '';
+      return '<a class="pnav ' + side + '" href="relic.html?id=' + encodeURIComponent(c.id) + '" title="' + esc(prettyName(c.id)) + '">' +
+        (side === 'prev' ? '\u2039 ' : '') + esc(prettyName(c.id)) + (side === 'next' ? ' \u203A' : '') + '</a>';
+    };
+    return '<div class="profhead">' +
+      (nb ? link(nb.prev, 'prev') : '') +
+      '<h1 class="cardname">' + esc(displayName) + '</h1>' +
+      (nb ? link(nb.next, 'next') : '') +
+      '</div>';
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+    var t = e.target; if (t && (/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName || '') || t.isContentEditable)) return;
+    var nb = navNeighbors(); if (!nb) return;
+    var c = e.key === 'ArrowLeft' ? nb.prev : nb.next;
+    if (c) location.href = 'relic.html?id=' + encodeURIComponent(c.id);
+  });
+
+  function headerBlock(row) { return profHeadHTML() + '<div class="topgrid">' + imageHTML() + '<div class="bio">' + rulesHTML() + factsHTML(row) + streakWrap(row) + '</div></div>'; }
+
+  function streakWrap(row) {
+    var s = streaks && streaks.streaks && streaks.streaks[ID];
+    function box(lbl, st) {
+      if (!st || !st.len) return '<div class="streakbox"><div class="lbl">' + lbl + '</div><div class="big zero">\u2014</div><div class="ctx">no winstreak recorded</div></div>';
+      return '<div class="streakbox"><div class="lbl">' + lbl + '</div><div class="big">' + st.len + '</div>' +
+        '<div class="span">' + fmtDate(st.startTs) + ' \u2013 ' + fmtDate(st.endTs) + '</div></div>';
+    }
+    var inner;
+    if (!streaks) inner = '<div class="streakmuted">Winstreak data isn\u2019t published yet.</div>';
+    else if (!s) inner = '<div class="streakmuted">No runs have held this relic yet.</div>';
+    else inner = box('Best winstreak', s.overall) + box('Best A10 winstreak', s.a10);
+    // Bespoke per-relic stats (engine registry): one stat box per row.bespoke entry,
+    // same UI as the winstreak boxes, plus a mini cohort cycler (‹ all ›) under the
+    // value that steps all → a10 → a10 >50% → all, independently per box and of the
+    // page's Cohort dropdown. The value itself is filled in by updateBespokeBox
+    // (which lazily loads the cycled cohort's shard through the existing tabCache).
+    // Value null = below the spec's minimum sample — rendered as an em dash so the
+    // box still says the stat exists. Adding a stat is an engine spec-table entry
+    // plus a recompute; nothing changes here.
+    var charts = '';
+    (row && Array.isArray(row.bespoke) ? row.bespoke : []).forEach(function (b) {
+      if (b.fmt === 'dist' || b.fmt === 'bars') {
+        // Distribution stats render as a survived/died chart (via dist-chart.js) instead
+        // of a value box; same independent cohort cycler in the header.
+        charts += '<div class="bchart" data-bkey="' + esc(b.key) + '">' +
+          '<div class="bchart-head">' +
+            '<span class="bchart-title">' + esc(b.label || b.key) + '</span>' +
+            '<span class="bcyc">' +
+              '<button class="bcycbtn" data-bkey="' + esc(b.key) + '" data-dir="-1" aria-label="previous cohort">\u2039</button>' +
+              '<span class="bcyclbl" id="bcyc_' + esc(b.key) + '">all</span>' +
+              '<button class="bcycbtn" data-bkey="' + esc(b.key) + '" data-dir="1" aria-label="next cohort">\u203a</button>' +
+            '</span>' +
+          '</div>' +
+          '<div class="bchart-host" id="bchart_' + esc(b.key) + '"></div>' +
+        '</div>';
+      } else {
+        inner += '<div class="streakbox" data-bkey="' + esc(b.key) + '">' +
+          '<div class="lbl">' + esc(b.label || b.key) + '</div>' +
+          '<div class="big zero" id="bval_' + esc(b.key) + '">\u2026</div>' +
+          '<div class="bcyc">' +
+            '<button class="bcycbtn" data-bkey="' + esc(b.key) + '" data-dir="-1" aria-label="previous cohort">\u2039</button>' +
+            '<span class="bcyclbl" id="bcyc_' + esc(b.key) + '">all</span>' +
+            '<button class="bcycbtn" data-bkey="' + esc(b.key) + '" data-dir="1" aria-label="next cohort">\u203a</button>' +
+          '</div></div>';
+      }
+    });
+    return '<div class="streakwrap">' + inner + '</div>' + (charts ? '<div class="bchartwrap">' + charts + '</div>' : '');
+  }
+
+  function fmtBespoke(b) {
+    if (!b || b.value == null) return null;
+    if (b.fmt === 'pct0') return Math.round(100 * b.value) + '%';
+    if (b.fmt === 'avg2') return b.value.toFixed(2);
+    if (b.fmt === 'avg0') return Math.round(b.value).toString();
+    return b.value.toFixed(1);   // 'avg1' and any unknown fmt
+  }
+
+  // Fill (or refresh) one bespoke box from its cycled cohort, loading that cohort's
+  // relics shard on demand. The guard re-checks the element after the async load so
+  // a page re-render mid-flight can't write into a stale node.
+  function updateBespokeBox(key) {
+    var ci = bespokeCohort[key] || 0, cohortId = BESPOKE_CYCLE[ci][0];
+    var lbl = document.getElementById('bcyc_' + key);
+    if (lbl) lbl.textContent = BESPOKE_CYCLE[ci][1];
+    loadCohort(cohortId).then(function (rows) {
+      var row = rowFor(rows);
+      var b = row && Array.isArray(row.bespoke) ? row.bespoke.filter(function (x) { return x.key === key; })[0] : null;
+      var chartHost = document.getElementById('bchart_' + key);
+      if (chartHost) {            // chart stat -> dist histogram or simple proc-turn bars
+        if (b && b.fmt === 'bars' && b.value && window.SpirebirdDistChart && window.SpirebirdDistChart.drawProcBars) {
+          window.SpirebirdDistChart.drawProcBars(chartHost, b.value, { relicLabel: (b && b.label) || '' });
+        } else if (b && b.fmt === 'dist' && b.value && window.SpirebirdDistChart) {
+          var opts = (key === 'toyboxDisintegrate' && window.SpirebirdDistChart.toyboxOpts) ? window.SpirebirdDistChart.toyboxOpts()
+            : (b && b.series === 'state' && window.SpirebirdDistChart.stateOpts) ? window.SpirebirdDistChart.stateOpts() : undefined;
+          window.SpirebirdDistChart.draw(chartHost, b.value, { xLabel: (b && b.label) || '', unit: '' }, opts);
+        } else {
+          chartHost.innerHTML = '<div class="bchart-empty">Not enough data yet.</div>';
+        }
+        return;
+      }
+      var v = document.getElementById('bval_' + key);
+      if (!v) return;
+      var txt = fmtBespoke(b);
+      v.textContent = txt != null ? txt : '\u2014';
+      v.className = txt != null ? 'big' : 'big zero';
+    });
+  }
+
+  function wireBespokeBoxes() {
+    var btns = document.querySelectorAll('.bcycbtn');
+    for (var i = 0; i < btns.length; i++) (function (btn) {
+      btn.addEventListener('click', function () {
+        var key = btn.getAttribute('data-bkey'), dir = +btn.getAttribute('data-dir') || 1;
+        bespokeCohort[key] = (((bespokeCohort[key] || 0) + dir) % BESPOKE_CYCLE.length + BESPOKE_CYCLE.length) % BESPOKE_CYCLE.length;
+        updateBespokeBox(key);
+      });
+    })(btns[i]);
+    var boxes = document.querySelectorAll('.streakbox[data-bkey], .bchart[data-bkey]');
+    for (var j = 0; j < boxes.length; j++) updateBespokeBox(boxes[j].getAttribute('data-bkey'));
+  }
+
+  function rulesHTML() {
+    var t = relicMeta && relicMeta.text;
+    var desc = t && t.description;
+    if (!desc) return '';
+    var html = '<div class="rules">' + renderBB(desc) + '</div>';
+    var fl = t && t.flavor;
+    if (fl && fl.indexOf('revealed in the future') < 0) html += '<div class="flavor">' + renderBB(fl) + '</div>';
+    return html;
+  }
+
+  function imageHTML() {
+    var art = relicMeta && relicMeta.art && relicMeta.art.png;
+    if (!build || !art) return '<div class="imgs"><div class="relicfig missing">no image</div></div>';
+    // Era-correct art for a past design window (same hierarchy as card.html): art from
+    // an exported dir inside the window if one exists; otherwise an "unavailable" box
+    // with the era's rules text quoted — never another design's image.
+    var era = curPatch ? eraBuildForPatch(curPatch) : { kind: 'current' };
+    if (era.kind === 'missing') {
+      return '<div class="imgs"><div class="relicfig missing era">relic art unavailable<br>for this version' +
+        (era.oldText ? '<div class="eranote">“' + esc(era.oldText) + '”</div>' : '') + '</div></div>';
+    }
+    var dir = era.kind === 'era' ? era.build : build;
+    var url = '/img/relics/' + dir + '/' + art;
+    return '<div class="imgs"><div class="relicfig"><img src="' + esc(url) + '" alt="' + esc(displayName) +
+      '" onerror="this.parentNode.outerHTML=\'<div class=&quot;relicfig missing&quot;>image missing</div>\'"></div></div>';
+  }
+
+  function factsHTML(row) {
+    var rar = (relicMeta && relicMeta.rarity) || (row && row.rarity) || '';
+    var pool = relicMeta && relicMeta.pool ? relicMeta.pool : '';
+    var f = '<div class="facts">';
+    if (rar && rar !== 'None') f += '<div class="fact"><b>Rarity:</b> <span class="rar-' + esc(rar) + '">' + esc(rar) + '</span></div>';
+    var pc = poolColor(pool);
+    if (pc) f += '<div class="fact"><span style="color:' + pc + ';font-weight:700">' + esc(pool) + '-only</span></div>';
+    if (row && row.ancientActs) f += '<div class="fact"><b>Ancient node:</b> Act ' + esc(row.ancientActs.split('').join(', ')) + '</div>';
+    if (relicMeta && relicMeta.deprecated) f += '<div class="fact"><b>Note:</b> deprecated (not in the current pool)</div>';
+    if (!relicMeta) f += '<div class="fact muted">Not found in relic_data.json \u2014 stats only.</div>';
+    return f + '</div>';
+  }
+
+  function summaryStrip(row) {
+    if (!row) return '';
+    var keys = ['war', 'warPerPick', 'vsBaseline', 'winRate', 'picked'];
+    // Pick% joins the strip only on a relic that HAS an offer count (ancient/Neow,
+    // starters) — on every other relic it would be a permanent em dash.
+    if (typeof row.pickRate === 'number' && isFinite(row.pickRate)) keys.splice(4, 0, 'pickRate');
+    var short = { war: 'WAR', warPerPick: 'WAR/Pick', vsBaseline: 'vs Base', winRate: 'Win%', pickRate: 'Pick%', picked: 'Picked' };
+    var cols = '';
+    keys.forEach(function (k) {
+      var st = STAT_BY_K[k], v = row[k], val;
+      if (k === 'picked') val = (typeof v === 'number') ? v.toLocaleString() : '\u2014';
+      else val = (st && typeof v === 'number' && isFinite(v)) ? st.fmt(v) : '\u2014';
+      cols += '<div class="col"' + (desc(k) ? ' title="' + esc(desc(k)) + '"' : '') + '><div class="h">' + esc(short[k]) + '</div><div class="v">' + val + '</div></div>';
+    });
+    return '<div class="summary"><div class="lead"><div class="lead-top">Summary</div><div class="lead-bot">' + esc(cohortLabel(curCohort)) + '</div></div>' + cols + '</div>';
+  }
+
+  function cohortSection(rows, patches) {
+    var cohortOpts = '';
+    visibleCohortKeys().forEach(function (k) { cohortOpts += '<option value="' + esc(k) + '"' + (k === curCohort ? ' selected' : '') + '>' + esc(cohortLabel(k)) + '</option>'; });
+    var patchLinks = '';
+    (patches || []).forEach(function (v, i) {
+      var lbl = patchDisplay(v);
+      patchLinks += (i ? ', ' : '') + (v === curPatch
+        ? '<b class="patchcur">' + esc(lbl) + '</b>'
+        : '<a href="#" class="patchlink" data-patch="' + esc(v) + '">' + esc(lbl) + '</a>');
+    });
+    var controls = '<div class="controls">' +
+      '<span><label>Cohort</label><select id="cohortSel">' + cohortOpts + '</select></span>' +
+      '<span><label>Versions</label><span id="patchList">' + (patchLinks || '—') + '</span></span></div>';
+    var head = '<div class="section"><h2>Cohort stats</h2>' + controls;
+
+    if (!rows.length) return head + '<p class="muted">No data published for this cohort yet.</p></div>';
+    var row = rowFor(rows);
+    if (!row) return head + '<p class="muted">No runs recorded on version ' + esc(patchDisplay(curPatch)) + ' in ' + esc(cohortLabel(curCohort)) + ' yet.</p></div>';
+
+    var uni = universe(rows);
+    function cell(st) {
+      if (typeof row[st.k] !== 'number' || !isFinite(row[st.k])) return '<td class="val muted">\u2014</td><td class="rank"></td>';
+      var rcell = '<td class="rank"></td>';
+      if (!st.noRank) {
+        var r = rankOf(uni, row, st.k, st.lowerBetter);
+        if (r) { var p = r.of > 1 ? 1 - (r.rank - 1) / (r.of - 1) : 1; rcell = '<td class="rank" style="background:' + rankHeat(p) + ';color:' + (isDark() ? '#fff' : '#10202a') + '">#' + r.rank + ' <span class="of">/ ' + r.of + '</span></td>'; }
+      }
+      return '<td class="val">' + st.fmt(row[st.k]) + '</td>' + rcell;
+    }
+
+    var t = '<table class="stats"><thead><tr><th class="name">Stat</th><th>Value</th><th>Rank</th></tr></thead><tbody>';
+    STATS.forEach(function (st) {
+      if (st.grp) { t += '<tr class="grp"><td colspan="3">' + esc(st.grp) + '</td></tr>'; return; }
+      var dn = desc(st.k);
+      t += '<tr><td class="name"' + (dn ? ' title="' + esc(dn) + '"' : '') + '>' + esc(st.label) + '</td>' + cell(st) + '</tr>';
+    });
+    t += '<tr class="grp"><td colspan="3">Counts</td></tr>';
+    COUNTS.forEach(function (c) { var v = row[c.k]; t += '<tr><td class="name">' + esc(c.label) + '</td><td class="val">' + (typeof v === 'number' ? v.toLocaleString() : '\u2014') + '</td><td class="rank"></td></tr>'; });
+    t += '</tbody></table>';
+
+    return head + summaryStrip(row) + t + byCharTable(row, uni) + '</div>';
+  }
+
+  // per-character split: only characters that actually picked this relic
+  function byCharTable(row, uni) {
+    var live = CHARS.filter(function (C) { return typeof row[C + '_picked'] === 'number' && row[C + '_picked'] > 0; });
+    if (!live.length) return '<p class="muted">No per-character breakdown for this relic yet.</p>';
+    var t = '<table class="stats" style="max-width:640px"><thead><tr><th class="name">Character</th><th>Picked</th><th>Win %</th><th>Rank</th><th>WAR</th><th>Rank</th><th>vs Base</th></tr></thead><tbody>';
+    // Rank this relic's value for a (possibly per-character) field among all relics that
+    // have that field — e.g. its Ironclad win% among every relic's Ironclad win%.
+    function rankCell(field) {
+      var r = uni ? rankOf(uni, row, field, false) : null;
+      if (!r) return '<td class="rank"></td>';
+      var p = r.of > 1 ? 1 - (r.rank - 1) / (r.of - 1) : 1;
+      return '<td class="rank" style="background:' + rankHeat(p) + ';color:' + (isDark() ? '#fff' : '#10202a') + '">#' + r.rank + ' <span class="of">/ ' + r.of + '</span></td>';
+    }
+    function charRow(label, pickedF, winF, warF, vbaseF) {
+      function num(v, fmt) { return '<td class="val">' + (typeof v === 'number' && isFinite(v) ? fmt(v) : '\u2014') + '</td>'; }
+      var pc = poolColor(label);   // CHAR_COLORS hex per character; null for the "Overall" row
+      var chCell = pc
+        ? '<td class="ch" style="color:' + pc + ';font-weight:700">' + esc(label) + '</td>'
+        : '<td class="ch">' + esc(label) + '</td>';
+      return '<tr>' + chCell + num(row[pickedF], function (v) { return v.toLocaleString(); }) +
+        num(row[winF], pct1) + rankCell(winF) + num(row[warF], f2) + rankCell(warF) + num(row[vbaseF], sgn1) + '</tr>';
+    }
+    t += charRow('Overall', 'picked', 'winRate', 'war', 'vsBaseline');
+    live.forEach(function (C) { t += charRow(CHAR_LABEL[C] || C, C + '_picked', C + '_win', C + '_war', C + '_vbase'); });
+    return t + '</tbody></table>';
+  }
+
+  // ---------- comments ----------
+  // NOTE: mirrors card.html's comment API, scoped by relic id. The server must accept a
+  // `relic` param on /comments, /comments/vote, /comments/delete (analogous to `card`).
+  // If relics aren't wired server-side yet, this block degrades to the muted fallback.
+  function loadComments() {
+    var body = document.getElementById('commentsBody'); if (!body) return;
+    fetch('/comments?relic=' + encodeURIComponent(ID), { credentials: 'include' })
+      .then(function (r) { return r.json(); })
+      .then(function (d) { commentMe = d.me || null; renderComments(body, d.comments || []); })
+      .catch(function () { body.innerHTML = '<p class="cmuted">Couldn\u2019t load comments.</p>'; });
+  }
+  function commentRow(c) {
+    function axis(name, label, netv, mine) {
+      var up = '<button class="vbtn' + (mine > 0 ? ' on' : '') + '" data-vote="' + c.id + '|' + name + '|1">\u25B2</button>';
+      var dn = '<button class="vbtn' + (mine < 0 ? ' on' : '') + '" data-vote="' + c.id + '|' + name + '|-1">\u25BC</button>';
+      return '<span class="vaxis"><span class="vlbl">' + label + '</span>' + up + '<span class="vnet">' + netv + '</span>' + dn + '</span>';
+    }
+    var mh = c.mine ? c.mine.helpful : 0, mf = c.mine ? c.mine.funny : 0;
+    return '<div class="crow"><div class="cmeta"><span class="cby">' + esc(c.name) + '</span><span class="cdate">' + fmtDate(c.ts) + '</span>' +
+      (c.own ? '<button class="cdel" data-del="' + c.id + '">delete</button>' : '') + '</div>' +
+      '<div class="ctext">' + esc(c.text) + '</div>' +
+      '<div class="cvotes">' + axis('helpful', 'Helpful', c.helpful, mh) + axis('funny', 'Funny', c.funny, mf) + '</div></div>';
+  }
+  function renderComments(body, list) {
+    var head = (commentMe && commentMe.sub)
+      ? '<div class="cform"><textarea id="cText" maxlength="1000" rows="2" placeholder="Add a comment as ' + esc(commentMe.name) + '\u2026"></textarea><button id="cPost">Post</button></div>'
+      : commentMe
+        ? '<div class="cmuted">Commenting and voting are for subscribers.</div>'
+        : '<div class="cmuted"><a href="' + loginUrl() + '">Log in with Twitch</a> and subscribe to comment or vote.</div>';
+    var rows = list.length ? list.map(commentRow).join('') : '<p class="cmuted">No comments yet' + (commentMe ? ' \u2014 be the first.' : '.') + '</p>';
+    body.innerHTML = head + '<div class="clist">' + rows + '</div>';
+    var pb = document.getElementById('cPost'); if (pb) pb.addEventListener('click', postComment);
+    Array.prototype.forEach.call(body.querySelectorAll('[data-vote]'), function (b) { b.addEventListener('click', function () { doVote(b); }); });
+    Array.prototype.forEach.call(body.querySelectorAll('[data-del]'), function (b) { b.addEventListener('click', function () { doDelete(b.getAttribute('data-del')); }); });
+  }
+  function doVote(btn) {
+    if (!commentMe) { location.href = loginUrl(); return; }
+    if (!commentMe.sub) return;   // patch 1.1: voting is subscriber-only
+    var parts = btn.getAttribute('data-vote').split('|');
+    var send = btn.classList.contains('on') ? 0 : (+parts[2]);
+    fetch('/comments/vote', { method: 'POST', credentials: 'include', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ relic: ID, id: +parts[0], axis: parts[1], dir: send }) })
+      .then(function (r) { return r.ok ? r.json() : null; }).then(function (res) { if (res) loadComments(); });
+  }
+  function postComment() {
+    var ta = document.getElementById('cText'); var text = (ta.value || '').trim(); if (!text) return;
+    var pb = document.getElementById('cPost'); pb.disabled = true;
+    fetch('/comments', { method: 'POST', credentials: 'include', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ relic: ID, text: text }) })
+      .then(function (r) { return r.json(); })
+      .then(function (res) { if (res && res.ok) { ta.value = ''; loadComments(); } else { pb.disabled = false; } })
+      .catch(function () { pb.disabled = false; });
+  }
+  function doDelete(id) {
+    fetch('/comments/delete', { method: 'POST', credentials: 'include', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ relic: ID, id: +id }) })
+      .then(function (r) { return r.json(); }).then(function () { loadComments(); });
+  }
+
+  // ---------- ancient relic -> offering ancient (derived from v107 AncientEventModel subclasses;
+  //   regenerate when ancients/relics change. acts come from the map-gen assignment, not the models.) ----------
+  var ANCIENTS = {
+    neow:      { name:'Neow',      color:'#4E89A0', acts:[1] },
+    orobas:    { name:'Orobas',    color:'#8E92B8', acts:[2] },
+    pael:      { name:'Pael',      color:'#9C8C82', acts:[2] },
+    tezcatara: { name:'Tezcatara', color:'#B07A52', acts:[2] },
+    nonupeipe: { name:'Nonupeipe', color:'#2FA39A', acts:[3] },
+    tanx:      { name:'Tanx',      color:'#C9453F', acts:[3] },
+    vakuu:     { name:'Vakuu',     color:'#B0588F', acts:[3] },
+    darv:      { name:'Darv',      color:'#9A6FC4', acts:[2, 3] }
+  };
+  var ANC_ORDER = ['neow', 'orobas', 'pael', 'tezcatara', 'nonupeipe', 'tanx', 'vakuu', 'darv'];
+  var ANC_RELICS = {
+    neow: ['ARCANE_SCROLL','BOOMING_CONCH','CURSED_PEARL','FISHING_ROD','GOLDEN_PEARL','HEFTY_TABLET','KALEIDOSCOPE','LARGE_CAPSULE','LAVA_ROCK','LEAD_PAPERWEIGHT','LEAFY_POULTICE','LOST_COFFER','MASSIVE_SCROLL','NEOWS_BONES','NEOWS_TALISMAN','NEOWS_TORMENT','NEW_LEAF','NUTRITIOUS_OYSTER','PHIAL_HOLSTER','POMANDER','PRECARIOUS_SHEARS','PRECISE_SCISSORS','SCROLL_BOXES','SILKEN_TRESS','SILVER_CRUCIBLE','SMALL_CAPSULE','STONE_HUMIDIFIER','WINGED_BOOTS'],
+    orobas: ['ALCHEMICAL_COFFER','ARCHAIC_TOOTH','DRIFTWOOD','ELECTRIC_SHRYMP','GLASS_EYE','PRISMATIC_GEM','RADIANT_PEARL','SAND_CASTLE','SEA_GLASS','TOUCH_OF_OROBAS'],
+    pael: ['PAELS_BLOOD','PAELS_CLAW','PAELS_EYE','PAELS_FLESH','PAELS_GROWTH','PAELS_HORN','PAELS_LEGION','PAELS_TEARS','PAELS_TOOTH','PAELS_WING'],
+    tezcatara: ['BIIIG_HUG','GOLDEN_COMPASS','NUTRITIOUS_SOUP','PUMPKIN_CANDLE','SEAL_OF_GOLD','STORYBOOK','TOASTY_MITTENS','TOY_BOX','VERY_HOT_COCOA','YUMMY_COOKIE'],
+    nonupeipe: ['BEAUTIFUL_BRACELET','BLESSED_ANTLER','BRILLIANT_SCARF','DELICATE_FROND','DIAMOND_DIADEM','FUR_COAT','GLITTER','JEWELRY_BOX','LOOMING_FRUIT','SIGNET_RING'],
+    tanx: ['CLAWS','CROSSBOW','IRON_CLUB','MEAT_CLEAVER','SAI','SPIKED_GAUNTLETS','TANXS_WHISTLE','THROWING_AXE','TRI_BOOMERANG','WAR_HAMMER'],
+    vakuu: ['BLOOD_SOAKED_ROSE','CHOICES_PARADOX','DISTINGUISHED_CAPE','FIDDLE','JEWELED_MASK','LORDS_PARASOL','MUSIC_BOX','PRESERVED_FOG','SERE_TALON','WHISPERING_EARRING'],
+    darv: ['ASTROLABE','BLACK_STAR','CALLING_BELL','DUSTY_TOME','ECTOPLASM','EMPTY_CAGE','PANDORAS_BOX','PHILOSOPHERS_STONE','RUNIC_PYRAMID','SNECKO_EYE','SOZU','VELVET_CHOKER']
+  };
+  var RELIC_ANCIENT = {};
+  ANC_ORDER.forEach(function (k) { ANC_RELICS[k].forEach(function (id) { RELIC_ANCIENT[id] = k; }); });
+
+  // ---------- browse / index (no ?id) ----------
+  function renderIndex(el) {
+    var pools = ['Ironclad', 'Silent', 'Regent', 'Necrobinder', 'Defect', 'Fool', 'Shared', 'Event'];
+    var rars = ['Starter', 'Common', 'Uncommon', 'Rare', 'Shop', 'Event', 'Ancient'];
+    function opt(v, l, sel) { return '<option value="' + v + '"' + (sel ? ' selected' : '') + '>' + l + '</option>'; }
+    function selBox(id, label, opts) { return '<span><label>' + label + '</label><select id="' + id + '">' + opts + '</select></span>'; }
+    var poolOpts = '<option value="">All</option>' + pools.map(function (g) { return opt(g, g); }).join('');
+    var rarOpts = '<option value="">All</option>' + rars.map(function (r) { return opt(r, r); }).join('');
+
+    el.innerHTML = '<div class="idxhead"><h1>Relic Profiles</h1>' +
+      '<input class="idxsearch" id="relicSearch" placeholder="Search\u2026" autocomplete="off"></div>' +
+      '<div class="filterbar controls">' + selBox('fPool', 'Source', poolOpts) + selBox('fRarity', 'Rarity', rarOpts) +
+      '<span class="count" id="idxCount"></span></div>' +
+      '<div class="grid" id="relicGrid"></div>';
+
+    var grid = document.getElementById('relicGrid');
+    var sorted = allRelics.slice().filter(function (r) { return !r.deprecated; }).sort(function (a, b) { return prettyName(a.id).localeCompare(prettyName(b.id)); });
+    grid.innerHTML = sorted.map(function (r) {
+      var art = r.art && r.art.png, nm = prettyName(r.id), has = build && art;
+      var thumb = has
+        ? '<span class="thumb"><img data-src="/img/relics/' + build + '/' + art + '" alt="" onerror="this.style.visibility=\'hidden\'"></span>'
+        : '<span class="thumb noimg"><span class="ph">no image</span></span>';
+      var anc = RELIC_ANCIENT[r.id] || '', am = anc ? ANCIENTS[anc] : null;
+      var badge = am
+        ? '<span class="ancbadge"><span class="dot" style="background:' + am.color + '"></span>' + esc(am.name) + '</span>'
+        : '';
+      return '<a class="tile" href="relic.html?id=' + encodeURIComponent(r.id) + '"' +
+        ' data-nm="' + esc((nm + ' ' + r.id).toLowerCase()) + '"' +
+        ' data-pool="' + esc(r.pool || '') + '" data-rarity="' + esc(r.rarity || '') + '"' +
+        ' data-ancient="' + anc + '" data-acts="' + (am ? am.acts.join(',') : '') + '">' +
+        badge + thumb + '<span class="nm">' + esc(nm) + '</span></a>';
+    }).join('');
+
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          var img = en.target.querySelector('img[data-src]');
+          if (img) { img.src = img.getAttribute('data-src'); img.removeAttribute('data-src'); }
+          io.unobserve(en.target);
+        });
+      }, { rootMargin: '300px' });
+      Array.prototype.forEach.call(grid.children, function (t) { io.observe(t); });
+    } else {
+      Array.prototype.forEach.call(grid.querySelectorAll('img[data-src]'), function (img) { img.loading = 'lazy'; img.src = img.getAttribute('data-src'); img.removeAttribute('data-src'); });
+    }
+
+    // Act aliases in the search box. Typing "a2" / "act2" / "act 2" / "[act 2]"
+    // filters to the relics of that act (Darv counts for both 2 and 3 via data-acts).
+    // Typing an act's ancient names ("orobas pael tezcatara", with or without Darv,
+    // space- or +-separated) autoreplaces the box with the canonical "[act 2]" alias,
+    // so the shortcut is emergently discoverable. The per-tile badges show attribution.
+    function aliasAct(s) {
+      var m = s.match(/^\[?\s*act\s*([1-3])\s*\]?$/) || s.match(/^a\s*([1-3])$/);
+      return m ? +m[1] : null;
+    }
+    function sameSet(a, b) {
+      if (a.length !== b.length) return false;
+      var seen = {}; a.forEach(function (x) { seen[x] = 1; });
+      return b.every(function (x) { return seen[x]; });
+    }
+    function ancientSetAct(s) {
+      var toks = s.split(/[\s+]+/).filter(Boolean);
+      if (toks.length < 2) return null;
+      for (var i = 0; i < toks.length; i++) if (ANC_ORDER.indexOf(toks[i]) < 0) return null;
+      for (var act = 1; act <= 3; act++) {
+        var excl = ANC_ORDER.filter(function (k) { return ANCIENTS[k].acts.length === 1 && ANCIENTS[k].acts[0] === act; });
+        var full = ANC_ORDER.filter(function (k) { return ANCIENTS[k].acts.indexOf(act) > -1; });
+        if (sameSet(toks, excl) || sameSet(toks, full)) return act;
+      }
+      return null;
+    }
+
+    function apply() {
+      var search = document.getElementById('relicSearch');
+      var raw = (search.value || '').trim().toLowerCase();
+      var setAct = ancientSetAct(raw);
+      if (setAct) { search.value = '[act ' + setAct + ']'; raw = search.value; }
+      var act = aliasAct(raw), q = act ? '' : raw;
+      var pv = document.getElementById('fPool').value, rv = document.getElementById('fRarity').value;
+      var n = 0, tiles = grid.children;
+      for (var i = 0; i < tiles.length; i++) {
+        var t = tiles[i], show = true;
+        if (act) { if ((t.getAttribute('data-acts') || '').split(',').indexOf(String(act)) < 0) show = false; }
+        else if (q && t.getAttribute('data-nm').indexOf(q) < 0) show = false;
+        if (show && pv && (t.getAttribute('data-pool') || '') !== pv) show = false;
+        if (show && rv && (t.getAttribute('data-rarity') || '') !== rv) show = false;
+        t.style.display = show ? '' : 'none';
+        if (show) n++;
+      }
+      document.getElementById('idxCount').textContent = n + ' relics';
+    }
+    ['relicSearch', 'fPool', 'fRarity'].forEach(function (id) {
+      var elx = document.getElementById(id);
+      elx.addEventListener(id === 'relicSearch' ? 'input' : 'change', apply);
+    });
+    apply();
+  }
+})();
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"3508b1ffa35e450d992421e9ec2614d3","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

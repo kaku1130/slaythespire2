@@ -1,7 +1,7 @@
 module.exports = `
 /* Use consistent colored frames for filter groups on every device. */
 html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools > .card-action-row,
+html body main#main-content #tools .card-action-row,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   box-sizing:border-box;
   min-width:0;
@@ -18,7 +18,7 @@ html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-
   --filter-frame-color:#e3bf72;
 }
 html body main#main-content #tools .card-filter-row:has(#card-filter-type) {--filter-frame-color:#6faeee}
-html body main#main-content #tools > .card-action-row {--filter-frame-color:#70bf8b}
+html body main#main-content #tools .card-action-row {--filter-frame-color:#70bf8b}
 @media screen and (max-width:599px), screen and (pointer:coarse) and (max-width:1000px) and (max-height:500px) {
   html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
     grid-template-columns:minmax(0,1fr);
@@ -31,7 +31,7 @@ html body main#main-content #tools > .card-action-row {--filter-frame-color:#70b
 module.exports += `
 /* Filter buttons fill their frames without visible group headings. */
 html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools > .card-action-row,
+html body main#main-content #tools .card-action-row,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   grid-template-columns:minmax(0,1fr);
 }
@@ -76,7 +76,7 @@ html body main#main-content :is(#tools,.relic-filters,.potion-filters) .filter-c
 module.exports += `
 /* Card filter groups share a blue outer frame. */
 html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools > .card-action-row {
+html body main#main-content #tools .card-action-row {
   border-color:#6faeee;
 }
 `;

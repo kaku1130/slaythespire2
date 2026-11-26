@@ -557,7 +557,7 @@ html body main#main-content [data-ancient-top-menu]>div {margin-top:8px}
 
 /* Use consistent colored frames for filter groups on every device. */
 html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools > .card-action-row,
+html body main#main-content #tools .card-action-row,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   box-sizing:border-box;
   min-width:0;
@@ -574,7 +574,7 @@ html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-
   --filter-frame-color:#e3bf72;
 }
 html body main#main-content #tools .card-filter-row:has(#card-filter-type) {--filter-frame-color:#6faeee}
-html body main#main-content #tools > .card-action-row {--filter-frame-color:#70bf8b}
+html body main#main-content #tools .card-action-row {--filter-frame-color:#70bf8b}
 @media screen and (max-width:599px), screen and (pointer:coarse) and (max-width:1000px) and (max-height:500px) {
   html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
     grid-template-columns:minmax(0,1fr);
@@ -586,7 +586,7 @@ html body main#main-content #tools > .card-action-row {--filter-frame-color:#70b
 
 /* Filter buttons fill their frames without visible group headings. */
 html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools > .card-action-row,
+html body main#main-content #tools .card-action-row,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   grid-template-columns:minmax(0,1fr);
 }
@@ -629,7 +629,7 @@ html body main#main-content :is(#tools,.relic-filters,.potion-filters) .filter-c
 
 /* Card filter groups share a blue outer frame. */
 html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools > .card-action-row {
+html body main#main-content #tools .card-action-row {
   border-color:#6faeee;
 }
 
@@ -1314,7 +1314,7 @@ main#main-content .mobile-sort label {
   font: 600 14px/1.6 Arial, "Microsoft JhengHei", sans-serif;
 }
 
-html body main#main-content #tools > .card-action-row {
+html body main#main-content #tools .card-action-row {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: var(--control-gap, 6px);
@@ -1342,7 +1342,7 @@ html body main#main-content #tools .card-action-row button:is(:hover, :focus-vis
 .card-tier-choices button[value=D] { --selection-color: var(--card-tier-D); }
 .card-action-row #aoe-toggle { --selection-color: #b595dd; }
 
-html body main#main-content #tools > .card-filter-rows {
+html body main#main-content #tools .card-filter-rows {
   display: grid;
   gap: 8px;
   width: 100%;
@@ -1397,7 +1397,7 @@ html body main#main-content #tools .card-search > #aoe-toggle {
   margin: 0;
   padding-inline: 12px;
 }
-html body main#main-content #tools > .card-action-row {
+html body main#main-content #tools .card-action-row {
   grid-template-columns: 76px minmax(0, 1fr);
   align-items: center;
   gap: 8px;
@@ -1415,7 +1415,7 @@ html body main#main-content #tools .card-tier-choices {
 /* Give each mobile filter group its own frame without visible headings. */
 @media screen and (max-width: 599px), screen and (pointer: coarse) and (max-width: 1400px) {
   html body main#main-content #tools .card-filter-row,
-  html body main#main-content #tools > .card-action-row {
+  html body main#main-content #tools .card-action-row {
     box-sizing: border-box;
     grid-template-columns: minmax(0, 1fr);
     padding: 8px;
@@ -1425,7 +1425,7 @@ html body main#main-content #tools .card-tier-choices {
   html body main#main-content #tools .card-filter-row:has(#card-filter-character) { --filter-frame-color: #b595dd; }
   html body main#main-content #tools .card-filter-row:has(#card-filter-rarity) { --filter-frame-color: #e3bf72; }
   html body main#main-content #tools .card-filter-row:has(#card-filter-type) { --filter-frame-color: #6faeee; }
-  html body main#main-content #tools > .card-action-row { --filter-frame-color: #70bf8b; }
+  html body main#main-content #tools .card-action-row { --filter-frame-color: #70bf8b; }
   html body main#main-content #tools .card-filter-row > span,
   html body main#main-content #tools .card-tier-label {
     display: none;
@@ -1664,7 +1664,7 @@ html body main#main-content [data-ancient-top-menu]>div {margin-top:8px}
 
 /* Use consistent colored frames for filter groups on every device. */
 html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools > .card-action-row,
+html body main#main-content #tools .card-action-row,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   box-sizing:border-box;
   min-width:0;
@@ -1681,7 +1681,7 @@ html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-
   --filter-frame-color:#e3bf72;
 }
 html body main#main-content #tools .card-filter-row:has(#card-filter-type) {--filter-frame-color:#6faeee}
-html body main#main-content #tools > .card-action-row {--filter-frame-color:#70bf8b}
+html body main#main-content #tools .card-action-row {--filter-frame-color:#70bf8b}
 @media screen and (max-width:599px), screen and (pointer:coarse) and (max-width:1000px) and (max-height:500px) {
   html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
     grid-template-columns:minmax(0,1fr);
@@ -1693,7 +1693,7 @@ html body main#main-content #tools > .card-action-row {--filter-frame-color:#70b
 
 /* Filter buttons fill their frames without visible group headings. */
 html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools > .card-action-row,
+html body main#main-content #tools .card-action-row,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   grid-template-columns:minmax(0,1fr);
 }
@@ -1736,7 +1736,7 @@ html body main#main-content :is(#tools,.relic-filters,.potion-filters) .filter-c
 
 /* Card filter groups share a blue outer frame. */
 html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools > .card-action-row {
+html body main#main-content #tools .card-action-row {
   border-color:#6faeee;
 }
 
@@ -2245,7 +2245,7 @@ html body .card-detail[data-card-layout=compact] .detail-inline-tier {display:in
   line-height:1.25;
   letter-spacing:-.02em;
 }
-.card-detail .detail-title :is(a,.detail-name-zh) {max-width:100%;color:var(--detail-rarity-color);text-decoration:none}
+.card-detail .detail-title :is(a,.detail-name-zh,.detail-name-en) {max-width:100%;color:var(--detail-rarity-color);text-decoration:none}
 .card-detail .detail-title a:hover {text-decoration:underline;text-underline-offset:5px}
 .card-detail .detail-title .detail-name-zh {font:inherit;letter-spacing:.01em}
 .card-detail .detail-meta {display:flex;flex-wrap:wrap;align-items:center;gap:8px}
@@ -2595,7 +2595,7 @@ html body:not([data-detail-kind]) main#main-content#main-content#main-content {
 
 /* Use consistent colored frames for filter groups on every device. */
 html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools > .card-action-row,
+html body main#main-content #tools .card-action-row,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   box-sizing:border-box;
   min-width:0;
@@ -2612,7 +2612,7 @@ html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-
   --filter-frame-color:#e3bf72;
 }
 html body main#main-content #tools .card-filter-row:has(#card-filter-type) {--filter-frame-color:#6faeee}
-html body main#main-content #tools > .card-action-row {--filter-frame-color:#70bf8b}
+html body main#main-content #tools .card-action-row {--filter-frame-color:#70bf8b}
 @media screen and (max-width:599px), screen and (pointer:coarse) and (max-width:1000px) and (max-height:500px) {
   html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
     grid-template-columns:minmax(0,1fr);
@@ -2624,7 +2624,7 @@ html body main#main-content #tools > .card-action-row {--filter-frame-color:#70b
 
 /* Filter buttons fill their frames without visible group headings. */
 html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools > .card-action-row,
+html body main#main-content #tools .card-action-row,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   grid-template-columns:minmax(0,1fr);
 }
@@ -2667,7 +2667,7 @@ html body main#main-content :is(#tools,.relic-filters,.potion-filters) .filter-c
 
 /* Card filter groups share a blue outer frame. */
 html body main#main-content #tools .card-filter-row,
-html body main#main-content #tools > .card-action-row {
+html body main#main-content #tools .card-action-row {
   border-color:#6faeee;
 }
 
@@ -2932,8 +2932,8 @@ html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-child(1 of :no
 html body[data-view=grid] #card-scroll tbody>.card-detail-row:nth-last-child(1 of :not([hidden])) .card-detail {margin-bottom:0}
 
 /* Catalog cards: art, names, metadata, active effect, version controls, tier. */
-html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:has([data-catalog-layout]) {grid-row:span 4}
-html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview {grid-row:1 / 5;justify-items:center;text-align:center}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:has([data-catalog-layout]) {grid-row:span 5}
+html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview {grid-row:1 / 6;justify-items:center;text-align:center}
 html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-art {grid-row:1;justify-self:center}
 html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview>header {grid-row:2;display:block}
 html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {display:flex;flex-direction:column;flex-wrap:nowrap;justify-content:center;align-items:center;gap:4px;width:100%;text-align:center;font-size:22px;line-height:1.3}
@@ -2941,7 +2941,7 @@ html body main#main-content #card-scroll .card-detail[data-catalog-layout] .deta
 html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item:first-child {justify-self:start;text-align:left}
 html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item:nth-child(2) {justify-self:center;text-align:center}
 html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item:last-child {justify-self:end;text-align:right}
-html body main#main-content #card-scroll .card-detail[data-catalog-layout] dd[data-stat-character]>img {width:14px;height:14px}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] dd[data-stat-character]>img {width:28px;height:28px}
 html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effects {grid-row:4;display:flex;flex-direction:column;gap:8px;align-self:start;width:100%;text-align:center}
 html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-columns {display:block;position:relative}
 html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel {display:block;border:0}
@@ -2954,7 +2954,7 @@ html body main#main-content #card-scroll .detail-version-controls button[aria-pr
 html body main#main-content #card-scroll .detail-version-controls button:focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
 html body main#main-content #card-scroll .detail-version-controls button:disabled {opacity:.45;cursor:default}
 html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-bottom-tier {grid-row:auto;justify-content:center;align-items:center;width:100%}
-html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title>a {flex:0 1 auto;min-width:0;max-width:100%;overflow-wrap:anywhere}
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title>:is(a,.detail-name-en) {flex:0 1 auto;min-width:0;max-width:100%;overflow-wrap:anywhere}
 @media screen and (max-width:600px) {
  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:column;flex-wrap:nowrap}
 }
@@ -3010,7 +3010,7 @@ html body main#main-content#main-content#main-content .entry.potion .potion-rari
  font-size:18px!important;line-height:1.4;
 }
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] dd[data-stat-character]>img {
- width:var(--site-nav-icon-size,36px);height:var(--site-nav-icon-size,36px);
+ width:28px;height:28px;
 }
 
 html body main#main-content#main-content#main-content .catalog-relic-card .relic-pool-corner>img {
@@ -3057,6 +3057,34 @@ html body main#main-content#main-content#main-content #card-scroll :is(.detail-a
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout]>.detail-tier-section .detail-tier-source {display:inline-block;margin-top:12px;color:#8bcaf0;font:400 20px/1.5 Arial,sans-serif;overflow-wrap:anywhere}
 
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout]>.detail-tier-section .detail-tier-translation {margin:16px 0 0;padding-top:16px;border-top:1px solid #405063;color:#e3e8ee;font:400 24px/1.6 Arial,"Microsoft JhengHei",sans-serif;overflow-wrap:anywhere}
+
+html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-spirebird-link {display:inline-flex;align-items:center;justify-content:center;justify-self:end;gap:6px;max-width:100%;margin:0;color:#cbd5df;font:700 15px/1.4 Georgia,serif;white-space:nowrap;flex:0 0 auto;width:auto;text-decoration:none}
+html body main#main-content #card-scroll .detail-spirebird-link img {display:block;width:100%;height:auto;object-fit:contain}
+html body main#main-content #card-scroll .detail-spirebird-link:hover {color:#8bcaf0}
+html body main#main-content #card-scroll .detail-spirebird-link:focus-visible {outline:2px solid #74b3e6;outline-offset:4px;border-radius:4px}
+
+html body main#main-content #card-scroll .detail-card-sources {grid-row:5;display:flex;align-self:end;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:4px 12px;width:100%;min-width:0;margin-top:8px}
+html body main#main-content #card-scroll .detail-untapped-link {display:inline-flex;align-items:center;justify-content:flex-start;min-width:0;flex:0 0 auto;width:auto;text-decoration:none}
+html body main#main-content #card-scroll .detail-untapped-link img {display:block;width:100%;max-width:100%;height:auto;object-fit:contain}
+html body main#main-content #card-scroll .detail-untapped-link:focus-visible {outline:2px solid #74b3e6;outline-offset:4px;border-radius:4px}
+
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] {padding-bottom:12px}
+
+/* Selection fill follows aria-pressed, including touch browsers that retain hover. */
+html body main#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button[aria-pressed=false] {
+  background:var(--control-bg,#0d131a)!important;
+  box-shadow:none!important;
+}
+
+html body main#main-content#main-content #card-scroll .detail-card-sources>a {color:#cbd5df;font:700 18px/1.4 Arial,sans-serif;white-space:nowrap;text-decoration:none}
+
+/* Equal-height cards keep source links at the bottom of each grid row. */
+html body[data-view=grid] main#main-content#main-content#main-content #card-scroll .card-detail-row:has([data-catalog-layout]) {grid-row:auto;align-self:stretch;display:flex!important;flex-direction:column}
+html body[data-view=grid] main#main-content#main-content#main-content #card-scroll .card-detail-cell:has([data-catalog-layout]) {display:flex!important;flex:1;min-height:0}
+html body[data-view=grid] main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] {grid-template-rows:minmax(0,1fr);flex:1}
+html body[data-view=grid] main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview {grid-row:auto;grid-template-rows:auto auto auto minmax(auto,1fr) auto;row-gap:12px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel {padding-bottom:0}
+html body main#main-content#main-content#main-content #card-scroll .detail-card-sources {align-self:end;margin:0;padding:0}
 
 /* Rarity uses the same filled label in filters and entry details. */
 html body main#main-content :is(.rarity-label,[data-relic-rarity],.potion-rarity-row) {
@@ -3195,3 +3223,34 @@ html body #main-content :is([data-stat-rarity=Common],[data-label-rarity=Common]
 html body #main-content .potion-section[data-rarity=Common] {--group-color:#a8dca4!important}
 html body #main-content .potion-section[data-rarity=Common]>.potion-section-title {color:#a8dca4}
 html body main#main-content#main-content#main-content :is(#card-filter-rarity button[value=Common],[data-catalog-filter=rarity][value=Common],button[data-rarity-filter=Common],[data-filter-group=rarity][data-filter-value=Common]) {--selection-color:#a8dca4!important;--rarity-color:#a8dca4!important;--plain-rarity-color:#a8dca4!important;--rarity-text-color:#a8dca4!important;color:#a8dca4!important}
+/* Search icons are present and styled in the initial HTML. */
+html body main#main-content .search-control{position:relative;display:block;min-width:0;width:100%;flex:1 1 240px}
+html body main#main-content .search-control input#search{display:block;width:100%;max-width:none;margin:0;padding-left:46px!important;box-sizing:border-box}
+html body main#main-content .search-control input#search::-webkit-search-cancel-button{display:none;-webkit-appearance:none}
+html body main#main-content .search-control>button.search-clear{position:absolute;left:4px;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;width:36px;height:36px;min-width:36px;min-height:36px;margin:0;padding:7px;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none!important;color:#aab6c4!important;cursor:pointer}
+html body main#main-content .search-control>button.search-clear:hover{color:#37a8ec!important;background:#163047!important}
+html body main#main-content .search-clear .search-icon{font-size:20px;line-height:1;pointer-events:none}
+html body main#main-content:is(.event-browser,.monster-browser,.encounter-browser) .chapter-filters>.search-control{order:-1;flex:0 0 auto}
+
+
+/* Show filter menus by default; the button restores their remembered state. */
+html body main#main-content #tools.filter-menu-closed>:is(.card-filter-rows,.card-action-row),
+html body main#main-content .filters.filter-menu-closed>.catalog-filter-rows {display:none!important}
+html body main#main-content #tools .card-search,
+html body main#main-content .filters .catalog-search-tools:has(.filter-menu-toggle) {display:grid!important;grid-template-columns:minmax(0,1fr) 52px 52px!important;gap:8px;align-items:center;width:100%;min-width:0}
+html body main#main-content .filters:has(.filter-menu-toggle) {display:flex!important;flex-direction:column;align-items:stretch}
+html body main#main-content .filters .catalog-search-tools:has(.filter-menu-toggle) {order:-1;margin:0}
+html body main#main-content :is(#tools,.filters) button.filter-menu-toggle {display:inline-flex!important;align-items:center;justify-content:center;gap:6px;box-sizing:border-box;width:52px;min-width:52px;height:48px;min-height:48px;margin:0;padding:8px;border:1px solid #6faeee;border-radius:7px;background:#0d131a;color:#e3e8ee!important;font:16px/1.4 Arial,"Microsoft JhengHei",sans-serif;cursor:pointer}
+html body main#main-content :is(#tools,.filters) button.filter-menu-toggle:is(:hover,:focus-visible,[aria-expanded=true]) {border-color:#37a8ec;background:#163047}
+html body main#main-content button.filter-menu-toggle>span {display:block;font:22px/1 Arial,sans-serif;flex:none}
+
+/* Card effect language sits immediately before the filter menu button. */
+html body main#main-content :is(#tools .card-search,.filters .catalog-search-tools):has(.card-language-toggle) {grid-template-columns:minmax(0,1fr) 52px 52px 52px!important}
+html body main#main-content :is(#tools,.filters) button.card-language-toggle {display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;width:52px;min-width:52px;height:48px;min-height:48px;margin:0;padding:8px;border:1px solid #6faeee;border-radius:7px;background:#0d131a;color:#e3e8ee;font:600 18px/1.4 Arial,"Microsoft JhengHei",sans-serif;cursor:pointer}
+html body main#main-content :is(#tools,.filters) button.card-language-toggle:is(:hover,:focus-visible) {border-color:#37a8ec;background:#163047}
+html body main#main-content :is(#card-scroll,#catalog-scroll) [data-effect-language][hidden] {display:none!important}
+
+/* Float the filter menu below the search row without changing content layout. */
+html body main#main-content#main-content#main-content#main-content>:is(#tools,.filters):has(>.filter-menu-panel) {position:sticky!important;top:0!important;overflow:visible!important;z-index:40;background:#040609;padding-block:8px}
+html body main#main-content :is(#tools,.filters)>.filter-menu-panel {position:absolute;inset:calc(100% + 8px) 0 auto;z-index:30;display:grid;gap:8px;box-sizing:border-box;min-width:0;max-height:min(70vh,640px);overflow:auto;overscroll-behavior:contain;padding:12px;border:1px solid #405063;border-radius:10px;background:#0d131a;box-shadow:0 10px 28px #0009}
+html body main#main-content .filter-menu-panel[hidden] {display:none!important}

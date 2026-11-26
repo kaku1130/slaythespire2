@@ -38,7 +38,7 @@ function cardPreview(id){
  const card=cards.get(id);
  if(!card)throw Error('Missing character guide card: '+id);
  const description=card.effectParts?effect({descEnParts:card.effectParts.base}):esc(card.effect.base);
- return '<figure class="guide-card" data-card-id="'+esc(id)+'"'+rarityAttributes(card.rarity)+'><a class="guide-card-art" href="cards.html#card-'+esc(id)+'"><img src="'+esc(card.image)+'" alt="'+esc(card.name)+'" loading="lazy"></a><figcaption><span class="guide-card-zh">'+esc(card.nameZh)+'</span><a class="guide-card-name" href="cards.html#card-'+esc(id)+'">'+esc(card.name)+'</a><span class="guide-card-meta">'+esc(card.rarity)+' · '+esc(card.type)+'</span><p>'+description+'</p></figcaption></figure>';
+ return '<figure class="guide-card" data-card-id="'+esc(id)+'"'+rarityAttributes(card.rarity)+'><a class="guide-card-art" href="cards.html#card-'+esc(id)+'"><img src="'+esc(card.image)+'" alt="'+esc(card.name)+'" loading="lazy"></a><figcaption><span class="guide-card-zh">'+esc(card.nameZh)+'</span><span class="guide-card-name">'+esc(card.name)+'</span><span class="guide-card-meta">'+esc(card.rarity)+' · '+esc(card.type)+'</span><p>'+description+'</p></figcaption></figure>';
 }
 
 const buildTagsByCharacter=new Map();

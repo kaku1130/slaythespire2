@@ -18,7 +18,9 @@ const {characters}=require('../../data/cards/creator-tiers.json');
   assert.deepEqual(await page.locator('[data-catalog-layout] .detail-overview').evaluateAll(nodes=>[...new Set(nodes.map(node=>[...node.children].map(child=>child.tagName).join(',')))]),['FIGURE,HEADER,DL,SECTION']);
   for(const card of cards){
    const row=page.locator('#card-'+card.id);
-   assert.equal(await row.locator('.detail-name-zh').getAttribute('href'),await row.locator('.detail-name-en').getAttribute('href'),card.id+' shared name link');
+   assert.equal(await row.locator('.detail-name-zh').getAttribute('href'),null,card.id+' Chinese name is plain text');
+   assert.equal(await row.locator('.detail-name-en').getAttribute('href'),null,card.id+' English name is plain text');
+   assert.ok((await row.locator('.detail-untapped-link').getAttribute('href')).startsWith('https://sts2.untapped.gg/en/cards'),card.id+' Logo retains source link');
    assert.equal(await row.locator('[data-card-version=upgraded]').isDisabled(),card.effect.upgraded===null,card.id);
    if(/^Cost changes from/.test(card.effect.upgraded||'')){
     const descriptions=await row.locator('.detail-panel-description').allTextContents();
