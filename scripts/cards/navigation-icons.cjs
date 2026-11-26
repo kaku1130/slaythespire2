@@ -123,3 +123,12 @@ module.exports.styles+=`
  html body .site-header .site-nav {grid-template-columns:repeat(${columnCount},minmax(0,1fr))!important}
 }
 `;
+
+module.exports.styles+=`
+/* Category icon sizing belongs to navigation, independently of Game Info. */
+@media screen and (max-width:600px) {
+ html body .site-header .site-nav>a {padding-block:4px!important}
+ html body .site-header .site-nav a>.site-nav-visual {flex:0 0 32px;width:32px;height:32px}
+ html body .site-header .site-nav .site-nav-icon {width:32px!important;height:32px!important}
+}
+`;

@@ -193,17 +193,6 @@ html body .site-header .game-info-menu>a {
  font:500 14px/1.4 Arial,"Microsoft JhengHei",sans-serif!important;
 }
 html body .site-header .game-info-menu>a:hover {color:#fff!important;background:#1b2b3a}
-@media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
- html body .site-header .site-nav {grid-template-columns:repeat(6,77.5px) 132px!important;flex:0 1 627px!important;width:627px!important}
-}
-@media screen and (max-width:600px) {
- html body .site-header .site-nav {display:flex!important;flex:1 1 auto!important;width:100%!important;min-width:0;gap:4px}
- html body .site-header .site-nav>a {flex:1 1 0!important;width:auto!important;min-width:0!important;max-width:52px!important;padding:4px 0!important}
- html body .site-header .site-nav a>.site-nav-visual {flex:0 0 32px;width:32px;height:32px}
- html body .site-header .site-nav .site-nav-icon {width:32px!important;height:32px!important}
- html body .site-header .game-info-dropdown {flex:0 0 108px;width:108px;height:52px}
- html body .site-header .game-info-dropdown>summary {font-size:13px;padding:0 8px;gap:8px}
-}
 
 /* Compact tablets keep identical navigation sizing regardless of input detection. */
 @media screen and (min-width:601px) and (max-width:1180px) {
@@ -231,6 +220,19 @@ html {--site-nav-icon-size:36px}
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {html {--site-nav-icon-size:45px}}
 @media screen and (max-width:600px) {html {--site-nav-icon-size:32px}}
 @media screen and (min-width:601px) and (max-width:1180px) {html {--site-nav-icon-size:36px}}
+
+/* Phones show only the five category icons, with no empty menu column. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body .site-header .game-info-dropdown {display:none!important}
+ html body .site-header .site-nav {grid-template-columns:repeat(5,minmax(0,1fr))!important}
+}
+
+/* Category icon sizing belongs to navigation, independently of Game Info. */
+@media screen and (max-width:600px) {
+ html body .site-header .site-nav>a {padding-block:4px!important}
+ html body .site-header .site-nav a>.site-nav-visual {flex:0 0 32px;width:32px;height:32px}
+ html body .site-header .site-nav .site-nav-icon {width:32px!important;height:32px!important}
+}
 /* Shared page frame: content and navigation use the same edges. */
 :root{--site-width:90%;--site-page-gap:20px}
 main#main-content,.site-header>.site-header-inner{box-sizing:border-box;width:var(--site-width);max-width:none;margin-inline:auto;padding-inline:0}
@@ -1128,17 +1130,6 @@ html body .site-header .game-info-menu>a {
  font:500 14px/1.4 Arial,"Microsoft JhengHei",sans-serif!important;
 }
 html body .site-header .game-info-menu>a:hover {color:#fff!important;background:#1b2b3a}
-@media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
- html body .site-header .site-nav {grid-template-columns:repeat(6,77.5px) 132px!important;flex:0 1 627px!important;width:627px!important}
-}
-@media screen and (max-width:600px) {
- html body .site-header .site-nav {display:flex!important;flex:1 1 auto!important;width:100%!important;min-width:0;gap:4px}
- html body .site-header .site-nav>a {flex:1 1 0!important;width:auto!important;min-width:0!important;max-width:52px!important;padding:4px 0!important}
- html body .site-header .site-nav a>.site-nav-visual {flex:0 0 32px;width:32px;height:32px}
- html body .site-header .site-nav .site-nav-icon {width:32px!important;height:32px!important}
- html body .site-header .game-info-dropdown {flex:0 0 108px;width:108px;height:52px}
- html body .site-header .game-info-dropdown>summary {font-size:13px;padding:0 8px;gap:8px}
-}
 
 /* Compact tablets keep identical navigation sizing regardless of input detection. */
 @media screen and (min-width:601px) and (max-width:1180px) {
@@ -1166,6 +1157,19 @@ html {--site-nav-icon-size:36px}
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {html {--site-nav-icon-size:45px}}
 @media screen and (max-width:600px) {html {--site-nav-icon-size:32px}}
 @media screen and (min-width:601px) and (max-width:1180px) {html {--site-nav-icon-size:36px}}
+
+/* Phones show only the five category icons, with no empty menu column. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body .site-header .game-info-dropdown {display:none!important}
+ html body .site-header .site-nav {grid-template-columns:repeat(5,minmax(0,1fr))!important}
+}
+
+/* Category icon sizing belongs to navigation, independently of Game Info. */
+@media screen and (max-width:600px) {
+ html body .site-header .site-nav>a {padding-block:4px!important}
+ html body .site-header .site-nav a>.site-nav-visual {flex:0 0 32px;width:32px;height:32px}
+ html body .site-header .site-nav .site-nav-icon {width:32px!important;height:32px!important}
+}
 /* Search icons are present and styled in the initial HTML. */
 html body main#main-content .search-control{position:relative;display:block;min-width:0;width:100%;flex:1 1 240px}
 html body main#main-content .search-control input#search{display:block;width:100%;max-width:none;margin:0;padding-left:50px!important;box-sizing:border-box}
@@ -1979,17 +1983,6 @@ html body .site-header .game-info-menu>a {
  font:500 14px/1.4 Arial,"Microsoft JhengHei",sans-serif!important;
 }
 html body .site-header .game-info-menu>a:hover {color:#fff!important;background:#1b2b3a}
-@media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
- html body .site-header .site-nav {grid-template-columns:repeat(6,77.5px) 132px!important;flex:0 1 627px!important;width:627px!important}
-}
-@media screen and (max-width:600px) {
- html body .site-header .site-nav {display:flex!important;flex:1 1 auto!important;width:100%!important;min-width:0;gap:4px}
- html body .site-header .site-nav>a {flex:1 1 0!important;width:auto!important;min-width:0!important;max-width:52px!important;padding:4px 0!important}
- html body .site-header .site-nav a>.site-nav-visual {flex:0 0 32px;width:32px;height:32px}
- html body .site-header .site-nav .site-nav-icon {width:32px!important;height:32px!important}
- html body .site-header .game-info-dropdown {flex:0 0 108px;width:108px;height:52px}
- html body .site-header .game-info-dropdown>summary {font-size:13px;padding:0 8px;gap:8px}
-}
 
 /* Compact tablets keep identical navigation sizing regardless of input detection. */
 @media screen and (min-width:601px) and (max-width:1180px) {
@@ -2018,6 +2011,19 @@ html {--site-nav-icon-size:36px}
 @media screen and (max-width:600px) {html {--site-nav-icon-size:32px}}
 @media screen and (min-width:601px) and (max-width:1180px) {html {--site-nav-icon-size:36px}}
 
+/* Phones show only the five category icons, with no empty menu column. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body .site-header .game-info-dropdown {display:none!important}
+ html body .site-header .site-nav {grid-template-columns:repeat(5,minmax(0,1fr))!important}
+}
+
+/* Category icon sizing belongs to navigation, independently of Game Info. */
+@media screen and (max-width:600px) {
+ html body .site-header .site-nav>a {padding-block:4px!important}
+ html body .site-header .site-nav a>.site-nav-visual {flex:0 0 32px;width:32px;height:32px}
+ html body .site-header .site-nav .site-nav-icon {width:32px!important;height:32px!important}
+}
+
 /* Catalogs scroll with the document; only the navigation stays at the top. */
 @media screen {
   html:has(main#main-content>.card-scroll,main#main-content>.relic-filters,main#main-content>.potion-filters) {
@@ -2041,10 +2047,4 @@ html {--site-nav-icon-size:36px}
   html body main#main-content#main-content:is(:has(>.card-scroll),:has(>.relic-filters),:has(>.potion-filters)) :is(.grid-pool-heading,.relic-section-title,.potion-section-title) {
     position:static!important;top:auto;
   }
-}
-
-/* Phones show only the five category icons, with no empty menu column. */
-@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
- html body .site-header .game-info-dropdown {display:none!important}
- html body .site-header .site-nav {grid-template-columns:repeat(5,minmax(0,1fr))!important}
 }

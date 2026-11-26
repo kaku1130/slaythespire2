@@ -33,16 +33,5 @@ html body .site-header .game-info-menu>a {
  font:500 14px/1.4 Arial,"Microsoft JhengHei",sans-serif!important;
 }
 html body .site-header .game-info-menu>a:hover {color:#fff!important;background:#1b2b3a}
-@media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
- html body .site-header .site-nav {grid-template-columns:repeat(6,77.5px) 132px!important;flex:0 1 627px!important;width:627px!important}
-}
-@media screen and (max-width:600px) {
- html body .site-header .site-nav {display:flex!important;flex:1 1 auto!important;width:100%!important;min-width:0;gap:4px}
- html body .site-header .site-nav>a {flex:1 1 0!important;width:auto!important;min-width:0!important;max-width:52px!important;padding:4px 0!important}
- html body .site-header .site-nav a>.site-nav-visual {flex:0 0 32px;width:32px;height:32px}
- html body .site-header .site-nav .site-nav-icon {width:32px!important;height:32px!important}
- html body .site-header .game-info-dropdown {flex:0 0 108px;width:108px;height:52px}
- html body .site-header .game-info-dropdown>summary {font-size:13px;padding:0 8px;gap:8px}
-}
 `;
 module.exports={items,markup,styles};
