@@ -1,5 +1,4 @@
 const items=[
- ['Enemies','https://sts2.untapped.gg/en/enemies'],
  ['Events','https://sts2.untapped.gg/en/events'],
  ['Enchantments','https://sts2.untapped.gg/en/enchantments'],
  ['Badges','https://sts2.untapped.gg/en/badges'],
@@ -35,7 +34,7 @@ html body .site-header .game-info-menu>a {
 }
 html body .site-header .game-info-menu>a:hover {color:#fff!important;background:#1b2b3a}
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
- html body .site-header .site-nav {grid-template-columns:repeat(5,77.5px) 132px!important;flex:0 1 544.5px!important;width:544.5px!important}
+ html body .site-header .site-nav {grid-template-columns:repeat(6,77.5px) 132px!important;flex:0 1 627px!important;width:627px!important}
 }
 @media screen and (max-width:600px) {
  html body .site-header .site-nav {display:flex!important;flex:1 1 auto!important;width:100%!important;min-width:0;gap:4px}

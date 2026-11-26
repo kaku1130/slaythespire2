@@ -380,8 +380,8 @@ const cardFilterCookie='sts2_card_filters';
 function restoreCardFilters() {
   setFilterValues(characterFilter, ['Ironclad']);
   try {
-    const cookie=location.protocol==='file:'?null:document.cookie.split(';').map(value=>value.trim()).find(value=>value.startsWith(cardFilterCookie+'='));
-    const stored=location.protocol==='file:'?localStorage.getItem(cardFilterCookie):cookie?decodeURIComponent(cookie.slice(cardFilterCookie.length+1)):null;
+    const cookie=new URL(document.baseURI).protocol==='file:'?null:document.cookie.split(';').map(value=>value.trim()).find(value=>value.startsWith(cardFilterCookie+'='));
+    const stored=new URL(document.baseURI).protocol==='file:'?localStorage.getItem(cardFilterCookie):cookie?decodeURIComponent(cookie.slice(cardFilterCookie.length+1)):null;
     if(!stored)return;
     const saved=JSON.parse(stored);
     if(!saved||typeof saved!=='object')return;
@@ -397,7 +397,7 @@ function restoreCardFilters() {
 function rememberCardFilters() {
   try {
     const serialized=JSON.stringify(Object.fromEntries(Object.entries(selectedCardFilters()).map(([key,values])=>[key,[...values]])));
-    if(location.protocol==='file:'){
+    if(new URL(document.baseURI).protocol==='file:'){
       if(localStorage.getItem(cardFilterCookie)!==serialized)localStorage.setItem(cardFilterCookie,serialized);
       return;
     }

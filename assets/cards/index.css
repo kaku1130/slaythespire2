@@ -117,10 +117,10 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(5,62px)!important;
+    grid-template-columns:repeat(6,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 326px!important;
-    width:326px!important;
+    flex:0 1 392px!important;
+    width:392px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
@@ -142,7 +142,7 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
@@ -153,9 +153,9 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
 /* Scale desktop navigation artwork and buttons together by 25%. */
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
-    grid-template-columns:repeat(5,77.5px)!important;
+    grid-template-columns:repeat(6,77.5px)!important;
     grid-auto-columns:77.5px!important;
-    flex:0 1 407.5px!important;width:407.5px!important;gap:5px;
+    flex:0 1 490px!important;width:490px!important;gap:5px;
   }
   html body .site-header .site-nav > a {
     flex:0 0 77.5px!important;width:77.5px!important;min-width:77.5px!important;max-width:77.5px!important;
@@ -194,7 +194,7 @@ html body .site-header .game-info-menu>a {
 }
 html body .site-header .game-info-menu>a:hover {color:#fff!important;background:#1b2b3a}
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
- html body .site-header .site-nav {grid-template-columns:repeat(5,77.5px) 132px!important;flex:0 1 544.5px!important;width:544.5px!important}
+ html body .site-header .site-nav {grid-template-columns:repeat(6,77.5px) 132px!important;flex:0 1 627px!important;width:627px!important}
 }
 @media screen and (max-width:600px) {
  html body .site-header .site-nav {display:flex!important;flex:1 1 auto!important;width:100%!important;min-width:0;gap:4px}
@@ -207,7 +207,7 @@ html body .site-header .game-info-menu>a:hover {color:#fff!important;background:
 
 /* Compact tablets keep identical navigation sizing regardless of input detection. */
 @media screen and (min-width:601px) and (max-width:1180px) {
- html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 438px!important;width:438px!important;gap:4px}
+ html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 504px!important;width:504px!important;gap:4px}
  html body .site-header .site-nav>a {flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important;height:52px!important;min-height:52px!important;max-height:52px!important;padding:6px 12px!important;border-radius:6px}
  html body .site-header .site-nav a>.site-nav-visual {flex:0 0 36px;width:36px;height:36px}
  html body .site-header .site-nav .site-nav-icon {width:36px!important;height:36px!important;border-radius:6px!important}
@@ -222,7 +222,7 @@ html body .site-header .site-nav>a,html body .site-header .game-info-dropdown>su
 /* Navigation fills the space beside the logo with a consistent separation. */
 html body .site-header>.site-header-inner {flex-wrap:nowrap!important;column-gap:24px!important}
 html body .site-header .site-brand {flex:0 0 auto}
-html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
+html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
 html body .site-header .site-nav>a {width:100%!important;min-width:0!important;max-width:none!important;flex:1 1 0!important;padding-inline:0!important}
 html body .site-header .game-info-dropdown {width:100%;min-width:0;max-width:none;justify-self:stretch}
 
@@ -299,6 +299,15 @@ html body main#main-content :is(.tools button,.filters button,.character-sidebar
 html body main#main-content :is(.tools button,.filters button,.character-sidebar .character-nav a,.tier-sidebar .tier-index-item):focus-visible,html body .site-header .site-nav a:focus-visible{outline:2px solid var(--focus,#37a8ec);outline-offset:3px}
 html body main#main-content :is(.tools button,.filters button)[aria-pressed=true]{border-color:currentColor!important}
 html body main#main-content .catalog-columns button[aria-pressed=true]{background:color-mix(in srgb,var(--focus,#37a8ec) 22%,#0d131a);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--focus,#37a8ec) 40%,transparent)}
+
+/* Match the ancient menu's subtle outlines across page controls. */
+html body main#main-content#main-content#main-content#main-content :is(#tools .card-filter-buttons button,#tools .card-tier-choices button,#tools #aoe-toggle,#tools .filter-menu-toggle,.catalog-filter-buttons button,.catalog-search-tools>.catalog-random,.monster-filters button,.character-nav a,.tier-index-item,.character-tile-link,.ancient-top-menu-grid>a) {border:1px solid #344454!important;border-radius:8px!important}
+html body main#main-content#main-content#main-content#main-content :is(#tools .card-filter-buttons button,#tools .card-tier-choices button,#tools #aoe-toggle,#tools .filter-menu-toggle,.catalog-filter-buttons button,.catalog-search-tools>.catalog-random,.monster-filters button,.character-nav a,.tier-index-item,.character-tile-link,.ancient-top-menu-grid>a):is(:hover,:focus-visible,[aria-pressed=true],[aria-expanded=true],[aria-current=page]) {border-color:var(--button-accent,#238cc2)!important}
+html body main#main-content#main-content#main-content#main-content :is(#tools .card-filter-buttons button,#tools .card-tier-choices button,#tools #aoe-toggle,#tools .filter-menu-toggle,.catalog-filter-buttons button,.catalog-search-tools>.catalog-random,.monster-filters button,.character-nav a,.tier-index-item,.character-tile-link,.ancient-top-menu-grid>a):focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
+html body .site-header .site-nav>a,html body .site-header .game-info-dropdown>summary {border:1px solid #344454!important;border-radius:8px!important}
+html body .site-header .site-nav>a:is(:hover,:focus-visible,[aria-current=page]),
+html body .site-header .game-info-dropdown>summary:is(:hover,:focus-visible),
+html body .site-header .game-info-dropdown[open]>summary {border-color:#238cc2!important}
 
 /* Match every existing search field to the card toolbar. */
 html body main#main-content :is(.tools,.filters) input#search{
@@ -612,7 +621,6 @@ html body:not([data-detail-kind]) main#main-content#main-content#main-content {
   html body:not([data-detail-kind]) main#main-content#main-content#main-content {
     width:60%!important;
   }
-  html body:not([data-detail-kind]) main#main-content#main-content#main-content:has(>#card-scroll) {width:80%!important}
   html body:not([data-detail-kind]) main#main-content:has(>.relic-filters,>.potion-filters)>.catalog-scroll {
     width:100%!important;
     max-width:none;
@@ -1018,12 +1026,43 @@ html body main#main-content#main-content #tools :is(.card-filter-buttons,.card-t
 html body main#main-content#main-content #card-scroll .detail-card-sources>a {color:#cbd5df;font:700 18px/1.4 Arial,sans-serif;white-space:nowrap;text-decoration:none}
 
 /* Equal-height cards keep source links at the bottom of each grid row. */
-html body[data-view=grid] main#main-content#main-content#main-content #card-scroll .card-detail-row:has([data-catalog-layout]) {grid-row:auto;align-self:stretch;display:flex!important;flex-direction:column}
+html body[data-view=grid] main#main-content#main-content#main-content #card-scroll .card-detail-row:not([hidden]):has([data-catalog-layout]) {grid-row:auto;align-self:stretch;display:flex!important;flex-direction:column}
 html body[data-view=grid] main#main-content#main-content#main-content #card-scroll .card-detail-cell:has([data-catalog-layout]) {display:flex!important;flex:1;min-height:0}
 html body[data-view=grid] main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] {grid-template-rows:minmax(0,1fr);flex:1}
 html body[data-view=grid] main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview {grid-row:auto;grid-template-rows:auto auto auto minmax(auto,1fr) auto;row-gap:12px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel {padding-bottom:0}
 html body main#main-content#main-content#main-content #card-scroll .detail-card-sources {align-self:end;margin:0;padding:0}
+
+/* Filtered cards must stay hidden regardless of grid and detail layout rules. */
+html body[data-view=grid] main#main-content#main-content#main-content #card-scroll .card-detail-row[hidden] {display:none!important}
+@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine), screen and (min-width:1441px) {
+  html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:repeat(4,minmax(0,1fr))}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:not([hidden]) {grid-column:auto}
+  html body main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata {display:grid;grid-template-columns:minmax(0,1fr) max-content minmax(0,1fr);gap:4px;width:calc(100% + 48px);justify-self:center}
+  html body main#main-content#main-content #card-scroll .detail-type-metadata :is(dd,.detail-type-label,.detail-plain-rarity) {font-size:14px}
+  html body main#main-content#main-content #card-scroll .detail-type-metadata .detail-meta-item:last-child {max-width:100%}
+  html body main#main-content#main-content #card-scroll .detail-type-metadata :is(dd[data-stat-rarity],.detail-plain-rarity) {white-space:normal;overflow-wrap:anywhere;justify-content:flex-end}
+}
+/* Subtle outlines distinguish available options and selected filters. */
+html body main#main-content#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button,
+html body main#main-content#main-content#main-content #tools .filter-menu-toggle {
+  border:2px solid #465365!important;
+}
+html body main#main-content#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button:is(:hover,[aria-pressed=true]),
+html body main#main-content#main-content#main-content #tools .filter-menu-toggle:is(:hover,[aria-expanded=true]) {
+  border-color:var(--selection-color,#d9e5f2)!important;
+}
+html body main#main-content#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button:focus-visible,
+html body main#main-content#main-content#main-content #tools .filter-menu-toggle:focus-visible {
+  outline:2px solid #fff;outline-offset:3px;
+}
+
+/* Fill each card while keeping a consistent inset and section spacing. */
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] {padding:12px;gap:12px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-overview,.detail-art,header,.detail-type-metadata,.detail-effects,.detail-card-sources) {box-sizing:border-box;width:100%;max-width:none;min-width:0}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview {row-gap:12px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel {box-sizing:border-box;padding:12px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-panel-description {width:100%;max-width:none;margin-inline:0}
 
 /* Nested catalog panels fill the shared page frame. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),
@@ -1048,10 +1087,10 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(5,62px)!important;
+    grid-template-columns:repeat(6,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 326px!important;
-    width:326px!important;
+    flex:0 1 392px!important;
+    width:392px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
@@ -1073,7 +1112,7 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
@@ -1084,9 +1123,9 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
 /* Scale desktop navigation artwork and buttons together by 25%. */
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
-    grid-template-columns:repeat(5,77.5px)!important;
+    grid-template-columns:repeat(6,77.5px)!important;
     grid-auto-columns:77.5px!important;
-    flex:0 1 407.5px!important;width:407.5px!important;gap:5px;
+    flex:0 1 490px!important;width:490px!important;gap:5px;
   }
   html body .site-header .site-nav > a {
     flex:0 0 77.5px!important;width:77.5px!important;min-width:77.5px!important;max-width:77.5px!important;
@@ -1125,7 +1164,7 @@ html body .site-header .game-info-menu>a {
 }
 html body .site-header .game-info-menu>a:hover {color:#fff!important;background:#1b2b3a}
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
- html body .site-header .site-nav {grid-template-columns:repeat(5,77.5px) 132px!important;flex:0 1 544.5px!important;width:544.5px!important}
+ html body .site-header .site-nav {grid-template-columns:repeat(6,77.5px) 132px!important;flex:0 1 627px!important;width:627px!important}
 }
 @media screen and (max-width:600px) {
  html body .site-header .site-nav {display:flex!important;flex:1 1 auto!important;width:100%!important;min-width:0;gap:4px}
@@ -1138,7 +1177,7 @@ html body .site-header .game-info-menu>a:hover {color:#fff!important;background:
 
 /* Compact tablets keep identical navigation sizing regardless of input detection. */
 @media screen and (min-width:601px) and (max-width:1180px) {
- html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 438px!important;width:438px!important;gap:4px}
+ html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 504px!important;width:504px!important;gap:4px}
  html body .site-header .site-nav>a {flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important;height:52px!important;min-height:52px!important;max-height:52px!important;padding:6px 12px!important;border-radius:6px}
  html body .site-header .site-nav a>.site-nav-visual {flex:0 0 36px;width:36px;height:36px}
  html body .site-header .site-nav .site-nav-icon {width:36px!important;height:36px!important;border-radius:6px!important}
@@ -1153,7 +1192,7 @@ html body .site-header .site-nav>a,html body .site-header .game-info-dropdown>su
 /* Navigation fills the space beside the logo with a consistent separation. */
 html body .site-header>.site-header-inner {flex-wrap:nowrap!important;column-gap:24px!important}
 html body .site-header .site-brand {flex:0 0 auto}
-html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
+html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
 html body .site-header .site-nav>a {width:100%!important;min-width:0!important;max-width:none!important;flex:1 1 0!important;padding-inline:0!important}
 html body .site-header .game-info-dropdown {width:100%;min-width:0;max-width:none;justify-self:stretch}
 

@@ -39,7 +39,7 @@ html = html.replace(/<tr id="card-([^"]+)"[^>]*>[\s\S]*?<\/tr>/g, (original, id)
     tag = attribute(tag, 'data-energy-gain', String(require('./energy-gain.cjs')(card)));
     tag = attribute(tag, 'data-rarity', card.rarity);
     tag = attribute(tag, 'data-name', (card.name + ' ' + card.nameZh).toLowerCase());
-    return attribute(tag, 'data-search', plain(detailCell).toLowerCase());
+    return attribute(tag, 'data-search', require('./card-search-text.cjs')(card));
   });
   // Keep filter/sort data in the existing cells, aligned with the English source.
   row = row.replace(/(<td\b[^>]*data-field="([^"]+)"[^>]*>)([\s\S]*?)<\/td>/g, (cell, tag, field, content) => {

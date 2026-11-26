@@ -1,10 +1,10 @@
 (() => {
-  if (window.parent !== window) return;
   const main = document.getElementById('main-content');
   if (!main) return;
   let search = document.getElementById('search');
   const buildPage = !!main.querySelector('.build-panel');
   const cardPage = !!main.querySelector('#card-scroll .card-detail');
+  if (window.parent !== window && !cardPage) return;
   const ancientPage = main.classList.contains('ancient-browser');
   if (buildPage || ancientPage || /\/data\/ancient\//.test(location.pathname)) return;
   const highlightPage = !search;
@@ -225,7 +225,7 @@ html body main#main-content .filters .catalog-search-tools>button.catalog-random
 })();
 (() => {
   const main = document.getElementById('main-content');
-  const controls = main?.querySelector('#tools,.relic-filters,.potion-filters');
+  const controls = main?.querySelector('#tools');
   const random = controls?.querySelector('#aoe-toggle,.catalog-random');
   if (!random || controls.querySelector('.filter-menu-toggle')) return;
   const panels = [...controls.children].filter(element => element.matches('.card-filter-rows,.card-action-row,.catalog-filter-rows'));

@@ -15,7 +15,7 @@ main=require('./tier-colors.cjs')(main);
 if(slug)main=require('./desktop-ancient.cjs').addTopRelicMenu(main,{active:slug,prefix,assets});
 if(!slug)main=main.replace(/<h1\b[\s\S]*?<\/h1>/,'').replace(/<p\b[^>]*>殺戮尖塔2 全部[\s\S]*?強度排行。<\/p>/,'');
 if(!slug)main=main.replace(/<div class="mt-auto flex items-center gap-1\.5 pt-3 text-sm font-semibold text-link">[^<]*最強遺物[\s\S]*?<\/div>/g,'');
-const header=nav.renderHeader('ancient').replace(/href="((?:ancients|characters|cards|event|monster|potions|relics)\.html)"/g,(_,u)=>'href="'+prefix+u+'"');
+const header=nav.renderHeader('ancient').replace(/href="((?:ancients|characters|cards|event|monsters|potions|relics)\.html)"/g,(_,u)=>'href="'+prefix+u+'"');
 main=require('../cards/content-links.cjs').normalize(main);
 const title=source.match(/<title>([\s\S]*?)<\/title>/)?.[1]||'先古之民';
 const css=nav.styles+'html{color-scheme:dark;scrollbar-width:auto;scrollbar-color:auto}body{background:#040609;color:#e3e8ee}main{min-width:0}main img{max-width:100%}main [class*="flex-wrap"]:has(>[aria-label="切換遊戲版本"]){display:none}'+nav.layoutStyles+(slug?cardStyles+relicLayout.styles+require('./desktop-ancient.cjs').styles+require('../cards/desktop-content-width.cjs')+require('../cards/rarity-colors.cjs'):'');

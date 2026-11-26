@@ -2,13 +2,14 @@
 
 本機靜態頁面：
 
-- [單一網址入口](index.html)：保留固定導覽列，在同一網址切換下方五個頁面；原有 HTML 仍可獨立開啟。
+- [單一網址入口](index.html)：保留固定導覽列，在同一網址切換下方六個頁面；原有 HTML 仍可獨立開啟。
 
 - [先古之民](ancients.html)
 - [角色](characters.html)
 - [卡牌](cards.html)
 - [藥水](potions.html)
 - [遺物](relics.html)
+- [怪物總表](monsters.html)：依 Overgrowth、Underdocks、Hive、Glory 篩選，怪物卡片連至 Untapped 詳細頁。
 
 使用 Node.js 重新產生頁面：
 
@@ -18,12 +19,15 @@ node scripts/builds/build-builds.cjs
 node scripts/ancient/build-ancients.cjs
 node scripts/potion/build-potion.cjs
 node scripts/relic/build-relic.cjs
+node scripts/monster/build-monster.cjs
 ```
 
 原有頁面更新後，執行 `node scripts/cards/build-index.cjs` 同步單一入口的內容。
 單一入口可直接開啟本機檔案，也可放在靜態網站；驗證指令為 `node scripts/cards/verify-index.cjs`。
 
-卡牌產生程式也會同步產生角色頁面。assets、data、scripts 保留這五頁及其重建依賴；cards、event 目錄含共用工具，monster 目錄僅保留導覽圖示與先古之民使用的共用圖示資料。
+怪物總表包含 80 張遭遇卡片與本機圖片，依 Boss、Elite、Hard、Weak 分組，排除 Event，不建立怪物詳細頁。重建使用 `data/monster/catalog.json`；更新來源與圖片執行 `node scripts/monster/sync-monster.cjs`，再重建總表與單一入口。驗證指令為 `node scripts/monster/verify-monster.cjs`。
+
+卡牌產生程式也會同步產生角色頁面。assets、data、scripts 保留這六頁及其重建依賴；cards、event 目錄含共用工具，monster 目錄保存怪物總表、來源快照及圖片。
 
 本機瀏覽器完整性檢查：`node scripts/cards/verify-site.cjs`（使用 Codex 環境提供的 Playwright 與本機 Chrome）。
 

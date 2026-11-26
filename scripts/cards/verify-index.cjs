@@ -22,9 +22,13 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
    await current().locator('#card-scroll').waitFor();
    const header=await page.locator('.site-header').boundingBox();
    await current().locator('#search').fill('Offering');
-   for(const [label,key,selector] of [['Characters','builds','.character-grid'],['Relics','relic','.relic-section'],['Potions','potion','.potion-section'],['Ancients','ancient','.split-detail iframe'],['Cards','cards','#card-scroll']]){
+   for(const [label,key,selector] of [['Characters','builds','.character-grid'],['Relics','relic','.relic-section'],['Potions','potion','.potion-section'],['Ancients','ancient','.split-detail iframe'],['Monster','monster','.monster-grid'],['Cards','cards','#card-scroll']]){
     await page.locator('.site-nav>a[aria-label="'+label+'"]').click();
     await current().locator(selector).first().waitFor();
+    if(['relic','potion','monster'].includes(key)){
+     assert.equal(await current().locator('.filter-menu-toggle').count(),0,key+' no hamburger');
+     assert.equal(await current().locator(key==='monster'?'.monster-filters':'.catalog-filter-rows').isVisible(),true,key+' visible filters');
+    }
     if(key==='ancient')await current().frameLocator('.split-detail iframe').locator('.ancient-top-menu-grid').waitFor();
     assert.equal(page.url(),url);
     assert.equal(await page.locator('#main-content>iframe:not([hidden])').getAttribute('data-page'),key);
@@ -49,7 +53,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
     assert.equal(await page.locator('#main-content>iframe:not([hidden])').evaluate(el=>el.getBoundingClientRect().width<=innerWidth),true);
    }
    assert.deepEqual(errors,[]);
-   console.log('PASS '+mode+': single URL, five pages, stable header, preserved search, local links, Tier dialog, back/reload and narrow layouts.');
+   console.log('PASS '+mode+': single URL, six pages, stable header, preserved search, local links, Tier dialog, back/reload and narrow layouts.');
    await context.close();
   }
  }finally{await browser.close();}

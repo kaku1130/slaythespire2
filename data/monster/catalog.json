@@ -1,0 +1,1679 @@
+{
+  "source": "https://sts2.untapped.gg/en/enemies",
+  "regions": [
+    "Overgrowth",
+    "Underdocks",
+    "Hive",
+    "Glory"
+  ],
+  "items": [
+    {
+      "id": "overgrowth-vantom-boss",
+      "name": "Vantom",
+      "region": "Overgrowth",
+      "type": "Boss",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/vantom-boss",
+      "members": [
+        {
+          "name": "Vantom",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/vantom.png",
+          "hp": "183",
+          "image": "assets/monster/images/vantom.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-the-kin-boss",
+      "name": "The Kin",
+      "region": "Overgrowth",
+      "type": "Boss",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/the-kin-boss",
+      "members": [
+        {
+          "name": "Kin Follower",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/kin_follower.png",
+          "hp": "62-63",
+          "image": "assets/monster/images/kin-follower.webp"
+        },
+        {
+          "name": "Kin Follower",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/kin_follower.png",
+          "hp": "62-63",
+          "image": "assets/monster/images/kin-follower.webp"
+        },
+        {
+          "name": "Kin Priest",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/kin_priest.png",
+          "hp": "199",
+          "image": "assets/monster/images/kin-priest.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-ceremonial-beast-boss",
+      "name": "Ceremonial Beast",
+      "region": "Overgrowth",
+      "type": "Boss",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/ceremonial-beast-boss",
+      "members": [
+        {
+          "name": "Ceremonial Beast",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/ceremonial_beast.png",
+          "hp": "262",
+          "image": "assets/monster/images/ceremonial-beast.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-phrog-parasite-elite",
+      "name": "Phrog Parasite",
+      "region": "Overgrowth",
+      "type": "Elite",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/phrog-parasite-elite",
+      "members": [
+        {
+          "name": "Phrog Parasite",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/phrog_parasite.png",
+          "hp": "66-68",
+          "image": "assets/monster/images/phrog-parasite.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-bygone-effigy-elite",
+      "name": "Bygone Effigy",
+      "region": "Overgrowth",
+      "type": "Elite",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/bygone-effigy-elite",
+      "members": [
+        {
+          "name": "Bygone Effigy",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/bygone_effigy.png",
+          "hp": "132",
+          "image": "assets/monster/images/bygone-effigy.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-byrdonis-elite",
+      "name": "Byrdonis",
+      "region": "Overgrowth",
+      "type": "Elite",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/byrdonis-elite",
+      "members": [
+        {
+          "name": "Byrdonis",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/byrdonis.png",
+          "hp": "90",
+          "image": "assets/monster/images/byrdonis.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-overgrowth-crawlers",
+      "name": "Overgrowth Crawlers",
+      "region": "Overgrowth",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/overgrowth-crawlers",
+      "members": [
+        {
+          "name": "Shrinker Beetle",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/shrinker_beetle.png",
+          "hp": "40-42",
+          "image": "assets/monster/images/shrinker-beetle.webp"
+        },
+        {
+          "name": "Fuzzy Wurm Crawler",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/fuzzy_wurm_crawler.png",
+          "hp": "58-59",
+          "image": "assets/monster/images/fuzzy-wurm-crawler.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-ruby-raiders-normal",
+      "name": "Ruby Raiders",
+      "region": "Overgrowth",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/ruby-raiders-normal",
+      "members": [
+        {
+          "name": "Axe Raider",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/axe_ruby_raider.png",
+          "hp": "21-23",
+          "image": "assets/monster/images/axe-ruby-raider.webp"
+        },
+        {
+          "name": "Brute Raider",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/brute_ruby_raider.png",
+          "hp": "31-34",
+          "image": "assets/monster/images/brute-ruby-raider.webp"
+        },
+        {
+          "name": "Assassin Raider",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/assassin_ruby_raider.png",
+          "hp": "19-24",
+          "image": "assets/monster/images/assassin-ruby-raider.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-nibbits-normal",
+      "name": "A Pair of Nibbits",
+      "region": "Overgrowth",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/nibbits-normal",
+      "members": [
+        {
+          "name": "Nibbit",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/nibbit.png",
+          "hp": "44-48",
+          "image": "assets/monster/images/nibbit.webp"
+        },
+        {
+          "name": "Nibbit",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/nibbit.png",
+          "hp": "44-48",
+          "image": "assets/monster/images/nibbit.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-snapping-jaxfruit-normal",
+      "name": "Overgrowth Flora",
+      "region": "Overgrowth",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/snapping-jaxfruit-normal",
+      "members": [
+        {
+          "name": "Snapping Jaxfruit",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/snapping_jaxfruit.png",
+          "hp": "34-36",
+          "image": "assets/monster/images/snapping-jaxfruit.webp"
+        },
+        {
+          "name": "Flyconid",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/flyconid.png",
+          "hp": "51-53",
+          "image": "assets/monster/images/flyconid.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-flyconid-normal",
+      "name": "Shroom and Slime",
+      "region": "Overgrowth",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/flyconid-normal",
+      "members": [
+        {
+          "name": "Leaf Slime (M)",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/leaf_slime_m.png",
+          "hp": "33-36",
+          "image": "assets/monster/images/leaf-slime-m.webp"
+        },
+        {
+          "name": "Flyconid",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/flyconid.png",
+          "hp": "51-53",
+          "image": "assets/monster/images/flyconid.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-slimes-normal",
+      "name": "Swarm of Slimes",
+      "region": "Overgrowth",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/slimes-normal",
+      "members": [
+        {
+          "name": "Twig Slime (M)",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/twig_slime_m.png",
+          "hp": "27-29",
+          "image": "assets/monster/images/twig-slime-m.webp"
+        },
+        {
+          "name": "Leaf Slime (M)",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/leaf_slime_m.png",
+          "hp": "33-36",
+          "image": "assets/monster/images/leaf-slime-m.webp"
+        },
+        {
+          "name": "Twig Slime (S)",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/twig_slime_s.png",
+          "hp": "8-12",
+          "image": "assets/monster/images/twig-slime-s.webp"
+        },
+        {
+          "name": "Leaf Slime (S)",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/leaf_slime_s.png",
+          "hp": "12-16",
+          "image": "assets/monster/images/leaf-slime-s.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-slithering-strangler-normal",
+      "name": "Strangler and Friend",
+      "region": "Overgrowth",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/slithering-strangler-normal",
+      "members": [
+        {
+          "name": "Leaf Slime (M)",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/leaf_slime_m.png",
+          "hp": "33-36",
+          "image": "assets/monster/images/leaf-slime-m.webp"
+        },
+        {
+          "name": "Slithering Strangler",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/slithering_strangler.png",
+          "hp": "54-56",
+          "image": "assets/monster/images/slithering-strangler.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-inklets-normal",
+      "name": "Inklets",
+      "region": "Overgrowth",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/inklets-normal",
+      "members": [
+        {
+          "name": "Inklet",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/inklet.png",
+          "hp": "12-18",
+          "image": "assets/monster/images/inklet.webp"
+        },
+        {
+          "name": "Inklet",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/inklet.png",
+          "hp": "12-18",
+          "image": "assets/monster/images/inklet.webp"
+        },
+        {
+          "name": "Inklet",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/inklet.png",
+          "hp": "12-18",
+          "image": "assets/monster/images/inklet.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-vine-shambler-normal",
+      "name": "Vine Shambler",
+      "region": "Overgrowth",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/vine-shambler-normal",
+      "members": [
+        {
+          "name": "Vine Shambler",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/vine_shambler.png",
+          "hp": "64",
+          "image": "assets/monster/images/vine-shambler.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-fogmog-normal",
+      "name": "Fogmog",
+      "region": "Overgrowth",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/fogmog-normal",
+      "members": [
+        {
+          "name": "Fogmog",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/fogmog.png",
+          "hp": "78",
+          "image": "assets/monster/images/fogmog.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-mawler-normal",
+      "name": "Mawler",
+      "region": "Overgrowth",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/mawler-normal",
+      "members": [
+        {
+          "name": "Mawler",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/mawler.png",
+          "hp": "76",
+          "image": "assets/monster/images/mawler.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-cubex-construct-normal",
+      "name": "Cubex Construct",
+      "region": "Overgrowth",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/cubex-construct-normal",
+      "members": [
+        {
+          "name": "Cubex Construct",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/cubex_construct.png",
+          "hp": "70",
+          "image": "assets/monster/images/cubex-construct.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-slimes-weak",
+      "name": "Group of Slimes",
+      "region": "Overgrowth",
+      "type": "Easy",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/slimes-weak",
+      "members": [
+        {
+          "name": "Leaf Slime (S)",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/leaf_slime_s.png",
+          "hp": "12-16",
+          "image": "assets/monster/images/leaf-slime-s.webp"
+        },
+        {
+          "name": "Leaf Slime (M)",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/leaf_slime_m.png",
+          "hp": "33-36",
+          "image": "assets/monster/images/leaf-slime-m.webp"
+        },
+        {
+          "name": "Twig Slime (S)",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/twig_slime_s.png",
+          "hp": "8-12",
+          "image": "assets/monster/images/twig-slime-s.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-nibbits-weak",
+      "name": "A Lone Nibbit",
+      "region": "Overgrowth",
+      "type": "Easy",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/nibbits-weak",
+      "members": [
+        {
+          "name": "Nibbit",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/nibbit.png",
+          "hp": "44-48",
+          "image": "assets/monster/images/nibbit.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-fuzzy-wurm-crawler-weak",
+      "name": "Fuzzy Wurm Crawler",
+      "region": "Overgrowth",
+      "type": "Easy",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/fuzzy-wurm-crawler-weak",
+      "members": [
+        {
+          "name": "Fuzzy Wurm Crawler",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/fuzzy_wurm_crawler.png",
+          "hp": "58-59",
+          "image": "assets/monster/images/fuzzy-wurm-crawler.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-shrinker-beetle-weak",
+      "name": "Shrinker Beetle",
+      "region": "Overgrowth",
+      "type": "Easy",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/shrinker-beetle-weak",
+      "members": [
+        {
+          "name": "Shrinker Beetle",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/shrinker_beetle.png",
+          "hp": "40-42",
+          "image": "assets/monster/images/shrinker-beetle.webp"
+        }
+      ]
+    },
+    {
+      "id": "overgrowth-dense-vegetation-event-encounter",
+      "name": "Wrigglers",
+      "region": "Overgrowth",
+      "type": "Event",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/dense-vegetation-event-encounter",
+      "members": [
+        {
+          "name": "Wriggler",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/wriggler.png",
+          "hp": "18-22",
+          "image": "assets/monster/images/wriggler.webp"
+        },
+        {
+          "name": "Wriggler",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/wriggler.png",
+          "hp": "18-22",
+          "image": "assets/monster/images/wriggler.webp"
+        },
+        {
+          "name": "Wriggler",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/wriggler.png",
+          "hp": "18-22",
+          "image": "assets/monster/images/wriggler.webp"
+        },
+        {
+          "name": "Wriggler",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/wriggler.png",
+          "hp": "18-22",
+          "image": "assets/monster/images/wriggler.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-waterfall-giant-boss",
+      "name": "Waterfall Giant",
+      "region": "Underdocks",
+      "type": "Boss",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/waterfall-giant-boss",
+      "members": [
+        {
+          "name": "Waterfall Giant",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/waterfall_giant.png",
+          "hp": "250",
+          "image": "assets/monster/images/waterfall-giant.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-lagavulin-matriarch-boss",
+      "name": "Lagavulin Matriarch",
+      "region": "Underdocks",
+      "type": "Boss",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/lagavulin-matriarch-boss",
+      "members": [
+        {
+          "name": "Lagavulin Matriarch",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/lagavulin_matriarch.png",
+          "hp": "233",
+          "image": "assets/monster/images/lagavulin-matriarch.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-soul-fysh-boss",
+      "name": "Soul Fysh",
+      "region": "Underdocks",
+      "type": "Boss",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/soul-fysh-boss",
+      "members": [
+        {
+          "name": "Soul Fysh",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/soul_fysh.png",
+          "hp": "221",
+          "image": "assets/monster/images/soul-fysh.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-phantasmal-gardeners-elite",
+      "name": "Phantasmal Gardeners",
+      "region": "Underdocks",
+      "type": "Elite",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/phantasmal-gardeners-elite",
+      "members": [
+        {
+          "name": "Phantasmal Gardener",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/phantasmal_gardener.png",
+          "hp": "27-32",
+          "image": "assets/monster/images/phantasmal-gardener.webp"
+        },
+        {
+          "name": "Phantasmal Gardener",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/phantasmal_gardener.png",
+          "hp": "27-32",
+          "image": "assets/monster/images/phantasmal-gardener.webp"
+        },
+        {
+          "name": "Phantasmal Gardener",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/phantasmal_gardener.png",
+          "hp": "27-32",
+          "image": "assets/monster/images/phantasmal-gardener.webp"
+        },
+        {
+          "name": "Phantasmal Gardener",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/phantasmal_gardener.png",
+          "hp": "27-32",
+          "image": "assets/monster/images/phantasmal-gardener.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-terror-eel-elite",
+      "name": "Terror Eel",
+      "region": "Underdocks",
+      "type": "Elite",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/terror-eel-elite",
+      "members": [
+        {
+          "name": "Terror Eel",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/terror_eel.png",
+          "hp": "150",
+          "image": "assets/monster/images/terror-eel.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-skulking-colony-elite",
+      "name": "Skulking Colony",
+      "region": "Underdocks",
+      "type": "Elite",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/skulking-colony-elite",
+      "members": [
+        {
+          "name": "Skulking Colony",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/skulking_colony.png",
+          "hp": "80",
+          "image": "assets/monster/images/skulking-colony.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-seapunk-normal",
+      "name": "Underdocks Wildlife",
+      "region": "Underdocks",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/seapunk-normal",
+      "members": [
+        {
+          "name": "Calcified Cultist",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/calcified_cultist.png",
+          "hp": "39-42",
+          "image": "assets/monster/images/calcified-cultist.webp"
+        },
+        {
+          "name": "Seapunk",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/seapunk.png",
+          "hp": "47-49",
+          "image": "assets/monster/images/seapunk.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-cultists-normal",
+      "name": "Cultists",
+      "region": "Underdocks",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/cultists-normal",
+      "members": [
+        {
+          "name": "Calcified Cultist",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/calcified_cultist.png",
+          "hp": "39-42",
+          "image": "assets/monster/images/calcified-cultist.webp"
+        },
+        {
+          "name": "Damp Cultist",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/damp_cultist.png",
+          "hp": "52-54",
+          "image": "assets/monster/images/damp-cultist.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-corpse-slugs-normal",
+      "name": "Many Corpse Slugs",
+      "region": "Underdocks",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/corpse-slugs-normal",
+      "members": [
+        {
+          "name": "Corpse Slug",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/corpse_slug.png",
+          "hp": "27-29",
+          "image": "assets/monster/images/corpse-slug.webp"
+        },
+        {
+          "name": "Corpse Slug",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/corpse_slug.png",
+          "hp": "27-29",
+          "image": "assets/monster/images/corpse-slug.webp"
+        },
+        {
+          "name": "Corpse Slug",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/corpse_slug.png",
+          "hp": "27-29",
+          "image": "assets/monster/images/corpse-slug.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-gremlin-merc-normal",
+      "name": "Two Gremlins in a Trenchcoat",
+      "region": "Underdocks",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/gremlin-merc-normal",
+      "members": [
+        {
+          "name": "Gremlin Merc",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/gremlin_merc.png",
+          "hp": "51-53",
+          "image": "assets/monster/images/gremlin-merc.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-fossil-stalker-normal",
+      "name": "Fossil Stalker",
+      "region": "Underdocks",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/fossil-stalker-normal",
+      "members": [
+        {
+          "name": "Fossil Stalker",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/fossil_stalker.png",
+          "hp": "54-56",
+          "image": "assets/monster/images/fossil-stalker.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-living-fog-normal",
+      "name": "Living Fog",
+      "region": "Underdocks",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/living-fog-normal",
+      "members": [
+        {
+          "name": "Living Fog",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/living_fog.png",
+          "hp": "82",
+          "image": "assets/monster/images/living-fog.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-two-tailed-rats-normal",
+      "name": "Two-Tailed Rats",
+      "region": "Underdocks",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/two-tailed-rats-normal",
+      "members": [
+        {
+          "name": "Two-Tailed Rat",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/two_tailed_rat.png",
+          "hp": "18-22",
+          "image": "assets/monster/images/two-tailed-rat.webp"
+        },
+        {
+          "name": "Two-Tailed Rat",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/two_tailed_rat.png",
+          "hp": "18-22",
+          "image": "assets/monster/images/two-tailed-rat.webp"
+        },
+        {
+          "name": "Two-Tailed Rat",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/two_tailed_rat.png",
+          "hp": "18-22",
+          "image": "assets/monster/images/two-tailed-rat.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-haunted-ship-normal",
+      "name": "Haunted Ship",
+      "region": "Underdocks",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/haunted-ship-normal",
+      "members": [
+        {
+          "name": "Haunted Ship",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/haunted_ship.png",
+          "hp": "67",
+          "image": "assets/monster/images/haunted-ship.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-punch-construct-normal",
+      "name": "Punch Construct",
+      "region": "Underdocks",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/punch-construct-normal",
+      "members": [
+        {
+          "name": "Punch Construct",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/punch_construct.png",
+          "hp": "60",
+          "image": "assets/monster/images/punch-construct.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-sewer-clam-normal",
+      "name": "Sewer Clam",
+      "region": "Underdocks",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/sewer-clam-normal",
+      "members": [
+        {
+          "name": "Sewer Clam",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/sewer_clam.png",
+          "hp": "58",
+          "image": "assets/monster/images/sewer-clam.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-corpse-slugs-weak",
+      "name": "Corpse Slugs",
+      "region": "Underdocks",
+      "type": "Easy",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/corpse-slugs-weak",
+      "members": [
+        {
+          "name": "Corpse Slug",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/corpse_slug.png",
+          "hp": "27-29",
+          "image": "assets/monster/images/corpse-slug.webp"
+        },
+        {
+          "name": "Corpse Slug",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/corpse_slug.png",
+          "hp": "27-29",
+          "image": "assets/monster/images/corpse-slug.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-toadpoles-weak",
+      "name": "Toadpoles",
+      "region": "Underdocks",
+      "type": "Easy",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/toadpoles-weak",
+      "members": [
+        {
+          "name": "Toadpole",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/toadpole.png",
+          "hp": "22-26",
+          "image": "assets/monster/images/toadpole.webp"
+        },
+        {
+          "name": "Toadpole",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/toadpole.png",
+          "hp": "22-26",
+          "image": "assets/monster/images/toadpole.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-seapunk-weak",
+      "name": "Seapunk",
+      "region": "Underdocks",
+      "type": "Easy",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/seapunk-weak",
+      "members": [
+        {
+          "name": "Seapunk",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/seapunk.png",
+          "hp": "47-49",
+          "image": "assets/monster/images/seapunk.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-sludge-spinner-weak",
+      "name": "Sludge Spinner",
+      "region": "Underdocks",
+      "type": "Easy",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/sludge-spinner-weak",
+      "members": [
+        {
+          "name": "Sludge Spinner",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/sludge_spinner.png",
+          "hp": "41-42",
+          "image": "assets/monster/images/sludge-spinner.webp"
+        }
+      ]
+    },
+    {
+      "id": "underdocks-punch-off-event-encounter",
+      "name": "Punch Constructs",
+      "region": "Underdocks",
+      "type": "Event",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/punch-off-event-encounter",
+      "members": [
+        {
+          "name": "Punch Construct",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/punch_construct.png",
+          "hp": "60",
+          "image": "assets/monster/images/punch-construct.webp"
+        },
+        {
+          "name": "Punch Construct",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/punch_construct.png",
+          "hp": "60",
+          "image": "assets/monster/images/punch-construct.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-kaiser-crab-boss",
+      "name": "Kaiser Crab",
+      "region": "Hive",
+      "type": "Boss",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/kaiser-crab-boss",
+      "members": [
+        {
+          "name": "Crusher, Rocket",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/crusher.png",
+          "hp": "219",
+          "image": "assets/monster/images/crusher.webp"
+        },
+        {
+          "name": "Crusher, Rocket",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/rocket.png",
+          "hp": "209",
+          "image": "assets/monster/images/rocket.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-knowledge-demon-boss",
+      "name": "Knowledge Demon",
+      "region": "Hive",
+      "type": "Boss",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/knowledge-demon-boss",
+      "members": [
+        {
+          "name": "Knowledge Demon",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/knowledge_demon.png",
+          "hp": "399",
+          "image": "assets/monster/images/knowledge-demon.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-the-insatiable-boss",
+      "name": "The Insatiable",
+      "region": "Hive",
+      "type": "Boss",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/the-insatiable-boss",
+      "members": [
+        {
+          "name": "The Insatiable",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/the_insatiable.png",
+          "hp": "341",
+          "image": "assets/monster/images/the-insatiable.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-decimillipede-elite",
+      "name": "The Decimillipede",
+      "region": "Hive",
+      "type": "Elite",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/decimillipede-elite",
+      "members": [
+        {
+          "name": "Decimillipede",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/decimillipede_segment_front.png",
+          "hp": "46-52",
+          "image": "assets/monster/images/decimillipede-segment-front.webp"
+        },
+        {
+          "name": "Decimillipede",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/decimillipede_segment_middle.png",
+          "hp": "46-52",
+          "image": "assets/monster/images/decimillipede-segment-middle.webp"
+        },
+        {
+          "name": "Decimillipede",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/decimillipede_segment_back.png",
+          "hp": "46-52",
+          "image": "assets/monster/images/decimillipede-segment-back.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-infested-prisms-elite",
+      "name": "Infested Prism",
+      "region": "Hive",
+      "type": "Elite",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/infested-prisms-elite",
+      "members": [
+        {
+          "name": "Infested Prism",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/infested_prism.png",
+          "hp": "171",
+          "image": "assets/monster/images/infested-prism.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-entomancer-elite",
+      "name": "Entomancer",
+      "region": "Hive",
+      "type": "Elite",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/entomancer-elite",
+      "members": [
+        {
+          "name": "Entomancer",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/entomancer.png",
+          "hp": "165",
+          "image": "assets/monster/images/entomancer.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-slumbering-beetle-normal",
+      "name": "Slumber Party",
+      "region": "Hive",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/slumbering-beetle-normal",
+      "members": [
+        {
+          "name": "Bowlbug (Rock)",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/bowlbug_rock.png",
+          "hp": "46-49",
+          "image": "assets/monster/images/bowlbug-rock.webp"
+        },
+        {
+          "name": "Bowlbug (Silk)",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/bowlbug_silk.png",
+          "hp": "41-44",
+          "image": "assets/monster/images/bowlbug-silk.webp"
+        },
+        {
+          "name": "Slumbering Beetle",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/slumbering_beetle.png",
+          "hp": "89",
+          "image": "assets/monster/images/slumbering-beetle.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-hunter-killer-normal",
+      "name": "Hunter Killer",
+      "region": "Hive",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/hunter-killer-normal",
+      "members": [
+        {
+          "name": "Hunter Killer",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/hunter_killer.png",
+          "hp": "126",
+          "image": "assets/monster/images/hunter-killer.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-bowlbugs-normal",
+      "name": "Bowlbug Swarm",
+      "region": "Hive",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/bowlbugs-normal",
+      "members": [
+        {
+          "name": "Bowlbug (Rock)",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/bowlbug_rock.png",
+          "hp": "46-49",
+          "image": "assets/monster/images/bowlbug-rock.webp"
+        },
+        {
+          "name": "Bowlbug (Egg)",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/bowlbug_egg.png",
+          "hp": "23-24",
+          "image": "assets/monster/images/bowlbug-egg.webp"
+        },
+        {
+          "name": "Bowlbug (Nectar)",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/bowlbug_nectar.png",
+          "hp": "36-39",
+          "image": "assets/monster/images/bowlbug-nectar.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-the-obscura-normal",
+      "name": "The Obscura",
+      "region": "Hive",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/the-obscura-normal",
+      "members": [
+        {
+          "name": "The Obscura",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/the_obscura.png",
+          "hp": "129",
+          "image": "assets/monster/images/the-obscura.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-ovicopter-normal",
+      "name": "Ovicopter",
+      "region": "Hive",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/ovicopter-normal",
+      "members": [
+        {
+          "name": "Ovicopter",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/ovicopter.png",
+          "hp": "126-132",
+          "image": "assets/monster/images/ovicopter.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-mytes-normal",
+      "name": "Mass of Mytes",
+      "region": "Hive",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/mytes-normal",
+      "members": [
+        {
+          "name": "Myte",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/myte.png",
+          "hp": "64-69",
+          "image": "assets/monster/images/myte.webp"
+        },
+        {
+          "name": "Myte",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/myte.png",
+          "hp": "64-69",
+          "image": "assets/monster/images/myte.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-chompers-normal",
+      "name": "An Automaton Pair",
+      "region": "Hive",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/chompers-normal",
+      "members": [
+        {
+          "name": "Chomper",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/chomper.png",
+          "hp": "63-67",
+          "image": "assets/monster/images/chomper.webp"
+        },
+        {
+          "name": "Chomper",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/chomper.png",
+          "hp": "63-67",
+          "image": "assets/monster/images/chomper.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-exoskeletons-normal",
+      "name": "Many Exoskeletons",
+      "region": "Hive",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/exoskeletons-normal",
+      "members": [
+        {
+          "name": "Exoskeleton",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/exoskeleton.png",
+          "hp": "26-30",
+          "image": "assets/monster/images/exoskeleton.webp"
+        },
+        {
+          "name": "Exoskeleton",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/exoskeleton.png",
+          "hp": "26-30",
+          "image": "assets/monster/images/exoskeleton.webp"
+        },
+        {
+          "name": "Exoskeleton",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/exoskeleton.png",
+          "hp": "26-30",
+          "image": "assets/monster/images/exoskeleton.webp"
+        },
+        {
+          "name": "Exoskeleton",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/exoskeleton.png",
+          "hp": "26-30",
+          "image": "assets/monster/images/exoskeleton.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-spiny-toad-normal",
+      "name": "Spiny Toad",
+      "region": "Hive",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/spiny-toad-normal",
+      "members": [
+        {
+          "name": "Spiny Toad",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/spiny_toad.png",
+          "hp": "121-124",
+          "image": "assets/monster/images/spiny-toad.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-louse-progenitor-normal",
+      "name": "Louse Progenitor",
+      "region": "Hive",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/louse-progenitor-normal",
+      "members": [
+        {
+          "name": "Louse Progenitor",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/louse_progenitor.png",
+          "hp": "138-141",
+          "image": "assets/monster/images/louse-progenitor.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-thieving-hopper-weak",
+      "name": "Thieving Hopper",
+      "region": "Hive",
+      "type": "Easy",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/thieving-hopper-weak",
+      "members": [
+        {
+          "name": "Thieving Hopper",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/thieving_hopper.png",
+          "hp": "84",
+          "image": "assets/monster/images/thieving-hopper.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-bowlbugs-weak",
+      "name": "Bowlbugs",
+      "region": "Hive",
+      "type": "Easy",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/bowlbugs-weak",
+      "members": [
+        {
+          "name": "Bowlbug (Rock)",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/bowlbug_rock.png",
+          "hp": "46-49",
+          "image": "assets/monster/images/bowlbug-rock.webp"
+        },
+        {
+          "name": "Bowlbug (Egg)",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/bowlbug_egg.png",
+          "hp": "23-24",
+          "image": "assets/monster/images/bowlbug-egg.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-tunneler-weak",
+      "name": "Tunneler",
+      "region": "Hive",
+      "type": "Easy",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/tunneler-weak",
+      "members": [
+        {
+          "name": "Tunneler",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/tunneler.png",
+          "hp": "92",
+          "image": "assets/monster/images/tunneler.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-exoskeletons-weak",
+      "name": "Exoskeletons",
+      "region": "Hive",
+      "type": "Easy",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/exoskeletons-weak",
+      "members": [
+        {
+          "name": "Exoskeleton",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/exoskeleton.png",
+          "hp": "26-30",
+          "image": "assets/monster/images/exoskeleton.webp"
+        },
+        {
+          "name": "Exoskeleton",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/exoskeleton.png",
+          "hp": "26-30",
+          "image": "assets/monster/images/exoskeleton.webp"
+        },
+        {
+          "name": "Exoskeleton",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/exoskeleton.png",
+          "hp": "26-30",
+          "image": "assets/monster/images/exoskeleton.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-mysterious-knight-event-encounter",
+      "name": "Mysterious Knight",
+      "region": "Hive",
+      "type": "Event",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/mysterious-knight-event-encounter",
+      "members": [
+        {
+          "name": "Mysterious Knight",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/mysterious_knight.png",
+          "hp": "108",
+          "image": "assets/monster/images/mysterious-knight.webp"
+        }
+      ]
+    },
+    {
+      "id": "hive-fake-merchant-event-encounter",
+      "name": "The Merchant???",
+      "region": "Hive",
+      "type": "Event",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/fake-merchant-event-encounter",
+      "members": [
+        {
+          "name": "The Merchant???",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/fake_merchant_monster.png",
+          "hp": "175",
+          "image": "assets/monster/images/fake-merchant-monster.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-aeonglass-boss",
+      "name": "Aeonglass",
+      "region": "Glory",
+      "type": "Boss",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/aeonglass-boss",
+      "members": [
+        {
+          "name": "Aeonglass",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/aeonglass.png",
+          "hp": "535",
+          "image": "assets/monster/images/aeonglass.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-test-subject-boss",
+      "name": "Test Subject",
+      "region": "Glory",
+      "type": "Boss",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/test-subject-boss",
+      "members": [
+        {
+          "name": "Test Subject #C8",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/test_subject.png",
+          "hp": "111",
+          "image": "assets/monster/images/test-subject.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-queen-boss",
+      "name": "Queen",
+      "region": "Glory",
+      "type": "Boss",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/queen-boss",
+      "members": [
+        {
+          "name": "Torch Head Amalgam",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/torch_head_amalgam.png",
+          "hp": "211",
+          "image": "assets/monster/images/torch-head-amalgam.webp"
+        },
+        {
+          "name": "Queen",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/queen.png",
+          "hp": "419",
+          "image": "assets/monster/images/queen.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-knights-elite",
+      "name": "Knight Gang",
+      "region": "Glory",
+      "type": "Elite",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/knights-elite",
+      "members": [
+        {
+          "name": "Flail Knight",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/flail_knight.png",
+          "hp": "108",
+          "image": "assets/monster/images/flail-knight.webp"
+        },
+        {
+          "name": "Spectral Knight",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/spectral_knight.png",
+          "hp": "97",
+          "image": "assets/monster/images/spectral-knight.webp"
+        },
+        {
+          "name": "Magi Knight",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/magi_knight.png",
+          "hp": "89",
+          "image": "assets/monster/images/magi-knight.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-mecha-knight-elite",
+      "name": "Mecha Knight",
+      "region": "Glory",
+      "type": "Elite",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/mecha-knight-elite",
+      "members": [
+        {
+          "name": "Mecha Knight",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/mecha_knight.png",
+          "hp": "320",
+          "image": "assets/monster/images/mecha-knight.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-soul-nexus-elite",
+      "name": "Soul Nexus",
+      "region": "Glory",
+      "type": "Elite",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/soul-nexus-elite",
+      "members": [
+        {
+          "name": "Soul Nexus",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/soul_nexus.png",
+          "hp": "254",
+          "image": "assets/monster/images/soul-nexus.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-construct-menagerie-normal",
+      "name": "Construct Menagerie",
+      "region": "Glory",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/construct-menagerie-normal",
+      "members": [
+        {
+          "name": "Punch Construct",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/punch_construct.png",
+          "hp": "60",
+          "image": "assets/monster/images/punch-construct.webp"
+        },
+        {
+          "name": "Cubex Construct",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/cubex_construct.png",
+          "hp": "70",
+          "image": "assets/monster/images/cubex-construct.webp"
+        },
+        {
+          "name": "Cubex Construct",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/cubex_construct.png",
+          "hp": "70",
+          "image": "assets/monster/images/cubex-construct.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-scrolls-of-biting-normal",
+      "name": "Many Scrolls of Biting",
+      "region": "Glory",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/scrolls-of-biting-normal",
+      "members": [
+        {
+          "name": "Scroll of Biting",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/scroll_of_biting.png",
+          "hp": "33-39",
+          "image": "assets/monster/images/scroll-of-biting.webp"
+        },
+        {
+          "name": "Scroll of Biting",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/scroll_of_biting.png",
+          "hp": "33-39",
+          "image": "assets/monster/images/scroll-of-biting.webp"
+        },
+        {
+          "name": "Scroll of Biting",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/scroll_of_biting.png",
+          "hp": "33-39",
+          "image": "assets/monster/images/scroll-of-biting.webp"
+        },
+        {
+          "name": "Scroll of Biting",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/scroll_of_biting.png",
+          "hp": "33-39",
+          "image": "assets/monster/images/scroll-of-biting.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-fabricator-normal",
+      "name": "Fabricator",
+      "region": "Glory",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/fabricator-normal",
+      "members": [
+        {
+          "name": "Fabricator",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/fabricator.png",
+          "hp": "155",
+          "image": "assets/monster/images/fabricator.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-owl-magistrate-normal",
+      "name": "Owl Magistrate",
+      "region": "Glory",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/owl-magistrate-normal",
+      "members": [
+        {
+          "name": "Owl Magistrate",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/owl_magistrate.png",
+          "hp": "247",
+          "image": "assets/monster/images/owl-magistrate.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-slimed-berserker-normal",
+      "name": "Slimed Berserker",
+      "region": "Glory",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/slimed-berserker-normal",
+      "members": [
+        {
+          "name": "Slimed Berserker",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/slimed_berserker.png",
+          "hp": "281",
+          "image": "assets/monster/images/slimed-berserker.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-frog-knight-normal",
+      "name": "Frog Knight",
+      "region": "Glory",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/frog-knight-normal",
+      "members": [
+        {
+          "name": "Frog Knight",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/frog_knight.png",
+          "hp": "199",
+          "image": "assets/monster/images/frog-knight.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-the-lost-and-forgotten-normal",
+      "name": "Lost and Forgotten",
+      "region": "Glory",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/the-lost-and-forgotten-normal",
+      "members": [
+        {
+          "name": "The Lost",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/the_lost.png",
+          "hp": "99",
+          "image": "assets/monster/images/the-lost.webp"
+        },
+        {
+          "name": "The Forgotten",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/the_forgotten.png",
+          "hp": "111",
+          "image": "assets/monster/images/the-forgotten.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-axebots-normal",
+      "name": "Axebot",
+      "region": "Glory",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/axebots-normal",
+      "members": [
+        {
+          "name": "Axebot",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/axebot.png",
+          "hp": "76-86",
+          "image": "assets/monster/images/axebot.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-globe-head-normal",
+      "name": "A Lone Globe Head",
+      "region": "Glory",
+      "type": "Hard",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/globe-head-normal",
+      "members": [
+        {
+          "name": "Globe Head",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/globe_head.png",
+          "hp": "158",
+          "image": "assets/monster/images/globe-head.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-devoted-sculptor-weak",
+      "name": "Devoted Sculptor",
+      "region": "Glory",
+      "type": "Easy",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/devoted-sculptor-weak",
+      "members": [
+        {
+          "name": "Devoted Sculptor",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/devoted_sculptor.png",
+          "hp": "172",
+          "image": "assets/monster/images/devoted-sculptor.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-scrolls-of-biting-weak",
+      "name": "Scrolls of Biting",
+      "region": "Glory",
+      "type": "Easy",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/scrolls-of-biting-weak",
+      "members": [
+        {
+          "name": "Scroll of Biting",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/scroll_of_biting.png",
+          "hp": "33-39",
+          "image": "assets/monster/images/scroll-of-biting.webp"
+        },
+        {
+          "name": "Scroll of Biting",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/scroll_of_biting.png",
+          "hp": "33-39",
+          "image": "assets/monster/images/scroll-of-biting.webp"
+        },
+        {
+          "name": "Scroll of Biting",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/scroll_of_biting.png",
+          "hp": "33-39",
+          "image": "assets/monster/images/scroll-of-biting.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-turret-operator-weak",
+      "name": "Turret Operator",
+      "region": "Glory",
+      "type": "Easy",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/turret-operator-weak",
+      "members": [
+        {
+          "name": "Living Shield",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/living_shield.png",
+          "hp": "65",
+          "image": "assets/monster/images/living-shield.webp"
+        },
+        {
+          "name": "Turret Operator",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/turret_operator.png",
+          "hp": "51",
+          "image": "assets/monster/images/turret-operator.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-fake-merchant-event-encounter",
+      "name": "The Merchant???",
+      "region": "Glory",
+      "type": "Event",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/fake-merchant-event-encounter",
+      "members": [
+        {
+          "name": "The Merchant???",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/fake_merchant_monster.png",
+          "hp": "175",
+          "image": "assets/monster/images/fake-merchant-monster.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-battleworn-dummy-event-v2-encounter",
+      "name": "Battleworn Dummy",
+      "region": "Glory",
+      "type": "Event",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/battleworn-dummy-event-v2-encounter",
+      "members": [
+        {
+          "name": "Battle Friend V2.0",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/battle_friend_v2.png",
+          "hp": "150",
+          "image": "assets/monster/images/battle-friend-v2.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-battleworn-dummy-event-v1-encounter",
+      "name": "Battleworn Dummy",
+      "region": "Glory",
+      "type": "Event",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/battleworn-dummy-event-v1-encounter",
+      "members": [
+        {
+          "name": "Battle Friend V1.0",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/battle_friend_v1.png",
+          "hp": "75",
+          "image": "assets/monster/images/battle-friend-v1.webp"
+        }
+      ]
+    },
+    {
+      "id": "glory-battleworn-dummy-event-v3-encounter",
+      "name": "Battleworn Dummy",
+      "region": "Glory",
+      "type": "Event",
+      "url": "https://sts2.untapped.gg/en/enemies/encounters/battleworn-dummy-event-v3-encounter",
+      "members": [
+        {
+          "name": "Battle Friend V3.0",
+          "imageSource": "https://sts2json.untapped.gg/art/enemies/battle_friend_v3.png",
+          "hp": "300",
+          "image": "assets/monster/images/battle-friend-v3.webp"
+        }
+      ]
+    }
+  ]
+}

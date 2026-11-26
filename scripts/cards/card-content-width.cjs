@@ -177,10 +177,45 @@ html body main#main-content#main-content #card-scroll .detail-card-sources>a {co
 `;
 module.exports+=`
 /* Equal-height cards keep source links at the bottom of each grid row. */
-html body[data-view=grid] main#main-content#main-content#main-content #card-scroll .card-detail-row:has([data-catalog-layout]) {grid-row:auto;align-self:stretch;display:flex!important;flex-direction:column}
+html body[data-view=grid] main#main-content#main-content#main-content #card-scroll .card-detail-row:not([hidden]):has([data-catalog-layout]) {grid-row:auto;align-self:stretch;display:flex!important;flex-direction:column}
 html body[data-view=grid] main#main-content#main-content#main-content #card-scroll .card-detail-cell:has([data-catalog-layout]) {display:flex!important;flex:1;min-height:0}
 html body[data-view=grid] main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] {grid-template-rows:minmax(0,1fr);flex:1}
 html body[data-view=grid] main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview {grid-row:auto;grid-template-rows:auto auto auto minmax(auto,1fr) auto;row-gap:12px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel {padding-bottom:0}
 html body main#main-content#main-content#main-content #card-scroll .detail-card-sources {align-self:end;margin:0;padding:0}
+`;
+
+module.exports+=`
+/* Filtered cards must stay hidden regardless of grid and detail layout rules. */
+html body[data-view=grid] main#main-content#main-content#main-content #card-scroll .card-detail-row[hidden] {display:none!important}
+@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine), screen and (min-width:1441px) {
+  html body[data-view=grid] main#main-content#main-content #card-scroll tbody {grid-template-columns:repeat(4,minmax(0,1fr))}
+  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail-row:not([hidden]) {grid-column:auto}
+  html body main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata {display:grid;grid-template-columns:minmax(0,1fr) max-content minmax(0,1fr);gap:4px;width:calc(100% + 48px);justify-self:center}
+  html body main#main-content#main-content #card-scroll .detail-type-metadata :is(dd,.detail-type-label,.detail-plain-rarity) {font-size:14px}
+  html body main#main-content#main-content #card-scroll .detail-type-metadata .detail-meta-item:last-child {max-width:100%}
+  html body main#main-content#main-content #card-scroll .detail-type-metadata :is(dd[data-stat-rarity],.detail-plain-rarity) {white-space:normal;overflow-wrap:anywhere;justify-content:flex-end}
+}
+/* Subtle outlines distinguish available options and selected filters. */
+html body main#main-content#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button,
+html body main#main-content#main-content#main-content #tools .filter-menu-toggle {
+  border:2px solid #465365!important;
+}
+html body main#main-content#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button:is(:hover,[aria-pressed=true]),
+html body main#main-content#main-content#main-content #tools .filter-menu-toggle:is(:hover,[aria-expanded=true]) {
+  border-color:var(--selection-color,#d9e5f2)!important;
+}
+html body main#main-content#main-content#main-content #tools :is(.card-filter-buttons,.card-tier-choices) button:focus-visible,
+html body main#main-content#main-content#main-content #tools .filter-menu-toggle:focus-visible {
+  outline:2px solid #fff;outline-offset:3px;
+}
+`;
+
+module.exports+=`
+/* Fill each card while keeping a consistent inset and section spacing. */
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] {padding:12px;gap:12px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-overview,.detail-art,header,.detail-type-metadata,.detail-effects,.detail-card-sources) {box-sizing:border-box;width:100%;max-width:none;min-width:0}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview {row-gap:12px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-panel {box-sizing:border-box;padding:12px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-panel-description {width:100%;max-width:none;margin-inline:0}
 `;

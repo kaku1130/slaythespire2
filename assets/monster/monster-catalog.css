@@ -1,0 +1,54 @@
+:root {color-scheme:dark;--bg:#040609;--paper:#0b1119;--ink:#e3e8ee;--muted:#aab6c4;--line:#354454}
+* {box-sizing:border-box}
+body {margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Arial,"Microsoft JhengHei",sans-serif}
+[hidden] {display:none!important}
+html body:not([data-detail-kind]) main#main-content#main-content#main-content.monster-catalog {width:80%!important;margin-inline:auto!important;padding:8px 16px 32px!important}
+@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine), screen and (min-width:1441px) {
+  html body:not([data-detail-kind]) main#main-content#main-content#main-content.monster-catalog {width:60%!important}
+}
+.monster-tools {display:flex;flex-direction:column;gap:12px;margin-bottom:24px}
+.monster-search-tools {display:grid;grid-template-columns:minmax(0,1fr);align-items:center}
+.monster-filters {display:flex;flex-wrap:wrap;gap:8px;width:100%;min-width:0;padding:8px;border:1px solid #6faeee;border-radius:10px}
+.monster-filters button {display:inline-flex;align-items:center;justify-content:center;flex:1 1 auto;min-width:0;min-height:48px;padding:8px 14px;border:1px solid #344454;border-radius:8px;background:#0b1119;color:var(--ink);font:400 20px/1.4 Arial,"Microsoft JhengHei",sans-serif;cursor:pointer}
+.monster-filters button {--button-accent:var(--region-color);color:var(--region-color)}
+.monster-filters button:is(:hover,[aria-pressed=true]) {border-color:var(--region-color);background:color-mix(in srgb,var(--region-color) 18%,#0b1119);color:var(--region-color)}
+.monster-filters button:focus-visible,.monster-tools :is(input,button):focus-visible,.monster-card:focus-visible {outline:2px solid #74b3e6;outline-offset:3px}
+.monster-region {margin-bottom:32px}
+.monster-region,.monster-filters button {--region-color:#81bd93}
+.monster-region[data-region=Underdocks],.monster-filters button[value=Underdocks] {--region-color:#75b7d2}
+.monster-region[data-region=Hive],.monster-filters button[value=Hive] {--region-color:#d7b365}
+.monster-region[data-region=Glory],.monster-filters button[value=Glory] {--region-color:#bd9ddd}
+.monster-region h2 {display:flex;align-items:center;gap:10px;margin:0 0 16px;font-size:22px;color:var(--region-color)}
+.monster-region h2::before {content:"";width:4px;height:24px;border-radius:2px;background:var(--region-color)}
+.monster-region h2 span {color:var(--muted);font-size:14px;font-weight:400}
+.monster-grid {display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.monster-category {container-type:inline-size}
+@container (min-width:860px) {
+  .monster-grid {grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+.monster-category {--category-color:#aab6c4;margin-bottom:20px;padding:12px;border:1px solid color-mix(in srgb,var(--category-color) 40%,#25313e);border-left:3px solid var(--category-color);border-radius:10px;background:color-mix(in srgb,var(--category-color) 5%,#040609)}
+.monster-category[data-type=Boss] {--category-color:#e68d9b}
+.monster-category[data-type=Elite] {--category-color:#e1bb6c}
+.monster-category[data-type=Hard] {--category-color:#74b3e6}
+.monster-category[data-type=Weak] {--category-color:#80bd99}
+.monster-category .monster-kind {color:var(--category-color);border-color:color-mix(in srgb,var(--category-color) 45%,#25313e);background:color-mix(in srgb,var(--category-color) 12%,#0b1119)}
+.monster-card {display:flex;flex-direction:column;gap:12px;min-width:0;padding:12px;border:1px solid #354454;border-radius:12px;background:var(--paper);color:var(--ink);text-decoration:none;transition:border-color .15s,background .15s}
+.monster-card:hover {border-color:var(--category-color);background:#101b25}
+.monster-card-head {display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.monster-card h3 {margin:0;min-width:0;font-size:18px;line-height:1.4;overflow-wrap:anywhere;color:var(--category-color)}
+.monster-kind {flex:none;padding:3px 7px;border:1px solid #465365;border-radius:5px;font-size:18px;line-height:1.4;color:var(--category-color);background:#1b2633}
+.monster-lineup {display:grid;grid-template-columns:repeat(var(--members),minmax(0,1fr));align-items:stretch;gap:6px;flex:1;min-width:0;padding:8px 0}
+.monster-member {display:flex;flex-direction:column;align-items:center;min-width:0;margin:0;gap:8px}
+.monster-member img {display:block;object-fit:contain;width:100%;height:148px;min-width:0}
+#monster-empty {padding:40px 16px;border:1px dashed #465365;border-radius:10px;color:var(--muted);text-align:center}
+.monster-source {padding-top:16px;border-top:1px solid #25313e;color:var(--muted);font-size:12px}
+.monster-source a {color:#8cbadd;text-decoration:none}
+
+/* Match the shared search control used by the other catalogs. */
+html body main#main-content .monster-tools .search-control #search {height:48px;min-height:48px;padding:8px 14px;border:1px solid #293340;border-radius:7px;background:#0d131a;color:#e3e8ee;font:20px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+html body main#main-content .monster-search-tools>.search-control {flex:0 0 auto;height:48px;min-height:48px}
+/* Scroll the full content viewport, including embedded catalog pages. */
+html:has(main.monster-catalog) {height:auto!important;min-height:100%;overflow-x:clip!important;overflow-y:auto!important}
+html body:has(main.monster-catalog) {position:static!important;inset:auto!important;display:block!important;height:auto!important;min-height:100dvh;overflow:visible!important}
+html body main#main-content#main-content#main-content.monster-catalog {display:block!important;flex:none!important;height:auto!important;max-height:none!important;overflow:visible!important}
+html body:has(main.monster-catalog)>.site-header {position:sticky!important;top:0!important}

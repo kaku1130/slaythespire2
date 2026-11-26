@@ -11,7 +11,6 @@ html body:not([data-detail-kind]) main#main-content#main-content#main-content {
   html body:not([data-detail-kind]) main#main-content#main-content#main-content {
     width:60%!important;
   }
-  html body:not([data-detail-kind]) main#main-content#main-content#main-content:has(>#card-scroll) {width:80%!important}
   html body:not([data-detail-kind]) main#main-content:has(>.relic-filters,>.potion-filters)>.catalog-scroll {
     width:100%!important;
     max-width:none;
