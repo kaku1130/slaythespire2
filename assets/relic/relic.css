@@ -1129,7 +1129,7 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] {text-align:left;container-type:inline-size;--card-metadata-font-size:clamp(8px,5.5cqi,16px)}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview {grid-template-rows:repeat(5,auto)}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-overview,.detail-art,.detail-title,.detail-title-row,.detail-name-zh,.detail-name-en,.detail-effects,.detail-effect-panel,.detail-panel-cost,.detail-panel-description,.detail-card-sources) {text-align:left;justify-self:start;justify-items:start}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:row;flex-wrap:wrap;align-items:baseline;justify-content:flex-start;gap:4px 8px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:4px 8px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row {display:block;flex:0 0 auto;width:max-content;max-width:100%}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier {display:inline-flex;align-items:center;gap:12px;flex:0 0 auto;width:max-content;max-width:100%;min-width:0}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier>.detail-name-en {display:block;flex:0 1 auto;min-width:0;white-space:nowrap;overflow-wrap:normal;word-break:normal}
@@ -1176,9 +1176,17 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata button:is(:hover,[aria-pressed=true],[aria-expanded=true]) {text-decoration:underline;text-underline-offset:3px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata [data-card-version][aria-pressed=true] {color:#10210b;font-weight:700;text-decoration-thickness:2px;border-color:#7fff00!important;background:#7fff00!important;box-shadow:0 0 0 2px #7fff0055!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata button:focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .detail-card-sources {display:inline-flex;grid-row:auto;align-self:auto;justify-content:flex-start;flex-wrap:nowrap;gap:0;width:auto;margin:0;padding:0;border:0;white-space:nowrap;font:700 1em/1.4 Arial,sans-serif}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .detail-card-sources {display:inline-flex;grid-row:auto;align-self:auto;justify-content:flex-start;flex-wrap:wrap;gap:8px 12px;width:auto;margin:0;padding:0;border:0;white-space:nowrap;font:700 1em/1.4 Arial,sans-serif}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources>a {font:inherit;font-size:var(--card-metadata-font-size)!important}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-source-separator {white-space:pre;color:var(--muted,#aab6c4)}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-source-separator {display:none}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-upgrade-controls {flex-wrap:wrap;gap:8px 12px;font-size:var(--card-metadata-font-size)}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-upgrade-controls .detail-meta-item+.detail-meta-item::before {content:none}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-upgrade-controls [data-card-version] {font-size:inherit}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-heading-metadata {display:flex;align-items:center;justify-content:flex-start;justify-self:start;gap:4px 0;margin:0;padding:0;text-align:left}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata :is(.detail-meta-item,dd) {justify-content:flex-start;text-align:left;margin-inline:0}
+/* All content sharing a row is vertically centered. */
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-name-tier,.detail-type-metadata,.detail-meta-item,.detail-type-metadata dd,.detail-card-sources) {align-items:center}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources {align-self:center}
 
 /* Nested catalog panels fill the shared page frame. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),
@@ -1485,9 +1493,9 @@ html body main#main-content .catalog-relic-card .relic-card-text h3 .relic-name-
 html body main#main-content .catalog-relic-card .relic-card-text .tag {justify-content:center;margin:0}
 
 /* Acquisition percentages use the source site's All Characters scope. */
-html body main#main-content .catalog-relic-card .relic-act-stats {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;width:100%;min-width:0;margin:0;padding:12px 0;border-block:1px solid var(--line,#293340);text-align:center}
+html body main#main-content .catalog-relic-card .relic-act-stats {display:grid;grid-template-columns:minmax(0,1fr);gap:8px;width:100%;min-width:0;margin:0;padding:0;border:0;text-align:center}
 html body main#main-content .relic-act-stats>.relic-act-stat {min-width:0}
-html body main#main-content .relic-act-stats>.relic-act-stat+.relic-act-stat {border-left:1px solid var(--line,#293340)}
+html body main#main-content .relic-act-stats>.relic-act-stat+.relic-act-stat {border:0}
 html body main#main-content .relic-act-stats dt {margin:0 0 6px;color:#e3e8ee;font:700 16px/1.4 Arial,sans-serif}
 html body main#main-content .relic-act-stats dd {display:flex;flex-direction:column;align-items:center;gap:2px;min-width:0;margin:0}
 html body main#main-content .relic-act-metric {color:var(--muted,#aab6c4);font:400 14px/1.4 Arial,sans-serif}
@@ -1495,7 +1503,7 @@ html body main#main-content .relic-act-value {color:#e3e8ee;font:700 20px/1.4 Ar
 
 /* Align every part of the relic card to the left. */
 html body main#main-content#main-content#main-content#main-content .catalog-relic-card {text-align:left}
-html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-card-text :is(h2,h3) {display:flex;flex-direction:row;flex-wrap:wrap;align-items:baseline;justify-content:flex-start;gap:4px 8px;text-align:left}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-card-text :is(h2,h3) {display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:4px 8px;text-align:left}
 html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-card-text :is(h2,h3) :is(.relic-name-zh,.relic-name-en) {display:block;flex:0 1 auto;min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere}
 html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-card-text>p {justify-self:start;margin-inline:0;text-align:left}
 html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-icon-row {grid-template-columns:minmax(0,1fr)}
@@ -1505,15 +1513,19 @@ html body main#main-content#main-content#main-content#main-content .catalog-reli
 html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row>.relic-rarity-row {display:flex!important;align-items:center;gap:4px;justify-content:flex-start;text-align:left;font:600 18px/1.4 Arial,"Microsoft JhengHei",sans-serif}
 html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row [data-relic-rarity] {text-align:left}
 html body main#main-content#main-content#main-content#main-content .catalog-relic-card .tag {justify-content:flex-start}
-html body main#main-content .catalog-relic-card>.catalog-source-links {justify-content:flex-start;align-items:flex-start}
+html body main#main-content .catalog-relic-card>.catalog-source-links {justify-content:flex-start;align-items:center}
 html body main#main-content .catalog-relic-card>.catalog-source-links>a {justify-content:flex-start;margin-left:0}
 html body main#main-content .catalog-relic-card .relic-act-stats {text-align:left}
 html body main#main-content .catalog-relic-card .relic-act-stats dd {align-items:flex-start}
-html body main#main-content .catalog-relic-card .relic-act-stat+.relic-act-stat {padding-left:8px}
+html body main#main-content .catalog-relic-card .relic-act-stat+.relic-act-stat {padding-left:0}
 /* Place each Act value on the right of its label. */
-html body main#main-content .catalog-relic-card .relic-act-stat {display:flex;align-items:center;justify-content:flex-start;flex-wrap:wrap;gap:8px}
+html body main#main-content .catalog-relic-card .relic-act-stat {display:flex;align-items:center;justify-content:flex-start;flex-wrap:nowrap;gap:8px}
 html body main#main-content .catalog-relic-card .relic-act-stat dt {margin:0;font:700 20px/1.4 Arial,sans-serif}
 html body main#main-content .catalog-relic-card .relic-act-stat dd {margin-left:0;align-items:flex-start;text-align:left}
+
+/* Keep Act statistics immediately after the description, even in equal-height rows. */
+html body main#main-content#main-content#main-content .catalog-relic-card:has(>.relic-act-stats) {grid-template-rows:repeat(3,auto);align-content:start}
+html body main#main-content#main-content#main-content .catalog-relic-card .relic-card-text {grid-template-rows:repeat(3,auto);align-content:start}
 
 html body main#main-content#main-content .entry:has(>.catalog-source-links){padding-bottom:12px}
 html body main#main-content#main-content .catalog-relic-card:has(>.catalog-source-links){grid-template-rows:minmax(0,1fr) auto}
@@ -2290,7 +2302,7 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] {text-align:left;container-type:inline-size;--card-metadata-font-size:clamp(8px,5.5cqi,16px)}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview {grid-template-rows:repeat(5,auto)}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-overview,.detail-art,.detail-title,.detail-title-row,.detail-name-zh,.detail-name-en,.detail-effects,.detail-effect-panel,.detail-panel-cost,.detail-panel-description,.detail-card-sources) {text-align:left;justify-self:start;justify-items:start}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:row;flex-wrap:wrap;align-items:baseline;justify-content:flex-start;gap:4px 8px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:4px 8px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row {display:block;flex:0 0 auto;width:max-content;max-width:100%}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier {display:inline-flex;align-items:center;gap:12px;flex:0 0 auto;width:max-content;max-width:100%;min-width:0}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier>.detail-name-en {display:block;flex:0 1 auto;min-width:0;white-space:nowrap;overflow-wrap:normal;word-break:normal}
@@ -2337,9 +2349,17 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata button:is(:hover,[aria-pressed=true],[aria-expanded=true]) {text-decoration:underline;text-underline-offset:3px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata [data-card-version][aria-pressed=true] {color:#10210b;font-weight:700;text-decoration-thickness:2px;border-color:#7fff00!important;background:#7fff00!important;box-shadow:0 0 0 2px #7fff0055!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata button:focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .detail-card-sources {display:inline-flex;grid-row:auto;align-self:auto;justify-content:flex-start;flex-wrap:nowrap;gap:0;width:auto;margin:0;padding:0;border:0;white-space:nowrap;font:700 1em/1.4 Arial,sans-serif}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .detail-card-sources {display:inline-flex;grid-row:auto;align-self:auto;justify-content:flex-start;flex-wrap:wrap;gap:8px 12px;width:auto;margin:0;padding:0;border:0;white-space:nowrap;font:700 1em/1.4 Arial,sans-serif}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources>a {font:inherit;font-size:var(--card-metadata-font-size)!important}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-source-separator {white-space:pre;color:var(--muted,#aab6c4)}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-source-separator {display:none}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-upgrade-controls {flex-wrap:wrap;gap:8px 12px;font-size:var(--card-metadata-font-size)}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-upgrade-controls .detail-meta-item+.detail-meta-item::before {content:none}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-upgrade-controls [data-card-version] {font-size:inherit}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-heading-metadata {display:flex;align-items:center;justify-content:flex-start;justify-self:start;gap:4px 0;margin:0;padding:0;text-align:left}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata :is(.detail-meta-item,dd) {justify-content:flex-start;text-align:left;margin-inline:0}
+/* All content sharing a row is vertically centered. */
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-name-tier,.detail-type-metadata,.detail-meta-item,.detail-type-metadata dd,.detail-card-sources) {align-items:center}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources {align-self:center}
 
 /* Nested catalog panels fill the shared page frame. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),

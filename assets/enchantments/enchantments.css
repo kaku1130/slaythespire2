@@ -1034,7 +1034,7 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] {text-align:left;container-type:inline-size;--card-metadata-font-size:clamp(8px,5.5cqi,16px)}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview {grid-template-rows:repeat(5,auto)}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-overview,.detail-art,.detail-title,.detail-title-row,.detail-name-zh,.detail-name-en,.detail-effects,.detail-effect-panel,.detail-panel-cost,.detail-panel-description,.detail-card-sources) {text-align:left;justify-self:start;justify-items:start}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:row;flex-wrap:wrap;align-items:baseline;justify-content:flex-start;gap:4px 8px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:4px 8px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row {display:block;flex:0 0 auto;width:max-content;max-width:100%}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier {display:inline-flex;align-items:center;gap:12px;flex:0 0 auto;width:max-content;max-width:100%;min-width:0}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier>.detail-name-en {display:block;flex:0 1 auto;min-width:0;white-space:nowrap;overflow-wrap:normal;word-break:normal}
@@ -1081,9 +1081,17 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata button:is(:hover,[aria-pressed=true],[aria-expanded=true]) {text-decoration:underline;text-underline-offset:3px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata [data-card-version][aria-pressed=true] {color:#10210b;font-weight:700;text-decoration-thickness:2px;border-color:#7fff00!important;background:#7fff00!important;box-shadow:0 0 0 2px #7fff0055!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata button:focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .detail-card-sources {display:inline-flex;grid-row:auto;align-self:auto;justify-content:flex-start;flex-wrap:nowrap;gap:0;width:auto;margin:0;padding:0;border:0;white-space:nowrap;font:700 1em/1.4 Arial,sans-serif}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .detail-card-sources {display:inline-flex;grid-row:auto;align-self:auto;justify-content:flex-start;flex-wrap:wrap;gap:8px 12px;width:auto;margin:0;padding:0;border:0;white-space:nowrap;font:700 1em/1.4 Arial,sans-serif}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources>a {font:inherit;font-size:var(--card-metadata-font-size)!important}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-source-separator {white-space:pre;color:var(--muted,#aab6c4)}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-source-separator {display:none}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-upgrade-controls {flex-wrap:wrap;gap:8px 12px;font-size:var(--card-metadata-font-size)}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-upgrade-controls .detail-meta-item+.detail-meta-item::before {content:none}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-upgrade-controls [data-card-version] {font-size:inherit}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-heading-metadata {display:flex;align-items:center;justify-content:flex-start;justify-self:start;gap:4px 0;margin:0;padding:0;text-align:left}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata :is(.detail-meta-item,dd) {justify-content:flex-start;text-align:left;margin-inline:0}
+/* All content sharing a row is vertically centered. */
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-name-tier,.detail-type-metadata,.detail-meta-item,.detail-type-metadata dd,.detail-card-sources) {align-items:center}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources {align-self:center}
 
 /* Nested catalog panels fill the shared page frame. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),
@@ -1382,12 +1390,12 @@ html body main#main-content .entry.potion>p {width:100%;max-width:100%;min-width
 
 /* Align the complete card, including artwork and source links, to the left. */
 html body main#main-content#main-content#main-content#main-content .entry.potion {text-align:left}
-html body main#main-content#main-content#main-content#main-content .entry.potion .potion-title-row h2 {flex-direction:row;flex-wrap:wrap;align-items:baseline;justify-content:flex-start;gap:4px 8px;text-align:left}
+html body main#main-content#main-content#main-content#main-content .entry.potion .potion-title-row h2 {flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:4px 8px;text-align:left}
 html body main#main-content#main-content#main-content#main-content .entry.potion .potion-title-row h2 :is(.potion-name-zh,.catalog-name-en) {flex:0 1 auto;min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere}
 html body main#main-content#main-content#main-content#main-content .entry.potion>.potion-icon-row {grid-template-columns:minmax(0,1fr)}
 html body main#main-content#main-content#main-content#main-content .entry.potion .potion-icon-row>img {grid-column:1;grid-row:1;justify-self:start}
 html body main#main-content#main-content#main-content#main-content .entry.potion .potion-title-row h2>.potion-rarity-row {display:block!important;flex:0 1 auto;max-width:100%;margin:0;text-align:left;font:600 18px/1.4 Arial,"Microsoft JhengHei",sans-serif}
-html body main#main-content .entry.potion>.catalog-source-links {justify-content:flex-start;align-items:flex-start}
+html body main#main-content .entry.potion>.catalog-source-links {justify-content:flex-start;align-items:center}
 html body main#main-content .entry.potion>.catalog-source-links>a {justify-content:flex-start;margin-left:0}
 
 
@@ -2126,7 +2134,7 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] {text-align:left;container-type:inline-size;--card-metadata-font-size:clamp(8px,5.5cqi,16px)}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview {grid-template-rows:repeat(5,auto)}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-overview,.detail-art,.detail-title,.detail-title-row,.detail-name-zh,.detail-name-en,.detail-effects,.detail-effect-panel,.detail-panel-cost,.detail-panel-description,.detail-card-sources) {text-align:left;justify-self:start;justify-items:start}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:row;flex-wrap:wrap;align-items:baseline;justify-content:flex-start;gap:4px 8px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:4px 8px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row {display:block;flex:0 0 auto;width:max-content;max-width:100%}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier {display:inline-flex;align-items:center;gap:12px;flex:0 0 auto;width:max-content;max-width:100%;min-width:0}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier>.detail-name-en {display:block;flex:0 1 auto;min-width:0;white-space:nowrap;overflow-wrap:normal;word-break:normal}
@@ -2173,9 +2181,17 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata button:is(:hover,[aria-pressed=true],[aria-expanded=true]) {text-decoration:underline;text-underline-offset:3px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata [data-card-version][aria-pressed=true] {color:#10210b;font-weight:700;text-decoration-thickness:2px;border-color:#7fff00!important;background:#7fff00!important;box-shadow:0 0 0 2px #7fff0055!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata button:focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .detail-card-sources {display:inline-flex;grid-row:auto;align-self:auto;justify-content:flex-start;flex-wrap:nowrap;gap:0;width:auto;margin:0;padding:0;border:0;white-space:nowrap;font:700 1em/1.4 Arial,sans-serif}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .detail-card-sources {display:inline-flex;grid-row:auto;align-self:auto;justify-content:flex-start;flex-wrap:wrap;gap:8px 12px;width:auto;margin:0;padding:0;border:0;white-space:nowrap;font:700 1em/1.4 Arial,sans-serif}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources>a {font:inherit;font-size:var(--card-metadata-font-size)!important}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-source-separator {white-space:pre;color:var(--muted,#aab6c4)}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-source-separator {display:none}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-upgrade-controls {flex-wrap:wrap;gap:8px 12px;font-size:var(--card-metadata-font-size)}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-upgrade-controls .detail-meta-item+.detail-meta-item::before {content:none}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-upgrade-controls [data-card-version] {font-size:inherit}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-heading-metadata {display:flex;align-items:center;justify-content:flex-start;justify-self:start;gap:4px 0;margin:0;padding:0;text-align:left}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata :is(.detail-meta-item,dd) {justify-content:flex-start;text-align:left;margin-inline:0}
+/* All content sharing a row is vertically centered. */
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-name-tier,.detail-type-metadata,.detail-meta-item,.detail-type-metadata dd,.detail-card-sources) {align-items:center}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources {align-self:center}
 
 /* Nested catalog panels fill the shared page frame. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),
@@ -2975,7 +2991,7 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] {text-align:left;container-type:inline-size;--card-metadata-font-size:clamp(8px,5.5cqi,16px)}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-overview {grid-template-rows:repeat(5,auto)}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-overview,.detail-art,.detail-title,.detail-title-row,.detail-name-zh,.detail-name-en,.detail-effects,.detail-effect-panel,.detail-panel-cost,.detail-panel-description,.detail-card-sources) {text-align:left;justify-self:start;justify-items:start}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:row;flex-wrap:wrap;align-items:baseline;justify-content:flex-start;gap:4px 8px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:4px 8px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row {display:block;flex:0 0 auto;width:max-content;max-width:100%}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier {display:inline-flex;align-items:center;gap:12px;flex:0 0 auto;width:max-content;max-width:100%;min-width:0}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier>.detail-name-en {display:block;flex:0 1 auto;min-width:0;white-space:nowrap;overflow-wrap:normal;word-break:normal}
@@ -3022,9 +3038,17 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata button:is(:hover,[aria-pressed=true],[aria-expanded=true]) {text-decoration:underline;text-underline-offset:3px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata [data-card-version][aria-pressed=true] {color:#10210b;font-weight:700;text-decoration-thickness:2px;border-color:#7fff00!important;background:#7fff00!important;box-shadow:0 0 0 2px #7fff0055!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata button:focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .detail-card-sources {display:inline-flex;grid-row:auto;align-self:auto;justify-content:flex-start;flex-wrap:nowrap;gap:0;width:auto;margin:0;padding:0;border:0;white-space:nowrap;font:700 1em/1.4 Arial,sans-serif}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .detail-card-sources {display:inline-flex;grid-row:auto;align-self:auto;justify-content:flex-start;flex-wrap:wrap;gap:8px 12px;width:auto;margin:0;padding:0;border:0;white-space:nowrap;font:700 1em/1.4 Arial,sans-serif}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources>a {font:inherit;font-size:var(--card-metadata-font-size)!important}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-source-separator {white-space:pre;color:var(--muted,#aab6c4)}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-source-separator {display:none}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-upgrade-controls {flex-wrap:wrap;gap:8px 12px;font-size:var(--card-metadata-font-size)}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-upgrade-controls .detail-meta-item+.detail-meta-item::before {content:none}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-upgrade-controls [data-card-version] {font-size:inherit}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-heading-metadata {display:flex;align-items:center;justify-content:flex-start;justify-self:start;gap:4px 0;margin:0;padding:0;text-align:left}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata :is(.detail-meta-item,dd) {justify-content:flex-start;text-align:left;margin-inline:0}
+/* All content sharing a row is vertically centered. */
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-name-tier,.detail-type-metadata,.detail-meta-item,.detail-type-metadata dd,.detail-card-sources) {align-items:center}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources {align-self:center}
 
 /* Nested catalog panels fill the shared page frame. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),

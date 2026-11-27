@@ -56,10 +56,19 @@ const catalog = require('../../data/relic/catalog.json');
         const failures = await root.locator('.entry.relic:visible .relic-act-stats').evaluateAll(nodes => nodes.flatMap(node => {
           const box = node.getBoundingClientRect(), parent = node.closest('.entry').getBoundingClientRect();
           const cells = [...node.children].map(cell => cell.getBoundingClientRect());
-          return cells.length === 3 && Math.max(...cells.map(cell => cell.top)) - Math.min(...cells.map(cell => cell.top)) < 1 &&
+          const vertical = Math.max(...cells.map(cell => cell.left)) - Math.min(...cells.map(cell => cell.left)) < 1 && cells[1].top >= cells[0].bottom && cells[2].top >= cells[1].bottom;
+          const valuesBesideLabels = [...node.children].every(cell => {
+            const label = cell.querySelector('dt').getBoundingClientRect(), value = cell.querySelector('dd').getBoundingClientRect();
+            return value.left >= label.right && value.top < label.bottom && value.bottom > label.top;
+          });
+          const borderless = [node, ...node.children].every(element => {
+            const style = getComputedStyle(element);
+            return ['borderTopWidth','borderRightWidth','borderBottomWidth','borderLeftWidth'].every(side => style[side] === '0px');
+          });
+          return cells.length === 3 && vertical && valuesBesideLabels && borderless &&
             box.right <= parent.right && node.scrollWidth <= node.clientWidth ? [] : [node.closest('.entry').id];
         }));
-        assert.deepEqual(failures, [], 'Act columns fit at ' + width);
+        assert.deepEqual(failures, [], 'Act 1–3 use one borderless column at ' + width);
       }
       await root.locator('#search').fill('"Akabeko"');
       assert.equal(await root.locator('.entry.relic:visible').count(), 1);

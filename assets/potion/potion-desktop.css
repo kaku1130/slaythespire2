@@ -61,10 +61,10 @@ html body main#main-content .entry.potion>p {width:100%;max-width:100%;min-width
 
 /* Align the complete card, including artwork and source links, to the left. */
 html body main#main-content#main-content#main-content#main-content .entry.potion {text-align:left}
-html body main#main-content#main-content#main-content#main-content .entry.potion .potion-title-row h2 {flex-direction:row;flex-wrap:wrap;align-items:baseline;justify-content:flex-start;gap:4px 8px;text-align:left}
+html body main#main-content#main-content#main-content#main-content .entry.potion .potion-title-row h2 {flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:4px 8px;text-align:left}
 html body main#main-content#main-content#main-content#main-content .entry.potion .potion-title-row h2 :is(.potion-name-zh,.catalog-name-en) {flex:0 1 auto;min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere}
 html body main#main-content#main-content#main-content#main-content .entry.potion>.potion-icon-row {grid-template-columns:minmax(0,1fr)}
 html body main#main-content#main-content#main-content#main-content .entry.potion .potion-icon-row>img {grid-column:1;grid-row:1;justify-self:start}
 html body main#main-content#main-content#main-content#main-content .entry.potion .potion-title-row h2>.potion-rarity-row {display:block!important;flex:0 1 auto;max-width:100%;margin:0;text-align:left;font:600 18px/1.4 Arial,"Microsoft JhengHei",sans-serif}
-html body main#main-content .entry.potion>.catalog-source-links {justify-content:flex-start;align-items:flex-start}
+html body main#main-content .entry.potion>.catalog-source-links {justify-content:flex-start;align-items:center}
 html body main#main-content .entry.potion>.catalog-source-links>a {justify-content:flex-start;margin-left:0}
