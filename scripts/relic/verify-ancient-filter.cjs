@@ -13,12 +13,19 @@ const orders=require('./ancient-order.cjs');
   assert.equal(await menu.locator('button').count(),8);
   const ancient=block.locator('button[value=Ancient]');
   assert.equal(await page.locator('[data-catalog-filter=rarity]').count(),1,'only Ancient rarity button remains');
-  assert.equal(await block.locator('button').count(),9,'Ancient and eight icons share a separate block');
+  assert.equal(await block.locator('button').count(),9,'Ancient and eight icons share a block');
+  assert.equal(await page.locator('#relic-filter-pool [data-catalog-filter=enchantments]').count(),1,'Enchantments belongs to the Pool block');
   const ancientBox=await ancient.boundingBox(),menuBox=await menu.boundingBox();
-  assert(ancientBox.y>=menuBox.y+menuBox.height,'Ancient appears below both icon rows');
+  assert(ancientBox.y>=menuBox.y+menuBox.height,'Ancient appears on a separate row below the icons');
+  assert(Math.abs(ancientBox.width-menuBox.width)<1,'Ancient fills its row');
   const iconRows=await menu.locator('button').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().top));
-  assert.equal(new Set(iconRows).size,2,'icons occupy two rows');
-  assert.equal(iconRows.filter(top=>top===iconRows[0]).length,4,'four icons per row');
+  assert.equal(new Set(iconRows).size,1,'wide menus show all eight icons in one row');
+  for(const [width,columns] of [[240,2],[400,4],[800,8]]){
+   await block.evaluate((node,width)=>node.style.width=width+'px',width);
+   const tops=await menu.locator('button').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().top));
+   assert.equal(tops.filter(top=>top===tops[0]).length,columns,width+'px columns');
+  }
+  await block.evaluate(node=>node.style.removeProperty('width'));
   await page.locator('[data-catalog-filter=pool][value=Ironclad]').click();
   for(const [slug,ids] of Object.entries(orders)){
    await page.locator('[data-catalog-filter=pool][value=Ironclad]').click();

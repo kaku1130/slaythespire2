@@ -6,6 +6,7 @@ const files = {
   cards:['assets/cards/icons/nav-cards.webp','cover'],
   relic:['assets/relic/images/nav-relics.webp','contain'],
   potion:['assets/potion/images/nav-potions.webp','contain'],
+  enchantments:['assets/enchantments/images/slither.webp','contain'],
   monster:['assets/monster/images/the-insatiable.webp','contain']
 };
 const columnCount=Object.keys(files).length;
@@ -117,7 +118,7 @@ html {--site-nav-icon-size:36px}
 `;
 
 module.exports.styles+=`
-/* Phones show only the five category icons, with no empty menu column. */
+/* Phones show only category icons, with no empty menu column. */
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
  html body .site-header .game-info-dropdown {display:none!important}
  html body .site-header .site-nav {grid-template-columns:repeat(${columnCount},minmax(0,1fr))!important}

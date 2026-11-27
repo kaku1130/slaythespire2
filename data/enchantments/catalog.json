@@ -1,0 +1,656 @@
+{
+  "source": "https://sts2.untapped.gg/en/enchantments",
+  "checkedAt": "2026-11-27T08:37:51.795Z",
+  "total": 22,
+  "items": [
+    {
+      "id": "ADROIT",
+      "slug": "adroit",
+      "name": "Adroit",
+      "descEnParts": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "X",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Kifuda",
+          "url": "https://sts2.untapped.gg/en/relics/shop/kifuda"
+        }
+      ],
+      "image": "assets/enchantments/images/adroit.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/adroit.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/adroit"
+    },
+    {
+      "id": "CLONE",
+      "slug": "clone",
+      "name": "Clone",
+      "descEnParts": [
+        {
+          "text": "This card can be duplicated at "
+        },
+        {
+          "text": "Rest Sites",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Pael's Growth",
+          "url": "https://sts2.untapped.gg/en/relics/ancient/paels-growth"
+        }
+      ],
+      "image": "assets/enchantments/images/clone.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/clone.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/clone"
+    },
+    {
+      "id": "CORRUPTED",
+      "slug": "corrupted",
+      "name": "Corrupted",
+      "descEnParts": [
+        {
+          "text": "Deal "
+        },
+        {
+          "text": "50%",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " more damage, but lose "
+        },
+        {
+          "text": "2",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " HP."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Symbiote",
+          "url": "https://sts2.untapped.gg/en/events/symbiote"
+        }
+      ],
+      "image": "assets/enchantments/images/corrupted.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/corrupted.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/corrupted"
+    },
+    {
+      "id": "GLAM",
+      "slug": "glam",
+      "name": "Glam",
+      "descEnParts": [
+        {
+          "text": "This card has "
+        },
+        {
+          "text": "Replay",
+          "color": "#efc851"
+        },
+        {
+          "text": " once per combat."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Glitter",
+          "url": "https://sts2.untapped.gg/en/relics/ancient/glitter"
+        },
+        {
+          "name": "Silken Tress",
+          "url": "https://sts2.untapped.gg/en/relics/ancient/silken-tress"
+        }
+      ],
+      "image": "assets/enchantments/images/glam.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/glam.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/glam"
+    },
+    {
+      "id": "GOOPY",
+      "slug": "goopy",
+      "name": "Goopy",
+      "descEnParts": [
+        {
+          "text": "This card gains "
+        },
+        {
+          "text": "Exhaust",
+          "color": "#efc851"
+        },
+        {
+          "text": ". When played, permanently increase this card's "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": " by "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Pael's Claw",
+          "url": "https://sts2.untapped.gg/en/relics/ancient/paels-claw"
+        }
+      ],
+      "image": "assets/enchantments/images/goopy.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/goopy.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/goopy"
+    },
+    {
+      "id": "IMBUED",
+      "slug": "imbued",
+      "name": "Imbued",
+      "descEnParts": [
+        {
+          "text": "This card is played automatically at the start of each combat."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Electric Shrymp",
+          "url": "https://sts2.untapped.gg/en/relics/ancient/electric-shrymp"
+        }
+      ],
+      "image": "assets/enchantments/images/imbued.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/imbued.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/imbued"
+    },
+    {
+      "id": "INKY",
+      "slug": "inky",
+      "name": "Inky",
+      "descEnParts": [
+        {
+          "text": "This card applies "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Weak",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Blade of Ink",
+          "url": "https://sts2.untapped.gg/en/cards/silent/blade-of-ink"
+        }
+      ],
+      "image": "assets/enchantments/images/inky.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/inky.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/inky"
+    },
+    {
+      "id": "INSTINCT",
+      "slug": "instinct",
+      "name": "Instinct",
+      "descEnParts": [
+        {
+          "text": "This card's attack damage is doubled."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Tri-Boomerang",
+          "url": "https://sts2.untapped.gg/en/relics/ancient/tri-boomerang"
+        }
+      ],
+      "image": "assets/enchantments/images/instinct.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/instinct.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/instinct"
+    },
+    {
+      "id": "MOMENTUM",
+      "slug": "momentum",
+      "name": "Momentum",
+      "descEnParts": [
+        {
+          "text": "Increase this card's attack damage by "
+        },
+        {
+          "text": "X",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " this combat when played."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Punch Dagger",
+          "url": "https://sts2.untapped.gg/en/relics/shop/punch-dagger"
+        }
+      ],
+      "image": "assets/enchantments/images/momentum.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/momentum.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/momentum"
+    },
+    {
+      "id": "NIMBLE",
+      "slug": "nimble",
+      "name": "Nimble",
+      "descEnParts": [
+        {
+          "text": "Increases "
+        },
+        {
+          "text": "Block",
+          "color": "#efc851"
+        },
+        {
+          "text": " gained from this card by "
+        },
+        {
+          "text": "X",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Self-Help Book",
+          "url": "https://sts2.untapped.gg/en/events/self-help-book"
+        },
+        {
+          "name": "Fresnel Lens",
+          "url": "https://sts2.untapped.gg/en/relics/event/fresnel-lens"
+        }
+      ],
+      "image": "assets/enchantments/images/nimble.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/nimble.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/nimble"
+    },
+    {
+      "id": "PERFECT_FIT",
+      "slug": "perfect-fit",
+      "name": "Perfect Fit",
+      "descEnParts": [
+        {
+          "text": "Whenever this would be shuffled into your "
+        },
+        {
+          "text": "Draw Pile",
+          "color": "#efc851"
+        },
+        {
+          "text": ", place it on the top instead."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Field of Man-Sized Holes",
+          "url": "https://sts2.untapped.gg/en/events/field-of-man-sized-holes"
+        }
+      ],
+      "image": "assets/enchantments/images/perfect-fit.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/perfect_fit.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/perfect-fit"
+    },
+    {
+      "id": "ROYALLY_APPROVED",
+      "slug": "royally-approved",
+      "name": "Royally Approved",
+      "descEnParts": [
+        {
+          "text": "This card has "
+        },
+        {
+          "text": "Innate",
+          "color": "#efc851"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "Retain",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Royal Stamp",
+          "url": "https://sts2.untapped.gg/en/relics/shop/royal-stamp"
+        }
+      ],
+      "image": "assets/enchantments/images/royally-approved.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/royally_approved.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/royally-approved"
+    },
+    {
+      "id": "SHARP",
+      "slug": "sharp",
+      "name": "Sharp",
+      "descEnParts": [
+        {
+          "text": "Increases damage on this card by "
+        },
+        {
+          "text": "X",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Self-Help Book",
+          "url": "https://sts2.untapped.gg/en/events/self-help-book"
+        },
+        {
+          "name": "Gnarled Hammer",
+          "url": "https://sts2.untapped.gg/en/relics/shop/gnarled-hammer"
+        }
+      ],
+      "image": "assets/enchantments/images/sharp.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/sharp.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/sharp"
+    },
+    {
+      "id": "SLITHER",
+      "slug": "slither",
+      "name": "Slither",
+      "descEnParts": [
+        {
+          "text": "When you draw this card, randomize its cost from "
+        },
+        {
+          "text": "0",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Wood Carvings",
+          "url": "https://sts2.untapped.gg/en/events/wood-carvings"
+        }
+      ],
+      "image": "assets/enchantments/images/slither.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/slither.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/slither"
+    },
+    {
+      "id": "SLUMBERING_ESSENCE",
+      "slug": "slumbering-essence",
+      "name": "Slumbering Essence",
+      "descEnParts": [
+        {
+          "text": "If this card is in your hand at the end of turn, reduce its cost by "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " until it is played."
+        }
+      ],
+      "foundIn": [],
+      "image": "assets/enchantments/images/slumbering-essence.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/slumbering_essence.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/slumbering-essence"
+    },
+    {
+      "id": "SOULS_POWER",
+      "slug": "souls-power",
+      "name": "Soul's Power",
+      "descEnParts": [
+        {
+          "text": "This card loses "
+        },
+        {
+          "text": "Exhaust",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Grave of the Forgotten",
+          "url": "https://sts2.untapped.gg/en/events/grave-of-the-forgotten"
+        }
+      ],
+      "image": "assets/enchantments/images/souls-power.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/souls_power.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/souls-power"
+    },
+    {
+      "id": "SOWN",
+      "slug": "sown",
+      "name": "Sown",
+      "descEnParts": [
+        {
+          "text": "The first time you play this card each combat, gain "
+        },
+        {
+          "resource": "energy"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Sapphire Seed",
+          "url": "https://sts2.untapped.gg/en/events/sapphire-seed"
+        }
+      ],
+      "image": "assets/enchantments/images/sown.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/sown.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/sown"
+    },
+    {
+      "id": "SPIRAL",
+      "slug": "spiral",
+      "name": "Spiral",
+      "descEnParts": [
+        {
+          "text": "This card gains "
+        },
+        {
+          "text": "Replay",
+          "color": "#efc851"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "color": "#87ceeb"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Spiraling Whirlpool",
+          "url": "https://sts2.untapped.gg/en/events/spiraling-whirlpool"
+        }
+      ],
+      "image": "assets/enchantments/images/spiral.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/spiral.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/spiral"
+    },
+    {
+      "id": "STEADY",
+      "slug": "steady",
+      "name": "Steady",
+      "descEnParts": [
+        {
+          "text": "This card gains "
+        },
+        {
+          "text": "Retain",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Waterlogged Scriptorium",
+          "url": "https://sts2.untapped.gg/en/events/waterlogged-scriptorium"
+        }
+      ],
+      "image": "assets/enchantments/images/steady.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/steady.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/steady"
+    },
+    {
+      "id": "SWIFT",
+      "slug": "swift",
+      "name": "Swift",
+      "descEnParts": [
+        {
+          "text": "The first time you play this card, draw "
+        },
+        {
+          "text": "X",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " cards."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Self-Help Book",
+          "url": "https://sts2.untapped.gg/en/events/self-help-book"
+        },
+        {
+          "name": "Beautiful Bracelet",
+          "url": "https://sts2.untapped.gg/en/relics/ancient/beautiful-bracelet"
+        },
+        {
+          "name": "Wing Charm",
+          "url": "https://sts2.untapped.gg/en/relics/shop/wing-charm"
+        }
+      ],
+      "image": "assets/enchantments/images/swift.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/swift.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/swift"
+    },
+    {
+      "id": "TEZCATARAS_EMBER",
+      "slug": "tezcataras-ember",
+      "name": "Tezcatara's Ember",
+      "descEnParts": [
+        {
+          "text": "Costs "
+        },
+        {
+          "text": "0",
+          "color": "#87ceeb"
+        },
+        {
+          "text": ", deals "
+        },
+        {
+          "text": "3",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional damage, and gains "
+        },
+        {
+          "text": "Eternal",
+          "color": "#efc851"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Nutritious Soup",
+          "url": "https://sts2.untapped.gg/en/relics/ancient/nutritious-soup"
+        }
+      ],
+      "image": "assets/enchantments/images/tezcataras-ember.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/tezcataras_ember.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/tezcataras-ember"
+    },
+    {
+      "id": "VIGOROUS",
+      "slug": "vigorous",
+      "name": "Vigorous",
+      "descEnParts": [
+        {
+          "text": "The first time this card is played, it deals "
+        },
+        {
+          "text": "X",
+          "color": "#87ceeb"
+        },
+        {
+          "text": " additional damage."
+        }
+      ],
+      "foundIn": [
+        {
+          "name": "Stone of All Time",
+          "url": "https://sts2.untapped.gg/en/events/stone-of-all-time"
+        }
+      ],
+      "image": "assets/enchantments/images/vigorous.webp",
+      "imageUrl": "https://sts2json.untapped.gg/art/enchantments/vigorous.png",
+      "sourceEn": "https://sts2.untapped.gg/en/enchantments/vigorous"
+    }
+  ]
+}

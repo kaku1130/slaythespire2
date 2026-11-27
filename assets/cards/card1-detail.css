@@ -125,7 +125,7 @@ html body .card-detail[data-card-layout=compact] .detail-inline-tier {display:in
 .card-detail .detail-meta .detail-tier {color:#ef95b1;border-color:#693e50;background:#2b1b26}
 .card-detail .detail-character img {width:22px;height:22px;object-fit:contain}
 .card-detail .detail-art {width:100%;max-width:700px;justify-self:center}
-.card-detail .detail-art img {display:block;width:100%;height:auto;aspect-ratio:700/532;border-radius:10px}
+.card-detail .detail-art img {display:block;box-sizing:border-box;width:100%;height:auto;aspect-ratio:700/532;border:10px solid var(--detail-rarity-color,#b9c2cc);border-radius:10px}
 .card-detail-row[data-rarity=Ancient] .card-detail .detail-art img {object-fit:contain;object-position:center}
 .card-detail .detail-keyword {display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
 .card-detail .detail-section > .detail-keyword {margin-top:16px}

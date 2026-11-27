@@ -161,10 +161,10 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(5,62px)!important;
+    grid-template-columns:repeat(6,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 326px!important;
-    width:326px!important;
+    flex:0 1 392px!important;
+    width:392px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
@@ -186,7 +186,7 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
@@ -197,9 +197,9 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
 /* Scale desktop navigation artwork and buttons together by 25%. */
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
-    grid-template-columns:repeat(5,77.5px)!important;
+    grid-template-columns:repeat(6,77.5px)!important;
     grid-auto-columns:77.5px!important;
-    flex:0 1 407.5px!important;width:407.5px!important;gap:5px;
+    flex:0 1 490px!important;width:490px!important;gap:5px;
   }
   html body .site-header .site-nav > a {
     flex:0 0 77.5px!important;width:77.5px!important;min-width:77.5px!important;max-width:77.5px!important;
@@ -240,7 +240,7 @@ html body .site-header .game-info-menu>a:hover {color:#fff!important;background:
 
 /* Compact tablets keep identical navigation sizing regardless of input detection. */
 @media screen and (min-width:601px) and (max-width:1180px) {
- html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 504px!important;width:504px!important;gap:4px}
+ html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 504px!important;width:504px!important;gap:4px}
  html body .site-header .site-nav>a {flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important;height:52px!important;min-height:52px!important;max-height:52px!important;padding:6px 12px!important;border-radius:6px}
  html body .site-header .site-nav a>.site-nav-visual {flex:0 0 36px;width:36px;height:36px}
  html body .site-header .site-nav .site-nav-icon {width:36px!important;height:36px!important;border-radius:6px!important}
@@ -255,7 +255,7 @@ html body .site-header .site-nav>a,html body .site-header .game-info-dropdown>su
 /* Navigation fills the space beside the logo with a consistent separation. */
 html body .site-header>.site-header-inner {flex-wrap:nowrap!important;column-gap:24px!important}
 html body .site-header .site-brand {flex:0 0 auto}
-html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
+html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
 html body .site-header .site-nav>a {width:100%!important;min-width:0!important;max-width:none!important;flex:1 1 0!important;padding-inline:0!important}
 html body .site-header .game-info-dropdown {width:100%;min-width:0;max-width:none;justify-self:stretch}
 
@@ -265,10 +265,10 @@ html {--site-nav-icon-size:36px}
 @media screen and (max-width:600px) {html {--site-nav-icon-size:32px}}
 @media screen and (min-width:601px) and (max-width:1180px) {html {--site-nav-icon-size:36px}}
 
-/* Phones show only the five category icons, with no empty menu column. */
+/* Phones show only category icons, with no empty menu column. */
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
  html body .site-header .game-info-dropdown {display:none!important}
- html body .site-header .site-nav {grid-template-columns:repeat(5,minmax(0,1fr))!important}
+ html body .site-header .site-nav {grid-template-columns:repeat(6,minmax(0,1fr))!important}
 }
 
 /* Category icon sizing belongs to navigation, independently of Game Info. */
@@ -631,7 +631,7 @@ html body main#main-content {padding-block:20px 24px}
 }
 
 /* Use one compact vertical rhythm for search and menu groups. */
-html {--group-gap:8px;--control-gap:8px}
+html {--group-gap:24px;--control-gap:8px}
 html body main#main-content {row-gap:8px!important}
 html body main#main-content :is(.tools,.filters,.primary-filter-row,.secondary-filter-row,.chips,.filter-cluster,.rarity-buttons,.relic-menu-row,.chapter-filter-group,.monster-filter-options,.character-nav,.tier-index) {
   row-gap:8px!important;
@@ -646,15 +646,17 @@ html body main#main-content:has(>#card-scroll)>#tools {margin-block:0!important}
 html body main#main-content>.mobile-search-row {margin-block:0 8px!important;padding-block:0!important}
 html body main#main-content .split-list {row-gap:8px!important}
 html body main#main-content .split-list>.filters {margin-block:0!important}
+/* Separate search and menu groups without widening gaps inside button groups. */
+html body main#main-content#main-content#main-content :is(.tools,.filters,.monster-tools,.filter-menu-panel) {row-gap:24px!important}
 
-/* Use consistent colored frames for filter groups on every device. */
+/* Filter groups use spacing instead of outer frames. */
 html body main#main-content #tools .card-filter-row,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   box-sizing:border-box;
   min-width:0;
-  padding:8px;
-  border:1px solid var(--filter-frame-color,#293340);
-  border-radius:10px;
+  padding:0;
+  border:0;
+  border-radius:0;
 }
 html body main#main-content #tools .card-filter-row:has(#card-filter-character),
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row:has([data-catalog-filter=pool]) {
@@ -708,14 +710,9 @@ html body main#main-content :is(#tools,.relic-filters,.potion-filters) .filter-c
   display:block;width:32px;height:32px;object-fit:contain;
 }
 
-/* Card filter groups share a blue outer frame. */
-html body main#main-content #tools .card-filter-row {
-  border-color:#6faeee;
-}
-
-/* Relic and potion filter groups use the same blue outer frame. */
-html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
-  border-color:#6faeee;
+/* Keep separate menu groups farther apart than buttons within a group. */
+html body main#main-content#main-content#main-content :is(.card-filter-rows,.catalog-filter-rows) {
+  row-gap:24px!important;
 }
 
 /* Equal spacing above and below the header divider. */
@@ -1200,7 +1197,7 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata {grid-row:5}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-version-controls {display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:4px 0;width:100%;margin:0;padding:0;text-align:left;font-weight:400}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item {display:inline-flex;align-items:center;justify-content:flex-start;gap:0;min-width:0;justify-self:start;text-align:left}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item+.detail-meta-item::before {content:" · ";white-space:pre;color:var(--muted,#aab6c4)}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item+.detail-meta-item::before {content:" ";white-space:pre;color:var(--muted,#aab6c4)}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata dd {display:inline-flex;align-items:center;margin:0;text-align:left}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata :is(.detail-type-label,.detail-plain-rarity,button) {display:inline;box-sizing:border-box;width:auto;min-width:0;min-height:0;margin:0;padding:0;border:0!important;border-radius:0;background:transparent!important;box-shadow:none!important;font:inherit;font-size:16px!important;line-height:1.4;text-align:left}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata :is(.detail-plain-rarity,.detail-type-label,[data-card-version]) {font-weight:700}
@@ -1212,14 +1209,14 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata :is(.detail-meta-item,dd,.detail-type-label,.detail-plain-rarity,button) {font-size:inherit!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata .detail-meta-item {flex:0 0 auto}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata dd[data-stat-character]>img {width:clamp(12px,10cqi,28px);height:clamp(12px,10cqi,28px)}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata .detail-meta-item+.detail-meta-item::before {content:"·";margin:0 1.5px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata .detail-meta-item+.detail-meta-item::before {content:" ";margin:0 1.5px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata [data-card-version][aria-pressed] {min-height:calc(1.4em + 6px);padding:2px 4px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata [data-card-version] {font-size:var(--card-metadata-font-size)!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-action-metadata {flex-wrap:nowrap;font-size:var(--card-metadata-font-size)!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata :is(.detail-meta-item,dd,button,.detail-creator-rating,.creator-tier-badge) {font-size:inherit!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .creator-tier-badge {font-size:var(--card-metadata-font-size)!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata :is([data-card-version],.creator-tier-badge) {min-height:0;padding:2px}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .detail-meta-item+.detail-meta-item::before {content:"·";margin:0 1.5px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .detail-meta-item+.detail-meta-item::before {content:" ";margin:0 1.5px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata [data-card-version][aria-pressed] {min-height:0;padding:2px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata [data-card-version] {display:inline-flex;align-items:center;justify-content:center;min-height:26px;padding:2px 6px;border:1px solid currentColor!important;border-radius:5px;background:#101923!important;color:#b3ff66}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata [data-card-version][aria-pressed=false] {background:#101923!important;color:#7fff00}
@@ -1276,10 +1273,10 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(5,62px)!important;
+    grid-template-columns:repeat(6,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 326px!important;
-    width:326px!important;
+    flex:0 1 392px!important;
+    width:392px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
@@ -1301,7 +1298,7 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
@@ -1312,9 +1309,9 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
 /* Scale desktop navigation artwork and buttons together by 25%. */
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
-    grid-template-columns:repeat(5,77.5px)!important;
+    grid-template-columns:repeat(6,77.5px)!important;
     grid-auto-columns:77.5px!important;
-    flex:0 1 407.5px!important;width:407.5px!important;gap:5px;
+    flex:0 1 490px!important;width:490px!important;gap:5px;
   }
   html body .site-header .site-nav > a {
     flex:0 0 77.5px!important;width:77.5px!important;min-width:77.5px!important;max-width:77.5px!important;
@@ -1355,7 +1352,7 @@ html body .site-header .game-info-menu>a:hover {color:#fff!important;background:
 
 /* Compact tablets keep identical navigation sizing regardless of input detection. */
 @media screen and (min-width:601px) and (max-width:1180px) {
- html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 504px!important;width:504px!important;gap:4px}
+ html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 504px!important;width:504px!important;gap:4px}
  html body .site-header .site-nav>a {flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important;height:52px!important;min-height:52px!important;max-height:52px!important;padding:6px 12px!important;border-radius:6px}
  html body .site-header .site-nav a>.site-nav-visual {flex:0 0 36px;width:36px;height:36px}
  html body .site-header .site-nav .site-nav-icon {width:36px!important;height:36px!important;border-radius:6px!important}
@@ -1370,7 +1367,7 @@ html body .site-header .site-nav>a,html body .site-header .game-info-dropdown>su
 /* Navigation fills the space beside the logo with a consistent separation. */
 html body .site-header>.site-header-inner {flex-wrap:nowrap!important;column-gap:24px!important}
 html body .site-header .site-brand {flex:0 0 auto}
-html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
+html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
 html body .site-header .site-nav>a {width:100%!important;min-width:0!important;max-width:none!important;flex:1 1 0!important;padding-inline:0!important}
 html body .site-header .game-info-dropdown {width:100%;min-width:0;max-width:none;justify-self:stretch}
 
@@ -1380,10 +1377,10 @@ html {--site-nav-icon-size:36px}
 @media screen and (max-width:600px) {html {--site-nav-icon-size:32px}}
 @media screen and (min-width:601px) and (max-width:1180px) {html {--site-nav-icon-size:36px}}
 
-/* Phones show only the five category icons, with no empty menu column. */
+/* Phones show only category icons, with no empty menu column. */
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
  html body .site-header .game-info-dropdown {display:none!important}
- html body .site-header .site-nav {grid-template-columns:repeat(5,minmax(0,1fr))!important}
+ html body .site-header .site-nav {grid-template-columns:repeat(6,minmax(0,1fr))!important}
 }
 
 /* Category icon sizing belongs to navigation, independently of Game Info. */
@@ -1995,7 +1992,7 @@ html body main#main-content {padding-block:20px 24px}
 }
 
 /* Use one compact vertical rhythm for search and menu groups. */
-html {--group-gap:8px;--control-gap:8px}
+html {--group-gap:24px;--control-gap:8px}
 html body main#main-content {row-gap:8px!important}
 html body main#main-content :is(.tools,.filters,.primary-filter-row,.secondary-filter-row,.chips,.filter-cluster,.rarity-buttons,.relic-menu-row,.chapter-filter-group,.monster-filter-options,.character-nav,.tier-index) {
   row-gap:8px!important;
@@ -2010,15 +2007,17 @@ html body main#main-content:has(>#card-scroll)>#tools {margin-block:0!important}
 html body main#main-content>.mobile-search-row {margin-block:0 8px!important;padding-block:0!important}
 html body main#main-content .split-list {row-gap:8px!important}
 html body main#main-content .split-list>.filters {margin-block:0!important}
+/* Separate search and menu groups without widening gaps inside button groups. */
+html body main#main-content#main-content#main-content :is(.tools,.filters,.monster-tools,.filter-menu-panel) {row-gap:24px!important}
 
-/* Use consistent colored frames for filter groups on every device. */
+/* Filter groups use spacing instead of outer frames. */
 html body main#main-content #tools .card-filter-row,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   box-sizing:border-box;
   min-width:0;
-  padding:8px;
-  border:1px solid var(--filter-frame-color,#293340);
-  border-radius:10px;
+  padding:0;
+  border:0;
+  border-radius:0;
 }
 html body main#main-content #tools .card-filter-row:has(#card-filter-character),
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row:has([data-catalog-filter=pool]) {
@@ -2072,14 +2071,9 @@ html body main#main-content :is(#tools,.relic-filters,.potion-filters) .filter-c
   display:block;width:32px;height:32px;object-fit:contain;
 }
 
-/* Card filter groups share a blue outer frame. */
-html body main#main-content #tools .card-filter-row {
-  border-color:#6faeee;
-}
-
-/* Relic and potion filter groups use the same blue outer frame. */
-html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
-  border-color:#6faeee;
+/* Keep separate menu groups farther apart than buttons within a group. */
+html body main#main-content#main-content#main-content :is(.card-filter-rows,.catalog-filter-rows) {
+  row-gap:24px!important;
 }
 
 /* Equal spacing above and below the header divider. */
@@ -2564,7 +2558,7 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata {grid-row:5}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-version-controls {display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:4px 0;width:100%;margin:0;padding:0;text-align:left;font-weight:400}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item {display:inline-flex;align-items:center;justify-content:flex-start;gap:0;min-width:0;justify-self:start;text-align:left}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item+.detail-meta-item::before {content:" · ";white-space:pre;color:var(--muted,#aab6c4)}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item+.detail-meta-item::before {content:" ";white-space:pre;color:var(--muted,#aab6c4)}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata dd {display:inline-flex;align-items:center;margin:0;text-align:left}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata :is(.detail-type-label,.detail-plain-rarity,button) {display:inline;box-sizing:border-box;width:auto;min-width:0;min-height:0;margin:0;padding:0;border:0!important;border-radius:0;background:transparent!important;box-shadow:none!important;font:inherit;font-size:16px!important;line-height:1.4;text-align:left}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata :is(.detail-plain-rarity,.detail-type-label,[data-card-version]) {font-weight:700}
@@ -2576,14 +2570,14 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata :is(.detail-meta-item,dd,.detail-type-label,.detail-plain-rarity,button) {font-size:inherit!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata .detail-meta-item {flex:0 0 auto}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata dd[data-stat-character]>img {width:clamp(12px,10cqi,28px);height:clamp(12px,10cqi,28px)}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata .detail-meta-item+.detail-meta-item::before {content:"·";margin:0 1.5px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata .detail-meta-item+.detail-meta-item::before {content:" ";margin:0 1.5px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata [data-card-version][aria-pressed] {min-height:calc(1.4em + 6px);padding:2px 4px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata [data-card-version] {font-size:var(--card-metadata-font-size)!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-action-metadata {flex-wrap:nowrap;font-size:var(--card-metadata-font-size)!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata :is(.detail-meta-item,dd,button,.detail-creator-rating,.creator-tier-badge) {font-size:inherit!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .creator-tier-badge {font-size:var(--card-metadata-font-size)!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata :is([data-card-version],.creator-tier-badge) {min-height:0;padding:2px}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .detail-meta-item+.detail-meta-item::before {content:"·";margin:0 1.5px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .detail-meta-item+.detail-meta-item::before {content:" ";margin:0 1.5px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata [data-card-version][aria-pressed] {min-height:0;padding:2px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata [data-card-version] {display:inline-flex;align-items:center;justify-content:center;min-height:26px;padding:2px 6px;border:1px solid currentColor!important;border-radius:5px;background:#101923!important;color:#b3ff66}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata [data-card-version][aria-pressed=false] {background:#101923!important;color:#7fff00}
@@ -2641,10 +2635,10 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(5,62px)!important;
+    grid-template-columns:repeat(6,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 326px!important;
-    width:326px!important;
+    flex:0 1 392px!important;
+    width:392px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
@@ -2666,7 +2660,7 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
@@ -2677,9 +2671,9 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
 /* Scale desktop navigation artwork and buttons together by 25%. */
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
-    grid-template-columns:repeat(5,77.5px)!important;
+    grid-template-columns:repeat(6,77.5px)!important;
     grid-auto-columns:77.5px!important;
-    flex:0 1 407.5px!important;width:407.5px!important;gap:5px;
+    flex:0 1 490px!important;width:490px!important;gap:5px;
   }
   html body .site-header .site-nav > a {
     flex:0 0 77.5px!important;width:77.5px!important;min-width:77.5px!important;max-width:77.5px!important;
@@ -2720,7 +2714,7 @@ html body .site-header .game-info-menu>a:hover {color:#fff!important;background:
 
 /* Compact tablets keep identical navigation sizing regardless of input detection. */
 @media screen and (min-width:601px) and (max-width:1180px) {
- html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 504px!important;width:504px!important;gap:4px}
+ html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 504px!important;width:504px!important;gap:4px}
  html body .site-header .site-nav>a {flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important;height:52px!important;min-height:52px!important;max-height:52px!important;padding:6px 12px!important;border-radius:6px}
  html body .site-header .site-nav a>.site-nav-visual {flex:0 0 36px;width:36px;height:36px}
  html body .site-header .site-nav .site-nav-icon {width:36px!important;height:36px!important;border-radius:6px!important}
@@ -2735,7 +2729,7 @@ html body .site-header .site-nav>a,html body .site-header .game-info-dropdown>su
 /* Navigation fills the space beside the logo with a consistent separation. */
 html body .site-header>.site-header-inner {flex-wrap:nowrap!important;column-gap:24px!important}
 html body .site-header .site-brand {flex:0 0 auto}
-html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
+html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
 html body .site-header .site-nav>a {width:100%!important;min-width:0!important;max-width:none!important;flex:1 1 0!important;padding-inline:0!important}
 html body .site-header .game-info-dropdown {width:100%;min-width:0;max-width:none;justify-self:stretch}
 
@@ -2745,10 +2739,10 @@ html {--site-nav-icon-size:36px}
 @media screen and (max-width:600px) {html {--site-nav-icon-size:32px}}
 @media screen and (min-width:601px) and (max-width:1180px) {html {--site-nav-icon-size:36px}}
 
-/* Phones show only the five category icons, with no empty menu column. */
+/* Phones show only category icons, with no empty menu column. */
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
  html body .site-header .game-info-dropdown {display:none!important}
- html body .site-header .site-nav {grid-template-columns:repeat(5,minmax(0,1fr))!important}
+ html body .site-header .site-nav {grid-template-columns:repeat(6,minmax(0,1fr))!important}
 }
 
 /* Category icon sizing belongs to navigation, independently of Game Info. */
@@ -2909,7 +2903,7 @@ html body .card-detail[data-card-layout=compact] .detail-inline-tier {display:in
 .card-detail .detail-meta .detail-tier {color:#ef95b1;border-color:#693e50;background:#2b1b26}
 .card-detail .detail-character img {width:22px;height:22px;object-fit:contain}
 .card-detail .detail-art {width:100%;max-width:700px;justify-self:center}
-.card-detail .detail-art img {display:block;width:100%;height:auto;aspect-ratio:700/532;border-radius:10px}
+.card-detail .detail-art img {display:block;box-sizing:border-box;width:100%;height:auto;aspect-ratio:700/532;border:10px solid var(--detail-rarity-color,#b9c2cc);border-radius:10px}
 .card-detail-row[data-rarity=Ancient] .card-detail .detail-art img {object-fit:contain;object-position:center}
 .card-detail .detail-keyword {display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
 .card-detail .detail-section > .detail-keyword {margin-top:16px}
@@ -3099,10 +3093,10 @@ html body .site-header .site-nav {margin-left:auto!important;justify-content:end
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
     display:grid!important;
-    grid-template-columns:repeat(5,62px)!important;
+    grid-template-columns:repeat(6,62px)!important;
     grid-auto-columns:62px!important;
-    flex:0 1 326px!important;
-    width:326px!important;
+    flex:0 1 392px!important;
+    width:392px!important;
     max-width:100%;
     margin-left:auto;
     gap:4px;
@@ -3124,7 +3118,7 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
     display:block!important;position:static!important;width:auto!important;height:auto!important;
     margin:0!important;padding:0!important;overflow:visible!important;clip-path:none!important;white-space:nowrap;
   }
-  html body .site-header .site-nav {flex:0 1 326px!important;width:326px!important;min-width:0;max-width:100%}
+  html body .site-header .site-nav {flex:0 1 392px!important;width:392px!important;min-width:0;max-width:100%}
 }
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
   html body .site-header .site-brand {display:none!important}
@@ -3135,9 +3129,9 @@ html body .site-header .site-logo {content:normal;width:112px;height:63px;object
 /* Scale desktop navigation artwork and buttons together by 25%. */
 @media screen and (min-width:601px) and (hover:hover) and (pointer:fine), screen and (min-width:1025px) {
   html body .site-header .site-nav {
-    grid-template-columns:repeat(5,77.5px)!important;
+    grid-template-columns:repeat(6,77.5px)!important;
     grid-auto-columns:77.5px!important;
-    flex:0 1 407.5px!important;width:407.5px!important;gap:5px;
+    flex:0 1 490px!important;width:490px!important;gap:5px;
   }
   html body .site-header .site-nav > a {
     flex:0 0 77.5px!important;width:77.5px!important;min-width:77.5px!important;max-width:77.5px!important;
@@ -3178,7 +3172,7 @@ html body .site-header .game-info-menu>a:hover {color:#fff!important;background:
 
 /* Compact tablets keep identical navigation sizing regardless of input detection. */
 @media screen and (min-width:601px) and (max-width:1180px) {
- html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 504px!important;width:504px!important;gap:4px}
+ html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,62px) 108px!important;grid-auto-columns:62px!important;flex:0 0 504px!important;width:504px!important;gap:4px}
  html body .site-header .site-nav>a {flex:0 0 62px!important;width:62px!important;min-width:62px!important;max-width:62px!important;height:52px!important;min-height:52px!important;max-height:52px!important;padding:6px 12px!important;border-radius:6px}
  html body .site-header .site-nav a>.site-nav-visual {flex:0 0 36px;width:36px;height:36px}
  html body .site-header .site-nav .site-nav-icon {width:36px!important;height:36px!important;border-radius:6px!important}
@@ -3193,7 +3187,7 @@ html body .site-header .site-nav>a,html body .site-header .game-info-dropdown>su
 /* Navigation fills the space beside the logo with a consistent separation. */
 html body .site-header>.site-header-inner {flex-wrap:nowrap!important;column-gap:24px!important}
 html body .site-header .site-brand {flex:0 0 auto}
-html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
+html body .site-header .site-nav {display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr)) minmax(108px,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;flex:1 1 0!important;width:auto!important;min-width:0;max-width:none;margin-inline:0!important}
 html body .site-header .site-nav>a {width:100%!important;min-width:0!important;max-width:none!important;flex:1 1 0!important;padding-inline:0!important}
 html body .site-header .game-info-dropdown {width:100%;min-width:0;max-width:none;justify-self:stretch}
 
@@ -3203,10 +3197,10 @@ html {--site-nav-icon-size:36px}
 @media screen and (max-width:600px) {html {--site-nav-icon-size:32px}}
 @media screen and (min-width:601px) and (max-width:1180px) {html {--site-nav-icon-size:36px}}
 
-/* Phones show only the five category icons, with no empty menu column. */
+/* Phones show only category icons, with no empty menu column. */
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
  html body .site-header .game-info-dropdown {display:none!important}
- html body .site-header .site-nav {grid-template-columns:repeat(5,minmax(0,1fr))!important}
+ html body .site-header .site-nav {grid-template-columns:repeat(6,minmax(0,1fr))!important}
 }
 
 /* Category icon sizing belongs to navigation, independently of Game Info. */
@@ -3236,14 +3230,14 @@ html body:not([data-detail-kind]) main#main-content#main-content#main-content {
   html body:not([data-detail-kind]) main#main-content .card-detail .detail-keyword {width:100%;justify-self:stretch}
 }
 
-/* Use consistent colored frames for filter groups on every device. */
+/* Filter groups use spacing instead of outer frames. */
 html body main#main-content #tools .card-filter-row,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   box-sizing:border-box;
   min-width:0;
-  padding:8px;
-  border:1px solid var(--filter-frame-color,#293340);
-  border-radius:10px;
+  padding:0;
+  border:0;
+  border-radius:0;
 }
 html body main#main-content #tools .card-filter-row:has(#card-filter-character),
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row:has([data-catalog-filter=pool]) {
@@ -3297,14 +3291,9 @@ html body main#main-content :is(#tools,.relic-filters,.potion-filters) .filter-c
   display:block;width:32px;height:32px;object-fit:contain;
 }
 
-/* Card filter groups share a blue outer frame. */
-html body main#main-content #tools .card-filter-row {
-  border-color:#6faeee;
-}
-
-/* Relic and potion filter groups use the same blue outer frame. */
-html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
-  border-color:#6faeee;
+/* Keep separate menu groups farther apart than buttons within a group. */
+html body main#main-content#main-content#main-content :is(.card-filter-rows,.catalog-filter-rows) {
+  row-gap:24px!important;
 }
 
 /* Catalogs scroll with the document; only the navigation stays at the top. */
@@ -3731,7 +3720,7 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata {grid-row:5}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-version-controls {display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:4px 0;width:100%;margin:0;padding:0;text-align:left;font-weight:400}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item {display:inline-flex;align-items:center;justify-content:flex-start;gap:0;min-width:0;justify-self:start;text-align:left}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item+.detail-meta-item::before {content:" · ";white-space:pre;color:var(--muted,#aab6c4)}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata .detail-meta-item+.detail-meta-item::before {content:" ";white-space:pre;color:var(--muted,#aab6c4)}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata dd {display:inline-flex;align-items:center;margin:0;text-align:left}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata :is(.detail-type-label,.detail-plain-rarity,button) {display:inline;box-sizing:border-box;width:auto;min-width:0;min-height:0;margin:0;padding:0;border:0!important;border-radius:0;background:transparent!important;box-shadow:none!important;font:inherit;font-size:16px!important;line-height:1.4;text-align:left}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata :is(.detail-plain-rarity,.detail-type-label,[data-card-version]) {font-weight:700}
@@ -3743,14 +3732,14 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata :is(.detail-meta-item,dd,.detail-type-label,.detail-plain-rarity,button) {font-size:inherit!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata .detail-meta-item {flex:0 0 auto}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata dd[data-stat-character]>img {width:clamp(12px,10cqi,28px);height:clamp(12px,10cqi,28px)}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata .detail-meta-item+.detail-meta-item::before {content:"·";margin:0 1.5px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata .detail-meta-item+.detail-meta-item::before {content:" ";margin:0 1.5px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata [data-card-version][aria-pressed] {min-height:calc(1.4em + 6px);padding:2px 4px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata [data-card-version] {font-size:var(--card-metadata-font-size)!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-action-metadata {flex-wrap:nowrap;font-size:var(--card-metadata-font-size)!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata :is(.detail-meta-item,dd,button,.detail-creator-rating,.creator-tier-badge) {font-size:inherit!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .creator-tier-badge {font-size:var(--card-metadata-font-size)!important}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata :is([data-card-version],.creator-tier-badge) {min-height:0;padding:2px}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .detail-meta-item+.detail-meta-item::before {content:"·";margin:0 1.5px}
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata .detail-meta-item+.detail-meta-item::before {content:" ";margin:0 1.5px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-action-metadata [data-card-version][aria-pressed] {min-height:0;padding:2px}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata [data-card-version] {display:inline-flex;align-items:center;justify-content:center;min-height:26px;padding:2px 6px;border:1px solid currentColor!important;border-radius:5px;background:#101923!important;color:#b3ff66}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata [data-card-version][aria-pressed=false] {background:#101923!important;color:#7fff00}

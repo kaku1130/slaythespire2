@@ -1,0 +1,6840 @@
+{
+  "source": "https://sts2.untapped.gg/en/relics",
+  "checkedAt": "2026-11-27T08:26:16.438Z",
+  "scope": "All Characters",
+  "sourceRelics": 314,
+  "unmatched": [],
+  "items": [
+    {
+      "id": "AKABEKO",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "3%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "9,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "ALCHEMICAL_COFFER",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "29%",
+          "offered": "51,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "AMETHYST_AUBERGINE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "37",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "24",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "ANCHOR",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "18%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "37%",
+          "offered": "26,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "45%",
+          "offered": "16,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "ARCANE_SCROLL",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "36%",
+          "offered": "140,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "ARCHAIC_TOOTH",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "57%",
+          "offered": "92,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "ART_OF_WAR",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "2%",
+          "offered": "10,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "6,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "4,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "ASTROLABE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "61%",
+          "offered": "20,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "56%",
+          "offered": "5,700",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "BAG_OF_MARBLES",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "27,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "25%",
+          "offered": "16,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "BAG_OF_PREPARATION",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "20%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "44%",
+          "offered": "26,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "54%",
+          "offered": "16,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "BEATING_REMNANT",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "2%",
+          "offered": "10,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "6,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "19%",
+          "offered": "4,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "BEAUTIFUL_BRACELET",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "34%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "BELLOWS",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "9,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "19%",
+          "offered": "6,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "24%",
+          "offered": "4,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "BELT_BUCKLE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "6%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "11%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "23%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "BIG_HAT",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "1,500",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "18%",
+          "offered": "1,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "23%",
+          "offered": "620",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "BIG_MUSHROOM",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "BIIIG_HUG",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "33%",
+          "offered": "62,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "BING_BONG",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "BLACK_BLOOD",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "BLACK_STAR",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "26%",
+          "offered": "20,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "23%",
+          "offered": "5,600",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "BLESSED_ANTLER",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "24%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "BLOOD_SOAKED_ROSE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "16%",
+          "offered": "33,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "BLOOD_VIAL",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "10%",
+          "offered": "27,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "14%",
+          "offered": "17,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "BONE_FLUTE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "14%",
+          "offered": "6,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "22%",
+          "offered": "4,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "27%",
+          "offered": "2,600",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "BONE_TEA",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "BOOK_OF_FIVE_RINGS",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "6%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "26,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "9%",
+          "offered": "9,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "BOOK_REPAIR_KNIFE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "3,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "10%",
+          "offered": "2,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "11%",
+          "offered": "1,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "BOOKMARK",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "6%",
+          "offered": "1,600",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "9%",
+          "offered": "960",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "640",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "BOOMING_CONCH",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "24%",
+          "offered": "160,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "BOUND_PHYLACTERY",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "BOWLER_HAT",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "20",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "13",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "BREAD",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "15%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "26%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "BRILLIANT_SCARF",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "37%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "BRIMSTONE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "18%",
+          "offered": "8,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "23%",
+          "offered": "5,600",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "26%",
+          "offered": "3,600",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "BRONZE_SCALES",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "13%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "23%",
+          "offered": "26,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "25%",
+          "offered": "16,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "BURNING_BLOOD",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "BURNING_STICKS",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "3%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "11%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "21%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "BYRDPIP",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "CALLING_BELL",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "26%",
+          "offered": "20,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "30%",
+          "offered": "5,700",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "CANDELABRA",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "9%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "26%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "38%",
+          "offered": "8,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "CAPTAINS_WHEEL",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "9,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "6,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "26%",
+          "offered": "4,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "CAULDRON",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "0%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "1%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "CENTENNIAL_PUZZLE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "9%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "24%",
+          "offered": "27,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "32%",
+          "offered": "17,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "CHANDELIER",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "9,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "17%",
+          "offered": "6,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "26%",
+          "offered": "4,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "CHARONS_ASHES",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "2,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "1,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "21%",
+          "offered": "1,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "CHEMICAL_X",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "10%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "CHOICES_PARADOX",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "49%",
+          "offered": "24,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "CHOSEN_CHEESE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=7"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=7"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=7"
+        }
+      }
+    },
+    {
+      "id": "CLAWS",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "14%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "CLOAK_CLASP",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "9,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "21%",
+          "offered": "6,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "31%",
+          "offered": "4,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "CRACKED_CORE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "CROSSBOW",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "50%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "CURSED_PEARL",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "62%",
+          "offered": "130,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "DARKSTONE_PERIAPT",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "DATA_DISK",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "29%",
+          "offered": "7,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "53%",
+          "offered": "5,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "61%",
+          "offered": "3,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "DAUGHTER_OF_THE_WIND",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "DELICATE_FROND",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "24%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "DEMON_TONGUE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "2,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "20%",
+          "offered": "1,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "29%",
+          "offered": "990",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "DIAMOND_DIADEM",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "36%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "DINGY_RUG",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "3%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "DISTINGUISHED_CAPE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "17%",
+          "offered": "33,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "DIVINE_DESTINY",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "DIVINE_RIGHT",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "DOLLYS_MIRROR",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "29%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "44%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "DRAGON_FRUIT",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "18%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "15%",
+          "offered": "8,600",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "DREAM_CATCHER",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "DRIFTWOOD",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "9%",
+          "offered": "51,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "DUSTY_TOME",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "27%",
+          "offered": "39,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "28%",
+          "offered": "9,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "ECTOPLASM",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "14%",
+          "offered": "16,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "ELECTRIC_SHRYMP",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "37%",
+          "offered": "56,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "EMBER_TEA",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "EMOTION_CHIP",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "6%",
+          "offered": "1,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "15%",
+          "offered": "1,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "26%",
+          "offered": "760",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "EMPTY_CAGE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "31%",
+          "offered": "20,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "34%",
+          "offered": "5,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "ETERNAL_FEATHER",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "27%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "26%",
+          "offered": "8,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "FAKE_ANCHOR",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "FAKE_BLOOD_VIAL",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "FAKE_HAPPY_FLOWER",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "FAKE_LEES_WAFFLE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "FAKE_MANGO",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "FAKE_MERCHANTS_RUG",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=7"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=7"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=7"
+        }
+      }
+    },
+    {
+      "id": "FAKE_ORICHALCUM",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "FAKE_SNECKO_EYE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "FAKE_STRIKE_DUMMY",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=7"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=7"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=7"
+        }
+      }
+    },
+    {
+      "id": "FAKE_VENERABLE_TEA_SET",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=7"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=7"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=7"
+        }
+      }
+    },
+    {
+      "id": "FENCING_MANUAL",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "13%",
+          "offered": "6,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "19%",
+          "offered": "4,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "22%",
+          "offered": "2,500",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "FESTIVE_POPPER",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "9%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "10%",
+          "offered": "26,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "16,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "FIDDLE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "27%",
+          "offered": "33,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "FISHING_ROD",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "17%",
+          "offered": "160,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "FORGOTTEN_SOUL",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "FRAGRANT_MUSHROOM",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "FRESNEL_LENS",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "FROZEN_EGG",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "10,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "15%",
+          "offered": "6,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "18%",
+          "offered": "2,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "FUNERARY_MASK",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "3,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "21%",
+          "offered": "2,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "28%",
+          "offered": "1,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "FUR_COAT",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "15%",
+          "offered": "30,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "GALACTIC_DUST",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "6%",
+          "offered": "3,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "18%",
+          "offered": "2,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "27%",
+          "offered": "1,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "GAMBLING_CHIP",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "6%",
+          "offered": "10,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "23%",
+          "offered": "6,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "33%",
+          "offered": "4,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "GAME_PIECE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "9,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "6,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "27%",
+          "offered": "4,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "GHOST_SEED",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "14%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "24%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "27%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "GIRYA",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "2%",
+          "offered": "9,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "6,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "9%",
+          "offered": "2,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "GLASS_EYE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "18%",
+          "offered": "56,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "GLITTER",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "49%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "GNARLED_HAMMER",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "17%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "22%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "GOLD_PLATED_CABLES",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "13%",
+          "offered": "4,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "26%",
+          "offered": "2,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "31%",
+          "offered": "1,700",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "GOLDEN_COMPASS",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "22%",
+          "offered": "46,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "GOLDEN_PEARL",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "41%",
+          "offered": "140,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "GORGET",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "31%",
+          "offered": "26,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "39%",
+          "offered": "16,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "GREMLIN_HORN",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "11%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "9,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "HAND_DRILL",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "HAPPY_FLOWER",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "34%",
+          "offered": "27,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "45%",
+          "offered": "16,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "HEFTY_TABLET",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "46%",
+          "offered": "130,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "HELICAL_DART",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "6%",
+          "offered": "2,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "15%",
+          "offered": "1,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "30%",
+          "offered": "880",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "HISTORY_COURSE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "HORN_CLEAT",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "11%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "30%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "37%",
+          "offered": "8,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "ICE_CREAM",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "11%",
+          "offered": "9,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "29%",
+          "offered": "6,500",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "41%",
+          "offered": "4,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "INFUSED_CORE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "INTIMIDATING_HELMET",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "10,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "6,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "24%",
+          "offered": "4,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "IRON_CLUB",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "44%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "IVORY_TILE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "1,600",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "15%",
+          "offered": "960",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "25%",
+          "offered": "580",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "JEWELED_MASK",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "75%",
+          "offered": "24,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "JEWELRY_BOX",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "38%",
+          "offered": "30,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "JOSS_PAPER",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "1%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "15%",
+          "offered": "9,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "JUZU_BRACELET",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "3%",
+          "offered": "41,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "6%",
+          "offered": "27,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "9,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "KALEIDOSCOPE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "32%",
+          "offered": "150,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "KIFUDA",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "34%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "41%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "KUNAI",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "9,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "18%",
+          "offered": "6,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "30%",
+          "offered": "4,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "KUSARIGAMA",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "10%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "9,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "LANTERN",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "17%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "37%",
+          "offered": "26,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "49%",
+          "offered": "17,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "LARGE_CAPSULE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "39%",
+          "offered": "130,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "LASTING_CANDY",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "10%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "5,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "LAVA_LAMP",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "LAVA_ROCK",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "18%",
+          "offered": "72,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "LEAD_PAPERWEIGHT",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "35%",
+          "offered": "160,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "LEAFY_POULTICE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "63%",
+          "offered": "130,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "LEES_WAFFLE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "13%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "24%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "30%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "LETTER_OPENER",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "11%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "18%",
+          "offered": "9,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "LIZARD_TAIL",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "9,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "20%",
+          "offered": "6,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "37%",
+          "offered": "4,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "LOOMING_FRUIT",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "19%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "LORDS_PARASOL",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "38%",
+          "offered": "24,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "LOST_COFFER",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "15%",
+          "offered": "150,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "LOST_WISP",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "LUCKY_FYSH",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "22",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "LUNAR_PASTRY",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "15%",
+          "offered": "1,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "27%",
+          "offered": "920",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "32%",
+          "offered": "550",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "MANGO",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "9,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "13%",
+          "offered": "6,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "25%",
+          "offered": "4,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "MASSIVE_SCROLL",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "MAW_BANK",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "MEAL_TICKET",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "10%",
+          "offered": "27,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "13%",
+          "offered": "9,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "MEAT_CLEAVER",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "34%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "MEAT_ON_THE_BONE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "6%",
+          "offered": "10,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "13%",
+          "offered": "6,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "14%",
+          "offered": "4,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "MEMBERSHIP_CARD",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "31%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "56%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "39%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "MERCURY_HOURGLASS",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "11%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "15%",
+          "offered": "9,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "METRONOME",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "6%",
+          "offered": "1,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "17%",
+          "offered": "1,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "24%",
+          "offered": "800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "MINI_REGENT",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "1,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "26%",
+          "offered": "990",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "35%",
+          "offered": "630",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "MINIATURE_CANNON",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "18%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "26%",
+          "offered": "8,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "MINIATURE_TENT",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "33%",
+          "offered": "41,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "59%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "46%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "MOLTEN_EGG",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "9%",
+          "offered": "10,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "10%",
+          "offered": "6,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "2,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "MR_STRUGGLES",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "MUMMIFIED_HAND",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "10%",
+          "offered": "10,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "28%",
+          "offered": "6,500",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "39%",
+          "offered": "4,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "MUSIC_BOX",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "54%",
+          "offered": "24,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "MYSTIC_LIGHTER",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "6%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "14%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "21%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "NEOWS_BONES",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "41%",
+          "offered": "130,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "NEOWS_TALISMAN",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "27%",
+          "offered": "81,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "NEOWS_TORMENT",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "17%",
+          "offered": "160,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "NEW_LEAF",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "33%",
+          "offered": "140,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "NINJA_SCROLL",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "9%",
+          "offered": "9,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "14%",
+          "offered": "5,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "3,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "NUNCHAKU",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "3%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "22%",
+          "offered": "9,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "NUTRITIOUS_OYSTER",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "8%",
+          "offered": "81,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "NUTRITIOUS_SOUP",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "46%",
+          "offered": "62,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "ODDLY_SMOOTH_STONE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "17%",
+          "offered": "41,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "34%",
+          "offered": "26,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "42%",
+          "offered": "16,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "OLD_COIN",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "ORANGE_DOUGH",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "9%",
+          "offered": "1,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "17%",
+          "offered": "940",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "27%",
+          "offered": "600",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "ORICHALCUM",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "11%",
+          "offered": "9,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "ORNAMENTAL_FAN",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "25%",
+          "offered": "9,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "ORRERY",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "14%",
+          "offered": "26,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "21%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "PAELS_BLOOD",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "72%",
+          "offered": "62,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "PAELS_CLAW",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "22%",
+          "offered": "52,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "PAELS_EYE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "9%",
+          "offered": "63,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "PAELS_FLESH",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "42%",
+          "offered": "61,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "PAELS_GROWTH",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "31%",
+          "offered": "26,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "PAELS_HORN",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "12%",
+          "offered": "62,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "PAELS_LEGION",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "64%",
+          "offered": "60,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "PAELS_TEARS",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "34%",
+          "offered": "62,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "PAELS_TOOTH",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "17%",
+          "offered": "53,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "PAELS_WING",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "25%",
+          "offered": "53,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "PANDORAS_BOX",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "62%",
+          "offered": "20,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "42%",
+          "offered": "5,600",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "PANTOGRAPH",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "15%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "32%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "44%",
+          "offered": "9,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "PAPER_KRANE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "10%",
+          "offered": "2,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "28%",
+          "offered": "1,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "38%",
+          "offered": "970",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "PAPER_PHROG",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "5,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "38%",
+          "offered": "3,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "49%",
+          "offered": "2,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "PARRYING_SHIELD",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "18%",
+          "offered": "9,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "PEAR",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "13%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "25%",
+          "offered": "9,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "PEN_NIB",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "23%",
+          "offered": "9,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "PENDULUM",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "20%",
+          "offered": "27,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "31%",
+          "offered": "16,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "PERMAFROST",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "26%",
+          "offered": "9,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "PETRIFIED_TOAD",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "2%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "3%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "9,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "PHIAL_HOLSTER",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "24%",
+          "offered": "150,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "PHILOSOPHERS_STONE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "30%",
+          "offered": "11,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "30%",
+          "offered": "4,700",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "PHYLACTERY_UNBOUND",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "PLANISPHERE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "5,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "POCKETWATCH",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "10,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "6,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "20%",
+          "offered": "4,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "POLLINOUS_CORE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "POMANDER",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "23%",
+          "offered": "82,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "POTION_BELT",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "9%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "23%",
+          "offered": "27,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "33%",
+          "offered": "17,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "POWER_CELL",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "1,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "22%",
+          "offered": "1,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "37%",
+          "offered": "760",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "PRAYER_WHEEL",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "6%",
+          "offered": "9,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "6,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "4,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "PRECARIOUS_SHEARS",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "28%",
+          "offered": "130,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "PRECISE_SCISSORS",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "13%",
+          "offered": "140,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "PRESERVED_FOG",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "33%",
+          "offered": "33,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "PRISMATIC_GEM",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "50%",
+          "offered": "18,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "PUMPKIN_CANDLE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "31%",
+          "offered": "46,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "PUNCH_DAGGER",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "10%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "20%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "26%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "RADIANT_PEARL",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "31%",
+          "offered": "51,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "RAINBOW_RING",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "9,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "17%",
+          "offered": "6,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "29%",
+          "offered": "4,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "RAZOR_TOOTH",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "11%",
+          "offered": "9,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "22%",
+          "offered": "6,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "28%",
+          "offered": "4,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "RED_MASK",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "6%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "18%",
+          "offered": "26,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "27%",
+          "offered": "17,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "RED_SKULL",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "17%",
+          "offered": "9,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "27%",
+          "offered": "6,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "31%",
+          "offered": "4,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "REGAL_PILLOW",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "11%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "22%",
+          "offered": "27,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "24%",
+          "offered": "17,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "REGALITE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "14%",
+          "offered": "3,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "31%",
+          "offered": "2,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "38%",
+          "offered": "1,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "REPTILE_TRINKET",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "1%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "2%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "11%",
+          "offered": "9,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "RING_OF_THE_DRAKE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "RING_OF_THE_SNAKE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "RINGING_TRIANGLE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "3%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "10%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "19%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "RIPPLE_BASIN",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "3%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "9%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "9,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "ROYAL_POISON",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "ROYAL_STAMP",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "6%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "24%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "37%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "RUINED_HELMET",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "2,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "20%",
+          "offered": "1,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "29%",
+          "offered": "1,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "RUNIC_CAPACITOR",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "19%",
+          "offered": "7,500",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "38%",
+          "offered": "4,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "52%",
+          "offered": "2,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "RUNIC_PYRAMID",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "54%",
+          "offered": "20,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "62%",
+          "offered": "5,600",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "SAI",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "69%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "SAND_CASTLE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "29%",
+          "offered": "46,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "SCREAMING_FLAGON",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "2%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "9%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "SCROLL_BOXES",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "20%",
+          "offered": "160,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "SEA_GLASS",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "21%",
+          "offered": "37,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "SEAL_OF_GOLD",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "23%",
+          "offered": "46,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "SELF_FORMING_CLAY",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "10%",
+          "offered": "5,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "27%",
+          "offered": "3,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "30%",
+          "offered": "2,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "SERE_TALON",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "24%",
+          "offered": "33,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "SHOVEL",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "10,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "6,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "13%",
+          "offered": "2,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "SHURIKEN",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "9,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "6,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "27%",
+          "offered": "4,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "SIGNET_RING",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "59%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "SILKEN_TRESS",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "82%",
+          "offered": "140,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "SILVER_CRUCIBLE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "68%",
+          "offered": "130,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "SLING_OF_COURAGE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "10%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "SMALL_CAPSULE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "39%",
+          "offered": "73,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "SNECKO_EYE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "23%",
+          "offered": "20,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "15%",
+          "offered": "5,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "SNECKO_SKULL",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "19%",
+          "offered": "9,700",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "34%",
+          "offered": "6,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "40%",
+          "offered": "3,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "SOZU",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "17%",
+          "offered": "16,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "SPARKLING_ROUGE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "17%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "26%",
+          "offered": "9,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "SPIKED_GAUNTLETS",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "20%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "STONE_CALENDAR",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "2%",
+          "offered": "10,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "6%",
+          "offered": "6,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "4,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "STONE_CRACKER",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "20%",
+          "offered": "9,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "STONE_HUMIDIFIER",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "22%",
+          "offered": "81,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "STORYBOOK",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "28%",
+          "offered": "62,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "STRAWBERRY",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "27,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "24%",
+          "offered": "16,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "STRIKE_DUMMY",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "10%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "9%",
+          "offered": "26,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "13%",
+          "offered": "16,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "STURDY_CLAMP",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "9%",
+          "offered": "9,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "26%",
+          "offered": "6,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "35%",
+          "offered": "4,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "SWORD_OF_JADE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=7"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=7"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=7"
+        }
+      }
+    },
+    {
+      "id": "SWORD_OF_STONE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=7"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=7"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=7"
+        }
+      }
+    },
+    {
+      "id": "SYMBIOTIC_VIRUS",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "11%",
+          "offered": "4,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "14%",
+          "offered": "3,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "21%",
+          "offered": "1,700",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "TANXS_WHISTLE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "11%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "TEA_OF_DISCOURTESY",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=7"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=7"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=7"
+        }
+      }
+    },
+    {
+      "id": "THE_ABACUS",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "3%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "16%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "THE_BOOT",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=7"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=7"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=7"
+        }
+      }
+    },
+    {
+      "id": "THE_COURIER",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "THROWING_AXE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=5"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "34%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "TINGSHA",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "5,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "14%",
+          "offered": "3,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "23%",
+          "offered": "2,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "TINY_MAILBOX",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "3%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "13%",
+          "offered": "9,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "TOASTY_MITTENS",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "30%",
+          "offered": "62,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "TOOLBOX",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "20%",
+          "offered": "26,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "29%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "TOUCH_OF_OROBAS",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "38%",
+          "offered": "92,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "TOUGH_BANDAGES",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "2,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "24%",
+          "offered": "1,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "30%",
+          "offered": "900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "TOXIC_EGG",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "14%",
+          "offered": "10,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "22%",
+          "offered": "6,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "19%",
+          "offered": "2,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "TOY_BOX",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "22%",
+          "offered": "46,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "TRI_BOOMERANG",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "40%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "TUNGSTEN_ROD",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "10,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "14%",
+          "offered": "6,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "23%",
+          "offered": "4,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "TUNING_FORK",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "18%",
+          "offered": "14,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "29%",
+          "offered": "9,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "TWISTED_FUNNEL",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "13%",
+          "offered": "5,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "24%",
+          "offered": "3,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "28%",
+          "offered": "2,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "UNCEASING_TOP",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "1%",
+          "offered": "9,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "4%",
+          "offered": "6,300",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "12%",
+          "offered": "4,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "UNDYING_SIGIL",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "6%",
+          "offered": "6,500",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "14%",
+          "offered": "3,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "21%",
+          "offered": "2,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "UNSETTLING_LAMP",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "3%",
+          "offered": "10,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=4"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "10%",
+          "offered": "6,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=4"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "17%",
+          "offered": "4,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "VAJRA",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "11%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "19%",
+          "offered": "26,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "27%",
+          "offered": "16,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "VAMBRACE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "7%",
+          "offered": "23,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "19%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "28%",
+          "offered": "9,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "VELVET_CHOKER",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "22%",
+          "offered": "11,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "15%",
+          "offered": "4,700",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "VENERABLE_TEA_SET",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "15%",
+          "offered": "27,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "28%",
+          "offered": "17,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "VERY_HOT_COCOA",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "40%",
+          "offered": "62,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "VEXING_PUZZLEBOX",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "9%",
+          "offered": "9,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "21%",
+          "offered": "6,200",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "29%",
+          "offered": "4,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=2"
+        }
+      }
+    },
+    {
+      "id": "VITRUVIAN_MINION",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "11%",
+          "offered": "5,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "19%",
+          "offered": "3,800",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "22%",
+          "offered": "2,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "WAR_HAMMER",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "18%",
+          "offered": "29,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "WAR_PAINT",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "9%",
+          "offered": "41,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "23%",
+          "offered": "26,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=2"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "34%",
+          "offered": "16,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=1"
+        }
+      }
+    },
+    {
+      "id": "WHETSTONE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "6%",
+          "offered": "42,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "14%",
+          "offered": "26,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "23%",
+          "offered": "16,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "WHISPERING_EARRING",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Picked",
+          "value": "21%",
+          "offered": "33,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "WHITE_BEAST_STATUE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "5%",
+          "offered": "10,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=3"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "11%",
+          "offered": "6,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "15%",
+          "offered": "2,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "WHITE_STAR",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "8%",
+          "offered": "9,900",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "15%",
+          "offered": "6,400",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "18%",
+          "offered": "2,100",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=3"
+        }
+      }
+    },
+    {
+      "id": "WING_CHARM",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": "9%",
+          "offered": "40,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Bought",
+          "value": "14%",
+          "offered": "25,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=3"
+        },
+        "3": {
+          "label": "Bought",
+          "value": "10%",
+          "offered": "15,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=4"
+        }
+      }
+    },
+    {
+      "id": "WINGED_BOOTS",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "10%",
+          "offered": "160,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=2"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=6"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "WONGO_CUSTOMER_APPRECIATION_BADGE",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=7"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=7"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=7"
+        }
+      }
+    },
+    {
+      "id": "WONGOS_MYSTERY_TICKET",
+      "acts": {
+        "1": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=7"
+        },
+        "2": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=7"
+        },
+        "3": {
+          "label": "Bought",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=7"
+        }
+      }
+    },
+    {
+      "id": "YUMMY_COOKIE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=6"
+        },
+        "2": {
+          "label": "Picked",
+          "value": "51%",
+          "offered": "61,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=1"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=6"
+        }
+      }
+    },
+    {
+      "id": "DOWSING_ROD",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "41%",
+          "offered": "78,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    },
+    {
+      "id": "NEOWS_SACRIFICE",
+      "acts": {
+        "1": {
+          "label": "Picked",
+          "value": "39%",
+          "offered": "77,000",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-1&page=1"
+        },
+        "2": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-2&page=5"
+        },
+        "3": {
+          "label": "Picked",
+          "value": null,
+          "offered": "—",
+          "sourceUrl": "https://sts2.untapped.gg/en/relics?sort=rate-act-3&page=5"
+        }
+      }
+    }
+  ]
+}

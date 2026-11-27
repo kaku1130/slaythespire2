@@ -18,8 +18,8 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
    page.on('pageerror',error=>errors.push(error.message));
    await page.goto(mode==='file'?pathToFileURL(path.resolve('relics.html')).href:'http://relics.test/relics.html');
    assert.equal(await page.locator('.card-language-toggle,[data-effect-language]').count(),0);
-   for(const item of items)assert.equal(await page.locator('#'+item.id+' a.relic-name-en').getAttribute('href'),item.sourceEn,item.id+' source link');
-   assert.equal(await page.locator('#BURNING_BLOOD a.relic-name-en').getAttribute('href'),'https://sts2.untapped.gg/en/relics/ironclad/burning-blood');
+   for(const item of items)assert.equal(await page.locator('#'+item.id+' .catalog-untapped-link').getAttribute('href'),item.sourceEn,item.id+' source link');
+   assert.equal(await page.locator('#BURNING_BLOOD .catalog-untapped-link').getAttribute('href'),'https://sts2.untapped.gg/en/relics/ironclad/burning-blood');
    assert.equal(await page.locator('#CIRCLET').count(),0);
    const rendered=await page.locator('.entry.relic').evaluateAll(nodes=>nodes.map(n=>{
     const effect=n.querySelector('.relic-card-text > p'),clone=effect.cloneNode(true);
@@ -30,8 +30,9 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
     const actual=rendered.find(x=>x.id===item.id),reference=source.find(x=>x.id===item.id);assert.equal(actual.name,item.name,'Chinese name retained');
     if(reference.unavailable){assert.equal(item.id,'CIRCLET');continue;}
     assert.equal(actual.text,reference.parts.map(p=>p.resource?'<'+(p.resource==='energy'?'e':'s')+'/>':p.text).join(''),item.id+' exact website description');
-    const expected=await page.evaluate(parts=>parts.filter(p=>p.color).map(p=>{const span=document.createElement('span');span.style.color=p.color;return {text:p.text,color:span.style.color}}),reference.parts);
-    assert.deepEqual(actual.colors,expected,item.id+' exact website colors');
+    const enchantmentNames=require('../../data/enchantments/catalog.json').items.map(item=>item.name.toLowerCase());
+    const expected=await page.evaluate(({parts,names})=>parts.filter(p=>p.color).map(p=>{const span=document.createElement('span');span.style.color=names.includes(p.text.toLowerCase())||/^enchant(?:ment)?s?$|^enchanted$/i.test(p.text)?'#f472b6':p.color;return {text:p.text,color:span.style.color}}),{parts:reference.parts,names:enchantmentNames});
+    assert.deepEqual(actual.colors,expected,item.id+' source colors with pink enchantment links');
    }
    const search=page.locator('#search');await search.fill('Vigor');assert(await page.locator('#AKABEKO').isVisible());
    await search.fill('赤牛');assert(await page.locator('#AKABEKO').isVisible());

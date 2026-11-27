@@ -33,8 +33,9 @@ const ids = list => list.map(card => card.id).sort();
       };
       await button('character', 'Ironclad').click();
       await verify(cards, 'all cards');
-      const rarityMatches = (card, rarity) => card.rarity === rarity || rarity === 'Common' && card.rarity === 'Basic';
-      for (const rarity of ['Common', 'Uncommon', 'Rare', 'Ancient']) {
+      const rarityMatches = (card, rarity) => card.rarity === rarity;
+      assert.equal(await button('rarity', 'Basic').textContent(), 'Starter');
+      for (const rarity of ['Basic', 'Common', 'Uncommon', 'Rare', 'Ancient']) {
         await button('rarity', rarity).click();
         await verify(cards.filter(card => rarityMatches(card, rarity)), rarity);
         await button('rarity', rarity).click();

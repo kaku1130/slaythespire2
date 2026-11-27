@@ -34,9 +34,11 @@ function formatCatalogCard(article,item,options={}){
   const rarity='<span class="relic-rarity-row" lang="en">'+ancientIcons+renderClassification(item.rarity)+'</span>';
   const poolMarkup='<span class="relic-pool-corner" lang="en" title="'+escapeHtml(label)+'" aria-label="'+escapeHtml(label)+'"><img src="'+(options.prefix||'')+'assets/cards/icons/'+icon+'.webp" alt="" width="20" height="20"><span>'+escapeHtml(label)+'</span></span>';
   return formatted
-    .replace('<article ','<article data-ancient="'+(ancientOwners.get(item.id)||'')+'" ')
+    .replace('<div class="catalog-source-links">',(options.showActStats?require('./relic-act-stats.cjs')(item.id):'')+'<div class="catalog-source-links">')
+    .replace('<article ','<article data-enchantments="'+require('../enchantments/relic-enchantments.cjs').isRelated(item)+'" data-ancient="'+(ancientOwners.get(item.id)||'')+'" ')
     .replace(/<div class="relic-rarity-row"[^>]*>[\s\S]*?<\/div>/,'')
-    .replace(/(<img\b[^>]*>)/,'<div class="relic-icon-row" style="--pool-color:'+pool[2]+'">'+poolMarkup+'$1'+rarity+'</div>');
+    .replace(/(<img\b[^>]*>)/,'<div class="relic-icon-row">$1</div>')
+    .replace('</h2>','<span class="relic-metadata-row" style="--pool-color:'+pool[2]+'">'+poolMarkup+rarity+'</span></h2>');
 }
 
 function render(content,items){
@@ -45,7 +47,7 @@ function render(content,items){
  return ['Starter','Common','Uncommon','Rare','Ancient','Shop','Event','None'].map(rarity=>{
   const members=items.filter(x=>x.rarity===rarity),color=colors[rarity];
   if(rarity==='Ancient')members.sort((a,b)=>(ancientOrder.get(a.id)??Infinity)-(ancientOrder.get(b.id)??Infinity));
-  return members.length?'<section class="relic-section" data-rarity="'+rarity+'" style="--pool-color:'+color+'"><h2 class="relic-section-title" lang="en">'+rarity+' <span class="relic-section-count">('+members.length+')</span></h2><div class="catalog">'+members.map(x=>formatCatalogCard(articles.get(x.id).replace('class="entry relic"','class="entry relic catalog-relic-card" data-relic-id="'+x.id+'"'),x,{localizedRarity:false})).join('')+'</div></section>':'';
+  return members.length?'<section class="relic-section" data-rarity="'+rarity+'" style="--pool-color:'+color+'"><h2 class="relic-section-title" lang="en">'+rarity+' <span class="relic-section-count">('+members.length+')</span></h2><div class="catalog">'+members.map(x=>formatCatalogCard(articles.get(x.id).replace('class="entry relic"','class="entry relic catalog-relic-card" data-relic-id="'+x.id+'"'),x,{localizedRarity:false,showActStats:true})).join('')+'</div></section>':'';
  }).join('');
 }
 const styles='.relic-section{margin:0 0 28px;padding:20px;border:1px solid var(--pool-color);border-radius:12px;background:color-mix(in srgb,var(--pool-color) 3%,var(--bg))}.relic-group-icon{width:28px;height:28px;object-fit:contain;flex-shrink:0}@media(max-width:640px){.relic-section{padding:12px}}.relic-section-title{display:flex;align-items:center;gap:10px;color:var(--pool-color);font-size:24px;margin:0 0 16px}.relic-section-count{font-size:16px;font-weight:400;color:var(--muted)}.relic-section .catalog{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.relic[data-rarity=Ancient]{--rarity-color:#c084fc}.relic[data-rarity=Shop]{--rarity-color:#b08968}.relic[data-rarity=Starter],.relic[data-rarity=None]{--rarity-color:#a1a1aa}@media(max-width:1023px){.relic-section .catalog{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:639px){.relic-section .catalog{grid-template-columns:1fr}}';

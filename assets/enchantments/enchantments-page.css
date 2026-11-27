@@ -1,0 +1,16 @@
+/* Enchantments share the potion catalog layout, search and card typography. */
+html body main#main-content .enchantment-section {--group-color:#f472b6;border:0;padding:0;background:transparent;border-radius:0}
+html body main#main-content .entry.enchantment {--plain-rarity-color:#f472b6}
+html body main#main-content#main-content#main-content#main-content .entry.enchantment .potion-title-row h2 {align-items:center}
+html body main#main-content .entry.enchantment>p {width:100%;max-width:100%;min-width:0;justify-self:start;margin-inline:0;text-align:left}
+html body main#main-content .enchantment-image-link {position:relative;grid-column:1;grid-row:1;display:block;width:72px;height:72px;color:#d6dee8;text-decoration:none}
+html body main#main-content .enchantment-image-link img {display:block;width:72px;height:72px;object-fit:contain}
+html body main#main-content .enchantment-found-in {display:contents}
+html body main#main-content .enchantment-sources {display:contents}
+html body main#main-content .enchantment-source {--source-color:#88bcec;display:inline-flex;vertical-align:middle;align-items:center;flex-wrap:nowrap;gap:4px;max-width:100%;padding:4px 6px;border:1px solid color-mix(in srgb,var(--source-color) 40%,transparent);border-radius:6px;background:color-mix(in srgb,var(--source-color) 8%,#0d131a);color:var(--source-color);font:400 14px/1.4 Arial,"Microsoft JhengHei",sans-serif;text-decoration:none;overflow-wrap:anywhere}
+html body main#main-content .enchantment-source[data-source-type=Event] {--source-color:#6ac1b4}
+html body main#main-content .enchantment-source[data-source-type=Ancient] {--source-color:#c5a2e8}
+html body main#main-content .enchantment-source[data-source-type=Shop] {--source-color:#b08968}
+html body main#main-content .enchantment-source[data-source-type=Relic] {--source-color:#efc851}
+html body main#main-content .enchantment-source-type {font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;opacity:.85}
+html body main#main-content .enchantment-source:hover {border-color:var(--source-color);text-decoration:none}

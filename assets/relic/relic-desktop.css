@@ -1,6 +1,7 @@
 /* Scroll the search, filters, and catalog together. */
 html body main#main-content .entry.relic.catalog-relic-card[data-relic-id] {border-color:var(--plain-rarity-color)}
-html body main#main-content .relic-section {border-color:var(--line,#293340)}
+html body main#main-content .relic-section {border:0;padding:0;background:transparent;border-radius:0}
+html body main#main-content#main-content .relic-section .catalog>.entry.relic {align-self:stretch;align-content:start}
 html body main#main-content:has(>.relic-filters) {
   display: block;
   overflow-y: auto;
@@ -26,14 +27,13 @@ html body .entry.relic .relic-ancient-icon img {display:inline-block;width:32px;
 /* No divider beneath the search bar. */
 html body main#main-content>.mobile-search-row,html body main#main-content .catalog-search-tools {border-bottom:0;box-shadow:none}
 
-/* Keep the six pool icons together on one row. */
+/* Five characters on the first row, Colorless and Enchantments on the second. */
 html body main#main-content #relic-filter-pool {
-  display:grid;grid-template-columns:repeat(6,minmax(0,1fr));width:100%;min-width:0;gap:8px;
+  display:grid;grid-template-columns:repeat(10,minmax(0,1fr));width:100%;min-width:0;gap:8px;
 }
-@media screen and (max-width:1024px), screen and (max-width:1440px) and (hover:none), screen and (max-width:1440px) and (pointer:coarse) {
- html body main#main-content #relic-filter-pool {grid-template-columns:repeat(5,minmax(0,1fr))}
- html body main#main-content #relic-filter-pool>button[value=Shared] {grid-column:1 / -1;grid-row:2}
-}
+html body main#main-content #relic-filter-pool>button {grid-column:span 2}
+html body main#main-content #relic-filter-pool>button[value=Shared] {grid-column:1 / span 5;grid-row:2}
+html body main#main-content #relic-filter-pool>button[data-catalog-filter=enchantments] {grid-column:6 / span 5;grid-row:2}
 
 /* Keep one column below the full-width header in a centered quarter-width page. */
 @media screen and (min-width:1025px) and (hover:hover) and (pointer:fine), screen and (min-width:1441px) {
@@ -64,6 +64,37 @@ html body main#main-content .catalog-relic-card .relic-card-text {grid-column:1;
 html body main#main-content#main-content .catalog-relic-card .relic-icon-row>.relic-rarity-row:has(>.relic-ancient-icon) {display:inline-flex;align-items:center;justify-content:flex-end;gap:4px;max-width:none;white-space:nowrap}
 html body main#main-content .catalog-relic-card .relic-rarity-row .relic-ancient-icon {display:inline-flex;align-items:center;justify-content:center;flex:none;margin:0;padding:0}
 html body main#main-content .catalog-relic-card .relic-rarity-row .relic-ancient-icon img {display:block;width:20px;height:20px;margin:0;flex:none;object-fit:contain}
-html body main#main-content .catalog-relic-card[data-relic-id] .relic-card-text > p {width:80%;margin:0 auto;justify-self:center}
+html body main#main-content .catalog-relic-card[data-relic-id] .relic-card-text > p {width:100%;margin:0 auto;justify-self:center;text-align:center}
 html body main#main-content .catalog-relic-card .relic-card-text h3 .relic-name-zh {display:block}
 html body main#main-content .catalog-relic-card .relic-card-text .tag {justify-content:center;margin:0}
+
+/* Acquisition percentages use the source site's All Characters scope. */
+html body main#main-content .catalog-relic-card .relic-act-stats {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;width:100%;min-width:0;margin:0;padding:12px 0;border-block:1px solid var(--line,#293340);text-align:center}
+html body main#main-content .relic-act-stats>.relic-act-stat {min-width:0}
+html body main#main-content .relic-act-stats>.relic-act-stat+.relic-act-stat {border-left:1px solid var(--line,#293340)}
+html body main#main-content .relic-act-stats dt {margin:0 0 6px;color:#e3e8ee;font:700 16px/1.4 Arial,sans-serif}
+html body main#main-content .relic-act-stats dd {display:flex;flex-direction:column;align-items:center;gap:2px;min-width:0;margin:0}
+html body main#main-content .relic-act-metric {color:var(--muted,#aab6c4);font:400 14px/1.4 Arial,sans-serif}
+html body main#main-content .relic-act-value {color:#e3e8ee;font:700 20px/1.4 Arial,sans-serif;white-space:nowrap}
+
+/* Align every part of the relic card to the left. */
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card {text-align:left}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-card-text :is(h2,h3) {display:flex;flex-direction:row;flex-wrap:wrap;align-items:baseline;justify-content:flex-start;gap:4px 8px;text-align:left}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-card-text :is(h2,h3) :is(.relic-name-zh,.relic-name-en) {display:block;flex:0 1 auto;min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-card-text>p {justify-self:start;margin-inline:0;text-align:left}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-icon-row {grid-template-columns:minmax(0,1fr)}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-icon-row>img {grid-column:1 / -1;grid-row:1;justify-self:start}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row {display:contents}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row>.relic-pool-corner {display:flex!important;align-items:center;flex:0 1 auto;max-width:100%}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row>.relic-rarity-row {display:flex!important;align-items:center;gap:4px;justify-content:flex-start;text-align:left;font:600 18px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row [data-relic-rarity] {text-align:left}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .tag {justify-content:flex-start}
+html body main#main-content .catalog-relic-card>.catalog-source-links {justify-content:flex-start;align-items:flex-start}
+html body main#main-content .catalog-relic-card>.catalog-source-links>a {justify-content:flex-start;margin-left:0}
+html body main#main-content .catalog-relic-card .relic-act-stats {text-align:left}
+html body main#main-content .catalog-relic-card .relic-act-stats dd {align-items:flex-start}
+html body main#main-content .catalog-relic-card .relic-act-stat+.relic-act-stat {padding-left:8px}
+/* Place each Act value on the right of its label. */
+html body main#main-content .catalog-relic-card .relic-act-stat {display:flex;align-items:center;justify-content:flex-start;flex-wrap:wrap;gap:8px}
+html body main#main-content .catalog-relic-card .relic-act-stat dt {margin:0;font:700 20px/1.4 Arial,sans-serif}
+html body main#main-content .catalog-relic-card .relic-act-stat dd {margin-left:0;align-items:flex-start;text-align:left}

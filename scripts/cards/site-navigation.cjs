@@ -1,7 +1,7 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
 const fs=require('node:fs');
 const siteLogo='data:image/png;base64,'+fs.readFileSync('assets/cards/icons/header-logo.png').toString('base64');
-const items=[['builds','Characters','characters.html'],['cards','Cards','cards.html'],['relic','Relics','relics.html'],['potion','Potions','potions.html'],['monster','Monster','monsters.html']];
+const items=[['builds','Characters','characters.html'],['cards','Cards','cards.html'],['relic','Relics','relics.html'],['potion','Potions','potions.html'],['enchantments','Enchantments','enchantments.html'],['monster','Monster','monsters.html']];
 const relicIcon='<img src="'+'data:image/webp;base64,'+fs.readFileSync('assets/relic/images/snecko_eye.webp').toString('base64')+'" alt="" width="24" height="24" style="display:inline-block;object-fit:contain;vertical-align:middle">';
 const potionIcon='<img src="'+'data:image/webp;base64,'+fs.readFileSync('assets/potion/images/strength_potion.webp').toString('base64')+'" alt="" width="24" height="24" style="display:inline-block;object-fit:contain;vertical-align:middle">';
 const navigationIcons=require('./navigation-icons.cjs');

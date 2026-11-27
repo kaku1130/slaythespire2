@@ -1,12 +1,12 @@
 module.exports = `
-/* Use consistent colored frames for filter groups on every device. */
+/* Filter groups use spacing instead of outer frames. */
 html body main#main-content #tools .card-filter-row,
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
   box-sizing:border-box;
   min-width:0;
-  padding:8px;
-  border:1px solid var(--filter-frame-color,#293340);
-  border-radius:10px;
+  padding:0;
+  border:0;
+  border-radius:0;
 }
 html body main#main-content #tools .card-filter-row:has(#card-filter-character),
 html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row:has([data-catalog-filter=pool]) {
@@ -63,14 +63,8 @@ html body main#main-content :is(#tools,.relic-filters,.potion-filters) .filter-c
 }
 `;
 module.exports += `
-/* Card filter groups share a blue outer frame. */
-html body main#main-content #tools .card-filter-row {
-  border-color:#6faeee;
-}
-`;
-module.exports += `
-/* Relic and potion filter groups use the same blue outer frame. */
-html body main#main-content :is(.relic-filters,.potion-filters) .catalog-filter-row {
-  border-color:#6faeee;
+/* Keep separate menu groups farther apart than buttons within a group. */
+html body main#main-content#main-content#main-content :is(.card-filter-rows,.catalog-filter-rows) {
+  row-gap:24px!important;
 }
 `;
