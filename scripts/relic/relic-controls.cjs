@@ -64,7 +64,7 @@ function filter() {
   }
   document.getElementById('empty').hidden = count > 0;
 }
-search.addEventListener('input',filter);
+const cancelSearch=window.bindSearchInput(search,filter);
 for (const button of buttons) button.addEventListener('click', () => {
   if(button.dataset.catalogFilter==='ancient'||(button.dataset.catalogFilter==='rarity'&&button.value==='Ancient')){
     for(const other of buttons)other.setAttribute('aria-pressed',String(other===button||(button.dataset.catalogFilter==='ancient'&&other.dataset.catalogFilter==='rarity'&&other.value==='Ancient')));
@@ -75,6 +75,8 @@ for (const button of buttons) button.addEventListener('click', () => {
   }
   search.value='';
   search.dispatchEvent(new Event('input',{bubbles:true}));
+  cancelSearch();
+  filter();
 });
 filter();`;
 module.exports = {controls:require('../cards/character-filter.cjs')(controls,{iconPaths:{Shared:'assets/cards/icons/colorless.webp'},labels:{Shared:'Colorless'}}), styles, script};

@@ -1,4 +1,4 @@
-<!doctype html><html lang="zh-Hant"><script data-site-load-progress>(()=>{
+<!doctype html><html lang="zh-Hant"><script src="assets/cards/search-input.js"></script><script data-site-load-progress>(()=>{
     if(window.parent===window)return;
     const report=stage=>window.parent.postMessage({type:'sts2-page-progress',stage},'*');
     report('parsing');
@@ -24,5 +24,5 @@ function filter() {
   }
   document.getElementById('empty').hidden = count > 0;
 }
-search.addEventListener('input', filter);
+window.bindSearchInput(search,filter);
 filter();</script><script src="assets/cards/search-controls.js"></script><script src="assets/cards/page-scroll.js?v=2"></script><script src="assets/cards/filter-memory.js"></script><footer class="site-attribution" style="flex:0 0 auto;margin:32px 0 0;padding:6px 16px;line-height:1.4;text-align:center;font-size:12px;color:var(--muted,#aab6c4)">資料來源：<a href="https://sts2.untapped.gg" target="_blank" rel="noopener noreferrer">https://sts2.untapped.gg</a> · <a href="https://spirebird.com" target="_blank" rel="noopener noreferrer">https://spirebird.com</a>遊戲內容與圖片屬各自權利人所有。</footer><script>(()=>{const main=document.getElementById('main-content');const footer=document.querySelector('.site-attribution');const content=main.querySelector(':scope > .split-body, :scope > .card-scroll, :scope > .catalog-scroll, :scope > .build-layout .build-content')||main;content.append(footer);})();</script></body></html>

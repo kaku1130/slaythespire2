@@ -341,8 +341,7 @@ for (const group of multiFilters) {
     const button = event.target.closest('button');
     if (!button) return;
     const selected = button.getAttribute('aria-pressed') === 'true';
-    if (group === characterFilter) setFilterValues(group, [button.value]);
-    else button.setAttribute('aria-pressed', String(!selected));
+    button.setAttribute('aria-pressed', String(!selected));
     filter();
   });
 }
@@ -353,8 +352,8 @@ function selectedCardFilters() {
   return {characters:selectedValues(characterFilter), rarities:selectedValues(rarityFilter), types:selectedValues(typeFilter), energies:selectedValues(energyFilter)};
 }
 const cardFilterCookie='sts2_card_filters';
-function resetCardFilterValues() {
-  search.value='';
+function resetCardFilterValues(clearSearch = true) {
+  if (clearSearch) search.value='';
   for (const group of multiFilters) setFilterValues(group, group === characterFilter ? ['Ironclad'] : []);
 }
 function restoreCardFilters() {
@@ -371,7 +370,7 @@ function restoreCardFilters() {
       const allowed=new Set([...group.querySelectorAll('button')].map(button=>button.value));
       const restoredValues=key==='energies'?saved[key].map(value=>['3','4+'].includes(value)?'3+':value):saved[key];
       const values=restoredValues.filter(value=>allowed.has(value));
-      setFilterValues(group,key==='characters'?(values.length?values.slice(0,1):search.value.trim()?[]:['Ironclad']):values);
+      setFilterValues(group,values);
     }
   } catch {}
 }
@@ -429,14 +428,23 @@ function cardMatchesSearch(row, queries) {
   }
   return queries.some(value => row.dataset.search.includes(value));
 }
-search.addEventListener('input',filter);
+function searchAllCards() {
+  // Never rewrite the input value while typing: doing so cancels native IME composition.
+  resetCardFilterValues(false);
+  const queries=cardSearchQueries();
+  if (queries.length) setFilterValues(characterFilter,[]);
+  filter();
+}
+const cancelSearch=window.bindSearchInput(search,searchAllCards);
 document.getElementById('card-filter-reset').addEventListener('click', () => {
+  cancelSearch();
   resetCardFilterValues();
   filter();
 });
 
 restoreCardFilters();
-filter();
+if (search.value.trim()) searchAllCards();
+else filter();
 
 
 ${compareCards.toString()}

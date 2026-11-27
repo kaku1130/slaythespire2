@@ -25,9 +25,10 @@
     region = button.value;
     filter();
   });
-  search.addEventListener('input', filter);
+  const cancelSearch = window.bindSearchInput(search, filter);
   document.getElementById('monster-search-clear').addEventListener('click', () => {
     search.value = '';
+    cancelSearch();
     filter();
     search.focus();
   });

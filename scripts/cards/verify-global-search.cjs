@@ -2,7 +2,7 @@ process.chdir(require('node:path').resolve(__dirname,'../..'));
 const path=require('node:path'),assert=require('node:assert/strict');
 const {pathToFileURL}=require('node:url');
 const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright'));
-const expectedDefends=require('../../data/cards/english-details.json').cards.filter(card=>card.name==='Defend'&&card.character==='Silent').map(card=>card.id).sort();
+const expectedDefends=require('../../data/cards/english-details.json').cards.filter(card=>card.name==='Defend').map(card=>card.id).sort();
 (async()=>{
  const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
  try{
@@ -18,13 +18,16 @@ const expectedDefends=require('../../data/cards/english-details.json').cards.fil
     if(await button.getAttribute('aria-pressed')!=='true')await button.click();
    }
    await root.locator('#search').fill('"Defend"');
-   assert.equal(await root.locator('#tools [aria-pressed=true]').count(),4,'card search preserves every filter');
-   assert.equal(await root.locator('.card-detail-row:not([hidden])').count(),0,'search combines with all selected filters');
+   await page.waitForTimeout(550);
+   assert.deepEqual(await root.locator('.card-detail-row:not([hidden])').evaluateAll(nodes=>nodes.map(n=>n.dataset.id).sort()),expectedDefends,'search finds Defend across every Pool and clears other filters');
+   assert.equal(await root.locator('#card-filter-character button[aria-pressed=true]').count(),0,'keyword search leaves all Pools unselected');
+   assert.equal(await root.locator('#card-filter-type [aria-pressed=true],#card-filter-rarity [aria-pressed=true],#card-filter-energy [aria-pressed=true]').count(),0);
    await root.locator('#search').fill('');
-   assert.equal(await root.locator('#tools [aria-pressed=true]').count(),4,'clearing search preserves filters');
-   for(const [group,value]of [['type','Attack'],['rarity','Rare'],['energy','3+']])await root.locator('#card-filter-'+group+' button[value="'+value+'"]').click();
+   await page.waitForTimeout(550);
+   assert.deepEqual(await root.locator('#tools [aria-pressed=true]').evaluateAll(nodes=>nodes.map(n=>n.value)),['Ironclad'],'clearing search restores defaults');
    await root.locator('#search').fill('"Defend"');
-   assert.deepEqual(await root.locator('.card-detail-row:not([hidden])').evaluateAll(nodes=>nodes.map(n=>n.dataset.id).sort()),expectedDefends,'Defend within selected Silent Pool');
+   await page.waitForTimeout(550);
+   assert.deepEqual(await root.locator('.card-detail-row:not([hidden])').evaluateAll(nodes=>nodes.map(n=>n.dataset.id).sort()),expectedDefends,'Defend across all Pools');
    if(embedded)await page.locator('.site-nav>[aria-label=Relics]').click();
    else await page.goto(pathToFileURL(path.resolve('relics.html')).href);
    root=embedded?page.frameLocator('#main-content>iframe:not([hidden])'):page;
@@ -43,13 +46,15 @@ const expectedDefends=require('../../data/cards/english-details.json').cards.fil
     const selected=await root.locator('[data-catalog-filter][aria-pressed=true]').evaluateAll(nodes=>nodes.map(n=>[n.dataset.catalogFilter,n.value]));
     const visible=await root.locator('.entry.relic:not([hidden])').evaluateAll(nodes=>nodes.map(n=>n.dataset.relicId));
     await root.locator('#search').fill('"Burning Blood"');
+   await page.waitForTimeout(550);
     assert.deepEqual(await root.locator('[data-catalog-filter][aria-pressed=true]').evaluateAll(nodes=>nodes.map(n=>[n.dataset.catalogFilter,n.value])),selected,'relic search preserves Ancient, owner and Pool');
     assert.equal(await root.locator('.entry.relic:not([hidden])').count(),0,'search stays within selected relic filters');
     await root.locator('#search').fill('');
+   await page.waitForTimeout(550);
     assert.deepEqual(await root.locator('.entry.relic:not([hidden])').evaluateAll(nodes=>nodes.map(n=>n.dataset.relicId)),visible,'clearing search restores selected relic results');
    }
    assert.deepEqual(errors,[]);
-   console.log('PASS '+(embedded?'homepage':'standalone')+': card/relic searches preserve and combine with filters; clearing search restores filtered results.');
+   console.log('PASS '+(embedded?'homepage':'standalone')+': global card search leaves Pools unselected; relic search preserves filters.');
    await page.close();
   }
  }finally{await browser.close();}

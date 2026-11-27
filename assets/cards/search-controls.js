@@ -69,7 +69,7 @@ mark.shared-search-match{background:#184e35;color:#a8f0bf;border-radius:2px}
     }
     status.textContent = query ? count + ' 處符合' : '';
   }
-  if (highlightPage) search.addEventListener('input', highlightAncient);
+  if (highlightPage) window.bindSearchInput(search, highlightAncient);
 
   const boundDocuments = new WeakSet();
   function bindDocument(doc) {

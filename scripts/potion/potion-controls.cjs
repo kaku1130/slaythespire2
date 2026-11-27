@@ -26,7 +26,7 @@ function filter() {
   }
   document.getElementById('empty').hidden = count > 0;
 }
-search.addEventListener('input', filter);
+window.bindSearchInput(search, filter);
 filter();`;
 module.exports={controls,description,styles,script,compare:(a,b)=>order.indexOf(a.rarity)-order.indexOf(b.rarity)||a.name.localeCompare(b.name,'zh-TW')||a.id.localeCompare(b.id)};
 
