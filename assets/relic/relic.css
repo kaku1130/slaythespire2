@@ -1187,6 +1187,24 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 /* All content sharing a row is vertically centered. */
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-name-tier,.detail-type-metadata,.detail-meta-item,.detail-type-metadata dd,.detail-card-sources) {align-items:center}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources {align-self:center}
+/* Sources and live card count share a row when space permits. */
+html body main#main-content#main-content#main-content .card-results-footer {display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}
+html body main#main-content#main-content#main-content .card-results-footer>.card-source {order:0;flex:0 1 auto;max-width:100%;min-width:0;margin:0;text-align:left;overflow-wrap:anywhere}
+html body main#main-content#main-content#main-content .card-results-footer>#card-filter-result {order:1;display:block;flex:0 0 auto;width:auto;max-width:100%;margin:0 0 0 auto;padding:0;color:#9aabbf;text-align:right;font:14px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+html body main#main-content#main-content#main-content>#tools {margin-bottom:0!important}
+html body main#main-content#main-content#main-content>#tools+#card-scroll {margin-top:0;padding-top:0}
+html body[data-view=grid] main#main-content#main-content#main-content #card-scroll>section[data-pool]:nth-child(1 of section[data-pool]:not([hidden]))>.grid-pool-heading {padding-block:var(--group-gap,24px)}
+/* Phone card names stack Chinese above the English name and its Tier badge. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:column;align-items:flex-start}
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row {display:block;width:100%}
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier {display:inline-flex;flex-wrap:nowrap;align-items:center;max-width:100%}
+}
+/* Compact layouts keep character and type menus, with rarity/cost on desktop only. */
+@media screen and (max-width:1024px), screen and (max-width:1440px) and (hover:none), screen and (max-width:1440px) and (pointer:coarse) {
+ html body main#main-content #tools .card-filter-row:has(#card-filter-rarity,#card-filter-energy) {display:none!important}
+ html body main#main-content #tools .card-filter-rows:has(#card-filter-energy) {display:none!important}
+}
 
 /* Nested catalog panels fill the shared page frame. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),
@@ -1493,7 +1511,7 @@ html body main#main-content .catalog-relic-card .relic-card-text h3 .relic-name-
 html body main#main-content .catalog-relic-card .relic-card-text .tag {justify-content:center;margin:0}
 
 /* Acquisition percentages use the source site's All Characters scope. */
-html body main#main-content .catalog-relic-card .relic-act-stats {display:grid;grid-template-columns:minmax(0,1fr);gap:8px;width:100%;min-width:0;margin:0;padding:0;border:0;text-align:center}
+html body main#main-content .catalog-relic-card .relic-act-stats {display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;width:100%;min-width:0;margin:0;padding:0;border:0;text-align:center}
 html body main#main-content .relic-act-stats>.relic-act-stat {min-width:0}
 html body main#main-content .relic-act-stats>.relic-act-stat+.relic-act-stat {border:0}
 html body main#main-content .relic-act-stats dt {margin:0 0 6px;color:#e3e8ee;font:700 16px/1.4 Arial,sans-serif}
@@ -1508,24 +1526,30 @@ html body main#main-content#main-content#main-content#main-content .catalog-reli
 html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-card-text>p {justify-self:start;margin-inline:0;text-align:left}
 html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-icon-row {grid-template-columns:minmax(0,1fr)}
 html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-icon-row>img {grid-column:1 / -1;grid-row:1;justify-self:start}
-html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row {display:contents}
-html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row>.relic-pool-corner {display:flex!important;align-items:center;flex:0 1 auto;max-width:100%}
-html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row>.relic-rarity-row {display:flex!important;align-items:center;gap:4px;justify-content:flex-start;text-align:left;font:600 18px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row {display:inline-flex;flex:0 0 auto;align-items:center;flex-wrap:nowrap;gap:12px;max-width:100%;min-width:0}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row>.relic-pool-corner {display:flex!important;align-items:center;flex:0 0 auto;flex-wrap:nowrap;max-width:100%;white-space:nowrap}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row>.relic-rarity-row {display:flex!important;flex:0 0 auto;align-items:center;gap:4px;justify-content:flex-start;white-space:nowrap;text-align:left;font:600 18px/1.4 Arial,"Microsoft JhengHei",sans-serif}
 html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row [data-relic-rarity] {text-align:left}
 html body main#main-content#main-content#main-content#main-content .catalog-relic-card .tag {justify-content:flex-start}
-html body main#main-content .catalog-relic-card>.catalog-source-links {justify-content:flex-start;align-items:center}
+html body main#main-content .catalog-relic-card>.catalog-source-links {justify-content:flex-start;align-items:center;align-self:start;margin-top:0;padding-top:0}
 html body main#main-content .catalog-relic-card>.catalog-source-links>a {justify-content:flex-start;margin-left:0}
 html body main#main-content .catalog-relic-card .relic-act-stats {text-align:left}
 html body main#main-content .catalog-relic-card .relic-act-stats dd {align-items:flex-start}
 html body main#main-content .catalog-relic-card .relic-act-stat+.relic-act-stat {padding-left:0}
 /* Place each Act value on the right of its label. */
-html body main#main-content .catalog-relic-card .relic-act-stat {display:flex;align-items:center;justify-content:flex-start;flex-wrap:nowrap;gap:8px}
+html body main#main-content .catalog-relic-card .relic-act-stat {display:flex;flex:0 0 auto;align-items:center;justify-content:flex-start;flex-wrap:nowrap;gap:8px}
 html body main#main-content .catalog-relic-card .relic-act-stat dt {margin:0;font:700 20px/1.4 Arial,sans-serif}
 html body main#main-content .catalog-relic-card .relic-act-stat dd {margin-left:0;align-items:flex-start;text-align:left}
 
 /* Keep Act statistics immediately after the description, even in equal-height rows. */
-html body main#main-content#main-content#main-content .catalog-relic-card:has(>.relic-act-stats) {grid-template-rows:repeat(3,auto);align-content:start}
+html body main#main-content#main-content#main-content .catalog-relic-card:has(>.catalog-source-links) {grid-template-rows:none;grid-auto-rows:auto;align-content:start}
 html body main#main-content#main-content#main-content .catalog-relic-card .relic-card-text {grid-template-rows:repeat(3,auto);align-content:start}
+
+/* Phone relic cards stack both names above one intact metadata row. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-card-text :is(h2,h3) {flex-direction:column;align-items:flex-start}
+ html body main#main-content .relic-ancient-menu {display:none!important}
+}
 
 html body main#main-content#main-content .entry:has(>.catalog-source-links){padding-bottom:12px}
 html body main#main-content#main-content .catalog-relic-card:has(>.catalog-source-links){grid-template-rows:minmax(0,1fr) auto}
@@ -2360,6 +2384,24 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 /* All content sharing a row is vertically centered. */
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-name-tier,.detail-type-metadata,.detail-meta-item,.detail-type-metadata dd,.detail-card-sources) {align-items:center}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources {align-self:center}
+/* Sources and live card count share a row when space permits. */
+html body main#main-content#main-content#main-content .card-results-footer {display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}
+html body main#main-content#main-content#main-content .card-results-footer>.card-source {order:0;flex:0 1 auto;max-width:100%;min-width:0;margin:0;text-align:left;overflow-wrap:anywhere}
+html body main#main-content#main-content#main-content .card-results-footer>#card-filter-result {order:1;display:block;flex:0 0 auto;width:auto;max-width:100%;margin:0 0 0 auto;padding:0;color:#9aabbf;text-align:right;font:14px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+html body main#main-content#main-content#main-content>#tools {margin-bottom:0!important}
+html body main#main-content#main-content#main-content>#tools+#card-scroll {margin-top:0;padding-top:0}
+html body[data-view=grid] main#main-content#main-content#main-content #card-scroll>section[data-pool]:nth-child(1 of section[data-pool]:not([hidden]))>.grid-pool-heading {padding-block:var(--group-gap,24px)}
+/* Phone card names stack Chinese above the English name and its Tier badge. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:column;align-items:flex-start}
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row {display:block;width:100%}
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier {display:inline-flex;flex-wrap:nowrap;align-items:center;max-width:100%}
+}
+/* Compact layouts keep character and type menus, with rarity/cost on desktop only. */
+@media screen and (max-width:1024px), screen and (max-width:1440px) and (hover:none), screen and (max-width:1440px) and (pointer:coarse) {
+ html body main#main-content #tools .card-filter-row:has(#card-filter-rarity,#card-filter-energy) {display:none!important}
+ html body main#main-content #tools .card-filter-rows:has(#card-filter-energy) {display:none!important}
+}
 
 /* Nested catalog panels fill the shared page frame. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),

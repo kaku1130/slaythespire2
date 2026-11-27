@@ -71,7 +71,7 @@ html = html.replace(/<footer class="site-attribution"[^>]*>[\s\S]*?<\/footer>/g,
 const resultCount = html.match(/<p\b[^>]*id="card-filter-result"[^>]*>[\s\S]*?<\/p>/);
 assert.ok(resultCount, 'Missing card filter count');
 const sourceCredit = '<p class="card-source">'+require('./source-credit.cjs')+'</p>';
-html = html.replace(resultCount[0], '').replace('</main>', '<footer class="card-results-footer">' + resultCount[0] + sourceCredit + '</footer></main>');
+html = html.replace(resultCount[0], '').replace('</main>', '<footer class="card-results-footer">' + sourceCredit + resultCount[0] + '</footer></main>');
 html = html.replace(/href="assets\/cards\/cards\.css(?:\?[^" ]*)?"/, 'href="assets/cards/' + output + '.css"');
 html = html.replace(/<title>[\s\S]*?<\/title>/, '<title>' + (output === 'cards' ? 'Slay the Spire 2' : 'Card 1') + '｜' + count + ' 張卡牌詳細資料</title>');
 html = html.replace(/href="(?:cards|card1)\.html#card-/g, 'href="' + (output === 'cards' ? 'cards' : output) + '.html#card-');
@@ -81,7 +81,7 @@ html = html.replace(/<script src="assets\/cards\/card-effect-language\.js"><\/sc
 const baseCss = fs.readFileSync('assets/cards/cards.css', 'utf8').split('/* Each card occupies one full row with seven detail sections. */')[0].replaceAll('#tools > .card-filter-rows','#tools .card-filter-rows').trimEnd();
 fs.writeFileSync('assets/cards/' + output + '.css', baseCss + '\n' + fs.readFileSync('assets/cards/card1-detail.css', 'utf8') + require('./navigation-icons.cjs').styles + require('./desktop-content-width.cjs') + require('./filter-frames.cjs') + require('./page-scroll.cjs') + require('./tier-colors.cjs') + require('./tier-labels.cjs') + require('./card-content-width.cjs'));
 html = html.replace(/<!--card-effect-tooltips-->[\s\S]*?<!--\/card-effect-tooltips-->/g, '');
-fs.writeFileSync((output === 'cards' ? 'cards' : output) + '.html', require('./content-links.cjs').normalize(html));
+fs.writeFileSync((output === 'cards' ? 'cards' : output) + '.html', require('./page-load-progress.cjs')(require('./content-links.cjs').normalize(html)));
 fs.appendFileSync('assets/cards/' + output + '.css', require('./rarity-labels.cjs') + fs.readFileSync('assets/cards/search-control.css','utf8'));
 require('./version-stylesheet.cjs')((output === 'cards' ? 'cards' : output) + '.html','assets/cards/' + output + '.css');
 console.log('Created ' + (output === 'cards' ? 'cards' : output) + '.html: ' + count + ' cards with English detail sections.');

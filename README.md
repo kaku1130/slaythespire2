@@ -21,6 +21,7 @@ node scripts/monster/build-monster.cjs
 ```
 
 原有頁面更新後，執行 `node scripts/cards/build-index.cjs` 同步單一入口的內容。
+單一入口以 `assets/cards/index-pages.js` 保存各頁內容，切換時直接顯示內嵌頁面。已開啟的頁面會保留選單、搜尋與捲動狀態。
 單一入口可直接開啟本機檔案，也可放在靜態網站；驗證指令為 `node scripts/cards/verify-index.cjs`。
 
 怪物總表包含 80 張遭遇卡片與本機圖片，依 Boss、Elite、Hard、Weak 分組，排除 Event，不建立怪物詳細頁。重建使用 `data/monster/catalog.json`；更新來源與圖片執行 `node scripts/monster/sync-monster.cjs`，再重建總表與單一入口。驗證指令為 `node scripts/monster/verify-monster.cjs`。

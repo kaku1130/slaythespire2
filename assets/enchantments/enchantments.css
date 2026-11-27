@@ -1092,6 +1092,12 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 /* All content sharing a row is vertically centered. */
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-name-tier,.detail-type-metadata,.detail-meta-item,.detail-type-metadata dd,.detail-card-sources) {align-items:center}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources {align-self:center}
+/* Phone card names stack Chinese above the English name and its Tier badge. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:column;align-items:flex-start}
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row {display:block;width:100%}
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier {display:inline-flex;flex-wrap:nowrap;align-items:center;max-width:100%}
+}
 
 /* Nested catalog panels fill the shared page frame. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),
@@ -1397,6 +1403,11 @@ html body main#main-content#main-content#main-content#main-content .entry.potion
 html body main#main-content#main-content#main-content#main-content .entry.potion .potion-title-row h2>.potion-rarity-row {display:block!important;flex:0 1 auto;max-width:100%;margin:0;text-align:left;font:600 18px/1.4 Arial,"Microsoft JhengHei",sans-serif}
 html body main#main-content .entry.potion>.catalog-source-links {justify-content:flex-start;align-items:center}
 html body main#main-content .entry.potion>.catalog-source-links>a {justify-content:flex-start;margin-left:0}
+
+/* Phone potion cards give each name and rarity a separate line. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body main#main-content#main-content#main-content#main-content .entry.potion:not(.enchantment) .potion-title-row h2 {flex-direction:column;align-items:flex-start}
+}
 
 
 /* Rarity uses the same filled label in filters and entry details. */
@@ -2192,6 +2203,12 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 /* All content sharing a row is vertically centered. */
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-name-tier,.detail-type-metadata,.detail-meta-item,.detail-type-metadata dd,.detail-card-sources) {align-items:center}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources {align-self:center}
+/* Phone card names stack Chinese above the English name and its Tier badge. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:column;align-items:flex-start}
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row {display:block;width:100%}
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier {display:inline-flex;flex-wrap:nowrap;align-items:center;max-width:100%}
+}
 
 /* Nested catalog panels fill the shared page frame. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),
@@ -2394,6 +2411,13 @@ html body main#main-content .enchantment-source[data-source-type=Shop] {--source
 html body main#main-content .enchantment-source[data-source-type=Relic] {--source-color:#efc851}
 html body main#main-content .enchantment-source-type {font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;opacity:.85}
 html body main#main-content .enchantment-source:hover {border-color:var(--source-color);text-decoration:none}
+
+/* Phone enchantments put their sources on a separate row below the name. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body main#main-content#main-content#main-content#main-content .entry.enchantment .potion-title-row h2 {flex-direction:column;align-items:flex-start}
+ html body main#main-content .enchantment-found-in {display:block;width:100%;text-align:left}
+ html body main#main-content .enchantment-sources {display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+}
 
 /* All pages share a full-width frame with the same edge spacing. */
 html {--site-width:100%;--site-page-gap:20px}
@@ -3049,6 +3073,20 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 /* All content sharing a row is vertically centered. */
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-name-tier,.detail-type-metadata,.detail-meta-item,.detail-type-metadata dd,.detail-card-sources) {align-items:center}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources {align-self:center}
+/* Keep the live card count on its own right-aligned row in the footer. */
+html body main#main-content#main-content#main-content .card-results-footer>#card-filter-result {display:block;width:100%;margin:0;padding:0;color:#9aabbf;text-align:right;font:14px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+html body[data-view=grid] main#main-content#main-content#main-content #card-scroll>section[data-pool]:nth-child(1 of section[data-pool]:not([hidden]))>.grid-pool-heading {padding-block:8px}
+/* Phone card names stack Chinese above the English name and its Tier badge. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:column;align-items:flex-start}
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row {display:block;width:100%}
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier {display:inline-flex;flex-wrap:nowrap;align-items:center;max-width:100%}
+}
+/* Compact layouts keep character and type menus, with rarity/cost on desktop only. */
+@media screen and (max-width:1024px), screen and (max-width:1440px) and (hover:none), screen and (max-width:1440px) and (pointer:coarse) {
+ html body main#main-content #tools .card-filter-row:has(#card-filter-rarity,#card-filter-energy) {display:none!important}
+ html body main#main-content #tools .card-filter-rows:not(:has(.card-filter-row:not(:has(#card-filter-rarity,#card-filter-energy)))) {display:none!important}
+}
 
 /* Nested catalog panels fill the shared page frame. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),

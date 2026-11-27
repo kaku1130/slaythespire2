@@ -1092,6 +1092,12 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 /* All content sharing a row is vertically centered. */
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-name-tier,.detail-type-metadata,.detail-meta-item,.detail-type-metadata dd,.detail-card-sources) {align-items:center}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources {align-self:center}
+/* Phone card names stack Chinese above the English name and its Tier badge. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:column;align-items:flex-start}
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row {display:block;width:100%}
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier {display:inline-flex;flex-wrap:nowrap;align-items:center;max-width:100%}
+}
 
 /* Nested catalog panels fill the shared page frame. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),
@@ -1397,6 +1403,11 @@ html body main#main-content#main-content#main-content#main-content .entry.potion
 html body main#main-content#main-content#main-content#main-content .entry.potion .potion-title-row h2>.potion-rarity-row {display:block!important;flex:0 1 auto;max-width:100%;margin:0;text-align:left;font:600 18px/1.4 Arial,"Microsoft JhengHei",sans-serif}
 html body main#main-content .entry.potion>.catalog-source-links {justify-content:flex-start;align-items:center}
 html body main#main-content .entry.potion>.catalog-source-links>a {justify-content:flex-start;margin-left:0}
+
+/* Phone potion cards give each name and rarity a separate line. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body main#main-content#main-content#main-content#main-content .entry.potion:not(.enchantment) .potion-title-row h2 {flex-direction:column;align-items:flex-start}
+}
 
 
 /* Rarity uses the same filled label in filters and entry details. */
@@ -2192,6 +2203,12 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 /* All content sharing a row is vertically centered. */
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-name-tier,.detail-type-metadata,.detail-meta-item,.detail-type-metadata dd,.detail-card-sources) {align-items:center}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources {align-self:center}
+/* Phone card names stack Chinese above the English name and its Tier badge. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:column;align-items:flex-start}
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row {display:block;width:100%}
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier {display:inline-flex;flex-wrap:nowrap;align-items:center;max-width:100%}
+}
 
 /* Nested catalog panels fill the shared page frame. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),

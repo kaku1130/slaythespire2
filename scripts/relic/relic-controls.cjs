@@ -2,8 +2,8 @@ process.chdir(require('node:path').resolve(__dirname,'../..'));
 const pools=['Ironclad','Silent','Regent','Necrobinder','Defect','Shared'];
 const poolColors={Ironclad:'#dc6c68',Silent:'#70bf8b',Defect:'#6faeee',Regent:'#e3bf72',Necrobinder:'#b595dd',Shared:'#aab6c4'};
 const ancientMenu=require('./ancient-relics.cjs').renderFilterMenu();
-const poolButtons=pools.map(value=>'<button type="button" data-catalog-filter="pool" value="'+value+'" aria-pressed="false" style="--selection-color:'+poolColors[value]+';--button-accent:'+poolColors[value]+'">'+(value==='Shared'?'Colorless':value)+'</button>').join('');
-const controls='<div class="catalog-filter-rows" lang="en"><div class="catalog-filter-row"><div class="catalog-filter-buttons" id="relic-filter-pool" role="group" aria-label="Pool">'+poolButtons+'<button type="button" data-catalog-filter="enchantments" value="true" aria-pressed="false">Enchantments</button></div></div><div class="catalog-filter-row relic-ancient-block" role="group" aria-label="遠古之民遺物"><div class="catalog-filter-buttons relic-ancient-buttons">'+ancientMenu+'<button type="button" data-catalog-filter="rarity" value="Ancient" aria-pressed="false">Ancient</button></div></div></div>';
+const poolButtons=pools.map(value=>'<button type="button" data-catalog-filter="pool" value="'+value+'" aria-pressed="'+(value==='Ironclad')+'" style="--selection-color:'+poolColors[value]+';--button-accent:'+poolColors[value]+'">'+(value==='Shared'?'Colorless':value)+'</button>').join('');
+const controls='<div class="catalog-filter-rows" lang="en"><div class="catalog-filter-row"><div class="catalog-filter-buttons" id="relic-filter-pool" role="group" aria-label="Pool">'+poolButtons+'<button type="button" data-catalog-filter="enchantments" value="true" aria-pressed="false">Enchantments</button></div></div><div class="catalog-filter-row relic-ancient-block" role="group" aria-label="遠古之民遺物"><div class="catalog-filter-buttons relic-ancient-buttons"><button type="button" data-catalog-filter="rarity" value="Ancient" aria-pressed="false">Ancient</button>'+ancientMenu+'</div></div></div>';
 const styles = `
 main#main-content>.relic-filters {
   --control-height: 40px;
@@ -29,6 +29,7 @@ const script = `const entries = [...document.querySelectorAll('.entry')];
 const search = document.getElementById('search');
 const buttons = [...document.querySelectorAll('[data-catalog-filter]')];
 function filter() {
+  if(!search.value.trim()&&!buttons.some(button=>button.getAttribute('aria-pressed')==='true'))buttons.find(button=>button.dataset.catalogFilter==='pool'&&button.value==='Ironclad').setAttribute('aria-pressed','true');
   const ancient=buttons.find(button=>button.dataset.catalogFilter==='ancient'&&button.getAttribute('aria-pressed')==='true');
   if(ancient)for(const button of buttons){
     const key=button.dataset.catalogFilter;
@@ -63,15 +64,12 @@ function filter() {
   }
   document.getElementById('empty').hidden = count > 0;
 }
-search.addEventListener('input',()=>{
-  if(search.value.trim())for(const button of buttons)button.setAttribute('aria-pressed','false');
-  filter();
-});
+search.addEventListener('input',filter);
 for (const button of buttons) button.addEventListener('click', () => {
   if(button.dataset.catalogFilter==='ancient'||(button.dataset.catalogFilter==='rarity'&&button.value==='Ancient')){
     for(const other of buttons)other.setAttribute('aria-pressed',String(other===button||(button.dataset.catalogFilter==='ancient'&&other.dataset.catalogFilter==='rarity'&&other.value==='Ancient')));
   }else{
-    const selected=button.getAttribute('aria-pressed') !== 'true';
+    const selected=button.dataset.catalogFilter==='pool'||button.getAttribute('aria-pressed') !== 'true';
     for(const other of buttons)other.setAttribute('aria-pressed','false');
     button.setAttribute('aria-pressed', String(selected));
   }

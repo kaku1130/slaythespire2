@@ -341,7 +341,7 @@ for (const group of multiFilters) {
     const button = event.target.closest('button');
     if (!button) return;
     const selected = button.getAttribute('aria-pressed') === 'true';
-    if (group === characterFilter) setFilterValues(group, selected ? [] : [button.value]);
+    if (group === characterFilter) setFilterValues(group, [button.value]);
     else button.setAttribute('aria-pressed', String(!selected));
     filter();
   });
@@ -361,18 +361,19 @@ function restoreCardFilters() {
     if(!stored)return;
     const saved=JSON.parse(stored);
     if(!saved||typeof saved!=='object')return;
+    if(typeof saved.search==='string')search.value=saved.search;
     for(const [key,group] of [['characters',characterFilter],['types',typeFilter],['rarities',rarityFilter],['energies',energyFilter]]) {
       if(!Array.isArray(saved[key]))continue;
       const allowed=new Set([...group.querySelectorAll('button')].map(button=>button.value));
       const restoredValues=key==='energies'?saved[key].map(value=>['3','4+'].includes(value)?'3+':value):saved[key];
       const values=restoredValues.filter(value=>allowed.has(value));
-      setFilterValues(group,key==='characters'?values.slice(0,1):values);
+      setFilterValues(group,key==='characters'?(values.length?values.slice(0,1):search.value.trim()?[]:['Ironclad']):values);
     }
   } catch {}
 }
 function rememberCardFilters() {
   try {
-    const serialized=JSON.stringify(Object.fromEntries(Object.entries(selectedCardFilters()).map(([key,values])=>[key,[...values]])));
+    const serialized=JSON.stringify({...Object.fromEntries(Object.entries(selectedCardFilters()).map(([key,values])=>[key,[...values]])),search:search.value});
     if(new URL(document.baseURI).protocol==='file:'){
       if(localStorage.getItem(cardFilterCookie)!==serialized)localStorage.setItem(cardFilterCookie,serialized);
       return;
@@ -424,10 +425,7 @@ function cardMatchesSearch(row, queries) {
   }
   return queries.some(value => row.dataset.search.includes(value));
 }
-search.addEventListener('input',()=>{
-  if(search.value.trim())for(const group of multiFilters)setFilterValues(group,[]);
-  filter();
-});
+search.addEventListener('input',filter);
 
 restoreCardFilters();
 filter();

@@ -1072,6 +1072,24 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 /* All content sharing a row is vertically centered. */
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-name-tier,.detail-type-metadata,.detail-meta-item,.detail-type-metadata dd,.detail-card-sources) {align-items:center}
 html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-card-sources {align-self:center}
+/* Sources and live card count share a row when space permits. */
+html body main#main-content#main-content#main-content .card-results-footer {display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}
+html body main#main-content#main-content#main-content .card-results-footer>.card-source {order:0;flex:0 1 auto;max-width:100%;min-width:0;margin:0;text-align:left;overflow-wrap:anywhere}
+html body main#main-content#main-content#main-content .card-results-footer>#card-filter-result {order:1;display:block;flex:0 0 auto;width:auto;max-width:100%;margin:0 0 0 auto;padding:0;color:#9aabbf;text-align:right;font:14px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+html body main#main-content#main-content#main-content>#tools {margin-bottom:0!important}
+html body main#main-content#main-content#main-content>#tools+#card-scroll {margin-top:0;padding-top:0}
+html body[data-view=grid] main#main-content#main-content#main-content #card-scroll>section[data-pool]:nth-child(1 of section[data-pool]:not([hidden]))>.grid-pool-heading {padding-block:var(--group-gap,24px)}
+/* Phone card names stack Chinese above the English name and its Tier badge. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:column;align-items:flex-start}
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row {display:block;width:100%}
+ html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier {display:inline-flex;flex-wrap:nowrap;align-items:center;max-width:100%}
+}
+/* Compact layouts keep character and type menus, with rarity/cost on desktop only. */
+@media screen and (max-width:1024px), screen and (max-width:1440px) and (hover:none), screen and (max-width:1440px) and (pointer:coarse) {
+ html body main#main-content #tools .card-filter-row:has(#card-filter-rarity,#card-filter-energy) {display:none!important}
+ html body main#main-content #tools .card-filter-rows:has(#card-filter-energy) {display:none!important}
+}
 
 /* Nested catalog panels fill the shared page frame. */
 html body:not([data-detail-kind]) main#main-content#main-content:is(.ancient-browser,:has(>.relic-filters),:has(>.potion-filters),:has(>.character-sidebar),:has(>[data-ancient-top-menu]))>:is(.filters,.catalog-scroll,.character-sidebar,.tier-sidebar,.build-layout,.split-body),
@@ -1239,4 +1257,13 @@ body.index-page>.site-header {flex:none}
 html body.index-page main#main-content#main-content#main-content {position:relative;flex:1 1 0;box-sizing:border-box;width:100%!important;max-width:none!important;min-height:0;height:auto;padding:0!important;margin:0!important;overflow:hidden}
 .index-page iframe {display:block;width:100%;height:100%;border:0;background:#040609}
 .index-page [hidden] {display:none!important}
-.index-loading {position:absolute;inset:24px;text-align:center;color:#aab6c4}
+.index-loading {position:absolute;z-index:2;top:32px;left:50%;transform:translateX(-50%);box-sizing:border-box;width:min(340px,calc(100% - 32px));padding:20px;border:1px solid #293340;border-radius:12px;background:#0d131af2;color:#cbd5df;box-shadow:0 10px 30px #0005;opacity:1;transition:opacity 160ms ease}
+.index-loading.is-complete {opacity:0;pointer-events:none}
+.index-loading-head {display:flex;align-items:center;gap:10px;margin-bottom:14px;font-size:16px}
+.index-loading-spinner {width:18px;height:18px;flex:none;border:2px solid #354454;border-top-color:#6faeee;border-radius:50%;animation:index-loading-spin 900ms linear infinite}
+.index-loading-percent {margin-left:auto;font-variant-numeric:tabular-nums;color:#88bcec}
+.index-loading-track {height:6px;overflow:hidden;border-radius:4px;background:#25313e}
+.index-loading-fill {width:var(--load-progress,0%);height:100%;border-radius:inherit;background:linear-gradient(90deg,#4f9bd9,#88bcec);transition:width 220ms ease}
+@keyframes index-loading-spin {to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce) {.index-loading,.index-loading-fill {transition:none}.index-loading-spinner {animation:none}}
+.index-loading button {margin-left:8px;padding:6px 12px;border:1px solid #354454;border-radius:6px;background:#0d131a;color:#e3e8ee;font:inherit;cursor:pointer}

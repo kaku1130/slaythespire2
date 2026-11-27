@@ -48,15 +48,17 @@ const catalog = require('../../data/relic/catalog.json');
       assert.equal(await root.locator('.relic-act-metric').count(), 0, 'Bought / Picked labels removed');
       for (const item of rendered) {
         const expected = data.items.find(expected => expected.id === item.id);
-        assert.deepEqual(item.stats, [1, 2, 3].map(act => ({act, title: 'Act ' + act,
-          value: expected.acts[act].value ?? '—'})), item.id);
+        const acts = [1, 2, 3].filter(act => expected.acts[act].value != null && /\d/.test(String(expected.acts[act].value)));
+        assert.deepEqual(item.stats, acts.map(act => ({act, title: 'Act ' + act,
+          value: expected.acts[act].value})), item.id);
+        assert.equal(await root.locator('#'+item.id+' .relic-act-stats').count(), acts.length ? 1 : 0, item.id+' omits empty Act blocks');
       }
       for (const width of [390, 900, 1025, 1440, 1920]) {
         await page.setViewportSize({width, height: 1100});
         const failures = await root.locator('.entry.relic:visible .relic-act-stats').evaluateAll(nodes => nodes.flatMap(node => {
           const box = node.getBoundingClientRect(), parent = node.closest('.entry').getBoundingClientRect();
           const cells = [...node.children].map(cell => cell.getBoundingClientRect());
-          const vertical = Math.max(...cells.map(cell => cell.left)) - Math.min(...cells.map(cell => cell.left)) < 1 && cells[1].top >= cells[0].bottom && cells[2].top >= cells[1].bottom;
+          const ordered = cells.every((cell,index) => !index || Math.abs(cell.top-cells[index-1].top)<1 && cell.left>=cells[index-1].right || cell.top>=cells[index-1].bottom);
           const valuesBesideLabels = [...node.children].every(cell => {
             const label = cell.querySelector('dt').getBoundingClientRect(), value = cell.querySelector('dd').getBoundingClientRect();
             return value.left >= label.right && value.top < label.bottom && value.bottom > label.top;
@@ -65,10 +67,10 @@ const catalog = require('../../data/relic/catalog.json');
             const style = getComputedStyle(element);
             return ['borderTopWidth','borderRightWidth','borderBottomWidth','borderLeftWidth'].every(side => style[side] === '0px');
           });
-          return cells.length === 3 && vertical && valuesBesideLabels && borderless &&
+          return cells.length >= 1 && cells.length <= 3 && ordered && valuesBesideLabels && borderless &&
             box.right <= parent.right && node.scrollWidth <= node.clientWidth ? [] : [node.closest('.entry').id];
         }));
-        assert.deepEqual(failures, [], 'Act 1–3 use one borderless column at ' + width);
+        assert.deepEqual(failures, [], 'Act 1–3 flow horizontally and wrap without borders at ' + width);
       }
       await root.locator('#search').fill('"Akabeko"');
       assert.equal(await root.locator('.entry.relic:visible').count(), 1);
@@ -78,7 +80,7 @@ const catalog = require('../../data/relic/catalog.json');
         await root.locator('#AKABEKO').screenshot({path: 'assets/relic/previews/relic-act-stats.png'});
       }
       assert.deepEqual(errors, []);
-      console.log('PASS ' + (embedded ? 'homepage' : 'standalone') + ': 297 relics / 891 Act values match the source; unavailable values remain —; five widths, offline display and search work.');
+      console.log('PASS ' + (embedded ? 'homepage' : 'standalone') + ': 297 relics match source Act values; unavailable rows and empty blocks omitted; five widths, offline display and search work.');
       await context.close();
     }
   } finally { await browser.close(); }

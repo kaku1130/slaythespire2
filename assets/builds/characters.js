@@ -3,9 +3,9 @@
  const detail=document.getElementById('character-detail');
  const panels=[...document.querySelectorAll('[data-character-panel]')];
  let current='';
- function applyRoute(){
+ function applyRoute(fallbackHash=''){
   let hash;
-  try{hash=decodeURIComponent(location.hash.slice(1));}catch{hash='';}
+  try{hash=decodeURIComponent(location.hash.slice(1)||(typeof fallbackHash==='string'?fallbackHash:''));}catch{hash='';}
   const target=document.getElementById(hash);
   const panel=target?.closest('[data-character-panel]')||panels.find(panel=>hash.startsWith('build-'+panel.dataset.characterPanel+'-'));
   const selected=panel?.dataset.characterPanel||'';
@@ -29,5 +29,6 @@
   applyRoute();
   (document.querySelector('.site-page-scroll')||window).scrollTo({top:0,behavior:'instant'});
  },true);
+ window.restoreCharacterRoute=hash=>{if(!location.hash)applyRoute(hash);};
  applyRoute();
 })();

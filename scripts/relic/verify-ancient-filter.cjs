@@ -16,7 +16,7 @@ const orders=require('./ancient-order.cjs');
   assert.equal(await block.locator('button').count(),9,'Ancient and eight icons share a block');
   assert.equal(await page.locator('#relic-filter-pool [data-catalog-filter=enchantments]').count(),1,'Enchantments belongs to the Pool block');
   const ancientBox=await ancient.boundingBox(),menuBox=await menu.boundingBox();
-  assert(ancientBox.y>=menuBox.y+menuBox.height,'Ancient appears on a separate row below the icons');
+  assert(ancientBox.y+ancientBox.height<=menuBox.y,'Ancient appears on a separate row above the icons');
   assert(Math.abs(ancientBox.width-menuBox.width)<1,'Ancient fills its row');
   const iconRows=await menu.locator('button').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().top));
   assert.equal(new Set(iconRows).size,1,'wide menus show all eight icons in one row');

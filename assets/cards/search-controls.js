@@ -24,13 +24,6 @@
     main.prepend(toolbar);
   }
   if (!search) return;
-  // Keyword search covers every category, so clear all catalog selections.
-  search.addEventListener('input', () => {
-    if (!search.value.trim()) return;
-    for (const button of main.querySelectorAll('#card-filter-character button,#card-filter-type button,#card-filter-rarity button,#card-filter-energy button,button[data-catalog-filter]')) {
-      button.setAttribute('aria-pressed', 'false');
-    }
-  }, true);
   const style = document.createElement('style');
   style.textContent = `
 .shared-page-search{display:flex;flex:0 0 auto;align-items:center;gap:12px;width:100%;min-width:0;margin:0 0 8px}

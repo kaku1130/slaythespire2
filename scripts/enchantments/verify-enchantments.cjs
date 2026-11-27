@@ -36,9 +36,9 @@ const expected = ['BEAUTIFUL_BRACELET','ELECTRIC_SHRYMP','FRESNEL_LENS','GLITTER
     assert.equal(await button.getAttribute('aria-pressed'), 'true');
     assert.equal(await page.locator('.entry.relic:visible').count(), 15);
     await page.locator('#search').fill('"Akabeko"');
-    assert.equal(await button.getAttribute('aria-pressed'), 'false');
-    assert.equal(await page.locator('.entry.relic:visible').count(), 1);
-    await button.click();
+    assert.equal(await button.getAttribute('aria-pressed'), 'true');
+    assert.equal(await page.locator('.entry.relic:visible').count(), 0);
+    await page.locator('#search').fill('');
     assert.equal(await page.locator('#search').inputValue(), '');
     await page.locator('#KIFUDA .relic-enchantment-link[href$="ADROIT"]').click();
     await page.waitForURL('**/enchantments.html#enchantment-ADROIT');
