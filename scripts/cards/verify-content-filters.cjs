@@ -8,7 +8,6 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
   for(const width of [1440,1920])for(const file of ['cards.html','relics.html','potions.html']){
    const page=await browser.newPage({viewport:{width,height:1000}});
    await page.goto(pathToFileURL(path.resolve(file)).href);
-   if(file==='cards.html'&&await page.locator('.filter-menu-toggle').getAttribute('aria-expanded')!=='true')await page.locator('.filter-menu-toggle').click();
    if(file!=='cards.html'){
     assert.equal(await page.locator('.filter-menu-toggle').count(),0,file+' no hamburger menu');
     assert.equal(await page.locator('.catalog-filter-rows').isVisible(),true,file+' filters are directly visible');

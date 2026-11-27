@@ -30,11 +30,10 @@ const cards = JSON.parse(fs.readFileSync('data/cards/english-details.json', 'utf
       await search.fill('anger,pommel');
       assert.deepEqual(await visible(), ['ANGER', 'POMMEL_STRIKE'], 'multiple keywords');
       await search.fill('Vulnerable');
-      const expected = cards.filter(card => card.character === 'Ironclad' && [card.name, card.nameZh, card.effect.base, card.effect.upgraded].join(' ').toLowerCase().includes('vulnerable')).map(card => card.id).sort();
+      const expected = cards.filter(card => [card.name, card.nameZh, card.effect.base, card.effect.upgraded].join(' ').toLowerCase().includes('vulnerable')).map(card => card.id).sort();
       assert.deepEqual(await visible(), expected, 'effect keyword excludes mentions in commentary');
       await search.fill('');
-      const menu = root.locator('.filter-menu-toggle');
-      if (await menu.getAttribute('aria-expanded') !== 'true') await menu.click();
+      assert.equal(await root.locator('.filter-menu-toggle').count(), 0, 'card filters have no hamburger');
       await root.locator('#card-filter-rarity button[value=Rare]').click();
       await search.fill('anger');
       assert.deepEqual(await visible(), ['ANGER'], 'search resets rarity in standalone and embedded pages');
@@ -43,7 +42,7 @@ const cards = JSON.parse(fs.readFileSync('data/cards/english-details.json', 'utf
       assert.deepEqual(await visible(), []);
       assert.equal(await root.locator('#empty').isVisible(), true);
       await search.fill('');
-      assert.equal((await visible()).length, cards.filter(card => card.character === 'Ironclad').length);
+      assert.equal((await visible()).length, cards.length);
       assert.deepEqual(errors, []);
       console.log('PASS ' + mode + ' ' + file + ': Anger, aliases, effect keywords, multiple queries, filter reset and empty results');
       await context.close();

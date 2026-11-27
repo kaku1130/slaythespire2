@@ -15,10 +15,9 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
    await page.locator('.search-control').waitFor();
    assert.equal(await page.locator('#aoe-toggle,.catalog-random,button[aria-label^="隨機"]').count(),0,file+' no random buttons');
    if(file==='cards.html'){
-    assert.equal(await page.locator('.card-search>.filter-menu-toggle').count(),1,'card filter menu retained');
-    const menuBox=await page.locator('.card-search>.filter-menu-toggle').boundingBox();
-    assert.equal(menuBox.width,height,'card menu stays square at the shared button height');
-    assert.equal(await page.locator('.card-search').evaluate(node=>getComputedStyle(node).gridTemplateColumns.split(' ').length),2,'no empty random-button column');
+    assert.equal(await page.locator('.filter-menu-toggle,.filter-menu-panel').count(),0,'card hamburger removed');
+    assert.equal(await page.locator('.card-search').evaluate(node=>getComputedStyle(node).gridTemplateColumns.split(' ').length),1,'search fills toolbar');
+    for(const group of ['character','type','rarity','energy'])assert(await page.locator('#card-filter-'+group).isVisible(),group+' filters directly visible');
    }
    if(file==='relics.html'||file==='potions.html'){
     const gap=await page.locator('.search-control').evaluate(node=>Math.abs(node.getBoundingClientRect().right-node.parentElement.getBoundingClientRect().right));

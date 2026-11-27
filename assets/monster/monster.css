@@ -1183,7 +1183,7 @@ html body main#main-content:is(.event-browser,.monster-browser,.encounter-browse
 /* Show filter menus by default; the button restores their remembered state. */
 html body main#main-content #tools.filter-menu-closed>.card-filter-rows,
 html body main#main-content .filters.filter-menu-closed>.catalog-filter-rows {display:none!important}
-html body main#main-content #tools .card-search,
+html body main#main-content #tools .card-search:has(.filter-menu-toggle),
 html body main#main-content .filters .catalog-search-tools:has(.filter-menu-toggle) {display:grid!important;grid-template-columns:minmax(0,1fr) var(--catalog-control-height,48px)!important;gap:8px;align-items:center;width:100%;min-width:0}
 html body main#main-content .filters:has(.filter-menu-toggle) {display:flex!important;flex-direction:column;align-items:stretch}
 html body main#main-content .filters .catalog-search-tools:has(.filter-menu-toggle) {order:-1;margin:0}
@@ -1235,9 +1235,6 @@ html body:not([data-detail-kind]) main#main-content#main-content#main-content.mo
 .monster-region[data-region=Underdocks],.monster-filters button[value=Underdocks] {--region-color:#75b7d2}
 .monster-region[data-region=Hive],.monster-filters button[value=Hive] {--region-color:#d7b365}
 .monster-region[data-region=Glory],.monster-filters button[value=Glory] {--region-color:#bd9ddd}
-.monster-region h2 {display:flex;align-items:center;gap:10px;margin:0 0 16px;font-size:22px;color:var(--region-color)}
-.monster-region h2::before {content:"";width:4px;height:24px;border-radius:2px;background:var(--region-color)}
-.monster-region h2 span {color:var(--muted);font-size:14px;font-weight:400}
 .monster-grid {display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
 .monster-category {container-type:inline-size}
 @container (min-width:860px) {

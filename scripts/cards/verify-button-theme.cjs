@@ -15,7 +15,6 @@ const {chromium} = require(path.join(process.env.USERPROFILE, '.cache/codex-runt
     for (const [file,selector] of cases) {
       const page = await browser.newPage({offline:true,viewport:{width:1440,height:1100}});
       await page.goto(pathToFileURL(path.resolve(file)).href);
-      if (file==='cards.html') await page.locator('.filter-menu-toggle').click();
       const root = page;
       const button = root.locator(selector).first();
       await button.waitFor();
@@ -23,9 +22,9 @@ const {chromium} = require(path.join(process.env.USERPROFILE, '.cache/codex-runt
       const style = await button.evaluate(node=>{
         const css=getComputedStyle(node);return {width:css.borderTopWidth,color:css.borderTopColor,radius:css.borderTopLeftRadius};
       });
-      assert.deepEqual(style,{width:'1px',color:file==='relics.html'?'rgb(220, 108, 104)':'rgb(52, 68, 84)',radius:'8px'},file+' filter outline');
+      assert.deepEqual(style,{width:'1px',color:file==='relics.html'?'rgb(220, 108, 104)':file==='cards.html'?'rgb(255, 119, 122)':'rgb(52, 68, 84)',radius:'8px'},file+' filter outline');
       await button.hover();
-      assert.equal(await button.evaluate(node=>getComputedStyle(node).borderTopColor),file==='monsters.html'?'rgb(117, 183, 210)':file==='relics.html'?'rgb(220, 108, 104)':'rgb(35, 140, 194)',file+' hover outline');
+      assert.equal(await button.evaluate(node=>getComputedStyle(node).borderTopColor),file==='monsters.html'?'rgb(117, 183, 210)':file==='relics.html'?'rgb(220, 108, 104)':file==='cards.html'?'rgb(255, 119, 122)':'rgb(35, 140, 194)',file+' hover outline');
       const summary=page.locator('.game-info-dropdown>summary');
       assert.equal(await summary.evaluate(node=>getComputedStyle(node).borderTopWidth),'1px');
       if(file==='monsters.html'){

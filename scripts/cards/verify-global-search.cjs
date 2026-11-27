@@ -13,8 +13,6 @@ const expectedDefends=require('../../data/cards/english-details.json').cards.fil
    let root=embedded?page.frameLocator('#main-content>iframe:not([hidden])'):page;
    await root.locator('#card-scroll').waitFor();
    assert.equal(await root.locator('#card-filter-tier,.card-tier-choices').count(),0,'Tier filter removed');
-   const toggle=root.locator('.filter-menu-toggle');
-   if(await toggle.getAttribute('aria-expanded')!=='true')await toggle.click();
    for(const [group,value] of [['character','Silent'],['type','Attack'],['rarity','Rare'],['energy','3+']]){
     const button=root.locator('#card-filter-'+group+' button[value="'+value+'"]');
     if(await button.getAttribute('aria-pressed')!=='true')await button.click();

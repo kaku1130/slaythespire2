@@ -25,9 +25,6 @@ html body:not([data-detail-kind]) main#main-content#main-content#main-content.mo
 .monster-region[data-region=Underdocks],.monster-filters button[value=Underdocks] {--region-color:#75b7d2}
 .monster-region[data-region=Hive],.monster-filters button[value=Hive] {--region-color:#d7b365}
 .monster-region[data-region=Glory],.monster-filters button[value=Glory] {--region-color:#bd9ddd}
-.monster-region h2 {display:flex;align-items:center;gap:10px;margin:0 0 16px;font-size:22px;color:var(--region-color)}
-.monster-region h2::before {content:"";width:4px;height:24px;border-radius:2px;background:var(--region-color)}
-.monster-region h2 span {color:var(--muted);font-size:14px;font-weight:400}
 .monster-grid {display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
 .monster-category {container-type:inline-size}
 @container (min-width:860px) {

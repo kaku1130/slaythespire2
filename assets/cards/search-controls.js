@@ -189,6 +189,8 @@ html body main#main-content:is(.event-browser,.monster-browser,.encounter-browse
   const main = document.getElementById('main-content');
   const controls = main?.querySelector('#tools');
   const toolbar = controls?.querySelector('.card-search');
+  // Card filters stay directly visible below the search field.
+  if (main?.querySelector('#card-scroll')) return;
   if (!toolbar || controls.querySelector('.filter-menu-toggle')) return;
   const panels = [...controls.children].filter(element => element.matches('.card-filter-rows,.catalog-filter-rows'));
   if (!panels.length) return;

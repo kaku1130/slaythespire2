@@ -36,6 +36,7 @@ catalog.items = catalog.items.filter(item => item.type !== 'Event');
       assert.equal(await visible(), 22, 'Overgrowth is the default');
       assert.equal(await root.getByRole('button', {name:'All',exact:true}).count(), 0);
       assert.equal(await root.locator('.monster-heading,#monster-result,.monster-card-footer').count(), 0);
+      assert.equal(await root.locator('.monster-region h2,.monster-region-count').count(),0,'area titles and counts removed');
       assert.equal(await root.locator('.monster-types').count(), 0, 'type buttons removed');
       assert.equal(await root.locator('.monster-kind,.monster-member figcaption,.monster-hp').count(),0,'card labels, image captions and HP removed');
       assert.equal(await root.locator('.monster-category>.monster-category-title').count(),16,'four category headings per region');
@@ -72,7 +73,7 @@ catalog.items = catalog.items.filter(item => item.type !== 'Event');
         await button.click();
         assert.equal(await visible(), catalog.items.filter(item => item.region === region).length);
         assert.equal(await button.getAttribute('aria-pressed'), 'true');
-        assert.equal(await button.evaluate(node=>getComputedStyle(node).color),await root.locator('.monster-region:visible h2').evaluate(node=>getComputedStyle(node).color),'area button matches region heading color');
+        assert.equal(await root.locator('.monster-region:visible').getAttribute('aria-label'),region,'area retains an accessible name');
         assert.equal(await root.locator('.monster-region:visible').count(), 1);
         assert.deepEqual(await root.locator('.monster-card:visible').evaluateAll(cards=>cards.flatMap(card=>{
           const zh=card.querySelector('.monster-name-zh').getBoundingClientRect(),en=card.querySelector('.monster-name-en').getBoundingClientRect(),art=card.querySelector('.monster-lineup').getBoundingClientRect(),bounds=card.getBoundingClientRect();

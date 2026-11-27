@@ -1,4 +1,6 @@
 /* Scroll the search, filters, and catalog together. */
+html body main#main-content .entry.potion {border-color:var(--plain-rarity-color)}
+html body main#main-content .potion-section {border-color:var(--line,#293340)}
 html body main#main-content:has(>.potion-filters) {
   display: block;
   overflow-y: auto;

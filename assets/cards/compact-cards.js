@@ -8,50 +8,61 @@
   desktop.addEventListener('change', update);
   update();
 
-  function closeTier(section,restoreFocus=true){
-    section.hidden=true;
-    const image=section.closest('[data-catalog-layout]').querySelector('.detail-art>img');
-    for(const name of ['tabindex','role','aria-label','data-tier-close'])image.removeAttribute(name);
-    const trigger=document.querySelector('[data-card-tier="'+section.id+'"]');
-    if(trigger){trigger.setAttribute('aria-expanded','false');if(restoreFocus)trigger.focus({preventScroll:true});}
+  const titleWidths = new WeakMap();
+  function fitEnglishTitle(title) {
+    const name = title.querySelector('.detail-name-en');
+    if (!name || !title.clientWidth) return;
+    const size = parseFloat(getComputedStyle(title).fontSize);
+    name.style.fontSize = size + 'px';
+    const group = name.closest('.detail-name-tier');
+    group?.style.setProperty('--card-title-font-size', size + 'px');
+    const tier = group?.querySelector('.detail-tier-trigger');
+    const gap = tier ? parseFloat(getComputedStyle(group).columnGap) : 0;
+    const available = Math.max(1, title.clientWidth - gap - 1);
+    const naturalWidth = name.scrollWidth + (tier ? tier.getBoundingClientRect().width : 0);
+    if (naturalWidth > available) {
+      const fittedSize = size * available / naturalWidth;
+      name.style.fontSize = fittedSize + 'px';
+      group?.style.setProperty('--card-title-font-size', fittedSize + 'px');
+    }
+    titleWidths.set(title, title.clientWidth);
   }
-  function positionTier(section){
-    const card=section.closest('[data-catalog-layout]');
-    const image=card.querySelector('.detail-art>img');
-    const top=image.getBoundingClientRect().bottom-card.getBoundingClientRect().top-card.clientTop;
-    section.style.setProperty('--tier-popup-top',Math.max(0,top)+'px');
-  }
-  document.addEventListener('click',event=>{
-    const image=event.target.closest('.detail-art>img[data-tier-close]');
-    if(image){closeTier(image.closest('[data-catalog-layout]').querySelector('.detail-tier-section'));return;}
-    const button=event.target.closest('[data-card-tier]');
-    if(!button)return;
-    const section=document.getElementById(button.dataset.cardTier);
-    if(!section)return;
-    const opening=section.hidden;
-    for(const other of document.querySelectorAll('.detail-tier-section:not([hidden])'))closeTier(other,false);
-    if(!opening)return;
-    positionTier(section);
-    section.hidden=false;
-    button.setAttribute('aria-expanded','true');
-    const artwork=section.closest('[data-catalog-layout]').querySelector('.detail-art>img');
-    artwork.tabIndex=0;
-    artwork.setAttribute('role','button');
-    artwork.setAttribute('aria-label','關閉 Tier 說明');
-    artwork.setAttribute('data-tier-close','');
-    section.querySelector('a').focus({preventScroll:true});
+  const titles = [...document.querySelectorAll('[data-catalog-layout] .detail-title')];
+  const titleObserver = new ResizeObserver(entries => {
+    for (const {target} of entries) {
+      if (titleWidths.get(target) !== target.clientWidth) fitEnglishTitle(target);
+    }
   });
-  document.addEventListener('keydown',event=>{
-    if((event.key==='Enter'||event.key===' ')&&event.target.matches('.detail-art>img[data-tier-close]')){
-      event.preventDefault();
-      event.target.click();
+  for (const title of titles) {
+    fitEnglishTitle(title);
+    titleObserver.observe(title);
+  }
+  document.fonts.ready.then(() => titles.forEach(fitEnglishTitle));
+
+  function closeTier(section, restoreFocus = true) {
+    section.hidden = true;
+    const trigger = document.querySelector('[data-card-tier="' + section.id + '"]');
+    if (trigger) {
+      trigger.setAttribute('aria-expanded', 'false');
+      if (restoreFocus) trigger.focus({preventScroll: true});
+    }
+  }
+  document.addEventListener('click', event => {
+    const button = event.target.closest('[data-card-tier]');
+    if (!button) return;
+    const section = document.getElementById(button.dataset.cardTier);
+    if (!section) return;
+    if (!section.hidden) {
+      closeTier(section, false);
       return;
     }
-    if(event.key!=='Escape')return;
-    for(const section of document.querySelectorAll('.detail-tier-section:not([hidden])'))closeTier(section);
+    section.hidden = false;
+    button.setAttribute('aria-expanded', 'true');
   });
-  window.addEventListener('resize',()=>{
-    for(const section of document.querySelectorAll('.detail-tier-section:not([hidden])'))positionTier(section);
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Escape') return;
+    const section = event.target.closest('[data-catalog-layout]')?.querySelector('.detail-tier-section:not([hidden])');
+    if (section) closeTier(section);
   });
 
   document.addEventListener('click', event => {
@@ -65,6 +76,9 @@
     card.dataset.effectVersion = version;
     for (const panel of card.querySelectorAll('.detail-effect-panel')) {
       panel.hidden = panel.getAttribute('aria-label').toLowerCase() !== version;
+    }
+    for (const cost of card.querySelectorAll('[data-cost-version]')) {
+      cost.hidden = cost.dataset.costVersion !== version;
     }
   });
 

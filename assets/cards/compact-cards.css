@@ -230,7 +230,7 @@ html body main#main-content #tools #card-filter-type button[value="Event"] { --s
 html body main#main-content #tools #card-filter-type button[value="Quest"] { --selection-color: #c8ab79; }
 
 html body main#main-content #tools .card-search {
-  grid-template-columns: minmax(0, 1fr) max-content;
+  grid-template-columns: minmax(0, 1fr);
 }
 
 
@@ -258,3 +258,8 @@ html body main#main-content #tools .card-search {
 
 /* Equal spacing above and below card profession headings. */
 html body main#main-content .card-scroll .grid-pool-heading {margin-block:var(--group-gap,8px)}
+
+/* Match button outlines to their option colors in every state. */
+html body main#main-content#main-content#main-content#main-content #tools .card-filter-buttons button,
+html body main#main-content#main-content#main-content#main-content #tools .card-filter-buttons button:is(:hover,:focus-visible,[aria-pressed=true]) {border-color:currentColor!important}
+html body main#main-content#main-content #card-scroll .detail-version-controls button {border-color:currentColor}

@@ -15,7 +15,7 @@ const {characters}=require('../../data/cards/creator-tiers.json');
   assert.equal(await page.locator('[data-catalog-layout]').count(),cards.length);
   assert.equal(await page.locator('[data-card-version=base]').count(),0);
   assert.equal(await page.locator('[data-card-version=upgraded]').count(),cards.length);
-  assert.deepEqual(await page.locator('[data-catalog-layout] .detail-overview').evaluateAll(nodes=>[...new Set(nodes.map(node=>[...node.children].map(child=>child.tagName).join(',')))]),['FIGURE,HEADER,DL,SECTION']);
+  assert.deepEqual(await page.locator('[data-catalog-layout] .detail-overview').evaluateAll(nodes=>[...new Set(nodes.map(node=>[...node.children].map(child=>child.tagName).join(',')))]),['FIGURE,HEADER,SECTION,DL,FOOTER']);
   for(const card of cards){
    const row=page.locator('#card-'+card.id);
    assert.equal(await row.locator('.detail-name-zh').getAttribute('href'),null,card.id+' Chinese name is plain text');
@@ -63,14 +63,15 @@ const {characters}=require('../../data/cards/creator-tiers.json');
    assert.equal(await card.locator('[data-card-version=upgraded]').getAttribute('aria-pressed'),'false');
    assert.notEqual(await card.locator('[data-card-version=upgraded]').evaluate(node=>getComputedStyle(node).color),'rgb(127, 255, 0)');
    assert.equal(await base.isVisible(),true);
-   const costRow=await card.evaluate(row=>{
+   assert.equal(await card.locator('[data-card-version=upgraded]').textContent(),'upgrade+');
+   const upgradeLayout=await card.evaluate(row=>{
     const panel=row.querySelector('.detail-effect-panel:not([hidden])');
-    const cost=panel.querySelector('.detail-panel-cost').getBoundingClientRect();
+    const description=panel.querySelector('.detail-panel-description').getBoundingClientRect();
     const button=row.querySelector('[data-card-version]').getBoundingClientRect();
     const block=row.querySelector('.detail-effect-columns').getBoundingClientRect();
-    return {center:Math.abs((cost.left+cost.right-block.left-block.right)/2),row:Math.abs((cost.top+cost.bottom-button.top-button.bottom)/2),right:button.right<=block.right};
+    return {center:Math.abs((button.left+button.right-block.left-block.right)/2),below:button.top>=description.bottom,right:button.right<=block.right};
    });
-   assert.ok(costRow.center<1&&costRow.row<2&&costRow.right,'Upgrade toggle shares the independently centered cost row');
+   assert.ok(upgradeLayout.center<1&&upgradeLayout.below&&upgradeLayout.right,'Upgrade button is centered below the description');
    const layout=await card.evaluate(row=>{
     const card=row.querySelector('.card-detail'),art=card.querySelector('.detail-art').getBoundingClientRect(),bounds=card.getBoundingClientRect();
     const selectors=['.detail-art','.detail-name-zh','.detail-name-en','.detail-type-metadata','.detail-effects','.detail-version-controls','.detail-bottom-tier'];
@@ -111,28 +112,27 @@ const {characters}=require('../../data/cards/creator-tiers.json');
   await page.setViewportSize({width:1440,height:2200});
   await page.locator('#search').fill('Offering');
   const offering=page.locator('#card-OFFERING');
-  assert.equal(await offering.locator('.detail-title-row .creator-tier-badge').textContent(),'S');
+  assert.equal(await offering.locator('.detail-action-metadata .creator-tier-badge').textContent(),'Tier S');
   assert.equal(await offering.locator('.detail-tier-comment').textContent(),comments.OFFERING.text);
   assert.equal(await offering.locator('.detail-tier-section').isVisible(),false);
   const tierDialog=offering.locator('.detail-tier-section');
   const cardBoundsBeforeTier=await offering.locator('.card-detail').boundingBox();
-  await offering.locator('.detail-title-row .creator-tier-badge').click();
+  await offering.locator('.detail-tier-trigger').click();
   assert.equal(await tierDialog.isVisible(),true);
-  assert.equal(await tierDialog.locator('.tier-popup-name').textContent(),'Offering');
-  assert.equal(await tierDialog.locator('.creator-tier-badge').textContent(),'S');
-  assert.equal(await tierDialog.evaluate(node=>getComputedStyle(node).position),'absolute');
-  assert.ok(await tierDialog.evaluate(node=>Math.abs(node.getBoundingClientRect().top-node.closest('.card-detail').querySelector('.detail-art>img').getBoundingClientRect().bottom)<1),'Tier popup starts at the artwork bottom edge');
-  assert.deepEqual(await offering.locator('.card-detail').boundingBox(),cardBoundsBeforeTier,'Tier overlay must not move or resize the card');
+  assert.equal(await tierDialog.locator('header,.creator-tier-badge').count(),0);
+  assert.equal(await tierDialog.evaluate(node=>getComputedStyle(node).position),'static');
+  assert.ok(await tierDialog.evaluate(node=>node.getBoundingClientRect().top>=node.closest('.card-detail').querySelector('.detail-overview').getBoundingClientRect().bottom),'Tier commentary starts below the card content');
+  assert.ok((await offering.locator('.card-detail').boundingBox()).height>cardBoundsBeforeTier.height,'Expanded commentary grows the card');
   assert.equal(await tierDialog.locator('.detail-tier-comment').textContent(),comments.OFFERING.text);
   assert.equal(await tierDialog.locator('.detail-tier-source').textContent(),'Jorbs Ironclad Tier List');
   assert.equal(await tierDialog.locator('.detail-tier-translation').textContent(),translations.OFFERING.text.replace(/\r?\n/g,''));
-  assert.deepEqual(await tierDialog.evaluate(node=>[...node.children].map(child=>child.className)),['tier-popup-header','detail-tier-comment','detail-tier-translation','detail-tier-source']);
+  assert.deepEqual(await tierDialog.evaluate(node=>[...node.children].map(child=>child.className)),['detail-tier-comment','detail-tier-translation','detail-tier-source']);
 
   await page.keyboard.press('Escape');
   assert.equal(await tierDialog.isVisible(),false);
   await offering.locator('.detail-tier-trigger').press('Enter');
   assert.equal(await tierDialog.isVisible(),true);
-  await offering.locator('.detail-art>img').click();
+  await offering.locator('.detail-tier-trigger').click();
   assert.equal(await tierDialog.isVisible(),false);
 
   await offering.locator('.detail-art img').evaluate(node=>node.decode());

@@ -82,19 +82,25 @@ function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds =
   const characterMetadata = metadataAboveEffects && tierBadge && !tierBesideName && !cornerMetadata ? '<dl class="detail-character-metadata" aria-label="Tier"><div class="detail-meta-item detail-tier-item"><dt>Tier</dt><dd>' + tierBadge + '</dd></div></dl>' : '';
   const art = '<figure class="detail-art" data-detail-row="1"><img src="' + esc(card.image) + '" width="700" height="532" alt="' + esc(card.name) + ' illustration" loading="lazy" decoding="async"></figure>';
   if(catalogLayout){
-    const tierContent=showTierRating?require('./creator-tier-section.cjs')(card,{prefix}):{label:'',content:''};
-    const metadata='<dl class="detail-type-metadata" aria-label="Pool, type and rarity">'+renderStat({label:'Character',value:card.character})+renderStat({label:'Type',value:card.type})+renderStat({label:'Rarity',value:card.rarity})+'</dl>';
+    const tierContent=showTierRating?require('./creator-tier-section.cjs')(card,{prefix,padded:true}):{label:'',content:''};
     const baseId=prefix+'-base',upgradedId=prefix+'-upgraded';
+    const inlineCost=(html,version)=>html.replace('<p class="detail-panel-cost"','<span class="detail-inline-cost" data-cost-version="'+version+'"'+(version==='upgraded'?' hidden':'')).replace('</p>','</span>');
+    const baseDescription=(baseCostContent?inlineCost(baseCostContent,'base')+' ':'')+baseContent;
+    const upgradedDescription=(upgradedCostContent?inlineCost(upgradedCostContent,'upgraded')+' ':'')+upgradedContent;
+    const upgrade='<button type="button" data-card-version="upgraded" aria-label="upgrade+" aria-pressed="false" aria-controls="'+baseId+' '+upgradedId+'"'+(card.effect.upgraded===null?' disabled title="Cannot be upgraded"':'')+'>upgrade+</button>';
+    const headingMetadata='<dl class="detail-type-metadata detail-version-controls detail-heading-metadata" aria-label="Character, rarity, type and upgrade">'+renderStat({label:'Character',value:card.character})+renderStat({label:'Rarity',value:card.rarity})+renderStat({label:'Type',value:card.type})+'<div class="detail-meta-item"><dt>Version</dt><dd>'+upgrade+'</dd></div></dl>';
+    const sourceLinks=`<dd class="detail-card-sources"><a class="detail-untapped-link" href="${esc(require('./card-source-link.cjs')(card))}" target="_blank" rel="noopener noreferrer" aria-label="${esc(card.name)} on Untapped.gg" title="${esc(card.name)} · Untapped.gg">untapped.gg</a><span class="detail-source-separator" aria-hidden="true"> · </span><a class="detail-spirebird-link" href="${esc(require('./spirebird-link.cjs')(card))}" target="_blank" rel="noopener noreferrer" aria-label="${esc(card.name)} on Spirebird" title="${esc(card.name)} · Spirebird">spirebird.com</a></dd>`;
+    const metadata='<dl class="detail-type-metadata detail-version-controls detail-action-metadata" aria-label="Sources"><div class="detail-meta-item"><dt>Sources</dt>'+sourceLinks+'</div></dl>';
     return `<article class="card-detail" data-card-layout="compact" data-catalog-layout="true" data-effect-version="base" aria-labelledby="${prefix}-title" lang="en" data-source="${esc(card.source)}" data-character="${esc(card.character)}">
   <div class="detail-overview">
     ${art}
-    <header><h2 class="detail-title" id="${prefix}-title"><span class="detail-title-row"><span class="detail-name-zh" lang="zh-Hant">${esc(card.nameZh)}</span>${tierContent.label}</span><span class="detail-name-en">${esc(card.name)}</span></h2></header>
-    ${metadata}
-    <section class="detail-section detail-effects" aria-label="Card effects"><div class="detail-effect-columns"><div class="detail-version-controls" role="group" aria-label="Card version"><button type="button" data-card-version="upgraded" aria-label="Upgraded" aria-pressed="false" aria-controls="${baseId} ${upgradedId}"${card.effect.upgraded===null?' disabled title="Cannot be upgraded"':''}><strong aria-hidden="true">&#x2795;&#xfe0e;</strong></button></div><div class="detail-effect-panel" id="${baseId}" role="group" aria-label="Base">${baseCostContent||'<p class="detail-panel-cost" aria-hidden="true">&nbsp;</p>'}<p class="detail-panel-description">${baseContent}</p></div><div class="detail-effect-panel" id="${upgradedId}" role="group" aria-label="Upgraded" hidden>${upgradedCostContent||'<p class="detail-panel-cost" aria-hidden="true">&nbsp;</p>'}<p class="detail-panel-description">${upgradedContent}</p></div></div>
+    <header><h2 class="detail-title" id="${prefix}-title"><span class="detail-title-row"><span class="detail-name-zh" lang="zh-Hant">${esc(card.nameZh)}</span></span><span class="detail-name-tier"><span class="detail-name-en">${esc(card.name)}</span>${tierContent.label}</span></h2></header>
+    ${headingMetadata}
+    <section class="detail-section detail-effects" aria-label="Card effects"><div class="detail-effect-columns"><div class="detail-effect-panel" id="${baseId}" role="group" aria-label="Base"><p class="detail-panel-description">${baseDescription}</p></div><div class="detail-effect-panel" id="${upgradedId}" role="group" aria-label="Upgraded" hidden><p class="detail-panel-description">${upgradedDescription}</p></div></div>
     </section>
-    <footer class="detail-card-sources"><a class="detail-untapped-link" href="${esc(require('./card-source-link.cjs')(card))}" target="_blank" rel="noopener noreferrer" aria-label="${esc(card.name)} on Untapped.gg" title="${esc(card.name)} · Untapped.gg">untapped.gg</a><a class="detail-spirebird-link" href="${esc(require('./spirebird-link.cjs')(card))}" target="_blank" rel="noopener noreferrer" aria-label="${esc(card.name)} on Spirebird" title="${esc(card.name)} · Spirebird">spirebird.com</a></footer>
+    ${metadata}
   </div>
-  ${tierContent.content}
+${tierContent.content?'  '+tierContent.content:''}
 </article>`;
   }
   return `<article class="card-detail"${metadataAboveEffects ? ' data-card-layout="compact"' : ''} aria-labelledby="${prefix}-title" lang="en" data-source="${esc(card.source)}" data-character="${esc(card.character)}">

@@ -100,16 +100,16 @@ const discounted=card=>{
    await button('2').click();
    await page.reload();
    assert.equal(await button('2').getAttribute('aria-pressed'),'true','energy selection restored');
-   assert.deepEqual(await visible(),ids(cards.filter(card=>matches(card,'2'))),'restored filter applied');
+   assert.deepEqual(await visible(),ids(cards.filter(card=>card.character==='Ironclad'&&matches(card,'2'))),'restored character and energy filters applied');
    if(mode==='file')assert.deepEqual(await page.evaluate(()=>JSON.parse(localStorage.getItem('sts2_card_filters')).energies),['2']);
    else assert.deepEqual(JSON.parse(decodeURIComponent((await context.cookies()).find(cookie=>cookie.name==='sts2_card_filters').value)).energies,['2']);
    await page.goto(url+'#card-AUTOMATION');
    assert.equal(await group.locator('[aria-pressed=true]').count(),0,'card deep link clears energy');
    assert((await visible()).includes('AUTOMATION'));
-   const menu=page.locator('.filter-menu-toggle');await menu.click();assert(!await group.isVisible());await menu.click();assert(await group.isVisible());
+   assert.equal(await page.locator('.filter-menu-toggle,.filter-menu-panel').count(),0);assert(await group.isVisible(),'energy filters directly visible');
    await button('X').click();
    assert.deepEqual(errors,[]);
-   console.log('PASS '+mode+': all energy groups, base costs, multi-select/AND, persistence, search/reset, deep links, menu toggle and filtering.');
+   console.log('PASS '+mode+': all energy groups, base costs, multi-select/AND, persistence, search/reset, deep links and directly visible filters.');
    if(mode==='file'){
     await page.locator('#search').fill('');
     await gainButton.click();

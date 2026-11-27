@@ -17,7 +17,6 @@
         group.hidden = !group.querySelector('.monster-card:not([hidden])');
       }
       section.hidden = count === 0;
-      section.querySelector('.monster-region-count').textContent = '(' + count + ')';
       total += count;
     }
     document.getElementById('monster-empty').hidden = total !== 0;
