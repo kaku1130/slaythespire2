@@ -3983,3 +3983,29 @@ html body main#main-content :is(.relic-filters,.potion-filters)>.catalog-search-
 
 /* Search text scales with the shared 48px search field. */
 html body main#main-content#main-content#main-content .search-control input#search {font-size:20px!important;line-height:1.4!important}
+
+html body main#main-content #tools .card-search {grid-template-columns: minmax(0, 1fr) auto;}
+/* Restore the card browser defaults from the search row. */
+html body main#main-content #tools button.card-filter-reset {
+  grid-area: 1 / 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  height: 48px;
+  min-height: 48px;
+  margin: 0;
+  padding: 8px;
+  border: 1px solid #6faeee;
+  border-radius: 7px;
+  background: #0d131a;
+  color: #ef4444;
+  font: 400 18px/1.4 Arial, "Microsoft JhengHei", sans-serif;
+  cursor: pointer;
+}
+html body main#main-content #tools button.card-filter-reset:is(:hover,:focus-visible) {
+  border-color: #37a8ec;
+  background: #163047;
+}

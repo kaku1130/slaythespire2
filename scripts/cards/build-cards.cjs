@@ -316,7 +316,7 @@ html body main#main-content,html body .site-header>.site-header-inner{width:100%
 ${fs.readFileSync('assets/cards/compact-cards.css','utf8')}
 ${fs.readFileSync('assets/cards/search-control.css','utf8')}
 </style></head><body data-view="grid">${navigation.renderHeader('cards')}<main id="main-content">
-<div class="tools" id="tools"><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><div class="search-control"><input id="search" type="text" inputmode="search" role="searchbox" placeholder="搜尋關鍵字" autocomplete="off"><button type="button" class="search-clear" aria-label="清除搜尋關鍵字" title="清除搜尋關鍵字"><span class="search-icon" aria-hidden="true">🔍</span></button></div></div>${renderCardFilters([['Character','character',["Ironclad","Silent","Regent","Necrobinder","Defect","Colorless","Event","Curse"]],['Type','type',["Attack","Skill","Power"]],['Rarity','rarity',["Basic","Common","Uncommon","Rare","Ancient"]]])}${renderCardFilters([['Energy','energy',['0','1','2','3+','X','gain','cost-down']]])}<p id="card-filter-result" class="card-filter-result" role="status" aria-live="polite" aria-atomic="true">符合張數 / 總卡片數：0 / ${cards.length}</p></div>
+<div class="tools" id="tools"><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><div class="search-control"><input id="search" type="text" inputmode="search" role="searchbox" placeholder="搜尋關鍵字" autocomplete="off"><button type="button" class="search-clear" aria-label="清除搜尋關鍵字" title="清除搜尋關鍵字"><span class="search-icon" aria-hidden="true">🔍</span></button></div><button type="button" id="card-filter-reset" class="card-filter-reset" title="恢復預設搜尋與篩選" aria-label="恢復預設搜尋與篩選"><span aria-hidden="true" style="font-size:28px;line-height:1">⏻</span></button></div>${renderCardFilters([['Character','character',["Ironclad","Silent","Regent","Necrobinder","Defect","Colorless","Event","Curse"]],['Type','type',["Attack","Skill","Power"]],['Rarity','rarity',["Basic","Common","Uncommon","Rare","Ancient"]]])}${renderCardFilters([['Energy','energy',['0','1','2','3+','X','gain','cost-down']]])}<p id="card-filter-result" class="card-filter-result" role="status" aria-live="polite" aria-atomic="true">符合張數 / 總卡片數：0 / ${cards.length}</p></div>
 <div id="card-scroll" class="card-scroll" role="region" aria-label="卡牌表格" tabindex="0">${sections}<p id="empty" hidden>找不到符合條件的卡片，請調整搜尋文字、分類或稀有度。</p>
 </div>
 </main>
@@ -353,8 +353,12 @@ function selectedCardFilters() {
   return {characters:selectedValues(characterFilter), rarities:selectedValues(rarityFilter), types:selectedValues(typeFilter), energies:selectedValues(energyFilter)};
 }
 const cardFilterCookie='sts2_card_filters';
+function resetCardFilterValues() {
+  search.value='';
+  for (const group of multiFilters) setFilterValues(group, group === characterFilter ? ['Ironclad'] : []);
+}
 function restoreCardFilters() {
-  setFilterValues(characterFilter, ['Ironclad']);
+  resetCardFilterValues();
   try {
     const cookie=new URL(document.baseURI).protocol==='file:'?null:document.cookie.split(';').map(value=>value.trim()).find(value=>value.startsWith(cardFilterCookie+'='));
     const stored=new URL(document.baseURI).protocol==='file:'?localStorage.getItem(cardFilterCookie):cookie?decodeURIComponent(cookie.slice(cardFilterCookie.length+1)):null;
@@ -426,6 +430,10 @@ function cardMatchesSearch(row, queries) {
   return queries.some(value => row.dataset.search.includes(value));
 }
 search.addEventListener('input',filter);
+document.getElementById('card-filter-reset').addEventListener('click', () => {
+  resetCardFilterValues();
+  filter();
+});
 
 restoreCardFilters();
 filter();
