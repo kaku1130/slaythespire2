@@ -28,4 +28,4 @@
 
 # Enchantments 頁面
 
-使用 `enchantments.html`，程式、資料與素材分別位於 `scripts/enchantments/`、`data/enchantments/`、`assets/enchantments/`。搜尋列與卡片排版共用藥水頁面實作；保留來源的 icon、名稱、效果與 Found in，導覽圖示使用 Slither。
+使用 `enchantments.html`，程式、資料與素材分別位於 `scripts/enchantments/`、`data/enchantments/`、`assets/enchantments/`。搜尋列與卡片排版共用藥水頁面實作；保留來源的 icon、名稱、效果與 Found in，導覽圖示使用 Soul's Power。

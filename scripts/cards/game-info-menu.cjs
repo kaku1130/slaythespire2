@@ -1,9 +1,9 @@
 const items=[
- ['事件','https://sts2.untapped.gg/en/events'],
- ['徽章','https://sts2.untapped.gg/en/badges'],
- ['更新紀錄','https://sts2.untapped.gg/en/patch-notes']
+ ['Events','https://sts2.untapped.gg/en/events'],
+ ['Badges','https://sts2.untapped.gg/en/badges'],
+ ['Patch Notes','https://sts2.untapped.gg/en/patch-notes']
 ];
-const markup='<details class="game-info-dropdown"><summary>其他資訊<span class="game-info-chevron" aria-hidden="true"></span></summary><div class="game-info-menu">'+items.map(([label,url])=>'<a href="'+url+'" '+(url.startsWith('https:')?'target="_blank" rel="noopener noreferrer"':'data-same-tab="true" target="_self"')+'>'+label+'</a>').join('')+'</div></details>';
+const markup='<details class="game-info-dropdown"><summary>Game Info<span class="game-info-chevron" aria-hidden="true"></span></summary><div class="game-info-menu">'+items.map(([label,url])=>'<a href="'+url+'" '+(url.startsWith('https:')?'target="_blank" rel="noopener noreferrer"':'data-same-tab="true" target="_self"')+'>'+label+'</a>').join('')+'</div></details>';
 const styles=`
 /* Keep the final navigation menu outside the icon strip's clipping area. */
 html body .site-header .site-nav {overflow:visible!important}

@@ -6,7 +6,7 @@ const files = {
   cards:['assets/cards/icons/nav-cards.webp','cover'],
   relic:['assets/relics/images/nav-relics.webp','contain'],
   potion:['assets/potions/images/nav-potions.webp','contain'],
-  enchantments:['assets/enchantments/images/slither.webp','contain'],
+  enchantments:['assets/enchantments/images/souls-power.webp','contain'],
   monster:['assets/monsters/images/the-insatiable.webp','contain']
 };
 const columnCount=Object.keys(files).length;
