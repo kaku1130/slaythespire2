@@ -8,18 +8,20 @@ const {items}=require('./game-info-menu.cjs');
  try{
   const page=await browser.newPage({offline:true,viewport:{width:1440,height:1000}}),errors=[];
   page.on('pageerror',error=>errors.push(error.message));
-  const pages=['index.html','characters.html','cards.html','potions.html','relics.html','monsters.html'];
+  const pages=['index.html','characters.html','cards.html','potions.html','relics.html','monsters.html','enchantments.html'];
   for(const file of pages){
    await page.goto(pathToFileURL(path.resolve(file)).href);
    const menu=page.locator('.site-header .game-info-dropdown'),summary=menu.locator('summary');
    assert.equal(await menu.count(),1,file);
-   assert.equal(await page.locator('.site-nav>a').count(),5,file+' five main navigation icons');
-   assert.equal(items[0][0],'Events');
+   assert.equal(await summary.innerText(),'其他資訊',file+' translated menu title');
+   assert.deepEqual(items.map(([label])=>label),['事件','徽章','更新紀錄']);
+   assert.equal(await page.locator('.site-nav>a').count(),6,file+' six main navigation icons');
+   assert.equal(items[0][0],'事件');
    assert.equal(await menu.getByRole('link',{name:'Enemies',exact:true}).count(),0);
    const monster=page.getByRole('link',{name:'Monster',exact:true});
    assert.ok((await monster.getAttribute('href')).endsWith('monsters.html'));
    assert.notEqual(await monster.getAttribute('target'),'_blank');
-   assert.equal(await monster.evaluate(node=>node.previousElementSibling.getAttribute('aria-label')),'Potions');
+   assert.equal(await monster.evaluate(node=>node.previousElementSibling.getAttribute('aria-label')),'Enchantments');
    assert.equal(await monster.evaluate(node=>node.nextElementSibling.classList.contains('game-info-dropdown')),true);
    assert.equal(await monster.locator('img').evaluate(img=>img.complete&&img.naturalWidth>0),true,'Monster artwork loads');
    assert.equal(await menu.evaluate(node=>node===node.parentElement.lastElementChild),true,file+' rightmost menu');
