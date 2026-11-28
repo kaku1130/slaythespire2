@@ -1,6 +1,5 @@
 const items=[
  ['Events','https://sts2.untapped.gg/en/events'],
- ['Enchantments','enchantments.html'],
  ['Badges','https://sts2.untapped.gg/en/badges'],
  ['Patch Notes','https://sts2.untapped.gg/en/patch-notes']
 ];

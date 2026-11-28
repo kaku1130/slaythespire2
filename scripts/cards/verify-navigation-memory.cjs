@@ -28,8 +28,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
    await reopened.locator('.site-nav>a[aria-label=Potions]').click();await selected(reopened,'potion');
    await reopened.goBack();await selected(reopened,'relic');
    await reopened.goForward();await selected(reopened,'potion');
-   await reopened.locator('.game-info-dropdown>summary').click();
-   await reopened.locator('.game-info-menu a[href="enchantments.html"]').click();await selected(reopened,'enchantments');
+   await reopened.locator('.site-nav>a[aria-label=Enchantments]').click();await selected(reopened,'enchantments');
    await reopened.reload();await selected(reopened,'enchantments');
    const mobile=await context.newPage();await mobile.setViewportSize({width:390,height:844});
    await mobile.goto(url);await selected(mobile,'enchantments');
