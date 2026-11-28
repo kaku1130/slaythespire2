@@ -1,0 +1,29 @@
+{
+  "source": "https://sts2.untapped.gg/zh/enchantments",
+  "locale": "zh-Hant",
+  "note": "來源中文名稱轉為繁體中文。",
+  "names": {
+    "adroit": "伶俐",
+    "clone": "克隆",
+    "corrupted": "腐化",
+    "glam": "華彩",
+    "goopy": "黏糊",
+    "imbued": "注能",
+    "inky": "墨影",
+    "instinct": "本能",
+    "momentum": "動量",
+    "nimble": "靈巧",
+    "perfect-fit": "完美契合",
+    "royally-approved": "王室認證",
+    "sharp": "鋒利",
+    "slither": "蛇行",
+    "slumbering-essence": "沉眠精華",
+    "souls-power": "靈魂之力",
+    "sown": "播種",
+    "spiral": "渦旋",
+    "steady": "穩定",
+    "swift": "迅速",
+    "tezcataras-ember": "特茲卡塔拉的餘燼",
+    "vigorous": "活力"
+  }
+}
