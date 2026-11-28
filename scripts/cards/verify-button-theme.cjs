@@ -36,8 +36,8 @@ const {chromium} = require(path.join(process.env.USERPROFILE, '.cache/codex-runt
         assert.ok(Math.abs(frame.left-9)<1&&Math.abs(frame.right-9)<1,'monster area buttons fill the frame');
         assert.equal(frame.font,'20px');assert.equal(frame.height,48);
         await page.mouse.move(2,2);
-        fs.mkdirSync('assets/monster/previews',{recursive:true});
-        await page.screenshot({path:'assets/monster/previews/monster-shared-buttons-1440.png'});
+        fs.mkdirSync('assets/monsters/previews',{recursive:true});
+        await page.screenshot({path:'assets/monsters/previews/monster-shared-buttons-1440.png'});
       }
       console.log('PASS '+file+': ancient-style 1px outlines, 8px corners, blue hover');
       await page.close();

@@ -15,15 +15,13 @@
     const size = parseFloat(getComputedStyle(title).fontSize);
     name.style.fontSize = size + 'px';
     const group = name.closest('.detail-name-tier');
-    group?.style.setProperty('--card-title-font-size', size + 'px');
-    const tier = group?.querySelector('.detail-tier-trigger');
+    const tier = group && getComputedStyle(group).flexDirection !== 'column' ? group.querySelector('.detail-tier-label') : null;
     const gap = tier ? parseFloat(getComputedStyle(group).columnGap) : 0;
-    const available = Math.max(1, title.clientWidth - gap - 1);
-    const naturalWidth = name.scrollWidth + (tier ? tier.getBoundingClientRect().width : 0);
+    const available = Math.max(1, title.clientWidth - gap - (tier ? tier.getBoundingClientRect().width : 0) - 1);
+    const naturalWidth = name.scrollWidth;
     if (naturalWidth > available) {
       const fittedSize = size * available / naturalWidth;
       name.style.fontSize = fittedSize + 'px';
-      group?.style.setProperty('--card-title-font-size', fittedSize + 'px');
     }
     titleWidths.set(title, title.clientWidth);
   }
@@ -39,30 +37,31 @@
   }
   document.fonts.ready.then(() => titles.forEach(fitEnglishTitle));
 
-  function closeTier(section, restoreFocus = true) {
-    section.hidden = true;
-    const trigger = document.querySelector('[data-card-tier="' + section.id + '"]');
-    if (trigger) {
-      trigger.setAttribute('aria-expanded', 'false');
-      if (restoreFocus) trigger.focus({preventScroll: true});
+  function updateCardImages(card) {
+    for (const image of card.querySelectorAll('[data-card-image-version]')) {
+      image.hidden = image.dataset.cardImageVersion !== card.dataset.effectVersion
+        || Boolean(image.dataset.cardVariant && image.dataset.cardVariant !== card.dataset.cardVariant);
     }
   }
   document.addEventListener('click', event => {
-    const button = event.target.closest('[data-card-tier]');
-    if (!button) return;
-    const section = document.getElementById(button.dataset.cardTier);
-    if (!section) return;
-    if (!section.hidden) {
-      closeTier(section, false);
-      return;
+    const arrow = event.target.closest('[data-card-variant-step]');
+    if (!arrow) return;
+    const card = arrow.closest('[data-catalog-layout]');
+    const art = card?.querySelector('[data-card-variants]');
+    if (!art) return;
+    const variants = JSON.parse(art.dataset.cardVariants);
+    const current = variants.findIndex(variant => variant.slug === card.dataset.cardVariant);
+    const index = (current + Number(arrow.dataset.cardVariantStep) + variants.length) % variants.length;
+    const variant = variants[index];
+    card.dataset.cardVariant = variant.slug;
+    updateCardImages(card);
+    const source = card.querySelector('.detail-untapped-link');
+    if (source) {
+      source.href = variant.source;
+      source.title = card.dataset.cardNameEn + ' (' + variant.label + ') · Untapped.gg';
     }
-    section.hidden = false;
-    button.setAttribute('aria-expanded', 'true');
-  });
-  document.addEventListener('keydown', event => {
-    if (event.key !== 'Escape') return;
-    const section = event.target.closest('[data-catalog-layout]')?.querySelector('.detail-tier-section:not([hidden])');
-    if (section) closeTier(section);
+    const status = card.querySelector('[data-card-variant-status]');
+    if (status) status.textContent = (index + 1) + ' / ' + variants.length + ' · ' + variant.label;
   });
 
   document.addEventListener('click', event => {
@@ -70,10 +69,12 @@
     if (!button || button.disabled) return;
     const card = button.closest('[data-catalog-layout]');
     if (!card) return;
-    const upgraded = button.getAttribute('aria-pressed') !== 'true';
+    const stateAttribute = button.getAttribute('role') === 'switch' ? 'aria-checked' : 'aria-pressed';
+    const upgraded = button.getAttribute(stateAttribute) !== 'true';
     const version = upgraded ? 'upgraded' : 'base';
-    button.setAttribute('aria-pressed', String(upgraded));
+    button.setAttribute(stateAttribute, String(upgraded));
     card.dataset.effectVersion = version;
+    updateCardImages(card);
     for (const panel of card.querySelectorAll('.detail-effect-panel')) {
       panel.hidden = panel.getAttribute('aria-label').toLowerCase() !== version;
     }

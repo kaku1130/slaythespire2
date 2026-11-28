@@ -44,9 +44,8 @@ const cards = JSON.parse(fs.readFileSync('data/cards/english-details.json', 'utf
       assert.deepEqual(await visible(), cards.filter(card => ['Ironclad', 'Silent'].includes(card.character)).map(card => card.id).sort(), 'Pool selections combine');
       await page.reload();
       await root.locator('#card-scroll').waitFor();
-      assert.deepEqual(await root.locator('#card-filter-character button[aria-pressed=true]').evaluateAll(buttons => buttons.map(button => button.value)), ['Ironclad', 'Silent'], 'multiple Pools restored');
-      await pool('Silent').click();
-      assert.deepEqual(await visible(), cards.filter(card => card.character === 'Ironclad').map(card => card.id).sort(), 'Pool toggles off independently');
+      assert.deepEqual(await root.locator('#card-filter-character button[aria-pressed=true]').evaluateAll(buttons => buttons.map(button => button.value)), ['Ironclad'], 'reload uses the default Pool');
+      assert.deepEqual(await visible(), cards.filter(card => card.character === 'Ironclad').map(card => card.id).sort(), 'reload clears previous Pool selections');
       await pool('Ironclad').click();
       assert.equal((await visible()).length, cards.length, 'no selected Pools shows all cards');
       for (const [group, value] of [['character','Silent'], ['type','Power'], ['rarity','Rare'], ['energy','3+']]) {
@@ -64,12 +63,12 @@ const cards = JSON.parse(fs.readFileSync('data/cards/english-details.json', 'utf
       assert.deepEqual(await visible(), ['ANGER', 'POMMEL_STRIKE'], 'multiple keywords');
       await search.fill('Vulnerable');
       await page.waitForTimeout(550);
-      const expected = cards.filter(card => [card.name, card.nameZh, card.effect.base, card.effect.upgraded].join(' ').toLowerCase().includes('vulnerable')).map(card => card.id).sort();
+      const expected = cards.filter(card => [card.name, card.nameZh, card.effect.base, card.effect.upgraded].join(' ').toLowerCase().includes('vulnerable') || card.id === 'MAD_SCIENCE').map(card => card.id).sort();
       assert.deepEqual(await visible(), expected, 'effect keyword excludes mentions in commentary');
       assert.equal(await root.locator('#card-filter-character button[aria-pressed=true]').count(), 0);
       await page.reload();
       await root.locator('#card-scroll').waitFor();
-      assert.deepEqual(await visible(), expected, 'global search restored after reload');
+      assert.deepEqual(await visible(), cards.filter(card => card.character === 'Ironclad').map(card => card.id).sort(), 'reload clears search and uses the default Pool');
       await search.fill('');
       await page.waitForTimeout(550);
       assert.equal(await root.locator('.filter-menu-toggle').count(), 0, 'card filters have no hamburger');

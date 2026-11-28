@@ -42,7 +42,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
     assert.deepEqual(await visibleIds(),['STRENGTH_POTION'],'filtered cards stay hidden at '+width);
    }
    await page.setViewportSize({width:1440,height:1000});
-   if(mode==='file')await page.screenshot({path:'assets/potion/previews/search-fixed-1440.png'});
+   if(mode==='file')await page.screenshot({path:'assets/potions/previews/search-fixed-1440.png'});
    assert.deepEqual(errors,[]);
    console.log('PASS '+mode+': Chinese/English and all 63 exact-name searches show only matching potions; reset, empty results and desktop widths verified.');
    await context.close();

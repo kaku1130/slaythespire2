@@ -3,7 +3,7 @@ const fs=require('node:fs');
 const {createHash}=require('node:crypto');
 const navigation=require('./site-navigation.cjs');
 const pages=Object.fromEntries(navigation.items.map(([key,label,file])=>[key,{label,file,html:fs.readFileSync(file,'utf8')}]));
-fs.writeFileSync('assets/cards/index-pages.js','window.sitePages='+JSON.stringify(pages).replace(/</g,'\\u003c')+';\n');
+fs.writeFileSync('assets/index/index-pages.js','window.sitePages='+JSON.stringify(pages).replace(/</g,'\\u003c')+';\n');
 const css=navigation.styles+'\n'+navigation.layoutStyles+`\n
 html {height:100%;background:#040609;color-scheme:dark}
 body.index-page {display:flex;flex-direction:column;margin:0;height:100dvh;min-height:0;overflow:hidden;background:#040609;color:#e3e8ee;font:16px/1.6 Arial,"Microsoft JhengHei",sans-serif}
@@ -22,9 +22,9 @@ html body.index-page main#main-content#main-content#main-content {position:relat
 @media(prefers-reduced-motion:reduce) {.index-loading,.index-loading-fill {transition:none}.index-loading-spinner {animation:none}}
 .index-loading button {margin-left:8px;padding:6px 12px;border:1px solid #354454;border-radius:6px;background:#0d131a;color:#e3e8ee;font:inherit;cursor:pointer}
 `;
-fs.writeFileSync('assets/cards/index.css',css);
+fs.writeFileSync('assets/index/index.css',css);
 const version=file=>createHash('sha256').update(fs.readFileSync(file)).digest('hex').slice(0,12);
 const asset=file=>file+'?v='+version(file);
 const loading='<div class="index-loading" hidden role="status" aria-live="polite"><div class="index-loading-head"><span class="index-loading-spinner" aria-hidden="true"></span><span class="index-loading-label">載入中…</span><span class="index-loading-percent">0%</span></div><div class="index-loading-track" role="progressbar" aria-label="頁面載入完成度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="index-loading-fill"></div></div></div>';
-fs.writeFileSync('index.html','<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="assets/cards/icons/site-favicon.ico?v=4"><title>Slay the Spire II</title><link rel="stylesheet" href="'+asset('assets/cards/index.css')+'"><script defer src="'+asset('assets/cards/index-pages.js')+'"></script><script defer src="'+asset('assets/cards/index.js')+'"></script></head><body class="index-page">'+navigation.renderHeader('cards')+'<main id="main-content">'+loading+'</main></body></html>');
+fs.writeFileSync('index.html','<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="assets/cards/icons/site-favicon.ico?v=4"><title>Slay the Spire II</title><link rel="stylesheet" href="'+asset('assets/index/index.css')+'"><script defer src="'+asset('assets/index/index-pages.js')+'"></script><script defer src="'+asset('assets/index/index.js')+'"></script></head><body class="index-page">'+navigation.renderHeader('cards')+'<main id="main-content">'+loading+'</main></body></html>');
 console.log('Built index.html: '+navigation.items.length+' embedded pages, one persistent navigation and URL.');

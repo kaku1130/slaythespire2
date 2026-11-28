@@ -1,0 +1,144 @@
+/* Scroll the search, filters, and catalog together. */
+html body main#main-content .entry.relic.catalog-relic-card[data-relic-id] {border-color:var(--plain-rarity-color)}
+html body main#main-content .relic-section {border:0;padding:0;background:transparent;border-radius:0}
+html body main#main-content#main-content .relic-section .catalog>.entry.relic {align-self:stretch;align-content:start}
+html body main#main-content:has(>.relic-filters) {
+  display: block;
+  overflow-y: auto;
+}
+html body main#main-content>.filters {
+  position: static;
+  max-height: none;
+  overflow: visible;
+}
+html body main#main-content>.catalog-scroll {
+  margin-inline: auto;
+  height: auto;
+  max-height: none;
+  overflow: visible;
+}
+
+/* Ancient ownership icons appear beside relic rarity. */
+html body .entry.relic .relic-title-row {flex-wrap:wrap}
+html body .entry.relic .tag {display:flex;align-items:center;flex-wrap:wrap;gap:8px;white-space:normal;min-width:0;flex-shrink:1}
+html body .entry.relic .relic-ancient-icon {display:inline-flex;align-items:center;gap:14px;color:#74b3e6;text-decoration:none;white-space:nowrap}
+html body .entry.relic .relic-ancient-icon img {display:inline-block;width:32px;height:32px;margin:0;object-fit:contain;flex:0 0 32px}
+
+/* No divider beneath the search bar. */
+html body main#main-content>.mobile-search-row,html body main#main-content .catalog-search-tools {border-bottom:0;box-shadow:none}
+
+/* Five characters on the first row, Colorless and Enchantments on the second. */
+html body main#main-content #relic-filter-pool {
+  display:grid;grid-template-columns:repeat(10,minmax(0,1fr));width:100%;min-width:0;gap:8px;
+}
+html body main#main-content #relic-filter-pool>button {grid-column:span 2}
+html body main#main-content #relic-filter-pool>button[value=Shared] {grid-column:1 / span 5;grid-row:2}
+html body main#main-content #relic-filter-pool>button[data-catalog-filter=enchantments] {grid-column:6 / span 5;grid-row:2}
+
+/* Keep one column below the full-width header in a centered quarter-width page. */
+@media screen and (min-width:1025px) and (hover:hover) and (pointer:fine), screen and (min-width:1441px) {
+  html body main#main-content#main-content#main-content:has(>.relic-filters) {width:25vw!important;margin-inline:auto!important}
+  html body main#main-content#main-content#main-content:has(>.relic-filters)>.catalog-scroll {
+    width:100%!important;
+    max-width:none;
+    min-width:0;
+    margin-inline:auto;
+  }
+  html body main#main-content:has(>.relic-filters)>.catalog-scroll .catalog {
+    grid-template-columns:minmax(0,1fr);
+  }
+  html body main#main-content .entry.relic {align-content:start}
+}
+
+/* Use the same stacked card presentation as the ancient relic cards. */
+html body main#main-content .catalog-relic-card[data-relic-id][hidden] {display:none!important}
+html body main#main-content .catalog-relic-card .relic-icon-row {display:grid;grid-template-columns:minmax(0,1fr) 72px minmax(0,1fr);gap:8px;align-items:start;min-width:0;width:100%}
+html body main#main-content .catalog-relic-card .relic-icon-row>img {grid-column:2;grid-row:1;display:block;width:72px;height:72px;object-fit:contain;margin:0}
+html body main#main-content .catalog-relic-card .relic-pool-corner {grid-column:1;grid-row:1;justify-self:start;display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:4px;min-width:0;max-width:100%;margin:0;color:var(--pool-color,#aab6c4);font:600 20px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+html body main#main-content .catalog-relic-card .relic-pool-corner>span {display:block;min-width:0;overflow-wrap:anywhere}
+html body main#main-content#main-content .catalog-relic-card .relic-icon-row>.relic-rarity-row {grid-column:3;grid-row:1;justify-self:end;display:block;width:auto;max-width:100%;min-width:0;margin:0;text-align:right;font:600 16px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+html body main#main-content#main-content .catalog-relic-card .relic-icon-row>.relic-rarity-row>[data-relic-rarity] {display:block;max-width:100%;overflow-wrap:anywhere;text-align:right}
+html body main#main-content .catalog-relic-card .relic-pool-corner>img {display:block;width:28px;height:28px;object-fit:contain;margin:0;flex:none}
+html body main#main-content .catalog-relic-card[data-relic-id] {grid-template-columns:minmax(0,1fr);grid-template-rows:auto;grid-auto-rows:auto;align-items:start}
+html body main#main-content .catalog-relic-card .relic-card-text {grid-column:1;grid-row:1}
+html body main#main-content#main-content .catalog-relic-card .relic-icon-row>.relic-rarity-row:has(>.relic-ancient-icon) {display:inline-flex;align-items:center;justify-content:flex-end;gap:4px;max-width:none;white-space:nowrap}
+html body main#main-content .catalog-relic-card .relic-rarity-row .relic-ancient-icon {display:inline-flex;align-items:center;justify-content:center;flex:none;margin:0;padding:0}
+html body main#main-content .catalog-relic-card .relic-rarity-row .relic-ancient-icon img {display:block;width:20px;height:20px;margin:0;flex:none;object-fit:contain}
+html body main#main-content .catalog-relic-card[data-relic-id] .relic-card-text > p {width:100%;margin:0 auto;justify-self:center;text-align:center}
+html body main#main-content .catalog-relic-card .relic-card-text h3 .relic-name-zh {display:block}
+html body main#main-content .catalog-relic-card .relic-card-text .tag {justify-content:center;margin:0}
+
+/* Acquisition percentages use the source site's All Characters scope. */
+html body main#main-content .catalog-relic-card .relic-act-stats {display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;width:100%;min-width:0;margin:0;padding:0;border:0;text-align:center}
+html body main#main-content .relic-act-stats>.relic-act-stat {min-width:0}
+html body main#main-content .relic-act-stats>.relic-act-stat+.relic-act-stat {border:0}
+html body main#main-content .relic-act-stats dt {margin:0 0 6px;color:#e3e8ee;font:700 16px/1.4 Arial,sans-serif}
+html body main#main-content .relic-act-stats dd {display:flex;flex-direction:column;align-items:center;gap:2px;min-width:0;margin:0}
+html body main#main-content .relic-act-metric {color:var(--muted,#aab6c4);font:400 14px/1.4 Arial,sans-serif}
+html body main#main-content .relic-act-value {color:#e3e8ee;font:700 20px/1.4 Arial,sans-serif;white-space:nowrap}
+
+/* Align every part of the relic card to the left. */
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card {text-align:left}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-card-text :is(h2,h3) {display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:4px 8px;text-align:left}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-card-text :is(h2,h3) :is(.relic-name-zh,.relic-name-en) {display:block;flex:0 1 auto;min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-card-text>p {justify-self:start;margin-inline:0;text-align:left}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-icon-row {grid-template-columns:minmax(0,1fr)}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-icon-row>img {grid-column:1 / -1;grid-row:1;justify-self:start}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row {display:inline-flex;flex:0 0 auto;align-items:center;flex-wrap:nowrap;gap:12px;max-width:100%;min-width:0}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row>.relic-pool-corner {display:flex!important;align-items:center;flex:0 0 auto;flex-wrap:nowrap;max-width:100%;white-space:nowrap}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row>.relic-rarity-row {display:flex!important;flex:0 0 auto;align-items:center;gap:4px;justify-content:flex-start;white-space:nowrap;text-align:left;font:600 18px/1.4 Arial,"Microsoft JhengHei",sans-serif}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row [data-relic-rarity] {text-align:left}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .tag {justify-content:flex-start}
+html body main#main-content .catalog-relic-card>.catalog-source-links {justify-content:flex-start;align-items:center;align-self:start;margin-top:0;padding-top:0}
+html body main#main-content .catalog-relic-card>.catalog-source-links>a {justify-content:flex-start;margin-left:0}
+html body main#main-content .catalog-relic-card .relic-act-stats {text-align:left}
+html body main#main-content .catalog-relic-card .relic-act-stats dd {align-items:flex-start}
+html body main#main-content .catalog-relic-card .relic-act-stat+.relic-act-stat {padding-left:0}
+/* Place each Act value on the right of its label. */
+html body main#main-content .catalog-relic-card .relic-act-stat {display:flex;flex:0 0 auto;align-items:center;justify-content:flex-start;flex-wrap:nowrap;gap:8px}
+html body main#main-content .catalog-relic-card .relic-act-stat dt {margin:0;font:700 20px/1.4 Arial,sans-serif}
+html body main#main-content .catalog-relic-card .relic-act-stat dd {margin-left:0;align-items:flex-start;text-align:left}
+
+/* Keep Act statistics immediately after the description, even in equal-height rows. */
+html body main#main-content#main-content#main-content .catalog-relic-card:has(>.catalog-source-links) {grid-template-rows:none;grid-auto-rows:auto;align-content:start}
+html body main#main-content#main-content#main-content .catalog-relic-card .relic-card-text {grid-template-rows:repeat(3,auto);align-content:start}
+
+/* Phone relic cards stack both names above one intact metadata row. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-card-text :is(h2,h3) {flex-direction:column;align-items:center}
+ html body main#main-content .relic-ancient-menu {display:none!important}
+}
+
+
+/* Center card content within 90% of its outer frame. */
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card {padding-inline:5%;text-align:center;justify-items:center;overflow-wrap:anywhere}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card>.relic-card-text {width:100%;max-width:100%;min-width:0;justify-items:center}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-card-text :is(h2,h3) {width:100%;min-width:0;justify-content:center;text-align:center}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-card-text>p {width:100%;max-width:100%;justify-self:center;margin-inline:auto;text-align:center}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-icon-row>img {justify-self:center}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row {flex:0 1 auto;flex-wrap:wrap;justify-content:center}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row>:is(.relic-pool-corner,.relic-rarity-row) {flex:0 1 auto;flex-wrap:wrap;justify-content:center;white-space:normal;text-align:center}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card :is([data-relic-rarity],.tag) {text-align:center;justify-content:center}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card>.catalog-source-links {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:100%;align-items:center}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card>.catalog-source-links>a {flex:0 1 auto;max-width:100%;justify-content:center;margin-inline:0;white-space:normal;overflow-wrap:anywhere}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-act-stats {max-width:100%;justify-content:center;text-align:center}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-act-stat {max-width:100%;flex-wrap:wrap;justify-content:center}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-act-stat dd {align-items:center;text-align:center}
+
+/* Source attribution: Spirebird on the left, Untapped on the right. */
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card>.catalog-source-links>.catalog-spirebird-link {grid-column:1;grid-row:1;justify-self:start;text-align:left;justify-content:flex-start}
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card>.catalog-source-links>.catalog-untapped-link {grid-column:2;grid-row:1;justify-self:end;text-align:right;justify-content:flex-end}
+
+/* Pool and rarity occupy a centered row below the English name. */
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row {flex:0 0 auto;width:100%;justify-content:center}
+
+/* Phone names each occupy their own centered row. */
+@media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
+ html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-card-text :is(h2,h3) > :is(.relic-name-zh,.relic-name-en) {width:100%;text-align:center}
+}
+
+/* Match card source links with light blue, underlined hover feedback. */
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card>.catalog-source-links>a:hover {color:#8bcaf0;text-decoration:underline}
+
+/* Hide card rarity while keeping the pool centered. */
+html body main#main-content#main-content#main-content#main-content .catalog-relic-card .relic-metadata-row>.relic-rarity-row {display:none!important}

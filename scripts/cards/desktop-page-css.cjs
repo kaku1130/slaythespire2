@@ -9,8 +9,7 @@ function writeDesktopPage(page, html, {searchControls = true, attribution = true
   if (!/src="assets\/cards\/page-scroll\.js(?:\?[^" ]*)?"/.test(html)) html = html.replace('</body>', '<script src="assets/cards/page-scroll.js?v=2"></script></body>');
   if (searchControls && !html.includes('src="assets/cards/search-controls.js"')) html = html.replace('</body>', '<script src="assets/cards/search-controls.js"></script></body>');
   const basename = path.basename(page, '.html');
-  if (['characters','relics','potions','enchantments','monsters'].includes(basename) && !html.includes('src="assets/cards/filter-memory.js"')) html = html.replace('</body>', '<script src="assets/cards/filter-memory.js"></script></body>');
-  const name = ({cards:'cards',characters:'builds',relics:'relic',potions:'potion',ancients:'ancient',monsters:'monster'})[basename] || basename;
+  const name = basename;
   const stylesheet = path.posix.join('assets', name, name + '.css');
   const styleTags = /<style>([\s\S]*?)<\/style>|<link\b(?=[^>]*\brel="stylesheet")[^>]*\bhref="([^"]+)"[^>]*>/g;
   const styles = [];

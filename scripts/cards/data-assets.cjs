@@ -1,13 +1,15 @@
 process.chdir(require('node:path').resolve(__dirname,'../..'));
 const fs = require('node:fs');
-const categories = ['builds','cards','monster','potion','relic','enchantments'];
+const folders = require('./asset-layout.cjs');
+const categories = Object.keys(folders);
+const categoriesByFolder = Object.fromEntries(Object.entries(folders).map(([category,folder])=>[folder,category]));
 function load() {
   return Object.assign({}, ...categories.map(category => JSON.parse(fs.readFileSync('data/' + category + '/assets.json', 'utf8'))));
 }
 function save(assets) {
   const groups = Object.fromEntries(categories.map(category => [category, {}]));
   for (const [source, target] of Object.entries(assets)) {
-    const category = target.split('/')[1];
+    const category = categoriesByFolder[target.split('/')[1]];
     if (!groups[category]) throw Error('Unknown asset category: ' + target);
     groups[category][source] = target;
   }

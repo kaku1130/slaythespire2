@@ -77,7 +77,7 @@ const catalog = require('../../data/relic/catalog.json');
       await root.locator('#AKABEKO .relic-act-stats').waitFor({state: 'visible'});
       if (!embedded) {
         await page.setViewportSize({width: 1440, height: 1100});
-        await root.locator('#AKABEKO').screenshot({path: 'assets/relic/previews/relic-act-stats.png'});
+        await root.locator('#AKABEKO').screenshot({path: 'assets/relics/previews/relic-act-stats.png'});
       }
       assert.deepEqual(errors, []);
       console.log('PASS ' + (embedded ? 'homepage' : 'standalone') + ': 297 relics match source Act values; unavailable rows and empty blocks omitted; five widths, offline display and search work.');

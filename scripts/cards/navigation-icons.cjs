@@ -4,10 +4,10 @@ const path = require('node:path');
 const files = {
   builds:['assets/cards/icons/ironclad.webp','contain'],
   cards:['assets/cards/icons/nav-cards.webp','cover'],
-  relic:['assets/relic/images/nav-relics.webp','contain'],
-  potion:['assets/potion/images/nav-potions.webp','contain'],
+  relic:['assets/relics/images/nav-relics.webp','contain'],
+  potion:['assets/potions/images/nav-potions.webp','contain'],
   enchantments:['assets/enchantments/images/slither.webp','contain'],
-  monster:['assets/monster/images/the-insatiable.webp','contain']
+  monster:['assets/monsters/images/the-insatiable.webp','contain']
 };
 const columnCount=Object.keys(files).length;
 const navigationWidth=columnCount*62+(columnCount-1)*4;

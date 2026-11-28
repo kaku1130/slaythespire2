@@ -29,7 +29,7 @@ const data=JSON.parse(fs.readFileSync('data/builds/characters.json','utf8'));
   for(const url of await page.locator('a[href]').evaluateAll(nodes=>nodes.map(node=>node.href).filter(href=>href.startsWith('file:')))){
    assert.ok(fs.existsSync(fileURLToPath(url)),url);
   }
-  const preview='assets/builds/previews';fs.mkdirSync(preview,{recursive:true});
+  const preview='assets/characters/previews';fs.mkdirSync(preview,{recursive:true});
   await page.screenshot({path:preview+'/characters-index-1440.png'});
   assert.equal(await page.locator('.character-back').textContent(),'← All Characters');
   assert.equal(await page.locator('.character-tile a a').count(),0);

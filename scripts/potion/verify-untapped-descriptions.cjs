@@ -30,7 +30,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
     assert.deepEqual(actual.colors,expected,item.id+' exact website colors');
    }
    await page.locator('#search').fill('"Strength Potion"');assert.equal(await page.locator('.entry.potion:visible').count(),1);
-   if(mode==='file')await page.screenshot({path:'assets/potion/previews/untapped-effects-1440.png'});
+   if(mode==='file')await page.screenshot({path:'assets/potions/previews/untapped-effects-1440.png'});
    assert.deepEqual(errors,[]);console.log('PASS '+mode+': all 63 English effects, colors, Chinese names, source links and English-only display.');await context.close();
   }
  }finally{await browser.close();}

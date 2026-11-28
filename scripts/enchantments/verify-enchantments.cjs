@@ -31,7 +31,7 @@ const expected = ['BEAUTIFUL_BRACELET','ELECTRIC_SHRYMP','FRESNEL_LENS','GLITTER
     assert.equal(await button.getAttribute('aria-pressed'), 'true');
     assert.equal(await page.locator('.relic-ancient-menu [aria-pressed=true]').count(), 0);
     assert.equal(await page.locator('#MYSTIC_LIGHTER .relic-enchantment-link').getAttribute('href'), 'enchantments.html');
-    await page.screenshot({path:'assets/relic/previews/relic-enchantments.png'});
+    await page.screenshot({path:'assets/relics/previews/relic-enchantments.png'});
     await page.reload();
     assert.equal(await button.getAttribute('aria-pressed'), 'true');
     assert.equal(await page.locator('.entry.relic:visible').count(), 15);
@@ -51,6 +51,16 @@ const expected = ['BEAUTIFUL_BRACELET','ELECTRIC_SHRYMP','FRESNEL_LENS','GLITTER
     if (await frame.locator('[data-catalog-filter=enchantments]').getAttribute('aria-pressed') !== 'true') await frame.locator('[data-catalog-filter=enchantments]').click();
     await frame.locator('#KIFUDA .relic-enchantment-link[href$="ADROIT"]').click();
     assert(await page.frameLocator('iframe[data-page=enchantments]').locator('#enchantment-ADROIT').isVisible());
+    // Verify the homepage's embedded copy, which can lag behind the standalone page.
+    for (const width of [1440, 390]) {
+      await page.setViewportSize({width, height:1100});
+      const adroit = page.frameLocator('iframe[data-page=enchantments]').locator('#enchantment-ADROIT');
+      const effect = await adroit.locator('p').boundingBox();
+      const source = await adroit.locator('.enchantment-source').boundingBox();
+      assert.match(await adroit.locator('p').innerText(), /Gain X Block\./);
+      assert.match(await adroit.locator('.enchantment-source').innerText(), /Kifuda/);
+      assert(source.y >= effect.y + effect.height, 'Adroit: Shop Kifuda must be below Gain X Block at ' + width + 'px');
+    }
     assert.deepEqual(errors, []);
     console.log('PASS: 22 pink enchantments, image attribution, colored sources, 15 relics, filter memory/search and direct/index links.');
   } finally { await browser.close(); }

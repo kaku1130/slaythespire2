@@ -18,7 +18,7 @@
           "name": "Vantom",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/vantom.png",
           "hp": "183",
-          "image": "assets/monster/images/vantom.webp"
+          "image": "assets/monsters/images/vantom.webp"
         }
       ]
     },
@@ -33,19 +33,19 @@
           "name": "Kin Follower",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/kin_follower.png",
           "hp": "62-63",
-          "image": "assets/monster/images/kin-follower.webp"
+          "image": "assets/monsters/images/kin-follower.webp"
         },
         {
           "name": "Kin Follower",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/kin_follower.png",
           "hp": "62-63",
-          "image": "assets/monster/images/kin-follower.webp"
+          "image": "assets/monsters/images/kin-follower.webp"
         },
         {
           "name": "Kin Priest",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/kin_priest.png",
           "hp": "199",
-          "image": "assets/monster/images/kin-priest.webp"
+          "image": "assets/monsters/images/kin-priest.webp"
         }
       ]
     },
@@ -60,7 +60,7 @@
           "name": "Ceremonial Beast",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/ceremonial_beast.png",
           "hp": "262",
-          "image": "assets/monster/images/ceremonial-beast.webp"
+          "image": "assets/monsters/images/ceremonial-beast.webp"
         }
       ]
     },
@@ -75,7 +75,7 @@
           "name": "Phrog Parasite",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/phrog_parasite.png",
           "hp": "66-68",
-          "image": "assets/monster/images/phrog-parasite.webp"
+          "image": "assets/monsters/images/phrog-parasite.webp"
         }
       ]
     },
@@ -90,7 +90,7 @@
           "name": "Bygone Effigy",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/bygone_effigy.png",
           "hp": "132",
-          "image": "assets/monster/images/bygone-effigy.webp"
+          "image": "assets/monsters/images/bygone-effigy.webp"
         }
       ]
     },
@@ -105,7 +105,7 @@
           "name": "Byrdonis",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/byrdonis.png",
           "hp": "90",
-          "image": "assets/monster/images/byrdonis.webp"
+          "image": "assets/monsters/images/byrdonis.webp"
         }
       ]
     },
@@ -120,13 +120,13 @@
           "name": "Shrinker Beetle",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/shrinker_beetle.png",
           "hp": "40-42",
-          "image": "assets/monster/images/shrinker-beetle.webp"
+          "image": "assets/monsters/images/shrinker-beetle.webp"
         },
         {
           "name": "Fuzzy Wurm Crawler",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/fuzzy_wurm_crawler.png",
           "hp": "58-59",
-          "image": "assets/monster/images/fuzzy-wurm-crawler.webp"
+          "image": "assets/monsters/images/fuzzy-wurm-crawler.webp"
         }
       ]
     },
@@ -141,19 +141,19 @@
           "name": "Axe Raider",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/axe_ruby_raider.png",
           "hp": "21-23",
-          "image": "assets/monster/images/axe-ruby-raider.webp"
+          "image": "assets/monsters/images/axe-ruby-raider.webp"
         },
         {
           "name": "Brute Raider",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/brute_ruby_raider.png",
           "hp": "31-34",
-          "image": "assets/monster/images/brute-ruby-raider.webp"
+          "image": "assets/monsters/images/brute-ruby-raider.webp"
         },
         {
           "name": "Assassin Raider",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/assassin_ruby_raider.png",
           "hp": "19-24",
-          "image": "assets/monster/images/assassin-ruby-raider.webp"
+          "image": "assets/monsters/images/assassin-ruby-raider.webp"
         }
       ]
     },
@@ -168,13 +168,13 @@
           "name": "Nibbit",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/nibbit.png",
           "hp": "44-48",
-          "image": "assets/monster/images/nibbit.webp"
+          "image": "assets/monsters/images/nibbit.webp"
         },
         {
           "name": "Nibbit",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/nibbit.png",
           "hp": "44-48",
-          "image": "assets/monster/images/nibbit.webp"
+          "image": "assets/monsters/images/nibbit.webp"
         }
       ]
     },
@@ -189,13 +189,13 @@
           "name": "Snapping Jaxfruit",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/snapping_jaxfruit.png",
           "hp": "34-36",
-          "image": "assets/monster/images/snapping-jaxfruit.webp"
+          "image": "assets/monsters/images/snapping-jaxfruit.webp"
         },
         {
           "name": "Flyconid",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/flyconid.png",
           "hp": "51-53",
-          "image": "assets/monster/images/flyconid.webp"
+          "image": "assets/monsters/images/flyconid.webp"
         }
       ]
     },
@@ -210,13 +210,13 @@
           "name": "Leaf Slime (M)",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/leaf_slime_m.png",
           "hp": "33-36",
-          "image": "assets/monster/images/leaf-slime-m.webp"
+          "image": "assets/monsters/images/leaf-slime-m.webp"
         },
         {
           "name": "Flyconid",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/flyconid.png",
           "hp": "51-53",
-          "image": "assets/monster/images/flyconid.webp"
+          "image": "assets/monsters/images/flyconid.webp"
         }
       ]
     },
@@ -231,25 +231,25 @@
           "name": "Twig Slime (M)",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/twig_slime_m.png",
           "hp": "27-29",
-          "image": "assets/monster/images/twig-slime-m.webp"
+          "image": "assets/monsters/images/twig-slime-m.webp"
         },
         {
           "name": "Leaf Slime (M)",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/leaf_slime_m.png",
           "hp": "33-36",
-          "image": "assets/monster/images/leaf-slime-m.webp"
+          "image": "assets/monsters/images/leaf-slime-m.webp"
         },
         {
           "name": "Twig Slime (S)",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/twig_slime_s.png",
           "hp": "8-12",
-          "image": "assets/monster/images/twig-slime-s.webp"
+          "image": "assets/monsters/images/twig-slime-s.webp"
         },
         {
           "name": "Leaf Slime (S)",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/leaf_slime_s.png",
           "hp": "12-16",
-          "image": "assets/monster/images/leaf-slime-s.webp"
+          "image": "assets/monsters/images/leaf-slime-s.webp"
         }
       ]
     },
@@ -264,13 +264,13 @@
           "name": "Leaf Slime (M)",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/leaf_slime_m.png",
           "hp": "33-36",
-          "image": "assets/monster/images/leaf-slime-m.webp"
+          "image": "assets/monsters/images/leaf-slime-m.webp"
         },
         {
           "name": "Slithering Strangler",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/slithering_strangler.png",
           "hp": "54-56",
-          "image": "assets/monster/images/slithering-strangler.webp"
+          "image": "assets/monsters/images/slithering-strangler.webp"
         }
       ]
     },
@@ -285,19 +285,19 @@
           "name": "Inklet",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/inklet.png",
           "hp": "12-18",
-          "image": "assets/monster/images/inklet.webp"
+          "image": "assets/monsters/images/inklet.webp"
         },
         {
           "name": "Inklet",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/inklet.png",
           "hp": "12-18",
-          "image": "assets/monster/images/inklet.webp"
+          "image": "assets/monsters/images/inklet.webp"
         },
         {
           "name": "Inklet",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/inklet.png",
           "hp": "12-18",
-          "image": "assets/monster/images/inklet.webp"
+          "image": "assets/monsters/images/inklet.webp"
         }
       ]
     },
@@ -312,7 +312,7 @@
           "name": "Vine Shambler",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/vine_shambler.png",
           "hp": "64",
-          "image": "assets/monster/images/vine-shambler.webp"
+          "image": "assets/monsters/images/vine-shambler.webp"
         }
       ]
     },
@@ -327,7 +327,7 @@
           "name": "Fogmog",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/fogmog.png",
           "hp": "78",
-          "image": "assets/monster/images/fogmog.webp"
+          "image": "assets/monsters/images/fogmog.webp"
         }
       ]
     },
@@ -342,7 +342,7 @@
           "name": "Mawler",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/mawler.png",
           "hp": "76",
-          "image": "assets/monster/images/mawler.webp"
+          "image": "assets/monsters/images/mawler.webp"
         }
       ]
     },
@@ -357,7 +357,7 @@
           "name": "Cubex Construct",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/cubex_construct.png",
           "hp": "70",
-          "image": "assets/monster/images/cubex-construct.webp"
+          "image": "assets/monsters/images/cubex-construct.webp"
         }
       ]
     },
@@ -372,19 +372,19 @@
           "name": "Leaf Slime (S)",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/leaf_slime_s.png",
           "hp": "12-16",
-          "image": "assets/monster/images/leaf-slime-s.webp"
+          "image": "assets/monsters/images/leaf-slime-s.webp"
         },
         {
           "name": "Leaf Slime (M)",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/leaf_slime_m.png",
           "hp": "33-36",
-          "image": "assets/monster/images/leaf-slime-m.webp"
+          "image": "assets/monsters/images/leaf-slime-m.webp"
         },
         {
           "name": "Twig Slime (S)",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/twig_slime_s.png",
           "hp": "8-12",
-          "image": "assets/monster/images/twig-slime-s.webp"
+          "image": "assets/monsters/images/twig-slime-s.webp"
         }
       ]
     },
@@ -399,7 +399,7 @@
           "name": "Nibbit",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/nibbit.png",
           "hp": "44-48",
-          "image": "assets/monster/images/nibbit.webp"
+          "image": "assets/monsters/images/nibbit.webp"
         }
       ]
     },
@@ -414,7 +414,7 @@
           "name": "Fuzzy Wurm Crawler",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/fuzzy_wurm_crawler.png",
           "hp": "58-59",
-          "image": "assets/monster/images/fuzzy-wurm-crawler.webp"
+          "image": "assets/monsters/images/fuzzy-wurm-crawler.webp"
         }
       ]
     },
@@ -429,7 +429,7 @@
           "name": "Shrinker Beetle",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/shrinker_beetle.png",
           "hp": "40-42",
-          "image": "assets/monster/images/shrinker-beetle.webp"
+          "image": "assets/monsters/images/shrinker-beetle.webp"
         }
       ]
     },
@@ -444,25 +444,25 @@
           "name": "Wriggler",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/wriggler.png",
           "hp": "18-22",
-          "image": "assets/monster/images/wriggler.webp"
+          "image": "assets/monsters/images/wriggler.webp"
         },
         {
           "name": "Wriggler",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/wriggler.png",
           "hp": "18-22",
-          "image": "assets/monster/images/wriggler.webp"
+          "image": "assets/monsters/images/wriggler.webp"
         },
         {
           "name": "Wriggler",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/wriggler.png",
           "hp": "18-22",
-          "image": "assets/monster/images/wriggler.webp"
+          "image": "assets/monsters/images/wriggler.webp"
         },
         {
           "name": "Wriggler",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/wriggler.png",
           "hp": "18-22",
-          "image": "assets/monster/images/wriggler.webp"
+          "image": "assets/monsters/images/wriggler.webp"
         }
       ]
     },
@@ -477,7 +477,7 @@
           "name": "Waterfall Giant",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/waterfall_giant.png",
           "hp": "250",
-          "image": "assets/monster/images/waterfall-giant.webp"
+          "image": "assets/monsters/images/waterfall-giant.webp"
         }
       ]
     },
@@ -492,7 +492,7 @@
           "name": "Lagavulin Matriarch",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/lagavulin_matriarch.png",
           "hp": "233",
-          "image": "assets/monster/images/lagavulin-matriarch.webp"
+          "image": "assets/monsters/images/lagavulin-matriarch.webp"
         }
       ]
     },
@@ -507,7 +507,7 @@
           "name": "Soul Fysh",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/soul_fysh.png",
           "hp": "221",
-          "image": "assets/monster/images/soul-fysh.webp"
+          "image": "assets/monsters/images/soul-fysh.webp"
         }
       ]
     },
@@ -522,25 +522,25 @@
           "name": "Phantasmal Gardener",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/phantasmal_gardener.png",
           "hp": "27-32",
-          "image": "assets/monster/images/phantasmal-gardener.webp"
+          "image": "assets/monsters/images/phantasmal-gardener.webp"
         },
         {
           "name": "Phantasmal Gardener",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/phantasmal_gardener.png",
           "hp": "27-32",
-          "image": "assets/monster/images/phantasmal-gardener.webp"
+          "image": "assets/monsters/images/phantasmal-gardener.webp"
         },
         {
           "name": "Phantasmal Gardener",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/phantasmal_gardener.png",
           "hp": "27-32",
-          "image": "assets/monster/images/phantasmal-gardener.webp"
+          "image": "assets/monsters/images/phantasmal-gardener.webp"
         },
         {
           "name": "Phantasmal Gardener",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/phantasmal_gardener.png",
           "hp": "27-32",
-          "image": "assets/monster/images/phantasmal-gardener.webp"
+          "image": "assets/monsters/images/phantasmal-gardener.webp"
         }
       ]
     },
@@ -555,7 +555,7 @@
           "name": "Terror Eel",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/terror_eel.png",
           "hp": "150",
-          "image": "assets/monster/images/terror-eel.webp"
+          "image": "assets/monsters/images/terror-eel.webp"
         }
       ]
     },
@@ -570,7 +570,7 @@
           "name": "Skulking Colony",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/skulking_colony.png",
           "hp": "80",
-          "image": "assets/monster/images/skulking-colony.webp"
+          "image": "assets/monsters/images/skulking-colony.webp"
         }
       ]
     },
@@ -585,13 +585,13 @@
           "name": "Calcified Cultist",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/calcified_cultist.png",
           "hp": "39-42",
-          "image": "assets/monster/images/calcified-cultist.webp"
+          "image": "assets/monsters/images/calcified-cultist.webp"
         },
         {
           "name": "Seapunk",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/seapunk.png",
           "hp": "47-49",
-          "image": "assets/monster/images/seapunk.webp"
+          "image": "assets/monsters/images/seapunk.webp"
         }
       ]
     },
@@ -606,13 +606,13 @@
           "name": "Calcified Cultist",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/calcified_cultist.png",
           "hp": "39-42",
-          "image": "assets/monster/images/calcified-cultist.webp"
+          "image": "assets/monsters/images/calcified-cultist.webp"
         },
         {
           "name": "Damp Cultist",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/damp_cultist.png",
           "hp": "52-54",
-          "image": "assets/monster/images/damp-cultist.webp"
+          "image": "assets/monsters/images/damp-cultist.webp"
         }
       ]
     },
@@ -627,19 +627,19 @@
           "name": "Corpse Slug",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/corpse_slug.png",
           "hp": "27-29",
-          "image": "assets/monster/images/corpse-slug.webp"
+          "image": "assets/monsters/images/corpse-slug.webp"
         },
         {
           "name": "Corpse Slug",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/corpse_slug.png",
           "hp": "27-29",
-          "image": "assets/monster/images/corpse-slug.webp"
+          "image": "assets/monsters/images/corpse-slug.webp"
         },
         {
           "name": "Corpse Slug",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/corpse_slug.png",
           "hp": "27-29",
-          "image": "assets/monster/images/corpse-slug.webp"
+          "image": "assets/monsters/images/corpse-slug.webp"
         }
       ]
     },
@@ -654,7 +654,7 @@
           "name": "Gremlin Merc",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/gremlin_merc.png",
           "hp": "51-53",
-          "image": "assets/monster/images/gremlin-merc.webp"
+          "image": "assets/monsters/images/gremlin-merc.webp"
         }
       ]
     },
@@ -669,7 +669,7 @@
           "name": "Fossil Stalker",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/fossil_stalker.png",
           "hp": "54-56",
-          "image": "assets/monster/images/fossil-stalker.webp"
+          "image": "assets/monsters/images/fossil-stalker.webp"
         }
       ]
     },
@@ -684,7 +684,7 @@
           "name": "Living Fog",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/living_fog.png",
           "hp": "82",
-          "image": "assets/monster/images/living-fog.webp"
+          "image": "assets/monsters/images/living-fog.webp"
         }
       ]
     },
@@ -699,19 +699,19 @@
           "name": "Two-Tailed Rat",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/two_tailed_rat.png",
           "hp": "18-22",
-          "image": "assets/monster/images/two-tailed-rat.webp"
+          "image": "assets/monsters/images/two-tailed-rat.webp"
         },
         {
           "name": "Two-Tailed Rat",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/two_tailed_rat.png",
           "hp": "18-22",
-          "image": "assets/monster/images/two-tailed-rat.webp"
+          "image": "assets/monsters/images/two-tailed-rat.webp"
         },
         {
           "name": "Two-Tailed Rat",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/two_tailed_rat.png",
           "hp": "18-22",
-          "image": "assets/monster/images/two-tailed-rat.webp"
+          "image": "assets/monsters/images/two-tailed-rat.webp"
         }
       ]
     },
@@ -726,7 +726,7 @@
           "name": "Haunted Ship",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/haunted_ship.png",
           "hp": "67",
-          "image": "assets/monster/images/haunted-ship.webp"
+          "image": "assets/monsters/images/haunted-ship.webp"
         }
       ]
     },
@@ -741,7 +741,7 @@
           "name": "Punch Construct",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/punch_construct.png",
           "hp": "60",
-          "image": "assets/monster/images/punch-construct.webp"
+          "image": "assets/monsters/images/punch-construct.webp"
         }
       ]
     },
@@ -756,7 +756,7 @@
           "name": "Sewer Clam",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/sewer_clam.png",
           "hp": "58",
-          "image": "assets/monster/images/sewer-clam.webp"
+          "image": "assets/monsters/images/sewer-clam.webp"
         }
       ]
     },
@@ -771,13 +771,13 @@
           "name": "Corpse Slug",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/corpse_slug.png",
           "hp": "27-29",
-          "image": "assets/monster/images/corpse-slug.webp"
+          "image": "assets/monsters/images/corpse-slug.webp"
         },
         {
           "name": "Corpse Slug",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/corpse_slug.png",
           "hp": "27-29",
-          "image": "assets/monster/images/corpse-slug.webp"
+          "image": "assets/monsters/images/corpse-slug.webp"
         }
       ]
     },
@@ -792,13 +792,13 @@
           "name": "Toadpole",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/toadpole.png",
           "hp": "22-26",
-          "image": "assets/monster/images/toadpole.webp"
+          "image": "assets/monsters/images/toadpole.webp"
         },
         {
           "name": "Toadpole",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/toadpole.png",
           "hp": "22-26",
-          "image": "assets/monster/images/toadpole.webp"
+          "image": "assets/monsters/images/toadpole.webp"
         }
       ]
     },
@@ -813,7 +813,7 @@
           "name": "Seapunk",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/seapunk.png",
           "hp": "47-49",
-          "image": "assets/monster/images/seapunk.webp"
+          "image": "assets/monsters/images/seapunk.webp"
         }
       ]
     },
@@ -828,7 +828,7 @@
           "name": "Sludge Spinner",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/sludge_spinner.png",
           "hp": "41-42",
-          "image": "assets/monster/images/sludge-spinner.webp"
+          "image": "assets/monsters/images/sludge-spinner.webp"
         }
       ]
     },
@@ -843,13 +843,13 @@
           "name": "Punch Construct",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/punch_construct.png",
           "hp": "60",
-          "image": "assets/monster/images/punch-construct.webp"
+          "image": "assets/monsters/images/punch-construct.webp"
         },
         {
           "name": "Punch Construct",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/punch_construct.png",
           "hp": "60",
-          "image": "assets/monster/images/punch-construct.webp"
+          "image": "assets/monsters/images/punch-construct.webp"
         }
       ]
     },
@@ -864,13 +864,13 @@
           "name": "Crusher, Rocket",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/crusher.png",
           "hp": "219",
-          "image": "assets/monster/images/crusher.webp"
+          "image": "assets/monsters/images/crusher.webp"
         },
         {
           "name": "Crusher, Rocket",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/rocket.png",
           "hp": "209",
-          "image": "assets/monster/images/rocket.webp"
+          "image": "assets/monsters/images/rocket.webp"
         }
       ]
     },
@@ -885,7 +885,7 @@
           "name": "Knowledge Demon",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/knowledge_demon.png",
           "hp": "399",
-          "image": "assets/monster/images/knowledge-demon.webp"
+          "image": "assets/monsters/images/knowledge-demon.webp"
         }
       ]
     },
@@ -900,7 +900,7 @@
           "name": "The Insatiable",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/the_insatiable.png",
           "hp": "341",
-          "image": "assets/monster/images/the-insatiable.webp"
+          "image": "assets/monsters/images/the-insatiable.webp"
         }
       ]
     },
@@ -915,19 +915,19 @@
           "name": "Decimillipede",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/decimillipede_segment_front.png",
           "hp": "46-52",
-          "image": "assets/monster/images/decimillipede-segment-front.webp"
+          "image": "assets/monsters/images/decimillipede-segment-front.webp"
         },
         {
           "name": "Decimillipede",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/decimillipede_segment_middle.png",
           "hp": "46-52",
-          "image": "assets/monster/images/decimillipede-segment-middle.webp"
+          "image": "assets/monsters/images/decimillipede-segment-middle.webp"
         },
         {
           "name": "Decimillipede",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/decimillipede_segment_back.png",
           "hp": "46-52",
-          "image": "assets/monster/images/decimillipede-segment-back.webp"
+          "image": "assets/monsters/images/decimillipede-segment-back.webp"
         }
       ]
     },
@@ -942,7 +942,7 @@
           "name": "Infested Prism",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/infested_prism.png",
           "hp": "171",
-          "image": "assets/monster/images/infested-prism.webp"
+          "image": "assets/monsters/images/infested-prism.webp"
         }
       ]
     },
@@ -957,7 +957,7 @@
           "name": "Entomancer",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/entomancer.png",
           "hp": "165",
-          "image": "assets/monster/images/entomancer.webp"
+          "image": "assets/monsters/images/entomancer.webp"
         }
       ]
     },
@@ -972,19 +972,19 @@
           "name": "Bowlbug (Rock)",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/bowlbug_rock.png",
           "hp": "46-49",
-          "image": "assets/monster/images/bowlbug-rock.webp"
+          "image": "assets/monsters/images/bowlbug-rock.webp"
         },
         {
           "name": "Bowlbug (Silk)",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/bowlbug_silk.png",
           "hp": "41-44",
-          "image": "assets/monster/images/bowlbug-silk.webp"
+          "image": "assets/monsters/images/bowlbug-silk.webp"
         },
         {
           "name": "Slumbering Beetle",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/slumbering_beetle.png",
           "hp": "89",
-          "image": "assets/monster/images/slumbering-beetle.webp"
+          "image": "assets/monsters/images/slumbering-beetle.webp"
         }
       ]
     },
@@ -999,7 +999,7 @@
           "name": "Hunter Killer",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/hunter_killer.png",
           "hp": "126",
-          "image": "assets/monster/images/hunter-killer.webp"
+          "image": "assets/monsters/images/hunter-killer.webp"
         }
       ]
     },
@@ -1014,19 +1014,19 @@
           "name": "Bowlbug (Rock)",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/bowlbug_rock.png",
           "hp": "46-49",
-          "image": "assets/monster/images/bowlbug-rock.webp"
+          "image": "assets/monsters/images/bowlbug-rock.webp"
         },
         {
           "name": "Bowlbug (Egg)",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/bowlbug_egg.png",
           "hp": "23-24",
-          "image": "assets/monster/images/bowlbug-egg.webp"
+          "image": "assets/monsters/images/bowlbug-egg.webp"
         },
         {
           "name": "Bowlbug (Nectar)",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/bowlbug_nectar.png",
           "hp": "36-39",
-          "image": "assets/monster/images/bowlbug-nectar.webp"
+          "image": "assets/monsters/images/bowlbug-nectar.webp"
         }
       ]
     },
@@ -1041,7 +1041,7 @@
           "name": "The Obscura",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/the_obscura.png",
           "hp": "129",
-          "image": "assets/monster/images/the-obscura.webp"
+          "image": "assets/monsters/images/the-obscura.webp"
         }
       ]
     },
@@ -1056,7 +1056,7 @@
           "name": "Ovicopter",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/ovicopter.png",
           "hp": "126-132",
-          "image": "assets/monster/images/ovicopter.webp"
+          "image": "assets/monsters/images/ovicopter.webp"
         }
       ]
     },
@@ -1071,13 +1071,13 @@
           "name": "Myte",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/myte.png",
           "hp": "64-69",
-          "image": "assets/monster/images/myte.webp"
+          "image": "assets/monsters/images/myte.webp"
         },
         {
           "name": "Myte",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/myte.png",
           "hp": "64-69",
-          "image": "assets/monster/images/myte.webp"
+          "image": "assets/monsters/images/myte.webp"
         }
       ]
     },
@@ -1092,13 +1092,13 @@
           "name": "Chomper",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/chomper.png",
           "hp": "63-67",
-          "image": "assets/monster/images/chomper.webp"
+          "image": "assets/monsters/images/chomper.webp"
         },
         {
           "name": "Chomper",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/chomper.png",
           "hp": "63-67",
-          "image": "assets/monster/images/chomper.webp"
+          "image": "assets/monsters/images/chomper.webp"
         }
       ]
     },
@@ -1113,25 +1113,25 @@
           "name": "Exoskeleton",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/exoskeleton.png",
           "hp": "26-30",
-          "image": "assets/monster/images/exoskeleton.webp"
+          "image": "assets/monsters/images/exoskeleton.webp"
         },
         {
           "name": "Exoskeleton",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/exoskeleton.png",
           "hp": "26-30",
-          "image": "assets/monster/images/exoskeleton.webp"
+          "image": "assets/monsters/images/exoskeleton.webp"
         },
         {
           "name": "Exoskeleton",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/exoskeleton.png",
           "hp": "26-30",
-          "image": "assets/monster/images/exoskeleton.webp"
+          "image": "assets/monsters/images/exoskeleton.webp"
         },
         {
           "name": "Exoskeleton",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/exoskeleton.png",
           "hp": "26-30",
-          "image": "assets/monster/images/exoskeleton.webp"
+          "image": "assets/monsters/images/exoskeleton.webp"
         }
       ]
     },
@@ -1146,7 +1146,7 @@
           "name": "Spiny Toad",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/spiny_toad.png",
           "hp": "121-124",
-          "image": "assets/monster/images/spiny-toad.webp"
+          "image": "assets/monsters/images/spiny-toad.webp"
         }
       ]
     },
@@ -1161,7 +1161,7 @@
           "name": "Louse Progenitor",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/louse_progenitor.png",
           "hp": "138-141",
-          "image": "assets/monster/images/louse-progenitor.webp"
+          "image": "assets/monsters/images/louse-progenitor.webp"
         }
       ]
     },
@@ -1176,7 +1176,7 @@
           "name": "Thieving Hopper",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/thieving_hopper.png",
           "hp": "84",
-          "image": "assets/monster/images/thieving-hopper.webp"
+          "image": "assets/monsters/images/thieving-hopper.webp"
         }
       ]
     },
@@ -1191,13 +1191,13 @@
           "name": "Bowlbug (Rock)",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/bowlbug_rock.png",
           "hp": "46-49",
-          "image": "assets/monster/images/bowlbug-rock.webp"
+          "image": "assets/monsters/images/bowlbug-rock.webp"
         },
         {
           "name": "Bowlbug (Egg)",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/bowlbug_egg.png",
           "hp": "23-24",
-          "image": "assets/monster/images/bowlbug-egg.webp"
+          "image": "assets/monsters/images/bowlbug-egg.webp"
         }
       ]
     },
@@ -1212,7 +1212,7 @@
           "name": "Tunneler",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/tunneler.png",
           "hp": "92",
-          "image": "assets/monster/images/tunneler.webp"
+          "image": "assets/monsters/images/tunneler.webp"
         }
       ]
     },
@@ -1227,19 +1227,19 @@
           "name": "Exoskeleton",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/exoskeleton.png",
           "hp": "26-30",
-          "image": "assets/monster/images/exoskeleton.webp"
+          "image": "assets/monsters/images/exoskeleton.webp"
         },
         {
           "name": "Exoskeleton",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/exoskeleton.png",
           "hp": "26-30",
-          "image": "assets/monster/images/exoskeleton.webp"
+          "image": "assets/monsters/images/exoskeleton.webp"
         },
         {
           "name": "Exoskeleton",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/exoskeleton.png",
           "hp": "26-30",
-          "image": "assets/monster/images/exoskeleton.webp"
+          "image": "assets/monsters/images/exoskeleton.webp"
         }
       ]
     },
@@ -1254,7 +1254,7 @@
           "name": "Mysterious Knight",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/mysterious_knight.png",
           "hp": "108",
-          "image": "assets/monster/images/mysterious-knight.webp"
+          "image": "assets/monsters/images/mysterious-knight.webp"
         }
       ]
     },
@@ -1269,7 +1269,7 @@
           "name": "The Merchant???",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/fake_merchant_monster.png",
           "hp": "175",
-          "image": "assets/monster/images/fake-merchant-monster.webp"
+          "image": "assets/monsters/images/fake-merchant-monster.webp"
         }
       ]
     },
@@ -1284,7 +1284,7 @@
           "name": "Aeonglass",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/aeonglass.png",
           "hp": "535",
-          "image": "assets/monster/images/aeonglass.webp"
+          "image": "assets/monsters/images/aeonglass.webp"
         }
       ]
     },
@@ -1299,7 +1299,7 @@
           "name": "Test Subject #C8",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/test_subject.png",
           "hp": "111",
-          "image": "assets/monster/images/test-subject.webp"
+          "image": "assets/monsters/images/test-subject.webp"
         }
       ]
     },
@@ -1314,13 +1314,13 @@
           "name": "Torch Head Amalgam",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/torch_head_amalgam.png",
           "hp": "211",
-          "image": "assets/monster/images/torch-head-amalgam.webp"
+          "image": "assets/monsters/images/torch-head-amalgam.webp"
         },
         {
           "name": "Queen",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/queen.png",
           "hp": "419",
-          "image": "assets/monster/images/queen.webp"
+          "image": "assets/monsters/images/queen.webp"
         }
       ]
     },
@@ -1335,19 +1335,19 @@
           "name": "Flail Knight",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/flail_knight.png",
           "hp": "108",
-          "image": "assets/monster/images/flail-knight.webp"
+          "image": "assets/monsters/images/flail-knight.webp"
         },
         {
           "name": "Spectral Knight",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/spectral_knight.png",
           "hp": "97",
-          "image": "assets/monster/images/spectral-knight.webp"
+          "image": "assets/monsters/images/spectral-knight.webp"
         },
         {
           "name": "Magi Knight",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/magi_knight.png",
           "hp": "89",
-          "image": "assets/monster/images/magi-knight.webp"
+          "image": "assets/monsters/images/magi-knight.webp"
         }
       ]
     },
@@ -1362,7 +1362,7 @@
           "name": "Mecha Knight",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/mecha_knight.png",
           "hp": "320",
-          "image": "assets/monster/images/mecha-knight.webp"
+          "image": "assets/monsters/images/mecha-knight.webp"
         }
       ]
     },
@@ -1377,7 +1377,7 @@
           "name": "Soul Nexus",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/soul_nexus.png",
           "hp": "254",
-          "image": "assets/monster/images/soul-nexus.webp"
+          "image": "assets/monsters/images/soul-nexus.webp"
         }
       ]
     },
@@ -1392,19 +1392,19 @@
           "name": "Punch Construct",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/punch_construct.png",
           "hp": "60",
-          "image": "assets/monster/images/punch-construct.webp"
+          "image": "assets/monsters/images/punch-construct.webp"
         },
         {
           "name": "Cubex Construct",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/cubex_construct.png",
           "hp": "70",
-          "image": "assets/monster/images/cubex-construct.webp"
+          "image": "assets/monsters/images/cubex-construct.webp"
         },
         {
           "name": "Cubex Construct",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/cubex_construct.png",
           "hp": "70",
-          "image": "assets/monster/images/cubex-construct.webp"
+          "image": "assets/monsters/images/cubex-construct.webp"
         }
       ]
     },
@@ -1419,25 +1419,25 @@
           "name": "Scroll of Biting",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/scroll_of_biting.png",
           "hp": "33-39",
-          "image": "assets/monster/images/scroll-of-biting.webp"
+          "image": "assets/monsters/images/scroll-of-biting.webp"
         },
         {
           "name": "Scroll of Biting",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/scroll_of_biting.png",
           "hp": "33-39",
-          "image": "assets/monster/images/scroll-of-biting.webp"
+          "image": "assets/monsters/images/scroll-of-biting.webp"
         },
         {
           "name": "Scroll of Biting",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/scroll_of_biting.png",
           "hp": "33-39",
-          "image": "assets/monster/images/scroll-of-biting.webp"
+          "image": "assets/monsters/images/scroll-of-biting.webp"
         },
         {
           "name": "Scroll of Biting",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/scroll_of_biting.png",
           "hp": "33-39",
-          "image": "assets/monster/images/scroll-of-biting.webp"
+          "image": "assets/monsters/images/scroll-of-biting.webp"
         }
       ]
     },
@@ -1452,7 +1452,7 @@
           "name": "Fabricator",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/fabricator.png",
           "hp": "155",
-          "image": "assets/monster/images/fabricator.webp"
+          "image": "assets/monsters/images/fabricator.webp"
         }
       ]
     },
@@ -1467,7 +1467,7 @@
           "name": "Owl Magistrate",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/owl_magistrate.png",
           "hp": "247",
-          "image": "assets/monster/images/owl-magistrate.webp"
+          "image": "assets/monsters/images/owl-magistrate.webp"
         }
       ]
     },
@@ -1482,7 +1482,7 @@
           "name": "Slimed Berserker",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/slimed_berserker.png",
           "hp": "281",
-          "image": "assets/monster/images/slimed-berserker.webp"
+          "image": "assets/monsters/images/slimed-berserker.webp"
         }
       ]
     },
@@ -1497,7 +1497,7 @@
           "name": "Frog Knight",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/frog_knight.png",
           "hp": "199",
-          "image": "assets/monster/images/frog-knight.webp"
+          "image": "assets/monsters/images/frog-knight.webp"
         }
       ]
     },
@@ -1512,13 +1512,13 @@
           "name": "The Lost",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/the_lost.png",
           "hp": "99",
-          "image": "assets/monster/images/the-lost.webp"
+          "image": "assets/monsters/images/the-lost.webp"
         },
         {
           "name": "The Forgotten",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/the_forgotten.png",
           "hp": "111",
-          "image": "assets/monster/images/the-forgotten.webp"
+          "image": "assets/monsters/images/the-forgotten.webp"
         }
       ]
     },
@@ -1533,7 +1533,7 @@
           "name": "Axebot",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/axebot.png",
           "hp": "76-86",
-          "image": "assets/monster/images/axebot.webp"
+          "image": "assets/monsters/images/axebot.webp"
         }
       ]
     },
@@ -1548,7 +1548,7 @@
           "name": "Globe Head",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/globe_head.png",
           "hp": "158",
-          "image": "assets/monster/images/globe-head.webp"
+          "image": "assets/monsters/images/globe-head.webp"
         }
       ]
     },
@@ -1563,7 +1563,7 @@
           "name": "Devoted Sculptor",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/devoted_sculptor.png",
           "hp": "172",
-          "image": "assets/monster/images/devoted-sculptor.webp"
+          "image": "assets/monsters/images/devoted-sculptor.webp"
         }
       ]
     },
@@ -1578,19 +1578,19 @@
           "name": "Scroll of Biting",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/scroll_of_biting.png",
           "hp": "33-39",
-          "image": "assets/monster/images/scroll-of-biting.webp"
+          "image": "assets/monsters/images/scroll-of-biting.webp"
         },
         {
           "name": "Scroll of Biting",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/scroll_of_biting.png",
           "hp": "33-39",
-          "image": "assets/monster/images/scroll-of-biting.webp"
+          "image": "assets/monsters/images/scroll-of-biting.webp"
         },
         {
           "name": "Scroll of Biting",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/scroll_of_biting.png",
           "hp": "33-39",
-          "image": "assets/monster/images/scroll-of-biting.webp"
+          "image": "assets/monsters/images/scroll-of-biting.webp"
         }
       ]
     },
@@ -1605,13 +1605,13 @@
           "name": "Living Shield",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/living_shield.png",
           "hp": "65",
-          "image": "assets/monster/images/living-shield.webp"
+          "image": "assets/monsters/images/living-shield.webp"
         },
         {
           "name": "Turret Operator",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/turret_operator.png",
           "hp": "51",
-          "image": "assets/monster/images/turret-operator.webp"
+          "image": "assets/monsters/images/turret-operator.webp"
         }
       ]
     },
@@ -1626,7 +1626,7 @@
           "name": "The Merchant???",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/fake_merchant_monster.png",
           "hp": "175",
-          "image": "assets/monster/images/fake-merchant-monster.webp"
+          "image": "assets/monsters/images/fake-merchant-monster.webp"
         }
       ]
     },
@@ -1641,7 +1641,7 @@
           "name": "Battle Friend V2.0",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/battle_friend_v2.png",
           "hp": "150",
-          "image": "assets/monster/images/battle-friend-v2.webp"
+          "image": "assets/monsters/images/battle-friend-v2.webp"
         }
       ]
     },
@@ -1656,7 +1656,7 @@
           "name": "Battle Friend V1.0",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/battle_friend_v1.png",
           "hp": "75",
-          "image": "assets/monster/images/battle-friend-v1.webp"
+          "image": "assets/monsters/images/battle-friend-v1.webp"
         }
       ]
     },
@@ -1671,7 +1671,7 @@
           "name": "Battle Friend V3.0",
           "imageSource": "https://sts2json.untapped.gg/art/enemies/battle_friend_v3.png",
           "hp": "300",
-          "image": "assets/monster/images/battle-friend-v3.webp"
+          "image": "assets/monsters/images/battle-friend-v3.webp"
         }
       ]
     }

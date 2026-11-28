@@ -5,8 +5,8 @@ html body main#main-content#main-content#main-content#main-content .entry.enchan
 html body main#main-content .entry.enchantment>p {width:100%;max-width:100%;min-width:0;justify-self:start;margin-inline:0;text-align:left}
 html body main#main-content .enchantment-image-link {position:relative;grid-column:1;grid-row:1;display:block;width:72px;height:72px;color:#d6dee8;text-decoration:none}
 html body main#main-content .enchantment-image-link img {display:block;width:72px;height:72px;object-fit:contain}
-html body main#main-content .enchantment-found-in {display:contents}
-html body main#main-content .enchantment-sources {display:contents}
+html body main#main-content .enchantment-found-in {display:block;width:100%;min-width:0;text-align:center}
+html body main#main-content .enchantment-sources {display:flex;flex-wrap:wrap;justify-content:center;gap:4px 8px}
 html body main#main-content .enchantment-source {--source-color:#88bcec;display:inline-flex;vertical-align:middle;align-items:center;flex-wrap:nowrap;gap:4px;max-width:100%;padding:4px 6px;border:1px solid color-mix(in srgb,var(--source-color) 40%,transparent);border-radius:6px;background:color-mix(in srgb,var(--source-color) 8%,#0d131a);color:var(--source-color);font:400 14px/1.4 Arial,"Microsoft JhengHei",sans-serif;text-decoration:none;overflow-wrap:anywhere}
 html body main#main-content .enchantment-source[data-source-type=Event] {--source-color:#6ac1b4}
 html body main#main-content .enchantment-source[data-source-type=Ancient] {--source-color:#c5a2e8}
@@ -15,9 +15,32 @@ html body main#main-content .enchantment-source[data-source-type=Relic] {--sourc
 html body main#main-content .enchantment-source-type {font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;opacity:.85}
 html body main#main-content .enchantment-source:hover {border-color:var(--source-color);text-decoration:none}
 
-/* Phone enchantments put their sources on a separate row below the name. */
+/* Phone enchantments keep the title centered. */
 @media screen and (max-width:600px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px) and (hover:none) and (pointer:coarse) {
  html body main#main-content#main-content#main-content#main-content .entry.enchantment .potion-title-row h2 {flex-direction:column;align-items:flex-start}
- html body main#main-content .enchantment-found-in {display:block;width:100%;text-align:left}
+ html body main#main-content .enchantment-found-in {text-align:center}
  html body main#main-content .enchantment-sources {display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
 }
+
+/* Center enchantment artwork, names, sources and descriptions. */
+html body main#main-content#main-content#main-content#main-content .entry.enchantment .enchantment-image-link {justify-self:center;max-width:100%}
+html body main#main-content#main-content#main-content#main-content .entry.enchantment .potion-title-row h2 {flex-direction:column;justify-content:center;align-items:center;text-align:center}
+html body main#main-content#main-content#main-content#main-content .entry.enchantment .potion-title-row h2>:is(.enchantment-name-zh,.catalog-name-en) {width:100%;text-align:center}
+html body main#main-content#main-content#main-content#main-content .entry.enchantment>p {justify-self:center;margin-inline:auto;text-align:center}
+html body main#main-content#main-content#main-content#main-content .entry.enchantment .enchantment-found-in {max-width:100%;min-width:0;text-align:center}
+html body main#main-content#main-content#main-content#main-content .entry.enchantment .enchantment-sources {justify-content:center;max-width:100%;min-width:0}
+html body main#main-content#main-content#main-content#main-content .entry.enchantment .enchantment-source {box-sizing:border-box;min-width:0;white-space:normal}
+html body main#main-content#main-content#main-content#main-content .entry.enchantment .enchantment-source>span {min-width:0}
+
+/* Acquisition sources stay in the bottom row of each card. */
+html body main#main-content#main-content#main-content#main-content .entry.enchantment {grid-template-rows:auto auto minmax(0,1fr) auto;align-self:stretch;grid-template-areas:"icon" "name" "description" "sources"}
+html body main#main-content#main-content#main-content#main-content .entry.enchantment>.enchantment-found-in {display:block;grid-column:1;grid-row:4;width:100%;margin:0}
+html body main#main-content#main-content#main-content#main-content .entry.enchantment .enchantment-sources {display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 8px}
+
+html body main#main-content#main-content#main-content#main-content .entry.enchantment>.potion-icon-row {grid-area:icon}
+html body main#main-content#main-content#main-content#main-content .entry.enchantment>.potion-title-row {grid-area:name}
+html body main#main-content#main-content#main-content#main-content .entry.enchantment>p {grid-area:description}
+html body main#main-content#main-content#main-content#main-content .entry.enchantment>.enchantment-found-in {grid-area:sources;align-self:end}
+
+/* Both enchantment names use white text. */
+html body main#main-content#main-content#main-content#main-content .entry.enchantment .potion-title-row h2>:is(.enchantment-name-zh,.catalog-name-en) {color:#fff}

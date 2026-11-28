@@ -1,0 +1,2932 @@
+{
+  "source": "https://sts2.untapped.gg/en/cards",
+  "download": "Download Card Image",
+  "language": "en",
+  "cards": {
+    "ABUNDANCE": {
+      "source": "https://sts2.untapped.gg/en/cards/event/abundance",
+      "base": "assets/cards/images/downloaded/abundance.png",
+      "upgraded": "assets/cards/images/downloaded/abundance-upgraded.png"
+    },
+    "ADRENALINE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/adrenaline",
+      "base": "assets/cards/images/downloaded/adrenaline.png",
+      "upgraded": "assets/cards/images/downloaded/adrenaline-upgraded.png"
+    },
+    "ACCELERANT": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/accelerant",
+      "base": "assets/cards/images/downloaded/accelerant.png",
+      "upgraded": "assets/cards/images/downloaded/accelerant-upgraded.png"
+    },
+    "ACCURACY": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/accuracy",
+      "base": "assets/cards/images/downloaded/accuracy.png",
+      "upgraded": "assets/cards/images/downloaded/accuracy-upgraded.png"
+    },
+    "ACROBATICS": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/acrobatics",
+      "base": "assets/cards/images/downloaded/acrobatics.png",
+      "upgraded": "assets/cards/images/downloaded/acrobatics-upgraded.png"
+    },
+    "AFTERIMAGE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/afterimage",
+      "base": "assets/cards/images/downloaded/afterimage.png",
+      "upgraded": "assets/cards/images/downloaded/afterimage-upgraded.png"
+    },
+    "ADAPTIVE_STRIKE": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/adaptive-strike",
+      "base": "assets/cards/images/downloaded/adaptive_strike.png",
+      "upgraded": "assets/cards/images/downloaded/adaptive_strike-upgraded.png"
+    },
+    "ABRASIVE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/abrasive",
+      "base": "assets/cards/images/downloaded/abrasive.png",
+      "upgraded": "assets/cards/images/downloaded/abrasive-upgraded.png"
+    },
+    "ANGER": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/anger",
+      "base": "assets/cards/images/downloaded/anger.png",
+      "upgraded": "assets/cards/images/downloaded/anger-upgraded.png"
+    },
+    "ALCHEMIZE": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/alchemize",
+      "base": "assets/cards/images/downloaded/alchemize.png",
+      "upgraded": "assets/cards/images/downloaded/alchemize-upgraded.png"
+    },
+    "AGGRESSION": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/aggression",
+      "base": "assets/cards/images/downloaded/aggression.png",
+      "upgraded": "assets/cards/images/downloaded/aggression-upgraded.png"
+    },
+    "ALIGNMENT": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/alignment",
+      "base": "assets/cards/images/downloaded/alignment.png",
+      "upgraded": "assets/cards/images/downloaded/alignment-upgraded.png"
+    },
+    "ALL_FOR_ONE": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/all-for-one",
+      "base": "assets/cards/images/downloaded/all_for_one.png",
+      "upgraded": "assets/cards/images/downloaded/all_for_one-upgraded.png"
+    },
+    "AFTERLIFE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/afterlife",
+      "base": "assets/cards/images/downloaded/afterlife.png",
+      "upgraded": "assets/cards/images/downloaded/afterlife-upgraded.png"
+    },
+    "APPARITION": {
+      "source": "https://sts2.untapped.gg/en/cards/event/apparition",
+      "base": "assets/cards/images/downloaded/apparition.png",
+      "upgraded": "assets/cards/images/downloaded/apparition-upgraded.png"
+    },
+    "ASCENDERS_BANE": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/ascenders-bane",
+      "base": "assets/cards/images/downloaded/ascenders_bane.png"
+    },
+    "ARSENAL": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/arsenal",
+      "base": "assets/cards/images/downloaded/arsenal.png",
+      "upgraded": "assets/cards/images/downloaded/arsenal-upgraded.png"
+    },
+    "ANOINTED": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/anointed",
+      "base": "assets/cards/images/downloaded/anointed.png",
+      "upgraded": "assets/cards/images/downloaded/anointed-upgraded.png"
+    },
+    "APOTHEOSIS": {
+      "source": "https://sts2.untapped.gg/en/cards/event/apotheosis",
+      "base": "assets/cards/images/downloaded/apotheosis.png",
+      "upgraded": "assets/cards/images/downloaded/apotheosis-upgraded.png"
+    },
+    "ANTICIPATE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/anticipate",
+      "base": "assets/cards/images/downloaded/anticipate.png",
+      "upgraded": "assets/cards/images/downloaded/anticipate-upgraded.png"
+    },
+    "ARMAMENTS": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/armaments",
+      "base": "assets/cards/images/downloaded/armaments.png",
+      "upgraded": "assets/cards/images/downloaded/armaments-upgraded.png"
+    },
+    "AUTOMATION": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/automation",
+      "base": "assets/cards/images/downloaded/automation.png",
+      "upgraded": "assets/cards/images/downloaded/automation-upgraded.png"
+    },
+    "ASHEN_STRIKE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/ashen-strike",
+      "base": "assets/cards/images/downloaded/ashen_strike.png",
+      "upgraded": "assets/cards/images/downloaded/ashen_strike-upgraded.png"
+    },
+    "BAD_LUCK": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/bad-luck",
+      "base": "assets/cards/images/downloaded/bad_luck.png"
+    },
+    "BACKSTAB": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/backstab",
+      "base": "assets/cards/images/downloaded/backstab.png",
+      "upgraded": "assets/cards/images/downloaded/backstab-upgraded.png"
+    },
+    "ASSASSINATE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/assassinate",
+      "base": "assets/cards/images/downloaded/assassinate.png",
+      "upgraded": "assets/cards/images/downloaded/assassinate-upgraded.png"
+    },
+    "BANSHEES_CRY": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/banshees-cry",
+      "base": "assets/cards/images/downloaded/banshees_cry.png",
+      "upgraded": "assets/cards/images/downloaded/banshees_cry-upgraded.png"
+    },
+    "BACKFLIP": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/backflip",
+      "base": "assets/cards/images/downloaded/backflip.png",
+      "upgraded": "assets/cards/images/downloaded/backflip-upgraded.png"
+    },
+    "ASTRAL_PULSE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/astral-pulse",
+      "base": "assets/cards/images/downloaded/astral_pulse.png",
+      "upgraded": "assets/cards/images/downloaded/astral_pulse-upgraded.png"
+    },
+    "BARRAGE": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/barrage",
+      "base": "assets/cards/images/downloaded/barrage.png",
+      "upgraded": "assets/cards/images/downloaded/barrage-upgraded.png"
+    },
+    "BARRICADE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/barricade",
+      "base": "assets/cards/images/downloaded/barricade.png",
+      "upgraded": "assets/cards/images/downloaded/barricade-upgraded.png"
+    },
+    "BALL_LIGHTNING": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/ball-lightning",
+      "base": "assets/cards/images/downloaded/ball_lightning.png",
+      "upgraded": "assets/cards/images/downloaded/ball_lightning-upgraded.png"
+    },
+    "BATTLE_TRANCE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/battle-trance",
+      "base": "assets/cards/images/downloaded/battle_trance.png",
+      "upgraded": "assets/cards/images/downloaded/battle_trance-upgraded.png"
+    },
+    "BEACON_OF_HOPE": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/beacon-of-hope",
+      "base": "assets/cards/images/downloaded/beacon_of_hope.png",
+      "upgraded": "assets/cards/images/downloaded/beacon_of_hope-upgraded.png"
+    },
+    "BEAT_DOWN": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/beat-down",
+      "base": "assets/cards/images/downloaded/beat_down.png",
+      "upgraded": "assets/cards/images/downloaded/beat_down-upgraded.png"
+    },
+    "BELIEVE_IN_YOU": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/believe-in-you",
+      "base": "assets/cards/images/downloaded/believe_in_you.png",
+      "upgraded": "assets/cards/images/downloaded/believe_in_you-upgraded.png"
+    },
+    "BASH": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/bash",
+      "base": "assets/cards/images/downloaded/bash.png",
+      "upgraded": "assets/cards/images/downloaded/bash-upgraded.png"
+    },
+    "BEAT_INTO_SHAPE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/beat-into-shape",
+      "base": "assets/cards/images/downloaded/beat_into_shape.png",
+      "upgraded": "assets/cards/images/downloaded/beat_into_shape-upgraded.png"
+    },
+    "BEAM_CELL": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/beam-cell",
+      "base": "assets/cards/images/downloaded/beam_cell.png",
+      "upgraded": "assets/cards/images/downloaded/beam_cell-upgraded.png"
+    },
+    "BLADE_OF_INK": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/blade-of-ink",
+      "base": "assets/cards/images/downloaded/blade_of_ink.png",
+      "upgraded": "assets/cards/images/downloaded/blade_of_ink-upgraded.png"
+    },
+    "BIASED_COGNITION": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/biased-cognition",
+      "base": "assets/cards/images/downloaded/biased_cognition.png",
+      "upgraded": "assets/cards/images/downloaded/biased_cognition-upgraded.png"
+    },
+    "BLACK_HOLE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/black-hole",
+      "base": "assets/cards/images/downloaded/black_hole.png",
+      "upgraded": "assets/cards/images/downloaded/black_hole-upgraded.png"
+    },
+    "BLADE_DANCE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/blade-dance",
+      "base": "assets/cards/images/downloaded/blade_dance.png",
+      "upgraded": "assets/cards/images/downloaded/blade_dance-upgraded.png"
+    },
+    "BIG_BANG": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/big-bang",
+      "base": "assets/cards/images/downloaded/big_bang.png",
+      "upgraded": "assets/cards/images/downloaded/big_bang-upgraded.png"
+    },
+    "BEGONE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/begone",
+      "base": "assets/cards/images/downloaded/begone.png",
+      "upgraded": "assets/cards/images/downloaded/begone-upgraded.png"
+    },
+    "BLADE_SYMPHONY": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/blade-symphony",
+      "base": "assets/cards/images/downloaded/blade_symphony.png",
+      "upgraded": "assets/cards/images/downloaded/blade_symphony-upgraded.png"
+    },
+    "BLAZE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/blaze",
+      "base": "assets/cards/images/downloaded/blaze.png",
+      "upgraded": "assets/cards/images/downloaded/blaze-upgraded.png"
+    },
+    "BLIGHT_STRIKE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/blight-strike",
+      "base": "assets/cards/images/downloaded/blight_strike.png",
+      "upgraded": "assets/cards/images/downloaded/blight_strike-upgraded.png"
+    },
+    "BODYGUARD": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/bodyguard",
+      "base": "assets/cards/images/downloaded/bodyguard.png",
+      "upgraded": "assets/cards/images/downloaded/bodyguard-upgraded.png"
+    },
+    "BLOOD_WALL": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/blood-wall",
+      "base": "assets/cards/images/downloaded/blood_wall.png",
+      "upgraded": "assets/cards/images/downloaded/blood_wall-upgraded.png"
+    },
+    "BLOODLETTING": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/bloodletting",
+      "base": "assets/cards/images/downloaded/bloodletting.png",
+      "upgraded": "assets/cards/images/downloaded/bloodletting-upgraded.png"
+    },
+    "BLUR": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/blur",
+      "base": "assets/cards/images/downloaded/blur.png",
+      "upgraded": "assets/cards/images/downloaded/blur-upgraded.png"
+    },
+    "BLUDGEON": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/bludgeon",
+      "base": "assets/cards/images/downloaded/bludgeon.png",
+      "upgraded": "assets/cards/images/downloaded/bludgeon-upgraded.png"
+    },
+    "BOMBARDMENT": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/bombardment",
+      "base": "assets/cards/images/downloaded/bombardment.png",
+      "upgraded": "assets/cards/images/downloaded/bombardment-upgraded.png"
+    },
+    "BODY_SLAM": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/body-slam",
+      "base": "assets/cards/images/downloaded/body_slam.png",
+      "upgraded": "assets/cards/images/downloaded/body_slam-upgraded.png"
+    },
+    "BOUNCING_FLASK": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/bouncing-flask",
+      "base": "assets/cards/images/downloaded/bouncing_flask.png",
+      "upgraded": "assets/cards/images/downloaded/bouncing_flask-upgraded.png"
+    },
+    "BOLAS": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/bolas",
+      "base": "assets/cards/images/downloaded/bolas.png",
+      "upgraded": "assets/cards/images/downloaded/bolas-upgraded.png"
+    },
+    "BORROWED_TIME": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/borrowed-time",
+      "base": "assets/cards/images/downloaded/borrowed_time.png",
+      "upgraded": "assets/cards/images/downloaded/borrowed_time-upgraded.png"
+    },
+    "BREAK": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/break",
+      "base": "assets/cards/images/downloaded/break.png",
+      "upgraded": "assets/cards/images/downloaded/break-upgraded.png"
+    },
+    "BOOST_AWAY": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/boost-away",
+      "base": "assets/cards/images/downloaded/boost_away.png",
+      "upgraded": "assets/cards/images/downloaded/boost_away-upgraded.png"
+    },
+    "BONE_SHARDS": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/bone-shards",
+      "base": "assets/cards/images/downloaded/bone_shards.png",
+      "upgraded": "assets/cards/images/downloaded/bone_shards-upgraded.png"
+    },
+    "BUFFER": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/buffer",
+      "base": "assets/cards/images/downloaded/buffer.png",
+      "upgraded": "assets/cards/images/downloaded/buffer-upgraded.png"
+    },
+    "BUBBLE_BUBBLE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/bubble-bubble",
+      "base": "assets/cards/images/downloaded/bubble_bubble.png",
+      "upgraded": "assets/cards/images/downloaded/bubble_bubble-upgraded.png"
+    },
+    "BOOT_SEQUENCE": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/boot-sequence",
+      "base": "assets/cards/images/downloaded/boot_sequence.png",
+      "upgraded": "assets/cards/images/downloaded/boot_sequence-upgraded.png"
+    },
+    "BRAND": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/brand",
+      "base": "assets/cards/images/downloaded/brand.png",
+      "upgraded": "assets/cards/images/downloaded/brand-upgraded.png"
+    },
+    "BULLET_TIME": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/bullet-time",
+      "base": "assets/cards/images/downloaded/bullet_time.png",
+      "upgraded": "assets/cards/images/downloaded/bullet_time-upgraded.png"
+    },
+    "BRIGHTEST_FLAME": {
+      "source": "https://sts2.untapped.gg/en/cards/event/brightest-flame",
+      "base": "assets/cards/images/downloaded/brightest_flame.png",
+      "upgraded": "assets/cards/images/downloaded/brightest_flame-upgraded.png"
+    },
+    "BURNING_PACT": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/burning-pact",
+      "base": "assets/cards/images/downloaded/burning_pact.png",
+      "upgraded": "assets/cards/images/downloaded/burning_pact-upgraded.png"
+    },
+    "BULLY": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/bully",
+      "base": "assets/cards/images/downloaded/bully.png",
+      "upgraded": "assets/cards/images/downloaded/bully-upgraded.png"
+    },
+    "BREAKTHROUGH": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/breakthrough",
+      "base": "assets/cards/images/downloaded/breakthrough.png",
+      "upgraded": "assets/cards/images/downloaded/breakthrough-upgraded.png"
+    },
+    "BULWARK": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/bulwark",
+      "base": "assets/cards/images/downloaded/bulwark.png",
+      "upgraded": "assets/cards/images/downloaded/bulwark-upgraded.png"
+    },
+    "BULK_UP": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/bulk-up",
+      "base": "assets/cards/images/downloaded/bulk_up.png",
+      "upgraded": "assets/cards/images/downloaded/bulk_up-upgraded.png"
+    },
+    "BUNDLE_OF_JOY": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/bundle-of-joy",
+      "base": "assets/cards/images/downloaded/bundle_of_joy.png",
+      "upgraded": "assets/cards/images/downloaded/bundle_of_joy-upgraded.png"
+    },
+    "BYRDONIS_EGG": {
+      "source": "https://sts2.untapped.gg/en/cards/quest/byrdonis-egg",
+      "base": "assets/cards/images/downloaded/byrdonis_egg.png"
+    },
+    "BURST": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/burst",
+      "base": "assets/cards/images/downloaded/burst.png",
+      "upgraded": "assets/cards/images/downloaded/burst-upgraded.png"
+    },
+    "BURY": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/bury",
+      "base": "assets/cards/images/downloaded/bury.png",
+      "upgraded": "assets/cards/images/downloaded/bury-upgraded.png"
+    },
+    "CALCIFY": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/calcify",
+      "base": "assets/cards/images/downloaded/calcify.png",
+      "upgraded": "assets/cards/images/downloaded/calcify-upgraded.png"
+    },
+    "BYRD_SWOOP": {
+      "source": "https://sts2.untapped.gg/en/cards/event/byrd-swoop",
+      "base": "assets/cards/images/downloaded/byrd_swoop.png",
+      "upgraded": "assets/cards/images/downloaded/byrd_swoop-upgraded.png"
+    },
+    "CACOPHONY": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/cacophony",
+      "base": "assets/cards/images/downloaded/cacophony.png",
+      "upgraded": "assets/cards/images/downloaded/cacophony-upgraded.png"
+    },
+    "CALAMITY": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/calamity",
+      "base": "assets/cards/images/downloaded/calamity.png",
+      "upgraded": "assets/cards/images/downloaded/calamity-upgraded.png"
+    },
+    "CASCADE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/cascade",
+      "base": "assets/cards/images/downloaded/cascade.png",
+      "upgraded": "assets/cards/images/downloaded/cascade-upgraded.png"
+    },
+    "CALCULATED_GAMBLE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/calculated-gamble",
+      "base": "assets/cards/images/downloaded/calculated_gamble.png",
+      "upgraded": "assets/cards/images/downloaded/calculated_gamble-upgraded.png"
+    },
+    "CALL_OF_THE_VOID": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/call-of-the-void",
+      "base": "assets/cards/images/downloaded/call_of_the_void.png",
+      "upgraded": "assets/cards/images/downloaded/call_of_the_void-upgraded.png"
+    },
+    "CALTROPS": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/caltrops",
+      "base": "assets/cards/images/downloaded/caltrops.png",
+      "upgraded": "assets/cards/images/downloaded/caltrops-upgraded.png"
+    },
+    "CHAOS": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/chaos",
+      "base": "assets/cards/images/downloaded/chaos.png",
+      "upgraded": "assets/cards/images/downloaded/chaos-upgraded.png"
+    },
+    "CAPTURE_SPIRIT": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/capture-spirit",
+      "base": "assets/cards/images/downloaded/capture_spirit.png",
+      "upgraded": "assets/cards/images/downloaded/capture_spirit-upgraded.png"
+    },
+    "CAPACITOR": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/capacitor",
+      "base": "assets/cards/images/downloaded/capacitor.png",
+      "upgraded": "assets/cards/images/downloaded/capacitor-upgraded.png"
+    },
+    "CATASTROPHE": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/catastrophe",
+      "base": "assets/cards/images/downloaded/catastrophe.png",
+      "upgraded": "assets/cards/images/downloaded/catastrophe-upgraded.png"
+    },
+    "CHARGE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/charge",
+      "base": "assets/cards/images/downloaded/charge.png",
+      "upgraded": "assets/cards/images/downloaded/charge-upgraded.png"
+    },
+    "CELESTIAL_MIGHT": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/celestial-might",
+      "base": "assets/cards/images/downloaded/celestial_might.png",
+      "upgraded": "assets/cards/images/downloaded/celestial_might-upgraded.png"
+    },
+    "CHILL": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/chill",
+      "base": "assets/cards/images/downloaded/chill.png",
+      "upgraded": "assets/cards/images/downloaded/chill-upgraded.png"
+    },
+    "CHARGE_BATTERY": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/charge-battery",
+      "base": "assets/cards/images/downloaded/charge_battery.png",
+      "upgraded": "assets/cards/images/downloaded/charge_battery-upgraded.png"
+    },
+    "CLAW": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/claw",
+      "base": "assets/cards/images/downloaded/claw.png",
+      "upgraded": "assets/cards/images/downloaded/claw-upgraded.png"
+    },
+    "CHILD_OF_THE_STARS": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/child-of-the-stars",
+      "base": "assets/cards/images/downloaded/child_of_the_stars.png",
+      "upgraded": "assets/cards/images/downloaded/child_of_the_stars-upgraded.png"
+    },
+    "CLUMSY": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/clumsy",
+      "base": "assets/cards/images/downloaded/clumsy.png"
+    },
+    "CINDER": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/cinder",
+      "base": "assets/cards/images/downloaded/cinder.png",
+      "upgraded": "assets/cards/images/downloaded/cinder-upgraded.png"
+    },
+    "CLASH": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/clash",
+      "base": "assets/cards/images/downloaded/clash.png",
+      "upgraded": "assets/cards/images/downloaded/clash-upgraded.png"
+    },
+    "CLEANSE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/cleanse",
+      "base": "assets/cards/images/downloaded/cleanse.png",
+      "upgraded": "assets/cards/images/downloaded/cleanse-upgraded.png"
+    },
+    "CLOAK_AND_DAGGER": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/cloak-and-dagger",
+      "base": "assets/cards/images/downloaded/cloak_and_dagger.png",
+      "upgraded": "assets/cards/images/downloaded/cloak_and_dagger-upgraded.png"
+    },
+    "COLLISION_COURSE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/collision-course",
+      "base": "assets/cards/images/downloaded/collision_course.png",
+      "upgraded": "assets/cards/images/downloaded/collision_course-upgraded.png"
+    },
+    "CLOAK_OF_STARS": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/cloak-of-stars",
+      "base": "assets/cards/images/downloaded/cloak_of_stars.png",
+      "upgraded": "assets/cards/images/downloaded/cloak_of_stars-upgraded.png"
+    },
+    "COMPACT": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/compact",
+      "base": "assets/cards/images/downloaded/compact.png",
+      "upgraded": "assets/cards/images/downloaded/compact-upgraded.png"
+    },
+    "COLD_SNAP": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/cold-snap",
+      "base": "assets/cards/images/downloaded/cold_snap.png",
+      "upgraded": "assets/cards/images/downloaded/cold_snap-upgraded.png"
+    },
+    "CONCOCT": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/concoct",
+      "base": "assets/cards/images/downloaded/concoct.png",
+      "upgraded": "assets/cards/images/downloaded/concoct-upgraded.png"
+    },
+    "CONFLAGRATION": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/conflagration",
+      "base": "assets/cards/images/downloaded/conflagration.png",
+      "upgraded": "assets/cards/images/downloaded/conflagration-upgraded.png"
+    },
+    "COLOSSUS": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/colossus",
+      "base": "assets/cards/images/downloaded/colossus.png",
+      "upgraded": "assets/cards/images/downloaded/colossus-upgraded.png"
+    },
+    "COMET": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/comet",
+      "base": "assets/cards/images/downloaded/comet.png",
+      "upgraded": "assets/cards/images/downloaded/comet-upgraded.png"
+    },
+    "COMPILE_DRIVER": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/compile-driver",
+      "base": "assets/cards/images/downloaded/compile_driver.png",
+      "upgraded": "assets/cards/images/downloaded/compile_driver-upgraded.png"
+    },
+    "CONQUEROR": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/conqueror",
+      "base": "assets/cards/images/downloaded/conqueror.png",
+      "upgraded": "assets/cards/images/downloaded/conqueror-upgraded.png"
+    },
+    "CONSUMING_SHADOW": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/consuming-shadow",
+      "base": "assets/cards/images/downloaded/consuming_shadow.png",
+      "upgraded": "assets/cards/images/downloaded/consuming_shadow-upgraded.png"
+    },
+    "CONVERGENCE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/convergence",
+      "base": "assets/cards/images/downloaded/convergence.png",
+      "upgraded": "assets/cards/images/downloaded/convergence-upgraded.png"
+    },
+    "CONSTELLATION": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/constellation",
+      "base": "assets/cards/images/downloaded/constellation.png",
+      "upgraded": "assets/cards/images/downloaded/constellation-upgraded.png"
+    },
+    "COOLANT": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/coolant",
+      "base": "assets/cards/images/downloaded/coolant.png",
+      "upgraded": "assets/cards/images/downloaded/coolant-upgraded.png"
+    },
+    "COOLHEADED": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/coolheaded",
+      "base": "assets/cards/images/downloaded/coolheaded.png",
+      "upgraded": "assets/cards/images/downloaded/coolheaded-upgraded.png"
+    },
+    "COORDINATE": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/coordinate",
+      "base": "assets/cards/images/downloaded/coordinate.png",
+      "upgraded": "assets/cards/images/downloaded/coordinate-upgraded.png"
+    },
+    "CORROSIVE_WAVE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/corrosive-wave",
+      "base": "assets/cards/images/downloaded/corrosive_wave.png",
+      "upgraded": "assets/cards/images/downloaded/corrosive_wave-upgraded.png"
+    },
+    "CORRUPTION": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/corruption",
+      "base": "assets/cards/images/downloaded/corruption.png",
+      "upgraded": "assets/cards/images/downloaded/corruption-upgraded.png"
+    },
+    "CRESCENT_SPEAR": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/crescent-spear",
+      "base": "assets/cards/images/downloaded/crescent_spear.png",
+      "upgraded": "assets/cards/images/downloaded/crescent_spear-upgraded.png"
+    },
+    "CRUELTY": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/cruelty",
+      "base": "assets/cards/images/downloaded/cruelty.png",
+      "upgraded": "assets/cards/images/downloaded/cruelty-upgraded.png"
+    },
+    "CRIMSON_MANTLE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/crimson-mantle",
+      "base": "assets/cards/images/downloaded/crimson_mantle.png",
+      "upgraded": "assets/cards/images/downloaded/crimson_mantle-upgraded.png"
+    },
+    "CURSE_OF_THE_BELL": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/curse-of-the-bell",
+      "base": "assets/cards/images/downloaded/curse_of_the_bell.png"
+    },
+    "COSMIC_INDIFFERENCE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/cosmic-indifference",
+      "base": "assets/cards/images/downloaded/cosmic_indifference.png",
+      "upgraded": "assets/cards/images/downloaded/cosmic_indifference-upgraded.png"
+    },
+    "COUNTDOWN": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/countdown",
+      "base": "assets/cards/images/downloaded/countdown.png",
+      "upgraded": "assets/cards/images/downloaded/countdown-upgraded.png"
+    },
+    "CREATIVE_AI": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/creative-ai",
+      "base": "assets/cards/images/downloaded/creative_ai.png",
+      "upgraded": "assets/cards/images/downloaded/creative_ai-upgraded.png"
+    },
+    "CRASH_LANDING": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/crash-landing",
+      "base": "assets/cards/images/downloaded/crash_landing.png",
+      "upgraded": "assets/cards/images/downloaded/crash_landing-upgraded.png"
+    },
+    "CRUSH_UNDER": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/crush-under",
+      "base": "assets/cards/images/downloaded/crush_under.png",
+      "upgraded": "assets/cards/images/downloaded/crush_under-upgraded.png"
+    },
+    "DAGGER_SPRAY": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/dagger-spray",
+      "base": "assets/cards/images/downloaded/dagger_spray.png",
+      "upgraded": "assets/cards/images/downloaded/dagger_spray-upgraded.png"
+    },
+    "DAGGER_THROW": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/dagger-throw",
+      "base": "assets/cards/images/downloaded/dagger_throw.png",
+      "upgraded": "assets/cards/images/downloaded/dagger_throw-upgraded.png"
+    },
+    "DEADLY_POISON": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/deadly-poison",
+      "base": "assets/cards/images/downloaded/deadly_poison.png",
+      "upgraded": "assets/cards/images/downloaded/deadly_poison-upgraded.png"
+    },
+    "DARK_EMBRACE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/dark-embrace",
+      "base": "assets/cards/images/downloaded/dark_embrace.png",
+      "upgraded": "assets/cards/images/downloaded/dark_embrace-upgraded.png"
+    },
+    "DANSE_MACABRE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/danse-macabre",
+      "base": "assets/cards/images/downloaded/danse_macabre.png",
+      "upgraded": "assets/cards/images/downloaded/danse_macabre-upgraded.png"
+    },
+    "DARK_SHACKLES": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/dark-shackles",
+      "base": "assets/cards/images/downloaded/dark_shackles.png",
+      "upgraded": "assets/cards/images/downloaded/dark_shackles-upgraded.png"
+    },
+    "DARKNESS": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/darkness",
+      "base": "assets/cards/images/downloaded/darkness.png",
+      "upgraded": "assets/cards/images/downloaded/darkness-upgraded.png"
+    },
+    "DASH": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/dash",
+      "base": "assets/cards/images/downloaded/dash.png",
+      "upgraded": "assets/cards/images/downloaded/dash-upgraded.png"
+    },
+    "DEBT": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/debt",
+      "base": "assets/cards/images/downloaded/debt.png"
+    },
+    "DECAY": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/decay",
+      "base": "assets/cards/images/downloaded/decay.png"
+    },
+    "DECISIONS_DECISIONS": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/decisions-decisions",
+      "base": "assets/cards/images/downloaded/decisions_decisions.png",
+      "upgraded": "assets/cards/images/downloaded/decisions_decisions-upgraded.png"
+    },
+    "DEATH_MARCH": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/death-march",
+      "base": "assets/cards/images/downloaded/death_march.png",
+      "upgraded": "assets/cards/images/downloaded/death_march-upgraded.png"
+    },
+    "DEATHBRINGER": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/deathbringer",
+      "base": "assets/cards/images/downloaded/deathbringer.png",
+      "upgraded": "assets/cards/images/downloaded/deathbringer-upgraded.png"
+    },
+    "DEATHS_DOOR": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/deaths-door",
+      "base": "assets/cards/images/downloaded/deaths_door.png",
+      "upgraded": "assets/cards/images/downloaded/deaths_door-upgraded.png"
+    },
+    "DEBILITATE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/debilitate",
+      "base": "assets/cards/images/downloaded/debilitate.png",
+      "upgraded": "assets/cards/images/downloaded/debilitate-upgraded.png"
+    },
+    "DEFEND_DEFECT": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/defend-defect",
+      "base": "assets/cards/images/downloaded/defend_defect.png",
+      "upgraded": "assets/cards/images/downloaded/defend_defect-upgraded.png"
+    },
+    "DEFEND_NECROBINDER": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/defend-necrobinder",
+      "base": "assets/cards/images/downloaded/defend_necrobinder.png",
+      "upgraded": "assets/cards/images/downloaded/defend_necrobinder-upgraded.png"
+    },
+    "DEFEND_REGENT": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/defend-regent",
+      "base": "assets/cards/images/downloaded/defend_regent.png",
+      "upgraded": "assets/cards/images/downloaded/defend_regent-upgraded.png"
+    },
+    "DEFEND_IRONCLAD": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/defend-ironclad",
+      "base": "assets/cards/images/downloaded/defend_ironclad.png",
+      "upgraded": "assets/cards/images/downloaded/defend_ironclad-upgraded.png"
+    },
+    "DEFILE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/defile",
+      "base": "assets/cards/images/downloaded/defile.png",
+      "upgraded": "assets/cards/images/downloaded/defile-upgraded.png"
+    },
+    "DEFEND_SILENT": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/defend-silent",
+      "base": "assets/cards/images/downloaded/defend_silent.png",
+      "upgraded": "assets/cards/images/downloaded/defend_silent-upgraded.png"
+    },
+    "DEMON_FORM": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/demon-form",
+      "base": "assets/cards/images/downloaded/demon_form.png",
+      "upgraded": "assets/cards/images/downloaded/demon_form-upgraded.png"
+    },
+    "DEFLECT": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/deflect",
+      "base": "assets/cards/images/downloaded/deflect.png",
+      "upgraded": "assets/cards/images/downloaded/deflect-upgraded.png"
+    },
+    "DEFY": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/defy",
+      "base": "assets/cards/images/downloaded/defy.png",
+      "upgraded": "assets/cards/images/downloaded/defy-upgraded.png"
+    },
+    "DEFRAGMENT": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/defragment",
+      "base": "assets/cards/images/downloaded/defragment.png",
+      "upgraded": "assets/cards/images/downloaded/defragment-upgraded.png"
+    },
+    "DELAY": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/delay",
+      "base": "assets/cards/images/downloaded/delay.png",
+      "upgraded": "assets/cards/images/downloaded/delay-upgraded.png"
+    },
+    "DEMESNE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/demesne",
+      "base": "assets/cards/images/downloaded/demesne.png",
+      "upgraded": "assets/cards/images/downloaded/demesne-upgraded.png"
+    },
+    "DEMONIC_SHIELD": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/demonic-shield",
+      "base": "assets/cards/images/downloaded/demonic_shield.png",
+      "upgraded": "assets/cards/images/downloaded/demonic_shield-upgraded.png"
+    },
+    "DEVASTATE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/devastate",
+      "base": "assets/cards/images/downloaded/devastate.png",
+      "upgraded": "assets/cards/images/downloaded/devastate-upgraded.png"
+    },
+    "DEVOUR_LIFE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/devour-life",
+      "base": "assets/cards/images/downloaded/devour_life.png",
+      "upgraded": "assets/cards/images/downloaded/devour_life-upgraded.png"
+    },
+    "DIRGE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/dirge",
+      "base": "assets/cards/images/downloaded/dirge.png",
+      "upgraded": "assets/cards/images/downloaded/dirge-upgraded.png"
+    },
+    "DISCOVERY": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/discovery",
+      "base": "assets/cards/images/downloaded/discovery.png",
+      "upgraded": "assets/cards/images/downloaded/discovery-upgraded.png"
+    },
+    "DOUBT": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/doubt",
+      "base": "assets/cards/images/downloaded/doubt.png"
+    },
+    "DOWSING": {
+      "source": "https://sts2.untapped.gg/en/cards/quest/dowsing",
+      "base": "assets/cards/images/downloaded/dowsing.png"
+    },
+    "DISMANTLE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/dismantle",
+      "base": "assets/cards/images/downloaded/dismantle.png",
+      "upgraded": "assets/cards/images/downloaded/dismantle-upgraded.png"
+    },
+    "DRAMATIC_ENTRANCE": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/dramatic-entrance",
+      "base": "assets/cards/images/downloaded/dramatic_entrance.png",
+      "upgraded": "assets/cards/images/downloaded/dramatic_entrance-upgraded.png"
+    },
+    "DISTRACTION": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/distraction",
+      "base": "assets/cards/images/downloaded/distraction.png",
+      "upgraded": "assets/cards/images/downloaded/distraction-upgraded.png"
+    },
+    "DODGE_AND_ROLL": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/dodge-and-roll",
+      "base": "assets/cards/images/downloaded/dodge_and_roll.png",
+      "upgraded": "assets/cards/images/downloaded/dodge_and_roll-upgraded.png"
+    },
+    "DOMINATE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/dominate",
+      "base": "assets/cards/images/downloaded/dominate.png",
+      "upgraded": "assets/cards/images/downloaded/dominate-upgraded.png"
+    },
+    "DOUBLE_ENERGY": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/double-energy",
+      "base": "assets/cards/images/downloaded/double_energy.png",
+      "upgraded": "assets/cards/images/downloaded/double_energy-upgraded.png"
+    },
+    "DRAIN_POWER": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/drain-power",
+      "base": "assets/cards/images/downloaded/drain_power.png",
+      "upgraded": "assets/cards/images/downloaded/drain_power-upgraded.png"
+    },
+    "DREDGE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/dredge",
+      "base": "assets/cards/images/downloaded/dredge.png",
+      "upgraded": "assets/cards/images/downloaded/dredge-upgraded.png"
+    },
+    "ECHO_FORM": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/echo-form",
+      "base": "assets/cards/images/downloaded/echo_form.png",
+      "upgraded": "assets/cards/images/downloaded/echo_form-upgraded.png"
+    },
+    "EIDOLON": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/eidolon",
+      "base": "assets/cards/images/downloaded/eidolon.png",
+      "upgraded": "assets/cards/images/downloaded/eidolon-upgraded.png"
+    },
+    "DRUM_OF_BATTLE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/drum-of-battle",
+      "base": "assets/cards/images/downloaded/drum_of_battle.png",
+      "upgraded": "assets/cards/images/downloaded/drum_of_battle-upgraded.png"
+    },
+    "END_OF_DAYS": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/end-of-days",
+      "base": "assets/cards/images/downloaded/end_of_days.png",
+      "upgraded": "assets/cards/images/downloaded/end_of_days-upgraded.png"
+    },
+    "DUAL_WIELD": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/dual-wield",
+      "base": "assets/cards/images/downloaded/dual_wield.png",
+      "upgraded": "assets/cards/images/downloaded/dual_wield-upgraded.png"
+    },
+    "ECHOING_SLASH": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/echoing-slash",
+      "base": "assets/cards/images/downloaded/echoing_slash.png",
+      "upgraded": "assets/cards/images/downloaded/echoing_slash-upgraded.png"
+    },
+    "ENTHRALLED": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/enthralled",
+      "base": "assets/cards/images/downloaded/enthralled.png"
+    },
+    "DUALCAST": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/dualcast",
+      "base": "assets/cards/images/downloaded/dualcast.png",
+      "upgraded": "assets/cards/images/downloaded/dualcast-upgraded.png"
+    },
+    "DYING_STAR": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/dying-star",
+      "base": "assets/cards/images/downloaded/dying_star.png",
+      "upgraded": "assets/cards/images/downloaded/dying_star-upgraded.png"
+    },
+    "ENERGY_SURGE": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/energy-surge",
+      "base": "assets/cards/images/downloaded/energy_surge.png",
+      "upgraded": "assets/cards/images/downloaded/energy_surge-upgraded.png"
+    },
+    "ENLIGHTENMENT": {
+      "source": "https://sts2.untapped.gg/en/cards/event/enlightenment",
+      "base": "assets/cards/images/downloaded/enlightenment.png",
+      "upgraded": "assets/cards/images/downloaded/enlightenment-upgraded.png"
+    },
+    "ENFEEBLING_TOUCH": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/enfeebling-touch",
+      "base": "assets/cards/images/downloaded/enfeebling_touch.png",
+      "upgraded": "assets/cards/images/downloaded/enfeebling_touch-upgraded.png"
+    },
+    "ENTRENCH": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/entrench",
+      "base": "assets/cards/images/downloaded/entrench.png",
+      "upgraded": "assets/cards/images/downloaded/entrench-upgraded.png"
+    },
+    "ENTROPY": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/entropy",
+      "base": "assets/cards/images/downloaded/entropy.png",
+      "upgraded": "assets/cards/images/downloaded/entropy-upgraded.png"
+    },
+    "EQUILIBRIUM": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/equilibrium",
+      "base": "assets/cards/images/downloaded/equilibrium.png",
+      "upgraded": "assets/cards/images/downloaded/equilibrium-upgraded.png"
+    },
+    "EVIL_EYE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/evil-eye",
+      "base": "assets/cards/images/downloaded/evil_eye.png",
+      "upgraded": "assets/cards/images/downloaded/evil_eye-upgraded.png"
+    },
+    "ENVENOM": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/envenom",
+      "base": "assets/cards/images/downloaded/envenom.png",
+      "upgraded": "assets/cards/images/downloaded/envenom-upgraded.png"
+    },
+    "ERADICATE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/eradicate",
+      "base": "assets/cards/images/downloaded/eradicate.png",
+      "upgraded": "assets/cards/images/downloaded/eradicate-upgraded.png"
+    },
+    "ESCAPE_PLAN": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/escape-plan",
+      "base": "assets/cards/images/downloaded/escape_plan.png",
+      "upgraded": "assets/cards/images/downloaded/escape_plan-upgraded.png"
+    },
+    "ETERNAL_ARMOR": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/eternal-armor",
+      "base": "assets/cards/images/downloaded/eternal_armor.png",
+      "upgraded": "assets/cards/images/downloaded/eternal_armor-upgraded.png"
+    },
+    "EXPECT_A_FIGHT": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/expect-a-fight",
+      "base": "assets/cards/images/downloaded/expect_a_fight.png",
+      "upgraded": "assets/cards/images/downloaded/expect_a_fight-upgraded.png"
+    },
+    "EXPERTISE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/expertise",
+      "base": "assets/cards/images/downloaded/expertise.png",
+      "upgraded": "assets/cards/images/downloaded/expertise-upgraded.png"
+    },
+    "EXPOSE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/expose",
+      "base": "assets/cards/images/downloaded/expose.png",
+      "upgraded": "assets/cards/images/downloaded/expose-upgraded.png"
+    },
+    "EXTERMINATE": {
+      "source": "https://sts2.untapped.gg/en/cards/event/exterminate",
+      "base": "assets/cards/images/downloaded/exterminate.png",
+      "upgraded": "assets/cards/images/downloaded/exterminate-upgraded.png"
+    },
+    "FADE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/fade",
+      "base": "assets/cards/images/downloaded/fade.png",
+      "upgraded": "assets/cards/images/downloaded/fade-upgraded.png"
+    },
+    "FEEDING_FRENZY": {
+      "source": "https://sts2.untapped.gg/en/cards/event/feeding-frenzy",
+      "base": "assets/cards/images/downloaded/feeding_frenzy.png",
+      "upgraded": "assets/cards/images/downloaded/feeding_frenzy-upgraded.png"
+    },
+    "FALLING_STAR": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/falling-star",
+      "base": "assets/cards/images/downloaded/falling_star.png",
+      "upgraded": "assets/cards/images/downloaded/falling_star-upgraded.png"
+    },
+    "FASTEN": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/fasten",
+      "base": "assets/cards/images/downloaded/fasten.png",
+      "upgraded": "assets/cards/images/downloaded/fasten-upgraded.png"
+    },
+    "FAN_OF_KNIVES": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/fan-of-knives",
+      "base": "assets/cards/images/downloaded/fan_of_knives.png",
+      "upgraded": "assets/cards/images/downloaded/fan_of_knives-upgraded.png"
+    },
+    "FEAR": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/fear",
+      "base": "assets/cards/images/downloaded/fear.png",
+      "upgraded": "assets/cards/images/downloaded/fear-upgraded.png"
+    },
+    "FEED": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/feed",
+      "base": "assets/cards/images/downloaded/feed.png",
+      "upgraded": "assets/cards/images/downloaded/feed-upgraded.png"
+    },
+    "FIGHT_ME": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/fight-me",
+      "base": "assets/cards/images/downloaded/fight_me.png",
+      "upgraded": "assets/cards/images/downloaded/fight_me-upgraded.png"
+    },
+    "FERAL": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/feral",
+      "base": "assets/cards/images/downloaded/feral.png",
+      "upgraded": "assets/cards/images/downloaded/feral-upgraded.png"
+    },
+    "FETCH": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/fetch",
+      "base": "assets/cards/images/downloaded/fetch.png",
+      "upgraded": "assets/cards/images/downloaded/fetch-upgraded.png"
+    },
+    "FINISHER": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/finisher",
+      "base": "assets/cards/images/downloaded/finisher.png",
+      "upgraded": "assets/cards/images/downloaded/finisher-upgraded.png"
+    },
+    "FIEND_FIRE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/fiend-fire",
+      "base": "assets/cards/images/downloaded/fiend_fire.png",
+      "upgraded": "assets/cards/images/downloaded/fiend_fire-upgraded.png"
+    },
+    "FIGHT_THROUGH": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/fight-through",
+      "base": "assets/cards/images/downloaded/fight_through.png",
+      "upgraded": "assets/cards/images/downloaded/fight_through-upgraded.png"
+    },
+    "FLAME_BARRIER": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/flame-barrier",
+      "base": "assets/cards/images/downloaded/flame_barrier.png",
+      "upgraded": "assets/cards/images/downloaded/flame_barrier-upgraded.png"
+    },
+    "FINESSE": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/finesse",
+      "base": "assets/cards/images/downloaded/finesse.png",
+      "upgraded": "assets/cards/images/downloaded/finesse-upgraded.png"
+    },
+    "FEEL_NO_PAIN": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/feel-no-pain",
+      "base": "assets/cards/images/downloaded/feel_no_pain.png",
+      "upgraded": "assets/cards/images/downloaded/feel_no_pain-upgraded.png"
+    },
+    "FISTICUFFS": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/fisticuffs",
+      "base": "assets/cards/images/downloaded/fisticuffs.png",
+      "upgraded": "assets/cards/images/downloaded/fisticuffs-upgraded.png"
+    },
+    "FLAK_CANNON": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/flak-cannon",
+      "base": "assets/cards/images/downloaded/flak_cannon.png",
+      "upgraded": "assets/cards/images/downloaded/flak_cannon-upgraded.png"
+    },
+    "FLANKING": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/flanking",
+      "base": "assets/cards/images/downloaded/flanking.png",
+      "upgraded": "assets/cards/images/downloaded/flanking-upgraded.png"
+    },
+    "FOLLY": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/folly",
+      "base": "assets/cards/images/downloaded/folly.png"
+    },
+    "FLATTEN": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/flatten",
+      "base": "assets/cards/images/downloaded/flatten.png",
+      "upgraded": "assets/cards/images/downloaded/flatten-upgraded.png"
+    },
+    "FLASH_OF_STEEL": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/flash-of-steel",
+      "base": "assets/cards/images/downloaded/flash_of_steel.png",
+      "upgraded": "assets/cards/images/downloaded/flash_of_steel-upgraded.png"
+    },
+    "FLECHETTES": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/flechettes",
+      "base": "assets/cards/images/downloaded/flechettes.png",
+      "upgraded": "assets/cards/images/downloaded/flechettes-upgraded.png"
+    },
+    "FOCUSED_STRIKE": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/focused-strike",
+      "base": "assets/cards/images/downloaded/focused_strike.png",
+      "upgraded": "assets/cards/images/downloaded/focused_strike-upgraded.png"
+    },
+    "FOOTWORK": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/footwork",
+      "base": "assets/cards/images/downloaded/footwork.png",
+      "upgraded": "assets/cards/images/downloaded/footwork-upgraded.png"
+    },
+    "FLICK_FLACK": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/flick-flack",
+      "base": "assets/cards/images/downloaded/flick_flack.png",
+      "upgraded": "assets/cards/images/downloaded/flick_flack-upgraded.png"
+    },
+    "FORBIDDEN_GRIMOIRE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/forbidden-grimoire",
+      "base": "assets/cards/images/downloaded/forbidden_grimoire.png",
+      "upgraded": "assets/cards/images/downloaded/forbidden_grimoire-upgraded.png"
+    },
+    "FOREGONE_CONCLUSION": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/foregone-conclusion",
+      "base": "assets/cards/images/downloaded/foregone_conclusion.png",
+      "upgraded": "assets/cards/images/downloaded/foregone_conclusion-upgraded.png"
+    },
+    "FORGOTTEN_RITUAL": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/forgotten-ritual",
+      "base": "assets/cards/images/downloaded/forgotten_ritual.png",
+      "upgraded": "assets/cards/images/downloaded/forgotten_ritual-upgraded.png"
+    },
+    "FRIENDSHIP": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/friendship",
+      "base": "assets/cards/images/downloaded/friendship.png",
+      "upgraded": "assets/cards/images/downloaded/friendship-upgraded.png"
+    },
+    "FUSION": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/fusion",
+      "base": "assets/cards/images/downloaded/fusion.png",
+      "upgraded": "assets/cards/images/downloaded/fusion-upgraded.png"
+    },
+    "FURNACE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/furnace",
+      "base": "assets/cards/images/downloaded/furnace.png",
+      "upgraded": "assets/cards/images/downloaded/furnace-upgraded.png"
+    },
+    "FTL": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/ftl",
+      "base": "assets/cards/images/downloaded/ftl.png",
+      "upgraded": "assets/cards/images/downloaded/ftl-upgraded.png"
+    },
+    "GAMMA_BLAST": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/gamma-blast",
+      "base": "assets/cards/images/downloaded/gamma_blast.png",
+      "upgraded": "assets/cards/images/downloaded/gamma_blast-upgraded.png"
+    },
+    "GANG_UP": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/gang-up",
+      "base": "assets/cards/images/downloaded/gang_up.png",
+      "upgraded": "assets/cards/images/downloaded/gang_up-upgraded.png"
+    },
+    "GATHER_LIGHT": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/gather-light",
+      "base": "assets/cards/images/downloaded/gather_light.png",
+      "upgraded": "assets/cards/images/downloaded/gather_light-upgraded.png"
+    },
+    "GLIMPSE_BEYOND": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/glimpse-beyond",
+      "base": "assets/cards/images/downloaded/glimpse_beyond.png",
+      "upgraded": "assets/cards/images/downloaded/glimpse_beyond-upgraded.png"
+    },
+    "GENESIS": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/genesis",
+      "base": "assets/cards/images/downloaded/genesis.png",
+      "upgraded": "assets/cards/images/downloaded/genesis-upgraded.png"
+    },
+    "GLACIER": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/glacier",
+      "base": "assets/cards/images/downloaded/glacier.png",
+      "upgraded": "assets/cards/images/downloaded/glacier-upgraded.png"
+    },
+    "GLITTERSTREAM": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/glitterstream",
+      "base": "assets/cards/images/downloaded/glitterstream.png",
+      "upgraded": "assets/cards/images/downloaded/glitterstream-upgraded.png"
+    },
+    "GENETIC_ALGORITHM": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/genetic-algorithm",
+      "base": "assets/cards/images/downloaded/genetic_algorithm.png",
+      "upgraded": "assets/cards/images/downloaded/genetic_algorithm-upgraded.png"
+    },
+    "GLASSWORK": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/glasswork",
+      "base": "assets/cards/images/downloaded/glasswork.png",
+      "upgraded": "assets/cards/images/downloaded/glasswork-upgraded.png"
+    },
+    "GLIMMER": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/glimmer",
+      "base": "assets/cards/images/downloaded/glimmer.png",
+      "upgraded": "assets/cards/images/downloaded/glimmer-upgraded.png"
+    },
+    "GO_FOR_THE_EYES": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/go-for-the-eyes",
+      "base": "assets/cards/images/downloaded/go_for_the_eyes.png",
+      "upgraded": "assets/cards/images/downloaded/go_for_the_eyes-upgraded.png"
+    },
+    "GREED": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/greed",
+      "base": "assets/cards/images/downloaded/greed.png"
+    },
+    "GRAND_FINALE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/grand-finale",
+      "base": "assets/cards/images/downloaded/grand_finale.png",
+      "upgraded": "assets/cards/images/downloaded/grand_finale-upgraded.png"
+    },
+    "GOLD_AXE": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/gold-axe",
+      "base": "assets/cards/images/downloaded/gold_axe.png",
+      "upgraded": "assets/cards/images/downloaded/gold_axe-upgraded.png"
+    },
+    "GLOW": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/glow",
+      "base": "assets/cards/images/downloaded/glow.png",
+      "upgraded": "assets/cards/images/downloaded/glow-upgraded.png"
+    },
+    "GUILTY": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/guilty",
+      "base": "assets/cards/images/downloaded/guilty.png"
+    },
+    "GRAVE_WARDEN": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/grave-warden",
+      "base": "assets/cards/images/downloaded/grave_warden.png",
+      "upgraded": "assets/cards/images/downloaded/grave_warden-upgraded.png"
+    },
+    "GRAVEBLAST": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/graveblast",
+      "base": "assets/cards/images/downloaded/graveblast.png",
+      "upgraded": "assets/cards/images/downloaded/graveblast-upgraded.png"
+    },
+    "GUNK_UP": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/gunk-up",
+      "base": "assets/cards/images/downloaded/gunk_up.png",
+      "upgraded": "assets/cards/images/downloaded/gunk_up-upgraded.png"
+    },
+    "GUARDS": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/guards",
+      "base": "assets/cards/images/downloaded/guards.png",
+      "upgraded": "assets/cards/images/downloaded/guards-upgraded.png"
+    },
+    "GUIDING_STAR": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/guiding-star",
+      "base": "assets/cards/images/downloaded/guiding_star.png",
+      "upgraded": "assets/cards/images/downloaded/guiding_star-upgraded.png"
+    },
+    "HAMMER_TIME": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/hammer-time",
+      "base": "assets/cards/images/downloaded/hammer_time.png",
+      "upgraded": "assets/cards/images/downloaded/hammer_time-upgraded.png"
+    },
+    "HAND_OF_GREED": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/hand-of-greed",
+      "base": "assets/cards/images/downloaded/hand_of_greed.png",
+      "upgraded": "assets/cards/images/downloaded/hand_of_greed-upgraded.png"
+    },
+    "HAILSTORM": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/hailstorm",
+      "base": "assets/cards/images/downloaded/hailstorm.png",
+      "upgraded": "assets/cards/images/downloaded/hailstorm-upgraded.png"
+    },
+    "HAND_TRICK": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/hand-trick",
+      "base": "assets/cards/images/downloaded/hand_trick.png",
+      "upgraded": "assets/cards/images/downloaded/hand_trick-upgraded.png"
+    },
+    "HANG": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/hang",
+      "base": "assets/cards/images/downloaded/hang.png",
+      "upgraded": "assets/cards/images/downloaded/hang-upgraded.png"
+    },
+    "HAUNT": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/haunt",
+      "base": "assets/cards/images/downloaded/haunt.png",
+      "upgraded": "assets/cards/images/downloaded/haunt-upgraded.png"
+    },
+    "HAVOC": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/havoc",
+      "base": "assets/cards/images/downloaded/havoc.png",
+      "upgraded": "assets/cards/images/downloaded/havoc-upgraded.png"
+    },
+    "HEADBUTT": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/headbutt",
+      "base": "assets/cards/images/downloaded/headbutt.png",
+      "upgraded": "assets/cards/images/downloaded/headbutt-upgraded.png"
+    },
+    "HAZE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/haze",
+      "base": "assets/cards/images/downloaded/haze.png",
+      "upgraded": "assets/cards/images/downloaded/haze-upgraded.png"
+    },
+    "HELLRAISER": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/hellraiser",
+      "base": "assets/cards/images/downloaded/hellraiser.png",
+      "upgraded": "assets/cards/images/downloaded/hellraiser-upgraded.png"
+    },
+    "HEAVENLY_DRILL": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/heavenly-drill",
+      "base": "assets/cards/images/downloaded/heavenly_drill.png",
+      "upgraded": "assets/cards/images/downloaded/heavenly_drill-upgraded.png"
+    },
+    "HEGEMONY": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/hegemony",
+      "base": "assets/cards/images/downloaded/hegemony.png",
+      "upgraded": "assets/cards/images/downloaded/hegemony-upgraded.png"
+    },
+    "HEIRLOOM_HAMMER": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/heirloom-hammer",
+      "base": "assets/cards/images/downloaded/heirloom_hammer.png",
+      "upgraded": "assets/cards/images/downloaded/heirloom_hammer-upgraded.png"
+    },
+    "HELIX_DRILL": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/helix-drill",
+      "base": "assets/cards/images/downloaded/helix_drill.png",
+      "upgraded": "assets/cards/images/downloaded/helix_drill-upgraded.png"
+    },
+    "HELLO_WORLD": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/hello-world",
+      "base": "assets/cards/images/downloaded/hello_world.png",
+      "upgraded": "assets/cards/images/downloaded/hello_world-upgraded.png"
+    },
+    "HIBERNATE": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/hibernate",
+      "base": "assets/cards/images/downloaded/hibernate.png",
+      "upgraded": "assets/cards/images/downloaded/hibernate-upgraded.png"
+    },
+    "HEMOKINESIS": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/hemokinesis",
+      "base": "assets/cards/images/downloaded/hemokinesis.png",
+      "upgraded": "assets/cards/images/downloaded/hemokinesis-upgraded.png"
+    },
+    "HIDDEN_GEM": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/hidden-gem",
+      "base": "assets/cards/images/downloaded/hidden_gem.png",
+      "upgraded": "assets/cards/images/downloaded/hidden_gem-upgraded.png"
+    },
+    "HIDDEN_CACHE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/hidden-cache",
+      "base": "assets/cards/images/downloaded/hidden_cache.png",
+      "upgraded": "assets/cards/images/downloaded/hidden_cache-upgraded.png"
+    },
+    "HIDDEN_DAGGERS": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/hidden-daggers",
+      "base": "assets/cards/images/downloaded/hidden_daggers.png",
+      "upgraded": "assets/cards/images/downloaded/hidden_daggers-upgraded.png"
+    },
+    "HOLOGRAM": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/hologram",
+      "base": "assets/cards/images/downloaded/hologram.png",
+      "upgraded": "assets/cards/images/downloaded/hologram-upgraded.png"
+    },
+    "HIGH_FIVE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/high-five",
+      "base": "assets/cards/images/downloaded/high_five.png",
+      "upgraded": "assets/cards/images/downloaded/high_five-upgraded.png"
+    },
+    "HOWL_FROM_BEYOND": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/howl-from-beyond",
+      "base": "assets/cards/images/downloaded/howl_from_beyond.png",
+      "upgraded": "assets/cards/images/downloaded/howl_from_beyond-upgraded.png"
+    },
+    "HOTFIX": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/hotfix",
+      "base": "assets/cards/images/downloaded/hotfix.png",
+      "upgraded": "assets/cards/images/downloaded/hotfix-upgraded.png"
+    },
+    "HUDDLE_UP": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/huddle-up",
+      "base": "assets/cards/images/downloaded/huddle_up.png",
+      "upgraded": "assets/cards/images/downloaded/huddle_up-upgraded.png"
+    },
+    "HYPERBEAM": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/hyperbeam",
+      "base": "assets/cards/images/downloaded/hyperbeam.png",
+      "upgraded": "assets/cards/images/downloaded/hyperbeam-upgraded.png"
+    },
+    "I_AM_INVINCIBLE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/i-am-invincible",
+      "base": "assets/cards/images/downloaded/i_am_invincible.png",
+      "upgraded": "assets/cards/images/downloaded/i_am_invincible-upgraded.png"
+    },
+    "IGNITION": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/ignition",
+      "base": "assets/cards/images/downloaded/ignition.png",
+      "upgraded": "assets/cards/images/downloaded/ignition-upgraded.png"
+    },
+    "ICE_LANCE": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/ice-lance",
+      "base": "assets/cards/images/downloaded/ice_lance.png",
+      "upgraded": "assets/cards/images/downloaded/ice_lance-upgraded.png"
+    },
+    "INFERNO": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/inferno",
+      "base": "assets/cards/images/downloaded/inferno.png",
+      "upgraded": "assets/cards/images/downloaded/inferno-upgraded.png"
+    },
+    "IMITATION_LEARNING": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/imitation-learning",
+      "base": "assets/cards/images/downloaded/imitation_learning.png",
+      "upgraded": "assets/cards/images/downloaded/imitation_learning-upgraded.png"
+    },
+    "INJURY": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/injury",
+      "base": "assets/cards/images/downloaded/injury.png"
+    },
+    "IMPATIENCE": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/impatience",
+      "base": "assets/cards/images/downloaded/impatience.png",
+      "upgraded": "assets/cards/images/downloaded/impatience-upgraded.png"
+    },
+    "IMPERVIOUS": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/impervious",
+      "base": "assets/cards/images/downloaded/impervious.png",
+      "upgraded": "assets/cards/images/downloaded/impervious-upgraded.png"
+    },
+    "INFERNAL_BLADE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/infernal-blade",
+      "base": "assets/cards/images/downloaded/infernal_blade.png",
+      "upgraded": "assets/cards/images/downloaded/infernal_blade-upgraded.png"
+    },
+    "INFINITE_BLADES": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/infinite-blades",
+      "base": "assets/cards/images/downloaded/infinite_blades.png",
+      "upgraded": "assets/cards/images/downloaded/infinite_blades-upgraded.png"
+    },
+    "INFLAME": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/inflame",
+      "base": "assets/cards/images/downloaded/inflame.png",
+      "upgraded": "assets/cards/images/downloaded/inflame-upgraded.png"
+    },
+    "INVOKE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/invoke",
+      "base": "assets/cards/images/downloaded/invoke.png",
+      "upgraded": "assets/cards/images/downloaded/invoke-upgraded.png"
+    },
+    "INTERCEPT": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/intercept",
+      "base": "assets/cards/images/downloaded/intercept.png",
+      "upgraded": "assets/cards/images/downloaded/intercept-upgraded.png"
+    },
+    "IRON_WAVE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/iron-wave",
+      "base": "assets/cards/images/downloaded/iron_wave.png",
+      "upgraded": "assets/cards/images/downloaded/iron_wave-upgraded.png"
+    },
+    "ITERATION": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/iteration",
+      "base": "assets/cards/images/downloaded/iteration.png",
+      "upgraded": "assets/cards/images/downloaded/iteration-upgraded.png"
+    },
+    "JACK_OF_ALL_TRADES": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/jack-of-all-trades",
+      "base": "assets/cards/images/downloaded/jack_of_all_trades.png",
+      "upgraded": "assets/cards/images/downloaded/jack_of_all_trades-upgraded.png"
+    },
+    "JACKPOT": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/jackpot",
+      "base": "assets/cards/images/downloaded/jackpot.png",
+      "upgraded": "assets/cards/images/downloaded/jackpot-upgraded.png"
+    },
+    "JUGGERNAUT": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/juggernaut",
+      "base": "assets/cards/images/downloaded/juggernaut.png",
+      "upgraded": "assets/cards/images/downloaded/juggernaut-upgraded.png"
+    },
+    "JUGGLING": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/juggling",
+      "base": "assets/cards/images/downloaded/juggling.png",
+      "upgraded": "assets/cards/images/downloaded/juggling-upgraded.png"
+    },
+    "KINGLY_PUNCH": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/kingly-punch",
+      "base": "assets/cards/images/downloaded/kingly_punch.png",
+      "upgraded": "assets/cards/images/downloaded/kingly_punch-upgraded.png"
+    },
+    "LANTERN_KEY": {
+      "source": "https://sts2.untapped.gg/en/cards/quest/lantern-key",
+      "base": "assets/cards/images/downloaded/lantern_key.png"
+    },
+    "KINGLY_KICK": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/kingly-kick",
+      "base": "assets/cards/images/downloaded/kingly_kick.png",
+      "upgraded": "assets/cards/images/downloaded/kingly_kick-upgraded.png"
+    },
+    "KNIFE_TRAP": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/knife-trap",
+      "base": "assets/cards/images/downloaded/knife_trap.png",
+      "upgraded": "assets/cards/images/downloaded/knife_trap-upgraded.png"
+    },
+    "KNOCKDOWN": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/knockdown",
+      "base": "assets/cards/images/downloaded/knockdown.png",
+      "upgraded": "assets/cards/images/downloaded/knockdown-upgraded.png"
+    },
+    "LEADING_STRIKE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/leading-strike",
+      "base": "assets/cards/images/downloaded/leading_strike.png",
+      "upgraded": "assets/cards/images/downloaded/leading_strike-upgraded.png"
+    },
+    "KNOCKOUT_BLOW": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/knockout-blow",
+      "base": "assets/cards/images/downloaded/knockout_blow.png",
+      "upgraded": "assets/cards/images/downloaded/knockout_blow-upgraded.png"
+    },
+    "KNOW_THY_PLACE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/know-thy-place",
+      "base": "assets/cards/images/downloaded/know_thy_place.png",
+      "upgraded": "assets/cards/images/downloaded/know_thy_place-upgraded.png"
+    },
+    "LARGESSE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/largesse",
+      "base": "assets/cards/images/downloaded/largesse.png",
+      "upgraded": "assets/cards/images/downloaded/largesse-upgraded.png"
+    },
+    "LEAP": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/leap",
+      "base": "assets/cards/images/downloaded/leap.png",
+      "upgraded": "assets/cards/images/downloaded/leap-upgraded.png"
+    },
+    "LEGION_OF_BONE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/legion-of-bone",
+      "base": "assets/cards/images/downloaded/legion_of_bone.png",
+      "upgraded": "assets/cards/images/downloaded/legion_of_bone-upgraded.png"
+    },
+    "LIGHTNING_ROD": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/lightning-rod",
+      "base": "assets/cards/images/downloaded/lightning_rod.png",
+      "upgraded": "assets/cards/images/downloaded/lightning_rod-upgraded.png"
+    },
+    "LEG_SWEEP": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/leg-sweep",
+      "base": "assets/cards/images/downloaded/leg_sweep.png",
+      "upgraded": "assets/cards/images/downloaded/leg_sweep-upgraded.png"
+    },
+    "LUNAR_BLAST": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/lunar-blast",
+      "base": "assets/cards/images/downloaded/lunar_blast.png",
+      "upgraded": "assets/cards/images/downloaded/lunar_blast-upgraded.png"
+    },
+    "LETHALITY": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/lethality",
+      "base": "assets/cards/images/downloaded/lethality.png",
+      "upgraded": "assets/cards/images/downloaded/lethality-upgraded.png"
+    },
+    "MAD_SCIENCE": {
+      "source": "https://sts2.untapped.gg/en/cards?search=Mad+Science",
+      "base": "assets/cards/images/downloaded/mad-science-sapping.png",
+      "upgraded": "assets/cards/images/downloaded/mad-science-sapping-upgraded.png",
+      "variants": [
+        {
+          "slug": "mad-science-sapping",
+          "label": "Sapping",
+          "source": "https://sts2.untapped.gg/en/cards/event/mad-science-sapping",
+          "effect": {
+            "base": "Deal 12 damage. Apply 2 Weak. Apply 2 Vulnerable.",
+            "upgraded": "Innate. Deal 12 damage. Apply 2 Weak. Apply 2 Vulnerable."
+          },
+          "base": "assets/cards/images/downloaded/mad-science-sapping.png",
+          "upgraded": "assets/cards/images/downloaded/mad-science-sapping-upgraded.png"
+        },
+        {
+          "slug": "mad-science-violence",
+          "label": "Violence",
+          "source": "https://sts2.untapped.gg/en/cards/event/mad-science-violence",
+          "effect": {
+            "base": "Deal 12 damage 3 times.",
+            "upgraded": "Innate. Deal 12 damage 3 times."
+          },
+          "base": "assets/cards/images/downloaded/mad-science-violence.png",
+          "upgraded": "assets/cards/images/downloaded/mad-science-violence-upgraded.png"
+        },
+        {
+          "slug": "mad-science-choking",
+          "label": "Choking",
+          "source": "https://sts2.untapped.gg/en/cards/event/mad-science-choking",
+          "effect": {
+            "base": "Deal 12 damage. Whenever you play a card this turn, the enemy loses 6 HP.",
+            "upgraded": "Innate. Deal 12 damage. Whenever you play a card this turn, the enemy loses 6 HP."
+          },
+          "base": "assets/cards/images/downloaded/mad-science-choking.png",
+          "upgraded": "assets/cards/images/downloaded/mad-science-choking-upgraded.png"
+        },
+        {
+          "slug": "mad-science-energized",
+          "label": "Energized",
+          "source": "https://sts2.untapped.gg/en/cards/event/mad-science-energized",
+          "effect": {
+            "base": "Gain 8 Block. Gain <e/><e/>.",
+            "upgraded": "Innate. Gain 8 Block. Gain <e/><e/>."
+          },
+          "base": "assets/cards/images/downloaded/mad-science-energized.png",
+          "upgraded": "assets/cards/images/downloaded/mad-science-energized-upgraded.png"
+        },
+        {
+          "slug": "mad-science-wisdom",
+          "label": "Wisdom",
+          "source": "https://sts2.untapped.gg/en/cards/event/mad-science-wisdom",
+          "effect": {
+            "base": "Gain 8 Block. Draw 3 cards.",
+            "upgraded": "Innate. Gain 8 Block. Draw 3 cards."
+          },
+          "base": "assets/cards/images/downloaded/mad-science-wisdom.png",
+          "upgraded": "assets/cards/images/downloaded/mad-science-wisdom-upgraded.png"
+        },
+        {
+          "slug": "mad-science-chaos",
+          "label": "Chaos",
+          "source": "https://sts2.untapped.gg/en/cards/event/mad-science-chaos",
+          "effect": {
+            "base": "Gain 8 Block. Add a random card into your Hand. It's free to play this turn.",
+            "upgraded": "Innate. Gain 8 Block. Add a random card into your Hand. It's free to play this turn."
+          },
+          "base": "assets/cards/images/downloaded/mad-science-chaos.png",
+          "upgraded": "assets/cards/images/downloaded/mad-science-chaos-upgraded.png"
+        },
+        {
+          "slug": "mad-science-expertise",
+          "label": "Expertise",
+          "source": "https://sts2.untapped.gg/en/cards/event/mad-science-expertise",
+          "effect": {
+            "base": "Gain 2 Strength. Gain 2 Dexterity.",
+            "upgraded": "Innate. Gain 2 Strength. Gain 2 Dexterity."
+          },
+          "base": "assets/cards/images/downloaded/mad-science-expertise.png",
+          "upgraded": "assets/cards/images/downloaded/mad-science-expertise-upgraded.png"
+        },
+        {
+          "slug": "mad-science-curious",
+          "label": "Curious",
+          "source": "https://sts2.untapped.gg/en/cards/event/mad-science-curious",
+          "effect": {
+            "base": "Powers cost 1 <e/> less.",
+            "upgraded": "Innate. Powers cost 1 <e/> less."
+          },
+          "base": "assets/cards/images/downloaded/mad-science-curious.png",
+          "upgraded": "assets/cards/images/downloaded/mad-science-curious-upgraded.png"
+        },
+        {
+          "slug": "mad-science-improvement",
+          "label": "Improvement",
+          "source": "https://sts2.untapped.gg/en/cards/event/mad-science-improvement",
+          "effect": {
+            "base": "At the end of combat, Upgrade a random card.",
+            "upgraded": "Innate. At the end of combat, Upgrade a random card."
+          },
+          "base": "assets/cards/images/downloaded/mad-science-improvement.png",
+          "upgraded": "assets/cards/images/downloaded/mad-science-improvement-upgraded.png"
+        }
+      ]
+    },
+    "LOOP": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/loop",
+      "base": "assets/cards/images/downloaded/loop.png",
+      "upgraded": "assets/cards/images/downloaded/loop-upgraded.png"
+    },
+    "LIFT": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/lift",
+      "base": "assets/cards/images/downloaded/lift.png",
+      "upgraded": "assets/cards/images/downloaded/lift-upgraded.png"
+    },
+    "MALAISE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/malaise",
+      "base": "assets/cards/images/downloaded/malaise.png",
+      "upgraded": "assets/cards/images/downloaded/malaise-upgraded.png"
+    },
+    "MAKE_IT_SO": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/make-it-so",
+      "base": "assets/cards/images/downloaded/make_it_so.png",
+      "upgraded": "assets/cards/images/downloaded/make_it_so-upgraded.png"
+    },
+    "MACHINE_LEARNING": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/machine-learning",
+      "base": "assets/cards/images/downloaded/machine_learning.png",
+      "upgraded": "assets/cards/images/downloaded/machine_learning-upgraded.png"
+    },
+    "MANGLE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/mangle",
+      "base": "assets/cards/images/downloaded/mangle.png",
+      "upgraded": "assets/cards/images/downloaded/mangle-upgraded.png"
+    },
+    "MASTER_OF_STRATEGY": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/master-of-strategy",
+      "base": "assets/cards/images/downloaded/master_of_strategy.png",
+      "upgraded": "assets/cards/images/downloaded/master_of_strategy-upgraded.png"
+    },
+    "MANIFEST_AUTHORITY": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/manifest-authority",
+      "base": "assets/cards/images/downloaded/manifest_authority.png",
+      "upgraded": "assets/cards/images/downloaded/manifest_authority-upgraded.png"
+    },
+    "MAUL": {
+      "source": "https://sts2.untapped.gg/en/cards/event/maul",
+      "base": "assets/cards/images/downloaded/maul.png",
+      "upgraded": "assets/cards/images/downloaded/maul-upgraded.png"
+    },
+    "METEOR_SHOWER": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/meteor-shower",
+      "base": "assets/cards/images/downloaded/meteor_shower.png",
+      "upgraded": "assets/cards/images/downloaded/meteor_shower-upgraded.png"
+    },
+    "MASTER_PLANNER": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/master-planner",
+      "base": "assets/cards/images/downloaded/master_planner.png",
+      "upgraded": "assets/cards/images/downloaded/master_planner-upgraded.png"
+    },
+    "MAYHEM": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/mayhem",
+      "base": "assets/cards/images/downloaded/mayhem.png",
+      "upgraded": "assets/cards/images/downloaded/mayhem-upgraded.png"
+    },
+    "MELANCHOLY": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/melancholy",
+      "base": "assets/cards/images/downloaded/melancholy.png",
+      "upgraded": "assets/cards/images/downloaded/melancholy-upgraded.png"
+    },
+    "MEMENTO_MORI": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/memento-mori",
+      "base": "assets/cards/images/downloaded/memento_mori.png",
+      "upgraded": "assets/cards/images/downloaded/memento_mori-upgraded.png"
+    },
+    "METAMORPHOSIS": {
+      "source": "https://sts2.untapped.gg/en/cards/event/metamorphosis",
+      "base": "assets/cards/images/downloaded/metamorphosis.png",
+      "upgraded": "assets/cards/images/downloaded/metamorphosis-upgraded.png"
+    },
+    "METEOR_STRIKE": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/meteor-strike",
+      "base": "assets/cards/images/downloaded/meteor_strike.png",
+      "upgraded": "assets/cards/images/downloaded/meteor_strike-upgraded.png"
+    },
+    "MISERY": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/misery",
+      "base": "assets/cards/images/downloaded/misery.png",
+      "upgraded": "assets/cards/images/downloaded/misery-upgraded.png"
+    },
+    "MIND_BLAST": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/mind-blast",
+      "base": "assets/cards/images/downloaded/mind_blast.png",
+      "upgraded": "assets/cards/images/downloaded/mind_blast-upgraded.png"
+    },
+    "MIMIC": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/mimic",
+      "base": "assets/cards/images/downloaded/mimic.png",
+      "upgraded": "assets/cards/images/downloaded/mimic-upgraded.png"
+    },
+    "MIDNIGHT": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/midnight",
+      "base": "assets/cards/images/downloaded/midnight.png",
+      "upgraded": "assets/cards/images/downloaded/midnight-upgraded.png"
+    },
+    "MIRAGE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/mirage",
+      "base": "assets/cards/images/downloaded/mirage.png",
+      "upgraded": "assets/cards/images/downloaded/mirage-upgraded.png"
+    },
+    "MODDED": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/modded",
+      "base": "assets/cards/images/downloaded/modded.png",
+      "upgraded": "assets/cards/images/downloaded/modded-upgraded.png"
+    },
+    "MOLTEN_FIST": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/molten-fist",
+      "base": "assets/cards/images/downloaded/molten_fist.png",
+      "upgraded": "assets/cards/images/downloaded/molten_fist-upgraded.png"
+    },
+    "MONARCHS_GAZE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/monarchs-gaze",
+      "base": "assets/cards/images/downloaded/monarchs_gaze.png",
+      "upgraded": "assets/cards/images/downloaded/monarchs_gaze-upgraded.png"
+    },
+    "MONOLOGUE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/monologue",
+      "base": "assets/cards/images/downloaded/monologue.png",
+      "upgraded": "assets/cards/images/downloaded/monologue-upgraded.png"
+    },
+    "MOMENTUM_STRIKE": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/momentum-strike",
+      "base": "assets/cards/images/downloaded/momentum_strike.png",
+      "upgraded": "assets/cards/images/downloaded/momentum_strike-upgraded.png"
+    },
+    "NEUROSURGE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/neurosurge",
+      "base": "assets/cards/images/downloaded/neurosurge.png",
+      "upgraded": "assets/cards/images/downloaded/neurosurge-upgraded.png"
+    },
+    "MULTI_CAST": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/multi-cast",
+      "base": "assets/cards/images/downloaded/multi_cast.png",
+      "upgraded": "assets/cards/images/downloaded/multi_cast-upgraded.png"
+    },
+    "NEUTRALIZE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/neutralize",
+      "base": "assets/cards/images/downloaded/neutralize.png",
+      "upgraded": "assets/cards/images/downloaded/neutralize-upgraded.png"
+    },
+    "NEUTRON_AEGIS": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/neutron-aegis",
+      "base": "assets/cards/images/downloaded/neutron_aegis.png",
+      "upgraded": "assets/cards/images/downloaded/neutron_aegis-upgraded.png"
+    },
+    "MURDER": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/murder",
+      "base": "assets/cards/images/downloaded/murder.png",
+      "upgraded": "assets/cards/images/downloaded/murder-upgraded.png"
+    },
+    "NEGATIVE_PULSE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/negative-pulse",
+      "base": "assets/cards/images/downloaded/negative_pulse.png",
+      "upgraded": "assets/cards/images/downloaded/negative_pulse-upgraded.png"
+    },
+    "NORMALITY": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/normality",
+      "base": "assets/cards/images/downloaded/normality.png"
+    },
+    "NECRO_MASTERY": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/necro-mastery",
+      "base": "assets/cards/images/downloaded/necro_mastery.png",
+      "upgraded": "assets/cards/images/downloaded/necro_mastery-upgraded.png"
+    },
+    "NEOWS_FURY": {
+      "source": "https://sts2.untapped.gg/en/cards/event/neows-fury",
+      "base": "assets/cards/images/downloaded/neows_fury.png",
+      "upgraded": "assets/cards/images/downloaded/neows_fury-upgraded.png"
+    },
+    "NOXIOUS_FUMES": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/noxious-fumes",
+      "base": "assets/cards/images/downloaded/noxious_fumes.png",
+      "upgraded": "assets/cards/images/downloaded/noxious_fumes-upgraded.png"
+    },
+    "OBLIVION": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/oblivion",
+      "base": "assets/cards/images/downloaded/oblivion.png",
+      "upgraded": "assets/cards/images/downloaded/oblivion-upgraded.png"
+    },
+    "NIGHTMARE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/nightmare",
+      "base": "assets/cards/images/downloaded/nightmare.png",
+      "upgraded": "assets/cards/images/downloaded/nightmare-upgraded.png"
+    },
+    "NO_ESCAPE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/no-escape",
+      "base": "assets/cards/images/downloaded/no_escape.png",
+      "upgraded": "assets/cards/images/downloaded/no_escape-upgraded.png"
+    },
+    "OFFERING": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/offering",
+      "base": "assets/cards/images/downloaded/offering.png",
+      "upgraded": "assets/cards/images/downloaded/offering-upgraded.png"
+    },
+    "NOSTALGIA": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/nostalgia",
+      "base": "assets/cards/images/downloaded/nostalgia.png",
+      "upgraded": "assets/cards/images/downloaded/nostalgia-upgraded.png"
+    },
+    "NOT_YET": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/not-yet",
+      "base": "assets/cards/images/downloaded/not_yet.png",
+      "upgraded": "assets/cards/images/downloaded/not_yet-upgraded.png"
+    },
+    "ORBIT": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/orbit",
+      "base": "assets/cards/images/downloaded/orbit.png",
+      "upgraded": "assets/cards/images/downloaded/orbit-upgraded.png"
+    },
+    "NULL": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/null",
+      "base": "assets/cards/images/downloaded/null.png",
+      "upgraded": "assets/cards/images/downloaded/null-upgraded.png"
+    },
+    "ONE_FOR_ALL": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/one-for-all",
+      "base": "assets/cards/images/downloaded/one_for_all.png",
+      "upgraded": "assets/cards/images/downloaded/one_for_all-upgraded.png"
+    },
+    "ONE_TWO_PUNCH": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/one-two-punch",
+      "base": "assets/cards/images/downloaded/one_two_punch.png",
+      "upgraded": "assets/cards/images/downloaded/one_two_punch-upgraded.png"
+    },
+    "OMNISLICE": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/omnislice",
+      "base": "assets/cards/images/downloaded/omnislice.png",
+      "upgraded": "assets/cards/images/downloaded/omnislice-upgraded.png"
+    },
+    "OUTBREAK": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/outbreak",
+      "base": "assets/cards/images/downloaded/outbreak.png",
+      "upgraded": "assets/cards/images/downloaded/outbreak-upgraded.png"
+    },
+    "OUTMANEUVER": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/outmaneuver",
+      "base": "assets/cards/images/downloaded/outmaneuver.png",
+      "upgraded": "assets/cards/images/downloaded/outmaneuver-upgraded.png"
+    },
+    "OUTRAGE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/outrage",
+      "base": "assets/cards/images/downloaded/outrage.png",
+      "upgraded": "assets/cards/images/downloaded/outrage-upgraded.png"
+    },
+    "OVERCLOCK": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/overclock",
+      "base": "assets/cards/images/downloaded/overclock.png",
+      "upgraded": "assets/cards/images/downloaded/overclock-upgraded.png"
+    },
+    "PACTS_END": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/pacts-end",
+      "base": "assets/cards/images/downloaded/pacts_end.png",
+      "upgraded": "assets/cards/images/downloaded/pacts_end-upgraded.png"
+    },
+    "PAGESTORM": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/pagestorm",
+      "base": "assets/cards/images/downloaded/pagestorm.png",
+      "upgraded": "assets/cards/images/downloaded/pagestorm-upgraded.png"
+    },
+    "PALE_BLUE_DOT": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/pale-blue-dot",
+      "base": "assets/cards/images/downloaded/pale_blue_dot.png",
+      "upgraded": "assets/cards/images/downloaded/pale_blue_dot-upgraded.png"
+    },
+    "PANIC_BUTTON": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/panic-button",
+      "base": "assets/cards/images/downloaded/panic_button.png",
+      "upgraded": "assets/cards/images/downloaded/panic_button-upgraded.png"
+    },
+    "PANACHE": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/panache",
+      "base": "assets/cards/images/downloaded/panache.png",
+      "upgraded": "assets/cards/images/downloaded/panache-upgraded.png"
+    },
+    "PERFECTED_STRIKE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/perfected-strike",
+      "base": "assets/cards/images/downloaded/perfected_strike.png",
+      "upgraded": "assets/cards/images/downloaded/perfected_strike-upgraded.png"
+    },
+    "PARRY": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/parry",
+      "base": "assets/cards/images/downloaded/parry.png",
+      "upgraded": "assets/cards/images/downloaded/parry-upgraded.png"
+    },
+    "PARTICLE_WALL": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/particle-wall",
+      "base": "assets/cards/images/downloaded/particle_wall.png",
+      "upgraded": "assets/cards/images/downloaded/particle_wall-upgraded.png"
+    },
+    "PARSE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/parse",
+      "base": "assets/cards/images/downloaded/parse.png",
+      "upgraded": "assets/cards/images/downloaded/parse-upgraded.png"
+    },
+    "PATTER": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/patter",
+      "base": "assets/cards/images/downloaded/patter.png",
+      "upgraded": "assets/cards/images/downloaded/patter-upgraded.png"
+    },
+    "PECK": {
+      "source": "https://sts2.untapped.gg/en/cards/event/peck",
+      "base": "assets/cards/images/downloaded/peck.png",
+      "upgraded": "assets/cards/images/downloaded/peck-upgraded.png"
+    },
+    "PHOTON_CUT": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/photon-cut",
+      "base": "assets/cards/images/downloaded/photon_cut.png",
+      "upgraded": "assets/cards/images/downloaded/photon_cut-upgraded.png"
+    },
+    "PHANTOM_BLADES": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/phantom-blades",
+      "base": "assets/cards/images/downloaded/phantom_blades.png",
+      "upgraded": "assets/cards/images/downloaded/phantom_blades-upgraded.png"
+    },
+    "PIERCING_WAIL": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/piercing-wail",
+      "base": "assets/cards/images/downloaded/piercing_wail.png",
+      "upgraded": "assets/cards/images/downloaded/piercing_wail-upgraded.png"
+    },
+    "PILLAGE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/pillage",
+      "base": "assets/cards/images/downloaded/pillage.png",
+      "upgraded": "assets/cards/images/downloaded/pillage-upgraded.png"
+    },
+    "PILLAR_OF_CREATION": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/pillar-of-creation",
+      "base": "assets/cards/images/downloaded/pillar_of_creation.png",
+      "upgraded": "assets/cards/images/downloaded/pillar_of_creation-upgraded.png"
+    },
+    "POOR_SLEEP": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/poor-sleep",
+      "base": "assets/cards/images/downloaded/poor_sleep.png"
+    },
+    "PINPOINT": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/pinpoint",
+      "base": "assets/cards/images/downloaded/pinpoint.png",
+      "upgraded": "assets/cards/images/downloaded/pinpoint-upgraded.png"
+    },
+    "PLOT": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/plot",
+      "base": "assets/cards/images/downloaded/plot.png",
+      "upgraded": "assets/cards/images/downloaded/plot-upgraded.png"
+    },
+    "POKE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/poke",
+      "base": "assets/cards/images/downloaded/poke.png",
+      "upgraded": "assets/cards/images/downloaded/poke-upgraded.png"
+    },
+    "PREDATOR": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/predator",
+      "base": "assets/cards/images/downloaded/predator.png",
+      "upgraded": "assets/cards/images/downloaded/predator-upgraded.png"
+    },
+    "POISONED_STAB": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/poisoned-stab",
+      "base": "assets/cards/images/downloaded/poisoned_stab.png",
+      "upgraded": "assets/cards/images/downloaded/poisoned_stab-upgraded.png"
+    },
+    "POMMEL_STRIKE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/pommel-strike",
+      "base": "assets/cards/images/downloaded/pommel_strike.png",
+      "upgraded": "assets/cards/images/downloaded/pommel_strike-upgraded.png"
+    },
+    "PRECISE_CUT": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/precise-cut",
+      "base": "assets/cards/images/downloaded/precise_cut.png",
+      "upgraded": "assets/cards/images/downloaded/precise_cut-upgraded.png"
+    },
+    "POUNCE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/pounce",
+      "base": "assets/cards/images/downloaded/pounce.png",
+      "upgraded": "assets/cards/images/downloaded/pounce-upgraded.png"
+    },
+    "PREP_TIME": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/prep-time",
+      "base": "assets/cards/images/downloaded/prep_time.png",
+      "upgraded": "assets/cards/images/downloaded/prep_time-upgraded.png"
+    },
+    "PRODUCTION": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/production",
+      "base": "assets/cards/images/downloaded/production.png",
+      "upgraded": "assets/cards/images/downloaded/production-upgraded.png"
+    },
+    "PREPARED": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/prepared",
+      "base": "assets/cards/images/downloaded/prepared.png",
+      "upgraded": "assets/cards/images/downloaded/prepared-upgraded.png"
+    },
+    "PROWESS": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/prowess",
+      "base": "assets/cards/images/downloaded/prowess.png",
+      "upgraded": "assets/cards/images/downloaded/prowess-upgraded.png"
+    },
+    "PRIMAL_FORCE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/primal-force",
+      "base": "assets/cards/images/downloaded/primal_force.png",
+      "upgraded": "assets/cards/images/downloaded/primal_force-upgraded.png"
+    },
+    "PROPHESIZE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/prophesize",
+      "base": "assets/cards/images/downloaded/prophesize.png",
+      "upgraded": "assets/cards/images/downloaded/prophesize-upgraded.png"
+    },
+    "PROLONG": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/prolong",
+      "base": "assets/cards/images/downloaded/prolong.png",
+      "upgraded": "assets/cards/images/downloaded/prolong-upgraded.png"
+    },
+    "PROTECTOR": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/protector",
+      "base": "assets/cards/images/downloaded/protector.png",
+      "upgraded": "assets/cards/images/downloaded/protector-upgraded.png"
+    },
+    "QUADCAST": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/quadcast",
+      "base": "assets/cards/images/downloaded/quadcast.png",
+      "upgraded": "assets/cards/images/downloaded/quadcast-upgraded.png"
+    },
+    "PULL_AGGRO": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/pull-aggro",
+      "base": "assets/cards/images/downloaded/pull_aggro.png",
+      "upgraded": "assets/cards/images/downloaded/pull_aggro-upgraded.png"
+    },
+    "QUASAR": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/quasar",
+      "base": "assets/cards/images/downloaded/quasar.png",
+      "upgraded": "assets/cards/images/downloaded/quasar-upgraded.png"
+    },
+    "PURITY": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/purity",
+      "base": "assets/cards/images/downloaded/purity.png",
+      "upgraded": "assets/cards/images/downloaded/purity-upgraded.png"
+    },
+    "PULL_FROM_BELOW": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/pull-from-below",
+      "base": "assets/cards/images/downloaded/pull_from_below.png",
+      "upgraded": "assets/cards/images/downloaded/pull_from_below-upgraded.png"
+    },
+    "RAINBOW": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/rainbow",
+      "base": "assets/cards/images/downloaded/rainbow.png",
+      "upgraded": "assets/cards/images/downloaded/rainbow-upgraded.png"
+    },
+    "PUTREFY": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/putrefy",
+      "base": "assets/cards/images/downloaded/putrefy.png",
+      "upgraded": "assets/cards/images/downloaded/putrefy-upgraded.png"
+    },
+    "PYRE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/pyre",
+      "base": "assets/cards/images/downloaded/pyre.png",
+      "upgraded": "assets/cards/images/downloaded/pyre-upgraded.png"
+    },
+    "RAGE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/rage",
+      "base": "assets/cards/images/downloaded/rage.png",
+      "upgraded": "assets/cards/images/downloaded/rage-upgraded.png"
+    },
+    "RALLY": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/rally",
+      "base": "assets/cards/images/downloaded/rally.png",
+      "upgraded": "assets/cards/images/downloaded/rally-upgraded.png"
+    },
+    "RADIATE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/radiate",
+      "base": "assets/cards/images/downloaded/radiate.png",
+      "upgraded": "assets/cards/images/downloaded/radiate-upgraded.png"
+    },
+    "REANIMATE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/reanimate",
+      "base": "assets/cards/images/downloaded/reanimate.png",
+      "upgraded": "assets/cards/images/downloaded/reanimate-upgraded.png"
+    },
+    "RAMPAGE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/rampage",
+      "base": "assets/cards/images/downloaded/rampage.png",
+      "upgraded": "assets/cards/images/downloaded/rampage-upgraded.png"
+    },
+    "REAPER_FORM": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/reaper-form",
+      "base": "assets/cards/images/downloaded/reaper_form.png",
+      "upgraded": "assets/cards/images/downloaded/reaper_form-upgraded.png"
+    },
+    "RATTLE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/rattle",
+      "base": "assets/cards/images/downloaded/rattle.png",
+      "upgraded": "assets/cards/images/downloaded/rattle-upgraded.png"
+    },
+    "REAVE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/reave",
+      "base": "assets/cards/images/downloaded/reave.png",
+      "upgraded": "assets/cards/images/downloaded/reave-upgraded.png"
+    },
+    "REAP": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/reap",
+      "base": "assets/cards/images/downloaded/reap.png",
+      "upgraded": "assets/cards/images/downloaded/reap-upgraded.png"
+    },
+    "REBOUND": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/rebound",
+      "base": "assets/cards/images/downloaded/rebound.png",
+      "upgraded": "assets/cards/images/downloaded/rebound-upgraded.png"
+    },
+    "REBOOT": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/reboot",
+      "base": "assets/cards/images/downloaded/reboot.png",
+      "upgraded": "assets/cards/images/downloaded/reboot-upgraded.png"
+    },
+    "REGRET": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/regret",
+      "base": "assets/cards/images/downloaded/regret.png"
+    },
+    "REFINE_BLADE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/refine-blade",
+      "base": "assets/cards/images/downloaded/refine_blade.png",
+      "upgraded": "assets/cards/images/downloaded/refine_blade-upgraded.png"
+    },
+    "REFLECT": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/reflect",
+      "base": "assets/cards/images/downloaded/reflect.png",
+      "upgraded": "assets/cards/images/downloaded/reflect-upgraded.png"
+    },
+    "REFRACT": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/refract",
+      "base": "assets/cards/images/downloaded/refract.png",
+      "upgraded": "assets/cards/images/downloaded/refract-upgraded.png"
+    },
+    "RELAX": {
+      "source": "https://sts2.untapped.gg/en/cards/event/relax",
+      "base": "assets/cards/images/downloaded/relax.png",
+      "upgraded": "assets/cards/images/downloaded/relax-upgraded.png"
+    },
+    "REND": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/rend",
+      "base": "assets/cards/images/downloaded/rend.png",
+      "upgraded": "assets/cards/images/downloaded/rend-upgraded.png"
+    },
+    "REFLEX": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/reflex",
+      "base": "assets/cards/images/downloaded/reflex.png",
+      "upgraded": "assets/cards/images/downloaded/reflex-upgraded.png"
+    },
+    "RESONANCE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/resonance",
+      "base": "assets/cards/images/downloaded/resonance.png",
+      "upgraded": "assets/cards/images/downloaded/resonance-upgraded.png"
+    },
+    "RESTLESSNESS": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/restlessness",
+      "base": "assets/cards/images/downloaded/restlessness.png",
+      "upgraded": "assets/cards/images/downloaded/restlessness-upgraded.png"
+    },
+    "RICOCHET": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/ricochet",
+      "base": "assets/cards/images/downloaded/ricochet.png",
+      "upgraded": "assets/cards/images/downloaded/ricochet-upgraded.png"
+    },
+    "RIP_AND_TEAR": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/rip-and-tear",
+      "base": "assets/cards/images/downloaded/rip_and_tear.png",
+      "upgraded": "assets/cards/images/downloaded/rip_and_tear-upgraded.png"
+    },
+    "RIGHT_HAND_HAND": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/right-hand-hand",
+      "base": "assets/cards/images/downloaded/right_hand_hand.png",
+      "upgraded": "assets/cards/images/downloaded/right_hand_hand-upgraded.png"
+    },
+    "RUPTURE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/rupture",
+      "base": "assets/cards/images/downloaded/rupture.png",
+      "upgraded": "assets/cards/images/downloaded/rupture-upgraded.png"
+    },
+    "ROLLING_BOULDER": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/rolling-boulder",
+      "base": "assets/cards/images/downloaded/rolling_boulder.png",
+      "upgraded": "assets/cards/images/downloaded/rolling_boulder-upgraded.png"
+    },
+    "ROCKET_PUNCH": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/rocket-punch",
+      "base": "assets/cards/images/downloaded/rocket_punch.png",
+      "upgraded": "assets/cards/images/downloaded/rocket_punch-upgraded.png"
+    },
+    "ROYALTIES": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/royalties",
+      "base": "assets/cards/images/downloaded/royalties.png",
+      "upgraded": "assets/cards/images/downloaded/royalties-upgraded.png"
+    },
+    "ROYAL_GAMBLE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/royal-gamble",
+      "base": "assets/cards/images/downloaded/royal_gamble.png",
+      "upgraded": "assets/cards/images/downloaded/royal_gamble-upgraded.png"
+    },
+    "SACRIFICE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/sacrifice",
+      "base": "assets/cards/images/downloaded/sacrifice.png",
+      "upgraded": "assets/cards/images/downloaded/sacrifice-upgraded.png"
+    },
+    "SALVO": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/salvo",
+      "base": "assets/cards/images/downloaded/salvo.png",
+      "upgraded": "assets/cards/images/downloaded/salvo-upgraded.png"
+    },
+    "SCAVENGE": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/scavenge",
+      "base": "assets/cards/images/downloaded/scavenge.png",
+      "upgraded": "assets/cards/images/downloaded/scavenge-upgraded.png"
+    },
+    "SCOURGE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/scourge",
+      "base": "assets/cards/images/downloaded/scourge.png",
+      "upgraded": "assets/cards/images/downloaded/scourge-upgraded.png"
+    },
+    "SCRAPE": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/scrape",
+      "base": "assets/cards/images/downloaded/scrape.png",
+      "upgraded": "assets/cards/images/downloaded/scrape-upgraded.png"
+    },
+    "SCULPTING_STRIKE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/sculpting-strike",
+      "base": "assets/cards/images/downloaded/sculpting_strike.png",
+      "upgraded": "assets/cards/images/downloaded/sculpting_strike-upgraded.png"
+    },
+    "SCRAWL": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/scrawl",
+      "base": "assets/cards/images/downloaded/scrawl.png",
+      "upgraded": "assets/cards/images/downloaded/scrawl-upgraded.png"
+    },
+    "SEANCE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/seance",
+      "base": "assets/cards/images/downloaded/seance.png",
+      "upgraded": "assets/cards/images/downloaded/seance-upgraded.png"
+    },
+    "SECOND_WIND": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/second-wind",
+      "base": "assets/cards/images/downloaded/second_wind.png",
+      "upgraded": "assets/cards/images/downloaded/second_wind-upgraded.png"
+    },
+    "SENTRY_MODE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/sentry-mode",
+      "base": "assets/cards/images/downloaded/sentry_mode.png",
+      "upgraded": "assets/cards/images/downloaded/sentry_mode-upgraded.png"
+    },
+    "SECRET_TECHNIQUE": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/secret-technique",
+      "base": "assets/cards/images/downloaded/secret_technique.png",
+      "upgraded": "assets/cards/images/downloaded/secret_technique-upgraded.png"
+    },
+    "SERPENT_FORM": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/serpent-form",
+      "base": "assets/cards/images/downloaded/serpent_form.png",
+      "upgraded": "assets/cards/images/downloaded/serpent_form-upgraded.png"
+    },
+    "SECRET_WEAPON": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/secret-weapon",
+      "base": "assets/cards/images/downloaded/secret_weapon.png",
+      "upgraded": "assets/cards/images/downloaded/secret_weapon-upgraded.png"
+    },
+    "SEEKER_STRIKE": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/seeker-strike",
+      "base": "assets/cards/images/downloaded/seeker_strike.png",
+      "upgraded": "assets/cards/images/downloaded/seeker_strike-upgraded.png"
+    },
+    "SEEKING_EDGE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/seeking-edge",
+      "base": "assets/cards/images/downloaded/seeking_edge.png",
+      "upgraded": "assets/cards/images/downloaded/seeking_edge-upgraded.png"
+    },
+    "SETUP_STRIKE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/setup-strike",
+      "base": "assets/cards/images/downloaded/setup_strike.png",
+      "upgraded": "assets/cards/images/downloaded/setup_strike-upgraded.png"
+    },
+    "SHAME": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/shame",
+      "base": "assets/cards/images/downloaded/shame.png"
+    },
+    "SEVERANCE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/severance",
+      "base": "assets/cards/images/downloaded/severance.png",
+      "upgraded": "assets/cards/images/downloaded/severance-upgraded.png"
+    },
+    "SHADOW_SHIELD": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/shadow-shield",
+      "base": "assets/cards/images/downloaded/shadow_shield.png",
+      "upgraded": "assets/cards/images/downloaded/shadow_shield-upgraded.png"
+    },
+    "SEVEN_STARS": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/seven-stars",
+      "base": "assets/cards/images/downloaded/seven_stars.png",
+      "upgraded": "assets/cards/images/downloaded/seven_stars-upgraded.png"
+    },
+    "SHADOW_STEP": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/shadow-step",
+      "base": "assets/cards/images/downloaded/shadow_step.png",
+      "upgraded": "assets/cards/images/downloaded/shadow_step-upgraded.png"
+    },
+    "SHADOWMELD": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/shadowmeld",
+      "base": "assets/cards/images/downloaded/shadowmeld.png",
+      "upgraded": "assets/cards/images/downloaded/shadowmeld-upgraded.png"
+    },
+    "SHOCKWAVE": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/shockwave",
+      "base": "assets/cards/images/downloaded/shockwave.png",
+      "upgraded": "assets/cards/images/downloaded/shockwave-upgraded.png"
+    },
+    "SHARED_FATE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/shared-fate",
+      "base": "assets/cards/images/downloaded/shared_fate.png",
+      "upgraded": "assets/cards/images/downloaded/shared_fate-upgraded.png"
+    },
+    "SHATTER": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/shatter",
+      "base": "assets/cards/images/downloaded/shatter.png",
+      "upgraded": "assets/cards/images/downloaded/shatter-upgraded.png"
+    },
+    "SHINING_STRIKE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/shining-strike",
+      "base": "assets/cards/images/downloaded/shining_strike.png",
+      "upgraded": "assets/cards/images/downloaded/shining_strike-upgraded.png"
+    },
+    "SHRUG_IT_OFF": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/shrug-it-off",
+      "base": "assets/cards/images/downloaded/shrug_it_off.png",
+      "upgraded": "assets/cards/images/downloaded/shrug_it_off-upgraded.png"
+    },
+    "SHROUD": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/shroud",
+      "base": "assets/cards/images/downloaded/shroud.png",
+      "upgraded": "assets/cards/images/downloaded/shroud-upgraded.png"
+    },
+    "SIC_EM": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/sic-em",
+      "base": "assets/cards/images/downloaded/sic_em.png",
+      "upgraded": "assets/cards/images/downloaded/sic_em-upgraded.png"
+    },
+    "SIDESTEP": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/sidestep",
+      "base": "assets/cards/images/downloaded/sidestep.png",
+      "upgraded": "assets/cards/images/downloaded/sidestep-upgraded.png"
+    },
+    "SIGNAL_BOOST": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/signal-boost",
+      "base": "assets/cards/images/downloaded/signal_boost.png",
+      "upgraded": "assets/cards/images/downloaded/signal_boost-upgraded.png"
+    },
+    "SNAKEBITE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/snakebite",
+      "base": "assets/cards/images/downloaded/snakebite.png",
+      "upgraded": "assets/cards/images/downloaded/snakebite-upgraded.png"
+    },
+    "SKEWER": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/skewer",
+      "base": "assets/cards/images/downloaded/skewer.png",
+      "upgraded": "assets/cards/images/downloaded/skewer-upgraded.png"
+    },
+    "SKIM": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/skim",
+      "base": "assets/cards/images/downloaded/skim.png",
+      "upgraded": "assets/cards/images/downloaded/skim-upgraded.png"
+    },
+    "SLEIGHT_OF_FLESH": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/sleight-of-flesh",
+      "base": "assets/cards/images/downloaded/sleight_of_flesh.png",
+      "upgraded": "assets/cards/images/downloaded/sleight_of_flesh-upgraded.png"
+    },
+    "SLICE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/slice",
+      "base": "assets/cards/images/downloaded/slice.png",
+      "upgraded": "assets/cards/images/downloaded/slice-upgraded.png"
+    },
+    "SMOKESTACK": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/smokestack",
+      "base": "assets/cards/images/downloaded/smokestack.png",
+      "upgraded": "assets/cards/images/downloaded/smokestack-upgraded.png"
+    },
+    "SOUL_STORM": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/soul-storm",
+      "base": "assets/cards/images/downloaded/soul_storm.png",
+      "upgraded": "assets/cards/images/downloaded/soul_storm-upgraded.png"
+    },
+    "SOULBOUND": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/soulbound",
+      "base": "assets/cards/images/downloaded/soulbound.png",
+      "upgraded": "assets/cards/images/downloaded/soulbound-upgraded.png"
+    },
+    "SNAP": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/snap",
+      "base": "assets/cards/images/downloaded/snap.png",
+      "upgraded": "assets/cards/images/downloaded/snap-upgraded.png"
+    },
+    "SNEAKY": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/sneaky",
+      "base": "assets/cards/images/downloaded/sneaky.png",
+      "upgraded": "assets/cards/images/downloaded/sneaky-upgraded.png"
+    },
+    "SPECTRUM_SHIFT": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/spectrum-shift",
+      "base": "assets/cards/images/downloaded/spectrum_shift.png",
+      "upgraded": "assets/cards/images/downloaded/spectrum_shift-upgraded.png"
+    },
+    "SOLAR_STRIKE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/solar-strike",
+      "base": "assets/cards/images/downloaded/solar_strike.png",
+      "upgraded": "assets/cards/images/downloaded/solar_strike-upgraded.png"
+    },
+    "SOW": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/sow",
+      "base": "assets/cards/images/downloaded/sow.png",
+      "upgraded": "assets/cards/images/downloaded/sow-upgraded.png"
+    },
+    "SPOILS_MAP": {
+      "source": "https://sts2.untapped.gg/en/cards/quest/spoils-map",
+      "base": "assets/cards/images/downloaded/spoils_map.png"
+    },
+    "SPLASH": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/splash",
+      "base": "assets/cards/images/downloaded/splash.png",
+      "upgraded": "assets/cards/images/downloaded/splash-upgraded.png"
+    },
+    "SPORE_MIND": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/spore-mind",
+      "base": "assets/cards/images/downloaded/spore_mind.png"
+    },
+    "SPEEDSTER": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/speedster",
+      "base": "assets/cards/images/downloaded/speedster.png",
+      "upgraded": "assets/cards/images/downloaded/speedster-upgraded.png"
+    },
+    "SPINNER": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/spinner",
+      "base": "assets/cards/images/downloaded/spinner.png",
+      "upgraded": "assets/cards/images/downloaded/spinner-upgraded.png"
+    },
+    "SPIRIT_OF_ASH": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/spirit-of-ash",
+      "base": "assets/cards/images/downloaded/spirit_of_ash.png",
+      "upgraded": "assets/cards/images/downloaded/spirit_of_ash-upgraded.png"
+    },
+    "SPITE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/spite",
+      "base": "assets/cards/images/downloaded/spite.png",
+      "upgraded": "assets/cards/images/downloaded/spite-upgraded.png"
+    },
+    "STAMPEDE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/stampede",
+      "base": "assets/cards/images/downloaded/stampede.png",
+      "upgraded": "assets/cards/images/downloaded/stampede-upgraded.png"
+    },
+    "SQUASH": {
+      "source": "https://sts2.untapped.gg/en/cards/event/squash",
+      "base": "assets/cards/images/downloaded/squash.png",
+      "upgraded": "assets/cards/images/downloaded/squash-upgraded.png"
+    },
+    "STARDUST": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/stardust",
+      "base": "assets/cards/images/downloaded/stardust.png",
+      "upgraded": "assets/cards/images/downloaded/stardust-upgraded.png"
+    },
+    "SQUEEZE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/squeeze",
+      "base": "assets/cards/images/downloaded/squeeze.png",
+      "upgraded": "assets/cards/images/downloaded/squeeze-upgraded.png"
+    },
+    "SPOILS_OF_BATTLE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/spoils-of-battle",
+      "base": "assets/cards/images/downloaded/spoils_of_battle.png",
+      "upgraded": "assets/cards/images/downloaded/spoils_of_battle-upgraded.png"
+    },
+    "STACK": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/stack",
+      "base": "assets/cards/images/downloaded/stack.png",
+      "upgraded": "assets/cards/images/downloaded/stack-upgraded.png"
+    },
+    "SPUR": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/spur",
+      "base": "assets/cards/images/downloaded/spur.png",
+      "upgraded": "assets/cards/images/downloaded/spur-upgraded.png"
+    },
+    "STOKE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/stoke",
+      "base": "assets/cards/images/downloaded/stoke.png",
+      "upgraded": "assets/cards/images/downloaded/stoke-upgraded.png"
+    },
+    "STORM_OF_STEEL": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/storm-of-steel",
+      "base": "assets/cards/images/downloaded/storm_of_steel.png",
+      "upgraded": "assets/cards/images/downloaded/storm_of_steel-upgraded.png"
+    },
+    "STORM": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/storm",
+      "base": "assets/cards/images/downloaded/storm.png",
+      "upgraded": "assets/cards/images/downloaded/storm-upgraded.png"
+    },
+    "STONE_ARMOR": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/stone-armor",
+      "base": "assets/cards/images/downloaded/stone_armor.png",
+      "upgraded": "assets/cards/images/downloaded/stone_armor-upgraded.png"
+    },
+    "STRANGLE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/strangle",
+      "base": "assets/cards/images/downloaded/strangle.png",
+      "upgraded": "assets/cards/images/downloaded/strangle-upgraded.png"
+    },
+    "STRIKE_IRONCLAD": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/strike-ironclad",
+      "base": "assets/cards/images/downloaded/strike_ironclad.png",
+      "upgraded": "assets/cards/images/downloaded/strike_ironclad-upgraded.png"
+    },
+    "STOMP": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/stomp",
+      "base": "assets/cards/images/downloaded/stomp.png",
+      "upgraded": "assets/cards/images/downloaded/stomp-upgraded.png"
+    },
+    "STRIKE_DEFECT": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/strike-defect",
+      "base": "assets/cards/images/downloaded/strike_defect.png",
+      "upgraded": "assets/cards/images/downloaded/strike_defect-upgraded.png"
+    },
+    "STRATAGEM": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/stratagem",
+      "base": "assets/cards/images/downloaded/stratagem.png",
+      "upgraded": "assets/cards/images/downloaded/stratagem-upgraded.png"
+    },
+    "STRIKE_NECROBINDER": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/strike-necrobinder",
+      "base": "assets/cards/images/downloaded/strike_necrobinder.png",
+      "upgraded": "assets/cards/images/downloaded/strike_necrobinder-upgraded.png"
+    },
+    "STRIKE_REGENT": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/strike-regent",
+      "base": "assets/cards/images/downloaded/strike_regent.png",
+      "upgraded": "assets/cards/images/downloaded/strike_regent-upgraded.png"
+    },
+    "STRIKE_SILENT": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/strike-silent",
+      "base": "assets/cards/images/downloaded/strike_silent.png",
+      "upgraded": "assets/cards/images/downloaded/strike_silent-upgraded.png"
+    },
+    "SUPERCRITICAL": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/supercritical",
+      "base": "assets/cards/images/downloaded/supercritical.png",
+      "upgraded": "assets/cards/images/downloaded/supercritical-upgraded.png"
+    },
+    "SUCKER_PUNCH": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/sucker-punch",
+      "base": "assets/cards/images/downloaded/sucker_punch.png",
+      "upgraded": "assets/cards/images/downloaded/sucker_punch-upgraded.png"
+    },
+    "SUMMON_FORTH": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/summon-forth",
+      "base": "assets/cards/images/downloaded/summon_forth.png",
+      "upgraded": "assets/cards/images/downloaded/summon_forth-upgraded.png"
+    },
+    "SUNDER": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/sunder",
+      "base": "assets/cards/images/downloaded/sunder.png",
+      "upgraded": "assets/cards/images/downloaded/sunder-upgraded.png"
+    },
+    "SUBROUTINE": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/subroutine",
+      "base": "assets/cards/images/downloaded/subroutine.png",
+      "upgraded": "assets/cards/images/downloaded/subroutine-upgraded.png"
+    },
+    "SUPERMASSIVE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/supermassive",
+      "base": "assets/cards/images/downloaded/supermassive.png",
+      "upgraded": "assets/cards/images/downloaded/supermassive-upgraded.png"
+    },
+    "SURVIVOR": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/survivor",
+      "base": "assets/cards/images/downloaded/survivor.png",
+      "upgraded": "assets/cards/images/downloaded/survivor-upgraded.png"
+    },
+    "SUPPRESS": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/suppress",
+      "base": "assets/cards/images/downloaded/suppress.png",
+      "upgraded": "assets/cards/images/downloaded/suppress-upgraded.png"
+    },
+    "SWEEPING_BEAM": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/sweeping-beam",
+      "base": "assets/cards/images/downloaded/sweeping_beam.png",
+      "upgraded": "assets/cards/images/downloaded/sweeping_beam-upgraded.png"
+    },
+    "SWORD_BOOMERANG": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/sword-boomerang",
+      "base": "assets/cards/images/downloaded/sword_boomerang.png",
+      "upgraded": "assets/cards/images/downloaded/sword_boomerang-upgraded.png"
+    },
+    "SWORD_SAGE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/sword-sage",
+      "base": "assets/cards/images/downloaded/sword_sage.png",
+      "upgraded": "assets/cards/images/downloaded/sword_sage-upgraded.png"
+    },
+    "TANK": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/tank",
+      "base": "assets/cards/images/downloaded/tank.png",
+      "upgraded": "assets/cards/images/downloaded/tank-upgraded.png"
+    },
+    "TEAR_ASUNDER": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/tear-asunder",
+      "base": "assets/cards/images/downloaded/tear_asunder.png",
+      "upgraded": "assets/cards/images/downloaded/tear_asunder-upgraded.png"
+    },
+    "SYNCHRONIZE": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/synchronize",
+      "base": "assets/cards/images/downloaded/synchronize.png",
+      "upgraded": "assets/cards/images/downloaded/synchronize-upgraded.png"
+    },
+    "TEMPEST": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/tempest",
+      "base": "assets/cards/images/downloaded/tempest.png",
+      "upgraded": "assets/cards/images/downloaded/tempest-upgraded.png"
+    },
+    "TACTICIAN": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/tactician",
+      "base": "assets/cards/images/downloaded/tactician.png",
+      "upgraded": "assets/cards/images/downloaded/tactician-upgraded.png"
+    },
+    "SYNTHESIS": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/synthesis",
+      "base": "assets/cards/images/downloaded/synthesis.png",
+      "upgraded": "assets/cards/images/downloaded/synthesis-upgraded.png"
+    },
+    "TAG_TEAM": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/tag-team",
+      "base": "assets/cards/images/downloaded/tag_team.png",
+      "upgraded": "assets/cards/images/downloaded/tag_team-upgraded.png"
+    },
+    "TAUNT": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/taunt",
+      "base": "assets/cards/images/downloaded/taunt.png",
+      "upgraded": "assets/cards/images/downloaded/taunt-upgraded.png"
+    },
+    "TERRAFORMING": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/terraforming",
+      "base": "assets/cards/images/downloaded/terraforming.png",
+      "upgraded": "assets/cards/images/downloaded/terraforming-upgraded.png"
+    },
+    "TESLA_COIL": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/tesla-coil",
+      "base": "assets/cards/images/downloaded/tesla_coil.png",
+      "upgraded": "assets/cards/images/downloaded/tesla_coil-upgraded.png"
+    },
+    "THE_SCYTHE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/the-scythe",
+      "base": "assets/cards/images/downloaded/the_scythe.png",
+      "upgraded": "assets/cards/images/downloaded/the_scythe-upgraded.png"
+    },
+    "THE_SMITH": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/the-smith",
+      "base": "assets/cards/images/downloaded/the_smith.png",
+      "upgraded": "assets/cards/images/downloaded/the_smith-upgraded.png"
+    },
+    "THE_BALL": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/the-ball",
+      "base": "assets/cards/images/downloaded/the_ball.png",
+      "upgraded": "assets/cards/images/downloaded/the_ball-upgraded.png"
+    },
+    "THE_BOMB": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/the-bomb",
+      "base": "assets/cards/images/downloaded/the_bomb.png",
+      "upgraded": "assets/cards/images/downloaded/the_bomb-upgraded.png"
+    },
+    "THE_GAMBIT": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/the-gambit",
+      "base": "assets/cards/images/downloaded/the_gambit.png",
+      "upgraded": "assets/cards/images/downloaded/the_gambit-upgraded.png"
+    },
+    "THUNDER": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/thunder",
+      "base": "assets/cards/images/downloaded/thunder.png",
+      "upgraded": "assets/cards/images/downloaded/thunder-upgraded.png"
+    },
+    "THE_HUNT": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/the-hunt",
+      "base": "assets/cards/images/downloaded/the_hunt.png",
+      "upgraded": "assets/cards/images/downloaded/the_hunt-upgraded.png"
+    },
+    "THE_SEALED_THRONE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/the-sealed-throne",
+      "base": "assets/cards/images/downloaded/the_sealed_throne.png",
+      "upgraded": "assets/cards/images/downloaded/the_sealed_throne-upgraded.png"
+    },
+    "THRASH": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/thrash",
+      "base": "assets/cards/images/downloaded/thrash.png",
+      "upgraded": "assets/cards/images/downloaded/thrash-upgraded.png"
+    },
+    "THINKING_AHEAD": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/thinking-ahead",
+      "base": "assets/cards/images/downloaded/thinking_ahead.png",
+      "upgraded": "assets/cards/images/downloaded/thinking_ahead-upgraded.png"
+    },
+    "THUNDERCLAP": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/thunderclap",
+      "base": "assets/cards/images/downloaded/thunderclap.png",
+      "upgraded": "assets/cards/images/downloaded/thunderclap-upgraded.png"
+    },
+    "THRUMMING_HATCHET": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/thrumming-hatchet",
+      "base": "assets/cards/images/downloaded/thrumming_hatchet.png",
+      "upgraded": "assets/cards/images/downloaded/thrumming_hatchet-upgraded.png"
+    },
+    "TIMES_UP": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/times-up",
+      "base": "assets/cards/images/downloaded/times_up.png",
+      "upgraded": "assets/cards/images/downloaded/times_up-upgraded.png"
+    },
+    "TRANSFIGURE": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/transfigure",
+      "base": "assets/cards/images/downloaded/transfigure.png",
+      "upgraded": "assets/cards/images/downloaded/transfigure-upgraded.png"
+    },
+    "TOOLS_OF_THE_TRADE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/tools-of-the-trade",
+      "base": "assets/cards/images/downloaded/tools_of_the_trade.png",
+      "upgraded": "assets/cards/images/downloaded/tools_of_the_trade-upgraded.png"
+    },
+    "TRACKING": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/tracking",
+      "base": "assets/cards/images/downloaded/tracking.png",
+      "upgraded": "assets/cards/images/downloaded/tracking-upgraded.png"
+    },
+    "TORIC_TOUGHNESS": {
+      "source": "https://sts2.untapped.gg/en/cards/event/toric-toughness",
+      "base": "assets/cards/images/downloaded/toric_toughness.png",
+      "upgraded": "assets/cards/images/downloaded/toric_toughness-upgraded.png"
+    },
+    "TRASH_TO_TREASURE": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/trash-to-treasure",
+      "base": "assets/cards/images/downloaded/trash_to_treasure.png",
+      "upgraded": "assets/cards/images/downloaded/trash_to_treasure-upgraded.png"
+    },
+    "TRUE_GRIT": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/true-grit",
+      "base": "assets/cards/images/downloaded/true_grit.png",
+      "upgraded": "assets/cards/images/downloaded/true_grit-upgraded.png"
+    },
+    "TREMBLE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/tremble",
+      "base": "assets/cards/images/downloaded/tremble.png",
+      "upgraded": "assets/cards/images/downloaded/tremble-upgraded.png"
+    },
+    "TURBO": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/turbo",
+      "base": "assets/cards/images/downloaded/turbo.png",
+      "upgraded": "assets/cards/images/downloaded/turbo-upgraded.png"
+    },
+    "TWIN_STRIKE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/twin-strike",
+      "base": "assets/cards/images/downloaded/twin_strike.png",
+      "upgraded": "assets/cards/images/downloaded/twin_strike-upgraded.png"
+    },
+    "TUTOR": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/tutor",
+      "base": "assets/cards/images/downloaded/tutor.png",
+      "upgraded": "assets/cards/images/downloaded/tutor-upgraded.png"
+    },
+    "ULTIMATE_DEFEND": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/ultimate-defend",
+      "base": "assets/cards/images/downloaded/ultimate_defend.png",
+      "upgraded": "assets/cards/images/downloaded/ultimate_defend-upgraded.png"
+    },
+    "UNMOVABLE": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/unmovable",
+      "base": "assets/cards/images/downloaded/unmovable.png",
+      "upgraded": "assets/cards/images/downloaded/unmovable-upgraded.png"
+    },
+    "ULTIMATE_STRIKE": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/ultimate-strike",
+      "base": "assets/cards/images/downloaded/ultimate_strike.png",
+      "upgraded": "assets/cards/images/downloaded/ultimate_strike-upgraded.png"
+    },
+    "TYRANNY": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/tyranny",
+      "base": "assets/cards/images/downloaded/tyranny.png",
+      "upgraded": "assets/cards/images/downloaded/tyranny-upgraded.png"
+    },
+    "UNDERWORLD": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/underworld",
+      "base": "assets/cards/images/downloaded/underworld.png",
+      "upgraded": "assets/cards/images/downloaded/underworld-upgraded.png"
+    },
+    "UP_MY_SLEEVE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/up-my-sleeve",
+      "base": "assets/cards/images/downloaded/up_my_sleeve.png",
+      "upgraded": "assets/cards/images/downloaded/up_my_sleeve-upgraded.png"
+    },
+    "UNDEATH": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/undeath",
+      "base": "assets/cards/images/downloaded/undeath.png",
+      "upgraded": "assets/cards/images/downloaded/undeath-upgraded.png"
+    },
+    "UPROAR": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/uproar",
+      "base": "assets/cards/images/downloaded/uproar.png",
+      "upgraded": "assets/cards/images/downloaded/uproar-upgraded.png"
+    },
+    "UNLEASH": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/unleash",
+      "base": "assets/cards/images/downloaded/unleash.png",
+      "upgraded": "assets/cards/images/downloaded/unleash-upgraded.png"
+    },
+    "UNTOUCHABLE": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/untouchable",
+      "base": "assets/cards/images/downloaded/untouchable.png",
+      "upgraded": "assets/cards/images/downloaded/untouchable-upgraded.png"
+    },
+    "VOID_FORM": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/void-form",
+      "base": "assets/cards/images/downloaded/void_form.png",
+      "upgraded": "assets/cards/images/downloaded/void_form-upgraded.png"
+    },
+    "UNRELENTING": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/unrelenting",
+      "base": "assets/cards/images/downloaded/unrelenting.png",
+      "upgraded": "assets/cards/images/downloaded/unrelenting-upgraded.png"
+    },
+    "UPPERCUT": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/uppercut",
+      "base": "assets/cards/images/downloaded/uppercut.png",
+      "upgraded": "assets/cards/images/downloaded/uppercut-upgraded.png"
+    },
+    "VICIOUS": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/vicious",
+      "base": "assets/cards/images/downloaded/vicious.png",
+      "upgraded": "assets/cards/images/downloaded/vicious-upgraded.png"
+    },
+    "VENERATE": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/venerate",
+      "base": "assets/cards/images/downloaded/venerate.png",
+      "upgraded": "assets/cards/images/downloaded/venerate-upgraded.png"
+    },
+    "VEILPIERCER": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/veilpiercer",
+      "base": "assets/cards/images/downloaded/veilpiercer.png",
+      "upgraded": "assets/cards/images/downloaded/veilpiercer-upgraded.png"
+    },
+    "VOLLEY": {
+      "source": "https://sts2.untapped.gg/en/cards/colorless/volley",
+      "base": "assets/cards/images/downloaded/volley.png",
+      "upgraded": "assets/cards/images/downloaded/volley-upgraded.png"
+    },
+    "WELL_LAID_PLANS": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/well-laid-plans",
+      "base": "assets/cards/images/downloaded/well_laid_plans.png",
+      "upgraded": "assets/cards/images/downloaded/well_laid_plans-upgraded.png"
+    },
+    "WISH": {
+      "source": "https://sts2.untapped.gg/en/cards/event/wish",
+      "base": "assets/cards/images/downloaded/wish.png",
+      "upgraded": "assets/cards/images/downloaded/wish-upgraded.png"
+    },
+    "VOLTAIC": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/voltaic",
+      "base": "assets/cards/images/downloaded/voltaic.png",
+      "upgraded": "assets/cards/images/downloaded/voltaic-upgraded.png"
+    },
+    "WRITHE": {
+      "source": "https://sts2.untapped.gg/en/cards/curse/writhe",
+      "base": "assets/cards/images/downloaded/writhe.png"
+    },
+    "WRAITH_FORM": {
+      "source": "https://sts2.untapped.gg/en/cards/silent/wraith-form",
+      "base": "assets/cards/images/downloaded/wraith_form.png",
+      "upgraded": "assets/cards/images/downloaded/wraith_form-upgraded.png"
+    },
+    "WHISTLE": {
+      "source": "https://sts2.untapped.gg/en/cards/event/whistle",
+      "base": "assets/cards/images/downloaded/whistle.png",
+      "upgraded": "assets/cards/images/downloaded/whistle-upgraded.png"
+    },
+    "WHIRLWIND": {
+      "source": "https://sts2.untapped.gg/en/cards/ironclad/whirlwind",
+      "base": "assets/cards/images/downloaded/whirlwind.png",
+      "upgraded": "assets/cards/images/downloaded/whirlwind-upgraded.png"
+    },
+    "ZAP": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/zap",
+      "base": "assets/cards/images/downloaded/zap.png",
+      "upgraded": "assets/cards/images/downloaded/zap-upgraded.png"
+    },
+    "WHITE_NOISE": {
+      "source": "https://sts2.untapped.gg/en/cards/defect/white-noise",
+      "base": "assets/cards/images/downloaded/white_noise.png",
+      "upgraded": "assets/cards/images/downloaded/white_noise-upgraded.png"
+    },
+    "WISP": {
+      "source": "https://sts2.untapped.gg/en/cards/necrobinder/wisp",
+      "base": "assets/cards/images/downloaded/wisp.png",
+      "upgraded": "assets/cards/images/downloaded/wisp-upgraded.png"
+    },
+    "WROUGHT_IN_WAR": {
+      "source": "https://sts2.untapped.gg/en/cards/regent/wrought-in-war",
+      "base": "assets/cards/images/downloaded/wrought_in_war.png",
+      "upgraded": "assets/cards/images/downloaded/wrought_in_war-upgraded.png"
+    }
+  },
+  "errors": []
+}

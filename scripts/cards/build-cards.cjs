@@ -316,7 +316,7 @@ html body main#main-content,html body .site-header>.site-header-inner{width:100%
 ${fs.readFileSync('assets/cards/compact-cards.css','utf8')}
 ${fs.readFileSync('assets/cards/search-control.css','utf8')}
 </style></head><body data-view="grid">${navigation.renderHeader('cards')}<main id="main-content">
-<div class="tools" id="tools"><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><div class="search-control"><input id="search" type="text" inputmode="search" role="searchbox" placeholder="搜尋關鍵字" autocomplete="off"><button type="button" class="search-clear" aria-label="清除搜尋關鍵字" title="清除搜尋關鍵字"><span class="search-icon" aria-hidden="true">🔍</span></button></div><button type="button" id="card-filter-reset" class="card-filter-reset" title="恢復預設搜尋與篩選" aria-label="恢復預設搜尋與篩選"><span aria-hidden="true" style="font-size:28px;line-height:1">⏻</span></button></div>${renderCardFilters([['Character','character',["Ironclad","Silent","Regent","Necrobinder","Defect","Colorless","Event","Curse"]],['Type','type',["Attack","Skill","Power"]],['Rarity','rarity',["Basic","Common","Uncommon","Rare","Ancient"]]])}${renderCardFilters([['Energy','energy',['0','1','2','3+','X','gain','cost-down']]])}<p id="card-filter-result" class="card-filter-result" role="status" aria-live="polite" aria-atomic="true">符合張數 / 總卡片數：0 / ${cards.length}</p></div>
+<div class="tools" id="tools"><div class="inline-search card-search"><label class="sr-only" for="search">搜尋關鍵字</label><div class="search-control"><input id="search" type="text" inputmode="search" role="searchbox" placeholder="搜尋關鍵字" autocomplete="off"><button type="button" class="search-clear" aria-label="清除搜尋關鍵字" title="清除搜尋關鍵字"><span class="search-icon" aria-hidden="true">🔍</span></button></div></div>${renderCardFilters([['Character','character',["Ironclad","Silent","Regent","Necrobinder","Defect","Colorless","Event","Curse"]],['Type','type',["Attack","Skill","Power"]],['Rarity','rarity',["Basic","Common","Uncommon","Rare","Ancient"]]])}${renderCardFilters([['Energy','energy',['0','1','2','3+','X','gain','cost-down']]])}<p id="card-filter-result" class="card-filter-result" role="status" aria-live="polite" aria-atomic="true">符合張數 / 總卡片數：0 / ${cards.length}</p></div>
 <div id="card-scroll" class="card-scroll" role="region" aria-label="卡牌表格" tabindex="0">${sections}<p id="empty" hidden>找不到符合條件的卡片，請調整搜尋文字、分類或稀有度。</p>
 </div>
 </main>
@@ -351,40 +351,9 @@ search.value='';
 function selectedCardFilters() {
   return {characters:selectedValues(characterFilter), rarities:selectedValues(rarityFilter), types:selectedValues(typeFilter), energies:selectedValues(energyFilter)};
 }
-const cardFilterCookie='sts2_card_filters';
 function resetCardFilterValues(clearSearch = true) {
   if (clearSearch) search.value='';
   for (const group of multiFilters) setFilterValues(group, group === characterFilter ? ['Ironclad'] : []);
-}
-function restoreCardFilters() {
-  resetCardFilterValues();
-  try {
-    const cookie=new URL(document.baseURI).protocol==='file:'?null:document.cookie.split(';').map(value=>value.trim()).find(value=>value.startsWith(cardFilterCookie+'='));
-    const stored=new URL(document.baseURI).protocol==='file:'?localStorage.getItem(cardFilterCookie):cookie?decodeURIComponent(cookie.slice(cardFilterCookie.length+1)):null;
-    if(!stored)return;
-    const saved=JSON.parse(stored);
-    if(!saved||typeof saved!=='object')return;
-    if(typeof saved.search==='string')search.value=saved.search;
-    for(const [key,group] of [['characters',characterFilter],['types',typeFilter],['rarities',rarityFilter],['energies',energyFilter]]) {
-      if(!Array.isArray(saved[key]))continue;
-      const allowed=new Set([...group.querySelectorAll('button')].map(button=>button.value));
-      const restoredValues=key==='energies'?saved[key].map(value=>['3','4+'].includes(value)?'3+':value):saved[key];
-      const values=restoredValues.filter(value=>allowed.has(value));
-      setFilterValues(group,values);
-    }
-  } catch {}
-}
-function rememberCardFilters() {
-  try {
-    const serialized=JSON.stringify({...Object.fromEntries(Object.entries(selectedCardFilters()).map(([key,values])=>[key,[...values]])),search:search.value});
-    if(new URL(document.baseURI).protocol==='file:'){
-      if(localStorage.getItem(cardFilterCookie)!==serialized)localStorage.setItem(cardFilterCookie,serialized);
-      return;
-    }
-    const value=encodeURIComponent(serialized);
-    if(document.cookie.split(';').some(cookie=>cookie.trim()===cardFilterCookie+'='+value))return;
-    document.cookie=cardFilterCookie+'='+value+'; Max-Age=31536000; Path=/; SameSite=Lax'+(location.protocol==='https:'?'; Secure':'');
-  } catch {}
 }
 function cardMatchesFilters(row, section, selected) {
   const {characters, rarities, types, energies}=selected;
@@ -414,7 +383,6 @@ function filter() {
   document.getElementById('empty').hidden=count!==0;
   document.getElementById('card-filter-result').textContent='符合張數 / 總卡片數：'+count+' / ${cards.length}';
   document.getElementById('card-scroll').scrollTo({top:0,left:0,behavior:'instant'});
-  rememberCardFilters();
 }
 
 function cardSearchQueries() {
@@ -424,7 +392,7 @@ function cardMatchesSearch(row, queries) {
   const query = search.value.trim().toLowerCase();
   if (query.length >= 2 && query.startsWith('"') && query.endsWith('"')) {
     const name = query.slice(1, -1);
-    return [...row.querySelectorAll('.detail-name-en,.detail-name-zh')].some(node => node.textContent.trim().toLowerCase() === name);
+    return [row.dataset.nameEn,row.dataset.nameZh,...[...row.querySelectorAll('.detail-name-en,.detail-name-zh')].map(node => node.textContent.trim().toLowerCase())].includes(name);
   }
   return queries.some(value => row.dataset.search.includes(value));
 }
@@ -435,14 +403,9 @@ function searchAllCards() {
   if (queries.length) setFilterValues(characterFilter,[]);
   filter();
 }
-const cancelSearch=window.bindSearchInput(search,searchAllCards);
-document.getElementById('card-filter-reset').addEventListener('click', () => {
-  cancelSearch();
-  resetCardFilterValues();
-  filter();
-});
+window.bindSearchInput(search,searchAllCards);
 
-restoreCardFilters();
+resetCardFilterValues();
 if (search.value.trim()) searchAllCards();
 else filter();
 
@@ -490,7 +453,7 @@ window.addEventListener('hashchange',revealLinkedCard);revealLinkedCard();
 
 
 </script></body></html>`;
-require('./desktop-page-css.cjs').writeDesktopPage('cards.html',navigation.openPageLinksInNewTab(html).replace('</body>','<script src="assets/cards/search-controls.js"></script><script src="assets/cards/compact-cards.js?v=15"></script></body>'));
+require('./desktop-page-css.cjs').writeDesktopPage('cards.html',navigation.openPageLinksInNewTab(html).replace('</body>','<script src="assets/cards/search-controls.js"></script><script src="assets/cards/compact-cards.js?v=21"></script></body>'));
 const manifest={source:'https://slaythespire2.net/card',chineseSource:chineseSource.source,retrievedDate:chineseSource.retrievedDate,version:chineseSource.version,balanceUpdate:chineseSource.balanceUpdate,tierSource:tierSource.source,tierRetrievedDate:tierSource.retrievedDate,total:cards.length,categories:Object.fromEntries(categories.map((p,i)=>[p,expected[i]])),cards:groups.flatMap(pool=>cards.filter(c=>group(c)===pool).sort((a,b)=>compareCards({...a,tier:tiers.get(a.id)},{...b,tier:tiers.get(b.id)})).map(c=>({id:c.id,name:c.name,nameZh:chineseCards.get(c.id).name,...(chineseCards.get(c.id).aliases?{aliases:chineseCards.get(c.id).aliases}:{}),...(chineseCards.get(c.id).notes?{notes:chineseCards.get(c.id).notes}:{}),...(c.availability?{availability:c.availability}:{}),...(c.canGenerateInCombat!==undefined?{canGenerateInCombat:c.canGenerateInCombat}:{}),category:category(c),originalPool:c.pool,type:c.type,rarity:c.rarity,rarityZh:rarityLabels[c.rarity],tier:tiers.get(c.id)||null,effect:{base:chineseCards.get(c.id).descBase,upgraded:canUpgrade(c)?chineseCards.get(c.id).descUpgraded:null},energy:c.energy??null,starCost:c.starCost??null,upgrade:c.upgrade??null,builds:(buildsByCard[c.id]||[]).map(b=>({...b,sourceUrl:b.url,url:localBuildUrl(b)})),url:c.sourceZh||'https://slaythespire2.net/zh-TW/card/'+c.slug})))};
 fs.writeFileSync('data/cards/cards.json',JSON.stringify(manifest,null,2));
 assert.equal((html.match(/<tr id="card-[^"]+" role="row" data-name=/g)||[]).length,cards.length);

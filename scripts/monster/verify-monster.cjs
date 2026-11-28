@@ -139,11 +139,11 @@ catalog.items = catalog.items.filter(item => item.type !== 'Event');
       assert.deepEqual(errors, []);
       if (mode === 'file' && entry === 'monsters.html') {
         await page.setViewportSize({width:1440,height:1100});
-        fs.mkdirSync('assets/monster/previews', {recursive:true});
+        fs.mkdirSync('assets/monsters/previews', {recursive:true});
         await page.mouse.move(20,20);
-        await page.screenshot({path:'assets/monster/previews/monster-catalog-1440.png'});
+        await page.screenshot({path:'assets/monsters/previews/monster-catalog-1440.png'});
           await root.getByRole('button',{name:'Glory',exact:true}).click();
-          await page.screenshot({path:'assets/monster/previews/monster-glory-1440.png'});
+          await page.screenshot({path:'assets/monsters/previews/monster-glory-1440.png'});
       }
       console.log('PASS ' + mode + ' ' + entry + ': default area, colored category groups, shared search, removed labels, full-width scrolling, offline artwork and external links');
       await context.close();

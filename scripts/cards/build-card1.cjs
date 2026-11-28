@@ -38,6 +38,8 @@ html = html.replace(/<tr id="card-([^"]+)"[^>]*>[\s\S]*?<\/tr>/g, (original, id)
     tag = attribute(tag, 'data-cost-down', String(card.effect.upgraded!==null && /^\d+$/.test(baseEnergy) && /^\d+$/.test(upgradedEnergy) && Number(upgradedEnergy)<Number(baseEnergy)));
     tag = attribute(tag, 'data-energy-gain', String(require('./energy-gain.cjs')(card)));
     tag = attribute(tag, 'data-rarity', card.rarity);
+    tag = attribute(tag, 'data-name-en', card.name.toLowerCase());
+    tag = attribute(tag, 'data-name-zh', card.nameZh.toLowerCase());
     tag = attribute(tag, 'data-name', (card.name + ' ' + card.nameZh).toLowerCase());
     return attribute(tag, 'data-search', require('./card-search-text.cjs')(card));
   });

@@ -40,7 +40,7 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
    await page.locator('[data-catalog-filter=pool][value=Ironclad]').click();assert.equal(await page.locator('[data-catalog-filter=pool][aria-pressed=true]').count(),1);assert.equal(await page.locator('.entry.relic:visible').count(),9);
    await search.fill('"Akabeko"');assert.equal(await page.locator('.entry.relic:visible').count(),1);
    assert.deepEqual(errors,[]);
-   if(mode==='file')await page.screenshot({path:'assets/relic/previews/untapped-effects-1440.png'});
+   if(mode==='file')await page.screenshot({path:'assets/relics/previews/untapped-effects-1440.png'});
    console.log('PASS '+mode+': 297 source descriptions/colors, Chinese names, source links, Circlet removed, English-only display, search and Pool filters.');await context.close();
   }
  }finally{await browser.close();}

@@ -92,14 +92,10 @@ html body main#main-content #card-scroll .card-detail[data-catalog-layout] .deta
  html body[data-view=grid] main#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:column;flex-wrap:nowrap}
 }
 /* Offline creator rating and commentary stay directly below the upgrade toggle. */
-html body main#main-content #card-scroll .card-detail[data-catalog-layout] .detail-tier-section {width:100%;min-width:0;margin-top:8px;padding:16px;border:1px solid #303d4e;border-radius:9px;background:#101923;text-align:left}
 html body main#main-content #card-scroll .detail-tier-heading {display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:0 auto}
-html body main#main-content #card-scroll .detail-tier-comment {margin:0;color:#e3e8ee;font:400 20px/1.6 Arial,"Microsoft JhengHei",sans-serif;overflow-wrap:anywhere}
 html body main#main-content #card-scroll details.detail-tier-toggle>.detail-tier-heading {width:max-content;max-width:100%;margin-inline:auto;list-style:none;cursor:pointer}
 html body main#main-content #card-scroll details.detail-tier-toggle>.detail-tier-heading::-webkit-details-marker {display:none}
 html body main#main-content #card-scroll details.detail-tier-toggle>.detail-tier-heading:focus-visible {outline:2px solid #37a8ec;outline-offset:4px;border-radius:4px}
-html body main#main-content #card-scroll .detail-tier-source {display:inline-block;margin-top:12px;color:#8bcaf0;font:400 16px/1.5 Arial,sans-serif;text-decoration:none}
-html body main#main-content #card-scroll .detail-tier-source:hover {text-decoration:underline;text-underline-offset:4px}
 html body main#main-content #card-scroll .detail-tier-toggle {width:100%;min-width:0}
 html body main#main-content #card-scroll .card-detail[data-catalog-layout] .creator-tier-badge {font-size:14px;line-height:1.4;min-width:22px;min-height:22px;padding:0 4px}
 `;
@@ -112,9 +108,7 @@ module.exports+=`
 /* Chinese names use the full title width above the effects. */
 html body main#main-content#main-content#main-content #card-scroll .detail-title-row {display:grid;grid-template-columns:minmax(0,1fr);align-items:center;gap:4px;width:100%;min-width:0;font:inherit}
 html body main#main-content#main-content#main-content #card-scroll .detail-title-row>.detail-name-zh {grid-column:1;min-width:0;width:100%;text-align:center;overflow-wrap:anywhere}
-html body main#main-content#main-content#main-content #card-scroll .detail-tier-trigger {grid-column:3;justify-self:end;display:inline-flex;align-items:center;justify-content:center;margin:0;padding:0;border:0;border-radius:4px;background:transparent;color:inherit;cursor:pointer;line-height:1}
-html body main#main-content#main-content#main-content #card-scroll .detail-tier-trigger:focus-visible {outline:2px solid #37a8ec;outline-offset:3px}
-html body main#main-content#main-content#main-content #card-scroll .detail-tier-section[hidden] {display:none!important}
+html body main#main-content#main-content#main-content #card-scroll .detail-tier-label {grid-column:3;justify-self:end;display:inline-flex;align-items:center;justify-content:center;margin:0;padding:0;border:0;border-radius:0;background:transparent;color:inherit;line-height:1}
 `;
 
 module.exports+=`
@@ -124,20 +118,15 @@ html body main#main-content#main-content#main-content #card-scroll .card-detail[
 
 module.exports+=`
 /* Tier commentary expands in normal flow at the bottom of its card. */
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout]>.detail-tier-section {position:static;grid-column:1;grid-row:auto;box-sizing:border-box;width:100%!important;max-width:none;max-height:none;overflow:visible;margin:0;padding:12px 0 0;border:0;border-top:1px solid #405063;border-radius:0;background:transparent;box-shadow:none;text-align:left}
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout]>.detail-tier-section .detail-tier-comment {margin:0;color:#e3e8ee;font:400 22px/1.6 Arial,"Microsoft JhengHei",sans-serif;overflow-wrap:anywhere}
 `;
 
 module.exports+=`
-html body main#main-content#main-content#main-content #card-scroll .detail-tier-source:focus-visible {outline:2px solid #74b3e6;outline-offset:3px}
 `;
 
 module.exports+=`
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout]>.detail-tier-section .detail-tier-source {display:inline-block;margin-top:12px;color:#8bcaf0;font:400 22px/1.6 Arial,sans-serif;overflow-wrap:anywhere}
 `;
 
 module.exports+=`
-html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout]>.detail-tier-section .detail-tier-translation {margin:16px 0 0;padding-top:16px;border-top:1px solid #405063;color:#e3e8ee;font:400 22px/1.6 Arial,"Microsoft JhengHei",sans-serif;overflow-wrap:anywhere}
 `;
 
 module.exports+=`
@@ -228,8 +217,8 @@ ${textCard} .detail-title {flex-direction:row;flex-wrap:wrap;align-items:center;
 ${textCard} .detail-title-row {display:block;flex:0 0 auto;width:max-content;max-width:100%}
 ${textCard} .detail-name-tier {display:inline-flex;align-items:center;gap:12px;flex:0 0 auto;width:max-content;max-width:100%;min-width:0}
 ${textCard} .detail-name-tier>.detail-name-en {display:block;flex:0 1 auto;min-width:0;white-space:nowrap;overflow-wrap:normal;word-break:normal}
-${textCard} .detail-name-tier .detail-tier-trigger {flex:0 0 auto;line-height:1}
-${textCard} .detail-name-tier .creator-tier-badge {display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-width:1.6em;height:1.6em;min-height:0;margin:0;padding:0;border:0;border-radius:4px;white-space:pre;background:var(--creator-tier-color,#788491);color:#000;font:700 16px/1.4 Arial,sans-serif;font-size:calc(var(--card-title-font-size,1em) * .6)!important}
+${textCard} .detail-name-tier .detail-tier-label {flex:0 0 auto;line-height:1}
+${textCard} .detail-title .creator-tier-badge {display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 32px;width:32px;min-width:32px;height:32px;min-height:32px;margin:0;padding:0;border:0;border-radius:4px;white-space:nowrap;background:var(--creator-tier-color,#788491);color:#000;font:700 19px/1.4 Arial,sans-serif;font-size:19px!important}
 ${textCard} [data-cost-version][hidden] {display:none!important}
 ${textCard} .detail-effects {grid-row:4;gap:0}
 ${textCard} :is(.detail-effect-columns,.detail-effect-panel) {border:0;border-radius:0;background:transparent;box-shadow:none;padding:0;overflow:visible}
@@ -274,7 +263,7 @@ ${textCard} .detail-type-metadata button:focus-visible {outline:2px solid #37a8e
 ${textCard} .detail-action-metadata .detail-card-sources {display:inline-flex;grid-row:auto;align-self:auto;justify-content:flex-start;flex-wrap:wrap;gap:8px 12px;width:auto;margin:0;padding:0;border:0;white-space:nowrap;font:700 1em/1.4 Arial,sans-serif}
 ${textCard} .detail-card-sources>a {font:inherit;font-size:var(--card-metadata-font-size)!important}
 ${textCard} .detail-source-separator {display:none}
-${textCard} .detail-type-metadata.detail-upgrade-controls {flex-wrap:wrap;gap:8px 12px;font-size:var(--card-metadata-font-size)}
+${textCard} .detail-type-metadata.detail-upgrade-controls {flex-direction:column;flex-wrap:nowrap;align-items:flex-start;gap:8px;font-size:var(--card-metadata-font-size)}
 ${textCard} .detail-upgrade-controls .detail-meta-item+.detail-meta-item::before {content:none}
 ${textCard} .detail-upgrade-controls [data-card-version] {font-size:inherit}
 ${textCard} .detail-type-metadata.detail-heading-metadata {display:flex;align-items:center;justify-content:flex-start;justify-self:start;gap:4px 0;margin:0;padding:0;text-align:left}
@@ -301,3 +290,19 @@ html body[data-view=grid] main#main-content#main-content#main-content #card-scro
  html body main#main-content #tools .card-filter-rows:has(#card-filter-energy) {display:none!important}
 }
 `;
+
+module.exports+=`
+html body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-tier-label {cursor:default;pointer-events:none;transition:none;animation:none;box-shadow:none;filter:none;transform:none;text-decoration:none}
+`;
+
+module.exports+="\n/* Center card content and stack names and Tier on separate rows. */\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] {text-align:center}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] :is(.detail-overview,.detail-art,.detail-title,.detail-title-row,.detail-name-zh,.detail-name-en,.detail-effects,.detail-effect-panel,.detail-panel-description,.detail-card-sources) {text-align:center;justify-self:center;justify-items:center}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title {flex-direction:column;align-items:center;justify-content:center;gap:8px}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row {width:100%}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier {display:flex;flex-direction:column;align-items:center;gap:8px;width:100%;max-width:100%}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-name-tier>.detail-name-en {flex:0 0 auto;text-align:center}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-heading-metadata {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;gap:0;width:100%;text-align:center}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata .detail-meta-item {grid-row:1;width:100%;min-width:0}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata .detail-meta-item:has([data-stat-character]) {grid-column:1;justify-content:flex-start}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata .detail-meta-item:has([data-type]) {grid-column:2;justify-content:center}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata .detail-meta-item:has([data-stat-rarity]) {grid-column:3;justify-content:flex-end}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-heading-metadata .detail-meta-item::before {content:none!important;margin:0!important}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-type-metadata.detail-upgrade-controls {align-items:center;text-align:center}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-upgrade-controls :is(.detail-meta-item,dd,.detail-card-sources) {justify-content:center;text-align:center}\n";
+
+module.exports+="\n/* Restore the framed card effect area. */\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-columns {box-sizing:border-box;width:100%;border:1px solid #303d4e;border-radius:9px;background:#101923;overflow:hidden}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-effect-columns>.detail-effect-panel {box-sizing:border-box;width:100%;padding:12px;border:0;background:transparent}\n";
+
+module.exports+="\n/* Tier shares the Chinese title row; sources occupy opposite edges. */\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row {display:grid;grid-template-columns:32px minmax(0,1fr) 32px;align-items:center;gap:8px;width:100%}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row>.detail-name-zh {grid-column:2;grid-row:1;width:100%;text-align:center}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-title-row>.detail-tier-label {grid-column:3;grid-row:1;justify-self:end;align-self:center}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-upgrade-controls .detail-meta-item:has(.detail-card-sources) {width:100%}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-upgrade-controls .detail-card-sources {width:100%;flex-direction:row-reverse;flex-wrap:nowrap;justify-content:space-between}\n";
+
+module.exports+="\n/* Show energy and star costs above the card effect text. */\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-panel-description>.detail-inline-cost {display:block;width:100%;margin:0 0 8px;text-align:center;white-space:nowrap}\n";
+
+module.exports+="\n/* Card-template resource artwork with the cost number overlaid. */\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-panel-description>.detail-inline-cost {display:flex;align-items:center;justify-content:center;gap:8px}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-cost-orb {position:relative;display:inline-grid;place-items:center;flex:0 0 48px;width:48px;height:48px;vertical-align:middle}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-cost-orb>img {grid-area:1/1;display:block;width:48px;height:48px;margin:0;object-fit:contain}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-cost-orb>.detail-cost-number {grid-area:1/1;position:relative;color:#fff;font:900 30px/1 Georgia,\"Times New Roman\",serif;-webkit-text-stroke:1px #25232c;paint-order:stroke fill;text-shadow:0 2px 2px #000,1px 0 #25232c,-1px 0 #25232c}\nhtml body main#main-content#main-content#main-content #card-scroll .card-detail[data-catalog-layout] .detail-cost-orb>.detail-cost-number-upgraded {color:#7fff00}\n";
+
+module.exports+=require('./downloaded-card-layout.cjs');

@@ -4,7 +4,7 @@
 
 # 素材分類
 
-`assets/` 僅依 `builds`、`cards`、`event`、`monster`、`potion`、`relic`、`enchantments` 分類，不再建立 `offline`、`images`、`icons` 或 `previews` 頂層資料夾。共用素材依所屬內容分類並重用；卡圖原始素材放在 `cards/source`，產生卡圖放在 `cards/images`，共用圖示放在 `cards/icons`。下載圖片使用 `asset-paths.cjs`；驗證截圖只在執行驗證時產生於對應分類的 `previews` 子資料夾。
+`assets/` 依主頁檔名分類為 `characters`、`cards`、`monsters`、`potions`、`relics`、`enchantments`，不再建立 `offline`、`images`、`icons` 或 `previews` 頂層資料夾。共用素材依所屬內容分類並重用；卡圖原始素材放在 `cards/source`，產生卡圖放在 `cards/images`，共用圖示放在 `cards/icons`。下載圖片使用 `asset-paths.cjs`；驗證截圖只在執行驗證時產生於對應分類的 `previews` 子資料夾。
 
 # 頁面檔名
 
@@ -24,7 +24,7 @@
 
 # 清理範圍
 
-目前維護上述六個主頁，不再產生遠古之民主頁或詳細頁。遠古之民圖示與排序歸於 `relic` 分類；共用配色歸於 `cards` 分類。清理素材前應同時檢查頁面引用與產生程式依賴。
+目前維護上述六個主頁，不再產生遠古之民主頁或詳細頁。遠古之民圖示放在 `assets/relics`，排序程式歸於 `scripts/relic` 分類；共用配色歸於 `cards` 分類。清理素材前應同時檢查頁面引用與產生程式依賴。
 
 # Enchantments 頁面
 

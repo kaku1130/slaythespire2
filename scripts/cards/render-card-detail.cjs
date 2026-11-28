@@ -12,6 +12,7 @@ function buildLink(card, build, localBuilds) {
   return new URL(build.url, card.source).href;
 }
 function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds = '', showBuilds = true, showKeywords = true, showTierRating = true, searchableEffects = false, rarityBeforeType = false, showEffectTooltips = false, showEffectNotes = false, metadataAboveEffects = false, tierBesideName = false, cornerMetadata = false, catalogLayout = false} = {}) {
+  if (catalogLayout) return require('./render-downloaded-card.cjs')(card, {prefix, showTierRating});
   const costSummary = /^Cost changes from\s+(?:\d+|X)\s+to\s+(?:\d+|X)\.?\s*/i;
   const fullUpgradedEffect = (card.effect.upgraded || '').replace(costSummary, '') || card.effect.base;
   const energyCost = card.stats.find(stat => stat.label === 'Energy cost')?.value;
@@ -81,28 +82,6 @@ function render(card, {prefix = 'detail-' + card.id.toLowerCase(), localBuilds =
   const tierBadge = tierList ? '<a class="detail-inline-tier" data-tier="' + esc(card.tier) + '" aria-label="Tier ' + esc(card.tier) + '" href="' + esc(tierList) + '" target="_blank" rel="noopener noreferrer">Tier ' + esc(card.tier) + '</a>' : '';
   const characterMetadata = metadataAboveEffects && tierBadge && !tierBesideName && !cornerMetadata ? '<dl class="detail-character-metadata" aria-label="Tier"><div class="detail-meta-item detail-tier-item"><dt>Tier</dt><dd>' + tierBadge + '</dd></div></dl>' : '';
   const art = '<figure class="detail-art" data-detail-row="1"><img src="' + esc(card.image) + '" width="700" height="532" alt="' + esc(card.name) + ' illustration" loading="lazy" decoding="async"></figure>';
-  if(catalogLayout){
-    const tierContent=showTierRating?require('./creator-tier-section.cjs')(card,{prefix,padded:true}):{label:'',content:''};
-    const baseId=prefix+'-base',upgradedId=prefix+'-upgraded';
-    const inlineCost=(html,version)=>html.replace('<p class="detail-panel-cost"','<span class="detail-inline-cost" data-cost-version="'+version+'"'+(version==='upgraded'?' hidden':'')).replace('</p>','</span>');
-    const baseDescription=(baseCostContent?inlineCost(baseCostContent,'base')+' ':'')+baseContent;
-    const upgradedDescription=(upgradedCostContent?inlineCost(upgradedCostContent,'upgraded')+' ':'')+upgradedContent;
-    const upgrade='<button type="button" data-card-version="upgraded" aria-label="upgrade+" aria-pressed="false" aria-controls="'+baseId+' '+upgradedId+'"'+(card.effect.upgraded===null?' disabled title="Cannot be upgraded"':'')+'>upgrade+</button>';
-    const headingMetadata='<dl class="detail-type-metadata detail-heading-metadata" aria-label="Character, rarity and type">'+renderStat({label:'Character',value:card.character})+renderStat({label:'Rarity',value:card.rarity})+renderStat({label:'Type',value:card.type})+'</dl>';
-    const sourceLinks=`<dd class="detail-card-sources"><a class="detail-untapped-link" href="${esc(require('./card-source-link.cjs')(card))}" target="_blank" rel="noopener noreferrer" aria-label="${esc(card.name)} on Untapped.gg" title="${esc(card.name)} · Untapped.gg">untapped.gg</a><span class="detail-source-separator" aria-hidden="true"> </span><a class="detail-spirebird-link" href="${esc(require('./spirebird-link.cjs')(card))}" target="_blank" rel="noopener noreferrer" aria-label="${esc(card.name)} on Spirebird" title="${esc(card.name)} · Spirebird">spirebird.com</a></dd>`;
-    const metadata='<dl class="detail-type-metadata detail-version-controls detail-action-metadata detail-upgrade-controls" aria-label="Card version and sources"><div class="detail-meta-item"><dt>Version</dt><dd>'+upgrade+'</dd></div><div class="detail-meta-item"><dt>Sources</dt>'+sourceLinks+'</div></dl>';
-    return `<article class="card-detail" data-card-layout="compact" data-catalog-layout="true" data-effect-version="base" aria-labelledby="${prefix}-title" lang="en" data-source="${esc(card.source)}" data-character="${esc(card.character)}">
-  <div class="detail-overview">
-    ${art}
-    <header><h2 class="detail-title" id="${prefix}-title"><span class="detail-title-row"><span class="detail-name-zh" lang="zh-Hant">${esc(card.nameZh)}</span></span><span class="detail-name-tier"><span class="detail-name-en">${esc(card.name)}</span>${tierContent.label}</span></h2></header>
-    ${headingMetadata}
-    <section class="detail-section detail-effects" aria-label="Card effects"><div class="detail-effect-columns"><div class="detail-effect-panel" id="${baseId}" role="group" aria-label="Base"><p class="detail-panel-description">${baseDescription}</p></div><div class="detail-effect-panel" id="${upgradedId}" role="group" aria-label="Upgraded" hidden><p class="detail-panel-description">${upgradedDescription}</p></div></div>
-    </section>
-    ${metadata}
-  </div>
-${tierContent.content?'  '+tierContent.content:''}
-</article>`;
-  }
   return `<article class="card-detail"${metadataAboveEffects ? ' data-card-layout="compact"' : ''} aria-labelledby="${prefix}-title" lang="en" data-source="${esc(card.source)}" data-character="${esc(card.character)}">
   <div class="detail-overview">
   ${characterMetadata}
